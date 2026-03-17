@@ -134,6 +134,7 @@ jobs:
           docker run --rm \
             -v "$PWD/zephyr-src:/tmp/zephyrproject/zephyr" \
             -v "$PWD:/work/pipeline" \
+            --user 0:0 \
             -w /work/pipeline \
             -e TAG="$TAG" \
             -e SOURCE_URL="$SOURCE_URL" \
