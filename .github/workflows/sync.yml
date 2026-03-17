@@ -132,7 +132,7 @@ jobs:
           mkdir -p "$PWD/artifacts/$TAG"
 
           docker run --rm \
-            -v "$PWD/zephyr-src:/work/zephyr" \
+            -v "$PWD/zephyr-src:/tmp/zephyrproject/zephyr" \
             -v "$PWD:/work/pipeline" \
             -w /work/pipeline \
             -e TAG="$TAG" \
@@ -149,16 +149,13 @@ jobs:
               python3 -m pip install --upgrade pip
               python3 -m pip install --upgrade west
 
-              # Initialise west workspace in /tmp (writable, avoids host-mount permission issues)
-              WEST_WS="/tmp/west-workspace"
-              rm -rf "$WEST_WS"
-              mkdir -p "$WEST_WS"
-              cd "$WEST_WS"
-              # -l uses the existing local clone as the manifest repo; must run from target dir
-              west init -l /work/zephyr
+              # zephyr-src is mounted at /tmp/zephyrproject/zephyr so west init -l
+              # can write .west into the writable /tmp/zephyrproject parent.
+              cd /tmp/zephyrproject
+              west init -l zephyr
               west update
 
-              python3 -m pip install --upgrade -r /work/zephyr/doc/requirements.txt
+              python3 -m pip install --upgrade -r /tmp/zephyrproject/zephyr/doc/requirements.txt
               python3 -m pip install --upgrade -r /work/pipeline/scripts/requirements-convert.txt
 
               if [[ -z "${ZEPHYR_SDK_INSTALL_DIR:-}" || ! -d "${ZEPHYR_SDK_INSTALL_DIR}" ]]; then
@@ -174,11 +171,11 @@ jobs:
                 export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
               fi
 
-              cmake -GNinja -B /work/zephyr/doc/_build -S /work/zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto -W --keep-going -T"
-              cmake --build /work/zephyr/doc/_build --target html
+              cmake -GNinja -B /tmp/zephyrproject/zephyr/doc/_build -S /tmp/zephyrproject/zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto -W --keep-going -T"
+              cmake --build /tmp/zephyrproject/zephyr/doc/_build --target html
 
               python3 /work/pipeline/scripts/convert.py \
-                --input-html-root /work/zephyr/doc/_build/html \
+                --input-html-root /tmp/zephyrproject/zephyr/doc/_build/html \
                 --output-root "/work/pipeline/artifacts/$TAG" \
                 --version "$TAG" \
                 --base-source-url "$SOURCE_URL" \
