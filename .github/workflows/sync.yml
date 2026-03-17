@@ -120,7 +120,7 @@ jobs:
             bash -lc '
               set -euo pipefail
 
-              WEST_WS="/work/pipeline/west-workspace"
+              WEST_WS="/tmp/west-workspace"
               rm -rf "$WEST_WS"
               mkdir -p "$WEST_WS"
               west init -l /work/zephyr "$WEST_WS"
