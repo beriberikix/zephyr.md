@@ -154,7 +154,7 @@ jobs:
               # can write .west into the writable /tmp/zephyrproject parent.
               cd /tmp/zephyrproject
               west init -l zephyr
-              west update
+              west update -n -o=--depth=1
 
               python3 -m pip install --upgrade -r /tmp/zephyrproject/zephyr/doc/requirements.txt
               python3 -m pip install --upgrade -r /work/pipeline/scripts/requirements-convert.txt
@@ -164,7 +164,14 @@ jobs:
                 if [[ ! -d "$SDK_DIR" ]]; then
                   SDK_ARCHIVE="zephyr-sdk-${ZEPHYR_SDK_VERSION}_linux-x86_64_minimal.tar.xz"
                   SDK_URL="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${ZEPHYR_SDK_VERSION}/${SDK_ARCHIVE}"
-                  curl -fsSL "$SDK_URL" -o "/tmp/${SDK_ARCHIVE}"
+                  if command -v curl >/dev/null 2>&1; then
+                    curl -fsSL "$SDK_URL" -o "/tmp/${SDK_ARCHIVE}"
+                  elif command -v wget >/dev/null 2>&1; then
+                    wget -q "$SDK_URL" -O "/tmp/${SDK_ARCHIVE}"
+                  else
+                    echo "Neither curl nor wget is available in the container"
+                    exit 1
+                  fi
                   mkdir -p /opt
                   tar -C /opt -xf "/tmp/${SDK_ARCHIVE}"
                   "$SDK_DIR/setup.sh" -c -h
