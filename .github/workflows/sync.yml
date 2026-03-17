@@ -112,13 +112,19 @@ jobs:
           docker run --rm \
             -v "$PWD/zephyr-src:/work/zephyr" \
             -v "$PWD:/work/pipeline" \
-            -w /work/zephyr \
+            -w /work/pipeline \
             -e TAG="$TAG" \
             -e SOURCE_URL="$SOURCE_URL" \
             -e ZEPHYR_SDK_VERSION="$ZEPHYR_SDK_VERSION" \
             "$ZEPHYR_BUILD_IMAGE" \
             bash -lc '
               set -euo pipefail
+
+              WEST_WS="/work/pipeline/west-workspace"
+              rm -rf "$WEST_WS"
+              mkdir -p "$WEST_WS"
+              west init -l /work/zephyr "$WEST_WS"
+              cd "$WEST_WS"
 
               python3 --version
               cmake --version
@@ -127,7 +133,6 @@ jobs:
               python3 -m pip install --upgrade pip
               python3 -m pip install --upgrade west
 
-              west init -l .
               west update
 
               python3 -m pip install --upgrade -r doc/requirements.txt
@@ -146,11 +151,11 @@ jobs:
                 export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
               fi
 
-              cmake -GNinja -B doc/_build -S doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto -W --keep-going -T"
-              cmake --build doc/_build --target html
+              cmake -GNinja -B zephyr/doc/_build -S zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto -W --keep-going -T"
+              cmake --build zephyr/doc/_build --target html
 
               python3 /work/pipeline/scripts/convert.py \
-                --input-html-root /work/zephyr/doc/_build/html \
+                --input-html-root "$WEST_WS/zephyr/doc/_build/html" \
                 --output-root "/work/pipeline/artifacts/$TAG" \
                 --version "$TAG" \
                 --base-source-url "$SOURCE_URL" \
