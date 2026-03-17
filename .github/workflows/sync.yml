@@ -89,8 +89,30 @@ jobs:
       - name: Checkout pipeline repository
         uses: actions/checkout@v4
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.docker-cache
+          key: docker-${{ env.ZEPHYR_BUILD_IMAGE }}
+          restore-keys: docker-
+
       - name: Pull zephyr-build image
-        run: docker pull "$ZEPHYR_BUILD_IMAGE"
+        run: |
+          set -euo pipefail
+          # Try to load from cache first
+          if [[ -f /tmp/.docker-cache/zephyr-build.tar ]]; then
+            echo "Loading image from cache..."
+            docker load -i /tmp/.docker-cache/zephyr-build.tar
+          else
+            echo "Pulling fresh image..."
+            docker pull "$ZEPHYR_BUILD_IMAGE"
+          fi
+          # Save image to cache for next run
+          mkdir -p /tmp/.docker-cache
+          docker save -o "/tmp/.docker-cache/zephyr-build.tar" "$ZEPHYR_BUILD_IMAGE" || true
 
       - name: Clone Zephyr source at tag
         shell: bash
