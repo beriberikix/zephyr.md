@@ -123,7 +123,7 @@ jobs:
               WEST_WS="/tmp/west-workspace"
               rm -rf "$WEST_WS"
               mkdir -p "$WEST_WS"
-              west init -l /work/zephyr "$WEST_WS"
+              west init -l --mf /work/zephyr/west.yml "$WEST_WS"
               cd "$WEST_WS"
 
               python3 --version
