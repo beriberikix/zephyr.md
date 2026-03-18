@@ -1,0 +1,509 @@
+---
+version: v3.7.0
+source_url: https://docs.zephyrproject.org/3.7.0/doxygen/html/npcx7__reset_8h.html
+original_path: doxygen/html/npcx7__reset_8h.html
+---
+
+| Logo | Zephyr API Documentation  3.7.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+npcx7\_reset.h File Reference
+
+[Go to the source code of this file.](npcx7__reset_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0)   0 |
+| #define | [NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415)   32 |
+| #define | [NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398)   64 |
+| #define | [NPCX\_RESET\_GPIO0](#a72fb56274a33e9cff09ab06d5423bed4)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 0) |
+| #define | [NPCX\_RESET\_GPIO1](#a52f3e5746d3a7bd36093de688d675b11)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 1) |
+| #define | [NPCX\_RESET\_GPIO2](#a85d59ac73b5bd58cbcd9cdd22f249930)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 2) |
+| #define | [NPCX\_RESET\_GPIO3](#ad37b02bc378a921ee1417ab34f7729a8)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 3) |
+| #define | [NPCX\_RESET\_GPIO4](#ae1a0e238df6a7b00a838d5fd06eb0122)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 4) |
+| #define | [NPCX\_RESET\_GPIO5](#aae315e45c7f74c5dd7ce0fef9d7d5bf0)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 5) |
+| #define | [NPCX\_RESET\_GPIO6](#a81b885d48bd16f069ad517eb0dab9dce)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 6) |
+| #define | [NPCX\_RESET\_GPIO7](#ad4ccfafdb862152b82dc3553e04a4cbb)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 7) |
+| #define | [NPCX\_RESET\_GPIO8](#a773bf3ad4d732de3c8a06527c7fca16b)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 8) |
+| #define | [NPCX\_RESET\_GPIO9](#ae7e14072ebcc3b112a31a4e7754bdafb)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 9) |
+| #define | [NPCX\_RESET\_GPIOA](#a4b0e5c4c30d117db298fd373b968f488)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 10) |
+| #define | [NPCX\_RESET\_GPIOB](#acf300d105c09ece32ff935e44f220ead)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 11) |
+| #define | [NPCX\_RESET\_GPIOC](#ac7abe8044520a99f8119a661bde3b5ed)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 12) |
+| #define | [NPCX\_RESET\_GPIOD](#aa3f774deebd1e94aca602f0586541e02)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 13) |
+| #define | [NPCX\_RESET\_GPIOE](#a4e1768f6f61654023f6383d9574aefd3)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 14) |
+| #define | [NPCX\_RESET\_GPIOF](#a490f13f39c29725894f91b1d12ab45b0)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 15) |
+| #define | [NPCX\_RESET\_ITIM64](#ac6da7a24b6672ce712c92cc5c9f5bbf8)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 16) |
+| #define | [NPCX\_RESET\_ITIM16\_1](#ae0a5f292f4cb98d3e8ea019a50a7c278)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 18) |
+| #define | [NPCX\_RESET\_ITIM16\_2](#a1b15add103dfe3d8e31fc215e0070ef2)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 19) |
+| #define | [NPCX\_RESET\_ITIM16\_3](#afe23a92a987f8dd114d41e26638aad65)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 20) |
+| #define | [NPCX\_RESET\_ITIM16\_4](#aad83be48d2110fc396db707b6f6a0567)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 21) |
+| #define | [NPCX\_RESET\_ITIM16\_5](#ac3cb4953a347a2c6806d00b54145fd81)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 22) |
+| #define | [NPCX\_RESET\_ITIM16\_6](#ab8ae519f7150a1604776b1c6db900216)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 23) |
+| #define | [NPCX\_RESET\_ITIM32](#a0cd4bdf55883e3ac59b556d5214d844d)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 24) |
+| #define | [NPCX\_RESET\_MTC](#aba5bb6ccc52bd1560822abb80a8fae49)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 25) |
+| #define | [NPCX\_RESET\_MIWU0](#af90deca338a25205bd19d2c80948f995)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 26) |
+| #define | [NPCX\_RESET\_MIWU1](#ab929e4dd3c03e65c86daf96210fa3838)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 27) |
+| #define | [NPCX\_RESET\_MIWU2](#ad1abd875719ae3bd9068b3269ff1febd)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 28) |
+| #define | [NPCX\_RESET\_GDMA](#a68541cbf091be9bb951d08695f01e0e1)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 29) |
+| #define | [NPCX\_RESET\_FIU](#a8d0240b100a548ffdf6ba1a8b08ecfd2)   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 30) |
+| #define | [NPCX\_RESET\_PMC](#a0be538fff0e589732b0c41f53ded10d6)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 0) |
+| #define | [NPCX\_RESET\_SHI](#aa41c81fd03e6c85ad468b060e70f8922)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 2) |
+| #define | [NPCX\_RESET\_SPIP](#ae7a0b89c14bf40489c6890648de653dd)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 3) |
+| #define | [NPCX\_RESET\_PECI](#a3570245c4c2ef9b048752e3edec42d8a)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 5) |
+| #define | [NPCX\_RESET\_CRUART2](#abcb39166e1d3e1325eb613f6def6f2fb)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 6) |
+| #define | [NPCX\_RESET\_ADC](#a73d09627ceb961b9e1153c2d77d5b5a4)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 7) |
+| #define | [NPCX\_RESET\_SMB0](#a32c7de2186f89637edbf5f1693f85a5f)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 8) |
+| #define | [NPCX\_RESET\_SMB1](#a08bffb7ef7ecbd442048510b84cecf4b)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 9) |
+| #define | [NPCX\_RESET\_SMB2](#a512ac512d495628e6ba5536d81c10853)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 10) |
+| #define | [NPCX\_RESET\_SMB3](#ae7fdb811a0e332b57a3908c0439e3cf8)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 11) |
+| #define | [NPCX\_RESET\_SMB4](#a683f673ada07bf129b0b1d400a68dd17)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 12) |
+| #define | [NPCX\_RESET\_SMB5](#a203fcf319d24922b7d7e2b03b05ca355)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 13) |
+| #define | [NPCX\_RESET\_SMB6](#aead329ad433b7e977c89a054871b9ecf)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 14) |
+| #define | [NPCX\_RESET\_TWD](#af278613275cbfc1aca870bc79cf663bb)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 15) |
+| #define | [NPCX\_RESET\_PWM0](#a864e660a6904a5767340f759421832a6)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 16) |
+| #define | [NPCX\_RESET\_PWM1](#a0c88eff2699d437b12c1625f5043e588)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 17) |
+| #define | [NPCX\_RESET\_PWM2](#aefdc374f7e767763a1f851d58bce0816)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 18) |
+| #define | [NPCX\_RESET\_PWM3](#a4c1cddadce85ff79667e88a3a40ac548)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 19) |
+| #define | [NPCX\_RESET\_PWM4](#a19546720c7e51f472f74c8974f284d24)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 20) |
+| #define | [NPCX\_RESET\_PWM5](#a70b5a48b35e817f43a2add018c4bd20d)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 21) |
+| #define | [NPCX\_RESET\_PWM6](#ac75e76755957375a207d13d3725841b8)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 22) |
+| #define | [NPCX\_RESET\_PWM7](#a10f7cbfd0fc8a70c6a6cfa9a4bde2ecd)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 23) |
+| #define | [NPCX\_RESET\_MFT16\_1](#a42a7c383914f69df8fb7aea0ca7c4b52)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 24) |
+| #define | [NPCX\_RESET\_MFT16\_2](#a2ce51edd20f4189900086416481bd3ff)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 25) |
+| #define | [NPCX\_RESET\_MFT16\_3](#a2b59b5781233b173031f8e3499c71101)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 26) |
+| #define | [NPCX\_RESET\_SMB7](#a6fb388898107ceb8c59752e232e0e60e)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 27) |
+| #define | [NPCX\_RESET\_CRUART1](#a1346e2104546d8b38cb79f4edd05fa1e)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 28) |
+| #define | [NPCX\_RESET\_PS2](#afe481ba45d061dd1d9a367e9d827e0aa)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 29) |
+| #define | [NPCX\_RESET\_SDP](#a6ad3981c88eec0370e7977a6599dad75)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 30) |
+| #define | [NPCX\_RESET\_KBS](#aed372243bc063fd677df36fc7afb5470)   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 31) |
+| #define | [NPCX\_RESET\_SIOCFG](#ad883ccf60ae497034fa3b4ee8f0e2c0d)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 0) |
+| #define | [NPCX\_RESET\_SERPORT](#a21a34b8d9f9bae378ded2af91e79cda8)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 1) |
+| #define | [NPCX\_RESET\_MSWC](#a106e92b1dba738c457e3a7cfaff66874)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 8) |
+| #define | [NPCX\_RESET\_SHM](#affb31b8183b8a0757cf9efd37ec22c29)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 9) |
+| #define | [NPCX\_RESET\_PMCH1](#a5ec2d6472107f931a40d71a3ef475f6a)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 10) |
+| #define | [NPCX\_RESET\_PMCH2](#a47a04e729b12f398fa72f2c0bf9e3199)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 11) |
+| #define | [NPCX\_RESET\_PMCH3](#a674e9c8df444e64751c8e427b5d83f6d)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 12) |
+| #define | [NPCX\_RESET\_PMCH4](#aae912fd01a20d16fbbbb2a7afb3ccbcb)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 13) |
+| #define | [NPCX\_RESET\_KBC](#af048869b54e84f87f9da15a5c7cc4018)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 15) |
+| #define | [NPCX\_RESET\_C2HOST](#a5c002638cac08f8c4dafeaffe9d14374)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 16) |
+| #define | [NPCX\_RESET\_LFCG](#a4e6b20cd682f2e213bd880e35f278596)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 20) |
+| #define | [NPCX\_RESET\_DEV](#aad039116d3e8eeb7643f53eddfebd01a)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 22) |
+| #define | [NPCX\_RESET\_SYSCFG](#a5a690a8277146999bc33e7cdb3425975)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 23) |
+| #define | [NPCX\_RESET\_SBY](#a27c63907f4d53918dc5e06e957ce8654)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 24) |
+| #define | [NPCX\_RESET\_BBRAM](#a0becfe5b43cfa5b8bfe682d25dd6bd71)   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 25) |
+| #define | [NPCX\_RESET\_ID\_START](#a0e8c75effca2fc27e91f92e5554714e0)   [NPCX\_RESET\_GPIO0](#a72fb56274a33e9cff09ab06d5423bed4) |
+| #define | [NPCX\_RESET\_ID\_END](#a6ea0ca8fc553b595907a7598856c4f7f)   [NPCX\_RESET\_BBRAM](#a0becfe5b43cfa5b8bfe682d25dd6bd71) |
+
+## Macro Definition Documentation
+
+## [◆ ](#a73d09627ceb961b9e1153c2d77d5b5a4)NPCX\_RESET\_ADC
+
+| #define NPCX\_RESET\_ADC   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 7) |
+| --- |
+
+## [◆ ](#a0becfe5b43cfa5b8bfe682d25dd6bd71)NPCX\_RESET\_BBRAM
+
+| #define NPCX\_RESET\_BBRAM   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 25) |
+| --- |
+
+## [◆ ](#a5c002638cac08f8c4dafeaffe9d14374)NPCX\_RESET\_C2HOST
+
+| #define NPCX\_RESET\_C2HOST   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 16) |
+| --- |
+
+## [◆ ](#a1346e2104546d8b38cb79f4edd05fa1e)NPCX\_RESET\_CRUART1
+
+| #define NPCX\_RESET\_CRUART1   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 28) |
+| --- |
+
+## [◆ ](#abcb39166e1d3e1325eb613f6def6f2fb)NPCX\_RESET\_CRUART2
+
+| #define NPCX\_RESET\_CRUART2   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 6) |
+| --- |
+
+## [◆ ](#aad039116d3e8eeb7643f53eddfebd01a)NPCX\_RESET\_DEV
+
+| #define NPCX\_RESET\_DEV   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 22) |
+| --- |
+
+## [◆ ](#a8d0240b100a548ffdf6ba1a8b08ecfd2)NPCX\_RESET\_FIU
+
+| #define NPCX\_RESET\_FIU   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 30) |
+| --- |
+
+## [◆ ](#a68541cbf091be9bb951d08695f01e0e1)NPCX\_RESET\_GDMA
+
+| #define NPCX\_RESET\_GDMA   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 29) |
+| --- |
+
+## [◆ ](#a72fb56274a33e9cff09ab06d5423bed4)NPCX\_RESET\_GPIO0
+
+| #define NPCX\_RESET\_GPIO0   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 0) |
+| --- |
+
+## [◆ ](#a52f3e5746d3a7bd36093de688d675b11)NPCX\_RESET\_GPIO1
+
+| #define NPCX\_RESET\_GPIO1   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 1) |
+| --- |
+
+## [◆ ](#a85d59ac73b5bd58cbcd9cdd22f249930)NPCX\_RESET\_GPIO2
+
+| #define NPCX\_RESET\_GPIO2   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 2) |
+| --- |
+
+## [◆ ](#ad37b02bc378a921ee1417ab34f7729a8)NPCX\_RESET\_GPIO3
+
+| #define NPCX\_RESET\_GPIO3   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 3) |
+| --- |
+
+## [◆ ](#ae1a0e238df6a7b00a838d5fd06eb0122)NPCX\_RESET\_GPIO4
+
+| #define NPCX\_RESET\_GPIO4   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 4) |
+| --- |
+
+## [◆ ](#aae315e45c7f74c5dd7ce0fef9d7d5bf0)NPCX\_RESET\_GPIO5
+
+| #define NPCX\_RESET\_GPIO5   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 5) |
+| --- |
+
+## [◆ ](#a81b885d48bd16f069ad517eb0dab9dce)NPCX\_RESET\_GPIO6
+
+| #define NPCX\_RESET\_GPIO6   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 6) |
+| --- |
+
+## [◆ ](#ad4ccfafdb862152b82dc3553e04a4cbb)NPCX\_RESET\_GPIO7
+
+| #define NPCX\_RESET\_GPIO7   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 7) |
+| --- |
+
+## [◆ ](#a773bf3ad4d732de3c8a06527c7fca16b)NPCX\_RESET\_GPIO8
+
+| #define NPCX\_RESET\_GPIO8   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 8) |
+| --- |
+
+## [◆ ](#ae7e14072ebcc3b112a31a4e7754bdafb)NPCX\_RESET\_GPIO9
+
+| #define NPCX\_RESET\_GPIO9   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 9) |
+| --- |
+
+## [◆ ](#a4b0e5c4c30d117db298fd373b968f488)NPCX\_RESET\_GPIOA
+
+| #define NPCX\_RESET\_GPIOA   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 10) |
+| --- |
+
+## [◆ ](#acf300d105c09ece32ff935e44f220ead)NPCX\_RESET\_GPIOB
+
+| #define NPCX\_RESET\_GPIOB   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 11) |
+| --- |
+
+## [◆ ](#ac7abe8044520a99f8119a661bde3b5ed)NPCX\_RESET\_GPIOC
+
+| #define NPCX\_RESET\_GPIOC   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 12) |
+| --- |
+
+## [◆ ](#aa3f774deebd1e94aca602f0586541e02)NPCX\_RESET\_GPIOD
+
+| #define NPCX\_RESET\_GPIOD   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 13) |
+| --- |
+
+## [◆ ](#a4e1768f6f61654023f6383d9574aefd3)NPCX\_RESET\_GPIOE
+
+| #define NPCX\_RESET\_GPIOE   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 14) |
+| --- |
+
+## [◆ ](#a490f13f39c29725894f91b1d12ab45b0)NPCX\_RESET\_GPIOF
+
+| #define NPCX\_RESET\_GPIOF   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 15) |
+| --- |
+
+## [◆ ](#a6ea0ca8fc553b595907a7598856c4f7f)NPCX\_RESET\_ID\_END
+
+| #define NPCX\_RESET\_ID\_END   [NPCX\_RESET\_BBRAM](#a0becfe5b43cfa5b8bfe682d25dd6bd71) |
+| --- |
+
+## [◆ ](#a0e8c75effca2fc27e91f92e5554714e0)NPCX\_RESET\_ID\_START
+
+| #define NPCX\_RESET\_ID\_START   [NPCX\_RESET\_GPIO0](#a72fb56274a33e9cff09ab06d5423bed4) |
+| --- |
+
+## [◆ ](#ae0a5f292f4cb98d3e8ea019a50a7c278)NPCX\_RESET\_ITIM16\_1
+
+| #define NPCX\_RESET\_ITIM16\_1   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 18) |
+| --- |
+
+## [◆ ](#a1b15add103dfe3d8e31fc215e0070ef2)NPCX\_RESET\_ITIM16\_2
+
+| #define NPCX\_RESET\_ITIM16\_2   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 19) |
+| --- |
+
+## [◆ ](#afe23a92a987f8dd114d41e26638aad65)NPCX\_RESET\_ITIM16\_3
+
+| #define NPCX\_RESET\_ITIM16\_3   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 20) |
+| --- |
+
+## [◆ ](#aad83be48d2110fc396db707b6f6a0567)NPCX\_RESET\_ITIM16\_4
+
+| #define NPCX\_RESET\_ITIM16\_4   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 21) |
+| --- |
+
+## [◆ ](#ac3cb4953a347a2c6806d00b54145fd81)NPCX\_RESET\_ITIM16\_5
+
+| #define NPCX\_RESET\_ITIM16\_5   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 22) |
+| --- |
+
+## [◆ ](#ab8ae519f7150a1604776b1c6db900216)NPCX\_RESET\_ITIM16\_6
+
+| #define NPCX\_RESET\_ITIM16\_6   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 23) |
+| --- |
+
+## [◆ ](#a0cd4bdf55883e3ac59b556d5214d844d)NPCX\_RESET\_ITIM32
+
+| #define NPCX\_RESET\_ITIM32   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 24) |
+| --- |
+
+## [◆ ](#ac6da7a24b6672ce712c92cc5c9f5bbf8)NPCX\_RESET\_ITIM64
+
+| #define NPCX\_RESET\_ITIM64   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 16) |
+| --- |
+
+## [◆ ](#af048869b54e84f87f9da15a5c7cc4018)NPCX\_RESET\_KBC
+
+| #define NPCX\_RESET\_KBC   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 15) |
+| --- |
+
+## [◆ ](#aed372243bc063fd677df36fc7afb5470)NPCX\_RESET\_KBS
+
+| #define NPCX\_RESET\_KBS   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 31) |
+| --- |
+
+## [◆ ](#a4e6b20cd682f2e213bd880e35f278596)NPCX\_RESET\_LFCG
+
+| #define NPCX\_RESET\_LFCG   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 20) |
+| --- |
+
+## [◆ ](#a42a7c383914f69df8fb7aea0ca7c4b52)NPCX\_RESET\_MFT16\_1
+
+| #define NPCX\_RESET\_MFT16\_1   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 24) |
+| --- |
+
+## [◆ ](#a2ce51edd20f4189900086416481bd3ff)NPCX\_RESET\_MFT16\_2
+
+| #define NPCX\_RESET\_MFT16\_2   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 25) |
+| --- |
+
+## [◆ ](#a2b59b5781233b173031f8e3499c71101)NPCX\_RESET\_MFT16\_3
+
+| #define NPCX\_RESET\_MFT16\_3   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 26) |
+| --- |
+
+## [◆ ](#af90deca338a25205bd19d2c80948f995)NPCX\_RESET\_MIWU0
+
+| #define NPCX\_RESET\_MIWU0   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 26) |
+| --- |
+
+## [◆ ](#ab929e4dd3c03e65c86daf96210fa3838)NPCX\_RESET\_MIWU1
+
+| #define NPCX\_RESET\_MIWU1   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 27) |
+| --- |
+
+## [◆ ](#ad1abd875719ae3bd9068b3269ff1febd)NPCX\_RESET\_MIWU2
+
+| #define NPCX\_RESET\_MIWU2   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 28) |
+| --- |
+
+## [◆ ](#a106e92b1dba738c457e3a7cfaff66874)NPCX\_RESET\_MSWC
+
+| #define NPCX\_RESET\_MSWC   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 8) |
+| --- |
+
+## [◆ ](#aba5bb6ccc52bd1560822abb80a8fae49)NPCX\_RESET\_MTC
+
+| #define NPCX\_RESET\_MTC   ([NPCX\_RESET\_SWRST\_CTL1\_OFFSET](#a81f99303ed0a77ab0256f329def64dc0) + 25) |
+| --- |
+
+## [◆ ](#a3570245c4c2ef9b048752e3edec42d8a)NPCX\_RESET\_PECI
+
+| #define NPCX\_RESET\_PECI   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 5) |
+| --- |
+
+## [◆ ](#a0be538fff0e589732b0c41f53ded10d6)NPCX\_RESET\_PMC
+
+| #define NPCX\_RESET\_PMC   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 0) |
+| --- |
+
+## [◆ ](#a5ec2d6472107f931a40d71a3ef475f6a)NPCX\_RESET\_PMCH1
+
+| #define NPCX\_RESET\_PMCH1   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 10) |
+| --- |
+
+## [◆ ](#a47a04e729b12f398fa72f2c0bf9e3199)NPCX\_RESET\_PMCH2
+
+| #define NPCX\_RESET\_PMCH2   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 11) |
+| --- |
+
+## [◆ ](#a674e9c8df444e64751c8e427b5d83f6d)NPCX\_RESET\_PMCH3
+
+| #define NPCX\_RESET\_PMCH3   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 12) |
+| --- |
+
+## [◆ ](#aae912fd01a20d16fbbbb2a7afb3ccbcb)NPCX\_RESET\_PMCH4
+
+| #define NPCX\_RESET\_PMCH4   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 13) |
+| --- |
+
+## [◆ ](#afe481ba45d061dd1d9a367e9d827e0aa)NPCX\_RESET\_PS2
+
+| #define NPCX\_RESET\_PS2   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 29) |
+| --- |
+
+## [◆ ](#a864e660a6904a5767340f759421832a6)NPCX\_RESET\_PWM0
+
+| #define NPCX\_RESET\_PWM0   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 16) |
+| --- |
+
+## [◆ ](#a0c88eff2699d437b12c1625f5043e588)NPCX\_RESET\_PWM1
+
+| #define NPCX\_RESET\_PWM1   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 17) |
+| --- |
+
+## [◆ ](#aefdc374f7e767763a1f851d58bce0816)NPCX\_RESET\_PWM2
+
+| #define NPCX\_RESET\_PWM2   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 18) |
+| --- |
+
+## [◆ ](#a4c1cddadce85ff79667e88a3a40ac548)NPCX\_RESET\_PWM3
+
+| #define NPCX\_RESET\_PWM3   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 19) |
+| --- |
+
+## [◆ ](#a19546720c7e51f472f74c8974f284d24)NPCX\_RESET\_PWM4
+
+| #define NPCX\_RESET\_PWM4   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 20) |
+| --- |
+
+## [◆ ](#a70b5a48b35e817f43a2add018c4bd20d)NPCX\_RESET\_PWM5
+
+| #define NPCX\_RESET\_PWM5   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 21) |
+| --- |
+
+## [◆ ](#ac75e76755957375a207d13d3725841b8)NPCX\_RESET\_PWM6
+
+| #define NPCX\_RESET\_PWM6   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 22) |
+| --- |
+
+## [◆ ](#a10f7cbfd0fc8a70c6a6cfa9a4bde2ecd)NPCX\_RESET\_PWM7
+
+| #define NPCX\_RESET\_PWM7   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 23) |
+| --- |
+
+## [◆ ](#a27c63907f4d53918dc5e06e957ce8654)NPCX\_RESET\_SBY
+
+| #define NPCX\_RESET\_SBY   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 24) |
+| --- |
+
+## [◆ ](#a6ad3981c88eec0370e7977a6599dad75)NPCX\_RESET\_SDP
+
+| #define NPCX\_RESET\_SDP   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 30) |
+| --- |
+
+## [◆ ](#a21a34b8d9f9bae378ded2af91e79cda8)NPCX\_RESET\_SERPORT
+
+| #define NPCX\_RESET\_SERPORT   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 1) |
+| --- |
+
+## [◆ ](#aa41c81fd03e6c85ad468b060e70f8922)NPCX\_RESET\_SHI
+
+| #define NPCX\_RESET\_SHI   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 2) |
+| --- |
+
+## [◆ ](#affb31b8183b8a0757cf9efd37ec22c29)NPCX\_RESET\_SHM
+
+| #define NPCX\_RESET\_SHM   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 9) |
+| --- |
+
+## [◆ ](#ad883ccf60ae497034fa3b4ee8f0e2c0d)NPCX\_RESET\_SIOCFG
+
+| #define NPCX\_RESET\_SIOCFG   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 0) |
+| --- |
+
+## [◆ ](#a32c7de2186f89637edbf5f1693f85a5f)NPCX\_RESET\_SMB0
+
+| #define NPCX\_RESET\_SMB0   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 8) |
+| --- |
+
+## [◆ ](#a08bffb7ef7ecbd442048510b84cecf4b)NPCX\_RESET\_SMB1
+
+| #define NPCX\_RESET\_SMB1   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 9) |
+| --- |
+
+## [◆ ](#a512ac512d495628e6ba5536d81c10853)NPCX\_RESET\_SMB2
+
+| #define NPCX\_RESET\_SMB2   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 10) |
+| --- |
+
+## [◆ ](#ae7fdb811a0e332b57a3908c0439e3cf8)NPCX\_RESET\_SMB3
+
+| #define NPCX\_RESET\_SMB3   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 11) |
+| --- |
+
+## [◆ ](#a683f673ada07bf129b0b1d400a68dd17)NPCX\_RESET\_SMB4
+
+| #define NPCX\_RESET\_SMB4   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 12) |
+| --- |
+
+## [◆ ](#a203fcf319d24922b7d7e2b03b05ca355)NPCX\_RESET\_SMB5
+
+| #define NPCX\_RESET\_SMB5   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 13) |
+| --- |
+
+## [◆ ](#aead329ad433b7e977c89a054871b9ecf)NPCX\_RESET\_SMB6
+
+| #define NPCX\_RESET\_SMB6   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 14) |
+| --- |
+
+## [◆ ](#a6fb388898107ceb8c59752e232e0e60e)NPCX\_RESET\_SMB7
+
+| #define NPCX\_RESET\_SMB7   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 27) |
+| --- |
+
+## [◆ ](#ae7a0b89c14bf40489c6890648de653dd)NPCX\_RESET\_SPIP
+
+| #define NPCX\_RESET\_SPIP   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 3) |
+| --- |
+
+## [◆ ](#a81f99303ed0a77ab0256f329def64dc0)NPCX\_RESET\_SWRST\_CTL1\_OFFSET
+
+| #define NPCX\_RESET\_SWRST\_CTL1\_OFFSET   0 |
+| --- |
+
+## [◆ ](#ade6e0a94c31cafc3eba6a7ae756bd415)NPCX\_RESET\_SWRST\_CTL2\_OFFSET
+
+| #define NPCX\_RESET\_SWRST\_CTL2\_OFFSET   32 |
+| --- |
+
+## [◆ ](#aa35a977186857d86835b66b28cb18398)NPCX\_RESET\_SWRST\_CTL3\_OFFSET
+
+| #define NPCX\_RESET\_SWRST\_CTL3\_OFFSET   64 |
+| --- |
+
+## [◆ ](#a5a690a8277146999bc33e7cdb3425975)NPCX\_RESET\_SYSCFG
+
+| #define NPCX\_RESET\_SYSCFG   ([NPCX\_RESET\_SWRST\_CTL3\_OFFSET](#aa35a977186857d86835b66b28cb18398) + 23) |
+| --- |
+
+## [◆ ](#af278613275cbfc1aca870bc79cf663bb)NPCX\_RESET\_TWD
+
+| #define NPCX\_RESET\_TWD   ([NPCX\_RESET\_SWRST\_CTL2\_OFFSET](#ade6e0a94c31cafc3eba6a7ae756bd415) + 15) |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
+- [npcx7\_reset.h](npcx7__reset_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -1,0 +1,148 @@
+---
+version: v3.7.0
+source_url: https://docs.zephyrproject.org/3.7.0/doxygen/html/icm42688_8h_source.html
+original_path: doxygen/html/icm42688_8h_source.html
+---
+
+| Logo | Zephyr API Documentation  3.7.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+icm42688.h
+
+[Go to the documentation of this file.](icm42688_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2024 Intel Corporation
+
+3 \*
+
+4 \* SPDX-License-Identifier: Apache-2.0
+
+5 \*/
+
+6#ifndef ZEPHYR\_INCLUDE\_DT\_BINDINGS\_TDK\_ICM42688P\_H\_
+
+7#define ZEPHYR\_INCLUDE\_DT\_BINDINGS\_TDK\_ICM42688P\_H\_
+
+8
+
+14
+
+[ 19](group__ICM42688__ACCEL__POWER__MODES.md#ga87d63526599a8e15867f8a81687143a6)#define ICM42688\_DT\_ACCEL\_OFF 0
+
+[ 20](group__ICM42688__ACCEL__POWER__MODES.md#ga7f242cb33068f441e14ab715486b1a0b)#define ICM42688\_DT\_ACCEL\_LP 2
+
+[ 21](group__ICM42688__ACCEL__POWER__MODES.md#gaf5b12997154a39239be0ffa0447534dc)#define ICM42688\_DT\_ACCEL\_LN 3
+
+23
+
+[ 28](group__ICM42688__GYRO__POWER__MODES.md#gafc2406c073cc74279fb535c7b0d67227)#define ICM42688\_DT\_GYRO\_OFF 0
+
+[ 29](group__ICM42688__GYRO__POWER__MODES.md#ga4070c032a474deeb07d1489502f8d897)#define ICM42688\_DT\_GYRO\_STANDBY 1
+
+[ 30](group__ICM42688__GYRO__POWER__MODES.md#ga3db2e450e940e1e1aee51a0a14789722)#define ICM42688\_DT\_GYRO\_LN 3
+
+32
+
+[ 37](group__ICM42688__ACCEL__SCALE.md#ga4b0cb96ec7c9111d51dc3e6daa45a454)#define ICM42688\_DT\_ACCEL\_FS\_16 0
+
+[ 38](group__ICM42688__ACCEL__SCALE.md#gae5dc186bc3e9a5b7a8ee472472e7df37)#define ICM42688\_DT\_ACCEL\_FS\_8 1
+
+[ 39](group__ICM42688__ACCEL__SCALE.md#gaa9ba13c727b1f341952d10578dcc896b)#define ICM42688\_DT\_ACCEL\_FS\_4 2
+
+[ 40](group__ICM42688__ACCEL__SCALE.md#gae9e6505469f5ea0fc91450357b6066a8)#define ICM42688\_DT\_ACCEL\_FS\_2 3
+
+42
+
+[ 47](group__ICM42688__GYRO__SCALE.md#gafd58a6f0d703709fa3405b1fbb735868)#define ICM42688\_DT\_GYRO\_FS\_2000 0
+
+[ 48](group__ICM42688__GYRO__SCALE.md#ga32dec1bd284e4b9bea6c8b0824f621e2)#define ICM42688\_DT\_GYRO\_FS\_1000 1
+
+[ 49](group__ICM42688__GYRO__SCALE.md#gaf3fdf21e86ffd73a1980000dfd076c37)#define ICM42688\_DT\_GYRO\_FS\_500 2
+
+[ 50](group__ICM42688__GYRO__SCALE.md#ga75e7daf434eb7ef267519373c1b355b2)#define ICM42688\_DT\_GYRO\_FS\_250 3
+
+[ 51](group__ICM42688__GYRO__SCALE.md#ga275d65388f2c20626704c4ec2c3ae9ec)#define ICM42688\_DT\_GYRO\_FS\_125 4
+
+[ 52](group__ICM42688__GYRO__SCALE.md#gaa5c00905894ce34343859bd79d29cd2b)#define ICM42688\_DT\_GYRO\_FS\_62\_5 5
+
+[ 53](group__ICM42688__GYRO__SCALE.md#ga8d0d31941b583de0d4168eef66f924b4)#define ICM42688\_DT\_GYRO\_FS\_31\_25 6
+
+[ 54](group__ICM42688__GYRO__SCALE.md#ga136d5df096dd774eea09da8b1e1692d7)#define ICM42688\_DT\_GYRO\_FS\_15\_625 7
+
+56
+
+[ 61](group__ICM42688__ACCEL__DATA__RATE.md#ga9f5b07a7015e71ae5abf347ead6291e3)#define ICM42688\_DT\_ACCEL\_ODR\_32000 1
+
+[ 62](group__ICM42688__ACCEL__DATA__RATE.md#ga105c05bba455b388095ce82a8d36a7c8)#define ICM42688\_DT\_ACCEL\_ODR\_16000 2
+
+[ 63](group__ICM42688__ACCEL__DATA__RATE.md#gae7066ce06b50bce41f4a4948c2e847bf)#define ICM42688\_DT\_ACCEL\_ODR\_8000 3
+
+[ 64](group__ICM42688__ACCEL__DATA__RATE.md#ga8961f60a4dc64f0a0ba6699dddfe9db5)#define ICM42688\_DT\_ACCEL\_ODR\_4000 4
+
+[ 65](group__ICM42688__ACCEL__DATA__RATE.md#ga436149a059ac4fa46a0dc7d2f2fbf14b)#define ICM42688\_DT\_ACCEL\_ODR\_2000 5
+
+[ 66](group__ICM42688__ACCEL__DATA__RATE.md#gab79a2b8bb3375baddbdac25e510390a3)#define ICM42688\_DT\_ACCEL\_ODR\_1000 6
+
+[ 67](group__ICM42688__ACCEL__DATA__RATE.md#gaf8207e0143df25ed4a1464bce57c657a)#define ICM42688\_DT\_ACCEL\_ODR\_200 7
+
+[ 68](group__ICM42688__ACCEL__DATA__RATE.md#gaf35508e00e03e0e31daa348908463064)#define ICM42688\_DT\_ACCEL\_ODR\_100 8
+
+[ 69](group__ICM42688__ACCEL__DATA__RATE.md#ga984bf8f1d3e26a8c97be3353625015c4)#define ICM42688\_DT\_ACCEL\_ODR\_50 9
+
+[ 70](group__ICM42688__ACCEL__DATA__RATE.md#gab2de64d35ebb0846b745f95ec7b8208f)#define ICM42688\_DT\_ACCEL\_ODR\_25 10
+
+[ 71](group__ICM42688__ACCEL__DATA__RATE.md#ga7175704ce1c016283cd04e1bf64302c7)#define ICM42688\_DT\_ACCEL\_ODR\_12\_5 11
+
+[ 72](group__ICM42688__ACCEL__DATA__RATE.md#ga7ed7d0e51c7cf673f99876206fa02979)#define ICM42688\_DT\_ACCEL\_ODR\_6\_25 12
+
+[ 73](group__ICM42688__ACCEL__DATA__RATE.md#ga99fbf31276619831ff2c51d74f87de0e)#define ICM42688\_DT\_ACCEL\_ODR\_3\_125 13
+
+[ 74](group__ICM42688__ACCEL__DATA__RATE.md#ga884108d1f13010cb7728309d04913c1a)#define ICM42688\_DT\_ACCEL\_ODR\_1\_5625 14
+
+[ 75](group__ICM42688__ACCEL__DATA__RATE.md#ga11cbb666797208cf07a7c05172f45328)#define ICM42688\_DT\_ACCEL\_ODR\_500 15
+
+77
+
+[ 82](group__ICM42688__GYRO__DATA__RATE.md#ga2e17dd4df432f27dad3130ce87145bf3)#define ICM42688\_DT\_GYRO\_ODR\_32000 1
+
+[ 83](group__ICM42688__GYRO__DATA__RATE.md#gad6771ff80a7458e15fe95ddcb7dd4ddb)#define ICM42688\_DT\_GYRO\_ODR\_16000 2
+
+[ 84](group__ICM42688__GYRO__DATA__RATE.md#gaa480c0e491e763c7cf432eb5a10e3b61)#define ICM42688\_DT\_GYRO\_ODR\_8000 3
+
+[ 85](group__ICM42688__GYRO__DATA__RATE.md#ga210eb2555fe74a1856a4d8cf86a98a85)#define ICM42688\_DT\_GYRO\_ODR\_4000 4
+
+[ 86](group__ICM42688__GYRO__DATA__RATE.md#ga63914f308453c2b2027c423758c0ac68)#define ICM42688\_DT\_GYRO\_ODR\_2000 5
+
+[ 87](group__ICM42688__GYRO__DATA__RATE.md#ga1b064df9c50b0bca2f3eb0bd5a1e75c9)#define ICM42688\_DT\_GYRO\_ODR\_1000 6
+
+[ 88](group__ICM42688__GYRO__DATA__RATE.md#ga8f4a769442b8d84eebb686ef36543a87)#define ICM42688\_DT\_GYRO\_ODR\_200 7
+
+[ 89](group__ICM42688__GYRO__DATA__RATE.md#ga83bf124e7235b4e69b2e4f66057aaee8)#define ICM42688\_DT\_GYRO\_ODR\_100 8
+
+[ 90](group__ICM42688__GYRO__DATA__RATE.md#gad6e0ba010e01fe8f98bbdd213ef8540c)#define ICM42688\_DT\_GYRO\_ODR\_50 9
+
+[ 91](group__ICM42688__GYRO__DATA__RATE.md#gad3588dd673827b2a760185d5925eef8d)#define ICM42688\_DT\_GYRO\_ODR\_25 10
+
+[ 92](group__ICM42688__GYRO__DATA__RATE.md#gaa689b84d321042fdc48c9ea2dc5323c3)#define ICM42688\_DT\_GYRO\_ODR\_12\_5 11
+
+[ 93](group__ICM42688__GYRO__DATA__RATE.md#ga4973fdb062b851dafdc74fc1f87998a1)#define ICM42688\_DT\_GYRO\_ODR\_500 15
+
+95
+
+97
+
+98#endif /\*ZEPHYR\_INCLUDE\_DT\_BINDINGS\_TDK\_ICM42688P\_H\_ \*/
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [sensor](dir_c9b2d7ff2bbb57ff9b1854f820609711.md)
+- [icm42688.h](icm42688_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

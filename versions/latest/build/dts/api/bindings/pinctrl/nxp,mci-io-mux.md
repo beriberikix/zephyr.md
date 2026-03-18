@@ -1,0 +1,103 @@
+---
+version: v3.7.0
+source_url: https://docs.zephyrproject.org/3.7.0/build/dts/api/bindings/pinctrl/nxp,mci-io-mux.html
+original_path: build/dts/api/bindings/pinctrl/nxp,mci-io-mux.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down list at the bottom of the left panel and select the desired version.
+
+# nxp,mci-io-mux
+
+Vendor: [NXP Semiconductors](../../bindings.md#dt-vendor-nxp)
+
+## Description
+
+```text
+MCI IO MUX pin control node. This node defines pin configurations in pin
+groups, and has the 'pinctrl' node identifier in the SOC's devicetree. Each
+group within the pin configuration defines a peripheral's pin configuration.
+Each numbered subgroup represents pins with shared configuration for that
+peripheral. The 'pinmux' property of each group selects the pins to be
+configured with these properties. For example, here is a configuration
+for FLEXCOMM0 pins:
+
+pinmux_flexcomm0_usart: pinmux_flexcomm0_usart {
+  group0 {
+    pinmux = <IO_MUX_FC0_USART_DATA_IO2>,
+            <IO_MUX_FC0_USART_DATA_IO3>;
+    slew-rate = "normal";
+  };
+};
+
+If only the required properties are supplied, the pin will be configured
+as normal drive strength and no pull. This corresponds to the following
+pin settings:
+PAD_PU_PD_ENx = (0x0 << pin_index)
+SR_CONFIGx = (0x2 << pin_index)
+
+Note
+
+Note the inherited pinctrl properties defined below have the following effects:
+bias-pull-up: PAD_PU_PD_ENx= (0x1 << pin_index)
+bias-pull-down: PAD_PU_PD_ENx= (0x10 << pin_index)
+```
+
+## Properties
+
+### Top level properties
+
+These property descriptions apply to “nxp,mci-io-mux”
+nodes themselves. This page also describes child node
+properties in the following sections.
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+(None)
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “nxp,mci-io-mux” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `power-domain` | `phandle` | ```text Power domain the device belongs to.  The device will be notified when the power domain it belongs to is either suspended or resumed. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |
+| `zephyr,disabling-power-states` | `phandles` | ```text List of power states that will disable this device power. ``` |
+| `status` | `string` | ```text indicates the operational status of a device ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text compatible strings ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg` | `array` | ```text register space ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text name of each register space ``` |
+| `interrupts` | `array` | ```text interrupts for device ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts-extended` | `compound` | ```text extended interrupt specifier for device ``` |
+| `interrupt-names` | `string-array` | ```text name of each interrupt ``` |
+| `interrupt-parent` | `phandle` | ```text phandle to interrupt controller node ``` |
+| `label` | `string` | ```text Human readable string describing the device (used as device_get_binding() argument) ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information.  This property is **deprecated**. |
+| `clocks` | `phandle-array` | ```text Clock gate information ``` |
+| `clock-names` | `string-array` | ```text name of each clock ``` |
+| `#address-cells` | `int` | ```text number of address cells in reg property ``` |
+| `#size-cells` | `int` | ```text number of size cells in reg property ``` |
+| `dmas` | `phandle-array` | ```text DMA channels specifiers ``` |
+| `dma-names` | `string-array` | ```text Provided names of DMA channel specifiers ``` |
+| `io-channels` | `phandle-array` | ```text IO channels specifiers ``` |
+| `io-channel-names` | `string-array` | ```text Provided names of IO channel specifiers ``` |
+| `mboxes` | `phandle-array` | ```text mailbox / IPM channels specifiers ``` |
+| `mbox-names` | `string-array` | ```text Provided names of mailbox / IPM channel specifiers ``` |
+| `zephyr,deferred-init` | `boolean` | ```text Do not initialize device automatically on boot. Device should be manually initialized using device_init(). ``` |
+
+### Grandchild node properties
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `bias-pull-up` | `boolean` | ```text enable pull-up resistor ``` |
+| `bias-pull-down` | `boolean` | ```text enable pull-down resistor ``` |
+| `pinmux` | `array` | ```text Pin mux selection for this group. See the SOC level pinctrl header file in NXP's HAL for a defined list of these options. ```  This property is **required**. |
+| `slew-rate` | `string` | ```text Pin output slew rate. Sets the GPIOxx_SR field in the SR_CONFIGx register. 0 - slow slew rate 1 - normal slew rate 2 - fast slew rate 3 - fastest slew rate (ultra) ```  This property is **required**.  Legal values: `'slow'`, `'normal'`, `'fast'`, `'ultra'` |

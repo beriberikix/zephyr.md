@@ -1,0 +1,172 @@
+---
+version: v3.7.0
+source_url: https://docs.zephyrproject.org/3.7.0/doxygen/html/mfd_2max31790_8h_source.html
+original_path: doxygen/html/mfd_2max31790_8h_source.html
+---
+
+| Logo | Zephyr API Documentation  3.7.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+max31790.h
+
+[Go to the documentation of this file.](mfd_2max31790_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2024 SILA Embedded Solutions GmbH
+
+3 \* SPDX-License-Identifier: Apache-2.0
+
+4 \*/
+
+5
+
+6#ifndef ZEPHYR\_INCLUDE\_DRIVERS\_MFD\_MAX31790\_H\_
+
+7#define ZEPHYR\_INCLUDE\_DRIVERS\_MFD\_MAX31790\_H\_
+
+8
+
+9#include <[zephyr/sys/util.h](util_8h.md)>
+
+10#include <[zephyr/sys/util\_macro.h](util__macro_8h.md)>
+
+11
+
+[ 12](mfd_2max31790_8h.md#ae5fed0d740da265773590505f125d70e)#define MAX31790\_OSCILLATOR\_FREQUENCY\_IN\_HZ 32768
+
+[ 13](mfd_2max31790_8h.md#ae14582ece74d327eff808620e527d7cb)#define MAX31790\_PWMTARGETDUTYCYCLE\_MAXIMUM ((1 << 9) - 1)
+
+[ 14](mfd_2max31790_8h.md#affd80afa9fb791aea7a7ae5e3d261033)#define MAX31790\_TACHTARGETCOUNT\_MAXIMUM ((1 << 11) - 1)
+
+[ 15](mfd_2max31790_8h.md#aa2296e329256b7db47df9240850d5a7f)#define MAX31790\_CHANNEL\_COUNT 6
+
+[ 16](mfd_2max31790_8h.md#a58d5cf0f543a2fbe5c150dd8474674ba)#define MAX31790\_RESET\_TIMEOUT\_IN\_US 1000
+
+17
+
+[ 18](mfd_2max31790_8h.md#af354fb2cc5a5487c7440ba432a309045)#define MAX37190\_REGISTER\_GLOBALCONFIGURATION 0x00
+
+[ 19](mfd_2max31790_8h.md#a31a38a4d45793b9078f2dd5bbd9fa6b4)#define MAX37190\_REGISTER\_PWMFREQUENCY 0x01
+
+[ 20](mfd_2max31790_8h.md#a4ce5f929c130ff08fa1d898501b8e003)#define MAX37190\_REGISTER\_FANCONFIGURATION(channel) (0x02 + channel)
+
+[ 21](mfd_2max31790_8h.md#a68fb4bc7b0c014d1b73df1df26ecc979)#define MAX31790\_REGISTER\_FANDYNAMICS(channel) (0x08 + channel)
+
+[ 22](mfd_2max31790_8h.md#adc57b84207c5019fd1bffe1c2d841ed7)#define MAX37190\_REGISTER\_FANFAULTSTATUS1 0x11
+
+[ 23](mfd_2max31790_8h.md#a68db057fbca6a556b79dabaa68e79bd4)#define MAX37190\_REGISTER\_TACHCOUNTMSB(channel) (0x18 + 2 \* channel)
+
+[ 24](mfd_2max31790_8h.md#a0de3d55bc6a52f0b2a2dee30c70c28a3)#define MAX31790\_REGISTER\_PWMOUTTARGETDUTYCYCLEMSB(channel) (0x40 + 2 \* channel)
+
+[ 25](mfd_2max31790_8h.md#af164463eeb1965c4a7f7d2f44d789231)#define MAX31790\_REGISTER\_TACHTARGETCOUNTMSB(channel) (0x50 + 2 \* channel)
+
+26
+
+[ 27](mfd_2max31790_8h.md#aa73142b4a1929bb159f67f46df1a3ff6)#define MAX37190\_GLOBALCONFIGURATION\_STANDBY\_BIT BIT(7)
+
+[ 28](mfd_2max31790_8h.md#a56c608781593127abb13e7fecde64ba8)#define MAX37190\_GLOBALCONFIGURATION\_RESET\_BIT BIT(6)
+
+[ 29](mfd_2max31790_8h.md#a11e8be09ed8e55d36aa2e58d944b9b8c)#define MAX37190\_GLOBALCONFIGURATION\_BUSTIMEOUT\_BIT BIT(5)
+
+[ 30](mfd_2max31790_8h.md#af6daa57b1530d54044883bf59d8609a0)#define MAX37190\_GLOBALCONFIGURATION\_OSCILLATORSELECTION\_BIT BIT(3)
+
+[ 31](mfd_2max31790_8h.md#a236623c229d9c55e67ed4192ff81952a)#define MAX37190\_GLOBALCONFIGURATION\_I2CWATCHDOGSTATUS\_BIT BIT(0)
+
+[ 32](mfd_2max31790_8h.md#ab05280b191880887b89c8d516a9c7076)#define MAX37190\_FANXCONFIGURATION\_MONITOR\_BIT BIT(4)
+
+[ 33](mfd_2max31790_8h.md#a965be0964c446f1a8daf7181c3b67cf1)#define MAX37190\_FANXCONFIGURATION\_TACHINPUTENABLED\_BIT BIT(3)
+
+[ 34](mfd_2max31790_8h.md#a03552c9c58c2828d522106db520df2c9)#define MAX37190\_FANXCONFIGURATION\_LOCKEDROTOR\_BIT BIT(2)
+
+[ 35](mfd_2max31790_8h.md#ac9a0ff4ed53dc93b23eb06a03c9c8286)#define MAX37190\_FANXCONFIGURATION\_LOCKEDROTORPOLARITY\_BIT BIT(1)
+
+[ 36](mfd_2max31790_8h.md#af09f61c8628b881d43671378d5da6437)#define MAX37190\_FANXCONFIGURATION\_TACH\_BIT BIT(0)
+
+[ 37](mfd_2max31790_8h.md#acbdb281979590cdf2ea9de2faa7d61b7)#define MAX37190\_FANXCONFIGURATION\_MODE\_BIT BIT(7)
+
+[ 38](mfd_2max31790_8h.md#aa30bb353147d8bfcb0f8a87d5be1e74f)#define MAX37190\_FANXDYNAMICS\_ASYMMETRICRATEOFCHANGE\_BIT BIT(1)
+
+39
+
+[ 40](mfd_2max31790_8h.md#a3483de4d41712dcefb96f4ce3c4edb0e)#define MAX37190\_GLOBALCONFIGURATION\_I2CWATCHDOG\_LENGTH 2
+
+[ 41](mfd_2max31790_8h.md#a49f9da4e5e7756385a36562d03d1cf59)#define MAX37190\_GLOBALCONFIGURATION\_I2CWATCHDOG\_POS 1
+
+[ 42](mfd_2max31790_8h.md#ad0cf619f51bca4e6fd91855b64212d5e)#define MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_LENGTH 3
+
+[ 43](mfd_2max31790_8h.md#adaa109abb10f018f613dfac5b216a478)#define MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_POS 5
+
+[ 44](mfd_2max31790_8h.md#a424bfe56954395beb60beb1d67d7ae8f)#define MAX37190\_FANXDYNAMICS\_PWMRATEOFCHANGE\_LENGTH 3
+
+[ 45](mfd_2max31790_8h.md#aa46bbaa55f777628c5807f4de3db1da5)#define MAX37190\_FANXDYNAMICS\_PWMRATEOFCHANGE\_POS 2
+
+[ 46](mfd_2max31790_8h.md#aa40c731487c98aa4f18cf5e8fe4b8771)#define MAX37190\_PWMFREQUENCY\_PWM\_LENGTH 4
+
+[ 47](mfd_2max31790_8h.md#a6df41c1d7985909810898aa3fa3b8ffe)#define MAX37190\_PWMFREQUENCY\_PWM4TO6\_POS 4
+
+[ 48](mfd_2max31790_8h.md#a0182972221f91730b5f4ef4a88dd24fb)#define MAX37190\_PWMFREQUENCY\_PWM1TO3\_LENGTH 4
+
+[ 49](mfd_2max31790_8h.md#ab1a48fb687581e4b9a67c5163ac8ac1d)#define MAX37190\_PWMFREQUENCY\_PWM1TO3\_POS 0
+
+[ 50](mfd_2max31790_8h.md#a952fff3b1e33284235bc294b42487985)#define MAX37190\_FANXCONFIGURATION\_SPINUP\_LENGTH 2
+
+[ 51](mfd_2max31790_8h.md#ad6976812ea2691993b99f7b8ac435b0b)#define MAX37190\_FANXCONFIGURATION\_SPINUP\_POS 5
+
+52
+
+[ 53](mfd_2max31790_8h.md#a7b13e7c7267b18871a26f790cedd9292)#define MAX31790\_FANXDYNAMCIS\_SPEED\_RANGE\_GET(value) \
+
+54 FIELD\_GET(GENMASK(MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_LENGTH + \
+
+55 MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_POS - 1, \
+
+56 MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_POS), \
+
+57 value)
+
+58
+
+[ 59](mfd_2max31790_8h.md#a524c1e10c36b05ef239ab0c74ac5e7bd)#define MAX31790\_FLAG\_SPEED\_RANGE\_GET(flags) \
+
+60 FIELD\_GET(GENMASK(MAX37190\_FANXDYNAMICS\_SPEEDRANGE\_LENGTH + \
+
+61 PWM\_MAX31790\_FLAG\_SPEED\_RANGE\_POS - 1, \
+
+62 PWM\_MAX31790\_FLAG\_SPEED\_RANGE\_POS), \
+
+63 flags)
+
+[ 64](mfd_2max31790_8h.md#adb1bec197b3ecc7f29cf266d9a7efe17)#define MAX31790\_FLAG\_PWM\_RATE\_OF\_CHANGE\_GET(flags) \
+
+65 FIELD\_GET(GENMASK(MAX37190\_FANXDYNAMICS\_PWMRATEOFCHANGE\_LENGTH + \
+
+66 PWM\_MAX31790\_FLAG\_PWM\_RATE\_OF\_CHANGE\_POS - 1, \
+
+67 PWM\_MAX31790\_FLAG\_PWM\_RATE\_OF\_CHANGE\_POS), \
+
+68 flags)
+
+69
+
+70#endif /\* ZEPHYR\_INCLUDE\_DRIVERS\_MFD\_MAX31790\_H\_ \*/
+
+[util.h](util_8h.md)
+
+Misc utilities.
+
+[util\_macro.h](util__macro_8h.md)
+
+Macro utilities.
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
+- [mfd](dir_1bf5b7f6eba6ffa1b2ffa53a350028d6.md)
+- [max31790.h](mfd_2max31790_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -1,0 +1,103 @@
+---
+version: v3.7.0
+source_url: https://docs.zephyrproject.org/3.7.0/boards/rak/rak11720/doc/index.html
+original_path: boards/rak/rak11720/doc/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down list at the bottom of the left panel and select the desired version.
+
+# RAK11720
+
+The RAK11720 is a WisBlock Core module for RAK WisBlock.
+It is based on the powerful ultra-low power Apollo3 Blue SoC (AMA3B1KK-KBR-B0)
+from Ambiq together with a Semtech SX1262 LoRa® transceiver.
+
+The AMA3B1KK-KBR-B0 has an integrated Bluetooth Low Energy transceiver
+that enhances the communication capabilities. The RAK11720 stamp module
+comes in the same size and footprint as our RAK3172 module which gives
+you the opportunity to enhance your existing designs
+with BLE without designing a new PCB.
+
+![RAK11720](../../../../_images/rak11720.webp)
+
+## Hardware
+
+The easiset way to use a RAK11720, is the WisBlock Modular system.
+A WisBlock Base board (RAK19007) which provides the power
+supply and programming/debug interface is the base to plug a
+RAK11722 (WisBlock Core module with the RAK11720) in.
+
+- Apollo3 Blue SoC with up to 96 MHz operating frequency
+- ARM® Cortex® M4F core
+- 16 kB 2-way Associative/Direct-Mapped Cache per core
+- Up to 1 MB of flash memory for code/data
+- Up to 384 KB of low leakage / low power RAM for code/data
+- Integrated Bluetooth 5 Low-energy controller
+- Semtech SX1262 low power high range LoRa transceiver
+- iPEX connectors for the LORA antenna and BLE antenna.
+- 2 user LEDs on RAK19007 WisBlock Base board
+- Powered by either Micro USB, 3.7V rechargeable battery or a 5V Solar Panel Port
+
+For more information about the RAK11720 stamp module:
+
+- [WisDuo RAK11720 Website](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK11720-Module/Overview/#product-description)
+- [WisBlock RAK11722 Website](https://docs.rakwireless.com/Product-Categories/WisBlock/RAK11722/Overview/#product-description)
+
+### Supported Features
+
+The RAK11720 module configuration supports the following hardware features:
+
+| Interface | Controller | Driver/Component |
+| --- | --- | --- |
+| MPU | on-chip | arch/arm |
+| NVIC | on-chip | arch/arm |
+| SYSTICK | on-chip | systick |
+| STIMER | on-chip | stimer |
+| GPIO | on-chip | gpio |
+| UART | on-chip | serial |
+| WDT | on-chip | watchdog |
+| RADIO | on-chip | bluetooth |
+| RADIO | on-board | LoRa (SX1262) |
+
+The default configuration can be found in the defconfig file:
+`boards/rak/rak11720/rak11720_defconfig`.
+
+### Programming and Debugging
+
+The RAK11720 board shall be connected to a Segger Embedded Debugger Unit
+[J-Link OB](https://www.segger.com/jlink-ob.html). This provides a debug
+interface to the Apollo3 Blue chip. You can use JLink to communicate with
+the Apollo3 Blue.
+
+#### Flashing an application
+
+Connect your device to your host computer using the JLINK USB port.
+The sample application [Hello World](../../../../samples/hello_world/README.md#hello-world) is used for this example.
+Build the Zephyr kernel and application, then flash it to the device:
+
+```shell
+# From the root of the zephyr repository
+west build -b rak11720 samples/hello_world
+west flash
+```
+
+Note
+
+west flash requires [SEGGER J-Link software](https://www.segger.com/downloads/jlink) and [pylink](https://github.com/Square/pylink) Python module
+to be installed on you host computer.
+
+Open a serial terminal (minicom, putty, etc.) with the following settings:
+
+- Speed: 115200
+- Data: 8 bits
+- Parity: None
+- Stop bits: 1
+
+Reset the board and you should be able to see on the corresponding Serial Port
+the following message:
+
+```shell
+Hello World! rak11720/apollo3_blue
+```
