@@ -1,0 +1,38 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/net/sockets/txtime/README.html
+original_path: samples/net/sockets/txtime/README.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# UDP sender using SO\_TXTIME
+
+## Overview
+
+This sample is a simple UDP sender/receiver which will set the
+SO\_TXTIME socket option and expects the Ethernet driver to send
+the data when the TX time is expected. The application requires
+that the board has PTP clock support. A simulated PTP clock is
+provided for qemu\_x86 board. Also frdm\_k64f and sam\_e70\_xplained boards
+are supported. Other mcux or gmac Ethernet driver based boards should
+work too.
+User can control how long the application should wait between packets sent by
+setting `CONFIG_NET_SAMPLE_PACKET_INTERVAL` option.
+Also the TXTIME value can be specified in the config file by setting the
+`CONFIG_NET_SAMPLE_PACKET_TXTIME` option. In this case the value is
+used as an offset from the current time.
+
+## Building and Running
+
+When the application is run, it starts to send UDP packets. You can start
+`echo-server` application from [net-tools](https://github.com/zephyrproject-rtos/net-tools) project to catch these and
+send the data back to this application. Optionally you can set
+`CONFIG_NET_SAMPLE_PACKET_SOCKET` option, which makes the application
+to create an `AF_PACKET` type socket. In this case, the `echo-server`
+application cannot be used as a peer.
+
+This sample can be built and executed on qemu\_x86 board as
+described in [Networking with the host system](../../../../connectivity/networking/networking_with_host.md#networking-with-host).

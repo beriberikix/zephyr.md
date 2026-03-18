@@ -1,0 +1,677 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/intel__socfpga__reset_8h.html
+original_path: doxygen/html/intel__socfpga__reset_8h.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+intel\_socfpga\_reset.h File Reference
+
+[Go to the source code of this file.](intel__socfpga__reset_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [RSTMGR\_SDMCOLDRST\_RSTLINE](#a585154051b7dbf46359c3b343cb88ee7)   0 |
+| #define | [RSTMGR\_SDMWARMRST\_RSTLINE](#ada7dd08adc2fe898fb18b4a0c7caa3e6)   1 |
+| #define | [RSTMGR\_SDMLASTPORRST\_RSTLINE](#acc2a4393193216677993aac2c3e39383)   2 |
+| #define | [RSTMGR\_L4WD0RST\_RSTLINE](#ad7b55a6c11754a4117571a4b0bfcce03)   16 |
+| #define | [RSTMGR\_L4WD1RST\_RSTLINE](#af88c555204bfbf0e2e4e63dbbe617b25)   17 |
+| #define | [RSTMGR\_L4WD2RST\_RSTLINE](#addee8be9550973555759a27863beda6d)   18 |
+| #define | [RSTMGR\_L4WD3RST\_RSTLINE](#a472aa6066e3e72e141a7ad16874b82ed)   19 |
+| #define | [RSTMGR\_L4WD4RST\_RSTLINE](#a0b7857fa4ead0b712de1797e3c9665ea)   20 |
+| #define | [RSTMGR\_DEBUGRST\_RSTLINE](#af11cd90de5c492cc39b6abe79e35cca3)   21 |
+| #define | [RSTMGR\_CSDAPRST\_RSTLINE](#a5c0bd4df44114d9a568944da9c2fe572)   22 |
+| #define | [RSTMGR\_EMIFTIMEOUT\_RSTLINE](#a2c4c744fcd15f30aa79f156a6b1f9e1f)   64 |
+| #define | [RSTMGR\_FPGAHSTIMEOUT\_RSTLINE](#a23e3f86776c276a5e5f005e0f1066e98)   66 |
+| #define | [RSTMGR\_ETRSTALLTIMEOUT\_RSTLINE](#a4c6cc335ac18aeae909288259d26cb7d)   67 |
+| #define | [RSTMGR\_LWSOC2FPGATIMEOUT\_RSTLINE](#ac7d848a04958359fb8a8061721dea09d)   72 |
+| #define | [RSTMGR\_SOC2FPGATIMEOUT\_RSTLINE](#ae522b9b126638e62fd5dc897e4dda03f)   73 |
+| #define | [RSTMGR\_F2SDRAMTIMEOUT\_RSTLINE](#a422d06dce0174ecc0fea6abab12d2498)   74 |
+| #define | [RSTMGR\_F2STIMEOUT\_RSTLINE](#a03a7ba7ad57b2c7473475ab6ac48b8a6)   75 |
+| #define | [RSTMGR\_L3NOCDBGTIMEOUT\_RSTLINE](#a24b92f54005d6700167970a6b6c9c38d)   79 |
+| #define | [RSTMGR\_DEBUGL3NOCTIMEOUT\_RSTLINE](#aa1be8f78e28752fa2476bbe8601d721e)   80 |
+| #define | [RSTMGR\_EMIF\_FLUSH\_RSTLINE](#acc85e22aefcbec3c832e79bca5d445db)   128 |
+| #define | [RSTMGR\_FPGAHSEN\_RSTLINE](#a6fc00e0e6d64b312f5db809e2501aa8c)   130 |
+| #define | [RSTMGR\_ETRSTALLEN\_RSTLINE](#aec42bb3bf9fb43332139e56601a1f717)   131 |
+| #define | [RSTMGR\_LWSOC2FPGA\_FLUSH\_RSTLINE](#a4f8d4aae414244c763e942863e6327b4)   137 |
+| #define | [RSTMGR\_SOC2FPGA\_FLUSH\_RSTLINE](#a974e4413029a0bd76fa3a72fb23ce424)   138 |
+| #define | [RSTMGR\_F2SDRAM\_FLUSH\_RSTLINE](#a1c9dad218dbbc504fb64d023319c0153)   139 |
+| #define | [RSTMGR\_F2SOC\_FLUSH\_RSTLINE](#a22ed34d72d389c7952a411f0a6039fae)   140 |
+| #define | [RSTMGR\_L3NOC\_DBG\_RSTLINE](#a027d4f38ff1e47e66566b1de4e8607ed)   144 |
+| #define | [RSTMGR\_DEBUG\_L3NOC\_RSTLINE](#a65ce5421ecd5257a9bbd9859a5327c41)   145 |
+| #define | [RSTMGR\_EMIF\_FLUSH\_REQ\_RSTLINE](#a096df778de6c181e296007f6bf7ae72c)   160 |
+| #define | [RSTMGR\_FPGAHSREQ\_RSTLINE](#a53fb988dc2177ca3b9de2873d8ba78f2)   162 |
+| #define | [RSTMGR\_ETRSTALLREQ\_RSTLINE](#ae6381d91677b3668876d3d9960fdeaea)   163 |
+| #define | [RSTMGR\_LWSOC2FPGA\_FLUSH\_REQ\_RSTLINE](#a06462a7bbd730d88f4f5af956d9c6145)   169 |
+| #define | [RSTMGR\_SOC2FPGA\_FLUSH\_REQ\_RSTLINE](#a25371eb9f5dc642190275bc609344993)   170 |
+| #define | [RSTMGR\_F2SDRAM\_FLUSH\_REQ\_RSTLINE](#a74a9a1a964ff55c2dda03bab20504d32)   171 |
+| #define | [RSTMGR\_F2S\_FLUSH\_REQ\_RSTLINE](#a5181d95163350f63dd84d2c8d2eea563)   172 |
+| #define | [RSTMGR\_L3NOC\_DBG\_REQ\_RSTLINE](#acfaf0bc836199746c9e9a2fbc6f10ba7)   176 |
+| #define | [RSTMGR\_DEBUG\_L3NOC\_REQ\_RSTLINE](#af5061586441dc39e84f43efea93edb9e)   177 |
+| #define | [RSTMGR\_EMIF\_FLUSH\_ACK\_RSTLINE](#a8c7db588d809ed729a14abd9d14e6d72)   192 |
+| #define | [RSTMGR\_FPGAHSACK\_RSTLINE](#a38d45c134a0a6d7f5a341bacb3587f9b)   194 |
+| #define | [RSTMGR\_ETRSTALLACK\_RSTLINE](#ab89f7f3813a6f9328e490fc73b60ca98)   195 |
+| #define | [RSTMGR\_LWSOC2FPGA\_FLUSH\_ACK\_RSTLINE](#a9dcc6361c91e5574cfb59ddac8f6fd0a)   201 |
+| #define | [RSTMGR\_SOC2FPGA\_FLUSH\_ACK\_RSTLINE](#abfb876a63a51e4af7c3e41595c49f95e)   202 |
+| #define | [RSTMGR\_F2SDRAM\_FLUSH\_ACK\_RSTLINE](#a847f55a29c0c71b8823d752b6772542d)   203 |
+| #define | [RSTMGR\_F2S\_FLUSH\_ACK\_RSTLINE](#a22d82b4660a71d349ef7f6d51b4ea84d)   204 |
+| #define | [RSTMGR\_L3NOC\_DBG\_ACK\_RSTLINE](#a7e28c0b94a3642b5a9bcc6578507baaf)   208 |
+| #define | [RSTMGR\_DEBUG\_L3NOC\_ACK\_RSTLINE](#a8b9fff3b2d2ee11f86830b7960c14fdc)   209 |
+| #define | [RSTMGR\_ETRSTALLWARMRST\_RSTLINE](#a5986c0861bbd91a277c86e35ad7c2697)   224 |
+| #define | [RSTMGR\_TSN0\_RSTLINE](#abc19e710d19fa723ed961d603c0ee481)   288 |
+| #define | [RSTMGR\_TSN1\_RSTLINE](#ac54f3d8be989467a8c2614f7cbd258d8)   289 |
+| #define | [RSTMGR\_TSN2\_RSTLINE](#a07e5632d3587678a19a236cb0555583f)   290 |
+| #define | [RSTMGR\_USB0\_RSTLINE](#ad8fdc2c3565845ec0ed24f1037d4fe54)   291 |
+| #define | [RSTMGR\_USB1\_RSTLINE](#a29719d049694afd1eb3ffba4c20f0dc2)   292 |
+| #define | [RSTMGR\_NAND\_RSTLINE](#afbe21f3e39f5f7c608dbb141f9d08939)   293 |
+| #define | [RSTMGR\_SOFTPHY\_RSTLINE](#a4cb58de3422e1c6ce0b3faacefe68588)   294 |
+| #define | [RSTMGR\_SDMMC\_RSTLINE](#ac33b56c9e2df3e00e926f0f61fa54790)   295 |
+| #define | [RSTMGR\_TSN0ECC\_RSTLINE](#a623bbf4826b0e39a7901dae99182b3c8)   296 |
+| #define | [RSTMGR\_TSN1ECC\_RSTLINE](#a7ed105f6e6e568d49c92f312409ea854)   297 |
+| #define | [RSTMGR\_TSN2ECC\_RSTLINE](#a84f5dc45defb0ab93134a96730bbb6aa)   298 |
+| #define | [RSTMGR\_USB0ECC\_RSTLINE](#acf82c79cb3f5673427cd59424e60dac0)   299 |
+| #define | [RSTMGR\_USB1ECC\_RSTLINE](#abacded7d156188a657baccef36dc8352)   300 |
+| #define | [RSTMGR\_NANDECC\_RSTLINE](#a75c819e461a1e16a8b1550d11d32bdbe)   301 |
+| #define | [RSTMGR\_SDMMCECC\_RSTLINE](#a52b788acab6b89ab6ab866a52a34123c)   303 |
+| #define | [RSTMGR\_DMA\_RSTLINE](#a9c60e629df27657e03d783ad28dc4536)   304 |
+| #define | [RSTMGR\_SPIM0\_RSTLINE](#ad90b8ac65d4a01685cef402a578005e2)   305 |
+| #define | [RSTMGR\_SPIM1\_RSTLINE](#af7dd0bbe30d752d9daa5055eef861429)   306 |
+| #define | [RSTMGR\_SPIS0\_RSTLINE](#ab15b14a102bb406da22d0e44b5101791)   307 |
+| #define | [RSTMGR\_SPIS1\_RSTLINE](#a23cdb6b512cfcddaae83ea80f40911c3)   308 |
+| #define | [RSTMGR\_DMAECC\_RSTLINE](#a4e5975d01bc4247b2a07779a7482faff)   309 |
+| #define | [RSTMGR\_EMACPTP\_RSTLINE](#a67704f9262daf85de0ceda0f5c65036b)   310 |
+| #define | [RSTMGR\_DMAIF0\_RSTLINE](#a06f828739e22a4a483148daa9310d87d)   312 |
+| #define | [RSTMGR\_DMAIF1\_RSTLINE](#a58d59e581e7cbf360e59c3955051136b)   313 |
+| #define | [RSTMGR\_DMAIF2\_RSTLINE](#a4197cf59b7f126eb8b95347ff154bed0)   314 |
+| #define | [RSTMGR\_DMAIF3\_RSTLINE](#a56d5e8d6a269c3cc5385c9f1c4a7222a)   315 |
+| #define | [RSTMGR\_DMAIF4\_RSTLINE](#a32b19baf7eb10fce4dd52d62dcfe7d2e)   316 |
+| #define | [RSTMGR\_DMAIF5\_RSTLINE](#a2fd7c7028304ed477884717e3b29f444)   317 |
+| #define | [RSTMGR\_DMAIF6\_RSTLINE](#a622d9a32d696e344579d0d9c700eb408)   318 |
+| #define | [RSTMGR\_DMAIF7\_RSTLINE](#ab5a70171fcfda89bc574a306abc9514a)   319 |
+| #define | [RSTMGR\_WATCHDOG0\_RSTLINE](#a962c8dc409b32c05461410fd1432b63d)   320 |
+| #define | [RSTMGR\_WATCHDOG1\_RSTLINE](#a27b2ce66bf0b781bc332637a5839fc7e)   321 |
+| #define | [RSTMGR\_WATCHDOG2\_RSTLINE](#a57a5b6d287582da91705ec9dca7cb748)   322 |
+| #define | [RSTMGR\_WATCHDOG3\_RSTLINE](#a16d59d153db75024d08f029705bb2113)   323 |
+| #define | [RSTMGR\_L4SYSTIMER0\_RSTLINE](#aae8be8b5bf8ba79acafac67bca76fd07)   324 |
+| #define | [RSTMGR\_L4SYSTIMER1\_RSTLINE](#ad7d6087df511622d34696bf032db2217)   325 |
+| #define | [RSTMGR\_SPTIMER0\_RSTLINE](#a532716c0bcf0535be451a35762479995)   326 |
+| #define | [RSTMGR\_SPTIMER1\_RSTLINE](#a8af37e22b5a8a9191de46925aab13ef1)   327 |
+| #define | [RSTMGR\_I2C0\_RSTLINE](#ac57c12e78099bad648343fc04886b01d)   328 |
+| #define | [RSTMGR\_I2C1\_RSTLINE](#a10bb94717d19bd42e0c6093fcbfd09ba)   329 |
+| #define | [RSTMGR\_I2C2\_RSTLINE](#a5d3606f401130658eb815ab59190b455)   330 |
+| #define | [RSTMGR\_I2C3\_RSTLINE](#a796b1b1b385333d7a4a0a3c4d4468fc5)   331 |
+| #define | [RSTMGR\_I2C4\_RSTLINE](#a72b79a6cb15ef7f14d87ec52306bd801)   332 |
+| #define | [RSTMGR\_I3C0\_RSTLINE](#a38f86cb0db46703c94f48610f47daed8)   333 |
+| #define | [RSTMGR\_I3C1\_RSTLINE](#a81880e530aec6268f1cbe5498d1e982a)   334 |
+| #define | [RSTMGR\_UART0\_RSTLINE](#a577f1885fe5bc1d6fc32c3f861494d46)   336 |
+| #define | [RSTMGR\_UART1\_RSTLINE](#ac516c17df2e2f6e28224696b52a273c4)   337 |
+| #define | [RSTMGR\_GPIO0\_RSTLINE](#af53b30d174c00f5d155a1b0d3d6ed120)   344 |
+| #define | [RSTMGR\_GPIO1\_RSTLINE](#aaa2d5d32ae7be05e2f6d536b9a8cf383)   345 |
+| #define | [RSTMGR\_WATCHDOG4\_RSTLINE](#a8fffd79b568e69beb85783c25ebb637a)   346 |
+| #define | [RSTMGR\_SOC2FPGA\_RSTLINE](#a8c4197983db16222334c196115ab2646)   352 |
+| #define | [RSTMGR\_LWSOC2FPGA\_RSTLINE](#afcd4d63727fe68dd63a521675f296d71)   353 |
+| #define | [RSTMGR\_FPGA2SOC\_RSTLINE](#a39fa1dafa254c587b03cabd52c3da0d3)   354 |
+| #define | [RSTMGR\_FPGA2SDRAM\_RSTLINE](#a38d72a8a1d40aac1902ca01d6983e8bd)   355 |
+| #define | [RSTMGR\_MPFE\_RSTLINE](#a2fc735d622800d0c1bfb3f927db8b200)   358 |
+| #define | [RSTMGR\_DBG\_RST\_RSTLINE](#ae921296149380455af880518dbd3f175)   480 |
+| #define | [RSTMGR\_SOC2FPGA\_WARM\_RSTLINE](#a0ab33f9e850b87fab5fe5774b3997d8b)   608 |
+| #define | [RSTMGR\_LWSOC2FPGA\_WARM\_RSTLINE](#a8e103cc2f9b39cb20f8daca553d0c7c3)   609 |
+| #define | [RSTMGR\_FPGA2SOC\_WARM\_RSTLINE](#a651a172ba0de8436a11e88a362cf4371)   610 |
+| #define | [RSTMGR\_FPGA2SDRAM\_WARM\_RSTLINE](#a4fac58bc49b6dc627e23c899816265fa)   611 |
+| #define | [RSTMGR\_MPFE\_WARM\_RSTLINE](#afa1b7ebd62f41bf5745871580c393f9e)   614 |
+
+## Macro Definition Documentation
+
+## [◆ ](#a5c0bd4df44114d9a568944da9c2fe572)RSTMGR\_CSDAPRST\_RSTLINE
+
+| #define RSTMGR\_CSDAPRST\_RSTLINE   22 |
+| --- |
+
+## [◆ ](#ae921296149380455af880518dbd3f175)RSTMGR\_DBG\_RST\_RSTLINE
+
+| #define RSTMGR\_DBG\_RST\_RSTLINE   480 |
+| --- |
+
+## [◆ ](#a8b9fff3b2d2ee11f86830b7960c14fdc)RSTMGR\_DEBUG\_L3NOC\_ACK\_RSTLINE
+
+| #define RSTMGR\_DEBUG\_L3NOC\_ACK\_RSTLINE   209 |
+| --- |
+
+## [◆ ](#af5061586441dc39e84f43efea93edb9e)RSTMGR\_DEBUG\_L3NOC\_REQ\_RSTLINE
+
+| #define RSTMGR\_DEBUG\_L3NOC\_REQ\_RSTLINE   177 |
+| --- |
+
+## [◆ ](#a65ce5421ecd5257a9bbd9859a5327c41)RSTMGR\_DEBUG\_L3NOC\_RSTLINE
+
+| #define RSTMGR\_DEBUG\_L3NOC\_RSTLINE   145 |
+| --- |
+
+## [◆ ](#aa1be8f78e28752fa2476bbe8601d721e)RSTMGR\_DEBUGL3NOCTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_DEBUGL3NOCTIMEOUT\_RSTLINE   80 |
+| --- |
+
+## [◆ ](#af11cd90de5c492cc39b6abe79e35cca3)RSTMGR\_DEBUGRST\_RSTLINE
+
+| #define RSTMGR\_DEBUGRST\_RSTLINE   21 |
+| --- |
+
+## [◆ ](#a9c60e629df27657e03d783ad28dc4536)RSTMGR\_DMA\_RSTLINE
+
+| #define RSTMGR\_DMA\_RSTLINE   304 |
+| --- |
+
+## [◆ ](#a4e5975d01bc4247b2a07779a7482faff)RSTMGR\_DMAECC\_RSTLINE
+
+| #define RSTMGR\_DMAECC\_RSTLINE   309 |
+| --- |
+
+## [◆ ](#a06f828739e22a4a483148daa9310d87d)RSTMGR\_DMAIF0\_RSTLINE
+
+| #define RSTMGR\_DMAIF0\_RSTLINE   312 |
+| --- |
+
+## [◆ ](#a58d59e581e7cbf360e59c3955051136b)RSTMGR\_DMAIF1\_RSTLINE
+
+| #define RSTMGR\_DMAIF1\_RSTLINE   313 |
+| --- |
+
+## [◆ ](#a4197cf59b7f126eb8b95347ff154bed0)RSTMGR\_DMAIF2\_RSTLINE
+
+| #define RSTMGR\_DMAIF2\_RSTLINE   314 |
+| --- |
+
+## [◆ ](#a56d5e8d6a269c3cc5385c9f1c4a7222a)RSTMGR\_DMAIF3\_RSTLINE
+
+| #define RSTMGR\_DMAIF3\_RSTLINE   315 |
+| --- |
+
+## [◆ ](#a32b19baf7eb10fce4dd52d62dcfe7d2e)RSTMGR\_DMAIF4\_RSTLINE
+
+| #define RSTMGR\_DMAIF4\_RSTLINE   316 |
+| --- |
+
+## [◆ ](#a2fd7c7028304ed477884717e3b29f444)RSTMGR\_DMAIF5\_RSTLINE
+
+| #define RSTMGR\_DMAIF5\_RSTLINE   317 |
+| --- |
+
+## [◆ ](#a622d9a32d696e344579d0d9c700eb408)RSTMGR\_DMAIF6\_RSTLINE
+
+| #define RSTMGR\_DMAIF6\_RSTLINE   318 |
+| --- |
+
+## [◆ ](#ab5a70171fcfda89bc574a306abc9514a)RSTMGR\_DMAIF7\_RSTLINE
+
+| #define RSTMGR\_DMAIF7\_RSTLINE   319 |
+| --- |
+
+## [◆ ](#a67704f9262daf85de0ceda0f5c65036b)RSTMGR\_EMACPTP\_RSTLINE
+
+| #define RSTMGR\_EMACPTP\_RSTLINE   310 |
+| --- |
+
+## [◆ ](#a8c7db588d809ed729a14abd9d14e6d72)RSTMGR\_EMIF\_FLUSH\_ACK\_RSTLINE
+
+| #define RSTMGR\_EMIF\_FLUSH\_ACK\_RSTLINE   192 |
+| --- |
+
+## [◆ ](#a096df778de6c181e296007f6bf7ae72c)RSTMGR\_EMIF\_FLUSH\_REQ\_RSTLINE
+
+| #define RSTMGR\_EMIF\_FLUSH\_REQ\_RSTLINE   160 |
+| --- |
+
+## [◆ ](#acc85e22aefcbec3c832e79bca5d445db)RSTMGR\_EMIF\_FLUSH\_RSTLINE
+
+| #define RSTMGR\_EMIF\_FLUSH\_RSTLINE   128 |
+| --- |
+
+## [◆ ](#a2c4c744fcd15f30aa79f156a6b1f9e1f)RSTMGR\_EMIFTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_EMIFTIMEOUT\_RSTLINE   64 |
+| --- |
+
+## [◆ ](#ab89f7f3813a6f9328e490fc73b60ca98)RSTMGR\_ETRSTALLACK\_RSTLINE
+
+| #define RSTMGR\_ETRSTALLACK\_RSTLINE   195 |
+| --- |
+
+## [◆ ](#aec42bb3bf9fb43332139e56601a1f717)RSTMGR\_ETRSTALLEN\_RSTLINE
+
+| #define RSTMGR\_ETRSTALLEN\_RSTLINE   131 |
+| --- |
+
+## [◆ ](#ae6381d91677b3668876d3d9960fdeaea)RSTMGR\_ETRSTALLREQ\_RSTLINE
+
+| #define RSTMGR\_ETRSTALLREQ\_RSTLINE   163 |
+| --- |
+
+## [◆ ](#a4c6cc335ac18aeae909288259d26cb7d)RSTMGR\_ETRSTALLTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_ETRSTALLTIMEOUT\_RSTLINE   67 |
+| --- |
+
+## [◆ ](#a5986c0861bbd91a277c86e35ad7c2697)RSTMGR\_ETRSTALLWARMRST\_RSTLINE
+
+| #define RSTMGR\_ETRSTALLWARMRST\_RSTLINE   224 |
+| --- |
+
+## [◆ ](#a22d82b4660a71d349ef7f6d51b4ea84d)RSTMGR\_F2S\_FLUSH\_ACK\_RSTLINE
+
+| #define RSTMGR\_F2S\_FLUSH\_ACK\_RSTLINE   204 |
+| --- |
+
+## [◆ ](#a5181d95163350f63dd84d2c8d2eea563)RSTMGR\_F2S\_FLUSH\_REQ\_RSTLINE
+
+| #define RSTMGR\_F2S\_FLUSH\_REQ\_RSTLINE   172 |
+| --- |
+
+## [◆ ](#a847f55a29c0c71b8823d752b6772542d)RSTMGR\_F2SDRAM\_FLUSH\_ACK\_RSTLINE
+
+| #define RSTMGR\_F2SDRAM\_FLUSH\_ACK\_RSTLINE   203 |
+| --- |
+
+## [◆ ](#a74a9a1a964ff55c2dda03bab20504d32)RSTMGR\_F2SDRAM\_FLUSH\_REQ\_RSTLINE
+
+| #define RSTMGR\_F2SDRAM\_FLUSH\_REQ\_RSTLINE   171 |
+| --- |
+
+## [◆ ](#a1c9dad218dbbc504fb64d023319c0153)RSTMGR\_F2SDRAM\_FLUSH\_RSTLINE
+
+| #define RSTMGR\_F2SDRAM\_FLUSH\_RSTLINE   139 |
+| --- |
+
+## [◆ ](#a422d06dce0174ecc0fea6abab12d2498)RSTMGR\_F2SDRAMTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_F2SDRAMTIMEOUT\_RSTLINE   74 |
+| --- |
+
+## [◆ ](#a22ed34d72d389c7952a411f0a6039fae)RSTMGR\_F2SOC\_FLUSH\_RSTLINE
+
+| #define RSTMGR\_F2SOC\_FLUSH\_RSTLINE   140 |
+| --- |
+
+## [◆ ](#a03a7ba7ad57b2c7473475ab6ac48b8a6)RSTMGR\_F2STIMEOUT\_RSTLINE
+
+| #define RSTMGR\_F2STIMEOUT\_RSTLINE   75 |
+| --- |
+
+## [◆ ](#a38d72a8a1d40aac1902ca01d6983e8bd)RSTMGR\_FPGA2SDRAM\_RSTLINE
+
+| #define RSTMGR\_FPGA2SDRAM\_RSTLINE   355 |
+| --- |
+
+## [◆ ](#a4fac58bc49b6dc627e23c899816265fa)RSTMGR\_FPGA2SDRAM\_WARM\_RSTLINE
+
+| #define RSTMGR\_FPGA2SDRAM\_WARM\_RSTLINE   611 |
+| --- |
+
+## [◆ ](#a39fa1dafa254c587b03cabd52c3da0d3)RSTMGR\_FPGA2SOC\_RSTLINE
+
+| #define RSTMGR\_FPGA2SOC\_RSTLINE   354 |
+| --- |
+
+## [◆ ](#a651a172ba0de8436a11e88a362cf4371)RSTMGR\_FPGA2SOC\_WARM\_RSTLINE
+
+| #define RSTMGR\_FPGA2SOC\_WARM\_RSTLINE   610 |
+| --- |
+
+## [◆ ](#a38d45c134a0a6d7f5a341bacb3587f9b)RSTMGR\_FPGAHSACK\_RSTLINE
+
+| #define RSTMGR\_FPGAHSACK\_RSTLINE   194 |
+| --- |
+
+## [◆ ](#a6fc00e0e6d64b312f5db809e2501aa8c)RSTMGR\_FPGAHSEN\_RSTLINE
+
+| #define RSTMGR\_FPGAHSEN\_RSTLINE   130 |
+| --- |
+
+## [◆ ](#a53fb988dc2177ca3b9de2873d8ba78f2)RSTMGR\_FPGAHSREQ\_RSTLINE
+
+| #define RSTMGR\_FPGAHSREQ\_RSTLINE   162 |
+| --- |
+
+## [◆ ](#a23e3f86776c276a5e5f005e0f1066e98)RSTMGR\_FPGAHSTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_FPGAHSTIMEOUT\_RSTLINE   66 |
+| --- |
+
+## [◆ ](#af53b30d174c00f5d155a1b0d3d6ed120)RSTMGR\_GPIO0\_RSTLINE
+
+| #define RSTMGR\_GPIO0\_RSTLINE   344 |
+| --- |
+
+## [◆ ](#aaa2d5d32ae7be05e2f6d536b9a8cf383)RSTMGR\_GPIO1\_RSTLINE
+
+| #define RSTMGR\_GPIO1\_RSTLINE   345 |
+| --- |
+
+## [◆ ](#ac57c12e78099bad648343fc04886b01d)RSTMGR\_I2C0\_RSTLINE
+
+| #define RSTMGR\_I2C0\_RSTLINE   328 |
+| --- |
+
+## [◆ ](#a10bb94717d19bd42e0c6093fcbfd09ba)RSTMGR\_I2C1\_RSTLINE
+
+| #define RSTMGR\_I2C1\_RSTLINE   329 |
+| --- |
+
+## [◆ ](#a5d3606f401130658eb815ab59190b455)RSTMGR\_I2C2\_RSTLINE
+
+| #define RSTMGR\_I2C2\_RSTLINE   330 |
+| --- |
+
+## [◆ ](#a796b1b1b385333d7a4a0a3c4d4468fc5)RSTMGR\_I2C3\_RSTLINE
+
+| #define RSTMGR\_I2C3\_RSTLINE   331 |
+| --- |
+
+## [◆ ](#a72b79a6cb15ef7f14d87ec52306bd801)RSTMGR\_I2C4\_RSTLINE
+
+| #define RSTMGR\_I2C4\_RSTLINE   332 |
+| --- |
+
+## [◆ ](#a38f86cb0db46703c94f48610f47daed8)RSTMGR\_I3C0\_RSTLINE
+
+| #define RSTMGR\_I3C0\_RSTLINE   333 |
+| --- |
+
+## [◆ ](#a81880e530aec6268f1cbe5498d1e982a)RSTMGR\_I3C1\_RSTLINE
+
+| #define RSTMGR\_I3C1\_RSTLINE   334 |
+| --- |
+
+## [◆ ](#a7e28c0b94a3642b5a9bcc6578507baaf)RSTMGR\_L3NOC\_DBG\_ACK\_RSTLINE
+
+| #define RSTMGR\_L3NOC\_DBG\_ACK\_RSTLINE   208 |
+| --- |
+
+## [◆ ](#acfaf0bc836199746c9e9a2fbc6f10ba7)RSTMGR\_L3NOC\_DBG\_REQ\_RSTLINE
+
+| #define RSTMGR\_L3NOC\_DBG\_REQ\_RSTLINE   176 |
+| --- |
+
+## [◆ ](#a027d4f38ff1e47e66566b1de4e8607ed)RSTMGR\_L3NOC\_DBG\_RSTLINE
+
+| #define RSTMGR\_L3NOC\_DBG\_RSTLINE   144 |
+| --- |
+
+## [◆ ](#a24b92f54005d6700167970a6b6c9c38d)RSTMGR\_L3NOCDBGTIMEOUT\_RSTLINE
+
+| #define RSTMGR\_L3NOCDBGTIMEOUT\_RSTLINE   79 |
+| --- |
+
+## [◆ ](#aae8be8b5bf8ba79acafac67bca76fd07)RSTMGR\_L4SYSTIMER0\_RSTLINE
+
+| #define RSTMGR\_L4SYSTIMER0\_RSTLINE   324 |
+| --- |
+
+## [◆ ](#ad7d6087df511622d34696bf032db2217)RSTMGR\_L4SYSTIMER1\_RSTLINE
+
+| #define RSTMGR\_L4SYSTIMER1\_RSTLINE   325 |
+| --- |
+
+## [◆ ](#ad7b55a6c11754a4117571a4b0bfcce03)RSTMGR\_L4WD0RST\_RSTLINE
+
+| #define RSTMGR\_L4WD0RST\_RSTLINE   16 |
+| --- |
+
+## [◆ ](#af88c555204bfbf0e2e4e63dbbe617b25)RSTMGR\_L4WD1RST\_RSTLINE
+
+| #define RSTMGR\_L4WD1RST\_RSTLINE   17 |
+| --- |
+
+## [◆ ](#addee8be9550973555759a27863beda6d)RSTMGR\_L4WD2RST\_RSTLINE
+
+| #define RSTMGR\_L4WD2RST\_RSTLINE   18 |
+| --- |
+
+## [◆ ](#a472aa6066e3e72e141a7ad16874b82ed)RSTMGR\_L4WD3RST\_RSTLINE
+
+| #define RSTMGR\_L4WD3RST\_RSTLINE   19 |
+| --- |
+
+## [◆ ](#a0b7857fa4ead0b712de1797e3c9665ea)RSTMGR\_L4WD4RST\_RSTLINE
+
+| #define RSTMGR\_L4WD4RST\_RSTLINE   20 |
+| --- |
+
+## [◆ ](#a9dcc6361c91e5574cfb59ddac8f6fd0a)RSTMGR\_LWSOC2FPGA\_FLUSH\_ACK\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGA\_FLUSH\_ACK\_RSTLINE   201 |
+| --- |
+
+## [◆ ](#a06462a7bbd730d88f4f5af956d9c6145)RSTMGR\_LWSOC2FPGA\_FLUSH\_REQ\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGA\_FLUSH\_REQ\_RSTLINE   169 |
+| --- |
+
+## [◆ ](#a4f8d4aae414244c763e942863e6327b4)RSTMGR\_LWSOC2FPGA\_FLUSH\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGA\_FLUSH\_RSTLINE   137 |
+| --- |
+
+## [◆ ](#afcd4d63727fe68dd63a521675f296d71)RSTMGR\_LWSOC2FPGA\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGA\_RSTLINE   353 |
+| --- |
+
+## [◆ ](#a8e103cc2f9b39cb20f8daca553d0c7c3)RSTMGR\_LWSOC2FPGA\_WARM\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGA\_WARM\_RSTLINE   609 |
+| --- |
+
+## [◆ ](#ac7d848a04958359fb8a8061721dea09d)RSTMGR\_LWSOC2FPGATIMEOUT\_RSTLINE
+
+| #define RSTMGR\_LWSOC2FPGATIMEOUT\_RSTLINE   72 |
+| --- |
+
+## [◆ ](#a2fc735d622800d0c1bfb3f927db8b200)RSTMGR\_MPFE\_RSTLINE
+
+| #define RSTMGR\_MPFE\_RSTLINE   358 |
+| --- |
+
+## [◆ ](#afa1b7ebd62f41bf5745871580c393f9e)RSTMGR\_MPFE\_WARM\_RSTLINE
+
+| #define RSTMGR\_MPFE\_WARM\_RSTLINE   614 |
+| --- |
+
+## [◆ ](#afbe21f3e39f5f7c608dbb141f9d08939)RSTMGR\_NAND\_RSTLINE
+
+| #define RSTMGR\_NAND\_RSTLINE   293 |
+| --- |
+
+## [◆ ](#a75c819e461a1e16a8b1550d11d32bdbe)RSTMGR\_NANDECC\_RSTLINE
+
+| #define RSTMGR\_NANDECC\_RSTLINE   301 |
+| --- |
+
+## [◆ ](#a585154051b7dbf46359c3b343cb88ee7)RSTMGR\_SDMCOLDRST\_RSTLINE
+
+| #define RSTMGR\_SDMCOLDRST\_RSTLINE   0 |
+| --- |
+
+## [◆ ](#acc2a4393193216677993aac2c3e39383)RSTMGR\_SDMLASTPORRST\_RSTLINE
+
+| #define RSTMGR\_SDMLASTPORRST\_RSTLINE   2 |
+| --- |
+
+## [◆ ](#ac33b56c9e2df3e00e926f0f61fa54790)RSTMGR\_SDMMC\_RSTLINE
+
+| #define RSTMGR\_SDMMC\_RSTLINE   295 |
+| --- |
+
+## [◆ ](#a52b788acab6b89ab6ab866a52a34123c)RSTMGR\_SDMMCECC\_RSTLINE
+
+| #define RSTMGR\_SDMMCECC\_RSTLINE   303 |
+| --- |
+
+## [◆ ](#ada7dd08adc2fe898fb18b4a0c7caa3e6)RSTMGR\_SDMWARMRST\_RSTLINE
+
+| #define RSTMGR\_SDMWARMRST\_RSTLINE   1 |
+| --- |
+
+## [◆ ](#abfb876a63a51e4af7c3e41595c49f95e)RSTMGR\_SOC2FPGA\_FLUSH\_ACK\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGA\_FLUSH\_ACK\_RSTLINE   202 |
+| --- |
+
+## [◆ ](#a25371eb9f5dc642190275bc609344993)RSTMGR\_SOC2FPGA\_FLUSH\_REQ\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGA\_FLUSH\_REQ\_RSTLINE   170 |
+| --- |
+
+## [◆ ](#a974e4413029a0bd76fa3a72fb23ce424)RSTMGR\_SOC2FPGA\_FLUSH\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGA\_FLUSH\_RSTLINE   138 |
+| --- |
+
+## [◆ ](#a8c4197983db16222334c196115ab2646)RSTMGR\_SOC2FPGA\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGA\_RSTLINE   352 |
+| --- |
+
+## [◆ ](#a0ab33f9e850b87fab5fe5774b3997d8b)RSTMGR\_SOC2FPGA\_WARM\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGA\_WARM\_RSTLINE   608 |
+| --- |
+
+## [◆ ](#ae522b9b126638e62fd5dc897e4dda03f)RSTMGR\_SOC2FPGATIMEOUT\_RSTLINE
+
+| #define RSTMGR\_SOC2FPGATIMEOUT\_RSTLINE   73 |
+| --- |
+
+## [◆ ](#a4cb58de3422e1c6ce0b3faacefe68588)RSTMGR\_SOFTPHY\_RSTLINE
+
+| #define RSTMGR\_SOFTPHY\_RSTLINE   294 |
+| --- |
+
+## [◆ ](#ad90b8ac65d4a01685cef402a578005e2)RSTMGR\_SPIM0\_RSTLINE
+
+| #define RSTMGR\_SPIM0\_RSTLINE   305 |
+| --- |
+
+## [◆ ](#af7dd0bbe30d752d9daa5055eef861429)RSTMGR\_SPIM1\_RSTLINE
+
+| #define RSTMGR\_SPIM1\_RSTLINE   306 |
+| --- |
+
+## [◆ ](#ab15b14a102bb406da22d0e44b5101791)RSTMGR\_SPIS0\_RSTLINE
+
+| #define RSTMGR\_SPIS0\_RSTLINE   307 |
+| --- |
+
+## [◆ ](#a23cdb6b512cfcddaae83ea80f40911c3)RSTMGR\_SPIS1\_RSTLINE
+
+| #define RSTMGR\_SPIS1\_RSTLINE   308 |
+| --- |
+
+## [◆ ](#a532716c0bcf0535be451a35762479995)RSTMGR\_SPTIMER0\_RSTLINE
+
+| #define RSTMGR\_SPTIMER0\_RSTLINE   326 |
+| --- |
+
+## [◆ ](#a8af37e22b5a8a9191de46925aab13ef1)RSTMGR\_SPTIMER1\_RSTLINE
+
+| #define RSTMGR\_SPTIMER1\_RSTLINE   327 |
+| --- |
+
+## [◆ ](#abc19e710d19fa723ed961d603c0ee481)RSTMGR\_TSN0\_RSTLINE
+
+| #define RSTMGR\_TSN0\_RSTLINE   288 |
+| --- |
+
+## [◆ ](#a623bbf4826b0e39a7901dae99182b3c8)RSTMGR\_TSN0ECC\_RSTLINE
+
+| #define RSTMGR\_TSN0ECC\_RSTLINE   296 |
+| --- |
+
+## [◆ ](#ac54f3d8be989467a8c2614f7cbd258d8)RSTMGR\_TSN1\_RSTLINE
+
+| #define RSTMGR\_TSN1\_RSTLINE   289 |
+| --- |
+
+## [◆ ](#a7ed105f6e6e568d49c92f312409ea854)RSTMGR\_TSN1ECC\_RSTLINE
+
+| #define RSTMGR\_TSN1ECC\_RSTLINE   297 |
+| --- |
+
+## [◆ ](#a07e5632d3587678a19a236cb0555583f)RSTMGR\_TSN2\_RSTLINE
+
+| #define RSTMGR\_TSN2\_RSTLINE   290 |
+| --- |
+
+## [◆ ](#a84f5dc45defb0ab93134a96730bbb6aa)RSTMGR\_TSN2ECC\_RSTLINE
+
+| #define RSTMGR\_TSN2ECC\_RSTLINE   298 |
+| --- |
+
+## [◆ ](#a577f1885fe5bc1d6fc32c3f861494d46)RSTMGR\_UART0\_RSTLINE
+
+| #define RSTMGR\_UART0\_RSTLINE   336 |
+| --- |
+
+## [◆ ](#ac516c17df2e2f6e28224696b52a273c4)RSTMGR\_UART1\_RSTLINE
+
+| #define RSTMGR\_UART1\_RSTLINE   337 |
+| --- |
+
+## [◆ ](#ad8fdc2c3565845ec0ed24f1037d4fe54)RSTMGR\_USB0\_RSTLINE
+
+| #define RSTMGR\_USB0\_RSTLINE   291 |
+| --- |
+
+## [◆ ](#acf82c79cb3f5673427cd59424e60dac0)RSTMGR\_USB0ECC\_RSTLINE
+
+| #define RSTMGR\_USB0ECC\_RSTLINE   299 |
+| --- |
+
+## [◆ ](#a29719d049694afd1eb3ffba4c20f0dc2)RSTMGR\_USB1\_RSTLINE
+
+| #define RSTMGR\_USB1\_RSTLINE   292 |
+| --- |
+
+## [◆ ](#abacded7d156188a657baccef36dc8352)RSTMGR\_USB1ECC\_RSTLINE
+
+| #define RSTMGR\_USB1ECC\_RSTLINE   300 |
+| --- |
+
+## [◆ ](#a962c8dc409b32c05461410fd1432b63d)RSTMGR\_WATCHDOG0\_RSTLINE
+
+| #define RSTMGR\_WATCHDOG0\_RSTLINE   320 |
+| --- |
+
+## [◆ ](#a27b2ce66bf0b781bc332637a5839fc7e)RSTMGR\_WATCHDOG1\_RSTLINE
+
+| #define RSTMGR\_WATCHDOG1\_RSTLINE   321 |
+| --- |
+
+## [◆ ](#a57a5b6d287582da91705ec9dca7cb748)RSTMGR\_WATCHDOG2\_RSTLINE
+
+| #define RSTMGR\_WATCHDOG2\_RSTLINE   322 |
+| --- |
+
+## [◆ ](#a16d59d153db75024d08f029705bb2113)RSTMGR\_WATCHDOG3\_RSTLINE
+
+| #define RSTMGR\_WATCHDOG3\_RSTLINE   323 |
+| --- |
+
+## [◆ ](#a8fffd79b568e69beb85783c25ebb637a)RSTMGR\_WATCHDOG4\_RSTLINE
+
+| #define RSTMGR\_WATCHDOG4\_RSTLINE   346 |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
+- [intel\_socfpga\_reset.h](intel__socfpga__reset_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

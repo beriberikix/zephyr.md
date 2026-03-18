@@ -1,0 +1,38 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structbt__hci__cp__user__confirm__reply.html
+original_path: doxygen/html/structbt__hci__cp__user__confirm__reply.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+bt\_hci\_cp\_user\_confirm\_reply Struct Reference
+
+`#include <[hci_types.h](hci__types_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [bt\_addr\_t](structbt__addr__t.md) | [bdaddr](#abe0e8da3e590c565364ed30ba107a0e6) |
+
+## Field Documentation
+
+## [◆ ](#abe0e8da3e590c565364ed30ba107a0e6)bdaddr
+
+| [bt\_addr\_t](structbt__addr__t.md) bt\_hci\_cp\_user\_confirm\_reply::bdaddr |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/bluetooth/[hci\_types.h](hci__types_8h_source.md)
+
+- [bt\_hci\_cp\_user\_confirm\_reply](structbt__hci__cp__user__confirm__reply.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

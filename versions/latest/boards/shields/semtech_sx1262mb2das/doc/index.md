@@ -1,0 +1,56 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/shields/semtech_sx1262mb2das/doc/index.html
+original_path: boards/shields/semtech_sx1262mb2das/doc/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Semtech SX1262MB2DAS LoRa Shield
+
+## Overview
+
+The Semtech SX1262MB2DAS LoRa shield is an Arduino
+compatible shield based on the SX1262 LoRa transceiver
+from Semtech.
+
+More information about the shield can be found
+at the [mbed SX1262MB2xAS website](https://os.mbed.com/components/SX126xMB2xAS/) [[1]](#id1).
+
+### Pins Assignment of the Semtech SX1262MB2DAS LoRa Shield
+
+| Shield Connector Pin | Function |
+| --- | --- |
+| A0 | SX1262 RESET |
+| D3 | SX1262 BUSY |
+| D5 | SX1262 DIO1 |
+| D7 | SX1262 SPI NSS |
+| D8 | SX1262 ANT SW |
+| D11 | SX1262 SPI MOSI |
+| D12 | SX1262 SPI MISO |
+| D13 | SX1262 SPI SCK |
+
+The SX1262 signals DIO2 and DIO3 are not available at the shield connector.
+
+## Requirements
+
+This shield can only be used with a board which provides a configuration
+for Arduino connectors (see [Shields](../../../../hardware/porting/shields.md#shields) for more details).
+
+## Programming
+
+Set `-DSHIELD=semtech_sx1262mb2das` when you invoke `west build`. For
+example:
+
+```shell
+# From the root of the zephyr repository
+west build -b nucleo_f429zi samples/subsys/lorawan/class_a -- -DSHIELD=semtech_sx1262mb2das
+```
+
+## References
+
+[[1](#id2)]
+
+[https://os.mbed.com/components/SX126xMB2xAS/](https://os.mbed.com/components/SX126xMB2xAS/)

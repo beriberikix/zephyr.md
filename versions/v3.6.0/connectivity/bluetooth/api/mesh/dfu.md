@@ -1,0 +1,682 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/connectivity/bluetooth/api/mesh/dfu.html
+original_path: connectivity/bluetooth/api/mesh/dfu.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Device Firmware Update (DFU)
+
+Bluetooth Mesh supports the distribution of firmware images across a mesh network. The Bluetooth
+mesh DFU subsystem implements the Bluetooth Mesh Device Firmware Update Model specification version
+1.0. The implementation is in experimental state.
+
+Bluetooth Mesh DFU implements a distribution mechanism for firmware images, and does not put any
+restrictions on the size, format or usage of the images. The primary design goal of the subsystem is
+to provide the qualifiable parts of the Bluetooth Mesh DFU specification, and leave the usage,
+firmware validation and deployment to the application.
+
+The DFU specification is implemented in the Zephyr Bluetooth Mesh DFU subsystem as three separate
+models:
+
+## Overview
+
+### DFU roles
+
+The Bluetooth Mesh DFU subsystem defines three different roles the mesh nodes have to assume in the
+distribution of firmware images:
+
+Target node
+:   Target node is the receiver and user of the transferred firmware images. All its functionality is
+    implemented by the [Firmware Update Server](dfu_srv.md#bluetooth-mesh-dfu-srv) model. A transfer may be targeting any number of
+    Target nodes, and they will all be updated concurrently.
+
+Distributor
+:   The Distributor role serves two purposes in the DFU process. First, it’s acting as the Target
+    node in the Upload Firmware procedure, then it distributes the uploaded image to other Target
+    nodes as the Distributor. The Distributor does not select the parameters of the transfer, but
+    relies on an Initiator to give it a list of Target nodes and transfer parameters. The Distributor
+    functionality is implemented in two models, [Firmware Distribution Server](dfd_srv.md#bluetooth-mesh-dfd-srv) and
+    [Firmware Update Client](dfu_cli.md#bluetooth-mesh-dfu-cli). The [Firmware Distribution Server](dfd_srv.md#bluetooth-mesh-dfd-srv) is responsible for communicating
+    with the Initiator, and the [Firmware Update Client](dfu_cli.md#bluetooth-mesh-dfu-cli) is responsible for distributing the
+    image to the Target nodes.
+
+Initiator
+:   The Initiator role is typically implemented by the same device that implements the Bluetooth Mesh
+    [Provisioner](provisioning.md#bluetooth-mesh-provisioning) and [Configurator](cfg_cli.md#bluetooth-mesh-models-cfg-cli) roles. The Initiator needs a full overview of the potential
+    Target nodes and their firmware, and will control (and initiate) all firmware updates. The
+    Initiator role is not implemented in the Zephyr Bluetooth Mesh DFU subsystem.
+
+![Graphic overview of the DFU roles mesh nodes can have during the process of image distribution](../../../../_images/dfu_roles_mesh.svg)
+
+DFU roles and the associated Bluetooth Mesh models
+
+Bluetooth Mesh applications may combine the DFU roles in any way they’d like, and even take on
+multiple instances of the same role by instantiating the models on separate elements. For instance,
+the Distributor and Initiator role can be combined by instantiating the
+[Firmware Update Client](dfu_cli.md#bluetooth-mesh-dfu-cli) on the Initiator node and calling its API directly.
+
+It’s also possible to combine the Initiator and Distributor devices into a single device, and
+replace the Firmware Distribution Server model with a proprietary mechanism that will access the
+Firmware Update Client model directly, e.g. over a serial protocol.
+
+Note
+
+All DFU models instantiate one or more [BLOB Transfer models](blob.md#bluetooth-mesh-blob), and may need to be spread over
+multiple elements for certain role combinations.
+
+### Stages
+
+The Bluetooth Mesh DFU process is designed to act in three stages:
+
+Upload stage
+:   First, the image is uploaded to a Distributor in a mesh network by an external entity, such as a
+    phone or gateway (the Initiator). During the Upload stage, the Initiator transfers the firmware
+    image and all its metadata to the Distributor node inside the mesh network. The Distributor
+    stores the firmware image and its metadata persistently, and awaits further instructions from the
+    Initiator. The time required to complete the upload process depends on the size of the image.
+    After the upload completes, the Initiator can disconnect from the network during the much more
+    time-consuming Distribution stage. Once the firmware has been uploaded to the Distributor, the
+    Initiator may trigger the Distribution stage at any time.
+
+Firmware Capability Check stage (optional)
+:   Before starting the Distribution stage, the Initiator may optionally check if Target nodes can
+    accept the new firmware. Nodes that do not respond, or respond that they can’t receive the new
+    firmware, are excluded from the firmware distribution process.
+
+Distribution stage
+:   Before the firmware image can be distributed, the Initiator transfers the list of Target nodes
+    and their designated firmware image index to the Distributor. Next, it tells the Distributor to
+    start the firmware distributon process, which runs in the background while the Initiator and the
+    mesh network perform other duties. Once the firmware image has been transferred to the Target
+    nodes, the Distributor may ask them to apply the firmware image immediately and report back with
+    their status and new firmware IDs.
+
+### Firmware images
+
+All updatable parts of a mesh node’s firmware should be represented as a firmware image. Each Target
+node holds a list of firmware images, each of which should be independently updatable and
+identifiable.
+
+Firmware images are represented as a BLOB (the firmware itself) with the following additional
+information attached to it:
+
+Firmware ID
+:   The firmware ID is used to identify a firmware image. The Initiator node may ask the Target nodes
+    for a list of its current firmware IDs to determine whether a newer version of the firmware is
+    available. The format of the firmware ID is vendor specific, but generally, it should include
+    enough information for an Initiator node with knowledge of the format to determine the type of
+    image as well as its version. The firmware ID is optional, and its max length is determined by
+    [`CONFIG_BT_MESH_DFU_FWID_MAXLEN`](../../../../kconfig.md#CONFIG_BT_MESH_DFU_FWID_MAXLEN "CONFIG_BT_MESH_DFU_FWID_MAXLEN").
+
+Firmware metadata
+:   The firmware metadata is used by the Target node to determine whether it should accept an
+    incoming firmware update, and what the effect of the update would be. The metadata format is
+    vendor specific, and should contain all information the Target node needs to verify the image, as
+    well as any preparation the Target node has to make before the image is applied. Typical metadata
+    information can be image signatures, changes to the node’s Composition Data and the format of the
+    BLOB. The Target node may perform a metadata check before accepting incoming transfers to
+    determine whether the transfer should be started. The firmware metadata can be discarded by the
+    Target node after the metadata check, as other nodes will never request the metadata from the
+    Target node. The firmware metadata is optional, and its maximum length is determined by
+    [`CONFIG_BT_MESH_DFU_METADATA_MAXLEN`](../../../../kconfig.md#CONFIG_BT_MESH_DFU_METADATA_MAXLEN "CONFIG_BT_MESH_DFU_METADATA_MAXLEN").
+
+    The Bluetooth Mesh DFU subsystem in Zephyr provides its own metadata format
+    ([`bt_mesh_dfu_metadata`](#c.bt_mesh_dfu_metadata)) together with a set of related functions that can be used by
+    an end product. The support for it is enabled using the
+    [`CONFIG_BT_MESH_DFU_METADATA`](../../../../kconfig.md#CONFIG_BT_MESH_DFU_METADATA "CONFIG_BT_MESH_DFU_METADATA") option. The format of the metadata is presented in
+    the table below.
+
+| Field | Size (Bytes) | Description |
+| --- | --- | --- |
+| New firmware version | 8 B | 1 B: Major version 1 B: Minor version 2 B: Revision 4 B: Build number |
+| New firmware size | 3 B | Size in bytes for a new firmware |
+| New firmware core type | 1 B | Bit field: Bit 0: Application core Bit 1: Network core Bit 2: Applications specific BLOB. Other bits: RFU |
+| Hash of incoming composition data | 4 B (Optional) | Lower 4 octets of AES-CMAC (app-specific-key, composition data). This field is present, if Bit 0 is set in the New firmware core type field. |
+| New number of elements | 2 B (Optional) | Number of elements on the node after firmware is applied. This field is present, if Bit 0 is set in the New firmware core type field. |
+| Application-specific data for new firmware | <variable> (Optional) | Application-specific data to allow application to execute some vendor-specific behaviors using this data before it can respond with a status message. |
+
+Firmware URI
+:   The firmware URI gives the Initiator information about where firmware updates for the image can
+    be found. The URI points to an online resource the Initiator can interact with to get new
+    versions of the firmware. This allows Initiators to perform updates for any node in the mesh
+    network by interacting with the web server pointed to in the URI. The URI must point to a
+    resource using the `http` or `https` schemes, and the targeted web server must behave
+    according to the Firmware Check Over HTTPS procedure defined by the specification. The firmware
+    URI is optional, and its max length is determined by
+    [`CONFIG_BT_MESH_DFU_URI_MAXLEN`](../../../../kconfig.md#CONFIG_BT_MESH_DFU_URI_MAXLEN "CONFIG_BT_MESH_DFU_URI_MAXLEN").
+
+    Note
+
+    The out-of-band distribution mechanism is not supported.
+
+#### Firmware effect
+
+A new image may have the Composition Data Page 0 different from the one allocated on a Target node.
+This may have an effect on the provisioning data of the node and how the Distributor finalizes the
+DFU. Depending on the availability of the Remote Provisioning Server model on the old and new image,
+the device may either boot up unprovisioned after applying the new firmware or require to be
+re-provisioned. The complete list of available options is defined in [`bt_mesh_dfu_effect`](#c.bt_mesh_dfu_effect):
+
+[`BT_MESH_DFU_EFFECT_NONE`](#c.bt_mesh_dfu_effect.BT_MESH_DFU_EFFECT_NONE)
+:   The device stays provisioned after the new firmware is programmed. This effect is chosen if the
+    composition data of the new firmware doesn’t change.
+
+[`BT_MESH_DFU_EFFECT_COMP_CHANGE_NO_RPR`](#c.bt_mesh_dfu_effect.BT_MESH_DFU_EFFECT_COMP_CHANGE_NO_RPR)
+:   This effect is chosen when the composition data changes and the device doesn’t support the remote
+    provisioning. The new composition data takes place only after re-provisioning.
+
+[`BT_MESH_DFU_EFFECT_COMP_CHANGE`](#c.bt_mesh_dfu_effect.BT_MESH_DFU_EFFECT_COMP_CHANGE)
+:   This effect is chosen when the composition data changes and the device supports the remote
+    provisioning. In this case, the device stays provisioned and the new composition data takes place
+    after re-provisioning using the Remote Provisioning models.
+
+[`BT_MESH_DFU_EFFECT_UNPROV`](#c.bt_mesh_dfu_effect.BT_MESH_DFU_EFFECT_UNPROV)
+:   This effect is chosen if the composition data in the new firmware changes, the device doesn’t
+    support the remote provisioning, and the new composition data takes effect after applying the
+    firmware.
+
+When the Target node receives the Firmware Update Firmware Metadata Check message, the Firmware
+Update Server model calls the [`bt_mesh_dfu_srv_cb.check`](dfu_srv.md#c.bt_mesh_dfu_srv_cb.check "bt_mesh_dfu_srv_cb.check") callback, the application can
+then process the metadata and provide the effect value. If the effect is
+[`BT_MESH_DFU_EFFECT_COMP_CHANGE`](#c.bt_mesh_dfu_effect.BT_MESH_DFU_EFFECT_COMP_CHANGE), the application must call functions
+[`bt_mesh_comp_change_prepare()`](access.md#c.bt_mesh_comp_change_prepare "bt_mesh_comp_change_prepare") and [`bt_mesh_models_metadata_change_prepare()`](access.md#c.bt_mesh_models_metadata_change_prepare "bt_mesh_models_metadata_change_prepare") to
+prepare the Composition Data Page and Models Metadata Page contents before applying the new
+firmware image. See [Composition Data and Models Metadata](dfu_srv.md#bluetooth-mesh-dfu-srv-comp-data-and-models-metadata) for more
+information.
+
+## DFU procedures
+
+The DFU protocol is implemented as a set of procedures that must be performed in a certain order.
+
+The Initiator controls the Upload stage of the DFU protocol, and all Distributor side handling of
+the upload subprocedures is implemented in the [Firmware Distribution Server](dfd_srv.md#bluetooth-mesh-dfd-srv).
+
+The Distribution stage is controlled by the Distributor, as implemented by the
+[Firmware Update Client](dfu_cli.md#bluetooth-mesh-dfu-cli). The Target node implements all handling of these procedures in the
+[Firmware Update Server](dfu_srv.md#bluetooth-mesh-dfu-srv), and notifies the application through a set of callbacks.
+
+![Overview of DFU stages and procedures](../../../../_images/dfu_stages_procedures_mesh.svg)
+
+DFU stages and procedures as seen from the Distributor
+
+### Uploading the firmware
+
+The Upload Firmware procedure uses the [BLOB Transfer models](blob.md#bluetooth-mesh-blob) to transfer the firmware image
+from the Initiator to the Distributor. The Upload Firmware procedure works in two steps:
+
+1. The Initiator generates a BLOB ID, and sends it to the Distributor’s Firmware Distribution Server
+   along with the firmware information and other input parameters of the BLOB transfer. The Firmware
+   Distribution Server stores the information, and prepares its BLOB Transfer Server for the
+   incoming transfer before it responds with a status message to the Initiator.
+2. The Initiator’s BLOB Transfer Client model transfers the firmware image to the Distributor’s BLOB
+   Transfer Server, which stores the image in a predetermined flash partition.
+
+When the BLOB transfer finishes, the firmware image is ready for distribution. The Initiator may
+upload several firmware images to the Distributor, and ask it to distribute them in any order or at
+any time. Additional procedures are available for querying and deleting firmware images from the
+Distributor.
+
+The following Distributor’s capabilities related to firmware images can be configured using the
+configuration options:
+
+- [`CONFIG_BT_MESH_DFU_SLOT_CNT`](../../../../kconfig.md#CONFIG_BT_MESH_DFU_SLOT_CNT "CONFIG_BT_MESH_DFU_SLOT_CNT"): Amount of image slots available on the device.
+- [`CONFIG_BT_MESH_DFD_SRV_SLOT_MAX_SIZE`](../../../../kconfig.md#CONFIG_BT_MESH_DFD_SRV_SLOT_MAX_SIZE "CONFIG_BT_MESH_DFD_SRV_SLOT_MAX_SIZE"): Maximum allowed size for each image.
+- [`CONFIG_BT_MESH_DFD_SRV_SLOT_SPACE`](../../../../kconfig.md#CONFIG_BT_MESH_DFD_SRV_SLOT_SPACE "CONFIG_BT_MESH_DFD_SRV_SLOT_SPACE"): Available space for all images.
+
+### Populating the Distributor’s receivers list
+
+Before the Distributor can start distributing the firmware image, it needs a list of Target nodes to
+send the image to. The Initiator gets the full list of Target nodes either by querying the potential
+targets directly, or through some external authority. The Initiator uses this information to
+populate the Distributor’s receivers list with the address and relevant firmware image index of each
+Target node. The Initiator may send one or more Firmware Distribution Receivers Add messages to
+build the Distributor’s receivers list, and a Firmware Distribution Receivers Delete All message to
+clear it.
+
+The maximum number of receivers that can be added to the Distributor is configured through the
+[`CONFIG_BT_MESH_DFD_SRV_TARGETS_MAX`](../../../../kconfig.md#CONFIG_BT_MESH_DFD_SRV_TARGETS_MAX "CONFIG_BT_MESH_DFD_SRV_TARGETS_MAX") configuration option.
+
+### Initiating the distribution
+
+Once the Distributor has stored a firmware image and received a list of Target nodes, the Initiator
+may initiate the distribution procedure. The BLOB transfer parameters for the distribution are
+passed to the Distributor along with an update policy. The update policy decides whether the
+Distributor should request that the firmware is applied on the Target nodes or not. The Distributor
+stores the transfer parameters and starts distributing the firmware image to its list of Target
+nodes.
+
+#### Firmware distribution
+
+The Distributor’s Firmware Update Client model uses its BLOB Transfer Client model’s broadcast
+subsystem to communicate with all Target nodes. The firmware distribution is performed with the
+following steps:
+
+1. The Distributor’s Firmware Update Client model generates a BLOB ID and sends it to each Target
+   node’s Firmware Update Server model, along with the other BLOB transfer parameters, the Target
+   node firmware image index and the firmware image metadata. Each Target node performs a metadata
+   check and prepares their BLOB Transfer Server model for the transfer, before sending a status
+   response to the Firmware Update Client, indicating if the firmware update will have any effect on
+   the Bluetooth Mesh state of the node.
+2. The Distributor’s BLOB Transfer Client model transfers the firmware image to all Target nodes.
+3. Once the BLOB transfer has been received, the Target nodes’ applications verify that the firmware
+   is valid by performing checks such as signature verification or image checksums against the image
+   metadata.
+4. The Distributor’s Firmware Update Client model queries all Target nodes to ensure that they’ve
+   all verified the firmware image.
+
+If the distribution procedure completed with at least one Target node reporting that the image has
+been received and verified, the distribution procedure is considered successful.
+
+Note
+
+The firmware distribution procedure only fails if *all* Target nodes are lost. It is up to the
+Initiator to request a list of failed Target nodes from the Distributor and initiate additional
+attempts to update the lost Target nodes after the current attempt is finished.
+
+#### Suspending the distribution
+
+The Initiator can also request the Distributor to suspend the firmware distribution. In this case,
+the Distributor will stop sending any messages to Target nodes. When the firmware distribution is
+resumed, the Distributor will continue sending the firmware from the last successfully transferred
+block.
+
+### Applying the firmware image
+
+If the Initiator requested it, the Distributor can initiate the Apply Firmware on Target Node
+procedure on all Target nodes that successfully received and verified the firmware image. The Apply
+Firmware on Target Node procedure takes no parameters, and to avoid ambiguity, it should be
+performed before a new transfer is initiated. The Apply Firmware on Target Node procedure consists
+of the following steps:
+
+1. The Distributor’s Firmware Update Client model instructs all Target nodes that have verified the
+   firmware image to apply it. The Target nodes’ Firmware Update Server models respond with a status
+   message before calling their application’s `apply` callback.
+2. The Target node’s application performs any preparations needed before applying the transfer, such
+   as storing a snapshot of the Composition Data or clearing its configuration.
+3. The Target node’s application swaps the current firmware with the new image and updates its
+   firmware image list with the new firmware ID.
+4. The Distributor’s Firmware Update Client model requests the full list of firmware images from
+   each Target node, and scans through the list to make sure that the new firmware ID has replaced
+   the old.
+
+Note
+
+During the metadata check in the distribution procedure, the Target node may have reported that
+it will become unprovisioned after the firmware image is applied. In this case, the Distributor’s
+Firmware Update Client model will send a request for the full firmware image list, and expect no
+response.
+
+### Cancelling the distribution
+
+The firmware distribution can be cancelled at any time by the Initiator. In this case, the
+Distributor starts the cancelling procedure by sending a cancelling message to all Target nodes. The
+Distributor waits for the response from all Target nodes. Once all Target nodes have replied, or the
+request has timed out, the distribution procedure is cancelled. After this the distribution
+procedure can be started again from the `Firmware distribution` section.
+
+## API reference
+
+This section lists the types common to the Device Firmware Update mesh models.
+
+*group* bt\_mesh\_dfd
+:   Enums
+
+    enum bt\_mesh\_dfd\_status
+    :   Firmware distribution status.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFD\_SUCCESS
+        :   The message was processed successfully.
+
+        enumerator BT\_MESH\_DFD\_ERR\_INSUFFICIENT\_RESOURCES
+        :   Insufficient resources on the node.
+
+        enumerator BT\_MESH\_DFD\_ERR\_WRONG\_PHASE
+        :   The operation cannot be performed while the Server is in the current phase.
+
+        enumerator BT\_MESH\_DFD\_ERR\_INTERNAL
+        :   An internal error occurred on the node.
+
+        enumerator BT\_MESH\_DFD\_ERR\_FW\_NOT\_FOUND
+        :   The requested firmware image is not stored on the Distributor.
+
+        enumerator BT\_MESH\_DFD\_ERR\_INVALID\_APPKEY\_INDEX
+        :   The AppKey identified by the AppKey Index is not known to the node.
+
+        enumerator BT\_MESH\_DFD\_ERR\_RECEIVERS\_LIST\_EMPTY
+        :   There are no Target nodes in the Distribution Receivers List state.
+
+        enumerator BT\_MESH\_DFD\_ERR\_BUSY\_WITH\_DISTRIBUTION
+        :   Another firmware image distribution is in progress.
+
+        enumerator BT\_MESH\_DFD\_ERR\_BUSY\_WITH\_UPLOAD
+        :   Another upload is in progress.
+
+        enumerator BT\_MESH\_DFD\_ERR\_URI\_NOT\_SUPPORTED
+        :   The URI scheme name indicated by the Update URI is not supported.
+
+        enumerator BT\_MESH\_DFD\_ERR\_URI\_MALFORMED
+        :   The format of the Update URI is invalid.
+
+        enumerator BT\_MESH\_DFD\_ERR\_URI\_UNREACHABLE
+        :   The URI is currently unreachable.
+
+        enumerator BT\_MESH\_DFD\_ERR\_NEW\_FW\_NOT\_AVAILABLE
+        :   The Check Firmware OOB procedure did not find any new firmware.
+
+        enumerator BT\_MESH\_DFD\_ERR\_SUSPEND\_FAILED
+        :   The suspension of the Distribute Firmware procedure failed.
+
+    enum bt\_mesh\_dfd\_phase
+    :   Firmware distribution phases.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFD\_PHASE\_IDLE
+        :   No firmware distribution is in progress.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_TRANSFER\_ACTIVE
+        :   Firmware distribution is in progress.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_TRANSFER\_SUCCESS
+        :   The Transfer BLOB procedure has completed successfully.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_APPLYING\_UPDATE
+        :   The Apply Firmware on Target Nodes procedure is being executed.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_COMPLETED
+        :   The Distribute Firmware procedure has completed successfully.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_FAILED
+        :   The Distribute Firmware procedure has failed.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_CANCELING\_UPDATE
+        :   The Cancel Firmware Update procedure is being executed.
+
+        enumerator BT\_MESH\_DFD\_PHASE\_TRANSFER\_SUSPENDED
+        :   The Transfer BLOB procedure is suspended.
+
+    enum bt\_mesh\_dfd\_upload\_phase
+    :   Firmware upload phases.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFD\_UPLOAD\_PHASE\_IDLE
+        :   No firmware upload is in progress.
+
+        enumerator BT\_MESH\_DFD\_UPLOAD\_PHASE\_TRANSFER\_ACTIVE
+        :   The Store Firmware procedure is being executed.
+
+        enumerator BT\_MESH\_DFD\_UPLOAD\_PHASE\_TRANSFER\_ERROR
+        :   The Store Firmware procedure or Store Firmware OOB procedure failed.
+
+        enumerator BT\_MESH\_DFD\_UPLOAD\_PHASE\_TRANSFER\_SUCCESS
+        :   The Store Firmware procedure or the Store Firmware OOB procedure completed successfully.
+
+*group* bt\_mesh\_dfu
+:   Defines
+
+    CONFIG\_BT\_MESH\_DFU\_FWID\_MAXLEN
+
+    CONFIG\_BT\_MESH\_DFU\_METADATA\_MAXLEN
+
+    CONFIG\_BT\_MESH\_DFU\_URI\_MAXLEN
+
+    CONFIG\_BT\_MESH\_DFU\_SLOT\_CNT
+
+    Enums
+
+    enum bt\_mesh\_dfu\_phase
+    :   DFU transfer phase.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFU\_PHASE\_IDLE
+        :   Ready to start a Receive Firmware procedure.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_TRANSFER\_ERR
+        :   The Transfer BLOB procedure failed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_TRANSFER\_ACTIVE
+        :   The Receive Firmware procedure is being executed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_VERIFY
+        :   The Verify Firmware procedure is being executed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_VERIFY\_OK
+        :   The Verify Firmware procedure completed successfully.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_VERIFY\_FAIL
+        :   The Verify Firmware procedure failed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_APPLYING
+        :   The Apply New Firmware procedure is being executed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_TRANSFER\_CANCELED
+        :   Firmware transfer has been canceled.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_APPLY\_SUCCESS
+        :   Firmware applying succeeded.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_APPLY\_FAIL
+        :   Firmware applying failed.
+
+        enumerator BT\_MESH\_DFU\_PHASE\_UNKNOWN
+        :   Phase of a node was not yet retrieved.
+
+    enum bt\_mesh\_dfu\_status
+    :   DFU status.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFU\_SUCCESS
+        :   The message was processed successfully.
+
+        enumerator BT\_MESH\_DFU\_ERR\_RESOURCES
+        :   Insufficient resources on the node.
+
+        enumerator BT\_MESH\_DFU\_ERR\_WRONG\_PHASE
+        :   The operation cannot be performed while the Server is in the current phase.
+
+        enumerator BT\_MESH\_DFU\_ERR\_INTERNAL
+        :   An internal error occurred on the node.
+
+        enumerator BT\_MESH\_DFU\_ERR\_FW\_IDX
+        :   The message contains a firmware index value that is not expected.
+
+        enumerator BT\_MESH\_DFU\_ERR\_METADATA
+        :   The metadata check failed.
+
+        enumerator BT\_MESH\_DFU\_ERR\_TEMPORARILY\_UNAVAILABLE
+        :   The Server cannot start a firmware update.
+
+        enumerator BT\_MESH\_DFU\_ERR\_BLOB\_XFER\_BUSY
+        :   Another BLOB transfer is in progress.
+
+    enum bt\_mesh\_dfu\_effect
+    :   Expected effect of a DFU transfer.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFU\_EFFECT\_NONE
+        :   No changes to node Composition Data.
+
+        enumerator BT\_MESH\_DFU\_EFFECT\_COMP\_CHANGE\_NO\_RPR
+        :   Node Composition Data changed and the node does not support remote provisioning.
+
+        enumerator BT\_MESH\_DFU\_EFFECT\_COMP\_CHANGE
+        :   Node Composition Data changed, and remote provisioning is supported.
+
+            The node supports remote provisioning and Composition Data Page 0x80. Page 0x80 contains different Composition Data than Page 0x0.
+
+        enumerator BT\_MESH\_DFU\_EFFECT\_UNPROV
+        :   Node will be unprovisioned after the update.
+
+    enum bt\_mesh\_dfu\_iter
+    :   Action for DFU iteration callbacks.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFU\_ITER\_STOP
+        :   Stop iterating.
+
+        enumerator BT\_MESH\_DFU\_ITER\_CONTINUE
+        :   Continue iterating.
+
+    struct bt\_mesh\_dfu\_img
+    :   *#include <dfu.h>*
+
+        DFU image instance.
+
+        Each DFU image represents a single updatable firmware image.
+
+        Public Members
+
+        const void \*fwid
+        :   Firmware ID.
+
+        size\_t fwid\_len
+        :   Length of the firmware ID.
+
+        const char \*uri
+        :   Update URI, or NULL.
+
+    struct bt\_mesh\_dfu\_slot
+    :   *#include <dfu.h>*
+
+        DFU image slot for DFU distribution.
+
+        Public Members
+
+        size\_t size
+        :   Size of the firmware in bytes.
+
+        size\_t fwid\_len
+        :   Length of the firmware ID.
+
+        size\_t metadata\_len
+        :   Length of the metadata.
+
+        uint8\_t fwid[0]
+        :   Firmware ID.
+
+        uint8\_t metadata[0]
+        :   Metadata.
+
+*group* bt\_mesh\_dfu\_metadata
+:   Common types and functions for the Bluetooth Mesh DFU metadata.
+
+    Enums
+
+    enum bt\_mesh\_dfu\_metadata\_fw\_core\_type
+    :   Firmware core type.
+
+        *Values:*
+
+        enumerator BT\_MESH\_DFU\_FW\_CORE\_TYPE\_APP = [BIT](../../../../kernel/util/index.md#c.BIT "BIT")(0)
+        :   Application core.
+
+        enumerator BT\_MESH\_DFU\_FW\_CORE\_TYPE\_NETWORK = [BIT](../../../../kernel/util/index.md#c.BIT "BIT")(1)
+        :   Network core.
+
+        enumerator BT\_MESH\_DFU\_FW\_CORE\_TYPE\_APP\_SPECIFIC\_BLOB = [BIT](../../../../kernel/util/index.md#c.BIT "BIT")(2)
+        :   Application-specific BLOB.
+
+    Functions
+
+    int bt\_mesh\_dfu\_metadata\_decode(struct [net\_buf\_simple](../../../networking/api/net_buf.md#c.net_buf_simple "net_buf_simple") \*buf, struct [bt\_mesh\_dfu\_metadata](#c.bt_mesh_dfu_metadata) \*metadata)
+    :   Decode a firmware metadata from a network buffer.
+
+        Parameters:
+        :   - **buf** – Buffer containing a raw metadata to be decoded.
+            - **metadata** – Pointer to a metadata structure to be filled.
+
+        Returns:
+        :   0 on success, or (negative) error code otherwise.
+
+    int bt\_mesh\_dfu\_metadata\_encode(const struct [bt\_mesh\_dfu\_metadata](#c.bt_mesh_dfu_metadata) \*metadata, struct [net\_buf\_simple](../../../networking/api/net_buf.md#c.net_buf_simple "net_buf_simple") \*buf)
+    :   Encode a firmare metadata into a network buffer.
+
+        Parameters:
+        :   - **metadata** – Firmware metadata to be encoded.
+            - **buf** – Buffer to store the encoded metadata.
+
+        Returns:
+        :   0 on success, or (negative) error code otherwise.
+
+    int bt\_mesh\_dfu\_metadata\_comp\_hash\_get(struct [net\_buf\_simple](../../../networking/api/net_buf.md#c.net_buf_simple "net_buf_simple") \*buf, uint8\_t \*key, uint32\_t \*hash)
+    :   Compute hash of the Composition Data state.
+
+        The format of the Composition Data is defined in MshPRTv1.1: 4.2.2.1.
+
+        Parameters:
+        :   - **buf** – Pointer to buffer holding Composition Data.
+            - **key** – 128-bit key to be used in the hash computation.
+            - **hash** – Pointer to a memory location to which the hash will be stored.
+
+        Returns:
+        :   0 on success, or (negative) error code otherwise.
+
+    int bt\_mesh\_dfu\_metadata\_comp\_hash\_local\_get(uint8\_t \*key, uint32\_t \*hash)
+    :   Compute hash of the Composition Data Page 0 of this device.
+
+        Parameters:
+        :   - **key** – 128-bit key to be used in the hash computation.
+            - **hash** – Pointer to a memory location to which the hash will be stored.
+
+        Returns:
+        :   0 on success, or (negative) error code otherwise.
+
+    struct bt\_mesh\_dfu\_metadata\_fw\_ver
+    :   *#include <dfu\_metadata.h>*
+
+        Firmware version.
+
+        Public Members
+
+        uint8\_t major
+        :   Firmware major version.
+
+        uint8\_t minor
+        :   Firmware minor version.
+
+        uint16\_t revision
+        :   Firmware revision.
+
+        uint32\_t build\_num
+        :   Firmware build number.
+
+    struct bt\_mesh\_dfu\_metadata
+    :   *#include <dfu\_metadata.h>*
+
+        Firmware metadata.
+
+        Public Members
+
+        struct [bt\_mesh\_dfu\_metadata\_fw\_ver](#c.bt_mesh_dfu_metadata_fw_ver) fw\_ver
+        :   New firmware version.
+
+        uint32\_t fw\_size
+        :   New firmware size.
+
+        enum [bt\_mesh\_dfu\_metadata\_fw\_core\_type](#c.bt_mesh_dfu_metadata_fw_core_type) fw\_core\_type
+        :   New firmware core type.
+
+        uint32\_t comp\_hash
+        :   Hash of incoming Composition Data.
+
+        uint16\_t elems
+        :   New number of node elements.
+
+        uint8\_t \*user\_data
+        :   Application-specific data for new firmware.
+
+            This field is optional.
+
+        uint32\_t user\_data\_len
+        :   Length of the application-specific field.

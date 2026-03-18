@@ -1,0 +1,70 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/llext_8h.html
+original_path: doxygen/html/llext_8h.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+llext.h File Reference
+
+`#include <[zephyr/sys/slist.h](slist_8h_source.md)>`  
+`#include <[zephyr/llext/elf.h](elf_8h_source.md)>`  
+`#include <[zephyr/llext/symbol.h](symbol_8h_source.md)>`  
+`#include <[zephyr/kernel.h](include_2zephyr_2kernel_8h_source.md)>`  
+`#include <[sys/types.h](lib_2libc_2minimal_2include_2sys_2types_8h_source.md)>`  
+`#include <[stdbool.h](stdbool_8h_source.md)>`
+
+[Go to the source code of this file.](llext_8h_source.md)
+
+| Data Structures | |
+| --- | --- |
+| struct | [llext](structllext.md) |
+|  | Linkable loadable extension. [More...](structllext.md#details) |
+| struct | [llext\_load\_param](structllext__load__param.md) |
+|  | llext loader parameters [More...](structllext__load__param.md#details) |
+
+| Macros | |
+| --- | --- |
+| #define | [LLEXT\_MEM\_PARTITIONS](group__llext.md#ga8740e267a2d59772fde6cda3df1711f2)   ([LLEXT\_MEM\_BSS](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a84ec2446a021fefa9e6786ad58d6986e)+1) |
+| #define | [LLEXT\_LOAD\_PARAM\_DEFAULT](group__llext.md#ga15f6bd18c1693009be46641ce1b008c6)   {.relocate\_local = [true](stdbool_8h.md#a41f9c5fb8b08eb5dc3edce4dcb37fee7),} |
+
+| Enumerations | |
+| --- | --- |
+| enum | [llext\_mem](group__llext.md#ga9258a6fe4a45aa5dd48c80c7aa07b953) {     [LLEXT\_MEM\_TEXT](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a4e7f671abb8e64ad6af7033a9439b7d0) , [LLEXT\_MEM\_DATA](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a5e8658f79b74a0916e5d0abe8f852854) , [LLEXT\_MEM\_RODATA](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a8ad55e9d9685edd3dfc4ede21854faeb) , [LLEXT\_MEM\_BSS](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a84ec2446a021fefa9e6786ad58d6986e) ,     [LLEXT\_MEM\_EXPORT](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953ae6ed486ed5719bf7058b2f95aa712028) , [LLEXT\_MEM\_SYMTAB](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a24549b7a2ee43076f5b8646e7fba5c81) , [LLEXT\_MEM\_STRTAB](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953ae0ecbbcbe2d8143f5fac4783f7157c17) , [LLEXT\_MEM\_SHSTRTAB](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953a325e4d3b4ecdbdb2fec8451fef5b582e) ,     [LLEXT\_MEM\_COUNT](group__llext.md#gga9258a6fe4a45aa5dd48c80c7aa07b953ad6b134939dea35076a41f9c0b81f9265)   } |
+|  | List of ELF regions that are stored or referenced in the llext. [More...](group__llext.md#ga9258a6fe4a45aa5dd48c80c7aa07b953) |
+
+| Functions | |
+| --- | --- |
+| struct [llext](structllext.md) \* | [llext\_by\_name](group__llext.md#gaad89b0b44cf5c9528c3f8a0ce37a8fbe) (const char \*name) |
+|  | Find an llext by name. |
+| int | [llext\_iterate](group__llext.md#ga0faf5a335199e63a424b122b03027c98) (int(\*fn)(struct [llext](structllext.md) \*ext, void \*arg), void \*arg) |
+|  | Iterate overall registered llext instances. |
+| int | [llext\_load](group__llext.md#ga93c7d7f8987bd25e3dc486943785c8a1) (struct [llext\_loader](structllext__loader.md) \*loader, const char \*name, struct [llext](structllext.md) \*\*ext, struct [llext\_load\_param](structllext__load__param.md) \*ldr\_parm) |
+|  | Load and link an extension. |
+| int | [llext\_unload](group__llext.md#gad3df7ed4d436846504c0047166eb929e) (struct [llext](structllext.md) \*\*ext) |
+|  | Unload an extension. |
+| const void \*const | [llext\_find\_sym](group__llext.md#ga2554c14853cc809d63deb52096423838) (const struct [llext\_symtable](structllext__symtable.md) \*sym\_table, const char \*sym\_name) |
+|  | Find the address for an arbitrary symbol name. |
+| int | [llext\_call\_fn](group__llext.md#gad50ad281c70093da99851723fc6af470) (struct [llext](structllext.md) \*ext, const char \*sym\_name) |
+|  | Call a function by name. |
+| int | [llext\_add\_domain](group__llext.md#ga64b13edf15b7c233b49c9c8edff884e6) (struct [llext](structllext.md) \*ext, struct [k\_mem\_domain](structk__mem__domain.md) \*domain) |
+|  | Add the known memory partitions of the extension to a memory domain. |
+| void | [arch\_elf\_relocate](group__llext.md#gad3ced43229d6f68622d71e5bc7234ca2) ([elf\_rela\_t](group__elf.md#gad5dd8960a2fbfc74cdcd016b5c2c7cea) \*rel, [uintptr\_t](stdint_8h.md#a4788399d1d0b37ccf098a7da82254808) opaddr, [uintptr\_t](stdint_8h.md#a4788399d1d0b37ccf098a7da82254808) opval) |
+|  | Architecture specific function for updating op codes given a relocation. |
+| [ssize\_t](lib_2libc_2minimal_2include_2sys_2types_8h.md#a5c5d83d87790efd59ea916c2b99f9118) | [llext\_find\_section](group__llext.md#ga396bddb41c51415faf79e11fad44cb4e) (struct [llext\_loader](structllext__loader.md) \*loader, const char \*search\_name) |
+|  | Find an ELF section. |
+| void | [arch\_elf\_relocate\_local](group__llext.md#ga437e19a2132007a3f9636e349a233d36) (struct [llext\_loader](structllext__loader.md) \*loader, struct [llext](structllext.md) \*ext, [elf\_rela\_t](group__elf.md#gad5dd8960a2fbfc74cdcd016b5c2c7cea) \*rel, [size\_t](retained__mem_8h.md#a36713c339c3c5ec6d6bd481480bdb6f9) got\_offset) |
+|  | Architecture specific function for updating addresses via relocation table. |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [llext](dir_d35526af36d7b5daa0761e4cf61cfe4a.md)
+- [llext.h](llext_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

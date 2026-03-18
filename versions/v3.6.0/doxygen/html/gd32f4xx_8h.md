@@ -1,0 +1,489 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/gd32f4xx_8h.html
+original_path: doxygen/html/gd32f4xx_8h.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+gd32f4xx.h File Reference
+
+`#include "[gd32-common.h](gd32-common_8h_source.md)"`
+
+[Go to the source code of this file.](gd32f4xx_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| Register offsets | |
+| #define | [GD32\_AHB1RST\_OFFSET](#a4f5347051ef3b9897ce80d198ebe69ff)   0x10U |
+| #define | [GD32\_AHB2RST\_OFFSET](#a8146ab0bff8395c1ae44f72bcac06f60)   0x14U |
+| #define | [GD32\_AHB3RST\_OFFSET](#a56c268294e0d38d23d0c12c54a9998dc)   0x18U |
+| #define | [GD32\_APB1RST\_OFFSET](#aa81c1cadc283f658cea5c611e75fef5e)   0x20U |
+| #define | [GD32\_APB2RST\_OFFSET](#ab3c4f1337d87a22178010c65d48d3d30)   0x24U |
+| #define | [GD32\_ADDAPB1RST\_OFFSET](#a9197e68ba74b9955a45ce4e720099e1a)   0xE0U |
+| Clock enable/disable definitions for peripherals | |
+| #define | [GD32\_RESET\_GPIOA](#a3757cebbf6f3557b95ad38f58eeeec6f)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 0U) |
+| #define | [GD32\_RESET\_GPIOB](#af5961280a760bba841a7d9f2ba1b4e2f)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 1U) |
+| #define | [GD32\_RESET\_GPIOC](#a5a20c0f1febc4709b3038cb0c5ef55bc)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 2U) |
+| #define | [GD32\_RESET\_GPIOD](#ab9da13b274d377bdce3b3cce159c0cd4)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 3U) |
+| #define | [GD32\_RESET\_GPIOE](#a846d86e02331a6b4b1cf1c7cc7132fdf)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 4U) |
+| #define | [GD32\_RESET\_GPIOF](#a8cac628be929c7303ca2017b0e2a2798)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 5U) |
+| #define | [GD32\_RESET\_GPIOG](#adf447350911e15526c8ffbe0b746209e)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 6U) |
+| #define | [GD32\_RESET\_GPIOH](#a0b9a94209f404e239a30574b96079ec0)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 7U) |
+| #define | [GD32\_RESET\_GPIOI](#a7919404d280c198c4a832a4d4befccf2)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 8U) |
+| #define | [GD32\_RESET\_CRC](#af47b6e0af43b63f4ee07bafa70290a38)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 12U) |
+| #define | [GD32\_RESET\_BKPSRAM](#a3875599d5b74efa8969e9fb3c2cc9b84)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 18U) |
+| #define | [GD32\_RESET\_TCMSRAM](#a54f00182d8189f5703bf0b3e784f0dcb)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 20U) |
+| #define | [GD32\_RESET\_DMA0](#a030200dd583e944233eee559b7b31ea0)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 21U) |
+| #define | [GD32\_RESET\_DMA1](#a6dacbd858dd12980efab5f7f7ed6d646)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 22U) |
+| #define | [GD32\_RESET\_IPA](#a34f15dd883e583d2315b0e6a991b65ac)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 23U) |
+| #define | [GD32\_RESET\_ENET](#acb03f17f74b4641ec12dc36a2e8f9bd7)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 25U) |
+| #define | [GD32\_RESET\_ENETTX](#a44be852173f3af734b86d4e7adf9e197)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 26U) |
+| #define | [GD32\_RESET\_ENETRX](#aea15fd0b4a5752f96032fc534bb49ff2)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 27U) |
+| #define | [GD32\_RESET\_ENETPTP](#aba6bbe7eeb9401292dd0d14b962c0a39)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 28U) |
+| #define | [GD32\_RESET\_USBHS](#a5750c8bb5be4a0855dacc641182a1f37)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 29U) |
+| #define | [GD32\_RESET\_USBHSULPI](#a6a21e748f3d9f642a46908b442ecfa25)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 30U) |
+| #define | [GD32\_RESET\_DCI](#ae1872005e4cf1f7139181a7a3bfc9b14)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 0U) |
+| #define | [GD32\_RESET\_TRNG](#ac811f656607426b5ef151ae7a829549d)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 6U) |
+| #define | [GD32\_RESET\_USBFS](#afd49566055b04e1ad0c58397379d6fca)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 7U) |
+| #define | [GD32\_RESET\_EXMC](#a18ff65cd6986110fe4a6ccd202a41272)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB3RST, 0U) |
+| #define | [GD32\_RESET\_TIMER1](#a97beb7e8223a64c2fca25679a466f9e0)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 0U) |
+| #define | [GD32\_RESET\_TIMER2](#a113cfc98af5cb46151d0545cf54fe5aa)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 1U) |
+| #define | [GD32\_RESET\_TIMER3](#a0e077bd7bba73a98e2dc97de52dfef81)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 2U) |
+| #define | [GD32\_RESET\_TIMER4](#a8c2042627d0c1e0248ea51b0a1c2fd63)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 3U) |
+| #define | [GD32\_RESET\_TIMER5](#a532af4dda1790a9b56bb8c023a3d01b7)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 4U) |
+| #define | [GD32\_RESET\_TIMER6](#ab23dd190237e1223cd5273742f9d2e10)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 5U) |
+| #define | [GD32\_RESET\_TIMER11](#a9e880d91571e3cba08beddf6a4b51afd)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 6U) |
+| #define | [GD32\_RESET\_TIMER12](#a949b2dd18643f528ec987cfadfd179e6)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 7U) |
+| #define | [GD32\_RESET\_TIMER13](#a012ec5ec4ff3dca4b788f9839be1c2f6)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 8U) |
+| #define | [GD32\_RESET\_WWDGT](#a8aac1c0ab090d8568076f6d8556e5c7a)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 11U) |
+| #define | [GD32\_RESET\_SPI1](#a27ae8979a4889e95867ed833d9843d07)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 14U) |
+| #define | [GD32\_RESET\_SPI2](#a9ee38df6bff18cb40a16bce410aae937)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 15U) |
+| #define | [GD32\_RESET\_USART1](#aeb24e0ab9ae6be1c82593220c9719117)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 17U) |
+| #define | [GD32\_RESET\_USART2](#a362e90b2303107bd5ec1cd57662e986a)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 18U) |
+| #define | [GD32\_RESET\_UART3](#a58caa0f60b03f664298bd75c8f198e9b)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 19U) |
+| #define | [GD32\_RESET\_UART4](#a9787ffdf0edba62357937f3bd4e33f53)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 20U) |
+| #define | [GD32\_RESET\_I2C0](#a12b532298a73feed3aa42ad53cf6ca79)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 21U) |
+| #define | [GD32\_RESET\_I2C1](#a9b9bec0c724fce490ba57090fe5329cc)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 22U) |
+| #define | [GD32\_RESET\_I2C2](#ad37ee8c46a981ed4fb73dcde74ca051c)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 23U) |
+| #define | [GD32\_RESET\_CAN0](#a2d54a57f102daf1a931e340dff46567e)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 25U) |
+| #define | [GD32\_RESET\_CAN1](#ab8248f4b27355ae5eed7876294bf54ca)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 26U) |
+| #define | [GD32\_RESET\_PMU](#a02b6250ebdbfa5de5f39f49c6d81f1ef)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 28U) |
+| #define | [GD32\_RESET\_DAC](#a4db6ebe67389f81c9fa20bc7747df578)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 29U) |
+| #define | [GD32\_RESET\_UART6](#a075dd2cdc2fea79d808443e9919cc91f)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 30U) |
+| #define | [GD32\_RESET\_UART7](#a77a8fe83e45c59552421f80e0aa2f027)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 31U) |
+| #define | [GD32\_RESET\_RTC](#a4bdec70420ef2969515f5e3b839d35b5)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(BDCTL, 15U) |
+| #define | [GD32\_RESET\_TIMER0](#a2a7fd67d22598a774386a49ded2a9c72)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 0U) |
+| #define | [GD32\_RESET\_TIMER7](#aa705f811b509f9aa4e671a3651b22bec)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 1U) |
+| #define | [GD32\_RESET\_USART0](#a6a03a7368d1e153ddf89547962711d35)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 4U) |
+| #define | [GD32\_RESET\_USART5](#a87a2774f9d39af11dcbf2dd4186fcb40)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 5U) |
+| #define | [GD32\_RESET\_ADC0](#aa94c4237849ff01aecbf9024ba7b9cd1)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 8U) |
+| #define | [GD32\_RESET\_ADC1](#a92af4e6fa98371a209c79d7a81e68f36)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 9U) |
+| #define | [GD32\_RESET\_ADC2](#a971d32347734d2e95864c9565333f71a)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 10U) |
+| #define | [GD32\_RESET\_SDIO](#a5b9d2404c96e2d48e5267826fdc80f3d)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 11U) |
+| #define | [GD32\_RESET\_SPI0](#a64f740c7f65d696deb5f617654be9c5d)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 12U) |
+| #define | [GD32\_RESET\_SPI3](#a64b30592c15f58cd62348a51bcd4ca83)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 13U) |
+| #define | [GD32\_RESET\_SYSCFG](#afd91e374f836fdf42970966e9d4677c4)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 14U) |
+| #define | [GD32\_RESET\_TIMER8](#a3304de281ad58c3daa7539c0c13baa3a)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 16U) |
+| #define | [GD32\_RESET\_TIMER9](#a9422ecb4a384c91d6498c2cba75a4b78)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 17U) |
+| #define | [GD32\_RESET\_TIMER10](#ace4a405286adfe6212497aa14d6ec8b1)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 18U) |
+| #define | [GD32\_RESET\_SPI4](#a29dc662ab5efda932582be55688d15ea)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 20U) |
+| #define | [GD32\_RESET\_SPI5](#ad283fe35b26fff58777091951686f31c)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 21U) |
+| #define | [GD32\_RESET\_TLI](#a9d8125f8be06b7c9f6529b95d68327dd)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 26U) |
+| #define | [GD32\_RESET\_CTC](#a595597cd5801d9255a07b0d3b87fb649)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(ADDAPB1RST, 27U) |
+| #define | [GD32\_RESET\_IREF](#ac012773db2a90f49b044260b379ec9af)   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(ADDAPB1RST, 31U) |
+
+## Macro Definition Documentation
+
+## [◆ ](#a9197e68ba74b9955a45ce4e720099e1a)GD32\_ADDAPB1RST\_OFFSET
+
+| #define GD32\_ADDAPB1RST\_OFFSET   0xE0U |
+| --- |
+
+## [◆ ](#a4f5347051ef3b9897ce80d198ebe69ff)GD32\_AHB1RST\_OFFSET
+
+| #define GD32\_AHB1RST\_OFFSET   0x10U |
+| --- |
+
+## [◆ ](#a8146ab0bff8395c1ae44f72bcac06f60)GD32\_AHB2RST\_OFFSET
+
+| #define GD32\_AHB2RST\_OFFSET   0x14U |
+| --- |
+
+## [◆ ](#a56c268294e0d38d23d0c12c54a9998dc)GD32\_AHB3RST\_OFFSET
+
+| #define GD32\_AHB3RST\_OFFSET   0x18U |
+| --- |
+
+## [◆ ](#aa81c1cadc283f658cea5c611e75fef5e)GD32\_APB1RST\_OFFSET
+
+| #define GD32\_APB1RST\_OFFSET   0x20U |
+| --- |
+
+## [◆ ](#ab3c4f1337d87a22178010c65d48d3d30)GD32\_APB2RST\_OFFSET
+
+| #define GD32\_APB2RST\_OFFSET   0x24U |
+| --- |
+
+## [◆ ](#aa94c4237849ff01aecbf9024ba7b9cd1)GD32\_RESET\_ADC0
+
+| #define GD32\_RESET\_ADC0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 8U) |
+| --- |
+
+## [◆ ](#a92af4e6fa98371a209c79d7a81e68f36)GD32\_RESET\_ADC1
+
+| #define GD32\_RESET\_ADC1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 9U) |
+| --- |
+
+## [◆ ](#a971d32347734d2e95864c9565333f71a)GD32\_RESET\_ADC2
+
+| #define GD32\_RESET\_ADC2   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 10U) |
+| --- |
+
+## [◆ ](#a3875599d5b74efa8969e9fb3c2cc9b84)GD32\_RESET\_BKPSRAM
+
+| #define GD32\_RESET\_BKPSRAM   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 18U) |
+| --- |
+
+## [◆ ](#a2d54a57f102daf1a931e340dff46567e)GD32\_RESET\_CAN0
+
+| #define GD32\_RESET\_CAN0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 25U) |
+| --- |
+
+## [◆ ](#ab8248f4b27355ae5eed7876294bf54ca)GD32\_RESET\_CAN1
+
+| #define GD32\_RESET\_CAN1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 26U) |
+| --- |
+
+## [◆ ](#af47b6e0af43b63f4ee07bafa70290a38)GD32\_RESET\_CRC
+
+| #define GD32\_RESET\_CRC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 12U) |
+| --- |
+
+## [◆ ](#a595597cd5801d9255a07b0d3b87fb649)GD32\_RESET\_CTC
+
+| #define GD32\_RESET\_CTC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(ADDAPB1RST, 27U) |
+| --- |
+
+## [◆ ](#a4db6ebe67389f81c9fa20bc7747df578)GD32\_RESET\_DAC
+
+| #define GD32\_RESET\_DAC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 29U) |
+| --- |
+
+## [◆ ](#ae1872005e4cf1f7139181a7a3bfc9b14)GD32\_RESET\_DCI
+
+| #define GD32\_RESET\_DCI   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 0U) |
+| --- |
+
+## [◆ ](#a030200dd583e944233eee559b7b31ea0)GD32\_RESET\_DMA0
+
+| #define GD32\_RESET\_DMA0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 21U) |
+| --- |
+
+## [◆ ](#a6dacbd858dd12980efab5f7f7ed6d646)GD32\_RESET\_DMA1
+
+| #define GD32\_RESET\_DMA1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 22U) |
+| --- |
+
+## [◆ ](#acb03f17f74b4641ec12dc36a2e8f9bd7)GD32\_RESET\_ENET
+
+| #define GD32\_RESET\_ENET   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 25U) |
+| --- |
+
+## [◆ ](#aba6bbe7eeb9401292dd0d14b962c0a39)GD32\_RESET\_ENETPTP
+
+| #define GD32\_RESET\_ENETPTP   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 28U) |
+| --- |
+
+## [◆ ](#aea15fd0b4a5752f96032fc534bb49ff2)GD32\_RESET\_ENETRX
+
+| #define GD32\_RESET\_ENETRX   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 27U) |
+| --- |
+
+## [◆ ](#a44be852173f3af734b86d4e7adf9e197)GD32\_RESET\_ENETTX
+
+| #define GD32\_RESET\_ENETTX   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 26U) |
+| --- |
+
+## [◆ ](#a18ff65cd6986110fe4a6ccd202a41272)GD32\_RESET\_EXMC
+
+| #define GD32\_RESET\_EXMC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB3RST, 0U) |
+| --- |
+
+## [◆ ](#a3757cebbf6f3557b95ad38f58eeeec6f)GD32\_RESET\_GPIOA
+
+| #define GD32\_RESET\_GPIOA   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 0U) |
+| --- |
+
+## [◆ ](#af5961280a760bba841a7d9f2ba1b4e2f)GD32\_RESET\_GPIOB
+
+| #define GD32\_RESET\_GPIOB   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 1U) |
+| --- |
+
+## [◆ ](#a5a20c0f1febc4709b3038cb0c5ef55bc)GD32\_RESET\_GPIOC
+
+| #define GD32\_RESET\_GPIOC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 2U) |
+| --- |
+
+## [◆ ](#ab9da13b274d377bdce3b3cce159c0cd4)GD32\_RESET\_GPIOD
+
+| #define GD32\_RESET\_GPIOD   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 3U) |
+| --- |
+
+## [◆ ](#a846d86e02331a6b4b1cf1c7cc7132fdf)GD32\_RESET\_GPIOE
+
+| #define GD32\_RESET\_GPIOE   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 4U) |
+| --- |
+
+## [◆ ](#a8cac628be929c7303ca2017b0e2a2798)GD32\_RESET\_GPIOF
+
+| #define GD32\_RESET\_GPIOF   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 5U) |
+| --- |
+
+## [◆ ](#adf447350911e15526c8ffbe0b746209e)GD32\_RESET\_GPIOG
+
+| #define GD32\_RESET\_GPIOG   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 6U) |
+| --- |
+
+## [◆ ](#a0b9a94209f404e239a30574b96079ec0)GD32\_RESET\_GPIOH
+
+| #define GD32\_RESET\_GPIOH   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 7U) |
+| --- |
+
+## [◆ ](#a7919404d280c198c4a832a4d4befccf2)GD32\_RESET\_GPIOI
+
+| #define GD32\_RESET\_GPIOI   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 8U) |
+| --- |
+
+## [◆ ](#a12b532298a73feed3aa42ad53cf6ca79)GD32\_RESET\_I2C0
+
+| #define GD32\_RESET\_I2C0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 21U) |
+| --- |
+
+## [◆ ](#a9b9bec0c724fce490ba57090fe5329cc)GD32\_RESET\_I2C1
+
+| #define GD32\_RESET\_I2C1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 22U) |
+| --- |
+
+## [◆ ](#ad37ee8c46a981ed4fb73dcde74ca051c)GD32\_RESET\_I2C2
+
+| #define GD32\_RESET\_I2C2   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 23U) |
+| --- |
+
+## [◆ ](#a34f15dd883e583d2315b0e6a991b65ac)GD32\_RESET\_IPA
+
+| #define GD32\_RESET\_IPA   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 23U) |
+| --- |
+
+## [◆ ](#ac012773db2a90f49b044260b379ec9af)GD32\_RESET\_IREF
+
+| #define GD32\_RESET\_IREF   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(ADDAPB1RST, 31U) |
+| --- |
+
+## [◆ ](#a02b6250ebdbfa5de5f39f49c6d81f1ef)GD32\_RESET\_PMU
+
+| #define GD32\_RESET\_PMU   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 28U) |
+| --- |
+
+## [◆ ](#a4bdec70420ef2969515f5e3b839d35b5)GD32\_RESET\_RTC
+
+| #define GD32\_RESET\_RTC   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(BDCTL, 15U) |
+| --- |
+
+## [◆ ](#a5b9d2404c96e2d48e5267826fdc80f3d)GD32\_RESET\_SDIO
+
+| #define GD32\_RESET\_SDIO   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 11U) |
+| --- |
+
+## [◆ ](#a64f740c7f65d696deb5f617654be9c5d)GD32\_RESET\_SPI0
+
+| #define GD32\_RESET\_SPI0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 12U) |
+| --- |
+
+## [◆ ](#a27ae8979a4889e95867ed833d9843d07)GD32\_RESET\_SPI1
+
+| #define GD32\_RESET\_SPI1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 14U) |
+| --- |
+
+## [◆ ](#a9ee38df6bff18cb40a16bce410aae937)GD32\_RESET\_SPI2
+
+| #define GD32\_RESET\_SPI2   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 15U) |
+| --- |
+
+## [◆ ](#a64b30592c15f58cd62348a51bcd4ca83)GD32\_RESET\_SPI3
+
+| #define GD32\_RESET\_SPI3   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 13U) |
+| --- |
+
+## [◆ ](#a29dc662ab5efda932582be55688d15ea)GD32\_RESET\_SPI4
+
+| #define GD32\_RESET\_SPI4   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 20U) |
+| --- |
+
+## [◆ ](#ad283fe35b26fff58777091951686f31c)GD32\_RESET\_SPI5
+
+| #define GD32\_RESET\_SPI5   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 21U) |
+| --- |
+
+## [◆ ](#afd91e374f836fdf42970966e9d4677c4)GD32\_RESET\_SYSCFG
+
+| #define GD32\_RESET\_SYSCFG   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 14U) |
+| --- |
+
+## [◆ ](#a54f00182d8189f5703bf0b3e784f0dcb)GD32\_RESET\_TCMSRAM
+
+| #define GD32\_RESET\_TCMSRAM   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 20U) |
+| --- |
+
+## [◆ ](#a2a7fd67d22598a774386a49ded2a9c72)GD32\_RESET\_TIMER0
+
+| #define GD32\_RESET\_TIMER0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 0U) |
+| --- |
+
+## [◆ ](#a97beb7e8223a64c2fca25679a466f9e0)GD32\_RESET\_TIMER1
+
+| #define GD32\_RESET\_TIMER1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 0U) |
+| --- |
+
+## [◆ ](#ace4a405286adfe6212497aa14d6ec8b1)GD32\_RESET\_TIMER10
+
+| #define GD32\_RESET\_TIMER10   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 18U) |
+| --- |
+
+## [◆ ](#a9e880d91571e3cba08beddf6a4b51afd)GD32\_RESET\_TIMER11
+
+| #define GD32\_RESET\_TIMER11   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 6U) |
+| --- |
+
+## [◆ ](#a949b2dd18643f528ec987cfadfd179e6)GD32\_RESET\_TIMER12
+
+| #define GD32\_RESET\_TIMER12   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 7U) |
+| --- |
+
+## [◆ ](#a012ec5ec4ff3dca4b788f9839be1c2f6)GD32\_RESET\_TIMER13
+
+| #define GD32\_RESET\_TIMER13   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 8U) |
+| --- |
+
+## [◆ ](#a113cfc98af5cb46151d0545cf54fe5aa)GD32\_RESET\_TIMER2
+
+| #define GD32\_RESET\_TIMER2   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 1U) |
+| --- |
+
+## [◆ ](#a0e077bd7bba73a98e2dc97de52dfef81)GD32\_RESET\_TIMER3
+
+| #define GD32\_RESET\_TIMER3   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 2U) |
+| --- |
+
+## [◆ ](#a8c2042627d0c1e0248ea51b0a1c2fd63)GD32\_RESET\_TIMER4
+
+| #define GD32\_RESET\_TIMER4   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 3U) |
+| --- |
+
+## [◆ ](#a532af4dda1790a9b56bb8c023a3d01b7)GD32\_RESET\_TIMER5
+
+| #define GD32\_RESET\_TIMER5   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 4U) |
+| --- |
+
+## [◆ ](#ab23dd190237e1223cd5273742f9d2e10)GD32\_RESET\_TIMER6
+
+| #define GD32\_RESET\_TIMER6   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 5U) |
+| --- |
+
+## [◆ ](#aa705f811b509f9aa4e671a3651b22bec)GD32\_RESET\_TIMER7
+
+| #define GD32\_RESET\_TIMER7   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 1U) |
+| --- |
+
+## [◆ ](#a3304de281ad58c3daa7539c0c13baa3a)GD32\_RESET\_TIMER8
+
+| #define GD32\_RESET\_TIMER8   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 16U) |
+| --- |
+
+## [◆ ](#a9422ecb4a384c91d6498c2cba75a4b78)GD32\_RESET\_TIMER9
+
+| #define GD32\_RESET\_TIMER9   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 17U) |
+| --- |
+
+## [◆ ](#a9d8125f8be06b7c9f6529b95d68327dd)GD32\_RESET\_TLI
+
+| #define GD32\_RESET\_TLI   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 26U) |
+| --- |
+
+## [◆ ](#ac811f656607426b5ef151ae7a829549d)GD32\_RESET\_TRNG
+
+| #define GD32\_RESET\_TRNG   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 6U) |
+| --- |
+
+## [◆ ](#a58caa0f60b03f664298bd75c8f198e9b)GD32\_RESET\_UART3
+
+| #define GD32\_RESET\_UART3   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 19U) |
+| --- |
+
+## [◆ ](#a9787ffdf0edba62357937f3bd4e33f53)GD32\_RESET\_UART4
+
+| #define GD32\_RESET\_UART4   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 20U) |
+| --- |
+
+## [◆ ](#a075dd2cdc2fea79d808443e9919cc91f)GD32\_RESET\_UART6
+
+| #define GD32\_RESET\_UART6   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 30U) |
+| --- |
+
+## [◆ ](#a77a8fe83e45c59552421f80e0aa2f027)GD32\_RESET\_UART7
+
+| #define GD32\_RESET\_UART7   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 31U) |
+| --- |
+
+## [◆ ](#a6a03a7368d1e153ddf89547962711d35)GD32\_RESET\_USART0
+
+| #define GD32\_RESET\_USART0   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 4U) |
+| --- |
+
+## [◆ ](#aeb24e0ab9ae6be1c82593220c9719117)GD32\_RESET\_USART1
+
+| #define GD32\_RESET\_USART1   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 17U) |
+| --- |
+
+## [◆ ](#a362e90b2303107bd5ec1cd57662e986a)GD32\_RESET\_USART2
+
+| #define GD32\_RESET\_USART2   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 18U) |
+| --- |
+
+## [◆ ](#a87a2774f9d39af11dcbf2dd4186fcb40)GD32\_RESET\_USART5
+
+| #define GD32\_RESET\_USART5   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB2RST, 5U) |
+| --- |
+
+## [◆ ](#afd49566055b04e1ad0c58397379d6fca)GD32\_RESET\_USBFS
+
+| #define GD32\_RESET\_USBFS   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB2RST, 7U) |
+| --- |
+
+## [◆ ](#a5750c8bb5be4a0855dacc641182a1f37)GD32\_RESET\_USBHS
+
+| #define GD32\_RESET\_USBHS   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 29U) |
+| --- |
+
+## [◆ ](#a6a21e748f3d9f642a46908b442ecfa25)GD32\_RESET\_USBHSULPI
+
+| #define GD32\_RESET\_USBHSULPI   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(AHB1RST, 30U) |
+| --- |
+
+## [◆ ](#a8aac1c0ab090d8568076f6d8556e5c7a)GD32\_RESET\_WWDGT
+
+| #define GD32\_RESET\_WWDGT   [GD32\_RESET\_CONFIG](gd32-common_8h.md#a518d3150ddd85f37ae028ee744378594)(APB1RST, 11U) |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
+- [gd32f4xx.h](gd32f4xx_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

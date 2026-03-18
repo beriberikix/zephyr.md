@@ -1,0 +1,112 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/functions_u.html
+original_path: doxygen/html/functions_u.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+Here is a list of all struct and union fields with links to the structures/unions they belong to:
+
+### - u -
+
+- u : [evtchn\_status](structevtchn__status.md#a332ac0bb8666e0e1d8a0ae015cdcacc6), [xen\_domctl](structxen__domctl.md#af36b8da93f1e4f58a4f079088ac982ec), [xen\_domctl\_assign\_device](structxen__domctl__assign__device.md#a76fde5e4eb3713c1db5dba8924e627a1), [xen\_domctl\_bind\_pt\_irq](structxen__domctl__bind__pt__irq.md#a57facd116b7981a353636a698b821062), [xen\_domctl\_schedparam\_vcpu](structxen__domctl__schedparam__vcpu.md#a0c6818fb83e36a05c2eebad138206cd3), [xen\_domctl\_scheduler\_op](structxen__domctl__scheduler__op.md#a9fd7a528fb9673c55e6eb34fa939c9be)
+- u16 : [lwm2m\_time\_series\_elem](structlwm2m__time__series__elem.md#ad0cd9f29ce0d7e99c1ae411bd89a29fa)
+- u32 : [lwm2m\_time\_series\_elem](structlwm2m__time__series__elem.md#a58b1e7f9eb00d58421aec63bfbc732ed)
+- u64 : [lwm2m\_time\_series\_elem](structlwm2m__time__series__elem.md#ae432e592ddceb17113f25bef77308f1b)
+- u8 : [lwm2m\_time\_series\_elem](structlwm2m__time__series__elem.md#abb0726f2ba23ab5f3229342d62f63e6b)
+- uart : [modem\_backend\_uart](structmodem__backend__uart.md#a26f3331f0ae7d9384f369ae50694090d), [modem\_backend\_uart\_config](structmodem__backend__uart__config.md#a4f8752a33e75164370a8eb81615c2555)
+- uart\_api : [uart\_mux\_driver\_api](structuart__mux__driver__api.md#a600ea39ef3bcfcd8949ab3f38c8a454c)
+- uart\_dev : [tty\_serial](structtty__serial.md#a6264c52c87ee712552dc5278bfd2cade)
+- ub\_masked : [gpio\_cmsdk\_ahb](structgpio__cmsdk__ahb.md#aece662b5260db9a8b43fc61ebd7a288c)
+- ud\_copy : [smp\_transport\_api\_t](structsmp__transport__api__t.md#ae3153c9a27123de510e4ee83cc9c0c62)
+- ud\_free : [smp\_transport\_api\_t](structsmp__transport__api__t.md#acc98fb8a8e7e674ec907939831de1809)
+- udev : [uhc\_transfer](structuhc__transfer.md#a00a20358e5ea4bab3d21c146cfb74737)
+- uds\_ctx : [usbd\_class\_data](structusbd__class__data.md#af2560e7d2e9f4fcc70be0a13883594b1)
+- ugg\_feat : [bt\_gmap\_feat](structbt__gmap__feat.md#a7e57da1f8aa0a6ac8e7f929f5ba7e9cd)
+- ugt\_feat : [bt\_gmap\_feat](structbt__gmap__feat.md#a3793984ce81ff90aab8eb6ad635e24d5)
+- uhs\_2\_support : [sdhc\_host\_caps](structsdhc__host__caps.md#a146c7403d7ecbbffbd6aa0c1c4fad1b5)
+- uhs\_max\_dtr : [sd\_switch\_caps](structsd__switch__caps.md#a8ca2e61fd768be2b472847fa93509b99)
+- unacked\_ping : [mqtt\_client](structmqtt__client.md#a67f76cd0feadf8ae11ed232dcc9ac1d1)
+- unbound : [evtchn\_status](structevtchn__status.md#a450e072e1a3e19b118c77f28296b16af)
+- unchunked\_ext\_msg\_supported : [pd\_fixed\_supply\_pdo\_source](unionpd__fixed__supply__pdo__source.md#a440ff92d2bd533e3ddd6c65f9ac21772), [pd\_rdo](unionpd__rdo.md#ae71e9abde3d69211c7bcfc7b80d18c41)
+- unconstrained\_power : [pd\_fixed\_supply\_pdo\_sink](unionpd__fixed__supply__pdo__sink.md#ab406f1f36e5fe6f7acb9abc91991a803), [pd\_fixed\_supply\_pdo\_source](unionpd__fixed__supply__pdo__source.md#a9fc10f3ec4126c063f5dd99e8f3e2723)
+- uncorr\_ecc\_errors : [net\_stats\_eth\_errors](structnet__stats__eth__errors.md#a07d0a435f2129556520c732571d28edf)
+- unframed\_supported : [bt\_audio\_codec\_qos\_pref](structbt__audio__codec__qos__pref.md#a3bdb319d2aa401102fb9e54f92993e83)
+- unicast : [bt\_iso\_info](structbt__iso__info.md#a423474bd89ecdc614e6dfb8ea84db27e), [net\_if\_ipv4](structnet__if__ipv4.md#a89b942f7120619fba28f4fd9ab0bf41c), [net\_if\_ipv6](structnet__if__ipv6.md#adb6431d336cc3f46972e13d2255452c8)
+- unicast\_group : [bt\_cap\_unicast\_to\_broadcast\_param](structbt__cap__unicast__to__broadcast__param.md#a249a8ae6be36346c78dddb4406ed5239)
+- unicast\_retrans\_count : [bt\_mesh\_sar\_tx](structbt__mesh__sar__tx.md#adaa856b561ac24c07706a04eea157183)
+- unicast\_retrans\_int\_inc : [bt\_mesh\_sar\_tx](structbt__mesh__sar__tx.md#a40a96d401f44345397bd605d6f25e04a)
+- unicast\_retrans\_int\_step : [bt\_mesh\_sar\_tx](structbt__mesh__sar__tx.md#a8e0ad5b5977bd4aad20bd79977a0342d)
+- unicast\_retrans\_without\_prog\_count : [bt\_mesh\_sar\_tx](structbt__mesh__sar__tx.md#a1893bbeb473ebcf99db633e7f979b376)
+- uninit : [shell\_transport\_api](structshell__transport__api.md#a94cc7843174a4aba668389a4b46928d3)
+- uninit\_cb : [shell\_ctx](structshell__ctx.md#a0ec61f11544cb817bbd46ed4aa332123)
+- uninit\_count : [net\_buf\_pool](structnet__buf__pool.md#a3fdf83b4c0b5acefbb761da285791ad2)
+- unit : [bt\_gatt\_cpf](structbt__gatt__cpf.md#a2a9f3d3f72b9acb1ef7f2dc765e5a231)
+- unit\_id : [modbus\_adu](structmodbus__adu.md#ab1fc3e76f3f406c8a0715055088d290d), [modbus\_server\_param](structmodbus__server__param.md#a323a3a9be08f3c77df9f06b135f7f379)
+- units : [bt\_aics\_register\_param](structbt__aics__register__param.md#a4b2eae9a9716629e9c56ee3e6dc05e44)
+- unknown\_protocol : [net\_stats\_eth](structnet__stats__eth.md#afaacee7cc1d0a35ae2344175421c40dd)
+- unlink : [fs\_file\_system\_t](structfs__file__system__t.md#a3486815c6b1dcf0aef0be7a71a31ffea)
+- unlock : [udc\_api](structudc__api.md#a2029ee9db16e15e2b609c3199b00e201)
+- unmap\_addr : [pcie\_ep\_driver\_api](structpcie__ep__driver__api.md#a82d9766067a066d83b25390ad5903534)
+- unmapped\_pages : [sys\_mm\_drv\_bank](structsys__mm__drv__bank.md#a8fd91db4f69c273b2d26bb770292cd83)
+- unmount : [fs\_file\_system\_t](structfs__file__system__t.md#a04659fbb0096ca2cc5e733d483494ae4)
+- unmute : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#a6a217e0d8cbcc56e5128d5b7acdaac6d)
+- unmute\_written : [bt\_micp\_mic\_ctlr\_cb](structbt__micp__mic__ctlr__cb.md#a03afd3a79838c15be9262f441a3d338b)
+- unprovisioned\_beacon : [bt\_mesh\_prov](structbt__mesh__prov.md#a8142a3b8120b1686f68513caeac09497)
+- unprovisioned\_beacon\_gatt : [bt\_mesh\_prov](structbt__mesh__prov.md#a7eddf1f088264f8b6e3fb86dce4c108e)
+- unref : [net\_buf\_data\_cb](structnet__buf__data__cb.md#a80c307edcf878bde8d43813854185575)
+- unsol\_matches : [modem\_chat\_config](structmodem__chat__config.md#a661d96b8a7031b17e6f660c6e0e4be11)
+- unsol\_matches\_size : [modem\_chat\_config](structmodem__chat__config.md#addfa7cacc676190d9e29c451d47ea3bd)
+- unsuback : [mqtt\_evt\_param](unionmqtt__evt__param.md#ad040b028ed0aaabcaddedc204fb709d8)
+- unused : [k\_object\_data](unionk__object__data.md#a2f95fd75c72a619e8c5224e64d1aacc0), [k\_poll\_event](structk__poll__event.md#a750ac48e7aa3c8fb70814b24e951fc85), [net\_ptp\_extended\_time](structnet__ptp__extended__time.md#a20379af8395fe3afc1f6f9c45b711115), [net\_ptp\_time](structnet__ptp__time.md#a91cf8ed8438c4ad54ac0d65a9cd88802)
+- unused0 : [multiboot\_info](structmultiboot__info.md#a7709e8650e2fa12efd1acd00245b0ea2)
+- unused1 : [multiboot\_info](structmultiboot__info.md#a5eb3d633538c372a5edb6be72f9c667b)
+- up : [ppp\_fsm](structppp__fsm.md#aa1ca37605ab7934c16a5260d531efa00)
+- update : [bt\_mesh\_dfu\_srv](structbt__mesh__dfu__srv.md#a5765c6e143b5fcd0f579f7671a86c4ea), [bt\_mesh\_model\_pub](structbt__mesh__model__pub.md#a0354344e08e633dc4d6c0b4e7b169080), [shell\_transport\_api](structshell__transport__api.md#a3b447d16d7c30f994c582d67bde57ba8), [usbd\_class\_api](structusbd__class__api.md#adaa09908b17f85e97f39266f79cb32a8)
+- update\_channels : [led\_strip\_driver\_api](structled__strip__driver__api.md#ad5969b78c4b77d570669abd5143ec228)
+- update\_rgb : [led\_strip\_driver\_api](structled__strip__driver__api.md#af0f7a73d61589355b520f76073013425)
+- upgrade : [http\_parser](structhttp__parser.md#a748f476eacc5ac56b84dd07dbafb42a4), [img\_mgmt\_upload\_req](structimg__mgmt__upload__req.md#a439504202c945a1dd74b75c35a1a8017)
+- upload : [bt\_mesh\_dfd\_srv](structbt__mesh__dfd__srv.md#a26e4b13a8688f26c3330a2b0948bfc8d), [img\_mgmt\_client](structimg__mgmt__client.md#a77559218adc5f7873366c56f9a02750e)
+- upload\_header\_size : [img\_gr\_upload](structimg__gr__upload.md#ae5245e6622c991cbd207b3f69f7548f3)
+- uri : [bt\_mesh\_dfu\_img](structbt__mesh__dfu__img.md#a578b2932efb07a3e4eb80043902cc7a0), [bt\_mesh\_prov](structbt__mesh__prov.md#a6a11cc0d36ca2f4c5aee67a023c295a2)
+- url : [http\_request](structhttp__request.md#a6a7573252e31fddb5cad5a6764c486c1), [websocket\_request](structwebsocket__request.md#a49ef6c2f4201beeb3af8992ded2bd4a3)
+- usage : [pm\_device\_base](structpm__device__base.md#a4a9eeb093de1b1e60222b25a06a6361d), [usb\_ep\_desc\_bmattr](structusb__ep__desc__bmattr.md#ace1957268116f35f93fc67e7ed2f827b)
+- usb\_comm\_capable : [pd\_rdo](unionpd__rdo.md#a30f6044378cad6f277f8694df5611230)
+- usb\_comms\_capable : [pd\_fixed\_supply\_pdo\_sink](unionpd__fixed__supply__pdo__sink.md#a0559272067e2d0c33f52274fb59ea18d), [pd\_fixed\_supply\_pdo\_source](unionpd__fixed__supply__pdo__source.md#a6c1bcf37a1fc9a348cf19e16fbe01dac)
+- usb\_device\_description : [usb\_cfg\_data](structusb__cfg__data.md#a842d4d8a08dd619dd8ee5ccf62ae1e2a)
+- usb\_suspend\_supported : [pd\_fixed\_supply\_pdo\_source](unionpd__fixed__supply__pdo__source.md#a55003edba55a920a386cc04cbc7a72a0)
+- use\_colors : [shell\_backend\_config\_flags](structshell__backend__config__flags.md#af810ff3fba00527cb0561a75b70fec09)
+- use\_count : [llext](structllext.md#a61c5ca5c740f5bb14791f11354b68101)
+- use\_dtls : [lwm2m\_ctx](structlwm2m__ctx.md#aeb1e3ffc83853f74f2201f582917c2ce)
+- use\_other\_union : [segment\_descriptor](structsegment__descriptor.md#ac9f594b7ca9e04d5a7cf8a246c73c7d5)
+- use\_param : [mpl\_cmd](structmpl__cmd.md#aca5e50b9f883a3c81f10ad51032a31f9)
+- use\_vt100 : [shell\_backend\_config\_flags](structshell__backend__config__flags.md#a0d017df8e9d9609f2830829d8720b9cf)
+- used\_msgs : [k\_msgq](structk__msgq.md#a5c0cc83eaaf44d7fd7de8fffc7b2f857), [k\_msgq\_attrs](structk__msgq__attrs.md#a00f936870442fa455117cbdd7821fac5)
+- user : [mdm\_hl7800\_polte\_registration\_event\_data](structmdm__hl7800__polte__registration__event__data.md#adc8d2cee46aae9ed0736d85ab5805cb0)
+- user\_cb : [ec\_host\_cmd](structec__host__cmd.md#ad2f10eda2e6c2743d9c3068bda4deb7c), [modbus\_server\_param](structmodbus__server__param.md#ad8f72ea4e7dbbd81e23415e25b7d94be)
+- user\_ctx : [shell\_fprintf](structshell__fprintf.md#ab1920b62893c411baea3e1ff35816185)
+- user\_data : [adc\_sequence\_options](structadc__sequence__options.md#a262fd6daefb22df02c726aafcddc6d47), [bt\_bap\_stream](structbt__bap__stream.md#afe81620dd215aebe04ddc9e36dc7d2dd), [bt\_gatt\_attr](structbt__gatt__attr.md#adeb063fb101fab45dd789c7212c43357), [bt\_gatt\_notify\_params](structbt__gatt__notify__params.md#adec9a6f6ea0604e82b90dd47bb9951fa), [bt\_mesh\_dfu\_metadata](structbt__mesh__dfu__metadata.md#ac3e6dd2b069785ae359d49162d33e104), [bt\_mesh\_model::bt\_mesh\_model\_rt\_ctx](structbt__mesh__model_1_1bt__mesh__model__rt__ctx.md#a718d3be40e7be83a196634054d18d568), [bt\_mesh\_msg\_ack\_ctx](structbt__mesh__msg__ack__ctx.md#a510baede03d53b2419ade8da6d02fa10), [can\_mcan\_rx\_callback](structcan__mcan__rx__callback.md#ab6196a8d1f7a067c872d4d0fe7d7d00b), [can\_mcan\_tx\_callback](structcan__mcan__tx__callback.md#a0af42dc41c9a7d4d0fe245ef78b857ad), [can\_sja1000\_rx\_filter](structcan__sja1000__rx__filter.md#addc5b07b6aa6a144ae0d2e792523f4df), [coap\_client\_request](structcoap__client__request.md#ad725d95c1745d19e74d3ed39710b10b4), [coap\_core\_metadata](structcoap__core__metadata.md#a74e8a533d7f8596498d5d0ce2afc102f), [coap\_reply](structcoap__reply.md#aa951d9ba4eb7f8041e8e82df9c1401dc), [coap\_resource](structcoap__resource.md#a202a83a5aa024a62bd25cc40f42e8d65), [counter\_alarm\_cfg](structcounter__alarm__cfg.md#aeaf2bd9042a28b626e0972aff4ad09e5), [counter\_top\_cfg](structcounter__top__cfg.md#af033941769c710e82cf9dd9f12ff011c), [dma\_config](structdma__config.md#a510eed1cadbf411c9e94e1d1fb43d39d), [dns\_resolve\_context::dns\_pending\_query](structdns__resolve__context_1_1dns__pending__query.md#a6a1c93f3eab8f9aa55dbb26e704bb343), [ec\_host\_cmd](structec__host__cmd.md#a7982f079e67180de58ebd0a6f0f5d7e0), [http\_client\_internal\_data](structhttp__client__internal__data.md#a330102d665b6601949eb7331ab45d517), [maxim\_ds3231\_alarm](structmaxim__ds3231__alarm.md#a192fb8c10246bfe466e74aafbb45d720), [modbus\_raw\_cb](structmodbus__raw__cb.md#abfa01344b7fc37adb2a3b23d4cc9507f), [modem\_chat](structmodem__chat.md#a26d717e335b4b1ade0972458c11f42da), [modem\_chat\_config](structmodem__chat__config.md#ac002d9f43309db8c3c35826127d94194), [modem\_cmux\_config](structmodem__cmux__config.md#a6714790f733ba7e4431353b6cdbbe3ee), [net\_buf](structnet__buf.md#ade8055f804d5a1fea13e55d71d92a5e7), [net\_context](structnet__context.md#a1679e131dd6626bc210f23938df3fbcb), [net\_icmp\_ctx](structnet__icmp__ctx.md#a2a718521d0b8c6de45c39fc8b45e47cf), [net\_socket\_service\_event](structnet__socket__service__event.md#aa11bb43a2cc48d167bf8995d860fd638), [net\_trickle](structnet__trickle.md#a40f69e10d41e34541ca88c092d6a3341), [openthread\_state\_changed\_cb](structopenthread__state__changed__cb.md#afdcd1fd3a9604bfe7754a66d5e446745), [sys\_multi\_heap\_rec](structsys__multi__heap__rec.md#ac6f27a9f92989284a852a24e01422be7), [zbus\_channel](structzbus__channel.md#ae629044f9b6da800db5a628fc6789dfb), [ztress\_context\_data](structztress__context__data.md#a871f79e1717137500d9ee4c1a2ad07ef)
+- user\_data\_len : [bt\_mesh\_dfu\_metadata](structbt__mesh__dfu__metadata.md#ae4853b55fda6ec8c4c8609d5648890ab)
+- user\_data\_size : [net\_buf](structnet__buf.md#a65db7bed62d7211114767e6ce58dad75), [net\_buf\_pool](structnet__buf__pool.md#a4718ecec19d7e2ccaf04b6ff61120975)
+- user\_name : [mqtt\_client](structmqtt__client.md#ab271f2061fe3c9e3c1a76158a1c00449)
+- userdata : [rtio\_cqe](structrtio__cqe.md#a15128387ccbea55812ef229eab7241e7), [rtio\_sqe](structrtio__sqe.md#a0ed519ee0b5867ff73bdaf37f983c971)
+- username : [mdm\_hl7800\_apn](structmdm__hl7800__apn.md#abfe087e7989513937c43a28dd83deb21)
+- usp : [x86\_tss64](structx86__tss64.md#afe97afae56793aae5ed3ba35f4b06143)
+- utc : [gnss\_data](structgnss__data.md#ae6bfc0c6a53901963a1d20bad025fb99), [sim7080\_gnss\_data](structsim7080__gnss__data.md#a8a42fbb4a716a0eefe317996f8fe7a8a)
+- utf16le : [usbd\_desc\_node](structusbd__desc__node.md#a266d0936f7684f6a3047e2a6d1875458)
+- utf8 : [mqtt\_utf8](structmqtt__utf8.md#a69a949e3c9cb1794f8d28091601eba16)
+- utype : [usbd\_desc\_node](structusbd__desc__node.md#a50e1b8db1dd6a4f3ca541394ad9d9adf)
+- uuid : [bt\_gatt\_attr](structbt__gatt__attr.md#a6958f507f9ff172018be458ebc86106f), [bt\_gatt\_chrc](structbt__gatt__chrc.md#af3b4c22ae37b912c8edf58294cc50702), [bt\_gatt\_discover\_params](structbt__gatt__discover__params.md#a77d6665c01902e4e23cf8de8a9436262), [bt\_gatt\_include](structbt__gatt__include.md#afa028e8daae00e3b1bc0b866c4335af3), [bt\_gatt\_indicate\_params](structbt__gatt__indicate__params.md#afde06f47d7a817291e437593ea01bccd), [bt\_gatt\_notify\_params](structbt__gatt__notify__params.md#a2994cbe737fad725c60427000c21c373), [bt\_gatt\_read\_params](structbt__gatt__read__params.md#ae2ba6ce4043769b86a050fd767248111), [bt\_gatt\_service\_val](structbt__gatt__service__val.md#a683e01db92400e76aed32b7a81369a55), [bt\_mesh\_cdb\_node](structbt__mesh__cdb__node.md#a751671f52c4fdf3f42b6f71193976dd5), [bt\_mesh\_cfg\_cli\_mod\_pub](structbt__mesh__cfg__cli__mod__pub.md#a29cbd50ad33f25ad3b98b4ec7ac56a6c), [bt\_mesh\_model\_pub](structbt__mesh__model__pub.md#abea9c2085c9d2e1e2fc71f03dd323ee7), [bt\_mesh\_msg\_ctx](structbt__mesh__msg__ctx.md#a548cab1ea578b29d6adf36afcf5d0299), [bt\_mesh\_prov](structbt__mesh__prov.md#a1152d77c4c4d9271bbd72514d94052f2), [bt\_mesh\_rpr\_unprov](structbt__mesh__rpr__unprov.md#aa5fe6bad39edcb45d2e024c1c890c680), [bt\_ots\_obj\_type](structbt__ots__obj__type.md#a89a8dbe566579422df503dd577ea8d42), [bt\_sdp\_client\_result](structbt__sdp__client__result.md#adf3dc871b32d50ed70bd27635bd176aa), [bt\_sdp\_discover\_params](structbt__sdp__discover__params.md#a4c6073d7afda09be462902f5a95eaaed), [bt\_uuid\_128](structbt__uuid__128.md#a3b8fd8a362ed8fd9eabcfa5bffa9eeee), [bt\_uuid\_16](structbt__uuid__16.md#a08f8a5e0eadf1ef2c4c917a5dd3db191), [bt\_uuid\_32](structbt__uuid__32.md#ae37fff06890b200895d559ef42d454e2), [ext2\_cfg](structext2__cfg.md#ad11fad3e7fd7088263b578babd60c77d)
+- uuid\_128 : [bt\_ots\_obj\_type](structbt__ots__obj__type.md#aedf0e5d45f6f4912a8eeae077eda17be)
+- uuid\_16 : [bt\_ots\_obj\_type](structbt__ots__obj__type.md#ae39b7a368314d1a771cf3573d2077095)
+- uuids : [bt\_mesh\_model](structbt__mesh__model.md#a274c811c22b764908599127b128ce584)
+
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

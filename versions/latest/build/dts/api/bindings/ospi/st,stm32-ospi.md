@@ -1,0 +1,87 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/ospi/st,stm32-ospi.html
+original_path: build/dts/api/bindings/ospi/st,stm32-ospi.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# st,stm32-ospi
+
+Vendor: [STMicroelectronics](../../bindings.md#dt-vendor-st)
+
+## Description
+
+These nodes are “ospi” bus nodes.
+
+```text
+STM32 OSPI device representation. Enabling a stm32 octospi node in a board
+description would typically requires this:
+
+    &octospi {
+        pinctrl-0 = <&octospi_clk_pe9 &octospi_ncs_pe10 &octospi_dqs_pe11
+                     &octospi_io0_pe12 &octospi_io1_pe13
+                     &octospi_io2_pe14 &octospi_io3_pe15
+                     &octospi_io4_pe16 &octospi_io5_pe17
+                     &octospi_io6_pe18 &octospi_io7_pe19>;
+
+        dmas = <&dma1 5 41 0x10000>;
+        dma-names = "tx_rx";
+
+        status = "okay";
+    };
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `pinctrl-0` | `phandles` | ```text Pin configuration/s for the first state. Content is specific to the selected pin controller driver implementation. ```  This property is **required**. |
+| `pinctrl-names` | `string-array` | ```text Names for the provided states. The number of names needs to match the number of states. ```  This property is **required**. |
+| `dlyb-bypass` | `boolean` | ```text Enables Delay Block (DLYB) Bypass. ``` |
+| `ssht-enable` | `boolean` | ```text Enables Sample Shifting half-cycle.  It is recommended to be enabled in STR mode and disabled in DTR mode. ``` |
+| `io-low-port` | `string` | ```text Specifies which port of the OCTOSPI IO Manager is used for the IO[3:0] pins.  If absent, then `IOPORT_<n>_LOW` is used where `n` is the OSPI instance number.  Note: You might need to enable the OCTOSPI I/O manager clock to use the       property. Please refer to Reference Manual.       The clock can be enabled in the devicetree. ```  Legal values: `'IOPORT_NONE'`, `'IOPORT_1_LOW'`, `'IOPORT_1_HIGH'`, `'IOPORT_2_LOW'`, `'IOPORT_2_HIGH'` |
+| `io-high-port` | `string` | ```text Specifies which port of the OCTOSPI IO Manager is used for the IO[7:4] pins.  If absent, then `IOPORT_<n>_HIGH` is used where `n` is the OSPI instance number.  Can be set to `IOPORT_NONE` for Single SPI, Dual SPI and Quad SPI.  Note: You might need to enable the OCTOSPI I/O manager clock to use the       property. Please refer to Reference Manual.       The clock can be enabled in the devicetree. ```  Legal values: `'IOPORT_NONE'`, `'IOPORT_1_LOW'`, `'IOPORT_1_HIGH'`, `'IOPORT_2_LOW'`, `'IOPORT_2_HIGH'` |
+| `pinctrl-1` | `phandles` | ```text Pin configuration/s for the second state. See pinctrl-0. ``` |
+| `pinctrl-2` | `phandles` | ```text Pin configuration/s for the third state. See pinctrl-0. ``` |
+| `pinctrl-3` | `phandles` | ```text Pin configuration/s for the fourth state. See pinctrl-0. ``` |
+| `pinctrl-4` | `phandles` | ```text Pin configuration/s for the fifth state. See pinctrl-0. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “st,stm32-ospi” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `reg` | `array` | ```text register space ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts` | `array` | ```text interrupts for device ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `clock-names` | `string-array` | ```text name of each clock ```  This property is **required**. |
+| `dmas` | `phandle-array` | ```text Optional DMA channel specifier, required for DMA transactions. For example dmas for TX/RX on OSPI    dmas = <&dma1 5 41 0x10000>;  With, in each cell of the dmas specifier: - &dma1: dma controller phandle - 5: channel number (0 to Max-Channel minus 1). From 0 to 15 on stm32u5x. - 41: slot number (request which could be given by the DMAMUX) - 0x10000: channel configuration (only for srce/dest data size, priority)  Notes:   - On series supporting DMAMUX, the DMA phandle should be provided     but DMAMUX node should also be enabled in the DTS.   - For channel configuration, only the config bits priority and     periph/mem datasize are used. The periph/mem datasize must be equal,     0 is a correct value.    - There is no Fifo used by this DMA peripheral.  For example dmas for TX/RX on OSPI    dmas = <&dma1 5 41 0x10000>; ``` |
+| `dma-names` | `string-array` | ```text DMA channel name. If DMA should be used, expected value is "tx_rx".  For example    dma-names = "tx_rx"; ``` |
+| `status` | `string` | ```text indicates the operational status of a device ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text compatible strings ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text name of each register space ``` |
+| `interrupts-extended` | `compound` | ```text extended interrupt specifier for device ``` |
+| `interrupt-names` | `string-array` | ```text name of each interrupt ``` |
+| `interrupt-parent` | `phandle` | ```text phandle to interrupt controller node ``` |
+| `label` | `string` | ```text Human readable string describing the device (used as device_get_binding() argument) ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information.  This property is **deprecated**. |
+| `clocks` | `phandle-array` | ```text Clock gate information ``` |
+| `#address-cells` | `int` | ```text number of address cells in reg property ``` |
+| `#size-cells` | `int` | ```text number of size cells in reg property ``` |
+| `io-channels` | `phandle-array` | ```text IO channels specifiers ``` |
+| `io-channel-names` | `string-array` | ```text Provided names of IO channel specifiers ``` |
+| `mboxes` | `phandle-array` | ```text mailbox / IPM channels specifiers ``` |
+| `mbox-names` | `string-array` | ```text Provided names of mailbox / IPM channel specifiers ``` |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `power-domain` | `phandle` | ```text Power domain the device belongs to.  The device will be notified when the power domain it belongs to is either suspended or resumed. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |

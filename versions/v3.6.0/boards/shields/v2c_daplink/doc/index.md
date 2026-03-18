@@ -1,0 +1,50 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/shields/v2c_daplink/doc/index.html
+original_path: boards/shields/v2c_daplink/doc/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# ARM V2C-DAPLink for DesignStart FPGA
+
+## Overview
+
+The [ARM V2C-DAPLink for DesignStart FPGA](https://developer.arm.com/tools-and-software/development-boards/designstart-daplink-board) shield can be used to provide
+DAPLink debug access to the ARM DesignStart FPGA reference designs implemented
+on the [Digilent Arty](../../../arm/arty/doc/index.md#arty).
+
+![V2C-DAPLink](../../../../_images/v2c_daplink.jpg)
+
+V2C-DAPLink (Credit: ARM Ltd.)
+
+In addition to DAPLink debug access, the V2C-DAPLink shield provides the
+following hardware features:
+
+- QSPI NOR flash
+- Micro-SD card slot
+
+## Programming
+
+When using the V2C-DAPLink shield with the `Cfg` jumper (`J2`) open, the CPU
+will boot from ITCM and flashing can be performed automatically. The console is
+routed to USB connector `J10` on the [Digilent Arty](../../../arm/arty/doc/index.md#arty). For example:
+
+```shell
+# From the root of the zephyr repository
+west build -b arty_a7_arm_designstart_m1 samples/hello_world -- -DSHIELD=v2c_daplink
+west flash
+```
+
+When using the V2C-DAPLink shield with the `Cfg` jumper (`J2`) closed, the
+CPU will boot from the V2C-DAPLink QSPI NOR flash. The console is routed to USB
+connector `J1` on the V2C-DAPLink. Flashing needs to be done
+manually by copying the resulting `zephyr/zephyr.bin` file to the USB mass
+storage device provided by the V2C-DAPLink shield:
+
+```shell
+# From the root of the zephyr repository
+west build -b arty_a7_arm_designstart_m1 samples/hello_world -- -DSHIELD=v2c_daplink_cfg
+```

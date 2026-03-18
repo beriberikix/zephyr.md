@@ -1,0 +1,171 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/x86/qemu_x86/doc/index.html
+original_path: boards/x86/qemu_x86/doc/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# X86 Emulation (QEMU)
+
+## Overview
+
+The X86 QEMU board configuration is used to emulate the X86 architecture.
+
+This board configuration provides support for an x86 Minute IA (Lakemont) CPU
+and the following devices:
+
+- HPET
+- Advanced Programmable Interrupt Controller (APIC)
+- NS16550 UART
+
+## Hardware
+
+### Supported Features
+
+This configuration supports the following hardware features:
+
+| Interface | Controller | Driver/Component |
+| --- | --- | --- |
+| HPET | on-chip | system clock |
+| APIC | on-chip | interrupt controller |
+| NS16550 UART | on-chip | serial port |
+
+### Devices
+
+#### HPET System Clock Support
+
+The configuration uses an HPET clock frequency of 25 MHz.
+
+#### Serial Port
+
+The board configuration uses a single serial communication channel that
+uses the NS16550 serial driver operating in polling mode. To override, enable
+the UART\_INTERRUPT\_DRIVEN Kconfig option, which allows the system to be
+interrupt-driven.
+
+If SLIP networking is enabled (see below), an additional serial port will be
+used for it.
+
+### Known Problems or Limitations
+
+The following platform features are unsupported:
+
+- Isolated Memory Regions
+- Serial port in Direct Memory Access (DMA) mode
+- Serial Peripheral Interface (SPI) flash
+- General-Purpose Input/Output (GPIO)
+- Inter-Integrated Circuit (I2C)
+- Ethernet
+- Supervisor Mode Execution Protection (SMEP)
+
+## Programming and Debugging
+
+Applications for the `qemu_x86` board configuration can be built and run in
+the usual way for emulated boards (see [Building an Application](../../../../develop/application/index.md#build-an-application) and
+[Run an Application](../../../../develop/application/index.md#application-run) for more details).
+
+### Flashing
+
+While this board is emulated and you can’t “flash” it, you can use this
+configuration to run basic Zephyr applications and kernel tests in the QEMU
+emulated environment. For example, with the [Basic Synchronization](../../../../samples/synchronization/README.md#synchronization "Manipulate basic kernel synchronization primitives.") sample:
+
+```shell
+# From the root of the zephyr repository
+west build -b qemu_x86 samples/synchronization
+west build -t run
+```
+
+This will build an image with the synchronization sample app, boot it using
+QEMU, and display the following console output:
+
+```shell
+***** BOOTING ZEPHYR OS v1.8.99 - BUILD: Jun 27 2017 13:09:26 *****
+threadA: Hello World from x86!
+threadB: Hello World from x86!
+threadA: Hello World from x86!
+threadB: Hello World from x86!
+threadA: Hello World from x86!
+threadB: Hello World from x86!
+threadA: Hello World from x86!
+threadB: Hello World from x86!
+threadA: Hello World from x86!
+threadB: Hello World from x86!
+```
+
+Exit QEMU by pressing `CTRL+A` `x`.
+
+For qemu\_x86\_64 platform, it also supports to use UEFI bootable method
+to run Zephyr applications and kernel tests, but you need to set up
+some environment configurations as follows:
+
+- Please install uefi-run in your system environment according to this
+  reference link [https://github.com/Richard-W/uefi-run](https://github.com/Richard-W/uefi-run). Note that uefi-run
+  from snapstore may not work because of strict snap confinements.
+  The preferred method is installing with cargo.
+- Please install OVMF in your system environment according to this
+  reference link [https://github.com/tianocore/tianocore.github.io/wiki/OVMF](https://github.com/tianocore/tianocore.github.io/wiki/OVMF).
+  The easiest way is to install a special `ovmf` package found in many distros.
+  For example, use the following command in Ubuntu:
+
+  ```shell
+  sudo apt install ovmf
+  ```
+- Set system environment variable OVMF\_FD\_PATH,
+  for example:
+
+  ```shell
+  export OVMF_FD_PATH=/usr/share/OVMF/OVMF_CODE.fd
+  ```
+
+Now you can build application, for example UEFI boot test sample found under
+[tests/boot/uefi](https://github.com/zephyrproject-rtos/zephyr/blob/main/tests/boot/uefi):
+
+```shell
+# From the root of the zephyr repository
+west build -b qemu_x86_64 tests/boot/uefi
+west build -t run
+```
+
+This will build an image with the uefi boot test app, boot it on
+qemu\_x86\_64 using UEFI, and display the following console output:
+
+```shell
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.70 (EDK II, 0x00010000)
+Mapping table
+      FS0: Alias(s):F0a:;BLK0:
+          PciRoot(0x0)/Pci(0x1,0x1)/Ata(0x0)
+     BLK1: Alias(s):
+          PciRoot(0x0)/Pci(0x1,0x1)/Ata(0x0)
+Press ESC in 1 seconds to skip startup.nsh or any other key to continue.
+Starting UEFI application...
+*** Zephyr EFI Loader ***
+Zeroing 524544 bytes of memory at 0x105000
+Copying 32768 data bytes to 0x1000 from image offset
+Copying 20480 data bytes to 0x100000 from image offset 32768
+Copying 540416 data bytes to 0x185100 from image offset 53248
+Jumping to Entry Point: 0x112b (48 31 c0 48 31 d2 48)
+*** Booting Zephyr OS build zephyr-v2.6.0-1472-g61810ec36d28  ***
+Hello World! qemu_x86_64
+```
+
+Exit QEMU by pressing `CTRL+A` `x`.
+
+### Debugging
+
+Refer to the detailed overview about [Application Debugging](../../../../develop/debug/index.md#application-debugging).
+
+### Networking
+
+The board supports SLIP networking over an emulated serial port
+(`CONFIG_NET_SLIP_TAP=y`). The detailed setup is described in
+[Networking with QEMU](../../../../connectivity/networking/qemu_setup.md#networking-with-qemu).
+
+It is also possible to use the QEMU built-in Ethernet adapter to connect
+to the host system. This is faster than using SLIP and is also the preferred
+way. See [Networking with QEMU Ethernet](../../../../connectivity/networking/qemu_eth_setup.md#networking-with-eth-qemu) for details.

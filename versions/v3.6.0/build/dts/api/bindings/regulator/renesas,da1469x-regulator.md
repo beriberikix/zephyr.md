@@ -1,0 +1,42 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/regulator/renesas,da1469x-regulator.html
+original_path: build/dts/api/bindings/regulator/renesas,da1469x-regulator.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# renesas,smartbond-regulator
+
+Vendor: [Renesas Electronics Corporation](../../bindings.md#dt-vendor-renesas)
+
+## Description
+
+```text
+Renesas Smartbond(tm) LDO and DCDC regulators
+```
+
+## Properties
+
+### Top level properties
+
+No top-level properties.
+
+### Child node properties
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `renesas,regulator-v30-ref-bandgap` | `boolean` | ```text Selects reference source for V30 LDO to Bandgap output. ``` |
+| `renesas,regulator-v30-clamp` | `boolean` | ```text Enables clamp that can supply V30 from VBAT. ``` |
+| `renesas,regulator-v30-vbus` | `boolean` | ```text Allow V30 to be powered from VBUS. ``` |
+| `renesas,regulator-v30-vbat` | `boolean` | ```text Allow V30 to be powered from VBAT. ``` |
+| `renesas,regulator-dcdc-vbat-high` | `boolean` | ```text Enable DCDC in high battery voltage mode. ``` |
+| `renesas,regulator-dcdc-vbat-low` | `boolean` | ```text Enable DCDC in low battery voltage mode. ``` |
+| `renesas,regulator-sleep-ldo` | `boolean` | ```text Enable LDO in sleep mode. ``` |
+| `regulator-init-microvolt` | `int` | ```text Voltage set during initialisation ``` |
+| `regulator-max-microamp` | `int` | ```text largest current consumers may set ``` |
+| `regulator-always-on` | `boolean` | ```text boolean, regulator should never be disabled ``` |
+| `regulator-boot-on` | `boolean` | ```text bootloader/firmware enabled regulator. It's expected that this regulator was left on by the bootloader. If the bootloader didn't leave it on then OS should turn it on at boot but shouldn't prevent it from being turned off later. This property is intended to only be used for regulators where software cannot read the state of the regulator. ``` |
+| `regulator-initial-mode` | `int` | ```text Initial operating mode. The set of possible operating modes depends on the capabilities of every hardware so each device binding documentation explains which values the regulator supports. ``` |

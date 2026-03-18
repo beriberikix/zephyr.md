@@ -1,0 +1,333 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/retention/index.html
+original_path: services/retention/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Retention System
+
+The retention system provides an API which allows applications to read and
+write data from and to memory areas or devices that retain the data while the
+device is powered. This allows for sharing information between different
+applications or within a single application without losing state information
+when a device reboots. The stored data should not persist in the event of a
+power failure (or during some low-power modes on some devices) nor should it be
+stored to a non-volatile storage like [Flash](../../hardware/peripherals/flash.md#flash-api), [Electrically Erasable Programmable Read-Only Memory (EEPROM)](../../hardware/peripherals/eeprom.md#eeprom-api), or
+battery-backed RAM.
+
+The retention system builds on top of the retained data driver, and adds
+additional software-level features to it for ensuring the validity of data.
+Optionally, a magic header can be used to check if the front of
+the retained data memory section contains this specific value, and an optional
+checksum (1, 2, or 4-bytes in size) of the stored data can be appended to the
+end of the data. Additionally, the retention system API allows partitioning of
+the retained data sections into multiple distinct areas. For example, a 64-byte
+retained data area could be split up into 4 bytes for a boot mode, 16 bytes for
+a timestamp, 44 bytes for a last log message. All of these sections can be
+accessed or updated independently. The prefix and checksum can be set
+per-instance using devicetree.
+
+## Devicetree setup
+
+To use the retention system, a retained data driver must be setup for the board
+you are using, there is a zephyr driver which can be used which will use some
+RAM as non-init for this purpose. The retention system is then initialised as a
+child node of this device 1 or more times - note that the memory region will
+need to be decremented to account for this reserved portion of RAM. See the
+following example (examples in this guide are based on the
+[nRF52840 DK](../../boards/arm/nrf52840dk_nrf52840/doc/index.md#nrf52840dk-nrf52840) board and memory layout):
+
+```devicetree
+/ {
+        sram@2003FC00 {
+                compatible = "zephyr,memory-region", "mmio-sram";
+                reg = <0x2003FC00 DT_SIZE_K(1)>;
+                zephyr,memory-region = "RetainedMem";
+                status = "okay";
+
+                retainedmem {
+                        compatible = "zephyr,retained-ram";
+                        status = "okay";
+                        #address-cells = <1>;
+                        #size-cells = <1>;
+
+                        /* This creates a 256-byte partition */
+                        retention0: retention@0 {
+                                compatible = "zephyr,retention";
+                                status = "okay";
+
+                                /* The total size of this area is 256
+                                 * bytes which includes the prefix and
+                                 * checksum, this means that the usable
+                                 * data storage area is 256 - 3 = 253
+                                 * bytes
+                                 */
+                                reg = <0x0 0x100>;
+
+                                /* This is the prefix which must appear
+                                 * at the front of the data
+                                 */
+                                prefix = [08 04];
+
+                                /* This uses a 1-byte checksum */
+                                checksum = <1>;
+                        };
+
+                        /* This creates a 768-byte partition */
+                        retention1: retention@100 {
+                                compatible = "zephyr,retention";
+                                status = "okay";
+
+                                /* Start position must be after the end
+                                 * of the previous partition. The total
+                                 * size of this area is 768 bytes which
+                                 * includes the prefix and checksum,
+                                 * this means that the usable data
+                                 * storage area is 768 - 6 = 762 bytes
+                                 */
+                                reg = <0x100 0x300>;
+
+                                /* This is the prefix which must appear
+                                 * at the front of the data
+                                 */
+                                prefix = [00 11 55 88 fa bc];
+
+                                /* If omitted, there will be no
+                                 * checksum
+                                 */
+                        };
+                };
+        };
+};
+
+/* Reduce SRAM0 usage by 1KB to account for non-init area */
+&sram0 {
+        reg = <0x20000000 DT_SIZE_K(255)>;
+};
+```
+
+The retention areas can then be accessed using the data retention API (once
+enabled with [`CONFIG_RETENTION`](../../kconfig.md#CONFIG_RETENTION "CONFIG_RETENTION"), which requires that
+[`CONFIG_RETAINED_MEM`](../../kconfig.md#CONFIG_RETAINED_MEM "CONFIG_RETAINED_MEM") be enabled) by getting the device by
+using:
+
+```c
+#include <zephyr/device.h>
+#include <zephyr/retention/retention.h>
+
+const struct device *retention1 = DEVICE_DT_GET(DT_NODELABEL(retention1));
+const struct device *retention2 = DEVICE_DT_GET(DT_NODELABEL(retention2));
+```
+
+When the write function is called, the magic header and checksum (if enabled)
+will be set on the area, and it will be marked as valid from that point
+onwards.
+
+## Mutex protection
+
+Mutex protection of retention areas is enabled by default when applications are
+compiled with multithreading support. This means that different threads can
+safely call the retention functions without clashing with other concurrent
+thread function usage, but means that retention functions cannot be used from
+ISRs. It is possible to disable mutex protection globally on all retention
+areas by enabling [`CONFIG_RETENTION_MUTEX_FORCE_DISABLE`](../../kconfig.md#CONFIG_RETENTION_MUTEX_FORCE_DISABLE "CONFIG_RETENTION_MUTEX_FORCE_DISABLE") -
+users are then responsible for ensuring that the function calls do not conflict
+with each other. Note that to use this, retention driver mutex support must
+also be disabled by enabling
+[`CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE`](../../kconfig.md#CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE "CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE").
+
+## Boot mode
+
+An addition to the retention subsystem is a boot mode interface, this can be
+used to dynamically change the state of an application or run a different
+application with a minimal set of functions when a device is rebooted (an
+example is to have a buttonless way of entering mcuboot’s serial recovery
+feature from the main application).
+
+To use the boot mode feature, a data retention entry must exist in the device
+tree, which is dedicated for use as the boot mode selection (the user area data
+size only needs to be a single byte), and this area be assigned to the chosen
+node of `zephyr,boot-mode`. See the following example:
+
+```devicetree
+/ {
+        sram@2003FFFF {
+                compatible = "zephyr,memory-region", "mmio-sram";
+                reg = <0x2003FFFF 0x1>;
+                zephyr,memory-region = "RetainedMem";
+                status = "okay";
+
+                retainedmem {
+                        compatible = "zephyr,retained-ram";
+                        status = "okay";
+                        #address-cells = <1>;
+                        #size-cells = <1>;
+
+                        retention0: retention@0 {
+                                compatible = "zephyr,retention";
+                                status = "okay";
+                                reg = <0x0 0x1>;
+                        };
+                };
+        };
+
+        chosen {
+                zephyr,boot-mode = &retention0;
+        };
+};
+
+/* Reduce SRAM0 usage by 1 byte to account for non-init area */
+&sram0 {
+        reg = <0x20000000 0x3FFFF>;
+};
+```
+
+The boot mode interface can be enabled with
+[`CONFIG_RETENTION_BOOT_MODE`](../../kconfig.md#CONFIG_RETENTION_BOOT_MODE "CONFIG_RETENTION_BOOT_MODE") and then accessed by using the
+boot mode functions. If using mcuboot with serial recovery, it can be built
+with `CONFIG_MCUBOOT_SERIAL` and `CONFIG_BOOT_SERIAL_BOOT_MODE` enabled
+which will allow rebooting directly into the serial recovery mode by using:
+
+```c
+#include <zephyr/retention/bootmode.h>
+#include <zephyr/sys/reboot.h>
+
+bootmode_set(BOOT_MODE_TYPE_BOOTLOADER);
+sys_reboot(0);
+```
+
+## Retention system modules
+
+Modules can expand the functionality of the retention system by using it as a
+transport (e.g. between a bootloader and application).
+
+## API Reference
+
+### Retention system API
+
+*group* retention\_api
+:   Retention API.
+
+    Typedefs
+
+    typedef ssize\_t (\*retention\_size\_api)(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+
+    typedef int (\*retention\_is\_valid\_api)(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+
+    typedef int (\*retention\_read\_api)(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev, off\_t offset, uint8\_t \*buffer, size\_t size)
+
+    typedef int (\*retention\_write\_api)(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev, off\_t offset, const uint8\_t \*buffer, size\_t size)
+
+    typedef int (\*retention\_clear\_api)(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+
+    Functions
+
+    ssize\_t retention\_size(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+    :   Returns the size of the retention area.
+
+        Parameters:
+        :   - **dev** – Retention device to use.
+
+        Return values:
+        :   **Positive** – value indicating size in bytes on success, else negative errno code.
+
+    int retention\_is\_valid(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+    :   Checks if the underlying data in the retention area is valid or not.
+
+        Parameters:
+        :   - **dev** – Retention device to use.
+
+        Return values:
+        :   - **1** – If successful and data is valid.
+            - **0** – If data is not valid.
+            - **-ENOTSUP** – If there is no header/checksum configured for the retention area.
+            - **-errno** – Error code code.
+
+    int retention\_read(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev, off\_t offset, uint8\_t \*buffer, size\_t size)
+    :   Reads data from the retention area.
+
+        Parameters:
+        :   - **dev** – Retention device to use.
+            - **offset** – Offset to read data from.
+            - **buffer** – Buffer to store read data in.
+            - **size** – Size of data to read.
+
+        Return values:
+        :   - **0** – If successful.
+            - **-errno** – Error code code.
+
+    int retention\_write(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev, off\_t offset, const uint8\_t \*buffer, size\_t size)
+    :   Writes data to the retention area (underlying data does not need to be cleared prior to writing), once function returns with a success code, the data will be classed as valid if queried using [retention\_is\_valid()](#group__retention__api_1gaa3f12ad0b1929a828e8d42c7c073a16d).
+
+        Parameters:
+        :   - **dev** – Retention device to use.
+            - **offset** – Offset to write data to.
+            - **buffer** – Data to write.
+            - **size** – Size of data to be written.
+
+        Return values:
+        :   **0** – on success else negative errno code.
+
+    int retention\_clear(const struct [device](../../kernel/drivers/index.md#c.device "device") \*dev)
+    :   Clears all data in the retention area (sets it to 0).
+
+        Parameters:
+        :   - **dev** – Retention device to use.
+
+        Return values:
+        :   **0** – on success else negative errno code.
+
+    struct retention\_api
+    :   *#include <retention.h>*
+
+### Boot mode interface
+
+*group* boot\_mode\_interface
+:   Boot mode interface.
+
+    Enums
+
+    enum BOOT\_MODE\_TYPES
+    :   *Values:*
+
+        enumerator BOOT\_MODE\_TYPE\_NORMAL = 0x00
+        :   Default (normal) boot, to user application.
+
+        enumerator BOOT\_MODE\_TYPE\_BOOTLOADER
+        :   Bootloader boot mode (e.g.
+
+            serial recovery for MCUboot)
+
+    Functions
+
+    int bootmode\_check(uint8\_t boot\_mode)
+    :   Checks if the boot mode of the device is set to a specific value.
+
+        Parameters:
+        :   - **boot\_mode** – Expected boot mode to check.
+
+        Return values:
+        :   - **1** – If successful and boot mode matches.
+            - **0** – If boot mode does not match.
+            - **-errno** – Error code code.
+
+    int bootmode\_set(uint8\_t boot\_mode)
+    :   Sets boot mode of device.
+
+        Parameters:
+        :   - **boot\_mode** – Boot mode value to set.
+
+        Return values:
+        :   - **0** – If successful.
+            - **-errno** – Error code code.
+
+    int bootmode\_clear(void)
+    :   Clear boot mode value (sets to 0) - which corresponds to [BOOT\_MODE\_TYPE\_NORMAL](#group__boot__mode__interface_1gga0ef8476e9ece13f7bf8bd83dd6290cbfa43117c269b0c758fcbaff59d39836241).
+
+        Return values:
+        :   - **0** – If successful.
+            - **-errno** – Error code code.

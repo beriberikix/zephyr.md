@@ -1,0 +1,43 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/net/lldp/README.html
+original_path: samples/net/lldp/README.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Link Layer Discovery Protocol (LLDP)
+
+## Overview
+
+The Link Layer Discovery Protocol sample application for Zephyr will enable
+LLDP support and setup VLANs if needed.
+
+The source code for this sample application can be found at:
+[samples/net/lldp](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/net/lldp).
+
+## Requirements
+
+- [Networking with the host system](../../../connectivity/networking/networking_with_host.md#networking-with-host)
+
+## Building and Running
+
+A good way to run this sample LLDP application is inside QEMU,
+as described in [Networking with QEMU](../../../connectivity/networking/qemu_setup.md#networking-with-qemu) or with embedded device like
+FRDM-K64F. Note that LLDP is only supported for boards that have an ethernet
+port.
+
+Follow these steps to build the LLDP sample application:
+
+```shell
+west build -b <board to use> samples/net/lldp -- -DCONF_FILE=prj.conf
+```
+
+### Setting up Linux Host
+
+If you need VLAN support in your network, then the
+[samples/net/vlan/vlan-setup-linux.sh](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/net/vlan/vlan-setup-linux.sh) provides a script that can be
+executed on the Linux host. It creates two VLANs on the Linux host and creates
+routes to Zephyr.

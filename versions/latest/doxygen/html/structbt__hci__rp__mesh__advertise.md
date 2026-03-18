@@ -1,0 +1,50 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structbt__hci__rp__mesh__advertise.html
+original_path: doxygen/html/structbt__hci__rp__mesh__advertise.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+bt\_hci\_rp\_mesh\_advertise Struct Reference
+
+`#include <[hci_vs.h](hci__vs_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [status](#a1514ae798eb501a0fcb02a48d222d62e) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [opcode](#aa5a8760133b1f1554797f91a9c4cd8e3) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [adv\_slot](#a0b88358de3223b528cdd424db25f05a0) |
+
+## Field Documentation
+
+## [◆ ](#a0b88358de3223b528cdd424db25f05a0)adv\_slot
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_rp\_mesh\_advertise::adv\_slot |
+| --- |
+
+## [◆ ](#aa5a8760133b1f1554797f91a9c4cd8e3)opcode
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_rp\_mesh\_advertise::opcode |
+| --- |
+
+## [◆ ](#a1514ae798eb501a0fcb02a48d222d62e)status
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_rp\_mesh\_advertise::status |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
+
+- [bt\_hci\_rp\_mesh\_advertise](structbt__hci__rp__mesh__advertise.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

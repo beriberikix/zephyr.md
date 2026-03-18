@@ -1,0 +1,97 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/mips/qemu_malta/doc/index.html
+original_path: boards/mips/qemu_malta/doc/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# MIPS Malta Emulation (QEMU)
+
+## Overview
+
+This board configuration will use QEMU to emulate the MIPS Malta platform.
+
+This configuration provides support for an MIPS 4Kc/24Kc CPU cores and these devices:
+
+- CP0 Interrupt Controller
+- CP0 Core Timer
+- NS16550 UART
+
+Note
+
+This board configuration makes no claims about its suitability for use
+with an actual MIPS Malta hardware system, or any other hardware system.
+
+## Hardware
+
+### Supported Features
+
+The following hardware features are supported:
+
+| Interface | Controller | Driver/Component |
+| --- | --- | --- |
+| CP0 IntC | on-chip | interrupt controller |
+| CP0 Core Timer | on-chip | system clock |
+| NS16550 UART | FPGA | serial port |
+
+The kernel currently does not support other hardware features on this platform.
+
+### Devices
+
+#### System Clock
+
+Qemu CP0 timer uses a clock frequency of 200 MHz,
+see target/mips/cp0\_timer.c in Qemu source tree for details.
+
+#### Serial Port
+
+This board configuration uses a single serial communication channel
+with the FPGA UART2.
+
+## Programming and Debugging
+
+Use this configuration to run basic Zephyr applications and kernel tests in the QEMU
+emulated environment, for example, with the [Basic Synchronization](../../../../samples/synchronization/README.md#synchronization "Manipulate basic kernel synchronization primitives.") sample:
+
+```shell
+# From the root of the zephyr repository
+west build -b qemu_malta samples/synchronization
+west build -t run
+```
+
+This will build an image with the synchronization sample app, boot it using
+QEMU, and display the following console output:
+
+```shell
+*** Booting Zephyr OS build v2.7.99-1627-g9bea7790d620  ***
+thread_a: Hello World from cpu 0 on qemu_malta!
+thread_b: Hello World from cpu 0 on qemu_malta!
+thread_a: Hello World from cpu 0 on qemu_malta!
+thread_b: Hello World from cpu 0 on qemu_malta!
+thread_a: Hello World from cpu 0 on qemu_malta!
+thread_b: Hello World from cpu 0 on qemu_malta!
+thread_a: Hello World from cpu 0 on qemu_malta!
+thread_b: Hello World from cpu 0 on qemu_malta!
+thread_a: Hello World from cpu 0 on qemu_malta!
+thread_b: Hello World from cpu 0 on qemu_malta!
+```
+
+Exit QEMU by pressing `CTRL+A` `x`.
+
+### Big-Endian
+
+Use this configuration to run [Basic Synchronization](../../../../samples/synchronization/README.md#synchronization "Manipulate basic kernel synchronization primitives.") sample in big-endian mode:
+
+```shell
+# From the root of the zephyr repository
+west build -b qemu_malta_be samples/synchronization
+west build -t run
+```
+
+## References
+
+[https://www.qemu.org/](https://www.qemu.org/)
+[https://www.linux-mips.org/wiki/MIPS\_Malta](https://www.linux-mips.org/wiki/MIPS_Malta)

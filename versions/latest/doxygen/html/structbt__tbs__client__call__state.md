@@ -1,0 +1,50 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structbt__tbs__client__call__state.html
+original_path: doxygen/html/structbt__tbs__client__call__state.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+bt\_tbs\_client\_call\_state Struct Reference
+
+`#include <[tbs.h](tbs_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [index](#a3d6eb4dda7adcd16c04ebbd41242c292) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [state](#a3e758ad6d0b35f26f43584e50c9a9895) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [flags](#a57ed9dd726faa3c219e1c858ad6659d9) |
+
+## Field Documentation
+
+## [◆ ](#a57ed9dd726faa3c219e1c858ad6659d9)flags
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_tbs\_client\_call\_state::flags |
+| --- |
+
+## [◆ ](#a3d6eb4dda7adcd16c04ebbd41242c292)index
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_tbs\_client\_call\_state::index |
+| --- |
+
+## [◆ ](#a3e758ad6d0b35f26f43584e50c9a9895)state
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_tbs\_client\_call\_state::state |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/bluetooth/audio/[tbs.h](tbs_8h_source.md)
+
+- [bt\_tbs\_client\_call\_state](structbt__tbs__client__call__state.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

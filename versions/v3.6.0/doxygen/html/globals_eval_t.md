@@ -1,0 +1,103 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/globals_eval_t.html
+original_path: doxygen/html/globals_eval_t.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+Here is a list of all enum values with links to the files they belong to:
+
+### - t -
+
+- TC\_CC\_DFP\_ATTACHED : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a950c6ff65a4af5db2f1fdab3383489ba)
+- TC\_CC\_DFP\_DEBUG\_ACC : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a8821754209b4cd977b2c97d43957166c)
+- TC\_CC\_NONE : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a21cf3890c4a2fa6ee9f137f2b22e51f0)
+- TC\_CC\_OPEN : [usbc\_tc.h](group__usb__type__c.md#gga0200c820510eb786f3ca30a9b5f7aadaa4859548c59439c79e3ad080e1fa07fa8)
+- TC\_CC\_RA : [usbc\_tc.h](group__usb__type__c.md#gga0200c820510eb786f3ca30a9b5f7aadaaf52a9f9d10c81fca5b048ad2230cf1e8)
+- TC\_CC\_RD : [usbc\_tc.h](group__usb__type__c.md#gga0200c820510eb786f3ca30a9b5f7aadaa60a4e008afce1c9395a0fb6d34767c6e)
+- TC\_CC\_RP : [usbc\_tc.h](group__usb__type__c.md#gga0200c820510eb786f3ca30a9b5f7aadaa7a0a6a716cb42af3a572f43bedc2a322)
+- TC\_CC\_UFP\_ATTACHED : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a0cfcabb4325e4b59213002aaeda75524)
+- TC\_CC\_UFP\_AUDIO\_ACC : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a4b841a1438a120652ab78fb3ae2c7dea)
+- TC\_CC\_UFP\_DEBUG\_ACC : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197aaba130e5d3d999794eb87e2b8a09cf78)
+- TC\_CC\_UFP\_NONE : [usbc\_tc.h](group__usb__type__c.md#gga5bb2cfcf3ab60423048db38103657197a90544a6af90af7722cec8ffe83f752f0)
+- TC\_CC\_VOLT\_OPEN : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca1f4b82ea64d23167df5083fd7550cf05)
+- TC\_CC\_VOLT\_RA : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca17a8d72f4dc6b29e1d4ad35a4f1531ea)
+- TC\_CC\_VOLT\_RD : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca2267bbcda871c265e77228a5fe6342a9)
+- TC\_CC\_VOLT\_RP\_1A5 : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca3cc0d3c1ac9775b1b8ba77b87868bc72)
+- TC\_CC\_VOLT\_RP\_3A0 : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca3965e449dbcc8ca6e87d72cd5a73f0ca)
+- TC\_CC\_VOLT\_RP\_DEF : [usbc\_tc.h](group__usb__type__c.md#gga64e32ec2da97f70fd5b96975317cb92ca06bd58eb73aa7f097046e7b88fde0293)
+- TC\_POLARITY\_CC1 : [usbc\_tc.h](group__usb__type__c.md#ggac5b4b58840c9b076a869a5816ba100dba1ace08cbeb63866305ccfb0c3bf338c2)
+- TC\_POLARITY\_CC2 : [usbc\_tc.h](group__usb__type__c.md#ggac5b4b58840c9b076a869a5816ba100dbae3ad03c80e84e32f8974a14e815ed910)
+- TC\_RA\_RD : [usbc\_tc.h](group__usb__type__c.md#gga0200c820510eb786f3ca30a9b5f7aadaa95c81809d680f28281e9dcaef4fff35e)
+- TC\_ROLE\_DFP : [usbc\_tc.h](group__usb__type__c.md#gga6b98bbe238e62cfd5531688494a63de2a812112dccb0c3d8dd555d351a7f5b9e1)
+- TC\_ROLE\_DISCONNECTED : [usbc\_tc.h](group__usb__type__c.md#gga6b98bbe238e62cfd5531688494a63de2a155c3d22f151d83899f46e516e88a058)
+- TC\_ROLE\_SINK : [usbc\_tc.h](group__usb__type__c.md#ggaa6dda0612045b5f55b9d8ba63d2b9f9da0023468cf2e977c8372899e6f1a0aafb)
+- TC\_ROLE\_SOURCE : [usbc\_tc.h](group__usb__type__c.md#ggaa6dda0612045b5f55b9d8ba63d2b9f9da1b8caf27ae76de5ea874b0e52adc4cf1)
+- TC\_ROLE\_UFP : [usbc\_tc.h](group__usb__type__c.md#gga6b98bbe238e62cfd5531688494a63de2a9472c4319bf0be6937436e1602c7b414)
+- TC\_RP\_1A5 : [usbc\_tc.h](group__usb__type__c.md#gga4e0eec97f7c5c97b87eff9561deea2d5a1c74df7e2b6bbe75d8c61ca4a7202a28)
+- TC\_RP\_3A0 : [usbc\_tc.h](group__usb__type__c.md#gga4e0eec97f7c5c97b87eff9561deea2d5afa7eda9742f3670a90736a52620cfe3c)
+- TC\_RP\_RESERVED : [usbc\_tc.h](group__usb__type__c.md#gga4e0eec97f7c5c97b87eff9561deea2d5a215508ac427e2cc53478e5f096a400d1)
+- TC\_RP\_USB : [usbc\_tc.h](group__usb__type__c.md#gga4e0eec97f7c5c97b87eff9561deea2d5a22d5e50479ca672f0469af9006b4f4bb)
+- TC\_VBUS\_PRESENT : [usbc\_tc.h](group__usb__type__c.md#gga015455a6c5620dfc96cfb713bbb72161a33f8f0dac47bfaffe331553cd42495f5)
+- TC\_VBUS\_REMOVED : [usbc\_tc.h](group__usb__type__c.md#gga015455a6c5620dfc96cfb713bbb72161a84aaa14f5d6dd4b1bf52564af73f24bc)
+- TC\_VBUS\_SAFE0V : [usbc\_tc.h](group__usb__type__c.md#gga015455a6c5620dfc96cfb713bbb72161a86bf4c0568d7a7ec89180e8e36c91827)
+- TCPC\_ALERT\_BEGINNING\_MSG\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda449d3f9271aa42feb43e54a1f36114eb)
+- TCPC\_ALERT\_CC\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda30b8a2c88cc2309849efa9d478271a3f)
+- TCPC\_ALERT\_EXTENDED : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda4356cb85ef371e72badad22110172e25)
+- TCPC\_ALERT\_EXTENDED\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda284b478e32999fd923ba3064088274a9)
+- TCPC\_ALERT\_FAULT\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edacd3a5188b6be126dfd00a4676e2a768e)
+- TCPC\_ALERT\_HARD\_RESET\_RECEIVED : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda61c51ceb776d0432c657f6c16d5595e0)
+- TCPC\_ALERT\_MSG\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda57eedbbbb9b1d899e1607e25c2799eeb)
+- TCPC\_ALERT\_POWER\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edabbce6e484dc5373597097a664a6b5af4)
+- TCPC\_ALERT\_RX\_BUFFER\_OVERFLOW : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edaefb353c046fa8346a4736d02a3003752)
+- TCPC\_ALERT\_TRANSMIT\_MSG\_DISCARDED : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda302c30d41b09b4bf1949ce0c945c71fe)
+- TCPC\_ALERT\_TRANSMIT\_MSG\_FAILED : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edadff8e9cab783e22eedad2971baae77ec)
+- TCPC\_ALERT\_TRANSMIT\_MSG\_SUCCESS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda642e2b837d88dc983177546a06d938b2)
+- TCPC\_ALERT\_VBUS\_ALARM\_HI : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda64f5af2ef616a1adf90ff3549a114a66)
+- TCPC\_ALERT\_VBUS\_ALARM\_LO : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edac44bb12fb7bd9de2f49af7d5f72744b0)
+- TCPC\_ALERT\_VBUS\_SNK\_DISCONNECT : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22eda8aa0d4566f11e6079f59500ac03929cd)
+- TCPC\_ALERT\_VENDOR\_DEFINED : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#gga4687047910cad0dd970bbd28adcf22edac5675390dfba5276227ff8d2be783992)
+- TCPC\_CC\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916aaf41a51cc8e4c849780af463ea63a0c4)
+- TCPC\_EXTENDED\_ALERT\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916a5e15cc2aae46edf6b7e0f5316b37a9db)
+- TCPC\_EXTENDED\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916afe72a3bc04d7f92bd74e754129e99c6d)
+- TCPC\_FAULT\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916a14723bbaaae32413e2399159a6def440)
+- TCPC\_POWER\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916aa42f110436df796f5cfdadab921aac7f)
+- TCPC\_VENDOR\_DEFINED\_STATUS : [usbc\_tcpc.h](group__usb__type__c__port__controller__api.md#ggafd8253dfa6abc80d0717b17271ed8916a45f424f2f0e126085d3e49e0cc4d7c61)
+- TEST\_PHASE\_AFTER : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59a46c899f020982afc47164237a36a1663)
+- TEST\_PHASE\_BEFORE : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59a78c54591383696b200d6a4582619b765)
+- TEST\_PHASE\_FRAMEWORK : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59ad5efde89d69e093341de2a6a823e3971)
+- TEST\_PHASE\_SETUP : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59aa5a6af32f1f4bac30640934e1eb3b0bf)
+- TEST\_PHASE\_TEARDOWN : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59aaf847259cdce47813e155c3523e36901)
+- TEST\_PHASE\_TEST : [ztest\_test.h](ztest__test_8h.md#a5dde8913cf45656bca8a48c825a95d59a1dc3378deb96d78130b2ecc0cd966bd1)
+- TFTP\_EVT\_DATA : [tftp.h](group__tftp__client.md#gga1ee3d814c6fbaf5570eb5fd9605af7eaa7bd0226d62c9b49a8381705bc1d5875d)
+- TFTP\_EVT\_ERROR : [tftp.h](group__tftp__client.md#gga1ee3d814c6fbaf5570eb5fd9605af7eaa317d58f986f6f2f65b44fdaa5b655eb3)
+- TGPIO\_FALLING\_EDGE : [timeaware\_gpio.h](group__tgpio__interface.md#ggae05efc7d3232c308ae614b73688aa92caec8ab610f2d8ad6df38fb59b76471f98)
+- TGPIO\_RISING\_EDGE : [timeaware\_gpio.h](group__tgpio__interface.md#ggae05efc7d3232c308ae614b73688aa92ca2aa85b802bfd1e321d76811e749198df)
+- TGPIO\_TOGGLE\_EDGE : [timeaware\_gpio.h](group__tgpio__interface.md#ggae05efc7d3232c308ae614b73688aa92ca086ec340d826c60beaa5e443700835f9)
+- TLS\_CREDENTIAL\_CA\_CERTIFICATE : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5adcf949c1422f4d3b38795ae40d2321d5)
+- TLS\_CREDENTIAL\_NONE : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5a7009a9f266011529e64ec4e4c6692315)
+- TLS\_CREDENTIAL\_PRIVATE\_KEY : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5a406e8bb1f992af5a72921f47b140840e)
+- TLS\_CREDENTIAL\_PSK : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5accc6ad916ee6c6badafcc4c23e2a47df)
+- TLS\_CREDENTIAL\_PSK\_ID : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5a1edcd43ba510558e4b1315e1bb86560d)
+- TLS\_CREDENTIAL\_SERVER\_CERTIFICATE : [tls\_credentials.h](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5a541cc34b6fd5af911e633154e54f52f4)
+- TMAG5273\_ATTR\_ANGLE\_MAG\_AXIS : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a6fadcd6cd3b5fbc9281d27f37bdfe0a2af59c66f9794efa1afa7d7461a134d3d3)
+- TMAG5273\_CHAN\_ANGLE\_MAGNITUDE : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a3d91dbb6bc6d7dc90ed889651bc34827a2c4ff267102871c1d23353bbb6b30dbc)
+- TMAG5273\_CHAN\_MAGNITUDE : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a3d91dbb6bc6d7dc90ed889651bc34827a72c52112337e191ab9ce906aecdff92d)
+- TMAG5273\_CHAN\_MAGNITUDE\_MSB : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a3d91dbb6bc6d7dc90ed889651bc34827a601dad57092c442da3a0a184737d8003)
+- TRANSITION\_PS : [usbc.h](group____usbc__device__api.md#gga66f934a5c5cd88b574c71d1f18fbda23a3a27b8e70ffe5788aa3ffea1bf61cae9)
+- TSL2540\_SENSOR\_GAIN\_1 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a2885634c5618ccb0c90389951cf394cb)
+- TSL2540\_SENSOR\_GAIN\_128 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9aee855aff34d1544549bc554faccfa948)
+- TSL2540\_SENSOR\_GAIN\_16 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9ab874914e285c574ac4cfe9c358d9c66e)
+- TSL2540\_SENSOR\_GAIN\_1\_2 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a2f573c66b903ebce339e0fb55bbc7ce1)
+- TSL2540\_SENSOR\_GAIN\_4 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a4bda1e9f1384f0ef751ee8f9a0061d42)
+- TSL2540\_SENSOR\_GAIN\_64 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a459c02cbca3e4109695fe646d128fc7f)
+
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

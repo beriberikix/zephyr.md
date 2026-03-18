@@ -1,0 +1,660 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/nios2_2arch_8h_source.html
+original_path: doxygen/html/nios2_2arch_8h_source.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+arch.h
+
+[Go to the documentation of this file.](nios2_2arch_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2016 Intel Corporation
+
+3 \*
+
+4 \* SPDX-License-Identifier: Apache-2.0
+
+5 \*/
+
+6
+
+13
+
+14#ifndef ZEPHYR\_INCLUDE\_ARCH\_NIOS2\_ARCH\_H\_
+
+15#define ZEPHYR\_INCLUDE\_ARCH\_NIOS2\_ARCH\_H\_
+
+16
+
+17#include <system.h>
+
+18
+
+19#include <[zephyr/arch/nios2/thread.h](arch_2nios2_2thread_8h.md)>
+
+20#include <[zephyr/arch/nios2/asm\_inline.h](nios2_2asm__inline_8h.md)>
+
+21#include <[zephyr/arch/common/addr\_types.h](addr__types_8h.md)>
+
+22#include <[zephyr/devicetree.h](devicetree_8h.md)>
+
+23#include <[zephyr/arch/nios2/nios2.h](nios2_8h.md)>
+
+24#include <[zephyr/arch/common/sys\_bitops.h](sys__bitops_8h.md)>
+
+25#include <[zephyr/sys/sys\_io.h](sys_2sys__io_8h.md)>
+
+26#include <[zephyr/arch/common/ffs.h](ffs_8h.md)>
+
+27
+
+[ 28](nios2_2arch_8h.md#af0f8ad93611d93cd0626914837e761d3)#define ARCH\_STACK\_PTR\_ALIGN 4
+
+29
+
+30#ifndef \_ASMLANGUAGE
+
+31#include <[zephyr/types.h](include_2zephyr_2types_8h.md)>
+
+32#include <[zephyr/irq.h](irq_8h.md)>
+
+33#include <[zephyr/sw\_isr\_table.h](sw__isr__table_8h.md)>
+
+34
+
+35#ifdef \_\_cplusplus
+
+36extern "C" {
+
+37#endif
+
+38
+
+39/\* There is no notion of priority with the Nios II internal interrupt
+
+40 \* controller and no flags are currently supported.
+
+41 \*/
+
+[ 42](nios2_2arch_8h.md#accdf8a59e00ac1c1fcedc18b78be4b8a)#define ARCH\_IRQ\_CONNECT(irq\_p, priority\_p, isr\_p, isr\_param\_p, flags\_p) \
+
+43{ \
+
+44 Z\_ISR\_DECLARE(irq\_p, 0, isr\_p, isr\_param\_p); \
+
+45}
+
+46
+
+[ 47](nios2_2arch_8h.md#a1496f4f860a99f42e1aee15ce5c9b3e2)static [ALWAYS\_INLINE](common_8h.md#aa1dec568e79152c892dcf63f445cbd7a) unsigned int [arch\_irq\_lock](mips_2arch_8h.md#a1496f4f860a99f42e1aee15ce5c9b3e2)(void)
+
+48{
+
+49 unsigned int key, tmp;
+
+50
+
+51 \_\_asm\_\_ volatile (
+
+52 "rdctl %[key], status\n\t"
+
+53 "movi %[tmp], -2\n\t"
+
+54 "and %[tmp], %[key], %[tmp]\n\t"
+
+55 "wrctl status, %[tmp]\n\t"
+
+56 : [key] "=r" (key), [tmp] "=r" (tmp)
+
+57 : : "memory");
+
+58
+
+59 return key;
+
+60}
+
+61
+
+[ 62](nios2_2arch_8h.md#a203e02b994beba0d006dad9f6d797c27)static [ALWAYS\_INLINE](common_8h.md#aa1dec568e79152c892dcf63f445cbd7a) void [arch\_irq\_unlock](mips_2arch_8h.md#a203e02b994beba0d006dad9f6d797c27)(unsigned int key)
+
+63{
+
+64 /\* If the CPU is built without certain features, then
+
+65 \* the only writable bit in the status register is PIE
+
+66 \* in which case we can just write the value stored in key,
+
+67 \* all the other writable bits will be the same.
+
+68 \*
+
+69 \* If not, other stuff could have changed and we need to
+
+70 \* specifically flip just that bit.
+
+71 \*/
+
+72
+
+73#if (ALT\_CPU\_NUM\_OF\_SHADOW\_REG\_SETS > 0) || \
+
+74 (defined ALT\_CPU\_EIC\_PRESENT) || \
+
+75 (defined ALT\_CPU\_MMU\_PRESENT) || \
+
+76 (defined ALT\_CPU\_MPU\_PRESENT)
+
+77 \_\_asm\_\_ volatile (
+
+78 "andi %[key], %[key], 1\n\t"
+
+79 "beq %[key], zero, 1f\n\t"
+
+80 "rdctl %[key], status\n\t"
+
+81 "ori %[key], %[key], 1\n\t"
+
+82 "wrctl status, %[key]\n\t"
+
+83 "1:\n\t"
+
+84 : [key] "+r" (key)
+
+85 : : "memory");
+
+86#else
+
+87 \_\_asm\_\_ volatile (
+
+88 "wrctl status, %[key]"
+
+89 : : [key] "r" (key)
+
+90 : "memory");
+
+91#endif
+
+92}
+
+93
+
+[ 94](nios2_2arch_8h.md#adb441b26ed6818fea4ebba6b8853354b)static [ALWAYS\_INLINE](common_8h.md#aa1dec568e79152c892dcf63f445cbd7a) bool [arch\_irq\_unlocked](mips_2arch_8h.md#adb441b26ed6818fea4ebba6b8853354b)(unsigned int key)
+
+95{
+
+96 return key & 1;
+
+97}
+
+98
+
+[ 99](nios2_2arch_8h.md#aa278d630653b33cb339621d725ed295a)void [arch\_irq\_enable](arch_2xtensa_2irq_8h.md#a5ea6488112b97755b13583cd2832c2fa)(unsigned int irq);
+
+[ 100](nios2_2arch_8h.md#a216d692e87bfba955a60f8e570e127df)void [arch\_irq\_disable](arch_2xtensa_2irq_8h.md#a19b436a206500c3748ad5c32050db241)(unsigned int irq);
+
+101
+
+102struct \_\_esf {
+
+103 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) ra; /\* return address r31 \*/
+
+104 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r1; /\* at \*/
+
+105 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r2; /\* return value \*/
+
+106 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r3; /\* return value \*/
+
+107 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r4; /\* register args \*/
+
+108 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r5; /\* register args \*/
+
+109 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r6; /\* register args \*/
+
+110 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r7; /\* register args \*/
+
+111 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r8; /\* Caller-saved general purpose \*/
+
+112 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r9; /\* Caller-saved general purpose \*/
+
+113 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r10; /\* Caller-saved general purpose \*/
+
+114 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r11; /\* Caller-saved general purpose \*/
+
+115 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r12; /\* Caller-saved general purpose \*/
+
+116 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r13; /\* Caller-saved general purpose \*/
+
+117 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r14; /\* Caller-saved general purpose \*/
+
+118 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) r15; /\* Caller-saved general purpose \*/
+
+119 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) estatus;
+
+120 [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) instr; /\* Instruction being executed when exc occurred \*/
+
+121};
+
+122
+
+123typedef struct \_\_esf z\_arch\_esf\_t;
+
+124
+
+125FUNC\_NORETURN void z\_SysFatalErrorHandler(unsigned int reason,
+
+126 const z\_arch\_esf\_t \*esf);
+
+127
+
+128FUNC\_NORETURN void z\_NanoFatalErrorHandler(unsigned int reason,
+
+129 const z\_arch\_esf\_t \*esf);
+
+130
+
+[ 131](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eb)enum [nios2\_exception\_cause](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eb) {
+
+[ 132](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba25e598ae2f7e517970f8f797e4f1b30a) [NIOS2\_EXCEPTION\_UNKNOWN](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba25e598ae2f7e517970f8f797e4f1b30a) = -1,
+
+[ 133](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf6c6a73adf1aa0df7a4d5bf9892423ee) [NIOS2\_EXCEPTION\_RESET](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf6c6a73adf1aa0df7a4d5bf9892423ee) = 0,
+
+[ 134](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba7fc081560604efa925848ed4204b589c) [NIOS2\_EXCEPTION\_CPU\_ONLY\_RESET\_REQUEST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba7fc081560604efa925848ed4204b589c) = 1,
+
+[ 135](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf4d926e02d36e21e78902fc404bbf4f5) [NIOS2\_EXCEPTION\_INTERRUPT](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf4d926e02d36e21e78902fc404bbf4f5) = 2,
+
+[ 136](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaebf7c6f50a51346242135178592fec50) [NIOS2\_EXCEPTION\_TRAP\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaebf7c6f50a51346242135178592fec50) = 3,
+
+[ 137](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebabfc872ef21b65fe5a2dd77833f5daf59) [NIOS2\_EXCEPTION\_UNIMPLEMENTED\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebabfc872ef21b65fe5a2dd77833f5daf59) = 4,
+
+[ 138](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba894eb715964b668ec2d4ed0e32dadb70) [NIOS2\_EXCEPTION\_ILLEGAL\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba894eb715964b668ec2d4ed0e32dadb70) = 5,
+
+[ 139](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae388771d5651cbda528c168fbc2b045f) [NIOS2\_EXCEPTION\_MISALIGNED\_DATA\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae388771d5651cbda528c168fbc2b045f) = 6,
+
+[ 140](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad4daa79baaf28b7e57a41ab10c1a056b) [NIOS2\_EXCEPTION\_MISALIGNED\_TARGET\_PC](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad4daa79baaf28b7e57a41ab10c1a056b) = 7,
+
+[ 141](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad831a5dd045c258c7586f33b4af5ca85) [NIOS2\_EXCEPTION\_DIVISION\_ERROR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad831a5dd045c258c7586f33b4af5ca85) = 8,
+
+[ 142](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba9a08eea9bdf84fb5bce9b39126c7f407) [NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba9a08eea9bdf84fb5bce9b39126c7f407) = 9,
+
+[ 143](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae6258162d85c0c3b0a780b1e905a2d56) [NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae6258162d85c0c3b0a780b1e905a2d56) = 10,
+
+[ 144](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba732e002953cc38c05f87a6aa61a662bf) [NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_DATA\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba732e002953cc38c05f87a6aa61a662bf) = 11,
+
+[ 145](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba810fce3ab2f5ceb92b6e73e707f1d22e) [NIOS2\_EXCEPTION\_TLB\_MISS](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba810fce3ab2f5ceb92b6e73e707f1d22e) = 12,
+
+[ 146](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae8101069360e03367af48e97e2d689a7) [NIOS2\_EXCEPTION\_TLB\_EXECUTE\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae8101069360e03367af48e97e2d689a7) = 13,
+
+[ 147](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad6cf84739e1469a0e8a4ba614d19a18a) [NIOS2\_EXCEPTION\_TLB\_READ\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad6cf84739e1469a0e8a4ba614d19a18a) = 14,
+
+[ 148](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba32fd876bb736d600090d68f9d5c30055) [NIOS2\_EXCEPTION\_TLB\_WRITE\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba32fd876bb736d600090d68f9d5c30055) = 15,
+
+[ 149](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba6403b7c0a411db595de90af57b3ac25a) [NIOS2\_EXCEPTION\_MPU\_INST\_REGION\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba6403b7c0a411db595de90af57b3ac25a) = 16,
+
+[ 150](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebacb7c66d2e8e211b82d74da89d6a1855a) [NIOS2\_EXCEPTION\_MPU\_DATA\_REGION\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebacb7c66d2e8e211b82d74da89d6a1855a) = 17,
+
+[ 151](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba4cad710f904b74d686b286828a12c006) [NIOS2\_EXCEPTION\_ECC\_TLB\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba4cad710f904b74d686b286828a12c006) = 18,
+
+[ 152](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad2c112e52af6240e77e3cb532d7890a1) [NIOS2\_EXCEPTION\_ECC\_FETCH\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad2c112e52af6240e77e3cb532d7890a1) = 19,
+
+[ 153](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaec6269ebaf6592bc20f2acfee2420a33) [NIOS2\_EXCEPTION\_ECC\_REGISTER\_FILE\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaec6269ebaf6592bc20f2acfee2420a33) = 20,
+
+[ 154](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf5b4a2d54e230de79b36a4ca5d262ca0) [NIOS2\_EXCEPTION\_ECC\_DATA\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf5b4a2d54e230de79b36a4ca5d262ca0) = 21,
+
+[ 155](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba157e694bc9bbae8aa20ef35e94f621b8) [NIOS2\_EXCEPTION\_ECC\_DATA\_CACHE\_WRITEBACK\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba157e694bc9bbae8aa20ef35e94f621b8) = 22
+
+156};
+
+157
+
+158/\* Bitfield indicating which exception cause codes report a valid
+
+159 \* badaddr register. NIOS2\_EXCEPTION\_TLB\_MISS and NIOS2\_EXCEPTION\_ECC\_TLB\_ERR
+
+160 \* are deliberately not included here, you need to check if TLBMISC.D=1
+
+161 \*/
+
+[ 162](nios2_2arch_8h.md#a70ed7e577dcd2644cbd4c4e964736c05)#define NIOS2\_BADADDR\_CAUSE\_MASK \
+
+163 (BIT(NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_DATA\_ADDR) | \
+
+164 BIT(NIOS2\_EXCEPTION\_MISALIGNED\_DATA\_ADDR) | \
+
+165 BIT(NIOS2\_EXCEPTION\_MISALIGNED\_TARGET\_PC) | \
+
+166 BIT(NIOS2\_EXCEPTION\_TLB\_READ\_PERM\_VIOLATION) | \
+
+167 BIT(NIOS2\_EXCEPTION\_TLB\_WRITE\_PERM\_VIOLATION) | \
+
+168 BIT(NIOS2\_EXCEPTION\_MPU\_DATA\_REGION\_VIOLATION) | \
+
+169 BIT(NIOS2\_EXCEPTION\_ECC\_DATA\_ERR))
+
+170
+
+171
+
+[ 172](nios2_2arch_8h.md#a42dcd1878309a82246dbfa26510f868a)extern [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) [sys\_clock\_cycle\_get\_32](mips_2arch_8h.md#a42dcd1878309a82246dbfa26510f868a)(void);
+
+173
+
+[ 174](nios2_2arch_8h.md#a9ee9f897ec750957de45bf8d43349d5e)static inline [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) [arch\_k\_cycle\_get\_32](mips_2arch_8h.md#a9ee9f897ec750957de45bf8d43349d5e)(void)
+
+175{
+
+176 return [sys\_clock\_cycle\_get\_32](mips_2arch_8h.md#a42dcd1878309a82246dbfa26510f868a)();
+
+177}
+
+178
+
+[ 179](nios2_2arch_8h.md#a25328a181bd0229ef5110c15e8452fc1)extern [uint64\_t](stdint_8h.md#a2095b9bffea4b2656950c6c0419edbf1) [sys\_clock\_cycle\_get\_64](mips_2arch_8h.md#a25328a181bd0229ef5110c15e8452fc1)(void);
+
+180
+
+[ 181](nios2_2arch_8h.md#acc1ed8d949f694a1d39e389334caf971)static inline [uint64\_t](stdint_8h.md#a2095b9bffea4b2656950c6c0419edbf1) [arch\_k\_cycle\_get\_64](mips_2arch_8h.md#acc1ed8d949f694a1d39e389334caf971)(void)
+
+182{
+
+183 return [sys\_clock\_cycle\_get\_64](mips_2arch_8h.md#a25328a181bd0229ef5110c15e8452fc1)();
+
+184}
+
+185
+
+[ 186](nios2_2arch_8h.md#a0af98dc5138e02248173c30b8f07210f)static [ALWAYS\_INLINE](common_8h.md#aa1dec568e79152c892dcf63f445cbd7a) void [arch\_nop](arc_2arch_8h.md#a0af98dc5138e02248173c30b8f07210f)(void)
+
+187{
+
+188 \_\_asm\_\_ volatile("nop");
+
+189}
+
+190
+
+191#ifdef \_\_cplusplus
+
+192}
+
+193#endif
+
+194
+
+195#endif /\* \_ASMLANGUAGE \*/
+
+196
+
+197#endif /\* ZEPHYR\_INCLUDE\_ARCH\_NIOS2\_ARCH\_H\_ \*/
+
+[addr\_types.h](addr__types_8h.md)
+
+[arch\_nop](arc_2arch_8h.md#a0af98dc5138e02248173c30b8f07210f)
+
+static ALWAYS\_INLINE void arch\_nop(void)
+
+**Definition** arch.h:348
+
+[thread.h](arch_2nios2_2thread_8h.md)
+
+Per-arch thread definition.
+
+[arch\_irq\_disable](arch_2xtensa_2irq_8h.md#a19b436a206500c3748ad5c32050db241)
+
+#define arch\_irq\_disable(irq)
+
+**Definition** irq.h:107
+
+[arch\_irq\_enable](arch_2xtensa_2irq_8h.md#a5ea6488112b97755b13583cd2832c2fa)
+
+#define arch\_irq\_enable(irq)
+
+**Definition** irq.h:106
+
+[ALWAYS\_INLINE](common_8h.md#aa1dec568e79152c892dcf63f445cbd7a)
+
+#define ALWAYS\_INLINE
+
+**Definition** common.h:129
+
+[devicetree.h](devicetree_8h.md)
+
+Devicetree main header.
+
+[ffs.h](ffs_8h.md)
+
+[types.h](include_2zephyr_2types_8h.md)
+
+[irq.h](irq_8h.md)
+
+Public interface for configuring interrupts.
+
+[arch\_irq\_lock](mips_2arch_8h.md#a1496f4f860a99f42e1aee15ce5c9b3e2)
+
+static ALWAYS\_INLINE unsigned int arch\_irq\_lock(void)
+
+**Definition** arch.h:63
+
+[arch\_irq\_unlock](mips_2arch_8h.md#a203e02b994beba0d006dad9f6d797c27)
+
+static ALWAYS\_INLINE void arch\_irq\_unlock(unsigned int key)
+
+**Definition** arch.h:74
+
+[sys\_clock\_cycle\_get\_64](mips_2arch_8h.md#a25328a181bd0229ef5110c15e8452fc1)
+
+uint64\_t sys\_clock\_cycle\_get\_64(void)
+
+[sys\_clock\_cycle\_get\_32](mips_2arch_8h.md#a42dcd1878309a82246dbfa26510f868a)
+
+uint32\_t sys\_clock\_cycle\_get\_32(void)
+
+[arch\_k\_cycle\_get\_32](mips_2arch_8h.md#a9ee9f897ec750957de45bf8d43349d5e)
+
+static uint32\_t arch\_k\_cycle\_get\_32(void)
+
+**Definition** arch.h:99
+
+[arch\_k\_cycle\_get\_64](mips_2arch_8h.md#acc1ed8d949f694a1d39e389334caf971)
+
+static uint64\_t arch\_k\_cycle\_get\_64(void)
+
+**Definition** arch.h:106
+
+[arch\_irq\_unlocked](mips_2arch_8h.md#adb441b26ed6818fea4ebba6b8853354b)
+
+static ALWAYS\_INLINE bool arch\_irq\_unlocked(unsigned int key)
+
+**Definition** arch.h:87
+
+[nios2\_exception\_cause](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eb)
+
+nios2\_exception\_cause
+
+**Definition** arch.h:131
+
+[NIOS2\_EXCEPTION\_ECC\_DATA\_CACHE\_WRITEBACK\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba157e694bc9bbae8aa20ef35e94f621b8)
+
+@ NIOS2\_EXCEPTION\_ECC\_DATA\_CACHE\_WRITEBACK\_ERR
+
+**Definition** arch.h:155
+
+[NIOS2\_EXCEPTION\_UNKNOWN](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba25e598ae2f7e517970f8f797e4f1b30a)
+
+@ NIOS2\_EXCEPTION\_UNKNOWN
+
+**Definition** arch.h:132
+
+[NIOS2\_EXCEPTION\_TLB\_WRITE\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba32fd876bb736d600090d68f9d5c30055)
+
+@ NIOS2\_EXCEPTION\_TLB\_WRITE\_PERM\_VIOLATION
+
+**Definition** arch.h:148
+
+[NIOS2\_EXCEPTION\_ECC\_TLB\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba4cad710f904b74d686b286828a12c006)
+
+@ NIOS2\_EXCEPTION\_ECC\_TLB\_ERR
+
+**Definition** arch.h:151
+
+[NIOS2\_EXCEPTION\_MPU\_INST\_REGION\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba6403b7c0a411db595de90af57b3ac25a)
+
+@ NIOS2\_EXCEPTION\_MPU\_INST\_REGION\_VIOLATION
+
+**Definition** arch.h:149
+
+[NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_DATA\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba732e002953cc38c05f87a6aa61a662bf)
+
+@ NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_DATA\_ADDR
+
+**Definition** arch.h:144
+
+[NIOS2\_EXCEPTION\_CPU\_ONLY\_RESET\_REQUEST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba7fc081560604efa925848ed4204b589c)
+
+@ NIOS2\_EXCEPTION\_CPU\_ONLY\_RESET\_REQUEST
+
+**Definition** arch.h:134
+
+[NIOS2\_EXCEPTION\_TLB\_MISS](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba810fce3ab2f5ceb92b6e73e707f1d22e)
+
+@ NIOS2\_EXCEPTION\_TLB\_MISS
+
+**Definition** arch.h:145
+
+[NIOS2\_EXCEPTION\_ILLEGAL\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba894eb715964b668ec2d4ed0e32dadb70)
+
+@ NIOS2\_EXCEPTION\_ILLEGAL\_INST
+
+**Definition** arch.h:138
+
+[NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5eba9a08eea9bdf84fb5bce9b39126c7f407)
+
+@ NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST\_ADDR
+
+**Definition** arch.h:142
+
+[NIOS2\_EXCEPTION\_UNIMPLEMENTED\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebabfc872ef21b65fe5a2dd77833f5daf59)
+
+@ NIOS2\_EXCEPTION\_UNIMPLEMENTED\_INST
+
+**Definition** arch.h:137
+
+[NIOS2\_EXCEPTION\_MPU\_DATA\_REGION\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebacb7c66d2e8e211b82d74da89d6a1855a)
+
+@ NIOS2\_EXCEPTION\_MPU\_DATA\_REGION\_VIOLATION
+
+**Definition** arch.h:150
+
+[NIOS2\_EXCEPTION\_ECC\_FETCH\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad2c112e52af6240e77e3cb532d7890a1)
+
+@ NIOS2\_EXCEPTION\_ECC\_FETCH\_ERR
+
+**Definition** arch.h:152
+
+[NIOS2\_EXCEPTION\_MISALIGNED\_TARGET\_PC](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad4daa79baaf28b7e57a41ab10c1a056b)
+
+@ NIOS2\_EXCEPTION\_MISALIGNED\_TARGET\_PC
+
+**Definition** arch.h:140
+
+[NIOS2\_EXCEPTION\_TLB\_READ\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad6cf84739e1469a0e8a4ba614d19a18a)
+
+@ NIOS2\_EXCEPTION\_TLB\_READ\_PERM\_VIOLATION
+
+**Definition** arch.h:147
+
+[NIOS2\_EXCEPTION\_DIVISION\_ERROR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebad831a5dd045c258c7586f33b4af5ca85)
+
+@ NIOS2\_EXCEPTION\_DIVISION\_ERROR
+
+**Definition** arch.h:141
+
+[NIOS2\_EXCEPTION\_MISALIGNED\_DATA\_ADDR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae388771d5651cbda528c168fbc2b045f)
+
+@ NIOS2\_EXCEPTION\_MISALIGNED\_DATA\_ADDR
+
+**Definition** arch.h:139
+
+[NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae6258162d85c0c3b0a780b1e905a2d56)
+
+@ NIOS2\_EXCEPTION\_SUPERVISOR\_ONLY\_INST
+
+**Definition** arch.h:143
+
+[NIOS2\_EXCEPTION\_TLB\_EXECUTE\_PERM\_VIOLATION](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebae8101069360e03367af48e97e2d689a7)
+
+@ NIOS2\_EXCEPTION\_TLB\_EXECUTE\_PERM\_VIOLATION
+
+**Definition** arch.h:146
+
+[NIOS2\_EXCEPTION\_TRAP\_INST](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaebf7c6f50a51346242135178592fec50)
+
+@ NIOS2\_EXCEPTION\_TRAP\_INST
+
+**Definition** arch.h:136
+
+[NIOS2\_EXCEPTION\_ECC\_REGISTER\_FILE\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaec6269ebaf6592bc20f2acfee2420a33)
+
+@ NIOS2\_EXCEPTION\_ECC\_REGISTER\_FILE\_ERR
+
+**Definition** arch.h:153
+
+[NIOS2\_EXCEPTION\_INTERRUPT](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf4d926e02d36e21e78902fc404bbf4f5)
+
+@ NIOS2\_EXCEPTION\_INTERRUPT
+
+**Definition** arch.h:135
+
+[NIOS2\_EXCEPTION\_ECC\_DATA\_ERR](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf5b4a2d54e230de79b36a4ca5d262ca0)
+
+@ NIOS2\_EXCEPTION\_ECC\_DATA\_ERR
+
+**Definition** arch.h:154
+
+[NIOS2\_EXCEPTION\_RESET](nios2_2arch_8h.md#a74caf934553c660658877ace2e17d5ebaf6c6a73adf1aa0df7a4d5bf9892423ee)
+
+@ NIOS2\_EXCEPTION\_RESET
+
+**Definition** arch.h:133
+
+[asm\_inline.h](nios2_2asm__inline_8h.md)
+
+[nios2.h](nios2_8h.md)
+
+[uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f)
+
+\_\_UINT32\_TYPE\_\_ uint32\_t
+
+**Definition** stdint.h:90
+
+[uint64\_t](stdint_8h.md#a2095b9bffea4b2656950c6c0419edbf1)
+
+\_\_UINT64\_TYPE\_\_ uint64\_t
+
+**Definition** stdint.h:91
+
+[sw\_isr\_table.h](sw__isr__table_8h.md)
+
+Software-managed ISR table.
+
+[sys\_io.h](sys_2sys__io_8h.md)
+
+[sys\_bitops.h](sys__bitops_8h.md)
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
+- [nios2](dir_bcfa142ae77c1ee311b7ef8e30037d11.md)
+- [arch.h](nios2_2arch_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

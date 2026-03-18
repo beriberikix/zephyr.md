@@ -1,0 +1,707 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/device_mgmt/smp_groups/smp_group_0.html
+original_path: services/device_mgmt/smp_groups/smp_group_0.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Default/OS Management Group
+
+OS management group defines following commands:
+
+| `Command ID` | Command description |
+| --- | --- |
+| `0` | Echo |
+| `1` | Console/Terminal echo control; unimplemented by Zephyr |
+| `2` | Task Statistics |
+| `3` | Memory pool statistics |
+| `4` | Date-time string |
+| `5` | System reset |
+| `6` | MCUMGR parameters |
+| `7` | OS/Application info |
+| `8` | Bootloader information |
+
+## Echo command
+
+Echo command responses by sending back string that it has received.
+
+### Echo request
+
+Echo request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` or `2` | `0` | `0` |
+
+CBOR data of request:
+
+```text
+{
+    (str)"d" : (str)
+}
+```
+
+where:
+
+| “d” | string to be replied by echo service. |
+| --- | --- |
+
+### Echo response
+
+Echo response header fields:
+
+| `OP` | `Group ID` | `Command ID` | Note |
+| --- | --- | --- | --- |
+| `1` | `0` | `0` | When request `OP` was `0` |
+| `3` | `0` | `0` | When request `OP` was `2` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)"r"        : (str)
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “r” | replying echo string. |
+| --- | --- |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## Task statistics command
+
+The command responds with some system statistics.
+
+### Task statistics request
+
+Task statistics request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `2` |
+
+The command sends an empty CBOR map as data.
+
+### Task statistics response
+
+Task statistics response header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `2` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)"tasks" : {
+        (str)<task_name> : {
+            (str)"prio"         : (uint)
+            (str)"tid"          : (uint)
+            (str)"state"        : (uint)
+            (str)"stkuse"       : (uint)
+            (str)"stksiz"       : (uint)
+            (str)"cswcnt"       : (uint)
+            (str)"runtime"      : (uint)
+            (str)"last_checkin" : (uint)
+            (str)"next_checkin" : (uint)
+        }
+        ...
+    }
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| <task\_name> | string identifying task. |
+| --- | --- |
+| “prio” | task priority. |
+| “tid” | numeric task ID. |
+| “state” | numeric task state. |
+| “stkuse” | task’s/thread’s stack usage. |
+| “stksiz” | task’s/thread’s stack size. |
+| “cswcnt” | task’s/thread’s context switches. |
+| “runtime” | task’s/thread’s runtime in “ticks”. |
+| “last\_checkin” | set to 0 by Zephyr. |
+| “next\_checkin” | set to 0 by Zephyr. |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+Note
+
+The unit for “stkuse” and “stksiz” is system dependent and in case of Zephyr
+this is number of 4 byte words.
+
+## Memory pool statistics
+
+The command is used to obtain information on memory pools active in running
+system.
+
+### Memory pool statistic request
+
+Memory pool statistics request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `3` |
+
+The command sends an empty CBOR map as data.
+
+### Memory pool statistics response
+
+Memory pool statistics response header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `3` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)<pool_name> {
+        (str)"blksiz"   : (int)
+        (str)"nblks"    : (int)
+        (str)"nfree"    : (int)
+        (str)"min'      : (int)
+    }
+    ...
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| <pool\_name> | string representing the pool name, used as a key for dictionary with pool statistics data. |
+| --- | --- |
+| “blksiz” | size of the memory block in the pool. |
+| “nblks” | number of blocks in the pool. |
+| “nfree” | number of free blocks. |
+| “min” | lowest number of free blocks the pool reached during run-time. |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## Date-time command
+
+The command allows to obtain string representing current time-date on a device
+or set a new time to a device.
+The time format used, by both set and get operations, is:
+
+> “yyyy-MM-dd’T’HH:mm:ss.SSSSSSZZZZZ”
+
+### Date-time get
+
+The command allows to obtain date-time from a device.
+
+#### Date-time get request
+
+Date-time request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `4` |
+
+The command sends an empty CBOR map as data.
+
+#### Date-time get response
+
+Date-time get response header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `4` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)"datetime" : (str)
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “datetime” | String in format: `yyyy-MM-dd'T'HH:mm:ss.SSSSSSZZZZZ`. |
+| --- | --- |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+### Date-time set
+
+The command allows to set date-time to a device.
+
+#### Date-time set request
+
+Date-time set request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `2` | `0` | `4` |
+
+CBOR data of response:
+
+```text
+{
+    (str)"datetime" : (str)
+}
+```
+
+where:
+
+| “datetime” | String in format: `yyyy-MM-dd'T'HH:mm:ss.SSSSSSZZZZZ`. |
+| --- | --- |
+
+#### Date-time set response
+
+Date-time set response header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `3` | `0` | `4` |
+
+The command sends an empty CBOR map as data if successful. In case of error the
+CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| --- | --- |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## System reset
+
+Performs reset of system. The device should issue response before resetting so
+that the SMP client could receive information that the command has been
+accepted. By default, this command is accepted in all conditions, however if
+the [`CONFIG_MCUMGR_GRP_OS_RESET_HOOK`](../../../kconfig.md#CONFIG_MCUMGR_GRP_OS_RESET_HOOK "CONFIG_MCUMGR_GRP_OS_RESET_HOOK") is enabled and an
+application registers a callback, the callback will be called when this command
+is issued and can be used to perform any necessary tidy operations prior to the
+module rebooting, or to reject the reset request outright altogether with an
+error response. For details on this functionality, see ref:`mcumgr\_callbacks.
+
+### System reset request
+
+System reset request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `2` | `0` | `5` |
+
+Normally the command sends an empty CBOR map as data, but if a previous reset
+attempt has responded with “rc” equal to [`MGMT_ERR_EBUSY`](../mcumgr.md#c.mcumgr_err_t.MGMT_ERR_EBUSY "MGMT_ERR_EBUSY") then the
+following map may be sent to force a reset:
+
+```text
+{
+    (opt)"force"       : (int)
+}
+```
+
+where:
+
+| “force” | Force reset if value > 0, optional if 0. |
+| --- | --- |
+
+### System reset response
+
+System reset response header fields
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `3` | `0` | `5` |
+
+The command sends an empty CBOR map as data if successful. In case of error the
+CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| --- | --- |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## MCUmgr Parameters
+
+Used to obtain parameters of mcumgr library.
+
+### MCUmgr Parameters Request
+
+MCUmgr parameters request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `6` |
+
+The command sends an empty CBOR map as data.
+
+### MCUmgr Parameters Response
+
+MCUmgr parameters response header fields
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `6` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)"buf_size"     : (uint)
+    (str)"buf_count"    : (uint)
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “buf\_size” | Single SMP buffer size, this includes SMP header and CBOR payload. |
+| --- | --- |
+| “buf\_count” | Number of SMP buffers supported. |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## OS/Application Info
+
+Used to obtain information on running image, similar functionality to the linux
+uname command, allowing details such as kernel name, kernel version, build
+date/time, processor type and application-defined details to be returned. This
+functionality can be enabled with [`CONFIG_MCUMGR_GRP_OS_INFO`](../../../kconfig.md#CONFIG_MCUMGR_GRP_OS_INFO "CONFIG_MCUMGR_GRP_OS_INFO").
+
+### OS/Application Info Request
+
+OS/Application info request header fields:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `7` |
+
+CBOR data of request:
+
+```text
+{
+    (str,opt)"format"      : (str)
+}
+```
+
+where:
+
+| “format” | Format specifier of returned response, fields are appended in their natural ascending index order, not the order of characters that are received by the command. Format specifiers:   \* `s` Kernel name   \* `n` Node name   \* `r` Kernel release   \* `v` Kernel version   \* `b` Build date and time (requires [`CONFIG_MCUMGR_GRP_OS_INFO_BUILD_DATE_TIME`](../../../kconfig.md#CONFIG_MCUMGR_GRP_OS_INFO_BUILD_DATE_TIME "CONFIG_MCUMGR_GRP_OS_INFO_BUILD_DATE_TIME"))   \* `m` Machine   \* `p` Processor   \* `i` Hardware platform   \* `o` Operating system   \* `a` All fields (shorthand for all above options)   If this option is not provided, the `s` Kernel name option will be used. |
+| --- | --- |
+
+### OS/Application Info Response
+
+OS/Application info response header fields
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `7` |
+
+CBOR data of successful response:
+
+```text
+{
+    (str)"output"       : (str)
+}
+```
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “output” | Text response including requested parameters. |
+| --- | --- |
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+## Bootloader Information
+
+Allows retrieving information about the on-board bootloader and its parameters.
+
+### Bootloader Information Request
+
+Bootloader information request header:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `0` | `0` | `8` |
+
+CBOR data of request:
+
+```text
+{
+    (str,opt)"query"  : (str)
+}
+```
+
+where:
+
+| “query” | Is string representing query for parameters, with no restrictions how the query looks like as processing of query is left for bootloader backend. If there is no query, then response will return string identifying the bootloader. |
+| --- | --- |
+
+### Bootloader Information Response
+
+Bootloader information response header:
+
+| `OP` | `Group ID` | `Command ID` |
+| --- | --- | --- |
+| `1` | `0` | `8` |
+
+In case when no “query” has been provided in request,
+CBOR data of response:
+
+```text
+{
+    (str)"bootloader"      : (str)
+}
+```
+
+where:
+
+| “bootloader” | String representing bootloader name |
+| --- | --- |
+
+In case when “query” is provided:
+
+```text
+{
+    (str,opt)<response>   : ()
+    ...
+}
+```
+
+where:
+
+| <response> | Response to “query”. This is optional and may be left out in case when query yields no response, SMP version 2 error code of OS\_MGMT\_ERR\_QUERY\_YIELDS\_NO\_ANSWER is expected. Response may have more than one parameter reported back or it may be a map, that is dependent on bootloader backednd and query. |
+| --- | --- |
+| … | Parameter characteristic information. |
+
+Parameter may be accompanied by additional, parameter specific, information keywords with
+assigned values.
+
+In case of error the CBOR data takes the form:
+
+SMP version 2SMP version 1 (and non-group SMP version 2)
+
+```text
+{
+    (str)"err" : {
+        (str)"group"    : (uint)
+        (str)"rc"       : (uint)
+    }
+}
+```
+
+```text
+{
+    (str)"rc"       : (int)
+}
+```
+
+where:
+
+| “err” -> “group” | [`mcumgr_group_t`](../mcumgr.md#c.mcumgr_group_t "mcumgr_group_t") group of the group-based error code. Only appears if an error is returned when using SMP version 2. |
+| --- | --- |
+| “err” -> “rc” | contains the index of the group-based error code. Only appears if non-zero (error condition) when using SMP version 2. |
+| “rc” | [`mcumgr_err_t`](../mcumgr.md#c.mcumgr_err_t "mcumgr_err_t") only appears if non-zero (error condition) when using SMP version 1 or for SMP errors when using SMP version 2. |
+
+### Bootloader Information: MCUboot
+
+In case when MCUboot is application bootloader, empty request will
+be responded with:
+
+```text
+{
+    (str)"bootloader"      : (str)"MCUboot"
+}
+```
+
+Currently “MCUboot” supports querying for mode of operation:
+
+```text
+{
+    (str)"query"           : (str)"mode"
+}
+```
+
+Response to “mode” is:
+
+```text
+{
+    (str)"mode"                     : (int)
+    (str,opt)"no-downgrade"         : (bool)
+}
+```
+
+where “mode” is one of:
+
+| -1 | Unknown mode of MCUboot. |
+| --- | --- |
+| 0 | MCUboot is in single application mode. |
+| 1 | MCUboot is in swap using scratch partition mode. |
+| 2 | MCUboot is in overwrite (upgrade-only) mode. |
+| 3 | MCUboot is in swap without scratch mode. |
+| 4 | MCUboot is in DirectXIP without revert mode. |
+| 5 | MCUboot is in DirectXIP with revert mode. |
+| 6 | MCUboot is in RAM loader mode. |
+
+The `no-downgrade` field is a flag, which is always sent when true, indicating that MCUboot has
+downgrade prevention enabled; downgrade prevention means that if the uploaded image has a lower
+version than the currently running application, it will not be used for an update by MCUboot.
+
+MCUmgr may reject images with a lower version in this configuration.

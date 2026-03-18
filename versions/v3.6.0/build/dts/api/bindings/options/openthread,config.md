@@ -1,0 +1,50 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/options/openthread,config.html
+original_path: build/dts/api/bindings/options/openthread,config.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# openthread,config
+
+Vendor: [OpenThread.io](../../bindings.md#dt-vendor-openthread)
+
+## Description
+
+```text
+OpenThread configuration node.
+
+Example usage:
+options {
+  openthread {
+    compatible = "openthread,config";
+    diag-gpios = <&gpio0 0  GPIO_ACTIVE_HIGH>,
+                 <&gpio1 0  GPIO_ACTIVE_LOW>;
+    bootloader-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;
+  };
+};
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `diag-gpios` | `phandle-array` | ```text This enables access to diagnostic GPIO pins. Each field consists of GPIO pin's configuration: controller's phandle, pin number and configuration flags. ``` |
+| `bootloader-gpios` | `phandle-array` | ```text This enables resetting to bootloader by triggering given GPIO pin. Property represents chosen GPIO pin's configuration: controller's phandle, pin number and configuration flags. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “openthread,config” compatible.
+
+(None)

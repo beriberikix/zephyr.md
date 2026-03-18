@@ -1,0 +1,82 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/subsys/zbus/msg_subscriber/README.html
+original_path: samples/subsys/zbus/msg_subscriber/README.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Message subscriber
+
+## Overview
+
+This sample illustrates how to use a message subscriber in different
+ways in conjunction with other types of observers.
+
+## Building and Running
+
+This project outputs to the console. It can be built and executed
+on QEMU as follows:
+
+```shell
+# From the root of the zephyr repository
+west build -b qemu_x86 samples/subsys/zbus/msg_subscriber
+west build -t run
+```
+
+### Sample Output
+
+```shell
+-- west build: running target run
+[0/1] To exit from QEMU enter: 'CTRL+a, x'[QEMU] CPU: qemu32,+nx,+pae
+Booting from ROM..
+I: ----> Publishing to acc_data_chan channel
+I:  AL Memory allocated 28 bytes. Total allocated 28 bytes
+I: From listener foo_lis -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub1 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub2 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub3 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub4 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub5 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub6 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub7 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub8 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub9 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub10 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub11 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub12 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub13 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub14 -> Acc x=1, y=10, z=100
+I: From msg subscriber bar_msg_sub15 -> Acc x=1, y=10, z=100
+I:  FR Memory freed 28 bytes. Total allocated 0 bytes
+I: From msg subscriber bar_msg_sub16 -> Acc x=1, y=10, z=100
+I: From subscriber bar_sub1 -> Acc x=1, y=10, z=100
+I: From subscriber bar_sub2 -> Acc x=1, y=10, z=100
+I: ----> Publishing to acc_data_chan channel
+I:  AL Memory allocated 28 bytes. Total allocated 28 bytes
+I: From listener foo_lis -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub1 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub2 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub3 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub4 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub5 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub6 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub7 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub8 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub9 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub10 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub11 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub12 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub13 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub14 -> Acc x=2, y=20, z=200
+I: From msg subscriber bar_msg_sub15 -> Acc x=2, y=20, z=200
+I:  FR Memory freed 28 bytes. Total allocated 0 bytes
+I: From msg subscriber bar_msg_sub16 -> Acc x=2, y=20, z=200
+I: From subscriber bar_sub1 -> Acc x=2, y=20, z=200
+I: From subscriber bar_sub2 -> Acc x=2, y=20, z=200
+<continues>
+```
+
+Exit QEMU by pressing `CTRL+A` `x`.

@@ -1,0 +1,98 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/functions_v.html
+original_path: doxygen/html/functions_v.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+Here is a list of all struct and union fields with links to the structures/unions they belong to:
+
+### - v -
+
+- v : [sensing\_sensor\_value\_3d\_q31](structsensing__sensor__value__3d__q31.md#a68eefb9ba2e8d954e8ea3c4f30893f3f), [sensing\_sensor\_value\_q31](structsensing__sensor__value__q31.md#ad3ed83faec34ebce96e57e23aab36101), [sensing\_sensor\_value\_uint32](structsensing__sensor__value__uint32.md#a10d8f7d8f36c4969552b297ed34bf592), [sensor\_three\_axis\_data::sensor\_three\_axis\_sample\_data](structsensor__three__axis__data_1_1sensor__three__axis__sample__data.md#aa0de6e1354c259857b2b5a89717a5f9a), [xen\_domctl\_scheduler\_op](structxen__domctl__scheduler__op.md#a1865ada180f42b79c77d6cb2d3b66ddc)
+- v1 : [mcuboot\_img\_header](structmcuboot__img__header.md#aff12aff412ea774f96948e7db0b25009)
+- v\_reqs : [usbd\_class\_data](structusbd__class__data.md#a32db83ecf80e1ac9e4d5deda54581deb)
+- vactive : [mipi\_dsi\_timings](structmipi__dsi__timings.md#acc8077892efa4977fd667680d63f5c7c)
+- val : [adc\_npcx\_threshold\_param](structadc__npcx__threshold__param.md#a250120d513253a21c9581b74093ca2c7), [arc\_connect\_bcr](structarc__connect__bcr.md#a00ec9d596b6b1e508321907e59060f8e), [arc\_connect\_cmd](structarc__connect__cmd.md#afb90551e0d8ad5acb910559dabff1471), [arc\_connect\_idu\_bcr](structarc__connect__idu__bcr.md#aeef8bbdd06ac006c6f9f910671a993e6), [bt\_addr\_t](structbt__addr__t.md#a59e03c3fd06d16dc41132fd21ac42952), [bt\_sdp\_attribute](structbt__sdp__attribute.md#a424c2ae038fda8dfd96e2a9cd876f9a1), [bt\_uuid\_128](structbt__uuid__128.md#a0918addaa7afaf1eeb864d5ec40bd59a), [bt\_uuid\_16](structbt__uuid__16.md#a13ee02ec58cf5fdede249aa8b20a1a9a), [bt\_uuid\_32](structbt__uuid__32.md#a56e991966643c9a1ca689986e57e6bfc), [i3c\_config\_custom](structi3c__config__custom.md#ae0320b4b277b1c3d4ad438cd71d98340), [k\_futex](structk__futex.md#a454ad1b595b899306c8e9c8e1431e7a7), [settings\_mgmt\_access](structsettings__mgmt__access.md#aeb23615be870929a987c6cfbd3f445de), [sys\_mutex](structsys__mutex.md#adbb6c644b680b81a11ab183f97102de4), [usb\_audio\_fu\_evt](structusb__audio__fu__evt.md#a47c6c7c00fac32a04bffd251d715dc39), [xtensa\_register](structxtensa__register.md#a58afab24c5b54d15dcd36ebcdf0e750d)
+- val1 : [sensor\_value](structsensor__value.md#af21dddb084da4c42a7e77b48edf26fbe)
+- val2 : [sensor\_value](structsensor__value.md#a91f81bd0f5da69084cf3c629fde68a1b)
+- val\_len : [usb\_audio\_fu\_evt](structusb__audio__fu__evt.md#a6ef19bf7d37c3d636edba243dac8ecb2)
+- val\_length : [settings\_mgmt\_access](structsettings__mgmt__access.md#ab13bdcd8763dca5a99d3d52270f9b4d2)
+- valid : [mpsc\_pbuf\_hdr](structmpsc__pbuf__hdr.md#a246f604d40160841142d9307ca35575a), [mpsc\_pbuf\_skip](structmpsc__pbuf__skip.md#ae2de17f804dd76bbd6efaa30a53a83b6)
+- valid\_formats : [os\_mgmt\_info\_check](structos__mgmt__info__check.md#a7aae2f1feb1adfdc18f11a671c3bad26)
+- validate\_buf : [lwm2m\_ctx](structlwm2m__ctx.md#a574b50b9ec4cdfb5fac53a9b6d8c31d5)
+- validator : [zbus\_channel](structzbus__channel.md#a047e9da011488c8f11abdc1fd283f5f6)
+- value : [bt\_gatt\_ccc\_cfg](structbt__gatt__ccc__cfg.md#a92acf7329f66638ac6c657c8eaa795ac), [bt\_gatt\_subscribe\_params](structbt__gatt__subscribe__params.md#a3bff1209b7a0b5908408a568622d0150), [coap\_client\_option](structcoap__client__option.md#ac1f5a38dad7ea227e19a96a3799329c6), [coap\_option](structcoap__option.md#aff07b5d3673169b6316b91dc27780891), [input\_event](structinput__event.md#af18b63e5263e73fce8e38838e37d2bae), [mdm\_hl7800\_apn](structmdm__hl7800__apn.md#a37f48ac1e950f0df59d07a6a83bb5cc9), [net\_lldp\_chassis\_tlv](structnet__lldp__chassis__tlv.md#a37b7e81a670595d1c6c77a45bf9cfc73), [net\_lldp\_port\_tlv](structnet__lldp__port__tlv.md#aecc83eaec39284b33c2e7cf07f0ffa05), [sensing\_sensor\_version](structsensing__sensor__version.md#a0023cbb5114f4a3d3a1cf388e5034cfc), [sensor\_byte\_data::sensor\_byte\_sample\_data](structsensor__byte__data_1_1sensor__byte__sample__data.md#a3ad640ff448fe87d2eda7c5118404b7a), [sensor\_q31\_data::sensor\_q31\_sample\_data](structsensor__q31__data_1_1sensor__q31__sample__data.md#afd73a2b1b6e4e262e89e242853f4ef23), [sensor\_uint64\_data::sensor\_uint64\_sample\_data](structsensor__uint64__data_1_1sensor__uint64__sample__data.md#a37b7eb52969798316f23102dfc66f343), [shell\_backend\_cfg](unionshell__backend__cfg.md#a2e2aa4e52af6f6e6a827ea946e6681fc), [shell\_backend\_ctx](unionshell__backend__ctx.md#a8de68016e888b8f9b5371c8a7bed4fcb), [stat\_mgmt\_entry](structstat__mgmt__entry.md#aa8441c1d2a1ce5acaa660e2e9b9d260d), [sys\_hashmap\_iterator](structsys__hashmap__iterator.md#a9987d100e22822f07182278cbb431b24), [udc\_event](structudc__event.md#ada24e0e920c39bc60a6c7fbbe54277f4), [xen\_hvm\_param](structxen__hvm__param.md#aac9d3547914c44d58fcedfd83b856a3a)
+- value\_handle : [bt\_gatt\_chrc](structbt__gatt__chrc.md#a2ca6aec1a621fdfd12142a1188d37bd3), [bt\_gatt\_subscribe\_params](structbt__gatt__subscribe__params.md#a9248418eb04a5b7a0faed5077c40bf22)
+- values : [sensor\_three\_axis\_attribute](structsensor__three__axis__attribute.md#a88cb3f5259b9dde34c5b26daae4ed270), [sensor\_three\_axis\_data::sensor\_three\_axis\_sample\_data](structsensor__three__axis__data_1_1sensor__three__axis__sample__data.md#aa8a07324f3139a6a34f695927a1d6486)
+- variable : [bt\_gatt\_read\_params](structbt__gatt__read__params.md#a77d05cbc54b125fc35d180cf91bf9cb9), [pd\_rdo](unionpd__rdo.md#a82e1adf30b6fc476b794b94cfb379214)
+- vbaten : [mcp7940n\_rtc\_weekday](structmcp7940n__rtc__weekday.md#ad904822d76ac2f170807b3d6260061a3)
+- vbp : [mipi\_dsi\_timings](structmipi__dsi__timings.md#afff80261d02253b76a872ee805a4cd46)
+- vc\_count : [pcie\_vctc\_map](structpcie__vctc__map.md#aa70f7e0a4f2eadcf652e8858b2fc0304)
+- vc\_tc : [pcie\_vctc\_map](structpcie__vctc__map.md#a93955e5b5e4ef26a81d363e8f10806fc)
+- vconn\_discharge : [tcpc\_driver\_api](structtcpc__driver__api.md#a06bf9faa692527225dc6a8224f37fe24)
+- vcpu : [evtchn\_status](structevtchn__status.md#a73b3355dc9a49f0f463944c963d9c99a), [xen\_domctl\_vcpucontext](structxen__domctl__vcpucontext.md#a65e5f49065fbe974ca8c3dbef373c971)
+- vcpu\_info : [shared\_info](structshared__info.md#ac2546d512495d021e8e22d3eae260153)
+- vcpucontext : [xen\_domctl](structxen__domctl.md#a8bed0bb93553afca175a4fb897fae394)
+- vcpuid : [xen\_domctl\_schedparam\_vcpu](structxen__domctl__schedparam__vcpu.md#a063292bc431df3f1677cfd27a3a788f5)
+- vcpus : [xen\_domctl\_scheduler\_op](structxen__domctl__scheduler__op.md#a5b09041b6658123c57952356b985daf9)
+- vdd2\_180\_support : [sdhc\_host\_caps](structsdhc__host__caps.md#a2f5d5859cbe06ab449f95c0a108c2250)
+- vdev : [ipc\_static\_vrings](structipc__static__vrings.md#a1676900beba6921f55933dc174adad4d)
+- vec : [s\_isrList](structs__isrList.md#af1bc7016fb72489f391db03a9fdf0fd3)
+- vector : [gdb\_interrupt\_ctx](structgdb__interrupt__ctx.md#af3d805bf15d0c6bac1382e2cfe58bef4), [x86\_esf](structx86__esf.md#a17da935fbc2a07a151bb5c4ab957f7a5)
+- vector\_ctrl : [msix\_vector](structmsix__vector.md#ac4d0f7192cc8bcaffd4fac75589ca298)
+- vector\_desc : [intr\_handle\_data\_t](structintr__handle__data__t.md#a54ce22a2f0818180fbe25d0e9edf2036)
+- vendor : [sensing\_sensor\_info](structsensing__sensor__info.md#a085e8c00586c61245b822c7ea9db9c98), [usbd\_msc\_lun](structusbd__msc__lun.md#a13325438f09bff0d3070e5614b736bed)
+- vendor\_handler : [usb\_interface\_cfg\_data](structusb__interface__cfg__data.md#a2d5d65d41cef609173287161797318d2)
+- vendor\_id : [bt\_hci\_vs\_cmd](structbt__hci__vs__cmd.md#a640c7523215b676dd8922d95c136cc4b), [tcpc\_chip\_info](structtcpc__chip__info.md#ab48400ea4209d5443e5b7e0bfee6c4fc)
+- vendor\_oui : [ieee802154\_header\_ie\_vendor\_specific](structieee802154__header__ie__vendor__specific.md#a52d5ef47cbf674438bdc59aff40d0cbe)
+- vendor\_specific : [ieee802154\_header\_ie](structieee802154__header__ie.md#ac932f99fb3b93debde45e1f82d059cf8)
+- vendor\_specific\_info : [ieee802154\_header\_ie\_vendor\_specific](structieee802154__header__ie__vendor__specific.md#a7227c96e07f5cd26353d10710d5a8db1)
+- ver : [arc\_connect\_bcr](structarc__connect__bcr.md#aba1da6026b038bb551466402c3ee4f14), [arc\_connect\_idu\_bcr](structarc__connect__idu__bcr.md#afc8b571a896aa33c6f009fe5a3794058)
+- version : [bt\_conn\_remote\_info](structbt__conn__remote__info.md#a2664f6ed3bd22f9a011126daf5d81376), [bt\_hci\_evt\_remote\_version\_info](structbt__hci__evt__remote__version__info.md#a8442b9f2bdc6cbce564c9bcec4169a20), [bt\_mesh\_comp2\_record](structbt__mesh__comp2__record.md#a26370a5dc68af03424c0f2f4fecd0181), [bt\_mesh\_comp\_p2\_record](structbt__mesh__comp__p2__record.md#aa718c024d6ce339ac8c352319b878c53), [ec\_host\_cmd\_handler\_args](structec__host__cmd__handler__args.md#ad346a4c196ee5e48c67640232a828745), [mcumgr\_image\_data](structmcumgr__image__data.md#aa75e38d37c9b12a2ccf32af6a47df814), [sd\_cid](structsd__cid.md#aba79f6a5bdf963772ac3c77ac209faf2), [sensing\_sensor\_register\_info](structsensing__sensor__register__info.md#af87ee2748229a7f43049d058da930ce1), [utsname](structutsname.md#a5fdfa66e563e8112c517d3cd95133eaf), [vcpu\_time\_info](structvcpu__time__info.md#a82f016f109904dd5effa7c87c8cc35fb)
+- version\_mask : [ec\_host\_cmd\_handler](structec__host__cmd__handler.md#a2e4643dc7ca0ee4b8f7169b9156dadc6)
+- vfp : [mipi\_dsi\_timings](structmipi__dsi__timings.md#ac44c32c7d150ddd4b327308196169578)
+- vhlerr : [net\_stats\_ip\_errors](structnet__stats__ip__errors.md#a3e476f659ebeaa5c5f7b6dad2d90326f)
+- vid : [bt\_audio\_codec\_cap](structbt__audio__codec__cap.md#a3b91269e16a3d63b3128a527caa5e3ff), [bt\_audio\_codec\_cfg](structbt__audio__codec__cfg.md#a2996ab3f6ae1cab09ff5e3329b42468e), [bt\_bap\_base\_codec\_id](structbt__bap__base__codec__id.md#a49802819cc3129a993320b95472f2262), [bt\_iso\_chan\_path](structbt__iso__chan__path.md#aebc12293ba0b10a87f1852e2a3e53a23), [bt\_mesh\_comp](structbt__mesh__comp.md#a7e4351e81e4e04bb9681e76d384f2fa5), [bt\_mesh\_comp\_p0](structbt__mesh__comp__p0.md#a27d910cdeb7b6b9d038898e3824dfb57)
+- virq : [evtchn\_status](structevtchn__status.md#acd976827543c4192186f68da8f8be701)
+- virtual\_l2\_flags : [virtual\_interface\_context](structvirtual__interface__context.md#a493cef75dd5000b19eab5db156015c6e)
+- vmtrace\_size : [xen\_domctl\_createdomain](structxen__domctl__createdomain.md#a6b9bd817c7df997e5f6585868da7d4bd)
+- vnd : [bt\_mesh\_model](structbt__mesh__model.md#a3372deccde1a5ab26d9204c97339596e)
+- vnd\_model\_count : [bt\_mesh\_elem](structbt__mesh__elem.md#aea56fd98c9aecfb9de3772ad3f14b25e)
+- vnd\_models : [bt\_mesh\_elem](structbt__mesh__elem.md#a81d4fc1c41e2944bf7f6e71b00e19a0f)
+- voc : [ccs811\_result\_type](structccs811__result__type.md#ad3fef69b83fa1f67f0a3cf7ab1f36f12)
+- vocs : [bt\_vcp\_included](structbt__vcp__included.md#a1f04068dd88d2fecef5fd78a3c7d4429)
+- vocs\_cb : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#af6407bb0652539608f0100f02cfaadd1)
+- vocs\_cnt : [bt\_vcp\_included](structbt__vcp__included.md#acb0c8e853808adfd9c3b92b45e874103)
+- vocs\_param : [bt\_vcp\_vol\_rend\_register\_param](structbt__vcp__vol__rend__register__param.md#a45eb75a4590d278cec0cf4cf6d94dda3)
+- vol : [audio\_property\_value\_t](unionaudio__property__value__t.md#aafcfb98016ab4306b4fd6cb54f0c22e0)
+- vol\_180\_support : [sdhc\_host\_caps](structsdhc__host__caps.md#aa39ef2d70314dbf2517bd3df6fbd4694)
+- vol\_300\_support : [sdhc\_host\_caps](structsdhc__host__caps.md#a7fdf6832fbcc9dce7e20ee87d9063665)
+- vol\_330\_support : [sdhc\_host\_caps](structsdhc__host__caps.md#ac6e2eb088ed7d7c3f3f5011ad55ba543)
+- vol\_down : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#ac986e0c5cb49395fe8581f5b1dae1a88)
+- vol\_down\_unmute : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#a770e300127b8357f1e76f0cca21b74e5)
+- vol\_set : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#abe7cf51858428db6b953a21a6ba40f83)
+- vol\_up : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#ae1beaa5d0a61c630fa90b4a5236ce743)
+- vol\_up\_unmute : [bt\_vcp\_vol\_ctlr\_cb](structbt__vcp__vol__ctlr__cb.md#af4ca636d19c83694f9b86102404b0538)
+- voltage : [fuel\_gauge\_prop\_val](unionfuel__gauge__prop__val.md#abec5cadefa09e088620a9598dec9c473), [pd\_fixed\_supply\_pdo\_sink](unionpd__fixed__supply__pdo__sink.md#ac47dcf98dfca90eb0e6013a3e1c5eb18), [pd\_fixed\_supply\_pdo\_source](unionpd__fixed__supply__pdo__source.md#a66f55e177b6f2bc76b392707e39fa4fe), [sensor\_q31\_data::sensor\_q31\_sample\_data](structsensor__q31__data_1_1sensor__q31__sample__data.md#af63a2f7a618c8ff17be31a0543920525)
+- voltage\_uv : [bc12\_partner\_state](structbc12__partner__state.md#a1cdea094ae13acbb46fcae6f60ec3a7b)
+- volume : [bt\_cap\_commander\_change\_volume\_param](structbt__cap__commander__change__volume__param.md#ada17f89c8948246d68818f2e44d5ea49), [bt\_vcp\_vol\_rend\_register\_param](structbt__vcp__vol__rend__register__param.md#a6cf1343a2b3033c3f4676d66017cfda7)
+- volume\_name : [ext2\_cfg](structext2__cfg.md#a2f0bbc643995eb206f59625dff84b4e9)
+- vq : [ipc\_static\_vrings](structipc__static__vrings.md#a787e801d8d836026a01e8b6bd4478c13)
+- vref\_mv : [adc\_dt\_spec](structadc__dt__spec.md#a9e120f52e3a905768d8e6bdc3469d20a)
+- vring\_size : [ipc\_static\_vrings](structipc__static__vrings.md#a893bc5387c5b29ecdcfc1abfd57c9caf)
+- vs\_codec\_id : [bt\_hci\_cp\_codec\_id](structbt__hci__cp__codec__id.md#a70296440c202544af11db2dc8e80fc5b)
+- vs\_config : [bt\_hci\_cp\_configure\_data\_path](structbt__hci__cp__configure__data__path.md#aa79c4aa6603b09f49a8c7f216f135e6e)
+- vs\_config\_len : [bt\_hci\_cp\_configure\_data\_path](structbt__hci__cp__configure__data__path.md#a2573fe029e1774bf5fa7e8cffff08cec)
+- vsync : [mipi\_dsi\_timings](structmipi__dsi__timings.md#a535e0177862b753ef9f4af011ed483a4)
+- vt100\_ctx : [shell\_ctx](structshell__ctx.md#a25b945fcaba216e039124aacec660600)
+
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

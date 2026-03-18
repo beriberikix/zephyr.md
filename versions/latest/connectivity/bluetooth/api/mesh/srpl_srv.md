@@ -1,0 +1,41 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/connectivity/bluetooth/api/mesh/srpl_srv.html
+original_path: connectivity/bluetooth/api/mesh/srpl_srv.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Solicitation PDU RPL Configuration Server
+
+The Solicitation PDU RPL Configuration Server model is a foundation model defined by the Bluetooth
+mesh specification. The model is enabled if the node has the [On-Demand Private Proxy Server](od_srv.md#bluetooth-mesh-od-srv) enabled.
+
+The Solicitation PDU RPL Configuration Server model was introduced in the Bluetooth Mesh Protocol
+Specification version 1.1, and manages the Solicitation Replay Protection List (SRPL) saved on the
+device. The SRPL is used to reject Solicitation PDUs that are already processed by a node. When a
+valid Solicitation PDU message is successfully processed by a node, the SSRC field and SSEQ field
+of the message are stored in the node’s SRPL.
+
+The Solicitation PDU RPL Configuration Server does not have an API of its own, and relies on a
+[Solicitation PDU RPL Configuration Client](srpl_cli.md#bluetooth-mesh-srpl-cli) to control it. The model only accepts messages encrypted with an
+application key as configured by the Configuration Client.
+
+If present, the Solicitation PDU RPL Configuration Server model must only be instantiated on the
+primary element.
+
+## Configurations
+
+For the Solicitation PDU RPL Configuration Server model, the
+[`CONFIG_BT_MESH_PROXY_SRPL_SIZE`](../../../../kconfig.md#CONFIG_BT_MESH_PROXY_SRPL_SIZE "CONFIG_BT_MESH_PROXY_SRPL_SIZE") option can be configured to set the size of the
+SRPL.
+
+## API reference
+
+*group* bt\_mesh\_sol\_pdu\_rpl\_srv
+:   Defines
+
+    BT\_MESH\_MODEL\_SOL\_PDU\_RPL\_SRV
+    :   Solicitation PDU RPL Server model composition data entry.

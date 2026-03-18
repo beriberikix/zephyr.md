@@ -1,0 +1,50 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structbt__hci__cp__mesh__set__scanning.html
+original_path: doxygen/html/structbt__hci__cp__mesh__set__scanning.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+bt\_hci\_cp\_mesh\_set\_scanning Struct Reference
+
+`#include <[hci_vs.h](hci__vs_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [enable](#aed23ad3e51e459bbc86945576a8113ef) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [ch\_map](#a2b27e80def9b437c16de186d5371e140) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [scan\_filter](#ac7cf268f484a575268fc6aa0f1b44cce) |
+
+## Field Documentation
+
+## [◆ ](#a2b27e80def9b437c16de186d5371e140)ch\_map
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_cp\_mesh\_set\_scanning::ch\_map |
+| --- |
+
+## [◆ ](#aed23ad3e51e459bbc86945576a8113ef)enable
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_cp\_mesh\_set\_scanning::enable |
+| --- |
+
+## [◆ ](#ac7cf268f484a575268fc6aa0f1b44cce)scan\_filter
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_cp\_mesh\_set\_scanning::scan\_filter |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
+
+- [bt\_hci\_cp\_mesh\_set\_scanning](structbt__hci__cp__mesh__set__scanning.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

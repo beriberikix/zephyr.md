@@ -1,0 +1,313 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/mgmt_8h_source.html
+original_path: doxygen/html/mgmt_8h_source.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+mgmt.h
+
+[Go to the documentation of this file.](mgmt_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2018-2021 mcumgr authors
+
+3 \* Copyright (c) 2022-2023 Nordic Semiconductor ASA
+
+4 \*
+
+5 \* SPDX-License-Identifier: Apache-2.0
+
+6 \*/
+
+7
+
+8#ifndef H\_MGMT\_MGMT\_
+
+9#define H\_MGMT\_MGMT\_
+
+10
+
+11#include <[inttypes.h](inttypes_8h.md)>
+
+12#include <[zephyr/sys/slist.h](slist_8h.md)>
+
+13#include <[zephyr/mgmt/mcumgr/smp/smp.h](mgmt_2mcumgr_2smp_2smp_8h.md)>
+
+14#include <[zephyr/mgmt/mcumgr/mgmt/mgmt\_defines.h](mgmt__defines_8h.md)>
+
+15
+
+16#ifdef \_\_cplusplus
+
+17extern "C" {
+
+18#endif
+
+19
+
+26
+
+[ 37](group__mcumgr__mgmt__api.md#ga292686c742179758ca5b853fc21fe302)typedef void \*(\*mgmt\_alloc\_rsp\_fn)(const void \*src\_buf, void \*arg);
+
+38
+
+[ 47](group__mcumgr__mgmt__api.md#ga1346d5160823c5e43fce3e6cba9f8607)typedef void (\*[mgmt\_reset\_buf\_fn](group__mcumgr__mgmt__api.md#ga1346d5160823c5e43fce3e6cba9f8607))(void \*buf, void \*arg);
+
+48
+
+49#ifdef CONFIG\_MCUMGR\_SMP\_VERBOSE\_ERR\_RESPONSE
+
+50#define MGMT\_CTXT\_SET\_RC\_RSN(mc, rsn) ((mc->rc\_rsn) = (rsn))
+
+51#define MGMT\_CTXT\_RC\_RSN(mc) ((mc)->rc\_rsn)
+
+52#else
+
+[ 53](group__mcumgr__mgmt__api.md#ga8027c2a587a835d92450f2935e66eea0)#define MGMT\_CTXT\_SET\_RC\_RSN(mc, rsn)
+
+[ 54](group__mcumgr__mgmt__api.md#ga4d22641395a665a911be715c2531fbd8)#define MGMT\_CTXT\_RC\_RSN(mc) NULL
+
+55#endif
+
+56
+
+[ 66](group__mcumgr__mgmt__api.md#gaaafc2c73e1616340e29df6a1ba94c241)typedef int (\*[mgmt\_handler\_fn](group__mcumgr__mgmt__api.md#gaaafc2c73e1616340e29df6a1ba94c241))(struct [smp\_streamer](structsmp__streamer.md) \*ctxt);
+
+67
+
+[ 72](structmgmt__handler.md)struct [mgmt\_handler](structmgmt__handler.md) {
+
+[ 73](structmgmt__handler.md#a7cc4917fa24afef79f1a8de8549a21e4) [mgmt\_handler\_fn](group__mcumgr__mgmt__api.md#gaaafc2c73e1616340e29df6a1ba94c241) [mh\_read](structmgmt__handler.md#a7cc4917fa24afef79f1a8de8549a21e4);
+
+[ 74](structmgmt__handler.md#a1bc6b52645f6eb1d0e0b0c695d972c15) [mgmt\_handler\_fn](group__mcumgr__mgmt__api.md#gaaafc2c73e1616340e29df6a1ba94c241) [mh\_write](structmgmt__handler.md#a1bc6b52645f6eb1d0e0b0c695d972c15);
+
+75#if IS\_ENABLED(CONFIG\_MCUMGR\_MGMT\_HANDLER\_USER\_DATA)
+
+76 void \*user\_data;
+
+77#endif
+
+78};
+
+79
+
+[ 83](structmgmt__group.md)struct [mgmt\_group](structmgmt__group.md) {
+
+[ 85](structmgmt__group.md#ac150809b03f73c4c2f94742504af772c) [sys\_snode\_t](group__single-linked-list__apis.md#ga69bf43aad81e3ee2d55250c59b857493) [node](structmgmt__group.md#ac150809b03f73c4c2f94742504af772c);
+
+86
+
+[ 88](structmgmt__group.md#a7a6e90e500716095b9a22e3f56edac03) const struct [mgmt\_handler](structmgmt__handler.md) \*[mg\_handlers](structmgmt__group.md#a7a6e90e500716095b9a22e3f56edac03);
+
+[ 89](structmgmt__group.md#a8b2de48e97c0de4c902d72aba4e920b4) [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) [mg\_handlers\_count](structmgmt__group.md#a8b2de48e97c0de4c902d72aba4e920b4);
+
+90
+
+[ 92](structmgmt__group.md#a9d55dbf947096eed7cacfb9087d304d4) [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) [mg\_group\_id](structmgmt__group.md#a9d55dbf947096eed7cacfb9087d304d4);
+
+93
+
+94#if IS\_ENABLED(CONFIG\_MCUMGR\_SMP\_SUPPORT\_ORIGINAL\_PROTOCOL)
+
+98 smp\_translate\_error\_fn mg\_translate\_error;
+
+99#endif
+
+100
+
+101#if defined(CONFIG\_MCUMGR\_MGMT\_CUSTOM\_PAYLOAD)
+
+103 bool custom\_payload;
+
+104#endif
+
+105};
+
+106
+
+[ 112](group__mcumgr__mgmt__api.md#ga70379f21faacddb5cc4a66f37a576ea0)void [mgmt\_register\_group](group__mcumgr__mgmt__api.md#ga70379f21faacddb5cc4a66f37a576ea0)(struct [mgmt\_group](structmgmt__group.md) \*group);
+
+113
+
+[ 119](group__mcumgr__mgmt__api.md#ga87e98bdf47d1c7798098444f69ccf8b8)void [mgmt\_unregister\_group](group__mcumgr__mgmt__api.md#ga87e98bdf47d1c7798098444f69ccf8b8)(struct [mgmt\_group](structmgmt__group.md) \*group);
+
+120
+
+[ 130](group__mcumgr__mgmt__api.md#ga620862436fad440b9d2b9d8112be4ad1)const struct [mgmt\_handler](structmgmt__handler.md) \*[mgmt\_find\_handler](group__mcumgr__mgmt__api.md#ga620862436fad440b9d2b9d8112be4ad1)([uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) group\_id, [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) command\_id);
+
+131
+
+[ 140](group__mcumgr__mgmt__api.md#gae88bc30026fbff6530179a94ba8f11ae)const struct [mgmt\_group](structmgmt__group.md) \*[mgmt\_find\_group](group__mcumgr__mgmt__api.md#gae88bc30026fbff6530179a94ba8f11ae)([uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) group\_id);
+
+141
+
+[ 151](group__mcumgr__mgmt__api.md#gaec6ccbcaf28404b4b3662d5059f0a32b)const struct [mgmt\_handler](structmgmt__handler.md) \*[mgmt\_get\_handler](group__mcumgr__mgmt__api.md#gaec6ccbcaf28404b4b3662d5059f0a32b)(const struct [mgmt\_group](structmgmt__group.md) \*group, [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) command\_id);
+
+152
+
+153#if IS\_ENABLED(CONFIG\_MCUMGR\_SMP\_SUPPORT\_ORIGINAL\_PROTOCOL)
+
+163smp\_translate\_error\_fn mgmt\_find\_error\_translation\_function([uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) group\_id);
+
+164#endif
+
+165
+
+169
+
+170#ifdef \_\_cplusplus
+
+171}
+
+172#endif
+
+173
+
+174#endif /\* MGMT\_MGMT\_H\_ \*/
+
+[mgmt\_reset\_buf\_fn](group__mcumgr__mgmt__api.md#ga1346d5160823c5e43fce3e6cba9f8607)
+
+void(\* mgmt\_reset\_buf\_fn)(void \*buf, void \*arg)
+
+Resets a buffer to a length of 0.
+
+**Definition** mgmt.h:47
+
+[mgmt\_find\_handler](group__mcumgr__mgmt__api.md#ga620862436fad440b9d2b9d8112be4ad1)
+
+const struct mgmt\_handler \* mgmt\_find\_handler(uint16\_t group\_id, uint16\_t command\_id)
+
+Finds a registered command handler.
+
+[mgmt\_register\_group](group__mcumgr__mgmt__api.md#ga70379f21faacddb5cc4a66f37a576ea0)
+
+void mgmt\_register\_group(struct mgmt\_group \*group)
+
+Registers a full command group.
+
+[mgmt\_unregister\_group](group__mcumgr__mgmt__api.md#ga87e98bdf47d1c7798098444f69ccf8b8)
+
+void mgmt\_unregister\_group(struct mgmt\_group \*group)
+
+Unregisters a full command group.
+
+[mgmt\_handler\_fn](group__mcumgr__mgmt__api.md#gaaafc2c73e1616340e29df6a1ba94c241)
+
+int(\* mgmt\_handler\_fn)(struct smp\_streamer \*ctxt)
+
+Processes a request and writes the corresponding response.
+
+**Definition** mgmt.h:66
+
+[mgmt\_find\_group](group__mcumgr__mgmt__api.md#gae88bc30026fbff6530179a94ba8f11ae)
+
+const struct mgmt\_group \* mgmt\_find\_group(uint16\_t group\_id)
+
+Finds a registered command group.
+
+[mgmt\_get\_handler](group__mcumgr__mgmt__api.md#gaec6ccbcaf28404b4b3662d5059f0a32b)
+
+const struct mgmt\_handler \* mgmt\_get\_handler(const struct mgmt\_group \*group, uint16\_t command\_id)
+
+Finds a registered command handler.
+
+[sys\_snode\_t](group__single-linked-list__apis.md#ga69bf43aad81e3ee2d55250c59b857493)
+
+struct \_snode sys\_snode\_t
+
+Single-linked list node structure.
+
+**Definition** slist.h:39
+
+[inttypes.h](inttypes_8h.md)
+
+[smp.h](mgmt_2mcumgr_2smp_2smp_8h.md)
+
+SMP - Simple Management Protocol.
+
+[mgmt\_defines.h](mgmt__defines_8h.md)
+
+[slist.h](slist_8h.md)
+
+[uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e)
+
+\_\_UINT16\_TYPE\_\_ uint16\_t
+
+**Definition** stdint.h:89
+
+[mgmt\_group](structmgmt__group.md)
+
+A collection of handlers for an entire command group.
+
+**Definition** mgmt.h:83
+
+[mgmt\_group::mg\_handlers](structmgmt__group.md#a7a6e90e500716095b9a22e3f56edac03)
+
+const struct mgmt\_handler \* mg\_handlers
+
+Array of handlers; one entry per command ID.
+
+**Definition** mgmt.h:88
+
+[mgmt\_group::mg\_handlers\_count](structmgmt__group.md#a8b2de48e97c0de4c902d72aba4e920b4)
+
+uint16\_t mg\_handlers\_count
+
+**Definition** mgmt.h:89
+
+[mgmt\_group::mg\_group\_id](structmgmt__group.md#a9d55dbf947096eed7cacfb9087d304d4)
+
+uint16\_t mg\_group\_id
+
+The numeric ID of this group.
+
+**Definition** mgmt.h:92
+
+[mgmt\_group::node](structmgmt__group.md#ac150809b03f73c4c2f94742504af772c)
+
+sys\_snode\_t node
+
+Entry list node.
+
+**Definition** mgmt.h:85
+
+[mgmt\_handler](structmgmt__handler.md)
+
+Read handler and write handler for a single command ID.
+
+**Definition** mgmt.h:72
+
+[mgmt\_handler::mh\_write](structmgmt__handler.md#a1bc6b52645f6eb1d0e0b0c695d972c15)
+
+mgmt\_handler\_fn mh\_write
+
+**Definition** mgmt.h:74
+
+[mgmt\_handler::mh\_read](structmgmt__handler.md#a7cc4917fa24afef79f1a8de8549a21e4)
+
+mgmt\_handler\_fn mh\_read
+
+**Definition** mgmt.h:73
+
+[smp\_streamer](structsmp__streamer.md)
+
+Decodes, encodes, and transmits SMP packets.
+
+**Definition** smp.h:83
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [mgmt](dir_ebeee477af3ac5faaeebf82454c7c7cb.md)
+- [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
+- [mgmt](dir_138c477f5f1e916a824d5e5e3c2b43b2.md)
+- [mgmt.h](mgmt_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

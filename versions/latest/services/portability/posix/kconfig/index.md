@@ -1,0 +1,58 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/portability/posix/kconfig/index.html
+original_path: services/portability/posix/kconfig/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Configuration Options
+
+This is a non-exhaustive list of specific [Configuration System (Kconfig)](../../../../build/kconfig/index.md#kconfig) options relating to Zephyr’s
+implementation of the POSIX API.
+
+- [`CONFIG_EVENTFD`](../../../../kconfig.md#CONFIG_EVENTFD "CONFIG_EVENTFD")
+- [`CONFIG_EVENTFD_MAX`](../../../../kconfig.md#CONFIG_EVENTFD_MAX "CONFIG_EVENTFD_MAX")
+- [`CONFIG_FDTABLE`](../../../../kconfig.md#CONFIG_FDTABLE "CONFIG_FDTABLE")
+- [`CONFIG_FNMATCH`](../../../../kconfig.md#CONFIG_FNMATCH "CONFIG_FNMATCH")
+- [`CONFIG_GETOPT`](../../../../kconfig.md#CONFIG_GETOPT "CONFIG_GETOPT")
+- [`CONFIG_GETOPT_LONG`](../../../../kconfig.md#CONFIG_GETOPT_LONG "CONFIG_GETOPT_LONG")
+- [`CONFIG_MAX_PTHREAD_BARRIER_COUNT`](../../../../kconfig.md#CONFIG_MAX_PTHREAD_BARRIER_COUNT "CONFIG_MAX_PTHREAD_BARRIER_COUNT")
+- [`CONFIG_MAX_PTHREAD_COUNT`](../../../../kconfig.md#CONFIG_MAX_PTHREAD_COUNT "CONFIG_MAX_PTHREAD_COUNT")
+- [`CONFIG_MAX_PTHREAD_KEY_COUNT`](../../../../kconfig.md#CONFIG_MAX_PTHREAD_KEY_COUNT "CONFIG_MAX_PTHREAD_KEY_COUNT")
+- [`CONFIG_MAX_PTHREAD_MUTEX_COUNT`](../../../../kconfig.md#CONFIG_MAX_PTHREAD_MUTEX_COUNT "CONFIG_MAX_PTHREAD_MUTEX_COUNT")
+- [`CONFIG_MAX_PTHREAD_SPINLOCK_COUNT`](../../../../kconfig.md#CONFIG_MAX_PTHREAD_SPINLOCK_COUNT "CONFIG_MAX_PTHREAD_SPINLOCK_COUNT")
+- [`CONFIG_MAX_TIMER_COUNT`](../../../../kconfig.md#CONFIG_MAX_TIMER_COUNT "CONFIG_MAX_TIMER_COUNT")
+- [`CONFIG_MQUEUE_NAMELEN_MAX`](../../../../kconfig.md#CONFIG_MQUEUE_NAMELEN_MAX "CONFIG_MQUEUE_NAMELEN_MAX")
+- [`CONFIG_MSG_COUNT_MAX`](../../../../kconfig.md#CONFIG_MSG_COUNT_MAX "CONFIG_MSG_COUNT_MAX")
+- [`CONFIG_MSG_SIZE_MAX`](../../../../kconfig.md#CONFIG_MSG_SIZE_MAX "CONFIG_MSG_SIZE_MAX")
+- [`CONFIG_NET_SOCKETPAIR`](../../../../kconfig.md#CONFIG_NET_SOCKETPAIR "CONFIG_NET_SOCKETPAIR")
+- [`CONFIG_NET_SOCKETS`](../../../../kconfig.md#CONFIG_NET_SOCKETS "CONFIG_NET_SOCKETS")
+- [`CONFIG_NET_SOCKETS_POLL_MAX`](../../../../kconfig.md#CONFIG_NET_SOCKETS_POLL_MAX "CONFIG_NET_SOCKETS_POLL_MAX")
+- [`CONFIG_NET_SOCKETS_POSIX_NAMES`](../../../../kconfig.md#CONFIG_NET_SOCKETS_POSIX_NAMES "CONFIG_NET_SOCKETS_POSIX_NAMES")
+- [`CONFIG_POSIX_API`](../../../../kconfig.md#CONFIG_POSIX_API "CONFIG_POSIX_API")
+- [`CONFIG_POSIX_CLOCK`](../../../../kconfig.md#CONFIG_POSIX_CLOCK "CONFIG_POSIX_CLOCK")
+- [`CONFIG_POSIX_FS`](../../../../kconfig.md#CONFIG_POSIX_FS "CONFIG_POSIX_FS")
+- [`CONFIG_POSIX_LIMITS_RTSIG_MAX`](../../../../kconfig.md#CONFIG_POSIX_LIMITS_RTSIG_MAX "CONFIG_POSIX_LIMITS_RTSIG_MAX")
+- [`CONFIG_POSIX_MAX_FDS`](../../../../kconfig.md#CONFIG_POSIX_MAX_FDS "CONFIG_POSIX_MAX_FDS")
+- [`CONFIG_POSIX_MAX_OPEN_FILES`](../../../../kconfig.md#CONFIG_POSIX_MAX_OPEN_FILES "CONFIG_POSIX_MAX_OPEN_FILES")
+- [`CONFIG_POSIX_MQUEUE`](../../../../kconfig.md#CONFIG_POSIX_MQUEUE "CONFIG_POSIX_MQUEUE")
+- [`CONFIG_POSIX_RTSIG_MAX`](../../../../kconfig.md#CONFIG_POSIX_RTSIG_MAX "CONFIG_POSIX_RTSIG_MAX")
+- [`CONFIG_POSIX_SIGNAL`](../../../../kconfig.md#CONFIG_POSIX_SIGNAL "CONFIG_POSIX_SIGNAL")
+- [`CONFIG_POSIX_SIGNAL_STRING_DESC`](../../../../kconfig.md#CONFIG_POSIX_SIGNAL_STRING_DESC "CONFIG_POSIX_SIGNAL_STRING_DESC")
+- [`CONFIG_POSIX_UNAME`](../../../../kconfig.md#CONFIG_POSIX_UNAME "CONFIG_POSIX_UNAME")
+- [`CONFIG_POSIX_UNAME_NODENAME_LEN`](../../../../kconfig.md#CONFIG_POSIX_UNAME_NODENAME_LEN "CONFIG_POSIX_UNAME_NODENAME_LEN")
+- [`CONFIG_POSIX_UNAME_VERSION_LEN`](../../../../kconfig.md#CONFIG_POSIX_UNAME_VERSION_LEN "CONFIG_POSIX_UNAME_VERSION_LEN")
+- [`CONFIG_PTHREAD`](../../../../kconfig.md#CONFIG_PTHREAD "CONFIG_PTHREAD")
+- [`CONFIG_PTHREAD_BARRIER`](../../../../kconfig.md#CONFIG_PTHREAD_BARRIER "CONFIG_PTHREAD_BARRIER")
+- [`CONFIG_PTHREAD_COND`](../../../../kconfig.md#CONFIG_PTHREAD_COND "CONFIG_PTHREAD_COND")
+- [`CONFIG_PTHREAD_CREATE_BARRIER`](../../../../kconfig.md#CONFIG_PTHREAD_CREATE_BARRIER "CONFIG_PTHREAD_CREATE_BARRIER")
+- [`CONFIG_PTHREAD_IPC`](../../../../kconfig.md#CONFIG_PTHREAD_IPC "CONFIG_PTHREAD_IPC")
+- [`CONFIG_PTHREAD_KEY`](../../../../kconfig.md#CONFIG_PTHREAD_KEY "CONFIG_PTHREAD_KEY")
+- [`CONFIG_PTHREAD_MUTEX`](../../../../kconfig.md#CONFIG_PTHREAD_MUTEX "CONFIG_PTHREAD_MUTEX")
+- [`CONFIG_PTHREAD_RECYCLER_DELAY_MS`](../../../../kconfig.md#CONFIG_PTHREAD_RECYCLER_DELAY_MS "CONFIG_PTHREAD_RECYCLER_DELAY_MS")
+- [`CONFIG_PTHREAD_SPINLOCK`](../../../../kconfig.md#CONFIG_PTHREAD_SPINLOCK "CONFIG_PTHREAD_SPINLOCK")
+- [`CONFIG_SEM_VALUE_MAX`](../../../../kconfig.md#CONFIG_SEM_VALUE_MAX "CONFIG_SEM_VALUE_MAX")
+- [`CONFIG_TIMER`](../../../../kconfig.md#CONFIG_TIMER "CONFIG_TIMER")

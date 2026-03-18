@@ -1,0 +1,448 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/ibi_8h_source.html
+original_path: doxygen/html/ibi_8h_source.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+ibi.h
+
+[Go to the documentation of this file.](ibi_8h.md)
+
+1/\*
+
+2 \* Copyright 2022 Intel Corporation
+
+3 \*
+
+4 \* SPDX-License-Identifier: Apache-2.0
+
+5 \*/
+
+6
+
+7#ifndef ZEPHYR\_INCLUDE\_DRIVERS\_I3C\_IBI\_H\_
+
+8#define ZEPHYR\_INCLUDE\_DRIVERS\_I3C\_IBI\_H\_
+
+9
+
+16
+
+17#include <[zephyr/device.h](device_8h.md)>
+
+18#include <[zephyr/kernel.h](include_2zephyr_2kernel_8h.md)>
+
+19#include <[zephyr/types.h](include_2zephyr_2types_8h.md)>
+
+20#include <[zephyr/sys/util.h](util_8h.md)>
+
+21
+
+22#ifndef CONFIG\_I3C\_IBI\_MAX\_PAYLOAD\_SIZE
+
+[ 23](group__i3c__ibi.md#ga7bbbff351dc33d1c00abf6c22bbd50d4)#define CONFIG\_I3C\_IBI\_MAX\_PAYLOAD\_SIZE 0
+
+24#endif
+
+25
+
+26#ifdef \_\_cplusplus
+
+27extern "C" {
+
+28#endif
+
+29
+
+30struct [i3c\_device\_desc](structi3c__device__desc.md);
+
+31
+
+[ 35](group__i3c__ibi.md#gaf4be72fc9c862d996d860c0b7fbc862b)enum [i3c\_ibi\_type](group__i3c__ibi.md#gaf4be72fc9c862d996d860c0b7fbc862b) {
+
+[ 37](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba368e8ad08a003ebf197add6d73ffd43d) [I3C\_IBI\_TARGET\_INTR](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba368e8ad08a003ebf197add6d73ffd43d),
+
+38
+
+[ 40](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba00235d326559f945d54638b0c0558815) [I3C\_IBI\_CONTROLLER\_ROLE\_REQUEST](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba00235d326559f945d54638b0c0558815),
+
+41
+
+[ 43](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba493d3b1e9669434c3d62f16aa3d6f92f) [I3C\_IBI\_HOTJOIN](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba493d3b1e9669434c3d62f16aa3d6f92f),
+
+44
+
+[ 45](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862baab12781f76c743cec6b72ffa7d8c27ee) [I3C\_IBI\_TYPE\_MAX](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862baab12781f76c743cec6b72ffa7d8c27ee) = [I3C\_IBI\_HOTJOIN](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba493d3b1e9669434c3d62f16aa3d6f92f),
+
+46
+
+[ 51](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba39d8f6a9b69d092eabf9ca9726deec8c) [I3C\_IBI\_WORKQUEUE\_CB](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba39d8f6a9b69d092eabf9ca9726deec8c),
+
+52};
+
+53
+
+[ 57](structi3c__ibi.md)struct [i3c\_ibi](structi3c__ibi.md) {
+
+[ 59](structi3c__ibi.md#a88b0ccd636c042ca929412c42a05bc25) enum [i3c\_ibi\_type](group__i3c__ibi.md#gaf4be72fc9c862d996d860c0b7fbc862b) [ibi\_type](structi3c__ibi.md#a88b0ccd636c042ca929412c42a05bc25);
+
+60
+
+[ 62](structi3c__ibi.md#a584e3298059e412d7d3671a451ecc117) [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) \*[payload](structi3c__ibi.md#a584e3298059e412d7d3671a451ecc117);
+
+63
+
+[ 65](structi3c__ibi.md#aa51b8214d4a0708861ac9617f844043f) [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) [payload\_len](structi3c__ibi.md#aa51b8214d4a0708861ac9617f844043f);
+
+66};
+
+67
+
+[ 73](structi3c__ibi__payload.md)struct [i3c\_ibi\_payload](structi3c__ibi__payload.md) {
+
+[ 77](structi3c__ibi__payload.md#aad4208fcdfef0bc9fb67c86ee1d302de) [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) [payload\_len](structi3c__ibi__payload.md#aad4208fcdfef0bc9fb67c86ee1d302de);
+
+78
+
+[ 82](structi3c__ibi__payload.md#ab869cf38c7a9677fda3ecf48cd358355) [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) [payload](structi3c__ibi__payload.md#ab869cf38c7a9677fda3ecf48cd358355)[[CONFIG\_I3C\_IBI\_MAX\_PAYLOAD\_SIZE](group__i3c__ibi.md#ga7bbbff351dc33d1c00abf6c22bbd50d4)];
+
+83};
+
+84
+
+[ 88](structi3c__ibi__work.md)struct [i3c\_ibi\_work](structi3c__ibi__work.md) {
+
+94 [sys\_snode\_t](group__single-linked-list__apis.md#ga69bf43aad81e3ee2d55250c59b857493) node;
+
+96
+
+[ 100](structi3c__ibi__work.md#a4a0373423ababe549d00ee13fe657315) struct [k\_work](structk__work.md) [work](structi3c__ibi__work.md#a4a0373423ababe549d00ee13fe657315);
+
+101
+
+[ 105](structi3c__ibi__work.md#a3ec8e089facfbb187342e9bf9a525e50) enum [i3c\_ibi\_type](group__i3c__ibi.md#gaf4be72fc9c862d996d860c0b7fbc862b) [type](structi3c__ibi__work.md#a3ec8e089facfbb187342e9bf9a525e50);
+
+106
+
+107 union {
+
+[ 111](structi3c__ibi__work.md#a195e49bd7db79d0f1f45803e42e963ca) const struct [device](structdevice.md) \*[controller](structi3c__ibi__work.md#a195e49bd7db79d0f1f45803e42e963ca);
+
+112
+
+[ 117](structi3c__ibi__work.md#a6c75e0b678fee04f3357c2c1aa9e7376) struct [i3c\_device\_desc](structi3c__device__desc.md) \*[target](structi3c__ibi__work.md#a6c75e0b678fee04f3357c2c1aa9e7376);
+
+118 };
+
+119
+
+120 union {
+
+[ 124](structi3c__ibi__work.md#a08531106055235eaf85cb8fae690235c) struct [i3c\_ibi\_payload](structi3c__ibi__payload.md) [payload](structi3c__ibi__work.md#a08531106055235eaf85cb8fae690235c);
+
+125
+
+[ 130](structi3c__ibi__work.md#a6a3dfd49762d96b591b5e248f9ce1668) [k\_work\_handler\_t](group__workqueue__apis.md#ga5add9ef0dce306a08413c4140fc0bdda) [work\_cb](structi3c__ibi__work.md#a6a3dfd49762d96b591b5e248f9ce1668);
+
+131 };
+
+132};
+
+133
+
+[ 151](group__i3c__ibi.md#ga814cf622b240808216ce4e87802e965c)typedef int (\*[i3c\_target\_ibi\_cb\_t](group__i3c__ibi.md#ga814cf622b240808216ce4e87802e965c))(struct [i3c\_device\_desc](structi3c__device__desc.md) \*target,
+
+152 struct [i3c\_ibi\_payload](structi3c__ibi__payload.md) \*[payload](structi3c__ibi__payload.md#ab869cf38c7a9677fda3ecf48cd358355));
+
+153
+
+154
+
+[ 172](group__i3c__ibi.md#gaafc2fdf9f2402691c3ebe11d06106840)int [i3c\_ibi\_work\_enqueue](group__i3c__ibi.md#gaafc2fdf9f2402691c3ebe11d06106840)(struct [i3c\_ibi\_work](structi3c__ibi__work.md) \*ibi\_work);
+
+173
+
+[ 189](group__i3c__ibi.md#ga7fbf838ea07516849dc1296d48af65d1)int [i3c\_ibi\_work\_enqueue\_target\_irq](group__i3c__ibi.md#ga7fbf838ea07516849dc1296d48af65d1)(struct [i3c\_device\_desc](structi3c__device__desc.md) \*target,
+
+190 [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) \*[payload](structi3c__ibi__payload.md#ab869cf38c7a9677fda3ecf48cd358355), size\_t [payload\_len](structi3c__ibi__payload.md#aad4208fcdfef0bc9fb67c86ee1d302de));
+
+191
+
+[ 205](group__i3c__ibi.md#gab135cb893efd50c7db16c1734b6a0bab)int [i3c\_ibi\_work\_enqueue\_hotjoin](group__i3c__ibi.md#gab135cb893efd50c7db16c1734b6a0bab)(const struct [device](structdevice.md) \*dev);
+
+206
+
+[ 221](group__i3c__ibi.md#ga4c6f4516e55d0ab6c539fb800d7ec45a)int [i3c\_ibi\_work\_enqueue\_cb](group__i3c__ibi.md#ga4c6f4516e55d0ab6c539fb800d7ec45a)(const struct [device](structdevice.md) \*dev,
+
+222 [k\_work\_handler\_t](group__workqueue__apis.md#ga5add9ef0dce306a08413c4140fc0bdda) work\_cb);
+
+223
+
+224#ifdef \_\_cplusplus
+
+225}
+
+226#endif
+
+227
+
+231
+
+232#endif /\* ZEPHYR\_INCLUDE\_DRIVERS\_I3C\_IBI\_H\_ \*/
+
+[device.h](device_8h.md)
+
+[i3c\_ibi\_work\_enqueue\_cb](group__i3c__ibi.md#ga4c6f4516e55d0ab6c539fb800d7ec45a)
+
+int i3c\_ibi\_work\_enqueue\_cb(const struct device \*dev, k\_work\_handler\_t work\_cb)
+
+Queue a generic callback for future processing.
+
+[CONFIG\_I3C\_IBI\_MAX\_PAYLOAD\_SIZE](group__i3c__ibi.md#ga7bbbff351dc33d1c00abf6c22bbd50d4)
+
+#define CONFIG\_I3C\_IBI\_MAX\_PAYLOAD\_SIZE
+
+**Definition** ibi.h:23
+
+[i3c\_ibi\_work\_enqueue\_target\_irq](group__i3c__ibi.md#ga7fbf838ea07516849dc1296d48af65d1)
+
+int i3c\_ibi\_work\_enqueue\_target\_irq(struct i3c\_device\_desc \*target, uint8\_t \*payload, size\_t payload\_len)
+
+Queue a target interrupt IBI for future processing.
+
+[i3c\_target\_ibi\_cb\_t](group__i3c__ibi.md#ga814cf622b240808216ce4e87802e965c)
+
+int(\* i3c\_target\_ibi\_cb\_t)(struct i3c\_device\_desc \*target, struct i3c\_ibi\_payload \*payload)
+
+Function called when In-Band Interrupt received from target device.
+
+**Definition** ibi.h:151
+
+[i3c\_ibi\_work\_enqueue](group__i3c__ibi.md#gaafc2fdf9f2402691c3ebe11d06106840)
+
+int i3c\_ibi\_work\_enqueue(struct i3c\_ibi\_work \*ibi\_work)
+
+Queue an IBI work item for future processing.
+
+[i3c\_ibi\_work\_enqueue\_hotjoin](group__i3c__ibi.md#gab135cb893efd50c7db16c1734b6a0bab)
+
+int i3c\_ibi\_work\_enqueue\_hotjoin(const struct device \*dev)
+
+Queue a hot join IBI for future processing.
+
+[i3c\_ibi\_type](group__i3c__ibi.md#gaf4be72fc9c862d996d860c0b7fbc862b)
+
+i3c\_ibi\_type
+
+IBI Types.
+
+**Definition** ibi.h:35
+
+[I3C\_IBI\_CONTROLLER\_ROLE\_REQUEST](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba00235d326559f945d54638b0c0558815)
+
+@ I3C\_IBI\_CONTROLLER\_ROLE\_REQUEST
+
+Controller Role Request.
+
+**Definition** ibi.h:40
+
+[I3C\_IBI\_TARGET\_INTR](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba368e8ad08a003ebf197add6d73ffd43d)
+
+@ I3C\_IBI\_TARGET\_INTR
+
+Target interrupt.
+
+**Definition** ibi.h:37
+
+[I3C\_IBI\_WORKQUEUE\_CB](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba39d8f6a9b69d092eabf9ca9726deec8c)
+
+@ I3C\_IBI\_WORKQUEUE\_CB
+
+Not an actual IBI type, but simply used by the IBI workq for generic callbacks.
+
+**Definition** ibi.h:51
+
+[I3C\_IBI\_HOTJOIN](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862ba493d3b1e9669434c3d62f16aa3d6f92f)
+
+@ I3C\_IBI\_HOTJOIN
+
+Hot Join Request.
+
+**Definition** ibi.h:43
+
+[I3C\_IBI\_TYPE\_MAX](group__i3c__ibi.md#ggaf4be72fc9c862d996d860c0b7fbc862baab12781f76c743cec6b72ffa7d8c27ee)
+
+@ I3C\_IBI\_TYPE\_MAX
+
+**Definition** ibi.h:45
+
+[sys\_snode\_t](group__single-linked-list__apis.md#ga69bf43aad81e3ee2d55250c59b857493)
+
+struct \_snode sys\_snode\_t
+
+Single-linked list node structure.
+
+**Definition** slist.h:39
+
+[k\_work\_handler\_t](group__workqueue__apis.md#ga5add9ef0dce306a08413c4140fc0bdda)
+
+void(\* k\_work\_handler\_t)(struct k\_work \*work)
+
+The signature for a work item handler function.
+
+**Definition** kernel.h:3262
+
+[kernel.h](include_2zephyr_2kernel_8h.md)
+
+Public kernel APIs.
+
+[types.h](include_2zephyr_2types_8h.md)
+
+[uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d)
+
+\_\_UINT8\_TYPE\_\_ uint8\_t
+
+**Definition** stdint.h:88
+
+[device](structdevice.md)
+
+Runtime device structure (in ROM) per driver instance.
+
+**Definition** device.h:387
+
+[i3c\_device\_desc](structi3c__device__desc.md)
+
+Structure describing a I3C target device.
+
+**Definition** i3c.h:911
+
+[i3c\_ibi\_payload](structi3c__ibi__payload.md)
+
+Structure of payload buffer for IBI.
+
+**Definition** ibi.h:73
+
+[i3c\_ibi\_payload::payload\_len](structi3c__ibi__payload.md#aad4208fcdfef0bc9fb67c86ee1d302de)
+
+uint8\_t payload\_len
+
+Length of available data in the payload buffer.
+
+**Definition** ibi.h:77
+
+[i3c\_ibi\_payload::payload](structi3c__ibi__payload.md#ab869cf38c7a9677fda3ecf48cd358355)
+
+uint8\_t payload[0]
+
+Pointer to byte array as payload buffer.
+
+**Definition** ibi.h:82
+
+[i3c\_ibi\_work](structi3c__ibi__work.md)
+
+Node about a queued IBI.
+
+**Definition** ibi.h:88
+
+[i3c\_ibi\_work::payload](structi3c__ibi__work.md#a08531106055235eaf85cb8fae690235c)
+
+struct i3c\_ibi\_payload payload
+
+IBI payload.
+
+**Definition** ibi.h:124
+
+[i3c\_ibi\_work::controller](structi3c__ibi__work.md#a195e49bd7db79d0f1f45803e42e963ca)
+
+const struct device \* controller
+
+Use for.
+
+**Definition** ibi.h:111
+
+[i3c\_ibi\_work::type](structi3c__ibi__work.md#a3ec8e089facfbb187342e9bf9a525e50)
+
+enum i3c\_ibi\_type type
+
+IBI type.
+
+**Definition** ibi.h:105
+
+[i3c\_ibi\_work::work](structi3c__ibi__work.md#a4a0373423ababe549d00ee13fe657315)
+
+struct k\_work work
+
+k\_work struct.
+
+**Definition** ibi.h:100
+
+[i3c\_ibi\_work::work\_cb](structi3c__ibi__work.md#a6a3dfd49762d96b591b5e248f9ce1668)
+
+k\_work\_handler\_t work\_cb
+
+Generic workqueue callback when type is I3C\_IBI\_WORKQUEUE\_CB.
+
+**Definition** ibi.h:130
+
+[i3c\_ibi\_work::target](structi3c__ibi__work.md#a6c75e0b678fee04f3357c2c1aa9e7376)
+
+struct i3c\_device\_desc \* target
+
+Use for.
+
+**Definition** ibi.h:117
+
+[i3c\_ibi](structi3c__ibi.md)
+
+Struct for IBI request.
+
+**Definition** ibi.h:57
+
+[i3c\_ibi::payload](structi3c__ibi.md#a584e3298059e412d7d3671a451ecc117)
+
+uint8\_t \* payload
+
+Pointer to payload of IBI.
+
+**Definition** ibi.h:62
+
+[i3c\_ibi::ibi\_type](structi3c__ibi.md#a88b0ccd636c042ca929412c42a05bc25)
+
+enum i3c\_ibi\_type ibi\_type
+
+Type of IBI.
+
+**Definition** ibi.h:59
+
+[i3c\_ibi::payload\_len](structi3c__ibi.md#aa51b8214d4a0708861ac9617f844043f)
+
+uint8\_t payload\_len
+
+Length in bytes of the IBI payload.
+
+**Definition** ibi.h:65
+
+[k\_work](structk__work.md)
+
+A structure used to submit work.
+
+**Definition** kernel.h:3861
+
+[util.h](util_8h.md)
+
+Misc utilities.
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
+- [i3c](dir_7fe10d7a610a8b04680264e2afe29300.md)
+- [ibi.h](ibi_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -1,0 +1,86 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/subsys/usb/webusb/README.html
+original_path: samples/subsys/usb/webusb/README.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# WebUSB
+
+For a deeper dive into the WebUSB, refer to
+[https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web)
+
+WebUSB API Specification:
+[https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+
+## Overview
+
+This simple echo application demonstrates the WebUSB sample application.
+This application receives the data and echoes back to the WebUSB
+based web application (web page) running in the browser at host.
+This application is intended for testing purposes only. For running
+real usecase, implement applications based on the WebUSB API.
+This sample can be found under [samples/subsys/usb/webusb](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/subsys/usb/webusb) in the
+Zephyr project tree.
+
+## Requirements
+
+This project requires an USB device driver, which is available for multiple
+boards supported in Zephyr.
+
+## Building and Running
+
+Build and flash webusb sample with:
+
+```shell
+west build -b <board to use> samples/subsys/usb/webusb
+west flash
+```
+
+## Testing with the latest Google Chrome on host
+
+This sample application requires the latest Google Chrome, a web page
+based on WebUSB API to connect to the USB device and optionally
+http server running on localhost to serve the web page.
+
+WebUSB is a powerful new feature added to the Web and it is available
+only to secure origins. This means the web page/site that is used to
+connect to the device must be served over a secure connection (HTTPS).
+
+Follow these steps to run the demo on your host system:
+
+1. Run the latest Google Chrome on host.
+2. Implement a web app (web page) using WebUSB API and run
+   it on localhost.
+
+   The sample can be found in the webusb sample directory:
+   [samples/subsys/usb/webusb/index.html](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/subsys/usb/webusb/index.html).
+
+   This sample web page demonstrates how to create and use a WebUSB
+   interface, as well as demonstrate the communication between browser
+   and WebUSB enabled device.
+
+   There are two ways to access this sample page:
+
+   - Using Chrome browser go to [WebUSB HTML Demo App](demo.md)
+   - Host the demo page locally: Start a web server
+     in the webusb sample directory.
+
+     ```shell
+     $ python -m http.server
+     ```
+
+     Using Chrome browser open url [http://localhost:8001/](http://localhost:8001/)
+3. Connect the board to your host.
+4. Once the device is booted, you should see a notification from
+   Chrome: “Go to localhost to connect.”. Click on the notification
+   to open demo page.
+   Note that at the moment WebUSB landing page notification is disabled
+   in Chrome on Windows. See [https://github.com/WICG/webusb#implementation-status](https://github.com/WICG/webusb#implementation-status)
+5. Click on the Connect button to connect to the device.
+6. Send some text to the device by clicking on the Send button.
+   The demo app will receive the same text from the device and display it in
+   the text area.

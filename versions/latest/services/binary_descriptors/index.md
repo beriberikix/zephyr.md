@@ -1,0 +1,299 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/binary_descriptors/index.html
+original_path: services/binary_descriptors/index.html
+---
+
+This is the documentation for the latest (main) development branch of
+Zephyr. If you are looking for the documentation of previous releases, use
+the drop-down menu on the left and select the desired version.
+
+# Binary Descriptors
+
+Binary Descriptors are constant data objects storing information about the binary executable.
+Unlike “regular” constants, binary descriptors are linked to a known offset in the binary, making
+them accessible to other programs, such as a different image running on the same device or a host tool.
+A few examples of constants that would make useful binary descriptors are: kernel version, app version,
+build time, compiler version, environment variables, compiling host name, etc.
+
+Binary descriptors are created by using the `DEFINE_BINDESC_*` macros. For example:
+
+```c
+#include <zephyr/bindesc.h>
+
+BINDESC_STR_DEFINE(my_string, 2, "Hello world!"); // Unique ID is 2
+```
+
+`my_string` could then be accessed using:
+
+```c
+printk("my_string: %s\n", BINDESC_GET_STR(my_string));
+```
+
+But it could also be retrieved by `west bindesc`:
+
+```shell
+$ west bindesc custom_search STR 2 build/zephyr/zephyr.bin
+"Hello world!"
+```
+
+## Internals
+
+Binary descriptors are implemented with a TLV (tag, length, value) header linked
+to a known offset in the binary image. This offset may vary between architectures,
+but generally the descriptors are linked as close to the beginning of the image as
+possible. In architectures where the image must begin with a vector table (such as
+ARM), the descriptors are linked right after the vector table. The reset vector points
+to the beginning of the text section, which is after the descriptors. In architectures
+where the image must begin with executable code (e.g. x86), a jump instruction is injected at
+the beginning of the image, in order to skip over the binary descriptors, which are right
+after the jump instruction.
+
+Each tag is a 16 bit unsigned integer, where the most significant nibble (4 bits) is the type
+(currently uint, string or bytes), and the rest is the ID. The ID is globally unique to each
+descriptor. For example, the ID of the app version string is `0x800`, and a string
+is denoted by 0x1, making the app version tag `0x1800`. The length is a 16 bit
+number equal to the length of the data in bytes. The data is the actual descriptor
+value. All binary descriptor numbers (magic, tags, uints) are laid out in memory
+in the endianness native to the SoC. `west bindesc` assumes little endian by default,
+so if the image belongs to a big endian SoC, the appropriate flag should be given to the
+tool.
+
+The binary descriptor header starts with the magic number `0xb9863e5a7ea46046`. It’s followed
+by the TLVs, and ends with the `DESCRIPTORS_END` (`0xffff`) tag. The tags are
+always aligned to 32 bits. If the value of the previous descriptor had a non-aligned
+length, zero padding will be added to ensure that the current tag is aligned.
+
+Putting it all together, here is what the example above would look like in memory
+(of a little endian SoC):
+
+```text
+ 46 60 a4 7e 5a 3e 86 b9 02 10  0d 00  48 65 6c 6c 6f 20 77 6f 72 6c 64 21 00 00 00 00 ff ff
+|         magic         | tag |length| H  e  l  l  o     w  o  r  l  d  !    |   pad  | end |
+```
+
+## Usage
+
+Binary descriptors are always created by the `BINDESC_*_DEFINE` macros. As shown in
+the example above, a descriptor can be generated from any string or integer, with any
+ID. However, it is recommended to comply with the standard tags defined in
+`include/zephyr/bindesc.h`, as that would have the following benefits:
+
+> 1. The `west bindesc` tool would be able to recognize what the descriptor means and
+>    print a meaningful tag
+> 2. It would enforce consistency between various apps from various sources
+> 3. It allows upstream-ability of descriptor generation (see Standard Descriptors)
+
+To define a descriptor with a standard tag, just use the tags included from `bindesc.h`:
+
+```c
+#include <zephyr/bindesc.h>
+
+BINDESC_STR_DEFINE(app_version, BINDESC_ID_APP_VERSION_STRING, "1.2.3");
+```
+
+### Standard Descriptors
+
+Some descriptors might be trivial to implement, and could therefore be implemented
+in a standard way in upstream Zephyr. These could then be enabled via Kconfig, instead
+of requiring every user to reimplement them. These include build times, kernel version,
+and host info. For example, to add the build date and time as a string, the following
+configs should be enabled:
+
+```kconfig
+# Enable binary descriptors
+CONFIG_BINDESC=y
+
+# Enable definition of binary descriptors
+CONFIG_BINDESC_DEFINE=y
+
+# Enable default build time binary descriptors
+CONFIG_BINDESC_DEFINE_BUILD_TIME=y
+CONFIG_BINDESC_BUILD_DATE_TIME_STRING=y
+```
+
+To avoid collisions with user defined descriptors, the standard descriptors were allotted
+the range between `0x800-0xfff`. This leaves `0x000-0x7ff` to users.
+For more information read the `help` sections of these Kconfig symbols.
+By convention, each Kconfig symbol corresponds to a binary descriptor whose
+name is the Kconfig name (with `CONFIG_BINDESC_` removed) in lower case. For example,
+`CONFIG_BINDESC_KERNEL_VERSION_STRING` creates a descriptor that can be
+accessed using `BINDESC_GET_STR(kernel_version_string)`.
+
+### west bindesc tool
+
+`west` is able to parse and display binary descriptors from a given executable image.
+
+For more information refer to `west bindesc --help` or the [documentation](../../develop/west/zephyr-cmds.md#west-bindesc).
+
+## API Reference
+
+Related code samples
+
+[Binary descriptors "Hello World"](../../samples/subsys/bindesc/hello_bindesc/README.md#hello-bindesc "Set and access binary descriptors for a basic Zephyr application.")
+:   Set and access binary descriptors for a basic Zephyr application.
+
+*group* bindesc\_define
+:   Binary Descriptor Definition.
+
+    Defines
+
+    BINDESC\_ID\_APP\_VERSION\_STRING
+    :   The app version string such as “1.2.3”.
+
+    BINDESC\_ID\_APP\_VERSION\_MAJOR
+    :   The app version major such as 1.
+
+    BINDESC\_ID\_APP\_VERSION\_MINOR
+    :   The app version minor such as 2.
+
+    BINDESC\_ID\_APP\_VERSION\_PATCHLEVEL
+    :   The app version patchlevel such as 3.
+
+    BINDESC\_ID\_APP\_VERSION\_NUMBER
+    :   The app version number such as 0x10203.
+
+    BINDESC\_ID\_KERNEL\_VERSION\_STRING
+    :   The kernel version string such as “3.4.0”.
+
+    BINDESC\_ID\_KERNEL\_VERSION\_MAJOR
+    :   The kernel version major such as 3.
+
+    BINDESC\_ID\_KERNEL\_VERSION\_MINOR
+    :   The kernel version minor such as 4.
+
+    BINDESC\_ID\_KERNEL\_VERSION\_PATCHLEVEL
+    :   The kernel version patchlevel such as 0.
+
+    BINDESC\_ID\_KERNEL\_VERSION\_NUMBER
+    :   The kernel version number such as 0x30400.
+
+    BINDESC\_ID\_BUILD\_TIME\_YEAR
+    :   The year the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_MONTH
+    :   The month of the year the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_DAY
+    :   The day of the month the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_HOUR
+    :   The hour of the day the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_MINUTE
+    :   The minute the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_SECOND
+    :   The second the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_TIME\_UNIX
+    :   The UNIX time (seconds since midnight of 1970/01/01) the image was compiled in.
+
+    BINDESC\_ID\_BUILD\_DATE\_TIME\_STRING
+    :   The date and time of compilation such as “2023/02/05 00:07:04”.
+
+    BINDESC\_ID\_BUILD\_DATE\_STRING
+    :   The date of compilation such as “2023/02/05”.
+
+    BINDESC\_ID\_BUILD\_TIME\_STRING
+    :   The time of compilation such as “00:07:04”.
+
+    BINDESC\_ID\_HOST\_NAME
+    :   The name of the host that compiled the image.
+
+    BINDESC\_ID\_C\_COMPILER\_NAME
+    :   The C compiler name.
+
+    BINDESC\_ID\_C\_COMPILER\_VERSION
+    :   The C compiler version.
+
+    BINDESC\_ID\_CXX\_COMPILER\_NAME
+    :   The C++ compiler name.
+
+    BINDESC\_ID\_CXX\_COMPILER\_VERSION
+    :   The C++ compiler version.
+
+    BINDESC\_TAG\_DESCRIPTORS\_END
+
+    BINDESC\_STR\_DEFINE(name, id, value)
+    :   Define a binary descriptor of type string.
+
+        Define a string that is registered in the binary descriptor header. The defined string can be accessed using [BINDESC\_GET\_STR](#group__bindesc__define_1gaf7628498209bc6729a6abf36a92d0cbd)
+
+        Note
+
+        The defined string is not static, so its name must not collide with any other symbol in the executable.
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+            - **id** – Unique ID of the descriptor
+            - **value** – A string value for the descriptor
+
+    BINDESC\_UINT\_DEFINE(name, id, value)
+    :   Define a binary descriptor of type uint.
+
+        Define an integer that is registered in the binary descriptor header. The defined integer can be accessed using [BINDESC\_GET\_UINT](#group__bindesc__define_1ga8f738fd9f99f52f0c7ce81011c8e7b98)
+
+        Note
+
+        The defined integer is not static, so its name must not collide with any other symbol in the executable.
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+            - **id** – Unique ID of the descriptor
+            - **value** – An integer value for the descriptor
+
+    BINDESC\_BYTES\_DEFINE(name, id, value)
+    :   Define a binary descriptor of type bytes.
+
+        Define a uint8\_t array that is registered in the binary descriptor header. The defined array can be accessed using [BINDESC\_GET\_BYTES](#group__bindesc__define_1ga1fbf08f04e66c250aecdd70045242a37). The value should be given as an array literal, wrapped in parentheses, for example:
+
+        ```text
+        BINDESC_BYTES_DEFINE(name, id, ({1, 2, 3, 4}));
+        ```
+
+        Note
+
+        The defined array is not static, so its name must not collide with any other symbol in the executable.
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+            - **id** – Unique ID of the descriptor
+            - **value** – A uint8\_t array as data for the descriptor
+
+    BINDESC\_GET\_STR(name)
+    :   Get the value of a string binary descriptor.
+
+        Get the value of a string binary descriptor, previously defined by BINDESC\_STR\_DEFINE.
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+
+    BINDESC\_GET\_UINT(name)
+    :   Get the value of a uint binary descriptor.
+
+        Get the value of a uint binary descriptor, previously defined by BINDESC\_UINT\_DEFINE.
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+
+    BINDESC\_GET\_BYTES(name)
+    :   Get the value of a bytes binary descriptor.
+
+        Get the value of a string binary descriptor, previously defined by BINDESC\_BYTES\_DEFINE. The returned value can be accessed as an array:
+
+        ```text
+        for (size_t i = 0; i < BINDESC_GET_SIZE(name); i++)
+            BINDESC_GET_BYTES(name)[i];
+        ```
+
+        Parameters:
+        :   - **name** – Name of the descriptor
+
+    BINDESC\_GET\_SIZE(name)
+    :   Get the size of a binary descriptor.
+
+        Get the size of a binary descriptor. This is particularly useful for bytes binary descriptors where there’s no null terminator.
+
+        Parameters:
+        :   - **name** – Name of the descriptor

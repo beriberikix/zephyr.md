@@ -1,0 +1,31 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/od__priv__proxy__srv_8h.html
+original_path: doxygen/html/od__priv__proxy__srv_8h.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+od\_priv\_proxy\_srv.h File Reference
+
+`#include <[zephyr/bluetooth/mesh.h](mesh_8h_source.md)>`
+
+[Go to the source code of this file.](od__priv__proxy__srv_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [BT\_MESH\_MODEL\_OD\_PRIV\_PROXY\_SRV](group__bt__mesh__od__priv__proxy__srv.md#gaa3c6451144f696ef9e67494165283c41) |
+|  | On-Demand Private Proxy Server model composition data entry. |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [bluetooth](dir_1e7161d1e31b4a807184ef42c14f2a24.md)
+- [mesh](dir_cb009b76fe94f798a2c866bd15366281.md)
+- [od\_priv\_proxy\_srv.h](od__priv__proxy__srv_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

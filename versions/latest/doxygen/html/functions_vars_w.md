@@ -1,0 +1,105 @@
+---
+version: v3.6.0
+source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/functions_vars_w.html
+original_path: doxygen/html/functions_vars_w.html
+---
+
+| Logo | Zephyr API Documentation  3.6.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+Here is a list of all variables with links to the structures/unions they belong to:
+
+### - w -
+
+- wait\_ppp\_link\_down : [ppp\_context](structppp__context.md#ae784688e2d78f7427c6672583e326d94)
+- wait\_ppp\_link\_terminated : [ppp\_context](structppp__context.md#a1afa42c99b098407f8bba11e50178c84)
+- wait\_q : [k\_condvar](structk__condvar.md#a14b457a06420f093e779d569f4fea906), [k\_event](structk__event.md#a5bacd5f2d34da646d9d7ee229842e432), [k\_heap](structk__heap.md#abd30d236bd986e791ea7698583e45588), [k\_msgq](structk__msgq.md#ae3b3d53d60b789d69c65494cfd090076), [k\_mutex](structk__mutex.md#a4add234295bceff22551ee74f3aed802), [k\_pipe](structk__pipe.md#a2b7ab1aceb3f380c4adfe740d57dbeed), [k\_queue](structk__queue.md#a871d734f2b21a9cad3ca4a2ba79e64f1)
+- waitq : [k\_p4wq](structk__p4wq.md#a8cac5e806d2e432f50051db5a7d08c99)
+- wakeup\_interval : [ieee802154\_header\_ie\_rendezvous\_time\_full](structieee802154__header__ie__rendezvous__time__full.md#a77a83a45e1292ee4dfc99d388ec8b305)
+- wakeup\_mode : [wifi\_ps\_params](structwifi__ps__params.md#a7cb3e7fb7d9f8bd7c2cab41f879b3b66)
+- walclk : [dai\_ts\_data](structdai__ts__data.md#a11133d72485786e75a9d94f218fe699b)
+- walclk\_rate : [dai\_ts\_cfg](structdai__ts__cfg.md#ac17d3da9de6d860f2fa04286a4c43a1d), [dai\_ts\_data](structdai__ts__data.md#ace2686aa6ff5aed346705cbb0d198d36)
+- wb\_idx : [gdb\_ctx](structgdb__ctx.md#a4094f8ee5045ee6ca97fb256b0a93a41)
+- wc\_nsec : [shared\_info](structshared__info.md#a29699e4b3d1953edfc3d836d5f582cf0)
+- wc\_sec : [shared\_info](structshared__info.md#a29cb80aa1a44985e5a84b4dcaf035708)
+- wc\_sec\_hi : [shared\_info](structshared__info.md#a22add85abac7eae2240a9ef088772b15)
+- wc\_version : [shared\_info](structshared__info.md#aca3778d0bbd570d4ced2634b4da8a046)
+- wDescriptorType : [msosv2\_compatible\_id](structmsosv2__compatible__id.md#adfb121211a3e2519cdbf3afa91cd48e3), [msosv2\_configuration\_subset\_header](structmsosv2__configuration__subset__header.md#ada03982dd6680a45d7cd2ba9e791c54e), [msosv2\_descriptor\_set\_header](structmsosv2__descriptor__set__header.md#ae4931afed75f035e9dff4856ddee8609), [msosv2\_function\_subset\_header](structmsosv2__function__subset__header.md#a4a93fdd2d9ea65b5b9097f921629c644), [msosv2\_guids\_property](structmsosv2__guids__property.md#acaa81e6bbaaec95922a80ef5a6000cd9)
+- wDetachTimeOut : [dfu\_runtime\_descriptor](structdfu__runtime__descriptor.md#adaf32d218daf9fc74a6639845355cd9b)
+- weekday : [mcp7940n\_alm\_weekday](structmcp7940n__alm__weekday.md#ae0179530d0837ad642d1640545779db2), [mcp7940n\_rtc\_weekday](structmcp7940n__rtc__weekday.md#a9aad56ee23af55ea2f41020d96095ddd)
+- weight : [xen\_domctl\_sched\_credit2](structxen__domctl__sched__credit2.md#a067b0c2cde4748ae75f712fa4bacc52f), [xen\_domctl\_sched\_credit](structxen__domctl__sched__credit.md#a85f8a8b9dc6d9b60c8aee400a9a84e3c)
+- width : [cfb\_font](structcfb__font.md#ab58695cca74151c86f442366bd80a039), [display\_buffer\_descriptor](structdisplay__buffer__descriptor.md#aa35cf372266199308211d28dae789be3), [video\_format](structvideo__format.md#a7b0cc009ac03437e7e3e86b45545b693)
+- width\_max : [video\_format\_cap](structvideo__format__cap.md#ab45cdeb28d93d670f06caca449fccd66)
+- width\_min : [video\_format\_cap](structvideo__format__cap.md#a539b75ac7b1eadc8c9ee9395b5b2fba9)
+- width\_step : [video\_format\_cap](structvideo__format__cap.md#ab86710dfc4da3b5d0f9dd5017f971aad)
+- wifi\_drv\_ops : [net\_wifi\_mgmt\_offload](structnet__wifi__mgmt__offload.md#a0b50b958d9d9bcba029a0859304dd84f)
+- wifi\_iface : [net\_wifi\_mgmt\_offload](structnet__wifi__mgmt__offload.md#a1d34a954a2f16d29f51dc51dd6fbb845)
+- wifi\_mgmt\_api : [net\_wifi\_mgmt\_offload](structnet__wifi__mgmt__offload.md#a98fcc053d9820d2d981ed659520c9b3b)
+- wildcards : [modem\_chat\_match](structmodem__chat__match.md#a0e08870ad8dd3b781b8f20ed5fb230ca)
+- will\_message : [mqtt\_client](structmqtt__client.md#a7f4e9547b1d91edf21589334db711499)
+- will\_msg : [mqtt\_sn\_client](structmqtt__sn__client.md#a9d2397f5ff59a51630f5b82f94c92327)
+- will\_qos : [mqtt\_sn\_client](structmqtt__sn__client.md#a42d76db9cbcc9770246241283bb65486)
+- will\_retain : [mqtt\_client](structmqtt__client.md#ac96879e15ccd829fbcf9b88913161c0d), [mqtt\_sn\_client](structmqtt__sn__client.md#ad8f5b3b7815033cfecda7519ca657724)
+- will\_topic : [mqtt\_client](structmqtt__client.md#a4b23a72831697b78dc4019a4b6ac97e4), [mqtt\_sn\_client](structmqtt__sn__client.md#af70196b9800123e2f9c36362cfb8b6be)
+- wIndex : [cdc\_acm\_notification](structcdc__acm__notification.md#a290717590343376c8f1f9a865cb4b0ae), [usb\_setup\_packet](structusb__setup__packet.md#a953c058f0e31481a3d59b404037be009)
+- window : [bt\_conn\_le\_create\_param](structbt__conn__le__create__param.md#a339b99f65c5029ada6cdf453ab1f258e), [bt\_hci\_cp\_le\_set\_scan\_param](structbt__hci__cp__le__set__scan__param.md#a3b5b4767092fc69a63d2219d60722407), [bt\_hci\_ext\_scan\_phy](structbt__hci__ext__scan__phy.md#a9c0196f0d5f0064796c15a5df2ad4c07), [bt\_le\_scan\_param](structbt__le__scan__param.md#a37a7ee82e86a91cf7a9c2adf60bb526a), [wdt\_timeout\_cfg](structwdt__timeout__cfg.md#a7942c675aacd228e38ea3cde383aab41)
+- window\_coded : [bt\_conn\_le\_create\_param](structbt__conn__le__create__param.md#ae62491837d35d95e32016b793edf8c96), [bt\_le\_scan\_param](structbt__le__scan__param.md#a93166af55dca71393c60cb3f7ac6d809)
+- wip : [jwt\_builder](structjwt__builder.md#a4bd0376eef7f162e9e9e1e1399388fed)
+- wLength : [cdc\_acm\_notification](structcdc__acm__notification.md#af2f8fbceeaa9a3ad0ae1330b8f82bff2), [msosv2\_compatible\_id](structmsosv2__compatible__id.md#ad2fabcbcfe86dd7f6c7e21607392ed9f), [msosv2\_configuration\_subset\_header](structmsosv2__configuration__subset__header.md#a7468f6428046553abf5e97172b52d477), [msosv2\_descriptor\_set\_header](structmsosv2__descriptor__set__header.md#a4281eeb2128138b597fb53577ec8d57f), [msosv2\_function\_subset\_header](structmsosv2__function__subset__header.md#a10e00ccb02a6e2c9c4c5f4d634414a0c), [msosv2\_guids\_property](structmsosv2__guids__property.md#a500199bebfa7f8bf300be51310497a0c), [usb\_setup\_packet](structusb__setup__packet.md#a3421c921569bf3727534652c5f71da96)
+- wMaxPacketSize : [usb\_ep\_descriptor](structusb__ep__descriptor.md#a802ba531354e1d8a1c361af1d0716d82)
+- wMaxSegmentSize : [cdc\_ecm\_descriptor](structcdc__ecm__descriptor.md#afdf7f4478515917b1ed653118e7a8540)
+- wMSOSDescriptorSetTotalLength : [usb\_bos\_capability\_msos](structusb__bos__capability__msos.md#adbf37ee9a5d7479d59cd1a44ab8d8ca5)
+- wNumberMCFilters : [cdc\_ecm\_descriptor](structcdc__ecm__descriptor.md#a196fcac7b1c9bf0f2b42a6d4ccb48de6)
+- word\_size : [dai\_config](structdai__config.md#afe7ab1b6c1163ca1bf4141bc6f2439ba), [i2s\_config](structi2s__config.md#a5a38a75f0b4a3356ed85495fb45d0cd2)
+- work : [i3c\_ibi\_work](structi3c__ibi__work.md#a4a0373423ababe549d00ee13fe657315), [k\_work\_delayable](structk__work__delayable.md#a594ad30acf08249909c30c0af76c1629), [net\_socket\_service\_event](structnet__socket__service__event.md#a0bf2c9e1fc2b8125db3fd907ed6ea27c), [pm\_device](structpm__device.md#a5dc3b48b3139d546206c8b9cacaf09fd), [smp\_client\_object](structsmp__client__object.md#ae4c73b23b90ef9f6cb8a93efde992c8a), [smp\_transport](structsmp__transport.md#a2bb0436ae57a1c1d084f3fed1aa16652)
+- work\_buf : [modem\_chat](structmodem__chat.md#a5b3667c1e409fdc5382af75ad1329df9)
+- work\_buf\_len : [modem\_chat](structmodem__chat.md#a9acd26d97eec7c48482063a3c558c717)
+- work\_cb : [i3c\_ibi\_work](structi3c__ibi__work.md#a6a3dfd49762d96b591b5e248f9ce1668)
+- work\_q : [net\_socket\_service\_desc](structnet__socket__service__desc.md#a6cabae5e1fa0fd56c626932c7c1beca3)
+- work\_sync : [shell\_telnet](structshell__telnet.md#adc057a32a6b48f27a39cdf2e428cd65a)
+- workq : [shell\_mqtt](structshell__mqtt.md#af08ea1a0bbea6cbc64d91a6ccaf6e44c)
+- wPropertyDataLength : [msosv2\_guids\_property](structmsosv2__guids__property.md#a1740a7fb0134313dba90cf794f0218f1)
+- wPropertyDataType : [msosv2\_guids\_property](structmsosv2__guids__property.md#aee143372e2bd13a32ae61e68ab429fbe)
+- wPropertyNameLength : [msosv2\_guids\_property](structmsosv2__guids__property.md#a815f24af18f726244a9ab7d9f67e1cab)
+- wr : [bt\_mesh\_blob\_io](structbt__mesh__blob__io.md#ae0b27ea814e5c939d708ae20d452ca09)
+- wr\_buf\_idx : [uart\_async\_rx](structuart__async__rx.md#a8eb703a1e767ac7e3b103973429750c4)
+- wr\_idx : [mpsc\_pbuf\_buffer](structmpsc__pbuf__buffer.md#a3f292f281f08b97d10183f9248ee7c4d), [pbuf\_data](structpbuf__data.md#ae5d497c293f1b84e7a8e801c5349a0b9), [spsc\_pbuf\_ext\_cache](structspsc__pbuf__ext__cache.md#a513b3ec0f7e3c670c8ddd9a787ed500a), [spsc\_pbuf\_ext\_nocache](structspsc__pbuf__ext__nocache.md#af287a5f0150ed97536427b73ea8a46b8), [uart\_async\_rx\_buf](structuart__async__rx__buf.md#a4dbeb091bddcd92e1fe242517f53bb93)
+- wr\_idx\_loc : [pbuf\_cfg](structpbuf__cfg.md#afb7da887c911f2530cd9168b0a00b3b6)
+- wr\_mtx : [shell\_ctx](structshell__ctx.md#a76cf861f17057cf080c54b67acb1a801)
+- wrap\_counter : [net\_timeout](structnet__timeout.md#a35b1f793d3f1432123093ca48220426b)
+- write : [bbram\_driver\_api](structbbram__driver__api.md#a937578d674e8ed1e26026aea7428e616), [bt\_gatt\_attr](structbt__gatt__attr.md#a1ecd78536067f4bded506e0daccefd35), [bt\_gatt\_subscribe\_params](structbt__gatt__subscribe__params.md#a1cedb0e0067c8648c603296a63d2e3ee), [disk\_operations](structdisk__operations.md#ad74bec53a1ef7dc159b1ca90dd3c5a91), [display\_driver\_api](structdisplay__driver__api.md#a535221c00caef6f24dc75c919826a889), [fd\_op\_vtable](structfd__op__vtable.md#ac59ee326ff54a6a2324bf3425f4a3d5a), [flash\_driver\_api](structflash__driver__api.md#aa799a18761bbe6d43a82dc12a8de44c4), [fs\_file\_system\_t](structfs__file__system__t.md#a1039b25b44bc8be1daea19c0d489c0db), [retained\_mem\_driver\_api](structretained__mem__driver__api.md#abb3941c6c6465dfbc9a5f97163937526), [retention\_api](structretention__api.md#a11e7d9bb0238fd5e5b0ef25c1b254420), [shell\_transport\_api](structshell__transport__api.md#a6bbf2905abcbf6ca564ecf3f07d95712), [syscon\_driver\_api](structsyscon__driver__api.md#a525b35b755468c2247febee9e5b784ab)
+- write\_authorize : [bt\_gatt\_authorization\_cb](structbt__gatt__authorization__cb.md#a7c12bd14f87f91e672eaaf92e1aa6e7b)
+- write\_blk\_len : [sd\_csd](structsd__csd.md#adff7d405662589ec44f4d0a6b3548760)
+- write\_block\_size : [flash\_parameters](structflash__parameters.md#a9795a3e4fae4d7b81745e876f62ab3a8)
+- write\_bytes : [img\_mgmt\_upload\_action](structimg__mgmt__upload__action.md#aac493000e6989735531492f15edb6108)
+- write\_channels : [led\_driver\_api](structled__driver__api.md#ada1dfb1830b48afb020c7e60dbd92337)
+- write\_current\_max : [sd\_csd](structsd__csd.md#a53b364ce0db06b9217259afeb625da44)
+- write\_current\_min : [sd\_csd](structsd__csd.md#a0d1efea12c467eacd0d0f98a0bb0ac91)
+- write\_display : [mipi\_dbi\_driver\_api](structmipi__dbi__driver__api.md#ac1ddd47d5c394089bac92d74fc959279)
+- write\_index : [k\_pipe](structk__pipe.md#a8f46bd01da0e52e4ee918d9ebe6ad739)
+- write\_mram : [can\_mcan\_ops](structcan__mcan__ops.md#ab040466ab26383567dac85c08b077250)
+- write\_params : [bt\_ots\_client](structbt__ots__client.md#a0e6a0d97a1b8edc7a282aec12d95b0dc)
+- write\_position : [dma\_status](structdma__status.md#aa7288b85f41098e59ad4f96dcea4ccde)
+- write\_prtect\_size : [sd\_csd](structsd__csd.md#a029a893cdcd3765864c70476eb6dd64e)
+- write\_ptr : [k\_msgq](structk__msgq.md#aacf9b7b9f6e26e402f3752fc56834f23)
+- write\_received : [i2c\_target\_callbacks](structi2c__target__callbacks.md#a1606a5b4767ecdc01798d39b63b32f32)
+- write\_received\_cb : [i3c\_target\_callbacks](structi3c__target__callbacks.md#a7288f143d19ad306616e25e68ffedc03)
+- write\_reg : [can\_mcan\_ops](structcan__mcan__ops.md#a2d977bb8a98e6f2f787723eb9104f949), [can\_sja1000\_config](structcan__sja1000__config.md#ab7a864dc361c9b4a9b5917df7566c403)
+- write\_requested : [i2c\_target\_callbacks](structi2c__target__callbacks.md#a76260779cd35191ff64d5848e37b3134)
+- write\_requested\_cb : [i3c\_target\_callbacks](structi3c__target__callbacks.md#ad9e51587a8f86f08d065071d28241ee2)
+- write\_speed\_factor : [sd\_csd](structsd__csd.md#a9c362eff38daf7d00776416ed064de24)
+- writer : [smp\_streamer](structsmp__streamer.md#a00f6b8731e1a789939eaec106d746daf)
+- writers : [k\_pipe](structk__pipe.md#ac61ce23d990cf4cef44a1ecfc5047ccc)
+- wrrdturn : [i3c\_ccc\_getmxds](unioni3c__ccc__getmxds.md#a3324b594867b06b7c306decd81eed53d)
+- wSubsetLength : [msosv2\_function\_subset\_header](structmsosv2__function__subset__header.md#a7c3d3e7cd0577dc4ceab66615fefbe46)
+- wTotalLength : [msosv2\_configuration\_subset\_header](structmsosv2__configuration__subset__header.md#a044cf7d76fa93bfaa265bd5c24d8d413), [msosv2\_descriptor\_set\_header](structmsosv2__descriptor__set__header.md#a3bab654cec13541096f08b43adb55f40), [usb\_cfg\_descriptor](structusb__cfg__descriptor.md#ae7f2a2fde3210e6460b20b0d17b820de)
+- wTransferSize : [dfu\_runtime\_descriptor](structdfu__runtime__descriptor.md#a86312a99ed7c89eb027ca3e35b7b32e5)
+- wValue : [cdc\_acm\_notification](structcdc__acm__notification.md#a3bf290bc6e851331e93bedf49ae5dbe0), [usb\_setup\_packet](structusb__setup__packet.md#a619fbc1b9b6452f4394da713bdbc6a89)
+
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
