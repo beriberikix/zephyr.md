@@ -212,17 +212,6 @@ jobs:
         with:
           path: _downloaded
 
-      - name: Debug artifact structure
-        shell: bash
-        run: |
-          set -euo pipefail
-          echo "=== Contents of _downloaded ==="
-          ls -lhR _downloaded 2>&1 | head -100
-          echo "=== Checking for .md files ==="
-          find _downloaded -name "*.md" -type f 2>&1 | head -20
-          echo "=== Total file count ==="
-          find _downloaded -type f 2>&1 | wc -l
-
       - name: Merge generated versions
         shell: bash
         run: |
@@ -234,7 +223,8 @@ jobs:
           for TAG in "${TAG_ARRAY[@]}"; do
             SRC_DIR="_downloaded/markdown-${TAG}"
             if [[ ! -d "$SRC_DIR" ]]; then
-              echo "Missing artifact for $TAG"
+              echo "Missing artifact for $TAG; available:"
+              ls _downloaded/
               exit 1
             fi
 
@@ -242,6 +232,7 @@ jobs:
             rm -rf "$DEST_DIR"
             mkdir -p "$DEST_DIR"
             cp -R "$SRC_DIR"/. "$DEST_DIR"/
+            echo "Copied $(find "$DEST_DIR" -name '*.md' -type f | wc -l) .md files to $DEST_DIR"
           done
 
           LATEST="${{ needs.prepare.outputs.latest_tag }}"
@@ -266,7 +257,7 @@ jobs:
 
           {
             echo '{'
-            echo "  \"latest\": \"$LATEST\"," 
+            echo "  \"latest\": \"$LATEST\","
             echo '  "versions": ['
             for i in "${!VERSION_DIRS[@]}"; do
               v="${VERSION_DIRS[$i]}"
@@ -285,7 +276,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          if ! find versions -type f -name '*.md' | grep -q .; then
+          # Use -print -quit so find stops after the first match, avoiding SIGPIPE with pipefail
+          if [[ -z "$(find versions -type f -name '*.md' -print -quit)" ]]; then
             echo "No markdown files found in versions/"
             exit 1
           fi
