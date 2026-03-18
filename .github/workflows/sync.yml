@@ -283,36 +283,30 @@ jobs:
           fi
 
           python3 - <<'PY'
-            import textwrap
+          import pathlib
+          import re
 
-            exec(
-              textwrap.dedent(
-                """
-                import pathlib
-                import re
+          required = ["version:", "source_url:", "original_path:"]
+          link_pattern = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
-                required = ["version:", "source_url:", "original_path:"]
-                link_pattern = re.compile(r"\\[[^\\]]*\\]\\(([^)]+)\\)")
+          for path in pathlib.Path("versions").rglob("*.md"):
+            text = path.read_text(encoding="utf-8", errors="ignore")
+            if not text.startswith("---\n"):
+              raise SystemExit(f"Missing front matter in {path}")
 
-                for path in pathlib.Path("versions").rglob("*.md"):
-                  text = path.read_text(encoding="utf-8", errors="ignore")
-                  if not text.startswith("---\\n"):
-                    raise SystemExit(f"Missing front matter in {path}")
-                  for key in required:
-                    if key not in text.split("---\\n", 2)[1]:
-                      raise SystemExit(f"Missing {key} in {path}")
+            front_matter = text.split("---\n", 2)[1]
+            for key in required:
+              if key not in front_matter:
+                raise SystemExit(f"Missing {key} in {path}")
 
-                  for match in link_pattern.finditer(text):
-                    target = match.group(1).split(" ", 1)[0].strip()
-                    if target.startswith(("http://", "https://", "mailto:", "tel:", "#")):
-                      continue
-                    if ".html" in target:
-                      raise SystemExit(f"Unresolved internal HTML link in {path}: {target}")
+            for match in link_pattern.finditer(text):
+              target = match.group(1).split(" ", 1)[0].strip()
+              if target.startswith(("http://", "https://", "mailto:", "tel:", "#")):
+                continue
+              if ".html" in target:
+                raise SystemExit(f"Unresolved internal HTML link in {path}: {target}")
 
-                print("Front matter validation passed")
-                """
-              )
-            )
+          print("Front matter validation passed")
           PY
 
       - name: Commit and push
