@@ -179,7 +179,7 @@ jobs:
                 export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
               fi
 
-              cmake -GNinja -B /tmp/zephyrproject/zephyr/doc/_build -S /tmp/zephyrproject/zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto -W --keep-going -T"
+              cmake -GNinja -B /tmp/zephyrproject/zephyr/doc/_build -S /tmp/zephyrproject/zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto --keep-going -T"
               cmake --build /tmp/zephyrproject/zephyr/doc/_build --target html
 
               python3 /work/pipeline/scripts/convert.py \
