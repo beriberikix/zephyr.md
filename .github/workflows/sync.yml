@@ -212,6 +212,17 @@ jobs:
         with:
           path: _downloaded
 
+      - name: Debug artifact structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "=== Contents of _downloaded ==="
+          ls -lhR _downloaded 2>&1 | head -100
+          echo "=== Checking for .md files ==="
+          find _downloaded -name "*.md" -type f 2>&1 | head -20
+          echo "=== Total file count ==="
+          find _downloaded -type f 2>&1 | wc -l
+
       - name: Merge generated versions
         shell: bash
         run: |
