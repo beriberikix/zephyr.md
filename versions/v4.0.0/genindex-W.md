@@ -1,0 +1,10 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/genindex-W.html
+original_path: genindex-W.html
+---
+
+# Index – W
+
+| - :west-args: (directive option)   - [zephyr-app-commands (directive)](contribute/documentation/guidelines.md#directive-option-zephyr-app-commands-west-args) - [wait\_for\_prompt() (twister\_harness.Shell method)](develop/test/pytest.md#twister_harness.Shell.wait_for_prompt) - [**west**](glossary.md#term-west) - [**west installation**](glossary.md#term-west-installation) - [**west manifest**](glossary.md#term-west-manifest) - [**west manifest repository**](glossary.md#term-west-manifest-repository) - [**west project**](glossary.md#term-west-project) - [**west workspace**](glossary.md#term-west-workspace) - west.commands   - [module](develop/west/west-apis.md#module-west.commands) - west.configuration   - [module](develop/west/west-apis.md#module-west.configuration) - [west.configuration.config (in module west.configuration)](develop/west/west-apis.md#west.configuration.west.configuration.config) | - west.log   - [module](develop/west/west-apis.md#module-west.log) - west.manifest   - [module](develop/west/west-apis.md#module-west.manifest) - west.util   - [module](develop/west/west-apis.md#module-west.util) - [west\_dir() (in module west.util)](develop/west/west-apis.md#west.util.west_dir) - [west\_topdir() (in module west.util)](develop/west/west-apis.md#west.util.west_topdir) - [WestCommand (class in west.commands)](develop/west/west-apis.md#west.commands.WestCommand) - [WestNotFound (class in west.util)](develop/west/west-apis.md#west.util.WestNotFound) - [write() (twister\_harness.DeviceAdapter method)](develop/test/pytest.md#twister_harness.DeviceAdapter.write) - [WRN (west.commands.Verbosity attribute)](develop/west/west-apis.md#west.commands.Verbosity.WRN) - [wrn() (in module west.log)](develop/west/west-apis.md#west.log.wrn)   - [(west.commands.WestCommand method)](develop/west/west-apis.md#west.commands.WestCommand.wrn) |
+| --- | --- |

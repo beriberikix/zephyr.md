@@ -1,0 +1,44 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/doxygen/html/structbt__hci__cp__vs__set__trace__enable.html
+original_path: doxygen/html/structbt__hci__cp__vs__set__trace__enable.html
+---
+
+| Logo | Zephyr API Documentation 4.0.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+bt\_hci\_cp\_vs\_set\_trace\_enable Struct Reference
+
+`#include <[hci_vs.h](hci__vs_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [enable](#a5676627500b6c5aff5986c53a0ba13a7) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [type](#a18c3c81f13599a12903b12e350703dc5) |
+
+## Field Documentation
+
+## [◆ ](#a5676627500b6c5aff5986c53a0ba13a7)enable
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_cp\_vs\_set\_trace\_enable::enable |
+| --- |
+
+## [◆ ](#a18c3c81f13599a12903b12e350703dc5)type
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) bt\_hci\_cp\_vs\_set\_trace\_enable::type |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
+
+- [bt\_hci\_cp\_vs\_set\_trace\_enable](structbt__hci__cp__vs__set__trace__enable.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

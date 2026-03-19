@@ -1,0 +1,10 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/genindex-M.html
+original_path: genindex-M.html
+---
+
+# Index – M
+
+| - :maybe-skip-config: (directive option)   - [zephyr-app-commands (directive)](contribute/documentation/guidelines.md#directive-option-zephyr-app-commands-maybe-skip-config) - [MalformedConfig (class in west.configuration)](develop/west/west-apis.md#west.configuration.MalformedConfig) - [MalformedManifest (class in west.manifest)](develop/west/west-apis.md#west.manifest.MalformedManifest) - [Manifest (class in west.manifest)](develop/west/west-apis.md#west.manifest.Manifest) - [manifest (west.commands.WestCommand attribute)](develop/west/west-apis.md#west.commands.WestCommand.manifest) - [manifest\_path() (in module west.manifest)](develop/west/west-apis.md#west.manifest.manifest_path) - [MANIFEST\_PROJECT\_INDEX (in module west.manifest)](develop/west/west-apis.md#west.manifest.MANIFEST_PROJECT_INDEX) - [MANIFEST\_REV\_BRANCH (in module west.manifest)](develop/west/west-apis.md#west.manifest.MANIFEST_REV_BRANCH) | - [ManifestImportFailed (class in west.manifest)](develop/west/west-apis.md#west.manifest.ManifestImportFailed) - [ManifestProject (class in west.manifest)](develop/west/west-apis.md#west.manifest.ManifestProject) - [ManifestVersionError (class in west.manifest)](develop/west/west-apis.md#west.manifest.ManifestVersionError) - [METAWARE\_ROOT](develop/toolchains/designware_arc_mwdt.md#index-2) - [MissingProgram](develop/west/build-flash-debug.md#runners.core.MissingProgram) - module   - [runners.core](develop/west/build-flash-debug.md#module-runners.core)   - [west.commands](develop/west/west-apis.md#module-west.commands)   - [west.configuration](develop/west/west-apis.md#module-west.configuration)   - [west.log](develop/west/west-apis.md#module-west.log)   - [west.manifest](develop/west/west-apis.md#module-west.manifest)   - [west.util](develop/west/west-apis.md#module-west.util) - [module\_file (role)](contribute/documentation/guidelines.md#role-module_file) |
+| --- | --- |

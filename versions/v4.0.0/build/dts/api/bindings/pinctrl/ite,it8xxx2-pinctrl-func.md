@@ -1,0 +1,81 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/build/dts/api/bindings/pinctrl/ite,it8xxx2-pinctrl-func.html
+original_path: build/dts/api/bindings/pinctrl/ite,it8xxx2-pinctrl-func.html
+---
+
+# ite,it8xxx2-pinctrl-func
+
+Vendor: [ITE Tech. Inc.](../../bindings.md#dt-vendor-ite)
+
+Note
+
+An implementation of a driver matching this compatible is available in
+[drivers/pinctrl/pinctrl\_ite\_it8xxx2.c](https://github.com/zephyrproject-rtos/zephyr/blob/main/drivers/pinctrl/pinctrl_ite_it8xxx2.c).
+
+## Description
+
+```text
+ITE IT8XXX2 pin controller function node
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `func3-gcr` | `array` |  |
+| `func3-en-mask` | `array` |  |
+| `func3-ext` | `array` | ```text When the alternate setting is configured as func3, in addition to the setting of func3-gcr, some pins require external setting. ``` |
+| `func3-ext-mask` | `array` |  |
+| `func4-gcr` | `array` |  |
+| `func4-en-mask` | `array` |  |
+| `volt-sel` | `array` |  |
+| `volt-sel-mask` | `array` |  |
+| `pp-od-mask` | `int` | ```text KSI[7:0] does not support push-pull and open-drain mode. If KSO[17:0] is in KBS mode, setting 1 selects open-drain mode, setting 0 selects push-pull mode. If KSO[15:0] is in GPIO mode, then this bit is always disabled. ``` |
+| `pullup-mask` | `int` | ```text If KSI[7:0]/KSO[15:0] is in KBS mode , setting 1 enables the internal pull-up (KSO[17:16] setting internal pull-up by GPIO port GPCR register). If KSI[7:0]/KSO[15:0] is in GPIO mode, then this bit is always disabled. ``` |
+| `gpio-group` | `boolean` | ```text Default setting pin configure to alternate mode for all GPIO group pins (include KSO[17:16]), otherwise setting pin configure to keyboard scan mode for KSI[7:0] and KSO[15:0] pins. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “ite,it8xxx2-pinctrl-func” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `status` | `string` | ```text indicates the operational status of a device ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text compatible strings ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg` | `array` | ```text register space ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text name of each register space ``` |
+| `interrupts` | `array` | ```text interrupts for device ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts-extended` | `compound` | ```text extended interrupt specifier for device ``` |
+| `interrupt-names` | `string-array` | ```text name of each interrupt ``` |
+| `interrupt-parent` | `phandle` | ```text phandle to interrupt controller node ``` |
+| `label` | `string` | ```text Human readable string describing the device (used as device_get_binding() argument) ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information.  This property is **deprecated**. |
+| `clocks` | `phandle-array` | ```text Clock gate information ``` |
+| `clock-names` | `string-array` | ```text name of each clock ``` |
+| `#address-cells` | `int` | ```text number of address cells in reg property ``` |
+| `#size-cells` | `int` | ```text number of size cells in reg property ``` |
+| `dmas` | `phandle-array` | ```text DMA channels specifiers ``` |
+| `dma-names` | `string-array` | ```text Provided names of DMA channel specifiers ``` |
+| `io-channels` | `phandle-array` | ```text IO channels specifiers ``` |
+| `io-channel-names` | `string-array` | ```text Provided names of IO channel specifiers ``` |
+| `mboxes` | `phandle-array` | ```text mailbox / IPM channels specifiers ``` |
+| `mbox-names` | `string-array` | ```text Provided names of mailbox / IPM channel specifiers ``` |
+| `power-domains` | `phandle-array` | ```text Power domain specifiers ``` |
+| `power-domain-names` | `string-array` | ```text Provided names of power domain specifiers ``` |
+| `#power-domain-cells` | `int` | ```text Number of cells in power-domains property ``` |
+| `zephyr,deferred-init` | `boolean` | ```text Do not initialize device automatically on boot. Device should be manually initialized using device_init(). ``` |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |
+| `zephyr,disabling-power-states` | `phandles` | ```text List of power states that will disable this device power. ``` |
+
+## Specifier cell names
+
+- pinmux cells: pin, alt\_func

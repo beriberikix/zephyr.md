@@ -1,0 +1,101 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/build/dts/api/bindings/gpio/atmel-xplained-header.html
+original_path: build/dts/api/bindings/gpio/atmel-xplained-header.html
+---
+
+# atmel-xplained-header
+
+Vendor: [Generic or vendor-independent](../../bindings.md#dt-no-vendor)
+
+## Description
+
+```text
+GPIO pins exposed on Atmel Xplained headers.
+
+The Xplained layout provide a standard 10 pin header.  A board can have
+one or more headers and can share pins.  This connector was developed to
+match with Atmel AVR XMEGA devices GPIO port plus power signals.  The Atmel
+Xplained Pro standard connector keep compatibility with this header and it
+can be defined on every board with an Xplained Pro Connector extension and
+every pin can be defined as general purpose GPIO.
+
+The AVR XMEGA port was designed as:
+
+Signal  Main Function
+   Px0  SDA
+   Px1  SCL
+   Px2  RX
+   Px3  TX
+   Px4  SS
+   Px5  MOSI
+   Px6  MISO
+   Px7  SCK
+   GND
+   VDD
+
+Documentation:
+https://www.microchip.com/development-tools/xplained-boards
+http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42091-Atmel-Xplained-Pro-Hardware-Development-Kit_User%20Guide.pdf
+
+This binding provides a nexus mapping for 10 pins where pins are disposed
+to have a even and odd column:
+
+                       Connector
+Bind      Pin Name     Pin   Pin  Pin Name        Bind
+  0          I2C(SDA)  1       2  I2C(SCL)         1
+  2          UART(RX)  3       4  UART(TX)         3
+  4          SPI(CS0)  5       6  SPI(MOSI)        5
+  6         SPI(MISO)  7       8  SPI(SCK)         7
+                  GND  9      10  VDD(+3.3V)
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `gpio-map` | `compound` | This property is **required**. |
+| `gpio-map-mask` | `compound` |  |
+| `gpio-map-pass-thru` | `compound` |  |
+| `#gpio-cells` | `int` | ```text Number of items to expect in a GPIO specifier ```  This property is **required**. |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “atmel-xplained-header” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `status` | `string` | ```text indicates the operational status of a device ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text compatible strings ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg` | `array` | ```text register space ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text name of each register space ``` |
+| `interrupts` | `array` | ```text interrupts for device ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts-extended` | `compound` | ```text extended interrupt specifier for device ``` |
+| `interrupt-names` | `string-array` | ```text name of each interrupt ``` |
+| `interrupt-parent` | `phandle` | ```text phandle to interrupt controller node ``` |
+| `label` | `string` | ```text Human readable string describing the device (used as device_get_binding() argument) ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information.  This property is **deprecated**. |
+| `clocks` | `phandle-array` | ```text Clock gate information ``` |
+| `clock-names` | `string-array` | ```text name of each clock ``` |
+| `#address-cells` | `int` | ```text number of address cells in reg property ``` |
+| `#size-cells` | `int` | ```text number of size cells in reg property ``` |
+| `dmas` | `phandle-array` | ```text DMA channels specifiers ``` |
+| `dma-names` | `string-array` | ```text Provided names of DMA channel specifiers ``` |
+| `io-channels` | `phandle-array` | ```text IO channels specifiers ``` |
+| `io-channel-names` | `string-array` | ```text Provided names of IO channel specifiers ``` |
+| `mboxes` | `phandle-array` | ```text mailbox / IPM channels specifiers ``` |
+| `mbox-names` | `string-array` | ```text Provided names of mailbox / IPM channel specifiers ``` |
+| `power-domains` | `phandle-array` | ```text Power domain specifiers ``` |
+| `power-domain-names` | `string-array` | ```text Provided names of power domain specifiers ``` |
+| `#power-domain-cells` | `int` | ```text Number of cells in power-domains property ``` |
+| `zephyr,deferred-init` | `boolean` | ```text Do not initialize device automatically on boot. Device should be manually initialized using device_init(). ``` |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |
+| `zephyr,disabling-power-states` | `phandles` | ```text List of power states that will disable this device power. ``` |

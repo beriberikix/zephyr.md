@@ -1,0 +1,1019 @@
+---
+version: v4.1.0
+source_url: https://docs.zephyrproject.org/4.1.0/doxygen/html/cc23x0-pinctrl_8h.html
+original_path: doxygen/html/cc23x0-pinctrl_8h.html
+---
+
+| Logo | Zephyr API Documentation 4.1.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+cc23x0-pinctrl.h File Reference
+
+[Go to the source code of this file.](cc23x0-pinctrl_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70)   0U |
+| #define | [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9)   1U |
+| #define | [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965)   2U |
+| #define | [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd)   3U |
+| #define | [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019)   4U |
+| #define | [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837)   5U |
+| #define | [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482)   6U |
+| #define | [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3)   7U |
+| #define | [DIO0\_GPIO0](#ade776b707cd244b692be71202a7e08cb)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO0\_SPI0\_CSN](#a92c899e5d01e371e4abee45e3f31c5f4)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO0\_I2C0\_SDA](#a1da175a81e69788efebd00db91beba6e)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO0\_T3\_C2](#ae6321d9d1d78a0ee5c58b5f94577f501)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO0\_ADC5](#ab256a8550b3c03978e5c6b707ba6d1ce)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO1\_GPIO1](#ac38ece6a277c436f774ab4b0392ea635)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO1\_T3\_C1](#a2b5d4a0a786d41a76b959a976c3435a4)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO1\_LRFD7](#acb8c92941a28948edf78ea8ba7bf1a3f)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO1\_T1\_F](#a522504deec63fc7e124ee2628e21158c)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO1\_UART0\_RTS](#a6f9ff300c12b1d0f6291da925d53d049)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO1\_ADC4](#ac1db8b2eec7a587f2777ec42bc741332)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO1\_DTB2](#a22d9f90c38345c7487044591caaa5a60)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO2\_GPIO2](#acce8374fb4d805494ebaf78834d431d6)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO2\_T0\_PE](#ae1e1837425d79845e84a9551c6ce90d3)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO2\_T2\_C1N](#a943d0d0497b8d939b4bdf6eb1ed7af03)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO2\_UART0\_CTS](#aebfe126f475d93068b93eb195049f586)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO2\_ADC3](#a592b7a2687e97ac64b684681a43dbc0b)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO3\_GPIO3](#a02eb22dc2b9867c418e972a64c4e549c)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO3\_LFCI](#a9babb38598d110fa6972313e4a5f90ac)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO3\_T0\_C1N](#ad5f0fade34b37ed25a23b27a101f9796)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO3\_LRFD0](#a2680e26e7c1dd92e43413727f9f4c415)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO3\_T3\_C1](#a3856eb90a0dec21a3055041edf7c975a)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO3\_T1\_C2](#a31ecae7e3f360d17dee9b78b2a8f18b1)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO3\_LFXT\_P](#a6d5fd06f8df458a27ee0cb75746203df)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO3\_DTB7](#a95e01bbcdcd732983e0bca7cf02fcf33)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO4\_GPIO4](#ae3239b06b452ff8757f9990f5f091a61)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO4\_T0\_C2N](#a040b8faba6859f0decc43d318cee6ed1)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO4\_UART0\_TXD](#a4ee4d6b4e97e0053b9dfdadd47ffd55e)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO4\_LRFD1](#a5f4c955ea6d875eb53f8575a59b8fc1a)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO4\_SPI0\_MOSI](#a17ea74b30c1aed816d675fcc2ff076fc)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO4\_T0\_C2](#ab42c816bea20237638d790ffcee2b2cf)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO4\_LFXT\_N](#ae5bbef3a760612759307039d94ae8d4c)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO4\_DTB8](#abebb35dde4a811b0237b9fb24517b41f)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO5\_GPIO5](#ae860734b858834f5024b4f35377c56cb)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO5\_T2\_C2](#abbada75153e0f5b9c352a2cfd6669037)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO5\_LRFD6](#aff51e9eb6eb949038b5cccb4fa074212)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO5\_ADC2](#a09619eb634cab8068134cb40a152f17b)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO6\_GPIO6](#a56f5afccece122855f957668e81d1bcd)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO6\_SPI0\_CSN](#a38d80b5fc0894b55beba01019350edca)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO6\_I2C0\_SCL](#a914b6a41adb66c2f65413c46ff620c5c)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO6\_T1\_C2](#ad17cc424f3421617c753d1387da6c6bf)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO6\_LRFD2](#a834af6e67831d342dbef9084a4bc422e)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO6\_UART0\_TXD](#ac55e5ce877a5e57cf565830193c076e6)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO6\_ADC1\_AREFP](#a39e4a39c6d312c974b37acac1b1054da)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO6\_DTB6](#aac1e3c63427f92bd1d73d472ca215eb1)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO7\_GPIO7](#ae0e5f07c43371d3602b4353f6178a214)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO7\_T3\_C1](#ae60dd20c9960b001a992d37fbfa05956)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO7\_LRFD4](#a8a354e58d7f6425c9cb91137dc4aa766)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO7\_ADC0\_AREFM](#a3c92801ae0b96fae2be1a9b018022aea)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO8\_GPIO8](#afe29503f0e97bf76bea3ed2ec3fe4b64)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO8\_SPI0\_SCLK](#a3d22644d12be2b507ed4a4a05097b29f)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO8\_UART0\_RTS](#a82f64fe945445f96be0db2aa2d021e6b)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO8\_T1\_C0N](#ab32d21fdbcde3256731b561d9f5f2ad1)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO8\_I2C0\_SDA](#a2b845037d4c448c3847ba408ba98720d)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO8\_T0\_C0N](#aff36d54d77c72974b870285fb6d8b801)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO8\_DTB3](#a82913b1243033ac74f06eeaf4aff7df4)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO9\_GPIO9](#a74d0f7de1cb705b147947312f67e273a)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO9\_T3\_C0](#a87eac578bb6d3ba94be53508d81ddae8)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO9\_LRFD3](#a069db119313663a8bd1052992e12e85a)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO10\_GPIO10](#a4d4ecf52202b89bd18fd07df9f8cf23c)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO10\_LPC0](#a7c38cc0d168019884b5d0e022be58047)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO10\_T2\_PE](#a401c41789d4f0730631c8d95c95356f1)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO10\_T3\_C0N](#a132cf71891f6ac14dd1f3cdae463b369)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO11\_GPIO11](#a406be9c9748d230aaa5f6a0936a59fa1)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO11\_SPI0\_CSN](#ac4ad3c53ba96f31cc859d3126c477049)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO11\_T1\_C2N](#ac72ec42df93ef20cc55b1d33bea8a3b7)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO11\_T0\_C0](#af351c707516ced033891623bdacf3b4f)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO11\_LRFD0](#a8e5989e85216c9b9fa9e7e66d9339371)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO11\_SPI0\_MISO](#ac8e3ba0e0fbcaaeeb910680f1ebed192)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO11\_DTB9](#a14a9531e81aa7d43ab54d458ab6ea221)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO12\_GPIO12](#a2ad2d410f5ff120cb65fd6b899ddc165)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO12\_SPI0\_MISO](#a7e1b7a3e5d11986b97f56d85a3ff5c76)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO12\_SPI0\_MOSI](#a37571bec3db0e47d21abbe176d87d96c)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO12\_UART0\_RXD](#a1dda1b7dd1213db83dac067a3995419e)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO12\_T1\_C1](#adc65e540bd2e34316f283cedc4cccfea)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO12\_I2C0\_SDA](#a6b0c99c8c413097f40eac6523b9d5924)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO12\_DTB13](#a693aebfd8e479fe790e147df42ffa526)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO13\_GPIO13](#a13e07e2b2ebb2fbd832e032046b18ad4)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO13\_SPI0\_MISO](#a0c3a3c06beb7126113bf9e0bb5599d51)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO13\_SPI0\_MOSI](#a1a10e7a429f2a8d0885999e57780387e)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO13\_UART0\_TXD](#abb44537be4746bbcf1d3e0d32bfa3cba)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO13\_T0\_C0N](#a856cc517f1a799d293114daaa33aeb38)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO13\_T1\_F](#acec3eda273c31b29324b3bfe2afdc070)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO13\_DTB4](#a9400a3fa8fc3e8d07191a9c72d551fb5)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO14\_GPIO14](#ae30591306137378af20de546bfbc402e)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO14\_T3\_C2](#a0c7457a723d316668a3aabd0404a0a65)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO14\_T1\_C2N](#abc3f5cb7c0f595fc80d3285d902ba829)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO14\_LRFD5](#af9774a009ad29c47036e7b07960ae463)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO14\_T1\_F](#a696088726823aa9e47180eadf02d3313)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO15\_GPIO15](#a7b466888d002460d0428519529ea5801)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO15\_UART0\_RXD](#a7af48be34e0d425d8ccc4fceb79d94d6)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO15\_T2\_C0N](#acebedef69b351c4431523381334adcb1)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO15\_CKMIN](#afddb1472afadde08d88f6abd1dc5d5ff)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO16\_GPIO16](#a076f8c5d1093fd600d3e9ba2edad8431)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO16\_SPI0\_MOSI](#a603eb2c90c89a84edd7eb73290defd91)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO16\_UART0\_RXD](#a04c17e95330f4aaa17d886d2f5053cc9)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO16\_I2C0\_SDA](#a68ae64d639cab3dbadcaf50c92a13fbd)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO16\_T1\_C2](#a280b489d7c4528ec5a0775c3b83ba551)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO16\_T1\_C0N](#aa1e519e01cb798538022755aaf81574a)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO16\_DTB10](#ab14227b4703363152450eefdfe5f0186)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO17\_GPIO17](#aa6695223061a1bf458e6b5cf667a4ef3)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO17\_SPI0\_SCLK](#a01082d3bb0958749c3a705ebd381d304)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO17\_UART0\_TXD](#a6af94601226f5b9da48be2449edf12c3)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO17\_I2C0\_SCL](#a724128f152f9c8153925c0b433aa46aa)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO17\_T1\_C1N](#ad690f4824516a3f08fd8cbb1e4baec5e)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO17\_T0\_C2](#a885ff00b679ea6922cb8177310871aee)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO17\_DTB11](#a79ba035326c60d89c4ab8b8de50eee6b)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO18\_GPIO18](#abbcd9337ffa2c9120d74cf17bcc7092f)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO18\_T3\_C0](#a5e9c6406866d7aaa23929a4cec8fc828)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO18\_LPC0](#a3944baa4569ea0dccccedf1729c962f7)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO18\_UART0\_TXD](#ab9c8fac3f7501cf6303771c87040cb78)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO18\_SPI0\_SCLK](#a2751e01acf954ff4bb4a10bab7d39153)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO18\_DTB12](#afe75a43f8da9e6ac26d98d11e62a7f0f)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO19\_GPIO19](#a7c21093db3bdff8c498afd0564a58ff8)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO19\_T3\_C1](#a516468dc4fd432493b9686d9c295c1a0)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO19\_T2\_PE](#aa055d07c9295649e85dbc84e210bfe8a)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO19\_SPI0\_MOSI](#a79de211a3fc81572d675791c8eab515d)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO19\_DTB0](#accad3142e44944f617f4b6ade2f07c1e)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO20\_GPIO20](#a9dde4d0ddc64a4c2e78c050210e467dc)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO20\_LPC0](#ab590e7f2abe46b464f1e9d6a89059e25)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO20\_UART0\_TXD](#aa68e87bb88d59212e0768800c7aa7f48)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO20\_UART0\_RXD](#a0ae35f4a7376bb6980832c871ab714d5)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO20\_T1\_C0](#a032c884bb4ad0772aa26e2f41f49310f)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO20\_SPI0\_MISO](#aa78b09deb2e32131c51af0aa2cf186a4)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO20\_ADC11](#af160531047627880d2c9a45fc4e78d3c)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO20\_DTB14](#ad45e111439f668b6b3b2c2a8dc197685)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO21\_GPIO21](#a3543027e96dd24a8f423642793f9231f)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO21\_UART0\_CTS](#aeda0333fb8765d7a24d514ee25d1b4b2)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO21\_T1\_C1N](#a938311835000f5598aa29b4140fe6886)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO21\_T0\_C1](#ae217ff4c8cf56f66ad3bec48d95ea87f)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO21\_SPI0\_MISO](#a8d66bd3f2da6e8e38b7d464d2e8fbe2e)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO21\_LRFD1](#adc4c2c233df06c2f52ccd24dee3c6664)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO21\_ADC10\_LPCP](#a9351b7540ddc91c96c7eb06c6e3160e9)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO21\_DTB15](#a58b92ea2552dd70802efc1c996e47db7)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO22\_GPIO22](#a0a59e5293cbce628fb9ed582ed8640f5)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO22\_T2\_C0](#ab4318e5a3f89c6d0a09e11f5cba9938a)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO22\_UART0\_RXD](#af1e0eff63be94a61ba5910793796f2eb)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO22\_T3\_C1N](#af2086537e03f4e02f8edbfab24e1e0cc)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO22\_ADC9](#a124a45cbc60d6e3b80d2242483a4e48e)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO22\_DTB1](#aee614c39986f53d769971914fe0f09bf)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO23\_GPIO23](#a7b6e8fc88c08014e5f55fb61b631f630)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO23\_T2\_C1](#a458eb72bee3bc88ae42b099da2a8d8b5)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO23\_T3\_C2N](#a24e0baa35ebf15509fa6df01161b550c)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO23\_ADC8\_LPCP\_LPCM](#a3680907697a966084193c02a0a9b092b)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO24\_GPIO24](#ab007c4540993b710800e31b01c59ac45)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO24\_SPI0\_SCLK](#a449c49cd104260e5c8d8af85121d3a1e)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO24\_T1\_C0](#aee83a92878c7892d370985a85f49982f)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO24\_T3\_C0](#a9ada17b86400635fe102fc2525d792fc)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO24\_T0\_PE](#a0fb7b862a44272d6fd564d472ea31e21)   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| #define | [DIO24\_I2C0\_SCL](#a110d85e1d37be48932cbf1d89c0be29e)   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| #define | [DIO24\_ADC7\_LPCP\_LPCM](#a8ac3818f8c180ff363102c1037a39bb3)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| #define | [DIO24\_DTB5](#a90d085bab2b84b19d92eee13c3760f97)   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| #define | [DIO25\_GPIO25](#ae8f1ccd4414f0b0bf1724eb52fc5e2f4)   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| #define | [DIO25\_SPI0\_MISO](#ad7f714f27470179ac1653fa13d4b6f3a)   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| #define | [DIO25\_I2C0\_SCL](#a2b4cca3f5437f8e8f7889194b566a21f)   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| #define | [DIO25\_T2\_C2N](#a5d80e2f09069929f0fd4801a953a7684)   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| #define | [DIO25\_ADC6](#a1646bb58bfa079d72088be6dbacf1699)   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+
+## Macro Definition Documentation
+
+## [◆ ](#ab256a8550b3c03978e5c6b707ba6d1ce)DIO0\_ADC5
+
+| #define DIO0\_ADC5   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#ade776b707cd244b692be71202a7e08cb)DIO0\_GPIO0
+
+| #define DIO0\_GPIO0   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a1da175a81e69788efebd00db91beba6e)DIO0\_I2C0\_SDA
+
+| #define DIO0\_I2C0\_SDA   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a92c899e5d01e371e4abee45e3f31c5f4)DIO0\_SPI0\_CSN
+
+| #define DIO0\_SPI0\_CSN   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ae6321d9d1d78a0ee5c58b5f94577f501)DIO0\_T3\_C2
+
+| #define DIO0\_T3\_C2   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a4d4ecf52202b89bd18fd07df9f8cf23c)DIO10\_GPIO10
+
+| #define DIO10\_GPIO10   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a7c38cc0d168019884b5d0e022be58047)DIO10\_LPC0
+
+| #define DIO10\_LPC0   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a401c41789d4f0730631c8d95c95356f1)DIO10\_T2\_PE
+
+| #define DIO10\_T2\_PE   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a132cf71891f6ac14dd1f3cdae463b369)DIO10\_T3\_C0N
+
+| #define DIO10\_T3\_C0N   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a14a9531e81aa7d43ab54d458ab6ea221)DIO11\_DTB9
+
+| #define DIO11\_DTB9   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a406be9c9748d230aaa5f6a0936a59fa1)DIO11\_GPIO11
+
+| #define DIO11\_GPIO11   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a8e5989e85216c9b9fa9e7e66d9339371)DIO11\_LRFD0
+
+| #define DIO11\_LRFD0   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#ac4ad3c53ba96f31cc859d3126c477049)DIO11\_SPI0\_CSN
+
+| #define DIO11\_SPI0\_CSN   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ac8e3ba0e0fbcaaeeb910680f1ebed192)DIO11\_SPI0\_MISO
+
+| #define DIO11\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#af351c707516ced033891623bdacf3b4f)DIO11\_T0\_C0
+
+| #define DIO11\_T0\_C0   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#ac72ec42df93ef20cc55b1d33bea8a3b7)DIO11\_T1\_C2N
+
+| #define DIO11\_T1\_C2N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a693aebfd8e479fe790e147df42ffa526)DIO12\_DTB13
+
+| #define DIO12\_DTB13   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a2ad2d410f5ff120cb65fd6b899ddc165)DIO12\_GPIO12
+
+| #define DIO12\_GPIO12   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a6b0c99c8c413097f40eac6523b9d5924)DIO12\_I2C0\_SDA
+
+| #define DIO12\_I2C0\_SDA   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a7e1b7a3e5d11986b97f56d85a3ff5c76)DIO12\_SPI0\_MISO
+
+| #define DIO12\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a37571bec3db0e47d21abbe176d87d96c)DIO12\_SPI0\_MOSI
+
+| #define DIO12\_SPI0\_MOSI   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#adc65e540bd2e34316f283cedc4cccfea)DIO12\_T1\_C1
+
+| #define DIO12\_T1\_C1   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a1dda1b7dd1213db83dac067a3995419e)DIO12\_UART0\_RXD
+
+| #define DIO12\_UART0\_RXD   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a9400a3fa8fc3e8d07191a9c72d551fb5)DIO13\_DTB4
+
+| #define DIO13\_DTB4   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a13e07e2b2ebb2fbd832e032046b18ad4)DIO13\_GPIO13
+
+| #define DIO13\_GPIO13   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a0c3a3c06beb7126113bf9e0bb5599d51)DIO13\_SPI0\_MISO
+
+| #define DIO13\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a1a10e7a429f2a8d0885999e57780387e)DIO13\_SPI0\_MOSI
+
+| #define DIO13\_SPI0\_MOSI   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a856cc517f1a799d293114daaa33aeb38)DIO13\_T0\_C0N
+
+| #define DIO13\_T0\_C0N   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#acec3eda273c31b29324b3bfe2afdc070)DIO13\_T1\_F
+
+| #define DIO13\_T1\_F   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#abb44537be4746bbcf1d3e0d32bfa3cba)DIO13\_UART0\_TXD
+
+| #define DIO13\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#ae30591306137378af20de546bfbc402e)DIO14\_GPIO14
+
+| #define DIO14\_GPIO14   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#af9774a009ad29c47036e7b07960ae463)DIO14\_LRFD5
+
+| #define DIO14\_LRFD5   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#abc3f5cb7c0f595fc80d3285d902ba829)DIO14\_T1\_C2N
+
+| #define DIO14\_T1\_C2N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a696088726823aa9e47180eadf02d3313)DIO14\_T1\_F
+
+| #define DIO14\_T1\_F   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a0c7457a723d316668a3aabd0404a0a65)DIO14\_T3\_C2
+
+| #define DIO14\_T3\_C2   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#afddb1472afadde08d88f6abd1dc5d5ff)DIO15\_CKMIN
+
+| #define DIO15\_CKMIN   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a7b466888d002460d0428519529ea5801)DIO15\_GPIO15
+
+| #define DIO15\_GPIO15   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#acebedef69b351c4431523381334adcb1)DIO15\_T2\_C0N
+
+| #define DIO15\_T2\_C0N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a7af48be34e0d425d8ccc4fceb79d94d6)DIO15\_UART0\_RXD
+
+| #define DIO15\_UART0\_RXD   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ab14227b4703363152450eefdfe5f0186)DIO16\_DTB10
+
+| #define DIO16\_DTB10   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a076f8c5d1093fd600d3e9ba2edad8431)DIO16\_GPIO16
+
+| #define DIO16\_GPIO16   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a68ae64d639cab3dbadcaf50c92a13fbd)DIO16\_I2C0\_SDA
+
+| #define DIO16\_I2C0\_SDA   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a603eb2c90c89a84edd7eb73290defd91)DIO16\_SPI0\_MOSI
+
+| #define DIO16\_SPI0\_MOSI   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#aa1e519e01cb798538022755aaf81574a)DIO16\_T1\_C0N
+
+| #define DIO16\_T1\_C0N   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a280b489d7c4528ec5a0775c3b83ba551)DIO16\_T1\_C2
+
+| #define DIO16\_T1\_C2   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a04c17e95330f4aaa17d886d2f5053cc9)DIO16\_UART0\_RXD
+
+| #define DIO16\_UART0\_RXD   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a79ba035326c60d89c4ab8b8de50eee6b)DIO17\_DTB11
+
+| #define DIO17\_DTB11   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#aa6695223061a1bf458e6b5cf667a4ef3)DIO17\_GPIO17
+
+| #define DIO17\_GPIO17   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a724128f152f9c8153925c0b433aa46aa)DIO17\_I2C0\_SCL
+
+| #define DIO17\_I2C0\_SCL   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a01082d3bb0958749c3a705ebd381d304)DIO17\_SPI0\_SCLK
+
+| #define DIO17\_SPI0\_SCLK   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a885ff00b679ea6922cb8177310871aee)DIO17\_T0\_C2
+
+| #define DIO17\_T0\_C2   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#ad690f4824516a3f08fd8cbb1e4baec5e)DIO17\_T1\_C1N
+
+| #define DIO17\_T1\_C1N   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a6af94601226f5b9da48be2449edf12c3)DIO17\_UART0\_TXD
+
+| #define DIO17\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#afe75a43f8da9e6ac26d98d11e62a7f0f)DIO18\_DTB12
+
+| #define DIO18\_DTB12   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#abbcd9337ffa2c9120d74cf17bcc7092f)DIO18\_GPIO18
+
+| #define DIO18\_GPIO18   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a3944baa4569ea0dccccedf1729c962f7)DIO18\_LPC0
+
+| #define DIO18\_LPC0   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a2751e01acf954ff4bb4a10bab7d39153)DIO18\_SPI0\_SCLK
+
+| #define DIO18\_SPI0\_SCLK   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a5e9c6406866d7aaa23929a4cec8fc828)DIO18\_T3\_C0
+
+| #define DIO18\_T3\_C0   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ab9c8fac3f7501cf6303771c87040cb78)DIO18\_UART0\_TXD
+
+| #define DIO18\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#accad3142e44944f617f4b6ade2f07c1e)DIO19\_DTB0
+
+| #define DIO19\_DTB0   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a7c21093db3bdff8c498afd0564a58ff8)DIO19\_GPIO19
+
+| #define DIO19\_GPIO19   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a79de211a3fc81572d675791c8eab515d)DIO19\_SPI0\_MOSI
+
+| #define DIO19\_SPI0\_MOSI   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#aa055d07c9295649e85dbc84e210bfe8a)DIO19\_T2\_PE
+
+| #define DIO19\_T2\_PE   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a516468dc4fd432493b9686d9c295c1a0)DIO19\_T3\_C1
+
+| #define DIO19\_T3\_C1   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ac1db8b2eec7a587f2777ec42bc741332)DIO1\_ADC4
+
+| #define DIO1\_ADC4   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a22d9f90c38345c7487044591caaa5a60)DIO1\_DTB2
+
+| #define DIO1\_DTB2   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#ac38ece6a277c436f774ab4b0392ea635)DIO1\_GPIO1
+
+| #define DIO1\_GPIO1   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#acb8c92941a28948edf78ea8ba7bf1a3f)DIO1\_LRFD7
+
+| #define DIO1\_LRFD7   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a522504deec63fc7e124ee2628e21158c)DIO1\_T1\_F
+
+| #define DIO1\_T1\_F   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a2b5d4a0a786d41a76b959a976c3435a4)DIO1\_T3\_C1
+
+| #define DIO1\_T3\_C1   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a6f9ff300c12b1d0f6291da925d53d049)DIO1\_UART0\_RTS
+
+| #define DIO1\_UART0\_RTS   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#af160531047627880d2c9a45fc4e78d3c)DIO20\_ADC11
+
+| #define DIO20\_ADC11   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#ad45e111439f668b6b3b2c2a8dc197685)DIO20\_DTB14
+
+| #define DIO20\_DTB14   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a9dde4d0ddc64a4c2e78c050210e467dc)DIO20\_GPIO20
+
+| #define DIO20\_GPIO20   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#ab590e7f2abe46b464f1e9d6a89059e25)DIO20\_LPC0
+
+| #define DIO20\_LPC0   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#aa78b09deb2e32131c51af0aa2cf186a4)DIO20\_SPI0\_MISO
+
+| #define DIO20\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a032c884bb4ad0772aa26e2f41f49310f)DIO20\_T1\_C0
+
+| #define DIO20\_T1\_C0   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a0ae35f4a7376bb6980832c871ab714d5)DIO20\_UART0\_RXD
+
+| #define DIO20\_UART0\_RXD   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#aa68e87bb88d59212e0768800c7aa7f48)DIO20\_UART0\_TXD
+
+| #define DIO20\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a9351b7540ddc91c96c7eb06c6e3160e9)DIO21\_ADC10\_LPCP
+
+| #define DIO21\_ADC10\_LPCP   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a58b92ea2552dd70802efc1c996e47db7)DIO21\_DTB15
+
+| #define DIO21\_DTB15   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a3543027e96dd24a8f423642793f9231f)DIO21\_GPIO21
+
+| #define DIO21\_GPIO21   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#adc4c2c233df06c2f52ccd24dee3c6664)DIO21\_LRFD1
+
+| #define DIO21\_LRFD1   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a8d66bd3f2da6e8e38b7d464d2e8fbe2e)DIO21\_SPI0\_MISO
+
+| #define DIO21\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#ae217ff4c8cf56f66ad3bec48d95ea87f)DIO21\_T0\_C1
+
+| #define DIO21\_T0\_C1   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a938311835000f5598aa29b4140fe6886)DIO21\_T1\_C1N
+
+| #define DIO21\_T1\_C1N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#aeda0333fb8765d7a24d514ee25d1b4b2)DIO21\_UART0\_CTS
+
+| #define DIO21\_UART0\_CTS   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a124a45cbc60d6e3b80d2242483a4e48e)DIO22\_ADC9
+
+| #define DIO22\_ADC9   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#aee614c39986f53d769971914fe0f09bf)DIO22\_DTB1
+
+| #define DIO22\_DTB1   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a0a59e5293cbce628fb9ed582ed8640f5)DIO22\_GPIO22
+
+| #define DIO22\_GPIO22   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#ab4318e5a3f89c6d0a09e11f5cba9938a)DIO22\_T2\_C0
+
+| #define DIO22\_T2\_C0   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#af2086537e03f4e02f8edbfab24e1e0cc)DIO22\_T3\_C1N
+
+| #define DIO22\_T3\_C1N   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#af1e0eff63be94a61ba5910793796f2eb)DIO22\_UART0\_RXD
+
+| #define DIO22\_UART0\_RXD   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a3680907697a966084193c02a0a9b092b)DIO23\_ADC8\_LPCP\_LPCM
+
+| #define DIO23\_ADC8\_LPCP\_LPCM   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a7b6e8fc88c08014e5f55fb61b631f630)DIO23\_GPIO23
+
+| #define DIO23\_GPIO23   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a458eb72bee3bc88ae42b099da2a8d8b5)DIO23\_T2\_C1
+
+| #define DIO23\_T2\_C1   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a24e0baa35ebf15509fa6df01161b550c)DIO23\_T3\_C2N
+
+| #define DIO23\_T3\_C2N   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a8ac3818f8c180ff363102c1037a39bb3)DIO24\_ADC7\_LPCP\_LPCM
+
+| #define DIO24\_ADC7\_LPCP\_LPCM   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a90d085bab2b84b19d92eee13c3760f97)DIO24\_DTB5
+
+| #define DIO24\_DTB5   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#ab007c4540993b710800e31b01c59ac45)DIO24\_GPIO24
+
+| #define DIO24\_GPIO24   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a110d85e1d37be48932cbf1d89c0be29e)DIO24\_I2C0\_SCL
+
+| #define DIO24\_I2C0\_SCL   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a449c49cd104260e5c8d8af85121d3a1e)DIO24\_SPI0\_SCLK
+
+| #define DIO24\_SPI0\_SCLK   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a0fb7b862a44272d6fd564d472ea31e21)DIO24\_T0\_PE
+
+| #define DIO24\_T0\_PE   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#aee83a92878c7892d370985a85f49982f)DIO24\_T1\_C0
+
+| #define DIO24\_T1\_C0   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a9ada17b86400635fe102fc2525d792fc)DIO24\_T3\_C0
+
+| #define DIO24\_T3\_C0   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a1646bb58bfa079d72088be6dbacf1699)DIO25\_ADC6
+
+| #define DIO25\_ADC6   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#ae8f1ccd4414f0b0bf1724eb52fc5e2f4)DIO25\_GPIO25
+
+| #define DIO25\_GPIO25   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a2b4cca3f5437f8e8f7889194b566a21f)DIO25\_I2C0\_SCL
+
+| #define DIO25\_I2C0\_SCL   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#ad7f714f27470179ac1653fa13d4b6f3a)DIO25\_SPI0\_MISO
+
+| #define DIO25\_SPI0\_MISO   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a5d80e2f09069929f0fd4801a953a7684)DIO25\_T2\_C2N
+
+| #define DIO25\_T2\_C2N   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a592b7a2687e97ac64b684681a43dbc0b)DIO2\_ADC3
+
+| #define DIO2\_ADC3   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#acce8374fb4d805494ebaf78834d431d6)DIO2\_GPIO2
+
+| #define DIO2\_GPIO2   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#ae1e1837425d79845e84a9551c6ce90d3)DIO2\_T0\_PE
+
+| #define DIO2\_T0\_PE   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a943d0d0497b8d939b4bdf6eb1ed7af03)DIO2\_T2\_C1N
+
+| #define DIO2\_T2\_C1N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#aebfe126f475d93068b93eb195049f586)DIO2\_UART0\_CTS
+
+| #define DIO2\_UART0\_CTS   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a95e01bbcdcd732983e0bca7cf02fcf33)DIO3\_DTB7
+
+| #define DIO3\_DTB7   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a02eb22dc2b9867c418e972a64c4e549c)DIO3\_GPIO3
+
+| #define DIO3\_GPIO3   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a9babb38598d110fa6972313e4a5f90ac)DIO3\_LFCI
+
+| #define DIO3\_LFCI   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a6d5fd06f8df458a27ee0cb75746203df)DIO3\_LFXT\_P
+
+| #define DIO3\_LFXT\_P   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a2680e26e7c1dd92e43413727f9f4c415)DIO3\_LRFD0
+
+| #define DIO3\_LRFD0   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#ad5f0fade34b37ed25a23b27a101f9796)DIO3\_T0\_C1N
+
+| #define DIO3\_T0\_C1N   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a31ecae7e3f360d17dee9b78b2a8f18b1)DIO3\_T1\_C2
+
+| #define DIO3\_T1\_C2   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a3856eb90a0dec21a3055041edf7c975a)DIO3\_T3\_C1
+
+| #define DIO3\_T3\_C1   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#abebb35dde4a811b0237b9fb24517b41f)DIO4\_DTB8
+
+| #define DIO4\_DTB8   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#ae3239b06b452ff8757f9990f5f091a61)DIO4\_GPIO4
+
+| #define DIO4\_GPIO4   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#ae5bbef3a760612759307039d94ae8d4c)DIO4\_LFXT\_N
+
+| #define DIO4\_LFXT\_N   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#a5f4c955ea6d875eb53f8575a59b8fc1a)DIO4\_LRFD1
+
+| #define DIO4\_LRFD1   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a17ea74b30c1aed816d675fcc2ff076fc)DIO4\_SPI0\_MOSI
+
+| #define DIO4\_SPI0\_MOSI   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#ab42c816bea20237638d790ffcee2b2cf)DIO4\_T0\_C2
+
+| #define DIO4\_T0\_C2   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a040b8faba6859f0decc43d318cee6ed1)DIO4\_T0\_C2N
+
+| #define DIO4\_T0\_C2N   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a4ee4d6b4e97e0053b9dfdadd47ffd55e)DIO4\_UART0\_TXD
+
+| #define DIO4\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a09619eb634cab8068134cb40a152f17b)DIO5\_ADC2
+
+| #define DIO5\_ADC2   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#ae860734b858834f5024b4f35377c56cb)DIO5\_GPIO5
+
+| #define DIO5\_GPIO5   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#aff51e9eb6eb949038b5cccb4fa074212)DIO5\_LRFD6
+
+| #define DIO5\_LRFD6   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#abbada75153e0f5b9c352a2cfd6669037)DIO5\_T2\_C2
+
+| #define DIO5\_T2\_C2   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a39e4a39c6d312c974b37acac1b1054da)DIO6\_ADC1\_AREFP
+
+| #define DIO6\_ADC1\_AREFP   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#aac1e3c63427f92bd1d73d472ca215eb1)DIO6\_DTB6
+
+| #define DIO6\_DTB6   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#a56f5afccece122855f957668e81d1bcd)DIO6\_GPIO6
+
+| #define DIO6\_GPIO6   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a914b6a41adb66c2f65413c46ff620c5c)DIO6\_I2C0\_SCL
+
+| #define DIO6\_I2C0\_SCL   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a834af6e67831d342dbef9084a4bc422e)DIO6\_LRFD2
+
+| #define DIO6\_LRFD2   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a38d80b5fc0894b55beba01019350edca)DIO6\_SPI0\_CSN
+
+| #define DIO6\_SPI0\_CSN   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#ad17cc424f3421617c753d1387da6c6bf)DIO6\_T1\_C2
+
+| #define DIO6\_T1\_C2   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#ac55e5ce877a5e57cf565830193c076e6)DIO6\_UART0\_TXD
+
+| #define DIO6\_UART0\_TXD   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#a3c92801ae0b96fae2be1a9b018022aea)DIO7\_ADC0\_AREFM
+
+| #define DIO7\_ADC0\_AREFM   [IOC\_PORTCFG\_ANA](#a375a32390601a0a7e8daf034bf696482) |
+| --- |
+
+## [◆ ](#ae0e5f07c43371d3602b4353f6178a214)DIO7\_GPIO7
+
+| #define DIO7\_GPIO7   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a8a354e58d7f6425c9cb91137dc4aa766)DIO7\_LRFD4
+
+| #define DIO7\_LRFD4   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#ae60dd20c9960b001a992d37fbfa05956)DIO7\_T3\_C1
+
+| #define DIO7\_T3\_C1   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a82913b1243033ac74f06eeaf4aff7df4)DIO8\_DTB3
+
+| #define DIO8\_DTB3   [IOC\_PORTCFG\_DTB](#a6c1e87a84343d63b8ab60e53b14944d3) |
+| --- |
+
+## [◆ ](#afe29503f0e97bf76bea3ed2ec3fe4b64)DIO8\_GPIO8
+
+| #define DIO8\_GPIO8   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a2b845037d4c448c3847ba408ba98720d)DIO8\_I2C0\_SDA
+
+| #define DIO8\_I2C0\_SDA   [IOC\_PORTCFG\_PFUNC4](#a3f27b6bb5191b2c2def7b74afa0c0019) |
+| --- |
+
+## [◆ ](#a3d22644d12be2b507ed4a4a05097b29f)DIO8\_SPI0\_SCLK
+
+| #define DIO8\_SPI0\_SCLK   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#aff36d54d77c72974b870285fb6d8b801)DIO8\_T0\_C0N
+
+| #define DIO8\_T0\_C0N   [IOC\_PORTCFG\_PFUNC5](#af33d2e20e5de9cc53b70a3e826624837) |
+| --- |
+
+## [◆ ](#ab32d21fdbcde3256731b561d9f5f2ad1)DIO8\_T1\_C0N
+
+| #define DIO8\_T1\_C0N   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a82f64fe945445f96be0db2aa2d021e6b)DIO8\_UART0\_RTS
+
+| #define DIO8\_UART0\_RTS   [IOC\_PORTCFG\_PFUNC2](#a469848941ebbce5b2fc1b54d57f7d965) |
+| --- |
+
+## [◆ ](#a74d0f7de1cb705b147947312f67e273a)DIO9\_GPIO9
+
+| #define DIO9\_GPIO9   [IOC\_PORTCFG\_BASE](#aa502a06b1e9f31be173481ff4626bb70) |
+| --- |
+
+## [◆ ](#a069db119313663a8bd1052992e12e85a)DIO9\_LRFD3
+
+| #define DIO9\_LRFD3   [IOC\_PORTCFG\_PFUNC3](#a420b3a48d4a6010feb9866b97a7492dd) |
+| --- |
+
+## [◆ ](#a87eac578bb6d3ba94be53508d81ddae8)DIO9\_T3\_C0
+
+| #define DIO9\_T3\_C0   [IOC\_PORTCFG\_PFUNC1](#a4ac7f9fbb7a989da2815fa48a2c63bd9) |
+| --- |
+
+## [◆ ](#a375a32390601a0a7e8daf034bf696482)IOC\_PORTCFG\_ANA
+
+| #define IOC\_PORTCFG\_ANA   6U |
+| --- |
+
+## [◆ ](#aa502a06b1e9f31be173481ff4626bb70)IOC\_PORTCFG\_BASE
+
+| #define IOC\_PORTCFG\_BASE   0U |
+| --- |
+
+## [◆ ](#a6c1e87a84343d63b8ab60e53b14944d3)IOC\_PORTCFG\_DTB
+
+| #define IOC\_PORTCFG\_DTB   7U |
+| --- |
+
+## [◆ ](#a4ac7f9fbb7a989da2815fa48a2c63bd9)IOC\_PORTCFG\_PFUNC1
+
+| #define IOC\_PORTCFG\_PFUNC1   1U |
+| --- |
+
+## [◆ ](#a469848941ebbce5b2fc1b54d57f7d965)IOC\_PORTCFG\_PFUNC2
+
+| #define IOC\_PORTCFG\_PFUNC2   2U |
+| --- |
+
+## [◆ ](#a420b3a48d4a6010feb9866b97a7492dd)IOC\_PORTCFG\_PFUNC3
+
+| #define IOC\_PORTCFG\_PFUNC3   3U |
+| --- |
+
+## [◆ ](#a3f27b6bb5191b2c2def7b74afa0c0019)IOC\_PORTCFG\_PFUNC4
+
+| #define IOC\_PORTCFG\_PFUNC4   4U |
+| --- |
+
+## [◆ ](#af33d2e20e5de9cc53b70a3e826624837)IOC\_PORTCFG\_PFUNC5
+
+| #define IOC\_PORTCFG\_PFUNC5   5U |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
+- [cc23x0-pinctrl.h](cc23x0-pinctrl_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

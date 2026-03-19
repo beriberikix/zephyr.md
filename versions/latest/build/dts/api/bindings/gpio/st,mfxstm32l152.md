@@ -1,0 +1,95 @@
+---
+version: v4.1.0
+source_url: https://docs.zephyrproject.org/4.1.0/build/dts/api/bindings/gpio/st,mfxstm32l152.html
+original_path: build/dts/api/bindings/gpio/st,mfxstm32l152.html
+---
+
+# st,mfxstm32l152 (on i2c bus)
+
+Vendor: [STMicroelectronics](../../bindings.md#dt-vendor-st)
+
+Note
+
+An implementation of a driver matching this compatible is available in
+[drivers/gpio/gpio\_mfxstm32l152.c](https://github.com/zephyrproject-rtos/zephyr/blob/main/drivers/gpio/gpio_mfxstm32l152.c).
+
+## Description
+
+```text
+MFXSTM32L152 I2C-based GPIO expander
+```
+
+## Properties
+
+### Top level properties
+
+These property descriptions apply to “st,mfxstm32l152”
+nodes themselves. This page also describes child node
+properties in the following sections.
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `int-gpios` | `phandle-array` | ```text GPIO connected to the controller INT pin. This pin is active-low and open-drain. ``` |
+| `#gpio-cells` | `int` | ```text Number of items to expect in a GPIO specifier ```  This property is **required**.  Constant value: `2` |
+| `gpio-controller` | `boolean` | ```text Convey's this node is a GPIO controller ```  This property is **required**. |
+| `ngpios` | `int` | ```text This property indicates the number of in-use slots of available slots for GPIOs. The typical example is something like this: the hardware register is 32 bits wide, but only 18 of the bits have a physical counterpart. The driver is generally written so that all 32 bits can be used, but the IP block is reused in a lot of designs, some using all 32 bits, some using 18 and some using 12. In this case, setting "ngpios = <18>;" informs the driver that only the first 18 GPIOs, at local offset 0 .. 17, are in use.  For cases in which there might be holes in the slot range, this value should be the max slot number+1. ```  Default value: `32` |
+| `gpio-reserved-ranges` | `array` | ```text If not all the GPIOs at offsets 0...N-1 are usable for ngpios = <N>, then this property contains an additional set of tuples which specify which GPIOs are unusable. This property indicates the start and size of the GPIOs that can't be used.  For example, setting "gpio-reserved-ranges = <3 2>, <10 1>;" means that GPIO offsets 3, 4, and 10 are not usable, even if ngpios = <18>. ``` |
+| `gpio-line-names` | `string-array` | ```text This is an array of strings defining the names of the GPIO lines going out of the GPIO controller ``` |
+| `supply-gpios` | `phandle-array` | ```text GPIO specifier that controls power to the device.  This property should be provided when the device has a dedicated switch that controls power to the device.  The supply state is entirely the responsibility of the device driver.  Contrast with vin-supply. ``` |
+| `vin-supply` | `phandle` | ```text Reference to the regulator that controls power to the device. The referenced devicetree node must have a regulator compatible.  This property should be provided when device power is supplied by a shared regulator.  The supply state is dependent on the request status of all devices fed by the regulator.  Contrast with supply-gpios.  If both properties are provided then the regulator must be requested before the supply GPIOS is set to an active state, and the supply GPIOS must be set to an inactive state before releasing the regulator. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “st,mfxstm32l152” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `reg` | `array` | ```text device address on i2c bus ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `status` | `string` | ```text Indicates the operational status of the hardware or other resource that the node represents. In particular:    - "okay" means the resource is operational and, for example,     can be used by device drivers   - "disabled" means the resource is not operational and the system     should treat it as if it is not present  For details, see "2.3.4 status" in Devicetree Specification v0.4. ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text This property is a list of strings that essentially define what type of hardware or other resource this devicetree node represents. Each device driver checks for specific compatible property values to find the devicetree nodes that represent resources that the driver should manage.  The recommended format is "vendor,device", The "vendor" part is an abbreviated name of the vendor. The "device" is usually from the datasheet.  The compatible property can have multiple values, ordered from most- to least-specific. Having additional values is useful when the device is a specific instance of a more general family, to allow the system to match the most specific driver available.  For details, see "2.3.1 compatible" in Devicetree Specification v0.4. ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text Optional names given to each register block in the "reg" property. For example:    / {        soc {            #address-cells = <1>;            #size-cells = <1>;             uart@1000 {                reg = <0x1000 0x2000>, <0x3000 0x4000>;                reg-names = "foo", "bar";            };        };   };  The uart@1000 node has two register blocks:    - one with base address 0x1000, size 0x2000, and name "foo"   - another with base address 0x3000, size 0x4000, and name "bar" ``` |
+| `interrupts` | `array` | ```text Information about interrupts generated by the device, encoded as an array of one or more interrupt specifiers. The format of the data in this property varies by where the device appears in the interrupt tree. Devices with the same "interrupt-parent" will use the same format in their interrupts properties.  For details, see "2.4 Interrupts and Interrupt Mapping" in Devicetree Specification v0.4. ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts-extended` | `compound` | ```text Extended interrupt specifier for device, used as an alternative to the "interrupts" property.  For details, see "2.4 Interrupts and Interrupt Mapping" in Devicetree Specification v0.4. ``` |
+| `interrupt-names` | `string-array` | ```text Optional names given to each interrupt generated by a device. The interrupts themselves are defined in either "interrupts" or "interrupts-extended" properties.  For details, see "2.4 Interrupts and Interrupt Mapping" in Devicetree Specification v0.4. ``` |
+| `interrupt-parent` | `phandle` | ```text If present, this refers to the node which handles interrupts generated by this device.  For details, see "2.4 Interrupts and Interrupt Mapping" in Devicetree Specification v0.4. ``` |
+| `label` | `string` | ```text Human readable string describing the device. Use of this property is deprecated except as needed on a case-by-case basis.  For details, see "4.1.2 Miscellaneous Properties" in Devicetree Specification v0.4. ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `clocks` | `phandle-array` | ```text Information about the device's clock providers. In general, this property should follow conventions established in the dt-schema binding:    https://github.com/devicetree-org/dt-schema/blob/main/dtschema/schemas/clock/clock.yaml ``` |
+| `clock-names` | `string-array` | ```text Optional names given to each clock provider in the "clocks" property. ``` |
+| `#address-cells` | `int` | ```text This property encodes the number of <u32> cells used by address fields in "reg" properties in this node's children.  For details, see "2.3.5 #address-cells and #size-cells" in Devicetree Specification v0.4. ``` |
+| `#size-cells` | `int` | ```text This property encodes the number of <u32> cells used by size fields in "reg" properties in this node's children.  For details, see "2.3.5 #address-cells and #size-cells" in Devicetree Specification v0.4. ``` |
+| `dmas` | `phandle-array` | ```text DMA channel specifiers relevant to the device. ``` |
+| `dma-names` | `string-array` | ```text Optional names given to the DMA channel specifiers in the "dmas" property. ``` |
+| `io-channels` | `phandle-array` | ```text IO channel specifiers relevant to the device. ``` |
+| `io-channel-names` | `string-array` | ```text Optional names given to the IO channel specifiers in the "io-channels" property. ``` |
+| `mboxes` | `phandle-array` | ```text Mailbox / IPM channel specifiers relevant to the device. ``` |
+| `mbox-names` | `string-array` | ```text Optional names given to the mbox specifiers in the "mboxes" property. ``` |
+| `power-domains` | `phandle-array` | ```text Power domain specifiers relevant to the device. ``` |
+| `power-domain-names` | `string-array` | ```text Optional names given to the power domain specifiers in the "power-domains" property. ``` |
+| `#power-domain-cells` | `int` | ```text Number of cells in power-domains property ``` |
+| `zephyr,deferred-init` | `boolean` | ```text Do not initialize device automatically on boot. Device should be manually initialized using device_init(). ``` |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |
+| `zephyr,disabling-power-states` | `phandles` | ```text List of power states that will disable this device power. ``` |
+
+### Child node properties
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `gpio-hog` | `boolean` | ```text Conveys this node is a GPIO hog. ```  This property is **required**. |
+| `gpios` | `array` | ```text This is an array of GPIO specifiers (e.g. pin, flags) to be hogged. The number of array entries must be an integer multiple of the number of GPIO specifier cells for the parent GPIO controller. ```  This property is **required**. |
+| `input` | `boolean` | ```text If this property is set, the GPIO is configured as an input. This property takes precedence over the output-low and output-high properties. ``` |
+| `output-low` | `boolean` | ```text If this property is set, the GPIO is configured as an output set to logical low. This property takes precedence over the output-high property. ``` |
+| `output-high` | `boolean` | ```text If this property is set, the GPIO is configured as an output set to logical high. ``` |
+| `line-name` | `string` | ```text Optional GPIO line name. ``` |
+
+## Specifier cell names
+
+- gpio cells: pin, flags

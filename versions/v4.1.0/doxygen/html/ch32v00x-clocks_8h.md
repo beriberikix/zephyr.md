@@ -1,0 +1,196 @@
+---
+version: v4.1.0
+source_url: https://docs.zephyrproject.org/4.1.0/doxygen/html/ch32v00x-clocks_8h.html
+original_path: doxygen/html/ch32v00x-clocks_8h.html
+---
+
+| Logo | Zephyr API Documentation 4.1.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+ch32v00x-clocks.h File Reference
+
+[Go to the source code of this file.](ch32v00x-clocks_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [CH32V00X\_AHB\_PCENR\_OFFSET](#a37ea7cd7fa0923aeb36695adda1f5678)   0 |
+| #define | [CH32V00X\_APB2\_PCENR\_OFFSET](#a8a56773ffa3108a2b2a62ca3256935f5)   1 |
+| #define | [CH32V00X\_APB1\_PCENR\_OFFSET](#a3b8040233aa8b5815093a8aaa1531774)   2 |
+| #define | [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(bus, bit) |
+| #define | [CH32V00X\_CLOCK\_DMA1](#a673a85e0807d525d0d896968e72476d7)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 0) |
+| #define | [CH32V00X\_CLOCK\_SRAM](#aea9e25b32bec97ba5c4d341a31523586)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 2) |
+| #define | [CH32V00X\_CLOCK\_FLITF](#a16c38930c4cc7ea8e4fb019de116c010)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 4) |
+| #define | [CH32V00X\_CLOCK\_CRC](#a1535f7d4ef37b4ccc6260a2ea232b864)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 6) |
+| #define | [CH32V00X\_CLOCK\_USB](#adb98bd120c2d5c18928dba55aca77fec)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 12) |
+| #define | [CH32V00X\_CLOCK\_AFIO](#adba8b05c326b5c50a5f46a4235347cd2)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 0) |
+| #define | [CH32V00X\_CLOCK\_IOPA](#a6937d869f977cb90e519b2b92f98c120)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 2) |
+| #define | [CH32V00X\_CLOCK\_IOPB](#a58487531bac2d11010fa719cc9b8bc5b)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 3) |
+| #define | [CH32V00X\_CLOCK\_IOPC](#af66030ec198edaa564110cc3b0a6b889)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 4) |
+| #define | [CH32V00X\_CLOCK\_IOPD](#aa2c9b9bc83471c7c0701685025ad45b9)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 5) |
+| #define | [CH32V00X\_CLOCK\_ADC1](#a4ddfcf15d13a740f3917034aa6aee075)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 9) |
+| #define | [CH32V00X\_CLOCK\_ADC2](#aa7ed2f0086ec529c9c5db9496f5780c9)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 10) |
+| #define | [CH32V00X\_CLOCK\_TIM1](#a35b5af6bc5e72b9360c923916cd2e0f1)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 11) |
+| #define | [CH32V00X\_CLOCK\_SPI1](#a9ee9b0e633a4a50809c2d2d1d437dd2b)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 12) |
+| #define | [CH32V00X\_CLOCK\_USART1](#af46cda54f5d666db759746a11909b148)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 14) |
+| #define | [CH32V00X\_CLOCK\_TIM2](#a22cff65ee5b38ca47089ffa0916c8fda)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 0) |
+| #define | [CH32V00X\_CLOCK\_TIM3](#a69c30a9fb4e812dff7c5d2b9834a012b)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 1) |
+| #define | [CH32V00X\_CLOCK\_WWDG](#aa1b25307b070e0131c8d2883cc6daac2)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 11) |
+| #define | [CH32V00X\_CLOCK\_USART2](#a7d61b5360a6d66ee4ca2210f3e1d32f2)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 17) |
+| #define | [CH32V00X\_CLOCK\_I2C1](#a44898d60cab2a44b6f11f44dcc910faf)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 21) |
+| #define | [CH32V00X\_CLOCK\_BKP](#ab69bce9ae7154460f15a2f9a15043335)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 27) |
+| #define | [CH32V00X\_CLOCK\_PWR](#ae70e92186311daf444e9b2a9c4891dcf)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 28) |
+| #define | [CH32V00X\_CLOCK\_USB](#a1bb0507a72ba2b87b13d6c552b06c964)   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 23) |
+
+## Macro Definition Documentation
+
+## [◆ ](#a37ea7cd7fa0923aeb36695adda1f5678)CH32V00X\_AHB\_PCENR\_OFFSET
+
+| #define CH32V00X\_AHB\_PCENR\_OFFSET   0 |
+| --- |
+
+## [◆ ](#a3b8040233aa8b5815093a8aaa1531774)CH32V00X\_APB1\_PCENR\_OFFSET
+
+| #define CH32V00X\_APB1\_PCENR\_OFFSET   2 |
+| --- |
+
+## [◆ ](#a8a56773ffa3108a2b2a62ca3256935f5)CH32V00X\_APB2\_PCENR\_OFFSET
+
+| #define CH32V00X\_APB2\_PCENR\_OFFSET   1 |
+| --- |
+
+## [◆ ](#a4ddfcf15d13a740f3917034aa6aee075)CH32V00X\_CLOCK\_ADC1
+
+| #define CH32V00X\_CLOCK\_ADC1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 9) |
+| --- |
+
+## [◆ ](#aa7ed2f0086ec529c9c5db9496f5780c9)CH32V00X\_CLOCK\_ADC2
+
+| #define CH32V00X\_CLOCK\_ADC2   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 10) |
+| --- |
+
+## [◆ ](#adba8b05c326b5c50a5f46a4235347cd2)CH32V00X\_CLOCK\_AFIO
+
+| #define CH32V00X\_CLOCK\_AFIO   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 0) |
+| --- |
+
+## [◆ ](#ab69bce9ae7154460f15a2f9a15043335)CH32V00X\_CLOCK\_BKP
+
+| #define CH32V00X\_CLOCK\_BKP   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 27) |
+| --- |
+
+## [◆ ](#ab39a50912925831fd0f53da79caa1f3e)CH32V00X\_CLOCK\_CONFIG
+
+| #define CH32V00X\_CLOCK\_CONFIG | ( |  | *bus*, |
+| --- | --- | --- | --- |
+|  |  |  | *bit* ) |
+
+**Value:**
+
+(((CH32V00X\_##bus##\_PCENR\_OFFSET) << 5) | (bit))
+
+## [◆ ](#a1535f7d4ef37b4ccc6260a2ea232b864)CH32V00X\_CLOCK\_CRC
+
+| #define CH32V00X\_CLOCK\_CRC   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 6) |
+| --- |
+
+## [◆ ](#a673a85e0807d525d0d896968e72476d7)CH32V00X\_CLOCK\_DMA1
+
+| #define CH32V00X\_CLOCK\_DMA1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 0) |
+| --- |
+
+## [◆ ](#a16c38930c4cc7ea8e4fb019de116c010)CH32V00X\_CLOCK\_FLITF
+
+| #define CH32V00X\_CLOCK\_FLITF   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 4) |
+| --- |
+
+## [◆ ](#a44898d60cab2a44b6f11f44dcc910faf)CH32V00X\_CLOCK\_I2C1
+
+| #define CH32V00X\_CLOCK\_I2C1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 21) |
+| --- |
+
+## [◆ ](#a6937d869f977cb90e519b2b92f98c120)CH32V00X\_CLOCK\_IOPA
+
+| #define CH32V00X\_CLOCK\_IOPA   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 2) |
+| --- |
+
+## [◆ ](#a58487531bac2d11010fa719cc9b8bc5b)CH32V00X\_CLOCK\_IOPB
+
+| #define CH32V00X\_CLOCK\_IOPB   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 3) |
+| --- |
+
+## [◆ ](#af66030ec198edaa564110cc3b0a6b889)CH32V00X\_CLOCK\_IOPC
+
+| #define CH32V00X\_CLOCK\_IOPC   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 4) |
+| --- |
+
+## [◆ ](#aa2c9b9bc83471c7c0701685025ad45b9)CH32V00X\_CLOCK\_IOPD
+
+| #define CH32V00X\_CLOCK\_IOPD   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 5) |
+| --- |
+
+## [◆ ](#ae70e92186311daf444e9b2a9c4891dcf)CH32V00X\_CLOCK\_PWR
+
+| #define CH32V00X\_CLOCK\_PWR   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 28) |
+| --- |
+
+## [◆ ](#a9ee9b0e633a4a50809c2d2d1d437dd2b)CH32V00X\_CLOCK\_SPI1
+
+| #define CH32V00X\_CLOCK\_SPI1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 12) |
+| --- |
+
+## [◆ ](#aea9e25b32bec97ba5c4d341a31523586)CH32V00X\_CLOCK\_SRAM
+
+| #define CH32V00X\_CLOCK\_SRAM   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 2) |
+| --- |
+
+## [◆ ](#a35b5af6bc5e72b9360c923916cd2e0f1)CH32V00X\_CLOCK\_TIM1
+
+| #define CH32V00X\_CLOCK\_TIM1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 11) |
+| --- |
+
+## [◆ ](#a22cff65ee5b38ca47089ffa0916c8fda)CH32V00X\_CLOCK\_TIM2
+
+| #define CH32V00X\_CLOCK\_TIM2   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 0) |
+| --- |
+
+## [◆ ](#a69c30a9fb4e812dff7c5d2b9834a012b)CH32V00X\_CLOCK\_TIM3
+
+| #define CH32V00X\_CLOCK\_TIM3   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 1) |
+| --- |
+
+## [◆ ](#af46cda54f5d666db759746a11909b148)CH32V00X\_CLOCK\_USART1
+
+| #define CH32V00X\_CLOCK\_USART1   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB2, 14) |
+| --- |
+
+## [◆ ](#a7d61b5360a6d66ee4ca2210f3e1d32f2)CH32V00X\_CLOCK\_USART2
+
+| #define CH32V00X\_CLOCK\_USART2   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 17) |
+| --- |
+
+## [◆ ](#a1bb0507a72ba2b87b13d6c552b06c964)CH32V00X\_CLOCK\_USB [1/2]
+
+| #define CH32V00X\_CLOCK\_USB   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 23) |
+| --- |
+
+## [◆ ](#adb98bd120c2d5c18928dba55aca77fec)CH32V00X\_CLOCK\_USB [2/2]
+
+| #define CH32V00X\_CLOCK\_USB   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(AHB, 12) |
+| --- |
+
+## [◆ ](#aa1b25307b070e0131c8d2883cc6daac2)CH32V00X\_CLOCK\_WWDG
+
+| #define CH32V00X\_CLOCK\_WWDG   [CH32V00X\_CLOCK\_CONFIG](#ab39a50912925831fd0f53da79caa1f3e)(APB1, 11) |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [clock](dir_6e9992ac75fd0b7a50e889108957c907.md)
+- [ch32v00x-clocks.h](ch32v00x-clocks_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

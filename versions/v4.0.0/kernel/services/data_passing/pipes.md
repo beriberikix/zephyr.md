@@ -1,0 +1,230 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/kernel/services/data_passing/pipes.html
+original_path: kernel/services/data_passing/pipes.html
+---
+
+# Pipes
+
+A *pipe* is a kernel object that allows a thread to send a byte stream
+to another thread. Pipes can be used to synchronously transfer chunks of data
+in whole or in part.
+
+## [Concepts](#id1)
+
+The pipe can be configured with a ring buffer which holds data that has been
+sent but not yet received; alternatively, the pipe may have no ring buffer.
+
+Any number of pipes can be defined (limited only by available RAM). Each pipe is
+referenced by its memory address.
+
+A pipe has the following key property:
+
+- A **size** that indicates the size of the pipe’s ring buffer. Note that a
+  size of zero defines a pipe with no ring buffer.
+
+A pipe must be initialized before it can be used. The pipe is initially empty.
+
+Data is synchronously **sent** either in whole or in part to a pipe by a
+thread. If the specified minimum number of bytes can not be immediately
+satisfied, then the operation will either fail immediately or attempt to send
+as many bytes as possible and then pend in the hope that the send can be
+completed later. Accepted data is either copied to the pipe’s ring buffer
+or directly to the waiting reader(s).
+
+Data is synchronously **received** from a pipe by a thread. If the specified
+minimum number of bytes can not be immediately satisfied, then the operation
+will either fail immediately or attempt to receive as many bytes as possible
+and then pend in the hope that the receive can be completed later. Accepted
+data is either copied from the pipe’s ring buffer or directly from the
+waiting sender(s).
+
+Data may also be **flushed** from a pipe by a thread. Flushing can be performed
+either on the entire pipe or on only its ring buffer. Flushing the entire pipe
+is equivalent to reading all the information in the ring buffer **and** waiting
+to be written into a giant temporary buffer which is then discarded. Flushing
+the ring buffer is equivalent to reading **only** the data in the ring buffer
+into a temporary buffer which is then discarded. Flushing the ring buffer does
+not guarantee that the ring buffer will stay empty; flushing it may allow a
+pended writer to fill the ring buffer.
+
+Note
+
+Flushing does not in practice allocate or use additional buffers.
+
+Note
+
+The kernel does allow for an ISR to flush a pipe from an ISR. It also
+allows it to send/receive data to/from one provided it does not attempt
+to wait for space/data.
+
+## [Implementation](#id2)
+
+A pipe is defined using a variable of type [`k_pipe`](../../../doxygen/html/structk__pipe.md) and an
+optional character buffer of type `unsigned char`. It must then be
+initialized by calling [`k_pipe_init()`](../../../doxygen/html/group__pipe__apis.md#gae9e807fb63bb7186b87015664f2c762d).
+
+The following code defines and initializes an empty pipe that has a ring
+buffer capable of holding 100 bytes and is aligned to a 4-byte boundary.
+
+```c
+unsigned char __aligned(4) my_ring_buffer[100];
+struct k_pipe my_pipe;
+
+k_pipe_init(&my_pipe, my_ring_buffer, sizeof(my_ring_buffer));
+```
+
+Alternatively, a pipe can be defined and initialized at compile time by
+calling [`K_PIPE_DEFINE`](../../../doxygen/html/group__pipe__apis.md#gac2256aa00c59e78199be9bdefd61aa52).
+
+The following code has the same effect as the code segment above. Observe
+that macro defines both the pipe and its ring buffer.
+
+```c
+K_PIPE_DEFINE(my_pipe, 100, 4);
+```
+
+### [Writing to a Pipe](#id3)
+
+Data is added to a pipe by calling [`k_pipe_put()`](../../../doxygen/html/group__pipe__apis.md#gaff77638ad7217974a10c23a0a7e336ae).
+
+The following code builds on the example above, and uses the pipe to pass
+data from a producing thread to one or more consuming threads. If the pipe’s
+ring buffer fills up because the consumers can’t keep up, the producing thread
+waits for a specified amount of time.
+
+```c
+struct message_header {
+    ...
+};
+
+void producer_thread(void)
+{
+    unsigned char *data;
+    size_t total_size;
+    size_t bytes_written;
+    int    rc;
+    ...
+
+    while (1) {
+        /* Craft message to send in the pipe */
+        data = ...;
+        total_size = ...;
+
+        /* send data to the consumers */
+        rc = k_pipe_put(&my_pipe, data, total_size, &bytes_written,
+                        sizeof(struct message_header), K_NO_WAIT);
+
+        if (rc < 0) {
+            /* Incomplete message header sent */
+            ...
+        } else if (bytes_written < total_size) {
+            /* Some of the data was sent */
+            ...
+        } else {
+            /* All data sent */
+            ...
+        }
+    }
+}
+```
+
+### [Reading from a Pipe](#id4)
+
+Data is read from the pipe by calling [`k_pipe_get()`](../../../doxygen/html/group__pipe__apis.md#gada9aaf9a336d98a95441212f4223e9ef).
+
+The following code builds on the example above, and uses the pipe to
+process data items generated by one or more producing threads.
+
+```c
+void consumer_thread(void)
+{
+    unsigned char buffer[120];
+    size_t   bytes_read;
+    struct message_header  *header = (struct message_header *)buffer;
+
+    while (1) {
+        rc = k_pipe_get(&my_pipe, buffer, sizeof(buffer), &bytes_read,
+                        sizeof(*header), K_MSEC(100));
+
+        if ((rc < 0) || (bytes_read < sizeof (*header))) {
+            /* Incomplete message header received */
+            ...
+        } else if (header->num_data_bytes + sizeof(*header) > bytes_read) {
+            /* Only some data was received */
+            ...
+        } else {
+            /* All data was received */
+            ...
+        }
+    }
+}
+```
+
+Use a pipe to send streams of data between threads.
+
+Note
+
+A pipe can be used to transfer long streams of data if desired. However
+it is often preferable to send pointers to large data items to avoid
+copying the data.
+
+### [Flushing a Pipe’s Buffer](#id5)
+
+Data is flushed from the pipe’s ring buffer by calling
+[`k_pipe_buffer_flush()`](../../../doxygen/html/group__pipe__apis.md#ga71e0e38a15fa27f27c1f028223936445).
+
+The following code builds on the examples above, and flushes the pipe’s
+buffer.
+
+```c
+void monitor_thread(void)
+{
+    while (1) {
+        ...
+        /* Pipe buffer contains stale data. Flush it. */
+        k_pipe_buffer_flush(&my_pipe);
+        ...
+    }
+}
+```
+
+### [Flushing a Pipe](#id6)
+
+All data in the pipe is flushed by calling [`k_pipe_flush()`](../../../doxygen/html/group__pipe__apis.md#ga41484bb5c7dcd97e7a7b7f1422f8026f).
+
+The following code builds on the examples above, and flushes all the
+data in the pipe.
+
+```c
+void monitor_thread(void)
+{
+    while (1) {
+        ...
+        /* Critical error detected. Flush the entire pipe to reset it. */
+        k_pipe_flush(&my_pipe);
+        ...
+    }
+}
+```
+
+## [Suggested uses](#id7)
+
+Use a pipe to send streams of data between threads.
+
+Note
+
+A pipe can be used to transfer long streams of data if desired. However it
+is often preferable to send pointers to large data items to avoid copying
+the data. Copying large data items will negatively impact interrupt latency
+as a spinlock is held while copying that data.
+
+## [Configuration Options](#id8)
+
+Related configuration options:
+
+- [`CONFIG_PIPES`](../../../kconfig.md#CONFIG_PIPES "CONFIG_PIPES")
+
+## [API Reference](#id9)
+
+[Pipe APIs](../../../doxygen/html/group__pipe__apis.md)

@@ -1,0 +1,7484 @@
+---
+version: v4.1.0
+source_url: https://docs.zephyrproject.org/4.1.0/doxygen/html/xg21-pinctrl_8h.html
+original_path: doxygen/html/xg21-pinctrl_8h.html
+---
+
+| Logo | Zephyr API Documentation 4.1.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+xg21-pinctrl.h File Reference
+
+`#include <[dt-bindings/pinctrl/silabs-pinctrl-dbus.h](silabs-pinctrl-dbus_8h_source.md)>`
+
+[Go to the source code of this file.](xg21-pinctrl_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(port, pin) |
+| #define | [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(port, pin) |
+| #define | [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(port, pin) |
+| #define | [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(port, pin) |
+| #define | [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(port, pin) |
+| #define | [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(port, pin) |
+| #define | [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(port, pin) |
+| #define | [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(port, pin) |
+| #define | [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(port, pin) |
+| #define | [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(port, pin) |
+| #define | [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(port, pin) |
+| #define | [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(port, pin) |
+| #define | [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(port, pin) |
+| #define | [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(port, pin) |
+| #define | [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(port, pin) |
+| #define | [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(port, pin) |
+| #define | [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(port, pin) |
+| #define | [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(port, pin) |
+| #define | [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(port, pin) |
+| #define | [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(port, pin) |
+| #define | [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(port, pin) |
+| #define | [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(port, pin) |
+| #define | [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(port, pin) |
+| #define | [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(port, pin) |
+| #define | [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(port, pin) |
+| #define | [ACMP0\_ACMPOUT\_PA0](#aedfa1c8d8e52b69e24b4c5ae55906dc6)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x0) |
+| #define | [ACMP0\_ACMPOUT\_PA1](#afc43fb1cb74d95db1aceffc3b55fe017)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x1) |
+| #define | [ACMP0\_ACMPOUT\_PA2](#ad609c06187830519865e977ad663e8a9)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x2) |
+| #define | [ACMP0\_ACMPOUT\_PA3](#ab46e5bad6ae8864f903d86d60c3b08b2)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x3) |
+| #define | [ACMP0\_ACMPOUT\_PA4](#acb82f83c6665cac86a44ffb88689e1f8)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x4) |
+| #define | [ACMP0\_ACMPOUT\_PA5](#ae3d76d092e7875eac30dbc243b3ded51)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x5) |
+| #define | [ACMP0\_ACMPOUT\_PA6](#a83b7f7e01fea7985ff1b739474e57015)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x6) |
+| #define | [ACMP0\_ACMPOUT\_PB0](#a36b9f71114e84ffb46fc8d52b7a87046)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x1, 0x0) |
+| #define | [ACMP0\_ACMPOUT\_PB1](#ad7205c69934692bea6a1c31e9b374eef)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x1, 0x1) |
+| #define | [ACMP0\_ACMPOUT\_PC0](#a5b32e3f7e8bfdc37a87a1e5400897df8)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x0) |
+| #define | [ACMP0\_ACMPOUT\_PC1](#a8c6a859a56f83fe76898e7e5d251d0b3)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x1) |
+| #define | [ACMP0\_ACMPOUT\_PC2](#abc756f46419f529864d1f5373df967fa)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x2) |
+| #define | [ACMP0\_ACMPOUT\_PC3](#acf2975d5be55d86f12c69c12dd257c02)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x3) |
+| #define | [ACMP0\_ACMPOUT\_PC4](#a3e87af3956c8d9b54f210c3c9ce25fe2)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x4) |
+| #define | [ACMP0\_ACMPOUT\_PC5](#a02cb0bfeb435f2d76adf0624c9acc380)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x5) |
+| #define | [ACMP0\_ACMPOUT\_PD0](#a196c859ab39c4e7fea903085f0091f38)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x0) |
+| #define | [ACMP0\_ACMPOUT\_PD1](#aabae5292f25eac5b7f235c1613a4abfe)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x1) |
+| #define | [ACMP0\_ACMPOUT\_PD2](#af0c00ac6edb9696207c0688dd902889c)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x2) |
+| #define | [ACMP0\_ACMPOUT\_PD3](#a22cc57aac83e922695ce9765daca5a22)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x3) |
+| #define | [ACMP0\_ACMPOUT\_PD4](#a046027b3929f25e781e6f294783bc1a0)   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x4) |
+| #define | [ACMP1\_ACMPOUT\_PA0](#a04aca20b5e493a872ba32bbd78b47a5a)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x0) |
+| #define | [ACMP1\_ACMPOUT\_PA1](#aaa76825f32591d5e0921624dc9c7a547)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x1) |
+| #define | [ACMP1\_ACMPOUT\_PA2](#a7e6b677b9f6fdf424146fe7bd16b8ab6)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x2) |
+| #define | [ACMP1\_ACMPOUT\_PA3](#a519bb19bf1c5adb7a4c236260e19cb93)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x3) |
+| #define | [ACMP1\_ACMPOUT\_PA4](#ae5cd234e221d2b8308334d877bc27e05)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x4) |
+| #define | [ACMP1\_ACMPOUT\_PA5](#ae03013868fb1238d33b1c584509d891e)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x5) |
+| #define | [ACMP1\_ACMPOUT\_PA6](#a541b4fdb8b53c3d920a588376126a7f2)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x6) |
+| #define | [ACMP1\_ACMPOUT\_PB0](#a84f6c6945835113f9918687cb295093b)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x1, 0x0) |
+| #define | [ACMP1\_ACMPOUT\_PB1](#ac7ddbcf4f3906bc2e71b21b0ebada790)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x1, 0x1) |
+| #define | [ACMP1\_ACMPOUT\_PC0](#aa98b56734d6c562982b62d2fae788a64)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x0) |
+| #define | [ACMP1\_ACMPOUT\_PC1](#a623a2fbee184e239f5c4c1899b80b146)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x1) |
+| #define | [ACMP1\_ACMPOUT\_PC2](#a9c1ad020fb2a75438324fca26e791d19)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x2) |
+| #define | [ACMP1\_ACMPOUT\_PC3](#acbfcff70ab4cc6aec772a8f5f6a5c559)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x3) |
+| #define | [ACMP1\_ACMPOUT\_PC4](#aeeef7ef4dfcb0a12adacd9718f04f43b)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x4) |
+| #define | [ACMP1\_ACMPOUT\_PC5](#a4b15ffe9e4ecd23d7242b062e5cbc082)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x5) |
+| #define | [ACMP1\_ACMPOUT\_PD0](#a0ca6370f146e12eece2dc87e0e322f62)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x0) |
+| #define | [ACMP1\_ACMPOUT\_PD1](#ae49cd1f217b75138cca0f43b8770b1bc)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x1) |
+| #define | [ACMP1\_ACMPOUT\_PD2](#ad9a1898895b78944b14493df85e3ee21)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x2) |
+| #define | [ACMP1\_ACMPOUT\_PD3](#a02fa7898cc55e75ac1bd8634cf4bd859)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x3) |
+| #define | [ACMP1\_ACMPOUT\_PD4](#ab46a58b4ccb7b62fabb73110eb2b8e46)   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x4) |
+| #define | [CMU\_CLKOUT0\_PC0](#a750738e1a4c7ed8bfb4d2f9151267da6)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x0) |
+| #define | [CMU\_CLKOUT0\_PC1](#a31916418c44431216dea609cb5aef35a)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x1) |
+| #define | [CMU\_CLKOUT0\_PC2](#a90c69d0d98a225b058598397e960c41d)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x2) |
+| #define | [CMU\_CLKOUT0\_PC3](#a502a3e471c068d2ae94fc2255b3680dd)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x3) |
+| #define | [CMU\_CLKOUT0\_PC4](#a0af75594d7d55c0bf77021f81b058ef6)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x4) |
+| #define | [CMU\_CLKOUT0\_PC5](#a3bfddaaeba9558824977b108319c26b1)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x5) |
+| #define | [CMU\_CLKOUT0\_PD0](#a1afed05e5d9d89ad251e77f94f1e745d)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x0) |
+| #define | [CMU\_CLKOUT0\_PD1](#a4cc3f9b8c22e11a9ffd40149c990d09d)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x1) |
+| #define | [CMU\_CLKOUT0\_PD2](#a823b6e29d70a1313ed81cae432648f73)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x2) |
+| #define | [CMU\_CLKOUT0\_PD3](#a4223cab1734f1dadac546c956ae17f66)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x3) |
+| #define | [CMU\_CLKOUT0\_PD4](#a45bd684b5ac8c0899bfce5901e372aa3)   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x4) |
+| #define | [CMU\_CLKOUT1\_PC0](#a7b57f126203047b4cb82d0eff5c1ba8f)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x0) |
+| #define | [CMU\_CLKOUT1\_PC1](#a7742937a9e0afe5ae4859f9fe6373ca3)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x1) |
+| #define | [CMU\_CLKOUT1\_PC2](#ae634d0e26da5dd095bf98854cd95e6c9)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x2) |
+| #define | [CMU\_CLKOUT1\_PC3](#afecc3d613acceb752470037c6c253759)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x3) |
+| #define | [CMU\_CLKOUT1\_PC4](#a2d21eabc4603c5cfd93cd0eed5708565)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x4) |
+| #define | [CMU\_CLKOUT1\_PC5](#a8287c02ea2823803c7f3415597aeb0f8)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x5) |
+| #define | [CMU\_CLKOUT1\_PD0](#a9041e78bd2f530d25db4d36d783e04ff)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x0) |
+| #define | [CMU\_CLKOUT1\_PD1](#a65ab333bdb97055f6e69f17a46cc76ca)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x1) |
+| #define | [CMU\_CLKOUT1\_PD2](#ad6f97e49e9ed6808c2631547fae12fd0)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x2) |
+| #define | [CMU\_CLKOUT1\_PD3](#afc01df4895e8d3e104bbff29227824a8)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x3) |
+| #define | [CMU\_CLKOUT1\_PD4](#afd198f9e83c2b18208b42bb5f196ddb5)   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x4) |
+| #define | [CMU\_CLKOUT2\_PA0](#a515401133e23f38d0c7babc3b8cffb18)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x0) |
+| #define | [CMU\_CLKOUT2\_PA1](#ae765fe590bab12a1671c57b20b69e354)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x1) |
+| #define | [CMU\_CLKOUT2\_PA2](#a4183040a304b3d85d3b382d28176da03)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x2) |
+| #define | [CMU\_CLKOUT2\_PA3](#a65e82802fc3e2e3eb089eaa3bb4b1207)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x3) |
+| #define | [CMU\_CLKOUT2\_PA4](#a9345663284354ee2c4b5ebd6a4124234)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x4) |
+| #define | [CMU\_CLKOUT2\_PA5](#ac1767819afb4418dfb8de4ec2114144f)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x5) |
+| #define | [CMU\_CLKOUT2\_PA6](#a078e7abf21f63f21617ea47fd565fcc0)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x6) |
+| #define | [CMU\_CLKOUT2\_PB0](#a7f82072ef8014d5497df30c927b0d6f9)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x1, 0x0) |
+| #define | [CMU\_CLKOUT2\_PB1](#af815e3c4392ba1686e4f77dc0b6911f1)   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x1, 0x1) |
+| #define | [CMU\_CLKIN0\_PC0](#a4aaa42a036d18c3f1acb7def83fb9f05)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x0) |
+| #define | [CMU\_CLKIN0\_PC1](#ad099af25ca0f801ff85e3071a1cda472)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x1) |
+| #define | [CMU\_CLKIN0\_PC2](#add3b048d2455419255aedcef16aed776)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x2) |
+| #define | [CMU\_CLKIN0\_PC3](#a59c6d813c66884cb9db67d4e6c1cd8d4)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x3) |
+| #define | [CMU\_CLKIN0\_PC4](#a4528f4ea777e78b8f27bd604bfeaf59e)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x4) |
+| #define | [CMU\_CLKIN0\_PC5](#a5f79eddd69ce5550c1fd8ee07ce0ad9c)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x5) |
+| #define | [CMU\_CLKIN0\_PD0](#a8d96e9e617c1f18f2bd0a2ac65e98ae1)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x0) |
+| #define | [CMU\_CLKIN0\_PD1](#aa780fb9850bc6efcb36d8dd19770ec27)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x1) |
+| #define | [CMU\_CLKIN0\_PD2](#ad27e93b39cdcd25b3d3ba89f01a05019)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x2) |
+| #define | [CMU\_CLKIN0\_PD3](#aec9648fbe6bece6f7cec5b3942eda3a0)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x3) |
+| #define | [CMU\_CLKIN0\_PD4](#a9791109179057e8535cccfb2292ea5cd)   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x4) |
+| #define | [PTI\_DCLK\_PC0](#a5bdf4f259033a31adaa4e25fe84604ed)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x0) |
+| #define | [PTI\_DCLK\_PC1](#aa4e24633e84b6487f85a598419ea7e7d)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x1) |
+| #define | [PTI\_DCLK\_PC2](#a53fa8c98bed45c485839c1d86d343733)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x2) |
+| #define | [PTI\_DCLK\_PC3](#a930a4ba462ce768196265ec5a53557ba)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x3) |
+| #define | [PTI\_DCLK\_PC4](#ae90e5e4841b04412ca3768216d0efaf1)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x4) |
+| #define | [PTI\_DCLK\_PC5](#a27b9c07fbbc05a0bd69dd74cc17db0d0)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x5) |
+| #define | [PTI\_DCLK\_PD0](#a354b3eb4fe4c5e11e1c944761bf00095)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x0) |
+| #define | [PTI\_DCLK\_PD1](#a14260512bf2682c2fb84fa96f00de9ba)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x1) |
+| #define | [PTI\_DCLK\_PD2](#af96542673625d7a20712ad4c31953d4b)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x2) |
+| #define | [PTI\_DCLK\_PD3](#ab234da9210beb7b1f94b75aa9ecf52ca)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x3) |
+| #define | [PTI\_DCLK\_PD4](#ab16f467d07715a204580f48ed0affd78)   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x4) |
+| #define | [PTI\_DFRAME\_PC0](#aaa3fdc625a5f096099d23c1760980055)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x0) |
+| #define | [PTI\_DFRAME\_PC1](#a23de813c7f0e88b8397ebcc34eb21552)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x1) |
+| #define | [PTI\_DFRAME\_PC2](#a667adbc7570cf85833284a141de5fa2d)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x2) |
+| #define | [PTI\_DFRAME\_PC3](#afea8ff0ad63b50a277e69f305b64e7cd)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x3) |
+| #define | [PTI\_DFRAME\_PC4](#a97019cfae35bfc913e7ed2456a816ab5)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x4) |
+| #define | [PTI\_DFRAME\_PC5](#a15d67770385d695409d975ba26d5d0e4)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x5) |
+| #define | [PTI\_DFRAME\_PD0](#ac6a830947b330b10ae2c9e3cdc1887b4)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x0) |
+| #define | [PTI\_DFRAME\_PD1](#a1f08a23bacafb3dae71d143c2c5ab863)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x1) |
+| #define | [PTI\_DFRAME\_PD2](#acafc4bcb7af54f59dbacb7d9ce8712ce)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x2) |
+| #define | [PTI\_DFRAME\_PD3](#aee415d6eae1beab453af125a316f549c)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x3) |
+| #define | [PTI\_DFRAME\_PD4](#a63eda1bcb309b3dfea7a3130fd2d8460)   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x4) |
+| #define | [PTI\_DOUT\_PC0](#a9413ff462e44dcf3b76204629c524a73)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x0) |
+| #define | [PTI\_DOUT\_PC1](#a49ef267b8afcafa1da426058b4f94d9f)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x1) |
+| #define | [PTI\_DOUT\_PC2](#a8563048b51841f44cbd35c573131bf18)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x2) |
+| #define | [PTI\_DOUT\_PC3](#aa4304d8154383f012e4a3b53a070b120)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x3) |
+| #define | [PTI\_DOUT\_PC4](#a715e7ceca236771ae00bb36143a586d2)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x4) |
+| #define | [PTI\_DOUT\_PC5](#aa2bb4223540e03b6ef7c21b05b76b380)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x5) |
+| #define | [PTI\_DOUT\_PD0](#a569a588da9acdad8c7b18c6d7ee83681)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x0) |
+| #define | [PTI\_DOUT\_PD1](#aac9876e72b5e68eb3d7138c72e7ac25b)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x1) |
+| #define | [PTI\_DOUT\_PD2](#a447f3b579538e9a44615dfe77e8ace24)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x2) |
+| #define | [PTI\_DOUT\_PD3](#ad80593f470c79948e0b9845cad0b739b)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x3) |
+| #define | [PTI\_DOUT\_PD4](#a33b1e16afcb1e3b391e60dbe29b3bd1c)   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x4) |
+| #define | [I2C0\_SCL\_PA0](#a23ced15df4b090058198bd06541b5885)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x0) |
+| #define | [I2C0\_SCL\_PA1](#a695c8fa25220070f883a7866019132a5)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x1) |
+| #define | [I2C0\_SCL\_PA2](#a59521028aaeca25d19dce77adf76f9b7)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x2) |
+| #define | [I2C0\_SCL\_PA3](#a68f1a22cb1cf1445f9d94d230b7d81e6)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x3) |
+| #define | [I2C0\_SCL\_PA4](#aefbf0c45fe8a1215f17a6d31c5948889)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x4) |
+| #define | [I2C0\_SCL\_PA5](#ae334a06857e99d806213ccb6b6e582d3)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x5) |
+| #define | [I2C0\_SCL\_PA6](#a912dd4938a0b0cda381360467d635fc8)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x6) |
+| #define | [I2C0\_SCL\_PB0](#a66acedca2ec779cfe23f1d9c6e2fc129)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x1, 0x0) |
+| #define | [I2C0\_SCL\_PB1](#a5af9487dc5b440644597f549fb4775e2)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x1, 0x1) |
+| #define | [I2C0\_SCL\_PC0](#afda900994567b6303959e4f666fceaf1)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x0) |
+| #define | [I2C0\_SCL\_PC1](#aecced4d0cc1f98a1f8e87d09cceff92a)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x1) |
+| #define | [I2C0\_SCL\_PC2](#ab376247e3dbd84ccfd2b94af9c07505a)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x2) |
+| #define | [I2C0\_SCL\_PC3](#a9a9354d74c5e9c6ebad7e646f6b8ee63)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x3) |
+| #define | [I2C0\_SCL\_PC4](#aafe4a6c9133c8213940f026568866b9d)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x4) |
+| #define | [I2C0\_SCL\_PC5](#a93ad2564f0ad899a336521853e3c5f35)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x5) |
+| #define | [I2C0\_SCL\_PD0](#ab5e0b9a784779a5e92ab1fa79c9aa6cc)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x0) |
+| #define | [I2C0\_SCL\_PD1](#a3d7b2816e4c4f01aba45a339bc77feea)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x1) |
+| #define | [I2C0\_SCL\_PD2](#a487c9ff099c2dabf34d65f0377e5e195)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x2) |
+| #define | [I2C0\_SCL\_PD3](#a2c36512ca362cf14654d72a59e4de079)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x3) |
+| #define | [I2C0\_SCL\_PD4](#ae728f208472d11bf16da3eb76a64d152)   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x4) |
+| #define | [I2C0\_SDA\_PA0](#aaf8bcb4a387404aa356da60c0e9cc869)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x0) |
+| #define | [I2C0\_SDA\_PA1](#a6f74ca01f25bdded002e45e679240275)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x1) |
+| #define | [I2C0\_SDA\_PA2](#acdc71a141f1ba40bb5c3ec9f06bd35e6)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x2) |
+| #define | [I2C0\_SDA\_PA3](#a401989601987cfb72944453f11918e2a)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x3) |
+| #define | [I2C0\_SDA\_PA4](#a66dad3b35dd2a650a186933abb43f6c3)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x4) |
+| #define | [I2C0\_SDA\_PA5](#a1fdfea195e2831a05d2ad42a091aa53b)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x5) |
+| #define | [I2C0\_SDA\_PA6](#a0c5573f60342f026d0553797a636a488)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x6) |
+| #define | [I2C0\_SDA\_PB0](#a9e333616419f1afb29657e239ebf9b12)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x1, 0x0) |
+| #define | [I2C0\_SDA\_PB1](#a25bba68392534791cad2bc692a141782)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x1, 0x1) |
+| #define | [I2C0\_SDA\_PC0](#acb9a1287a10a954e1ff0bf82478f3bf8)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x0) |
+| #define | [I2C0\_SDA\_PC1](#a0c89a72767592385a9a625d72c90f824)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x1) |
+| #define | [I2C0\_SDA\_PC2](#a0e115e41c26b45de04ee71a95cd5b87c)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x2) |
+| #define | [I2C0\_SDA\_PC3](#afbad7695056556b776533aafc47b0299)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x3) |
+| #define | [I2C0\_SDA\_PC4](#a603f80b261cded3f838f85ad889a4b88)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x4) |
+| #define | [I2C0\_SDA\_PC5](#a5864615c0e7063fc4f1acb8e4e3a05d2)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x5) |
+| #define | [I2C0\_SDA\_PD0](#a610731cb645ab65d802d95bb65437d8c)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x0) |
+| #define | [I2C0\_SDA\_PD1](#a86eade4a55994ce4285b81cf29c93883)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x1) |
+| #define | [I2C0\_SDA\_PD2](#a5d3416853673a2192ec5f5712921d370)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x2) |
+| #define | [I2C0\_SDA\_PD3](#a096b74cd9e2842c5d4ff8d7a7186106a)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x3) |
+| #define | [I2C0\_SDA\_PD4](#a39c83c73c763c0afc7e9041fab4549fd)   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x4) |
+| #define | [I2C1\_SCL\_PC0](#a356ddb78378e70250e07992cf92dd8b7)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x0) |
+| #define | [I2C1\_SCL\_PC1](#ad327d495abfaa2bb7ae3344a163f052f)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x1) |
+| #define | [I2C1\_SCL\_PC2](#aa89ddd739af59624f4a176443aa17636)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x2) |
+| #define | [I2C1\_SCL\_PC3](#af0e6baea8d2c35eb8991706946ffc05b)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x3) |
+| #define | [I2C1\_SCL\_PC4](#a346b20cbc89a5af4dfffe00c9ef41e92)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x4) |
+| #define | [I2C1\_SCL\_PC5](#aec416779b37e6a51e48e3fcadfca591a)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x5) |
+| #define | [I2C1\_SCL\_PD0](#a865b5c341b794b96daba59c14807c057)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x0) |
+| #define | [I2C1\_SCL\_PD1](#a9f3ebaefe248d5aa292ade2727a11ee9)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x1) |
+| #define | [I2C1\_SCL\_PD2](#a7eb71571b0e15669fb353a0bd65f2c72)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x2) |
+| #define | [I2C1\_SCL\_PD3](#a6a86266c8ab637b0b31244cbf0636ab0)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x3) |
+| #define | [I2C1\_SCL\_PD4](#a575a4a9e08a65805c5d9fa3591f563bb)   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x4) |
+| #define | [I2C1\_SDA\_PC0](#a7239b0bfd8b71b2ee9e85e8cb2e6eaaf)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x0) |
+| #define | [I2C1\_SDA\_PC1](#afe966c9b62cc1e0d598ea6ea92d663b8)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x1) |
+| #define | [I2C1\_SDA\_PC2](#af3ba02992276ed2088a6652b695d270d)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x2) |
+| #define | [I2C1\_SDA\_PC3](#a424670a07eab18c7e3ce3db2d68d44f6)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x3) |
+| #define | [I2C1\_SDA\_PC4](#ad7eebe896b02c99e7f27340a8ea01a8f)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x4) |
+| #define | [I2C1\_SDA\_PC5](#a12822294913c78002356a6be7b698e2e)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x5) |
+| #define | [I2C1\_SDA\_PD0](#a58f45546c69325b13cd062ca7a238c7a)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x0) |
+| #define | [I2C1\_SDA\_PD1](#aa7cf52519a05cd49aef954ce5191a377)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x1) |
+| #define | [I2C1\_SDA\_PD2](#ad779ebeed2865070af9e56244e9c43d0)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x2) |
+| #define | [I2C1\_SDA\_PD3](#a77b0c5734afd5123fd3ae520f10a8da8)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x3) |
+| #define | [I2C1\_SDA\_PD4](#acc6ad96c0e1645c02ca291c641ba06dd)   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x4) |
+| #define | [LETIMER0\_OUT0\_PA0](#a352e584caede1a83b786463abf8e8ffc)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x0) |
+| #define | [LETIMER0\_OUT0\_PA1](#a237d004885f30f207a78f3fce4380476)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x1) |
+| #define | [LETIMER0\_OUT0\_PA2](#a25d0f59297bd6c10acc7714b06af99ca)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x2) |
+| #define | [LETIMER0\_OUT0\_PA3](#a9120e73b07bfa093065ec040045eb61d)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x3) |
+| #define | [LETIMER0\_OUT0\_PA4](#a4f0e8db2242fed71b78c6b0679a6ff76)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x4) |
+| #define | [LETIMER0\_OUT0\_PA5](#a26a82422ca3e7fbd558caa46b4c6705d)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x5) |
+| #define | [LETIMER0\_OUT0\_PA6](#a808e50c2f7823f703795dfbe5d5ef50e)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x6) |
+| #define | [LETIMER0\_OUT0\_PB0](#ad81eda4d47fbc7265b325b09eb47232c)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x1, 0x0) |
+| #define | [LETIMER0\_OUT0\_PB1](#a20d0230e58f46869e37b9acfe0e5fb0d)   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x1, 0x1) |
+| #define | [LETIMER0\_OUT1\_PA0](#a3cab629b6e9cd573b30f8e45a747e819)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x0) |
+| #define | [LETIMER0\_OUT1\_PA1](#a2e90dd7d7686acf9665182356fba429d)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x1) |
+| #define | [LETIMER0\_OUT1\_PA2](#a1ded3647217b200c7d49bf6f99df8800)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x2) |
+| #define | [LETIMER0\_OUT1\_PA3](#ab329e7913b209f11eaba0a2623358976)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x3) |
+| #define | [LETIMER0\_OUT1\_PA4](#a0e0dc57036750466e500d46d9f2f8674)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x4) |
+| #define | [LETIMER0\_OUT1\_PA5](#a2c211216042c0ab444cf3e1b54d4e2f7)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x5) |
+| #define | [LETIMER0\_OUT1\_PA6](#a0aebcc5748062062d09dec35c4baa61f)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x6) |
+| #define | [LETIMER0\_OUT1\_PB0](#a5501b8d6e668ef58a71e19bfe0d620b8)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x1, 0x0) |
+| #define | [LETIMER0\_OUT1\_PB1](#a8e4b46c768114f20ee1002820ee4d583)   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x1, 0x1) |
+| #define | [MODEM\_ANT0\_PA0](#a7f276456c2949e4151a1b2a734f8885c)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x0) |
+| #define | [MODEM\_ANT0\_PA1](#a79c6f7c43dfc9adab0c8eeb974842745)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x1) |
+| #define | [MODEM\_ANT0\_PA2](#ae187f6726ed20849cb327fbdddd44aca)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x2) |
+| #define | [MODEM\_ANT0\_PA3](#a45bcc15c32caaa653434df7b01274283)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x3) |
+| #define | [MODEM\_ANT0\_PA4](#a2378348e1cf6d527113895ad243cc58d)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x4) |
+| #define | [MODEM\_ANT0\_PA5](#a722db9c869f2f89794bcc1ae32318ad4)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x5) |
+| #define | [MODEM\_ANT0\_PA6](#a4bffa8d5ecfb474a91ff85afc315043a)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x6) |
+| #define | [MODEM\_ANT0\_PB0](#a509466c0511355374b0ee3ece106acd6)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x1, 0x0) |
+| #define | [MODEM\_ANT0\_PB1](#a4c2864f003ccf1355fdbb2be9df0d2ec)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x1, 0x1) |
+| #define | [MODEM\_ANT0\_PC0](#a6b06e4cb9c997d609b19d7fb7639bf8d)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x0) |
+| #define | [MODEM\_ANT0\_PC1](#a000751139691af8d66623ad0bd43fc9b)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x1) |
+| #define | [MODEM\_ANT0\_PC2](#afd5bc8540d8e3e5b0d182312520517be)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x2) |
+| #define | [MODEM\_ANT0\_PC3](#a33b690ae2e28b1b08b691aa4742d84d7)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x3) |
+| #define | [MODEM\_ANT0\_PC4](#ac22d54cd6c263a39f33caedf7cb09a0e)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x4) |
+| #define | [MODEM\_ANT0\_PC5](#a6982c06cdd7b783257ed5f3a74c735c7)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x5) |
+| #define | [MODEM\_ANT0\_PD0](#a01730221498f5de5590dbe8f6a293702)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x0) |
+| #define | [MODEM\_ANT0\_PD1](#a968474651d6fc8ced22a693a55d8bf4d)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x1) |
+| #define | [MODEM\_ANT0\_PD2](#a6bee8cd789f6922130830688cf586971)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x2) |
+| #define | [MODEM\_ANT0\_PD3](#aef59bb3ec42a534ffe32a53fb26e1656)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x3) |
+| #define | [MODEM\_ANT0\_PD4](#aba70f4135f5bcc3e10525c27f2f25021)   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x4) |
+| #define | [MODEM\_ANT1\_PA0](#a983f562f1f690bbec27d868c3d6b2b1a)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x0) |
+| #define | [MODEM\_ANT1\_PA1](#a1c8d37c5145858068556a032983680d1)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x1) |
+| #define | [MODEM\_ANT1\_PA2](#a9a879a4511af923143f8dc6e7710f0be)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x2) |
+| #define | [MODEM\_ANT1\_PA3](#a5753d0d0ab943103f54d6ad9ea76bccf)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x3) |
+| #define | [MODEM\_ANT1\_PA4](#a164fc42c8f2bc81bc70453af7bf82402)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x4) |
+| #define | [MODEM\_ANT1\_PA5](#a790e4407942a7fb6fed5972b59bf12c9)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x5) |
+| #define | [MODEM\_ANT1\_PA6](#a908cd5b571ab7ec4ba04581f3bf67166)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x6) |
+| #define | [MODEM\_ANT1\_PB0](#adbe918778efba6fe712e7043457c43bb)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x1, 0x0) |
+| #define | [MODEM\_ANT1\_PB1](#a6c5a484675c81a07f3709cb391113c22)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x1, 0x1) |
+| #define | [MODEM\_ANT1\_PC0](#a5718fbbd7d66e6c775b8904b50b14aec)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x0) |
+| #define | [MODEM\_ANT1\_PC1](#a25315b04583ee4d44f2e1835003679e9)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x1) |
+| #define | [MODEM\_ANT1\_PC2](#a7480d21cbb697630fd83f494f671b030)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x2) |
+| #define | [MODEM\_ANT1\_PC3](#aa6ba89e0d2c7347f10a1a18d461986db)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x3) |
+| #define | [MODEM\_ANT1\_PC4](#a293042adb906716b25453e23c66932ee)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x4) |
+| #define | [MODEM\_ANT1\_PC5](#aa699042d4cec5024da6439e6fa629c5f)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x5) |
+| #define | [MODEM\_ANT1\_PD0](#a1ebb5a0437c033fa7d567000c0b8c383)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x0) |
+| #define | [MODEM\_ANT1\_PD1](#a1cc580714150e9383e280946b2863b31)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x1) |
+| #define | [MODEM\_ANT1\_PD2](#ac3322bcfcef6e6a680cf4611d0b363ef)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x2) |
+| #define | [MODEM\_ANT1\_PD3](#abfdb37fc77643dc2853d87009c2425d6)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x3) |
+| #define | [MODEM\_ANT1\_PD4](#abd04eb50b1a4d87042b59362e4b8758d)   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x4) |
+| #define | [MODEM\_DCLK\_PA0](#a08ca0610796eea5484d295a978221196)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x0) |
+| #define | [MODEM\_DCLK\_PA1](#a405e18321ac14727b470918f185f923c)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x1) |
+| #define | [MODEM\_DCLK\_PA2](#a2e7d5bc810c26a1194a846663607762d)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x2) |
+| #define | [MODEM\_DCLK\_PA3](#a483f89509d4d25fe14f3d8cff618289d)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x3) |
+| #define | [MODEM\_DCLK\_PA4](#a8e3916287d03243cca904f41ce1f9dae)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x4) |
+| #define | [MODEM\_DCLK\_PA5](#afd75314e866b5c47e838556d866d5883)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x5) |
+| #define | [MODEM\_DCLK\_PA6](#acf3a1e4e5b714d53ff82edbf02575ec5)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x6) |
+| #define | [MODEM\_DCLK\_PB0](#a19236a132524a68b08b88a2b71b74b7b)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x1, 0x0) |
+| #define | [MODEM\_DCLK\_PB1](#a862abc8858bae8ba0af6b0f8fbbaae37)   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x1, 0x1) |
+| #define | [MODEM\_DOUT\_PA0](#ac3823581963866285b9f6143d16d9c38)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x0) |
+| #define | [MODEM\_DOUT\_PA1](#ae4c319e1bba60e4a5a891edf88b1e968)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x1) |
+| #define | [MODEM\_DOUT\_PA2](#a8dabb728396cf206afac2cfbe49a5b02)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x2) |
+| #define | [MODEM\_DOUT\_PA3](#ae5963b1e2305ae53f11a90b0d76a99a3)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x3) |
+| #define | [MODEM\_DOUT\_PA4](#a06061dfed7797c0e29bb9cb5a6d49f88)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x4) |
+| #define | [MODEM\_DOUT\_PA5](#a117ead5a3ea011c4ad9d37fc96de2bba)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x5) |
+| #define | [MODEM\_DOUT\_PA6](#aeda2e59bc16dda7ee3d83a2504a04f05)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x6) |
+| #define | [MODEM\_DOUT\_PB0](#abe0c4060d5f35e9cf8e002676f3c238c)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x1, 0x0) |
+| #define | [MODEM\_DOUT\_PB1](#aff30fef58eb6dbd17426f7e175c8f4ae)   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x1, 0x1) |
+| #define | [MODEM\_DIN\_PA0](#a3e0e16cfb9e9ad19a8e76e07e458d676)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x0) |
+| #define | [MODEM\_DIN\_PA1](#a3770dcebe1ad3c30c3fbcdcc9e1e61ac)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x1) |
+| #define | [MODEM\_DIN\_PA2](#aed7868ce54670b163ae60f645e353e10)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x2) |
+| #define | [MODEM\_DIN\_PA3](#a55004a63d39356caf5bda66e005a25f3)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x3) |
+| #define | [MODEM\_DIN\_PA4](#a1c13babd5d2f16d4d56257f847e84f40)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x4) |
+| #define | [MODEM\_DIN\_PA5](#a4f09d7e3de2cde036a6ddfcfe35bc96a)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x5) |
+| #define | [MODEM\_DIN\_PA6](#aa310c43126dfd99d7f967141340934c2)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x6) |
+| #define | [MODEM\_DIN\_PB0](#a87a115f7d2707bf513e218401f2d10fd)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x1, 0x0) |
+| #define | [MODEM\_DIN\_PB1](#a4484f366718daefbdd23d72248a1ba0d)   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH0\_PA0](#af1dcdc8d0ea9b8671a240ce03d80d434)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH0\_PA1](#af712c40bafb6ba29d062f47a47ef4445)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH0\_PA2](#a4a95bfd98958b7944ef58c010df91d83)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH0\_PA3](#ab912f56311db65e5316e921180f46589)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH0\_PA4](#ac1e05749654ec2bee09aa75a951bcd57)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH0\_PA5](#a15788b1a1cdce57fddf0d58e884e37bc)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH0\_PA6](#af071c0ad0ca5a54d74c7fa4e2f7eea6c)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH0\_PB0](#a590472d980647bc2a513ee516c9c4f1b)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH0\_PB1](#af4ee1a5d6ccadd510de798cf41f973ee)   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH1\_PA0](#aa7c8c749fddaf4b2e22e3791d9e8921a)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH1\_PA1](#a8f998569835e3b8688423cf9b4e81810)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH1\_PA2](#a5f2d980e4505820849c42fdc36c1b5a9)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH1\_PA3](#a4b66d13c4589bb2663661e6cfb8c0274)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH1\_PA4](#aec6f34dc1716b25b0fcc0628b18cbf86)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH1\_PA5](#a0be6148e1124f7e8dc6773f59dfd8ceb)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH1\_PA6](#a4d1894b5f84e0e7c81a5dbb2bfe8318f)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH1\_PB0](#a76487417602321711041f2d5d721e8ae)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH1\_PB1](#a1626bdc4551620aaccbfacd8aa0c0cdf)   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH2\_PA0](#ab9115b54fff36f0449722af1659860fb)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH2\_PA1](#a82e86536168f11e5b02c4fac703128b1)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH2\_PA2](#af3124f46d26efbb18047172d5d5accbc)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH2\_PA3](#a57857d486b2fc1db0770a7d1e198ed95)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH2\_PA4](#a3d91108c838d4684846d56816aee5fe1)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH2\_PA5](#a8e7b151ff1870ccfc66a34096b4aebae)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH2\_PA6](#a7f536e8d1d66285820ab8e3808e49a0f)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH2\_PB0](#a81bf0662053265b1d9cc03c101d4a353)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH2\_PB1](#a026322616f156126afcbcebc25d104c0)   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH3\_PA0](#a94b5b779374768ed16ad8cc396f756aa)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH3\_PA1](#aa947bb280b4891081e7a4de9dba44ae5)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH3\_PA2](#a9bc4d14c37fd2724643735c13cc9a25d)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH3\_PA3](#afa101472245a7df51d906f31093ce640)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH3\_PA4](#a1e433ac2a9a5c1b9240b157033e8fdc1)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH3\_PA5](#a4af0e3dc3303ec055fcce97399ccf4ba)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH3\_PA6](#ad905e3cca4ec1b92f1fd6b0ca18b8c06)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH3\_PB0](#a5cb1e7fbb39adfdfca2516715f0cc1ac)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH3\_PB1](#aa09fe8bc9d5c277db64c0912b55e9651)   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH4\_PA0](#a016d312ee53e23e053e5322038c218e8)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH4\_PA1](#ac08b73b2d1c8340a46b2b4321d258bbf)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH4\_PA2](#a6d468079dce68ad1a80a09411eed3c61)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH4\_PA3](#a2901f5a1abe787afaaf8c04a6aafa57f)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH4\_PA4](#a599e583eb87879b76f1a889093ca1db7)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH4\_PA5](#a50cd729844356a327a34588ab70c9f51)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH4\_PA6](#a15672ea11df2224289fc84c07abddbce)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH4\_PB0](#ab0da5394e8fceec3a24c8ca362a6a73f)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH4\_PB1](#a95e9e61ebc91932e32cf3683ba99beb7)   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH5\_PA0](#a6cac49a6aeefd56ad4ba7e4cba8910bf)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x0) |
+| #define | [PRS0\_ASYNCH5\_PA1](#a8442fb1410b80fcd20c78b7cc44608eb)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x1) |
+| #define | [PRS0\_ASYNCH5\_PA2](#aa3e3bbc87f46c7f0b9016518266e1fb2)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x2) |
+| #define | [PRS0\_ASYNCH5\_PA3](#a269678c70e29d05e9d67b82b1d5dcfd2)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x3) |
+| #define | [PRS0\_ASYNCH5\_PA4](#a7a314bb07eab261a850420ac2d6a2618)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x4) |
+| #define | [PRS0\_ASYNCH5\_PA5](#ac01e6bde894c73d5e965b7fe6ed03f53)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x5) |
+| #define | [PRS0\_ASYNCH5\_PA6](#ae3d6e3ae9d6d9d7c41ca233ad101b025)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x6) |
+| #define | [PRS0\_ASYNCH5\_PB0](#adb08d0b33060e185431fb336110899c9)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x1, 0x0) |
+| #define | [PRS0\_ASYNCH5\_PB1](#a82b599c4956aeea92802694032b4b55a)   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x1, 0x1) |
+| #define | [PRS0\_ASYNCH6\_PC0](#a5c7910d134b9fe6ddf1da299dfb2cfa0)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH6\_PC1](#a713321693f2cfd7cda27d1c36fc9b74b)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH6\_PC2](#a907d3ee7390b6ebcb5cac75724b6c587)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH6\_PC3](#a5eebd47a62e87b938b530113cd048481)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH6\_PC4](#a2d0d89b1abadc95ec02a88916330bab4)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH6\_PC5](#aaa44b81b3421197bff7df84a5e90a566)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH6\_PD0](#a0db829680023f49ec8b84b8418994f57)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH6\_PD1](#a41989b05cfd244afef8a6c359de6f6cb)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH6\_PD2](#ad70491288162b935edc6602844fbad73)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH6\_PD3](#a03cdfe05c93c94a99e457fc34be7adb3)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH6\_PD4](#a6c74cc2ba56d399a25378ecccef3005f)   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x4) |
+| #define | [PRS0\_ASYNCH7\_PC0](#a263dcb3077d0d1e3a58730140042046d)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH7\_PC1](#aa49bafce35b9bb4b59c8c9c22f06a739)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH7\_PC2](#ae0305282eab2df6979c235c8d5d00ac7)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH7\_PC3](#a05355f9a968579fd8a931b7458d37960)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH7\_PC4](#acb9a2a6531dd263cfe56858aa9c77791)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH7\_PC5](#af504334eb99bab375e929f662ee6091a)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH7\_PD0](#a4e38e496fe8a602726a9fcfac5c9553b)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH7\_PD1](#a8a5617fb6a01d979b5754bb30438ef11)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH7\_PD2](#ae44270558459c4a31a9d8db2216b6a47)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH7\_PD3](#a19e5fc23eb4c5edbe4cc2be54508038a)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH7\_PD4](#a6f3cf739f48f52265c18a437b40c919f)   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x4) |
+| #define | [PRS0\_ASYNCH8\_PC0](#a01aee008d4ae0969e81630224253732c)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH8\_PC1](#a1020e0f439015d77aad3a4ad6761745f)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH8\_PC2](#a78ac7a7a23787837c2d45b7fb619d973)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH8\_PC3](#a21d56ee2bba901bb0ad42fe00fd47126)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH8\_PC4](#ab38e8e6ebf5f7b8cf9db913835c77fdf)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH8\_PC5](#a034b8fafc8f80d4aa749ace8d383aa42)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH8\_PD0](#a3c4c1e1e2ed6aad821543605099c464e)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH8\_PD1](#a7a96c3dddcf49a09ab3941a19e33dd2b)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH8\_PD2](#a045129ec46f95f26ba665876216df09a)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH8\_PD3](#abf899559efdca73abc5e1f3e058280dc)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH8\_PD4](#aa41526f1e85b40d4d9f30444542c19e2)   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x4) |
+| #define | [PRS0\_ASYNCH9\_PC0](#ad6900f2865fce19423ba5bce65e6f6ec)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH9\_PC1](#a21a22ddcc1d1b8c05250ea00bfaf2c46)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH9\_PC2](#a7dcb713d1f7f8457e30812454272c360)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH9\_PC3](#ac6eeb711fa526a794104a43142cedc8d)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH9\_PC4](#a87ada6898e2eeddcaeead80835a3800b)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH9\_PC5](#a6b5b3ca2088cb2c43fbebf99cd4e9ad3)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH9\_PD0](#a89cd80ad72079b3a20917cc722fed3c3)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH9\_PD1](#aa9433d94ee912ff578dc1f3753bca9b5)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH9\_PD2](#a1dfa38b0754566f3586712b7474ce13f)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH9\_PD3](#a48c2477430954a1f5ebefcd625132b34)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH9\_PD4](#a3f32b54daa1e09ccb97ad447facd5076)   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x4) |
+| #define | [PRS0\_ASYNCH10\_PC0](#af096e7ffddaaf21a0886246861e94cf0)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH10\_PC1](#ab2e7c25b6faf577e7ee8197ae806a979)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH10\_PC2](#a22dd84a911044fe555ee09be1ee255e6)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH10\_PC3](#a4285722719da53788c48b4fc1f563e78)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH10\_PC4](#a5fde4317aee5f5e514d31b0a02013e85)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH10\_PC5](#ac3e04e87a2e22a0e5852c25cd42f5bfd)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH10\_PD0](#a86d5340c5133d3193351104663683d0e)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH10\_PD1](#a00af6bec878e4ea3f6ff297ac35f91ed)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH10\_PD2](#a0117d03759e58b8a40f3e32e65c1daff)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH10\_PD3](#ac26c97f76181aa0d4d334061599e549b)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH10\_PD4](#a56d5659d935d78961dd5ab8f56af296b)   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x4) |
+| #define | [PRS0\_ASYNCH11\_PC0](#a1ba16c8c6da7e3129c03eb546df4c993)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x0) |
+| #define | [PRS0\_ASYNCH11\_PC1](#a4780077af0f3eac79ac458382dfdd9ce)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x1) |
+| #define | [PRS0\_ASYNCH11\_PC2](#a32ed7a6cd5db3336ee370d6cf9d8e989)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x2) |
+| #define | [PRS0\_ASYNCH11\_PC3](#ada09802928473e1a5360709b259ce87e)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x3) |
+| #define | [PRS0\_ASYNCH11\_PC4](#aa83823870ce109c570db56a0d7bf4197)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x4) |
+| #define | [PRS0\_ASYNCH11\_PC5](#a06db00a9ba09d6f16e8ab4423b98edb8)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x5) |
+| #define | [PRS0\_ASYNCH11\_PD0](#a4d64f2e728e07b761372b682a6732ea9)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x0) |
+| #define | [PRS0\_ASYNCH11\_PD1](#aa62c6365ff4d4c6e9ac8952c9bc50d1d)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x1) |
+| #define | [PRS0\_ASYNCH11\_PD2](#a6d8321e7ba25db410748817cd169d45a)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x2) |
+| #define | [PRS0\_ASYNCH11\_PD3](#aafe8d7f49fead257b9a5065f68727c1a)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x3) |
+| #define | [PRS0\_ASYNCH11\_PD4](#a8e5caa0af696c8dc3445350a1f11cf45)   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x4) |
+| #define | [PRS0\_SYNCH0\_PA0](#a2c5a579f02ffd8ca34ce4f12cb30c8f0)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x0) |
+| #define | [PRS0\_SYNCH0\_PA1](#a5f853596173978c14b0b85059afa8a5a)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x1) |
+| #define | [PRS0\_SYNCH0\_PA2](#a7c8f6f55ba3e60c6a160f83f324442f0)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x2) |
+| #define | [PRS0\_SYNCH0\_PA3](#a8b8697e5c71b52686ea68726a1c033dd)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x3) |
+| #define | [PRS0\_SYNCH0\_PA4](#a509796448ccd2509eeb7fbf9b4432267)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x4) |
+| #define | [PRS0\_SYNCH0\_PA5](#afd80bdbc61c9bddb37851b1c9b7b6fa6)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x5) |
+| #define | [PRS0\_SYNCH0\_PA6](#abd86045f5ef93089158a28dd7f3aa4c2)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x6) |
+| #define | [PRS0\_SYNCH0\_PB0](#a736a7ad4a31b1d6dc0c548d628da9d97)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x1, 0x0) |
+| #define | [PRS0\_SYNCH0\_PB1](#a10e121857131802c71c42f1fbad81970)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x1, 0x1) |
+| #define | [PRS0\_SYNCH0\_PC0](#aed0f68fd0e4029e96d08fb24876f88b5)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x0) |
+| #define | [PRS0\_SYNCH0\_PC1](#ae52c949f3917be619b0f5f2365c2e8ba)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x1) |
+| #define | [PRS0\_SYNCH0\_PC2](#aac10f668835b732d019a50c3cfc47e37)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x2) |
+| #define | [PRS0\_SYNCH0\_PC3](#aa9c52d637e33202df2ace78c13c9555f)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x3) |
+| #define | [PRS0\_SYNCH0\_PC4](#adcaec5a2fb5dd33e72e486587daa1f4e)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x4) |
+| #define | [PRS0\_SYNCH0\_PC5](#aebbdc8a0ced784325db8374db6a1f16c)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x5) |
+| #define | [PRS0\_SYNCH0\_PD0](#a5f8dea11049e64bae1e4e27baf9e1b31)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x0) |
+| #define | [PRS0\_SYNCH0\_PD1](#a27144719fce957df87cb1434bd78c53b)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x1) |
+| #define | [PRS0\_SYNCH0\_PD2](#a014112c01a441ca65ee77b693e22bcf5)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x2) |
+| #define | [PRS0\_SYNCH0\_PD3](#a9ace1d40d2d50bc683ef0c57cc7863e0)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x3) |
+| #define | [PRS0\_SYNCH0\_PD4](#aade7486bb4853a67abea630973058c25)   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x4) |
+| #define | [PRS0\_SYNCH1\_PA0](#adedbd9cd1918a6d9543c886660eced9d)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x0) |
+| #define | [PRS0\_SYNCH1\_PA1](#a1083f73ff99ca1b3bf4446081e2addd7)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x1) |
+| #define | [PRS0\_SYNCH1\_PA2](#a1ea1179bbedea21d7d5ba85c489b88e1)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x2) |
+| #define | [PRS0\_SYNCH1\_PA3](#a18fe9b252631cc7ba936c99d6206294c)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x3) |
+| #define | [PRS0\_SYNCH1\_PA4](#ae5b32510b0bfea666dfb424ecad5e926)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x4) |
+| #define | [PRS0\_SYNCH1\_PA5](#a990491e0b9b76fc29c692ab11429d1bf)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x5) |
+| #define | [PRS0\_SYNCH1\_PA6](#accd2f4d5864cea8337d9436d6f946f2d)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x6) |
+| #define | [PRS0\_SYNCH1\_PB0](#aa19c3a0e0e8ce1868f1a89f7bd2e703a)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x1, 0x0) |
+| #define | [PRS0\_SYNCH1\_PB1](#ab5cf7a7aacec81e75db1643c99958fa3)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x1, 0x1) |
+| #define | [PRS0\_SYNCH1\_PC0](#ab3036a275379a79acb9c9186172036be)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x0) |
+| #define | [PRS0\_SYNCH1\_PC1](#ae726abd2298409738d8deba2708508be)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x1) |
+| #define | [PRS0\_SYNCH1\_PC2](#a9aec203bbc1ecd06760f7262a53c2b3e)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x2) |
+| #define | [PRS0\_SYNCH1\_PC3](#a87e88cfd739e57c6b2832ddc579e9007)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x3) |
+| #define | [PRS0\_SYNCH1\_PC4](#a5ff140aeb080678501e5a49e5a17238e)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x4) |
+| #define | [PRS0\_SYNCH1\_PC5](#ad4e38b8812f7c0d4a071c56033ea29b6)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x5) |
+| #define | [PRS0\_SYNCH1\_PD0](#ac3d3b0681c6f881fdf67d75330d2ad15)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x0) |
+| #define | [PRS0\_SYNCH1\_PD1](#a856e585175b99140059f56bbb485002c)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x1) |
+| #define | [PRS0\_SYNCH1\_PD2](#a40bd508ace349e81a5d0c155ca89970d)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x2) |
+| #define | [PRS0\_SYNCH1\_PD3](#a0619050cb1a04b75b610788e2de0390e)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x3) |
+| #define | [PRS0\_SYNCH1\_PD4](#a9a804e3cdb2e284489233d28577e1fc4)   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x4) |
+| #define | [PRS0\_SYNCH2\_PA0](#a30eedcbcb9ef6aa04facebe8e1cc1093)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x0) |
+| #define | [PRS0\_SYNCH2\_PA1](#a8ec3379386547e7712ad3c900ec6814c)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x1) |
+| #define | [PRS0\_SYNCH2\_PA2](#a770727e399810443ff27f6a2023c65ee)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x2) |
+| #define | [PRS0\_SYNCH2\_PA3](#afa5e0ddfe140d74f0dd76d8e7edda691)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x3) |
+| #define | [PRS0\_SYNCH2\_PA4](#a2cf89814fec476f61882164cdf99b537)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x4) |
+| #define | [PRS0\_SYNCH2\_PA5](#a8a48ec9e994929feacba66e0509ad3e1)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x5) |
+| #define | [PRS0\_SYNCH2\_PA6](#a117da23bb4f9f0aa2110437ffefc365a)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x6) |
+| #define | [PRS0\_SYNCH2\_PB0](#a3246953945006183dfbc3b12a5e86d61)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x1, 0x0) |
+| #define | [PRS0\_SYNCH2\_PB1](#a0dec289423a72a3226f883db9921b0b2)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x1, 0x1) |
+| #define | [PRS0\_SYNCH2\_PC0](#ac9ab782f8cda90916bd9cb751753144a)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x0) |
+| #define | [PRS0\_SYNCH2\_PC1](#a71fb98a3d5355af02d2c46d69c7f6edc)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x1) |
+| #define | [PRS0\_SYNCH2\_PC2](#a50b30cf886dedec9e7cd761d9596d7f6)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x2) |
+| #define | [PRS0\_SYNCH2\_PC3](#ab8725b1678b453d17551cf0daea10f57)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x3) |
+| #define | [PRS0\_SYNCH2\_PC4](#a012f52b7a7cc4babe7f8e14b27125790)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x4) |
+| #define | [PRS0\_SYNCH2\_PC5](#a5ce775779214b9341aede3162d4e381a)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x5) |
+| #define | [PRS0\_SYNCH2\_PD0](#af8c37706e65ff4f9f6f90f01ce507040)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x0) |
+| #define | [PRS0\_SYNCH2\_PD1](#ac83a6c15c88a8662ce8b9ba58d60772a)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x1) |
+| #define | [PRS0\_SYNCH2\_PD2](#ad8d312030ac50620b851c24cfb90b8c0)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x2) |
+| #define | [PRS0\_SYNCH2\_PD3](#a3462ed2558a059ff7b2c81471bb30adf)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x3) |
+| #define | [PRS0\_SYNCH2\_PD4](#a98dc3a73329ab25a00dd293e05c8ebeb)   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x4) |
+| #define | [PRS0\_SYNCH3\_PA0](#a3d8a4990b1f1b2c03152d2d0ee88afc3)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x0) |
+| #define | [PRS0\_SYNCH3\_PA1](#a13b0ade04e1c64d1438afe98588fe2d2)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x1) |
+| #define | [PRS0\_SYNCH3\_PA2](#a270b6759ebfa8c61efefbc57fa10b3a3)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x2) |
+| #define | [PRS0\_SYNCH3\_PA3](#a6d223baeec1045d533966d37adeaa1fd)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x3) |
+| #define | [PRS0\_SYNCH3\_PA4](#a0e17834640a0fa86e9cc0d166b41051e)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x4) |
+| #define | [PRS0\_SYNCH3\_PA5](#a49a035319ad597aca7e0fcfa1abd0f01)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x5) |
+| #define | [PRS0\_SYNCH3\_PA6](#a13e3aaaec3efb457103bb8159cb4de31)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x6) |
+| #define | [PRS0\_SYNCH3\_PB0](#ab17a4fca8c86667da92478553626bba6)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x1, 0x0) |
+| #define | [PRS0\_SYNCH3\_PB1](#a88fff8ac2df69413d6fddc5ec152e31b)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x1, 0x1) |
+| #define | [PRS0\_SYNCH3\_PC0](#a5b3ca0959f268e1977ab4fcb0333b282)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x0) |
+| #define | [PRS0\_SYNCH3\_PC1](#a322705abcca1fb83fdffcf16252c35d4)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x1) |
+| #define | [PRS0\_SYNCH3\_PC2](#ad45be94cb4581dbc5c9474d2da892aa0)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x2) |
+| #define | [PRS0\_SYNCH3\_PC3](#af541dc086b57060761678fba2145d5fc)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x3) |
+| #define | [PRS0\_SYNCH3\_PC4](#aa8cc93aafe5498f4cc5a26d1fa37599e)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x4) |
+| #define | [PRS0\_SYNCH3\_PC5](#a05496c3ac6cbd4310245f30c0810afbe)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x5) |
+| #define | [PRS0\_SYNCH3\_PD0](#a028ffbfde62bf2f28a08c99884d6fbb6)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x0) |
+| #define | [PRS0\_SYNCH3\_PD1](#a0d0ee2b67b86c4b2615f24e673966465)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x1) |
+| #define | [PRS0\_SYNCH3\_PD2](#a8dc61e39bff0c335982b5a775c9b000c)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x2) |
+| #define | [PRS0\_SYNCH3\_PD3](#a10deabf90e836f5bd478ad2a6483d2c8)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x3) |
+| #define | [PRS0\_SYNCH3\_PD4](#abf691edac97faf842650ff032300c7f2)   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x4) |
+| #define | [TIMER0\_CC0\_PA0](#a643451fe929eaf497b28b23570152dfa)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x0) |
+| #define | [TIMER0\_CC0\_PA1](#a257ab281a2a05ec0cc41ad2e3b548dfb)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x1) |
+| #define | [TIMER0\_CC0\_PA2](#a1382ce3a810d4e7056919091fe9514f5)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x2) |
+| #define | [TIMER0\_CC0\_PA3](#a9a9109ad50309f2200302915ea5a2654)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x3) |
+| #define | [TIMER0\_CC0\_PA4](#a035c1f38daa2aca747ced020035bd292)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x4) |
+| #define | [TIMER0\_CC0\_PA5](#a4bfcb9dec6df42cdf9a1fe979354ae57)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x5) |
+| #define | [TIMER0\_CC0\_PA6](#ad1a677a1839ff4de6cc82e6e17b5aae2)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x6) |
+| #define | [TIMER0\_CC0\_PB0](#a18fb1529d6c032c6755f3d5a0abf9c76)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x1, 0x0) |
+| #define | [TIMER0\_CC0\_PB1](#adf86b7c1c4b41eaf900d8a02e912f7c2)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x1, 0x1) |
+| #define | [TIMER0\_CC0\_PC0](#af01197ecb61c8e13ed760c4f036d555f)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x0) |
+| #define | [TIMER0\_CC0\_PC1](#ae82052a9a3803c36b447e75e30db22b5)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x1) |
+| #define | [TIMER0\_CC0\_PC2](#a89bade3c8848eeccc253f9752b16790c)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x2) |
+| #define | [TIMER0\_CC0\_PC3](#a8b2ec4704842a1824c29fba1f700292e)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x3) |
+| #define | [TIMER0\_CC0\_PC4](#acd56df092cae914b4e416e932e2b9f59)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x4) |
+| #define | [TIMER0\_CC0\_PC5](#a17bbebdef205a11b6021b510d62ff3b8)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x5) |
+| #define | [TIMER0\_CC0\_PD0](#a3db86be83a2cf8932a653abbf93aed00)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x0) |
+| #define | [TIMER0\_CC0\_PD1](#a4350a7968647bb2f25b6b2637fef6ad1)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x1) |
+| #define | [TIMER0\_CC0\_PD2](#a4c8e3e5bdf2d6582e6182f3df56f606b)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x2) |
+| #define | [TIMER0\_CC0\_PD3](#a695f1eba6df77776fb45e9f69a6fd57a)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x3) |
+| #define | [TIMER0\_CC0\_PD4](#a36230412046558d27c68f98b3ad6bd17)   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x4) |
+| #define | [TIMER0\_CC1\_PA0](#aa74131bdc087fb80e597e3d497ab9796)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x0) |
+| #define | [TIMER0\_CC1\_PA1](#a4a841ee625298d042db41bc0cd385796)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x1) |
+| #define | [TIMER0\_CC1\_PA2](#a69b83d879f0cb485ba4af8b3cf4844a1)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x2) |
+| #define | [TIMER0\_CC1\_PA3](#a0b3cce5e9df6245edce583e307c70b7f)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x3) |
+| #define | [TIMER0\_CC1\_PA4](#ae6724c9762d1a9ae311d902e930b337c)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x4) |
+| #define | [TIMER0\_CC1\_PA5](#a2354f1d78e8686d9ea3c44dd9bac5b38)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x5) |
+| #define | [TIMER0\_CC1\_PA6](#a1b634a95c42a9065c7307c1a13461f39)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x6) |
+| #define | [TIMER0\_CC1\_PB0](#a6b0f1898a3246e0dd5915d5f5014b53e)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x1, 0x0) |
+| #define | [TIMER0\_CC1\_PB1](#a812c3aa15e23b7be5d70f052259722dc)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x1, 0x1) |
+| #define | [TIMER0\_CC1\_PC0](#a5787f33a274113239c4f5e8abecdf9a2)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x0) |
+| #define | [TIMER0\_CC1\_PC1](#a14c64ec2717df0534956326f806de22a)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x1) |
+| #define | [TIMER0\_CC1\_PC2](#ad7ffea850def6f7001ed2471ce3a13b6)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x2) |
+| #define | [TIMER0\_CC1\_PC3](#a3f40aa2528d1f936a0e6734c0227afb2)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x3) |
+| #define | [TIMER0\_CC1\_PC4](#a72ab00cdfc58ff9f2aef06c5ee9e1e13)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x4) |
+| #define | [TIMER0\_CC1\_PC5](#a7a0b8714592092cb219e214cd28da4c5)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x5) |
+| #define | [TIMER0\_CC1\_PD0](#ad721fa41b15556e529252a63302e8320)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x0) |
+| #define | [TIMER0\_CC1\_PD1](#abdc57a8f13e515d62d84684433f4c399)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x1) |
+| #define | [TIMER0\_CC1\_PD2](#a6a00214723619c929a860d4d5fa82d70)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x2) |
+| #define | [TIMER0\_CC1\_PD3](#ab5fe2a23145e40055ae0f532309c45a4)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x3) |
+| #define | [TIMER0\_CC1\_PD4](#ad0bf7e8d2c24c8ebe7c2b594d99c9ead)   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x4) |
+| #define | [TIMER0\_CC2\_PA0](#a10518d21844ab1a787009973ac06ce22)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x0) |
+| #define | [TIMER0\_CC2\_PA1](#a40b5d230cec35f97648678731d970520)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x1) |
+| #define | [TIMER0\_CC2\_PA2](#a5183b3c3cec8352c11edef376fc346ad)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x2) |
+| #define | [TIMER0\_CC2\_PA3](#aec173f24a643f2d50e4e2fe44b0d1dc8)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x3) |
+| #define | [TIMER0\_CC2\_PA4](#a4df67f53e8e2501bed3fd9565a49c0d6)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x4) |
+| #define | [TIMER0\_CC2\_PA5](#a0529c6f8022ee408363ecc6452ac2c44)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x5) |
+| #define | [TIMER0\_CC2\_PA6](#a1e0f169ebf24d5954b875bd824b86de1)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x6) |
+| #define | [TIMER0\_CC2\_PB0](#ad7a7916ae90b8345be7279e50f18c190)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x1, 0x0) |
+| #define | [TIMER0\_CC2\_PB1](#a36ccb83c4230c2f3d14accbb965b08cd)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x1, 0x1) |
+| #define | [TIMER0\_CC2\_PC0](#afe51827dd65359061f88753af6868eb5)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x0) |
+| #define | [TIMER0\_CC2\_PC1](#ae3d14c1aa4739ba2be209c8490e05b9b)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x1) |
+| #define | [TIMER0\_CC2\_PC2](#a12baff93c97c64f74538b1995171fab7)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x2) |
+| #define | [TIMER0\_CC2\_PC3](#a96fe3aa3622573210ac344515718962f)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x3) |
+| #define | [TIMER0\_CC2\_PC4](#ad70b84d782f9af43d146a34c1533f08a)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x4) |
+| #define | [TIMER0\_CC2\_PC5](#a8bebf51e280fec4baea6e545ba0e8576)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x5) |
+| #define | [TIMER0\_CC2\_PD0](#a29a4b811b779721b8ab98976d0af976c)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x0) |
+| #define | [TIMER0\_CC2\_PD1](#a21d070a5f412c7a77e53f69c87c57997)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x1) |
+| #define | [TIMER0\_CC2\_PD2](#a419e2b988ac821a7b4e40fb925da5916)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x2) |
+| #define | [TIMER0\_CC2\_PD3](#aae16cb8df6cc099c3344c5740fd31e69)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x3) |
+| #define | [TIMER0\_CC2\_PD4](#ae97c73876fb35531996feaad9d43217f)   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x4) |
+| #define | [TIMER0\_CDTI0\_PA0](#a583547311775fdf98f4d19afb149ac6c)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x0) |
+| #define | [TIMER0\_CDTI0\_PA1](#a8005c42773c60dd5aec6e3ee8f4b7491)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x1) |
+| #define | [TIMER0\_CDTI0\_PA2](#a78955dc51203c015d86b442978ad260e)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x2) |
+| #define | [TIMER0\_CDTI0\_PA3](#a291a17c15340c09f32a3c63e3da95a9c)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x3) |
+| #define | [TIMER0\_CDTI0\_PA4](#ab3b70d25fa01aaade758c277465c9639)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x4) |
+| #define | [TIMER0\_CDTI0\_PA5](#a025bd51e6c211605497795d76e175510)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x5) |
+| #define | [TIMER0\_CDTI0\_PA6](#a17617cf4fecd500e152bc39ef84e009b)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x6) |
+| #define | [TIMER0\_CDTI0\_PB0](#ac08f3bf826c3d909d06c67c2acb418ef)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x1, 0x0) |
+| #define | [TIMER0\_CDTI0\_PB1](#aaf1bd6f6922c1316131edb6cb0f3de9e)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x1, 0x1) |
+| #define | [TIMER0\_CDTI0\_PC0](#a5f22a6e89d3fb5e3bb7925fdbe1c2e38)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x0) |
+| #define | [TIMER0\_CDTI0\_PC1](#a72ef54f11ed78d2e16f007d394030955)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x1) |
+| #define | [TIMER0\_CDTI0\_PC2](#a3f65837c636c8b483c7130555c34a54c)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x2) |
+| #define | [TIMER0\_CDTI0\_PC3](#acbf891b0c24b9af901264aba00b84f64)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x3) |
+| #define | [TIMER0\_CDTI0\_PC4](#adf859e578ce341428c887d8267d962bf)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x4) |
+| #define | [TIMER0\_CDTI0\_PC5](#ae57392b6eb47339eb4e5bd89840d19a9)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x5) |
+| #define | [TIMER0\_CDTI0\_PD0](#abe060cc518151861fccab2604541e238)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x0) |
+| #define | [TIMER0\_CDTI0\_PD1](#a0925901af2c13317cf4f43c50e01d83a)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x1) |
+| #define | [TIMER0\_CDTI0\_PD2](#aed6dd4aa21be7afbe03d984356d36e32)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x2) |
+| #define | [TIMER0\_CDTI0\_PD3](#aa52d4d7a010abe242632b4574332349b)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x3) |
+| #define | [TIMER0\_CDTI0\_PD4](#ae8b70f7461db674d1d9c3f2ea91701cc)   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x4) |
+| #define | [TIMER0\_CDTI1\_PA0](#a757add3c35ee9b20b8bb75363620e57f)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x0) |
+| #define | [TIMER0\_CDTI1\_PA1](#a39b01d816f29ff5114ac045475ad1c80)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x1) |
+| #define | [TIMER0\_CDTI1\_PA2](#a648e126ee7e0bdf5faff238a097c6e5e)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x2) |
+| #define | [TIMER0\_CDTI1\_PA3](#a0e36cbcf42a86fa70f9561b1a817831d)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x3) |
+| #define | [TIMER0\_CDTI1\_PA4](#a12661cbedaeab2177edf943b1f752b6b)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x4) |
+| #define | [TIMER0\_CDTI1\_PA5](#a9012c36cbc093ebb308af9118eabfde9)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x5) |
+| #define | [TIMER0\_CDTI1\_PA6](#ac4ab807c106f7b9bc718e931d517c791)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x6) |
+| #define | [TIMER0\_CDTI1\_PB0](#a8b1c6a4724744e459918508925be254e)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x1, 0x0) |
+| #define | [TIMER0\_CDTI1\_PB1](#a9206a9ae50fbe6a063df918f0dc7d9b5)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x1, 0x1) |
+| #define | [TIMER0\_CDTI1\_PC0](#ad5eb7a31fde2301a819d1f7fb3fa4120)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x0) |
+| #define | [TIMER0\_CDTI1\_PC1](#a67c242881dc443329a04f2148b5d3171)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x1) |
+| #define | [TIMER0\_CDTI1\_PC2](#a6e61b116d02e63455d54f16e29168dfe)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x2) |
+| #define | [TIMER0\_CDTI1\_PC3](#a904d89c160a99cc883673a11164eb00a)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x3) |
+| #define | [TIMER0\_CDTI1\_PC4](#afa348bc98e1aa83ec82924c1c49a5970)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x4) |
+| #define | [TIMER0\_CDTI1\_PC5](#a43e280a63df1054883f731736d864712)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x5) |
+| #define | [TIMER0\_CDTI1\_PD0](#a713013e442d42bf60f0f8a2df0e178de)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x0) |
+| #define | [TIMER0\_CDTI1\_PD1](#a28cc02c56e4eb397f3fc9d106db59dd3)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x1) |
+| #define | [TIMER0\_CDTI1\_PD2](#a7a3ee64de9bcf3d3e05cad7c0eb51492)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x2) |
+| #define | [TIMER0\_CDTI1\_PD3](#ac0570e1fa46ef8d9015c9e41cede4394)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x3) |
+| #define | [TIMER0\_CDTI1\_PD4](#a159917b90b0f5f1040afe53b172ca26f)   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x4) |
+| #define | [TIMER0\_CDTI2\_PA0](#a723140878fb318fc60e62886e8e4bb6b)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x0) |
+| #define | [TIMER0\_CDTI2\_PA1](#a69ea746a21b0305be02db15ba8ced4dc)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x1) |
+| #define | [TIMER0\_CDTI2\_PA2](#a63e2744f17ec7b868e38010999a5b99e)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x2) |
+| #define | [TIMER0\_CDTI2\_PA3](#ad9c1f9c457c63b9f7ee15cedb89c8b29)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x3) |
+| #define | [TIMER0\_CDTI2\_PA4](#ac5e02eb43bbc85c4e07976539d1c7b66)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x4) |
+| #define | [TIMER0\_CDTI2\_PA5](#a17440dab813cdc7a4b58682db3c0aa3c)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x5) |
+| #define | [TIMER0\_CDTI2\_PA6](#a967cbd605349c15eada5527602a05fc9)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x6) |
+| #define | [TIMER0\_CDTI2\_PB0](#a4a53984105a683a6807ad0a26e13a60d)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x1, 0x0) |
+| #define | [TIMER0\_CDTI2\_PB1](#a12ffd91f7201f73e0d75c2298d5abce9)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x1, 0x1) |
+| #define | [TIMER0\_CDTI2\_PC0](#a11f7ac3b39604c06f639dc4b925ee93d)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x0) |
+| #define | [TIMER0\_CDTI2\_PC1](#a2b6fa7363ef650a2847113779b5b36a7)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x1) |
+| #define | [TIMER0\_CDTI2\_PC2](#a3d39899e0d3f88f22feffcd6752b2507)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x2) |
+| #define | [TIMER0\_CDTI2\_PC3](#a0f6d66f601b1eaeae268c7ed2b0874ae)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x3) |
+| #define | [TIMER0\_CDTI2\_PC4](#ab91374950c6d3774d25c5e6ee6068ce0)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x4) |
+| #define | [TIMER0\_CDTI2\_PC5](#a2c76eb69ea9ed92aa328126bbad507d1)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x5) |
+| #define | [TIMER0\_CDTI2\_PD0](#a038cef314d102bb50e58612327d456c6)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x0) |
+| #define | [TIMER0\_CDTI2\_PD1](#a008dea92e72e9d337f5a6d38aaf33661)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x1) |
+| #define | [TIMER0\_CDTI2\_PD2](#a7bf636029c51b394d749774c4961aeba)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x2) |
+| #define | [TIMER0\_CDTI2\_PD3](#a48403324a419bb99f173f8a5198d55a0)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x3) |
+| #define | [TIMER0\_CDTI2\_PD4](#ad15de743c118e7443cf6edf793243995)   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x4) |
+| #define | [TIMER1\_CC0\_PA0](#a4b3085c41f4ed8706a3b39755e5b132c)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x0) |
+| #define | [TIMER1\_CC0\_PA1](#a5daa5510f5bab9cea855b3d3303daaaf)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x1) |
+| #define | [TIMER1\_CC0\_PA2](#abc2afde49650332d28db97653adc501d)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x2) |
+| #define | [TIMER1\_CC0\_PA3](#a2df5bd9733330e9a973732a8cc222ee9)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x3) |
+| #define | [TIMER1\_CC0\_PA4](#a514654049642c780cd7eae508e0620b9)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x4) |
+| #define | [TIMER1\_CC0\_PA5](#a4dd5a3457f09f46922941de990dc9933)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x5) |
+| #define | [TIMER1\_CC0\_PA6](#a13520009a8fee0808443df4d4018e0cb)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x6) |
+| #define | [TIMER1\_CC0\_PB0](#a0cda060bbc98a77e19ed36b4d01cfec2)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x1, 0x0) |
+| #define | [TIMER1\_CC0\_PB1](#ac2c9847727308a1fed2e7b21c718a92c)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x1, 0x1) |
+| #define | [TIMER1\_CC0\_PC0](#a47cdc8781bd255cf8392426ab34cb042)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x0) |
+| #define | [TIMER1\_CC0\_PC1](#a41a0a7812419a3a757be7899f30acfde)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x1) |
+| #define | [TIMER1\_CC0\_PC2](#a322dee774195678afc5f7066d126e4c7)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x2) |
+| #define | [TIMER1\_CC0\_PC3](#a458b636db4779031722ec89e4c8fc0b8)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x3) |
+| #define | [TIMER1\_CC0\_PC4](#a59f20ef361658d0cc27c9694c30d2e55)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x4) |
+| #define | [TIMER1\_CC0\_PC5](#a510dc66c39d8a79666d1a3d9e6c0e3ad)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x5) |
+| #define | [TIMER1\_CC0\_PD0](#aa61ecf9a9f2f6b3ce46bc96d3e3b224c)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x0) |
+| #define | [TIMER1\_CC0\_PD1](#af69bd23d5eaf09cfa8e4ac6dc815c071)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x1) |
+| #define | [TIMER1\_CC0\_PD2](#ae35d1bbefce3501c063039f88ed558a2)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x2) |
+| #define | [TIMER1\_CC0\_PD3](#a27518cd582fa2f5266da488e386783d7)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x3) |
+| #define | [TIMER1\_CC0\_PD4](#af91f86a0f39fbb4df669d036b80f97c8)   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x4) |
+| #define | [TIMER1\_CC1\_PA0](#ab0467e6e3dafc5340b516304672d0c35)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x0) |
+| #define | [TIMER1\_CC1\_PA1](#ab56f3b43b16780006b73b6b67c7fc99c)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x1) |
+| #define | [TIMER1\_CC1\_PA2](#a884b7041fab46641ac127f3526d1d6aa)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x2) |
+| #define | [TIMER1\_CC1\_PA3](#a97b8069d8cf397b2da2cc011e946cc97)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x3) |
+| #define | [TIMER1\_CC1\_PA4](#a01aacbb9315e69096d8c64b78a49b66e)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x4) |
+| #define | [TIMER1\_CC1\_PA5](#a7b12d90d7a871b5843843f20b6318fd8)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x5) |
+| #define | [TIMER1\_CC1\_PA6](#ac4909134633b306a24982fd780870ff6)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x6) |
+| #define | [TIMER1\_CC1\_PB0](#a48bff42d940d3d8a4bae06df47255dca)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x1, 0x0) |
+| #define | [TIMER1\_CC1\_PB1](#a72b3f2ffb3e69fa3347b782450ee1bf6)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x1, 0x1) |
+| #define | [TIMER1\_CC1\_PC0](#addaacb911a618cabc51f96bec3690174)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x0) |
+| #define | [TIMER1\_CC1\_PC1](#ac8fab9c34e0b1dc6f168573f34d81bba)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x1) |
+| #define | [TIMER1\_CC1\_PC2](#adc420cc552323a6db6ac08b76ada22d4)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x2) |
+| #define | [TIMER1\_CC1\_PC3](#a52d6b873c40ba4c37eb80089b14abf59)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x3) |
+| #define | [TIMER1\_CC1\_PC4](#abb9cd68c18a6c07dc753a10471310e8d)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x4) |
+| #define | [TIMER1\_CC1\_PC5](#a93aa2304008369a86392b6a98592ccac)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x5) |
+| #define | [TIMER1\_CC1\_PD0](#a1294b47b68006e1da3c1bcf3afa1735b)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x0) |
+| #define | [TIMER1\_CC1\_PD1](#addf0cad7ebe2b5d0dcb15ee2860aa037)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x1) |
+| #define | [TIMER1\_CC1\_PD2](#aff68d222f67741f6d81518e502686cab)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x2) |
+| #define | [TIMER1\_CC1\_PD3](#a8a7f0101160dbc45889575bb975dcad8)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x3) |
+| #define | [TIMER1\_CC1\_PD4](#a42265ecc8251fe6745cd225fb14cae35)   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x4) |
+| #define | [TIMER1\_CC2\_PA0](#a8134a1d2f64747b5fd66aa6da49db081)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x0) |
+| #define | [TIMER1\_CC2\_PA1](#af865342309d6355e05de4a3736e73a65)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x1) |
+| #define | [TIMER1\_CC2\_PA2](#af329d80cea63f60045ea71156c4d9d6b)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x2) |
+| #define | [TIMER1\_CC2\_PA3](#a1eb4626f10a12c5f6b1539fe897e0df0)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x3) |
+| #define | [TIMER1\_CC2\_PA4](#abac33f1fd8502f1356107d20958e9ebb)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x4) |
+| #define | [TIMER1\_CC2\_PA5](#ab1ba6969141f0ba0ed17a5e3bd6ac2d7)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x5) |
+| #define | [TIMER1\_CC2\_PA6](#a46c2801cd73d8663d493fa62300a0188)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x6) |
+| #define | [TIMER1\_CC2\_PB0](#ad1ba82a4e75e024cc9f19d66f691c4a1)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x1, 0x0) |
+| #define | [TIMER1\_CC2\_PB1](#a4da4366632a0e029856f048d0953b6b2)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x1, 0x1) |
+| #define | [TIMER1\_CC2\_PC0](#a9d3402f1ed1c7030fb0a1af512425ae2)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x0) |
+| #define | [TIMER1\_CC2\_PC1](#a939a814b29112f312ba5085449fe9b8c)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x1) |
+| #define | [TIMER1\_CC2\_PC2](#a22ffd1572810e3da8a83f7cc4ccf1386)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x2) |
+| #define | [TIMER1\_CC2\_PC3](#afcb1d543010489ffe23a92875fafb326)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x3) |
+| #define | [TIMER1\_CC2\_PC4](#a1a34258c1ad068a3474e0114b1e3ac37)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x4) |
+| #define | [TIMER1\_CC2\_PC5](#a4b3b5917e7881eeb6a191c095f0df29a)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x5) |
+| #define | [TIMER1\_CC2\_PD0](#a0bb950575d698e83b4a7b055928d4b02)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x0) |
+| #define | [TIMER1\_CC2\_PD1](#a9f92d850417b9d521c2c2515fbeb8c52)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x1) |
+| #define | [TIMER1\_CC2\_PD2](#ac5f369d207dbe8da77b94ed7c2ee1e89)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x2) |
+| #define | [TIMER1\_CC2\_PD3](#aa1c5e07b9ff3373d65a73b3fc916c226)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x3) |
+| #define | [TIMER1\_CC2\_PD4](#adfa6b132aa5c4c006185ebf5170aa38d)   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x4) |
+| #define | [TIMER1\_CDTI0\_PA0](#a76552704f3b8c28588c6073b170a6bbb)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x0) |
+| #define | [TIMER1\_CDTI0\_PA1](#a06ea543c9f00b58b7eb4e162a7c3f427)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x1) |
+| #define | [TIMER1\_CDTI0\_PA2](#ace53011f7d140ea6892946ac0d246006)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x2) |
+| #define | [TIMER1\_CDTI0\_PA3](#a9b740fb70a98203b6a736fb3e3af97d1)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x3) |
+| #define | [TIMER1\_CDTI0\_PA4](#adf79eddb39e5a3a28e98da92323cead4)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x4) |
+| #define | [TIMER1\_CDTI0\_PA5](#a1c025b319acd53ac15e023a964b684d4)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x5) |
+| #define | [TIMER1\_CDTI0\_PA6](#afed1694b73910fdb222e7ac95c7700a6)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x6) |
+| #define | [TIMER1\_CDTI0\_PB0](#a3f2880efd1d31b43e1fbbd840a535330)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x1, 0x0) |
+| #define | [TIMER1\_CDTI0\_PB1](#a3f243ab2322faa708a8c0531a3fb15fe)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x1, 0x1) |
+| #define | [TIMER1\_CDTI0\_PC0](#a7da42fba55aa964b5af1f0e996e10dfd)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x0) |
+| #define | [TIMER1\_CDTI0\_PC1](#a90f5a73378a61a3144cb3be626acf0c3)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x1) |
+| #define | [TIMER1\_CDTI0\_PC2](#ac7083129b89cd513468ea9a936cd2a60)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x2) |
+| #define | [TIMER1\_CDTI0\_PC3](#ac480c190767e6bf9e64e2581617388d7)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x3) |
+| #define | [TIMER1\_CDTI0\_PC4](#a80619df142e179bb585569b51f906b85)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x4) |
+| #define | [TIMER1\_CDTI0\_PC5](#af24c550e1fcf0b93ca210c59884dd895)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x5) |
+| #define | [TIMER1\_CDTI0\_PD0](#aeafc7272c0cf6bed9dcb09fe8802bd1f)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x0) |
+| #define | [TIMER1\_CDTI0\_PD1](#a15c83b7661113ab00fc830c832a63ad5)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x1) |
+| #define | [TIMER1\_CDTI0\_PD2](#af02751809240508c57a914bf47bc929b)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x2) |
+| #define | [TIMER1\_CDTI0\_PD3](#a36ad9aa1e2ca755919bd18f1461fd9fd)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x3) |
+| #define | [TIMER1\_CDTI0\_PD4](#a694a3359d922f9aeca292c10db75cae7)   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x4) |
+| #define | [TIMER1\_CDTI1\_PA0](#a0c90975d990014c0a70d8fe8a01bed61)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x0) |
+| #define | [TIMER1\_CDTI1\_PA1](#a063202bd4d4d5c420613ccbdf41c08ac)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x1) |
+| #define | [TIMER1\_CDTI1\_PA2](#a03c893bbd5151dc4bf1f08a8c197982d)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x2) |
+| #define | [TIMER1\_CDTI1\_PA3](#a13fea81e86713c5839372ae17ffa5b2a)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x3) |
+| #define | [TIMER1\_CDTI1\_PA4](#a3b63381e36f0f67eecdb0e613e082acd)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x4) |
+| #define | [TIMER1\_CDTI1\_PA5](#ae29404facb1a5712a8d3654c32abac03)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x5) |
+| #define | [TIMER1\_CDTI1\_PA6](#a041c492c18debf15659b54a4d1acda45)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x6) |
+| #define | [TIMER1\_CDTI1\_PB0](#afe513e7286648f7e0dfdcd5831a158cb)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x1, 0x0) |
+| #define | [TIMER1\_CDTI1\_PB1](#a231c7d9bddd4e56226c51a3ca0516290)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x1, 0x1) |
+| #define | [TIMER1\_CDTI1\_PC0](#a26cc959057976169dd4e4a4330bb34ff)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x0) |
+| #define | [TIMER1\_CDTI1\_PC1](#a5be334fd1d01d68ebc4fbf77394adc03)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x1) |
+| #define | [TIMER1\_CDTI1\_PC2](#a153d9a304ad237e9f99bf2fd97cb5ca3)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x2) |
+| #define | [TIMER1\_CDTI1\_PC3](#ae1d146285574814c26941837ae32cf33)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x3) |
+| #define | [TIMER1\_CDTI1\_PC4](#aadc34ad6a076211bfe55a1cecba057ed)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x4) |
+| #define | [TIMER1\_CDTI1\_PC5](#a89667e375454960fd56fa87fd46a1cf0)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x5) |
+| #define | [TIMER1\_CDTI1\_PD0](#a9a83a5c25369e4dc286c219f9be05a08)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x0) |
+| #define | [TIMER1\_CDTI1\_PD1](#ae2d334d95e5a2f65c92562727a87520b)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x1) |
+| #define | [TIMER1\_CDTI1\_PD2](#af1a5a15c236edb1c77acce4cb8d8b894)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x2) |
+| #define | [TIMER1\_CDTI1\_PD3](#a8b00bb8a1bbb8cc97e1e1997cd5ed10b)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x3) |
+| #define | [TIMER1\_CDTI1\_PD4](#a7db403c434a33b41eefe0278890da8ca)   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x4) |
+| #define | [TIMER1\_CDTI2\_PA0](#ac959ddf75f8afe8179b53148e90a0cd3)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x0) |
+| #define | [TIMER1\_CDTI2\_PA1](#a03028d392b456dbce8ce5c7325f52b87)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x1) |
+| #define | [TIMER1\_CDTI2\_PA2](#a3282e1d97d899e3010b59e952aa12429)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x2) |
+| #define | [TIMER1\_CDTI2\_PA3](#a249a669752eb8cfca1a9dee28e0fa5b9)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x3) |
+| #define | [TIMER1\_CDTI2\_PA4](#acab3d281ca3eb0fc97c1c296beacb302)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x4) |
+| #define | [TIMER1\_CDTI2\_PA5](#a1b4f4b4f2f84c99855ddfbdd829a0814)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x5) |
+| #define | [TIMER1\_CDTI2\_PA6](#a4008736ae0d99019066eb6435864a043)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x6) |
+| #define | [TIMER1\_CDTI2\_PB0](#a4ff755a9d12285c868a4dc0e5d9de281)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x1, 0x0) |
+| #define | [TIMER1\_CDTI2\_PB1](#a94cb965aa4d6a7fb7a31acbd363f54ee)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x1, 0x1) |
+| #define | [TIMER1\_CDTI2\_PC0](#ab37f717d7232493a31424e87d242c2a8)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x0) |
+| #define | [TIMER1\_CDTI2\_PC1](#a6a306946717970eb62df4307de771fef)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x1) |
+| #define | [TIMER1\_CDTI2\_PC2](#a248af2da57a57600d4a144c71f860006)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x2) |
+| #define | [TIMER1\_CDTI2\_PC3](#ae1c48f4b069d6c7e410511b1e95a7def)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x3) |
+| #define | [TIMER1\_CDTI2\_PC4](#af91af878bbab4422378cf31a711055ff)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x4) |
+| #define | [TIMER1\_CDTI2\_PC5](#ac16216ae2977f9696075b3a6d8c64aa0)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x5) |
+| #define | [TIMER1\_CDTI2\_PD0](#ae362330bff63d204299a6a33f4c4f191)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x0) |
+| #define | [TIMER1\_CDTI2\_PD1](#a6559a7e28febb9e31fca6847e11cdb1a)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x1) |
+| #define | [TIMER1\_CDTI2\_PD2](#a8a53201b17d025911ca41f86e3d13a66)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x2) |
+| #define | [TIMER1\_CDTI2\_PD3](#a254d9132271304cd62f61184a40471d6)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x3) |
+| #define | [TIMER1\_CDTI2\_PD4](#acf43810574237c108aba907ba113d6ba)   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x4) |
+| #define | [TIMER2\_CC0\_PA0](#a67e6f27f89e7e121cce88e0186ab5010)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x0) |
+| #define | [TIMER2\_CC0\_PA1](#a545f09892c0762da7a55cdc8d16e8e6f)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x1) |
+| #define | [TIMER2\_CC0\_PA2](#aee905018c0d9aa48c14e415474c03f62)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x2) |
+| #define | [TIMER2\_CC0\_PA3](#ad7327f8fa42b7aa1875d2b57769330eb)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x3) |
+| #define | [TIMER2\_CC0\_PA4](#acab7bd67fc01c7fa8b3c40d75f725a0a)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x4) |
+| #define | [TIMER2\_CC0\_PA5](#ac846d48997b6bdbb2b7665a62a6505e3)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x5) |
+| #define | [TIMER2\_CC0\_PA6](#a987c36e9761389522505ac50952ed04a)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x6) |
+| #define | [TIMER2\_CC0\_PB0](#a2a9776f698e90b570e177a6a0059b15b)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x1, 0x0) |
+| #define | [TIMER2\_CC0\_PB1](#a55d9652dbf9c89d894162860c56459dd)   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x1, 0x1) |
+| #define | [TIMER2\_CC1\_PA0](#a1164a4f1a0cfbf0cb157eeb7be84bd28)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x0) |
+| #define | [TIMER2\_CC1\_PA1](#a1bca4d4f43da2d564d68622dcb0e5d9e)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x1) |
+| #define | [TIMER2\_CC1\_PA2](#adec2ad20e72e0b8fd02b6476685f5155)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x2) |
+| #define | [TIMER2\_CC1\_PA3](#a8a42dfc04580c2dba2b961509d03ff43)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x3) |
+| #define | [TIMER2\_CC1\_PA4](#a89a293610575367134548bc2ccd0c47e)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x4) |
+| #define | [TIMER2\_CC1\_PA5](#acdbcff934f4bac5a2b0f03a33e44138b)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x5) |
+| #define | [TIMER2\_CC1\_PA6](#a4c420a0fc98b352544416bbfa8216ae6)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x6) |
+| #define | [TIMER2\_CC1\_PB0](#ac7397d7ebe41f5c2b732bece2b63f793)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x1, 0x0) |
+| #define | [TIMER2\_CC1\_PB1](#a0d597a9083a41c950f29bbbf7e148ef7)   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x1, 0x1) |
+| #define | [TIMER2\_CC2\_PA0](#a2d62e330c22411c86274caefb099cf19)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x0) |
+| #define | [TIMER2\_CC2\_PA1](#aab60fb88a625e320ce64ea10133311df)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x1) |
+| #define | [TIMER2\_CC2\_PA2](#a4bf049cdc3017e816165effd4cff7d35)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x2) |
+| #define | [TIMER2\_CC2\_PA3](#a00eafe61a794b07af52d028ab4dd1adf)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x3) |
+| #define | [TIMER2\_CC2\_PA4](#aedbc75bcf6c733bcd3deadb3c8ce0f21)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x4) |
+| #define | [TIMER2\_CC2\_PA5](#a490ca0f07b93c2cd68351c6afb4a9819)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x5) |
+| #define | [TIMER2\_CC2\_PA6](#abd8592d55f4ff8bd546adb9efc7ee922)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x6) |
+| #define | [TIMER2\_CC2\_PB0](#a59ed3f774f4d21a9f1fbc9d71cb57fe4)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x1, 0x0) |
+| #define | [TIMER2\_CC2\_PB1](#abaf434275a10efbc0b32f7d859d51912)   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x1, 0x1) |
+| #define | [TIMER2\_CDTI0\_PA0](#a6cb932cba841a0987d78da39e11cadba)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x0) |
+| #define | [TIMER2\_CDTI0\_PA1](#a9cde27e9bdb4e6157afe1149d35e8dbd)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x1) |
+| #define | [TIMER2\_CDTI0\_PA2](#a5906c55b37b73111550ea2eb75681575)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x2) |
+| #define | [TIMER2\_CDTI0\_PA3](#afa16ff7cf30f5cc4d2fe967263b9b2b0)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x3) |
+| #define | [TIMER2\_CDTI0\_PA4](#ac0d736392f3d098ec5789189dc37036b)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x4) |
+| #define | [TIMER2\_CDTI0\_PA5](#aa8c2a2712578b133cdbd8d07f1f37c24)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x5) |
+| #define | [TIMER2\_CDTI0\_PA6](#a801b4531b9bb956d267c53f15b47a872)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x6) |
+| #define | [TIMER2\_CDTI0\_PB0](#ad1c011c5437d75b74c56ebbb00e9dd65)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x1, 0x0) |
+| #define | [TIMER2\_CDTI0\_PB1](#afedfcd3a53de2251bb61ccfed3af4a5f)   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x1, 0x1) |
+| #define | [TIMER2\_CDTI1\_PA0](#ae901259c744451af8a8ded388dfe9f5d)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x0) |
+| #define | [TIMER2\_CDTI1\_PA1](#a9e6e2fc9804d67ec073460ddf34fdd02)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x1) |
+| #define | [TIMER2\_CDTI1\_PA2](#a7ac971aa8206899b4623057140243357)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x2) |
+| #define | [TIMER2\_CDTI1\_PA3](#af174d0f8740b9d33ae66dba3e34b6031)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x3) |
+| #define | [TIMER2\_CDTI1\_PA4](#afbda2d057823f529835a894ff9ad8629)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x4) |
+| #define | [TIMER2\_CDTI1\_PA5](#a5b02e4c0ceb352d283a0e99cb05fddab)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x5) |
+| #define | [TIMER2\_CDTI1\_PA6](#a5a930f094a10216d1b43a4eab6a359b7)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x6) |
+| #define | [TIMER2\_CDTI1\_PB0](#a542b9626fdc82bd0444ecd2518031406)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x1, 0x0) |
+| #define | [TIMER2\_CDTI1\_PB1](#a3600b995f1e40289444081210ad8430f)   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x1, 0x1) |
+| #define | [TIMER2\_CDTI2\_PA0](#a70028435f4fa81dc8504d6fb5562480c)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x0) |
+| #define | [TIMER2\_CDTI2\_PA1](#af71768a49adaf60e74a77ff629b3ebd2)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x1) |
+| #define | [TIMER2\_CDTI2\_PA2](#a56efa7077f3f025446f2c1937b833093)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x2) |
+| #define | [TIMER2\_CDTI2\_PA3](#a288823b89fcc8c89d73c6865f8f69cc8)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x3) |
+| #define | [TIMER2\_CDTI2\_PA4](#ab34c2728b9bc0054c854960165408494)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x4) |
+| #define | [TIMER2\_CDTI2\_PA5](#af55eb46eaa2657c75df8b7c92119588c)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x5) |
+| #define | [TIMER2\_CDTI2\_PA6](#a98e606b3b4ba2b0118736951d32b48ad)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x6) |
+| #define | [TIMER2\_CDTI2\_PB0](#abd0220954a47f2fcf85f72971f2e7f8c)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x1, 0x0) |
+| #define | [TIMER2\_CDTI2\_PB1](#ad82071aa4bb174e39da29be3a98e06f4)   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x1, 0x1) |
+| #define | [TIMER3\_CC0\_PC0](#adaa89be7653ebbb82d77f6ccd3ba117a)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x0) |
+| #define | [TIMER3\_CC0\_PC1](#ac49977cf88186dd85de660d7dca24093)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x1) |
+| #define | [TIMER3\_CC0\_PC2](#a943818c0b36e315772740e9260777e98)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x2) |
+| #define | [TIMER3\_CC0\_PC3](#a3b4277fa7886db498357df495e7d0f5b)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x3) |
+| #define | [TIMER3\_CC0\_PC4](#afef97dfceb1266dad39f3c06a28cccde)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x4) |
+| #define | [TIMER3\_CC0\_PC5](#a850b7d20c5e78b8609f0b4ab737fb59e)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x5) |
+| #define | [TIMER3\_CC0\_PD0](#a05f49738ea2e4cac6cff7b921761da01)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x0) |
+| #define | [TIMER3\_CC0\_PD1](#a4bf238e512342fc49c7a7d3fa1a13ee7)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x1) |
+| #define | [TIMER3\_CC0\_PD2](#a01e72605da25e5a408a0c3467be59205)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x2) |
+| #define | [TIMER3\_CC0\_PD3](#a3216588bd129dc8f82c27de826acb69b)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x3) |
+| #define | [TIMER3\_CC0\_PD4](#a0775d2d03fc98ce82fba4e19100e3b96)   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x4) |
+| #define | [TIMER3\_CC1\_PC0](#a0911c0d09d2d62526ee7d69a0abf0206)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x0) |
+| #define | [TIMER3\_CC1\_PC1](#afc5b3d4f06f9392ff91d1a04039cc106)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x1) |
+| #define | [TIMER3\_CC1\_PC2](#a841b61a51502f96b4b4db51f1747ddc2)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x2) |
+| #define | [TIMER3\_CC1\_PC3](#abe25ec49b962f68c7e0b782fe8b31e0c)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x3) |
+| #define | [TIMER3\_CC1\_PC4](#aafcf7edadba216092137ea9ce0c0da17)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x4) |
+| #define | [TIMER3\_CC1\_PC5](#ac24430c7e08b2e0fe7bc63f92c01f9b5)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x5) |
+| #define | [TIMER3\_CC1\_PD0](#acb2b010357d2dd7e82266e1f530d93fc)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x0) |
+| #define | [TIMER3\_CC1\_PD1](#ac1cffc60caba52ee6ab100837b2b6cb3)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x1) |
+| #define | [TIMER3\_CC1\_PD2](#ac07495ddce953166e53c19d0a4f928fc)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x2) |
+| #define | [TIMER3\_CC1\_PD3](#a23644731303d1f1e527a7174ccef3e4a)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x3) |
+| #define | [TIMER3\_CC1\_PD4](#a06ed13488197cb82712911d67eb16b3e)   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x4) |
+| #define | [TIMER3\_CC2\_PC0](#a7bf47abf6ea4ddf3f3e8dd71dcabc9f8)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x0) |
+| #define | [TIMER3\_CC2\_PC1](#a2a2021e1cc5ec1156b6e3e8432a56dee)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x1) |
+| #define | [TIMER3\_CC2\_PC2](#ad74e77cefd62c22a97737ab3eb7ce658)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x2) |
+| #define | [TIMER3\_CC2\_PC3](#ab80ddb4234db5937e1244204d980e951)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x3) |
+| #define | [TIMER3\_CC2\_PC4](#a717ccb54d7b93e7d4341f15ae10944cb)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x4) |
+| #define | [TIMER3\_CC2\_PC5](#af10e6860473870cd0555e03907220ba7)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x5) |
+| #define | [TIMER3\_CC2\_PD0](#a457c25d6e6cb832e66753dfc84d189f3)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x0) |
+| #define | [TIMER3\_CC2\_PD1](#adbeb6aa8891fdfe6510584bc8e5b5ced)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x1) |
+| #define | [TIMER3\_CC2\_PD2](#aa6524ad51bd80ac04276af0e722c5047)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x2) |
+| #define | [TIMER3\_CC2\_PD3](#ae94118e07443fa220d9162ad681c1a19)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x3) |
+| #define | [TIMER3\_CC2\_PD4](#a0a4d56c8f26bb269a10888e29cd0df4e)   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x4) |
+| #define | [TIMER3\_CDTI0\_PC0](#a68db08edab7a0f208661895888ad0f4a)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x0) |
+| #define | [TIMER3\_CDTI0\_PC1](#a3ae3f2df52006b2a53b70f7e940b8ed9)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x1) |
+| #define | [TIMER3\_CDTI0\_PC2](#a1e3e29f3208cc7253d081b7c589632c1)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x2) |
+| #define | [TIMER3\_CDTI0\_PC3](#a8ee6bc60c7704e1437c5d175df34d0a0)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x3) |
+| #define | [TIMER3\_CDTI0\_PC4](#a6f98e4a7f4269972296fe587e83d0d7a)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x4) |
+| #define | [TIMER3\_CDTI0\_PC5](#a348b50033a138bbc11ef6e99188fb023)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x5) |
+| #define | [TIMER3\_CDTI0\_PD0](#ae67b96fbcd3994e67f72d03f29690c02)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x0) |
+| #define | [TIMER3\_CDTI0\_PD1](#a477f3adb9d6430be9ef0746cba23b9fb)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x1) |
+| #define | [TIMER3\_CDTI0\_PD2](#a3ca82d8f98012743293a033b4c9c93be)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x2) |
+| #define | [TIMER3\_CDTI0\_PD3](#a3115a35f39b0b3f35120c728fc5c8c2f)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x3) |
+| #define | [TIMER3\_CDTI0\_PD4](#a5a5a79c390c93f0cceaca0668890ec8a)   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x4) |
+| #define | [TIMER3\_CDTI1\_PC0](#a5dd1fea7f7ab7ee15a030b96a40d1114)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x0) |
+| #define | [TIMER3\_CDTI1\_PC1](#aca7f55259fe2f36061078af791f3de4b)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x1) |
+| #define | [TIMER3\_CDTI1\_PC2](#a03b1888fffa0036b1a9d92357d161cc7)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x2) |
+| #define | [TIMER3\_CDTI1\_PC3](#a336444e4a0e7068e3e25e6908628c40c)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x3) |
+| #define | [TIMER3\_CDTI1\_PC4](#a7c48bb98bfbace4681c6a1267d681e45)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x4) |
+| #define | [TIMER3\_CDTI1\_PC5](#afa7ade2fc1198c66cd4812ac29befdf4)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x5) |
+| #define | [TIMER3\_CDTI1\_PD0](#a984b05d5d53c1068a86614a550995fc0)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x0) |
+| #define | [TIMER3\_CDTI1\_PD1](#a377c5ee038e274db1ddead0ad0fa7bf1)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x1) |
+| #define | [TIMER3\_CDTI1\_PD2](#a57207da12d6fa72e566b728371f4f402)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x2) |
+| #define | [TIMER3\_CDTI1\_PD3](#a18850fb5d2583d3652f7c43ea1d0ac39)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x3) |
+| #define | [TIMER3\_CDTI1\_PD4](#a419139192559d7484a6496741f780682)   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x4) |
+| #define | [TIMER3\_CDTI2\_PC0](#a4a21cc75bb143d4fa1a84eb243fccc36)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x0) |
+| #define | [TIMER3\_CDTI2\_PC1](#a881ccb7ad41ecf73423b97e8c489a6d0)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x1) |
+| #define | [TIMER3\_CDTI2\_PC2](#aefbbc0a5e8e7673ccacdf399c288903e)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x2) |
+| #define | [TIMER3\_CDTI2\_PC3](#abc867b08524924b26a2ed326a2b12155)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x3) |
+| #define | [TIMER3\_CDTI2\_PC4](#a0befb875610ff387c2c1ac06f88d7b79)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x4) |
+| #define | [TIMER3\_CDTI2\_PC5](#aea7c0881164e98c21fcf30d689deb592)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x5) |
+| #define | [TIMER3\_CDTI2\_PD0](#a228392afbba95bbb69a65aae20dbb2d1)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x0) |
+| #define | [TIMER3\_CDTI2\_PD1](#a162d7a8c85197e047bc65cef7235a591)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x1) |
+| #define | [TIMER3\_CDTI2\_PD2](#a7f3873fb6abfaf970024318529fcfcd5)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x2) |
+| #define | [TIMER3\_CDTI2\_PD3](#a0c3fc7049d7dacfedfc4a04ced71202f)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x3) |
+| #define | [TIMER3\_CDTI2\_PD4](#adbfbccad761957506d72eb5b5f774ddc)   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x4) |
+| #define | [USART0\_CS\_PA0](#a8b31d0e72dc71f813f3ae21da1b064dc)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x0) |
+| #define | [USART0\_CS\_PA1](#affbbbbf6348af411b5392e462304edee)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x1) |
+| #define | [USART0\_CS\_PA2](#a70d22cbabea10e31293a21262f6a64b3)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x2) |
+| #define | [USART0\_CS\_PA3](#a2a80bc71c923ed7c6fd2865d869864fc)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x3) |
+| #define | [USART0\_CS\_PA4](#af24e43481767fe27cdd78f5e27f15d7f)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x4) |
+| #define | [USART0\_CS\_PA5](#a7cb722df10819495d5059933ddf122a4)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x5) |
+| #define | [USART0\_CS\_PA6](#a94d45fdffdc79cc92994105238c9f0f8)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x6) |
+| #define | [USART0\_CS\_PB0](#a5f92c862131c6dfd2dc95146cdfa09aa)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x1, 0x0) |
+| #define | [USART0\_CS\_PB1](#aa45d4cfe63813c6c8aa8602e0783f7fb)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x1, 0x1) |
+| #define | [USART0\_CS\_PC0](#a2372be5754b13cafcef6a63d63548924)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x0) |
+| #define | [USART0\_CS\_PC1](#a0033eb0ea09f9dab2ab5a20d185ba0e0)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x1) |
+| #define | [USART0\_CS\_PC2](#afdc21300ca9ab485a7d97fa344ee3292)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x2) |
+| #define | [USART0\_CS\_PC3](#acc373a1b4402c4f4f229524837a4c3ac)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x3) |
+| #define | [USART0\_CS\_PC4](#a3bb143a83558aaa91fad609259a13044)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x4) |
+| #define | [USART0\_CS\_PC5](#ab4ae79a567d023b7f886019e3d5518b1)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x5) |
+| #define | [USART0\_CS\_PD0](#a4d2ef2ccd5f3dbefa048e37f2bb40b8b)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x0) |
+| #define | [USART0\_CS\_PD1](#a1f6089f92cf5168cbd9a6daa0f336ebb)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x1) |
+| #define | [USART0\_CS\_PD2](#a4e54dcbabdbebe60f309a31c7acbe30f)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x2) |
+| #define | [USART0\_CS\_PD3](#a00073504dbe55119dc3dac466c5f816f)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x3) |
+| #define | [USART0\_CS\_PD4](#adc4cf5aa4e7acad165031376bf0e2551)   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x4) |
+| #define | [USART0\_RTS\_PA0](#a104b44454bfafbbdd54fe6b53c2dff33)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x0) |
+| #define | [USART0\_RTS\_PA1](#abbaf9c9b55c0673fc774610b83aca313)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x1) |
+| #define | [USART0\_RTS\_PA2](#abaae8c12c4daa90d49e9f327f16a6691)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x2) |
+| #define | [USART0\_RTS\_PA3](#a4ba035c607b639dfef668323a43a3f7f)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x3) |
+| #define | [USART0\_RTS\_PA4](#a234727fb3ae07a22c350d4a0a58c30cb)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x4) |
+| #define | [USART0\_RTS\_PA5](#a0f8ad339a81f02d95e747a82aefe699e)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x5) |
+| #define | [USART0\_RTS\_PA6](#afcab39462b0cc95e3984b4a10e54b587)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x6) |
+| #define | [USART0\_RTS\_PB0](#a9808fc5b30607e6d0cbc3172369b818d)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x1, 0x0) |
+| #define | [USART0\_RTS\_PB1](#a44240f09f67e09e58d28f82c43aff37d)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x1, 0x1) |
+| #define | [USART0\_RTS\_PC0](#a2023f5afe82a2b2ff9b6c00bb249367b)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x0) |
+| #define | [USART0\_RTS\_PC1](#a59cd7521827677160d85555c25430a9b)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x1) |
+| #define | [USART0\_RTS\_PC2](#af7675ade342b55e04078f3d53306ca45)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x2) |
+| #define | [USART0\_RTS\_PC3](#a42798ba22452bc2850007c9871d9daee)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x3) |
+| #define | [USART0\_RTS\_PC4](#ae54415286b298aceaebdddcb3d008f5b)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x4) |
+| #define | [USART0\_RTS\_PC5](#a6490fddb874c99a2cc293342c1b58dfc)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x5) |
+| #define | [USART0\_RTS\_PD0](#a705598d6a60acd8936d6b7d0aa18cba2)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x0) |
+| #define | [USART0\_RTS\_PD1](#af77229ee4cf9eac56cc2fb134bc805c4)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x1) |
+| #define | [USART0\_RTS\_PD2](#a6a6bf570ad629ce3c81b37d31ffa2efe)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x2) |
+| #define | [USART0\_RTS\_PD3](#a0f8639b93ef710b631309b9388fbcb50)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x3) |
+| #define | [USART0\_RTS\_PD4](#ad9efbfbd3c62b51abf94fbbb8d9a493a)   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x4) |
+| #define | [USART0\_RX\_PA0](#aacdc76948ed8f1e54f8e260e62c89f61)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x0) |
+| #define | [USART0\_RX\_PA1](#af41b4722d7b89c28645c24ac8e9a5eb4)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x1) |
+| #define | [USART0\_RX\_PA2](#a4da72ddcfaf102aa817eb2bc6e0c5cbb)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x2) |
+| #define | [USART0\_RX\_PA3](#a0a9b80333130d05d11bf88c78434221a)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x3) |
+| #define | [USART0\_RX\_PA4](#ac992577a6d9d5e0730eaaaa2086d5802)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x4) |
+| #define | [USART0\_RX\_PA5](#a8203de9111610660eea0c49ef51a9f6a)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x5) |
+| #define | [USART0\_RX\_PA6](#a84a42fda6d1b7a2269c357e2929b8219)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x6) |
+| #define | [USART0\_RX\_PB0](#ab6691b3280f611c94c8690302bce85d5)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x1, 0x0) |
+| #define | [USART0\_RX\_PB1](#ab23c92ad1cb6a8cafe055baade2e8b87)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x1, 0x1) |
+| #define | [USART0\_RX\_PC0](#aee4369f8682feee79f184c83d80274da)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x0) |
+| #define | [USART0\_RX\_PC1](#a9350586833a3d5c48baefd1610c13f62)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x1) |
+| #define | [USART0\_RX\_PC2](#a0a895e2c1e4a38b1fe6ebd5da7d525e5)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x2) |
+| #define | [USART0\_RX\_PC3](#a437d4a2cea5c64fc92b6c99b87bf5e8c)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x3) |
+| #define | [USART0\_RX\_PC4](#a75a6d4f4d7656eea8244bfb0d030ca79)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x4) |
+| #define | [USART0\_RX\_PC5](#a869fb6d64ec0e62beecb34dd0279f202)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x5) |
+| #define | [USART0\_RX\_PD0](#a823861421794933ab4e682de63e49cc4)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x0) |
+| #define | [USART0\_RX\_PD1](#a408c8b04c4e9598c9bb139446244810f)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x1) |
+| #define | [USART0\_RX\_PD2](#ad11874063a494e22191887fbd29d0189)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x2) |
+| #define | [USART0\_RX\_PD3](#a0dbbdc55667cd4c32262a7e91298cf95)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x3) |
+| #define | [USART0\_RX\_PD4](#a95c9f4c6e85f0d9cf050e7554cc41074)   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x4) |
+| #define | [USART0\_CLK\_PA0](#a16af201487286a8bad218c94245a88c7)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x0) |
+| #define | [USART0\_CLK\_PA1](#a1c3041ba213cdbcb2796dbffa01b8571)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x1) |
+| #define | [USART0\_CLK\_PA2](#a1e546e7130f7012f29d6d2aad3e97b39)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x2) |
+| #define | [USART0\_CLK\_PA3](#aa78910cf4b3c816508e2e97288489f16)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x3) |
+| #define | [USART0\_CLK\_PA4](#a76684ba202fa4fb3b5e545a031f0c841)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x4) |
+| #define | [USART0\_CLK\_PA5](#a92cda8774c81ce2539654516c2b62dd6)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x5) |
+| #define | [USART0\_CLK\_PA6](#a6c67ed947caacf669665e133327a7e00)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x6) |
+| #define | [USART0\_CLK\_PB0](#a80303adbfa7489fdefcbf14b38c25194)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x1, 0x0) |
+| #define | [USART0\_CLK\_PB1](#a242754151600f954e6c9063254862537)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x1, 0x1) |
+| #define | [USART0\_CLK\_PC0](#a9504215a474950cdc3ae3e76bb0ee428)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x0) |
+| #define | [USART0\_CLK\_PC1](#aa03060eb71eadfc578315d600f297665)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x1) |
+| #define | [USART0\_CLK\_PC2](#afd46249fb73936581af6f762bf749096)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x2) |
+| #define | [USART0\_CLK\_PC3](#a39fd0a4cefb1903103818add5272cb69)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x3) |
+| #define | [USART0\_CLK\_PC4](#a86e90f6c37f90fb2c79d163239123815)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x4) |
+| #define | [USART0\_CLK\_PC5](#a13955f88c0655104ccceaf72d8fcc000)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x5) |
+| #define | [USART0\_CLK\_PD0](#aa5dd3eff1b983555e7437c815d69d6c1)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x0) |
+| #define | [USART0\_CLK\_PD1](#a808576a293b84b259f0b749099ee53f0)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x1) |
+| #define | [USART0\_CLK\_PD2](#aba6f9004672cd8fcc046036c5a5e385d)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x2) |
+| #define | [USART0\_CLK\_PD3](#acf11ed64457d633e70ba8551caaad511)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x3) |
+| #define | [USART0\_CLK\_PD4](#a8fa68ae31cbf6041854bd1de35efa747)   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x4) |
+| #define | [USART0\_TX\_PA0](#a4691259ca7c910831f70cff06b9737ac)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x0) |
+| #define | [USART0\_TX\_PA1](#af4e1c897ae049a4b223e09ab587f116d)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x1) |
+| #define | [USART0\_TX\_PA2](#acc13e25bcc1953b93e76521966cd1b39)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x2) |
+| #define | [USART0\_TX\_PA3](#a2ccdea01de2b8da884a33ddc1a81982f)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x3) |
+| #define | [USART0\_TX\_PA4](#a28450d0bc2dcbe2ead4d36cf3800eb03)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x4) |
+| #define | [USART0\_TX\_PA5](#ab3851360e615c31434f53597b8012217)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x5) |
+| #define | [USART0\_TX\_PA6](#a50d32b162eb8cfaee3228b4dd1aa2aef)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x6) |
+| #define | [USART0\_TX\_PB0](#a7af0455dce2acd605ef61cdc726c3177)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x1, 0x0) |
+| #define | [USART0\_TX\_PB1](#a6ccc48b5e17aca0e2aefe341f9519ae9)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x1, 0x1) |
+| #define | [USART0\_TX\_PC0](#a63c1a984a64cb3c40643a7e38c20caaa)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x0) |
+| #define | [USART0\_TX\_PC1](#ac501027215a6551a637bacf8d1d406fa)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x1) |
+| #define | [USART0\_TX\_PC2](#ac1b7aad7c958ba2d2cfa2622318ac3c2)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x2) |
+| #define | [USART0\_TX\_PC3](#aa215f604dc67f092f495c472de9a7ed5)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x3) |
+| #define | [USART0\_TX\_PC4](#a1d49c843687f02f806c122059ac08a0c)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x4) |
+| #define | [USART0\_TX\_PC5](#a03580c3dc9b22d031f78a0a3051b25de)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x5) |
+| #define | [USART0\_TX\_PD0](#a6756b78da6f6228f331b11a1a17be09d)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x0) |
+| #define | [USART0\_TX\_PD1](#a1a2e17d5a9daefa68e67b96957271b67)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x1) |
+| #define | [USART0\_TX\_PD2](#af52dcac08d3d9e0757048dbe7e0394b2)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x2) |
+| #define | [USART0\_TX\_PD3](#a51ef7d6af85db7597dd27a68c75fe4e9)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x3) |
+| #define | [USART0\_TX\_PD4](#a1d3a6020b34c9e101d510678ba45e28a)   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x4) |
+| #define | [USART0\_CTS\_PA0](#ac3ca642f56ef830b82675e79f7741f3b)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x0) |
+| #define | [USART0\_CTS\_PA1](#afe282cc2c0b48daca846099518f85197)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x1) |
+| #define | [USART0\_CTS\_PA2](#abb4ee35f35c67053d9e499b9b6586848)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x2) |
+| #define | [USART0\_CTS\_PA3](#ac7c103a6f291a3ba02c78b56cda7522e)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x3) |
+| #define | [USART0\_CTS\_PA4](#adf4ae6f16534af5c18b924890e70b909)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x4) |
+| #define | [USART0\_CTS\_PA5](#a375e4336fc59220a304beb9e818038a8)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x5) |
+| #define | [USART0\_CTS\_PA6](#a34bdfb80ac61bcde4828b64e5ab7bc6a)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x6) |
+| #define | [USART0\_CTS\_PB0](#a5e6fd192eef4cb50593c5f8f225607db)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x1, 0x0) |
+| #define | [USART0\_CTS\_PB1](#a8ba9df244ac2a7e580a45372c6db1496)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x1, 0x1) |
+| #define | [USART0\_CTS\_PC0](#a176d8e361297cf55c78d425fed824f1f)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x0) |
+| #define | [USART0\_CTS\_PC1](#acae624423e070b271d7c62019dc19ca6)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x1) |
+| #define | [USART0\_CTS\_PC2](#a11af346f3b4cd506e5f42d802eeaa7fa)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x2) |
+| #define | [USART0\_CTS\_PC3](#acde9eb8d5c61ec7fa0c66248de8acdb3)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x3) |
+| #define | [USART0\_CTS\_PC4](#a0c7d39bd6f59e8a9281d68560e3ea0cc)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x4) |
+| #define | [USART0\_CTS\_PC5](#aa2c0ec406645422286f3099c880051e8)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x5) |
+| #define | [USART0\_CTS\_PD0](#ad8f9198b67b3777baf4d6fa6771c2a40)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x0) |
+| #define | [USART0\_CTS\_PD1](#acf9112247d4fa36974b7e221d156b27c)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x1) |
+| #define | [USART0\_CTS\_PD2](#a86617a975bc950800ea9deba65ffaa19)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x2) |
+| #define | [USART0\_CTS\_PD3](#abf78324d648e5c035d29a33b4b93dd82)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x3) |
+| #define | [USART0\_CTS\_PD4](#a24a47d714bae303a53b15303fcc73855)   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x4) |
+| #define | [USART1\_CS\_PA0](#ad3e622bf87194cc1b199a28fbf82c922)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x0) |
+| #define | [USART1\_CS\_PA1](#ac44b9afd3f4aacf4b5d77a6ffed82c31)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x1) |
+| #define | [USART1\_CS\_PA2](#ab2817f18abf86707ce4224b96defad19)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x2) |
+| #define | [USART1\_CS\_PA3](#a2b840a1cb7d57509620f6735d100721d)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x3) |
+| #define | [USART1\_CS\_PA4](#a8a60ef6d1e4b99f5723a3ad13be87e27)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x4) |
+| #define | [USART1\_CS\_PA5](#a8a5c35f83c96ddf3b7a77780e2f1c1c4)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x5) |
+| #define | [USART1\_CS\_PA6](#ad09f63306f81c19e089740e73b7c5ca3)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x6) |
+| #define | [USART1\_CS\_PB0](#a85135b8ccf3ebf77ddc568d9b52f5094)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x1, 0x0) |
+| #define | [USART1\_CS\_PB1](#a0246376c47db0d08b13f7a025626ca87)   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x1, 0x1) |
+| #define | [USART1\_RTS\_PA0](#adb1892bd6bbe15436ebe8d87009a07cb)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x0) |
+| #define | [USART1\_RTS\_PA1](#a26b0c827b5f3dbad42fe4c88182feb9e)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x1) |
+| #define | [USART1\_RTS\_PA2](#a17f90a324b77e892691df314e360e963)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x2) |
+| #define | [USART1\_RTS\_PA3](#abf5b408be99508e62dfbcb898a80e7ac)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x3) |
+| #define | [USART1\_RTS\_PA4](#a8e25d0018b9d8dae670d9d9300b83af7)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x4) |
+| #define | [USART1\_RTS\_PA5](#a84e98aafd9109ac79850651a5d146916)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x5) |
+| #define | [USART1\_RTS\_PA6](#aa03434ec66cb7eff576fa185022785e1)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x6) |
+| #define | [USART1\_RTS\_PB0](#a52fd2e9de7f7818ab1b46df1c8d90c97)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x1, 0x0) |
+| #define | [USART1\_RTS\_PB1](#a04f167919a0613138e75321f67966c53)   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x1, 0x1) |
+| #define | [USART1\_RX\_PA0](#a1344d4b7bc318d0fd2a49f01b2505dae)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x0) |
+| #define | [USART1\_RX\_PA1](#a584f5b976fccf459dd41984b87d98681)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x1) |
+| #define | [USART1\_RX\_PA2](#a3c33c7b93cf4d0e5f732eabd7dea291a)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x2) |
+| #define | [USART1\_RX\_PA3](#aa099336238b9ee2f60131f8874965ad8)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x3) |
+| #define | [USART1\_RX\_PA4](#a483eec1a4dd0267e961a224ec9ed8b84)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x4) |
+| #define | [USART1\_RX\_PA5](#a286c64ca6230b6b77cb08c33aea08aed)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x5) |
+| #define | [USART1\_RX\_PA6](#a82275dfce6dca7f5d0839ff935d07ccc)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x6) |
+| #define | [USART1\_RX\_PB0](#aa098eecd8faf98926c9d2bb8967f1ae2)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x1, 0x0) |
+| #define | [USART1\_RX\_PB1](#a83da59b1fad652e6b37d8c78ba863e4a)   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x1, 0x1) |
+| #define | [USART1\_CLK\_PA0](#a6273503644f26d0e7fdea92bfad483b5)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x0) |
+| #define | [USART1\_CLK\_PA1](#acdf47d0f1e701024dae47f456f7f33cb)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x1) |
+| #define | [USART1\_CLK\_PA2](#ab2e8d3b4244d357f94872db24ed16927)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x2) |
+| #define | [USART1\_CLK\_PA3](#ac2b16123044b93c6284fc09ea7307aea)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x3) |
+| #define | [USART1\_CLK\_PA4](#aef6a2ecc146aa23576b096a14fff6a71)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x4) |
+| #define | [USART1\_CLK\_PA5](#a348b6d13cd6c1fd972844f246208c418)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x5) |
+| #define | [USART1\_CLK\_PA6](#a02f5bf254e9e3e1d975dcf0e94dee3ff)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x6) |
+| #define | [USART1\_CLK\_PB0](#a5f3a85cc7c7b38a151737d28fee5ee7c)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x1, 0x0) |
+| #define | [USART1\_CLK\_PB1](#a4f5d16e2e67f49adee3bc194bd64cdb5)   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x1, 0x1) |
+| #define | [USART1\_TX\_PA0](#a719e46bd04807b305447b999b4782375)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x0) |
+| #define | [USART1\_TX\_PA1](#a42b48b97f3273ff42eece98916e60630)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x1) |
+| #define | [USART1\_TX\_PA2](#a90383d542c7aad9b15775b11bd264910)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x2) |
+| #define | [USART1\_TX\_PA3](#a83db4685e72e840bc03e199379a7091c)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x3) |
+| #define | [USART1\_TX\_PA4](#aaa9c6660b9d802d891bafd1e46c6f636)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x4) |
+| #define | [USART1\_TX\_PA5](#aa07e04d88a4a9cc4548400bd132fc983)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x5) |
+| #define | [USART1\_TX\_PA6](#a62b940162d89200c43e0bfdfcebdc328)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x6) |
+| #define | [USART1\_TX\_PB0](#a64045a6952ae9268787f7e74035dabd2)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x1, 0x0) |
+| #define | [USART1\_TX\_PB1](#ac26399945006e5b812ed776b3bde9c94)   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x1, 0x1) |
+| #define | [USART1\_CTS\_PA0](#ab8f436c89c7f71271cd70e896f6cd7eb)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x0) |
+| #define | [USART1\_CTS\_PA1](#a0894716787e9a09d997f744f07d31723)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x1) |
+| #define | [USART1\_CTS\_PA2](#a2722c60724d7b70b208eb7813533542d)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x2) |
+| #define | [USART1\_CTS\_PA3](#a37178b8015441a63a2d5f0f4e29a5997)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x3) |
+| #define | [USART1\_CTS\_PA4](#a398faa6da0bb297d1c52ee25a0e4fa3b)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x4) |
+| #define | [USART1\_CTS\_PA5](#ab7480c291b286bf76cd6af604392e8df)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x5) |
+| #define | [USART1\_CTS\_PA6](#a0df6cd090c6f551b231e0c299be9aff7)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x6) |
+| #define | [USART1\_CTS\_PB0](#af8129b9ac85e75bf06ff65fc2bdcdbc1)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x1, 0x0) |
+| #define | [USART1\_CTS\_PB1](#a6835005577ea5a786174c5e3e27c0dff)   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x1, 0x1) |
+| #define | [USART2\_CS\_PC0](#a557371d5f427cbf4ee695a7efbee47ba)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x0) |
+| #define | [USART2\_CS\_PC1](#a9a47b0acc72df2b3205194e50b2d709b)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x1) |
+| #define | [USART2\_CS\_PC2](#acb1fc9b7e748ba2f102a0e9c99d5ddf6)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x2) |
+| #define | [USART2\_CS\_PC3](#a8bc53d5a6f1a60f6bfd2ffd7a974f509)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x3) |
+| #define | [USART2\_CS\_PC4](#a4183dc2c3b48b689514cca3a85042cf9)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x4) |
+| #define | [USART2\_CS\_PC5](#ae6c2034898a6973938d03be7c1b854e7)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x5) |
+| #define | [USART2\_CS\_PD0](#a388b69a4a9088e017f0b8a8d5aef074b)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x0) |
+| #define | [USART2\_CS\_PD1](#a73aaf3e18d619de90034806681dfd8b9)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x1) |
+| #define | [USART2\_CS\_PD2](#a19b4e7940c2797bc6aabe25a920dbd22)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x2) |
+| #define | [USART2\_CS\_PD3](#a8af20b62273d28a0fd06f560a40e2b48)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x3) |
+| #define | [USART2\_CS\_PD4](#a215584c1bf861d6bccb69708acb5aef5)   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x4) |
+| #define | [USART2\_RTS\_PC0](#aac7cb12adc48c63656c9aa931edce4d1)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x0) |
+| #define | [USART2\_RTS\_PC1](#a8d285f8b87efbb37173167fcbe9c9516)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x1) |
+| #define | [USART2\_RTS\_PC2](#a9377c580e6e6cbc16899cdfc499080ee)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x2) |
+| #define | [USART2\_RTS\_PC3](#a8241a3cf5d306e28cad6a825776054d1)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x3) |
+| #define | [USART2\_RTS\_PC4](#a1a9a8fd590b3f3ce25014a7259388632)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x4) |
+| #define | [USART2\_RTS\_PC5](#a8ae5c163b7ca72a3a888e34d4da9e2bf)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x5) |
+| #define | [USART2\_RTS\_PD0](#a3dd4cbcfcfa2342aa690c6c523042f52)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x0) |
+| #define | [USART2\_RTS\_PD1](#ad2502251d330d3924deb6109aa238bb8)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x1) |
+| #define | [USART2\_RTS\_PD2](#abdac137869f6f608c188d29ba5fb69c9)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x2) |
+| #define | [USART2\_RTS\_PD3](#a96624dfbc1b32b0a3a8fe934bc87803c)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x3) |
+| #define | [USART2\_RTS\_PD4](#a49fc68f88ec86e4a6d550b39da960a77)   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x4) |
+| #define | [USART2\_RX\_PC0](#a88eb7a80873ca00a7a60fa802724aa82)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x0) |
+| #define | [USART2\_RX\_PC1](#a59a6d3386df9030ecc704c701a5f4d06)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x1) |
+| #define | [USART2\_RX\_PC2](#adabcdce9020f8d80c1bf76ca57ccda6e)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x2) |
+| #define | [USART2\_RX\_PC3](#a6352c73f058d2189a302736c24652f97)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x3) |
+| #define | [USART2\_RX\_PC4](#a7693c8b3f9db68a49ffddf324e853d39)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x4) |
+| #define | [USART2\_RX\_PC5](#a053e7837a2a55816741400b282684478)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x5) |
+| #define | [USART2\_RX\_PD0](#aaa93c32eddd3cd4c8276c58a66939afc)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x0) |
+| #define | [USART2\_RX\_PD1](#aa433e6bc60e61a450fd4a1c229e5cd81)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x1) |
+| #define | [USART2\_RX\_PD2](#ab6d630d250e00b214a7cef793399447d)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x2) |
+| #define | [USART2\_RX\_PD3](#a9108d5a52ead61aaeb9f18f0b0f4a7b2)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x3) |
+| #define | [USART2\_RX\_PD4](#a312662376a381b17872661d7fa5f31f5)   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x4) |
+| #define | [USART2\_CLK\_PC0](#ad2294c5575b389d75496676cd8a9933f)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x0) |
+| #define | [USART2\_CLK\_PC1](#ac814d0e3d874d1ff356377f6f99eb2fa)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x1) |
+| #define | [USART2\_CLK\_PC2](#a08546c896f3edf98e98792bdf7fe6464)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x2) |
+| #define | [USART2\_CLK\_PC3](#a706f92e812b9a193fd93cfec3facb341)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x3) |
+| #define | [USART2\_CLK\_PC4](#a67d10cccd90ac4d6be9f84df08b9188a)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x4) |
+| #define | [USART2\_CLK\_PC5](#ac5d0f1dcbe31b5cefb482b5fc32320bd)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x5) |
+| #define | [USART2\_CLK\_PD0](#a89319759c1834dcba31360fbc65f0774)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x0) |
+| #define | [USART2\_CLK\_PD1](#a025049acd7e76fe42080b928421981c4)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x1) |
+| #define | [USART2\_CLK\_PD2](#abdef780b6d64a0674fbcf1b50114ed1e)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x2) |
+| #define | [USART2\_CLK\_PD3](#a11f9a3847acade345753ac6d2d01c13a)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x3) |
+| #define | [USART2\_CLK\_PD4](#a6195a98f4b59de781587bd9698eae752)   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x4) |
+| #define | [USART2\_TX\_PC0](#ab413415d4b3724bd075c1beb123eb98e)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x0) |
+| #define | [USART2\_TX\_PC1](#a1b7e40475b0cc363b13c4b38c65a7712)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x1) |
+| #define | [USART2\_TX\_PC2](#a3a104e9cf268fa70648cd86bf178a67b)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x2) |
+| #define | [USART2\_TX\_PC3](#ac949409dde83549681af9897111dae6b)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x3) |
+| #define | [USART2\_TX\_PC4](#ae9898087bbee17fbc2172f3f5be55d48)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x4) |
+| #define | [USART2\_TX\_PC5](#ad911e255adc5ebef431f5ff9372c58ed)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x5) |
+| #define | [USART2\_TX\_PD0](#ada1a38aed302c8a3b46bf92d09600eb2)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x0) |
+| #define | [USART2\_TX\_PD1](#a0723ac568299d103fac839f00df6a615)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x1) |
+| #define | [USART2\_TX\_PD2](#a26e259c5fcf77e8bf1351c2e6df0b46a)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x2) |
+| #define | [USART2\_TX\_PD3](#a62f0858e1951a23b3c6fb0b3df363752)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x3) |
+| #define | [USART2\_TX\_PD4](#a115f510fd548777aed15ad6f31f2a4c9)   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x4) |
+| #define | [USART2\_CTS\_PC0](#a59e186e5e2640ce89884e3be3826f27c)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x0) |
+| #define | [USART2\_CTS\_PC1](#a8a4b4968357a11c5a24d42c9083a3e1f)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x1) |
+| #define | [USART2\_CTS\_PC2](#ad68a116c16b89eadb45bb32b050bf00f)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x2) |
+| #define | [USART2\_CTS\_PC3](#aa588cc8084e44819684864f078132867)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x3) |
+| #define | [USART2\_CTS\_PC4](#a57472dd4dea3ad86e0f7b9b3a8f87791)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x4) |
+| #define | [USART2\_CTS\_PC5](#a2ffa8c4182136aba7b80eadd168a694b)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x5) |
+| #define | [USART2\_CTS\_PD0](#a81fcf50668956c552e8d55e510c0510d)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x0) |
+| #define | [USART2\_CTS\_PD1](#ae9e2f9ca07249a9bacc4ca54f9f6bf1f)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x1) |
+| #define | [USART2\_CTS\_PD2](#a3f5da9ec9158ac1767c9d200594440f7)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x2) |
+| #define | [USART2\_CTS\_PD3](#a431c9fb8a6bd3e0b09a4480751bf5b44)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x3) |
+| #define | [USART2\_CTS\_PD4](#a25a971181736de3f6de027040ff12eda)   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x4) |
+| #define | [ABUS\_AEVEN0\_IADC0](#ad10d010cbdef8a32f14837ade41debfc)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x1) |
+| #define | [ABUS\_AEVEN0\_ACMP0](#a62a9951e869147c72fbe9c1e77e874fa)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x2) |
+| #define | [ABUS\_AEVEN0\_ACMP1](#a733fcfbe554356b950a5ccb44b5f16e2)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x3) |
+| #define | [ABUS\_AEVEN1\_IADC0](#a2a1cae8649645c367738b43ded59f749)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x1) |
+| #define | [ABUS\_AEVEN1\_ACMP0](#a8fde714bdb414359ff3619c3cb4dcad6)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x2) |
+| #define | [ABUS\_AEVEN1\_ACMP1](#a9e47fb539d308ac53088462e895a102c)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x3) |
+| #define | [ABUS\_AODD0\_IADC0](#a566e8d018410bda1e988452fb5304441)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x1) |
+| #define | [ABUS\_AODD0\_ACMP0](#a23efcbf1afd4c5f08b8a01816879787b)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x2) |
+| #define | [ABUS\_AODD0\_ACMP1](#a0573c0fd5a1b22625e5985a8079bdfde)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x3) |
+| #define | [ABUS\_AODD1\_IADC0](#aaa4617b296badc53ea3d2e297283c808)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x1) |
+| #define | [ABUS\_AODD1\_ACMP0](#abd2169342442333b350e32f881eff995)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x2) |
+| #define | [ABUS\_AODD1\_ACMP1](#a733a9a8b48bb7c0e35fa4c51ce6541af)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x3) |
+| #define | [ABUS\_BEVEN0\_IADC0](#a2c5cafb1e8cc088300cbe61d33611daa)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x1) |
+| #define | [ABUS\_BEVEN0\_ACMP0](#a331630c1c48db7a35089f3a799eda1cb)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x2) |
+| #define | [ABUS\_BEVEN0\_ACMP1](#ac62950c7a5f0e549586ee6448c0c275e)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x3) |
+| #define | [ABUS\_BEVEN1\_IADC0](#a88d851648e8e5ed855ad2fa6c973284e)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x1) |
+| #define | [ABUS\_BEVEN1\_ACMP0](#aa920748827ffa55e353d0c1d3b6dd56a)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x2) |
+| #define | [ABUS\_BEVEN1\_ACMP1](#a6f85869fee80963d116a9cb8fb5191d6)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x3) |
+| #define | [ABUS\_BODD0\_IADC0](#a8c77789600eea5e975b7d2b24c89f864)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x1) |
+| #define | [ABUS\_BODD0\_ACMP0](#a11259cd5a424085be1d843f934c82a15)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x2) |
+| #define | [ABUS\_BODD0\_ACMP1](#a523c439342947ae93bf8219322228af3)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x3) |
+| #define | [ABUS\_BODD1\_IADC0](#aa5b85245f2fa86535920bd7d2ea837d1)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x1) |
+| #define | [ABUS\_BODD1\_ACMP0](#a4db6c1d2216c35ce68a76ff799d50138)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x2) |
+| #define | [ABUS\_BODD1\_ACMP1](#a14305213b34b0477f246b54b34328111)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x3) |
+| #define | [ABUS\_CDEVEN0\_IADC0](#af5928f28259fae0be44a365ba0a82cfe)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x1) |
+| #define | [ABUS\_CDEVEN0\_ACMP0](#a31e97c0380604db9ca894fb9805eb181)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x2) |
+| #define | [ABUS\_CDEVEN0\_ACMP1](#a992ea9f7d9e35327db0b8c31f903a735)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x3) |
+| #define | [ABUS\_CDEVEN1\_IADC0](#a7a2fc86a1027011d729324239a1858d4)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x1) |
+| #define | [ABUS\_CDEVEN1\_ACMP0](#a9c0f4b146a86a1031b59d7ab608c0374)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x2) |
+| #define | [ABUS\_CDEVEN1\_ACMP1](#af638e2cd7bd3a139bed94c7886938a11)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x3) |
+| #define | [ABUS\_CDODD0\_IADC0](#a233653a6dffa4feece57164e50df6fc1)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x1) |
+| #define | [ABUS\_CDODD0\_ACMP0](#a79225667aa65dff641c32173f97dd8bc)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x2) |
+| #define | [ABUS\_CDODD0\_ACMP1](#a47795d1c947727f4ca611cbf9ff2cc68)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x3) |
+| #define | [ABUS\_CDODD1\_IADC0](#a4fc002977cffebe3a4d840f009d2afa2)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x1) |
+| #define | [ABUS\_CDODD1\_ACMP0](#aaac7b83053516a362770c72f813fd8ad)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x2) |
+| #define | [ABUS\_CDODD1\_ACMP1](#a10a761ac0260f4ee892a768405fa88c7)   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x3) |
+
+## Macro Definition Documentation
+
+## [◆ ](#a62a9951e869147c72fbe9c1e77e874fa)ABUS\_AEVEN0\_ACMP0
+
+| #define ABUS\_AEVEN0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x2) |
+| --- |
+
+## [◆ ](#a733fcfbe554356b950a5ccb44b5f16e2)ABUS\_AEVEN0\_ACMP1
+
+| #define ABUS\_AEVEN0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x3) |
+| --- |
+
+## [◆ ](#ad10d010cbdef8a32f14837ade41debfc)ABUS\_AEVEN0\_IADC0
+
+| #define ABUS\_AEVEN0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x0, 0x1) |
+| --- |
+
+## [◆ ](#a8fde714bdb414359ff3619c3cb4dcad6)ABUS\_AEVEN1\_ACMP0
+
+| #define ABUS\_AEVEN1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x2) |
+| --- |
+
+## [◆ ](#a9e47fb539d308ac53088462e895a102c)ABUS\_AEVEN1\_ACMP1
+
+| #define ABUS\_AEVEN1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x3) |
+| --- |
+
+## [◆ ](#a2a1cae8649645c367738b43ded59f749)ABUS\_AEVEN1\_IADC0
+
+| #define ABUS\_AEVEN1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x1, 0x1) |
+| --- |
+
+## [◆ ](#a23efcbf1afd4c5f08b8a01816879787b)ABUS\_AODD0\_ACMP0
+
+| #define ABUS\_AODD0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x2) |
+| --- |
+
+## [◆ ](#a0573c0fd5a1b22625e5985a8079bdfde)ABUS\_AODD0\_ACMP1
+
+| #define ABUS\_AODD0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x3) |
+| --- |
+
+## [◆ ](#a566e8d018410bda1e988452fb5304441)ABUS\_AODD0\_IADC0
+
+| #define ABUS\_AODD0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x2, 0x1) |
+| --- |
+
+## [◆ ](#abd2169342442333b350e32f881eff995)ABUS\_AODD1\_ACMP0
+
+| #define ABUS\_AODD1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x2) |
+| --- |
+
+## [◆ ](#a733a9a8b48bb7c0e35fa4c51ce6541af)ABUS\_AODD1\_ACMP1
+
+| #define ABUS\_AODD1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x3) |
+| --- |
+
+## [◆ ](#aaa4617b296badc53ea3d2e297283c808)ABUS\_AODD1\_IADC0
+
+| #define ABUS\_AODD1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x0, 0x3, 0x1) |
+| --- |
+
+## [◆ ](#a331630c1c48db7a35089f3a799eda1cb)ABUS\_BEVEN0\_ACMP0
+
+| #define ABUS\_BEVEN0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x2) |
+| --- |
+
+## [◆ ](#ac62950c7a5f0e549586ee6448c0c275e)ABUS\_BEVEN0\_ACMP1
+
+| #define ABUS\_BEVEN0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x3) |
+| --- |
+
+## [◆ ](#a2c5cafb1e8cc088300cbe61d33611daa)ABUS\_BEVEN0\_IADC0
+
+| #define ABUS\_BEVEN0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x0, 0x1) |
+| --- |
+
+## [◆ ](#aa920748827ffa55e353d0c1d3b6dd56a)ABUS\_BEVEN1\_ACMP0
+
+| #define ABUS\_BEVEN1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x2) |
+| --- |
+
+## [◆ ](#a6f85869fee80963d116a9cb8fb5191d6)ABUS\_BEVEN1\_ACMP1
+
+| #define ABUS\_BEVEN1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x3) |
+| --- |
+
+## [◆ ](#a88d851648e8e5ed855ad2fa6c973284e)ABUS\_BEVEN1\_IADC0
+
+| #define ABUS\_BEVEN1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x1, 0x1) |
+| --- |
+
+## [◆ ](#a11259cd5a424085be1d843f934c82a15)ABUS\_BODD0\_ACMP0
+
+| #define ABUS\_BODD0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x2) |
+| --- |
+
+## [◆ ](#a523c439342947ae93bf8219322228af3)ABUS\_BODD0\_ACMP1
+
+| #define ABUS\_BODD0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x3) |
+| --- |
+
+## [◆ ](#a8c77789600eea5e975b7d2b24c89f864)ABUS\_BODD0\_IADC0
+
+| #define ABUS\_BODD0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x2, 0x1) |
+| --- |
+
+## [◆ ](#a4db6c1d2216c35ce68a76ff799d50138)ABUS\_BODD1\_ACMP0
+
+| #define ABUS\_BODD1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x2) |
+| --- |
+
+## [◆ ](#a14305213b34b0477f246b54b34328111)ABUS\_BODD1\_ACMP1
+
+| #define ABUS\_BODD1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x3) |
+| --- |
+
+## [◆ ](#aa5b85245f2fa86535920bd7d2ea837d1)ABUS\_BODD1\_IADC0
+
+| #define ABUS\_BODD1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x1, 0x3, 0x1) |
+| --- |
+
+## [◆ ](#a31e97c0380604db9ca894fb9805eb181)ABUS\_CDEVEN0\_ACMP0
+
+| #define ABUS\_CDEVEN0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x2) |
+| --- |
+
+## [◆ ](#a992ea9f7d9e35327db0b8c31f903a735)ABUS\_CDEVEN0\_ACMP1
+
+| #define ABUS\_CDEVEN0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x3) |
+| --- |
+
+## [◆ ](#af5928f28259fae0be44a365ba0a82cfe)ABUS\_CDEVEN0\_IADC0
+
+| #define ABUS\_CDEVEN0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x0, 0x1) |
+| --- |
+
+## [◆ ](#a9c0f4b146a86a1031b59d7ab608c0374)ABUS\_CDEVEN1\_ACMP0
+
+| #define ABUS\_CDEVEN1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x2) |
+| --- |
+
+## [◆ ](#af638e2cd7bd3a139bed94c7886938a11)ABUS\_CDEVEN1\_ACMP1
+
+| #define ABUS\_CDEVEN1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x3) |
+| --- |
+
+## [◆ ](#a7a2fc86a1027011d729324239a1858d4)ABUS\_CDEVEN1\_IADC0
+
+| #define ABUS\_CDEVEN1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x1, 0x1) |
+| --- |
+
+## [◆ ](#a79225667aa65dff641c32173f97dd8bc)ABUS\_CDODD0\_ACMP0
+
+| #define ABUS\_CDODD0\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x2) |
+| --- |
+
+## [◆ ](#a47795d1c947727f4ca611cbf9ff2cc68)ABUS\_CDODD0\_ACMP1
+
+| #define ABUS\_CDODD0\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x3) |
+| --- |
+
+## [◆ ](#a233653a6dffa4feece57164e50df6fc1)ABUS\_CDODD0\_IADC0
+
+| #define ABUS\_CDODD0\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x2, 0x1) |
+| --- |
+
+## [◆ ](#aaac7b83053516a362770c72f813fd8ad)ABUS\_CDODD1\_ACMP0
+
+| #define ABUS\_CDODD1\_ACMP0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x2) |
+| --- |
+
+## [◆ ](#a10a761ac0260f4ee892a768405fa88c7)ABUS\_CDODD1\_ACMP1
+
+| #define ABUS\_CDODD1\_ACMP1   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x3) |
+| --- |
+
+## [◆ ](#a4fc002977cffebe3a4d840f009d2afa2)ABUS\_CDODD1\_IADC0
+
+| #define ABUS\_CDODD1\_IADC0   [SILABS\_ABUS](silabs-pinctrl-dbus_8h.md#ac9851f435704e7b096478bca454faf6c)(0x2, 0x3, 0x1) |
+| --- |
+
+## [◆ ](#aedfa1c8d8e52b69e24b4c5ae55906dc6)ACMP0\_ACMPOUT\_PA0
+
+| #define ACMP0\_ACMPOUT\_PA0   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#afc43fb1cb74d95db1aceffc3b55fe017)ACMP0\_ACMPOUT\_PA1
+
+| #define ACMP0\_ACMPOUT\_PA1   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#ad609c06187830519865e977ad663e8a9)ACMP0\_ACMPOUT\_PA2
+
+| #define ACMP0\_ACMPOUT\_PA2   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ab46e5bad6ae8864f903d86d60c3b08b2)ACMP0\_ACMPOUT\_PA3
+
+| #define ACMP0\_ACMPOUT\_PA3   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#acb82f83c6665cac86a44ffb88689e1f8)ACMP0\_ACMPOUT\_PA4
+
+| #define ACMP0\_ACMPOUT\_PA4   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ae3d76d092e7875eac30dbc243b3ded51)ACMP0\_ACMPOUT\_PA5
+
+| #define ACMP0\_ACMPOUT\_PA5   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a83b7f7e01fea7985ff1b739474e57015)ACMP0\_ACMPOUT\_PA6
+
+| #define ACMP0\_ACMPOUT\_PA6   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a36b9f71114e84ffb46fc8d52b7a87046)ACMP0\_ACMPOUT\_PB0
+
+| #define ACMP0\_ACMPOUT\_PB0   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ad7205c69934692bea6a1c31e9b374eef)ACMP0\_ACMPOUT\_PB1
+
+| #define ACMP0\_ACMPOUT\_PB1   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5b32e3f7e8bfdc37a87a1e5400897df8)ACMP0\_ACMPOUT\_PC0
+
+| #define ACMP0\_ACMPOUT\_PC0   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a8c6a859a56f83fe76898e7e5d251d0b3)ACMP0\_ACMPOUT\_PC1
+
+| #define ACMP0\_ACMPOUT\_PC1   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#abc756f46419f529864d1f5373df967fa)ACMP0\_ACMPOUT\_PC2
+
+| #define ACMP0\_ACMPOUT\_PC2   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#acf2975d5be55d86f12c69c12dd257c02)ACMP0\_ACMPOUT\_PC3
+
+| #define ACMP0\_ACMPOUT\_PC3   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a3e87af3956c8d9b54f210c3c9ce25fe2)ACMP0\_ACMPOUT\_PC4
+
+| #define ACMP0\_ACMPOUT\_PC4   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a02cb0bfeb435f2d76adf0624c9acc380)ACMP0\_ACMPOUT\_PC5
+
+| #define ACMP0\_ACMPOUT\_PC5   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a196c859ab39c4e7fea903085f0091f38)ACMP0\_ACMPOUT\_PD0
+
+| #define ACMP0\_ACMPOUT\_PD0   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aabae5292f25eac5b7f235c1613a4abfe)ACMP0\_ACMPOUT\_PD1
+
+| #define ACMP0\_ACMPOUT\_PD1   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#af0c00ac6edb9696207c0688dd902889c)ACMP0\_ACMPOUT\_PD2
+
+| #define ACMP0\_ACMPOUT\_PD2   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a22cc57aac83e922695ce9765daca5a22)ACMP0\_ACMPOUT\_PD3
+
+| #define ACMP0\_ACMPOUT\_PD3   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a046027b3929f25e781e6f294783bc1a0)ACMP0\_ACMPOUT\_PD4
+
+| #define ACMP0\_ACMPOUT\_PD4   [SILABS\_DBUS\_ACMP0\_ACMPOUT](#a1f03fc6bcf9a20f2f39b4d91cf302d63)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a04aca20b5e493a872ba32bbd78b47a5a)ACMP1\_ACMPOUT\_PA0
+
+| #define ACMP1\_ACMPOUT\_PA0   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#aaa76825f32591d5e0921624dc9c7a547)ACMP1\_ACMPOUT\_PA1
+
+| #define ACMP1\_ACMPOUT\_PA1   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a7e6b677b9f6fdf424146fe7bd16b8ab6)ACMP1\_ACMPOUT\_PA2
+
+| #define ACMP1\_ACMPOUT\_PA2   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a519bb19bf1c5adb7a4c236260e19cb93)ACMP1\_ACMPOUT\_PA3
+
+| #define ACMP1\_ACMPOUT\_PA3   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ae5cd234e221d2b8308334d877bc27e05)ACMP1\_ACMPOUT\_PA4
+
+| #define ACMP1\_ACMPOUT\_PA4   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ae03013868fb1238d33b1c584509d891e)ACMP1\_ACMPOUT\_PA5
+
+| #define ACMP1\_ACMPOUT\_PA5   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a541b4fdb8b53c3d920a588376126a7f2)ACMP1\_ACMPOUT\_PA6
+
+| #define ACMP1\_ACMPOUT\_PA6   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a84f6c6945835113f9918687cb295093b)ACMP1\_ACMPOUT\_PB0
+
+| #define ACMP1\_ACMPOUT\_PB0   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ac7ddbcf4f3906bc2e71b21b0ebada790)ACMP1\_ACMPOUT\_PB1
+
+| #define ACMP1\_ACMPOUT\_PB1   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#aa98b56734d6c562982b62d2fae788a64)ACMP1\_ACMPOUT\_PC0
+
+| #define ACMP1\_ACMPOUT\_PC0   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a623a2fbee184e239f5c4c1899b80b146)ACMP1\_ACMPOUT\_PC1
+
+| #define ACMP1\_ACMPOUT\_PC1   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a9c1ad020fb2a75438324fca26e791d19)ACMP1\_ACMPOUT\_PC2
+
+| #define ACMP1\_ACMPOUT\_PC2   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#acbfcff70ab4cc6aec772a8f5f6a5c559)ACMP1\_ACMPOUT\_PC3
+
+| #define ACMP1\_ACMPOUT\_PC3   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aeeef7ef4dfcb0a12adacd9718f04f43b)ACMP1\_ACMPOUT\_PC4
+
+| #define ACMP1\_ACMPOUT\_PC4   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a4b15ffe9e4ecd23d7242b062e5cbc082)ACMP1\_ACMPOUT\_PC5
+
+| #define ACMP1\_ACMPOUT\_PC5   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a0ca6370f146e12eece2dc87e0e322f62)ACMP1\_ACMPOUT\_PD0
+
+| #define ACMP1\_ACMPOUT\_PD0   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ae49cd1f217b75138cca0f43b8770b1bc)ACMP1\_ACMPOUT\_PD1
+
+| #define ACMP1\_ACMPOUT\_PD1   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad9a1898895b78944b14493df85e3ee21)ACMP1\_ACMPOUT\_PD2
+
+| #define ACMP1\_ACMPOUT\_PD2   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a02fa7898cc55e75ac1bd8634cf4bd859)ACMP1\_ACMPOUT\_PD3
+
+| #define ACMP1\_ACMPOUT\_PD3   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ab46a58b4ccb7b62fabb73110eb2b8e46)ACMP1\_ACMPOUT\_PD4
+
+| #define ACMP1\_ACMPOUT\_PD4   [SILABS\_DBUS\_ACMP1\_ACMPOUT](#a12ac63e4d5ed67a2a3f7425b751cdec3)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a4aaa42a036d18c3f1acb7def83fb9f05)CMU\_CLKIN0\_PC0
+
+| #define CMU\_CLKIN0\_PC0   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ad099af25ca0f801ff85e3071a1cda472)CMU\_CLKIN0\_PC1
+
+| #define CMU\_CLKIN0\_PC1   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#add3b048d2455419255aedcef16aed776)CMU\_CLKIN0\_PC2
+
+| #define CMU\_CLKIN0\_PC2   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a59c6d813c66884cb9db67d4e6c1cd8d4)CMU\_CLKIN0\_PC3
+
+| #define CMU\_CLKIN0\_PC3   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a4528f4ea777e78b8f27bd604bfeaf59e)CMU\_CLKIN0\_PC4
+
+| #define CMU\_CLKIN0\_PC4   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a5f79eddd69ce5550c1fd8ee07ce0ad9c)CMU\_CLKIN0\_PC5
+
+| #define CMU\_CLKIN0\_PC5   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a8d96e9e617c1f18f2bd0a2ac65e98ae1)CMU\_CLKIN0\_PD0
+
+| #define CMU\_CLKIN0\_PD0   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aa780fb9850bc6efcb36d8dd19770ec27)CMU\_CLKIN0\_PD1
+
+| #define CMU\_CLKIN0\_PD1   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad27e93b39cdcd25b3d3ba89f01a05019)CMU\_CLKIN0\_PD2
+
+| #define CMU\_CLKIN0\_PD2   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aec9648fbe6bece6f7cec5b3942eda3a0)CMU\_CLKIN0\_PD3
+
+| #define CMU\_CLKIN0\_PD3   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a9791109179057e8535cccfb2292ea5cd)CMU\_CLKIN0\_PD4
+
+| #define CMU\_CLKIN0\_PD4   [SILABS\_DBUS\_CMU\_CLKIN0](#a19d73eca7da5c8b8622b3cb155ab4e6c)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a750738e1a4c7ed8bfb4d2f9151267da6)CMU\_CLKOUT0\_PC0
+
+| #define CMU\_CLKOUT0\_PC0   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a31916418c44431216dea609cb5aef35a)CMU\_CLKOUT0\_PC1
+
+| #define CMU\_CLKOUT0\_PC1   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a90c69d0d98a225b058598397e960c41d)CMU\_CLKOUT0\_PC2
+
+| #define CMU\_CLKOUT0\_PC2   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a502a3e471c068d2ae94fc2255b3680dd)CMU\_CLKOUT0\_PC3
+
+| #define CMU\_CLKOUT0\_PC3   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a0af75594d7d55c0bf77021f81b058ef6)CMU\_CLKOUT0\_PC4
+
+| #define CMU\_CLKOUT0\_PC4   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a3bfddaaeba9558824977b108319c26b1)CMU\_CLKOUT0\_PC5
+
+| #define CMU\_CLKOUT0\_PC5   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a1afed05e5d9d89ad251e77f94f1e745d)CMU\_CLKOUT0\_PD0
+
+| #define CMU\_CLKOUT0\_PD0   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a4cc3f9b8c22e11a9ffd40149c990d09d)CMU\_CLKOUT0\_PD1
+
+| #define CMU\_CLKOUT0\_PD1   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a823b6e29d70a1313ed81cae432648f73)CMU\_CLKOUT0\_PD2
+
+| #define CMU\_CLKOUT0\_PD2   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a4223cab1734f1dadac546c956ae17f66)CMU\_CLKOUT0\_PD3
+
+| #define CMU\_CLKOUT0\_PD3   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a45bd684b5ac8c0899bfce5901e372aa3)CMU\_CLKOUT0\_PD4
+
+| #define CMU\_CLKOUT0\_PD4   [SILABS\_DBUS\_CMU\_CLKOUT0](#a6d193d353f76cad0e7da5c584625e996)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a7b57f126203047b4cb82d0eff5c1ba8f)CMU\_CLKOUT1\_PC0
+
+| #define CMU\_CLKOUT1\_PC0   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a7742937a9e0afe5ae4859f9fe6373ca3)CMU\_CLKOUT1\_PC1
+
+| #define CMU\_CLKOUT1\_PC1   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ae634d0e26da5dd095bf98854cd95e6c9)CMU\_CLKOUT1\_PC2
+
+| #define CMU\_CLKOUT1\_PC2   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#afecc3d613acceb752470037c6c253759)CMU\_CLKOUT1\_PC3
+
+| #define CMU\_CLKOUT1\_PC3   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a2d21eabc4603c5cfd93cd0eed5708565)CMU\_CLKOUT1\_PC4
+
+| #define CMU\_CLKOUT1\_PC4   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a8287c02ea2823803c7f3415597aeb0f8)CMU\_CLKOUT1\_PC5
+
+| #define CMU\_CLKOUT1\_PC5   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a9041e78bd2f530d25db4d36d783e04ff)CMU\_CLKOUT1\_PD0
+
+| #define CMU\_CLKOUT1\_PD0   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a65ab333bdb97055f6e69f17a46cc76ca)CMU\_CLKOUT1\_PD1
+
+| #define CMU\_CLKOUT1\_PD1   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad6f97e49e9ed6808c2631547fae12fd0)CMU\_CLKOUT1\_PD2
+
+| #define CMU\_CLKOUT1\_PD2   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#afc01df4895e8d3e104bbff29227824a8)CMU\_CLKOUT1\_PD3
+
+| #define CMU\_CLKOUT1\_PD3   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#afd198f9e83c2b18208b42bb5f196ddb5)CMU\_CLKOUT1\_PD4
+
+| #define CMU\_CLKOUT1\_PD4   [SILABS\_DBUS\_CMU\_CLKOUT1](#a3f7ded37227446a05137a47c9a466894)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a515401133e23f38d0c7babc3b8cffb18)CMU\_CLKOUT2\_PA0
+
+| #define CMU\_CLKOUT2\_PA0   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#ae765fe590bab12a1671c57b20b69e354)CMU\_CLKOUT2\_PA1
+
+| #define CMU\_CLKOUT2\_PA1   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a4183040a304b3d85d3b382d28176da03)CMU\_CLKOUT2\_PA2
+
+| #define CMU\_CLKOUT2\_PA2   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a65e82802fc3e2e3eb089eaa3bb4b1207)CMU\_CLKOUT2\_PA3
+
+| #define CMU\_CLKOUT2\_PA3   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a9345663284354ee2c4b5ebd6a4124234)CMU\_CLKOUT2\_PA4
+
+| #define CMU\_CLKOUT2\_PA4   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ac1767819afb4418dfb8de4ec2114144f)CMU\_CLKOUT2\_PA5
+
+| #define CMU\_CLKOUT2\_PA5   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a078e7abf21f63f21617ea47fd565fcc0)CMU\_CLKOUT2\_PA6
+
+| #define CMU\_CLKOUT2\_PA6   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a7f82072ef8014d5497df30c927b0d6f9)CMU\_CLKOUT2\_PB0
+
+| #define CMU\_CLKOUT2\_PB0   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#af815e3c4392ba1686e4f77dc0b6911f1)CMU\_CLKOUT2\_PB1
+
+| #define CMU\_CLKOUT2\_PB1   [SILABS\_DBUS\_CMU\_CLKOUT2](#a67d6fb886df9d589e447bd9332252d62)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a23ced15df4b090058198bd06541b5885)I2C0\_SCL\_PA0
+
+| #define I2C0\_SCL\_PA0   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a695c8fa25220070f883a7866019132a5)I2C0\_SCL\_PA1
+
+| #define I2C0\_SCL\_PA1   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a59521028aaeca25d19dce77adf76f9b7)I2C0\_SCL\_PA2
+
+| #define I2C0\_SCL\_PA2   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a68f1a22cb1cf1445f9d94d230b7d81e6)I2C0\_SCL\_PA3
+
+| #define I2C0\_SCL\_PA3   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#aefbf0c45fe8a1215f17a6d31c5948889)I2C0\_SCL\_PA4
+
+| #define I2C0\_SCL\_PA4   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ae334a06857e99d806213ccb6b6e582d3)I2C0\_SCL\_PA5
+
+| #define I2C0\_SCL\_PA5   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a912dd4938a0b0cda381360467d635fc8)I2C0\_SCL\_PA6
+
+| #define I2C0\_SCL\_PA6   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a66acedca2ec779cfe23f1d9c6e2fc129)I2C0\_SCL\_PB0
+
+| #define I2C0\_SCL\_PB0   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a5af9487dc5b440644597f549fb4775e2)I2C0\_SCL\_PB1
+
+| #define I2C0\_SCL\_PB1   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#afda900994567b6303959e4f666fceaf1)I2C0\_SCL\_PC0
+
+| #define I2C0\_SCL\_PC0   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#aecced4d0cc1f98a1f8e87d09cceff92a)I2C0\_SCL\_PC1
+
+| #define I2C0\_SCL\_PC1   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ab376247e3dbd84ccfd2b94af9c07505a)I2C0\_SCL\_PC2
+
+| #define I2C0\_SCL\_PC2   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a9a9354d74c5e9c6ebad7e646f6b8ee63)I2C0\_SCL\_PC3
+
+| #define I2C0\_SCL\_PC3   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aafe4a6c9133c8213940f026568866b9d)I2C0\_SCL\_PC4
+
+| #define I2C0\_SCL\_PC4   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a93ad2564f0ad899a336521853e3c5f35)I2C0\_SCL\_PC5
+
+| #define I2C0\_SCL\_PC5   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ab5e0b9a784779a5e92ab1fa79c9aa6cc)I2C0\_SCL\_PD0
+
+| #define I2C0\_SCL\_PD0   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a3d7b2816e4c4f01aba45a339bc77feea)I2C0\_SCL\_PD1
+
+| #define I2C0\_SCL\_PD1   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a487c9ff099c2dabf34d65f0377e5e195)I2C0\_SCL\_PD2
+
+| #define I2C0\_SCL\_PD2   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a2c36512ca362cf14654d72a59e4de079)I2C0\_SCL\_PD3
+
+| #define I2C0\_SCL\_PD3   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ae728f208472d11bf16da3eb76a64d152)I2C0\_SCL\_PD4
+
+| #define I2C0\_SCL\_PD4   [SILABS\_DBUS\_I2C0\_SCL](#a652b5412868f09aff727d2a84ce5efd6)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aaf8bcb4a387404aa356da60c0e9cc869)I2C0\_SDA\_PA0
+
+| #define I2C0\_SDA\_PA0   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a6f74ca01f25bdded002e45e679240275)I2C0\_SDA\_PA1
+
+| #define I2C0\_SDA\_PA1   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#acdc71a141f1ba40bb5c3ec9f06bd35e6)I2C0\_SDA\_PA2
+
+| #define I2C0\_SDA\_PA2   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a401989601987cfb72944453f11918e2a)I2C0\_SDA\_PA3
+
+| #define I2C0\_SDA\_PA3   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a66dad3b35dd2a650a186933abb43f6c3)I2C0\_SDA\_PA4
+
+| #define I2C0\_SDA\_PA4   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a1fdfea195e2831a05d2ad42a091aa53b)I2C0\_SDA\_PA5
+
+| #define I2C0\_SDA\_PA5   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a0c5573f60342f026d0553797a636a488)I2C0\_SDA\_PA6
+
+| #define I2C0\_SDA\_PA6   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a9e333616419f1afb29657e239ebf9b12)I2C0\_SDA\_PB0
+
+| #define I2C0\_SDA\_PB0   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a25bba68392534791cad2bc692a141782)I2C0\_SDA\_PB1
+
+| #define I2C0\_SDA\_PB1   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#acb9a1287a10a954e1ff0bf82478f3bf8)I2C0\_SDA\_PC0
+
+| #define I2C0\_SDA\_PC0   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a0c89a72767592385a9a625d72c90f824)I2C0\_SDA\_PC1
+
+| #define I2C0\_SDA\_PC1   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a0e115e41c26b45de04ee71a95cd5b87c)I2C0\_SDA\_PC2
+
+| #define I2C0\_SDA\_PC2   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#afbad7695056556b776533aafc47b0299)I2C0\_SDA\_PC3
+
+| #define I2C0\_SDA\_PC3   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a603f80b261cded3f838f85ad889a4b88)I2C0\_SDA\_PC4
+
+| #define I2C0\_SDA\_PC4   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a5864615c0e7063fc4f1acb8e4e3a05d2)I2C0\_SDA\_PC5
+
+| #define I2C0\_SDA\_PC5   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a610731cb645ab65d802d95bb65437d8c)I2C0\_SDA\_PD0
+
+| #define I2C0\_SDA\_PD0   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a86eade4a55994ce4285b81cf29c93883)I2C0\_SDA\_PD1
+
+| #define I2C0\_SDA\_PD1   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a5d3416853673a2192ec5f5712921d370)I2C0\_SDA\_PD2
+
+| #define I2C0\_SDA\_PD2   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a096b74cd9e2842c5d4ff8d7a7186106a)I2C0\_SDA\_PD3
+
+| #define I2C0\_SDA\_PD3   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a39c83c73c763c0afc7e9041fab4549fd)I2C0\_SDA\_PD4
+
+| #define I2C0\_SDA\_PD4   [SILABS\_DBUS\_I2C0\_SDA](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a356ddb78378e70250e07992cf92dd8b7)I2C1\_SCL\_PC0
+
+| #define I2C1\_SCL\_PC0   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ad327d495abfaa2bb7ae3344a163f052f)I2C1\_SCL\_PC1
+
+| #define I2C1\_SCL\_PC1   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#aa89ddd739af59624f4a176443aa17636)I2C1\_SCL\_PC2
+
+| #define I2C1\_SCL\_PC2   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#af0e6baea8d2c35eb8991706946ffc05b)I2C1\_SCL\_PC3
+
+| #define I2C1\_SCL\_PC3   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a346b20cbc89a5af4dfffe00c9ef41e92)I2C1\_SCL\_PC4
+
+| #define I2C1\_SCL\_PC4   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aec416779b37e6a51e48e3fcadfca591a)I2C1\_SCL\_PC5
+
+| #define I2C1\_SCL\_PC5   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a865b5c341b794b96daba59c14807c057)I2C1\_SCL\_PD0
+
+| #define I2C1\_SCL\_PD0   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a9f3ebaefe248d5aa292ade2727a11ee9)I2C1\_SCL\_PD1
+
+| #define I2C1\_SCL\_PD1   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a7eb71571b0e15669fb353a0bd65f2c72)I2C1\_SCL\_PD2
+
+| #define I2C1\_SCL\_PD2   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a6a86266c8ab637b0b31244cbf0636ab0)I2C1\_SCL\_PD3
+
+| #define I2C1\_SCL\_PD3   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a575a4a9e08a65805c5d9fa3591f563bb)I2C1\_SCL\_PD4
+
+| #define I2C1\_SCL\_PD4   [SILABS\_DBUS\_I2C1\_SCL](#aa55669252ab4d30ff2044a7ac5e8fad1)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a7239b0bfd8b71b2ee9e85e8cb2e6eaaf)I2C1\_SDA\_PC0
+
+| #define I2C1\_SDA\_PC0   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#afe966c9b62cc1e0d598ea6ea92d663b8)I2C1\_SDA\_PC1
+
+| #define I2C1\_SDA\_PC1   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#af3ba02992276ed2088a6652b695d270d)I2C1\_SDA\_PC2
+
+| #define I2C1\_SDA\_PC2   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a424670a07eab18c7e3ce3db2d68d44f6)I2C1\_SDA\_PC3
+
+| #define I2C1\_SDA\_PC3   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ad7eebe896b02c99e7f27340a8ea01a8f)I2C1\_SDA\_PC4
+
+| #define I2C1\_SDA\_PC4   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a12822294913c78002356a6be7b698e2e)I2C1\_SDA\_PC5
+
+| #define I2C1\_SDA\_PC5   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a58f45546c69325b13cd062ca7a238c7a)I2C1\_SDA\_PD0
+
+| #define I2C1\_SDA\_PD0   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aa7cf52519a05cd49aef954ce5191a377)I2C1\_SDA\_PD1
+
+| #define I2C1\_SDA\_PD1   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad779ebeed2865070af9e56244e9c43d0)I2C1\_SDA\_PD2
+
+| #define I2C1\_SDA\_PD2   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a77b0c5734afd5123fd3ae520f10a8da8)I2C1\_SDA\_PD3
+
+| #define I2C1\_SDA\_PD3   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#acc6ad96c0e1645c02ca291c641ba06dd)I2C1\_SDA\_PD4
+
+| #define I2C1\_SDA\_PD4   [SILABS\_DBUS\_I2C1\_SDA](#a0c32c2f4351441d0a97a445627912904)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a352e584caede1a83b786463abf8e8ffc)LETIMER0\_OUT0\_PA0
+
+| #define LETIMER0\_OUT0\_PA0   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a237d004885f30f207a78f3fce4380476)LETIMER0\_OUT0\_PA1
+
+| #define LETIMER0\_OUT0\_PA1   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a25d0f59297bd6c10acc7714b06af99ca)LETIMER0\_OUT0\_PA2
+
+| #define LETIMER0\_OUT0\_PA2   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a9120e73b07bfa093065ec040045eb61d)LETIMER0\_OUT0\_PA3
+
+| #define LETIMER0\_OUT0\_PA3   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a4f0e8db2242fed71b78c6b0679a6ff76)LETIMER0\_OUT0\_PA4
+
+| #define LETIMER0\_OUT0\_PA4   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a26a82422ca3e7fbd558caa46b4c6705d)LETIMER0\_OUT0\_PA5
+
+| #define LETIMER0\_OUT0\_PA5   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a808e50c2f7823f703795dfbe5d5ef50e)LETIMER0\_OUT0\_PA6
+
+| #define LETIMER0\_OUT0\_PA6   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ad81eda4d47fbc7265b325b09eb47232c)LETIMER0\_OUT0\_PB0
+
+| #define LETIMER0\_OUT0\_PB0   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a20d0230e58f46869e37b9acfe0e5fb0d)LETIMER0\_OUT0\_PB1
+
+| #define LETIMER0\_OUT0\_PB1   [SILABS\_DBUS\_LETIMER0\_OUT0](#ab81ce78522519bd5a5e257c8f4f2c27f)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a3cab629b6e9cd573b30f8e45a747e819)LETIMER0\_OUT1\_PA0
+
+| #define LETIMER0\_OUT1\_PA0   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a2e90dd7d7686acf9665182356fba429d)LETIMER0\_OUT1\_PA1
+
+| #define LETIMER0\_OUT1\_PA1   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a1ded3647217b200c7d49bf6f99df8800)LETIMER0\_OUT1\_PA2
+
+| #define LETIMER0\_OUT1\_PA2   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ab329e7913b209f11eaba0a2623358976)LETIMER0\_OUT1\_PA3
+
+| #define LETIMER0\_OUT1\_PA3   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a0e0dc57036750466e500d46d9f2f8674)LETIMER0\_OUT1\_PA4
+
+| #define LETIMER0\_OUT1\_PA4   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a2c211216042c0ab444cf3e1b54d4e2f7)LETIMER0\_OUT1\_PA5
+
+| #define LETIMER0\_OUT1\_PA5   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a0aebcc5748062062d09dec35c4baa61f)LETIMER0\_OUT1\_PA6
+
+| #define LETIMER0\_OUT1\_PA6   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a5501b8d6e668ef58a71e19bfe0d620b8)LETIMER0\_OUT1\_PB0
+
+| #define LETIMER0\_OUT1\_PB0   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a8e4b46c768114f20ee1002820ee4d583)LETIMER0\_OUT1\_PB1
+
+| #define LETIMER0\_OUT1\_PB1   [SILABS\_DBUS\_LETIMER0\_OUT1](#a2effaa50da9b899d91eb127cdf554098)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a7f276456c2949e4151a1b2a734f8885c)MODEM\_ANT0\_PA0
+
+| #define MODEM\_ANT0\_PA0   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a79c6f7c43dfc9adab0c8eeb974842745)MODEM\_ANT0\_PA1
+
+| #define MODEM\_ANT0\_PA1   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#ae187f6726ed20849cb327fbdddd44aca)MODEM\_ANT0\_PA2
+
+| #define MODEM\_ANT0\_PA2   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a45bcc15c32caaa653434df7b01274283)MODEM\_ANT0\_PA3
+
+| #define MODEM\_ANT0\_PA3   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a2378348e1cf6d527113895ad243cc58d)MODEM\_ANT0\_PA4
+
+| #define MODEM\_ANT0\_PA4   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a722db9c869f2f89794bcc1ae32318ad4)MODEM\_ANT0\_PA5
+
+| #define MODEM\_ANT0\_PA5   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a4bffa8d5ecfb474a91ff85afc315043a)MODEM\_ANT0\_PA6
+
+| #define MODEM\_ANT0\_PA6   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a509466c0511355374b0ee3ece106acd6)MODEM\_ANT0\_PB0
+
+| #define MODEM\_ANT0\_PB0   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a4c2864f003ccf1355fdbb2be9df0d2ec)MODEM\_ANT0\_PB1
+
+| #define MODEM\_ANT0\_PB1   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a6b06e4cb9c997d609b19d7fb7639bf8d)MODEM\_ANT0\_PC0
+
+| #define MODEM\_ANT0\_PC0   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a000751139691af8d66623ad0bd43fc9b)MODEM\_ANT0\_PC1
+
+| #define MODEM\_ANT0\_PC1   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#afd5bc8540d8e3e5b0d182312520517be)MODEM\_ANT0\_PC2
+
+| #define MODEM\_ANT0\_PC2   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a33b690ae2e28b1b08b691aa4742d84d7)MODEM\_ANT0\_PC3
+
+| #define MODEM\_ANT0\_PC3   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ac22d54cd6c263a39f33caedf7cb09a0e)MODEM\_ANT0\_PC4
+
+| #define MODEM\_ANT0\_PC4   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a6982c06cdd7b783257ed5f3a74c735c7)MODEM\_ANT0\_PC5
+
+| #define MODEM\_ANT0\_PC5   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a01730221498f5de5590dbe8f6a293702)MODEM\_ANT0\_PD0
+
+| #define MODEM\_ANT0\_PD0   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a968474651d6fc8ced22a693a55d8bf4d)MODEM\_ANT0\_PD1
+
+| #define MODEM\_ANT0\_PD1   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a6bee8cd789f6922130830688cf586971)MODEM\_ANT0\_PD2
+
+| #define MODEM\_ANT0\_PD2   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aef59bb3ec42a534ffe32a53fb26e1656)MODEM\_ANT0\_PD3
+
+| #define MODEM\_ANT0\_PD3   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#aba70f4135f5bcc3e10525c27f2f25021)MODEM\_ANT0\_PD4
+
+| #define MODEM\_ANT0\_PD4   [SILABS\_DBUS\_MODEM\_ANT0](#a0225f18d061c851599210b56aeb42231)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a983f562f1f690bbec27d868c3d6b2b1a)MODEM\_ANT1\_PA0
+
+| #define MODEM\_ANT1\_PA0   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a1c8d37c5145858068556a032983680d1)MODEM\_ANT1\_PA1
+
+| #define MODEM\_ANT1\_PA1   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a9a879a4511af923143f8dc6e7710f0be)MODEM\_ANT1\_PA2
+
+| #define MODEM\_ANT1\_PA2   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a5753d0d0ab943103f54d6ad9ea76bccf)MODEM\_ANT1\_PA3
+
+| #define MODEM\_ANT1\_PA3   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a164fc42c8f2bc81bc70453af7bf82402)MODEM\_ANT1\_PA4
+
+| #define MODEM\_ANT1\_PA4   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a790e4407942a7fb6fed5972b59bf12c9)MODEM\_ANT1\_PA5
+
+| #define MODEM\_ANT1\_PA5   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a908cd5b571ab7ec4ba04581f3bf67166)MODEM\_ANT1\_PA6
+
+| #define MODEM\_ANT1\_PA6   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#adbe918778efba6fe712e7043457c43bb)MODEM\_ANT1\_PB0
+
+| #define MODEM\_ANT1\_PB0   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a6c5a484675c81a07f3709cb391113c22)MODEM\_ANT1\_PB1
+
+| #define MODEM\_ANT1\_PB1   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5718fbbd7d66e6c775b8904b50b14aec)MODEM\_ANT1\_PC0
+
+| #define MODEM\_ANT1\_PC0   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a25315b04583ee4d44f2e1835003679e9)MODEM\_ANT1\_PC1
+
+| #define MODEM\_ANT1\_PC1   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a7480d21cbb697630fd83f494f671b030)MODEM\_ANT1\_PC2
+
+| #define MODEM\_ANT1\_PC2   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#aa6ba89e0d2c7347f10a1a18d461986db)MODEM\_ANT1\_PC3
+
+| #define MODEM\_ANT1\_PC3   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a293042adb906716b25453e23c66932ee)MODEM\_ANT1\_PC4
+
+| #define MODEM\_ANT1\_PC4   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aa699042d4cec5024da6439e6fa629c5f)MODEM\_ANT1\_PC5
+
+| #define MODEM\_ANT1\_PC5   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a1ebb5a0437c033fa7d567000c0b8c383)MODEM\_ANT1\_PD0
+
+| #define MODEM\_ANT1\_PD0   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a1cc580714150e9383e280946b2863b31)MODEM\_ANT1\_PD1
+
+| #define MODEM\_ANT1\_PD1   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ac3322bcfcef6e6a680cf4611d0b363ef)MODEM\_ANT1\_PD2
+
+| #define MODEM\_ANT1\_PD2   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#abfdb37fc77643dc2853d87009c2425d6)MODEM\_ANT1\_PD3
+
+| #define MODEM\_ANT1\_PD3   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#abd04eb50b1a4d87042b59362e4b8758d)MODEM\_ANT1\_PD4
+
+| #define MODEM\_ANT1\_PD4   [SILABS\_DBUS\_MODEM\_ANT1](#aaff7073911479298cda7729646f6990e)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a08ca0610796eea5484d295a978221196)MODEM\_DCLK\_PA0
+
+| #define MODEM\_DCLK\_PA0   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a405e18321ac14727b470918f185f923c)MODEM\_DCLK\_PA1
+
+| #define MODEM\_DCLK\_PA1   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a2e7d5bc810c26a1194a846663607762d)MODEM\_DCLK\_PA2
+
+| #define MODEM\_DCLK\_PA2   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a483f89509d4d25fe14f3d8cff618289d)MODEM\_DCLK\_PA3
+
+| #define MODEM\_DCLK\_PA3   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a8e3916287d03243cca904f41ce1f9dae)MODEM\_DCLK\_PA4
+
+| #define MODEM\_DCLK\_PA4   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#afd75314e866b5c47e838556d866d5883)MODEM\_DCLK\_PA5
+
+| #define MODEM\_DCLK\_PA5   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#acf3a1e4e5b714d53ff82edbf02575ec5)MODEM\_DCLK\_PA6
+
+| #define MODEM\_DCLK\_PA6   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a19236a132524a68b08b88a2b71b74b7b)MODEM\_DCLK\_PB0
+
+| #define MODEM\_DCLK\_PB0   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a862abc8858bae8ba0af6b0f8fbbaae37)MODEM\_DCLK\_PB1
+
+| #define MODEM\_DCLK\_PB1   [SILABS\_DBUS\_MODEM\_DCLK](#a7d3926059c8b0c608d6d2bce035555b6)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a3e0e16cfb9e9ad19a8e76e07e458d676)MODEM\_DIN\_PA0
+
+| #define MODEM\_DIN\_PA0   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a3770dcebe1ad3c30c3fbcdcc9e1e61ac)MODEM\_DIN\_PA1
+
+| #define MODEM\_DIN\_PA1   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#aed7868ce54670b163ae60f645e353e10)MODEM\_DIN\_PA2
+
+| #define MODEM\_DIN\_PA2   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a55004a63d39356caf5bda66e005a25f3)MODEM\_DIN\_PA3
+
+| #define MODEM\_DIN\_PA3   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a1c13babd5d2f16d4d56257f847e84f40)MODEM\_DIN\_PA4
+
+| #define MODEM\_DIN\_PA4   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a4f09d7e3de2cde036a6ddfcfe35bc96a)MODEM\_DIN\_PA5
+
+| #define MODEM\_DIN\_PA5   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#aa310c43126dfd99d7f967141340934c2)MODEM\_DIN\_PA6
+
+| #define MODEM\_DIN\_PA6   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a87a115f7d2707bf513e218401f2d10fd)MODEM\_DIN\_PB0
+
+| #define MODEM\_DIN\_PB0   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a4484f366718daefbdd23d72248a1ba0d)MODEM\_DIN\_PB1
+
+| #define MODEM\_DIN\_PB1   [SILABS\_DBUS\_MODEM\_DIN](#a82dfdd0e9ad82ab0c75f4a530620d34b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ac3823581963866285b9f6143d16d9c38)MODEM\_DOUT\_PA0
+
+| #define MODEM\_DOUT\_PA0   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#ae4c319e1bba60e4a5a891edf88b1e968)MODEM\_DOUT\_PA1
+
+| #define MODEM\_DOUT\_PA1   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a8dabb728396cf206afac2cfbe49a5b02)MODEM\_DOUT\_PA2
+
+| #define MODEM\_DOUT\_PA2   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ae5963b1e2305ae53f11a90b0d76a99a3)MODEM\_DOUT\_PA3
+
+| #define MODEM\_DOUT\_PA3   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a06061dfed7797c0e29bb9cb5a6d49f88)MODEM\_DOUT\_PA4
+
+| #define MODEM\_DOUT\_PA4   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a117ead5a3ea011c4ad9d37fc96de2bba)MODEM\_DOUT\_PA5
+
+| #define MODEM\_DOUT\_PA5   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#aeda2e59bc16dda7ee3d83a2504a04f05)MODEM\_DOUT\_PA6
+
+| #define MODEM\_DOUT\_PA6   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#abe0c4060d5f35e9cf8e002676f3c238c)MODEM\_DOUT\_PB0
+
+| #define MODEM\_DOUT\_PB0   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#aff30fef58eb6dbd17426f7e175c8f4ae)MODEM\_DOUT\_PB1
+
+| #define MODEM\_DOUT\_PB1   [SILABS\_DBUS\_MODEM\_DOUT](#a48c49cff2ed723238703ff1b75ba8ae7)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#af1dcdc8d0ea9b8671a240ce03d80d434)PRS0\_ASYNCH0\_PA0
+
+| #define PRS0\_ASYNCH0\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#af712c40bafb6ba29d062f47a47ef4445)PRS0\_ASYNCH0\_PA1
+
+| #define PRS0\_ASYNCH0\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a4a95bfd98958b7944ef58c010df91d83)PRS0\_ASYNCH0\_PA2
+
+| #define PRS0\_ASYNCH0\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ab912f56311db65e5316e921180f46589)PRS0\_ASYNCH0\_PA3
+
+| #define PRS0\_ASYNCH0\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ac1e05749654ec2bee09aa75a951bcd57)PRS0\_ASYNCH0\_PA4
+
+| #define PRS0\_ASYNCH0\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a15788b1a1cdce57fddf0d58e884e37bc)PRS0\_ASYNCH0\_PA5
+
+| #define PRS0\_ASYNCH0\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#af071c0ad0ca5a54d74c7fa4e2f7eea6c)PRS0\_ASYNCH0\_PA6
+
+| #define PRS0\_ASYNCH0\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a590472d980647bc2a513ee516c9c4f1b)PRS0\_ASYNCH0\_PB0
+
+| #define PRS0\_ASYNCH0\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#af4ee1a5d6ccadd510de798cf41f973ee)PRS0\_ASYNCH0\_PB1
+
+| #define PRS0\_ASYNCH0\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH0](#a55a10636beb81ba5bf195c83c45cc994)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#af096e7ffddaaf21a0886246861e94cf0)PRS0\_ASYNCH10\_PC0
+
+| #define PRS0\_ASYNCH10\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ab2e7c25b6faf577e7ee8197ae806a979)PRS0\_ASYNCH10\_PC1
+
+| #define PRS0\_ASYNCH10\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a22dd84a911044fe555ee09be1ee255e6)PRS0\_ASYNCH10\_PC2
+
+| #define PRS0\_ASYNCH10\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a4285722719da53788c48b4fc1f563e78)PRS0\_ASYNCH10\_PC3
+
+| #define PRS0\_ASYNCH10\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a5fde4317aee5f5e514d31b0a02013e85)PRS0\_ASYNCH10\_PC4
+
+| #define PRS0\_ASYNCH10\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ac3e04e87a2e22a0e5852c25cd42f5bfd)PRS0\_ASYNCH10\_PC5
+
+| #define PRS0\_ASYNCH10\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a86d5340c5133d3193351104663683d0e)PRS0\_ASYNCH10\_PD0
+
+| #define PRS0\_ASYNCH10\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a00af6bec878e4ea3f6ff297ac35f91ed)PRS0\_ASYNCH10\_PD1
+
+| #define PRS0\_ASYNCH10\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a0117d03759e58b8a40f3e32e65c1daff)PRS0\_ASYNCH10\_PD2
+
+| #define PRS0\_ASYNCH10\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ac26c97f76181aa0d4d334061599e549b)PRS0\_ASYNCH10\_PD3
+
+| #define PRS0\_ASYNCH10\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a56d5659d935d78961dd5ab8f56af296b)PRS0\_ASYNCH10\_PD4
+
+| #define PRS0\_ASYNCH10\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH10](#a48a4d109c810311436ee8add40794aba)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a1ba16c8c6da7e3129c03eb546df4c993)PRS0\_ASYNCH11\_PC0
+
+| #define PRS0\_ASYNCH11\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a4780077af0f3eac79ac458382dfdd9ce)PRS0\_ASYNCH11\_PC1
+
+| #define PRS0\_ASYNCH11\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a32ed7a6cd5db3336ee370d6cf9d8e989)PRS0\_ASYNCH11\_PC2
+
+| #define PRS0\_ASYNCH11\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ada09802928473e1a5360709b259ce87e)PRS0\_ASYNCH11\_PC3
+
+| #define PRS0\_ASYNCH11\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aa83823870ce109c570db56a0d7bf4197)PRS0\_ASYNCH11\_PC4
+
+| #define PRS0\_ASYNCH11\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a06db00a9ba09d6f16e8ab4423b98edb8)PRS0\_ASYNCH11\_PC5
+
+| #define PRS0\_ASYNCH11\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a4d64f2e728e07b761372b682a6732ea9)PRS0\_ASYNCH11\_PD0
+
+| #define PRS0\_ASYNCH11\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aa62c6365ff4d4c6e9ac8952c9bc50d1d)PRS0\_ASYNCH11\_PD1
+
+| #define PRS0\_ASYNCH11\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a6d8321e7ba25db410748817cd169d45a)PRS0\_ASYNCH11\_PD2
+
+| #define PRS0\_ASYNCH11\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aafe8d7f49fead257b9a5065f68727c1a)PRS0\_ASYNCH11\_PD3
+
+| #define PRS0\_ASYNCH11\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a8e5caa0af696c8dc3445350a1f11cf45)PRS0\_ASYNCH11\_PD4
+
+| #define PRS0\_ASYNCH11\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH11](#a7acd670bc40ebc057369a7c577a0b0c2)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aa7c8c749fddaf4b2e22e3791d9e8921a)PRS0\_ASYNCH1\_PA0
+
+| #define PRS0\_ASYNCH1\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a8f998569835e3b8688423cf9b4e81810)PRS0\_ASYNCH1\_PA1
+
+| #define PRS0\_ASYNCH1\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a5f2d980e4505820849c42fdc36c1b5a9)PRS0\_ASYNCH1\_PA2
+
+| #define PRS0\_ASYNCH1\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a4b66d13c4589bb2663661e6cfb8c0274)PRS0\_ASYNCH1\_PA3
+
+| #define PRS0\_ASYNCH1\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#aec6f34dc1716b25b0fcc0628b18cbf86)PRS0\_ASYNCH1\_PA4
+
+| #define PRS0\_ASYNCH1\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a0be6148e1124f7e8dc6773f59dfd8ceb)PRS0\_ASYNCH1\_PA5
+
+| #define PRS0\_ASYNCH1\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a4d1894b5f84e0e7c81a5dbb2bfe8318f)PRS0\_ASYNCH1\_PA6
+
+| #define PRS0\_ASYNCH1\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a76487417602321711041f2d5d721e8ae)PRS0\_ASYNCH1\_PB0
+
+| #define PRS0\_ASYNCH1\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a1626bdc4551620aaccbfacd8aa0c0cdf)PRS0\_ASYNCH1\_PB1
+
+| #define PRS0\_ASYNCH1\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH1](#a8502ee8adb62210f0c02abdf38a54019)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ab9115b54fff36f0449722af1659860fb)PRS0\_ASYNCH2\_PA0
+
+| #define PRS0\_ASYNCH2\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a82e86536168f11e5b02c4fac703128b1)PRS0\_ASYNCH2\_PA1
+
+| #define PRS0\_ASYNCH2\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#af3124f46d26efbb18047172d5d5accbc)PRS0\_ASYNCH2\_PA2
+
+| #define PRS0\_ASYNCH2\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a57857d486b2fc1db0770a7d1e198ed95)PRS0\_ASYNCH2\_PA3
+
+| #define PRS0\_ASYNCH2\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a3d91108c838d4684846d56816aee5fe1)PRS0\_ASYNCH2\_PA4
+
+| #define PRS0\_ASYNCH2\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a8e7b151ff1870ccfc66a34096b4aebae)PRS0\_ASYNCH2\_PA5
+
+| #define PRS0\_ASYNCH2\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a7f536e8d1d66285820ab8e3808e49a0f)PRS0\_ASYNCH2\_PA6
+
+| #define PRS0\_ASYNCH2\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a81bf0662053265b1d9cc03c101d4a353)PRS0\_ASYNCH2\_PB0
+
+| #define PRS0\_ASYNCH2\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a026322616f156126afcbcebc25d104c0)PRS0\_ASYNCH2\_PB1
+
+| #define PRS0\_ASYNCH2\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH2](#a8065a08661b02239f79db443c11afac8)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a94b5b779374768ed16ad8cc396f756aa)PRS0\_ASYNCH3\_PA0
+
+| #define PRS0\_ASYNCH3\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#aa947bb280b4891081e7a4de9dba44ae5)PRS0\_ASYNCH3\_PA1
+
+| #define PRS0\_ASYNCH3\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a9bc4d14c37fd2724643735c13cc9a25d)PRS0\_ASYNCH3\_PA2
+
+| #define PRS0\_ASYNCH3\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#afa101472245a7df51d906f31093ce640)PRS0\_ASYNCH3\_PA3
+
+| #define PRS0\_ASYNCH3\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a1e433ac2a9a5c1b9240b157033e8fdc1)PRS0\_ASYNCH3\_PA4
+
+| #define PRS0\_ASYNCH3\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a4af0e3dc3303ec055fcce97399ccf4ba)PRS0\_ASYNCH3\_PA5
+
+| #define PRS0\_ASYNCH3\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ad905e3cca4ec1b92f1fd6b0ca18b8c06)PRS0\_ASYNCH3\_PA6
+
+| #define PRS0\_ASYNCH3\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a5cb1e7fbb39adfdfca2516715f0cc1ac)PRS0\_ASYNCH3\_PB0
+
+| #define PRS0\_ASYNCH3\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#aa09fe8bc9d5c277db64c0912b55e9651)PRS0\_ASYNCH3\_PB1
+
+| #define PRS0\_ASYNCH3\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH3](#a39cb285c6310012108f37d510db7a86c)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a016d312ee53e23e053e5322038c218e8)PRS0\_ASYNCH4\_PA0
+
+| #define PRS0\_ASYNCH4\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#ac08b73b2d1c8340a46b2b4321d258bbf)PRS0\_ASYNCH4\_PA1
+
+| #define PRS0\_ASYNCH4\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a6d468079dce68ad1a80a09411eed3c61)PRS0\_ASYNCH4\_PA2
+
+| #define PRS0\_ASYNCH4\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a2901f5a1abe787afaaf8c04a6aafa57f)PRS0\_ASYNCH4\_PA3
+
+| #define PRS0\_ASYNCH4\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a599e583eb87879b76f1a889093ca1db7)PRS0\_ASYNCH4\_PA4
+
+| #define PRS0\_ASYNCH4\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a50cd729844356a327a34588ab70c9f51)PRS0\_ASYNCH4\_PA5
+
+| #define PRS0\_ASYNCH4\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a15672ea11df2224289fc84c07abddbce)PRS0\_ASYNCH4\_PA6
+
+| #define PRS0\_ASYNCH4\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ab0da5394e8fceec3a24c8ca362a6a73f)PRS0\_ASYNCH4\_PB0
+
+| #define PRS0\_ASYNCH4\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a95e9e61ebc91932e32cf3683ba99beb7)PRS0\_ASYNCH4\_PB1
+
+| #define PRS0\_ASYNCH4\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH4](#ac419288481edbfee2df8711b0c037ba2)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a6cac49a6aeefd56ad4ba7e4cba8910bf)PRS0\_ASYNCH5\_PA0
+
+| #define PRS0\_ASYNCH5\_PA0   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a8442fb1410b80fcd20c78b7cc44608eb)PRS0\_ASYNCH5\_PA1
+
+| #define PRS0\_ASYNCH5\_PA1   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#aa3e3bbc87f46c7f0b9016518266e1fb2)PRS0\_ASYNCH5\_PA2
+
+| #define PRS0\_ASYNCH5\_PA2   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a269678c70e29d05e9d67b82b1d5dcfd2)PRS0\_ASYNCH5\_PA3
+
+| #define PRS0\_ASYNCH5\_PA3   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a7a314bb07eab261a850420ac2d6a2618)PRS0\_ASYNCH5\_PA4
+
+| #define PRS0\_ASYNCH5\_PA4   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ac01e6bde894c73d5e965b7fe6ed03f53)PRS0\_ASYNCH5\_PA5
+
+| #define PRS0\_ASYNCH5\_PA5   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ae3d6e3ae9d6d9d7c41ca233ad101b025)PRS0\_ASYNCH5\_PA6
+
+| #define PRS0\_ASYNCH5\_PA6   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#adb08d0b33060e185431fb336110899c9)PRS0\_ASYNCH5\_PB0
+
+| #define PRS0\_ASYNCH5\_PB0   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a82b599c4956aeea92802694032b4b55a)PRS0\_ASYNCH5\_PB1
+
+| #define PRS0\_ASYNCH5\_PB1   [SILABS\_DBUS\_PRS0\_ASYNCH5](#a6d7577bd45bc2c6043463ef6df86e8a7)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5c7910d134b9fe6ddf1da299dfb2cfa0)PRS0\_ASYNCH6\_PC0
+
+| #define PRS0\_ASYNCH6\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a713321693f2cfd7cda27d1c36fc9b74b)PRS0\_ASYNCH6\_PC1
+
+| #define PRS0\_ASYNCH6\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a907d3ee7390b6ebcb5cac75724b6c587)PRS0\_ASYNCH6\_PC2
+
+| #define PRS0\_ASYNCH6\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a5eebd47a62e87b938b530113cd048481)PRS0\_ASYNCH6\_PC3
+
+| #define PRS0\_ASYNCH6\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a2d0d89b1abadc95ec02a88916330bab4)PRS0\_ASYNCH6\_PC4
+
+| #define PRS0\_ASYNCH6\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aaa44b81b3421197bff7df84a5e90a566)PRS0\_ASYNCH6\_PC5
+
+| #define PRS0\_ASYNCH6\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a0db829680023f49ec8b84b8418994f57)PRS0\_ASYNCH6\_PD0
+
+| #define PRS0\_ASYNCH6\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a41989b05cfd244afef8a6c359de6f6cb)PRS0\_ASYNCH6\_PD1
+
+| #define PRS0\_ASYNCH6\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad70491288162b935edc6602844fbad73)PRS0\_ASYNCH6\_PD2
+
+| #define PRS0\_ASYNCH6\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a03cdfe05c93c94a99e457fc34be7adb3)PRS0\_ASYNCH6\_PD3
+
+| #define PRS0\_ASYNCH6\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a6c74cc2ba56d399a25378ecccef3005f)PRS0\_ASYNCH6\_PD4
+
+| #define PRS0\_ASYNCH6\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH6](#afa3017107df002534d41165b790891dd)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a263dcb3077d0d1e3a58730140042046d)PRS0\_ASYNCH7\_PC0
+
+| #define PRS0\_ASYNCH7\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#aa49bafce35b9bb4b59c8c9c22f06a739)PRS0\_ASYNCH7\_PC1
+
+| #define PRS0\_ASYNCH7\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ae0305282eab2df6979c235c8d5d00ac7)PRS0\_ASYNCH7\_PC2
+
+| #define PRS0\_ASYNCH7\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a05355f9a968579fd8a931b7458d37960)PRS0\_ASYNCH7\_PC3
+
+| #define PRS0\_ASYNCH7\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#acb9a2a6531dd263cfe56858aa9c77791)PRS0\_ASYNCH7\_PC4
+
+| #define PRS0\_ASYNCH7\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#af504334eb99bab375e929f662ee6091a)PRS0\_ASYNCH7\_PC5
+
+| #define PRS0\_ASYNCH7\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a4e38e496fe8a602726a9fcfac5c9553b)PRS0\_ASYNCH7\_PD0
+
+| #define PRS0\_ASYNCH7\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a8a5617fb6a01d979b5754bb30438ef11)PRS0\_ASYNCH7\_PD1
+
+| #define PRS0\_ASYNCH7\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ae44270558459c4a31a9d8db2216b6a47)PRS0\_ASYNCH7\_PD2
+
+| #define PRS0\_ASYNCH7\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a19e5fc23eb4c5edbe4cc2be54508038a)PRS0\_ASYNCH7\_PD3
+
+| #define PRS0\_ASYNCH7\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a6f3cf739f48f52265c18a437b40c919f)PRS0\_ASYNCH7\_PD4
+
+| #define PRS0\_ASYNCH7\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH7](#ae5af1968989cc643d315e310eb840dcc)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a01aee008d4ae0969e81630224253732c)PRS0\_ASYNCH8\_PC0
+
+| #define PRS0\_ASYNCH8\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a1020e0f439015d77aad3a4ad6761745f)PRS0\_ASYNCH8\_PC1
+
+| #define PRS0\_ASYNCH8\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a78ac7a7a23787837c2d45b7fb619d973)PRS0\_ASYNCH8\_PC2
+
+| #define PRS0\_ASYNCH8\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a21d56ee2bba901bb0ad42fe00fd47126)PRS0\_ASYNCH8\_PC3
+
+| #define PRS0\_ASYNCH8\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ab38e8e6ebf5f7b8cf9db913835c77fdf)PRS0\_ASYNCH8\_PC4
+
+| #define PRS0\_ASYNCH8\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a034b8fafc8f80d4aa749ace8d383aa42)PRS0\_ASYNCH8\_PC5
+
+| #define PRS0\_ASYNCH8\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a3c4c1e1e2ed6aad821543605099c464e)PRS0\_ASYNCH8\_PD0
+
+| #define PRS0\_ASYNCH8\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a7a96c3dddcf49a09ab3941a19e33dd2b)PRS0\_ASYNCH8\_PD1
+
+| #define PRS0\_ASYNCH8\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a045129ec46f95f26ba665876216df09a)PRS0\_ASYNCH8\_PD2
+
+| #define PRS0\_ASYNCH8\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#abf899559efdca73abc5e1f3e058280dc)PRS0\_ASYNCH8\_PD3
+
+| #define PRS0\_ASYNCH8\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#aa41526f1e85b40d4d9f30444542c19e2)PRS0\_ASYNCH8\_PD4
+
+| #define PRS0\_ASYNCH8\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH8](#a0d062ef8d1ababa72b60d08265ff7e25)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#ad6900f2865fce19423ba5bce65e6f6ec)PRS0\_ASYNCH9\_PC0
+
+| #define PRS0\_ASYNCH9\_PC0   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a21a22ddcc1d1b8c05250ea00bfaf2c46)PRS0\_ASYNCH9\_PC1
+
+| #define PRS0\_ASYNCH9\_PC1   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a7dcb713d1f7f8457e30812454272c360)PRS0\_ASYNCH9\_PC2
+
+| #define PRS0\_ASYNCH9\_PC2   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ac6eeb711fa526a794104a43142cedc8d)PRS0\_ASYNCH9\_PC3
+
+| #define PRS0\_ASYNCH9\_PC3   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a87ada6898e2eeddcaeead80835a3800b)PRS0\_ASYNCH9\_PC4
+
+| #define PRS0\_ASYNCH9\_PC4   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a6b5b3ca2088cb2c43fbebf99cd4e9ad3)PRS0\_ASYNCH9\_PC5
+
+| #define PRS0\_ASYNCH9\_PC5   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a89cd80ad72079b3a20917cc722fed3c3)PRS0\_ASYNCH9\_PD0
+
+| #define PRS0\_ASYNCH9\_PD0   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aa9433d94ee912ff578dc1f3753bca9b5)PRS0\_ASYNCH9\_PD1
+
+| #define PRS0\_ASYNCH9\_PD1   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a1dfa38b0754566f3586712b7474ce13f)PRS0\_ASYNCH9\_PD2
+
+| #define PRS0\_ASYNCH9\_PD2   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a48c2477430954a1f5ebefcd625132b34)PRS0\_ASYNCH9\_PD3
+
+| #define PRS0\_ASYNCH9\_PD3   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a3f32b54daa1e09ccb97ad447facd5076)PRS0\_ASYNCH9\_PD4
+
+| #define PRS0\_ASYNCH9\_PD4   [SILABS\_DBUS\_PRS0\_ASYNCH9](#af0617799b4044665a4996276fcf1e2bf)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a2c5a579f02ffd8ca34ce4f12cb30c8f0)PRS0\_SYNCH0\_PA0
+
+| #define PRS0\_SYNCH0\_PA0   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a5f853596173978c14b0b85059afa8a5a)PRS0\_SYNCH0\_PA1
+
+| #define PRS0\_SYNCH0\_PA1   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a7c8f6f55ba3e60c6a160f83f324442f0)PRS0\_SYNCH0\_PA2
+
+| #define PRS0\_SYNCH0\_PA2   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a8b8697e5c71b52686ea68726a1c033dd)PRS0\_SYNCH0\_PA3
+
+| #define PRS0\_SYNCH0\_PA3   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a509796448ccd2509eeb7fbf9b4432267)PRS0\_SYNCH0\_PA4
+
+| #define PRS0\_SYNCH0\_PA4   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#afd80bdbc61c9bddb37851b1c9b7b6fa6)PRS0\_SYNCH0\_PA5
+
+| #define PRS0\_SYNCH0\_PA5   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#abd86045f5ef93089158a28dd7f3aa4c2)PRS0\_SYNCH0\_PA6
+
+| #define PRS0\_SYNCH0\_PA6   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a736a7ad4a31b1d6dc0c548d628da9d97)PRS0\_SYNCH0\_PB0
+
+| #define PRS0\_SYNCH0\_PB0   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a10e121857131802c71c42f1fbad81970)PRS0\_SYNCH0\_PB1
+
+| #define PRS0\_SYNCH0\_PB1   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#aed0f68fd0e4029e96d08fb24876f88b5)PRS0\_SYNCH0\_PC0
+
+| #define PRS0\_SYNCH0\_PC0   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ae52c949f3917be619b0f5f2365c2e8ba)PRS0\_SYNCH0\_PC1
+
+| #define PRS0\_SYNCH0\_PC1   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#aac10f668835b732d019a50c3cfc47e37)PRS0\_SYNCH0\_PC2
+
+| #define PRS0\_SYNCH0\_PC2   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#aa9c52d637e33202df2ace78c13c9555f)PRS0\_SYNCH0\_PC3
+
+| #define PRS0\_SYNCH0\_PC3   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#adcaec5a2fb5dd33e72e486587daa1f4e)PRS0\_SYNCH0\_PC4
+
+| #define PRS0\_SYNCH0\_PC4   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aebbdc8a0ced784325db8374db6a1f16c)PRS0\_SYNCH0\_PC5
+
+| #define PRS0\_SYNCH0\_PC5   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a5f8dea11049e64bae1e4e27baf9e1b31)PRS0\_SYNCH0\_PD0
+
+| #define PRS0\_SYNCH0\_PD0   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a27144719fce957df87cb1434bd78c53b)PRS0\_SYNCH0\_PD1
+
+| #define PRS0\_SYNCH0\_PD1   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a014112c01a441ca65ee77b693e22bcf5)PRS0\_SYNCH0\_PD2
+
+| #define PRS0\_SYNCH0\_PD2   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a9ace1d40d2d50bc683ef0c57cc7863e0)PRS0\_SYNCH0\_PD3
+
+| #define PRS0\_SYNCH0\_PD3   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#aade7486bb4853a67abea630973058c25)PRS0\_SYNCH0\_PD4
+
+| #define PRS0\_SYNCH0\_PD4   [SILABS\_DBUS\_PRS0\_SYNCH0](#a1b8e171cd761535148063c9b81ed3ee0)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#adedbd9cd1918a6d9543c886660eced9d)PRS0\_SYNCH1\_PA0
+
+| #define PRS0\_SYNCH1\_PA0   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a1083f73ff99ca1b3bf4446081e2addd7)PRS0\_SYNCH1\_PA1
+
+| #define PRS0\_SYNCH1\_PA1   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a1ea1179bbedea21d7d5ba85c489b88e1)PRS0\_SYNCH1\_PA2
+
+| #define PRS0\_SYNCH1\_PA2   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a18fe9b252631cc7ba936c99d6206294c)PRS0\_SYNCH1\_PA3
+
+| #define PRS0\_SYNCH1\_PA3   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ae5b32510b0bfea666dfb424ecad5e926)PRS0\_SYNCH1\_PA4
+
+| #define PRS0\_SYNCH1\_PA4   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a990491e0b9b76fc29c692ab11429d1bf)PRS0\_SYNCH1\_PA5
+
+| #define PRS0\_SYNCH1\_PA5   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#accd2f4d5864cea8337d9436d6f946f2d)PRS0\_SYNCH1\_PA6
+
+| #define PRS0\_SYNCH1\_PA6   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#aa19c3a0e0e8ce1868f1a89f7bd2e703a)PRS0\_SYNCH1\_PB0
+
+| #define PRS0\_SYNCH1\_PB0   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ab5cf7a7aacec81e75db1643c99958fa3)PRS0\_SYNCH1\_PB1
+
+| #define PRS0\_SYNCH1\_PB1   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ab3036a275379a79acb9c9186172036be)PRS0\_SYNCH1\_PC0
+
+| #define PRS0\_SYNCH1\_PC0   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ae726abd2298409738d8deba2708508be)PRS0\_SYNCH1\_PC1
+
+| #define PRS0\_SYNCH1\_PC1   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a9aec203bbc1ecd06760f7262a53c2b3e)PRS0\_SYNCH1\_PC2
+
+| #define PRS0\_SYNCH1\_PC2   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a87e88cfd739e57c6b2832ddc579e9007)PRS0\_SYNCH1\_PC3
+
+| #define PRS0\_SYNCH1\_PC3   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a5ff140aeb080678501e5a49e5a17238e)PRS0\_SYNCH1\_PC4
+
+| #define PRS0\_SYNCH1\_PC4   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ad4e38b8812f7c0d4a071c56033ea29b6)PRS0\_SYNCH1\_PC5
+
+| #define PRS0\_SYNCH1\_PC5   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ac3d3b0681c6f881fdf67d75330d2ad15)PRS0\_SYNCH1\_PD0
+
+| #define PRS0\_SYNCH1\_PD0   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a856e585175b99140059f56bbb485002c)PRS0\_SYNCH1\_PD1
+
+| #define PRS0\_SYNCH1\_PD1   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a40bd508ace349e81a5d0c155ca89970d)PRS0\_SYNCH1\_PD2
+
+| #define PRS0\_SYNCH1\_PD2   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a0619050cb1a04b75b610788e2de0390e)PRS0\_SYNCH1\_PD3
+
+| #define PRS0\_SYNCH1\_PD3   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a9a804e3cdb2e284489233d28577e1fc4)PRS0\_SYNCH1\_PD4
+
+| #define PRS0\_SYNCH1\_PD4   [SILABS\_DBUS\_PRS0\_SYNCH1](#a85d7bbcc208a977d14aa286a9576b432)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a30eedcbcb9ef6aa04facebe8e1cc1093)PRS0\_SYNCH2\_PA0
+
+| #define PRS0\_SYNCH2\_PA0   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a8ec3379386547e7712ad3c900ec6814c)PRS0\_SYNCH2\_PA1
+
+| #define PRS0\_SYNCH2\_PA1   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a770727e399810443ff27f6a2023c65ee)PRS0\_SYNCH2\_PA2
+
+| #define PRS0\_SYNCH2\_PA2   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#afa5e0ddfe140d74f0dd76d8e7edda691)PRS0\_SYNCH2\_PA3
+
+| #define PRS0\_SYNCH2\_PA3   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a2cf89814fec476f61882164cdf99b537)PRS0\_SYNCH2\_PA4
+
+| #define PRS0\_SYNCH2\_PA4   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a8a48ec9e994929feacba66e0509ad3e1)PRS0\_SYNCH2\_PA5
+
+| #define PRS0\_SYNCH2\_PA5   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a117da23bb4f9f0aa2110437ffefc365a)PRS0\_SYNCH2\_PA6
+
+| #define PRS0\_SYNCH2\_PA6   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a3246953945006183dfbc3b12a5e86d61)PRS0\_SYNCH2\_PB0
+
+| #define PRS0\_SYNCH2\_PB0   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a0dec289423a72a3226f883db9921b0b2)PRS0\_SYNCH2\_PB1
+
+| #define PRS0\_SYNCH2\_PB1   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ac9ab782f8cda90916bd9cb751753144a)PRS0\_SYNCH2\_PC0
+
+| #define PRS0\_SYNCH2\_PC0   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a71fb98a3d5355af02d2c46d69c7f6edc)PRS0\_SYNCH2\_PC1
+
+| #define PRS0\_SYNCH2\_PC1   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a50b30cf886dedec9e7cd761d9596d7f6)PRS0\_SYNCH2\_PC2
+
+| #define PRS0\_SYNCH2\_PC2   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ab8725b1678b453d17551cf0daea10f57)PRS0\_SYNCH2\_PC3
+
+| #define PRS0\_SYNCH2\_PC3   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a012f52b7a7cc4babe7f8e14b27125790)PRS0\_SYNCH2\_PC4
+
+| #define PRS0\_SYNCH2\_PC4   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a5ce775779214b9341aede3162d4e381a)PRS0\_SYNCH2\_PC5
+
+| #define PRS0\_SYNCH2\_PC5   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#af8c37706e65ff4f9f6f90f01ce507040)PRS0\_SYNCH2\_PD0
+
+| #define PRS0\_SYNCH2\_PD0   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ac83a6c15c88a8662ce8b9ba58d60772a)PRS0\_SYNCH2\_PD1
+
+| #define PRS0\_SYNCH2\_PD1   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad8d312030ac50620b851c24cfb90b8c0)PRS0\_SYNCH2\_PD2
+
+| #define PRS0\_SYNCH2\_PD2   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a3462ed2558a059ff7b2c81471bb30adf)PRS0\_SYNCH2\_PD3
+
+| #define PRS0\_SYNCH2\_PD3   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a98dc3a73329ab25a00dd293e05c8ebeb)PRS0\_SYNCH2\_PD4
+
+| #define PRS0\_SYNCH2\_PD4   [SILABS\_DBUS\_PRS0\_SYNCH2](#a7340c07baee2cad6d5b685929c48151b)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a3d8a4990b1f1b2c03152d2d0ee88afc3)PRS0\_SYNCH3\_PA0
+
+| #define PRS0\_SYNCH3\_PA0   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a13b0ade04e1c64d1438afe98588fe2d2)PRS0\_SYNCH3\_PA1
+
+| #define PRS0\_SYNCH3\_PA1   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a270b6759ebfa8c61efefbc57fa10b3a3)PRS0\_SYNCH3\_PA2
+
+| #define PRS0\_SYNCH3\_PA2   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a6d223baeec1045d533966d37adeaa1fd)PRS0\_SYNCH3\_PA3
+
+| #define PRS0\_SYNCH3\_PA3   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a0e17834640a0fa86e9cc0d166b41051e)PRS0\_SYNCH3\_PA4
+
+| #define PRS0\_SYNCH3\_PA4   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a49a035319ad597aca7e0fcfa1abd0f01)PRS0\_SYNCH3\_PA5
+
+| #define PRS0\_SYNCH3\_PA5   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a13e3aaaec3efb457103bb8159cb4de31)PRS0\_SYNCH3\_PA6
+
+| #define PRS0\_SYNCH3\_PA6   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ab17a4fca8c86667da92478553626bba6)PRS0\_SYNCH3\_PB0
+
+| #define PRS0\_SYNCH3\_PB0   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a88fff8ac2df69413d6fddc5ec152e31b)PRS0\_SYNCH3\_PB1
+
+| #define PRS0\_SYNCH3\_PB1   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5b3ca0959f268e1977ab4fcb0333b282)PRS0\_SYNCH3\_PC0
+
+| #define PRS0\_SYNCH3\_PC0   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a322705abcca1fb83fdffcf16252c35d4)PRS0\_SYNCH3\_PC1
+
+| #define PRS0\_SYNCH3\_PC1   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ad45be94cb4581dbc5c9474d2da892aa0)PRS0\_SYNCH3\_PC2
+
+| #define PRS0\_SYNCH3\_PC2   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#af541dc086b57060761678fba2145d5fc)PRS0\_SYNCH3\_PC3
+
+| #define PRS0\_SYNCH3\_PC3   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aa8cc93aafe5498f4cc5a26d1fa37599e)PRS0\_SYNCH3\_PC4
+
+| #define PRS0\_SYNCH3\_PC4   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a05496c3ac6cbd4310245f30c0810afbe)PRS0\_SYNCH3\_PC5
+
+| #define PRS0\_SYNCH3\_PC5   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a028ffbfde62bf2f28a08c99884d6fbb6)PRS0\_SYNCH3\_PD0
+
+| #define PRS0\_SYNCH3\_PD0   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a0d0ee2b67b86c4b2615f24e673966465)PRS0\_SYNCH3\_PD1
+
+| #define PRS0\_SYNCH3\_PD1   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a8dc61e39bff0c335982b5a775c9b000c)PRS0\_SYNCH3\_PD2
+
+| #define PRS0\_SYNCH3\_PD2   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a10deabf90e836f5bd478ad2a6483d2c8)PRS0\_SYNCH3\_PD3
+
+| #define PRS0\_SYNCH3\_PD3   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#abf691edac97faf842650ff032300c7f2)PRS0\_SYNCH3\_PD4
+
+| #define PRS0\_SYNCH3\_PD4   [SILABS\_DBUS\_PRS0\_SYNCH3](#a131fc4f34da4d410665642dfd51b733b)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a5bdf4f259033a31adaa4e25fe84604ed)PTI\_DCLK\_PC0
+
+| #define PTI\_DCLK\_PC0   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#aa4e24633e84b6487f85a598419ea7e7d)PTI\_DCLK\_PC1
+
+| #define PTI\_DCLK\_PC1   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a53fa8c98bed45c485839c1d86d343733)PTI\_DCLK\_PC2
+
+| #define PTI\_DCLK\_PC2   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a930a4ba462ce768196265ec5a53557ba)PTI\_DCLK\_PC3
+
+| #define PTI\_DCLK\_PC3   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ae90e5e4841b04412ca3768216d0efaf1)PTI\_DCLK\_PC4
+
+| #define PTI\_DCLK\_PC4   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a27b9c07fbbc05a0bd69dd74cc17db0d0)PTI\_DCLK\_PC5
+
+| #define PTI\_DCLK\_PC5   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a354b3eb4fe4c5e11e1c944761bf00095)PTI\_DCLK\_PD0
+
+| #define PTI\_DCLK\_PD0   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a14260512bf2682c2fb84fa96f00de9ba)PTI\_DCLK\_PD1
+
+| #define PTI\_DCLK\_PD1   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#af96542673625d7a20712ad4c31953d4b)PTI\_DCLK\_PD2
+
+| #define PTI\_DCLK\_PD2   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ab234da9210beb7b1f94b75aa9ecf52ca)PTI\_DCLK\_PD3
+
+| #define PTI\_DCLK\_PD3   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ab16f467d07715a204580f48ed0affd78)PTI\_DCLK\_PD4
+
+| #define PTI\_DCLK\_PD4   [SILABS\_DBUS\_PTI\_DCLK](#a3165d7b2623b12308b38c9abcf900642)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aaa3fdc625a5f096099d23c1760980055)PTI\_DFRAME\_PC0
+
+| #define PTI\_DFRAME\_PC0   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a23de813c7f0e88b8397ebcc34eb21552)PTI\_DFRAME\_PC1
+
+| #define PTI\_DFRAME\_PC1   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a667adbc7570cf85833284a141de5fa2d)PTI\_DFRAME\_PC2
+
+| #define PTI\_DFRAME\_PC2   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#afea8ff0ad63b50a277e69f305b64e7cd)PTI\_DFRAME\_PC3
+
+| #define PTI\_DFRAME\_PC3   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a97019cfae35bfc913e7ed2456a816ab5)PTI\_DFRAME\_PC4
+
+| #define PTI\_DFRAME\_PC4   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a15d67770385d695409d975ba26d5d0e4)PTI\_DFRAME\_PC5
+
+| #define PTI\_DFRAME\_PC5   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ac6a830947b330b10ae2c9e3cdc1887b4)PTI\_DFRAME\_PD0
+
+| #define PTI\_DFRAME\_PD0   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a1f08a23bacafb3dae71d143c2c5ab863)PTI\_DFRAME\_PD1
+
+| #define PTI\_DFRAME\_PD1   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#acafc4bcb7af54f59dbacb7d9ce8712ce)PTI\_DFRAME\_PD2
+
+| #define PTI\_DFRAME\_PD2   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aee415d6eae1beab453af125a316f549c)PTI\_DFRAME\_PD3
+
+| #define PTI\_DFRAME\_PD3   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a63eda1bcb309b3dfea7a3130fd2d8460)PTI\_DFRAME\_PD4
+
+| #define PTI\_DFRAME\_PD4   [SILABS\_DBUS\_PTI\_DFRAME](#a12a23ec2045680c0521b20f50d421881)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a9413ff462e44dcf3b76204629c524a73)PTI\_DOUT\_PC0
+
+| #define PTI\_DOUT\_PC0   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a49ef267b8afcafa1da426058b4f94d9f)PTI\_DOUT\_PC1
+
+| #define PTI\_DOUT\_PC1   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a8563048b51841f44cbd35c573131bf18)PTI\_DOUT\_PC2
+
+| #define PTI\_DOUT\_PC2   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#aa4304d8154383f012e4a3b53a070b120)PTI\_DOUT\_PC3
+
+| #define PTI\_DOUT\_PC3   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a715e7ceca236771ae00bb36143a586d2)PTI\_DOUT\_PC4
+
+| #define PTI\_DOUT\_PC4   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aa2bb4223540e03b6ef7c21b05b76b380)PTI\_DOUT\_PC5
+
+| #define PTI\_DOUT\_PC5   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a569a588da9acdad8c7b18c6d7ee83681)PTI\_DOUT\_PD0
+
+| #define PTI\_DOUT\_PD0   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aac9876e72b5e68eb3d7138c72e7ac25b)PTI\_DOUT\_PD1
+
+| #define PTI\_DOUT\_PD1   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a447f3b579538e9a44615dfe77e8ace24)PTI\_DOUT\_PD2
+
+| #define PTI\_DOUT\_PD2   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ad80593f470c79948e0b9845cad0b739b)PTI\_DOUT\_PD3
+
+| #define PTI\_DOUT\_PD3   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a33b1e16afcb1e3b391e60dbe29b3bd1c)PTI\_DOUT\_PD4
+
+| #define PTI\_DOUT\_PD4   [SILABS\_DBUS\_PTI\_DOUT](#ae418c8c258cc10d03e4d36b741827f82)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a1f03fc6bcf9a20f2f39b4d91cf302d63)SILABS\_DBUS\_ACMP0\_ACMPOUT
+
+| #define SILABS\_DBUS\_ACMP0\_ACMPOUT | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 4, 1, 0, 1)
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)
+
+#define SILABS\_DBUS(port, pin, periph\_base, en\_present, en\_bit, route)
+
+**Definition** silabs-pinctrl-dbus.h:47
+
+## [◆ ](#a12ac63e4d5ed67a2a3f7425b751cdec3)SILABS\_DBUS\_ACMP1\_ACMPOUT
+
+| #define SILABS\_DBUS\_ACMP1\_ACMPOUT | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 7, 1, 0, 1)
+
+## [◆ ](#a19d73eca7da5c8b8622b3cb155ab4e6c)SILABS\_DBUS\_CMU\_CLKIN0
+
+| #define SILABS\_DBUS\_CMU\_CLKIN0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 10, 0, 0, 1)
+
+## [◆ ](#a6d193d353f76cad0e7da5c584625e996)SILABS\_DBUS\_CMU\_CLKOUT0
+
+| #define SILABS\_DBUS\_CMU\_CLKOUT0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 10, 1, 0, 2)
+
+## [◆ ](#a3f7ded37227446a05137a47c9a466894)SILABS\_DBUS\_CMU\_CLKOUT1
+
+| #define SILABS\_DBUS\_CMU\_CLKOUT1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 10, 1, 1, 3)
+
+## [◆ ](#a67d6fb886df9d589e447bd9332252d62)SILABS\_DBUS\_CMU\_CLKOUT2
+
+| #define SILABS\_DBUS\_CMU\_CLKOUT2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 10, 1, 2, 4)
+
+## [◆ ](#a652b5412868f09aff727d2a84ce5efd6)SILABS\_DBUS\_I2C0\_SCL
+
+| #define SILABS\_DBUS\_I2C0\_SCL | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 22, 1, 0, 1)
+
+## [◆ ](#a5c3eac01e4153cd7adfdd4d8c50f2fa9)SILABS\_DBUS\_I2C0\_SDA
+
+| #define SILABS\_DBUS\_I2C0\_SDA | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 22, 1, 1, 2)
+
+## [◆ ](#aa55669252ab4d30ff2044a7ac5e8fad1)SILABS\_DBUS\_I2C1\_SCL
+
+| #define SILABS\_DBUS\_I2C1\_SCL | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 26, 1, 0, 1)
+
+## [◆ ](#a0c32c2f4351441d0a97a445627912904)SILABS\_DBUS\_I2C1\_SDA
+
+| #define SILABS\_DBUS\_I2C1\_SDA | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 26, 1, 1, 2)
+
+## [◆ ](#ab81ce78522519bd5a5e257c8f4f2c27f)SILABS\_DBUS\_LETIMER0\_OUT0
+
+| #define SILABS\_DBUS\_LETIMER0\_OUT0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 30, 1, 0, 1)
+
+## [◆ ](#a2effaa50da9b899d91eb127cdf554098)SILABS\_DBUS\_LETIMER0\_OUT1
+
+| #define SILABS\_DBUS\_LETIMER0\_OUT1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 30, 1, 1, 2)
+
+## [◆ ](#a0225f18d061c851599210b56aeb42231)SILABS\_DBUS\_MODEM\_ANT0
+
+| #define SILABS\_DBUS\_MODEM\_ANT0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 34, 1, 0, 1)
+
+## [◆ ](#aaff7073911479298cda7729646f6990e)SILABS\_DBUS\_MODEM\_ANT1
+
+| #define SILABS\_DBUS\_MODEM\_ANT1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 34, 1, 1, 2)
+
+## [◆ ](#a7d3926059c8b0c608d6d2bce035555b6)SILABS\_DBUS\_MODEM\_DCLK
+
+| #define SILABS\_DBUS\_MODEM\_DCLK | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 34, 1, 2, 3)
+
+## [◆ ](#a82dfdd0e9ad82ab0c75f4a530620d34b)SILABS\_DBUS\_MODEM\_DIN
+
+| #define SILABS\_DBUS\_MODEM\_DIN | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 34, 0, 0, 4)
+
+## [◆ ](#a48c49cff2ed723238703ff1b75ba8ae7)SILABS\_DBUS\_MODEM\_DOUT
+
+| #define SILABS\_DBUS\_MODEM\_DOUT | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 34, 1, 3, 5)
+
+## [◆ ](#a55a10636beb81ba5bf195c83c45cc994)SILABS\_DBUS\_PRS0\_ASYNCH0
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 0, 1)
+
+## [◆ ](#a8502ee8adb62210f0c02abdf38a54019)SILABS\_DBUS\_PRS0\_ASYNCH1
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 1, 2)
+
+## [◆ ](#a48a4d109c810311436ee8add40794aba)SILABS\_DBUS\_PRS0\_ASYNCH10
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH10 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 10, 11)
+
+## [◆ ](#a7acd670bc40ebc057369a7c577a0b0c2)SILABS\_DBUS\_PRS0\_ASYNCH11
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH11 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 11, 12)
+
+## [◆ ](#a8065a08661b02239f79db443c11afac8)SILABS\_DBUS\_PRS0\_ASYNCH2
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 2, 3)
+
+## [◆ ](#a39cb285c6310012108f37d510db7a86c)SILABS\_DBUS\_PRS0\_ASYNCH3
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH3 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 3, 4)
+
+## [◆ ](#ac419288481edbfee2df8711b0c037ba2)SILABS\_DBUS\_PRS0\_ASYNCH4
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH4 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 4, 5)
+
+## [◆ ](#a6d7577bd45bc2c6043463ef6df86e8a7)SILABS\_DBUS\_PRS0\_ASYNCH5
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH5 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 5, 6)
+
+## [◆ ](#afa3017107df002534d41165b790891dd)SILABS\_DBUS\_PRS0\_ASYNCH6
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH6 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 6, 7)
+
+## [◆ ](#ae5af1968989cc643d315e310eb840dcc)SILABS\_DBUS\_PRS0\_ASYNCH7
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH7 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 7, 8)
+
+## [◆ ](#a0d062ef8d1ababa72b60d08265ff7e25)SILABS\_DBUS\_PRS0\_ASYNCH8
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH8 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 8, 9)
+
+## [◆ ](#af0617799b4044665a4996276fcf1e2bf)SILABS\_DBUS\_PRS0\_ASYNCH9
+
+| #define SILABS\_DBUS\_PRS0\_ASYNCH9 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 9, 10)
+
+## [◆ ](#a1b8e171cd761535148063c9b81ed3ee0)SILABS\_DBUS\_PRS0\_SYNCH0
+
+| #define SILABS\_DBUS\_PRS0\_SYNCH0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 12, 13)
+
+## [◆ ](#a85d7bbcc208a977d14aa286a9576b432)SILABS\_DBUS\_PRS0\_SYNCH1
+
+| #define SILABS\_DBUS\_PRS0\_SYNCH1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 13, 14)
+
+## [◆ ](#a7340c07baee2cad6d5b685929c48151b)SILABS\_DBUS\_PRS0\_SYNCH2
+
+| #define SILABS\_DBUS\_PRS0\_SYNCH2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 14, 15)
+
+## [◆ ](#a131fc4f34da4d410665642dfd51b733b)SILABS\_DBUS\_PRS0\_SYNCH3
+
+| #define SILABS\_DBUS\_PRS0\_SYNCH3 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 41, 1, 15, 16)
+
+## [◆ ](#a3165d7b2623b12308b38c9abcf900642)SILABS\_DBUS\_PTI\_DCLK
+
+| #define SILABS\_DBUS\_PTI\_DCLK | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 17, 1, 0, 1)
+
+## [◆ ](#a12a23ec2045680c0521b20f50d421881)SILABS\_DBUS\_PTI\_DFRAME
+
+| #define SILABS\_DBUS\_PTI\_DFRAME | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 17, 1, 1, 2)
+
+## [◆ ](#ae418c8c258cc10d03e4d36b741827f82)SILABS\_DBUS\_PTI\_DOUT
+
+| #define SILABS\_DBUS\_PTI\_DOUT | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 17, 1, 2, 3)
+
+## [◆ ](#ad1f44a36026d8dd0f50d48e95fc9e5b3)SILABS\_DBUS\_TIMER0\_CC0
+
+| #define SILABS\_DBUS\_TIMER0\_CC0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 0, 1)
+
+## [◆ ](#a1eb30c3f4f87f98b3da18bc2a602e7e6)SILABS\_DBUS\_TIMER0\_CC1
+
+| #define SILABS\_DBUS\_TIMER0\_CC1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 1, 2)
+
+## [◆ ](#a23896bac158177558e7f179e8f3382a6)SILABS\_DBUS\_TIMER0\_CC2
+
+| #define SILABS\_DBUS\_TIMER0\_CC2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 2, 3)
+
+## [◆ ](#a44f0ed489cab3a50241d605931d579b0)SILABS\_DBUS\_TIMER0\_CDTI0
+
+| #define SILABS\_DBUS\_TIMER0\_CDTI0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 3, 4)
+
+## [◆ ](#ae13240899cbf48ec4f6710bcabc4ded8)SILABS\_DBUS\_TIMER0\_CDTI1
+
+| #define SILABS\_DBUS\_TIMER0\_CDTI1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 4, 5)
+
+## [◆ ](#a38b6cbc6d13fa4030cb07f1e2fc59003)SILABS\_DBUS\_TIMER0\_CDTI2
+
+| #define SILABS\_DBUS\_TIMER0\_CDTI2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 59, 1, 5, 6)
+
+## [◆ ](#a67fb3b7635c0b3408ee6bdea0b861bd3)SILABS\_DBUS\_TIMER1\_CC0
+
+| #define SILABS\_DBUS\_TIMER1\_CC0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 0, 1)
+
+## [◆ ](#a2aa7458fe116434331629b24cf0e45f0)SILABS\_DBUS\_TIMER1\_CC1
+
+| #define SILABS\_DBUS\_TIMER1\_CC1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 1, 2)
+
+## [◆ ](#a237c2bb8f6da0300cb10b73fab4c7ec4)SILABS\_DBUS\_TIMER1\_CC2
+
+| #define SILABS\_DBUS\_TIMER1\_CC2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 2, 3)
+
+## [◆ ](#afd03aef40bfd2fcfec51db90b50a4ebf)SILABS\_DBUS\_TIMER1\_CDTI0
+
+| #define SILABS\_DBUS\_TIMER1\_CDTI0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 3, 4)
+
+## [◆ ](#aff14e83dc5f27682d1d76ddb75d8b08c)SILABS\_DBUS\_TIMER1\_CDTI1
+
+| #define SILABS\_DBUS\_TIMER1\_CDTI1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 4, 5)
+
+## [◆ ](#a33328da36cd2df624ded688165f9f319)SILABS\_DBUS\_TIMER1\_CDTI2
+
+| #define SILABS\_DBUS\_TIMER1\_CDTI2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 67, 1, 5, 6)
+
+## [◆ ](#a6f8eec2f0d2289a845062b5fe14a59b7)SILABS\_DBUS\_TIMER2\_CC0
+
+| #define SILABS\_DBUS\_TIMER2\_CC0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 0, 1)
+
+## [◆ ](#a1a5af09f79ed3f743efa31ec03d87cc6)SILABS\_DBUS\_TIMER2\_CC1
+
+| #define SILABS\_DBUS\_TIMER2\_CC1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 1, 2)
+
+## [◆ ](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)SILABS\_DBUS\_TIMER2\_CC2
+
+| #define SILABS\_DBUS\_TIMER2\_CC2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 2, 3)
+
+## [◆ ](#a648ec3c8dafb7f88dba23ea50dba4e8b)SILABS\_DBUS\_TIMER2\_CDTI0
+
+| #define SILABS\_DBUS\_TIMER2\_CDTI0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 3, 4)
+
+## [◆ ](#ab124eb8882de0913d017f81a32eae6d8)SILABS\_DBUS\_TIMER2\_CDTI1
+
+| #define SILABS\_DBUS\_TIMER2\_CDTI1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 4, 5)
+
+## [◆ ](#aac5b26da22ac4ef8f1f08354f8339130)SILABS\_DBUS\_TIMER2\_CDTI2
+
+| #define SILABS\_DBUS\_TIMER2\_CDTI2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 75, 1, 5, 6)
+
+## [◆ ](#adb617def54a24017bdcaafe228697dd5)SILABS\_DBUS\_TIMER3\_CC0
+
+| #define SILABS\_DBUS\_TIMER3\_CC0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 0, 1)
+
+## [◆ ](#ac522d8a27bbe4fcfba1e0cc282dee7c0)SILABS\_DBUS\_TIMER3\_CC1
+
+| #define SILABS\_DBUS\_TIMER3\_CC1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 1, 2)
+
+## [◆ ](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)SILABS\_DBUS\_TIMER3\_CC2
+
+| #define SILABS\_DBUS\_TIMER3\_CC2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 2, 3)
+
+## [◆ ](#abb9fc38bdcf044af8e89f8b5bd4eb339)SILABS\_DBUS\_TIMER3\_CDTI0
+
+| #define SILABS\_DBUS\_TIMER3\_CDTI0 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 3, 4)
+
+## [◆ ](#a2c50f79deaf5192c644bb0b52832352d)SILABS\_DBUS\_TIMER3\_CDTI1
+
+| #define SILABS\_DBUS\_TIMER3\_CDTI1 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 4, 5)
+
+## [◆ ](#a5f8e118916558ec753791e59baeefef0)SILABS\_DBUS\_TIMER3\_CDTI2
+
+| #define SILABS\_DBUS\_TIMER3\_CDTI2 | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 83, 1, 5, 6)
+
+## [◆ ](#a14f60bd84a682fe99ccd93607ca87d6b)SILABS\_DBUS\_USART0\_CLK
+
+| #define SILABS\_DBUS\_USART0\_CLK | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 1, 3, 5)
+
+## [◆ ](#acc127783c3de46fa1efd6bf86f632807)SILABS\_DBUS\_USART0\_CS
+
+| #define SILABS\_DBUS\_USART0\_CS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 1, 0, 1)
+
+## [◆ ](#a0be14ba61b5fc707ef02e7ac6ba779cf)SILABS\_DBUS\_USART0\_CTS
+
+| #define SILABS\_DBUS\_USART0\_CTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 0, 0, 2)
+
+## [◆ ](#afb90351e31f6da6446c2fc3f5aaaf394)SILABS\_DBUS\_USART0\_RTS
+
+| #define SILABS\_DBUS\_USART0\_RTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 1, 1, 3)
+
+## [◆ ](#a8d9bee07c90a69ada0a392fbd15c9e44)SILABS\_DBUS\_USART0\_RX
+
+| #define SILABS\_DBUS\_USART0\_RX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 1, 2, 4)
+
+## [◆ ](#aca2a3d6b7903947d127d8b6ea5d8c84a)SILABS\_DBUS\_USART0\_TX
+
+| #define SILABS\_DBUS\_USART0\_TX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 91, 1, 4, 6)
+
+## [◆ ](#a1a4d85614e1e5ee7915d8eb87f75bfff)SILABS\_DBUS\_USART1\_CLK
+
+| #define SILABS\_DBUS\_USART1\_CLK | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 1, 3, 5)
+
+## [◆ ](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)SILABS\_DBUS\_USART1\_CS
+
+| #define SILABS\_DBUS\_USART1\_CS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 1, 0, 1)
+
+## [◆ ](#a765b10a8cee3cdea20421ef5da5aeb9d)SILABS\_DBUS\_USART1\_CTS
+
+| #define SILABS\_DBUS\_USART1\_CTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 0, 0, 2)
+
+## [◆ ](#a6ccc43376c75561508f0af5fbff43bff)SILABS\_DBUS\_USART1\_RTS
+
+| #define SILABS\_DBUS\_USART1\_RTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 1, 1, 3)
+
+## [◆ ](#a5ccc39d740aa3ccbda884891cb348200)SILABS\_DBUS\_USART1\_RX
+
+| #define SILABS\_DBUS\_USART1\_RX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 1, 2, 4)
+
+## [◆ ](#a4e38656e72cb7b91821d4217015fb624)SILABS\_DBUS\_USART1\_TX
+
+| #define SILABS\_DBUS\_USART1\_TX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 99, 1, 4, 6)
+
+## [◆ ](#adcca369d4ade79a7a7c0feb11b796d47)SILABS\_DBUS\_USART2\_CLK
+
+| #define SILABS\_DBUS\_USART2\_CLK | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 1, 3, 5)
+
+## [◆ ](#aedfa15a98056a8d038cd2a197f028274)SILABS\_DBUS\_USART2\_CS
+
+| #define SILABS\_DBUS\_USART2\_CS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 1, 0, 1)
+
+## [◆ ](#a7c5d85fd320a080b6dd726ad4da98b27)SILABS\_DBUS\_USART2\_CTS
+
+| #define SILABS\_DBUS\_USART2\_CTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 0, 0, 2)
+
+## [◆ ](#a4afb9a7beaf7518e56ab03ba310c86da)SILABS\_DBUS\_USART2\_RTS
+
+| #define SILABS\_DBUS\_USART2\_RTS | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 1, 1, 3)
+
+## [◆ ](#aff7f20dccc992f63584c9955f2c09ede)SILABS\_DBUS\_USART2\_RX
+
+| #define SILABS\_DBUS\_USART2\_RX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 1, 2, 4)
+
+## [◆ ](#a68bbf6c2e5c745f58fabedbc68e7e52a)SILABS\_DBUS\_USART2\_TX
+
+| #define SILABS\_DBUS\_USART2\_TX | ( |  | *port*, |
+| --- | --- | --- | --- |
+|  |  |  | *pin* ) |
+
+**Value:**
+
+[SILABS\_DBUS](silabs-pinctrl-dbus_8h.md#ad25567dd5ed53d2ffb37dc1d6cf3d898)(port, pin, 107, 1, 4, 6)
+
+## [◆ ](#a643451fe929eaf497b28b23570152dfa)TIMER0\_CC0\_PA0
+
+| #define TIMER0\_CC0\_PA0   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a257ab281a2a05ec0cc41ad2e3b548dfb)TIMER0\_CC0\_PA1
+
+| #define TIMER0\_CC0\_PA1   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a1382ce3a810d4e7056919091fe9514f5)TIMER0\_CC0\_PA2
+
+| #define TIMER0\_CC0\_PA2   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a9a9109ad50309f2200302915ea5a2654)TIMER0\_CC0\_PA3
+
+| #define TIMER0\_CC0\_PA3   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a035c1f38daa2aca747ced020035bd292)TIMER0\_CC0\_PA4
+
+| #define TIMER0\_CC0\_PA4   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a4bfcb9dec6df42cdf9a1fe979354ae57)TIMER0\_CC0\_PA5
+
+| #define TIMER0\_CC0\_PA5   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ad1a677a1839ff4de6cc82e6e17b5aae2)TIMER0\_CC0\_PA6
+
+| #define TIMER0\_CC0\_PA6   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a18fb1529d6c032c6755f3d5a0abf9c76)TIMER0\_CC0\_PB0
+
+| #define TIMER0\_CC0\_PB0   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#adf86b7c1c4b41eaf900d8a02e912f7c2)TIMER0\_CC0\_PB1
+
+| #define TIMER0\_CC0\_PB1   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#af01197ecb61c8e13ed760c4f036d555f)TIMER0\_CC0\_PC0
+
+| #define TIMER0\_CC0\_PC0   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ae82052a9a3803c36b447e75e30db22b5)TIMER0\_CC0\_PC1
+
+| #define TIMER0\_CC0\_PC1   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a89bade3c8848eeccc253f9752b16790c)TIMER0\_CC0\_PC2
+
+| #define TIMER0\_CC0\_PC2   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a8b2ec4704842a1824c29fba1f700292e)TIMER0\_CC0\_PC3
+
+| #define TIMER0\_CC0\_PC3   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#acd56df092cae914b4e416e932e2b9f59)TIMER0\_CC0\_PC4
+
+| #define TIMER0\_CC0\_PC4   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a17bbebdef205a11b6021b510d62ff3b8)TIMER0\_CC0\_PC5
+
+| #define TIMER0\_CC0\_PC5   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a3db86be83a2cf8932a653abbf93aed00)TIMER0\_CC0\_PD0
+
+| #define TIMER0\_CC0\_PD0   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a4350a7968647bb2f25b6b2637fef6ad1)TIMER0\_CC0\_PD1
+
+| #define TIMER0\_CC0\_PD1   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a4c8e3e5bdf2d6582e6182f3df56f606b)TIMER0\_CC0\_PD2
+
+| #define TIMER0\_CC0\_PD2   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a695f1eba6df77776fb45e9f69a6fd57a)TIMER0\_CC0\_PD3
+
+| #define TIMER0\_CC0\_PD3   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a36230412046558d27c68f98b3ad6bd17)TIMER0\_CC0\_PD4
+
+| #define TIMER0\_CC0\_PD4   [SILABS\_DBUS\_TIMER0\_CC0](#ad1f44a36026d8dd0f50d48e95fc9e5b3)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aa74131bdc087fb80e597e3d497ab9796)TIMER0\_CC1\_PA0
+
+| #define TIMER0\_CC1\_PA0   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a4a841ee625298d042db41bc0cd385796)TIMER0\_CC1\_PA1
+
+| #define TIMER0\_CC1\_PA1   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a69b83d879f0cb485ba4af8b3cf4844a1)TIMER0\_CC1\_PA2
+
+| #define TIMER0\_CC1\_PA2   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a0b3cce5e9df6245edce583e307c70b7f)TIMER0\_CC1\_PA3
+
+| #define TIMER0\_CC1\_PA3   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ae6724c9762d1a9ae311d902e930b337c)TIMER0\_CC1\_PA4
+
+| #define TIMER0\_CC1\_PA4   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a2354f1d78e8686d9ea3c44dd9bac5b38)TIMER0\_CC1\_PA5
+
+| #define TIMER0\_CC1\_PA5   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a1b634a95c42a9065c7307c1a13461f39)TIMER0\_CC1\_PA6
+
+| #define TIMER0\_CC1\_PA6   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a6b0f1898a3246e0dd5915d5f5014b53e)TIMER0\_CC1\_PB0
+
+| #define TIMER0\_CC1\_PB0   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a812c3aa15e23b7be5d70f052259722dc)TIMER0\_CC1\_PB1
+
+| #define TIMER0\_CC1\_PB1   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5787f33a274113239c4f5e8abecdf9a2)TIMER0\_CC1\_PC0
+
+| #define TIMER0\_CC1\_PC0   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a14c64ec2717df0534956326f806de22a)TIMER0\_CC1\_PC1
+
+| #define TIMER0\_CC1\_PC1   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ad7ffea850def6f7001ed2471ce3a13b6)TIMER0\_CC1\_PC2
+
+| #define TIMER0\_CC1\_PC2   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a3f40aa2528d1f936a0e6734c0227afb2)TIMER0\_CC1\_PC3
+
+| #define TIMER0\_CC1\_PC3   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a72ab00cdfc58ff9f2aef06c5ee9e1e13)TIMER0\_CC1\_PC4
+
+| #define TIMER0\_CC1\_PC4   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a7a0b8714592092cb219e214cd28da4c5)TIMER0\_CC1\_PC5
+
+| #define TIMER0\_CC1\_PC5   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ad721fa41b15556e529252a63302e8320)TIMER0\_CC1\_PD0
+
+| #define TIMER0\_CC1\_PD0   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#abdc57a8f13e515d62d84684433f4c399)TIMER0\_CC1\_PD1
+
+| #define TIMER0\_CC1\_PD1   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a6a00214723619c929a860d4d5fa82d70)TIMER0\_CC1\_PD2
+
+| #define TIMER0\_CC1\_PD2   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ab5fe2a23145e40055ae0f532309c45a4)TIMER0\_CC1\_PD3
+
+| #define TIMER0\_CC1\_PD3   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ad0bf7e8d2c24c8ebe7c2b594d99c9ead)TIMER0\_CC1\_PD4
+
+| #define TIMER0\_CC1\_PD4   [SILABS\_DBUS\_TIMER0\_CC1](#a1eb30c3f4f87f98b3da18bc2a602e7e6)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a10518d21844ab1a787009973ac06ce22)TIMER0\_CC2\_PA0
+
+| #define TIMER0\_CC2\_PA0   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a40b5d230cec35f97648678731d970520)TIMER0\_CC2\_PA1
+
+| #define TIMER0\_CC2\_PA1   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a5183b3c3cec8352c11edef376fc346ad)TIMER0\_CC2\_PA2
+
+| #define TIMER0\_CC2\_PA2   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#aec173f24a643f2d50e4e2fe44b0d1dc8)TIMER0\_CC2\_PA3
+
+| #define TIMER0\_CC2\_PA3   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a4df67f53e8e2501bed3fd9565a49c0d6)TIMER0\_CC2\_PA4
+
+| #define TIMER0\_CC2\_PA4   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a0529c6f8022ee408363ecc6452ac2c44)TIMER0\_CC2\_PA5
+
+| #define TIMER0\_CC2\_PA5   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a1e0f169ebf24d5954b875bd824b86de1)TIMER0\_CC2\_PA6
+
+| #define TIMER0\_CC2\_PA6   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ad7a7916ae90b8345be7279e50f18c190)TIMER0\_CC2\_PB0
+
+| #define TIMER0\_CC2\_PB0   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a36ccb83c4230c2f3d14accbb965b08cd)TIMER0\_CC2\_PB1
+
+| #define TIMER0\_CC2\_PB1   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#afe51827dd65359061f88753af6868eb5)TIMER0\_CC2\_PC0
+
+| #define TIMER0\_CC2\_PC0   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ae3d14c1aa4739ba2be209c8490e05b9b)TIMER0\_CC2\_PC1
+
+| #define TIMER0\_CC2\_PC1   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a12baff93c97c64f74538b1995171fab7)TIMER0\_CC2\_PC2
+
+| #define TIMER0\_CC2\_PC2   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a96fe3aa3622573210ac344515718962f)TIMER0\_CC2\_PC3
+
+| #define TIMER0\_CC2\_PC3   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ad70b84d782f9af43d146a34c1533f08a)TIMER0\_CC2\_PC4
+
+| #define TIMER0\_CC2\_PC4   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a8bebf51e280fec4baea6e545ba0e8576)TIMER0\_CC2\_PC5
+
+| #define TIMER0\_CC2\_PC5   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a29a4b811b779721b8ab98976d0af976c)TIMER0\_CC2\_PD0
+
+| #define TIMER0\_CC2\_PD0   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a21d070a5f412c7a77e53f69c87c57997)TIMER0\_CC2\_PD1
+
+| #define TIMER0\_CC2\_PD1   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a419e2b988ac821a7b4e40fb925da5916)TIMER0\_CC2\_PD2
+
+| #define TIMER0\_CC2\_PD2   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aae16cb8df6cc099c3344c5740fd31e69)TIMER0\_CC2\_PD3
+
+| #define TIMER0\_CC2\_PD3   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ae97c73876fb35531996feaad9d43217f)TIMER0\_CC2\_PD4
+
+| #define TIMER0\_CC2\_PD4   [SILABS\_DBUS\_TIMER0\_CC2](#a23896bac158177558e7f179e8f3382a6)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a583547311775fdf98f4d19afb149ac6c)TIMER0\_CDTI0\_PA0
+
+| #define TIMER0\_CDTI0\_PA0   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a8005c42773c60dd5aec6e3ee8f4b7491)TIMER0\_CDTI0\_PA1
+
+| #define TIMER0\_CDTI0\_PA1   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a78955dc51203c015d86b442978ad260e)TIMER0\_CDTI0\_PA2
+
+| #define TIMER0\_CDTI0\_PA2   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a291a17c15340c09f32a3c63e3da95a9c)TIMER0\_CDTI0\_PA3
+
+| #define TIMER0\_CDTI0\_PA3   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ab3b70d25fa01aaade758c277465c9639)TIMER0\_CDTI0\_PA4
+
+| #define TIMER0\_CDTI0\_PA4   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a025bd51e6c211605497795d76e175510)TIMER0\_CDTI0\_PA5
+
+| #define TIMER0\_CDTI0\_PA5   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a17617cf4fecd500e152bc39ef84e009b)TIMER0\_CDTI0\_PA6
+
+| #define TIMER0\_CDTI0\_PA6   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ac08f3bf826c3d909d06c67c2acb418ef)TIMER0\_CDTI0\_PB0
+
+| #define TIMER0\_CDTI0\_PB0   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#aaf1bd6f6922c1316131edb6cb0f3de9e)TIMER0\_CDTI0\_PB1
+
+| #define TIMER0\_CDTI0\_PB1   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a5f22a6e89d3fb5e3bb7925fdbe1c2e38)TIMER0\_CDTI0\_PC0
+
+| #define TIMER0\_CDTI0\_PC0   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a72ef54f11ed78d2e16f007d394030955)TIMER0\_CDTI0\_PC1
+
+| #define TIMER0\_CDTI0\_PC1   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a3f65837c636c8b483c7130555c34a54c)TIMER0\_CDTI0\_PC2
+
+| #define TIMER0\_CDTI0\_PC2   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#acbf891b0c24b9af901264aba00b84f64)TIMER0\_CDTI0\_PC3
+
+| #define TIMER0\_CDTI0\_PC3   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#adf859e578ce341428c887d8267d962bf)TIMER0\_CDTI0\_PC4
+
+| #define TIMER0\_CDTI0\_PC4   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ae57392b6eb47339eb4e5bd89840d19a9)TIMER0\_CDTI0\_PC5
+
+| #define TIMER0\_CDTI0\_PC5   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#abe060cc518151861fccab2604541e238)TIMER0\_CDTI0\_PD0
+
+| #define TIMER0\_CDTI0\_PD0   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a0925901af2c13317cf4f43c50e01d83a)TIMER0\_CDTI0\_PD1
+
+| #define TIMER0\_CDTI0\_PD1   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#aed6dd4aa21be7afbe03d984356d36e32)TIMER0\_CDTI0\_PD2
+
+| #define TIMER0\_CDTI0\_PD2   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aa52d4d7a010abe242632b4574332349b)TIMER0\_CDTI0\_PD3
+
+| #define TIMER0\_CDTI0\_PD3   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ae8b70f7461db674d1d9c3f2ea91701cc)TIMER0\_CDTI0\_PD4
+
+| #define TIMER0\_CDTI0\_PD4   [SILABS\_DBUS\_TIMER0\_CDTI0](#a44f0ed489cab3a50241d605931d579b0)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a757add3c35ee9b20b8bb75363620e57f)TIMER0\_CDTI1\_PA0
+
+| #define TIMER0\_CDTI1\_PA0   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a39b01d816f29ff5114ac045475ad1c80)TIMER0\_CDTI1\_PA1
+
+| #define TIMER0\_CDTI1\_PA1   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a648e126ee7e0bdf5faff238a097c6e5e)TIMER0\_CDTI1\_PA2
+
+| #define TIMER0\_CDTI1\_PA2   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a0e36cbcf42a86fa70f9561b1a817831d)TIMER0\_CDTI1\_PA3
+
+| #define TIMER0\_CDTI1\_PA3   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a12661cbedaeab2177edf943b1f752b6b)TIMER0\_CDTI1\_PA4
+
+| #define TIMER0\_CDTI1\_PA4   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a9012c36cbc093ebb308af9118eabfde9)TIMER0\_CDTI1\_PA5
+
+| #define TIMER0\_CDTI1\_PA5   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ac4ab807c106f7b9bc718e931d517c791)TIMER0\_CDTI1\_PA6
+
+| #define TIMER0\_CDTI1\_PA6   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a8b1c6a4724744e459918508925be254e)TIMER0\_CDTI1\_PB0
+
+| #define TIMER0\_CDTI1\_PB0   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a9206a9ae50fbe6a063df918f0dc7d9b5)TIMER0\_CDTI1\_PB1
+
+| #define TIMER0\_CDTI1\_PB1   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ad5eb7a31fde2301a819d1f7fb3fa4120)TIMER0\_CDTI1\_PC0
+
+| #define TIMER0\_CDTI1\_PC0   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a67c242881dc443329a04f2148b5d3171)TIMER0\_CDTI1\_PC1
+
+| #define TIMER0\_CDTI1\_PC1   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a6e61b116d02e63455d54f16e29168dfe)TIMER0\_CDTI1\_PC2
+
+| #define TIMER0\_CDTI1\_PC2   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a904d89c160a99cc883673a11164eb00a)TIMER0\_CDTI1\_PC3
+
+| #define TIMER0\_CDTI1\_PC3   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#afa348bc98e1aa83ec82924c1c49a5970)TIMER0\_CDTI1\_PC4
+
+| #define TIMER0\_CDTI1\_PC4   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a43e280a63df1054883f731736d864712)TIMER0\_CDTI1\_PC5
+
+| #define TIMER0\_CDTI1\_PC5   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a713013e442d42bf60f0f8a2df0e178de)TIMER0\_CDTI1\_PD0
+
+| #define TIMER0\_CDTI1\_PD0   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a28cc02c56e4eb397f3fc9d106db59dd3)TIMER0\_CDTI1\_PD1
+
+| #define TIMER0\_CDTI1\_PD1   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a7a3ee64de9bcf3d3e05cad7c0eb51492)TIMER0\_CDTI1\_PD2
+
+| #define TIMER0\_CDTI1\_PD2   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ac0570e1fa46ef8d9015c9e41cede4394)TIMER0\_CDTI1\_PD3
+
+| #define TIMER0\_CDTI1\_PD3   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a159917b90b0f5f1040afe53b172ca26f)TIMER0\_CDTI1\_PD4
+
+| #define TIMER0\_CDTI1\_PD4   [SILABS\_DBUS\_TIMER0\_CDTI1](#ae13240899cbf48ec4f6710bcabc4ded8)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a723140878fb318fc60e62886e8e4bb6b)TIMER0\_CDTI2\_PA0
+
+| #define TIMER0\_CDTI2\_PA0   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a69ea746a21b0305be02db15ba8ced4dc)TIMER0\_CDTI2\_PA1
+
+| #define TIMER0\_CDTI2\_PA1   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a63e2744f17ec7b868e38010999a5b99e)TIMER0\_CDTI2\_PA2
+
+| #define TIMER0\_CDTI2\_PA2   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ad9c1f9c457c63b9f7ee15cedb89c8b29)TIMER0\_CDTI2\_PA3
+
+| #define TIMER0\_CDTI2\_PA3   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ac5e02eb43bbc85c4e07976539d1c7b66)TIMER0\_CDTI2\_PA4
+
+| #define TIMER0\_CDTI2\_PA4   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a17440dab813cdc7a4b58682db3c0aa3c)TIMER0\_CDTI2\_PA5
+
+| #define TIMER0\_CDTI2\_PA5   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a967cbd605349c15eada5527602a05fc9)TIMER0\_CDTI2\_PA6
+
+| #define TIMER0\_CDTI2\_PA6   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a4a53984105a683a6807ad0a26e13a60d)TIMER0\_CDTI2\_PB0
+
+| #define TIMER0\_CDTI2\_PB0   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a12ffd91f7201f73e0d75c2298d5abce9)TIMER0\_CDTI2\_PB1
+
+| #define TIMER0\_CDTI2\_PB1   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a11f7ac3b39604c06f639dc4b925ee93d)TIMER0\_CDTI2\_PC0
+
+| #define TIMER0\_CDTI2\_PC0   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a2b6fa7363ef650a2847113779b5b36a7)TIMER0\_CDTI2\_PC1
+
+| #define TIMER0\_CDTI2\_PC1   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a3d39899e0d3f88f22feffcd6752b2507)TIMER0\_CDTI2\_PC2
+
+| #define TIMER0\_CDTI2\_PC2   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a0f6d66f601b1eaeae268c7ed2b0874ae)TIMER0\_CDTI2\_PC3
+
+| #define TIMER0\_CDTI2\_PC3   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ab91374950c6d3774d25c5e6ee6068ce0)TIMER0\_CDTI2\_PC4
+
+| #define TIMER0\_CDTI2\_PC4   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a2c76eb69ea9ed92aa328126bbad507d1)TIMER0\_CDTI2\_PC5
+
+| #define TIMER0\_CDTI2\_PC5   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a038cef314d102bb50e58612327d456c6)TIMER0\_CDTI2\_PD0
+
+| #define TIMER0\_CDTI2\_PD0   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a008dea92e72e9d337f5a6d38aaf33661)TIMER0\_CDTI2\_PD1
+
+| #define TIMER0\_CDTI2\_PD1   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a7bf636029c51b394d749774c4961aeba)TIMER0\_CDTI2\_PD2
+
+| #define TIMER0\_CDTI2\_PD2   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a48403324a419bb99f173f8a5198d55a0)TIMER0\_CDTI2\_PD3
+
+| #define TIMER0\_CDTI2\_PD3   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ad15de743c118e7443cf6edf793243995)TIMER0\_CDTI2\_PD4
+
+| #define TIMER0\_CDTI2\_PD4   [SILABS\_DBUS\_TIMER0\_CDTI2](#a38b6cbc6d13fa4030cb07f1e2fc59003)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a4b3085c41f4ed8706a3b39755e5b132c)TIMER1\_CC0\_PA0
+
+| #define TIMER1\_CC0\_PA0   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a5daa5510f5bab9cea855b3d3303daaaf)TIMER1\_CC0\_PA1
+
+| #define TIMER1\_CC0\_PA1   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#abc2afde49650332d28db97653adc501d)TIMER1\_CC0\_PA2
+
+| #define TIMER1\_CC0\_PA2   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a2df5bd9733330e9a973732a8cc222ee9)TIMER1\_CC0\_PA3
+
+| #define TIMER1\_CC0\_PA3   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a514654049642c780cd7eae508e0620b9)TIMER1\_CC0\_PA4
+
+| #define TIMER1\_CC0\_PA4   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a4dd5a3457f09f46922941de990dc9933)TIMER1\_CC0\_PA5
+
+| #define TIMER1\_CC0\_PA5   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a13520009a8fee0808443df4d4018e0cb)TIMER1\_CC0\_PA6
+
+| #define TIMER1\_CC0\_PA6   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a0cda060bbc98a77e19ed36b4d01cfec2)TIMER1\_CC0\_PB0
+
+| #define TIMER1\_CC0\_PB0   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ac2c9847727308a1fed2e7b21c718a92c)TIMER1\_CC0\_PB1
+
+| #define TIMER1\_CC0\_PB1   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a47cdc8781bd255cf8392426ab34cb042)TIMER1\_CC0\_PC0
+
+| #define TIMER1\_CC0\_PC0   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a41a0a7812419a3a757be7899f30acfde)TIMER1\_CC0\_PC1
+
+| #define TIMER1\_CC0\_PC1   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a322dee774195678afc5f7066d126e4c7)TIMER1\_CC0\_PC2
+
+| #define TIMER1\_CC0\_PC2   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a458b636db4779031722ec89e4c8fc0b8)TIMER1\_CC0\_PC3
+
+| #define TIMER1\_CC0\_PC3   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a59f20ef361658d0cc27c9694c30d2e55)TIMER1\_CC0\_PC4
+
+| #define TIMER1\_CC0\_PC4   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a510dc66c39d8a79666d1a3d9e6c0e3ad)TIMER1\_CC0\_PC5
+
+| #define TIMER1\_CC0\_PC5   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#aa61ecf9a9f2f6b3ce46bc96d3e3b224c)TIMER1\_CC0\_PD0
+
+| #define TIMER1\_CC0\_PD0   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#af69bd23d5eaf09cfa8e4ac6dc815c071)TIMER1\_CC0\_PD1
+
+| #define TIMER1\_CC0\_PD1   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ae35d1bbefce3501c063039f88ed558a2)TIMER1\_CC0\_PD2
+
+| #define TIMER1\_CC0\_PD2   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a27518cd582fa2f5266da488e386783d7)TIMER1\_CC0\_PD3
+
+| #define TIMER1\_CC0\_PD3   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#af91f86a0f39fbb4df669d036b80f97c8)TIMER1\_CC0\_PD4
+
+| #define TIMER1\_CC0\_PD4   [SILABS\_DBUS\_TIMER1\_CC0](#a67fb3b7635c0b3408ee6bdea0b861bd3)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#ab0467e6e3dafc5340b516304672d0c35)TIMER1\_CC1\_PA0
+
+| #define TIMER1\_CC1\_PA0   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#ab56f3b43b16780006b73b6b67c7fc99c)TIMER1\_CC1\_PA1
+
+| #define TIMER1\_CC1\_PA1   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a884b7041fab46641ac127f3526d1d6aa)TIMER1\_CC1\_PA2
+
+| #define TIMER1\_CC1\_PA2   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a97b8069d8cf397b2da2cc011e946cc97)TIMER1\_CC1\_PA3
+
+| #define TIMER1\_CC1\_PA3   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a01aacbb9315e69096d8c64b78a49b66e)TIMER1\_CC1\_PA4
+
+| #define TIMER1\_CC1\_PA4   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a7b12d90d7a871b5843843f20b6318fd8)TIMER1\_CC1\_PA5
+
+| #define TIMER1\_CC1\_PA5   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ac4909134633b306a24982fd780870ff6)TIMER1\_CC1\_PA6
+
+| #define TIMER1\_CC1\_PA6   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a48bff42d940d3d8a4bae06df47255dca)TIMER1\_CC1\_PB0
+
+| #define TIMER1\_CC1\_PB0   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a72b3f2ffb3e69fa3347b782450ee1bf6)TIMER1\_CC1\_PB1
+
+| #define TIMER1\_CC1\_PB1   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#addaacb911a618cabc51f96bec3690174)TIMER1\_CC1\_PC0
+
+| #define TIMER1\_CC1\_PC0   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ac8fab9c34e0b1dc6f168573f34d81bba)TIMER1\_CC1\_PC1
+
+| #define TIMER1\_CC1\_PC1   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#adc420cc552323a6db6ac08b76ada22d4)TIMER1\_CC1\_PC2
+
+| #define TIMER1\_CC1\_PC2   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a52d6b873c40ba4c37eb80089b14abf59)TIMER1\_CC1\_PC3
+
+| #define TIMER1\_CC1\_PC3   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#abb9cd68c18a6c07dc753a10471310e8d)TIMER1\_CC1\_PC4
+
+| #define TIMER1\_CC1\_PC4   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a93aa2304008369a86392b6a98592ccac)TIMER1\_CC1\_PC5
+
+| #define TIMER1\_CC1\_PC5   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a1294b47b68006e1da3c1bcf3afa1735b)TIMER1\_CC1\_PD0
+
+| #define TIMER1\_CC1\_PD0   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#addf0cad7ebe2b5d0dcb15ee2860aa037)TIMER1\_CC1\_PD1
+
+| #define TIMER1\_CC1\_PD1   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#aff68d222f67741f6d81518e502686cab)TIMER1\_CC1\_PD2
+
+| #define TIMER1\_CC1\_PD2   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a8a7f0101160dbc45889575bb975dcad8)TIMER1\_CC1\_PD3
+
+| #define TIMER1\_CC1\_PD3   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a42265ecc8251fe6745cd225fb14cae35)TIMER1\_CC1\_PD4
+
+| #define TIMER1\_CC1\_PD4   [SILABS\_DBUS\_TIMER1\_CC1](#a2aa7458fe116434331629b24cf0e45f0)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a8134a1d2f64747b5fd66aa6da49db081)TIMER1\_CC2\_PA0
+
+| #define TIMER1\_CC2\_PA0   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#af865342309d6355e05de4a3736e73a65)TIMER1\_CC2\_PA1
+
+| #define TIMER1\_CC2\_PA1   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#af329d80cea63f60045ea71156c4d9d6b)TIMER1\_CC2\_PA2
+
+| #define TIMER1\_CC2\_PA2   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a1eb4626f10a12c5f6b1539fe897e0df0)TIMER1\_CC2\_PA3
+
+| #define TIMER1\_CC2\_PA3   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#abac33f1fd8502f1356107d20958e9ebb)TIMER1\_CC2\_PA4
+
+| #define TIMER1\_CC2\_PA4   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ab1ba6969141f0ba0ed17a5e3bd6ac2d7)TIMER1\_CC2\_PA5
+
+| #define TIMER1\_CC2\_PA5   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a46c2801cd73d8663d493fa62300a0188)TIMER1\_CC2\_PA6
+
+| #define TIMER1\_CC2\_PA6   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ad1ba82a4e75e024cc9f19d66f691c4a1)TIMER1\_CC2\_PB0
+
+| #define TIMER1\_CC2\_PB0   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a4da4366632a0e029856f048d0953b6b2)TIMER1\_CC2\_PB1
+
+| #define TIMER1\_CC2\_PB1   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a9d3402f1ed1c7030fb0a1af512425ae2)TIMER1\_CC2\_PC0
+
+| #define TIMER1\_CC2\_PC0   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a939a814b29112f312ba5085449fe9b8c)TIMER1\_CC2\_PC1
+
+| #define TIMER1\_CC2\_PC1   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a22ffd1572810e3da8a83f7cc4ccf1386)TIMER1\_CC2\_PC2
+
+| #define TIMER1\_CC2\_PC2   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#afcb1d543010489ffe23a92875fafb326)TIMER1\_CC2\_PC3
+
+| #define TIMER1\_CC2\_PC3   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a1a34258c1ad068a3474e0114b1e3ac37)TIMER1\_CC2\_PC4
+
+| #define TIMER1\_CC2\_PC4   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a4b3b5917e7881eeb6a191c095f0df29a)TIMER1\_CC2\_PC5
+
+| #define TIMER1\_CC2\_PC5   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a0bb950575d698e83b4a7b055928d4b02)TIMER1\_CC2\_PD0
+
+| #define TIMER1\_CC2\_PD0   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a9f92d850417b9d521c2c2515fbeb8c52)TIMER1\_CC2\_PD1
+
+| #define TIMER1\_CC2\_PD1   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ac5f369d207dbe8da77b94ed7c2ee1e89)TIMER1\_CC2\_PD2
+
+| #define TIMER1\_CC2\_PD2   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#aa1c5e07b9ff3373d65a73b3fc916c226)TIMER1\_CC2\_PD3
+
+| #define TIMER1\_CC2\_PD3   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#adfa6b132aa5c4c006185ebf5170aa38d)TIMER1\_CC2\_PD4
+
+| #define TIMER1\_CC2\_PD4   [SILABS\_DBUS\_TIMER1\_CC2](#a237c2bb8f6da0300cb10b73fab4c7ec4)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a76552704f3b8c28588c6073b170a6bbb)TIMER1\_CDTI0\_PA0
+
+| #define TIMER1\_CDTI0\_PA0   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a06ea543c9f00b58b7eb4e162a7c3f427)TIMER1\_CDTI0\_PA1
+
+| #define TIMER1\_CDTI0\_PA1   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#ace53011f7d140ea6892946ac0d246006)TIMER1\_CDTI0\_PA2
+
+| #define TIMER1\_CDTI0\_PA2   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a9b740fb70a98203b6a736fb3e3af97d1)TIMER1\_CDTI0\_PA3
+
+| #define TIMER1\_CDTI0\_PA3   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#adf79eddb39e5a3a28e98da92323cead4)TIMER1\_CDTI0\_PA4
+
+| #define TIMER1\_CDTI0\_PA4   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a1c025b319acd53ac15e023a964b684d4)TIMER1\_CDTI0\_PA5
+
+| #define TIMER1\_CDTI0\_PA5   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#afed1694b73910fdb222e7ac95c7700a6)TIMER1\_CDTI0\_PA6
+
+| #define TIMER1\_CDTI0\_PA6   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a3f2880efd1d31b43e1fbbd840a535330)TIMER1\_CDTI0\_PB0
+
+| #define TIMER1\_CDTI0\_PB0   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a3f243ab2322faa708a8c0531a3fb15fe)TIMER1\_CDTI0\_PB1
+
+| #define TIMER1\_CDTI0\_PB1   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a7da42fba55aa964b5af1f0e996e10dfd)TIMER1\_CDTI0\_PC0
+
+| #define TIMER1\_CDTI0\_PC0   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a90f5a73378a61a3144cb3be626acf0c3)TIMER1\_CDTI0\_PC1
+
+| #define TIMER1\_CDTI0\_PC1   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ac7083129b89cd513468ea9a936cd2a60)TIMER1\_CDTI0\_PC2
+
+| #define TIMER1\_CDTI0\_PC2   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ac480c190767e6bf9e64e2581617388d7)TIMER1\_CDTI0\_PC3
+
+| #define TIMER1\_CDTI0\_PC3   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a80619df142e179bb585569b51f906b85)TIMER1\_CDTI0\_PC4
+
+| #define TIMER1\_CDTI0\_PC4   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#af24c550e1fcf0b93ca210c59884dd895)TIMER1\_CDTI0\_PC5
+
+| #define TIMER1\_CDTI0\_PC5   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#aeafc7272c0cf6bed9dcb09fe8802bd1f)TIMER1\_CDTI0\_PD0
+
+| #define TIMER1\_CDTI0\_PD0   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a15c83b7661113ab00fc830c832a63ad5)TIMER1\_CDTI0\_PD1
+
+| #define TIMER1\_CDTI0\_PD1   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#af02751809240508c57a914bf47bc929b)TIMER1\_CDTI0\_PD2
+
+| #define TIMER1\_CDTI0\_PD2   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a36ad9aa1e2ca755919bd18f1461fd9fd)TIMER1\_CDTI0\_PD3
+
+| #define TIMER1\_CDTI0\_PD3   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a694a3359d922f9aeca292c10db75cae7)TIMER1\_CDTI0\_PD4
+
+| #define TIMER1\_CDTI0\_PD4   [SILABS\_DBUS\_TIMER1\_CDTI0](#afd03aef40bfd2fcfec51db90b50a4ebf)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a0c90975d990014c0a70d8fe8a01bed61)TIMER1\_CDTI1\_PA0
+
+| #define TIMER1\_CDTI1\_PA0   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a063202bd4d4d5c420613ccbdf41c08ac)TIMER1\_CDTI1\_PA1
+
+| #define TIMER1\_CDTI1\_PA1   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a03c893bbd5151dc4bf1f08a8c197982d)TIMER1\_CDTI1\_PA2
+
+| #define TIMER1\_CDTI1\_PA2   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a13fea81e86713c5839372ae17ffa5b2a)TIMER1\_CDTI1\_PA3
+
+| #define TIMER1\_CDTI1\_PA3   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a3b63381e36f0f67eecdb0e613e082acd)TIMER1\_CDTI1\_PA4
+
+| #define TIMER1\_CDTI1\_PA4   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ae29404facb1a5712a8d3654c32abac03)TIMER1\_CDTI1\_PA5
+
+| #define TIMER1\_CDTI1\_PA5   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a041c492c18debf15659b54a4d1acda45)TIMER1\_CDTI1\_PA6
+
+| #define TIMER1\_CDTI1\_PA6   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#afe513e7286648f7e0dfdcd5831a158cb)TIMER1\_CDTI1\_PB0
+
+| #define TIMER1\_CDTI1\_PB0   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a231c7d9bddd4e56226c51a3ca0516290)TIMER1\_CDTI1\_PB1
+
+| #define TIMER1\_CDTI1\_PB1   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a26cc959057976169dd4e4a4330bb34ff)TIMER1\_CDTI1\_PC0
+
+| #define TIMER1\_CDTI1\_PC0   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a5be334fd1d01d68ebc4fbf77394adc03)TIMER1\_CDTI1\_PC1
+
+| #define TIMER1\_CDTI1\_PC1   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a153d9a304ad237e9f99bf2fd97cb5ca3)TIMER1\_CDTI1\_PC2
+
+| #define TIMER1\_CDTI1\_PC2   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ae1d146285574814c26941837ae32cf33)TIMER1\_CDTI1\_PC3
+
+| #define TIMER1\_CDTI1\_PC3   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aadc34ad6a076211bfe55a1cecba057ed)TIMER1\_CDTI1\_PC4
+
+| #define TIMER1\_CDTI1\_PC4   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a89667e375454960fd56fa87fd46a1cf0)TIMER1\_CDTI1\_PC5
+
+| #define TIMER1\_CDTI1\_PC5   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a9a83a5c25369e4dc286c219f9be05a08)TIMER1\_CDTI1\_PD0
+
+| #define TIMER1\_CDTI1\_PD0   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ae2d334d95e5a2f65c92562727a87520b)TIMER1\_CDTI1\_PD1
+
+| #define TIMER1\_CDTI1\_PD1   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#af1a5a15c236edb1c77acce4cb8d8b894)TIMER1\_CDTI1\_PD2
+
+| #define TIMER1\_CDTI1\_PD2   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a8b00bb8a1bbb8cc97e1e1997cd5ed10b)TIMER1\_CDTI1\_PD3
+
+| #define TIMER1\_CDTI1\_PD3   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a7db403c434a33b41eefe0278890da8ca)TIMER1\_CDTI1\_PD4
+
+| #define TIMER1\_CDTI1\_PD4   [SILABS\_DBUS\_TIMER1\_CDTI1](#aff14e83dc5f27682d1d76ddb75d8b08c)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#ac959ddf75f8afe8179b53148e90a0cd3)TIMER1\_CDTI2\_PA0
+
+| #define TIMER1\_CDTI2\_PA0   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a03028d392b456dbce8ce5c7325f52b87)TIMER1\_CDTI2\_PA1
+
+| #define TIMER1\_CDTI2\_PA1   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a3282e1d97d899e3010b59e952aa12429)TIMER1\_CDTI2\_PA2
+
+| #define TIMER1\_CDTI2\_PA2   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a249a669752eb8cfca1a9dee28e0fa5b9)TIMER1\_CDTI2\_PA3
+
+| #define TIMER1\_CDTI2\_PA3   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#acab3d281ca3eb0fc97c1c296beacb302)TIMER1\_CDTI2\_PA4
+
+| #define TIMER1\_CDTI2\_PA4   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a1b4f4b4f2f84c99855ddfbdd829a0814)TIMER1\_CDTI2\_PA5
+
+| #define TIMER1\_CDTI2\_PA5   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a4008736ae0d99019066eb6435864a043)TIMER1\_CDTI2\_PA6
+
+| #define TIMER1\_CDTI2\_PA6   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a4ff755a9d12285c868a4dc0e5d9de281)TIMER1\_CDTI2\_PB0
+
+| #define TIMER1\_CDTI2\_PB0   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a94cb965aa4d6a7fb7a31acbd363f54ee)TIMER1\_CDTI2\_PB1
+
+| #define TIMER1\_CDTI2\_PB1   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ab37f717d7232493a31424e87d242c2a8)TIMER1\_CDTI2\_PC0
+
+| #define TIMER1\_CDTI2\_PC0   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a6a306946717970eb62df4307de771fef)TIMER1\_CDTI2\_PC1
+
+| #define TIMER1\_CDTI2\_PC1   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a248af2da57a57600d4a144c71f860006)TIMER1\_CDTI2\_PC2
+
+| #define TIMER1\_CDTI2\_PC2   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ae1c48f4b069d6c7e410511b1e95a7def)TIMER1\_CDTI2\_PC3
+
+| #define TIMER1\_CDTI2\_PC3   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#af91af878bbab4422378cf31a711055ff)TIMER1\_CDTI2\_PC4
+
+| #define TIMER1\_CDTI2\_PC4   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ac16216ae2977f9696075b3a6d8c64aa0)TIMER1\_CDTI2\_PC5
+
+| #define TIMER1\_CDTI2\_PC5   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ae362330bff63d204299a6a33f4c4f191)TIMER1\_CDTI2\_PD0
+
+| #define TIMER1\_CDTI2\_PD0   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a6559a7e28febb9e31fca6847e11cdb1a)TIMER1\_CDTI2\_PD1
+
+| #define TIMER1\_CDTI2\_PD1   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a8a53201b17d025911ca41f86e3d13a66)TIMER1\_CDTI2\_PD2
+
+| #define TIMER1\_CDTI2\_PD2   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a254d9132271304cd62f61184a40471d6)TIMER1\_CDTI2\_PD3
+
+| #define TIMER1\_CDTI2\_PD3   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#acf43810574237c108aba907ba113d6ba)TIMER1\_CDTI2\_PD4
+
+| #define TIMER1\_CDTI2\_PD4   [SILABS\_DBUS\_TIMER1\_CDTI2](#a33328da36cd2df624ded688165f9f319)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a67e6f27f89e7e121cce88e0186ab5010)TIMER2\_CC0\_PA0
+
+| #define TIMER2\_CC0\_PA0   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a545f09892c0762da7a55cdc8d16e8e6f)TIMER2\_CC0\_PA1
+
+| #define TIMER2\_CC0\_PA1   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#aee905018c0d9aa48c14e415474c03f62)TIMER2\_CC0\_PA2
+
+| #define TIMER2\_CC0\_PA2   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ad7327f8fa42b7aa1875d2b57769330eb)TIMER2\_CC0\_PA3
+
+| #define TIMER2\_CC0\_PA3   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#acab7bd67fc01c7fa8b3c40d75f725a0a)TIMER2\_CC0\_PA4
+
+| #define TIMER2\_CC0\_PA4   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ac846d48997b6bdbb2b7665a62a6505e3)TIMER2\_CC0\_PA5
+
+| #define TIMER2\_CC0\_PA5   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a987c36e9761389522505ac50952ed04a)TIMER2\_CC0\_PA6
+
+| #define TIMER2\_CC0\_PA6   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a2a9776f698e90b570e177a6a0059b15b)TIMER2\_CC0\_PB0
+
+| #define TIMER2\_CC0\_PB0   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a55d9652dbf9c89d894162860c56459dd)TIMER2\_CC0\_PB1
+
+| #define TIMER2\_CC0\_PB1   [SILABS\_DBUS\_TIMER2\_CC0](#a6f8eec2f0d2289a845062b5fe14a59b7)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a1164a4f1a0cfbf0cb157eeb7be84bd28)TIMER2\_CC1\_PA0
+
+| #define TIMER2\_CC1\_PA0   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a1bca4d4f43da2d564d68622dcb0e5d9e)TIMER2\_CC1\_PA1
+
+| #define TIMER2\_CC1\_PA1   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#adec2ad20e72e0b8fd02b6476685f5155)TIMER2\_CC1\_PA2
+
+| #define TIMER2\_CC1\_PA2   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a8a42dfc04580c2dba2b961509d03ff43)TIMER2\_CC1\_PA3
+
+| #define TIMER2\_CC1\_PA3   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a89a293610575367134548bc2ccd0c47e)TIMER2\_CC1\_PA4
+
+| #define TIMER2\_CC1\_PA4   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#acdbcff934f4bac5a2b0f03a33e44138b)TIMER2\_CC1\_PA5
+
+| #define TIMER2\_CC1\_PA5   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a4c420a0fc98b352544416bbfa8216ae6)TIMER2\_CC1\_PA6
+
+| #define TIMER2\_CC1\_PA6   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ac7397d7ebe41f5c2b732bece2b63f793)TIMER2\_CC1\_PB0
+
+| #define TIMER2\_CC1\_PB0   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a0d597a9083a41c950f29bbbf7e148ef7)TIMER2\_CC1\_PB1
+
+| #define TIMER2\_CC1\_PB1   [SILABS\_DBUS\_TIMER2\_CC1](#a1a5af09f79ed3f743efa31ec03d87cc6)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a2d62e330c22411c86274caefb099cf19)TIMER2\_CC2\_PA0
+
+| #define TIMER2\_CC2\_PA0   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#aab60fb88a625e320ce64ea10133311df)TIMER2\_CC2\_PA1
+
+| #define TIMER2\_CC2\_PA1   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a4bf049cdc3017e816165effd4cff7d35)TIMER2\_CC2\_PA2
+
+| #define TIMER2\_CC2\_PA2   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a00eafe61a794b07af52d028ab4dd1adf)TIMER2\_CC2\_PA3
+
+| #define TIMER2\_CC2\_PA3   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#aedbc75bcf6c733bcd3deadb3c8ce0f21)TIMER2\_CC2\_PA4
+
+| #define TIMER2\_CC2\_PA4   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a490ca0f07b93c2cd68351c6afb4a9819)TIMER2\_CC2\_PA5
+
+| #define TIMER2\_CC2\_PA5   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#abd8592d55f4ff8bd546adb9efc7ee922)TIMER2\_CC2\_PA6
+
+| #define TIMER2\_CC2\_PA6   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a59ed3f774f4d21a9f1fbc9d71cb57fe4)TIMER2\_CC2\_PB0
+
+| #define TIMER2\_CC2\_PB0   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#abaf434275a10efbc0b32f7d859d51912)TIMER2\_CC2\_PB1
+
+| #define TIMER2\_CC2\_PB1   [SILABS\_DBUS\_TIMER2\_CC2](#a1d6da86f7d7e4099e9bb47e38d3c4e9c)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a6cb932cba841a0987d78da39e11cadba)TIMER2\_CDTI0\_PA0
+
+| #define TIMER2\_CDTI0\_PA0   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a9cde27e9bdb4e6157afe1149d35e8dbd)TIMER2\_CDTI0\_PA1
+
+| #define TIMER2\_CDTI0\_PA1   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a5906c55b37b73111550ea2eb75681575)TIMER2\_CDTI0\_PA2
+
+| #define TIMER2\_CDTI0\_PA2   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#afa16ff7cf30f5cc4d2fe967263b9b2b0)TIMER2\_CDTI0\_PA3
+
+| #define TIMER2\_CDTI0\_PA3   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ac0d736392f3d098ec5789189dc37036b)TIMER2\_CDTI0\_PA4
+
+| #define TIMER2\_CDTI0\_PA4   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#aa8c2a2712578b133cdbd8d07f1f37c24)TIMER2\_CDTI0\_PA5
+
+| #define TIMER2\_CDTI0\_PA5   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a801b4531b9bb956d267c53f15b47a872)TIMER2\_CDTI0\_PA6
+
+| #define TIMER2\_CDTI0\_PA6   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ad1c011c5437d75b74c56ebbb00e9dd65)TIMER2\_CDTI0\_PB0
+
+| #define TIMER2\_CDTI0\_PB0   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#afedfcd3a53de2251bb61ccfed3af4a5f)TIMER2\_CDTI0\_PB1
+
+| #define TIMER2\_CDTI0\_PB1   [SILABS\_DBUS\_TIMER2\_CDTI0](#a648ec3c8dafb7f88dba23ea50dba4e8b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ae901259c744451af8a8ded388dfe9f5d)TIMER2\_CDTI1\_PA0
+
+| #define TIMER2\_CDTI1\_PA0   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a9e6e2fc9804d67ec073460ddf34fdd02)TIMER2\_CDTI1\_PA1
+
+| #define TIMER2\_CDTI1\_PA1   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a7ac971aa8206899b4623057140243357)TIMER2\_CDTI1\_PA2
+
+| #define TIMER2\_CDTI1\_PA2   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#af174d0f8740b9d33ae66dba3e34b6031)TIMER2\_CDTI1\_PA3
+
+| #define TIMER2\_CDTI1\_PA3   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#afbda2d057823f529835a894ff9ad8629)TIMER2\_CDTI1\_PA4
+
+| #define TIMER2\_CDTI1\_PA4   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a5b02e4c0ceb352d283a0e99cb05fddab)TIMER2\_CDTI1\_PA5
+
+| #define TIMER2\_CDTI1\_PA5   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a5a930f094a10216d1b43a4eab6a359b7)TIMER2\_CDTI1\_PA6
+
+| #define TIMER2\_CDTI1\_PA6   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a542b9626fdc82bd0444ecd2518031406)TIMER2\_CDTI1\_PB0
+
+| #define TIMER2\_CDTI1\_PB0   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a3600b995f1e40289444081210ad8430f)TIMER2\_CDTI1\_PB1
+
+| #define TIMER2\_CDTI1\_PB1   [SILABS\_DBUS\_TIMER2\_CDTI1](#ab124eb8882de0913d017f81a32eae6d8)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a70028435f4fa81dc8504d6fb5562480c)TIMER2\_CDTI2\_PA0
+
+| #define TIMER2\_CDTI2\_PA0   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#af71768a49adaf60e74a77ff629b3ebd2)TIMER2\_CDTI2\_PA1
+
+| #define TIMER2\_CDTI2\_PA1   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a56efa7077f3f025446f2c1937b833093)TIMER2\_CDTI2\_PA2
+
+| #define TIMER2\_CDTI2\_PA2   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a288823b89fcc8c89d73c6865f8f69cc8)TIMER2\_CDTI2\_PA3
+
+| #define TIMER2\_CDTI2\_PA3   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ab34c2728b9bc0054c854960165408494)TIMER2\_CDTI2\_PA4
+
+| #define TIMER2\_CDTI2\_PA4   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#af55eb46eaa2657c75df8b7c92119588c)TIMER2\_CDTI2\_PA5
+
+| #define TIMER2\_CDTI2\_PA5   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a98e606b3b4ba2b0118736951d32b48ad)TIMER2\_CDTI2\_PA6
+
+| #define TIMER2\_CDTI2\_PA6   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#abd0220954a47f2fcf85f72971f2e7f8c)TIMER2\_CDTI2\_PB0
+
+| #define TIMER2\_CDTI2\_PB0   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ad82071aa4bb174e39da29be3a98e06f4)TIMER2\_CDTI2\_PB1
+
+| #define TIMER2\_CDTI2\_PB1   [SILABS\_DBUS\_TIMER2\_CDTI2](#aac5b26da22ac4ef8f1f08354f8339130)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#adaa89be7653ebbb82d77f6ccd3ba117a)TIMER3\_CC0\_PC0
+
+| #define TIMER3\_CC0\_PC0   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ac49977cf88186dd85de660d7dca24093)TIMER3\_CC0\_PC1
+
+| #define TIMER3\_CC0\_PC1   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a943818c0b36e315772740e9260777e98)TIMER3\_CC0\_PC2
+
+| #define TIMER3\_CC0\_PC2   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a3b4277fa7886db498357df495e7d0f5b)TIMER3\_CC0\_PC3
+
+| #define TIMER3\_CC0\_PC3   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#afef97dfceb1266dad39f3c06a28cccde)TIMER3\_CC0\_PC4
+
+| #define TIMER3\_CC0\_PC4   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a850b7d20c5e78b8609f0b4ab737fb59e)TIMER3\_CC0\_PC5
+
+| #define TIMER3\_CC0\_PC5   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a05f49738ea2e4cac6cff7b921761da01)TIMER3\_CC0\_PD0
+
+| #define TIMER3\_CC0\_PD0   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a4bf238e512342fc49c7a7d3fa1a13ee7)TIMER3\_CC0\_PD1
+
+| #define TIMER3\_CC0\_PD1   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a01e72605da25e5a408a0c3467be59205)TIMER3\_CC0\_PD2
+
+| #define TIMER3\_CC0\_PD2   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a3216588bd129dc8f82c27de826acb69b)TIMER3\_CC0\_PD3
+
+| #define TIMER3\_CC0\_PD3   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a0775d2d03fc98ce82fba4e19100e3b96)TIMER3\_CC0\_PD4
+
+| #define TIMER3\_CC0\_PD4   [SILABS\_DBUS\_TIMER3\_CC0](#adb617def54a24017bdcaafe228697dd5)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a0911c0d09d2d62526ee7d69a0abf0206)TIMER3\_CC1\_PC0
+
+| #define TIMER3\_CC1\_PC0   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#afc5b3d4f06f9392ff91d1a04039cc106)TIMER3\_CC1\_PC1
+
+| #define TIMER3\_CC1\_PC1   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a841b61a51502f96b4b4db51f1747ddc2)TIMER3\_CC1\_PC2
+
+| #define TIMER3\_CC1\_PC2   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#abe25ec49b962f68c7e0b782fe8b31e0c)TIMER3\_CC1\_PC3
+
+| #define TIMER3\_CC1\_PC3   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#aafcf7edadba216092137ea9ce0c0da17)TIMER3\_CC1\_PC4
+
+| #define TIMER3\_CC1\_PC4   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ac24430c7e08b2e0fe7bc63f92c01f9b5)TIMER3\_CC1\_PC5
+
+| #define TIMER3\_CC1\_PC5   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#acb2b010357d2dd7e82266e1f530d93fc)TIMER3\_CC1\_PD0
+
+| #define TIMER3\_CC1\_PD0   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ac1cffc60caba52ee6ab100837b2b6cb3)TIMER3\_CC1\_PD1
+
+| #define TIMER3\_CC1\_PD1   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ac07495ddce953166e53c19d0a4f928fc)TIMER3\_CC1\_PD2
+
+| #define TIMER3\_CC1\_PD2   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a23644731303d1f1e527a7174ccef3e4a)TIMER3\_CC1\_PD3
+
+| #define TIMER3\_CC1\_PD3   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a06ed13488197cb82712911d67eb16b3e)TIMER3\_CC1\_PD4
+
+| #define TIMER3\_CC1\_PD4   [SILABS\_DBUS\_TIMER3\_CC1](#ac522d8a27bbe4fcfba1e0cc282dee7c0)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a7bf47abf6ea4ddf3f3e8dd71dcabc9f8)TIMER3\_CC2\_PC0
+
+| #define TIMER3\_CC2\_PC0   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a2a2021e1cc5ec1156b6e3e8432a56dee)TIMER3\_CC2\_PC1
+
+| #define TIMER3\_CC2\_PC1   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ad74e77cefd62c22a97737ab3eb7ce658)TIMER3\_CC2\_PC2
+
+| #define TIMER3\_CC2\_PC2   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ab80ddb4234db5937e1244204d980e951)TIMER3\_CC2\_PC3
+
+| #define TIMER3\_CC2\_PC3   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a717ccb54d7b93e7d4341f15ae10944cb)TIMER3\_CC2\_PC4
+
+| #define TIMER3\_CC2\_PC4   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#af10e6860473870cd0555e03907220ba7)TIMER3\_CC2\_PC5
+
+| #define TIMER3\_CC2\_PC5   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a457c25d6e6cb832e66753dfc84d189f3)TIMER3\_CC2\_PD0
+
+| #define TIMER3\_CC2\_PD0   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#adbeb6aa8891fdfe6510584bc8e5b5ced)TIMER3\_CC2\_PD1
+
+| #define TIMER3\_CC2\_PD1   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#aa6524ad51bd80ac04276af0e722c5047)TIMER3\_CC2\_PD2
+
+| #define TIMER3\_CC2\_PD2   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#ae94118e07443fa220d9162ad681c1a19)TIMER3\_CC2\_PD3
+
+| #define TIMER3\_CC2\_PD3   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a0a4d56c8f26bb269a10888e29cd0df4e)TIMER3\_CC2\_PD4
+
+| #define TIMER3\_CC2\_PD4   [SILABS\_DBUS\_TIMER3\_CC2](#a9a558be5b3c2f7ecb9bf66d83b8ee60c)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a68db08edab7a0f208661895888ad0f4a)TIMER3\_CDTI0\_PC0
+
+| #define TIMER3\_CDTI0\_PC0   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a3ae3f2df52006b2a53b70f7e940b8ed9)TIMER3\_CDTI0\_PC1
+
+| #define TIMER3\_CDTI0\_PC1   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a1e3e29f3208cc7253d081b7c589632c1)TIMER3\_CDTI0\_PC2
+
+| #define TIMER3\_CDTI0\_PC2   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a8ee6bc60c7704e1437c5d175df34d0a0)TIMER3\_CDTI0\_PC3
+
+| #define TIMER3\_CDTI0\_PC3   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a6f98e4a7f4269972296fe587e83d0d7a)TIMER3\_CDTI0\_PC4
+
+| #define TIMER3\_CDTI0\_PC4   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a348b50033a138bbc11ef6e99188fb023)TIMER3\_CDTI0\_PC5
+
+| #define TIMER3\_CDTI0\_PC5   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ae67b96fbcd3994e67f72d03f29690c02)TIMER3\_CDTI0\_PD0
+
+| #define TIMER3\_CDTI0\_PD0   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a477f3adb9d6430be9ef0746cba23b9fb)TIMER3\_CDTI0\_PD1
+
+| #define TIMER3\_CDTI0\_PD1   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a3ca82d8f98012743293a033b4c9c93be)TIMER3\_CDTI0\_PD2
+
+| #define TIMER3\_CDTI0\_PD2   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a3115a35f39b0b3f35120c728fc5c8c2f)TIMER3\_CDTI0\_PD3
+
+| #define TIMER3\_CDTI0\_PD3   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a5a5a79c390c93f0cceaca0668890ec8a)TIMER3\_CDTI0\_PD4
+
+| #define TIMER3\_CDTI0\_PD4   [SILABS\_DBUS\_TIMER3\_CDTI0](#abb9fc38bdcf044af8e89f8b5bd4eb339)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a5dd1fea7f7ab7ee15a030b96a40d1114)TIMER3\_CDTI1\_PC0
+
+| #define TIMER3\_CDTI1\_PC0   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#aca7f55259fe2f36061078af791f3de4b)TIMER3\_CDTI1\_PC1
+
+| #define TIMER3\_CDTI1\_PC1   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a03b1888fffa0036b1a9d92357d161cc7)TIMER3\_CDTI1\_PC2
+
+| #define TIMER3\_CDTI1\_PC2   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a336444e4a0e7068e3e25e6908628c40c)TIMER3\_CDTI1\_PC3
+
+| #define TIMER3\_CDTI1\_PC3   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a7c48bb98bfbace4681c6a1267d681e45)TIMER3\_CDTI1\_PC4
+
+| #define TIMER3\_CDTI1\_PC4   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#afa7ade2fc1198c66cd4812ac29befdf4)TIMER3\_CDTI1\_PC5
+
+| #define TIMER3\_CDTI1\_PC5   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a984b05d5d53c1068a86614a550995fc0)TIMER3\_CDTI1\_PD0
+
+| #define TIMER3\_CDTI1\_PD0   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a377c5ee038e274db1ddead0ad0fa7bf1)TIMER3\_CDTI1\_PD1
+
+| #define TIMER3\_CDTI1\_PD1   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a57207da12d6fa72e566b728371f4f402)TIMER3\_CDTI1\_PD2
+
+| #define TIMER3\_CDTI1\_PD2   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a18850fb5d2583d3652f7c43ea1d0ac39)TIMER3\_CDTI1\_PD3
+
+| #define TIMER3\_CDTI1\_PD3   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a419139192559d7484a6496741f780682)TIMER3\_CDTI1\_PD4
+
+| #define TIMER3\_CDTI1\_PD4   [SILABS\_DBUS\_TIMER3\_CDTI1](#a2c50f79deaf5192c644bb0b52832352d)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a4a21cc75bb143d4fa1a84eb243fccc36)TIMER3\_CDTI2\_PC0
+
+| #define TIMER3\_CDTI2\_PC0   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a881ccb7ad41ecf73423b97e8c489a6d0)TIMER3\_CDTI2\_PC1
+
+| #define TIMER3\_CDTI2\_PC1   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#aefbbc0a5e8e7673ccacdf399c288903e)TIMER3\_CDTI2\_PC2
+
+| #define TIMER3\_CDTI2\_PC2   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#abc867b08524924b26a2ed326a2b12155)TIMER3\_CDTI2\_PC3
+
+| #define TIMER3\_CDTI2\_PC3   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a0befb875610ff387c2c1ac06f88d7b79)TIMER3\_CDTI2\_PC4
+
+| #define TIMER3\_CDTI2\_PC4   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aea7c0881164e98c21fcf30d689deb592)TIMER3\_CDTI2\_PC5
+
+| #define TIMER3\_CDTI2\_PC5   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a228392afbba95bbb69a65aae20dbb2d1)TIMER3\_CDTI2\_PD0
+
+| #define TIMER3\_CDTI2\_PD0   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a162d7a8c85197e047bc65cef7235a591)TIMER3\_CDTI2\_PD1
+
+| #define TIMER3\_CDTI2\_PD1   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a7f3873fb6abfaf970024318529fcfcd5)TIMER3\_CDTI2\_PD2
+
+| #define TIMER3\_CDTI2\_PD2   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a0c3fc7049d7dacfedfc4a04ced71202f)TIMER3\_CDTI2\_PD3
+
+| #define TIMER3\_CDTI2\_PD3   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#adbfbccad761957506d72eb5b5f774ddc)TIMER3\_CDTI2\_PD4
+
+| #define TIMER3\_CDTI2\_PD4   [SILABS\_DBUS\_TIMER3\_CDTI2](#a5f8e118916558ec753791e59baeefef0)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a16af201487286a8bad218c94245a88c7)USART0\_CLK\_PA0
+
+| #define USART0\_CLK\_PA0   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a1c3041ba213cdbcb2796dbffa01b8571)USART0\_CLK\_PA1
+
+| #define USART0\_CLK\_PA1   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a1e546e7130f7012f29d6d2aad3e97b39)USART0\_CLK\_PA2
+
+| #define USART0\_CLK\_PA2   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#aa78910cf4b3c816508e2e97288489f16)USART0\_CLK\_PA3
+
+| #define USART0\_CLK\_PA3   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a76684ba202fa4fb3b5e545a031f0c841)USART0\_CLK\_PA4
+
+| #define USART0\_CLK\_PA4   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a92cda8774c81ce2539654516c2b62dd6)USART0\_CLK\_PA5
+
+| #define USART0\_CLK\_PA5   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a6c67ed947caacf669665e133327a7e00)USART0\_CLK\_PA6
+
+| #define USART0\_CLK\_PA6   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a80303adbfa7489fdefcbf14b38c25194)USART0\_CLK\_PB0
+
+| #define USART0\_CLK\_PB0   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a242754151600f954e6c9063254862537)USART0\_CLK\_PB1
+
+| #define USART0\_CLK\_PB1   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a9504215a474950cdc3ae3e76bb0ee428)USART0\_CLK\_PC0
+
+| #define USART0\_CLK\_PC0   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#aa03060eb71eadfc578315d600f297665)USART0\_CLK\_PC1
+
+| #define USART0\_CLK\_PC1   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#afd46249fb73936581af6f762bf749096)USART0\_CLK\_PC2
+
+| #define USART0\_CLK\_PC2   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a39fd0a4cefb1903103818add5272cb69)USART0\_CLK\_PC3
+
+| #define USART0\_CLK\_PC3   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a86e90f6c37f90fb2c79d163239123815)USART0\_CLK\_PC4
+
+| #define USART0\_CLK\_PC4   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a13955f88c0655104ccceaf72d8fcc000)USART0\_CLK\_PC5
+
+| #define USART0\_CLK\_PC5   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#aa5dd3eff1b983555e7437c815d69d6c1)USART0\_CLK\_PD0
+
+| #define USART0\_CLK\_PD0   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a808576a293b84b259f0b749099ee53f0)USART0\_CLK\_PD1
+
+| #define USART0\_CLK\_PD1   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#aba6f9004672cd8fcc046036c5a5e385d)USART0\_CLK\_PD2
+
+| #define USART0\_CLK\_PD2   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#acf11ed64457d633e70ba8551caaad511)USART0\_CLK\_PD3
+
+| #define USART0\_CLK\_PD3   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a8fa68ae31cbf6041854bd1de35efa747)USART0\_CLK\_PD4
+
+| #define USART0\_CLK\_PD4   [SILABS\_DBUS\_USART0\_CLK](#a14f60bd84a682fe99ccd93607ca87d6b)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a8b31d0e72dc71f813f3ae21da1b064dc)USART0\_CS\_PA0
+
+| #define USART0\_CS\_PA0   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#affbbbbf6348af411b5392e462304edee)USART0\_CS\_PA1
+
+| #define USART0\_CS\_PA1   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a70d22cbabea10e31293a21262f6a64b3)USART0\_CS\_PA2
+
+| #define USART0\_CS\_PA2   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a2a80bc71c923ed7c6fd2865d869864fc)USART0\_CS\_PA3
+
+| #define USART0\_CS\_PA3   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#af24e43481767fe27cdd78f5e27f15d7f)USART0\_CS\_PA4
+
+| #define USART0\_CS\_PA4   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a7cb722df10819495d5059933ddf122a4)USART0\_CS\_PA5
+
+| #define USART0\_CS\_PA5   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a94d45fdffdc79cc92994105238c9f0f8)USART0\_CS\_PA6
+
+| #define USART0\_CS\_PA6   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a5f92c862131c6dfd2dc95146cdfa09aa)USART0\_CS\_PB0
+
+| #define USART0\_CS\_PB0   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#aa45d4cfe63813c6c8aa8602e0783f7fb)USART0\_CS\_PB1
+
+| #define USART0\_CS\_PB1   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a2372be5754b13cafcef6a63d63548924)USART0\_CS\_PC0
+
+| #define USART0\_CS\_PC0   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a0033eb0ea09f9dab2ab5a20d185ba0e0)USART0\_CS\_PC1
+
+| #define USART0\_CS\_PC1   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#afdc21300ca9ab485a7d97fa344ee3292)USART0\_CS\_PC2
+
+| #define USART0\_CS\_PC2   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#acc373a1b4402c4f4f229524837a4c3ac)USART0\_CS\_PC3
+
+| #define USART0\_CS\_PC3   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a3bb143a83558aaa91fad609259a13044)USART0\_CS\_PC4
+
+| #define USART0\_CS\_PC4   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ab4ae79a567d023b7f886019e3d5518b1)USART0\_CS\_PC5
+
+| #define USART0\_CS\_PC5   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a4d2ef2ccd5f3dbefa048e37f2bb40b8b)USART0\_CS\_PD0
+
+| #define USART0\_CS\_PD0   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a1f6089f92cf5168cbd9a6daa0f336ebb)USART0\_CS\_PD1
+
+| #define USART0\_CS\_PD1   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a4e54dcbabdbebe60f309a31c7acbe30f)USART0\_CS\_PD2
+
+| #define USART0\_CS\_PD2   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a00073504dbe55119dc3dac466c5f816f)USART0\_CS\_PD3
+
+| #define USART0\_CS\_PD3   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#adc4cf5aa4e7acad165031376bf0e2551)USART0\_CS\_PD4
+
+| #define USART0\_CS\_PD4   [SILABS\_DBUS\_USART0\_CS](#acc127783c3de46fa1efd6bf86f632807)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#ac3ca642f56ef830b82675e79f7741f3b)USART0\_CTS\_PA0
+
+| #define USART0\_CTS\_PA0   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#afe282cc2c0b48daca846099518f85197)USART0\_CTS\_PA1
+
+| #define USART0\_CTS\_PA1   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#abb4ee35f35c67053d9e499b9b6586848)USART0\_CTS\_PA2
+
+| #define USART0\_CTS\_PA2   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ac7c103a6f291a3ba02c78b56cda7522e)USART0\_CTS\_PA3
+
+| #define USART0\_CTS\_PA3   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#adf4ae6f16534af5c18b924890e70b909)USART0\_CTS\_PA4
+
+| #define USART0\_CTS\_PA4   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a375e4336fc59220a304beb9e818038a8)USART0\_CTS\_PA5
+
+| #define USART0\_CTS\_PA5   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a34bdfb80ac61bcde4828b64e5ab7bc6a)USART0\_CTS\_PA6
+
+| #define USART0\_CTS\_PA6   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a5e6fd192eef4cb50593c5f8f225607db)USART0\_CTS\_PB0
+
+| #define USART0\_CTS\_PB0   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a8ba9df244ac2a7e580a45372c6db1496)USART0\_CTS\_PB1
+
+| #define USART0\_CTS\_PB1   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a176d8e361297cf55c78d425fed824f1f)USART0\_CTS\_PC0
+
+| #define USART0\_CTS\_PC0   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#acae624423e070b271d7c62019dc19ca6)USART0\_CTS\_PC1
+
+| #define USART0\_CTS\_PC1   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a11af346f3b4cd506e5f42d802eeaa7fa)USART0\_CTS\_PC2
+
+| #define USART0\_CTS\_PC2   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#acde9eb8d5c61ec7fa0c66248de8acdb3)USART0\_CTS\_PC3
+
+| #define USART0\_CTS\_PC3   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a0c7d39bd6f59e8a9281d68560e3ea0cc)USART0\_CTS\_PC4
+
+| #define USART0\_CTS\_PC4   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#aa2c0ec406645422286f3099c880051e8)USART0\_CTS\_PC5
+
+| #define USART0\_CTS\_PC5   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ad8f9198b67b3777baf4d6fa6771c2a40)USART0\_CTS\_PD0
+
+| #define USART0\_CTS\_PD0   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#acf9112247d4fa36974b7e221d156b27c)USART0\_CTS\_PD1
+
+| #define USART0\_CTS\_PD1   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a86617a975bc950800ea9deba65ffaa19)USART0\_CTS\_PD2
+
+| #define USART0\_CTS\_PD2   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#abf78324d648e5c035d29a33b4b93dd82)USART0\_CTS\_PD3
+
+| #define USART0\_CTS\_PD3   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a24a47d714bae303a53b15303fcc73855)USART0\_CTS\_PD4
+
+| #define USART0\_CTS\_PD4   [SILABS\_DBUS\_USART0\_CTS](#a0be14ba61b5fc707ef02e7ac6ba779cf)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a104b44454bfafbbdd54fe6b53c2dff33)USART0\_RTS\_PA0
+
+| #define USART0\_RTS\_PA0   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#abbaf9c9b55c0673fc774610b83aca313)USART0\_RTS\_PA1
+
+| #define USART0\_RTS\_PA1   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#abaae8c12c4daa90d49e9f327f16a6691)USART0\_RTS\_PA2
+
+| #define USART0\_RTS\_PA2   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a4ba035c607b639dfef668323a43a3f7f)USART0\_RTS\_PA3
+
+| #define USART0\_RTS\_PA3   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a234727fb3ae07a22c350d4a0a58c30cb)USART0\_RTS\_PA4
+
+| #define USART0\_RTS\_PA4   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a0f8ad339a81f02d95e747a82aefe699e)USART0\_RTS\_PA5
+
+| #define USART0\_RTS\_PA5   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#afcab39462b0cc95e3984b4a10e54b587)USART0\_RTS\_PA6
+
+| #define USART0\_RTS\_PA6   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a9808fc5b30607e6d0cbc3172369b818d)USART0\_RTS\_PB0
+
+| #define USART0\_RTS\_PB0   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a44240f09f67e09e58d28f82c43aff37d)USART0\_RTS\_PB1
+
+| #define USART0\_RTS\_PB1   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a2023f5afe82a2b2ff9b6c00bb249367b)USART0\_RTS\_PC0
+
+| #define USART0\_RTS\_PC0   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a59cd7521827677160d85555c25430a9b)USART0\_RTS\_PC1
+
+| #define USART0\_RTS\_PC1   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#af7675ade342b55e04078f3d53306ca45)USART0\_RTS\_PC2
+
+| #define USART0\_RTS\_PC2   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a42798ba22452bc2850007c9871d9daee)USART0\_RTS\_PC3
+
+| #define USART0\_RTS\_PC3   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ae54415286b298aceaebdddcb3d008f5b)USART0\_RTS\_PC4
+
+| #define USART0\_RTS\_PC4   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a6490fddb874c99a2cc293342c1b58dfc)USART0\_RTS\_PC5
+
+| #define USART0\_RTS\_PC5   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a705598d6a60acd8936d6b7d0aa18cba2)USART0\_RTS\_PD0
+
+| #define USART0\_RTS\_PD0   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#af77229ee4cf9eac56cc2fb134bc805c4)USART0\_RTS\_PD1
+
+| #define USART0\_RTS\_PD1   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a6a6bf570ad629ce3c81b37d31ffa2efe)USART0\_RTS\_PD2
+
+| #define USART0\_RTS\_PD2   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a0f8639b93ef710b631309b9388fbcb50)USART0\_RTS\_PD3
+
+| #define USART0\_RTS\_PD3   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#ad9efbfbd3c62b51abf94fbbb8d9a493a)USART0\_RTS\_PD4
+
+| #define USART0\_RTS\_PD4   [SILABS\_DBUS\_USART0\_RTS](#afb90351e31f6da6446c2fc3f5aaaf394)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aacdc76948ed8f1e54f8e260e62c89f61)USART0\_RX\_PA0
+
+| #define USART0\_RX\_PA0   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#af41b4722d7b89c28645c24ac8e9a5eb4)USART0\_RX\_PA1
+
+| #define USART0\_RX\_PA1   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a4da72ddcfaf102aa817eb2bc6e0c5cbb)USART0\_RX\_PA2
+
+| #define USART0\_RX\_PA2   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a0a9b80333130d05d11bf88c78434221a)USART0\_RX\_PA3
+
+| #define USART0\_RX\_PA3   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#ac992577a6d9d5e0730eaaaa2086d5802)USART0\_RX\_PA4
+
+| #define USART0\_RX\_PA4   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a8203de9111610660eea0c49ef51a9f6a)USART0\_RX\_PA5
+
+| #define USART0\_RX\_PA5   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a84a42fda6d1b7a2269c357e2929b8219)USART0\_RX\_PA6
+
+| #define USART0\_RX\_PA6   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#ab6691b3280f611c94c8690302bce85d5)USART0\_RX\_PB0
+
+| #define USART0\_RX\_PB0   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ab23c92ad1cb6a8cafe055baade2e8b87)USART0\_RX\_PB1
+
+| #define USART0\_RX\_PB1   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#aee4369f8682feee79f184c83d80274da)USART0\_RX\_PC0
+
+| #define USART0\_RX\_PC0   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a9350586833a3d5c48baefd1610c13f62)USART0\_RX\_PC1
+
+| #define USART0\_RX\_PC1   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a0a895e2c1e4a38b1fe6ebd5da7d525e5)USART0\_RX\_PC2
+
+| #define USART0\_RX\_PC2   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a437d4a2cea5c64fc92b6c99b87bf5e8c)USART0\_RX\_PC3
+
+| #define USART0\_RX\_PC3   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a75a6d4f4d7656eea8244bfb0d030ca79)USART0\_RX\_PC4
+
+| #define USART0\_RX\_PC4   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a869fb6d64ec0e62beecb34dd0279f202)USART0\_RX\_PC5
+
+| #define USART0\_RX\_PC5   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a823861421794933ab4e682de63e49cc4)USART0\_RX\_PD0
+
+| #define USART0\_RX\_PD0   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a408c8b04c4e9598c9bb139446244810f)USART0\_RX\_PD1
+
+| #define USART0\_RX\_PD1   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ad11874063a494e22191887fbd29d0189)USART0\_RX\_PD2
+
+| #define USART0\_RX\_PD2   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a0dbbdc55667cd4c32262a7e91298cf95)USART0\_RX\_PD3
+
+| #define USART0\_RX\_PD3   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a95c9f4c6e85f0d9cf050e7554cc41074)USART0\_RX\_PD4
+
+| #define USART0\_RX\_PD4   [SILABS\_DBUS\_USART0\_RX](#a8d9bee07c90a69ada0a392fbd15c9e44)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a4691259ca7c910831f70cff06b9737ac)USART0\_TX\_PA0
+
+| #define USART0\_TX\_PA0   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#af4e1c897ae049a4b223e09ab587f116d)USART0\_TX\_PA1
+
+| #define USART0\_TX\_PA1   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#acc13e25bcc1953b93e76521966cd1b39)USART0\_TX\_PA2
+
+| #define USART0\_TX\_PA2   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a2ccdea01de2b8da884a33ddc1a81982f)USART0\_TX\_PA3
+
+| #define USART0\_TX\_PA3   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a28450d0bc2dcbe2ead4d36cf3800eb03)USART0\_TX\_PA4
+
+| #define USART0\_TX\_PA4   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ab3851360e615c31434f53597b8012217)USART0\_TX\_PA5
+
+| #define USART0\_TX\_PA5   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a50d32b162eb8cfaee3228b4dd1aa2aef)USART0\_TX\_PA6
+
+| #define USART0\_TX\_PA6   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a7af0455dce2acd605ef61cdc726c3177)USART0\_TX\_PB0
+
+| #define USART0\_TX\_PB0   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a6ccc48b5e17aca0e2aefe341f9519ae9)USART0\_TX\_PB1
+
+| #define USART0\_TX\_PB1   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a63c1a984a64cb3c40643a7e38c20caaa)USART0\_TX\_PC0
+
+| #define USART0\_TX\_PC0   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ac501027215a6551a637bacf8d1d406fa)USART0\_TX\_PC1
+
+| #define USART0\_TX\_PC1   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ac1b7aad7c958ba2d2cfa2622318ac3c2)USART0\_TX\_PC2
+
+| #define USART0\_TX\_PC2   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#aa215f604dc67f092f495c472de9a7ed5)USART0\_TX\_PC3
+
+| #define USART0\_TX\_PC3   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a1d49c843687f02f806c122059ac08a0c)USART0\_TX\_PC4
+
+| #define USART0\_TX\_PC4   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a03580c3dc9b22d031f78a0a3051b25de)USART0\_TX\_PC5
+
+| #define USART0\_TX\_PC5   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a6756b78da6f6228f331b11a1a17be09d)USART0\_TX\_PD0
+
+| #define USART0\_TX\_PD0   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a1a2e17d5a9daefa68e67b96957271b67)USART0\_TX\_PD1
+
+| #define USART0\_TX\_PD1   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#af52dcac08d3d9e0757048dbe7e0394b2)USART0\_TX\_PD2
+
+| #define USART0\_TX\_PD2   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a51ef7d6af85db7597dd27a68c75fe4e9)USART0\_TX\_PD3
+
+| #define USART0\_TX\_PD3   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a1d3a6020b34c9e101d510678ba45e28a)USART0\_TX\_PD4
+
+| #define USART0\_TX\_PD4   [SILABS\_DBUS\_USART0\_TX](#aca2a3d6b7903947d127d8b6ea5d8c84a)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a6273503644f26d0e7fdea92bfad483b5)USART1\_CLK\_PA0
+
+| #define USART1\_CLK\_PA0   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#acdf47d0f1e701024dae47f456f7f33cb)USART1\_CLK\_PA1
+
+| #define USART1\_CLK\_PA1   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#ab2e8d3b4244d357f94872db24ed16927)USART1\_CLK\_PA2
+
+| #define USART1\_CLK\_PA2   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#ac2b16123044b93c6284fc09ea7307aea)USART1\_CLK\_PA3
+
+| #define USART1\_CLK\_PA3   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#aef6a2ecc146aa23576b096a14fff6a71)USART1\_CLK\_PA4
+
+| #define USART1\_CLK\_PA4   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a348b6d13cd6c1fd972844f246208c418)USART1\_CLK\_PA5
+
+| #define USART1\_CLK\_PA5   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a02f5bf254e9e3e1d975dcf0e94dee3ff)USART1\_CLK\_PA6
+
+| #define USART1\_CLK\_PA6   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a5f3a85cc7c7b38a151737d28fee5ee7c)USART1\_CLK\_PB0
+
+| #define USART1\_CLK\_PB0   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a4f5d16e2e67f49adee3bc194bd64cdb5)USART1\_CLK\_PB1
+
+| #define USART1\_CLK\_PB1   [SILABS\_DBUS\_USART1\_CLK](#a1a4d85614e1e5ee7915d8eb87f75bfff)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ad3e622bf87194cc1b199a28fbf82c922)USART1\_CS\_PA0
+
+| #define USART1\_CS\_PA0   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#ac44b9afd3f4aacf4b5d77a6ffed82c31)USART1\_CS\_PA1
+
+| #define USART1\_CS\_PA1   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#ab2817f18abf86707ce4224b96defad19)USART1\_CS\_PA2
+
+| #define USART1\_CS\_PA2   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a2b840a1cb7d57509620f6735d100721d)USART1\_CS\_PA3
+
+| #define USART1\_CS\_PA3   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a8a60ef6d1e4b99f5723a3ad13be87e27)USART1\_CS\_PA4
+
+| #define USART1\_CS\_PA4   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a8a5c35f83c96ddf3b7a77780e2f1c1c4)USART1\_CS\_PA5
+
+| #define USART1\_CS\_PA5   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#ad09f63306f81c19e089740e73b7c5ca3)USART1\_CS\_PA6
+
+| #define USART1\_CS\_PA6   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a85135b8ccf3ebf77ddc568d9b52f5094)USART1\_CS\_PB0
+
+| #define USART1\_CS\_PB0   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a0246376c47db0d08b13f7a025626ca87)USART1\_CS\_PB1
+
+| #define USART1\_CS\_PB1   [SILABS\_DBUS\_USART1\_CS](#aa1ab7ac67b4f9b90c23a7d5ed85e7b7b)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ab8f436c89c7f71271cd70e896f6cd7eb)USART1\_CTS\_PA0
+
+| #define USART1\_CTS\_PA0   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a0894716787e9a09d997f744f07d31723)USART1\_CTS\_PA1
+
+| #define USART1\_CTS\_PA1   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a2722c60724d7b70b208eb7813533542d)USART1\_CTS\_PA2
+
+| #define USART1\_CTS\_PA2   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a37178b8015441a63a2d5f0f4e29a5997)USART1\_CTS\_PA3
+
+| #define USART1\_CTS\_PA3   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a398faa6da0bb297d1c52ee25a0e4fa3b)USART1\_CTS\_PA4
+
+| #define USART1\_CTS\_PA4   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#ab7480c291b286bf76cd6af604392e8df)USART1\_CTS\_PA5
+
+| #define USART1\_CTS\_PA5   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a0df6cd090c6f551b231e0c299be9aff7)USART1\_CTS\_PA6
+
+| #define USART1\_CTS\_PA6   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#af8129b9ac85e75bf06ff65fc2bdcdbc1)USART1\_CTS\_PB0
+
+| #define USART1\_CTS\_PB0   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a6835005577ea5a786174c5e3e27c0dff)USART1\_CTS\_PB1
+
+| #define USART1\_CTS\_PB1   [SILABS\_DBUS\_USART1\_CTS](#a765b10a8cee3cdea20421ef5da5aeb9d)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#adb1892bd6bbe15436ebe8d87009a07cb)USART1\_RTS\_PA0
+
+| #define USART1\_RTS\_PA0   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a26b0c827b5f3dbad42fe4c88182feb9e)USART1\_RTS\_PA1
+
+| #define USART1\_RTS\_PA1   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a17f90a324b77e892691df314e360e963)USART1\_RTS\_PA2
+
+| #define USART1\_RTS\_PA2   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#abf5b408be99508e62dfbcb898a80e7ac)USART1\_RTS\_PA3
+
+| #define USART1\_RTS\_PA3   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a8e25d0018b9d8dae670d9d9300b83af7)USART1\_RTS\_PA4
+
+| #define USART1\_RTS\_PA4   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a84e98aafd9109ac79850651a5d146916)USART1\_RTS\_PA5
+
+| #define USART1\_RTS\_PA5   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#aa03434ec66cb7eff576fa185022785e1)USART1\_RTS\_PA6
+
+| #define USART1\_RTS\_PA6   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a52fd2e9de7f7818ab1b46df1c8d90c97)USART1\_RTS\_PB0
+
+| #define USART1\_RTS\_PB0   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a04f167919a0613138e75321f67966c53)USART1\_RTS\_PB1
+
+| #define USART1\_RTS\_PB1   [SILABS\_DBUS\_USART1\_RTS](#a6ccc43376c75561508f0af5fbff43bff)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a1344d4b7bc318d0fd2a49f01b2505dae)USART1\_RX\_PA0
+
+| #define USART1\_RX\_PA0   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a584f5b976fccf459dd41984b87d98681)USART1\_RX\_PA1
+
+| #define USART1\_RX\_PA1   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a3c33c7b93cf4d0e5f732eabd7dea291a)USART1\_RX\_PA2
+
+| #define USART1\_RX\_PA2   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#aa099336238b9ee2f60131f8874965ad8)USART1\_RX\_PA3
+
+| #define USART1\_RX\_PA3   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#a483eec1a4dd0267e961a224ec9ed8b84)USART1\_RX\_PA4
+
+| #define USART1\_RX\_PA4   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#a286c64ca6230b6b77cb08c33aea08aed)USART1\_RX\_PA5
+
+| #define USART1\_RX\_PA5   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a82275dfce6dca7f5d0839ff935d07ccc)USART1\_RX\_PA6
+
+| #define USART1\_RX\_PA6   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#aa098eecd8faf98926c9d2bb8967f1ae2)USART1\_RX\_PB0
+
+| #define USART1\_RX\_PB0   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#a83da59b1fad652e6b37d8c78ba863e4a)USART1\_RX\_PB1
+
+| #define USART1\_RX\_PB1   [SILABS\_DBUS\_USART1\_RX](#a5ccc39d740aa3ccbda884891cb348200)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#a719e46bd04807b305447b999b4782375)USART1\_TX\_PA0
+
+| #define USART1\_TX\_PA0   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x0) |
+| --- |
+
+## [◆ ](#a42b48b97f3273ff42eece98916e60630)USART1\_TX\_PA1
+
+| #define USART1\_TX\_PA1   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x1) |
+| --- |
+
+## [◆ ](#a90383d542c7aad9b15775b11bd264910)USART1\_TX\_PA2
+
+| #define USART1\_TX\_PA2   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x2) |
+| --- |
+
+## [◆ ](#a83db4685e72e840bc03e199379a7091c)USART1\_TX\_PA3
+
+| #define USART1\_TX\_PA3   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x3) |
+| --- |
+
+## [◆ ](#aaa9c6660b9d802d891bafd1e46c6f636)USART1\_TX\_PA4
+
+| #define USART1\_TX\_PA4   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x4) |
+| --- |
+
+## [◆ ](#aa07e04d88a4a9cc4548400bd132fc983)USART1\_TX\_PA5
+
+| #define USART1\_TX\_PA5   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x5) |
+| --- |
+
+## [◆ ](#a62b940162d89200c43e0bfdfcebdc328)USART1\_TX\_PA6
+
+| #define USART1\_TX\_PA6   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x0, 0x6) |
+| --- |
+
+## [◆ ](#a64045a6952ae9268787f7e74035dabd2)USART1\_TX\_PB0
+
+| #define USART1\_TX\_PB0   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x1, 0x0) |
+| --- |
+
+## [◆ ](#ac26399945006e5b812ed776b3bde9c94)USART1\_TX\_PB1
+
+| #define USART1\_TX\_PB1   [SILABS\_DBUS\_USART1\_TX](#a4e38656e72cb7b91821d4217015fb624)(0x1, 0x1) |
+| --- |
+
+## [◆ ](#ad2294c5575b389d75496676cd8a9933f)USART2\_CLK\_PC0
+
+| #define USART2\_CLK\_PC0   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#ac814d0e3d874d1ff356377f6f99eb2fa)USART2\_CLK\_PC1
+
+| #define USART2\_CLK\_PC1   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a08546c896f3edf98e98792bdf7fe6464)USART2\_CLK\_PC2
+
+| #define USART2\_CLK\_PC2   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a706f92e812b9a193fd93cfec3facb341)USART2\_CLK\_PC3
+
+| #define USART2\_CLK\_PC3   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a67d10cccd90ac4d6be9f84df08b9188a)USART2\_CLK\_PC4
+
+| #define USART2\_CLK\_PC4   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ac5d0f1dcbe31b5cefb482b5fc32320bd)USART2\_CLK\_PC5
+
+| #define USART2\_CLK\_PC5   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a89319759c1834dcba31360fbc65f0774)USART2\_CLK\_PD0
+
+| #define USART2\_CLK\_PD0   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a025049acd7e76fe42080b928421981c4)USART2\_CLK\_PD1
+
+| #define USART2\_CLK\_PD1   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#abdef780b6d64a0674fbcf1b50114ed1e)USART2\_CLK\_PD2
+
+| #define USART2\_CLK\_PD2   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a11f9a3847acade345753ac6d2d01c13a)USART2\_CLK\_PD3
+
+| #define USART2\_CLK\_PD3   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a6195a98f4b59de781587bd9698eae752)USART2\_CLK\_PD4
+
+| #define USART2\_CLK\_PD4   [SILABS\_DBUS\_USART2\_CLK](#adcca369d4ade79a7a7c0feb11b796d47)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a557371d5f427cbf4ee695a7efbee47ba)USART2\_CS\_PC0
+
+| #define USART2\_CS\_PC0   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a9a47b0acc72df2b3205194e50b2d709b)USART2\_CS\_PC1
+
+| #define USART2\_CS\_PC1   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#acb1fc9b7e748ba2f102a0e9c99d5ddf6)USART2\_CS\_PC2
+
+| #define USART2\_CS\_PC2   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a8bc53d5a6f1a60f6bfd2ffd7a974f509)USART2\_CS\_PC3
+
+| #define USART2\_CS\_PC3   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a4183dc2c3b48b689514cca3a85042cf9)USART2\_CS\_PC4
+
+| #define USART2\_CS\_PC4   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ae6c2034898a6973938d03be7c1b854e7)USART2\_CS\_PC5
+
+| #define USART2\_CS\_PC5   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a388b69a4a9088e017f0b8a8d5aef074b)USART2\_CS\_PD0
+
+| #define USART2\_CS\_PD0   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a73aaf3e18d619de90034806681dfd8b9)USART2\_CS\_PD1
+
+| #define USART2\_CS\_PD1   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a19b4e7940c2797bc6aabe25a920dbd22)USART2\_CS\_PD2
+
+| #define USART2\_CS\_PD2   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a8af20b62273d28a0fd06f560a40e2b48)USART2\_CS\_PD3
+
+| #define USART2\_CS\_PD3   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a215584c1bf861d6bccb69708acb5aef5)USART2\_CS\_PD4
+
+| #define USART2\_CS\_PD4   [SILABS\_DBUS\_USART2\_CS](#aedfa15a98056a8d038cd2a197f028274)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a59e186e5e2640ce89884e3be3826f27c)USART2\_CTS\_PC0
+
+| #define USART2\_CTS\_PC0   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a8a4b4968357a11c5a24d42c9083a3e1f)USART2\_CTS\_PC1
+
+| #define USART2\_CTS\_PC1   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#ad68a116c16b89eadb45bb32b050bf00f)USART2\_CTS\_PC2
+
+| #define USART2\_CTS\_PC2   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#aa588cc8084e44819684864f078132867)USART2\_CTS\_PC3
+
+| #define USART2\_CTS\_PC3   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a57472dd4dea3ad86e0f7b9b3a8f87791)USART2\_CTS\_PC4
+
+| #define USART2\_CTS\_PC4   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a2ffa8c4182136aba7b80eadd168a694b)USART2\_CTS\_PC5
+
+| #define USART2\_CTS\_PC5   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a81fcf50668956c552e8d55e510c0510d)USART2\_CTS\_PD0
+
+| #define USART2\_CTS\_PD0   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ae9e2f9ca07249a9bacc4ca54f9f6bf1f)USART2\_CTS\_PD1
+
+| #define USART2\_CTS\_PD1   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a3f5da9ec9158ac1767c9d200594440f7)USART2\_CTS\_PD2
+
+| #define USART2\_CTS\_PD2   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a431c9fb8a6bd3e0b09a4480751bf5b44)USART2\_CTS\_PD3
+
+| #define USART2\_CTS\_PD3   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a25a971181736de3f6de027040ff12eda)USART2\_CTS\_PD4
+
+| #define USART2\_CTS\_PD4   [SILABS\_DBUS\_USART2\_CTS](#a7c5d85fd320a080b6dd726ad4da98b27)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#aac7cb12adc48c63656c9aa931edce4d1)USART2\_RTS\_PC0
+
+| #define USART2\_RTS\_PC0   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a8d285f8b87efbb37173167fcbe9c9516)USART2\_RTS\_PC1
+
+| #define USART2\_RTS\_PC1   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a9377c580e6e6cbc16899cdfc499080ee)USART2\_RTS\_PC2
+
+| #define USART2\_RTS\_PC2   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a8241a3cf5d306e28cad6a825776054d1)USART2\_RTS\_PC3
+
+| #define USART2\_RTS\_PC3   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a1a9a8fd590b3f3ce25014a7259388632)USART2\_RTS\_PC4
+
+| #define USART2\_RTS\_PC4   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a8ae5c163b7ca72a3a888e34d4da9e2bf)USART2\_RTS\_PC5
+
+| #define USART2\_RTS\_PC5   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#a3dd4cbcfcfa2342aa690c6c523042f52)USART2\_RTS\_PD0
+
+| #define USART2\_RTS\_PD0   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#ad2502251d330d3924deb6109aa238bb8)USART2\_RTS\_PD1
+
+| #define USART2\_RTS\_PD1   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#abdac137869f6f608c188d29ba5fb69c9)USART2\_RTS\_PD2
+
+| #define USART2\_RTS\_PD2   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a96624dfbc1b32b0a3a8fe934bc87803c)USART2\_RTS\_PD3
+
+| #define USART2\_RTS\_PD3   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a49fc68f88ec86e4a6d550b39da960a77)USART2\_RTS\_PD4
+
+| #define USART2\_RTS\_PD4   [SILABS\_DBUS\_USART2\_RTS](#a4afb9a7beaf7518e56ab03ba310c86da)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#a88eb7a80873ca00a7a60fa802724aa82)USART2\_RX\_PC0
+
+| #define USART2\_RX\_PC0   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a59a6d3386df9030ecc704c701a5f4d06)USART2\_RX\_PC1
+
+| #define USART2\_RX\_PC1   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#adabcdce9020f8d80c1bf76ca57ccda6e)USART2\_RX\_PC2
+
+| #define USART2\_RX\_PC2   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#a6352c73f058d2189a302736c24652f97)USART2\_RX\_PC3
+
+| #define USART2\_RX\_PC3   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#a7693c8b3f9db68a49ffddf324e853d39)USART2\_RX\_PC4
+
+| #define USART2\_RX\_PC4   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#a053e7837a2a55816741400b282684478)USART2\_RX\_PC5
+
+| #define USART2\_RX\_PC5   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#aaa93c32eddd3cd4c8276c58a66939afc)USART2\_RX\_PD0
+
+| #define USART2\_RX\_PD0   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#aa433e6bc60e61a450fd4a1c229e5cd81)USART2\_RX\_PD1
+
+| #define USART2\_RX\_PD1   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#ab6d630d250e00b214a7cef793399447d)USART2\_RX\_PD2
+
+| #define USART2\_RX\_PD2   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a9108d5a52ead61aaeb9f18f0b0f4a7b2)USART2\_RX\_PD3
+
+| #define USART2\_RX\_PD3   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a312662376a381b17872661d7fa5f31f5)USART2\_RX\_PD4
+
+| #define USART2\_RX\_PD4   [SILABS\_DBUS\_USART2\_RX](#aff7f20dccc992f63584c9955f2c09ede)(0x3, 0x4) |
+| --- |
+
+## [◆ ](#ab413415d4b3724bd075c1beb123eb98e)USART2\_TX\_PC0
+
+| #define USART2\_TX\_PC0   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x0) |
+| --- |
+
+## [◆ ](#a1b7e40475b0cc363b13c4b38c65a7712)USART2\_TX\_PC1
+
+| #define USART2\_TX\_PC1   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x1) |
+| --- |
+
+## [◆ ](#a3a104e9cf268fa70648cd86bf178a67b)USART2\_TX\_PC2
+
+| #define USART2\_TX\_PC2   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x2) |
+| --- |
+
+## [◆ ](#ac949409dde83549681af9897111dae6b)USART2\_TX\_PC3
+
+| #define USART2\_TX\_PC3   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x3) |
+| --- |
+
+## [◆ ](#ae9898087bbee17fbc2172f3f5be55d48)USART2\_TX\_PC4
+
+| #define USART2\_TX\_PC4   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x4) |
+| --- |
+
+## [◆ ](#ad911e255adc5ebef431f5ff9372c58ed)USART2\_TX\_PC5
+
+| #define USART2\_TX\_PC5   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x2, 0x5) |
+| --- |
+
+## [◆ ](#ada1a38aed302c8a3b46bf92d09600eb2)USART2\_TX\_PD0
+
+| #define USART2\_TX\_PD0   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x0) |
+| --- |
+
+## [◆ ](#a0723ac568299d103fac839f00df6a615)USART2\_TX\_PD1
+
+| #define USART2\_TX\_PD1   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x1) |
+| --- |
+
+## [◆ ](#a26e259c5fcf77e8bf1351c2e6df0b46a)USART2\_TX\_PD2
+
+| #define USART2\_TX\_PD2   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x2) |
+| --- |
+
+## [◆ ](#a62f0858e1951a23b3c6fb0b3df363752)USART2\_TX\_PD3
+
+| #define USART2\_TX\_PD3   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x3) |
+| --- |
+
+## [◆ ](#a115f510fd548777aed15ad6f31f2a4c9)USART2\_TX\_PD4
+
+| #define USART2\_TX\_PD4   [SILABS\_DBUS\_USART2\_TX](#a68bbf6c2e5c745f58fabedbc68e7e52a)(0x3, 0x4) |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
+- [silabs](dir_fa47ec1716313d52a64832478c9daea4.md)
+- [xg21-pinctrl.h](xg21-pinctrl_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -1,0 +1,62 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/samples/drivers/espi/README.html
+original_path: samples/drivers/espi/README.html
+---
+
+# Enhanced Serial Peripheral Interface (eSPI)
+
+[
+Browse source code on GitHub
+](https://github.com/zephyrproject-rtos/zephyr/blob/main//samples/drivers/espi/README.rst/..)
+
+## Overview
+
+This sample demonstrates how to use the [Enhanced Serial Peripheral Interface
+(eSPI) API](../../../hardware/peripherals/espi.md#espi-api).
+It shows how to configure and select eSPI controller capabilities as part of
+a simple eSPI handshake that includes exchanging virtual wire packets.
+
+Standard platform signals are sent virtual wire packets over the bus.
+Callbacks are registered that will write to the console indicating main
+eSPI events and when a virtual wire is received.
+
+## Building and Running
+
+The sample can be built and executed on boards supporting eSPI.
+Any pins required for minimum eSPI handshake should be configured.
+Sample requires a correct harness and fixture setup.
+Please connect an eSPI device to the testing board.
+After that for the correct execution of that sample in twister, add into
+boards’s map-file next fixture settings:
+
+```text
+- fixture: espi_device_connect
+```
+
+### Sample output
+
+```shell
+Hello eSPI test!
+eSPI test - I/O initialization...complete
+eSPI slave configured successfully!
+eSPI test - callbacks initialization... complete
+eSPI test - callbacks registration... complete
+eSPI test - Power initialization...complete
+eSPI test - Handshake
+eSPI BUS reset 0
+VW channel is ready
+
+PLT_RST changed 1
+     1st phase completed
+     2nd phase completed
+     3rd phase completed
+```
+
+note:: The values shown above might differ.
+
+## See also
+
+[ESPI Driver APIs](../../../doxygen/html/group__espi__interface.md)
+
+[SPI Interface](../../../doxygen/html/group__spi__interface.md)

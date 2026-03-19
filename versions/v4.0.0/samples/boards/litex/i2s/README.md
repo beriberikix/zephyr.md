@@ -1,0 +1,7 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/samples/boards/litex/i2s/README.html
+original_path: samples/boards/litex/i2s/README.html
+---
+
+Page has moved [here](../../enjoydigital/litex/i2s/README.md).

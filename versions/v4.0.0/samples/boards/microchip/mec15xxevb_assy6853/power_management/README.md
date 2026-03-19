@@ -1,0 +1,31 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/samples/boards/microchip/mec15xxevb_assy6853/power_management/README.html
+original_path: samples/boards/microchip/mec15xxevb_assy6853/power_management/README.html
+---
+
+# MEC15xx sample board test application
+
+## Overview
+
+This sample demonstrates power management features on MEC15xx-based boards.
+It showcase simple app that allows to enter into light and deep sleep.
+
+## Building and Running
+
+The sample can be built and executed on boards using west.
+No pins configurations, except GPIO014 is used as indicator for entry/exit.
+
+### Sample output
+
+```shell
+Wake from Light Sleep
+Wake from Deep Sleep
+ResumeBBBAA
+Wake from Light Sleep
+Suspend...
+Wake from Deep Sleep
+ResumeBBBAA
+```
+
+note:: The values shown above might differ.

@@ -1,0 +1,7 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/boards/96boards/index.html
+original_path: boards/96boards/index.html
+---
+
+# 96Boards

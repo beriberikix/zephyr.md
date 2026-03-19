@@ -1,0 +1,1956 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/releases/release-notes-3.5.html
+original_path: releases/release-notes-3.5.html
+---
+
+# Zephyr 3.5.0
+
+We are pleased to announce the release of Zephyr version 3.5.0.
+
+Major enhancements with this release include:
+
+- Added support for linkable loadable extensions (llext)
+- Added native\_sim simulator target (successor to native\_posix)
+- Added new battery charger driver API
+- Added new hardware spinlock driver API
+- Added new modem subsystem
+- Added support for 45+ new boards
+- Networking: improvements to CoAP, Connection Manager, DHCP, Ethernet, gPTP, ICMP,
+  IPv6 and LwM2M
+- Bluetooth: improvements to the Controller, Audio, Mesh, as well as the host stack in
+  general
+- Improved LVGL graphics library integration
+- Integrated support with the CodeChecker static analyzer
+- Picolibc is now the default C standard library
+
+An overview of the changes required or recommended when migrating your application from Zephyr
+v3.4.0 to Zephyr v3.5.0 can be found in the separate [migration guide](migration-guide-3.5.md#migration-3-5).
+
+The following sections provide detailed lists of changes by component.
+
+## Security Vulnerability Related
+
+The following CVEs are addressed by this release:
+
+More detailed information can be found in:
+[https://docs.zephyrproject.org/latest/security/vulnerabilities.html](https://docs.zephyrproject.org/latest/security/vulnerabilities.html)
+
+- CVE-2023-3725 [Zephyr project bug tracker GHSA-2g3m-p6c7-8rr3](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-2g3m-p6c7-8rr3)
+- CVE-2023-4257 [Zephyr project bug tracker GHSA-853q-q69w-gf5j](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-853q-q69w-gf5j)
+- CVE-2023-4258 [Zephyr project bug tracker GHSA-m34c-cp63-rwh7](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-m34c-cp63-rwh7)
+- CVE-2023-4259 [Zephyr project bug tracker GHSA-gghm-c696-f4j4](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-gghm-c696-f4j4)
+- CVE-2023-4260 [Zephyr project bug tracker GHSA-gj27-862r-55wh](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-gj27-862r-55wh)
+- CVE-2023-4263 [Zephyr project bug tracker GHSA-rf6q-rhhp-pqhf](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-rf6q-rhhp-pqhf)
+- CVE-2023-4264 [Zephyr project bug tracker GHSA-rgx6-3w4j-gf5j](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-rgx6-3w4j-gf5j)
+- CVE-2023-4424: Under embargo until 2023-11-01
+- CVE-2023-5055: Under embargo until 2023-11-01
+- CVE-2023-5139: Under embargo until 2023-10-25
+- CVE-2023-5184 [Zephyr project bug tracker GHSA-8x3p-q3r5-xh9g](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-8x3p-q3r5-xh9g)
+- CVE-2023-5563 [Zephyr project bug tracker GHSA-98mc-rj7w-7rpv](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-98mc-rj7w-7rpv)
+- CVE-2023-5753 [Zephyr project bug tracker GHSA-hmpr-px56-rvww](https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hmpr-px56-rvww)
+
+## Kernel
+
+- Added support for dynamic thread stack allocation via [`k_thread_stack_alloc()`](../doxygen/html/group__thread__apis.md#gafe00cc70bac8a47ba6dda21bde508614)
+- Added support for [`k_spin_trylock()`](../doxygen/html/group__spinlock__apis.md#ga680d878eaa0e7a2f10c6e992791855ee)
+- Added [`k_object_is_valid()`](../doxygen/html/group__usermode__apis.md#gaacd9b4b517db99b3b027dd717e6746b4) to check if a kernel object is valid. This replaces
+  code that has been duplicated throughout the tree.
+
+## Architectures
+
+- ARC
+
+> - Introduced the scalar port for ARC VPX processors
+> - Introduced support for ARCv3 HS (both 32 and 64 bit) SMP platforms with up to 12 CPU cores
+> - Reworked GNU helper tools usage for ARC MWDT toolchain. Now helper tools can be used from
+>   Zephyr SDK (if SDK is installed)
+> - Fixed dynamic thread stack allocation
+> - Fixed STR assembly macro offset calculation issue which may cause build error for ARCv3 64bit
+> - Cleaned-up and made more user friendly handling of the ARC MWDT toolchain path
+>   (ARCMWDT\_TOOLCHAIN\_PATH)
+
+- ARM
+
+  - Architectural support for Arm Cortex-M has been separated from Arm
+    Cortex-A and Cortex-R. This includes separate source modules to handle
+    tasks like IRQ management, exception handling, thread handling and swap.
+    For implementation details see [GitHub #60031](https://github.com/zephyrproject-rtos/zephyr/issues/60031).
+- ARM64
+- RISC-V
+
+  - Added support for detecting null pointer exception using PMP.
+  - Added the [`CONFIG_RISCV_RESERVED_IRQ_ISR_TABLES_OFFSET`](../kconfig.md#CONFIG_RISCV_RESERVED_IRQ_ISR_TABLES_OFFSET "CONFIG_RISCV_RESERVED_IRQ_ISR_TABLES_OFFSET")
+    option to allow IRQ vector at a specified offset to meet the requirements
+    set by the Core-Local Interrupt Controller RISC-V specification.
+  - Added the [`CONFIG_RISCV_SOC_HAS_CUSTOM_SYS_IO`](../kconfig.md#CONFIG_RISCV_SOC_HAS_CUSTOM_SYS_IO "CONFIG_RISCV_SOC_HAS_CUSTOM_SYS_IO") option to
+    allow the use of custom system input/output functions.
+  - Introduced the [`CONFIG_RISCV_TRAP_HANDLER_ALIGNMENT`](../kconfig.md#CONFIG_RISCV_TRAP_HANDLER_ALIGNMENT "CONFIG_RISCV_TRAP_HANDLER_ALIGNMENT") option
+    to set the correct alignment of the trap handling code which is dependent on
+    the `MTVEC.BASE` field size and is platform or application-specific.
+- Xtensa
+
+  - Added basic MMU v2 Support.
+- x86
+
+  - Added support for Intel Alder Lake boards
+  - Added support for Intel Sensor Hub (ISH)
+- POSIX
+
+  - Has been reworked to use the native simulator.
+  - New boards have been added.
+  - For the new boards, embedded C libraries can be used, and conflicts with the host symbols
+    and libraries avoided.
+  - The [POSIX OS abstraction](../services/portability/posix/index.md#posix-support) is supported in these new boards.
+  - AMP targets are now supported.
+  - Added support for LLVM source profiling/coverage.
+
+## Bluetooth
+
+- Audio
+
+  Improved memory usage of codec configurations and codec capabilities. Fixed several bugs in BAP
+  and the BAP-related services (ASCS, PACS, BASS), as well as missing features such as proper
+  notification handling.
+
+  - Added BAP `bt_bap_stream_get_tx_sync`
+  - Added CAP stream send and tx sync
+  - Added `bt_audio_codec_cap_get` helper functions
+  - Added support for long read/write in CAP
+  - Fixed ASCS Source ASE link loss state transition
+  - Fixed ASCS possible ASE leak
+  - Fixed ASCS to drop ISO PDUs if ASE is not in streaming state
+  - Fixed BAP `bt_bap_scan_delegator_find_state` implementation
+  - Fixed BAP issue with PA sync and ID in `broadcast_sink_create`
+  - Fixed TMAS characteristic permissions
+  - Fixed `tbs_client` missing discovery complete event
+  - Fixed audio stack to accept empty CCID list in audio metadata
+  - Fixed bad size of metadata\_backup in ASCS
+  - Fixed possible ASCS ASE stuck in releasing state
+  - Refactored `bt_audio_codec_cap` to flat arrays
+  - Refactored `bt_audio_codec_cfg` to flat arrays
+  - Removed `CONFIG_BT_PACS_{SNK,SRC}_CONTEXT`
+  - Removed scanning and PA sync from broadcast sink
+  - Renamed `bt_codec` to `bt_audio_codec_{cap, conf, data}`
+  - Renamed codec qos framing
+  - Replaced `BT_AUDIO_CODEC_LC3_ID` -> `BT_HCI_CODING_FORMAT_LC3`
+  - Replaced `BT_AUDIO_CODEC_PARSE_ERR_` values with errno values.
+  - Reworked PACS notify system
+  - Updated ASCS ISO QOS based on BAP QOS
+  - Updated BAP to filter PA data duplicates by default
+  - Updated CSIP to unlock Non-bonded devices immediately.
+  - Updated PACS to notify bonded clients on reconnect
+  - Updated `bt_cap_stream_ops_register` to always register BAP callbacks
+  - Updated the ASCS ACL disconnect behavior
+  - Updated to split `bt_audio_codec_meta_get` to `cfg` and `cap`
+- Direction Finding
+- Host
+
+  - Added SMP bondable flag overlay per connection
+  - Added USE\_NRPA advertising option
+  - Added `BT_CONN_PARAM_ANY` to allow setting any value to connection parameters
+  - Added advanced broadcast ISO parameters
+  - Added advanced unicast ISO parameters
+  - Added new API to manage Bluetooth settings storage
+  - Fixed HCI ISO Data packets fragmentation
+  - Fixed HCI ISO SDU length sent to controller
+  - Fixed OTS `bt_ots_init` parameter struct naming
+  - Fixed OTS memory leak while procedure is not finished
+  - Fixed a connection reference leak
+  - Fixed forced pairing request handling
+  - Fixed host to invalidate the Resolvable Private Address when starting legacy advertising
+  - Fixed issue with `bt_iso_cig_reconfigure`
+  - Fixed possible buffer overflow in `bt_conn_le_start_encryption`
+  - Fixed some SMP issues
+  - Fixed to abort pairing if connection disconnected
+  - Updated L2CAP accept callbacks
+  - Updated LE L2CAP connected callback to be after connection response
+  - Updated PAwR implementation to use RPA as responder address if BT\_PRIVACY=y
+- Mesh
+
+  - Added TF-M support.
+  - Added support to use both tinycrypt and PSA based crypto
+  - Added full virtual addresses support with the collisions resolution. The
+    `CONFIG_BT_MESH_LABEL_NO_RECOVER` Kconfig option is introduced to restore the
+    addresses for the subscription list and model publication.
+  - Added statistic module.
+  - Fixed an issue where a node acting as a LPN was triggering Friend Poll messages when sending a
+    segmented message over the loopback interface.
+  - Fixed an issue where provisioning completes successfully on a node when the identical Public Key
+    is used by a provisioner.
+  - Fixed an issue where the [`settings_load()`](../doxygen/html/group__settings.md#ga89c6d618df81f197cc5c1a2018b00648) function called from a cooperative thread other
+    than the system workqueue caused the GATT Mesh Proxy Service registration to fail.
+  - Fixed an issue where a node could enter IV Update in Progress state if an old SNB with the
+    current IV Index and IV Update flag set to 1 was resent.
+  - Mesh Protocol v1.1 changes
+
+    - Added storing Private GATT Proxy state persistently.
+    - Added support for Firmware Distribution Upload OOB Start message in the Firwmware Distribution
+      Server model. The message support can be enabled with the
+      [`CONFIG_BT_MESH_DFD_SRV_OOB_UPLOAD`](../kconfig.md#CONFIG_BT_MESH_DFD_SRV_OOB_UPLOAD "CONFIG_BT_MESH_DFD_SRV_OOB_UPLOAD") Kconfig option.
+    - Added extended provisioning protocol timeout when OOB methods are used in the provisioning.
+    - Added support for Composition Data Pages 2, 129 and 130.
+    - Added documentation for Composition Data Pages 0, 1, 2, 128, 129 and 130.
+    - Added documentation for the Segmentation and Reassembly in the Transport layer.
+    - Added documentation for the SAR Configuration models
+    - Fixed an issue where the Opcode Aggregator Server model did not compile without the Opcode
+      Aggregator Client model.
+    - Fixed an issue where the identity address was used in Private GATT Proxy advertisements
+      instead of Non-Resolvable Private Addresses.
+    - Fixed the Proxy Privacy parameter support.
+    - Fixed an issue where the Composition Data Page 128 was not present on a node that has
+      instantiated the Remote Provisioning Server model.
+    - Fixed an issue where the Large Composition Data Server model did not support Composition Data
+      Pages other then 0.
+    - Fixed an issue where the Remote Provisioning Client model instanted on a node together with
+      the Remote Provisioning Server model could not reprovision itself.
+    - Fixed an issue where the acknowledgment timer in the Segmentation and Reassembly was not
+      restarted when the incoming Segment Acknowledgment message did not contain at least one
+      segment newly marked as acknowledged.
+    - Fixed an issue where the On-Demand Private Proxy Server and Client models had interdependency
+      that did not allow to compile them separately.
+- Controller
+
+  Improved support for Broadcast and Connected Isochronous channels in the Controller, enabling
+  LE audio application development. The Controller is experimental, is missing implementations for
+  interleaved packing in Isochronous channels’ lower link layer.
+
+  - Added Checks for minimum sizes of Adv PDUs
+  - Added Kconfig Option to ignore Tx HCI ISO Data Packet Seq Num
+  - Added Kconfig for avoiding ISO SDU fragmentation
+  - Added Kconfig to maximize BIG event length and preempt PTO & CTRL subevents
+  - Added `BT_CTLR_EVENT_OVERHEAD_RESERVE_MAX` Kconfig
+  - Added memory barrier to ticker transactions
+  - Added missing nRF53x Tx Power Kconfig
+  - Added support for Flush Timeout in Connected ISO
+  - Fixed BIS payload sliding window overrun check
+  - Fixed CIS Central FT calculation
+  - Fixed CIS Central error handling
+  - Fixed CIS asymmetric PHY usage
+  - Fixed CIS encryption when DF support enabled
+  - Fixed ISO-AL for quality tests and time stamps
+  - Fixed PHY value in HCI LE CIS Established Event
+  - Fixed ULL stuck in semaphore under rare conditions
+  - Fixed assertion due to late PER CIS active set
+  - Fixed compiler instruction re-ordering that caused assertions
+  - Fixed connected ISO dynamic tx power
+  - Fixed failing advertising conformance tests
+  - Fixed handling received Auxiliary PDUs when Coded PHY not supported
+  - Fixed leak in scheduled ticker node when rescheduling ticker nodes
+  - Fixed missing host feature reset
+  - Fixed nRF53 SoC back-to-back PDU chaining
+  - Fixed nRF53 SoC back-to-back Tx Rx implementation
+  - Fixed regression in Adv PDU overflow calculation
+  - Fixed regression in observer that caused assertions and scheduling stall
+  - Fixed use of pre-programmed PPI on nRF SoCs
+  - Removed HCI ISO data with invalid status in preparation for FT support
+  - Updated Extended Advertising Report to not be generated when `AUX_ADV_IND` not received
+  - Updated to have `EVENT_OVERHEAD_START_US` verbose assertion in each state/role LLL
+  - Updated to stop following `aux_ptr` if `DATA_LEN_MAX` is reached during extended scanning
+
+## Boards & SoC Support
+
+- Added support for these SoC series:
+
+  - Nuvoton NuMaker M46x series
+  - Added support for STM32F072X8 SoC variants
+  - Added support for STM32L051X6 SoC variants
+  - Added support for STM32L451XX SoC variants
+  - Added support for STM32L4Q5XX SoC variants
+  - Added support for STM32WBA SoC series
+- Removed support for these SoC series:
+- Made these changes in other SoC series:
+
+  - i.MX RT SOCs no longer enable CONFIG\_DEVICE\_CONFIGURATION\_DATA by default.
+    boards using external SDRAM should set CONFIG\_DEVICE\_CONFIGURATION\_DATA
+    and CONFIG\_NXP\_IMX\_EXTERNAL\_SDRAM to enabled.
+  - i.MX RT SOCs no longer support CONFIG\_OCRAM\_NOCACHE, as this functionality
+    can be achieved using devicetree memory regions
+  - Refactored ESP32 SoC folders. So now these are a proper SoC series.
+  - RP2040: Changed to reset the I2C device on initializing
+- Added support for these ARC boards:
+
+  - Added support for nsim\_vpx5 - simulation (nSIM) platform with ARCv2 VPX5 core, close to
+    vpx5\_integer\_full template
+  - Added support for nsim\_hs5x\_smp\_12cores - simulation (nSIM) platform with 12 cores SMP 32-bit
+    ARCv3 HS
+  - Added support for nsim\_hs6x\_smp\_12cores - simulation (nSIM) platform with 12 cores SMP 64-bit
+    ARCv3 HS
+- Added support for these ARM boards:
+
+  - Nuvoton NuMaker Platform M467
+  - ST Nucleo U5A5ZJ Q
+  - ST Nucleo WBA52CG
+- Added support for these ARM64 boards:
+- Added support for these RISC-V boards:
+- Added support for these X86 boards:
+- Added support for these Xtensa boards:
+
+  - Added `esp32_devkitc_wroom` and `esp32_devkitc_wrover`.
+  - Added `esp32s3_luatos_core`.
+  - Added `m5stack_core2`.
+  - Added `qemu_xtensa_mmu` utilizing Diamond DC233c SoC to support
+    testing Xtensa MMU.
+  - Added `xiao_esp32s3`.
+  - Added `yd_esp32`.
+- Added support for these POSIX boards:
+
+  - [native\_sim(\_64)](../boards/native/native_sim/doc/index.md#native-sim)
+  - nrf5340bsim\_nrf5340\_cpu(net|app). A simulated nrf5340 SOC, which uses Babblesim for its radio
+    traffic.
+- Made these changes for ARC boards:
+
+  - Turned off unsupported stack checking option for hsdk4xd platform
+  - Changed vendor prefix for ARC QEMU platforms from “qemu” to “snps”
+- Made these changes for ARM boards:
+
+  - ST morpho connector description was added on ST nucleo boards.
+  - rpi\_pico:
+
+    - The default adapter when debugging with openocd has been changed to cmsis-dap.
+- Made these changes for ARM64 boards:
+- Made these changes for RISC-V boards:
+- Made these changes for X86 boards:
+- Made these changes for Xtensa boards:
+
+  - esp32s3\_devkitm:
+
+    - Added USB-CDC support.
+    - Added CAN support.
+- Made these changes for POSIX boards:
+
+  - nrf52\_bsim:
+
+    - Has been reworked to use the native simulator as its runner.
+    - Multiple HW models improvements and fixes. GPIO & GPIOTE peripherals added.
+- Removed support for these ARC boards:
+- Removed support for these ARM boards:
+- Removed support for these ARM64 boards:
+- Removed support for these RISC-V boards:
+- Removed support for these X86 boards:
+- Removed support for these Xtensa boards:
+
+  - Removed `esp32`. Use `esp32_devkitc_*` instead.
+- Made these changes in other boards:
+- Added support for these following shields:
+
+  - Adafruit PiCowbell CAN Bus Shield for Pico
+  - Arduino UNO click shield
+  - G1120B0MIPI MIPI Display
+  - MikroElektronika MCP2518FD Click shield (CAN-FD)
+  - RK055HDMIPI4M MIPI Display
+  - RK055HDMIPI4MA0 MIPI Display
+  - Semtech SX1276MB1MAS LoRa Shield
+
+## Build system and infrastructure
+
+- SCA (Static Code Analysis)
+
+  - Added support for CodeChecker
+- Twister now supports `required_snippets` in testsuite .yml files, this can
+  be used to include a snippet when a test is ran (and exclude any boards from
+  running that the snippet cannot be applied to).
+- Interrupts
+
+  - Added support for shared interrupts
+- Added support for setting MCUboot encryption key in sysbuild which is then
+  propagated to the bootloader and target images to automatically create
+  encrypted updates.
+- Build time priority checking: enable build time priority checking by default.
+  This fails the build if the initialization sequence in the final ELF file
+  does not match the devicetree hierarchy. It can be turned off by disabling
+  the [`CONFIG_CHECK_INIT_PRIORITIES`](../kconfig.md#CONFIG_CHECK_INIT_PRIORITIES "CONFIG_CHECK_INIT_PRIORITIES") option.
+- Added a new `initlevels` target for printing the final device and
+  [`SYS_INIT`](../doxygen/html/group__sys__init.md#gaf507cc0613add8113c41896bd631254f) initialization sequence from the final ELF file.
+- Reworked syscall code generations so that not all marshalling functions
+  will be included in the final binary. Syscalls associated with disabled
+  subsystems no longer have their marshalling functions generated.
+- Partially enabled compiler warning about shadow variables for subset of
+  in-tree code. Out-of-tree code needs to be patched before we can fully
+  enable shadow variable warnings.
+
+## Drivers and Sensors
+
+- ADC
+
+  - Added support for STM32F0 HSI14 clock (dedicated ADC clock)
+  - Added support for STM32 ADC source clock and prescaler. On STM32F1 and STM32F3
+    series, ADC prescaler can be configured using dedicated RCC Clock Controller
+    option.
+  - Added support for the ADC sequencer for all STM32 series (except F1)
+  - Fixed STM32F4 ADC temperature and Vbat measurement.
+  - Added driver for TI ADS1112.
+  - Added driver for TI TLA2021.
+  - Added driver for Gecko ADC.
+  - Added driver for NXP S32 ADC SAR.
+  - Added driver for MAX1125x family.
+  - Added driver for MAX11102-MAX1117.
+- CAN
+
+  - Added support for TI TCAN4x5x CAN-FD controller with integrated transceiver
+    ([`ti,tcan4x5x`](../build/dts/api/bindings/can/ti%2Ctcan4x5x.md#std-dtcompatible-ti-tcan4x5x)).
+  - Added support for Microchip MCP251xFD CAN-FD controller ([`microchip,mcp251xfd`](../build/dts/api/bindings/can/microchip%2Cmcp251xfd.md#std-dtcompatible-microchip-mcp251xfd)).
+  - Added support for CAN statistics to the Bosch M\_CAN controller driver backend.
+  - Switched the NXP S32 CANXL driver to use clock control for the CAN clock instead of hard-coding
+    a CAN clock frequency in the devicetree.
+- Clock control
+
+  - Added support for Nuvoton NuMaker M46x
+- Counter
+
+  - Added [`CONFIG_COUNTER_RTC_STM32_SUBSECONDS`](../kconfig.md#CONFIG_COUNTER_RTC_STM32_SUBSECONDS "CONFIG_COUNTER_RTC_STM32_SUBSECONDS") to enable subsecond as
+    the basic time tick on STM32 RTC based counter driver.
+  - Added support for Raspberry Pi Pico Timer
+- DAC
+
+  - Added support for Analog Devices AD56xx
+  - Added support for NXP lpcxpresso55s36 (LPDAC)
+- Disk
+
+  - Ramdisk driver is now configured using devicetree, and supports multiple
+    instances
+- Display
+
+  - Added support for ST7735S (in ST7735R driver)
+- DMA
+
+  - Added support for NXP S32K to the eDMA driver
+  - Added support for NXP SMARTDMA
+  - Added support for NXP Pixel Pipeline (PXP) for display acceleration
+  - Added support for DMA get\_status() to the SAM XDMAC driver
+  - Fixes for Intel HDA driver for L1 entry/exit, explicit SCS (sample container) settings
+  - Fixes for STM32U5 enables error interrupts, fixes block size and data size configuration
+  - Better Kconfig options for tuning static memory usage in NXP LPC driver
+- EEPROM
+
+  - Added support for Fujitsu MB85RCxx series I2C FRAM ([`fujitsu,mb85rcxx`](../build/dts/api/bindings/mtd/fujitsu%2Cmb85rcxx.md#std-dtcompatible-fujitsu-mb85rcxx)).
+- Entropy
+
+  - Added a requirement for `entropy_get_entropy()` to be thread-safe because
+    of random subsystem needs.
+- Ethernet
+
+  - Added [`CONFIG_ETH_NATIVE_POSIX_RX_TIMEOUT`](../kconfig.md#CONFIG_ETH_NATIVE_POSIX_RX_TIMEOUT "CONFIG_ETH_NATIVE_POSIX_RX_TIMEOUT") to set rx timeout for native posix.
+  - Added support for adin2111.
+  - Added support for NXP S32 GMAC.
+  - Added support for promiscuous mode in eth\_smsc91x.
+  - Added support for STM32H5X SOC series.
+  - Added support for MDIO Clause 45 APIs.
+  - Added support for YD-ESP32 board Ethernet.
+  - Fixed stm32 to generate more unique MAC address by using device id as a base for the MAC.
+  - Fixed mcux to increase the PTP timestamp accuracy from 20us to 200ns.
+  - Fixed Ethernet max header size when using VLAN.
+  - Removed the `mdio` DT property. Please use [`DT_INST_BUS()`](../doxygen/html/group__devicetree-inst.md#gacecb46743315738dcd9a0765ea78276a) in the driver instead.
+  - Reworked the device node hierarchy in smsc91x.
+  - Renamed the phy-dev property with phy-handle to match the Linux ethernet-controller binding
+    and move it up to ethernet.yaml so that it can be used by other drivers.
+  - Updated Ethernet PHY to use `reg` property in DT bindings.
+  - Updated driver DT bindings to use `ethernet-phy` devicetree node name consistently.
+  - Updated esp32 and sam-gmac DT so that the phy is pointed by a phandle rather than
+    a child node, this makes the phy device a child of mdio.
+- Flash
+
+  - Introduce npcx flash driver that supports two or more spi nor flashes via a
+    single Flash Interface Unit (FIU) module and Direct Read Access (DRA) mode
+    for better performance.
+  - Added support for Nuvoton NuMaker M46x embedded flash
+  - STM32 QSPI driver now supports Jedec SFDP parameter reading.
+  - STM32 OSPI driver now supports both Low and High ports of IO manager.
+- GPIO
+
+  - Added support for Nuvoton NuMaker M46x
+- I2C
+
+  - STM32 V1 driver now supports large transactions (more than 256 bytes chunks)
+  - STM32 V2 driver now supports 10-bit addressing.
+  - I2C devices can now be used as wakeup source from STOP modes on STM32.
+  - Fix long ISR execution in Silicon Labs I2C target callback
+  - Fail gracefully on DMA max size for nRF52 devices in the TWIM driver
+  - Added support for Intel LPSS DMA usage in the DesignWare driver
+  - Added filtering of dumped messages for debugging using DeviceTree
+  - Added target mode to Silicon Labs Gecko driver
+  - Added Intel SEDI driver
+  - Added Infineon XMC4 driver
+  - Added Microchip PolarFire SoC driver
+  - Added Ambiq driver for Apollo4 SoCs
+- I2S
+
+  - Fixed handling of the PCM data format in the NXP MCUX driver.
+- I3C
+
+  - `i3c_cdns`:
+
+    - Fixed build error when [`CONFIG_I3C_USE_IBI`](../kconfig.md#CONFIG_I3C_USE_IBI "CONFIG_I3C_USE_IBI") is disabled.
+    - Fixed transfer issue when controller is busy. Now wait for controller to
+      idle before proceeding with another transfer.
+- IEEE 802.15.4
+
+  - A new mandatory method attr\_get() was introduced into ieee802154\_radio\_api.
+    Drivers need to implement at least
+    IEEE802154\_ATTR\_PHY\_SUPPORTED\_CHANNEL\_PAGES and
+    IEEE802154\_ATTR\_PHY\_SUPPORTED\_CHANNEL\_RANGES.
+  - The hardware capabilities IEEE802154\_HW\_2\_4\_GHZ and IEEE802154\_HW\_SUB\_GHZ
+    were removed as they were not aligned with the standard and some already
+    existing drivers couldn’t properly express their channel page and channel
+    range (notably SUN FSK and HRP UWB drivers). The capabilities were replaced
+    by the standard conforming new driver attribute
+    IEEE802154\_ATTR\_PHY\_SUPPORTED\_CHANNEL\_PAGES that fits all in-tree drivers.
+  - The method get\_subg\_channel\_count() was removed from ieee802154\_radio\_api.
+    This method could not properly express the channel range of existing drivers
+    (notably SUN FSK drivers that implement channel pages > 0 and may not have
+    zero-based channel ranges or UWB drivers that could not be represented at
+    all). The method was replaced by the new driver attribute
+    IEEE802154\_ATTR\_PHY\_SUPPORTED\_CHANNEL\_RANGES that fits all in-tree drivers.
+- Interrupt Controller
+
+  - GIC: Architecture version selection is now based on the device tree
+- Input
+
+  - New drivers: [`gpio-qdec`](../build/dts/api/bindings/input/gpio-qdec.md#std-dtcompatible-gpio-qdec), [`st,stmpe811`](../build/dts/api/bindings/input/st%2Cstmpe811.md#std-dtcompatible-st-stmpe811).
+  - Drivers converted from Kscan to Input: [`goodix,gt911`](../build/dts/api/bindings/input/goodix%2Cgt911.md#std-dtcompatible-goodix-gt911)
+    [`xptek,xpt2046`](../build/dts/api/bindings/input/xptek%2Cxpt2046.md#std-dtcompatible-xptek-xpt2046) [`hynitron,cst816s`](../build/dts/api/bindings/input/hynitron%2Ccst816s.md#std-dtcompatible-hynitron-cst816s)
+    [`microchip,cap1203`](../build/dts/api/bindings/input/microchip%2Ccap1203.md#std-dtcompatible-microchip-cap1203).
+  - Added a Kconfig option for dumping all events to the console
+    [`CONFIG_INPUT_EVENT_DUMP`](../kconfig.md#CONFIG_INPUT_EVENT_DUMP "CONFIG_INPUT_EVENT_DUMP") and new shell commands
+    [`CONFIG_INPUT_SHELL`](../kconfig.md#CONFIG_INPUT_SHELL "CONFIG_INPUT_SHELL").
+  - Merged `zephyr,gpio-keys` into [`gpio-keys`](../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) and added
+    `zephyr,code` codes to all in-tree board `gpio-keys` nodes.
+  - Renamed the callback definition macro from `INPUT_LISTENER_CB_DEFINE` to
+    [`INPUT_CALLBACK_DEFINE`](../doxygen/html/group__input__interface.md#gac986cdf392f9aa0a771c8e4e92c479a3).
+- PCIE
+
+  - Added support in shell to display PCIe capabilities.
+  - Added virtual channel support.
+  - Added kconfig [`CONFIG_PCIE_INIT_PRIORITY`](../kconfig.md#CONFIG_PCIE_INIT_PRIORITY "CONFIG_PCIE_INIT_PRIORITY") to specify
+    initialization priority for host controller.
+  - Added support to get IRQ from ACPI PCI Routing Table (PRT).
+- ACPI
+
+  - Adopted the ACPICA library as a new module to further enhance ACPI support.
+- Pin control
+
+  - Added support for Nuvoton NuMaker M46x
+- PWM
+
+  - Added 4 channels capture on STM32 PWM driver.
+  - Added driver for Intel Blinky PWM.
+  - Added driver for MAX31790.
+  - Added driver for Infineon XMC4XXX CCU4.
+  - Added driver for Infineon XMC4XXX CCU8.
+  - Added MCUX CTimer based PWM driver.
+  - Added PWM driver based on TI CC13xx/CC26xx GPT timer.
+  - Reworked the pwm\_nrf5\_sw driver so that it can be used also on nRF53 and
+    nRF91 Series. Consequently, the driver was renamed to pwm\_nrf\_sw.
+  - Added driver for Nuvoton NuMaker family.
+  - Added PWM driver based on NXP S32 EMIOS peripheral.
+- Regulators
+
+  - Added support for GPIO-controlled voltage regulator
+  - Added support for AXP192 PMIC
+  - Added support for NXP VREF regulator
+  - Fixed regulators can now specify their operating voltage
+  - PFM mode is now support for nPM1300
+  - Added new API to configure “ship” mode
+  - Regulator shell allows to configure DVS modes
+- Reset
+
+  - Added support for Nuvoton NuMaker M46x
+- Retained memory
+
+  - Added support for allowing mutex support to be forcibly disabled with
+    [`CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE`](../kconfig.md#CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE "CONFIG_RETAINED_MEM_MUTEX_FORCE_DISABLE").
+  - Fixed issue with user mode support not working.
+- RTC
+
+  - Added support for STM32 RTC API driver. This driver is not compatible with
+    the use of RTC based implementation of COUNTER API.
+- SDHC
+
+  - Added driver for EMMC Host controller present on Alder lake platforms
+  - Added driver for Atmel HSMCI controller present on SAM4E MCU series
+- Sensor
+
+  - Reworked the [`ti,bq274xx`](../build/dts/api/bindings/sensor/ti%2Cbq274xx.md#std-dtcompatible-ti-bq274xx) to add `BQ27427` support, fixed
+    units for capacity and power channels.
+  - Added ADC current sense amplifier and voltage sensor drivers.
+  - Added ADI LTC2990 voltage, current, and temperature sensor driver.
+  - Added AMS TSL2540 ambient light sensor driver.
+  - Added Bosch BMI08x accelerometer/gyroscope driver.
+  - Added DFRobot A01NYUB distance sensor driver.
+  - Added Fintek F75303 temperature sensor driver.
+  - Added Isentek IST8310 magnetometer driver.
+  - Added Microchip TCN75A temperature sensor driver.
+  - Added NXP TEMPMON driver.
+  - Added Seeed HM330X dust sensor driver.
+  - Added TI TMAG5170 3D Hall sensor driver.
+  - Added power management support to BMM150, LM75, and Microchip tachometer
+    drivers.
+  - Added trigger support to the BMM150 magnetometer driver.
+  - Added tap trigger support to the LIS2DH accelerometer driver.
+  - Updated ST sensor drivers to use STMEMSC HAL i/f v2.3
+  - Updated the decoder APIs to vertically decode raw sensor data.
+  - Various fixes and enhancements in the NTC thermistor and INA23x drivers.
+- Serial
+
+  - Added support for Nuvoton NuMaker M46x
+  - NS16550: Reworked how device initialization macros.
+
+    - `CONFIG_UART_NS16550_ACCESS_IOPORT` and `CONFIG_UART_NS16550_SIMULT_ACCESS`
+      are removed. For UART using IO port access, add `io-mapped` property to
+      device tree node.
+  - Added async support for ESP32S3.
+  - Added support for serial TTY under `native_posix`.
+  - Added support for UART on Efinix Sapphire SoCs.
+  - Added Intel SEDI UART driver.
+  - Added support for UART on BCM2711.
+  - `uart_stm32`:
+
+    - Added RS485 support.
+    - Added wide data support.
+  - `uart_pl011`: added support for Ambiq SoCs.
+  - `serial_test`: added support for interrupt and async APIs.
+  - `uart_emul`: added support for interrupt API.
+  - `uart_rpi_pico`: fixed handling Modbus DE-RE signal
+- SPI
+
+  - Remove npcx spi driver implemented by Flash Interface Unit (FIU) module.
+  - Added support for Raspberry Pi Pico PIO based SPI.
+- Timer
+
+  - The TI CC13xx/26xx system clock timer compatible was changed from
+    `ti,cc13xx-cc26xx-rtc` to [`ti,cc13xx-cc26xx-rtc-timer`](../build/dts/api/bindings/rtc/ti%2Ccc13xx-cc26xx-rtc-timer.md#std-dtcompatible-ti-cc13xx-cc26xx-rtc-timer)
+    and the corresponding Kconfig option from `CC13X2_CC26X2_RTC_TIMER`
+    to `CC13XX_CC26XX_RTC_TIMER` for improved consistency and
+    extensibility. No action is required unless the internal timer was modified.
+- USB
+
+  - Added UDC driver for STM32 based MCU, relying on HAL/PCD. This driver is compatible
+    with UDC API (experimental).
+  - Added support for STM32H5 series on USB driver.
+- WiFi
+
+  - Increased esp32 default network (TCP workq, RX and mgmt event) stack sizes to 2048 bytes.
+  - Reduced the RAM usage for esp32s2\_saola in Wi-Fi samples.
+  - Fixed undefined declarations in winc1500.
+  - Fixed SPI buffer length in eswifi.
+  - Fixed esp32 data sending and channel selection in AP mode.
+  - Fixed esp\_at driver init and network interface dormant state setting.
+
+## Networking
+
+- CoAP:
+
+  - Optimized CoAP client library to use only a single thread internally.
+  - Converted CoAP client library to use `zsock_*` API internally.
+  - Fixed a bug in CoAP client library, which resulted in an incorrect
+    retransmission timeout calculation.
+  - Use 64 bit timer values for calculating transmission timeouts. This fixes potential problems for
+    devices that stay on for more than 49 days when the 32 bit uptime counter might roll over and
+    cause CoAP packets to not timeout at all on this event.
+  - API documentation improvements.
+  - Added new API functions:
+
+    - [`coap_has_descriptive_block_option()`](../doxygen/html/group__coap.md#gaabdfa8cf28cc2c3a14ae0af5fa7e7212)
+    - [`coap_remove_descriptive_block_option()`](../doxygen/html/group__coap.md#ga941ee9d68f1a628755aa79c249cbae58)
+    - [`coap_packet_remove_option()`](../doxygen/html/group__coap.md#gaca300a216781d360d2cd64e8e9f1ae8f)
+    - [`coap_packet_set_path()`](../doxygen/html/group__coap.md#gab8f9e9cdfa20920d5d25fb1507a2286d)
+- Connection Manager:
+
+  - Added support for auto-connect and auto-down behaviors (controlled by
+    `CONN_MGR_IF_NO_AUTO_CONNECT` and `CONN_MGR_IF_NO_AUTO_DOWN`
+    flags).
+  - Split Connection Manager APIs into separate header files.
+  - Extended Connection Manager documentation to cover new functionalities.
+- DHCP:
+
+  - Added support for DHCPv4 unicast replies processing.
+  - Added support for DHCPv6 protocol.
+- Ethernet:
+
+  - Fixed ARP queueing so that the queued network packet is sent immediately
+    instead of queued 2nd time in the core network stack.
+- gPTP:
+
+  - Added support for detecting gPTP packets that use the default multicast destination address.
+  - Fixed Announce and Follow Up message handling.
+- ICMP:
+
+  - Fixed ICMPv6 error message type check.
+  - Reworked ICMP callback registration and handling, which allows to register
+    multiple handlers for the same ICMP message.
+  - Introduced an API to send ICMP Echo Request (ping).
+  - Added possibility to register offloaded ICMP ping handlers.
+  - Added support for setting packet priority for ping.
+- IPv6:
+
+  - Made sure that ongoing DAD procedure is cancelled when IPv6 address is removed.
+  - Fixed a bug, where Solicited-Node multicast address could be removed while
+    still in use.
+- LwM2M:
+
+  - Added support for tickless mode. This removes the 500 ms timeout from the socket loop
+    so the engine does not constantly wake up the CPU. This can be enabled by
+    [`CONFIG_LWM2M_TICKLESS`](../kconfig.md#CONFIG_LWM2M_TICKLESS "CONFIG_LWM2M_TICKLESS").
+  - Added new `LWM2M_RD_CLIENT_EVENT_DEREGISTER` event.
+  - Block-wise sending now supports LwM2M read and composite-read operations as well.
+    When [`CONFIG_LWM2M_COAP_BLOCK_TRANSFER`](../kconfig.md#CONFIG_LWM2M_COAP_BLOCK_TRANSFER "CONFIG_LWM2M_COAP_BLOCK_TRANSFER") is enabled, any content that is larger
+    than [`CONFIG_LWM2M_COAP_MAX_MSG_SIZE`](../kconfig.md#CONFIG_LWM2M_COAP_MAX_MSG_SIZE "CONFIG_LWM2M_COAP_MAX_MSG_SIZE") is split into a block-wise transfer.
+  - Block-wise transfers don’t require tokens to match anymore as this was not in line
+    with CoAP specification (CoAP doesn’t require tokens reuse).
+  - Various fixes to bootstrap. Now client ensures that Bootstrap-Finish command is sent,
+    before closing the DTLS pipe. Also allows Bootstrap server to close the DTLS pipe.
+    Added timeout when waiting for bootstrap commands.
+  - Added support for X509 certificates.
+  - Various fixes to string handling. Allow setting string to zero length.
+    Ensure string termination when using string operations on opaque resources.
+  - Added support for Connection Monitoring object version 1.3.
+  - Added protection for Security object to prevent read/writes by the server.
+  - Fixed a possible notification stall in case of observation token change.
+  - Added new shell command, `lwm2m create`, which allows to create LwM2M object instances.
+  - Added LwM2M interoperability test-suite against Leshan server.
+  - API documentation improvements.
+  - Several other minor fixes and improvements.
+- Misc:
+
+  - Time and timestamps in the network subsystem, PTP and IEEE 802.15.4
+    were more precisely specified and all in-tree call sites updated accordingly.
+    Fields for timed TX and TX/RX timestamps have been consolidated. See
+    [`net_time_t`](../doxygen/html/group__net__time.md#gaf1da332e3909fca30de991cc2f950e56), [`net_ptp_time`](../doxygen/html/structnet__ptp__time.md), [`ieee802154_config`](../doxygen/html/structieee802154__config.md),
+    [`ieee802154_radio_api`](../doxygen/html/structieee802154__radio__api.md) and [`net_pkt`](../doxygen/html/structnet__pkt.md) for extensive
+    documentation. As this is largely an internal API, existing applications will
+    most probably continue to work unchanged.
+  - Added support for additional net\_pkt filter hooks:
+
+    - [`CONFIG_NET_PKT_FILTER_IPV4_HOOK`](../kconfig.md#CONFIG_NET_PKT_FILTER_IPV4_HOOK "CONFIG_NET_PKT_FILTER_IPV4_HOOK")
+    - [`CONFIG_NET_PKT_FILTER_IPV6_HOOK`](../kconfig.md#CONFIG_NET_PKT_FILTER_IPV6_HOOK "CONFIG_NET_PKT_FILTER_IPV6_HOOK")
+    - [`CONFIG_NET_PKT_FILTER_LOCAL_IN_HOOK`](../kconfig.md#CONFIG_NET_PKT_FILTER_LOCAL_IN_HOOK "CONFIG_NET_PKT_FILTER_LOCAL_IN_HOOK")
+  - Reworked several networking components to use timepoint API.
+  - Added API functions facilitate going through all IPv4/IPv6 registered on an
+    interface ([`net_if_ipv4_addr_foreach()`](../doxygen/html/group__net__if.md#gaae71be476e27c178ebb21b0f183c2825), [`net_if_ipv6_addr_foreach()`](../doxygen/html/group__net__if.md#ga5ac646ad7fda0fa48e78c15b4ca52d50)).
+  - `NET_EVENT_IPV6_PREFIX_ADD` and `NET_EVENT_IPV6_PREFIX_DEL` events now provide
+    more detailed information about the prefix ([`net_event_ipv6_prefix`](../doxygen/html/structnet__event__ipv6__prefix.md)).
+  - General cleanup of the shadowed variables across the networking subsystem.
+  - Added `qemu_cortex_a53` networking support.
+  - Introduced new modem subsystem.
+  - Added new [Cellular modem](../samples/net/cellular_modem/README.md#cellular-modem "Use a cellular modem to communicate with a UDP server.") sample.
+  - Added support for network interface names (instead of reusing underlying device name).
+  - Removed support for Google Cloud IoT sample due to service retirement.
+  - Fixed a bug where packets passed in promiscuous mode could have been modified
+    by L2 in certain cases.
+  - Added support for setting syslog server (used for networking log backend)
+    IP address at runtime.
+  - Removed no longer used `queued` and `sent` net\_pkt flags.
+  - Added support for binding zperf TCP/UDP server to a specific IP address.
+- MQTT-SN:
+
+  - Improved thread safety of internal buffers allocation.
+  - API documentation improvements.
+- OpenThread:
+
+  - Reworked `otPlatEntropyGet()` to use [`sys_csrand_get()`](../doxygen/html/group__random__api.md#ga98f123f216b5df6e27eb980d6e5dec86) internally.
+  - Introduced `ieee802154_radio_openthread.h` radio driver extension interface
+    specific for OpenThread. Added new transmit mode, specific to OpenThread,
+    `IEEE802154_OPENTHREAD_TX_MODE_TXTIME_MULTIPLE_CCA`.
+- PPP:
+
+  - Fixed PPP L2 usage of the network interface carrier state.
+  - Made PPP L2 thread priority configurable ([`CONFIG_NET_L2_PPP_THREAD_PRIO`](../kconfig.md#CONFIG_NET_L2_PPP_THREAD_PRIO "CONFIG_NET_L2_PPP_THREAD_PRIO")).
+  - Moved PPP L2 out of experimental stage.
+  - Prevent PPP connection reestablish when carrier is down.
+- Sockets:
+
+  - Added support for statically allocated socketpairs (in case no heap is available).
+  - Made send timeout configurable ([`CONFIG_NET_SOCKET_MAX_SEND_WAIT`](../kconfig.md#CONFIG_NET_SOCKET_MAX_SEND_WAIT "CONFIG_NET_SOCKET_MAX_SEND_WAIT")).
+  - Added support for `FIONREAD` and `FIONBIO` [`ioctl()`](../doxygen/html/ioctl_8h.md#a1487536105f7a596481bf6bfa8de99f6) commands.
+  - Fixed input filtering for connected datagram sockets.
+  - Fixed [`getsockname()`](../doxygen/html/group__bsd__sockets.md#gaa64d4aea83941c69d5405bd2f2de7a72) operation on unconnected sockets.
+  - Added new secure socket options for DTLS Connection ID support:
+
+    - [`TLS_DTLS_CID`](../doxygen/html/group__secure__sockets__options.md#ga4385846c759ff7f4cce0c25c580f5680)
+    - [`TLS_DTLS_CID_VALUE`](../doxygen/html/group__secure__sockets__options.md#gacfc6c8d0ad25e4a737d6589a9d8ef9e1)
+    - [`TLS_DTLS_PEER_CID_VALUE`](../doxygen/html/group__secure__sockets__options.md#ga51e9817380c756c30f7f6c93fb125d0d)
+    - [`TLS_DTLS_CID_STATUS`](../doxygen/html/group__secure__sockets__options.md#ga7892e0bf8e4a3728db770b5440b2f44c)
+  - Added support for [`SO_REUSEADDR`](../doxygen/html/group__bsd__sockets.md#ga5589f74fada0d0cd47bd6ea8741a58ee) and [`SO_REUSEPORT`](../doxygen/html/group__bsd__sockets.md#ga36151618368affd148255e77785e365e) socket options.
+- TCP:
+
+  - Fixed potential stall in data retransmission, when data was only partially acknowledged.
+  - Made TCP work queue priority configurable ([`CONFIG_NET_TCP_WORKER_PRIO`](../kconfig.md#CONFIG_NET_TCP_WORKER_PRIO "CONFIG_NET_TCP_WORKER_PRIO")).
+  - Added support for TCP new Reno collision avoidance algorithm.
+  - Fixed source address selection on bound sockets.
+  - Fixed possible memory leak in case listening socket was closed during active handshake.
+  - Fixed RST packet handling during handshake.
+  - Refactored the code responsible for connection teardown to fix found bugs and
+    simplify future maintenance.
+- TFTP:
+
+  - Added new [TFTP client](../samples/net/tftp_client/README.md#tftp-client "Use the TFTP client library to get/put files from/to a TFTP server.") sample.
+  - API documentation improvements.
+- WebSocket
+
+  - WebSocket library no longer closes underlying TCP socket automatically on disconnect.
+    This aligns with the connect behavior, where the WebSocket library expects an already
+    connected TCP socket.
+- Wi-Fi:
+
+  - Added Passive scan support.
+  - The Wi-Fi scan API updated with Wi-Fi scan parameter to allow scan mode selection.
+  - Updated TWT handling.
+  - Added support for generic network manager API.
+  - Added support for Wi-Fi mode setting and selection.
+  - Added user input validation for SSID and PSK in Wi-Fi shell.
+  - Added scan extension for specifying channels, limiting scan results, filtering SSIDs,
+    setting active and passive channel dwell times and frequency bands.
+
+## USB
+
+- USB device HID
+  \* Kconfig option USB\_HID\_PROTOCOL\_CODE, deprecated in v2.6, is finally removed.
+
+## Devicetree
+
+### API
+
+New general-purpose macros:
+
+- [`DT_REG_ADDR_U64`](../doxygen/html/group__devicetree-reg-prop.md#gaf77354db552821a865b93f709b25e410)
+- [`DT_REG_ADDR_BY_NAME_U64`](../doxygen/html/group__devicetree-reg-prop.md#gaf03f1b5518ff146d6de986f867fcc2c8)
+- [`DT_INST_REG_ADDR_BY_NAME_U64`](../doxygen/html/group__devicetree-inst.md#ga8af83c4c65e607b93aa60a690295d625)
+- [`DT_INST_REG_ADDR_U64`](../doxygen/html/group__devicetree-inst.md#gaba47dcabd8754eda87e35efd7289f976)
+- [`DT_FOREACH_STATUS_OKAY_NODE_VARGS`](../doxygen/html/group__devicetree-generic-foreach.md#ga9aa3ee2b90a4ec30621597f4d1448c51)
+- [`DT_FOREACH_NODE_VARGS`](../doxygen/html/group__devicetree-generic-foreach.md#ga4e708120bf839568b1215a6c21c54eed)
+- [`DT_HAS_COMPAT_ON_BUS_STATUS_OKAY`](../doxygen/html/group__devicetree-inst.md#ga1727af4beed08b248a98ad68bc5f1027)
+
+New special-purpose macros introduced for dependency ordinals:
+
+- [`DT_DEP_ORD_STR_SORTABLE`](../doxygen/html/group__devicetree-dep-ord.md#ga6c31d58b47d826f1a1de1e5d0044e2f7)
+
+New general purpose macros introduced for fixed flash partitions:
+
+- [`DT_MEM_FROM_FIXED_PARTITION`](../doxygen/html/group__devicetree-fixed-partition.md#gae89b5f21fecae407f3b1baf231e4dba5)
+- [`DT_FIXED_PARTITION_ADDR`](../doxygen/html/group__devicetree-fixed-partition.md#gac8be7ec2cddde3f76f0f096bd3c63546)
+
+### Bindings
+
+- Generic or vendor-independent:
+
+  - New bindings:
+
+    - [`current-sense-amplifier`](../build/dts/api/bindings/iio/afe/current-sense-amplifier.md#std-dtcompatible-current-sense-amplifier)
+    - [`current-sense-shunt`](../build/dts/api/bindings/iio/afe/current-sense-shunt.md#std-dtcompatible-current-sense-shunt)
+    - [`gpio-qdec`](../build/dts/api/bindings/input/gpio-qdec.md#std-dtcompatible-gpio-qdec)
+    - [`regulator-gpio`](../build/dts/api/bindings/regulator/regulator-gpio.md#std-dtcompatible-regulator-gpio)
+    - [`usb-audio-feature-volume`](../build/dts/api/bindings/usb/usb-audio-feature-volume.md#std-dtcompatible-usb-audio-feature-volume)
+  - Modified bindings:
+
+    - CAN (Controller Area Network) controller bindings:
+
+      > - property `phase-seg1-data` deprecation status changed from False to True
+      > - property `phase-seg1` deprecation status changed from False to True
+      > - property `phase-seg2-data` deprecation status changed from False to True
+      > - property `phase-seg2` deprecation status changed from False to True
+      > - property `prop-seg-data` deprecation status changed from False to True
+      > - property `prop-seg` deprecation status changed from False to True
+      > - property `sjw-data` default value changed from None to 1
+      > - property `sjw-data` deprecation status changed from False to True
+      > - property `sjw` default value changed from None to 1
+      > - property `sjw` deprecation status changed from False to True
+    - Ethernet controller bindings: new `phy-handle` property (in some
+      bindings, this was renamed from `phy-dev`), matching the Linux
+      ethernet-controller binding.
+    - The `riscv,isa` property used by RISC-V CPU bindings no longer has an
+      `enum` value.
+    - [`neorv32-cpu`](../build/dts/api/bindings/cpu/neorv32-cpu.md#std-dtcompatible-neorv32-cpu):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+    - [`regulator-fixed`](../build/dts/api/bindings/regulator/regulator-fixed.md#std-dtcompatible-regulator-fixed):
+
+      > - new property: `regulator-min-microvolt`
+      > - new property: `regulator-max-microvolt`
+      > - property `enable-gpios` is no longer required
+    - [`ethernet-phy`](../build/dts/api/bindings/ethernet/ethernet-phy.md#std-dtcompatible-ethernet-phy):
+
+      > - removed property: `address`
+      > - removed property: `mdio`
+      > - property `reg` is now required
+    - [`usb-audio-hs`](../build/dts/api/bindings/usb/usb-audio-hs.md#std-dtcompatible-usb-audio-hs) and [`usb-audio-hp`](../build/dts/api/bindings/usb/usb-audio-hp.md#std-dtcompatible-usb-audio-hp):
+
+      > - new property: `volume-max`
+      > - new property: `volume-min`
+      > - new property: `volume-res`
+      > - new property: `status`
+      > - new property: `compatible`
+      > - new property: `reg`
+      > - new property: `reg-names`
+      > - new property: `interrupts`
+      > - new property: `interrupts-extended`
+      > - new property: `interrupt-names`
+      > - new property: `interrupt-parent`
+      > - new property: `label`
+      > - new property: `clocks`
+      > - new property: `clock-names`
+      > - new property: `#address-cells`
+      > - new property: `#size-cells`
+      > - new property: `dmas`
+      > - new property: `dma-names`
+      > - new property: `io-channels`
+      > - new property: `io-channel-names`
+      > - new property: `mboxes`
+      > - new property: `mbox-names`
+      > - new property: `wakeup-source`
+      > - new property: `power-domain`
+      > - new property: `zephyr,pm-device-runtime-auto`
+    - [`ntc-thermistor-generic`](../build/dts/api/bindings/sensor/ntc-thermistor-generic.md#std-dtcompatible-ntc-thermistor-generic):
+
+      > - removed property: `r25-ohm`
+    - [`ns16550`](../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550):
+
+      > - new property: `resets`
+      > - new property: `reset-names`
+    - [`fixed-clock`](../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock):
+
+      > - removed property: `clocks`
+    - All CPU bindings got a new `enable-method` property. [pull request
+      60210](https://github.com/zephyrproject-rtos/zephyr/pull/60210) for
+      details.
+- Analog Devices, Inc. (adi):
+
+  - New bindings:
+
+    - [`adi,ad5628`](../build/dts/api/bindings/dac/adi%2Cad5628.md#std-dtcompatible-adi-ad5628)
+    - [`adi,ad5648`](../build/dts/api/bindings/dac/adi%2Cad5648.md#std-dtcompatible-adi-ad5648)
+    - [`adi,ad5668`](../build/dts/api/bindings/dac/adi%2Cad5668.md#std-dtcompatible-adi-ad5668)
+    - [`adi,ad5672`](../build/dts/api/bindings/dac/adi%2Cad5672.md#std-dtcompatible-adi-ad5672)
+    - [`adi,ad5674`](../build/dts/api/bindings/dac/adi%2Cad5674.md#std-dtcompatible-adi-ad5674)
+    - [`adi,ad5676`](../build/dts/api/bindings/dac/adi%2Cad5676.md#std-dtcompatible-adi-ad5676)
+    - [`adi,ad5679`](../build/dts/api/bindings/dac/adi%2Cad5679.md#std-dtcompatible-adi-ad5679)
+    - [`adi,ad5684`](../build/dts/api/bindings/dac/adi%2Cad5684.md#std-dtcompatible-adi-ad5684)
+    - [`adi,ad5686`](../build/dts/api/bindings/dac/adi%2Cad5686.md#std-dtcompatible-adi-ad5686)
+    - [`adi,ad5687`](../build/dts/api/bindings/dac/adi%2Cad5687.md#std-dtcompatible-adi-ad5687)
+    - [`adi,ad5689`](../build/dts/api/bindings/dac/adi%2Cad5689.md#std-dtcompatible-adi-ad5689)
+    - [`adi,adin1110`](../build/dts/api/bindings/ethernet/adi%2Cadin1110.md#std-dtcompatible-adi-adin1110)
+    - [`adi,adltc2990`](../build/dts/api/bindings/sensor/adi%2Cadltc2990.md#std-dtcompatible-adi-adltc2990)
+  - Modified bindings:
+
+    - [`adi,adin2111-mdio`](../build/dts/api/bindings/mdio/adi%2Cadin2111-mdio.md#std-dtcompatible-adi-adin2111-mdio) (on adin2111 bus):
+
+      > - removed property: `protocol`
+- Altera Corp. (altr):
+
+  - New bindings:
+
+    - [`altr,pio-1.0`](../build/dts/api/bindings/gpio/altr%2Cpio-1.0.md#std-dtcompatible-altr-pio-1.0)
+- Ambiq Micro, Inc. (ambiq):
+
+  - New bindings:
+
+    - [`ambiq,am1805`](../build/dts/api/bindings/rtc/ambiq%2Cam1805.md#std-dtcompatible-ambiq-am1805)
+    - [`ambiq,apollo4-pinctrl`](../build/dts/api/bindings/pinctrl/ambiq%2Capollo4-pinctrl.md#std-dtcompatible-ambiq-apollo4-pinctrl)
+    - [`ambiq,counter`](../build/dts/api/bindings/counter/ambiq%2Ccounter.md#std-dtcompatible-ambiq-counter)
+    - [`ambiq,i2c`](../build/dts/api/bindings/i2c/ambiq%2Ci2c.md#std-dtcompatible-ambiq-i2c)
+    - [`ambiq,mspi`](../build/dts/api/bindings/spi/ambiq%2Cmspi.md#std-dtcompatible-ambiq-mspi)
+    - [`ambiq,pwrctrl`](../build/dts/api/bindings/power/ambiq%2Cpwrctrl.md#std-dtcompatible-ambiq-pwrctrl)
+    - [`ambiq,spi`](../build/dts/api/bindings/spi/ambiq%2Cspi.md#std-dtcompatible-ambiq-spi)
+    - [`ambiq,stimer`](../build/dts/api/bindings/timer/ambiq%2Cstimer.md#std-dtcompatible-ambiq-stimer)
+    - [`ambiq,uart`](../build/dts/api/bindings/serial/ambiq%2Cuart.md#std-dtcompatible-ambiq-uart)
+    - [`ambiq,watchdog`](../build/dts/api/bindings/watchdog/ambiq%2Cwatchdog.md#std-dtcompatible-ambiq-watchdog)
+- AMS AG (ams):
+
+  - New bindings:
+
+    - [`ams,tsl2540`](../build/dts/api/bindings/sensor/ams%2Ctsl2540.md#std-dtcompatible-ams-tsl2540)
+- Andes Technology Corporation (andestech):
+
+  - New bindings:
+
+    - [`andestech,atcwdt200`](../build/dts/api/bindings/watchdog/andestech%2Catcwdt200.md#std-dtcompatible-andestech-atcwdt200)
+    - `andestech,plic-sw`
+    - [`andestech,qspi-nor`](../build/dts/api/bindings/mtd/andestech%2Cqspi-nor.md#std-dtcompatible-andestech-qspi-nor)
+- ARM Ltd. (arm):
+
+  - New bindings:
+
+    - [`arm,cortex-a76`](../build/dts/api/bindings/cpu/arm%2Ccortex-a76.md#std-dtcompatible-arm-cortex-a76)
+    - [`arm,gic-v1`](../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v1.md#std-dtcompatible-arm-gic-v1)
+    - [`arm,gic-v2`](../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2)
+    - [`arm,gic-v3`](../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3)
+    - [`arm,psci-1.1`](../build/dts/api/bindings/pm_cpu_ops/arm%2Cpsci-1.1.md#std-dtcompatible-arm-psci-1.1)
+- ASPEED Technology Inc. (aspeed):
+
+  - Modified bindings:
+
+    - [`aspeed,ast10x0-reset`](../build/dts/api/bindings/reset/aspeed%2Cast10x0-reset.md#std-dtcompatible-aspeed-ast10x0-reset):
+
+      > - specifier cells for space “reset” are now named: [‘id’] (old value: None)
+      > - specifier cells for space “clock” are now named: None (old value: [‘reset\_id’])
+- Atmel Corporation (atmel):
+
+  - New bindings:
+
+    - [`atmel,sam-hsmci`](../build/dts/api/bindings/sdhc/atmel%2Csam-hsmci.md#std-dtcompatible-atmel-sam-hsmci)
+  - Modified bindings:
+
+    - [`atmel,sam-mdio`](../build/dts/api/bindings/mdio/atmel%2Csam-mdio.md#std-dtcompatible-atmel-sam-mdio):
+
+      > - removed property: `protocol`
+      > - property `#address-cells` const value changed from None to 1
+      > - property `#size-cells` const value changed from None to 0
+      > - property `#address-cells` is now required
+      > - property `#size-cells` is now required
+- Bosch Sensortec GmbH (bosch):
+
+  - New bindings:
+
+    - [`bosch,bmi08x-accel`](../build/dts/api/compatibles/bosch%2Cbmi08x-accel.md#std-dtcompatible-bosch-bmi08x-accel)
+    - [`bosch,bmi08x-accel`](../build/dts/api/compatibles/bosch%2Cbmi08x-accel.md#std-dtcompatible-bosch-bmi08x-accel)
+    - [`bosch,bmi08x-gyro`](../build/dts/api/compatibles/bosch%2Cbmi08x-gyro.md#std-dtcompatible-bosch-bmi08x-gyro)
+    - [`bosch,bmi08x-gyro`](../build/dts/api/compatibles/bosch%2Cbmi08x-gyro.md#std-dtcompatible-bosch-bmi08x-gyro)
+  - Modified bindings:
+
+    - [`bosch,bmm150`](../build/dts/api/compatibles/bosch%2Cbmm150.md#std-dtcompatible-bosch-bmm150):
+
+      > - new property: `drdy-gpios`
+    - [`bosch,bmi270`](../build/dts/api/compatibles/bosch%2Cbmi270.md#std-dtcompatible-bosch-bmi270):
+
+      > - new property: `irq-gpios`
+- Broadcom Corporation (brcm):
+
+  - New bindings:
+
+    - [`brcm,bcm2711-aux-uart`](../build/dts/api/bindings/serial/brcm%2Cbcm2711-aux-uart.md#std-dtcompatible-brcm-bcm2711-aux-uart)
+- Cadence Design Systems Inc. (cdns):
+
+  - New bindings:
+
+    - [`cdns,tensilica-xtensa-lx3`](../build/dts/api/bindings/cpu/cdns%2Ctensilica-xtensa-lx3.md#std-dtcompatible-cdns-tensilica-xtensa-lx3)
+- DFRobot (dfrobot):
+
+  - New bindings:
+
+    - [`dfrobot,a01nyub`](../build/dts/api/bindings/sensor/dfrobot%2Ca01nyub.md#std-dtcompatible-dfrobot-a01nyub)
+- Efinix Inc (efinix):
+
+  - New bindings:
+
+    - [`efinix,sapphire-gpio`](../build/dts/api/bindings/gpio/efinix%2Csapphire-gpio.md#std-dtcompatible-efinix-sapphire-gpio)
+    - [`efinix,sapphire-timer0`](../build/dts/api/bindings/timer/efinix-sapphire%2Ctimer0.md#std-dtcompatible-efinix-sapphire-timer0)
+    - [`efinix,sapphire-uart0`](../build/dts/api/bindings/serial/efinix%2Csapphire-uart0.md#std-dtcompatible-efinix-sapphire-uart0)
+- EPCOS AG (epcos):
+
+  - Modified bindings:
+
+    - [`epcos,b57861s0103a039`](../build/dts/api/bindings/sensor/epcos%2Cb57861s0103a039.md#std-dtcompatible-epcos-b57861s0103a039):
+
+      > - removed property: `r25-ohm`
+- Espressif Systems (espressif):
+
+  - Modified bindings:
+
+    - [`espressif,esp-at`](../build/dts/api/bindings/wifi/espressif%2Cesp-at.md#std-dtcompatible-espressif-esp-at) (on uart bus):
+
+      > - new property: `external-reset`
+    - [`espressif,esp32-mdio`](../build/dts/api/bindings/mdio/espressif%2Cesp32-mdio.md#std-dtcompatible-espressif-esp32-mdio):
+
+      > - removed property: `protocol`
+      > - property `#address-cells` const value changed from None to 1
+      > - property `#size-cells` const value changed from None to 0
+      > - property `#address-cells` is now required
+      > - property `#size-cells` is now required
+    - [`espressif,riscv`](../build/dts/api/bindings/cpu/espressif%2Criscv.md#std-dtcompatible-espressif-riscv):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+    - [`espressif,esp32-spi`](../build/dts/api/bindings/spi/espressif%2Cesp32-spi.md#std-dtcompatible-espressif-esp32-spi):
+
+      > - new property: `line-idle-low`
+- Feature Integration Technology Inc. (fintek):
+
+  - New bindings:
+
+    - [`fintek,f75303`](../build/dts/api/bindings/sensor/fintek%2Cf75303.md#std-dtcompatible-fintek-f75303)
+- FocalTech Systems Co.,Ltd (focaltech):
+
+  - Modified bindings:
+
+    - [`focaltech,ft5336`](../build/dts/api/bindings/input/focaltech%2Cft5336.md#std-dtcompatible-focaltech-ft5336) (on i2c bus):
+
+      > - new property: `reset-gpios`
+- Fujitsu Ltd. (fujitsu):
+
+  - New bindings:
+
+    - [`fujitsu,mb85rcxx`](../build/dts/api/bindings/mtd/fujitsu%2Cmb85rcxx.md#std-dtcompatible-fujitsu-mb85rcxx)
+- Shenzhen Huiding Technology Co., Ltd. (goodix):
+
+  - Modified bindings:
+
+    - [`goodix,gt911`](../build/dts/api/bindings/input/goodix%2Cgt911.md#std-dtcompatible-goodix-gt911) (on i2c bus):
+
+      > - bus list changed from [‘kscan’] to []
+      > - new property: `alt-addr`
+- Himax Technologies, Inc. (himax):
+
+  - New bindings:
+
+    - [`himax,hx8394`](../build/dts/api/bindings/display/himax%2Chx8394.md#std-dtcompatible-himax-hx8394)
+- Infineon Technologies (infineon):
+
+  - New bindings:
+
+    - [`infineon,cat1-counter`](../build/dts/api/bindings/counter/infineon%2Ccat1-counter.md#std-dtcompatible-infineon-cat1-counter)
+    - [`infineon,cat1-spi`](../build/dts/api/bindings/spi/infineon%2Ccat1-spi.md#std-dtcompatible-infineon-cat1-spi)
+    - [`infineon,xmc4xxx-ccu4-pwm`](../build/dts/api/bindings/pwm/infineon%2Cxmc4xxx-ccu4-pwm.md#std-dtcompatible-infineon-xmc4xxx-ccu4-pwm)
+    - [`infineon,xmc4xxx-ccu8-pwm`](../build/dts/api/bindings/pwm/infineon%2Cxmc4xxx-ccu8-pwm.md#std-dtcompatible-infineon-xmc4xxx-ccu8-pwm)
+    - [`infineon,xmc4xxx-i2c`](../build/dts/api/bindings/i2c/infineon%2Cxmc4xxx-i2c.md#std-dtcompatible-infineon-xmc4xxx-i2c)
+- Intel Corporation (intel):
+
+  - New bindings:
+
+    - [`intel,agilex5-clock`](../build/dts/api/bindings/clock/intel%2Cagilex5-clock.md#std-dtcompatible-intel-agilex5-clock)
+    - [`intel,alder-lake`](../build/dts/api/bindings/cpu/intel%2Calder-lake.md#std-dtcompatible-intel-alder-lake)
+    - [`intel,apollo-lake`](../build/dts/api/bindings/cpu/intel%2Capollo-lake.md#std-dtcompatible-intel-apollo-lake)
+    - [`intel,blinky-pwm`](../build/dts/api/bindings/pwm/intel%2Cblinky-pwm.md#std-dtcompatible-intel-blinky-pwm)
+    - [`intel,elkhart-lake`](../build/dts/api/bindings/cpu/intel%2Celkhart-lake.md#std-dtcompatible-intel-elkhart-lake)
+    - [`intel,emmc-host`](../build/dts/api/bindings/sdhc/intel%2Cemmc-host.md#std-dtcompatible-intel-emmc-host)
+    - [`intel,ish`](../build/dts/api/bindings/cpu/intel%2Cish.md#std-dtcompatible-intel-ish)
+    - [`intel,loapic`](../build/dts/api/bindings/interrupt-controller/intel%2Cloapic.md#std-dtcompatible-intel-loapic)
+    - [`intel,sedi-gpio`](../build/dts/api/bindings/gpio/intel%2Csedi-gpio.md#std-dtcompatible-intel-sedi-gpio)
+    - [`intel,sedi-i2c`](../build/dts/api/bindings/i2c/intel%2Csedi-i2c.md#std-dtcompatible-intel-sedi-i2c)
+    - [`intel,sedi-ipm`](../build/dts/api/bindings/ipm/intel%2Csedi-ipm.md#std-dtcompatible-intel-sedi-ipm)
+    - [`intel,sedi-uart`](../build/dts/api/bindings/serial/intel%2Csedi-uart.md#std-dtcompatible-intel-sedi-uart)
+    - [`intel,socfpga-agilex-sip-smc`](../build/dts/api/bindings/sip_svc/intel%2Cagilex-socfpga-sip-smc.md#std-dtcompatible-intel-socfpga-agilex-sip-smc)
+    - [`intel,socfpga-reset`](../build/dts/api/bindings/reset/intel%2Csocfpga-reset.md#std-dtcompatible-intel-socfpga-reset)
+    - [`intel,timeaware-gpio`](../build/dts/api/bindings/misc/intel%2Ctimeaware-gpio.md#std-dtcompatible-intel-timeaware-gpio)
+  - Removed bindings:
+
+    - `intel,agilex-socfpga-sip-smc`
+    - `intel,apollo_lake`
+    - `intel,elkhart_lake`
+    - `intel,gna`
+  - Modified bindings:
+
+    - [`intel,niosv`](../build/dts/api/bindings/cpu/intel%2Cniosv.md#std-dtcompatible-intel-niosv):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+    - [`intel,adsp-imr`](../build/dts/api/bindings/mm/intel%2Cadsp-imr.md#std-dtcompatible-intel-adsp-imr):
+
+      > - new property: `zephyr,memory-attr`
+      > - property `zephyr,memory-region-mpu` enum value changed from [‘RAM’, ‘RAM\_NOCACHE’, ‘FLASH’, ‘PPB’, ‘IO’, ‘EXTMEM’] to None
+      > - property `zephyr,memory-region-mpu` deprecation status changed from False to True
+    - [`intel,lpss`](../build/dts/api/bindings/dma/intel%2Clpss.md#std-dtcompatible-intel-lpss):
+
+      > - new property: `dma-parent`
+    - [`intel,adsp-shim-clkctl`](../build/dts/api/bindings/clock/intel%2Cadsp-shim-clkctl.md#std-dtcompatible-intel-adsp-shim-clkctl):
+
+      > - new property: `adsp-clkctl-clk-ipll`
+- Isentek Inc. (isentek):
+
+  - New bindings:
+
+    - [`isentek,ist8310`](../build/dts/api/bindings/sensor/istentek%2Cist8310.md#std-dtcompatible-isentek-ist8310)
+- Integrated Silicon Solutions Inc. (issi):
+
+  - New bindings:
+
+    - [`issi,is31fl3216a`](../build/dts/api/bindings/led/issi%2Cis31fl3216a.md#std-dtcompatible-issi-is31fl3216a)
+    - [`issi,is31fl3733`](../build/dts/api/bindings/led/issi%2Cis31fl3733.md#std-dtcompatible-issi-is31fl3733)
+- ITE Tech. Inc. (ite):
+
+  - New bindings:
+
+    - [`ite,it8xxx2-sha`](../build/dts/api/bindings/crypto/ite%2Cit8xxx2-sha.md#std-dtcompatible-ite-it8xxx2-sha)
+  - Modified bindings:
+
+    - [`ite,it8xxx2-pinctrl-func`](../build/dts/api/bindings/pinctrl/ite%2Cit8xxx2-pinctrl-func.md#std-dtcompatible-ite-it8xxx2-pinctrl-func):
+
+      > - new property: `func3-ext`
+      > - new property: `func3-ext-mask`
+    - [`ite,riscv-ite`](../build/dts/api/bindings/cpu/ite%2Criscv-ite.md#std-dtcompatible-ite-riscv-ite):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+    - [`ite,enhance-i2c`](../build/dts/api/bindings/i2c/ite%2Cenhance-i2c.md#std-dtcompatible-ite-enhance-i2c):
+
+      > - new property: `target-enable`
+      > - new property: `target-pio-mode`
+- Linaro Limited (linaro):
+
+  - New bindings:
+
+    - [`linaro,ivshmem-ipm`](../build/dts/api/bindings/ipm/linaro%2Civshmem-ipm.md#std-dtcompatible-linaro-ivshmem-ipm)
+- Maxim Integrated Products (maxim):
+
+  - New bindings:
+
+    - [`maxim,max11102`](../build/dts/api/bindings/adc/maxim%2Cmax11102.md#std-dtcompatible-maxim-max11102)
+    - [`maxim,max11103`](../build/dts/api/bindings/adc/maxim%2Cmax11103.md#std-dtcompatible-maxim-max11103)
+    - [`maxim,max11105`](../build/dts/api/bindings/adc/maxim%2Cmax11105.md#std-dtcompatible-maxim-max11105)
+    - [`maxim,max11106`](../build/dts/api/bindings/adc/maxim%2Cmax11106.md#std-dtcompatible-maxim-max11106)
+    - [`maxim,max11110`](../build/dts/api/bindings/adc/maxim%2Cmax11110.md#std-dtcompatible-maxim-max11110)
+    - [`maxim,max11111`](../build/dts/api/bindings/adc/maxim%2Cmax11111.md#std-dtcompatible-maxim-max11111)
+    - [`maxim,max11115`](../build/dts/api/bindings/adc/maxim%2Cmax11115.md#std-dtcompatible-maxim-max11115)
+    - [`maxim,max11116`](../build/dts/api/bindings/adc/maxim%2Cmax11116.md#std-dtcompatible-maxim-max11116)
+    - [`maxim,max11117`](../build/dts/api/bindings/adc/maxim%2Cmax11117.md#std-dtcompatible-maxim-max11117)
+    - [`maxim,max11253`](../build/dts/api/bindings/adc/maxim%2Cmax11253.md#std-dtcompatible-maxim-max11253)
+    - [`maxim,max11254`](../build/dts/api/bindings/adc/maxim%2Cmax11254.md#std-dtcompatible-maxim-max11254)
+    - [`maxim,max31790`](../build/dts/api/bindings/mfd/maxim%2Cmax31790.md#std-dtcompatible-maxim-max31790)
+- Microchip Technology Inc. (microchip):
+
+  - New bindings:
+
+    - [`microchip,mcp251xfd`](../build/dts/api/bindings/can/microchip%2Cmcp251xfd.md#std-dtcompatible-microchip-mcp251xfd)
+    - [`microchip,mpfs-i2c`](../build/dts/api/bindings/i2c/microchip%2Cmpfs-i2c.md#std-dtcompatible-microchip-mpfs-i2c)
+    - [`microchip,tcn75a`](../build/dts/api/bindings/sensor/microchip%2Ctcn75a.md#std-dtcompatible-microchip-tcn75a)
+  - Modified bindings:
+
+    - [`microchip,xec-pwmbbled`](../build/dts/api/bindings/pwm/microchip%2Cxec-pwmbbled.md#std-dtcompatible-microchip-xec-pwmbbled):
+
+      > - new property: `enable-low-power-32k`
+    - [`microchip,cap1203`](../build/dts/api/bindings/input/microchip%2Ccap1203.md#std-dtcompatible-microchip-cap1203) (on i2c bus):
+
+      > - bus list changed from [‘kscan’] to []
+      > - new property: `input-codes`
+    - [`microchip,xec-ps2`](../build/dts/api/bindings/ps2/microchip%2Cxec-ps2.md#std-dtcompatible-microchip-xec-ps2):
+
+      > - new property: `wakerx-gpios`
+- Motorola, Inc. (motorola):
+
+  - Modified bindings:
+
+    - [`motorola,mc146818`](../build/dts/api/bindings/rtc/motorola%2Cmc146818.md#std-dtcompatible-motorola-mc146818):
+
+      > - new property: `clock-frequency`
+- Murata Manufacturing Co., Ltd. (murata):
+
+  - New bindings:
+
+    - [`murata,ncp15wb473`](../build/dts/api/bindings/sensor/murata%2Cncp15wb473.md#std-dtcompatible-murata-ncp15wb473)
+- Nordic Semiconductor (nordic):
+
+  - New bindings:
+
+    - [`nordic,npm1300-led`](../build/dts/api/bindings/led/nordic%2Cnpm1300-led.md#std-dtcompatible-nordic-npm1300-led)
+    - [`nordic,npm1300-wdt`](../build/dts/api/bindings/watchdog/nordic%2Cnpm1300-wdt.md#std-dtcompatible-nordic-npm1300-wdt)
+  - Removed bindings:
+
+    - `nordic,nrf-cc310`
+    - `nordic,nrf-cc312`
+  - Modified bindings:
+
+    - [`nordic,nrf-ccm`](../build/dts/api/bindings/crypto/nordic%2Cnrf-ccm.md#std-dtcompatible-nordic-nrf-ccm):
+
+      > - new property: `headermask-supported`
+    - [`nordic,nrf-twi`](../build/dts/api/bindings/i2c/nordic%2Cnrf-twi.md#std-dtcompatible-nordic-nrf-twi):
+
+      > - new property: `easydma-maxcnt-bits`
+    - [`nordic,nrf-twim`](../build/dts/api/bindings/i2c/nordic%2Cnrf-twim.md#std-dtcompatible-nordic-nrf-twim) and [`nordic,nrf-twis`](../build/dts/api/bindings/i2c/nordic%2Cnrf-twis.md#std-dtcompatible-nordic-nrf-twis):
+
+      > - new property: `easydma-maxcnt-bits`
+      > - new property: `memory-regions`
+      > - new property: `memory-region-names`
+    - [`nordic,nrf-spi`](../build/dts/api/bindings/spi/nordic%2Cnrf-spi.md#std-dtcompatible-nordic-nrf-spi), [`nordic,nrf-spis`](../build/dts/api/bindings/spi/nordic%2Cnrf-spis.md#std-dtcompatible-nordic-nrf-spis), and
+      [`nordic,nrf-spim`](../build/dts/api/bindings/spi/nordic%2Cnrf-spim.md#std-dtcompatible-nordic-nrf-spim):
+
+      > - new property: `wake-gpios`
+    - [`nordic,npm1300-charger`](../build/dts/api/bindings/sensor/nordic%2Cnpm1300-charger.md#std-dtcompatible-nordic-npm1300-charger):
+
+      > - new property: `thermistor-cold-millidegrees`
+      > - new property: `thermistor-cool-millidegrees`
+      > - new property: `thermistor-warm-millidegrees`
+      > - new property: `thermistor-hot-millidegrees`
+      > - new property: `trickle-microvolt`
+      > - new property: `term-current-percent`
+      > - new property: `vbatlow-charge-enable`
+      > - new property: `disable-recharge`
+    - [`nordic,nrf-uicr`](../build/dts/api/bindings/arm/nordic%2Cnrf-uicr.md#std-dtcompatible-nordic-nrf-uicr):
+
+      > - new property: `nfct-pins-as-gpios`
+      > - new property: `gpio-as-nreset`
+    - [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic%2Cnpm1300.md#std-dtcompatible-nordic-npm1300) (on i2c bus):
+
+      > - new property: `host-int-gpios`
+      > - new property: `pmic-int-pin`
+- Nuclei System Technology (nuclei):
+
+  - Modified bindings:
+
+    - [`nuclei,bumblebee`](../build/dts/api/bindings/cpu/nuclei%2Cbumblebee.md#std-dtcompatible-nuclei-bumblebee):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+- Nuvoton Technology Corporation (nuvoton):
+
+  - New bindings:
+
+    - [`nuvoton,nct38xx`](../build/dts/api/bindings/mfd/nuvoton%2Cnct38xx.md#std-dtcompatible-nuvoton-nct38xx)
+    - [`nuvoton,nct38xx-gpio`](../build/dts/api/bindings/gpio/nuvoton%2Cnct38xx-gpio.md#std-dtcompatible-nuvoton-nct38xx-gpio)
+    - [`nuvoton,npcx-fiu-nor`](../build/dts/api/bindings/flash_controller/nuvoton%2Cnpcx-fiu-nor.md#std-dtcompatible-nuvoton-npcx-fiu-nor)
+    - [`nuvoton,npcx-fiu-qspi`](../build/dts/api/bindings/flash_controller/nuvoton%2Cnpcx-fiu-qspi.md#std-dtcompatible-nuvoton-npcx-fiu-qspi)
+    - [`nuvoton,numaker-fmc`](../build/dts/api/bindings/flash_controller/nuvoton%2Cnumaker-fmc.md#std-dtcompatible-nuvoton-numaker-fmc)
+    - [`nuvoton,numaker-gpio`](../build/dts/api/bindings/gpio/nuvoton%2Cnumaker-gpio.md#std-dtcompatible-nuvoton-numaker-gpio)
+    - [`nuvoton,numaker-pcc`](../build/dts/api/bindings/clock/nuvoton%2Cnumaker-pcc.md#std-dtcompatible-nuvoton-numaker-pcc)
+    - [`nuvoton,numaker-pinctrl`](../build/dts/api/bindings/pinctrl/nuvoton%2Cnumaker-pinctrl.md#std-dtcompatible-nuvoton-numaker-pinctrl)
+    - [`nuvoton,numaker-pwm`](../build/dts/api/bindings/pwm/nuvoton%2Cnumaker-pwm.md#std-dtcompatible-nuvoton-numaker-pwm)
+    - [`nuvoton,numaker-rst`](../build/dts/api/bindings/reset/nuvoton%2Cnumaker-rst.md#std-dtcompatible-nuvoton-numaker-rst)
+    - [`nuvoton,numaker-scc`](../build/dts/api/bindings/clock/nuvoton%2Cnumaker-scc.md#std-dtcompatible-nuvoton-numaker-scc)
+    - [`nuvoton,numaker-spi`](../build/dts/api/bindings/spi/nuvoton%2Cnumaker-spi.md#std-dtcompatible-nuvoton-numaker-spi)
+    - [`nuvoton,numaker-uart`](../build/dts/api/bindings/serial/nuvoton%2Cnumaker-uart.md#std-dtcompatible-nuvoton-numaker-uart)
+  - Removed bindings:
+
+    - `nuvoton,nct38xx-gpio`
+    - `nuvoton,npcx-spi-fiu`
+  - Modified bindings:
+
+    - [`nuvoton,npcx-sha`](../build/dts/api/bindings/crypto/nuvoton%2Cnpcx-sha.md#std-dtcompatible-nuvoton-npcx-sha):
+
+      > - new property: `context-buffer-size`
+    - [`nuvoton,npcx-adc`](../build/dts/api/bindings/adc/nuvoton%2Cnpcx-adc.md#std-dtcompatible-nuvoton-npcx-adc):
+
+      > - new property: `vref-mv`
+      > - removed property: `threshold-reg-offset`
+    - [`nuvoton,adc-cmp`](../build/dts/api/bindings/sensor/nuvoton%2Cadc-cmp.md#std-dtcompatible-nuvoton-adc-cmp):
+
+      > - new property: `thr-sel`
+    - [`nuvoton,npcx-pcc`](../build/dts/api/bindings/clock/nuvoton%2Cnpcx-pcc.md#std-dtcompatible-nuvoton-npcx-pcc):
+
+      > - new property: `pwdwn-ctl-val`
+      > - property `clock-frequency` enum value changed from [100000000, 96000000, 90000000, 80000000, 66000000, 50000000, 48000000, 40000000, 33000000] to [120000000, 100000000, 96000000, 90000000, 80000000, 66000000, 50000000, 48000000]
+      > - property `ram-pd-depth` enum value changed from [12, 15] to [8, 12, 15]
+- NXP Semiconductors (nxp):
+
+  - New bindings:
+
+    - [`nxp,ctimer-pwm`](../build/dts/api/bindings/pwm/nxp%2Cctimer-pwm.md#std-dtcompatible-nxp-ctimer-pwm)
+    - [`nxp,fs26-wdog`](../build/dts/api/bindings/watchdog/nxp%2Cfs26-wdog.md#std-dtcompatible-nxp-fs26-wdog)
+    - [`nxp,imx-flexspi-w956a8mbya`](../build/dts/api/bindings/mtd/nxp%2Cimx-flexspi-w956a8mbya.md#std-dtcompatible-nxp-imx-flexspi-w956a8mbya)
+    - [`nxp,irqsteer-intc`](../build/dts/api/bindings/interrupt-controller/nxp%2Cirqsteer-intc.md#std-dtcompatible-nxp-irqsteer-intc)
+    - [`nxp,lpdac`](../build/dts/api/bindings/dac/nxp%2Clpdac.md#std-dtcompatible-nxp-lpdac)
+    - [`nxp,mbox-imx-mu`](../build/dts/api/bindings/mbox/nxp%2Cmbox-imx-mu.md#std-dtcompatible-nxp-mbox-imx-mu)
+    - [`nxp,mcux-dcp`](../build/dts/api/bindings/crypto/nxp%2Cmcux-dcp.md#std-dtcompatible-nxp-mcux-dcp)
+    - [`nxp,mcux-edma-v3`](../build/dts/api/bindings/dma/nxp%2Cmcux-edma-v3.md#std-dtcompatible-nxp-mcux-edma-v3)
+    - [`nxp,pcf8563`](../build/dts/api/bindings/rtc/nxp%2Cpcf8563.md#std-dtcompatible-nxp-pcf8563)
+    - [`nxp,pxp`](../build/dts/api/bindings/dma/nxp%2Cpxp.md#std-dtcompatible-nxp-pxp)
+    - [`nxp,s32-adc-sar`](../build/dts/api/bindings/adc/nxp%2Cs32-adc-sar.md#std-dtcompatible-nxp-s32-adc-sar)
+    - [`nxp,s32-clock`](../build/dts/api/bindings/clock/nxp%2Cs32-clock.md#std-dtcompatible-nxp-s32-clock)
+    - [`nxp,s32-emios`](../build/dts/api/bindings/misc/nxp%2Cs32-emios.md#std-dtcompatible-nxp-s32-emios)
+    - [`nxp,s32-emios-pwm`](../build/dts/api/bindings/pwm/nxp%2Cs32-emios-pwm.md#std-dtcompatible-nxp-s32-emios-pwm)
+    - [`nxp,s32-gmac`](../build/dts/api/bindings/ethernet/nxp%2Cs32-gmac.md#std-dtcompatible-nxp-s32-gmac)
+    - [`nxp,s32-qspi`](../build/dts/api/bindings/qspi/nxp%2Cs32-qspi.md#std-dtcompatible-nxp-s32-qspi)
+    - [`nxp,s32-qspi-device`](../build/dts/api/bindings/mtd/nxp%2Cs32-qspi-device.md#std-dtcompatible-nxp-s32-qspi-device)
+    - [`nxp,s32-qspi-nor`](../build/dts/api/bindings/mtd/nxp%2Cs32-qspi-nor.md#std-dtcompatible-nxp-s32-qspi-nor)
+    - [`nxp,s32k3-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cs32k3-pinctrl.md#std-dtcompatible-nxp-s32k3-pinctrl)
+    - [`nxp,smartdma`](../build/dts/api/bindings/dma/nxp%2Csmartdma.md#std-dtcompatible-nxp-smartdma)
+    - [`nxp,tempmon`](../build/dts/api/bindings/sensor/nxp%2Ctempmon.md#std-dtcompatible-nxp-tempmon)
+    - [`nxp,vref`](../build/dts/api/bindings/regulator/nxp%2Cvref.md#std-dtcompatible-nxp-vref)
+  - Modified bindings:
+
+    - [`nxp,s32-netc-emdio`](../build/dts/api/bindings/mdio/nxp%2Cs32-netc-emdio.md#std-dtcompatible-nxp-s32-netc-emdio):
+
+      > - removed property: `protocol`
+      > - property `#address-cells` const value changed from None to 1
+      > - property `#size-cells` const value changed from None to 0
+      > - property `#address-cells` is now required
+      > - property `#size-cells` is now required
+    - [`nxp,mipi-dsi-2l`](../build/dts/api/bindings/mipi-dsi/nxp%2Cmipi-dsi-2l.md#std-dtcompatible-nxp-mipi-dsi-2l):
+
+      > - property `nxp,lcdif` is no longer required
+    - [`nxp,imx-mipi-dsi`](../build/dts/api/bindings/mipi-dsi/nxp%2Cimx-mipi-dsi.md#std-dtcompatible-nxp-imx-mipi-dsi):
+
+      > - property `nxp,lcdif` is no longer required
+    - [`nxp,pca9633`](../build/dts/api/bindings/led/nxp%2Cpca9633.md#std-dtcompatible-nxp-pca9633) (on i2c bus):
+
+      > - new property: `disable-allcall`
+    - [`nxp,s32-sys-timer`](../build/dts/api/bindings/timer/nxp%2Cs32-sys-timer.md#std-dtcompatible-nxp-s32-sys-timer):
+
+      > - removed property: `clock-frequency`
+      > - property `clocks` is now required
+    - [`nxp,imx-lpspi`](../build/dts/api/bindings/spi/nxp%2Cimx-lpspi.md#std-dtcompatible-nxp-imx-lpspi):
+
+      > - new property: `data-pin-config`
+    - [`nxp,s32-spi`](../build/dts/api/bindings/spi/nxp%2Cs32-spi.md#std-dtcompatible-nxp-s32-spi):
+
+      > - property `clock-frequency` is no longer required
+      > - property `clocks` is now required
+    - [`nxp,imx-wdog`](../build/dts/api/bindings/watchdog/nxp%2Cimx-wdog.md#std-dtcompatible-nxp-imx-wdog):
+
+      > - pinctrl support
+    - [`nxp,s32-swt`](../build/dts/api/bindings/watchdog/nxp%2Cs32-swt.md#std-dtcompatible-nxp-s32-swt):
+
+      > - removed property: `clock-frequency`
+      > - property `clocks` is now required
+    - [`nxp,lpc-lpadc`](../build/dts/api/bindings/adc/nxp%2Clpc-lpadc.md#std-dtcompatible-nxp-lpc-lpadc):
+
+      > - new property: `nxp,reference-supply`
+    - `nxp,kinetis-pit`:
+
+      > - new property: `max-load-value`
+      > - property `clocks` is now required
+    - [`nxp,mcux-edma`](../build/dts/api/bindings/dma/nxp%2Cmcux-edma.md#std-dtcompatible-nxp-mcux-edma):
+
+      > - new property: `dmamux-reg-offset`
+      > - new property: `channel-gap`
+      > - new property: `irq-shared-offset`
+    - [`nxp,imx-elcdif`](../build/dts/api/bindings/display/nxp%2Cimx-elcdif.md#std-dtcompatible-nxp-imx-elcdif):
+
+      > - new property: `nxp,pxp`
+- ON Semiconductor Corp. (onnn):
+
+  - New bindings:
+
+    - [`onnn,ncp5623`](../build/dts/api/bindings/led/onnn%2Cncp5623.md#std-dtcompatible-onnn-ncp5623)
+- Princeton Technology Corp. (ptc):
+
+  - New bindings:
+
+    - [`ptc,pt6314`](../build/dts/api/bindings/auxdisplay/ptc%2Cpt6314.md#std-dtcompatible-ptc-pt6314)
+- Quectel Wireless Solutions Co., Ltd. (quectel):
+
+  - New bindings:
+
+    - [`quectel,bg95`](../build/dts/api/bindings/modem/quectel%2Cbg95.md#std-dtcompatible-quectel-bg95)
+- QuickLogic Corp. (quicklogic):
+
+  - New bindings:
+
+    - [`quicklogic,eos-s3-pinctrl`](../build/dts/api/bindings/pinctrl/quicklogic%2Ceos-s3-pinctrl.md#std-dtcompatible-quicklogic-eos-s3-pinctrl)
+  - Modified bindings:
+
+    - [`quicklogic,usbserialport-s3b`](../build/dts/api/bindings/serial/quicklogic%2Cusbserialport-s3b.md#std-dtcompatible-quicklogic-usbserialport-s3b):
+
+      - pinctrl support
+- Raspberry Pi Foundation (raspberrypi):
+
+  - New bindings:
+
+    - [`raspberrypi,pico-header`](../build/dts/api/bindings/gpio/raspberrypi%2Cpico-header.md#std-dtcompatible-raspberrypi-pico-header)
+    - [`raspberrypi,pico-i2c`](../build/dts/api/bindings/i2c/raspberrypi%2Cpico-i2c.md#std-dtcompatible-raspberrypi-pico-i2c)
+    - [`raspberrypi,pico-spi-pio`](../build/dts/api/bindings/spi/raspberrypi%2Cpico-spi-pio.md#std-dtcompatible-raspberrypi-pico-spi-pio)
+    - [`raspberrypi,pico-timer`](../build/dts/api/bindings/timer/raspberrypi%2Cpico-timer.md#std-dtcompatible-raspberrypi-pico-timer)
+- Raydium Semiconductor Corp. (raydium):
+
+  - New bindings:
+
+    - [`raydium,rm67162`](../build/dts/api/bindings/display/raydium%2Crm67162.md#std-dtcompatible-raydium-rm67162)
+- Renesas Electronics Corporation (renesas):
+
+  - New bindings:
+
+    - [`renesas,smartbond-lp-osc`](../build/dts/api/bindings/clock/renesas%2Csmartbond-lp-osc.md#std-dtcompatible-renesas-smartbond-lp-osc)
+    - [`renesas,smartbond-timer`](../build/dts/api/bindings/timer/renesas%2Csmartbond-timer.md#std-dtcompatible-renesas-smartbond-timer)
+  - Modified bindings:
+
+    - [`renesas,smartbond-flash-controller`](../build/dts/api/bindings/flash_controller/renesas%2Csmartbond-flash-controller.md#std-dtcompatible-renesas-smartbond-flash-controller):
+
+      > - new property: `read-cs-idle-delay`
+      > - new property: `erase-cs-idle-delay`
+- Smart Battery System (sbs):
+
+  - New bindings:
+
+    - [`sbs,default-sbs-gauge`](../build/dts/api/bindings/fuel-gauge/sbs%2Cdefault-sbs-gauge.md#std-dtcompatible-sbs-default-sbs-gauge)
+    - [`sbs,sbs-charger`](../build/dts/api/bindings/charger/sbs%2Csbs-charger.md#std-dtcompatible-sbs-sbs-charger)
+- Seeed Technology Co., Ltd (seeed):
+
+  - New bindings:
+
+    - [`seeed,hm330x`](../build/dts/api/bindings/sensor/seeed%2Chm330x.md#std-dtcompatible-seeed-hm330x)
+- SiFive, Inc. (sifive):
+
+  - Modified bindings:
+
+    - [`sifive,i2c0`](../build/dts/api/bindings/i2c/sifive%2Ci2c0.md#std-dtcompatible-sifive-i2c0):
+
+      > - pinctrl support
+- Silicon Laboratories (silabs):
+
+  - New bindings:
+
+    - [`silabs,gecko-adc`](../build/dts/api/bindings/adc/silabs%2Cgecko-adc.md#std-dtcompatible-silabs-gecko-adc)
+- Sino Wealth Electronic Ltd (sinowealth):
+
+  - New bindings:
+
+    - [`sinowealth,sh1106`](../build/dts/api/compatibles/sinowealth%2Csh1106.md#std-dtcompatible-sinowealth-sh1106)
+    - [`sinowealth,sh1106`](../build/dts/api/compatibles/sinowealth%2Csh1106.md#std-dtcompatible-sinowealth-sh1106)
+- Sitronix Technology Corporation (sitronix):
+
+  - Modified bindings:
+
+    - [`sitronix,st7735r`](../build/dts/api/bindings/display/sitronix%2Cst7735r.md#std-dtcompatible-sitronix-st7735r) (on spi bus):
+
+      > - property `reset-gpios` is no longer required
+- Standard Microsystems Corporation (smsc):
+
+  - Modified bindings:
+
+    - [`smsc,lan91c111-mdio`](../build/dts/api/bindings/mdio/smsc%2Clan91c111-mdio.md#std-dtcompatible-smsc-lan91c111-mdio):
+
+      > - removed property: `protocol`
+      > - property `#address-cells` const value changed from None to 1
+      > - property `#size-cells` const value changed from None to 0
+      > - property `#address-cells` is now required
+      > - property `#size-cells` is now required
+    - [`smsc,lan91c111`](../build/dts/api/bindings/ethernet/smsc%2Clan91c111.md#std-dtcompatible-smsc-lan91c111):
+
+      > - new property: `local-mac-address`
+      > - new property: `zephyr,random-mac-address`
+      > - property `reg` is no longer required
+- Synopsys, Inc. (snps):
+
+  - New bindings:
+
+    - [`snps,dw-timers`](../build/dts/api/bindings/counter/snps%2Cdw-timers.md#std-dtcompatible-snps-dw-timers)
+- Solomon Systech Limited (solomon):
+
+  - Modified bindings:
+
+    - [`solomon,ssd1306fb`](../build/dts/api/compatibles/solomon%2Cssd1306fb.md#std-dtcompatible-solomon-ssd1306fb)
+
+      > - new property: `inversion-on`
+      > - new property: `ready-time-ms`
+- Sequans Communications (sqn):
+
+  - New bindings:
+
+    - [`sqn,hwspinlock`](../build/dts/api/bindings/hwspinlock/sqn%2Chwspinlock.md#std-dtcompatible-sqn-hwspinlock)
+- STMicroelectronics (st):
+
+  - New bindings:
+
+    - [`st,stm32-bxcan`](../build/dts/api/bindings/can/st%2Cstm32-bxcan.md#std-dtcompatible-st-stm32-bxcan)
+    - [`st,stm32-spi-host-cmd`](../build/dts/api/bindings/spi/st%2Cstm32-spi-host-cmd.md#std-dtcompatible-st-stm32-spi-host-cmd)
+    - [`st,stm32f1-rcc`](../build/dts/api/bindings/clock/st%2Cstm32f1-rcc.md#std-dtcompatible-st-stm32f1-rcc)
+    - [`st,stm32f3-rcc`](../build/dts/api/bindings/clock/st%2Cstm32f3-rcc.md#std-dtcompatible-st-stm32f3-rcc)
+    - [`st,stm32wba-flash-controller`](../build/dts/api/bindings/flash_controller/st%2Cstm32wba-flash-controller.md#std-dtcompatible-st-stm32wba-flash-controller)
+    - [`st,stm32wba-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32wba-hse-clock.md#std-dtcompatible-st-stm32wba-hse-clock)
+    - [`st,stm32wba-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32wba-pll-clock.md#std-dtcompatible-st-stm32wba-pll-clock)
+    - [`st,stm32wba-rcc`](../build/dts/api/bindings/clock/st%2Cstm32wba-rcc.md#std-dtcompatible-st-stm32wba-rcc)
+    - [`st,stmpe811`](../build/dts/api/bindings/input/st%2Cstmpe811.md#std-dtcompatible-st-stmpe811)
+  - Removed bindings:
+
+    - `st,stm32-can`
+  - Modified bindings:
+
+    - [`st,stm32-pwm`](../build/dts/api/bindings/pwm/st%2Cstm32-pwm.md#std-dtcompatible-st-stm32-pwm):
+
+      > - new property: `four-channel-capture-support`
+    - [`st,stm32f4-adc`](../build/dts/api/bindings/adc/st%2Cstm32f4-adc.md#std-dtcompatible-st-stm32f4-adc):
+
+      > - new property: `st,adc-clock-source`
+      > - new property: `st,adc-prescaler`
+      > - new property: `st,adc-sequencer`
+      > - removed property: `temp-channel`
+      > - removed property: `vref-channel`
+      > - removed property: `vbat-channel`
+    - [`st,stm32-adc`](../build/dts/api/bindings/adc/st%2Cstm32-adc.md#std-dtcompatible-st-stm32-adc):
+
+      > - new property: `st,adc-clock-source`
+      > - new property: `st,adc-prescaler`
+      > - new property: `st,adc-sequencer`
+      > - removed property: `temp-channel`
+      > - removed property: `vref-channel`
+      > - removed property: `vbat-channel`
+    - [`st,stm32f1-adc`](../build/dts/api/bindings/adc/st%2Cstm32f1-adc.md#std-dtcompatible-st-stm32f1-adc):
+
+      > - new property: `st,adc-sequencer`
+      > - removed property: `temp-channel`
+      > - removed property: `vref-channel`
+      > - removed property: `vbat-channel`
+    - [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st%2Cstm32-ospi.md#std-dtcompatible-st-stm32-ospi):
+
+      > - new property: `io-low-port`
+      > - new property: `io-high-port`
+    - [`st,stm32c0-hsi-clock`](../build/dts/api/bindings/clock/st%2Cstm32c0-hsi-clock.md#std-dtcompatible-st-stm32c0-hsi-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32-hse-clock.md#std-dtcompatible-st-stm32-hse-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32wl-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32wl-hse-clock.md#std-dtcompatible-st-stm32wl-hse-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32g0-hsi-clock`](../build/dts/api/bindings/clock/st%2Cstm32g0-hsi-clock.md#std-dtcompatible-st-stm32g0-hsi-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32h7-hsi-clock`](../build/dts/api/bindings/clock/st%2Cstm32h7-hsi-clock.md#std-dtcompatible-st-stm32h7-hsi-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32-lse-clock`](../build/dts/api/bindings/clock/st%2Cstm32-lse-clock.md#std-dtcompatible-st-stm32-lse-clock):
+
+      > - removed property: `clocks`
+    - [`st,stm32u5-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32u5-pll-clock.md#std-dtcompatible-st-stm32u5-pll-clock):
+
+      > - new property: `fracn`
+- Telink Semiconductor (telink):
+
+  - Modified bindings:
+
+    - [`telink,b91-pwm`](../build/dts/api/bindings/pwm/telink%2Cb91-pwm.md#std-dtcompatible-telink-b91-pwm):
+
+      > - pinctrl support
+    - [`telink,b91`](../build/dts/api/bindings/cpu/telink%2Cb91.md#std-dtcompatible-telink-b91):
+
+      > - new property: `mmu-type`
+      > - new property: `riscv,isa`
+    - [`telink,b91-i2c`](../build/dts/api/bindings/i2c/telink%2Cb91-i2c.md#std-dtcompatible-telink-b91-i2c):
+
+      > - pinctrl support
+    - [`telink,b91-spi`](../build/dts/api/bindings/spi/telink%2Cb91-spi.md#std-dtcompatible-telink-b91-spi):
+
+      > - pinctrl support
+    - [`telink,b91-uart`](../build/dts/api/bindings/serial/telink%2Cb91-uart.md#std-dtcompatible-telink-b91-uart):
+
+      > - pinctrl support
+- Texas Instruments (ti):
+
+  - New bindings:
+
+    - [`ti,ads1112`](../build/dts/api/bindings/adc/ti%2Cads1112.md#std-dtcompatible-ti-ads1112)
+    - [`ti,bq27z746`](../build/dts/api/bindings/fuel-gauge/ti%2Cbq27z746.md#std-dtcompatible-ti-bq27z746)
+    - [`ti,cc13xx-cc26xx-rtc-timer`](../build/dts/api/bindings/rtc/ti%2Ccc13xx-cc26xx-rtc-timer.md#std-dtcompatible-ti-cc13xx-cc26xx-rtc-timer)
+    - [`ti,cc13xx-cc26xx-timer`](../build/dts/api/bindings/timer/ti%2Ccc13xx-cc26xx-timer.md#std-dtcompatible-ti-cc13xx-cc26xx-timer)
+    - [`ti,cc13xx-cc26xx-timer-pwm`](../build/dts/api/bindings/pwm/ti%2Ccc13xx-cc26xx-timer-pwm.md#std-dtcompatible-ti-cc13xx-cc26xx-timer-pwm)
+    - [`ti,cc32xx-pinctrl`](../build/dts/api/bindings/pinctrl/ti%2Ccc32xx-pinctrl.md#std-dtcompatible-ti-cc32xx-pinctrl)
+    - [`ti,davinci-gpio`](../build/dts/api/bindings/gpio/ti%2Cdavinci-gpio.md#std-dtcompatible-ti-davinci-gpio)
+    - [`ti,davinci-gpio-nexus`](../build/dts/api/bindings/gpio/ti%2Cdavinci-gpio-nexus.md#std-dtcompatible-ti-davinci-gpio-nexus)
+    - [`ti,lp5009`](../build/dts/api/bindings/led/ti%2Clp5009.md#std-dtcompatible-ti-lp5009)
+    - [`ti,lp5012`](../build/dts/api/bindings/led/ti%2Clp5012.md#std-dtcompatible-ti-lp5012)
+    - [`ti,lp5018`](../build/dts/api/bindings/led/ti%2Clp5018.md#std-dtcompatible-ti-lp5018)
+    - [`ti,lp5024`](../build/dts/api/bindings/led/ti%2Clp5024.md#std-dtcompatible-ti-lp5024)
+    - [`ti,lp5030`](../build/dts/api/bindings/led/ti%2Clp5030.md#std-dtcompatible-ti-lp5030)
+    - [`ti,lp5036`](../build/dts/api/bindings/led/ti%2Clp5036.md#std-dtcompatible-ti-lp5036)
+    - [`ti,lp5569`](../build/dts/api/bindings/led/ti%2Clp5569.md#std-dtcompatible-ti-lp5569)
+    - [`ti,tas6422dac`](../build/dts/api/bindings/audio/ti%2Ctas6422dac.md#std-dtcompatible-ti-tas6422dac)
+    - [`ti,tcan4x5x`](../build/dts/api/bindings/can/ti%2Ctcan4x5x.md#std-dtcompatible-ti-tcan4x5x)
+    - [`ti,tla2021`](../build/dts/api/bindings/adc/ti%2Ctla2021.md#std-dtcompatible-ti-tla2021)
+    - [`ti,tmag5170`](../build/dts/api/bindings/sensor/ti%2Ctmag5170.md#std-dtcompatible-ti-tmag5170)
+    - [`ti,vim`](../build/dts/api/bindings/interrupt-controller/ti%2Cvim.md#std-dtcompatible-ti-vim)
+  - Removed bindings:
+
+    - `ti,cc13xx-cc26xx-rtc`
+    - `ti,lp503x`
+  - Modified bindings:
+
+    - [`ti,cc32xx-i2c`](../build/dts/api/bindings/i2c/ti%2Ccc32xx-i2c.md#std-dtcompatible-ti-cc32xx-i2c):
+
+      > - pinctrl support
+    - [`ti,ina230`](../build/dts/api/bindings/sensor/ti%2Cina230.md#std-dtcompatible-ti-ina230) (on i2c bus):
+
+      > - new property: `alert-config`
+      > - new property: `adc-mode`
+      > - new property: `vbus-conversion-time-us`
+      > - new property: `vshunt-conversion-time-us`
+      > - new property: `avg-count`
+      > - new property: `rshunt-micro-ohms`
+      > - removed property: `rshunt-milliohms`
+      > - property `config` default value changed from None to 0
+      > - property `config` deprecation status changed from False to True
+      > - property `config` is no longer required
+    - [`ti,ina237`](../build/dts/api/bindings/sensor/ti%2Cina237.md#std-dtcompatible-ti-ina237) (on i2c bus):
+
+      > - new property: `adc-mode`
+      > - new property: `vbus-conversion-time-us`
+      > - new property: `vshunt-conversion-time-us`
+      > - new property: `temp-conversion-time-us`
+      > - new property: `avg-count`
+      > - new property: `high-precision`
+      > - new property: `rshunt-micro-ohms`
+      > - removed property: `rshunt-milliohms`
+      > - property `adc-config` default value changed from None to 0
+      > - property `config` default value changed from None to 0
+      > - property `adc-config` deprecation status changed from False to True
+      > - property `config` deprecation status changed from False to True
+      > - property `adc-config` is no longer required
+      > - property `config` is no longer required
+    - [`ti,cc32xx-uart`](../build/dts/api/bindings/serial/ti%2Ccc32xx-uart.md#std-dtcompatible-ti-cc32xx-uart):
+
+      > - pinctrl support
+- A stand-in for a real vendor which can be used in examples and tests (vnd):
+
+  - New bindings:
+
+    - `vnd,memory-attr`
+    - `vnd,reg-holder-64`
+    - `vnd,reserved-compat`
+  - Modified bindings:
+
+    - `vnd,serial`:
+
+      > - property `reg` is no longer required
+- X-Powers (x-powers):
+
+  - New bindings:
+
+    - [`x-powers,axp192`](../build/dts/api/bindings/mfd/x-powers%2Caxp192.md#std-dtcompatible-x-powers-axp192)
+    - [`x-powers,axp192-gpio`](../build/dts/api/bindings/gpio/x-powers%2Caxp192-gpio.md#std-dtcompatible-x-powers-axp192-gpio)
+    - [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers%2Caxp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator)
+- Xen Hypervisor (xen):
+
+  - New bindings:
+
+    - [`xen,xen`](../build/dts/api/bindings/xen/xen%2Cxen.md#std-dtcompatible-xen-xen)
+  - Removed bindings:
+
+    - `xen,xen-4.15`
+- Xilinx (xlnx):
+
+  - New bindings:
+
+    - [`xlnx,zynqmp-ipi-mailbox`](../build/dts/api/bindings/ipm/xlnx%2Czynqmp-ipi-mailbox.md#std-dtcompatible-xlnx-zynqmp-ipi-mailbox)
+- Shenzhen Xptek Technology Co., Ltd (xptek):
+
+  - Modified bindings:
+
+    - [`xptek,xpt2046`](../build/dts/api/bindings/input/xptek%2Cxpt2046.md#std-dtcompatible-xptek-xpt2046) (on spi bus):
+
+      > - bus list changed from [‘kscan’] to []
+- Zephyr-specific binding (zephyr):
+
+  - New bindings:
+
+    - [`zephyr,fake-rtc`](../build/dts/api/bindings/rtc/zephyr%2Cfake-rtc.md#std-dtcompatible-zephyr-fake-rtc)
+    - [`zephyr,i2c-dump-allowlist`](../build/dts/api/bindings/i2c/zephyr%2Ci2c-dump-allowlist.md#std-dtcompatible-zephyr-i2c-dump-allowlist)
+    - [`zephyr,lvgl-button-input`](../build/dts/api/bindings/input/zephyr%2Clvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)
+    - [`zephyr,lvgl-encoder-input`](../build/dts/api/bindings/input/zephyr%2Clvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input)
+    - [`zephyr,lvgl-pointer-input`](../build/dts/api/bindings/input/zephyr%2Clvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input)
+    - [`zephyr,mdio-gpio`](../build/dts/api/bindings/mdio/zephyr%2Cmdio-gpio.md#std-dtcompatible-zephyr-mdio-gpio)
+    - [`zephyr,native-tty-uart`](../build/dts/api/bindings/serial/zephyr%2Cnative-tty-uart.md#std-dtcompatible-zephyr-native-tty-uart)
+    - [`zephyr,ram-disk`](../build/dts/api/bindings/disk/zephyr%2Cram-disk.md#std-dtcompatible-zephyr-ram-disk)
+    - [`zephyr,sensing`](../build/dts/api/bindings/sensor/zephyr%2Csensing.md#std-dtcompatible-zephyr-sensing)
+    - [`zephyr,sensing-phy-3d-sensor`](../build/dts/api/bindings/sensor/zephyr%2Csensing-phy-3d-sensor.md#std-dtcompatible-zephyr-sensing-phy-3d-sensor)
+  - Removed bindings:
+
+    - `zephyr,gpio-keys`
+  - Modified bindings:
+
+    - [`zephyr,mmc-disk`](../build/dts/api/bindings/sd/zephyr%2Cmmc-disk.md#std-dtcompatible-zephyr-mmc-disk) (on sd bus):
+
+      > - new property: `bus-width`
+    - [`zephyr,bt-hci-spi`](../build/dts/api/bindings/bluetooth/zephyr%2Cbt-hci-spi.md#std-dtcompatible-zephyr-bt-hci-spi) (on spi bus):
+
+      > - new property: `controller-data-delay-us`
+    - [`zephyr,sdhc-spi-slot`](../build/dts/api/bindings/sdhc/zephyr%2Csdhc-spi-slot.md#std-dtcompatible-zephyr-sdhc-spi-slot) (on spi bus):
+
+      > - new property: `pwr-gpios`
+    - [`zephyr,memory-region`](../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region):
+
+      > - new property: `zephyr,memory-attr`
+      > - property `zephyr,memory-region-mpu` enum value changed from [‘RAM’, ‘RAM\_NOCACHE’, ‘FLASH’, ‘PPB’, ‘IO’, ‘EXTMEM’] to None
+      > - property `zephyr,memory-region-mpu` deprecation status changed from False to True
+      > - property `reg` is now required
+
+## Libraries / Subsystems
+
+- Management
+
+  - Introduced MCUmgr client support with handlers for img\_mgmt and os\_mgmt.
+  - Added response checking to MCUmgr’s [`MGMT_EVT_OP_CMD_RECV`](../doxygen/html/group__mcumgr__callback__api.md#gga590788274b4508c6203685d9e9252184a933f494aa22d52d536bb6c3de0dbeb28)
+    notification callback to allow applications to reject MCUmgr commands.
+  - MCUmgr SMP version 2 error translation (to legacy MCUmgr error code) is now
+    supported in function handlers by setting `mg_translate_error` of
+    [`mgmt_group`](../doxygen/html/structmgmt__group.md) when registering a group. See
+    `smp_translate_error_fn` for function details.
+  - Fixed an issue with MCUmgr img\_mgmt group whereby the size of the upload in
+    the initial packet was not checked.
+  - Fixed an issue with MCUmgr fs\_mgmt group whereby some status codes were not
+    checked properly, this meant that the error returned might not be the
+    correct error, but would only occur in situations where an error was
+    already present.
+  - Fixed an issue whereby the SMP response function did not check to see if
+    the initial zcbor map was created successfully.
+  - Fixes an issue with MCUmgr shell\_mgmt group whereby the length of a
+    received command was not properly checked.
+  - Added optional mutex locking support to MCUmgr img\_mgmt group, which can
+    be enabled with [`CONFIG_MCUMGR_GRP_IMG_MUTEX`](../kconfig.md#CONFIG_MCUMGR_GRP_IMG_MUTEX "CONFIG_MCUMGR_GRP_IMG_MUTEX").
+  - Added MCUmgr settings management group, which allows for manipulation of
+    zephyr settings from a remote device, see [Settings (Config) Management Group](../services/device_mgmt/smp_groups/smp_group_3.md#mcumgr-smp-group-3) for
+    details.
+  - Added [`CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_SECONDARY`](../kconfig.md#CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_SECONDARY "CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_SECONDARY")
+    and [`CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_ANY`](../kconfig.md#CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_ANY "CONFIG_MCUMGR_GRP_IMG_ALLOW_CONFIRM_NON_ACTIVE_IMAGE_ANY")
+    that allow to control whether MCUmgr client will be allowed to confirm
+    non-active images.
+  - Added [`CONFIG_MCUMGR_GRP_IMG_ALLOW_ERASE_PENDING`](../kconfig.md#CONFIG_MCUMGR_GRP_IMG_ALLOW_ERASE_PENDING "CONFIG_MCUMGR_GRP_IMG_ALLOW_ERASE_PENDING") that allows
+    to erase slots pending for next boot, that are not revert slots.
+  - Added `user_data` as an optional field to [`mgmt_handler`](../doxygen/html/structmgmt__handler.md) when
+    [`CONFIG_MCUMGR_MGMT_HANDLER_USER_DATA`](../kconfig.md#CONFIG_MCUMGR_MGMT_HANDLER_USER_DATA "CONFIG_MCUMGR_MGMT_HANDLER_USER_DATA") is enabled.
+  - Added optional `force` parameter to os mgmt reset command, this can be checked in the
+    [`MGMT_EVT_OP_OS_MGMT_RESET`](../doxygen/html/group__mcumgr__callback__api.md#gga261346c700a2522542d8282ca76f88a5a9feea9f8cfcca803a18be03e08583c52) notification callback whose data structure is
+    [`os_mgmt_reset_data`](../doxygen/html/structos__mgmt__reset__data.md).
+  - Added configurable number of SMP encoding levels via
+    [`CONFIG_MCUMGR_SMP_CBOR_MIN_ENCODING_LEVELS`](../kconfig.md#CONFIG_MCUMGR_SMP_CBOR_MIN_ENCODING_LEVELS "CONFIG_MCUMGR_SMP_CBOR_MIN_ENCODING_LEVELS"), which automatically increments
+    minimum encoding levels for in-tree groups if [`CONFIG_ZCBOR_CANONICAL`](../kconfig.md#CONFIG_ZCBOR_CANONICAL "CONFIG_ZCBOR_CANONICAL") is
+    enabled.
+  - Added STM32 SPI backend for EC Host command protocol.
+  - Fixed settings\_mgmt returning unknown error instead of invalid key specified error.
+  - Fixed fs\_mgmt returning parameter too large error instead of file is empty error when
+    attempting to hash/checksum a file which is empty.
+- File systems
+
+  - Added support for ext2 file system.
+  - Added support of mounting littlefs on the block device from the shell/fs.
+  - Added alignment parameter to FS\_LITTLEFS\_DECLARE\_CUSTOM\_CONFIG macro, it can speed up read/write
+    operation for SDMMC devices in case when we align buffers on CONFIG\_SDHC\_BUFFER\_ALIGNMENT,
+    because we can avoid extra copy of data from card buffer to read/prog buffer.
+- Random
+
+  - `CONFIG_XOROSHIRO_RANDOM_GENERATOR`, deprecated a long time ago, is finally removed.
+- Retention
+
+  - Added the [Bootloader Information](../services/retention/blinfo.md#blinfo-api) subsystem.
+  - Added support for allowing mutex support to be forcibly disabled with
+    [`CONFIG_RETENTION_MUTEX_FORCE_DISABLE`](../kconfig.md#CONFIG_RETENTION_MUTEX_FORCE_DISABLE "CONFIG_RETENTION_MUTEX_FORCE_DISABLE").
+- Binary descriptors
+
+  - Added the [Binary Descriptors](../services/binary_descriptors/index.md#binary-descriptors) (`bindesc`) subsystem.
+- POSIX API
+
+  - Added dynamic thread stack support for [`pthread_create()`](../doxygen/html/pthread_8h.md#acb010e074930d81533ed20d319ca80b1)
+  - Fixed [`stat()`](../doxygen/html/stat_8h.md#a0f949e7f97dc8e3e4ea1142cda8be155) so that it returns file stats instead of filesystem stats
+  - Implemented [`pthread_barrierattr_destroy()`](../doxygen/html/pthread_8h.md#a5e27d4773f3d0552e36f2ff3b922a988), [`pthread_barrierattr_getpshared()`](../doxygen/html/pthread_8h.md#a54e367403c0524680115b780ccfbc586),
+    [`pthread_barrierattr_init()`](../doxygen/html/pthread_8h.md#ad540451ab679ace869b51c7cbb7b8486), [`pthread_barrierattr_setpshared()`](../doxygen/html/pthread_8h.md#aa9c3c335f5bcf702fe85a1c12dcdc70e),
+    [`pthread_condattr_destroy()`](../doxygen/html/pthread_8h.md#af37eaf73f0d83989d8efc06e676909f1), [`pthread_condattr_init()`](../doxygen/html/pthread_8h.md#a01159da320b2317ee286a7e92d713f16),
+    [`pthread_mutexattr_destroy()`](../doxygen/html/pthread_8h.md#a2321aabf58224b06021185708d0f9658), [`pthread_mutexattr_init()`](../doxygen/html/pthread_8h.md#af98f6b6c483077a39d1400b1de1577b8), [`uname()`](../doxygen/html/utsname_8h.md#a1ad7a68f28b58669758da1b12061a81f),
+    [`sigaddset()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#acab58ba1dfe2108f96d9f28e249a8c7d), [`sigdelset()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#ac3471f7a860cdfb70afe89a90a074c69), [`sigemptyset()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#a5925352f90eb589393274fa0376d7def), [`sigfillset()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#a88d7bbc77ea1569ee21c90db549ea023),
+    [`sigismember()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#a2bd11ded490df632440aa08f320aad17), [`strsignal()`](../doxygen/html/include_2zephyr_2posix_2signal_8h.md#a8b856eee87a225f697f1b264ebd6a47b), `pthread_spin_destroy()`,
+    `pthread_spin_init()`, `pthread_spin_lock()`, `pthread_spin_trylock()`,
+    `pthread_spin_unlock()`, [`timer_getoverrun()`](../doxygen/html/include_2zephyr_2posix_2time_8h.md#ad779f0bc22f64bd3bd977221b0ce1b8f), [`pthread_condattr_getclock()`](../doxygen/html/pthread_8h.md#a77376b018eec6db2986939b847915a3c),
+    [`pthread_condattr_setclock()`](../doxygen/html/pthread_8h.md#ac0b4f6d49deeab0ddb269a23ee303156), [`clock_nanosleep()`](../doxygen/html/include_2zephyr_2posix_2time_8h.md#a924d51d78cdcd9d7dee2613fb3a33cd1)
+  - Added support for querying the number of bytes available to read via the
+    [`FIONREAD`](../doxygen/html/ioctl_8h.md#ac68826c621a12d91544dab200c86c75a) request to [`ioctl()`](../doxygen/html/ioctl_8h.md#a1487536105f7a596481bf6bfa8de99f6)
+  - Added [`CONFIG_FDTABLE`](../kconfig.md#CONFIG_FDTABLE "CONFIG_FDTABLE") to conditionally compile file descriptor table
+  - Added logging to POSIX threads, mutexes, and condition variables
+  - Fixed [`poll()`](../doxygen/html/group__bsd__sockets.md#gae2d9b8390c125624595e2b400a08ea29) issue with event file descriptors
+- LoRa/LoRaWAN
+
+  - Updated `loramac-node` from v4.6.0 to v4.7.0
+- CAN ISO-TP
+
+  - Added support for CAN FD.
+- RTIO
+
+  - Added atomic completion counter fixing a race caught by unit tests
+  - Added a [`RTIO_SQE_NO_RESPONSE`](../doxygen/html/group__rtio__sqe__flags.md#ga8578ffdb8f53a51b94fa86a6f02d4a11) flag for submissions when no completion notification
+    is needed
+  - Removed unused Kconfig options for different executors
+- ZBus
+
+  - Changed channels’ and observers’ metadata to comply with the data/config approach. ZBus stores
+    immutable config in iterable sections in Flash and the mutable portion of data in the RAM.
+  - The relationship between channels and observers is mapped using a new entity called
+    observation. The observation enables us to increase the granularity of masking observation.
+    Developers can mask individual observations, disable the observer, or use runtime observers.
+  - Added API [`ZBUS_CHAN_ADD_OBS`](../doxygen/html/group__zbus__apis.md#gaf63215f3f53741edf52b4d0d7b2b97df) macro for adding post-definition static observers of a
+    channel. That can replace the runtime observer feature, enabling developers to add static
+    observers after the channel definition in different files. It increases the composability of
+    the system using ZBus, making post-definition channel observation rely on the stack instead of
+    the heap.
+  - Added a new type of observer called Message Subscriber. ZBus’ VDED will send a copy of the
+    message during the publication/notification process.
+  - Changed the VDED delivery sequence. Check the ref:documentation<zbus delivery sequence>.
+  - ZBus runtime observers now rely on the heap instead of a memory pool.
+  - Added new iterable section iterators APIs (for channels and observers) can now receive a
+    `user_data` pointer to keep context between the function calls.
+  - Added APIs [`ZBUS_LISTENER_DEFINE_WITH_ENABLE`](../doxygen/html/group__zbus__apis.md#gace4ac9da0e1bab7ba72797783ded948f) and
+    [`ZBUS_SUBSCRIBER_DEFINE_WITH_ENABLE`](../doxygen/html/group__zbus__apis.md#gaf56f71babe2bb27258f025332b80c58f) that allows developers to define observers’
+    statuses (enabled/disabled) programmatically. With the API, developers can create observers
+    initially disabled and enable them in runtime.
+- Power management
+
+  - Added [`CONFIG_PM_NEED_ALL_DEVICES_IDLE`](../kconfig.md#CONFIG_PM_NEED_ALL_DEVICES_IDLE "CONFIG_PM_NEED_ALL_DEVICES_IDLE"). When this
+    option is set the power management will keep the system active
+    if there is any device busy.
+  - [`pm_device_runtime_get()`](../doxygen/html/group__subsys__pm__device__runtime.md#ga530d4be65757fb2276ab6f631953e045) can be called from ISR now.
+  - Power states can be disabled directly in devicetree doing `status = "disabled";`
+  - Added the helper function, [`pm_device_driver_init()`](../doxygen/html/group__subsys__pm__device.md#gad563094c2d4ad066bc4ce30586e13fb3), for
+    initializing devices into a specific power state.
+- Modem modules
+
+  - Added the [Modem modules](../services/modem/index.md#modem) subsystem.
+
+## HALs
+
+- Nordic
+
+  - Updated nrfx to version 3.1.0.
+- Nuvoton
+
+  - Added Nuvoton NuMaker M46x
+
+## MCUboot
+
+> - Added [`CONFIG_MCUBOOT_BOOTLOADER_NO_DOWNGRADE`](../kconfig.md#CONFIG_MCUBOOT_BOOTLOADER_NO_DOWNGRADE "CONFIG_MCUBOOT_BOOTLOADER_NO_DOWNGRADE")
+>   that allows to inform application that the on-board MCUboot has been configured
+>   with downgrade prevention enabled. This option is automatically selected for
+>   DirectXIP mode and is available for both swap modes.
+> - Added [`CONFIG_MCUBOOT_BOOTLOADER_MODE_OVERWRITE_ONLY`](../kconfig.md#CONFIG_MCUBOOT_BOOTLOADER_MODE_OVERWRITE_ONLY "CONFIG_MCUBOOT_BOOTLOADER_MODE_OVERWRITE_ONLY")
+>   that allows to inform application that the on-board MCUboot will overwrite
+>   the primary slot with secondary slot contents, without saving the original
+>   image in primary slot.
+> - Fixed issue with serial recovery not showing image details for decrypted images.
+> - Fixed issue with serial recovery in single slot mode wrongly iterating over 2 image slots.
+> - Fixed an issue with boot\_serial repeats not being processed when output was sent, this would
+>   lead to a divergence of commands whereby later commands being sent would have the previous
+>   command output sent instead.
+> - Fixed an issue with the boot\_serial zcbor setup encoder function wrongly including the buffer
+>   address in the size which caused serial recovery to fail on some platforms.
+> - Fixed wrongly building in optimize for debug mode by default, this saves a significant amount
+>   of flash space.
+> - Fixed issue with serial recovery use of MBEDTLS having undefined operations which led to usage
+>   faults when the secondary slot image was encrypted.
+> - Fixed issue with bootutil asserting on maximum alignment in non-swap modes.
+> - Added error output when flash device fails to open and asserts are disabled, which will now
+>   panic the bootloader.
+> - Added currently running slot ID and maximum application size to shared data function
+>   definition.
+> - Added P384 and SHA384 support to imgtool.
+> - Added optional serial recovery image state and image set state commands.
+> - Added `dumpinfo` command for signed image parsing in imgtool.
+> - Added `getpubhash` command to dump the sha256 hash of the public key in imgtool.
+> - Added support for `getpub` to print the output to a file in imgtool.
+> - Added support for dumping the raw versions of the public keys in imgtool.
+> - Added support for sharing boot information with application via retention subsystem.
+> - Added support for serial recovery to read and handle encrypted seondary slot partitions.
+> - Removed ECDSA P224 support.
+> - Removed custom image list boot serial extension support.
+> - Reworked boot serial extensions so that they can be used by modules or from user repositories
+>   by switching to iterable sections.
+> - Reworked image encryption support for Zephyr, static dummy key files are no longer in the code,
+>   a pem file must be supplied to extract the private and public keys. The Kconfig menu has
+>   changed to only show a single option for enabling encryption and selecting the key file.
+> - Reworked the ECDSA256 TLV curve agnostic and renamed it to `ECDSA_SIG`.
+> - CDDL auto-generated function code has been replaced with zcbor function calls, this now allows
+>   the parameters to be supplied in any order.
+> - The MCUboot version in this release is version `2.0.0+0-rc1`.
+
+## Nanopb
+
+> - Changed project status to maintained.
+> - Added a separate nanopb.cmake file to be included by applications.
+> - Added helper cmake function `zephyr_nanopb_sources` to simplify `.proto` file inclusion.
+
+## LVGL
+
+> - Changed project status to maintained.
+> - Library has been updated to release v8.3.7.
+> - Added `zephyr,lvgl-{pointer,button,encoder}-input` pseudo device bindings.
+>   `CONFIG_LV_Z_KSCAN_POINTER` is still supported but touch controllers
+>   need a [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) child node to emit input events.
+> - LVGL shell allows for monkey testing (requires [`CONFIG_LV_USE_MONKEY`](../kconfig.md#CONFIG_LV_USE_MONKEY "CONFIG_LV_USE_MONKEY"))
+>   and inspecting memory usage.
+
+## Trusted Firmware-A
+
+- Updated to TF-A 2.9.0.
+
+## Documentation
+
+- Upgraded Sphinx to 6.2
+
+## Tests and Samples
+
+- Created common sample for file systems (fs\_sample). It originates from sample for FAT
+  (fat\_fs) and supports both FAT and ext2 file systems.
+- Created the zbus confirmed channel sample to demonstrate how to implement a delivery-guaranteed
+  channel using subscribers.
+- Created the zbus message subscriber sample to demonstrate how to use message subscribers.

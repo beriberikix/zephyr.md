@@ -1,0 +1,303 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/boards/shields/mcp2515/doc/index.html
+original_path: boards/shields/mcp2515/doc/index.html
+---
+
+# Microchip MCP2515 CAN bus shields
+
+Zephyr supports a couple of different shields carrying the Microchip [MCP2515](https://www.microchip.com/en-us/product/MCP2515)
+Stand-Alone CAN Controller with SPI Interface.
+
+## DFRobot CAN BUS Shield V2.0
+
+### Overview
+
+The DFRobot CAN BUS shield supports the Microchip MCP2515 stand-alone CAN
+controller and JTA1050 high speed CAN transceiver. The shield has an Arduino
+Uno R3 compatible hardware interface.
+
+![DFRobot_CAN_BUS_V2_0_SHIELD](../../../../_images/dfrobot_can_bus_v2_0.jpg)
+
+### Hardware
+
+- MCP2515
+
+  > - Stand-Alone CAN 2.0B Controller
+  > - Up to 1Mb/s baud rate
+  > - Standard and extended data and remote frames
+  > - 3x Tx Buffers
+  > - 2x Rx Buffers
+  > - 6x 29-bit Filters
+  > - 2x 29-bit Masks
+  > - Interrupt output
+  > - One shot mode
+  > - High speed SPI interface (10 MHz)
+- TJA1050
+
+  > - Fully compatible with the “ISO 11898” standard
+  > - High speed (up to 1 Mbaud)
+- Connectivity
+
+  > - Industrial standard DB9 terminal (CAN)
+  > - Screw terminals (CAN)
+  > - Integrated MicroSD socket for data storage (SPI)
+  > - Arduino Uno R3 compatible (SPI)
+
+| Name | Function | Usage |
+| --- | --- | --- |
+| A0 | None |  |
+| A1 | None |  |
+| A2 | None |  |
+| A3 | None |  |
+| A4 | None |  |
+| A5 | None |  |
+| D0 | RX | Ext. header only |
+| D1 | TX | Ext. header only |
+| D2 | GPIO\_ACTIVE\_LOW | MCP2515 - INT |
+| D3 | None |  |
+| D4 | SPI-CS | MicroSD |
+| D5 | None |  |
+| D6 | None |  |
+| D7 | None |  |
+| D8 | None |  |
+| D9 | None |  |
+| D10 | SPI-CS | MCP2515 |
+| D11 | SPI-MOSI | MCP2515 / MicroSD |
+| D12 | SPI-MISO | MCP2515 / MicroSD |
+| D13 | SPI-CLK | MCP2515 / MicroSD |
+| D14 | I2C-SDA | Ext. header only |
+| D15 | I2C\_SCL | Ext. header only |
+
+- Power Supply
+
+  > - 3.3V ~ 5V
+- Components
+
+  > - Power switch
+  > - Power LED
+  > - RX0BF LED
+  > - RX1BF LED
+
+For more information about the DFRobot CAN-BUS V2.0 shield:
+
+- [DFRobot Website](https://www.dfrobot.com/product-1444.html)
+- [DFRobot CAN BUS Shield V2.0 schematic](https://github.com/DFRobot/DFRobot_MCP2515/blob/master/resources/doc/DFR0370%20CAN%20BUS%20sheild(V2.0).pdf)
+- [MCP2515 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
+- [TJA1050 Datasheet](https://www.nxp.com/docs/en/data-sheet/TJA1050.pdf)
+
+## Keyestudio CAN-BUS Shield (KS0411)
+
+### Overview
+
+The Keyestudio CAN BUS shield supports the Microchip MCP2515 stand-alone CAN
+controller and MCP2551 high speed CAN transceiver. The shield has an Arduino
+Uno R3 compatible hardware interface.
+
+![Keyestudio CAN-BUS Shield (KS0411)](../../../../_images/keyestudio_can_bus_ks0411.jpg)
+
+Keyestudio CAN-BUS Shield (KS0411) (Credit: Keyestudio)
+
+### Hardware
+
+- MCP2515
+
+  > - Stand-Alone CAN 2.0B Controller
+  > - Up to 1Mb/s baud rate
+  > - Standard and extended data and remote frames
+  > - 3x Tx Buffers
+  > - 2x Rx Buffers
+  > - 6x 29-bit Filters
+  > - 2x 29-bit Masks
+  > - Interrupt output
+  > - One shot mode
+  > - High speed SPI interface (10 MHz)
+- MCP2551
+
+  > - Fully compatible with the “ISO 11898” standard
+  > - High speed (up to 1 Mbaud)
+- Connectivity
+
+  > - Industrial standard DB9 terminal (CAN)
+  > - Pin headers (CAN)
+  > - Integrated MicroSD socket for data storage (SPI)
+  > - Arduino Uno R3 compatible (SPI)
+
+| Name | Function | Usage |
+| --- | --- | --- |
+| A0 | None |  |
+| A1 | None |  |
+| A2 | None |  |
+| A3 | None |  |
+| A4 | None |  |
+| A5 | None |  |
+| D0 | RX | Ext. header only |
+| D1 | TX | Ext. header only |
+| D2 | None |  |
+| D3 | None |  |
+| D4 | None |  |
+| D5 | None |  |
+| D6 | None |  |
+| D7 | None |  |
+| D8 | GPIO\_ACTIVE\_LOW | MCP2515 - INT |
+| D9 | SPI-CS | MicroSD |
+| D10 | SPI-CS | MCP2515 |
+| D11 | SPI-MOSI | MCP2515 / MicroSD |
+| D12 | SPI-MISO | MCP2515 / MicroSD |
+| D13 | SPI-CLK | MCP2515 / MicroSD |
+| D14 | I2C-SDA | Ext. header only |
+| D15 | I2C\_SCL | Ext. header only |
+
+- Power Supply
+
+  > - 5.0VDC
+
+For more information about the Keyestudio CAN-BUS shield:
+
+- [Keyestudio Website](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html)
+- [Keyestudio Wiki](https://wiki.keyestudio.com/KS0411_keyestudio_CAN-BUS_Shield)
+- [MCP2515 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
+- [MCP2551 Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/20001667G.pdf)
+
+## Adafruit PiCowbell CAN Bus Shield for Pico
+
+### Overview
+
+The Adafruit PiCowbell CAN Bus Shield uses the Microchip MCP2515 controller
+with an TJA1051/3 transceiver. This shield is built for the Raspberry Pi Pico
+and uses the SPI interface. It also contains a Qwiic connector to add support
+for a sensor.
+
+![Adafruit PiCowbell CAN Bus Shield](../../../../_images/adafruit_can_picowbell.jpg)
+
+Adafruit PiCowbell CAN Bus Shield
+
+### Hardware
+
+- MCP2515
+
+  > - Stand-Alone CAN 2.0B Controller
+  > - Up to 1Mb/s baud rate
+  > - Standard and extended data and remote frames
+  > - 3x Tx Buffers
+  > - 2x Rx Buffers
+  > - 6x 29-bit Filters
+  > - 2x 29-bit Masks
+  > - Interrupt output
+  > - One shot mode
+  > - High speed SPI interface (10 MHz)
+- TJA1051
+
+  > - Fully compatible with the “ISO 11898-2:2016”, “SAE J2284-1” & “SAE J2284-5” standards
+  > - Supports CAN FD
+  > - Fast data rates (up to 5 Mbit/s)
+- Connectivity
+
+  > - Terminal Block - 3-pin 3.5mm (CAN)
+  > - Raspberry Pi Pico compatible (SPI)
+
+| Name | Function | Usage |
+| --- | --- | --- |
+| GP0 | None |  |
+| GP1 | None |  |
+| GP2 | None |  |
+| GP3 | None |  |
+| GP4 | None |  |
+| GP5 | None |  |
+| GP6 | None |  |
+| GP7 | None |  |
+| GP8 | None |  |
+| GP9 | None |  |
+| GP10 | None |  |
+| GP11 | None |  |
+| GP12 | None |  |
+| GP13 | None |  |
+| GP14 | None |  |
+| GP15 | None |  |
+| GP16 | SPI-MISO | MCP2515 |
+| GP17 | None |  |
+| GP18 | SPI-SCK | MCP2515 |
+| GP19 | SPI-MOSI | MCP2515 |
+| GP20 | SPI-CS | MCP2515 |
+| GP21 | GPIO\_ACTIVE\_LOW | MCP2515 - INT |
+| GP22 | None |  |
+| GP23 | None |  |
+| GP24 | None |  |
+| GP25 | None |  |
+| GP26 | None |  |
+| GP27 | None |  |
+| GP28 | None |  |
+
+- Power Supply
+
+  > - 3.3V ~ 5V
+
+For more information about the Adafruit PiCowbell CAN Bus shield:
+
+- [Adafruit Website](https://www.adafruit.com/product/5728#technical-details)
+- [MCP2515 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
+- [TJA1051 Datasheet](https://www.nxp.com/docs/en/data-sheet/TJA1051.pdf)
+
+## Programming
+
+Set `--shield dfrobot_can_bus_v2_0` or `--shield keyestudio_can_bus_ks0411`
+or `--shield adafruit_can_picowbell` when you invoke `west build` or `cmake` in your Zephyr application. For
+example:
+
+Using west:
+
+```shell
+# From the root of the zephyr repository
+west build -b nrf52dk/nrf52832 --shield dfrobot_can_bus_v2_0 samples/drivers/can/counter
+west flash
+```
+
+Using CMake and ninja:
+
+```shell
+# From the root of the zephyr repository
+# Use cmake to configure a Ninja-based buildsystem:
+cmake -Bbuild -GNinja -DBOARD=nrf52dk/nrf52832 -DSHIELD="dfrobot_can_bus_v2_0" samples/drivers/can/counter
+
+# Now run the build tool on the generated build system:
+ninja -Cbuild
+ninja -Cbuild flash
+```
+
+Using west:
+
+```shell
+# From the root of the zephyr repository
+west build -b nrf52840dk/nrf52840 --shield keyestudio_can_bus_ks0411 samples/drivers/can/counter
+west flash
+```
+
+Using CMake and ninja:
+
+```shell
+# From the root of the zephyr repository
+# Use cmake to configure a Ninja-based buildsystem:
+cmake -Bbuild -GNinja -DBOARD=nrf52840dk/nrf52840 -DSHIELD="keyestudio_can_bus_ks0411" samples/drivers/can/counter
+
+# Now run the build tool on the generated build system:
+ninja -Cbuild
+ninja -Cbuild flash
+```
+
+Using west:
+
+```shell
+# From the root of the zephyr repository
+west build -b rpi_pico --shield adafruit_can_picowbell samples/drivers/can/counter
+```
+
+Using CMake and ninja:
+
+```shell
+# From the root of the zephyr repository
+# Use cmake to configure a Ninja-based buildsystem:
+cmake -Bbuild -GNinja -DBOARD=rpi_pico -DSHIELD="adafruit_can_picowbell" samples/drivers/can/counter
+
+# Now run the build tool on the generated build system:
+ninja -Cbuild
+```

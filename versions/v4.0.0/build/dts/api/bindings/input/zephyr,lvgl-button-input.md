@@ -1,0 +1,57 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/build/dts/api/bindings/input/zephyr,lvgl-button-input.html
+original_path: build/dts/api/bindings/input/zephyr,lvgl-button-input.html
+---
+
+# zephyr,lvgl-button-input
+
+Vendor: [Zephyr-specific binding](../../bindings.md#dt-vendor-zephyr)
+
+Note
+
+An implementation of a driver matching this compatible is available in
+[modules/lvgl/input/lvgl\_button\_input.c](https://github.com/zephyrproject-rtos/zephyr/blob/main/modules/lvgl/input/lvgl_button_input.c).
+
+## Description
+
+```text
+LVGL button indev pseudo-device
+
+Listens for button input events and routes the
+lv_indev_data_t to the underlying button lv_indev_t managed by LVGL.
+
+Example configuration:
+
+pointer {
+        compatible = "zephyr,lvgl-button-input";
+        input = <&buttons>;
+        input-codes = <INPUT_KEY_0 INPUT_KEY_1>;
+        coordinates = <120 220>, <150 250>;
+};
+
+When the device receives an input_event with code INPUT_KEY_0
+a click event will be performed at (120,220).
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `input-codes` | `array` | ```text Array of input event key codes (INPUT_KEY_* or INPUT_BTN_*). ```  This property is **required**. |
+| `coordinates` | `array` | ```text Array of points (x,y) the associated input-code is mapped to. ``` |
+| `input` | `phandle` | ```text Input device phandle. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “zephyr,lvgl-button-input” compatible.
+
+(None)

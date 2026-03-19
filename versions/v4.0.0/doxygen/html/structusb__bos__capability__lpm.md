@@ -1,0 +1,65 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/doxygen/html/structusb__bos__capability__lpm.html
+original_path: doxygen/html/structusb__bos__capability__lpm.html
+---
+
+| Logo | Zephyr API Documentation 4.0.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+usb\_bos\_capability\_lpm Struct Reference
+
+[Connectivity](group__connectivity.md) » [USB](group__usb.md) » [USB BOS support](group__usb__bos.md)
+
+BOS USB 2.0 extension capability descriptor.
+[More...](#details)
+
+`#include <[bos.h](bos_8h_source.md)>`
+
+| Data Fields | |
+| --- | --- |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [bLength](#a09ec679e05e7b848800ab63220109bef) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [bDescriptorType](#a880b1f6efecf7d1e8e9076680c74f9c2) |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [bDevCapabilityType](#a1ceea07e81970d684a6c1586364a0c90) |
+| [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) | [bmAttributes](#a8a643af1e99eafdecc006cf714cb0af7) |
+
+## Detailed Description
+
+BOS USB 2.0 extension capability descriptor.
+
+## Field Documentation
+
+## [◆ ](#a880b1f6efecf7d1e8e9076680c74f9c2)bDescriptorType
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) usb\_bos\_capability\_lpm::bDescriptorType |
+| --- |
+
+## [◆ ](#a1ceea07e81970d684a6c1586364a0c90)bDevCapabilityType
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) usb\_bos\_capability\_lpm::bDevCapabilityType |
+| --- |
+
+## [◆ ](#a09ec679e05e7b848800ab63220109bef)bLength
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) usb\_bos\_capability\_lpm::bLength |
+| --- |
+
+## [◆ ](#a8a643af1e99eafdecc006cf714cb0af7)bmAttributes
+
+| [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) usb\_bos\_capability\_lpm::bmAttributes |
+| --- |
+
+---
+
+The documentation for this struct was generated from the following file:
+
+- zephyr/usb/[bos.h](bos_8h_source.md)
+
+- [usb\_bos\_capability\_lpm](structusb__bos__capability__lpm.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

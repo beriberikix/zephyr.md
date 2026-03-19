@@ -1,0 +1,149 @@
+---
+version: v4.1.0
+source_url: https://docs.zephyrproject.org/4.1.0/boards/st/nucleo_wb05kz/doc/index.html
+original_path: boards/st/nucleo_wb05kz/doc/index.html
+---
+
+# Nucleo WB05KZ
+
+Board Overview
+
+[![../../../../_images/nucleo_wb05kz.webp](../../../../_images/nucleo_wb05kz.webp)
+](../../../../_images/nucleo_wb05kz.webp)
+
+Nucleo WB05KZ
+
+Name:
+:   `nucleo_wb05kz`
+
+Vendor:
+:   STMicroelectronics
+
+Architecture:
+:   arm
+
+SoC:
+:   stm32wb05
+
+[
+Browse board sources
+](https://github.com/zephyrproject-rtos/zephyr/blob/main//boards/st/nucleo_wb05kz/doc/index.rst/../..)
+
+## Overview
+
+The Nucleo WB05KZ board is a Bluetooth® Low Energy wireless and ultra-low-power
+board featuring an ARM Cortex®-M0+ based STM32WB05KZV MCU, embedding a
+powerful and ultra-low-power radio compliant with the Bluetooth® Low Energy
+SIG specification v5.4.
+
+More information about the board can be found on the [Nucleo WB05KZ webpage](https://www.st.com/en/evaluation-tools/nucleo-wb05kz.html).
+
+## Hardware
+
+Nucleo WB05KZ provides the following hardware components:
+
+- STM32WB05KZV in VFQFPN32 package
+- ARM® 32-bit Cortex®-M0+ CPU
+- 64 MHz maximal CPU frequebct
+- 192 KB Flash
+- 24 KB SRAM
+
+More information about STM32WB05KZV can be found here:
+
+- [WB05KZ on www.st.com](https://www.st.com/en/microcontrollers-microprocessors/stm32wb05kz.html)
+- [STM32WB05 reference manual](https://www.st.com/resource/en/reference_manual/rm0529-stm32wb05xz-ultralow-power-wireless-32bit-mcu-armbased-cortexm0-with-bluetooth-low-energy-and-24-ghz-radio-solution-stmicroelectronics.pdf)
+
+### Supported Features
+
+The `nucleo_wb05kz` board supports the hardware features listed below.
+
+on-chip / on-board
+:   Feature integrated in the SoC / present on the board.
+
+2 / 2
+:   Number of instances that are enabled / disabled.   
+    Click on the label to see the first instance of this feature in the board/SoC DTS files.
+
+`vnd,foo`
+:   Compatible string for the Devicetree binding matching the feature.   
+    Click on the link to view the binding documentation.
+
+#### Bluetooh support
+
+BLE support is enabled; however, to build a Zephyr sample using this board,
+you first need to fetch the Bluetooth controller library into Zephyr as a binary BLOB.
+
+To fetch binary BLOBs:
+
+```shell
+west blobs fetch hal_stm32
+```
+
+### Connections and IOs
+
+#### Default Zephyr Peripheral Mapping:
+
+- USART1 TX/RX : PA1/PB0 (ST-Link Virtual COM Port)
+- BUTTON (B1) : PA0
+- BUTTON (B2) : PB5
+- BUTTON (B3) : PB14
+- LED (LD1/BLUE) : PB1
+- LED (LD2/GREEN) : PB4
+- LED (LD3/RED) : PB2
+
+For more details, please refer to the [Nucleo WB05KZ board User Manual](https://www.st.com/resource/en/user_manual/um3343-stm32wb05-nucleo64-board-mb1801-and-mb2032-stmicroelectronics.pdf).
+
+## Programming and Debugging
+
+Nucleo WB05KZ board includes an ST-LINK-V3EC embedded debug tool interface.
+
+Applications for the `nucleo_w05kz` board target can be built and flashed
+in the usual way (see [Building an Application](../../../../develop/application/index.md#build-an-application) and [Run an Application](../../../../develop/application/index.md#application-run)
+for more details).
+
+### Flashing
+
+The board is configured to be flashed using the west [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) runner,
+so [it must be installed](../../../../develop/flash_debug/host-tools.md#stm32cubeprog-flash-host-tools) beforehand.
+
+Alternatively, OpenOCD can also be used to flash the board using the
+`--runner` (or `-r`) option:
+
+```shell
+$ west flash --runner openocd
+```
+
+#### Flashing an application to Nucleo WB05KZ
+
+Connect the Nucleo WB05KZ to your host computer using the USB port,
+then run a serial host program to connect with your Nucleo board:
+
+```shell
+$ minicom -D /dev/ttyACM0
+```
+
+Now build and flash an application. Here is an example for
+[Hello World](../../../../samples/hello_world/README.md#hello_world "Print "Hello World" to the console.").
+
+```shell
+# From the root of the zephyr repository
+west build -b nucleo_wb05kz samples/hello_world
+west flash
+```
+
+You should see the following message on the console:
+
+```shell
+Hello World! nucleo_wb05kz/stm32wb05
+```
+
+### Debugging
+
+You can debug an application in the usual way. Here is an example for the
+[Hello World](../../../../samples/hello_world/README.md#hello_world "Print "Hello World" to the console.") application.
+
+```shell
+# From the root of the zephyr repository
+west build -b nucleo_wb05kz samples/hello_world
+west debug
+```

@@ -1,0 +1,391 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/doxygen/html/group__grove__display.html
+original_path: doxygen/html/group__grove__display.html
+---
+
+| Logo | Zephyr API Documentation 4.0.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+Grove display APIs
+
+[Third-party](group__third__party.md)
+
+Grove display APIs.
+[More...](#details)
+
+| Macros | |
+| --- | --- |
+| #define | [GLCD\_DS\_DISPLAY\_ON](#ga4fe4ad1bc603fa658247ea2f7dbf7f31)   (1 << 2) |
+| #define | [GLCD\_DS\_DISPLAY\_OFF](#ga66bc1e76fcda544f619d02ecbdcb368f)   (0 << 2) |
+| #define | [GLCD\_DS\_CURSOR\_ON](#gaa40ba9872b397a1daa26f68f17d7e28d)   (1 << 1) |
+| #define | [GLCD\_DS\_CURSOR\_OFF](#gaac73ba0ea95d570493485212ce704691)   (0 << 1) |
+| #define | [GLCD\_DS\_BLINK\_ON](#ga62f05f0aa279c530bb96153efd2a36da)   (1 << 0) |
+| #define | [GLCD\_DS\_BLINK\_OFF](#gaca5ebc6bff0db636ff8767f7c225143f)   (0 << 0) |
+| #define | [GLCD\_IS\_SHIFT\_INCREMENT](#ga460a887aaa11dbe4461226a55bcae951)   (1 << 1) |
+| #define | [GLCD\_IS\_SHIFT\_DECREMENT](#ga2258570aac3ed680739324a2daf5f626)   (0 << 1) |
+| #define | [GLCD\_IS\_ENTRY\_LEFT](#ga5e136501ffbde18b34163bc1a7948c9a)   (1 << 0) |
+| #define | [GLCD\_IS\_ENTRY\_RIGHT](#ga6c9cee5b9f86efcc2073f60dc204fc2a)   (0 << 0) |
+| #define | [GLCD\_FS\_8BIT\_MODE](#ga726ae92e51500c82a202164edb706cd4)   (1 << 4) |
+| #define | [GLCD\_FS\_ROWS\_2](#ga7007ac8d919421d34e4dff4e97503cb6)   (1 << 3) |
+| #define | [GLCD\_FS\_ROWS\_1](#ga2ebedc80c40c35ea57ebcb3968bc1052)   (0 << 3) |
+| #define | [GLCD\_FS\_DOT\_SIZE\_BIG](#gabcfa7abdd0834ee469a6693a0aa7f883)   (1 << 2) |
+| #define | [GLCD\_FS\_DOT\_SIZE\_LITTLE](#gae47fb073bb30f1fab7171a6bad55fc22)   (0 << 2) |
+| #define | [GROVE\_RGB\_WHITE](#gaca2204b331e88203b05d0382d80cc5de)   0 |
+| #define | [GROVE\_RGB\_RED](#gad391aa4262d4fd7e93052e7dafc5daa4)   1 |
+| #define | [GROVE\_RGB\_GREEN](#ga6e9faff3c1a708d6c5d509a85e1dd1f4)   2 |
+| #define | [GROVE\_RGB\_BLUE](#gaf754fe5b8b20bca5ae9768833e045ef8)   3 |
+
+| Functions | |
+| --- | --- |
+| void | [glcd\_print](#gaecd7b73186d110fa4bd2c47bbb7d63a2) (const struct [device](structdevice.md) \*dev, char \*data, [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) size) |
+|  | Send text to the screen. |
+| void | [glcd\_cursor\_pos\_set](#ga8272c8c1ff41835306908a0f6932feae) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) col, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) row) |
+|  | Set text cursor position for next additions. |
+| void | [glcd\_clear](#ga10929139f1632247968ccdd4fdd79dcd) (const struct [device](structdevice.md) \*dev) |
+|  | Clear the current display. |
+| void | [glcd\_display\_state\_set](#ga103c6edb0b5ed37f34c12694338acc70) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) opt) |
+|  | Function to change the display state. |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [glcd\_display\_state\_get](#gac3139bf68d1acbb27905a2346da13b17) (const struct [device](structdevice.md) \*dev) |
+|  | return the display feature set associated with the device |
+| void | [glcd\_input\_state\_set](#gae73554047414529e5e7957a5d394e4a2) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) opt) |
+|  | Function to change the input state. |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [glcd\_input\_state\_get](#ga3c590c83b2f1c8ea0fe301daa7a40198) (const struct [device](structdevice.md) \*dev) |
+|  | return the input set associated with the device |
+| void | [glcd\_function\_set](#ga5e9fb362faf9c040eaa16addbfad2b6d) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) opt) |
+|  | Function to set the functional state of the display. |
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | [glcd\_function\_get](#gad660824e481428b811c914d6bf4634f5) (const struct [device](structdevice.md) \*dev) |
+|  | return the function set associated with the device |
+| void | [glcd\_color\_select](#gabd119208e05f9f878b7f24a62da08db2) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) color) |
+|  | Set LCD background to a predefined color. |
+| void | [glcd\_color\_set](#gaf99aa37f71396baaf523348a3ea9cbbe) (const struct [device](structdevice.md) \*dev, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) [r](asm-macro-32-bit-gnu_8h.md#af16d2973cfd145a2ebdbf9528d5d9ae2), [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) g, [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) b) |
+|  | Set LCD background to custom RGB color value. |
+
+## Detailed Description
+
+Grove display APIs.
+
+## Macro Definition Documentation
+
+## [◆ ](#gaca5ebc6bff0db636ff8767f7c225143f)GLCD\_DS\_BLINK\_OFF
+
+| #define GLCD\_DS\_BLINK\_OFF   (0 << 0) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga62f05f0aa279c530bb96153efd2a36da)GLCD\_DS\_BLINK\_ON
+
+| #define GLCD\_DS\_BLINK\_ON   (1 << 0) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gaac73ba0ea95d570493485212ce704691)GLCD\_DS\_CURSOR\_OFF
+
+| #define GLCD\_DS\_CURSOR\_OFF   (0 << 1) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gaa40ba9872b397a1daa26f68f17d7e28d)GLCD\_DS\_CURSOR\_ON
+
+| #define GLCD\_DS\_CURSOR\_ON   (1 << 1) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga66bc1e76fcda544f619d02ecbdcb368f)GLCD\_DS\_DISPLAY\_OFF
+
+| #define GLCD\_DS\_DISPLAY\_OFF   (0 << 2) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga4fe4ad1bc603fa658247ea2f7dbf7f31)GLCD\_DS\_DISPLAY\_ON
+
+| #define GLCD\_DS\_DISPLAY\_ON   (1 << 2) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga726ae92e51500c82a202164edb706cd4)GLCD\_FS\_8BIT\_MODE
+
+| #define GLCD\_FS\_8BIT\_MODE   (1 << 4) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gabcfa7abdd0834ee469a6693a0aa7f883)GLCD\_FS\_DOT\_SIZE\_BIG
+
+| #define GLCD\_FS\_DOT\_SIZE\_BIG   (1 << 2) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gae47fb073bb30f1fab7171a6bad55fc22)GLCD\_FS\_DOT\_SIZE\_LITTLE
+
+| #define GLCD\_FS\_DOT\_SIZE\_LITTLE   (0 << 2) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga2ebedc80c40c35ea57ebcb3968bc1052)GLCD\_FS\_ROWS\_1
+
+| #define GLCD\_FS\_ROWS\_1   (0 << 3) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga7007ac8d919421d34e4dff4e97503cb6)GLCD\_FS\_ROWS\_2
+
+| #define GLCD\_FS\_ROWS\_2   (1 << 3) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga5e136501ffbde18b34163bc1a7948c9a)GLCD\_IS\_ENTRY\_LEFT
+
+| #define GLCD\_IS\_ENTRY\_LEFT   (1 << 0) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga6c9cee5b9f86efcc2073f60dc204fc2a)GLCD\_IS\_ENTRY\_RIGHT
+
+| #define GLCD\_IS\_ENTRY\_RIGHT   (0 << 0) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga2258570aac3ed680739324a2daf5f626)GLCD\_IS\_SHIFT\_DECREMENT
+
+| #define GLCD\_IS\_SHIFT\_DECREMENT   (0 << 1) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga460a887aaa11dbe4461226a55bcae951)GLCD\_IS\_SHIFT\_INCREMENT
+
+| #define GLCD\_IS\_SHIFT\_INCREMENT   (1 << 1) |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gaf754fe5b8b20bca5ae9768833e045ef8)GROVE\_RGB\_BLUE
+
+| #define GROVE\_RGB\_BLUE   3 |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#ga6e9faff3c1a708d6c5d509a85e1dd1f4)GROVE\_RGB\_GREEN
+
+| #define GROVE\_RGB\_GREEN   2 |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gad391aa4262d4fd7e93052e7dafc5daa4)GROVE\_RGB\_RED
+
+| #define GROVE\_RGB\_RED   1 |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## [◆ ](#gaca2204b331e88203b05d0382d80cc5de)GROVE\_RGB\_WHITE
+
+| #define GROVE\_RGB\_WHITE   0 |
+| --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+## Function Documentation
+
+## [◆ ](#ga10929139f1632247968ccdd4fdd79dcd)glcd\_clear()
+
+| void glcd\_clear | ( | const struct [device](structdevice.md) \* | *dev* | ) |  |
+| --- | --- | --- | --- | --- | --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Clear the current display.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+
+## [◆ ](#gabd119208e05f9f878b7f24a62da08db2)glcd\_color\_select()
+
+| void glcd\_color\_select | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *color* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Set LCD background to a predefined color.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | color | One of the predefined color options |
+
+## [◆ ](#gaf99aa37f71396baaf523348a3ea9cbbe)glcd\_color\_set()
+
+| void glcd\_color\_set | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *r*, |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *g*, |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *b* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Set LCD background to custom RGB color value.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | [r](asm-macro-32-bit-gnu_8h.md#af16d2973cfd145a2ebdbf9528d5d9ae2) | A numeric value for the red color (max is 255) |
+    | g | A numeric value for the green color (max is 255) |
+    | b | A numeric value for the blue color (max is 255) |
+
+## [◆ ](#ga8272c8c1ff41835306908a0f6932feae)glcd\_cursor\_pos\_set()
+
+| void glcd\_cursor\_pos\_set | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *col*, |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *row* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Set text cursor position for next additions.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | col | the column for the cursor to be moved to (0-15) |
+    | row | the row it should be moved to (0 or 1) |
+
+## [◆ ](#gac3139bf68d1acbb27905a2346da13b17)glcd\_display\_state\_get()
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) glcd\_display\_state\_get | ( | const struct [device](structdevice.md) \* | *dev* | ) |  |
+| --- | --- | --- | --- | --- | --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+return the display feature set associated with the device
+
+Parameters
+:   | dev | the Grove LCD to get the display features set |
+    | --- | --- |
+
+Returns
+:   the display feature set associated with the device.
+
+## [◆ ](#ga103c6edb0b5ed37f34c12694338acc70)glcd\_display\_state\_set()
+
+| void glcd\_display\_state\_set | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *opt* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Function to change the display state.
+
+This function provides the user the ability to change the state of the display as per needed. Controlling things like powering on or off the screen, the option to display the cursor or not, and the ability to blink the cursor.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | opt | An 8bit bitmask of GLCD\_DS\_\* options. |
+
+## [◆ ](#gad660824e481428b811c914d6bf4634f5)glcd\_function\_get()
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) glcd\_function\_get | ( | const struct [device](structdevice.md) \* | *dev* | ) |  |
+| --- | --- | --- | --- | --- | --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+return the function set associated with the device
+
+Parameters
+:   | dev | the Grove LCD to get the functions set |
+    | --- | --- |
+
+Returns
+:   the function features set associated with the device.
+
+## [◆ ](#ga5e9fb362faf9c040eaa16addbfad2b6d)glcd\_function\_set()
+
+| void glcd\_function\_set | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *opt* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Function to set the functional state of the display.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | opt | A bitmask of GLCD\_FS\_\* options |
+
+This function provides the user the ability to change the state of the display as per needed. Controlling things like the number of rows, dot size, and text display quality.
+
+## [◆ ](#ga3c590c83b2f1c8ea0fe301daa7a40198)glcd\_input\_state\_get()
+
+| [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) glcd\_input\_state\_get | ( | const struct [device](structdevice.md) \* | *dev* | ) |  |
+| --- | --- | --- | --- | --- | --- |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+return the input set associated with the device
+
+Parameters
+:   | dev | the Grove LCD to get the input features set |
+    | --- | --- |
+
+Returns
+:   the input set associated with the device.
+
+## [◆ ](#gae73554047414529e5e7957a5d394e4a2)glcd\_input\_state\_set()
+
+| void glcd\_input\_state\_set | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | [uint8\_t](stdint_8h.md#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d) | *opt* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Function to change the input state.
+
+This function provides the user the ability to change the state of the text input. Controlling things like text entry from the left or right side, and how far to increment on new text
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | opt | A bitmask of GLCD\_IS\_\* options |
+
+## [◆ ](#gaecd7b73186d110fa4bd2c47bbb7d63a2)glcd\_print()
+
+| void glcd\_print | ( | const struct [device](structdevice.md) \* | *dev*, |
+| --- | --- | --- | --- |
+|  |  | char \* | *data*, |
+|  |  | [uint32\_t](stdint_8h.md#a0a8582351ac627ee8bde2973c825e47f) | *size* ) |
+
+`#include <[grove_lcd.h](grove__lcd_8h.md)>`
+
+Send text to the screen.
+
+Parameters
+:   | dev | Pointer to device structure for driver instance. |
+    | --- | --- |
+    | data | the ASCII text to display |
+    | size | the length of the text in bytes |
+
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

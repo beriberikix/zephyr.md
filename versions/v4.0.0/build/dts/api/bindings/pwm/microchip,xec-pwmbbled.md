@@ -1,0 +1,81 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/build/dts/api/bindings/pwm/microchip,xec-pwmbbled.html
+original_path: build/dts/api/bindings/pwm/microchip,xec-pwmbbled.html
+---
+
+# microchip,xec-pwmbbled
+
+Vendor: [Microchip Technology Inc.](../../bindings.md#dt-vendor-microchip)
+
+Note
+
+An implementation of a driver matching this compatible is available in
+[drivers/pwm/pwm\_mchp\_xec\_bbled.c](https://github.com/zephyrproject-rtos/zephyr/blob/main/drivers/pwm/pwm_mchp_xec_bbled.c).
+
+## Description
+
+```text
+Microchip XEC PWM using BBLED hardware
+```
+
+## Properties
+
+Node specific propertiesDeprecated node specific propertiesBase properties
+
+Properties not inherited from the base binding file.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `girqs` | `array` | ```text Array of pairs of GIRQ number and bit position ```  This property is **required**. |
+| `pcrs` | `array` | ```text BBLED PCR register index and bit position ```  This property is **required**. |
+| `clock-select` | `string` | ```text Clock source selection: 32 KHz is available in deep sleep. - PWM_BBLED_CLK_AHB: Clock source is the PLL based AHB clock - PWM_BBLED_CLK_32K: Clock source is the 32KHz domain ```  This property is **required**.  Legal values: `'PWM_BBLED_CLK_32K'`, `'PWM_BBLED_CLK_48M'` |
+| `pinctrl-0` | `phandles` | ```text Pin configuration/s for the first state. Content is specific to the selected pin controller driver implementation. ```  This property is **required**. |
+| `pinctrl-names` | `string-array` | ```text Names for the provided states. The number of names needs to match the number of states. ```  This property is **required**. |
+| `#pwm-cells` | `int` | ```text Number of items to expect in a pwm specifier ```  This property is **required**.  Constant value: `3` |
+| `enable-low-power-32k` | `boolean` | ```text BBLED has two clock inputs. - Main system clock (48MHz) - 32KHz Core clock (32.768KHz) When BBLED enter into Suspend state, 48MHz clock will be switched off by PCR(Power, Clock and Reset) block. But 32KHz Core clock will be available to BBLED. There may be a product requirement, either to blink (or) not blink LED in Suspend state. Property "enable-low-power-32k" shall be used along with 32KHz clock to blink (or) not blink the LED in Suspend state. ``` |
+| `pinctrl-1` | `phandles` | ```text Pin configuration/s for the second state. See pinctrl-0. ``` |
+| `pinctrl-2` | `phandles` | ```text Pin configuration/s for the third state. See pinctrl-0. ``` |
+| `pinctrl-3` | `phandles` | ```text Pin configuration/s for the fourth state. See pinctrl-0. ``` |
+| `pinctrl-4` | `phandles` | ```text Pin configuration/s for the fifth state. See pinctrl-0. ``` |
+
+Deprecated properties not inherited from the base binding file.
+
+(None)
+
+Properties inherited from the base binding file, which defines
+common properties that may be set on many nodes. Not all of these
+may apply to the “microchip,xec-pwmbbled” compatible.
+
+| Name | Type | Details |
+| --- | --- | --- |
+| `reg` | `array` | ```text register space ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `interrupts` | `array` | ```text interrupts for device ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `status` | `string` | ```text indicates the operational status of a device ```  Legal values: `'ok'`, `'okay'`, `'disabled'`, `'reserved'`, `'fail'`, `'fail-sss'`  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `compatible` | `string-array` | ```text compatible strings ```  This property is **required**.  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information. |
+| `reg-names` | `string-array` | ```text name of each register space ``` |
+| `interrupts-extended` | `compound` | ```text extended interrupt specifier for device ``` |
+| `interrupt-names` | `string-array` | ```text name of each interrupt ``` |
+| `interrupt-parent` | `phandle` | ```text phandle to interrupt controller node ``` |
+| `label` | `string` | ```text Human readable string describing the device (used as device_get_binding() argument) ```  See [Important properties](../../../intro-syntax-structure.md#dt-important-props) for more information.  This property is **deprecated**. |
+| `clocks` | `phandle-array` | ```text Clock gate information ``` |
+| `clock-names` | `string-array` | ```text name of each clock ``` |
+| `#address-cells` | `int` | ```text number of address cells in reg property ``` |
+| `#size-cells` | `int` | ```text number of size cells in reg property ``` |
+| `dmas` | `phandle-array` | ```text DMA channels specifiers ``` |
+| `dma-names` | `string-array` | ```text Provided names of DMA channel specifiers ``` |
+| `io-channels` | `phandle-array` | ```text IO channels specifiers ``` |
+| `io-channel-names` | `string-array` | ```text Provided names of IO channel specifiers ``` |
+| `mboxes` | `phandle-array` | ```text mailbox / IPM channels specifiers ``` |
+| `mbox-names` | `string-array` | ```text Provided names of mailbox / IPM channel specifiers ``` |
+| `power-domains` | `phandle-array` | ```text Power domain specifiers ``` |
+| `power-domain-names` | `string-array` | ```text Provided names of power domain specifiers ``` |
+| `#power-domain-cells` | `int` | ```text Number of cells in power-domains property ``` |
+| `zephyr,deferred-init` | `boolean` | ```text Do not initialize device automatically on boot. Device should be manually initialized using device_init(). ``` |
+| `wakeup-source` | `boolean` | ```text Property to identify that a device can be used as wake up source.  When this property is provided a specific flag is set into the device that tells the system that the device is capable of wake up the system.  Wake up capable devices are disabled (interruptions will not wake up the system) by default but they can be enabled at runtime if necessary. ``` |
+| `zephyr,pm-device-runtime-auto` | `boolean` | ```text Automatically configure the device for runtime power management after the init function runs. ``` |
+| `zephyr,disabling-power-states` | `phandles` | ```text List of power states that will disable this device power. ``` |
+
+## Specifier cell names
+
+- pwm cells: channel, period, flags

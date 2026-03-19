@@ -1,0 +1,1007 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/doxygen/html/numaker__m46x__reset_8h.html
+original_path: doxygen/html/numaker__m46x__reset_8h.html
+---
+
+| Logo | Zephyr API Documentation 4.0.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+numaker\_m46x\_reset.h File Reference
+
+[Go to the source code of this file.](numaker__m46x__reset_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [NUMAKER\_SYS\_IPRST0\_PDMA0RST\_Pos](#aa14c6b9502ce50a8fba24c661032fee5)   (2) |
+| #define | [NUMAKER\_SYS\_IPRST0\_EBIRST\_Pos](#a374d55f19e4ec1bb4ff6f6a080129b5b)   (3) |
+| #define | [NUMAKER\_SYS\_IPRST0\_EMAC0RST\_Pos](#aa7476dd238924462ee26481c6b506f43)   (5) |
+| #define | [NUMAKER\_SYS\_IPRST0\_SDH0RST\_Pos](#a228ff84206969b7417687dfd66ed759e)   (6) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CRCRST\_Pos](#abcf3717a5f0b65fc57afa4be8892882c)   (7) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CCAPRST\_Pos](#af75fe0a9f9328e7d9426528770709813)   (8) |
+| #define | [NUMAKER\_SYS\_IPRST0\_HSUSBDRST\_Pos](#aa128ef2acd6d85d3462b2e06505d4430)   (10) |
+| #define | [NUMAKER\_SYS\_IPRST0\_HBIRST\_Pos](#aa3e5d215a7b3d35f798d0c6261420fbb)   (11) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CRPTRST\_Pos](#a98ecd3a2da3fd9c188c41f9a7bd2fa83)   (12) |
+| #define | [NUMAKER\_SYS\_IPRST0\_KSRST\_Pos](#a00456383a1f8e045fd1a9af21450e8e7)   (13) |
+| #define | [NUMAKER\_SYS\_IPRST0\_SPIMRST\_Pos](#a60e4e9f5a10982b52d0a586076d3f22f)   (14) |
+| #define | [NUMAKER\_SYS\_IPRST0\_HSUSBHRST\_Pos](#a3b17c51b64df68e545ac7a1cb3840f3c)   (16) |
+| #define | [NUMAKER\_SYS\_IPRST0\_SDH1RST\_Pos](#a838b537ba745222a9646113fcfeb29b6)   (17) |
+| #define | [NUMAKER\_SYS\_IPRST0\_PDMA1RST\_Pos](#a9ae42d3fcc4825eefa61ba69f8b8986e)   (18) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CANFD0RST\_Pos](#a95e3fc29e0e6e14522cbe297f45d8b4c)   (20) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CANFD1RST\_Pos](#a2c9fce995130a5237a92638f412e9c60)   (21) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CANFD2RST\_Pos](#a8a83be67140cb8ad215ce7356db2720b)   (22) |
+| #define | [NUMAKER\_SYS\_IPRST0\_CANFD3RST\_Pos](#abdc862980795ce67f2e8705ae0ff42d7)   (23) |
+| #define | [NUMAKER\_SYS\_IPRST0\_BMCRST\_Pos](#aa071a0cf4e53dbee5f9c0767da90c1c6)   (28) |
+| #define | [NUMAKER\_SYS\_IPRST1\_GPIORST\_Pos](#a17f475cd001509b810d438e8cde77605)   (1) |
+| #define | [NUMAKER\_SYS\_IPRST1\_TMR0RST\_Pos](#aa8719c5979eb8194be0e6d312a9a528e)   (2) |
+| #define | [NUMAKER\_SYS\_IPRST1\_TMR1RST\_Pos](#afd318f4349aff436604236cad97753e2)   (3) |
+| #define | [NUMAKER\_SYS\_IPRST1\_TMR2RST\_Pos](#afeab0c010d4d35c53b5ece3319ce328e)   (4) |
+| #define | [NUMAKER\_SYS\_IPRST1\_TMR3RST\_Pos](#ad7833f4354228b049b78b2e4644ea4a3)   (5) |
+| #define | [NUMAKER\_SYS\_IPRST1\_ACMP01RST\_Pos](#a9aa3dc7b6208b672128fbbdf25e28cc6)   (7) |
+| #define | [NUMAKER\_SYS\_IPRST1\_I2C0RST\_Pos](#a2cff9027643b934115b0dd0832fd56fd)   (8) |
+| #define | [NUMAKER\_SYS\_IPRST1\_I2C1RST\_Pos](#a0f1b077a7b2ce36ca745354942f49120)   (9) |
+| #define | [NUMAKER\_SYS\_IPRST1\_I2C2RST\_Pos](#a140bf4cd4c34d2eee5a5596ec7c2f40d)   (10) |
+| #define | [NUMAKER\_SYS\_IPRST1\_I2C3RST\_Pos](#a6e29d396a308b5083304d21987fe5f19)   (11) |
+| #define | [NUMAKER\_SYS\_IPRST1\_QSPI0RST\_Pos](#a6d6486c98c5a5339122b65f78d3043f9)   (12) |
+| #define | [NUMAKER\_SYS\_IPRST1\_SPI0RST\_Pos](#a3a116c61ff635f11e9e5f4067f4dc042)   (13) |
+| #define | [NUMAKER\_SYS\_IPRST1\_SPI1RST\_Pos](#a460befdbc00ee70ca095a1948105166c)   (14) |
+| #define | [NUMAKER\_SYS\_IPRST1\_SPI2RST\_Pos](#ad9502dd9b6bf78d9f84620ed8d58e90a)   (15) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART0RST\_Pos](#acda143dd3b9594065068f04586570ccc)   (16) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART1RST\_Pos](#a773461c6a35be084ee878a4ae7030ff8)   (17) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART2RST\_Pos](#a84125fa75be52211802fb9ebca59f4f7)   (18) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART3RST\_Pos](#af85ed27d6c54961fdbf408ff0d7653de)   (19) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART4RST\_Pos](#ab5123d96fb9b07ecb4adda8cd945ba5f)   (20) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART5RST\_Pos](#a0e6a6bb72ff1015815d010ec0860a963)   (21) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART6RST\_Pos](#a0ea375ad611313a86c5e49c22011c67a)   (22) |
+| #define | [NUMAKER\_SYS\_IPRST1\_UART7RST\_Pos](#ad3e76d7febcd8cea501a7fe14bf2cf47)   (23) |
+| #define | [NUMAKER\_SYS\_IPRST1\_OTGRST\_Pos](#a81487344ea224a53b57e8c6246fef1b4)   (26) |
+| #define | [NUMAKER\_SYS\_IPRST1\_USBDRST\_Pos](#a93ea373b16e2292f1e0d24482974d7c3)   (27) |
+| #define | [NUMAKER\_SYS\_IPRST1\_EADC0RST\_Pos](#abd4a68bada9ec9b229a679554628d720)   (28) |
+| #define | [NUMAKER\_SYS\_IPRST1\_I2S0RST\_Pos](#abe78c9ae1c7d1b090827c31ee2c2bd4b)   (29) |
+| #define | [NUMAKER\_SYS\_IPRST1\_HSOTGRST\_Pos](#a5eebf9721505308d82ac2208a6c41983)   (30) |
+| #define | [NUMAKER\_SYS\_IPRST1\_TRNGRST\_Pos](#a93ccfac0f0de8cc332c26727d71b5051)   (31) |
+| #define | [NUMAKER\_SYS\_IPRST2\_SC0RST\_Pos](#ac108b395e62293d1ff2d92308a55a722)   (0) |
+| #define | [NUMAKER\_SYS\_IPRST2\_SC1RST\_Pos](#a82e2bfd16943789f3eb36dcd6afe5cbd)   (1) |
+| #define | [NUMAKER\_SYS\_IPRST2\_SC2RST\_Pos](#a2d363f890d96e9fcd3a2f847ef0c7121)   (2) |
+| #define | [NUMAKER\_SYS\_IPRST2\_I2C4RST\_Pos](#a89def60dbbb6b4d8ecd699a96d8d754f)   (3) |
+| #define | [NUMAKER\_SYS\_IPRST2\_QSPI1RST\_Pos](#a80178616a75bf895b0a38ba44ba54d0b)   (4) |
+| #define | [NUMAKER\_SYS\_IPRST2\_SPI3RST\_Pos](#aa47fffab39f26dd28b2d9801a1f2306d)   (6) |
+| #define | [NUMAKER\_SYS\_IPRST2\_SPI4RST\_Pos](#a621cb2a73e175103b22901b7e0bd69dc)   (7) |
+| #define | [NUMAKER\_SYS\_IPRST2\_USCI0RST\_Pos](#a927b7a5fcd4f3701e14c95ebe175c91a)   (8) |
+| #define | [NUMAKER\_SYS\_IPRST2\_PSIORST\_Pos](#aaf8c4d5b99560f8e6979f39ef9ac0572)   (10) |
+| #define | [NUMAKER\_SYS\_IPRST2\_DACRST\_Pos](#ad229d483e0120d911cf56a2a2b2279ae)   (12) |
+| #define | [NUMAKER\_SYS\_IPRST2\_ECAP2RST\_Pos](#a443248596e273131afff1e2b68b92eab)   (13) |
+| #define | [NUMAKER\_SYS\_IPRST2\_ECAP3RST\_Pos](#ac894c9afeb7981a6e00fc09971252078)   (14) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EPWM0RST\_Pos](#a6d438436bd07d45684cc78d6fca18048)   (16) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EPWM1RST\_Pos](#ac38f0a648912c798d3b9216269af3594)   (17) |
+| #define | [NUMAKER\_SYS\_IPRST2\_BPWM0RST\_Pos](#adb6f3192b3df778a296c07495132b6e7)   (18) |
+| #define | [NUMAKER\_SYS\_IPRST2\_BPWM1RST\_Pos](#a4f18e2c27235651b49c7d40a936fa6d5)   (19) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EQEI2RST\_Pos](#a7b4a4715c395fc8912c9468748954695)   (20) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EQEI3RST\_Pos](#ab4f0e95b00560f63d0bcaf1ae6803216)   (21) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EQEI0RST\_Pos](#ab38f815f1486f551d0d448e0a99670cc)   (22) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EQEI1RST\_Pos](#aa33f02894ffff71676ecddf3d39aae08)   (23) |
+| #define | [NUMAKER\_SYS\_IPRST2\_ECAP0RST\_Pos](#aade8ffd96da178454da6b3325bd31227)   (26) |
+| #define | [NUMAKER\_SYS\_IPRST2\_ECAP1RST\_Pos](#ab2cadf6ec318868cdfbfd478d1225468)   (27) |
+| #define | [NUMAKER\_SYS\_IPRST2\_I2S1RST\_Pos](#a710145caf48d7020223eca8cab05d18a)   (29) |
+| #define | [NUMAKER\_SYS\_IPRST2\_EADC1RST\_Pos](#a6285ab1379959b9960b37d887789bd5d)   (31) |
+| #define | [NUMAKER\_SYS\_IPRST3\_KPIRST\_Pos](#ac15246169e029bfd56e95c5ff79fd042)   (0) |
+| #define | [NUMAKER\_SYS\_IPRST3\_EADC2RST\_Pos](#a3baa32da44621bf50f44c519ccbb6be8)   (6) |
+| #define | [NUMAKER\_SYS\_IPRST3\_ACMP23RST\_Pos](#a54a03c6ae788b23a19de9d48bb50a792)   (7) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI5RST\_Pos](#ac5a7c67f4371c8ba5ff5e5138e9ad8bf)   (8) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI6RST\_Pos](#ab80f88918ae9e3f4115b7350edee255f)   (9) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI7RST\_Pos](#a8fec9bbce9ff84347467b4b33507425a)   (10) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI8RST\_Pos](#a40bdcc4efd41c9a615eade873f3f46b2)   (11) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI9RST\_Pos](#aa015a4bba4f8a7ff99e4039f477bc63f)   (12) |
+| #define | [NUMAKER\_SYS\_IPRST3\_SPI10RST\_Pos](#af6774dab68735fe66f165bb66a6ee092)   (13) |
+| #define | [NUMAKER\_SYS\_IPRST3\_UART8RST\_Pos](#a975862229a1426ae8b2c7bcc045ed8c8)   (16) |
+| #define | [NUMAKER\_SYS\_IPRST3\_UART9RST\_Pos](#a9b7371eeb9f40864b22bbf4d8945f6ac)   (17) |
+| #define | [NUMAKER\_PDMA0\_RST](#a2ec945f466041bba124cd635cc6667dc)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_PDMA0RST\_Pos](#aa14c6b9502ce50a8fba24c661032fee5)) |
+| #define | [NUMAKER\_EBI\_RST](#a4de27d07239c747bdae9e173c6abfd17)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_EBIRST\_Pos](#a374d55f19e4ec1bb4ff6f6a080129b5b)) |
+| #define | [NUMAKER\_EMAC0\_RST](#a3b1865a84d0278666b2aa69a6ed15de7)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_EMAC0RST\_Pos](#aa7476dd238924462ee26481c6b506f43)) |
+| #define | [NUMAKER\_SDH0\_RST](#aff9c7a29e100810a67057224174fb0ba)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SDH0RST\_Pos](#a228ff84206969b7417687dfd66ed759e)) |
+| #define | [NUMAKER\_CRC\_RST](#a9e10d08e25bcce46419e595468ee2140)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CRCRST\_Pos](#abcf3717a5f0b65fc57afa4be8892882c)) |
+| #define | [NUMAKER\_CCAP\_RST](#a7eaaeb46b33e91cf1372fcddc7f856e4)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CCAPRST\_Pos](#af75fe0a9f9328e7d9426528770709813)) |
+| #define | [NUMAKER\_HSUSBD\_RST](#a7a9f80ff06b42845eb7fc21800e200ce)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HSUSBDRST\_Pos](#aa128ef2acd6d85d3462b2e06505d4430)) |
+| #define | [NUMAKER\_HBI\_RST](#ad0c541f516a939275d74297596a03c7f)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HBIRST\_Pos](#aa3e5d215a7b3d35f798d0c6261420fbb)) |
+| #define | [NUMAKER\_CRPT\_RST](#a53316015ee2c28580760707b597382f7)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CRPTRST\_Pos](#a98ecd3a2da3fd9c188c41f9a7bd2fa83)) |
+| #define | [NUMAKER\_KS\_RST](#a8d447a640e42fede5cc51033c2c61c2d)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_KSRST\_Pos](#a00456383a1f8e045fd1a9af21450e8e7)) |
+| #define | [NUMAKER\_SPIM\_RST](#a90aa0e7587a1b4ad7aa7c58065723e24)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SPIMRST\_Pos](#a60e4e9f5a10982b52d0a586076d3f22f)) |
+| #define | [NUMAKER\_HSUSBH\_RST](#aa0e56c0249450798639c6395a1594e88)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HSUSBHRST\_Pos](#a3b17c51b64df68e545ac7a1cb3840f3c)) |
+| #define | [NUMAKER\_SDH1\_RST](#a81c59151bff5d15bdbb116ec2790a3b6)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SDH1RST\_Pos](#a838b537ba745222a9646113fcfeb29b6)) |
+| #define | [NUMAKER\_PDMA1\_RST](#a30f10524f2e8321564df3116ca3de24f)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_PDMA1RST\_Pos](#a9ae42d3fcc4825eefa61ba69f8b8986e)) |
+| #define | [NUMAKER\_CANFD0\_RST](#a37c923029e0439dd6b1c449fc81c40f4)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD0RST\_Pos](#a95e3fc29e0e6e14522cbe297f45d8b4c)) |
+| #define | [NUMAKER\_CANFD1\_RST](#aa3cde3062807637c383a6a11affbace6)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD1RST\_Pos](#a2c9fce995130a5237a92638f412e9c60)) |
+| #define | [NUMAKER\_CANFD2\_RST](#abd2303639e2ddc97f23cd0e9a77ae0c1)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD2RST\_Pos](#a8a83be67140cb8ad215ce7356db2720b)) |
+| #define | [NUMAKER\_CANFD3\_RST](#ae045c7f803c1e66748a671d9ed90c5a3)   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD3RST\_Pos](#abdc862980795ce67f2e8705ae0ff42d7)) |
+| #define | [NUMAKER\_GPIO\_RST](#a78b715193110ab7029d220d288132bb6)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_GPIORST\_Pos](#a17f475cd001509b810d438e8cde77605)) |
+| #define | [NUMAKER\_TMR0\_RST](#af5659ce27a84e17aeeb50cd2edb423c7)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR0RST\_Pos](#aa8719c5979eb8194be0e6d312a9a528e)) |
+| #define | [NUMAKER\_TMR1\_RST](#a7a8501e84864c5810d9e03e2c261bcd4)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR1RST\_Pos](#afd318f4349aff436604236cad97753e2)) |
+| #define | [NUMAKER\_TMR2\_RST](#a0e7f53329931eab01b15ba09d0b1b2a4)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR2RST\_Pos](#afeab0c010d4d35c53b5ece3319ce328e)) |
+| #define | [NUMAKER\_TMR3\_RST](#a8e77d7bfed00350408e6d1cfe010a366)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR3RST\_Pos](#ad7833f4354228b049b78b2e4644ea4a3)) |
+| #define | [NUMAKER\_ACMP01\_RST](#a16163237a6cbb88ef60dd465b137b0c3)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_ACMP01RST\_Pos](#a9aa3dc7b6208b672128fbbdf25e28cc6)) |
+| #define | [NUMAKER\_I2C0\_RST](#a59c61b565df006bfff587f3468c7c0c6)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C0RST\_Pos](#a2cff9027643b934115b0dd0832fd56fd)) |
+| #define | [NUMAKER\_I2C1\_RST](#ad7061d30f5fffad6396f499c4e703f30)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C1RST\_Pos](#a0f1b077a7b2ce36ca745354942f49120)) |
+| #define | [NUMAKER\_I2C2\_RST](#abee67c7820c016fa124e6a6d96451ac9)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C2RST\_Pos](#a140bf4cd4c34d2eee5a5596ec7c2f40d)) |
+| #define | [NUMAKER\_I2C3\_RST](#a6395be9706c311db84f3563382d52482)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C3RST\_Pos](#a6e29d396a308b5083304d21987fe5f19)) |
+| #define | [NUMAKER\_QSPI0\_RST](#ad95c0f26b66c02b0d76ada07e4a8ae4f)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_QSPI0RST\_Pos](#a6d6486c98c5a5339122b65f78d3043f9)) |
+| #define | [NUMAKER\_SPI0\_RST](#ac26b4c587af3877bab01d38fa51fae2c)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI0RST\_Pos](#a3a116c61ff635f11e9e5f4067f4dc042)) |
+| #define | [NUMAKER\_SPI1\_RST](#a6ed8951e79509205becde2782955edc3)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI1RST\_Pos](#a460befdbc00ee70ca095a1948105166c)) |
+| #define | [NUMAKER\_SPI2\_RST](#aea94605fb578f4e80084db8c24700173)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI2RST\_Pos](#ad9502dd9b6bf78d9f84620ed8d58e90a)) |
+| #define | [NUMAKER\_UART0\_RST](#a0ca6e29af1512259983d74592d86c8ac)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART0RST\_Pos](#acda143dd3b9594065068f04586570ccc)) |
+| #define | [NUMAKER\_UART1\_RST](#a855263435d644be9a655aafaa6997e57)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART1RST\_Pos](#a773461c6a35be084ee878a4ae7030ff8)) |
+| #define | [NUMAKER\_UART2\_RST](#acc518471fe73a842b39a56a6c2a3d208)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART2RST\_Pos](#a84125fa75be52211802fb9ebca59f4f7)) |
+| #define | [NUMAKER\_UART3\_RST](#a451f38258887da534ee5c75e6dfcc28a)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART3RST\_Pos](#af85ed27d6c54961fdbf408ff0d7653de)) |
+| #define | [NUMAKER\_UART4\_RST](#a74a3f05297b2014947e13c9e8fd7fd14)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART4RST\_Pos](#ab5123d96fb9b07ecb4adda8cd945ba5f)) |
+| #define | [NUMAKER\_UART5\_RST](#a83b12f8d7cc1822080bb088730033c5d)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART5RST\_Pos](#a0e6a6bb72ff1015815d010ec0860a963)) |
+| #define | [NUMAKER\_UART6\_RST](#a42e7f4a4a1f585df59b03928f1b95b11)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART6RST\_Pos](#a0ea375ad611313a86c5e49c22011c67a)) |
+| #define | [NUMAKER\_UART7\_RST](#aa4f97772ca5218ae52d2105e722db6fc)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART7RST\_Pos](#ad3e76d7febcd8cea501a7fe14bf2cf47)) |
+| #define | [NUMAKER\_OTG\_RST](#a93cde8c56f474777ba4fe7ff47fe8f14)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_OTGRST\_Pos](#a81487344ea224a53b57e8c6246fef1b4)) |
+| #define | [NUMAKER\_USBD\_RST](#a1a74ded775d85a498a044529857c5826)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_USBDRST\_Pos](#a93ea373b16e2292f1e0d24482974d7c3)) |
+| #define | [NUMAKER\_EADC0\_RST](#abfb255d99741ffe50d400a09b8a80787)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_EADC0RST\_Pos](#abd4a68bada9ec9b229a679554628d720)) |
+| #define | [NUMAKER\_I2S0\_RST](#a03ef0de3b74746a046ecb95a3a67d118)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2S0RST\_Pos](#abe78c9ae1c7d1b090827c31ee2c2bd4b)) |
+| #define | [NUMAKER\_HSOTG\_RST](#a15039533325b936d624688eba49fa195)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_HSOTGRST\_Pos](#a5eebf9721505308d82ac2208a6c41983)) |
+| #define | [NUMAKER\_TRNG\_RST](#a7d1dca0f73d12f8cad5d4fb3941e9a34)   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TRNGRST\_Pos](#a93ccfac0f0de8cc332c26727d71b5051)) |
+| #define | [NUMAKER\_SC0\_RST](#a245990b674440f81d430747866a4b361)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC0RST\_Pos](#ac108b395e62293d1ff2d92308a55a722)) |
+| #define | [NUMAKER\_SC1\_RST](#abd5924e1da2047c5f03d57c153f4e347)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC1RST\_Pos](#a82e2bfd16943789f3eb36dcd6afe5cbd)) |
+| #define | [NUMAKER\_SC2\_RST](#a59744aefc103b03a7a913082cecbbfdf)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC2RST\_Pos](#a2d363f890d96e9fcd3a2f847ef0c7121)) |
+| #define | [NUMAKER\_I2C4\_RST](#a19253588c50f22717fcc85342a1d6953)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_I2C4RST\_Pos](#a89def60dbbb6b4d8ecd699a96d8d754f)) |
+| #define | [NUMAKER\_QSPI1\_RST](#af974026a64f61a9f99f83ae3f6512b11)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_QSPI1RST\_Pos](#a80178616a75bf895b0a38ba44ba54d0b)) |
+| #define | [NUMAKER\_SPI3\_RST](#a62670f2e3ed7a343b0d8338cf18484ce)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SPI3RST\_Pos](#aa47fffab39f26dd28b2d9801a1f2306d)) |
+| #define | [NUMAKER\_SPI4\_RST](#a1ebef886aa8911b2faa3031faeeb872c)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SPI4RST\_Pos](#a621cb2a73e175103b22901b7e0bd69dc)) |
+| #define | [NUMAKER\_USCI0\_RST](#ab7e650d5582aa2f623f075c5b2c2dce5)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_USCI0RST\_Pos](#a927b7a5fcd4f3701e14c95ebe175c91a)) |
+| #define | [NUMAKER\_PSIO\_RST](#a01d5fab6c29b3716a89971f528f4eaaa)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_PSIORST\_Pos](#aaf8c4d5b99560f8e6979f39ef9ac0572)) |
+| #define | [NUMAKER\_DAC\_RST](#aa244c6cee2327a190b27856b83446913)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_DACRST\_Pos](#ad229d483e0120d911cf56a2a2b2279ae)) |
+| #define | [NUMAKER\_EPWM0\_RST](#ac7fcfa9b1c8e15744d413acb643202f7)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EPWM0RST\_Pos](#a6d438436bd07d45684cc78d6fca18048)) |
+| #define | [NUMAKER\_EPWM1\_RST](#a529ccc59cc243788d18e63f519cfe5c7)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EPWM1RST\_Pos](#ac38f0a648912c798d3b9216269af3594)) |
+| #define | [NUMAKER\_BPWM0\_RST](#acc414db67e10f45e8a24d29175ee233d)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_BPWM0RST\_Pos](#adb6f3192b3df778a296c07495132b6e7)) |
+| #define | [NUMAKER\_BPWM1\_RST](#a8fb8d5dd324e35f28c6a26bb0d0b170e)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_BPWM1RST\_Pos](#a4f18e2c27235651b49c7d40a936fa6d5)) |
+| #define | [NUMAKER\_EQEI0\_RST](#aaa793688d87486488dca737c346bfc8d)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI0RST\_Pos](#ab38f815f1486f551d0d448e0a99670cc)) |
+| #define | [NUMAKER\_EQEI1\_RST](#af1b3595e1191835a0a3a35b6a1949c2a)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI1RST\_Pos](#aa33f02894ffff71676ecddf3d39aae08)) |
+| #define | [NUMAKER\_EQEI2\_RST](#a61b8b9e037b37b3dc3ed37edd60dc50a)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI2RST\_Pos](#a7b4a4715c395fc8912c9468748954695)) |
+| #define | [NUMAKER\_EQEI3\_RST](#abc7ed91549dae87975100a50a88d2bff)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI3RST\_Pos](#ab4f0e95b00560f63d0bcaf1ae6803216)) |
+| #define | [NUMAKER\_ECAP0\_RST](#a423d4739b6f1c7092608a2fb1eef4909)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP0RST\_Pos](#aade8ffd96da178454da6b3325bd31227)) |
+| #define | [NUMAKER\_ECAP1\_RST](#ae8be7edf8c201921491a45aef91cc565)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP1RST\_Pos](#ab2cadf6ec318868cdfbfd478d1225468)) |
+| #define | [NUMAKER\_ECAP2\_RST](#ae05bc356cec6067442e574af9c1e47db)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP2RST\_Pos](#a443248596e273131afff1e2b68b92eab)) |
+| #define | [NUMAKER\_ECAP3\_RST](#ab7c2a8a97a8250ed95c021515abe1e8b)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP3RST\_Pos](#ac894c9afeb7981a6e00fc09971252078)) |
+| #define | [NUMAKER\_I2S1\_RST](#a44c2a01d3538f6cc8e7b5085d9b97acd)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_I2S1RST\_Pos](#a710145caf48d7020223eca8cab05d18a)) |
+| #define | [NUMAKER\_EADC1\_RST](#a871ce18fa9048621659df0295f294a7c)   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EADC1RST\_Pos](#a6285ab1379959b9960b37d887789bd5d)) |
+| #define | [NUMAKER\_KPI\_RST](#af7c4f0dfde6c7860bf6d7044dcc17f4c)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_KPIRST\_Pos](#ac15246169e029bfd56e95c5ff79fd042)) |
+| #define | [NUMAKER\_EADC2\_RST](#ae7e962c1d85a1adc401ee40246f01f3b)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_EADC2RST\_Pos](#a3baa32da44621bf50f44c519ccbb6be8)) |
+| #define | [NUMAKER\_ACMP23\_RST](#ad147e483d60833d8ae5d24f6a713c028)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_ACMP23RST\_Pos](#a54a03c6ae788b23a19de9d48bb50a792)) |
+| #define | [NUMAKER\_SPI5\_RST](#a1bb081ae3dfbf7e810ed9b48482f7e8b)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI5RST\_Pos](#ac5a7c67f4371c8ba5ff5e5138e9ad8bf)) |
+| #define | [NUMAKER\_SPI6\_RST](#a2fc81466d5d6885fb6d71768469ca281)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI6RST\_Pos](#ab80f88918ae9e3f4115b7350edee255f)) |
+| #define | [NUMAKER\_SPI7\_RST](#a290eaa04c3906d7997066d62ec5093d7)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI7RST\_Pos](#a8fec9bbce9ff84347467b4b33507425a)) |
+| #define | [NUMAKER\_SPI8\_RST](#a47e03830fc7aa97cfcecd650174697b6)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI8RST\_Pos](#a40bdcc4efd41c9a615eade873f3f46b2)) |
+| #define | [NUMAKER\_SPI9\_RST](#a1682fd48569227082fef66d973893d7a)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI9RST\_Pos](#aa015a4bba4f8a7ff99e4039f477bc63f)) |
+| #define | [NUMAKER\_SPI10\_RST](#a39989e15be7179b07216514970969bf0)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI10RST\_Pos](#af6774dab68735fe66f165bb66a6ee092)) |
+| #define | [NUMAKER\_UART8\_RST](#adb20e898d770ace2319ede3852216566)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_UART8RST\_Pos](#a975862229a1426ae8b2c7bcc045ed8c8)) |
+| #define | [NUMAKER\_UART9\_RST](#ac9e61e7657c7973bbc1c735abf5e2b45)   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_UART9RST\_Pos](#a9b7371eeb9f40864b22bbf4d8945f6ac)) |
+
+## Macro Definition Documentation
+
+## [◆ ](#a16163237a6cbb88ef60dd465b137b0c3)NUMAKER\_ACMP01\_RST
+
+| #define NUMAKER\_ACMP01\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_ACMP01RST\_Pos](#a9aa3dc7b6208b672128fbbdf25e28cc6)) |
+| --- |
+
+## [◆ ](#ad147e483d60833d8ae5d24f6a713c028)NUMAKER\_ACMP23\_RST
+
+| #define NUMAKER\_ACMP23\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_ACMP23RST\_Pos](#a54a03c6ae788b23a19de9d48bb50a792)) |
+| --- |
+
+## [◆ ](#acc414db67e10f45e8a24d29175ee233d)NUMAKER\_BPWM0\_RST
+
+| #define NUMAKER\_BPWM0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_BPWM0RST\_Pos](#adb6f3192b3df778a296c07495132b6e7)) |
+| --- |
+
+## [◆ ](#a8fb8d5dd324e35f28c6a26bb0d0b170e)NUMAKER\_BPWM1\_RST
+
+| #define NUMAKER\_BPWM1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_BPWM1RST\_Pos](#a4f18e2c27235651b49c7d40a936fa6d5)) |
+| --- |
+
+## [◆ ](#a37c923029e0439dd6b1c449fc81c40f4)NUMAKER\_CANFD0\_RST
+
+| #define NUMAKER\_CANFD0\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD0RST\_Pos](#a95e3fc29e0e6e14522cbe297f45d8b4c)) |
+| --- |
+
+## [◆ ](#aa3cde3062807637c383a6a11affbace6)NUMAKER\_CANFD1\_RST
+
+| #define NUMAKER\_CANFD1\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD1RST\_Pos](#a2c9fce995130a5237a92638f412e9c60)) |
+| --- |
+
+## [◆ ](#abd2303639e2ddc97f23cd0e9a77ae0c1)NUMAKER\_CANFD2\_RST
+
+| #define NUMAKER\_CANFD2\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD2RST\_Pos](#a8a83be67140cb8ad215ce7356db2720b)) |
+| --- |
+
+## [◆ ](#ae045c7f803c1e66748a671d9ed90c5a3)NUMAKER\_CANFD3\_RST
+
+| #define NUMAKER\_CANFD3\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CANFD3RST\_Pos](#abdc862980795ce67f2e8705ae0ff42d7)) |
+| --- |
+
+## [◆ ](#a7eaaeb46b33e91cf1372fcddc7f856e4)NUMAKER\_CCAP\_RST
+
+| #define NUMAKER\_CCAP\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CCAPRST\_Pos](#af75fe0a9f9328e7d9426528770709813)) |
+| --- |
+
+## [◆ ](#a9e10d08e25bcce46419e595468ee2140)NUMAKER\_CRC\_RST
+
+| #define NUMAKER\_CRC\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CRCRST\_Pos](#abcf3717a5f0b65fc57afa4be8892882c)) |
+| --- |
+
+## [◆ ](#a53316015ee2c28580760707b597382f7)NUMAKER\_CRPT\_RST
+
+| #define NUMAKER\_CRPT\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_CRPTRST\_Pos](#a98ecd3a2da3fd9c188c41f9a7bd2fa83)) |
+| --- |
+
+## [◆ ](#aa244c6cee2327a190b27856b83446913)NUMAKER\_DAC\_RST
+
+| #define NUMAKER\_DAC\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_DACRST\_Pos](#ad229d483e0120d911cf56a2a2b2279ae)) |
+| --- |
+
+## [◆ ](#abfb255d99741ffe50d400a09b8a80787)NUMAKER\_EADC0\_RST
+
+| #define NUMAKER\_EADC0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_EADC0RST\_Pos](#abd4a68bada9ec9b229a679554628d720)) |
+| --- |
+
+## [◆ ](#a871ce18fa9048621659df0295f294a7c)NUMAKER\_EADC1\_RST
+
+| #define NUMAKER\_EADC1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EADC1RST\_Pos](#a6285ab1379959b9960b37d887789bd5d)) |
+| --- |
+
+## [◆ ](#ae7e962c1d85a1adc401ee40246f01f3b)NUMAKER\_EADC2\_RST
+
+| #define NUMAKER\_EADC2\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_EADC2RST\_Pos](#a3baa32da44621bf50f44c519ccbb6be8)) |
+| --- |
+
+## [◆ ](#a4de27d07239c747bdae9e173c6abfd17)NUMAKER\_EBI\_RST
+
+| #define NUMAKER\_EBI\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_EBIRST\_Pos](#a374d55f19e4ec1bb4ff6f6a080129b5b)) |
+| --- |
+
+## [◆ ](#a423d4739b6f1c7092608a2fb1eef4909)NUMAKER\_ECAP0\_RST
+
+| #define NUMAKER\_ECAP0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP0RST\_Pos](#aade8ffd96da178454da6b3325bd31227)) |
+| --- |
+
+## [◆ ](#ae8be7edf8c201921491a45aef91cc565)NUMAKER\_ECAP1\_RST
+
+| #define NUMAKER\_ECAP1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP1RST\_Pos](#ab2cadf6ec318868cdfbfd478d1225468)) |
+| --- |
+
+## [◆ ](#ae05bc356cec6067442e574af9c1e47db)NUMAKER\_ECAP2\_RST
+
+| #define NUMAKER\_ECAP2\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP2RST\_Pos](#a443248596e273131afff1e2b68b92eab)) |
+| --- |
+
+## [◆ ](#ab7c2a8a97a8250ed95c021515abe1e8b)NUMAKER\_ECAP3\_RST
+
+| #define NUMAKER\_ECAP3\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_ECAP3RST\_Pos](#ac894c9afeb7981a6e00fc09971252078)) |
+| --- |
+
+## [◆ ](#a3b1865a84d0278666b2aa69a6ed15de7)NUMAKER\_EMAC0\_RST
+
+| #define NUMAKER\_EMAC0\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_EMAC0RST\_Pos](#aa7476dd238924462ee26481c6b506f43)) |
+| --- |
+
+## [◆ ](#ac7fcfa9b1c8e15744d413acb643202f7)NUMAKER\_EPWM0\_RST
+
+| #define NUMAKER\_EPWM0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EPWM0RST\_Pos](#a6d438436bd07d45684cc78d6fca18048)) |
+| --- |
+
+## [◆ ](#a529ccc59cc243788d18e63f519cfe5c7)NUMAKER\_EPWM1\_RST
+
+| #define NUMAKER\_EPWM1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EPWM1RST\_Pos](#ac38f0a648912c798d3b9216269af3594)) |
+| --- |
+
+## [◆ ](#aaa793688d87486488dca737c346bfc8d)NUMAKER\_EQEI0\_RST
+
+| #define NUMAKER\_EQEI0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI0RST\_Pos](#ab38f815f1486f551d0d448e0a99670cc)) |
+| --- |
+
+## [◆ ](#af1b3595e1191835a0a3a35b6a1949c2a)NUMAKER\_EQEI1\_RST
+
+| #define NUMAKER\_EQEI1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI1RST\_Pos](#aa33f02894ffff71676ecddf3d39aae08)) |
+| --- |
+
+## [◆ ](#a61b8b9e037b37b3dc3ed37edd60dc50a)NUMAKER\_EQEI2\_RST
+
+| #define NUMAKER\_EQEI2\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI2RST\_Pos](#a7b4a4715c395fc8912c9468748954695)) |
+| --- |
+
+## [◆ ](#abc7ed91549dae87975100a50a88d2bff)NUMAKER\_EQEI3\_RST
+
+| #define NUMAKER\_EQEI3\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_EQEI3RST\_Pos](#ab4f0e95b00560f63d0bcaf1ae6803216)) |
+| --- |
+
+## [◆ ](#a78b715193110ab7029d220d288132bb6)NUMAKER\_GPIO\_RST
+
+| #define NUMAKER\_GPIO\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_GPIORST\_Pos](#a17f475cd001509b810d438e8cde77605)) |
+| --- |
+
+## [◆ ](#ad0c541f516a939275d74297596a03c7f)NUMAKER\_HBI\_RST
+
+| #define NUMAKER\_HBI\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HBIRST\_Pos](#aa3e5d215a7b3d35f798d0c6261420fbb)) |
+| --- |
+
+## [◆ ](#a15039533325b936d624688eba49fa195)NUMAKER\_HSOTG\_RST
+
+| #define NUMAKER\_HSOTG\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_HSOTGRST\_Pos](#a5eebf9721505308d82ac2208a6c41983)) |
+| --- |
+
+## [◆ ](#a7a9f80ff06b42845eb7fc21800e200ce)NUMAKER\_HSUSBD\_RST
+
+| #define NUMAKER\_HSUSBD\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HSUSBDRST\_Pos](#aa128ef2acd6d85d3462b2e06505d4430)) |
+| --- |
+
+## [◆ ](#aa0e56c0249450798639c6395a1594e88)NUMAKER\_HSUSBH\_RST
+
+| #define NUMAKER\_HSUSBH\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_HSUSBHRST\_Pos](#a3b17c51b64df68e545ac7a1cb3840f3c)) |
+| --- |
+
+## [◆ ](#a59c61b565df006bfff587f3468c7c0c6)NUMAKER\_I2C0\_RST
+
+| #define NUMAKER\_I2C0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C0RST\_Pos](#a2cff9027643b934115b0dd0832fd56fd)) |
+| --- |
+
+## [◆ ](#ad7061d30f5fffad6396f499c4e703f30)NUMAKER\_I2C1\_RST
+
+| #define NUMAKER\_I2C1\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C1RST\_Pos](#a0f1b077a7b2ce36ca745354942f49120)) |
+| --- |
+
+## [◆ ](#abee67c7820c016fa124e6a6d96451ac9)NUMAKER\_I2C2\_RST
+
+| #define NUMAKER\_I2C2\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C2RST\_Pos](#a140bf4cd4c34d2eee5a5596ec7c2f40d)) |
+| --- |
+
+## [◆ ](#a6395be9706c311db84f3563382d52482)NUMAKER\_I2C3\_RST
+
+| #define NUMAKER\_I2C3\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2C3RST\_Pos](#a6e29d396a308b5083304d21987fe5f19)) |
+| --- |
+
+## [◆ ](#a19253588c50f22717fcc85342a1d6953)NUMAKER\_I2C4\_RST
+
+| #define NUMAKER\_I2C4\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_I2C4RST\_Pos](#a89def60dbbb6b4d8ecd699a96d8d754f)) |
+| --- |
+
+## [◆ ](#a03ef0de3b74746a046ecb95a3a67d118)NUMAKER\_I2S0\_RST
+
+| #define NUMAKER\_I2S0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_I2S0RST\_Pos](#abe78c9ae1c7d1b090827c31ee2c2bd4b)) |
+| --- |
+
+## [◆ ](#a44c2a01d3538f6cc8e7b5085d9b97acd)NUMAKER\_I2S1\_RST
+
+| #define NUMAKER\_I2S1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_I2S1RST\_Pos](#a710145caf48d7020223eca8cab05d18a)) |
+| --- |
+
+## [◆ ](#af7c4f0dfde6c7860bf6d7044dcc17f4c)NUMAKER\_KPI\_RST
+
+| #define NUMAKER\_KPI\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_KPIRST\_Pos](#ac15246169e029bfd56e95c5ff79fd042)) |
+| --- |
+
+## [◆ ](#a8d447a640e42fede5cc51033c2c61c2d)NUMAKER\_KS\_RST
+
+| #define NUMAKER\_KS\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_KSRST\_Pos](#a00456383a1f8e045fd1a9af21450e8e7)) |
+| --- |
+
+## [◆ ](#a93cde8c56f474777ba4fe7ff47fe8f14)NUMAKER\_OTG\_RST
+
+| #define NUMAKER\_OTG\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_OTGRST\_Pos](#a81487344ea224a53b57e8c6246fef1b4)) |
+| --- |
+
+## [◆ ](#a2ec945f466041bba124cd635cc6667dc)NUMAKER\_PDMA0\_RST
+
+| #define NUMAKER\_PDMA0\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_PDMA0RST\_Pos](#aa14c6b9502ce50a8fba24c661032fee5)) |
+| --- |
+
+## [◆ ](#a30f10524f2e8321564df3116ca3de24f)NUMAKER\_PDMA1\_RST
+
+| #define NUMAKER\_PDMA1\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_PDMA1RST\_Pos](#a9ae42d3fcc4825eefa61ba69f8b8986e)) |
+| --- |
+
+## [◆ ](#a01d5fab6c29b3716a89971f528f4eaaa)NUMAKER\_PSIO\_RST
+
+| #define NUMAKER\_PSIO\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_PSIORST\_Pos](#aaf8c4d5b99560f8e6979f39ef9ac0572)) |
+| --- |
+
+## [◆ ](#ad95c0f26b66c02b0d76ada07e4a8ae4f)NUMAKER\_QSPI0\_RST
+
+| #define NUMAKER\_QSPI0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_QSPI0RST\_Pos](#a6d6486c98c5a5339122b65f78d3043f9)) |
+| --- |
+
+## [◆ ](#af974026a64f61a9f99f83ae3f6512b11)NUMAKER\_QSPI1\_RST
+
+| #define NUMAKER\_QSPI1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_QSPI1RST\_Pos](#a80178616a75bf895b0a38ba44ba54d0b)) |
+| --- |
+
+## [◆ ](#a245990b674440f81d430747866a4b361)NUMAKER\_SC0\_RST
+
+| #define NUMAKER\_SC0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC0RST\_Pos](#ac108b395e62293d1ff2d92308a55a722)) |
+| --- |
+
+## [◆ ](#abd5924e1da2047c5f03d57c153f4e347)NUMAKER\_SC1\_RST
+
+| #define NUMAKER\_SC1\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC1RST\_Pos](#a82e2bfd16943789f3eb36dcd6afe5cbd)) |
+| --- |
+
+## [◆ ](#a59744aefc103b03a7a913082cecbbfdf)NUMAKER\_SC2\_RST
+
+| #define NUMAKER\_SC2\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SC2RST\_Pos](#a2d363f890d96e9fcd3a2f847ef0c7121)) |
+| --- |
+
+## [◆ ](#aff9c7a29e100810a67057224174fb0ba)NUMAKER\_SDH0\_RST
+
+| #define NUMAKER\_SDH0\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SDH0RST\_Pos](#a228ff84206969b7417687dfd66ed759e)) |
+| --- |
+
+## [◆ ](#a81c59151bff5d15bdbb116ec2790a3b6)NUMAKER\_SDH1\_RST
+
+| #define NUMAKER\_SDH1\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SDH1RST\_Pos](#a838b537ba745222a9646113fcfeb29b6)) |
+| --- |
+
+## [◆ ](#ac26b4c587af3877bab01d38fa51fae2c)NUMAKER\_SPI0\_RST
+
+| #define NUMAKER\_SPI0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI0RST\_Pos](#a3a116c61ff635f11e9e5f4067f4dc042)) |
+| --- |
+
+## [◆ ](#a39989e15be7179b07216514970969bf0)NUMAKER\_SPI10\_RST
+
+| #define NUMAKER\_SPI10\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI10RST\_Pos](#af6774dab68735fe66f165bb66a6ee092)) |
+| --- |
+
+## [◆ ](#a6ed8951e79509205becde2782955edc3)NUMAKER\_SPI1\_RST
+
+| #define NUMAKER\_SPI1\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI1RST\_Pos](#a460befdbc00ee70ca095a1948105166c)) |
+| --- |
+
+## [◆ ](#aea94605fb578f4e80084db8c24700173)NUMAKER\_SPI2\_RST
+
+| #define NUMAKER\_SPI2\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_SPI2RST\_Pos](#ad9502dd9b6bf78d9f84620ed8d58e90a)) |
+| --- |
+
+## [◆ ](#a62670f2e3ed7a343b0d8338cf18484ce)NUMAKER\_SPI3\_RST
+
+| #define NUMAKER\_SPI3\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SPI3RST\_Pos](#aa47fffab39f26dd28b2d9801a1f2306d)) |
+| --- |
+
+## [◆ ](#a1ebef886aa8911b2faa3031faeeb872c)NUMAKER\_SPI4\_RST
+
+| #define NUMAKER\_SPI4\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_SPI4RST\_Pos](#a621cb2a73e175103b22901b7e0bd69dc)) |
+| --- |
+
+## [◆ ](#a1bb081ae3dfbf7e810ed9b48482f7e8b)NUMAKER\_SPI5\_RST
+
+| #define NUMAKER\_SPI5\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI5RST\_Pos](#ac5a7c67f4371c8ba5ff5e5138e9ad8bf)) |
+| --- |
+
+## [◆ ](#a2fc81466d5d6885fb6d71768469ca281)NUMAKER\_SPI6\_RST
+
+| #define NUMAKER\_SPI6\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI6RST\_Pos](#ab80f88918ae9e3f4115b7350edee255f)) |
+| --- |
+
+## [◆ ](#a290eaa04c3906d7997066d62ec5093d7)NUMAKER\_SPI7\_RST
+
+| #define NUMAKER\_SPI7\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI7RST\_Pos](#a8fec9bbce9ff84347467b4b33507425a)) |
+| --- |
+
+## [◆ ](#a47e03830fc7aa97cfcecd650174697b6)NUMAKER\_SPI8\_RST
+
+| #define NUMAKER\_SPI8\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI8RST\_Pos](#a40bdcc4efd41c9a615eade873f3f46b2)) |
+| --- |
+
+## [◆ ](#a1682fd48569227082fef66d973893d7a)NUMAKER\_SPI9\_RST
+
+| #define NUMAKER\_SPI9\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_SPI9RST\_Pos](#aa015a4bba4f8a7ff99e4039f477bc63f)) |
+| --- |
+
+## [◆ ](#a90aa0e7587a1b4ad7aa7c58065723e24)NUMAKER\_SPIM\_RST
+
+| #define NUMAKER\_SPIM\_RST   ((0UL << 24) | [NUMAKER\_SYS\_IPRST0\_SPIMRST\_Pos](#a60e4e9f5a10982b52d0a586076d3f22f)) |
+| --- |
+
+## [◆ ](#aa071a0cf4e53dbee5f9c0767da90c1c6)NUMAKER\_SYS\_IPRST0\_BMCRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_BMCRST\_Pos   (28) |
+| --- |
+
+## [◆ ](#a95e3fc29e0e6e14522cbe297f45d8b4c)NUMAKER\_SYS\_IPRST0\_CANFD0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CANFD0RST\_Pos   (20) |
+| --- |
+
+## [◆ ](#a2c9fce995130a5237a92638f412e9c60)NUMAKER\_SYS\_IPRST0\_CANFD1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CANFD1RST\_Pos   (21) |
+| --- |
+
+## [◆ ](#a8a83be67140cb8ad215ce7356db2720b)NUMAKER\_SYS\_IPRST0\_CANFD2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CANFD2RST\_Pos   (22) |
+| --- |
+
+## [◆ ](#abdc862980795ce67f2e8705ae0ff42d7)NUMAKER\_SYS\_IPRST0\_CANFD3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CANFD3RST\_Pos   (23) |
+| --- |
+
+## [◆ ](#af75fe0a9f9328e7d9426528770709813)NUMAKER\_SYS\_IPRST0\_CCAPRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CCAPRST\_Pos   (8) |
+| --- |
+
+## [◆ ](#abcf3717a5f0b65fc57afa4be8892882c)NUMAKER\_SYS\_IPRST0\_CRCRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CRCRST\_Pos   (7) |
+| --- |
+
+## [◆ ](#a98ecd3a2da3fd9c188c41f9a7bd2fa83)NUMAKER\_SYS\_IPRST0\_CRPTRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_CRPTRST\_Pos   (12) |
+| --- |
+
+## [◆ ](#a374d55f19e4ec1bb4ff6f6a080129b5b)NUMAKER\_SYS\_IPRST0\_EBIRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_EBIRST\_Pos   (3) |
+| --- |
+
+## [◆ ](#aa7476dd238924462ee26481c6b506f43)NUMAKER\_SYS\_IPRST0\_EMAC0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_EMAC0RST\_Pos   (5) |
+| --- |
+
+## [◆ ](#aa3e5d215a7b3d35f798d0c6261420fbb)NUMAKER\_SYS\_IPRST0\_HBIRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_HBIRST\_Pos   (11) |
+| --- |
+
+## [◆ ](#aa128ef2acd6d85d3462b2e06505d4430)NUMAKER\_SYS\_IPRST0\_HSUSBDRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_HSUSBDRST\_Pos   (10) |
+| --- |
+
+## [◆ ](#a3b17c51b64df68e545ac7a1cb3840f3c)NUMAKER\_SYS\_IPRST0\_HSUSBHRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_HSUSBHRST\_Pos   (16) |
+| --- |
+
+## [◆ ](#a00456383a1f8e045fd1a9af21450e8e7)NUMAKER\_SYS\_IPRST0\_KSRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_KSRST\_Pos   (13) |
+| --- |
+
+## [◆ ](#aa14c6b9502ce50a8fba24c661032fee5)NUMAKER\_SYS\_IPRST0\_PDMA0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_PDMA0RST\_Pos   (2) |
+| --- |
+
+## [◆ ](#a9ae42d3fcc4825eefa61ba69f8b8986e)NUMAKER\_SYS\_IPRST0\_PDMA1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_PDMA1RST\_Pos   (18) |
+| --- |
+
+## [◆ ](#a228ff84206969b7417687dfd66ed759e)NUMAKER\_SYS\_IPRST0\_SDH0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_SDH0RST\_Pos   (6) |
+| --- |
+
+## [◆ ](#a838b537ba745222a9646113fcfeb29b6)NUMAKER\_SYS\_IPRST0\_SDH1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_SDH1RST\_Pos   (17) |
+| --- |
+
+## [◆ ](#a60e4e9f5a10982b52d0a586076d3f22f)NUMAKER\_SYS\_IPRST0\_SPIMRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST0\_SPIMRST\_Pos   (14) |
+| --- |
+
+## [◆ ](#a9aa3dc7b6208b672128fbbdf25e28cc6)NUMAKER\_SYS\_IPRST1\_ACMP01RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_ACMP01RST\_Pos   (7) |
+| --- |
+
+## [◆ ](#abd4a68bada9ec9b229a679554628d720)NUMAKER\_SYS\_IPRST1\_EADC0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_EADC0RST\_Pos   (28) |
+| --- |
+
+## [◆ ](#a17f475cd001509b810d438e8cde77605)NUMAKER\_SYS\_IPRST1\_GPIORST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_GPIORST\_Pos   (1) |
+| --- |
+
+## [◆ ](#a5eebf9721505308d82ac2208a6c41983)NUMAKER\_SYS\_IPRST1\_HSOTGRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_HSOTGRST\_Pos   (30) |
+| --- |
+
+## [◆ ](#a2cff9027643b934115b0dd0832fd56fd)NUMAKER\_SYS\_IPRST1\_I2C0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_I2C0RST\_Pos   (8) |
+| --- |
+
+## [◆ ](#a0f1b077a7b2ce36ca745354942f49120)NUMAKER\_SYS\_IPRST1\_I2C1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_I2C1RST\_Pos   (9) |
+| --- |
+
+## [◆ ](#a140bf4cd4c34d2eee5a5596ec7c2f40d)NUMAKER\_SYS\_IPRST1\_I2C2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_I2C2RST\_Pos   (10) |
+| --- |
+
+## [◆ ](#a6e29d396a308b5083304d21987fe5f19)NUMAKER\_SYS\_IPRST1\_I2C3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_I2C3RST\_Pos   (11) |
+| --- |
+
+## [◆ ](#abe78c9ae1c7d1b090827c31ee2c2bd4b)NUMAKER\_SYS\_IPRST1\_I2S0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_I2S0RST\_Pos   (29) |
+| --- |
+
+## [◆ ](#a81487344ea224a53b57e8c6246fef1b4)NUMAKER\_SYS\_IPRST1\_OTGRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_OTGRST\_Pos   (26) |
+| --- |
+
+## [◆ ](#a6d6486c98c5a5339122b65f78d3043f9)NUMAKER\_SYS\_IPRST1\_QSPI0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_QSPI0RST\_Pos   (12) |
+| --- |
+
+## [◆ ](#a3a116c61ff635f11e9e5f4067f4dc042)NUMAKER\_SYS\_IPRST1\_SPI0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_SPI0RST\_Pos   (13) |
+| --- |
+
+## [◆ ](#a460befdbc00ee70ca095a1948105166c)NUMAKER\_SYS\_IPRST1\_SPI1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_SPI1RST\_Pos   (14) |
+| --- |
+
+## [◆ ](#ad9502dd9b6bf78d9f84620ed8d58e90a)NUMAKER\_SYS\_IPRST1\_SPI2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_SPI2RST\_Pos   (15) |
+| --- |
+
+## [◆ ](#aa8719c5979eb8194be0e6d312a9a528e)NUMAKER\_SYS\_IPRST1\_TMR0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_TMR0RST\_Pos   (2) |
+| --- |
+
+## [◆ ](#afd318f4349aff436604236cad97753e2)NUMAKER\_SYS\_IPRST1\_TMR1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_TMR1RST\_Pos   (3) |
+| --- |
+
+## [◆ ](#afeab0c010d4d35c53b5ece3319ce328e)NUMAKER\_SYS\_IPRST1\_TMR2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_TMR2RST\_Pos   (4) |
+| --- |
+
+## [◆ ](#ad7833f4354228b049b78b2e4644ea4a3)NUMAKER\_SYS\_IPRST1\_TMR3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_TMR3RST\_Pos   (5) |
+| --- |
+
+## [◆ ](#a93ccfac0f0de8cc332c26727d71b5051)NUMAKER\_SYS\_IPRST1\_TRNGRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_TRNGRST\_Pos   (31) |
+| --- |
+
+## [◆ ](#acda143dd3b9594065068f04586570ccc)NUMAKER\_SYS\_IPRST1\_UART0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART0RST\_Pos   (16) |
+| --- |
+
+## [◆ ](#a773461c6a35be084ee878a4ae7030ff8)NUMAKER\_SYS\_IPRST1\_UART1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART1RST\_Pos   (17) |
+| --- |
+
+## [◆ ](#a84125fa75be52211802fb9ebca59f4f7)NUMAKER\_SYS\_IPRST1\_UART2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART2RST\_Pos   (18) |
+| --- |
+
+## [◆ ](#af85ed27d6c54961fdbf408ff0d7653de)NUMAKER\_SYS\_IPRST1\_UART3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART3RST\_Pos   (19) |
+| --- |
+
+## [◆ ](#ab5123d96fb9b07ecb4adda8cd945ba5f)NUMAKER\_SYS\_IPRST1\_UART4RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART4RST\_Pos   (20) |
+| --- |
+
+## [◆ ](#a0e6a6bb72ff1015815d010ec0860a963)NUMAKER\_SYS\_IPRST1\_UART5RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART5RST\_Pos   (21) |
+| --- |
+
+## [◆ ](#a0ea375ad611313a86c5e49c22011c67a)NUMAKER\_SYS\_IPRST1\_UART6RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART6RST\_Pos   (22) |
+| --- |
+
+## [◆ ](#ad3e76d7febcd8cea501a7fe14bf2cf47)NUMAKER\_SYS\_IPRST1\_UART7RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_UART7RST\_Pos   (23) |
+| --- |
+
+## [◆ ](#a93ea373b16e2292f1e0d24482974d7c3)NUMAKER\_SYS\_IPRST1\_USBDRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST1\_USBDRST\_Pos   (27) |
+| --- |
+
+## [◆ ](#adb6f3192b3df778a296c07495132b6e7)NUMAKER\_SYS\_IPRST2\_BPWM0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_BPWM0RST\_Pos   (18) |
+| --- |
+
+## [◆ ](#a4f18e2c27235651b49c7d40a936fa6d5)NUMAKER\_SYS\_IPRST2\_BPWM1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_BPWM1RST\_Pos   (19) |
+| --- |
+
+## [◆ ](#ad229d483e0120d911cf56a2a2b2279ae)NUMAKER\_SYS\_IPRST2\_DACRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_DACRST\_Pos   (12) |
+| --- |
+
+## [◆ ](#a6285ab1379959b9960b37d887789bd5d)NUMAKER\_SYS\_IPRST2\_EADC1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EADC1RST\_Pos   (31) |
+| --- |
+
+## [◆ ](#aade8ffd96da178454da6b3325bd31227)NUMAKER\_SYS\_IPRST2\_ECAP0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_ECAP0RST\_Pos   (26) |
+| --- |
+
+## [◆ ](#ab2cadf6ec318868cdfbfd478d1225468)NUMAKER\_SYS\_IPRST2\_ECAP1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_ECAP1RST\_Pos   (27) |
+| --- |
+
+## [◆ ](#a443248596e273131afff1e2b68b92eab)NUMAKER\_SYS\_IPRST2\_ECAP2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_ECAP2RST\_Pos   (13) |
+| --- |
+
+## [◆ ](#ac894c9afeb7981a6e00fc09971252078)NUMAKER\_SYS\_IPRST2\_ECAP3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_ECAP3RST\_Pos   (14) |
+| --- |
+
+## [◆ ](#a6d438436bd07d45684cc78d6fca18048)NUMAKER\_SYS\_IPRST2\_EPWM0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EPWM0RST\_Pos   (16) |
+| --- |
+
+## [◆ ](#ac38f0a648912c798d3b9216269af3594)NUMAKER\_SYS\_IPRST2\_EPWM1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EPWM1RST\_Pos   (17) |
+| --- |
+
+## [◆ ](#ab38f815f1486f551d0d448e0a99670cc)NUMAKER\_SYS\_IPRST2\_EQEI0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EQEI0RST\_Pos   (22) |
+| --- |
+
+## [◆ ](#aa33f02894ffff71676ecddf3d39aae08)NUMAKER\_SYS\_IPRST2\_EQEI1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EQEI1RST\_Pos   (23) |
+| --- |
+
+## [◆ ](#a7b4a4715c395fc8912c9468748954695)NUMAKER\_SYS\_IPRST2\_EQEI2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EQEI2RST\_Pos   (20) |
+| --- |
+
+## [◆ ](#ab4f0e95b00560f63d0bcaf1ae6803216)NUMAKER\_SYS\_IPRST2\_EQEI3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_EQEI3RST\_Pos   (21) |
+| --- |
+
+## [◆ ](#a89def60dbbb6b4d8ecd699a96d8d754f)NUMAKER\_SYS\_IPRST2\_I2C4RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_I2C4RST\_Pos   (3) |
+| --- |
+
+## [◆ ](#a710145caf48d7020223eca8cab05d18a)NUMAKER\_SYS\_IPRST2\_I2S1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_I2S1RST\_Pos   (29) |
+| --- |
+
+## [◆ ](#aaf8c4d5b99560f8e6979f39ef9ac0572)NUMAKER\_SYS\_IPRST2\_PSIORST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_PSIORST\_Pos   (10) |
+| --- |
+
+## [◆ ](#a80178616a75bf895b0a38ba44ba54d0b)NUMAKER\_SYS\_IPRST2\_QSPI1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_QSPI1RST\_Pos   (4) |
+| --- |
+
+## [◆ ](#ac108b395e62293d1ff2d92308a55a722)NUMAKER\_SYS\_IPRST2\_SC0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_SC0RST\_Pos   (0) |
+| --- |
+
+## [◆ ](#a82e2bfd16943789f3eb36dcd6afe5cbd)NUMAKER\_SYS\_IPRST2\_SC1RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_SC1RST\_Pos   (1) |
+| --- |
+
+## [◆ ](#a2d363f890d96e9fcd3a2f847ef0c7121)NUMAKER\_SYS\_IPRST2\_SC2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_SC2RST\_Pos   (2) |
+| --- |
+
+## [◆ ](#aa47fffab39f26dd28b2d9801a1f2306d)NUMAKER\_SYS\_IPRST2\_SPI3RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_SPI3RST\_Pos   (6) |
+| --- |
+
+## [◆ ](#a621cb2a73e175103b22901b7e0bd69dc)NUMAKER\_SYS\_IPRST2\_SPI4RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_SPI4RST\_Pos   (7) |
+| --- |
+
+## [◆ ](#a927b7a5fcd4f3701e14c95ebe175c91a)NUMAKER\_SYS\_IPRST2\_USCI0RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST2\_USCI0RST\_Pos   (8) |
+| --- |
+
+## [◆ ](#a54a03c6ae788b23a19de9d48bb50a792)NUMAKER\_SYS\_IPRST3\_ACMP23RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_ACMP23RST\_Pos   (7) |
+| --- |
+
+## [◆ ](#a3baa32da44621bf50f44c519ccbb6be8)NUMAKER\_SYS\_IPRST3\_EADC2RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_EADC2RST\_Pos   (6) |
+| --- |
+
+## [◆ ](#ac15246169e029bfd56e95c5ff79fd042)NUMAKER\_SYS\_IPRST3\_KPIRST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_KPIRST\_Pos   (0) |
+| --- |
+
+## [◆ ](#af6774dab68735fe66f165bb66a6ee092)NUMAKER\_SYS\_IPRST3\_SPI10RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI10RST\_Pos   (13) |
+| --- |
+
+## [◆ ](#ac5a7c67f4371c8ba5ff5e5138e9ad8bf)NUMAKER\_SYS\_IPRST3\_SPI5RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI5RST\_Pos   (8) |
+| --- |
+
+## [◆ ](#ab80f88918ae9e3f4115b7350edee255f)NUMAKER\_SYS\_IPRST3\_SPI6RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI6RST\_Pos   (9) |
+| --- |
+
+## [◆ ](#a8fec9bbce9ff84347467b4b33507425a)NUMAKER\_SYS\_IPRST3\_SPI7RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI7RST\_Pos   (10) |
+| --- |
+
+## [◆ ](#a40bdcc4efd41c9a615eade873f3f46b2)NUMAKER\_SYS\_IPRST3\_SPI8RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI8RST\_Pos   (11) |
+| --- |
+
+## [◆ ](#aa015a4bba4f8a7ff99e4039f477bc63f)NUMAKER\_SYS\_IPRST3\_SPI9RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_SPI9RST\_Pos   (12) |
+| --- |
+
+## [◆ ](#a975862229a1426ae8b2c7bcc045ed8c8)NUMAKER\_SYS\_IPRST3\_UART8RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_UART8RST\_Pos   (16) |
+| --- |
+
+## [◆ ](#a9b7371eeb9f40864b22bbf4d8945f6ac)NUMAKER\_SYS\_IPRST3\_UART9RST\_Pos
+
+| #define NUMAKER\_SYS\_IPRST3\_UART9RST\_Pos   (17) |
+| --- |
+
+## [◆ ](#af5659ce27a84e17aeeb50cd2edb423c7)NUMAKER\_TMR0\_RST
+
+| #define NUMAKER\_TMR0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR0RST\_Pos](#aa8719c5979eb8194be0e6d312a9a528e)) |
+| --- |
+
+## [◆ ](#a7a8501e84864c5810d9e03e2c261bcd4)NUMAKER\_TMR1\_RST
+
+| #define NUMAKER\_TMR1\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR1RST\_Pos](#afd318f4349aff436604236cad97753e2)) |
+| --- |
+
+## [◆ ](#a0e7f53329931eab01b15ba09d0b1b2a4)NUMAKER\_TMR2\_RST
+
+| #define NUMAKER\_TMR2\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR2RST\_Pos](#afeab0c010d4d35c53b5ece3319ce328e)) |
+| --- |
+
+## [◆ ](#a8e77d7bfed00350408e6d1cfe010a366)NUMAKER\_TMR3\_RST
+
+| #define NUMAKER\_TMR3\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TMR3RST\_Pos](#ad7833f4354228b049b78b2e4644ea4a3)) |
+| --- |
+
+## [◆ ](#a7d1dca0f73d12f8cad5d4fb3941e9a34)NUMAKER\_TRNG\_RST
+
+| #define NUMAKER\_TRNG\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_TRNGRST\_Pos](#a93ccfac0f0de8cc332c26727d71b5051)) |
+| --- |
+
+## [◆ ](#a0ca6e29af1512259983d74592d86c8ac)NUMAKER\_UART0\_RST
+
+| #define NUMAKER\_UART0\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART0RST\_Pos](#acda143dd3b9594065068f04586570ccc)) |
+| --- |
+
+## [◆ ](#a855263435d644be9a655aafaa6997e57)NUMAKER\_UART1\_RST
+
+| #define NUMAKER\_UART1\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART1RST\_Pos](#a773461c6a35be084ee878a4ae7030ff8)) |
+| --- |
+
+## [◆ ](#acc518471fe73a842b39a56a6c2a3d208)NUMAKER\_UART2\_RST
+
+| #define NUMAKER\_UART2\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART2RST\_Pos](#a84125fa75be52211802fb9ebca59f4f7)) |
+| --- |
+
+## [◆ ](#a451f38258887da534ee5c75e6dfcc28a)NUMAKER\_UART3\_RST
+
+| #define NUMAKER\_UART3\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART3RST\_Pos](#af85ed27d6c54961fdbf408ff0d7653de)) |
+| --- |
+
+## [◆ ](#a74a3f05297b2014947e13c9e8fd7fd14)NUMAKER\_UART4\_RST
+
+| #define NUMAKER\_UART4\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART4RST\_Pos](#ab5123d96fb9b07ecb4adda8cd945ba5f)) |
+| --- |
+
+## [◆ ](#a83b12f8d7cc1822080bb088730033c5d)NUMAKER\_UART5\_RST
+
+| #define NUMAKER\_UART5\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART5RST\_Pos](#a0e6a6bb72ff1015815d010ec0860a963)) |
+| --- |
+
+## [◆ ](#a42e7f4a4a1f585df59b03928f1b95b11)NUMAKER\_UART6\_RST
+
+| #define NUMAKER\_UART6\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART6RST\_Pos](#a0ea375ad611313a86c5e49c22011c67a)) |
+| --- |
+
+## [◆ ](#aa4f97772ca5218ae52d2105e722db6fc)NUMAKER\_UART7\_RST
+
+| #define NUMAKER\_UART7\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_UART7RST\_Pos](#ad3e76d7febcd8cea501a7fe14bf2cf47)) |
+| --- |
+
+## [◆ ](#adb20e898d770ace2319ede3852216566)NUMAKER\_UART8\_RST
+
+| #define NUMAKER\_UART8\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_UART8RST\_Pos](#a975862229a1426ae8b2c7bcc045ed8c8)) |
+| --- |
+
+## [◆ ](#ac9e61e7657c7973bbc1c735abf5e2b45)NUMAKER\_UART9\_RST
+
+| #define NUMAKER\_UART9\_RST   ((0x18UL << 24) | [NUMAKER\_SYS\_IPRST3\_UART9RST\_Pos](#a9b7371eeb9f40864b22bbf4d8945f6ac)) |
+| --- |
+
+## [◆ ](#a1a74ded775d85a498a044529857c5826)NUMAKER\_USBD\_RST
+
+| #define NUMAKER\_USBD\_RST   ((4UL << 24) | [NUMAKER\_SYS\_IPRST1\_USBDRST\_Pos](#a93ea373b16e2292f1e0d24482974d7c3)) |
+| --- |
+
+## [◆ ](#ab7e650d5582aa2f623f075c5b2c2dce5)NUMAKER\_USCI0\_RST
+
+| #define NUMAKER\_USCI0\_RST   ((8UL << 24) | [NUMAKER\_SYS\_IPRST2\_USCI0RST\_Pos](#a927b7a5fcd4f3701e14c95ebe175c91a)) |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
+- [numaker\_m46x\_reset.h](numaker__m46x__reset_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

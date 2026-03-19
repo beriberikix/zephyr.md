@@ -1,0 +1,71 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/samples/kernel/condition_variables/condvar/README.html
+original_path: samples/kernel/condition_variables/condvar/README.html
+---
+
+# Condition Variables
+
+[
+Browse source code on GitHub
+](https://github.com/zephyrproject-rtos/zephyr/blob/main//samples/kernel/condition_variables/condvar/README.rst/..)
+
+## Overview
+
+This sample demonstrates the usage of [condition variables](../../../../kernel/services/synchronization/condvar.md#condvar) in a
+multithreaded application. Condition variables are used with a mutex
+to signal changing states (conditions) from one thread to another
+thread. A thread uses a condition variable to wait for a condition to
+become true. Different threads alternate between their entry point
+function execution based on when they signal the other thread that is
+pending on the condition variable. The sample can be used with any
+[supported board](../../../../boards/index.md#boards) and prints the sample output shown to
+the console.
+
+## Building and Running
+
+This application can be built and executed on [native\_sim](../../../../boards/native/native_sim/doc/index.md#native-sim) as follows:
+
+```shell
+west build -b native_sim samples/kernel/condition_variables/condvar
+west build -t run
+```
+
+To build for another board, change `native_sim` above to that board’s name.
+
+### Sample Output
+
+```shell
+Starting watch_count: thread 1
+watch_count: thread 1 Count= 0. Going into wait...
+inc_count: thread 2, count = 1, unlocking mutex
+inc_count: thread 3, count = 2, unlocking mutex
+inc_count: thread 2, count = 3, unlocking mutex
+inc_count: thread 3, count = 4, unlocking mutex
+inc_count: thread 2, count = 5, unlocking mutex
+inc_count: thread 3, count = 6, unlocking mutex
+inc_count: thread 2, count = 7, unlocking mutex
+inc_count: thread 3, count = 8, unlocking mutex
+inc_count: thread 2, count = 9, unlocking mutex
+inc_count: thread 3, count = 10, unlocking mutex
+inc_count: thread 2, count = 11, unlocking mutex
+inc_count: thread 3, count = 12  Threshold reached.Just sent signal.
+inc_count: thread 3, count = 12, unlocking mutex
+watch_count: thread 1 Condition signal received. Count= 12
+watch_count: thread 1 Updating the value of count...
+watch_count: thread 1 count now = 137.
+watch_count: thread 1 Unlocking mutex.
+inc_count: thread 2, count = 138, unlocking mutex
+inc_count: thread 3, count = 139, unlocking mutex
+inc_count: thread 2, count = 140, unlocking mutex
+inc_count: thread 3, count = 141, unlocking mutex
+inc_count: thread 2, count = 142, unlocking mutex
+inc_count: thread 3, count = 143, unlocking mutex
+inc_count: thread 2, count = 144, unlocking mutex
+inc_count: thread 3, count = 145, unlocking mutex
+Main(): Waited and joined with 3 threads. Final value of count = 145. Done.
+```
+
+## See also
+
+[Condition Variables APIs](../../../../doxygen/html/group__condvar__apis.md)

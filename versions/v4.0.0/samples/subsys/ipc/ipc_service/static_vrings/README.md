@@ -1,0 +1,98 @@
+---
+version: v4.0.0
+source_url: https://docs.zephyrproject.org/4.0.0/samples/subsys/ipc/ipc_service/static_vrings/README.html
+original_path: samples/subsys/ipc/ipc_service/static_vrings/README.html
+---
+
+# IPC service: static vrings backend
+
+[
+Browse source code on GitHub
+](https://github.com/zephyrproject-rtos/zephyr/blob/main//samples/subsys/ipc/ipc_service/static_vrings/README.rst/..)
+
+## Overview
+
+This application demonstrates how to use IPC Service and the static vrings
+backend with Zephyr. It is designed to demonstrate how to integrate it with
+Zephyr both from a build perspective and code.
+
+## Building the application for nrf5340dk/nrf5340/cpuapp
+
+```shell
+# From the root of the zephyr repository
+west build -b nrf5340dk/nrf5340/cpuapp --sysbuild samples/subsys/ipc/ipc_service/static_vrings
+west debug
+```
+
+## Building the application for lpcxpresso55s69/lpc55s69/cpu0
+
+```shell
+# From the root of the zephyr repository
+west build -b lpcxpresso55s69/lpc55s69/cpu0 --sysbuild samples/subsys/ipc/ipc_service/static_vrings
+west debug
+```
+
+## Building the application for mimxrt1160\_evk/mimxrt1166/cm7
+
+```shell
+# From the root of the zephyr repository
+west build -b mimxrt1160_evk/mimxrt1166/cm7 --sysbuild samples/subsys/ipc/ipc_service/static_vrings
+west debug
+```
+
+## Building the application for mimxrt1170\_evk/mimxrt1176/cm7
+
+```shell
+# From the root of the zephyr repository
+west build -b mimxrt1170_evk/mimxrt1176/cm7 --sysbuild samples/subsys/ipc/ipc_service/static_vrings
+west debug
+```
+
+## Building the application for [mimxrt1170\_evk@B/mimxrt1176/cm7](mailto:mimxrt1170_evk%40B/mimxrt1176/cm7)
+
+```shell
+# From the root of the zephyr repository
+west build -b mimxrt1170_evk@B/mimxrt1176/cm7 --sysbuild samples/subsys/ipc/ipc_service/static_vrings
+west debug
+```
+
+Open a serial terminal (minicom, putty, etc.) and connect the board with the
+following settings:
+
+- Speed: 115200
+- Data: 8 bits
+- Parity: None
+- Stop bits: 1
+
+Reset the board and the following message will appear on the corresponding
+serial port, one is host another is remote:
+
+```shell
+*** Booting Zephyr OS build zephyr-v3.1.0-2383-g147aee22f273  ***
+IPC-service HOST [INST 0 - ENDP A] demo started
+IPC-service HOST [INST 0 - ENDP B] demo started
+IPC-service HOST [INST 1] demo started
+HOST [1]: 1
+HOST [1]: 3
+HOST [1]: 5
+HOST [1]: 7
+HOST [1]: 9
+...
+```
+
+```shell
+*** Booting Zephyr OS build zephyr-v3.1.0-2383-g147aee22f273  ***
+IPC-service REMOTE [INST 0 - ENDP A] demo started
+IPC-service REMOTE [INST 0 - ENDP B] demo started
+IPC-service REMOTE [INST 1] demo started
+REMOTE [1]: 0
+REMOTE [1]: 2
+REMOTE [1]: 4
+REMOTE [1]: 6
+REMOTE [1]: 8
+...
+```
+
+## See also
+
+[IPC](../../../../../doxygen/html/group__ipc.md)
