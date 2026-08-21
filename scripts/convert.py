@@ -13,7 +13,7 @@ from urllib.parse import urlparse
 
 import yaml
 from bs4 import BeautifulSoup
-from bs4.element import Tag
+from bs4.element import NavigableString, Tag
 from markdownify import MarkdownConverter
 
 
@@ -67,6 +67,13 @@ class ZephyrMarkdownConverter(MarkdownConverter):
         parsed = urlparse(href)
         is_external = parsed.scheme in {"http", "https", "mailto", "tel"} or href.startswith("//")
         if is_external:
+            # Some upstream pages carry Markdown link syntax that Sphinx never parsed,
+            # leaving literal "[label](" and ")" text around a bare URL that Sphinx did
+            # autolink. Emitting "[URL](URL)" there nests one link inside another and
+            # yields an unusable target. Emit the bare URL so the surrounding literal
+            # brackets close over it as a well-formed link.
+            if _is_bare_url_in_literal_link(el, text, href):
+                return href
             return f"[{text}]({href})"
 
         if href.startswith("#"):
@@ -86,6 +93,24 @@ class ZephyrMarkdownConverter(MarkdownConverter):
         title = (el.get("title") or "").strip()
         title_part = f' "{title}"' if title else ""
         return f"[{text}]({new_href}{title_part})"
+
+
+def _unescape_markdown(text: str) -> str:
+    """Undo markdownify's backslash escaping so text can be compared to a raw href."""
+    return re.sub(r"\\(.)", r"\1", text)
+
+
+def _is_bare_url_in_literal_link(el: Tag, text: str, href: str) -> bool:
+    """True when <a> is an autolinked bare URL wrapped in unparsed "[label](...)" text."""
+    if _unescape_markdown(text).strip() != href:
+        return False
+
+    previous = el.previous_sibling
+    if not isinstance(previous, NavigableString) or not str(previous).endswith("]("):
+        return False
+
+    following = el.next_sibling
+    return isinstance(following, NavigableString) and str(following).startswith(")")
 
 
 def _split_anchor(link: str) -> tuple[str, str]:
