@@ -223,7 +223,7 @@ Bug fixes:
 
 - The path to the manifest repository reported by west could be incorrect in
   certain circumstances detailed in [issue
-  #572]([https://github.com/zephyrproject-rtos/west/issues/572](https://github.com/zephyrproject-rtos/west/issues/572)). This has been
+  #572](https://github.com/zephyrproject-rtos/west/issues/572). This has been
   fixed as part of a larger overhaul of path handling support in the
   `west.manifest` API module.
 - The `west.Manifest.ManifestProject.__repr__` return value was fixed
@@ -243,7 +243,7 @@ Bug fixes:
     reading `self.config` will abort the program.
 - The path handling in the `west.manifest` package has been overhauled in a
   backwards-incompatible way. For more details, see commit
-  [56cfe8d1d1]([https://github.com/zephyrproject-rtos/west/commit/56cfe8d1d1f3c9b45de3e793c738acd62db52aca](https://github.com/zephyrproject-rtos/west/commit/56cfe8d1d1f3c9b45de3e793c738acd62db52aca)).
+  [56cfe8d1d1](https://github.com/zephyrproject-rtos/west/commit/56cfe8d1d1f3c9b45de3e793c738acd62db52aca).
 - `west.manifest.Manifest.validate()`: this now returns the validated data as
   a Python dict. This can be useful if the value passed to this function was a
   str, and the dict is desired.
@@ -502,7 +502,7 @@ features and fixes.
 This is a bugfix release.
 
 - Fix an error where a failed import could leave the workspace in an unusable
-  state (see [PR #415]([https://github.com/zephyrproject-rtos/west/pull/415](https://github.com/zephyrproject-rtos/west/pull/415)) for
+  state (see [PR #415](https://github.com/zephyrproject-rtos/west/pull/415) for
   details)
 
 ## v0.7.2

@@ -48,7 +48,7 @@ static IP or Gateway discovery process.
 
 You will also need to start an MQTT-SN gateway. A convenience Docker Compose specification file
 is provided in [samples/net/mqtt\_sn\_publisher/compose/compose.yaml](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/net/mqtt_sn_publisher/compose/compose.yaml).
-First, Start the net-tools configuration from[here]([https://github.com/zephyrproject-rtos/net-tools](https://github.com/zephyrproject-rtos/net-tools))
+First, Start the net-tools configuration from[here](https://github.com/zephyrproject-rtos/net-tools)
 with:
 
 ```shell

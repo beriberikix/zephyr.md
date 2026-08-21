@@ -56,9 +56,9 @@ Exit QEMU by pressing `CTRL`+`A` `x`.
 The CMSIS-NN kernel application can be built and executed on any Arm(R) Cortex(R)-M core based platform,
 for example based on Arm Corstone(TM)-300 software. A reference implementation of Corstone-300
 can be downloaded either as a FPGA bitfile for the
-[MPS3 FPGA prototyping board]([https://developer.arm.com/tools-and-software/development-boards/fpga-prototyping-boards/mps3](https://developer.arm.com/tools-and-software/development-boards/fpga-prototyping-boards/mps3)),
+[MPS3 FPGA prototyping board](https://developer.arm.com/tools-and-software/development-boards/fpga-prototyping-boards/mps3),
 or as a
-[Fixed Virtual Platform]([https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps](https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps))
+[Fixed Virtual Platform](https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps)
 that can be emulated on a host machine.
 
 Assuming that the Corstone-300 FVP has been downloaded, installed and added to

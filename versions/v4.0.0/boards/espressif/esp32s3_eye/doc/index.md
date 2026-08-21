@@ -24,8 +24,8 @@ SoC:
 
 ## Overview
 
-The ESP32-S3-EYE is a small-sized AI development board produced by [Espressif]([https://espressif.com](https://espressif.com)).
-It is based on the [ESP32-S3]([https://www.espressif.com/en/products/socs/esp32-s3](https://www.espressif.com/en/products/socs/esp32-s3)) SoC.
+The ESP32-S3-EYE is a small-sized AI development board produced by [Espressif](https://espressif.com).
+It is based on the [ESP32-S3](https://www.espressif.com/en/products/socs/esp32-s3) SoC.
 It features a 2-Megapixel camera, an LCD display, and a microphone, which are used for image
 recognition and audio processing. ESP32-S3-EYE offers plenty of storage, with an 8 MB Octal PSRAM
 and a 8 MB flash.
