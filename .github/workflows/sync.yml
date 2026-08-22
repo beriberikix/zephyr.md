@@ -30,7 +30,6 @@ concurrency:
 
 env:
   ZEPHYR_BUILD_IMAGE: ghcr.io/zephyrproject-rtos/zephyr-build:latest
-  ZEPHYR_SDK_VERSION: "0.16.8"
 
 jobs:
   prepare:
@@ -86,14 +85,33 @@ jobs:
       matrix:
         tag: ${{ fromJson(needs.prepare.outputs.tags_json) }}
     steps:
+      - name: Free disk space for the SDK and docs build
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Before:"
+          df -h /
+          # The full Zephyr SDK expands to several GB on top of the build image;
+          # drop preinstalled toolchains this job never uses to make room.
+          sudo rm -rf \
+            /usr/share/dotnet \
+            /usr/local/lib/android \
+            /opt/ghc \
+            /usr/local/share/boost \
+            /usr/local/share/powershell \
+            /usr/local/lib/node_modules \
+            "${AGENT_TOOLSDIRECTORY:-/opt/hostedtoolcache}" || true
+          echo "After:"
+          df -h /
+
       - name: Checkout pipeline repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: Cache Docker layers
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: /tmp/.docker-cache
           key: docker-${{ env.ZEPHYR_BUILD_IMAGE }}
@@ -138,7 +156,6 @@ jobs:
             -w /work/pipeline \
             -e TAG="$TAG" \
             -e SOURCE_URL="$SOURCE_URL" \
-            -e ZEPHYR_SDK_VERSION="$ZEPHYR_SDK_VERSION" \
             "$ZEPHYR_BUILD_IMAGE" \
             bash -lc '
               set -euo pipefail
@@ -159,25 +176,62 @@ jobs:
               python3 -m pip install --upgrade -r /tmp/zephyrproject/zephyr/doc/requirements.txt
               python3 -m pip install --upgrade -r /work/pipeline/scripts/requirements-convert.txt
 
-              if [[ -z "${ZEPHYR_SDK_INSTALL_DIR:-}" || ! -d "${ZEPHYR_SDK_INSTALL_DIR}" ]]; then
-                SDK_DIR="/opt/zephyr-sdk-${ZEPHYR_SDK_VERSION}"
-                if [[ ! -d "$SDK_DIR" ]]; then
-                  SDK_ARCHIVE="zephyr-sdk-${ZEPHYR_SDK_VERSION}_linux-x86_64_minimal.tar.xz"
-                  SDK_URL="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${ZEPHYR_SDK_VERSION}/${SDK_ARCHIVE}"
-                  if command -v curl >/dev/null 2>&1; then
-                    curl -fsSL "$SDK_URL" -o "/tmp/${SDK_ARCHIVE}"
-                  elif command -v wget >/dev/null 2>&1; then
-                    wget -q "$SDK_URL" -O "/tmp/${SDK_ARCHIVE}"
-                  else
-                    echo "Neither curl nor wget is available in the container"
-                    exit 1
-                  fi
-                  mkdir -p /opt
-                  tar -C /opt -xf "/tmp/${SDK_ARCHIVE}"
-                  "$SDK_DIR/setup.sh" -c -h
-                fi
-                export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
+              # Never pin the SDK: each Zephyr tag states the version it needs, and that
+              # ranges from 0.16.5 (v3.6.0) to 1.0.1 (main). Read it from the tree we
+              # actually checked out so every tag in the matrix gets its own SDK.
+              SDK_VERSION="$(tr -d "[:space:]" < /tmp/zephyrproject/zephyr/SDK_VERSION)"
+              if [[ -z "$SDK_VERSION" ]]; then
+                echo "Could not read SDK_VERSION from the Zephyr tree"
+                exit 1
               fi
+              echo "Zephyr $TAG requires Zephyr SDK $SDK_VERSION"
+
+              # A directory alone is not enough: the _minimal bundle unpacks to a valid
+              # looking SDK that contains no toolchains at all, so require a target
+              # toolchain to be present before accepting a candidate.
+              sdk_has_toolchains() {
+                [[ -n "$1" && -d "$1" ]] && compgen -G "$1/*-zephyr-*" > /dev/null
+              }
+
+              SDK_DIR=""
+              for CANDIDATE in "${ZEPHYR_SDK_INSTALL_DIR:-}" \
+                               "/opt/zephyr-sdk-${SDK_VERSION}" \
+                               "/opt/toolchains/zephyr-sdk-${SDK_VERSION}"; do
+                if sdk_has_toolchains "$CANDIDATE"; then
+                  SDK_DIR="$CANDIDATE"
+                  echo "Reusing Zephyr SDK already present at $SDK_DIR"
+                  break
+                fi
+              done
+
+              if [[ -z "$SDK_DIR" ]]; then
+                # Install the full bundle, not _minimal. Without toolchains every board
+                # build fails with "Unable to find <arch>-zephyr-elf", which silently
+                # empties the Devicetree-derived board catalog in the generated docs.
+                SDK_DIR="/opt/zephyr-sdk-${SDK_VERSION}"
+                SDK_URL="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${SDK_VERSION}/zephyr-sdk-${SDK_VERSION}_linux-x86_64.tar.xz"
+                echo "Installing Zephyr SDK $SDK_VERSION from $SDK_URL"
+                mkdir -p /opt
+                # Stream straight into tar so the ~2G archive never lands on disk
+                # alongside its own ~7G expansion.
+                if command -v curl >/dev/null 2>&1; then
+                  curl -fsSL "$SDK_URL" | tar -C /opt -xJ
+                elif command -v wget >/dev/null 2>&1; then
+                  wget -qO- "$SDK_URL" | tar -C /opt -xJ
+                else
+                  echo "Neither curl nor wget is available in the container"
+                  exit 1
+                fi
+                "$SDK_DIR/setup.sh" -c
+              fi
+
+              export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
+              if ! sdk_has_toolchains "$ZEPHYR_SDK_INSTALL_DIR"; then
+                echo "Zephyr SDK at $ZEPHYR_SDK_INSTALL_DIR has no toolchains"
+                exit 1
+              fi
+              echo "Using Zephyr SDK at $ZEPHYR_SDK_INSTALL_DIR"
+              df -h /opt
 
               cmake -GNinja -B /tmp/zephyrproject/zephyr/doc/_build -S /tmp/zephyrproject/zephyr/doc -DDOC_TAG="$TAG" -DSPHINXOPTS="-j auto --keep-going -T"
               cmake --build /tmp/zephyrproject/zephyr/doc/_build --target html
@@ -191,7 +245,7 @@ jobs:
             '
 
       - name: Upload Markdown artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: markdown-${{ matrix.tag }}
           path: artifacts/${{ matrix.tag }}
@@ -203,12 +257,12 @@ jobs:
       - build-and-convert
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Download all converted artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: _downloaded
 
