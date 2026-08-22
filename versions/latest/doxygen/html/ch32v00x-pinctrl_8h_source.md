@@ -1,0 +1,606 @@
+---
+version: v4.2.0
+source_url: https://docs.zephyrproject.org/4.2.0/doxygen/html/ch32v00x-pinctrl_8h_source.html
+original_path: doxygen/html/ch32v00x-pinctrl_8h_source.html
+---
+
+| Logo | Zephyr API Documentation 4.2.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+ch32v00x-pinctrl.h
+
+[Go to the documentation of this file.](ch32v00x-pinctrl_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2025 Michael Hope <michaelh@juju.nz>
+
+3 \*
+
+4 \* SPDX-License-Identifier: Apache-2.0
+
+5 \*/
+
+6
+
+7#ifndef \_\_CH32V00X\_PINCTRL\_H\_\_
+
+8#define \_\_CH32V00X\_PINCTRL\_H\_\_
+
+9
+
+[ 10](ch32v00x-pinctrl_8h.md#a342a836de3a2ffdda83f5c3d57966abf)#define CH32V00X\_PINMUX\_PORT\_PA 0
+
+[ 11](ch32v00x-pinctrl_8h.md#ae9f35f667ca89936c8ad246287bf9f43)#define CH32V00X\_PINMUX\_PORT\_PB 1
+
+[ 12](ch32v00x-pinctrl_8h.md#a1e2d2bd6331286774357771211bebdff)#define CH32V00X\_PINMUX\_PORT\_PC 2
+
+[ 13](ch32v00x-pinctrl_8h.md#a97f123c1518d8c9c66e97166fc8a5ab6)#define CH32V00X\_PINMUX\_PORT\_PD 3
+
+14
+
+15/\* Starting bit for the remap field in PCFR1 \*/
+
+[ 16](ch32v00x-pinctrl_8h.md#a3c398e69bd9aba0d8ef646f31e4d98d3)#define CH32V00X\_PINMUX\_SPI1\_RM 0
+
+[ 17](ch32v00x-pinctrl_8h.md#a38bd15803e839874fd1db5408f03f330)#define CH32V00X\_PINMUX\_I2C1\_RM 3
+
+[ 18](ch32v00x-pinctrl_8h.md#a46a8b78e5eed35dab015c9c09fac238f)#define CH32V00X\_PINMUX\_USART1\_RM 6
+
+[ 19](ch32v00x-pinctrl_8h.md#aecf76dc2f53a7ae6c5226fd51185dfa8)#define CH32V00X\_PINMUX\_TIM1\_RM 10
+
+[ 20](ch32v00x-pinctrl_8h.md#aacb406305b44a788dc831829f719fed0)#define CH32V00X\_PINMUX\_TIM2\_RM 14
+
+[ 21](ch32v00x-pinctrl_8h.md#ae4299414eb81619866db635b1f3632a2)#define CH32V00X\_PINMUX\_PA1PA2\_RM 17
+
+[ 22](ch32v00x-pinctrl_8h.md#a10d20ad95129b7e6ddcf331582d13897)#define CH32V00X\_PINMUX\_ADC\_DTR\_GINJ\_RM 18
+
+[ 23](ch32v00x-pinctrl_8h.md#a9a2214e447c9d821340803dbd5c9a1ef)#define CH32V00X\_PINMUX\_ADC\_DTR\_GREG\_RM 19
+
+[ 24](ch32v00x-pinctrl_8h.md#a5b7e2562a6a6c664e9e0ca1b6de5d4df)#define CH32V00X\_PINMUX\_USART2\_RM 20
+
+25
+
+26/\* Port number with 0-3 \*/
+
+[ 27](ch32v00x-pinctrl_8h.md#abc6ff06e0fcacdbfa4a05066e87904a7)#define CH32V00X\_PINCTRL\_PORT\_SHIFT 0
+
+[ 28](ch32v00x-pinctrl_8h.md#a7d221d51318c7235b823651802a25192)#define CH32V00X\_PINCTRL\_PORT\_MASK GENMASK(1, 0)
+
+29/\* Pin number 0-7 \*/
+
+[ 30](ch32v00x-pinctrl_8h.md#a16dd7dab2521cfbfec5860a6bea3820e)#define CH32V00X\_PINCTRL\_PIN\_SHIFT 2
+
+[ 31](ch32v00x-pinctrl_8h.md#a252c604982e448ab4e2f7333a431bdb6)#define CH32V00X\_PINCTRL\_PIN\_MASK GENMASK(4, 2)
+
+32/\* Base remap bit 0-31 \*/
+
+[ 33](ch32v00x-pinctrl_8h.md#a32c6a5a4f753487e92c5b0add73c0a97)#define CH32V00X\_PINCTRL\_BASE\_SHIFT 5
+
+[ 34](ch32v00x-pinctrl_8h.md#ab30a0f46632e9eb8529306664c618eae)#define CH32V00X\_PINCTRL\_BASE\_MASK GENMASK(9, 5)
+
+35/\* Function remapping ID 0-7 \*/
+
+[ 36](ch32v00x-pinctrl_8h.md#a94441bfaa665e8f31bcead94137e5c05)#define CH32V00X\_PINCTRL\_RM\_SHIFT 10
+
+[ 37](ch32v00x-pinctrl_8h.md#ac1154192c3a9120cbb1dfbf28400e664)#define CH32V00X\_PINCTRL\_RM\_MASK GENMASK(12, 10)
+
+38
+
+[ 39](ch32v00x-pinctrl_8h.md#a1c30350d4532ec3cfb69a2febfa9dc09)#define CH32V00X\_PINMUX\_DEFINE(port, pin, rm, remapping) \
+
+40 ((CH32V00X\_PINMUX\_PORT\_##port << CH32V00X\_PINCTRL\_PORT\_SHIFT) | \
+
+41 (pin << CH32V00X\_PINCTRL\_PIN\_SHIFT) | \
+
+42 (CH32V00X\_PINMUX\_##rm##\_RM << CH32V00X\_PINCTRL\_BASE\_SHIFT) | \
+
+43 (remapping << CH32V00X\_PINCTRL\_RM\_SHIFT))
+
+44
+
+[ 45](ch32v00x-pinctrl_8h.md#a8fca20f25cd86b6185a1c2674342bc48)#define TIM1\_ETR\_PC5\_0 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM1, 0)
+
+[ 46](ch32v00x-pinctrl_8h.md#aaae81f3909b0a548b6971e4f5ad727eb)#define TIM1\_ETR\_PD4\_1 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM1, 1)
+
+[ 47](ch32v00x-pinctrl_8h.md#a44dd79259ce6ff88ee97a6f5e2ae93c8)#define TIM1\_ETR\_PC5\_2 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM1, 2)
+
+[ 48](ch32v00x-pinctrl_8h.md#af03e0801b80f311ffa8ff53f71e895b6)#define TIM1\_ETR\_PC2\_3 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM1, 3)
+
+[ 49](ch32v00x-pinctrl_8h.md#a880fc5b619497c9ad0d3f7cbfab85649)#define TIM1\_ETR\_PD4\_4 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM1, 4)
+
+[ 50](ch32v00x-pinctrl_8h.md#a5c196d9f8fe45f609fb45849acef552b)#define TIM1\_ETR\_PD4\_5 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM1, 5)
+
+[ 51](ch32v00x-pinctrl_8h.md#a4ac6d50841b3beaf5b8ab824afd8d8a9)#define TIM1\_ETR\_PD4\_6 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM1, 6)
+
+[ 52](ch32v00x-pinctrl_8h.md#a1e753c5cdf4dad1201b8a1e3a9130b71)#define TIM1\_ETR\_PB4\_7 CH32V00X\_PINMUX\_DEFINE(PB, 4, TIM1, 7)
+
+[ 53](ch32v00x-pinctrl_8h.md#a68f0acdd096d3848a340ad6fb3720234)#define TIM1\_ETR\_PB4\_8 CH32V00X\_PINMUX\_DEFINE(PB, 4, TIM1, 8)
+
+[ 54](ch32v00x-pinctrl_8h.md#a9ebc70c362069993fd1dab3cae650b6e)#define TIM1\_ETR\_PB4\_9 CH32V00X\_PINMUX\_DEFINE(PB, 4, TIM1, 9)
+
+[ 55](ch32v00x-pinctrl_8h.md#a0358320b2a97250777a32de61ac74e11)#define TIM1\_CH1\_PD2\_0 CH32V00X\_PINMUX\_DEFINE(PD, 2, TIM1, 0)
+
+[ 56](ch32v00x-pinctrl_8h.md#a8ea959a185d8282797e3ad253f7d70a0)#define TIM1\_CH1\_PD2\_1 CH32V00X\_PINMUX\_DEFINE(PD, 2, TIM1, 1)
+
+[ 57](ch32v00x-pinctrl_8h.md#aee2da94a1c434f98caf2b6a8717173fb)#define TIM1\_CH1\_PC6\_2 CH32V00X\_PINMUX\_DEFINE(PC, 6, TIM1, 2)
+
+[ 58](ch32v00x-pinctrl_8h.md#aa4f03f6f1206146731ed38b33fec5c99)#define TIM1\_CH1\_PC4\_3 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 3)
+
+[ 59](ch32v00x-pinctrl_8h.md#adf27aba2c5d9b8d06eca64e58fb29ee8)#define TIM1\_CH1\_PA3\_4 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM1, 4)
+
+[ 60](ch32v00x-pinctrl_8h.md#a290726fb42e4072388c7fca6965c8519)#define TIM1\_CH1\_PA3\_5 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM1, 5)
+
+[ 61](ch32v00x-pinctrl_8h.md#af7d3e5f026e32be361f8e9e3258ab95c)#define TIM1\_CH1\_PA3\_6 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM1, 6)
+
+[ 62](ch32v00x-pinctrl_8h.md#a94eb34ef91947e256a43df8a5f578162)#define TIM1\_CH1\_PC4\_7 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 7)
+
+[ 63](ch32v00x-pinctrl_8h.md#ae5781ea1006d017f5207e259c7647653)#define TIM1\_CH1\_PC4\_8 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 8)
+
+[ 64](ch32v00x-pinctrl_8h.md#a0e8bde418956cb9704f50246f7454773)#define TIM1\_CH1\_PA0\_9 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM1, 9)
+
+[ 65](ch32v00x-pinctrl_8h.md#ab154f084c5ca48b3010e6e7744b03d3c)#define TIM1\_CH2\_PA1\_0 CH32V00X\_PINMUX\_DEFINE(PA, 1, TIM1, 0)
+
+[ 66](ch32v00x-pinctrl_8h.md#ab9707e688fd0e10707341dfba99806c7)#define TIM1\_CH2\_PA1\_1 CH32V00X\_PINMUX\_DEFINE(PA, 1, TIM1, 1)
+
+[ 67](ch32v00x-pinctrl_8h.md#a59253a312e1aa02c520b64563240bf8d)#define TIM1\_CH2\_PC7\_2 CH32V00X\_PINMUX\_DEFINE(PC, 7, TIM1, 2)
+
+[ 68](ch32v00x-pinctrl_8h.md#ac062779803078d0f4398dc9979ab09c6)#define TIM1\_CH2\_PC7\_3 CH32V00X\_PINMUX\_DEFINE(PC, 7, TIM1, 3)
+
+[ 69](ch32v00x-pinctrl_8h.md#a40288ef1c2693e428727b73c0955beb0)#define TIM1\_CH2\_PB0\_4 CH32V00X\_PINMUX\_DEFINE(PB, 0, TIM1, 4)
+
+[ 70](ch32v00x-pinctrl_8h.md#ac4785ebb2b6bb90090bdd1c79d2da0f3)#define TIM1\_CH2\_PB0\_5 CH32V00X\_PINMUX\_DEFINE(PB, 0, TIM1, 5)
+
+[ 71](ch32v00x-pinctrl_8h.md#a1f428966756273de6718403679b74332)#define TIM1\_CH2\_PB0\_6 CH32V00X\_PINMUX\_DEFINE(PB, 0, TIM1, 6)
+
+[ 72](ch32v00x-pinctrl_8h.md#a98a253a2d5a2b5d131eb234162ac840f)#define TIM1\_CH2\_PC5\_7 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM1, 7)
+
+[ 73](ch32v00x-pinctrl_8h.md#affeb6faff8ee97b7747f0b209fd015ac)#define TIM1\_CH2\_PC5\_8 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM1, 8)
+
+[ 74](ch32v00x-pinctrl_8h.md#ad8637e4b990a4144dd075e0db826ea03)#define TIM1\_CH2\_PA1\_9 CH32V00X\_PINMUX\_DEFINE(PA, 1, TIM1, 9)
+
+[ 75](ch32v00x-pinctrl_8h.md#a8c34342b714e0bb8fc5dbffbbba87a98)#define TIM1\_CH3\_PC3\_0 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM1, 0)
+
+[ 76](ch32v00x-pinctrl_8h.md#ab2a9390300a6a8d835a7bb5d860e3e31)#define TIM1\_CH3\_PC3\_1 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM1, 1)
+
+[ 77](ch32v00x-pinctrl_8h.md#ae13f1692e05743d7270d15be74ceef6b)#define TIM1\_CH3\_PC0\_2 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM1, 2)
+
+[ 78](ch32v00x-pinctrl_8h.md#ac0ef4ba763211a0f47cdbc4f1ec3891f)#define TIM1\_CH3\_PC5\_3 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM1, 3)
+
+[ 79](ch32v00x-pinctrl_8h.md#ae7dcb6643d0745ccfcd9a23f2b5ca9dd)#define TIM1\_CH3\_PB1\_4 CH32V00X\_PINMUX\_DEFINE(PB, 1, TIM1, 4)
+
+[ 80](ch32v00x-pinctrl_8h.md#a55dad5236421b9db9cfec232d194b39f)#define TIM1\_CH3\_PC3\_5 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM1, 5)
+
+[ 81](ch32v00x-pinctrl_8h.md#a48b4e7d8a26d1c640e7daa76f72723c7)#define TIM1\_CH3\_PB1\_6 CH32V00X\_PINMUX\_DEFINE(PB, 1, TIM1, 6)
+
+[ 82](ch32v00x-pinctrl_8h.md#a79e4869cf7f60c3e188e5f417193465c)#define TIM1\_CH3\_PC6\_7 CH32V00X\_PINMUX\_DEFINE(PC, 6, TIM1, 7)
+
+[ 83](ch32v00x-pinctrl_8h.md#adb77560754e43007d8b2606c0fb21aff)#define TIM1\_CH3\_PC6\_8 CH32V00X\_PINMUX\_DEFINE(PC, 6, TIM1, 8)
+
+[ 84](ch32v00x-pinctrl_8h.md#a66384e30f77c4ac2b0a5ee8fa41c4783)#define TIM1\_CH3\_PA2\_9 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 9)
+
+[ 85](ch32v00x-pinctrl_8h.md#a6da952b7542e4fa5027cdf978e9251cb)#define TIM1\_CH4\_PC4\_0 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 0)
+
+[ 86](ch32v00x-pinctrl_8h.md#a80c880c845d8c5c203a25f988768e93a)#define TIM1\_CH4\_PC4\_1 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 1)
+
+[ 87](ch32v00x-pinctrl_8h.md#a499c31d306fe8e8b8f594690c7b85284)#define TIM1\_CH4\_PD3\_2 CH32V00X\_PINMUX\_DEFINE(PD, 3, TIM1, 2)
+
+[ 88](ch32v00x-pinctrl_8h.md#a9ee2b1bcdf2de7573f121736348d7774)#define TIM1\_CH4\_PD4\_3 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM1, 3)
+
+[ 89](ch32v00x-pinctrl_8h.md#a573a0502889ee3abfa6d1d57da64fb2e)#define TIM1\_CH4\_PD1\_4 CH32V00X\_PINMUX\_DEFINE(PD, 1, TIM1, 4)
+
+[ 90](ch32v00x-pinctrl_8h.md#a1ddb484a7d46b253217362b525aef2b8)#define TIM1\_CH4\_PD1\_5 CH32V00X\_PINMUX\_DEFINE(PD, 1, TIM1, 5)
+
+[ 91](ch32v00x-pinctrl_8h.md#aad0f00059539fc47934e8649ea7768e2)#define TIM1\_CH4\_PB2\_6 CH32V00X\_PINMUX\_DEFINE(PB, 2, TIM1, 6)
+
+[ 92](ch32v00x-pinctrl_8h.md#affc60f50225b56abaa48e4b143d3fd7e)#define TIM1\_CH4\_PC7\_7 CH32V00X\_PINMUX\_DEFINE(PC, 7, TIM1, 7)
+
+[ 93](ch32v00x-pinctrl_8h.md#adbf133f0751d534b4a5c13863a38e721)#define TIM1\_CH4\_PC7\_8 CH32V00X\_PINMUX\_DEFINE(PC, 7, TIM1, 8)
+
+[ 94](ch32v00x-pinctrl_8h.md#a373943b6d935db7069c383651f5f9b1f)#define TIM1\_CH4\_PA3\_9 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM1, 9)
+
+[ 95](ch32v00x-pinctrl_8h.md#a0dd235ad3e6100a470c4d94140a24492)#define TIM1\_BKIN\_PC2\_0 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM1, 0)
+
+[ 96](ch32v00x-pinctrl_8h.md#a2662ae8a0f03cc66f1b99028379188a1)#define TIM1\_BKIN\_PC2\_1 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM1, 1)
+
+[ 97](ch32v00x-pinctrl_8h.md#ada827056b2498ea5843abb89e5ec0b49)#define TIM1\_BKIN\_PC1\_2 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM1, 2)
+
+[ 98](ch32v00x-pinctrl_8h.md#ac62dec76593bb03d91e786fb1c4ce044)#define TIM1\_BKIN\_PC1\_3 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM1, 3)
+
+[ 99](ch32v00x-pinctrl_8h.md#a12846390d681f4eda9f58483b86ede0d)#define TIM1\_BKIN\_PB3\_4 CH32V00X\_PINMUX\_DEFINE(PB, 3, TIM1, 4)
+
+[ 100](ch32v00x-pinctrl_8h.md#ae8a1630a2fd318f10069b52392e2d940)#define TIM1\_BKIN\_PB3\_5 CH32V00X\_PINMUX\_DEFINE(PB, 3, TIM1, 5)
+
+[ 101](ch32v00x-pinctrl_8h.md#a85faad2e83325648a340cfde87dba29f)#define TIM1\_BKIN\_PA7\_6 CH32V00X\_PINMUX\_DEFINE(PA, 7, TIM1, 6)
+
+[ 102](ch32v00x-pinctrl_8h.md#a5f220ff6b2aed5b482aed10efd453505)#define TIM1\_BKIN\_PB2\_7 CH32V00X\_PINMUX\_DEFINE(PB, 2, TIM1, 7)
+
+[ 103](ch32v00x-pinctrl_8h.md#a77bdb78dfe79ad4ebbc188025f1c61e1)#define TIM1\_BKIN\_PB2\_8 CH32V00X\_PINMUX\_DEFINE(PB, 2, TIM1, 8)
+
+[ 104](ch32v00x-pinctrl_8h.md#ad0e33c032d1f123c239e9628f09eff2c)#define TIM1\_BKIN\_PB2\_9 CH32V00X\_PINMUX\_DEFINE(PB, 2, TIM1, 9)
+
+[ 105](ch32v00x-pinctrl_8h.md#ae46dd3d78d8130e198f788e1fef871f4)#define TIM1\_CH1N\_PD0\_0 CH32V00X\_PINMUX\_DEFINE(PD, 0, TIM1, 0)
+
+[ 106](ch32v00x-pinctrl_8h.md#a4c664e4f5412238e223225cdc4c07bd6)#define TIM1\_CH1N\_PD0\_1 CH32V00X\_PINMUX\_DEFINE(PD, 0, TIM1, 1)
+
+[ 107](ch32v00x-pinctrl_8h.md#a00487f2196f5ff5f0e6b74c2cd9bf7e5)#define TIM1\_CH1N\_PC3\_2 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM1, 2)
+
+[ 108](ch32v00x-pinctrl_8h.md#aeb3bff0dbfa45aed7b63fd2a2979f3ec)#define TIM1\_CH1N\_PC3\_3 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM1, 3)
+
+[ 109](ch32v00x-pinctrl_8h.md#a40255c693cb786e8a7dc466388bea77a)#define TIM1\_CH1N\_PA0\_4 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM1, 4)
+
+[ 110](ch32v00x-pinctrl_8h.md#a9cb36b7c16682e7e921c40cb53cad74e)#define TIM1\_CH1N\_PA0\_5 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM1, 5)
+
+[ 111](ch32v00x-pinctrl_8h.md#aeadeed54e30fbad9b711e724e07bb937)#define TIM1\_CH1N\_PA0\_6 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM1, 6)
+
+[ 112](ch32v00x-pinctrl_8h.md#a62c71c4837307dc47cc9d23994e4cc70)#define TIM1\_CH1N\_PC0\_7 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM1, 7)
+
+[ 113](ch32v00x-pinctrl_8h.md#a8724c9ff43aea0ba6bce3492f8bbb38a)#define TIM1\_CH1N\_PA3\_8 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM1, 8)
+
+[ 114](ch32v00x-pinctrl_8h.md#a7408dd36bfe27994a3c8ec1917e15c2e)#define TIM1\_CH1N\_PC0\_9 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM1, 9)
+
+[ 115](ch32v00x-pinctrl_8h.md#a092da60f0a9603ec8c1553008a78d8f3)#define TIM1\_CH2N\_PA2\_0 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 0)
+
+[ 116](ch32v00x-pinctrl_8h.md#aa3671b55886c2b8c950dc9993fb8c4da)#define TIM1\_CH2N\_PA2\_1 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 1)
+
+[ 117](ch32v00x-pinctrl_8h.md#ae3e624aea83d00aef0d03c411714a854)#define TIM1\_CH2N\_PC4\_2 CH32V00X\_PINMUX\_DEFINE(PC, 4, TIM1, 2)
+
+[ 118](ch32v00x-pinctrl_8h.md#aa193ff08432db07685ca309f0e8b9e66)#define TIM1\_CH2N\_PD2\_3 CH32V00X\_PINMUX\_DEFINE(PD, 2, TIM1, 3)
+
+[ 119](ch32v00x-pinctrl_8h.md#ab1f836eb485a06d4a3711e364b22b85c)#define TIM1\_CH2N\_PA2\_4 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 4)
+
+[ 120](ch32v00x-pinctrl_8h.md#afa02981c691207cde6b6d4748c46a7ae)#define TIM1\_CH2N\_PA2\_5 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 5)
+
+[ 121](ch32v00x-pinctrl_8h.md#a7928f8a95130e9d2e07ccd903d0fccf5)#define TIM1\_CH2N\_PA2\_6 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM1, 6)
+
+[ 122](ch32v00x-pinctrl_8h.md#a0d6c8f82a35dead8d2725563eb57f2ac)#define TIM1\_CH2N\_PC1\_7 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM1, 7)
+
+[ 123](ch32v00x-pinctrl_8h.md#a681a380530c47dfb19a9db6f6511b67c)#define TIM1\_CH2N\_PB0\_8 CH32V00X\_PINMUX\_DEFINE(PB, 0, TIM1, 8)
+
+[ 124](ch32v00x-pinctrl_8h.md#aa838e5e9e05227c9186135b34b029a36)#define TIM1\_CH2N\_PC1\_9 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM1, 9)
+
+[ 125](ch32v00x-pinctrl_8h.md#a26b5659eb69c2b6f1b79497901a6bf32)#define TIM1\_CH3N\_PD1\_0 CH32V00X\_PINMUX\_DEFINE(PD, 1, TIM1, 0)
+
+[ 126](ch32v00x-pinctrl_8h.md#ad1c9dee54a8043b519176d67c14d949d)#define TIM1\_CH3N\_PD1\_1 CH32V00X\_PINMUX\_DEFINE(PD, 1, TIM1, 1)
+
+[ 127](ch32v00x-pinctrl_8h.md#ad986d12a63211d622c2debcecd7984e0)#define TIM1\_CH3N\_PD1\_2 CH32V00X\_PINMUX\_DEFINE(PD, 1, TIM1, 2)
+
+[ 128](ch32v00x-pinctrl_8h.md#aceeee0e77912b38e24bda43ab6819516)#define TIM1\_CH3N\_PC6\_3 CH32V00X\_PINMUX\_DEFINE(PC, 6, TIM1, 3)
+
+[ 129](ch32v00x-pinctrl_8h.md#a8fd1e6357bd9f1ed60fb4c4f5dc04c7d)#define TIM1\_CH3N\_PD0\_4 CH32V00X\_PINMUX\_DEFINE(PD, 0, TIM1, 4)
+
+[ 130](ch32v00x-pinctrl_8h.md#a094aca207f630409ffdee3639112d85c)#define TIM1\_CH3N\_PD0\_5 CH32V00X\_PINMUX\_DEFINE(PD, 0, TIM1, 5)
+
+[ 131](ch32v00x-pinctrl_8h.md#a80b1d1c1b3fc189fc657458dd27e3b5b)#define TIM1\_CH3N\_PD0\_6 CH32V00X\_PINMUX\_DEFINE(PD, 0, TIM1, 6)
+
+[ 132](ch32v00x-pinctrl_8h.md#af1a467261e44da2b38e55a4530d8df91)#define TIM1\_CH3N\_PC2\_7 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM1, 7)
+
+[ 133](ch32v00x-pinctrl_8h.md#a1e92f4108836bb55273bee5b77044bc5)#define TIM1\_CH3N\_PB1\_8 CH32V00X\_PINMUX\_DEFINE(PB, 1, TIM1, 8)
+
+[ 134](ch32v00x-pinctrl_8h.md#aa925b18d6d35fe174983269b9fb267d1)#define TIM1\_CH3N\_PC2\_9 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM1, 9)
+
+135
+
+[ 136](ch32v00x-pinctrl_8h.md#a43c2c900f95d5f44905e65ddaa4cc0ef)#define TIM2\_ETR\_PD4\_0 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM2, 0)
+
+[ 137](ch32v00x-pinctrl_8h.md#a1e82702b5fb67f4f7d57223c15cae6f8)#define TIM2\_ETR\_PC1\_1 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 1)
+
+[ 138](ch32v00x-pinctrl_8h.md#a4781cf5654db89611a12ca9604560576)#define TIM2\_ETR\_PC5\_2 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM2, 2)
+
+[ 139](ch32v00x-pinctrl_8h.md#afe0830763b0bd0a6784e10a6f4b3f89d)#define TIM2\_ETR\_PC1\_3 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 3)
+
+[ 140](ch32v00x-pinctrl_8h.md#a3cccc168a38f54f1edeb37e6cd592d71)#define TIM2\_ETR\_PC0\_4 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM2, 4)
+
+[ 141](ch32v00x-pinctrl_8h.md#afd09d1c107687c21da9a5e2d75939838)#define TIM2\_ETR\_PA0\_5 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM2, 5)
+
+[ 142](ch32v00x-pinctrl_8h.md#aa054a19799ab29a7b2129153572eed8f)#define TIM2\_ETR\_PB1\_6 CH32V00X\_PINMUX\_DEFINE(PB, 1, TIM2, 6)
+
+[ 143](ch32v00x-pinctrl_8h.md#a0d9e3aa56edf19e0bb2e7fbcddfbb9ce)#define TIM2\_ETR\_PD3\_7 CH32V00X\_PINMUX\_DEFINE(PD, 3, TIM2, 7)
+
+[ 144](ch32v00x-pinctrl_8h.md#a321ccc1d95043b1c49086c450ca0ea7e)#define TIM2\_CH1\_PD4\_0 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM2, 0)
+
+[ 145](ch32v00x-pinctrl_8h.md#a0e4c3a71c9987421ab1b547e055654ed)#define TIM2\_CH1\_PC1\_1 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 1)
+
+[ 146](ch32v00x-pinctrl_8h.md#aff489f00d8271543d8c04fe7940ea060)#define TIM2\_CH1\_PC5\_2 CH32V00X\_PINMUX\_DEFINE(PC, 5, TIM2, 2)
+
+[ 147](ch32v00x-pinctrl_8h.md#aa9887268c3ecfe994f570285ced244d7)#define TIM2\_CH1\_PC1\_3 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 3)
+
+[ 148](ch32v00x-pinctrl_8h.md#a25597451c91e38e58a1dff02a1c58879)#define TIM2\_CH1\_PC0\_4 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM2, 4)
+
+[ 149](ch32v00x-pinctrl_8h.md#a0ac0fbb7306bcae050ac7317bf0683f0)#define TIM2\_CH1\_PA0\_5 CH32V00X\_PINMUX\_DEFINE(PA, 0, TIM2, 5)
+
+[ 150](ch32v00x-pinctrl_8h.md#aff43d541a8a7f905e16dafee7cdbaefc)#define TIM2\_CH1\_PB1\_6 CH32V00X\_PINMUX\_DEFINE(PB, 1, TIM2, 6)
+
+[ 151](ch32v00x-pinctrl_8h.md#a4f78b93ccd2715c056dedd9646e68a9c)#define TIM2\_CH1\_PD3\_7 CH32V00X\_PINMUX\_DEFINE(PD, 3, TIM2, 7)
+
+[ 152](ch32v00x-pinctrl_8h.md#a3d7058511a77c977c3ae54e9fb9ca4c2)#define TIM2\_CH2\_PD3\_0 CH32V00X\_PINMUX\_DEFINE(PD, 3, TIM2, 0)
+
+[ 153](ch32v00x-pinctrl_8h.md#a5461f77514cd20461a7d4376674e7cdc)#define TIM2\_CH2\_PD3\_1 CH32V00X\_PINMUX\_DEFINE(PD, 3, TIM2, 1)
+
+[ 154](ch32v00x-pinctrl_8h.md#af2055fe4a8524bc3518f62ba0b1acef1)#define TIM2\_CH2\_PC2\_2 CH32V00X\_PINMUX\_DEFINE(PC, 2, TIM2, 2)
+
+155/\* CH32V007 specific remap \*/
+
+[ 156](ch32v00x-pinctrl_8h.md#a51d2aa9fe41cd68678d3858c92f0c199)#define TIM2\_CH2\_PB3\_2 CH32V00X\_PINMUX\_DEFINE(PB, 3, TIM2, 2)
+
+[ 157](ch32v00x-pinctrl_8h.md#a4f93f520fe35543b5af8f4b000902937)#define TIM2\_CH2\_PC7\_3 CH32V00X\_PINMUX\_DEFINE(PC, 7, TIM2, 3)
+
+[ 158](ch32v00x-pinctrl_8h.md#ad79947e399c161a589f8686c9dbf5224)#define TIM2\_CH2\_PC1\_4 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 4)
+
+[ 159](ch32v00x-pinctrl_8h.md#ad5d1ffaa52531ec0b9ffddc4f396f59c)#define TIM2\_CH2\_PA1\_5 CH32V00X\_PINMUX\_DEFINE(PA, 1, TIM2, 5)
+
+[ 160](ch32v00x-pinctrl_8h.md#a13f1487fa7b4636297d56e69f5149cae)#define TIM2\_CH2\_PA1\_6 CH32V00X\_PINMUX\_DEFINE(PA, 1, TIM2, 6)
+
+[ 161](ch32v00x-pinctrl_8h.md#a39e4871d13613c2a14155db3728bd0d9)#define TIM2\_CH2\_PD4\_7 CH32V00X\_PINMUX\_DEFINE(PD, 4, TIM2, 7)
+
+[ 162](ch32v00x-pinctrl_8h.md#aa81c6b179d7f6a05448f9e48af7fd7db)#define TIM2\_CH3\_PC0\_0 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM2, 0)
+
+[ 163](ch32v00x-pinctrl_8h.md#a2b00dafcb21394a8ff8b29080053b28a)#define TIM2\_CH3\_PC0\_1 CH32V00X\_PINMUX\_DEFINE(PC, 0, TIM2, 1)
+
+[ 164](ch32v00x-pinctrl_8h.md#ad96e8521f75aacbae9d8d8519faf7f06)#define TIM2\_CH3\_PD2\_2 CH32V00X\_PINMUX\_DEFINE(PD, 2, TIM2, 2)
+
+[ 165](ch32v00x-pinctrl_8h.md#a75e6de87ea2b60d8652b87150344f170)#define TIM2\_CH3\_PD6\_3 CH32V00X\_PINMUX\_DEFINE(PD, 6, TIM2, 3)
+
+[ 166](ch32v00x-pinctrl_8h.md#a6b9c3e0d4ee5c2392b452de94452f975)#define TIM2\_CH3\_PC3\_4 CH32V00X\_PINMUX\_DEFINE(PC, 3, TIM2, 4)
+
+[ 167](ch32v00x-pinctrl_8h.md#ae02653c1dd0ba1feaf1606788229b58d)#define TIM2\_CH3\_PA2\_5 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM2, 5)
+
+[ 168](ch32v00x-pinctrl_8h.md#a0189beb481481407d34ee2072b8489df)#define TIM2\_CH3\_PA2\_6 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM2, 6)
+
+[ 169](ch32v00x-pinctrl_8h.md#ae8c433976c689b694b94077e4ea512ab)#define TIM2\_CH3\_PA2\_7 CH32V00X\_PINMUX\_DEFINE(PA, 2, TIM2, 7)
+
+[ 170](ch32v00x-pinctrl_8h.md#acde18507b0874abe39c646ec52fe1444)#define TIM2\_CH4\_PD7\_0 CH32V00X\_PINMUX\_DEFINE(PD, 7, TIM2, 0)
+
+[ 171](ch32v00x-pinctrl_8h.md#ab61cd11e67968a0f32bda93349ed93a7)#define TIM2\_CH4\_PD7\_1 CH32V00X\_PINMUX\_DEFINE(PD, 7, TIM2, 1)
+
+[ 172](ch32v00x-pinctrl_8h.md#a41632f89d316ce79bd44e76e0b4c6b5b)#define TIM2\_CH4\_PC1\_2 CH32V00X\_PINMUX\_DEFINE(PC, 1, TIM2, 2)
+
+[ 173](ch32v00x-pinctrl_8h.md#aabc5e55cfb4e46ef7108b3794e7559ff)#define TIM2\_CH4\_PD5\_3 CH32V00X\_PINMUX\_DEFINE(PD, 5, TIM2, 3)
+
+[ 174](ch32v00x-pinctrl_8h.md#a8a94778319d035a2e29e9ef14416f806)#define TIM2\_CH4\_PB6\_4 CH32V00X\_PINMUX\_DEFINE(PB, 6, TIM2, 4)
+
+[ 175](ch32v00x-pinctrl_8h.md#a101951f237744ecb0e273e8815275b7f)#define TIM2\_CH4\_PA3\_5 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM2, 5)
+
+[ 176](ch32v00x-pinctrl_8h.md#a32bcb4f01637b7c23b5f936e00b02229)#define TIM2\_CH4\_PA3\_6 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM2, 6)
+
+[ 177](ch32v00x-pinctrl_8h.md#a46aa58720a97ecd2e5594cf416bdfc2d)#define TIM2\_CH4\_PA3\_7 CH32V00X\_PINMUX\_DEFINE(PA, 3, TIM2, 7)
+
+178
+
+[ 179](ch32v00x-pinctrl_8h.md#ab7c3bcaa4f01310261473cb734aeba23)#define USART1\_TX\_PD5\_0 CH32V00X\_PINMUX\_DEFINE(PD, 5, USART1, 0)
+
+[ 180](ch32v00x-pinctrl_8h.md#a65805902e3f58b907beb0d7f39380d87)#define USART1\_TX\_PD6\_1 CH32V00X\_PINMUX\_DEFINE(PD, 6, USART1, 1)
+
+[ 181](ch32v00x-pinctrl_8h.md#a2929a6724518bf36c15be8fc658bde05)#define USART1\_TX\_PD0\_2 CH32V00X\_PINMUX\_DEFINE(PD, 0, USART1, 2)
+
+[ 182](ch32v00x-pinctrl_8h.md#ada26f8c1b5c0e9d74bc82ac68b836382)#define USART1\_TX\_PC0\_3 CH32V00X\_PINMUX\_DEFINE(PC, 0, USART1, 3)
+
+[ 183](ch32v00x-pinctrl_8h.md#a46939eb59b23c13c4963035abfe5e0fc)#define USART1\_TX\_PD1\_4 CH32V00X\_PINMUX\_DEFINE(PD, 1, USART1, 4)
+
+[ 184](ch32v00x-pinctrl_8h.md#a874ce1580f9150018621cd69fc593278)#define USART1\_TX\_PB3\_5 CH32V00X\_PINMUX\_DEFINE(PB, 3, USART1, 5)
+
+[ 185](ch32v00x-pinctrl_8h.md#a273118d50602170728e67f4bbfe166f9)#define USART1\_TX\_PC5\_6 CH32V00X\_PINMUX\_DEFINE(PC, 5, USART1, 6)
+
+[ 186](ch32v00x-pinctrl_8h.md#a88180919d778bce4a76a50ebbdec9a01)#define USART1\_TX\_PB5\_7 CH32V00X\_PINMUX\_DEFINE(PB, 5, USART1, 7)
+
+[ 187](ch32v00x-pinctrl_8h.md#ad4bbf2f73d5cf308809e72a59f279d4f)#define USART1\_TX\_PA0\_8 CH32V00X\_PINMUX\_DEFINE(PA, 0, USART1, 8)
+
+[ 188](ch32v00x-pinctrl_8h.md#a9e1cb2fc5b61479fca18f844c7b2a25b)#define USART1\_TX\_PA0\_9 CH32V00X\_PINMUX\_DEFINE(PA, 0, USART1, 9)
+
+[ 189](ch32v00x-pinctrl_8h.md#a0f6ad0455dc48303bde7bc475f7215de)#define USART1\_RX\_PD6\_0 CH32V00X\_PINMUX\_DEFINE(PD, 6, USART1, 0)
+
+[ 190](ch32v00x-pinctrl_8h.md#aca9c065151c7d1439d03a218bad28953)#define USART1\_RX\_PD5\_1 CH32V00X\_PINMUX\_DEFINE(PD, 5, USART1, 1)
+
+[ 191](ch32v00x-pinctrl_8h.md#ad17459ba5c85756bb6b35215908e552b)#define USART1\_RX\_PD1\_2 CH32V00X\_PINMUX\_DEFINE(PD, 1, USART1, 2)
+
+[ 192](ch32v00x-pinctrl_8h.md#a61ec872334034b3d83feacf87a71ee51)#define USART1\_RX\_PC1\_3 CH32V00X\_PINMUX\_DEFINE(PC, 1, USART1, 3)
+
+[ 193](ch32v00x-pinctrl_8h.md#adecf7a857f74ccd2bc11c58ae935564b)#define USART1\_RX\_PB3\_4 CH32V00X\_PINMUX\_DEFINE(PB, 3, USART1, 4)
+
+[ 194](ch32v00x-pinctrl_8h.md#aac2be2e46c973ba5efe27f0fff98cabb)#define USART1\_RX\_PD1\_5 CH32V00X\_PINMUX\_DEFINE(PD, 1, USART1, 5)
+
+[ 195](ch32v00x-pinctrl_8h.md#a535de4a0f3d5c2844b8a6787820fc6ef)#define USART1\_RX\_PC6\_6 CH32V00X\_PINMUX\_DEFINE(PC, 6, USART1, 6)
+
+[ 196](ch32v00x-pinctrl_8h.md#a842305cdfe152b432b2b0935d4066aa1)#define USART1\_RX\_PB6\_7 CH32V00X\_PINMUX\_DEFINE(PB, 6, USART1, 7)
+
+[ 197](ch32v00x-pinctrl_8h.md#aafac07305b388d70b6d7f54bd980910c)#define USART1\_RX\_PA1\_8 CH32V00X\_PINMUX\_DEFINE(PA, 1, USART1, 8)
+
+[ 198](ch32v00x-pinctrl_8h.md#addb61f3eb63ef8a3a403a8587502aaf4)#define USART1\_RX\_PC4\_9 CH32V00X\_PINMUX\_DEFINE(PC, 4, USART1, 9)
+
+[ 199](ch32v00x-pinctrl_8h.md#a5b33948c25cf17dc8d9cad67866087d1)#define USART1\_CTS\_PD3\_0 CH32V00X\_PINMUX\_DEFINE(PD, 3, USART1, 0)
+
+[ 200](ch32v00x-pinctrl_8h.md#a3f897a8115f49f630ee03a6a704fbc71)#define USART1\_CTS\_PC6\_1 CH32V00X\_PINMUX\_DEFINE(PC, 6, USART1, 1)
+
+[ 201](ch32v00x-pinctrl_8h.md#a2d8bc44640f7e08bfdfbf5a3d22cc255)#define USART1\_CTS\_PC3\_2 CH32V00X\_PINMUX\_DEFINE(PC, 3, USART1, 2)
+
+[ 202](ch32v00x-pinctrl_8h.md#a337b56d0fed1c6d90d391005f0247711)#define USART1\_CTS\_PC6\_3 CH32V00X\_PINMUX\_DEFINE(PC, 6, USART1, 3)
+
+[ 203](ch32v00x-pinctrl_8h.md#a7b1678aa77d79161e3228ba5a831093f)#define USART1\_CTS\_PD7\_4 CH32V00X\_PINMUX\_DEFINE(PD, 7, USART1, 4)
+
+[ 204](ch32v00x-pinctrl_8h.md#a084634f691aaebd09dfcd7a3a1e6d88e)#define USART1\_CTS\_PD7\_5 CH32V00X\_PINMUX\_DEFINE(PD, 7, USART1, 5)
+
+[ 205](ch32v00x-pinctrl_8h.md#abc5be4741bdf8924e7ab39ba72da98ef)#define USART1\_CTS\_PC7\_6 CH32V00X\_PINMUX\_DEFINE(PC, 7, USART1, 6)
+
+[ 206](ch32v00x-pinctrl_8h.md#ac63ce23aa86ed5aeb1cfd8034e40537b)#define USART1\_CTS\_PC7\_7 CH32V00X\_PINMUX\_DEFINE(PC, 7, USART1, 7)
+
+[ 207](ch32v00x-pinctrl_8h.md#a0d95aaa159b3972b09c3f0aa11ef0ab7)#define USART1\_CTS\_PD2\_8 CH32V00X\_PINMUX\_DEFINE(PD, 2, USART1, 8)
+
+[ 208](ch32v00x-pinctrl_8h.md#a7d2f21eac60c1106b8bf4e1b7db3a204)#define USART1\_CTS\_PD5\_9 CH32V00X\_PINMUX\_DEFINE(PD, 5, USART1, 9)
+
+[ 209](ch32v00x-pinctrl_8h.md#a2815ef4f646852914ddd2b8e8b7badef)#define USART1\_RTS\_PC2\_0 CH32V00X\_PINMUX\_DEFINE(PC, 2, USART1, 0)
+
+[ 210](ch32v00x-pinctrl_8h.md#aea3a162c52835b61fea5ffcb19793947)#define USART1\_RTS\_PC7\_1 CH32V00X\_PINMUX\_DEFINE(PC, 7, USART1, 1)
+
+[ 211](ch32v00x-pinctrl_8h.md#a8a863333c39e43bcebaef2476f342f1f)#define USART1\_RTS\_PC2\_2 CH32V00X\_PINMUX\_DEFINE(PC, 2, USART1, 2)
+
+[ 212](ch32v00x-pinctrl_8h.md#ae8804a9a24491c2f723261061f783375)#define USART1\_RTS\_PC7\_3 CH32V00X\_PINMUX\_DEFINE(PC, 7, USART1, 3)
+
+[ 213](ch32v00x-pinctrl_8h.md#afcd1f752d8e97796f0985417851710bd)#define USART1\_RTS\_PA5\_4 CH32V00X\_PINMUX\_DEFINE(PA, 5, USART1, 4)
+
+[ 214](ch32v00x-pinctrl_8h.md#a7aabe7289738f464b844869f11d2ad77)#define USART1\_RTS\_PA5\_5 CH32V00X\_PINMUX\_DEFINE(PA, 5, USART1, 5)
+
+[ 215](ch32v00x-pinctrl_8h.md#a9fd3866c5f193a5adc0b39c839c7bb66)#define USART1\_RTS\_PB4\_6 CH32V00X\_PINMUX\_DEFINE(PB, 4, USART1, 6)
+
+[ 216](ch32v00x-pinctrl_8h.md#a0d05f6fd7d5b563889e66918cd5f20d5)#define USART1\_RTS\_PB4\_7 CH32V00X\_PINMUX\_DEFINE(PB, 4, USART1, 7)
+
+[ 217](ch32v00x-pinctrl_8h.md#a7bd4d249b211ba28ad2d06f7b67ab631)#define USART1\_RTS\_PD3\_8 CH32V00X\_PINMUX\_DEFINE(PD, 3, USART1, 8)
+
+[ 218](ch32v00x-pinctrl_8h.md#a9c03c1d8a7a68304271ed06439a10378)#define USART1\_RTS\_PD4\_9 CH32V00X\_PINMUX\_DEFINE(PD, 4, USART1, 9)
+
+219
+
+[ 220](ch32v00x-pinctrl_8h.md#a0152727406750ce80df2377242967147)#define USART2\_TX\_PA7\_0 CH32V00X\_PINMUX\_DEFINE(PA, 7, USART2, 0)
+
+[ 221](ch32v00x-pinctrl_8h.md#af11623f802cf65e3626b38050a8404fe)#define USART2\_TX\_PA4\_1 CH32V00X\_PINMUX\_DEFINE(PA, 4, USART2, 1)
+
+[ 222](ch32v00x-pinctrl_8h.md#a9a4cf7fffcb285c0ad955f66f8fbd2c0)#define USART2\_TX\_PA2\_2 CH32V00X\_PINMUX\_DEFINE(PA, 2, USART2, 2)
+
+[ 223](ch32v00x-pinctrl_8h.md#a9b0571dfb1330177950f6531feb90a50)#define USART2\_TX\_PD2\_3 CH32V00X\_PINMUX\_DEFINE(PD, 2, USART2, 3)
+
+[ 224](ch32v00x-pinctrl_8h.md#acef47a522b84c0971442a3498fd2cf3e)#define USART2\_TX\_PB0\_4 CH32V00X\_PINMUX\_DEFINE(PB, 0, USART2, 4)
+
+[ 225](ch32v00x-pinctrl_8h.md#a49dc559bd4fe32265256417609b84fd7)#define USART2\_TX\_PC4\_5 CH32V00X\_PINMUX\_DEFINE(PC, 4, USART2, 5)
+
+[ 226](ch32v00x-pinctrl_8h.md#a24153b4ce2024673ad86cd9c490f0889)#define USART2\_TX\_PA6\_6 CH32V00X\_PINMUX\_DEFINE(PA, 6, USART2, 6)
+
+[ 227](ch32v00x-pinctrl_8h.md#ac0c914e26ad7390875e5080dee790103)#define USART2\_RX\_PB3\_0 CH32V00X\_PINMUX\_DEFINE(PB, 3, USART2, 0)
+
+[ 228](ch32v00x-pinctrl_8h.md#aff4e0a27fc6b6dd4ffd83931e520172b)#define USART2\_RX\_PA5\_1 CH32V00X\_PINMUX\_DEFINE(PA, 5, USART2, 1)
+
+[ 229](ch32v00x-pinctrl_8h.md#a8be97f0b92fc2e84e6167f753583b3bd)#define USART2\_RX\_PA3\_2 CH32V00X\_PINMUX\_DEFINE(PA, 3, USART2, 2)
+
+[ 230](ch32v00x-pinctrl_8h.md#ab7dce0cc7991ebd63d81421422f317a3)#define USART2\_RX\_PD3\_3 CH32V00X\_PINMUX\_DEFINE(PD, 3, USART2, 3)
+
+[ 231](ch32v00x-pinctrl_8h.md#aaee97f5922b1307da5c4c390056b70b3)#define USART2\_RX\_PB1\_4 CH32V00X\_PINMUX\_DEFINE(PB, 1, USART2, 4)
+
+[ 232](ch32v00x-pinctrl_8h.md#a8b8d33c7c70681cbf95eaed62e9aab41)#define USART2\_RX\_PD1\_5 CH32V00X\_PINMUX\_DEFINE(PD, 1, USART2, 5)
+
+[ 233](ch32v00x-pinctrl_8h.md#a858fad6e9a5e6cbad0abba8836717438)#define USART2\_RX\_PA5\_6 CH32V00X\_PINMUX\_DEFINE(PA, 5, USART2, 6)
+
+[ 234](ch32v00x-pinctrl_8h.md#ab0fed132ce4b4e328ad5abec7623fb34)#define USART2\_CTS\_PA4\_0 CH32V00X\_PINMUX\_DEFINE(PA, 4, USART2, 0)
+
+[ 235](ch32v00x-pinctrl_8h.md#adce3d83fc3e34f6e0bd8910e079ac8e1)#define USART2\_CTS\_PA7\_1 CH32V00X\_PINMUX\_DEFINE(PA, 7, USART2, 1)
+
+[ 236](ch32v00x-pinctrl_8h.md#ac0a15096977f216e21f51d72f57eec14)#define USART2\_CTS\_PA0\_2 CH32V00X\_PINMUX\_DEFINE(PA, 0, USART2, 2)
+
+[ 237](ch32v00x-pinctrl_8h.md#a2a1d5ae373cabd13b5353dacf9d8ccb1)#define USART2\_CTS\_PA0\_3 CH32V00X\_PINMUX\_DEFINE(PA, 0, USART2, 3)
+
+[ 238](ch32v00x-pinctrl_8h.md#a9c29cf0c467d5806bbd31bf492e446b8)#define USART2\_CTS\_PB6\_4 CH32V00X\_PINMUX\_DEFINE(PB, 6, USART2, 4)
+
+[ 239](ch32v00x-pinctrl_8h.md#aef802806cabe330d83fb51b60b3a11c3)#define USART2\_CTS\_PA4\_5 CH32V00X\_PINMUX\_DEFINE(PA, 4, USART2, 5)
+
+[ 240](ch32v00x-pinctrl_8h.md#a0783ddd911225e749bc93997d9c95b03)#define USART2\_CTS\_PA7\_6 CH32V00X\_PINMUX\_DEFINE(PA, 7, USART2, 6)
+
+[ 241](ch32v00x-pinctrl_8h.md#ac899df236d1a1698b96882eaba4c1164)#define USART2\_RTS\_PA5\_0 CH32V00X\_PINMUX\_DEFINE(PA, 5, USART2, 0)
+
+[ 242](ch32v00x-pinctrl_8h.md#a53cf31b3362a596622e3cbe3d768e80a)#define USART2\_RTS\_PB3\_1 CH32V00X\_PINMUX\_DEFINE(PB, 3, USART2, 1)
+
+[ 243](ch32v00x-pinctrl_8h.md#a5c3789ef5097d4f3d85f701e7263ab8f)#define USART2\_RTS\_PA1\_2 CH32V00X\_PINMUX\_DEFINE(PA, 1, USART2, 2)
+
+[ 244](ch32v00x-pinctrl_8h.md#aaa1dc5b02f8af2f3ccddf8001ff38bd7)#define USART2\_RTS\_PA1\_3 CH32V00X\_PINMUX\_DEFINE(PA, 1, USART2, 3)
+
+[ 245](ch32v00x-pinctrl_8h.md#ae700c6a7177c687a5fc1094a590b6843)#define USART2\_RTS\_PA1\_4 CH32V00X\_PINMUX\_DEFINE(PA, 1, USART2, 4)
+
+[ 246](ch32v00x-pinctrl_8h.md#af854dc720498465e10d20d7c1b695aa8)#define USART2\_RTS\_PA1\_5 CH32V00X\_PINMUX\_DEFINE(PA, 1, USART2, 5)
+
+[ 247](ch32v00x-pinctrl_8h.md#a75465838304ad680659ba79288d3b44a)#define USART2\_RTS\_PB3\_6 CH32V00X\_PINMUX\_DEFINE(PB, 3, USART2, 6)
+
+248
+
+[ 249](ch32v00x-pinctrl_8h.md#a58c3e7301808054c6f9dd6fcc6ca7f62)#define SPI1\_NSS\_PC1\_0 CH32V00X\_PINMUX\_DEFINE(PC, 1, SPI1, 0)
+
+[ 250](ch32v00x-pinctrl_8h.md#a1332cb377a889a8f4847dae6ba3bc8c2)#define SPI1\_NSS\_PC0\_1 CH32V00X\_PINMUX\_DEFINE(PC, 0, SPI1, 1)
+
+[ 251](ch32v00x-pinctrl_8h.md#acae8b2ea0b5029ae8f25e47930b9de6d)#define SPI1\_NSS\_PC4\_2 CH32V00X\_PINMUX\_DEFINE(PC, 4, SPI1, 2)
+
+[ 252](ch32v00x-pinctrl_8h.md#a90a6e4c99bf81434bf2ffb9d57e679c5)#define SPI1\_NSS\_PB0\_3 CH32V00X\_PINMUX\_DEFINE(PB, 0, SPI1, 3)
+
+[ 253](ch32v00x-pinctrl_8h.md#a6f5975e7451211c7eb23f120cb8e24ee)#define SPI1\_NSS\_PD3\_4 CH32V00X\_PINMUX\_DEFINE(PD, 3, SPI1, 4)
+
+[ 254](ch32v00x-pinctrl_8h.md#a7d463e72606e299d5750a12b3973bb17)#define SPI1\_NSS\_PC1\_5 CH32V00X\_PINMUX\_DEFINE(PC, 1, SPI1, 5)
+
+[ 255](ch32v00x-pinctrl_8h.md#a530988f4281bb646ad5c9678cc0e1a69)#define SPI1\_NSS\_PC4\_6 CH32V00X\_PINMUX\_DEFINE(PC, 4, SPI1, 6)
+
+[ 256](ch32v00x-pinctrl_8h.md#a98dcc6496a51b59ab09423625e3b85ec)#define SPI1\_SCK\_PC5\_0 CH32V00X\_PINMUX\_DEFINE(PC, 5, SPI1, 0)
+
+[ 257](ch32v00x-pinctrl_8h.md#ab64b8359184eeb5453bd4fa9b3f69dcc)#define SPI1\_SCK\_PC5\_1 CH32V00X\_PINMUX\_DEFINE(PC, 5, SPI1, 1)
+
+[ 258](ch32v00x-pinctrl_8h.md#a8f22682b558492fee17f65ad06000322)#define SPI1\_SCK\_PD2\_2 CH32V00X\_PINMUX\_DEFINE(PD, 2, SPI1, 2)
+
+[ 259](ch32v00x-pinctrl_8h.md#a34bf7d21a313be01cb4c5eb0d1793801)#define SPI1\_SCK\_PB1\_3 CH32V00X\_PINMUX\_DEFINE(PB, 1, SPI1, 3)
+
+[ 260](ch32v00x-pinctrl_8h.md#abe4fea5976b8be70ad967413ecb06b2b)#define SPI1\_SCK\_PD4\_4 CH32V00X\_PINMUX\_DEFINE(PD, 4, SPI1, 4)
+
+[ 261](ch32v00x-pinctrl_8h.md#ac63d045b41eab1c94f43e81082023a88)#define SPI1\_SCK\_PA1\_5 CH32V00X\_PINMUX\_DEFINE(PA, 1, SPI1, 5)
+
+[ 262](ch32v00x-pinctrl_8h.md#a58acd5094a9b6887aecf1fb7c94b6624)#define SPI1\_SCK\_PB5\_6 CH32V00X\_PINMUX\_DEFINE(PB, 5, SPI1, 6)
+
+[ 263](ch32v00x-pinctrl_8h.md#a134d2e821fef85267e11d36daa50c621)#define SPI1\_MISO\_PC7\_0 CH32V00X\_PINMUX\_DEFINE(PC, 7, SPI1, 0)
+
+[ 264](ch32v00x-pinctrl_8h.md#a921212305fac7d0cdeb3903ff2a724a2)#define SPI1\_MISO\_PC7\_1 CH32V00X\_PINMUX\_DEFINE(PC, 7, SPI1, 1)
+
+[ 265](ch32v00x-pinctrl_8h.md#a67692d019467885f07a29a4a5be7e7fe)#define SPI1\_MISO\_PB3\_2 CH32V00X\_PINMUX\_DEFINE(PB, 3, SPI1, 2)
+
+[ 266](ch32v00x-pinctrl_8h.md#aaa2fa84ed3ae63026f6a4aa86e2821f6)#define SPI1\_MISO\_PB2\_3 CH32V00X\_PINMUX\_DEFINE(PB, 2, SPI1, 3)
+
+[ 267](ch32v00x-pinctrl_8h.md#a69007bf94e971e8862141be09c5cac8a)#define SPI1\_MISO\_PD5\_4 CH32V00X\_PINMUX\_DEFINE(PD, 5, SPI1, 4)
+
+[ 268](ch32v00x-pinctrl_8h.md#ae3579a049f91fe61f54d8b284c304bc1)#define SPI1\_MISO\_PB5\_5 CH32V00X\_PINMUX\_DEFINE(PB, 5, SPI1, 5)
+
+[ 269](ch32v00x-pinctrl_8h.md#a8720731a1831220108703cd4a1cf1ebd)#define SPI1\_MISO\_PC7\_6 CH32V00X\_PINMUX\_DEFINE(PC, 7, SPI1, 6)
+
+[ 270](ch32v00x-pinctrl_8h.md#a76fe4ef21032a97eec11fe128e833986)#define SPI1\_MOSI\_PC6\_0 CH32V00X\_PINMUX\_DEFINE(PC, 6, SPI1, 0)
+
+[ 271](ch32v00x-pinctrl_8h.md#a20d9d1bf8c95947a905c8e2ccc86b124)#define SPI1\_MOSI\_PC6\_1 CH32V00X\_PINMUX\_DEFINE(PC, 6, SPI1, 1)
+
+[ 272](ch32v00x-pinctrl_8h.md#a348ff7755cc0c68776b90a318649766a)#define SPI1\_MOSI\_PD3\_2 CH32V00X\_PINMUX\_DEFINE(PD, 3, SPI1, 2)
+
+[ 273](ch32v00x-pinctrl_8h.md#a2995d7e2809ba68f000ee6c210161d3d)#define SPI1\_MOSI\_PC0\_3 CH32V00X\_PINMUX\_DEFINE(PC, 0, SPI1, 3)
+
+[ 274](ch32v00x-pinctrl_8h.md#a192b1ac9faee8695e064b9d0b0edf645)#define SPI1\_MOSI\_PD6\_4 CH32V00X\_PINMUX\_DEFINE(PD, 6, SPI1, 4)
+
+[ 275](ch32v00x-pinctrl_8h.md#a166a79543544e6427f3309dcb74b70ac)#define SPI1\_MOSI\_PA2\_5 CH32V00X\_PINMUX\_DEFINE(PA, 2, SPI1, 5)
+
+[ 276](ch32v00x-pinctrl_8h.md#a77a0e9f3f26b818c9078f3e60d00aaaf)#define SPI1\_MOSI\_PB4\_6 CH32V00X\_PINMUX\_DEFINE(PB, 4, SPI1, 6)
+
+277
+
+[ 278](ch32v00x-pinctrl_8h.md#a67a11ecb19690536672833e7d53c491a)#define I2C1\_SCL\_PC2\_0 CH32V00X\_PINMUX\_DEFINE(PC, 2, I2C1, 0)
+
+[ 279](ch32v00x-pinctrl_8h.md#acdd92bea3d3473ee4ea99aa63344b2ad)#define I2C1\_SCL\_PD1\_1 CH32V00X\_PINMUX\_DEFINE(PD, 1, I2C1, 1)
+
+[ 280](ch32v00x-pinctrl_8h.md#a603f2282e70d445edd7c1d9e45fe0750)#define I2C1\_SCL\_PC5\_2 CH32V00X\_PINMUX\_DEFINE(PC, 5, I2C1, 2)
+
+[ 281](ch32v00x-pinctrl_8h.md#a0d1a5b36cb29b488f710bba92c949d68)#define I2C1\_SCL\_PB5\_3 CH32V00X\_PINMUX\_DEFINE(PB, 5, I2C1, 3)
+
+[ 282](ch32v00x-pinctrl_8h.md#a31e2a1d7e95fd0dea39f4453c5bd3014)#define I2C1\_SCL\_PB3\_4 CH32V00X\_PINMUX\_DEFINE(PB, 3, I2C1, 4)
+
+[ 283](ch32v00x-pinctrl_8h.md#a7cbade793a166dacc06ec69353913e49)#define I2C1\_SDA\_PC1\_0 CH32V00X\_PINMUX\_DEFINE(PC, 1, I2C1, 0)
+
+[ 284](ch32v00x-pinctrl_8h.md#a097905ef14012784d810f485210bdad9)#define I2C1\_SDA\_PD0\_1 CH32V00X\_PINMUX\_DEFINE(PD, 0, I2C1, 1)
+
+[ 285](ch32v00x-pinctrl_8h.md#a90e0117d875929fb2baa388ed06f085d)#define I2C1\_SDA\_PC6\_2 CH32V00X\_PINMUX\_DEFINE(PC, 6, I2C1, 2)
+
+286/\* CH32V007 specific remap \*/
+
+[ 287](ch32v00x-pinctrl_8h.md#a006fc38bf6e42f9ce6627b5ad5dc6f39)#define I2C1\_SDA\_PC4\_2 CH32V00X\_PINMUX\_DEFINE(PC, 4, I2C1, 2)
+
+[ 288](ch32v00x-pinctrl_8h.md#a096df412c6768c054fe137da7f8c8607)#define I2C1\_SDA\_PB6\_3 CH32V00X\_PINMUX\_DEFINE(PB, 6, I2C1, 3)
+
+[ 289](ch32v00x-pinctrl_8h.md#a0577e12fc011b890a4ff6cc7e8588946)#define I2C1\_SDA\_PD1\_4 CH32V00X\_PINMUX\_DEFINE(PD, 1, I2C1, 4)
+
+290
+
+291#endif /\* \_\_CH32V00X\_PINCTRL\_H\_\_ \*/
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
+- [ch32v00x-pinctrl.h](ch32v00x-pinctrl_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -1,0 +1,2227 @@
+---
+version: v4.2.0
+source_url: https://docs.zephyrproject.org/4.2.0/doxygen/html/ra6m3-elc_8h.html
+original_path: doxygen/html/ra6m3-elc_8h.html
+---
+
+| Logo | Zephyr API Documentation 4.2.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+ra6m3-elc.h File Reference
+
+[Go to the source code of this file.](ra6m3-elc_8h_source.md)
+
+| Macros | |
+| --- | --- |
+| #define | [RA\_ELC\_EVENT\_NONE](#a11b5cec97472328120a8d6381f1e8809)   0x0 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ0](#a04ee26d7188b7441627bb89249545cfa)   0x001 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ1](#ac9f6681c03b50d8b3a24798b3e790170)   0x002 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ2](#a136f93a17eea3f4233b0012c075fc904)   0x003 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ3](#a65b92e543dfb43c213274652ae60314a)   0x004 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ4](#a2b1930fc54010b7c4c00f286f690cb1e)   0x005 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ5](#af3ecccfe646b6cac991310abe3e4b955)   0x006 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ6](#a98b53eb7b5979403023805ba925c504c)   0x007 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ7](#ab6f05849ddc30ceb693f57b522223bcf)   0x008 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ8](#acbcd1c55530c6cb8580b76bd55c73c90)   0x009 |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ9](#af04ed29327af6c108875334c24d98e43)   0x00A |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ10](#a3e9a895c4855c3db6ac7fc5900b57807)   0x00B |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ11](#a46f43f1dd26e006c26b11bd45e53a728)   0x00C |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ12](#affb7ae86a41c8cc8582e6c6ef284a5d8)   0x00D |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ13](#ad7435ed602899357eae0f46c09bf542c)   0x00E |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ14](#ada7702d0ac50f9b3e82ef50d6be50470)   0x00F |
+| #define | [RA\_ELC\_EVENT\_ICU\_IRQ15](#afab294cf0d58a5bb4dd578774b0ad9aa)   0x010 |
+| #define | [RA\_ELC\_EVENT\_DMAC0\_INT](#a906929a9ae7dd7de44d21a32d3635080)   0x020 |
+| #define | [RA\_ELC\_EVENT\_DMAC1\_INT](#a76b9d9fa8af16a1480fcc8d8ec12572f)   0x021 |
+| #define | [RA\_ELC\_EVENT\_DMAC2\_INT](#ab6e39dbf43a7b7c8c26afbebbcd1a2ed)   0x022 |
+| #define | [RA\_ELC\_EVENT\_DMAC3\_INT](#a0b9d72a41fd7c5b27e6c31967645b907)   0x023 |
+| #define | [RA\_ELC\_EVENT\_DMAC4\_INT](#a4cae5afbbe49719555bbbfa12b8727f5)   0x024 |
+| #define | [RA\_ELC\_EVENT\_DMAC5\_INT](#a000e31aba8a821f4358a435d280b3a7b)   0x025 |
+| #define | [RA\_ELC\_EVENT\_DMAC6\_INT](#a2d1f6d1c797a0d787a5d5c08b0fc18ad)   0x026 |
+| #define | [RA\_ELC\_EVENT\_DMAC7\_INT](#ae8caef45a510d4c4f1c55f923e01799e)   0x027 |
+| #define | [RA\_ELC\_EVENT\_DTC\_COMPLETE](#a9a58e3a2c10447906aaf35bab5664d24)   0x029 |
+| #define | [RA\_ELC\_EVENT\_DTC\_END](#a5ab484cdaf470b47e95005d83d60394f)   0x02A |
+| #define | [RA\_ELC\_EVENT\_ICU\_SNOOZE\_CANCEL](#a26e0aaa4a17196ada130bbb714a6d3bd)   0x02D |
+| #define | [RA\_ELC\_EVENT\_FCU\_FIFERR](#a5c7545a2f69856b7b637ad690f158b77)   0x030 |
+| #define | [RA\_ELC\_EVENT\_FCU\_FRDYI](#a535af54c8bcfff47cc90ba1226044d71)   0x031 |
+| #define | [RA\_ELC\_EVENT\_LVD\_LVD1](#a7ab275777147d06315a04abb3f2f6d51)   0x038 |
+| #define | [RA\_ELC\_EVENT\_LVD\_LVD2](#ad52acadba107b7f907d678f44769a4cb)   0x039 |
+| #define | [RA\_ELC\_EVENT\_CGC\_MOSC\_STOP](#a290decf4254396cbce267cb52a619717)   0x03B |
+| #define | [RA\_ELC\_EVENT\_LPM\_SNOOZE\_REQUEST](#ac6953f0c8caa6b5ef8c9893c7ff4baa1)   0x03C |
+| #define | [RA\_ELC\_EVENT\_AGT0\_INT](#a4c3604a42ead1d43f472e901087ec148)   0x040 |
+| #define | [RA\_ELC\_EVENT\_AGT0\_COMPARE\_A](#a015e6f8aed4b467f4554e6887b4d9ec9)   0x041 |
+| #define | [RA\_ELC\_EVENT\_AGT0\_COMPARE\_B](#ada1ad302dc5b987a6f7c972afae729f2)   0x042 |
+| #define | [RA\_ELC\_EVENT\_AGT1\_INT](#a635180e38c932579072f4eebd665592f)   0x043 |
+| #define | [RA\_ELC\_EVENT\_AGT1\_COMPARE\_A](#aeb2399818b6b141ab4a37e257dba22be)   0x044 |
+| #define | [RA\_ELC\_EVENT\_AGT1\_COMPARE\_B](#a1d660c78348b48ea7a072225491ae44b)   0x045 |
+| #define | [RA\_ELC\_EVENT\_IWDT\_UNDERFLOW](#abc837f1fcfffeb2ec231c79336379dda)   0x046 |
+| #define | [RA\_ELC\_EVENT\_WDT\_UNDERFLOW](#a6cdb7a60a850f9ec23f19c548a6cc544)   0x047 |
+| #define | [RA\_ELC\_EVENT\_RTC\_ALARM](#a76fd68b555574159d563d2dfd68d90b9)   0x048 |
+| #define | [RA\_ELC\_EVENT\_RTC\_PERIOD](#a144901ee7b31b96eba18a39d98c4b953)   0x049 |
+| #define | [RA\_ELC\_EVENT\_RTC\_CARRY](#a241cd3c65033b46a1160d5815cc86fd7)   0x04A |
+| #define | [RA\_ELC\_EVENT\_ADC0\_SCAN\_END](#ad7284976213551f7d4fa450bf2bf8c7c)   0x04B |
+| #define | [RA\_ELC\_EVENT\_ADC0\_SCAN\_END\_B](#aecbe4efa29972b832e35ebb00d7499ad)   0x04C |
+| #define | [RA\_ELC\_EVENT\_ADC0\_WINDOW\_A](#aa4feb2c3e29ba84d1397c618b7b860bf)   0x04D |
+| #define | [RA\_ELC\_EVENT\_ADC0\_WINDOW\_B](#ab59c8ec4f20de5cf4709efe0a7ee70a1)   0x04E |
+| #define | [RA\_ELC\_EVENT\_ADC0\_COMPARE\_MATCH](#af187c78a1f05fc4be81aa3af36e4cde5)   0x04F |
+| #define | [RA\_ELC\_EVENT\_ADC0\_COMPARE\_MISMATCH](#a65d6c499a6852434b4802f8ef7066eb4)   0x050 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_SCAN\_END](#aa02ddf9a93b64b5fb5c6d60b51bc24ed)   0x051 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_SCAN\_END\_B](#a1c3786e7e0f56f55d45ed55901a14bb4)   0x052 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_WINDOW\_A](#aef02cb8109fd68b4c4a1a5efca255583)   0x053 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_WINDOW\_B](#a283756acfcfe4c208cbaa5a3edd4d2cc)   0x054 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_COMPARE\_MATCH](#adbc3a9f438323aed719c7e210829a78f)   0x055 |
+| #define | [RA\_ELC\_EVENT\_ADC1\_COMPARE\_MISMATCH](#a12123fbc57d65b4ab932495bf0726d57)   0x056 |
+| #define | [RA\_ELC\_EVENT\_ACMPHS0\_INT](#a3bbee94907736c0c435cc5ff64d1e7ef)   0x057 |
+| #define | [RA\_ELC\_EVENT\_ACMPHS1\_INT](#ab1a4d1aee4743a0ee8bd194052a6c840)   0x058 |
+| #define | [RA\_ELC\_EVENT\_ACMPHS2\_INT](#aa3f4964bbc1d37f3191ab5eed2e8b7c4)   0x059 |
+| #define | [RA\_ELC\_EVENT\_ACMPHS3\_INT](#a544e4a1f321514c0fd56b03025760027)   0x05A |
+| #define | [RA\_ELC\_EVENT\_ACMPHS4\_INT](#a6fe63e96c5f7119e65f0a5940bb2b175)   0x05B |
+| #define | [RA\_ELC\_EVENT\_ACMPHS5\_INT](#a28342f5d9195feb3d7ab97faa7d2d41e)   0x05C |
+| #define | [RA\_ELC\_EVENT\_USBFS\_FIFO\_0](#ae4dbb89c58220f72818cc9c28d97905b)   0x05F |
+| #define | [RA\_ELC\_EVENT\_USBFS\_FIFO\_1](#a0ef2efa2ea339cad7598f11fe549cdd9)   0x060 |
+| #define | [RA\_ELC\_EVENT\_USBFS\_INT](#aac8d97813e8a3276bdac764faf7b580d)   0x061 |
+| #define | [RA\_ELC\_EVENT\_USBFS\_RESUME](#a9458dbf2b1da6fc51ca2c2933dcb6b37)   0x062 |
+| #define | [RA\_ELC\_EVENT\_IIC0\_RXI](#a7271a25cdc3c987313efbafcd2a746cf)   0x063 |
+| #define | [RA\_ELC\_EVENT\_IIC0\_TXI](#a7843f8a23feb383202fa6ad3be8fae5c)   0x064 |
+| #define | [RA\_ELC\_EVENT\_IIC0\_TEI](#a52270344b26073c127a0269c5ec4e228)   0x065 |
+| #define | [RA\_ELC\_EVENT\_IIC0\_ERI](#a667eb763b55f973b141837e82dbbae6e)   0x066 |
+| #define | [RA\_ELC\_EVENT\_IIC0\_WUI](#a2a074dab614a1639ea5fa4f6d3baffd3)   0x067 |
+| #define | [RA\_ELC\_EVENT\_IIC1\_RXI](#ad03e6b81d0e7ce53737e5c3022f8d951)   0x068 |
+| #define | [RA\_ELC\_EVENT\_IIC1\_TXI](#a641c91157c98f41d3cf5ff6bbe25192d)   0x069 |
+| #define | [RA\_ELC\_EVENT\_IIC1\_TEI](#a45ed226ccaace8813aa653276a52999d)   0x06A |
+| #define | [RA\_ELC\_EVENT\_IIC1\_ERI](#a2221a129f0e323fa5b96bfe5ed0e007f)   0x06B |
+| #define | [RA\_ELC\_EVENT\_IIC2\_RXI](#a9fa82701141f3b108a45ef78ba186dbb)   0x06D |
+| #define | [RA\_ELC\_EVENT\_IIC2\_TXI](#ab0acad4ad4d3c980f37e5cc665b08925)   0x06E |
+| #define | [RA\_ELC\_EVENT\_IIC2\_TEI](#ab47dd216ff1fe2799242bd81841e4bb4)   0x06F |
+| #define | [RA\_ELC\_EVENT\_IIC2\_ERI](#a63bb5f6fd1a17c813327061f9f3f8097)   0x070 |
+| #define | [RA\_ELC\_EVENT\_SSI0\_TXI](#ac65193048ce5734b46bc2bf77b84cb4e)   0x072 |
+| #define | [RA\_ELC\_EVENT\_SSI0\_RXI](#ab736656ae0b06de8383189075cbb2f27)   0x073 |
+| #define | [RA\_ELC\_EVENT\_SSI0\_INT](#a1a89e9ab6abb3834992ee3ea3ebaf9c4)   0x075 |
+| #define | [RA\_ELC\_EVENT\_SSI1\_TXI\_RXI](#a202b4f22442dfef11d4402c41cdbb978)   0x078 |
+| #define | [RA\_ELC\_EVENT\_SSI1\_TXI](#a209699f601f2f9f29a44b2d1ee33713d)   0x078 |
+| #define | [RA\_ELC\_EVENT\_SSI1\_RXI](#a6c41f242f807ea904423f537d87b4df2)   0x078 |
+| #define | [RA\_ELC\_EVENT\_SSI1\_INT](#a79f16ecce139415dc0c4b975bccc7f11)   0x079 |
+| #define | [RA\_ELC\_EVENT\_SRC\_INPUT\_FIFO\_EMPTY](#a6bc6dfb405d829a193654f98153d3ea5)   0x07A |
+| #define | [RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_FULL](#ae8986633c93b8e424e0d9b634f602cc8)   0x07B |
+| #define | [RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_OVERFLOW](#aa9348e4eca59c627725caa4616de18ff)   0x07C |
+| #define | [RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_UNDERFLOW](#abd6b3f0e54dd128191a1ec112a768f02)   0x07D |
+| #define | [RA\_ELC\_EVENT\_SRC\_CONVERSION\_END](#a965b3da128eb05bb4bab3758b7f5ac1d)   0x07E |
+| #define | [RA\_ELC\_EVENT\_PDC\_RECEIVE\_DATA\_READY](#a912f81c2c4b06c636a6e91509ec504d6)   0x07F |
+| #define | [RA\_ELC\_EVENT\_PDC\_FRAME\_END](#a9131ac90ec249c0675bcf7593ef34ea3)   0x080 |
+| #define | [RA\_ELC\_EVENT\_PDC\_INT](#ac075625fdd8b986db92fa720819f14da)   0x081 |
+| #define | [RA\_ELC\_EVENT\_CTSU\_WRITE](#a2faf033bad7b355f8beb9386a2d0e93b)   0x082 |
+| #define | [RA\_ELC\_EVENT\_CTSU\_READ](#ad7cd21f5db3e117b87ffab8a6cb47272)   0x083 |
+| #define | [RA\_ELC\_EVENT\_CTSU\_END](#acfe8138822bcd3f02fe50316e40c7641)   0x084 |
+| #define | [RA\_ELC\_EVENT\_KEY\_INT](#a4412a0ec84a10d14d131754c5f9eb509)   0x085 |
+| #define | [RA\_ELC\_EVENT\_DOC\_INT](#ab6c210d6481294137fd4bc32c39e5de1)   0x086 |
+| #define | [RA\_ELC\_EVENT\_CAC\_FREQUENCY\_ERROR](#a6ec3edb5e4de5bca1171ade1aa9ca19f)   0x087 |
+| #define | [RA\_ELC\_EVENT\_CAC\_MEASUREMENT\_END](#a1390ee9467a9d093de1532f0703ec35f)   0x088 |
+| #define | [RA\_ELC\_EVENT\_CAC\_OVERFLOW](#a3463c1e202ab7891521eda7196e1be80)   0x089 |
+| #define | [RA\_ELC\_EVENT\_CAN0\_ERROR](#aa4f3b915e26ee83dcc8c383a1fdb2425)   0x08A |
+| #define | [RA\_ELC\_EVENT\_CAN0\_FIFO\_RX](#ad6e2ac69f8d10baa2d023e680e2f4c2f)   0x08B |
+| #define | [RA\_ELC\_EVENT\_CAN0\_FIFO\_TX](#a52d0f15f6d388658ae060aec6302b448)   0x08C |
+| #define | [RA\_ELC\_EVENT\_CAN0\_MAILBOX\_RX](#a0b017dad5f8642aa70f6f96c45e84a72)   0x08D |
+| #define | [RA\_ELC\_EVENT\_CAN0\_MAILBOX\_TX](#a71880c5fc6363d67d8d126fd63a5354c)   0x08E |
+| #define | [RA\_ELC\_EVENT\_CAN1\_ERROR](#a3f2a843a1ec42fd602f4acff889d4cec)   0x08F |
+| #define | [RA\_ELC\_EVENT\_CAN1\_FIFO\_RX](#a2e6ba842099389207bc1ce23ff718022)   0x090 |
+| #define | [RA\_ELC\_EVENT\_CAN1\_FIFO\_TX](#a147d136d3878246377f834aebb31fccc)   0x091 |
+| #define | [RA\_ELC\_EVENT\_CAN1\_MAILBOX\_RX](#a56a7ecc9080083a858b934c007fd54ea)   0x092 |
+| #define | [RA\_ELC\_EVENT\_CAN1\_MAILBOX\_TX](#aa59bee7f791007e76284a5466c845ed4)   0x093 |
+| #define | [RA\_ELC\_EVENT\_IOPORT\_EVENT\_1](#aee58e9a0c4313f0ec08f0652e5002008)   0x094 |
+| #define | [RA\_ELC\_EVENT\_IOPORT\_EVENT\_2](#a36d858520d28847eead0fbfe7950be2d)   0x095 |
+| #define | [RA\_ELC\_EVENT\_IOPORT\_EVENT\_3](#a545dadce70bbcea1116cd13490fe2571)   0x096 |
+| #define | [RA\_ELC\_EVENT\_IOPORT\_EVENT\_4](#a4e478b84ef99ae71c102ad3d5c71089a)   0x097 |
+| #define | [RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_0](#ae5c28618f4e68eef6ca83bdcec515abb)   0x098 |
+| #define | [RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_1](#a9f0b82bfff5ea2ba414ac0bccad9a34d)   0x099 |
+| #define | [RA\_ELC\_EVENT\_POEG0\_EVENT](#a81e18423a1f61e34f0daab6f7367eae2)   0x09A |
+| #define | [RA\_ELC\_EVENT\_POEG1\_EVENT](#a2a43c2ce461fde766e66a4451929a875)   0x09B |
+| #define | [RA\_ELC\_EVENT\_POEG2\_EVENT](#a7b5c16202b2491ba77319a180bcaa107)   0x09C |
+| #define | [RA\_ELC\_EVENT\_POEG3\_EVENT](#ab39d06b130b93348c5fab589f1e0074e)   0x09D |
+| #define | [RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_A](#aec8a8b590cc124ca12425f34b5a61020)   0x0B0 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_B](#ae1ed91479f405ac965da868e86bce533)   0x0B1 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COMPARE\_C](#a6d7c9090c21a8a0c497356050d649ec6)   0x0B2 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COMPARE\_D](#af5b8ca097747bd987e81d8d81263aa81)   0x0B3 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COMPARE\_E](#a9ebec21375578c0e52d953773373bf1e)   0x0B4 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COMPARE\_F](#ad503a55a4548ff6ffd58e2b74d9eaf00)   0x0B5 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COUNTER\_OVERFLOW](#a76692948000993fde4d286f1a521a6d2)   0x0B6 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_COUNTER\_UNDERFLOW](#a9edde37b8c0835978aa55d58d77c5ad5)   0x0B7 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_A](#a8c54ce860777032d9143077a5246c3d2)   0x0B8 |
+| #define | [RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_B](#af3593fcaa05166f3993f9b136d1e1a71)   0x0B9 |
+| #define | [RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_A](#a33a428565bfa3237aa4eda10b982fc65)   0x0BA |
+| #define | [RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_B](#a5326aaf270290b524f8cb2e126d06602)   0x0BB |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COMPARE\_C](#a2e55bae34ab30f2d802b8eaf93dd3cfd)   0x0BC |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COMPARE\_D](#ada3870f40beeec10e9366e908ed980d0)   0x0BD |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COMPARE\_E](#a5d4f72e95b7bb76315b9ffa059730620)   0x0BE |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COMPARE\_F](#a548923b7385648e4f15fef4ecb315478)   0x0BF |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COUNTER\_OVERFLOW](#aa6eac7cf283073eea62fbaa1df2017f2)   0x0C0 |
+| #define | [RA\_ELC\_EVENT\_GPT1\_COUNTER\_UNDERFLOW](#ae8cefd5f23897d43cffba4e91b7c8b5c)   0x0C1 |
+| #define | [RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_A](#aaa3f7fe99d60fc9891b9ef416ecbd698)   0x0C2 |
+| #define | [RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_B](#aacf6ed4895b5a98bc67b109eb41d6d7b)   0x0C3 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_A](#ad1a5796e0c70a988165765f2ce8c1e80)   0x0C4 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_B](#a73776ba7d66a478c92c6cb3dfed50af4)   0x0C5 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COMPARE\_C](#aa391fa888ded57351c9b62f54df1ce36)   0x0C6 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COMPARE\_D](#a90c7aa7bbddb04e6ae4b6eccb64a0e93)   0x0C7 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COMPARE\_E](#adbfb562e616a86a3e28f8c3f09553db9)   0x0C8 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COMPARE\_F](#a6f07945c82efae23754e34dc09bee884)   0x0C9 |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COUNTER\_OVERFLOW](#aede7879166ef812139641122782d873b)   0x0CA |
+| #define | [RA\_ELC\_EVENT\_GPT2\_COUNTER\_UNDERFLOW](#ad71d20ad5434f219a61e0f0aded090d1)   0x0CB |
+| #define | [RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_A](#a96bbd3418d8b51a80cef1d0a258095f0)   0x0CC |
+| #define | [RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_B](#ab465f8fec7d2c7dcc742f25215609d2f)   0x0CD |
+| #define | [RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_A](#a74526500dfb573fe21fbca739b1698e1)   0x0CE |
+| #define | [RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_B](#ac6cfac3496e4ab71c9bf84b43e06486a)   0x0CF |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COMPARE\_C](#a1af4840d468eb4c4e1672a34652ef583)   0x0D0 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COMPARE\_D](#a263e6b02601dd37d6eedaab56a2e6fcd)   0x0D1 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COMPARE\_E](#a9035e080d39d60ecc898a596b9902aa6)   0x0D2 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COMPARE\_F](#a9cffb5aca60a4c7349789fc23fb197fb)   0x0D3 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COUNTER\_OVERFLOW](#a546eff128c44a29f56fe90952cef475d)   0x0D4 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_COUNTER\_UNDERFLOW](#ab30a5683e48535abbf0c400a5a0d8946)   0x0D5 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_A](#a339cba7a0388f06c6c64ca31f790e2a6)   0x0D6 |
+| #define | [RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_B](#a42c29ea80743756649f7b0ba64089844)   0x0D7 |
+| #define | [RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_A](#a8130aa176d9d5dd698c62708111515e0)   0x0D8 |
+| #define | [RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_B](#aa77a30a219070d15e358a43fbbd89728)   0x0D9 |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COMPARE\_C](#af6c1cb172b343baa8d8bbe01d1674922)   0x0DA |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COMPARE\_D](#ae8c7945c641045c615922a3f82329c56)   0x0DB |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COMPARE\_E](#afcb271a94d9b07b7b1a204f325b80d52)   0x0DC |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COMPARE\_F](#a906eb0e1ed2786ed2b14e4608489b2cc)   0x0DD |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COUNTER\_OVERFLOW](#abb820eb80ad8afc5c12dc3581fc7a0b9)   0x0DE |
+| #define | [RA\_ELC\_EVENT\_GPT4\_COUNTER\_UNDERFLOW](#a65831ae6b037607dc55a2b1e8aa296a7)   0x0DF |
+| #define | [RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_A](#aeb0e1a8b6d75a81af57d8a3bb214ee1c)   0x0E0 |
+| #define | [RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_B](#abb7899ca9b02154f712bdce109c1cc50)   0x0E1 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_A](#adc4aceff99f296b06938254f9dcc1f2f)   0x0E2 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_B](#aad1fc8b32dffaaa64f9908951f8b1c64)   0x0E3 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COMPARE\_C](#aebaa50f4643efe5b87798777cee578bc)   0x0E4 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COMPARE\_D](#a21965e21bd4045aa5010925620b4d827)   0x0E5 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COMPARE\_E](#a51a7cb146f0efbb7bc9f7336031006a4)   0x0E6 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COMPARE\_F](#abbd0bd21af2bd1679d6d7bc36001b97d)   0x0E7 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COUNTER\_OVERFLOW](#a038e7580f03fbdd74f417108cd2a8b4d)   0x0E8 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_COUNTER\_UNDERFLOW](#ac38b8f1154d6a699923b2bbf249e38fd)   0x0E9 |
+| #define | [RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_A](#a484a2a98e228eb884dfa951ad5cc82b5)   0x0EA |
+| #define | [RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_B](#a1b966ae97beca35cc342d06ca8fed5fc)   0x0EB |
+| #define | [RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_A](#acad1c37929903ddee569f40a3c5c59e3)   0x0EC |
+| #define | [RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_B](#aa0fc9b447efbcba0bb6800f785daeb96)   0x0ED |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COMPARE\_C](#a01f586bd98832ea9b8aa58741b61a319)   0x0EE |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COMPARE\_D](#acd71c3b8e8e1d96aa3ff6affb93f5000)   0x0EF |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COMPARE\_E](#a6abdcc7a6331a8283cfe0c1ac06b7d83)   0x0F0 |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COMPARE\_F](#a28b6b55ad533e3cb606b2b0937c916b3)   0x0F1 |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COUNTER\_OVERFLOW](#ac3c8dd6a5b7f95dccc58e7ec4e235a40)   0x0F2 |
+| #define | [RA\_ELC\_EVENT\_GPT6\_COUNTER\_UNDERFLOW](#acdece33585a75fccba962e4f764058fb)   0x0F3 |
+| #define | [RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_A](#a7dc55b6e1fb765b8768c1b7aa36dc9d2)   0x0F4 |
+| #define | [RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_B](#ae023d12652989d13bc908b7033cd900d)   0x0F5 |
+| #define | [RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_A](#afe1b39e5d37a5ed631dd18869cfbac8a)   0x0F6 |
+| #define | [RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_B](#a53b7cfc8d0a000bd57f159b09b0a9c26)   0x0F7 |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COMPARE\_C](#add91262eba9ec860b788030af153161a)   0x0F8 |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COMPARE\_D](#a9310fd708ca6f0afcf374bfc96e22e6e)   0x0F9 |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COMPARE\_E](#a8d18bd54c972d1de01c2a9f86e832cd0)   0x0FA |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COMPARE\_F](#aca89f90e8afa3f656e76f5960717543c)   0x0FB |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COUNTER\_OVERFLOW](#aac0ed7abde81cf4bcc7588bf64b53c04)   0x0FC |
+| #define | [RA\_ELC\_EVENT\_GPT7\_COUNTER\_UNDERFLOW](#ab1935670b6c0a5b5629ef8ba9d854f6c)   0x0FD |
+| #define | [RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_A](#a51637040385d036cb2e7fa5f5e536932)   0x0FE |
+| #define | [RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_B](#acc19c67f793130fd6f8e48cfe43ee62d)   0x0FF |
+| #define | [RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_A](#acbe756d66c556dab820bbba06e67248c)   0x100 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_B](#a86965f2d57f55861ddb995b2b1381aae)   0x101 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COMPARE\_C](#af58a21982c9fb458bd12cf1d3922ffd2)   0x102 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COMPARE\_D](#a9d76f5a9c5546d1410b741ec7862713c)   0x103 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COMPARE\_E](#a9d6cf6e4081dd7ef14196fd754838224)   0x104 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COMPARE\_F](#abac4f8da4010bc5753188cc9bbce4feb)   0x105 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COUNTER\_OVERFLOW](#a560a2f23d31c99d46b5de3fb65b3c066)   0x106 |
+| #define | [RA\_ELC\_EVENT\_GPT8\_COUNTER\_UNDERFLOW](#a217a7f7cdd39114472fc4276fc2337a2)   0x107 |
+| #define | [RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_A](#a1b1bc8aa177575a9928b87d4270d3293)   0x10A |
+| #define | [RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_B](#a9d37d2fabd4ff799c0b6a1f2e7131b50)   0x10B |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COMPARE\_C](#a0654be705490f32e47348cb31dea046d)   0x10C |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COMPARE\_D](#af204da0f122a67c5374ebdcd231684b0)   0x10D |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COMPARE\_E](#a7af6cbe91bfe594230d36a60a684877c)   0x10E |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COMPARE\_F](#ad2ad78dddd8c2b7dc560ec75439870ce)   0x10F |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COUNTER\_OVERFLOW](#ab5599f7f5509cbdae09668ec09078625)   0x110 |
+| #define | [RA\_ELC\_EVENT\_GPT9\_COUNTER\_UNDERFLOW](#aab44882a60fd898b847597a64ad1ec05)   0x111 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_A](#a3e446393f52c0b25041942b552e74816)   0x114 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_B](#a2333e30317873b25420483f93f9039e7)   0x115 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COMPARE\_C](#aae47fb3196b5989c45883943619dbe02)   0x116 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COMPARE\_D](#a7210f910c16be4bdeae56e5d10b9ab94)   0x117 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COMPARE\_E](#a7d195f17c9da519dae057c9d337e0443)   0x118 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COMPARE\_F](#ae2ad03f6c166fc2470e3b76623f81444)   0x119 |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COUNTER\_OVERFLOW](#abbdcc7f1ec056632b1f162527570ebd4)   0x11A |
+| #define | [RA\_ELC\_EVENT\_GPT10\_COUNTER\_UNDERFLOW](#a7475c7d51460f60c7f1ace0e744b1e7f)   0x11B |
+| #define | [RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_A](#a71d10e75f9dc2beef51e422160a9b600)   0x11E |
+| #define | [RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_B](#af45005c2897b2d3e17652426e7ba0ffb)   0x11F |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COMPARE\_C](#af329a1e7556fc745376fb9912af82e85)   0x120 |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COMPARE\_D](#a38b26e657a05bf629e023e2cc18fec6d)   0x121 |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COMPARE\_E](#aa6967c733b94450076f0468049f8a580)   0x122 |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COMPARE\_F](#a5c504ecc48d5beb357cdd42292af6072)   0x123 |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COUNTER\_OVERFLOW](#a65114b19113928d597ea9e1040c63e86)   0x124 |
+| #define | [RA\_ELC\_EVENT\_GPT11\_COUNTER\_UNDERFLOW](#ad17299e05623683967d4b3652df71050)   0x125 |
+| #define | [RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_A](#af703c7f5148f647cf99f15f5017b9b8e)   0x128 |
+| #define | [RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_B](#ab61dcfc42e758bd67fff2e3e0cc7462e)   0x129 |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COMPARE\_C](#a70cbb57f4225aa5064043caaeb34f14c)   0x12A |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COMPARE\_D](#aac6e70fd9c5806050ca602cdfaff94af)   0x12B |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COMPARE\_E](#a542befd78aec05f096611817a090d542)   0x12C |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COMPARE\_F](#ac51ca6a913774b5dbb991a15fb37cf98)   0x12D |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COUNTER\_OVERFLOW](#ae3c96e8c252ccaf26b2059bd39d7de3a)   0x12E |
+| #define | [RA\_ELC\_EVENT\_GPT12\_COUNTER\_UNDERFLOW](#ad9d2590f2cfd624f475718d459fb3d45)   0x12F |
+| #define | [RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_A](#a7a9e3e3d3c2c815e1a4696068ae4a1b4)   0x132 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_B](#a516b477a84886d2b3bafb0445a5e058e)   0x133 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COMPARE\_C](#aca23b053b565b5c46b09f58b2f9310bf)   0x134 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COMPARE\_D](#a8dc369d2e6fa7ad1b6a9ce5cb1b43865)   0x135 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COMPARE\_E](#afa734348cb5498039e88bc35dbf15d3e)   0x136 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COMPARE\_F](#a2366ee4fc54ba1c95e71f6c97af8052a)   0x137 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COUNTER\_OVERFLOW](#ac4f91952df6d2badfc33a314615d6326)   0x138 |
+| #define | [RA\_ELC\_EVENT\_GPT13\_COUNTER\_UNDERFLOW](#a44d75ba5e9ebcb3cd3056f5205957370)   0x139 |
+| #define | [RA\_ELC\_EVENT\_OPS\_UVW\_EDGE](#a8438d8d92e1950681388b40385a2c354)   0x150 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_IPLS](#ae9d5051101c59863338129351c1a5a12)   0x160 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_MINT](#a2f75da94496b025e709dda64b0901871)   0x161 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_PINT](#afd366bc34faa9bc0160459504908377f)   0x162 |
+| #define | [RA\_ELC\_EVENT\_EDMAC0\_EINT](#aea1fab1522d24393ee7292213df7d452)   0x163 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER0\_RISE](#abb82e16f1a4b18403cdf6a3170c42f3f)   0x165 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER1\_RISE](#a18a5311377c3c6179bcdbe3e1e0fe620)   0x166 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER2\_RISE](#ac93508559de248d0d11f3d040e55fbad)   0x167 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER3\_RISE](#ab52f8d2f725ddd87d8cedd7ed552eace)   0x168 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER4\_RISE](#a171611a9b293f9272b11da56ad072593)   0x169 |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER5\_RISE](#a17dfedf069d7d258c221d2e0d7eb5c3b)   0x16A |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER0\_FALL](#a32e0ec81c94a38eae71bf5ae1433fea2)   0x16B |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER1\_FALL](#ad6e7ff81882c448260bc0bf362700174)   0x16C |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER2\_FALL](#aed48d451706293fdd600a485e5e888fb)   0x16D |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER3\_FALL](#abb4ce69a4a542ee955fe88aab2f94cb9)   0x16E |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER4\_FALL](#a061c33bc6ad9f40d12b1e076ab20b2a5)   0x16F |
+| #define | [RA\_ELC\_EVENT\_EPTPC\_TIMER5\_FALL](#a4faa2f5ee393126c3354bdce4d0c8416)   0x170 |
+| #define | [RA\_ELC\_EVENT\_USBHS\_FIFO\_0](#a1f824a01b81720cfd0fd63603f446567)   0x171 |
+| #define | [RA\_ELC\_EVENT\_USBHS\_FIFO\_1](#a39b1f6234c0f4e3a27663410e748b2c4)   0x172 |
+| #define | [RA\_ELC\_EVENT\_USBHS\_USB\_INT\_RESUME](#a650605a9b87c871a6f29efb4d029f346)   0x173 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_RXI](#ad9e9a8451a683c5b5bc8a2ace8264c27)   0x174 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_TXI](#aecc4fdda2a7eeb2bab0b894f2e5047d9)   0x175 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_TEI](#ae845a850ab730c651badc5c857e28ee9)   0x176 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_ERI](#ad4580e769bae423298276e31ee2ee071)   0x177 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_AM](#ae2373b571584dae4d1c7fc57142ecb3c)   0x178 |
+| #define | [RA\_ELC\_EVENT\_SCI0\_RXI\_OR\_ERI](#ad52a4c7660a4e609976f7045305f8ca7)   0x179 |
+| #define | [RA\_ELC\_EVENT\_SCI1\_RXI](#ae936e9aa971a376cb4ea3405c68d57f0)   0x17A |
+| #define | [RA\_ELC\_EVENT\_SCI1\_TXI](#abd1c6187f97f2817dc5eb59278a996b1)   0x17B |
+| #define | [RA\_ELC\_EVENT\_SCI1\_TEI](#aae0ca4a1031af4c490fbb1ecbe201662)   0x17C |
+| #define | [RA\_ELC\_EVENT\_SCI1\_ERI](#a6a673466eb5261d23ee06be132ca9cde)   0x17D |
+| #define | [RA\_ELC\_EVENT\_SCI1\_AM](#ad9ca7dbcac36bb7f921cd8b8db761623)   0x17E |
+| #define | [RA\_ELC\_EVENT\_SCI2\_RXI](#a484b0928fab1e96f3008b9e7b12bab07)   0x180 |
+| #define | [RA\_ELC\_EVENT\_SCI2\_TXI](#a5991f7636af52ea3285cf17d300f62bb)   0x181 |
+| #define | [RA\_ELC\_EVENT\_SCI2\_TEI](#a9bbdd2f449bfd5709f6c8b77b8378ca4)   0x182 |
+| #define | [RA\_ELC\_EVENT\_SCI2\_ERI](#ad31428c7900c978dba266761df793f4c)   0x183 |
+| #define | [RA\_ELC\_EVENT\_SCI2\_AM](#a023110baac3b030238844ab6a8999652)   0x184 |
+| #define | [RA\_ELC\_EVENT\_SCI3\_RXI](#a87a1f07a2b420f9ce8d7ebcc1c505986)   0x186 |
+| #define | [RA\_ELC\_EVENT\_SCI3\_TXI](#aee0548d7714ebd04748eadf9e9dbb97c)   0x187 |
+| #define | [RA\_ELC\_EVENT\_SCI3\_TEI](#a6f9d20424191f026030159511647f913)   0x188 |
+| #define | [RA\_ELC\_EVENT\_SCI3\_ERI](#ab7a6ad3ccc6279863a491a3787fd5c5e)   0x189 |
+| #define | [RA\_ELC\_EVENT\_SCI3\_AM](#a075f80d14abaa63627574519b9ebf36b)   0x18A |
+| #define | [RA\_ELC\_EVENT\_SCI4\_RXI](#afe86466482eb03b85da9feb17bdccfc0)   0x18C |
+| #define | [RA\_ELC\_EVENT\_SCI4\_TXI](#a89f26e1bfd92cb7c9a2bad9acd80e553)   0x18D |
+| #define | [RA\_ELC\_EVENT\_SCI4\_TEI](#a2554192500a5ac058fbd338d3018f6cc)   0x18E |
+| #define | [RA\_ELC\_EVENT\_SCI4\_ERI](#ac6f2b3938cde7ba80faf523548dfa6c2)   0x18F |
+| #define | [RA\_ELC\_EVENT\_SCI4\_AM](#abddf2cbec24fd59c9330b0328a21f82e)   0x190 |
+| #define | [RA\_ELC\_EVENT\_SCI5\_RXI](#a51740f23e6c28b09c16c0e2f581314fb)   0x192 |
+| #define | [RA\_ELC\_EVENT\_SCI5\_TXI](#af7bc39c6c12ba036d65b2bb0af51dbf8)   0x193 |
+| #define | [RA\_ELC\_EVENT\_SCI5\_TEI](#a4cec5a06fc28cef155af5b98c251bccc)   0x194 |
+| #define | [RA\_ELC\_EVENT\_SCI5\_ERI](#a24438f7b2a2a39e5e0c0b791d8600b49)   0x195 |
+| #define | [RA\_ELC\_EVENT\_SCI5\_AM](#abcd8c1f9dea5b100f1dcb2c146fbb9ae)   0x196 |
+| #define | [RA\_ELC\_EVENT\_SCI6\_RXI](#aaaa4496b6388f9f1984d377b9218f273)   0x198 |
+| #define | [RA\_ELC\_EVENT\_SCI6\_TXI](#a1f464f460630421ac7fac8d36f893541)   0x199 |
+| #define | [RA\_ELC\_EVENT\_SCI6\_TEI](#af5cd0171f29206eefea5cc40e341e5af)   0x19A |
+| #define | [RA\_ELC\_EVENT\_SCI6\_ERI](#ad3452bf919efa5d499d0789bda0c6813)   0x19B |
+| #define | [RA\_ELC\_EVENT\_SCI6\_AM](#a55e0390228ab1793329886478314b385)   0x19C |
+| #define | [RA\_ELC\_EVENT\_SCI7\_RXI](#a651065265cfc7bd513f2cba96a86b550)   0x19E |
+| #define | [RA\_ELC\_EVENT\_SCI7\_TXI](#a32d0ee0a89fc1eb303df1284152249fc)   0x19F |
+| #define | [RA\_ELC\_EVENT\_SCI7\_TEI](#a7cfd544a71b7a0baf3399eca5c294fc5)   0x1A0 |
+| #define | [RA\_ELC\_EVENT\_SCI7\_ERI](#a838905f0a53f835294343cccb54bd320)   0x1A1 |
+| #define | [RA\_ELC\_EVENT\_SCI7\_AM](#afa1387a41202d99a37507bf05c0e3b79)   0x1A2 |
+| #define | [RA\_ELC\_EVENT\_SCI8\_RXI](#afd0fe00167d99961d779e4b042db872a)   0x1A4 |
+| #define | [RA\_ELC\_EVENT\_SCI8\_TXI](#ab8cc1c2b5ba23fe5550852ac7aaa33c0)   0x1A5 |
+| #define | [RA\_ELC\_EVENT\_SCI8\_TEI](#ae9b08fd3131d828f67dda3523a7703be)   0x1A6 |
+| #define | [RA\_ELC\_EVENT\_SCI8\_ERI](#a00d75172222030ff4002afb25513fbb8)   0x1A7 |
+| #define | [RA\_ELC\_EVENT\_SCI8\_AM](#a53e9096dcd5e219f5bb989768cb0672b)   0x1A8 |
+| #define | [RA\_ELC\_EVENT\_SCI9\_RXI](#ac01e51a9360f409e430642d86818bf98)   0x1AA |
+| #define | [RA\_ELC\_EVENT\_SCI9\_TXI](#a8c628c59b08ed53781fd406ea22da796)   0x1AB |
+| #define | [RA\_ELC\_EVENT\_SCI9\_TEI](#ac3a064375ff90f3a6a35c5fdda680f95)   0x1AC |
+| #define | [RA\_ELC\_EVENT\_SCI9\_ERI](#af2e4d2d6b59c512e536d901789b3c1a2)   0x1AD |
+| #define | [RA\_ELC\_EVENT\_SCI9\_AM](#a2bfc7def09c933262aa530227a45af7d)   0x1AE |
+| #define | [RA\_ELC\_EVENT\_SPI0\_RXI](#af77608914a79bea7797b63674c71db31)   0x1BC |
+| #define | [RA\_ELC\_EVENT\_SPI0\_TXI](#a82d87016b5d694884bba33bf71e93e92)   0x1BD |
+| #define | [RA\_ELC\_EVENT\_SPI0\_IDLE](#a920575ee3a202b0d7202cd053f1e235b)   0x1BE |
+| #define | [RA\_ELC\_EVENT\_SPI0\_ERI](#ab588fafc974153bcf94087cdb1a71d73)   0x1BF |
+| #define | [RA\_ELC\_EVENT\_SPI0\_TEI](#a368a0ece3d89efe3ed8ab274471849b9)   0x1C0 |
+| #define | [RA\_ELC\_EVENT\_SPI1\_RXI](#a2f5e3b5957e42c572fda94ec535b401b)   0x1C1 |
+| #define | [RA\_ELC\_EVENT\_SPI1\_TXI](#a0aab8e60c14b34bccb74400a818524ac)   0x1C2 |
+| #define | [RA\_ELC\_EVENT\_SPI1\_IDLE](#a73da76e435d9de6b6b7ad48190d2c0a2)   0x1C3 |
+| #define | [RA\_ELC\_EVENT\_SPI1\_ERI](#aedf36efaaba39c4001386536d21f81e2)   0x1C4 |
+| #define | [RA\_ELC\_EVENT\_SPI1\_TEI](#a60f40983e3c6344a257bd157b40069d5)   0x1C5 |
+| #define | [RA\_ELC\_EVENT\_QSPI\_INT](#a344b216f0d5880b31e7c1a4e700c85a4)   0x1C6 |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC0\_ACCS](#a5d9c7d15a5c040aa9dfe002cf9df0657)   0x1C7 |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC0\_SDIO](#a93465058fd23dad3a735a53ad8689473)   0x1C8 |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC0\_CARD](#a2bf8474e011e2ec0360e9e46deb7e960)   0x1C9 |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC0\_DMA\_REQ](#a937bfe3314fb8d78775078db983ea473)   0x1CA |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC1\_ACCS](#a7195add88b927dd230e66a931713f4e0)   0x1CB |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC1\_SDIO](#a2dff7e869fad7918164e954bcb0a46bf)   0x1CC |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC1\_CARD](#ae8b2102091696bca7f60b008b9839444)   0x1CD |
+| #define | [RA\_ELC\_EVENT\_SDHIMMC1\_DMA\_REQ](#a3b619f3e51ddcf2add17abd434bbf948)   0x1CE |
+| #define | [RA\_ELC\_EVENT\_GLCDC\_LINE\_DETECT](#aead68e97be199ad080f12a2cd4b81931)   0x1FA |
+| #define | [RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_1](#a84b0f18def7879017570b500ca5ce011)   0x1FB |
+| #define | [RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_2](#a33151eca38369811748a527c9beb6b01)   0x1FC |
+| #define | [RA\_ELC\_EVENT\_DRW\_INT](#a2c5dc536bea0cad911c2c89cac571957)   0x1FD |
+| #define | [RA\_ELC\_EVENT\_JPEG\_JEDI](#a1c5f8d83a1a018e7cc54996f6a4d8bbd)   0x1FE |
+| #define | [RA\_ELC\_EVENT\_JPEG\_JDTI](#aa76aa5cd4a78ba52c14903dbb94e6d48)   0x1FF |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_A](#ad6bb2d32abfad10bd283894efb7fe968)   0 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_B](#a8c4b99abfaa798b3b15f3435a73bad86)   1 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_C](#af0000625eec82c9f4ebe20da1cec7c66)   2 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_D](#ae9ae748233cce2fa65b334c2f8b2a6f7)   3 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_E](#aefc3deade612ed7aa53abd397d20af3b)   4 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_F](#a4bb2ffb785a17a225d5eb6e80f0040bf)   5 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_G](#a2ccd7f6730384fb8550054ea2195a67a)   6 |
+| #define | [RA\_ELC\_PERIPHERAL\_GPT\_H](#a6e737df13755e4e0039e98610aa31f3c)   7 |
+| #define | [RA\_ELC\_PERIPHERAL\_ADC0](#a2b5a9232a4ad9d199dc9baa510d0ed54)   8 |
+| #define | [RA\_ELC\_PERIPHERAL\_ADC0\_B](#afaf4059726139d62e2c09010cfa1148a)   9 |
+| #define | [RA\_ELC\_PERIPHERAL\_ADC1](#aea69e6e72e14f53afeb85aa4a9349bcb)   10 |
+| #define | [RA\_ELC\_PERIPHERAL\_ADC1\_B](#adbd2118aea6d1ba6ca67de192f0033fc)   11 |
+| #define | [RA\_ELC\_PERIPHERAL\_DAC0](#a9a32ba5817467743fbcf24b698124b02)   12 |
+| #define | [RA\_ELC\_PERIPHERAL\_DAC1](#a84aa20e3793499f427f6c9ccb7a20566)   13 |
+| #define | [RA\_ELC\_PERIPHERAL\_IOPORT1](#a5830e830b7b10cd68441de2648edd6a0)   14 |
+| #define | [RA\_ELC\_PERIPHERAL\_IOPORT2](#a42d4feb2c854cc1964455297e6d7eb72)   15 |
+| #define | [RA\_ELC\_PERIPHERAL\_IOPORT3](#a349933f20d7b6f768e49239724d0c5f7)   16 |
+| #define | [RA\_ELC\_PERIPHERAL\_IOPORT4](#a6d08d1db64f903fa2dacfc81568b004d)   17 |
+| #define | [RA\_ELC\_PERIPHERAL\_CTSU](#a66a60a7a3469054498a247253cea97c0)   18 |
+
+## Macro Definition Documentation
+
+## [◆ ](#a3bbee94907736c0c435cc5ff64d1e7ef)RA\_ELC\_EVENT\_ACMPHS0\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS0\_INT   0x057 |
+| --- |
+
+## [◆ ](#ab1a4d1aee4743a0ee8bd194052a6c840)RA\_ELC\_EVENT\_ACMPHS1\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS1\_INT   0x058 |
+| --- |
+
+## [◆ ](#aa3f4964bbc1d37f3191ab5eed2e8b7c4)RA\_ELC\_EVENT\_ACMPHS2\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS2\_INT   0x059 |
+| --- |
+
+## [◆ ](#a544e4a1f321514c0fd56b03025760027)RA\_ELC\_EVENT\_ACMPHS3\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS3\_INT   0x05A |
+| --- |
+
+## [◆ ](#a6fe63e96c5f7119e65f0a5940bb2b175)RA\_ELC\_EVENT\_ACMPHS4\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS4\_INT   0x05B |
+| --- |
+
+## [◆ ](#a28342f5d9195feb3d7ab97faa7d2d41e)RA\_ELC\_EVENT\_ACMPHS5\_INT
+
+| #define RA\_ELC\_EVENT\_ACMPHS5\_INT   0x05C |
+| --- |
+
+## [◆ ](#af187c78a1f05fc4be81aa3af36e4cde5)RA\_ELC\_EVENT\_ADC0\_COMPARE\_MATCH
+
+| #define RA\_ELC\_EVENT\_ADC0\_COMPARE\_MATCH   0x04F |
+| --- |
+
+## [◆ ](#a65d6c499a6852434b4802f8ef7066eb4)RA\_ELC\_EVENT\_ADC0\_COMPARE\_MISMATCH
+
+| #define RA\_ELC\_EVENT\_ADC0\_COMPARE\_MISMATCH   0x050 |
+| --- |
+
+## [◆ ](#ad7284976213551f7d4fa450bf2bf8c7c)RA\_ELC\_EVENT\_ADC0\_SCAN\_END
+
+| #define RA\_ELC\_EVENT\_ADC0\_SCAN\_END   0x04B |
+| --- |
+
+## [◆ ](#aecbe4efa29972b832e35ebb00d7499ad)RA\_ELC\_EVENT\_ADC0\_SCAN\_END\_B
+
+| #define RA\_ELC\_EVENT\_ADC0\_SCAN\_END\_B   0x04C |
+| --- |
+
+## [◆ ](#aa4feb2c3e29ba84d1397c618b7b860bf)RA\_ELC\_EVENT\_ADC0\_WINDOW\_A
+
+| #define RA\_ELC\_EVENT\_ADC0\_WINDOW\_A   0x04D |
+| --- |
+
+## [◆ ](#ab59c8ec4f20de5cf4709efe0a7ee70a1)RA\_ELC\_EVENT\_ADC0\_WINDOW\_B
+
+| #define RA\_ELC\_EVENT\_ADC0\_WINDOW\_B   0x04E |
+| --- |
+
+## [◆ ](#adbc3a9f438323aed719c7e210829a78f)RA\_ELC\_EVENT\_ADC1\_COMPARE\_MATCH
+
+| #define RA\_ELC\_EVENT\_ADC1\_COMPARE\_MATCH   0x055 |
+| --- |
+
+## [◆ ](#a12123fbc57d65b4ab932495bf0726d57)RA\_ELC\_EVENT\_ADC1\_COMPARE\_MISMATCH
+
+| #define RA\_ELC\_EVENT\_ADC1\_COMPARE\_MISMATCH   0x056 |
+| --- |
+
+## [◆ ](#aa02ddf9a93b64b5fb5c6d60b51bc24ed)RA\_ELC\_EVENT\_ADC1\_SCAN\_END
+
+| #define RA\_ELC\_EVENT\_ADC1\_SCAN\_END   0x051 |
+| --- |
+
+## [◆ ](#a1c3786e7e0f56f55d45ed55901a14bb4)RA\_ELC\_EVENT\_ADC1\_SCAN\_END\_B
+
+| #define RA\_ELC\_EVENT\_ADC1\_SCAN\_END\_B   0x052 |
+| --- |
+
+## [◆ ](#aef02cb8109fd68b4c4a1a5efca255583)RA\_ELC\_EVENT\_ADC1\_WINDOW\_A
+
+| #define RA\_ELC\_EVENT\_ADC1\_WINDOW\_A   0x053 |
+| --- |
+
+## [◆ ](#a283756acfcfe4c208cbaa5a3edd4d2cc)RA\_ELC\_EVENT\_ADC1\_WINDOW\_B
+
+| #define RA\_ELC\_EVENT\_ADC1\_WINDOW\_B   0x054 |
+| --- |
+
+## [◆ ](#a015e6f8aed4b467f4554e6887b4d9ec9)RA\_ELC\_EVENT\_AGT0\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_AGT0\_COMPARE\_A   0x041 |
+| --- |
+
+## [◆ ](#ada1ad302dc5b987a6f7c972afae729f2)RA\_ELC\_EVENT\_AGT0\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_AGT0\_COMPARE\_B   0x042 |
+| --- |
+
+## [◆ ](#a4c3604a42ead1d43f472e901087ec148)RA\_ELC\_EVENT\_AGT0\_INT
+
+| #define RA\_ELC\_EVENT\_AGT0\_INT   0x040 |
+| --- |
+
+## [◆ ](#aeb2399818b6b141ab4a37e257dba22be)RA\_ELC\_EVENT\_AGT1\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_AGT1\_COMPARE\_A   0x044 |
+| --- |
+
+## [◆ ](#a1d660c78348b48ea7a072225491ae44b)RA\_ELC\_EVENT\_AGT1\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_AGT1\_COMPARE\_B   0x045 |
+| --- |
+
+## [◆ ](#a635180e38c932579072f4eebd665592f)RA\_ELC\_EVENT\_AGT1\_INT
+
+| #define RA\_ELC\_EVENT\_AGT1\_INT   0x043 |
+| --- |
+
+## [◆ ](#a6ec3edb5e4de5bca1171ade1aa9ca19f)RA\_ELC\_EVENT\_CAC\_FREQUENCY\_ERROR
+
+| #define RA\_ELC\_EVENT\_CAC\_FREQUENCY\_ERROR   0x087 |
+| --- |
+
+## [◆ ](#a1390ee9467a9d093de1532f0703ec35f)RA\_ELC\_EVENT\_CAC\_MEASUREMENT\_END
+
+| #define RA\_ELC\_EVENT\_CAC\_MEASUREMENT\_END   0x088 |
+| --- |
+
+## [◆ ](#a3463c1e202ab7891521eda7196e1be80)RA\_ELC\_EVENT\_CAC\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_CAC\_OVERFLOW   0x089 |
+| --- |
+
+## [◆ ](#aa4f3b915e26ee83dcc8c383a1fdb2425)RA\_ELC\_EVENT\_CAN0\_ERROR
+
+| #define RA\_ELC\_EVENT\_CAN0\_ERROR   0x08A |
+| --- |
+
+## [◆ ](#ad6e2ac69f8d10baa2d023e680e2f4c2f)RA\_ELC\_EVENT\_CAN0\_FIFO\_RX
+
+| #define RA\_ELC\_EVENT\_CAN0\_FIFO\_RX   0x08B |
+| --- |
+
+## [◆ ](#a52d0f15f6d388658ae060aec6302b448)RA\_ELC\_EVENT\_CAN0\_FIFO\_TX
+
+| #define RA\_ELC\_EVENT\_CAN0\_FIFO\_TX   0x08C |
+| --- |
+
+## [◆ ](#a0b017dad5f8642aa70f6f96c45e84a72)RA\_ELC\_EVENT\_CAN0\_MAILBOX\_RX
+
+| #define RA\_ELC\_EVENT\_CAN0\_MAILBOX\_RX   0x08D |
+| --- |
+
+## [◆ ](#a71880c5fc6363d67d8d126fd63a5354c)RA\_ELC\_EVENT\_CAN0\_MAILBOX\_TX
+
+| #define RA\_ELC\_EVENT\_CAN0\_MAILBOX\_TX   0x08E |
+| --- |
+
+## [◆ ](#a3f2a843a1ec42fd602f4acff889d4cec)RA\_ELC\_EVENT\_CAN1\_ERROR
+
+| #define RA\_ELC\_EVENT\_CAN1\_ERROR   0x08F |
+| --- |
+
+## [◆ ](#a2e6ba842099389207bc1ce23ff718022)RA\_ELC\_EVENT\_CAN1\_FIFO\_RX
+
+| #define RA\_ELC\_EVENT\_CAN1\_FIFO\_RX   0x090 |
+| --- |
+
+## [◆ ](#a147d136d3878246377f834aebb31fccc)RA\_ELC\_EVENT\_CAN1\_FIFO\_TX
+
+| #define RA\_ELC\_EVENT\_CAN1\_FIFO\_TX   0x091 |
+| --- |
+
+## [◆ ](#a56a7ecc9080083a858b934c007fd54ea)RA\_ELC\_EVENT\_CAN1\_MAILBOX\_RX
+
+| #define RA\_ELC\_EVENT\_CAN1\_MAILBOX\_RX   0x092 |
+| --- |
+
+## [◆ ](#aa59bee7f791007e76284a5466c845ed4)RA\_ELC\_EVENT\_CAN1\_MAILBOX\_TX
+
+| #define RA\_ELC\_EVENT\_CAN1\_MAILBOX\_TX   0x093 |
+| --- |
+
+## [◆ ](#a290decf4254396cbce267cb52a619717)RA\_ELC\_EVENT\_CGC\_MOSC\_STOP
+
+| #define RA\_ELC\_EVENT\_CGC\_MOSC\_STOP   0x03B |
+| --- |
+
+## [◆ ](#acfe8138822bcd3f02fe50316e40c7641)RA\_ELC\_EVENT\_CTSU\_END
+
+| #define RA\_ELC\_EVENT\_CTSU\_END   0x084 |
+| --- |
+
+## [◆ ](#ad7cd21f5db3e117b87ffab8a6cb47272)RA\_ELC\_EVENT\_CTSU\_READ
+
+| #define RA\_ELC\_EVENT\_CTSU\_READ   0x083 |
+| --- |
+
+## [◆ ](#a2faf033bad7b355f8beb9386a2d0e93b)RA\_ELC\_EVENT\_CTSU\_WRITE
+
+| #define RA\_ELC\_EVENT\_CTSU\_WRITE   0x082 |
+| --- |
+
+## [◆ ](#a906929a9ae7dd7de44d21a32d3635080)RA\_ELC\_EVENT\_DMAC0\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC0\_INT   0x020 |
+| --- |
+
+## [◆ ](#a76b9d9fa8af16a1480fcc8d8ec12572f)RA\_ELC\_EVENT\_DMAC1\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC1\_INT   0x021 |
+| --- |
+
+## [◆ ](#ab6e39dbf43a7b7c8c26afbebbcd1a2ed)RA\_ELC\_EVENT\_DMAC2\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC2\_INT   0x022 |
+| --- |
+
+## [◆ ](#a0b9d72a41fd7c5b27e6c31967645b907)RA\_ELC\_EVENT\_DMAC3\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC3\_INT   0x023 |
+| --- |
+
+## [◆ ](#a4cae5afbbe49719555bbbfa12b8727f5)RA\_ELC\_EVENT\_DMAC4\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC4\_INT   0x024 |
+| --- |
+
+## [◆ ](#a000e31aba8a821f4358a435d280b3a7b)RA\_ELC\_EVENT\_DMAC5\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC5\_INT   0x025 |
+| --- |
+
+## [◆ ](#a2d1f6d1c797a0d787a5d5c08b0fc18ad)RA\_ELC\_EVENT\_DMAC6\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC6\_INT   0x026 |
+| --- |
+
+## [◆ ](#ae8caef45a510d4c4f1c55f923e01799e)RA\_ELC\_EVENT\_DMAC7\_INT
+
+| #define RA\_ELC\_EVENT\_DMAC7\_INT   0x027 |
+| --- |
+
+## [◆ ](#ab6c210d6481294137fd4bc32c39e5de1)RA\_ELC\_EVENT\_DOC\_INT
+
+| #define RA\_ELC\_EVENT\_DOC\_INT   0x086 |
+| --- |
+
+## [◆ ](#a2c5dc536bea0cad911c2c89cac571957)RA\_ELC\_EVENT\_DRW\_INT
+
+| #define RA\_ELC\_EVENT\_DRW\_INT   0x1FD |
+| --- |
+
+## [◆ ](#a9a58e3a2c10447906aaf35bab5664d24)RA\_ELC\_EVENT\_DTC\_COMPLETE
+
+| #define RA\_ELC\_EVENT\_DTC\_COMPLETE   0x029 |
+| --- |
+
+## [◆ ](#a5ab484cdaf470b47e95005d83d60394f)RA\_ELC\_EVENT\_DTC\_END
+
+| #define RA\_ELC\_EVENT\_DTC\_END   0x02A |
+| --- |
+
+## [◆ ](#aea1fab1522d24393ee7292213df7d452)RA\_ELC\_EVENT\_EDMAC0\_EINT
+
+| #define RA\_ELC\_EVENT\_EDMAC0\_EINT   0x163 |
+| --- |
+
+## [◆ ](#ae5c28618f4e68eef6ca83bdcec515abb)RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_0
+
+| #define RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_0   0x098 |
+| --- |
+
+## [◆ ](#a9f0b82bfff5ea2ba414ac0bccad9a34d)RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_1
+
+| #define RA\_ELC\_EVENT\_ELC\_SOFTWARE\_EVENT\_1   0x099 |
+| --- |
+
+## [◆ ](#ae9d5051101c59863338129351c1a5a12)RA\_ELC\_EVENT\_EPTPC\_IPLS
+
+| #define RA\_ELC\_EVENT\_EPTPC\_IPLS   0x160 |
+| --- |
+
+## [◆ ](#a2f75da94496b025e709dda64b0901871)RA\_ELC\_EVENT\_EPTPC\_MINT
+
+| #define RA\_ELC\_EVENT\_EPTPC\_MINT   0x161 |
+| --- |
+
+## [◆ ](#afd366bc34faa9bc0160459504908377f)RA\_ELC\_EVENT\_EPTPC\_PINT
+
+| #define RA\_ELC\_EVENT\_EPTPC\_PINT   0x162 |
+| --- |
+
+## [◆ ](#a32e0ec81c94a38eae71bf5ae1433fea2)RA\_ELC\_EVENT\_EPTPC\_TIMER0\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER0\_FALL   0x16B |
+| --- |
+
+## [◆ ](#abb82e16f1a4b18403cdf6a3170c42f3f)RA\_ELC\_EVENT\_EPTPC\_TIMER0\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER0\_RISE   0x165 |
+| --- |
+
+## [◆ ](#ad6e7ff81882c448260bc0bf362700174)RA\_ELC\_EVENT\_EPTPC\_TIMER1\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER1\_FALL   0x16C |
+| --- |
+
+## [◆ ](#a18a5311377c3c6179bcdbe3e1e0fe620)RA\_ELC\_EVENT\_EPTPC\_TIMER1\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER1\_RISE   0x166 |
+| --- |
+
+## [◆ ](#aed48d451706293fdd600a485e5e888fb)RA\_ELC\_EVENT\_EPTPC\_TIMER2\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER2\_FALL   0x16D |
+| --- |
+
+## [◆ ](#ac93508559de248d0d11f3d040e55fbad)RA\_ELC\_EVENT\_EPTPC\_TIMER2\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER2\_RISE   0x167 |
+| --- |
+
+## [◆ ](#abb4ce69a4a542ee955fe88aab2f94cb9)RA\_ELC\_EVENT\_EPTPC\_TIMER3\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER3\_FALL   0x16E |
+| --- |
+
+## [◆ ](#ab52f8d2f725ddd87d8cedd7ed552eace)RA\_ELC\_EVENT\_EPTPC\_TIMER3\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER3\_RISE   0x168 |
+| --- |
+
+## [◆ ](#a061c33bc6ad9f40d12b1e076ab20b2a5)RA\_ELC\_EVENT\_EPTPC\_TIMER4\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER4\_FALL   0x16F |
+| --- |
+
+## [◆ ](#a171611a9b293f9272b11da56ad072593)RA\_ELC\_EVENT\_EPTPC\_TIMER4\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER4\_RISE   0x169 |
+| --- |
+
+## [◆ ](#a4faa2f5ee393126c3354bdce4d0c8416)RA\_ELC\_EVENT\_EPTPC\_TIMER5\_FALL
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER5\_FALL   0x170 |
+| --- |
+
+## [◆ ](#a17dfedf069d7d258c221d2e0d7eb5c3b)RA\_ELC\_EVENT\_EPTPC\_TIMER5\_RISE
+
+| #define RA\_ELC\_EVENT\_EPTPC\_TIMER5\_RISE   0x16A |
+| --- |
+
+## [◆ ](#a5c7545a2f69856b7b637ad690f158b77)RA\_ELC\_EVENT\_FCU\_FIFERR
+
+| #define RA\_ELC\_EVENT\_FCU\_FIFERR   0x030 |
+| --- |
+
+## [◆ ](#a535af54c8bcfff47cc90ba1226044d71)RA\_ELC\_EVENT\_FCU\_FRDYI
+
+| #define RA\_ELC\_EVENT\_FCU\_FRDYI   0x031 |
+| --- |
+
+## [◆ ](#aead68e97be199ad080f12a2cd4b81931)RA\_ELC\_EVENT\_GLCDC\_LINE\_DETECT
+
+| #define RA\_ELC\_EVENT\_GLCDC\_LINE\_DETECT   0x1FA |
+| --- |
+
+## [◆ ](#a84b0f18def7879017570b500ca5ce011)RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_1
+
+| #define RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_1   0x1FB |
+| --- |
+
+## [◆ ](#a33151eca38369811748a527c9beb6b01)RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_2
+
+| #define RA\_ELC\_EVENT\_GLCDC\_UNDERFLOW\_2   0x1FC |
+| --- |
+
+## [◆ ](#a8c54ce860777032d9143077a5246c3d2)RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_A   0x0B8 |
+| --- |
+
+## [◆ ](#af3593fcaa05166f3993f9b136d1e1a71)RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT0\_AD\_TRIG\_B   0x0B9 |
+| --- |
+
+## [◆ ](#aec8a8b590cc124ca12425f34b5a61020)RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_A   0x0B0 |
+| --- |
+
+## [◆ ](#ae1ed91479f405ac965da868e86bce533)RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT0\_CAPTURE\_COMPARE\_B   0x0B1 |
+| --- |
+
+## [◆ ](#a6d7c9090c21a8a0c497356050d649ec6)RA\_ELC\_EVENT\_GPT0\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT0\_COMPARE\_C   0x0B2 |
+| --- |
+
+## [◆ ](#af5b8ca097747bd987e81d8d81263aa81)RA\_ELC\_EVENT\_GPT0\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT0\_COMPARE\_D   0x0B3 |
+| --- |
+
+## [◆ ](#a9ebec21375578c0e52d953773373bf1e)RA\_ELC\_EVENT\_GPT0\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT0\_COMPARE\_E   0x0B4 |
+| --- |
+
+## [◆ ](#ad503a55a4548ff6ffd58e2b74d9eaf00)RA\_ELC\_EVENT\_GPT0\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT0\_COMPARE\_F   0x0B5 |
+| --- |
+
+## [◆ ](#a76692948000993fde4d286f1a521a6d2)RA\_ELC\_EVENT\_GPT0\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT0\_COUNTER\_OVERFLOW   0x0B6 |
+| --- |
+
+## [◆ ](#a9edde37b8c0835978aa55d58d77c5ad5)RA\_ELC\_EVENT\_GPT0\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT0\_COUNTER\_UNDERFLOW   0x0B7 |
+| --- |
+
+## [◆ ](#a3e446393f52c0b25041942b552e74816)RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_A   0x114 |
+| --- |
+
+## [◆ ](#a2333e30317873b25420483f93f9039e7)RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT10\_CAPTURE\_COMPARE\_B   0x115 |
+| --- |
+
+## [◆ ](#aae47fb3196b5989c45883943619dbe02)RA\_ELC\_EVENT\_GPT10\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT10\_COMPARE\_C   0x116 |
+| --- |
+
+## [◆ ](#a7210f910c16be4bdeae56e5d10b9ab94)RA\_ELC\_EVENT\_GPT10\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT10\_COMPARE\_D   0x117 |
+| --- |
+
+## [◆ ](#a7d195f17c9da519dae057c9d337e0443)RA\_ELC\_EVENT\_GPT10\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT10\_COMPARE\_E   0x118 |
+| --- |
+
+## [◆ ](#ae2ad03f6c166fc2470e3b76623f81444)RA\_ELC\_EVENT\_GPT10\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT10\_COMPARE\_F   0x119 |
+| --- |
+
+## [◆ ](#abbdcc7f1ec056632b1f162527570ebd4)RA\_ELC\_EVENT\_GPT10\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT10\_COUNTER\_OVERFLOW   0x11A |
+| --- |
+
+## [◆ ](#a7475c7d51460f60c7f1ace0e744b1e7f)RA\_ELC\_EVENT\_GPT10\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT10\_COUNTER\_UNDERFLOW   0x11B |
+| --- |
+
+## [◆ ](#a71d10e75f9dc2beef51e422160a9b600)RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_A   0x11E |
+| --- |
+
+## [◆ ](#af45005c2897b2d3e17652426e7ba0ffb)RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT11\_CAPTURE\_COMPARE\_B   0x11F |
+| --- |
+
+## [◆ ](#af329a1e7556fc745376fb9912af82e85)RA\_ELC\_EVENT\_GPT11\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT11\_COMPARE\_C   0x120 |
+| --- |
+
+## [◆ ](#a38b26e657a05bf629e023e2cc18fec6d)RA\_ELC\_EVENT\_GPT11\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT11\_COMPARE\_D   0x121 |
+| --- |
+
+## [◆ ](#aa6967c733b94450076f0468049f8a580)RA\_ELC\_EVENT\_GPT11\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT11\_COMPARE\_E   0x122 |
+| --- |
+
+## [◆ ](#a5c504ecc48d5beb357cdd42292af6072)RA\_ELC\_EVENT\_GPT11\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT11\_COMPARE\_F   0x123 |
+| --- |
+
+## [◆ ](#a65114b19113928d597ea9e1040c63e86)RA\_ELC\_EVENT\_GPT11\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT11\_COUNTER\_OVERFLOW   0x124 |
+| --- |
+
+## [◆ ](#ad17299e05623683967d4b3652df71050)RA\_ELC\_EVENT\_GPT11\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT11\_COUNTER\_UNDERFLOW   0x125 |
+| --- |
+
+## [◆ ](#af703c7f5148f647cf99f15f5017b9b8e)RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_A   0x128 |
+| --- |
+
+## [◆ ](#ab61dcfc42e758bd67fff2e3e0cc7462e)RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT12\_CAPTURE\_COMPARE\_B   0x129 |
+| --- |
+
+## [◆ ](#a70cbb57f4225aa5064043caaeb34f14c)RA\_ELC\_EVENT\_GPT12\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT12\_COMPARE\_C   0x12A |
+| --- |
+
+## [◆ ](#aac6e70fd9c5806050ca602cdfaff94af)RA\_ELC\_EVENT\_GPT12\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT12\_COMPARE\_D   0x12B |
+| --- |
+
+## [◆ ](#a542befd78aec05f096611817a090d542)RA\_ELC\_EVENT\_GPT12\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT12\_COMPARE\_E   0x12C |
+| --- |
+
+## [◆ ](#ac51ca6a913774b5dbb991a15fb37cf98)RA\_ELC\_EVENT\_GPT12\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT12\_COMPARE\_F   0x12D |
+| --- |
+
+## [◆ ](#ae3c96e8c252ccaf26b2059bd39d7de3a)RA\_ELC\_EVENT\_GPT12\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT12\_COUNTER\_OVERFLOW   0x12E |
+| --- |
+
+## [◆ ](#ad9d2590f2cfd624f475718d459fb3d45)RA\_ELC\_EVENT\_GPT12\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT12\_COUNTER\_UNDERFLOW   0x12F |
+| --- |
+
+## [◆ ](#a7a9e3e3d3c2c815e1a4696068ae4a1b4)RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_A   0x132 |
+| --- |
+
+## [◆ ](#a516b477a84886d2b3bafb0445a5e058e)RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT13\_CAPTURE\_COMPARE\_B   0x133 |
+| --- |
+
+## [◆ ](#aca23b053b565b5c46b09f58b2f9310bf)RA\_ELC\_EVENT\_GPT13\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT13\_COMPARE\_C   0x134 |
+| --- |
+
+## [◆ ](#a8dc369d2e6fa7ad1b6a9ce5cb1b43865)RA\_ELC\_EVENT\_GPT13\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT13\_COMPARE\_D   0x135 |
+| --- |
+
+## [◆ ](#afa734348cb5498039e88bc35dbf15d3e)RA\_ELC\_EVENT\_GPT13\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT13\_COMPARE\_E   0x136 |
+| --- |
+
+## [◆ ](#a2366ee4fc54ba1c95e71f6c97af8052a)RA\_ELC\_EVENT\_GPT13\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT13\_COMPARE\_F   0x137 |
+| --- |
+
+## [◆ ](#ac4f91952df6d2badfc33a314615d6326)RA\_ELC\_EVENT\_GPT13\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT13\_COUNTER\_OVERFLOW   0x138 |
+| --- |
+
+## [◆ ](#a44d75ba5e9ebcb3cd3056f5205957370)RA\_ELC\_EVENT\_GPT13\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT13\_COUNTER\_UNDERFLOW   0x139 |
+| --- |
+
+## [◆ ](#aaa3f7fe99d60fc9891b9ef416ecbd698)RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_A   0x0C2 |
+| --- |
+
+## [◆ ](#aacf6ed4895b5a98bc67b109eb41d6d7b)RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT1\_AD\_TRIG\_B   0x0C3 |
+| --- |
+
+## [◆ ](#a33a428565bfa3237aa4eda10b982fc65)RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_A   0x0BA |
+| --- |
+
+## [◆ ](#a5326aaf270290b524f8cb2e126d06602)RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT1\_CAPTURE\_COMPARE\_B   0x0BB |
+| --- |
+
+## [◆ ](#a2e55bae34ab30f2d802b8eaf93dd3cfd)RA\_ELC\_EVENT\_GPT1\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT1\_COMPARE\_C   0x0BC |
+| --- |
+
+## [◆ ](#ada3870f40beeec10e9366e908ed980d0)RA\_ELC\_EVENT\_GPT1\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT1\_COMPARE\_D   0x0BD |
+| --- |
+
+## [◆ ](#a5d4f72e95b7bb76315b9ffa059730620)RA\_ELC\_EVENT\_GPT1\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT1\_COMPARE\_E   0x0BE |
+| --- |
+
+## [◆ ](#a548923b7385648e4f15fef4ecb315478)RA\_ELC\_EVENT\_GPT1\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT1\_COMPARE\_F   0x0BF |
+| --- |
+
+## [◆ ](#aa6eac7cf283073eea62fbaa1df2017f2)RA\_ELC\_EVENT\_GPT1\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT1\_COUNTER\_OVERFLOW   0x0C0 |
+| --- |
+
+## [◆ ](#ae8cefd5f23897d43cffba4e91b7c8b5c)RA\_ELC\_EVENT\_GPT1\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT1\_COUNTER\_UNDERFLOW   0x0C1 |
+| --- |
+
+## [◆ ](#a96bbd3418d8b51a80cef1d0a258095f0)RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_A   0x0CC |
+| --- |
+
+## [◆ ](#ab465f8fec7d2c7dcc742f25215609d2f)RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT2\_AD\_TRIG\_B   0x0CD |
+| --- |
+
+## [◆ ](#ad1a5796e0c70a988165765f2ce8c1e80)RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_A   0x0C4 |
+| --- |
+
+## [◆ ](#a73776ba7d66a478c92c6cb3dfed50af4)RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT2\_CAPTURE\_COMPARE\_B   0x0C5 |
+| --- |
+
+## [◆ ](#aa391fa888ded57351c9b62f54df1ce36)RA\_ELC\_EVENT\_GPT2\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT2\_COMPARE\_C   0x0C6 |
+| --- |
+
+## [◆ ](#a90c7aa7bbddb04e6ae4b6eccb64a0e93)RA\_ELC\_EVENT\_GPT2\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT2\_COMPARE\_D   0x0C7 |
+| --- |
+
+## [◆ ](#adbfb562e616a86a3e28f8c3f09553db9)RA\_ELC\_EVENT\_GPT2\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT2\_COMPARE\_E   0x0C8 |
+| --- |
+
+## [◆ ](#a6f07945c82efae23754e34dc09bee884)RA\_ELC\_EVENT\_GPT2\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT2\_COMPARE\_F   0x0C9 |
+| --- |
+
+## [◆ ](#aede7879166ef812139641122782d873b)RA\_ELC\_EVENT\_GPT2\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT2\_COUNTER\_OVERFLOW   0x0CA |
+| --- |
+
+## [◆ ](#ad71d20ad5434f219a61e0f0aded090d1)RA\_ELC\_EVENT\_GPT2\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT2\_COUNTER\_UNDERFLOW   0x0CB |
+| --- |
+
+## [◆ ](#a339cba7a0388f06c6c64ca31f790e2a6)RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_A   0x0D6 |
+| --- |
+
+## [◆ ](#a42c29ea80743756649f7b0ba64089844)RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT3\_AD\_TRIG\_B   0x0D7 |
+| --- |
+
+## [◆ ](#a74526500dfb573fe21fbca739b1698e1)RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_A   0x0CE |
+| --- |
+
+## [◆ ](#ac6cfac3496e4ab71c9bf84b43e06486a)RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT3\_CAPTURE\_COMPARE\_B   0x0CF |
+| --- |
+
+## [◆ ](#a1af4840d468eb4c4e1672a34652ef583)RA\_ELC\_EVENT\_GPT3\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT3\_COMPARE\_C   0x0D0 |
+| --- |
+
+## [◆ ](#a263e6b02601dd37d6eedaab56a2e6fcd)RA\_ELC\_EVENT\_GPT3\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT3\_COMPARE\_D   0x0D1 |
+| --- |
+
+## [◆ ](#a9035e080d39d60ecc898a596b9902aa6)RA\_ELC\_EVENT\_GPT3\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT3\_COMPARE\_E   0x0D2 |
+| --- |
+
+## [◆ ](#a9cffb5aca60a4c7349789fc23fb197fb)RA\_ELC\_EVENT\_GPT3\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT3\_COMPARE\_F   0x0D3 |
+| --- |
+
+## [◆ ](#a546eff128c44a29f56fe90952cef475d)RA\_ELC\_EVENT\_GPT3\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT3\_COUNTER\_OVERFLOW   0x0D4 |
+| --- |
+
+## [◆ ](#ab30a5683e48535abbf0c400a5a0d8946)RA\_ELC\_EVENT\_GPT3\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT3\_COUNTER\_UNDERFLOW   0x0D5 |
+| --- |
+
+## [◆ ](#aeb0e1a8b6d75a81af57d8a3bb214ee1c)RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_A   0x0E0 |
+| --- |
+
+## [◆ ](#abb7899ca9b02154f712bdce109c1cc50)RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT4\_AD\_TRIG\_B   0x0E1 |
+| --- |
+
+## [◆ ](#a8130aa176d9d5dd698c62708111515e0)RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_A   0x0D8 |
+| --- |
+
+## [◆ ](#aa77a30a219070d15e358a43fbbd89728)RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT4\_CAPTURE\_COMPARE\_B   0x0D9 |
+| --- |
+
+## [◆ ](#af6c1cb172b343baa8d8bbe01d1674922)RA\_ELC\_EVENT\_GPT4\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT4\_COMPARE\_C   0x0DA |
+| --- |
+
+## [◆ ](#ae8c7945c641045c615922a3f82329c56)RA\_ELC\_EVENT\_GPT4\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT4\_COMPARE\_D   0x0DB |
+| --- |
+
+## [◆ ](#afcb271a94d9b07b7b1a204f325b80d52)RA\_ELC\_EVENT\_GPT4\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT4\_COMPARE\_E   0x0DC |
+| --- |
+
+## [◆ ](#a906eb0e1ed2786ed2b14e4608489b2cc)RA\_ELC\_EVENT\_GPT4\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT4\_COMPARE\_F   0x0DD |
+| --- |
+
+## [◆ ](#abb820eb80ad8afc5c12dc3581fc7a0b9)RA\_ELC\_EVENT\_GPT4\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT4\_COUNTER\_OVERFLOW   0x0DE |
+| --- |
+
+## [◆ ](#a65831ae6b037607dc55a2b1e8aa296a7)RA\_ELC\_EVENT\_GPT4\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT4\_COUNTER\_UNDERFLOW   0x0DF |
+| --- |
+
+## [◆ ](#a484a2a98e228eb884dfa951ad5cc82b5)RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_A   0x0EA |
+| --- |
+
+## [◆ ](#a1b966ae97beca35cc342d06ca8fed5fc)RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT5\_AD\_TRIG\_B   0x0EB |
+| --- |
+
+## [◆ ](#adc4aceff99f296b06938254f9dcc1f2f)RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_A   0x0E2 |
+| --- |
+
+## [◆ ](#aad1fc8b32dffaaa64f9908951f8b1c64)RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT5\_CAPTURE\_COMPARE\_B   0x0E3 |
+| --- |
+
+## [◆ ](#aebaa50f4643efe5b87798777cee578bc)RA\_ELC\_EVENT\_GPT5\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT5\_COMPARE\_C   0x0E4 |
+| --- |
+
+## [◆ ](#a21965e21bd4045aa5010925620b4d827)RA\_ELC\_EVENT\_GPT5\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT5\_COMPARE\_D   0x0E5 |
+| --- |
+
+## [◆ ](#a51a7cb146f0efbb7bc9f7336031006a4)RA\_ELC\_EVENT\_GPT5\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT5\_COMPARE\_E   0x0E6 |
+| --- |
+
+## [◆ ](#abbd0bd21af2bd1679d6d7bc36001b97d)RA\_ELC\_EVENT\_GPT5\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT5\_COMPARE\_F   0x0E7 |
+| --- |
+
+## [◆ ](#a038e7580f03fbdd74f417108cd2a8b4d)RA\_ELC\_EVENT\_GPT5\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT5\_COUNTER\_OVERFLOW   0x0E8 |
+| --- |
+
+## [◆ ](#ac38b8f1154d6a699923b2bbf249e38fd)RA\_ELC\_EVENT\_GPT5\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT5\_COUNTER\_UNDERFLOW   0x0E9 |
+| --- |
+
+## [◆ ](#a7dc55b6e1fb765b8768c1b7aa36dc9d2)RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_A   0x0F4 |
+| --- |
+
+## [◆ ](#ae023d12652989d13bc908b7033cd900d)RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT6\_AD\_TRIG\_B   0x0F5 |
+| --- |
+
+## [◆ ](#acad1c37929903ddee569f40a3c5c59e3)RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_A   0x0EC |
+| --- |
+
+## [◆ ](#aa0fc9b447efbcba0bb6800f785daeb96)RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT6\_CAPTURE\_COMPARE\_B   0x0ED |
+| --- |
+
+## [◆ ](#a01f586bd98832ea9b8aa58741b61a319)RA\_ELC\_EVENT\_GPT6\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT6\_COMPARE\_C   0x0EE |
+| --- |
+
+## [◆ ](#acd71c3b8e8e1d96aa3ff6affb93f5000)RA\_ELC\_EVENT\_GPT6\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT6\_COMPARE\_D   0x0EF |
+| --- |
+
+## [◆ ](#a6abdcc7a6331a8283cfe0c1ac06b7d83)RA\_ELC\_EVENT\_GPT6\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT6\_COMPARE\_E   0x0F0 |
+| --- |
+
+## [◆ ](#a28b6b55ad533e3cb606b2b0937c916b3)RA\_ELC\_EVENT\_GPT6\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT6\_COMPARE\_F   0x0F1 |
+| --- |
+
+## [◆ ](#ac3c8dd6a5b7f95dccc58e7ec4e235a40)RA\_ELC\_EVENT\_GPT6\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT6\_COUNTER\_OVERFLOW   0x0F2 |
+| --- |
+
+## [◆ ](#acdece33585a75fccba962e4f764058fb)RA\_ELC\_EVENT\_GPT6\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT6\_COUNTER\_UNDERFLOW   0x0F3 |
+| --- |
+
+## [◆ ](#a51637040385d036cb2e7fa5f5e536932)RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_A
+
+| #define RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_A   0x0FE |
+| --- |
+
+## [◆ ](#acc19c67f793130fd6f8e48cfe43ee62d)RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_B
+
+| #define RA\_ELC\_EVENT\_GPT7\_AD\_TRIG\_B   0x0FF |
+| --- |
+
+## [◆ ](#afe1b39e5d37a5ed631dd18869cfbac8a)RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_A   0x0F6 |
+| --- |
+
+## [◆ ](#a53b7cfc8d0a000bd57f159b09b0a9c26)RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT7\_CAPTURE\_COMPARE\_B   0x0F7 |
+| --- |
+
+## [◆ ](#add91262eba9ec860b788030af153161a)RA\_ELC\_EVENT\_GPT7\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT7\_COMPARE\_C   0x0F8 |
+| --- |
+
+## [◆ ](#a9310fd708ca6f0afcf374bfc96e22e6e)RA\_ELC\_EVENT\_GPT7\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT7\_COMPARE\_D   0x0F9 |
+| --- |
+
+## [◆ ](#a8d18bd54c972d1de01c2a9f86e832cd0)RA\_ELC\_EVENT\_GPT7\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT7\_COMPARE\_E   0x0FA |
+| --- |
+
+## [◆ ](#aca89f90e8afa3f656e76f5960717543c)RA\_ELC\_EVENT\_GPT7\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT7\_COMPARE\_F   0x0FB |
+| --- |
+
+## [◆ ](#aac0ed7abde81cf4bcc7588bf64b53c04)RA\_ELC\_EVENT\_GPT7\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT7\_COUNTER\_OVERFLOW   0x0FC |
+| --- |
+
+## [◆ ](#ab1935670b6c0a5b5629ef8ba9d854f6c)RA\_ELC\_EVENT\_GPT7\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT7\_COUNTER\_UNDERFLOW   0x0FD |
+| --- |
+
+## [◆ ](#acbe756d66c556dab820bbba06e67248c)RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_A   0x100 |
+| --- |
+
+## [◆ ](#a86965f2d57f55861ddb995b2b1381aae)RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT8\_CAPTURE\_COMPARE\_B   0x101 |
+| --- |
+
+## [◆ ](#af58a21982c9fb458bd12cf1d3922ffd2)RA\_ELC\_EVENT\_GPT8\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT8\_COMPARE\_C   0x102 |
+| --- |
+
+## [◆ ](#a9d76f5a9c5546d1410b741ec7862713c)RA\_ELC\_EVENT\_GPT8\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT8\_COMPARE\_D   0x103 |
+| --- |
+
+## [◆ ](#a9d6cf6e4081dd7ef14196fd754838224)RA\_ELC\_EVENT\_GPT8\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT8\_COMPARE\_E   0x104 |
+| --- |
+
+## [◆ ](#abac4f8da4010bc5753188cc9bbce4feb)RA\_ELC\_EVENT\_GPT8\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT8\_COMPARE\_F   0x105 |
+| --- |
+
+## [◆ ](#a560a2f23d31c99d46b5de3fb65b3c066)RA\_ELC\_EVENT\_GPT8\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT8\_COUNTER\_OVERFLOW   0x106 |
+| --- |
+
+## [◆ ](#a217a7f7cdd39114472fc4276fc2337a2)RA\_ELC\_EVENT\_GPT8\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT8\_COUNTER\_UNDERFLOW   0x107 |
+| --- |
+
+## [◆ ](#a1b1bc8aa177575a9928b87d4270d3293)RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_A
+
+| #define RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_A   0x10A |
+| --- |
+
+## [◆ ](#a9d37d2fabd4ff799c0b6a1f2e7131b50)RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_B
+
+| #define RA\_ELC\_EVENT\_GPT9\_CAPTURE\_COMPARE\_B   0x10B |
+| --- |
+
+## [◆ ](#a0654be705490f32e47348cb31dea046d)RA\_ELC\_EVENT\_GPT9\_COMPARE\_C
+
+| #define RA\_ELC\_EVENT\_GPT9\_COMPARE\_C   0x10C |
+| --- |
+
+## [◆ ](#af204da0f122a67c5374ebdcd231684b0)RA\_ELC\_EVENT\_GPT9\_COMPARE\_D
+
+| #define RA\_ELC\_EVENT\_GPT9\_COMPARE\_D   0x10D |
+| --- |
+
+## [◆ ](#a7af6cbe91bfe594230d36a60a684877c)RA\_ELC\_EVENT\_GPT9\_COMPARE\_E
+
+| #define RA\_ELC\_EVENT\_GPT9\_COMPARE\_E   0x10E |
+| --- |
+
+## [◆ ](#ad2ad78dddd8c2b7dc560ec75439870ce)RA\_ELC\_EVENT\_GPT9\_COMPARE\_F
+
+| #define RA\_ELC\_EVENT\_GPT9\_COMPARE\_F   0x10F |
+| --- |
+
+## [◆ ](#ab5599f7f5509cbdae09668ec09078625)RA\_ELC\_EVENT\_GPT9\_COUNTER\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT9\_COUNTER\_OVERFLOW   0x110 |
+| --- |
+
+## [◆ ](#aab44882a60fd898b847597a64ad1ec05)RA\_ELC\_EVENT\_GPT9\_COUNTER\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_GPT9\_COUNTER\_UNDERFLOW   0x111 |
+| --- |
+
+## [◆ ](#a04ee26d7188b7441627bb89249545cfa)RA\_ELC\_EVENT\_ICU\_IRQ0
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ0   0x001 |
+| --- |
+
+## [◆ ](#ac9f6681c03b50d8b3a24798b3e790170)RA\_ELC\_EVENT\_ICU\_IRQ1
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ1   0x002 |
+| --- |
+
+## [◆ ](#a3e9a895c4855c3db6ac7fc5900b57807)RA\_ELC\_EVENT\_ICU\_IRQ10
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ10   0x00B |
+| --- |
+
+## [◆ ](#a46f43f1dd26e006c26b11bd45e53a728)RA\_ELC\_EVENT\_ICU\_IRQ11
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ11   0x00C |
+| --- |
+
+## [◆ ](#affb7ae86a41c8cc8582e6c6ef284a5d8)RA\_ELC\_EVENT\_ICU\_IRQ12
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ12   0x00D |
+| --- |
+
+## [◆ ](#ad7435ed602899357eae0f46c09bf542c)RA\_ELC\_EVENT\_ICU\_IRQ13
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ13   0x00E |
+| --- |
+
+## [◆ ](#ada7702d0ac50f9b3e82ef50d6be50470)RA\_ELC\_EVENT\_ICU\_IRQ14
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ14   0x00F |
+| --- |
+
+## [◆ ](#afab294cf0d58a5bb4dd578774b0ad9aa)RA\_ELC\_EVENT\_ICU\_IRQ15
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ15   0x010 |
+| --- |
+
+## [◆ ](#a136f93a17eea3f4233b0012c075fc904)RA\_ELC\_EVENT\_ICU\_IRQ2
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ2   0x003 |
+| --- |
+
+## [◆ ](#a65b92e543dfb43c213274652ae60314a)RA\_ELC\_EVENT\_ICU\_IRQ3
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ3   0x004 |
+| --- |
+
+## [◆ ](#a2b1930fc54010b7c4c00f286f690cb1e)RA\_ELC\_EVENT\_ICU\_IRQ4
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ4   0x005 |
+| --- |
+
+## [◆ ](#af3ecccfe646b6cac991310abe3e4b955)RA\_ELC\_EVENT\_ICU\_IRQ5
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ5   0x006 |
+| --- |
+
+## [◆ ](#a98b53eb7b5979403023805ba925c504c)RA\_ELC\_EVENT\_ICU\_IRQ6
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ6   0x007 |
+| --- |
+
+## [◆ ](#ab6f05849ddc30ceb693f57b522223bcf)RA\_ELC\_EVENT\_ICU\_IRQ7
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ7   0x008 |
+| --- |
+
+## [◆ ](#acbcd1c55530c6cb8580b76bd55c73c90)RA\_ELC\_EVENT\_ICU\_IRQ8
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ8   0x009 |
+| --- |
+
+## [◆ ](#af04ed29327af6c108875334c24d98e43)RA\_ELC\_EVENT\_ICU\_IRQ9
+
+| #define RA\_ELC\_EVENT\_ICU\_IRQ9   0x00A |
+| --- |
+
+## [◆ ](#a26e0aaa4a17196ada130bbb714a6d3bd)RA\_ELC\_EVENT\_ICU\_SNOOZE\_CANCEL
+
+| #define RA\_ELC\_EVENT\_ICU\_SNOOZE\_CANCEL   0x02D |
+| --- |
+
+## [◆ ](#a667eb763b55f973b141837e82dbbae6e)RA\_ELC\_EVENT\_IIC0\_ERI
+
+| #define RA\_ELC\_EVENT\_IIC0\_ERI   0x066 |
+| --- |
+
+## [◆ ](#a7271a25cdc3c987313efbafcd2a746cf)RA\_ELC\_EVENT\_IIC0\_RXI
+
+| #define RA\_ELC\_EVENT\_IIC0\_RXI   0x063 |
+| --- |
+
+## [◆ ](#a52270344b26073c127a0269c5ec4e228)RA\_ELC\_EVENT\_IIC0\_TEI
+
+| #define RA\_ELC\_EVENT\_IIC0\_TEI   0x065 |
+| --- |
+
+## [◆ ](#a7843f8a23feb383202fa6ad3be8fae5c)RA\_ELC\_EVENT\_IIC0\_TXI
+
+| #define RA\_ELC\_EVENT\_IIC0\_TXI   0x064 |
+| --- |
+
+## [◆ ](#a2a074dab614a1639ea5fa4f6d3baffd3)RA\_ELC\_EVENT\_IIC0\_WUI
+
+| #define RA\_ELC\_EVENT\_IIC0\_WUI   0x067 |
+| --- |
+
+## [◆ ](#a2221a129f0e323fa5b96bfe5ed0e007f)RA\_ELC\_EVENT\_IIC1\_ERI
+
+| #define RA\_ELC\_EVENT\_IIC1\_ERI   0x06B |
+| --- |
+
+## [◆ ](#ad03e6b81d0e7ce53737e5c3022f8d951)RA\_ELC\_EVENT\_IIC1\_RXI
+
+| #define RA\_ELC\_EVENT\_IIC1\_RXI   0x068 |
+| --- |
+
+## [◆ ](#a45ed226ccaace8813aa653276a52999d)RA\_ELC\_EVENT\_IIC1\_TEI
+
+| #define RA\_ELC\_EVENT\_IIC1\_TEI   0x06A |
+| --- |
+
+## [◆ ](#a641c91157c98f41d3cf5ff6bbe25192d)RA\_ELC\_EVENT\_IIC1\_TXI
+
+| #define RA\_ELC\_EVENT\_IIC1\_TXI   0x069 |
+| --- |
+
+## [◆ ](#a63bb5f6fd1a17c813327061f9f3f8097)RA\_ELC\_EVENT\_IIC2\_ERI
+
+| #define RA\_ELC\_EVENT\_IIC2\_ERI   0x070 |
+| --- |
+
+## [◆ ](#a9fa82701141f3b108a45ef78ba186dbb)RA\_ELC\_EVENT\_IIC2\_RXI
+
+| #define RA\_ELC\_EVENT\_IIC2\_RXI   0x06D |
+| --- |
+
+## [◆ ](#ab47dd216ff1fe2799242bd81841e4bb4)RA\_ELC\_EVENT\_IIC2\_TEI
+
+| #define RA\_ELC\_EVENT\_IIC2\_TEI   0x06F |
+| --- |
+
+## [◆ ](#ab0acad4ad4d3c980f37e5cc665b08925)RA\_ELC\_EVENT\_IIC2\_TXI
+
+| #define RA\_ELC\_EVENT\_IIC2\_TXI   0x06E |
+| --- |
+
+## [◆ ](#aee58e9a0c4313f0ec08f0652e5002008)RA\_ELC\_EVENT\_IOPORT\_EVENT\_1
+
+| #define RA\_ELC\_EVENT\_IOPORT\_EVENT\_1   0x094 |
+| --- |
+
+## [◆ ](#a36d858520d28847eead0fbfe7950be2d)RA\_ELC\_EVENT\_IOPORT\_EVENT\_2
+
+| #define RA\_ELC\_EVENT\_IOPORT\_EVENT\_2   0x095 |
+| --- |
+
+## [◆ ](#a545dadce70bbcea1116cd13490fe2571)RA\_ELC\_EVENT\_IOPORT\_EVENT\_3
+
+| #define RA\_ELC\_EVENT\_IOPORT\_EVENT\_3   0x096 |
+| --- |
+
+## [◆ ](#a4e478b84ef99ae71c102ad3d5c71089a)RA\_ELC\_EVENT\_IOPORT\_EVENT\_4
+
+| #define RA\_ELC\_EVENT\_IOPORT\_EVENT\_4   0x097 |
+| --- |
+
+## [◆ ](#abc837f1fcfffeb2ec231c79336379dda)RA\_ELC\_EVENT\_IWDT\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_IWDT\_UNDERFLOW   0x046 |
+| --- |
+
+## [◆ ](#aa76aa5cd4a78ba52c14903dbb94e6d48)RA\_ELC\_EVENT\_JPEG\_JDTI
+
+| #define RA\_ELC\_EVENT\_JPEG\_JDTI   0x1FF |
+| --- |
+
+## [◆ ](#a1c5f8d83a1a018e7cc54996f6a4d8bbd)RA\_ELC\_EVENT\_JPEG\_JEDI
+
+| #define RA\_ELC\_EVENT\_JPEG\_JEDI   0x1FE |
+| --- |
+
+## [◆ ](#a4412a0ec84a10d14d131754c5f9eb509)RA\_ELC\_EVENT\_KEY\_INT
+
+| #define RA\_ELC\_EVENT\_KEY\_INT   0x085 |
+| --- |
+
+## [◆ ](#ac6953f0c8caa6b5ef8c9893c7ff4baa1)RA\_ELC\_EVENT\_LPM\_SNOOZE\_REQUEST
+
+| #define RA\_ELC\_EVENT\_LPM\_SNOOZE\_REQUEST   0x03C |
+| --- |
+
+## [◆ ](#a7ab275777147d06315a04abb3f2f6d51)RA\_ELC\_EVENT\_LVD\_LVD1
+
+| #define RA\_ELC\_EVENT\_LVD\_LVD1   0x038 |
+| --- |
+
+## [◆ ](#ad52acadba107b7f907d678f44769a4cb)RA\_ELC\_EVENT\_LVD\_LVD2
+
+| #define RA\_ELC\_EVENT\_LVD\_LVD2   0x039 |
+| --- |
+
+## [◆ ](#a11b5cec97472328120a8d6381f1e8809)RA\_ELC\_EVENT\_NONE
+
+| #define RA\_ELC\_EVENT\_NONE   0x0 |
+| --- |
+
+## [◆ ](#a8438d8d92e1950681388b40385a2c354)RA\_ELC\_EVENT\_OPS\_UVW\_EDGE
+
+| #define RA\_ELC\_EVENT\_OPS\_UVW\_EDGE   0x150 |
+| --- |
+
+## [◆ ](#a9131ac90ec249c0675bcf7593ef34ea3)RA\_ELC\_EVENT\_PDC\_FRAME\_END
+
+| #define RA\_ELC\_EVENT\_PDC\_FRAME\_END   0x080 |
+| --- |
+
+## [◆ ](#ac075625fdd8b986db92fa720819f14da)RA\_ELC\_EVENT\_PDC\_INT
+
+| #define RA\_ELC\_EVENT\_PDC\_INT   0x081 |
+| --- |
+
+## [◆ ](#a912f81c2c4b06c636a6e91509ec504d6)RA\_ELC\_EVENT\_PDC\_RECEIVE\_DATA\_READY
+
+| #define RA\_ELC\_EVENT\_PDC\_RECEIVE\_DATA\_READY   0x07F |
+| --- |
+
+## [◆ ](#a81e18423a1f61e34f0daab6f7367eae2)RA\_ELC\_EVENT\_POEG0\_EVENT
+
+| #define RA\_ELC\_EVENT\_POEG0\_EVENT   0x09A |
+| --- |
+
+## [◆ ](#a2a43c2ce461fde766e66a4451929a875)RA\_ELC\_EVENT\_POEG1\_EVENT
+
+| #define RA\_ELC\_EVENT\_POEG1\_EVENT   0x09B |
+| --- |
+
+## [◆ ](#a7b5c16202b2491ba77319a180bcaa107)RA\_ELC\_EVENT\_POEG2\_EVENT
+
+| #define RA\_ELC\_EVENT\_POEG2\_EVENT   0x09C |
+| --- |
+
+## [◆ ](#ab39d06b130b93348c5fab589f1e0074e)RA\_ELC\_EVENT\_POEG3\_EVENT
+
+| #define RA\_ELC\_EVENT\_POEG3\_EVENT   0x09D |
+| --- |
+
+## [◆ ](#a344b216f0d5880b31e7c1a4e700c85a4)RA\_ELC\_EVENT\_QSPI\_INT
+
+| #define RA\_ELC\_EVENT\_QSPI\_INT   0x1C6 |
+| --- |
+
+## [◆ ](#a76fd68b555574159d563d2dfd68d90b9)RA\_ELC\_EVENT\_RTC\_ALARM
+
+| #define RA\_ELC\_EVENT\_RTC\_ALARM   0x048 |
+| --- |
+
+## [◆ ](#a241cd3c65033b46a1160d5815cc86fd7)RA\_ELC\_EVENT\_RTC\_CARRY
+
+| #define RA\_ELC\_EVENT\_RTC\_CARRY   0x04A |
+| --- |
+
+## [◆ ](#a144901ee7b31b96eba18a39d98c4b953)RA\_ELC\_EVENT\_RTC\_PERIOD
+
+| #define RA\_ELC\_EVENT\_RTC\_PERIOD   0x049 |
+| --- |
+
+## [◆ ](#ae2373b571584dae4d1c7fc57142ecb3c)RA\_ELC\_EVENT\_SCI0\_AM
+
+| #define RA\_ELC\_EVENT\_SCI0\_AM   0x178 |
+| --- |
+
+## [◆ ](#ad4580e769bae423298276e31ee2ee071)RA\_ELC\_EVENT\_SCI0\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI0\_ERI   0x177 |
+| --- |
+
+## [◆ ](#ad9e9a8451a683c5b5bc8a2ace8264c27)RA\_ELC\_EVENT\_SCI0\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI0\_RXI   0x174 |
+| --- |
+
+## [◆ ](#ad52a4c7660a4e609976f7045305f8ca7)RA\_ELC\_EVENT\_SCI0\_RXI\_OR\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI0\_RXI\_OR\_ERI   0x179 |
+| --- |
+
+## [◆ ](#ae845a850ab730c651badc5c857e28ee9)RA\_ELC\_EVENT\_SCI0\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI0\_TEI   0x176 |
+| --- |
+
+## [◆ ](#aecc4fdda2a7eeb2bab0b894f2e5047d9)RA\_ELC\_EVENT\_SCI0\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI0\_TXI   0x175 |
+| --- |
+
+## [◆ ](#ad9ca7dbcac36bb7f921cd8b8db761623)RA\_ELC\_EVENT\_SCI1\_AM
+
+| #define RA\_ELC\_EVENT\_SCI1\_AM   0x17E |
+| --- |
+
+## [◆ ](#a6a673466eb5261d23ee06be132ca9cde)RA\_ELC\_EVENT\_SCI1\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI1\_ERI   0x17D |
+| --- |
+
+## [◆ ](#ae936e9aa971a376cb4ea3405c68d57f0)RA\_ELC\_EVENT\_SCI1\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI1\_RXI   0x17A |
+| --- |
+
+## [◆ ](#aae0ca4a1031af4c490fbb1ecbe201662)RA\_ELC\_EVENT\_SCI1\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI1\_TEI   0x17C |
+| --- |
+
+## [◆ ](#abd1c6187f97f2817dc5eb59278a996b1)RA\_ELC\_EVENT\_SCI1\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI1\_TXI   0x17B |
+| --- |
+
+## [◆ ](#a023110baac3b030238844ab6a8999652)RA\_ELC\_EVENT\_SCI2\_AM
+
+| #define RA\_ELC\_EVENT\_SCI2\_AM   0x184 |
+| --- |
+
+## [◆ ](#ad31428c7900c978dba266761df793f4c)RA\_ELC\_EVENT\_SCI2\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI2\_ERI   0x183 |
+| --- |
+
+## [◆ ](#a484b0928fab1e96f3008b9e7b12bab07)RA\_ELC\_EVENT\_SCI2\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI2\_RXI   0x180 |
+| --- |
+
+## [◆ ](#a9bbdd2f449bfd5709f6c8b77b8378ca4)RA\_ELC\_EVENT\_SCI2\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI2\_TEI   0x182 |
+| --- |
+
+## [◆ ](#a5991f7636af52ea3285cf17d300f62bb)RA\_ELC\_EVENT\_SCI2\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI2\_TXI   0x181 |
+| --- |
+
+## [◆ ](#a075f80d14abaa63627574519b9ebf36b)RA\_ELC\_EVENT\_SCI3\_AM
+
+| #define RA\_ELC\_EVENT\_SCI3\_AM   0x18A |
+| --- |
+
+## [◆ ](#ab7a6ad3ccc6279863a491a3787fd5c5e)RA\_ELC\_EVENT\_SCI3\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI3\_ERI   0x189 |
+| --- |
+
+## [◆ ](#a87a1f07a2b420f9ce8d7ebcc1c505986)RA\_ELC\_EVENT\_SCI3\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI3\_RXI   0x186 |
+| --- |
+
+## [◆ ](#a6f9d20424191f026030159511647f913)RA\_ELC\_EVENT\_SCI3\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI3\_TEI   0x188 |
+| --- |
+
+## [◆ ](#aee0548d7714ebd04748eadf9e9dbb97c)RA\_ELC\_EVENT\_SCI3\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI3\_TXI   0x187 |
+| --- |
+
+## [◆ ](#abddf2cbec24fd59c9330b0328a21f82e)RA\_ELC\_EVENT\_SCI4\_AM
+
+| #define RA\_ELC\_EVENT\_SCI4\_AM   0x190 |
+| --- |
+
+## [◆ ](#ac6f2b3938cde7ba80faf523548dfa6c2)RA\_ELC\_EVENT\_SCI4\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI4\_ERI   0x18F |
+| --- |
+
+## [◆ ](#afe86466482eb03b85da9feb17bdccfc0)RA\_ELC\_EVENT\_SCI4\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI4\_RXI   0x18C |
+| --- |
+
+## [◆ ](#a2554192500a5ac058fbd338d3018f6cc)RA\_ELC\_EVENT\_SCI4\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI4\_TEI   0x18E |
+| --- |
+
+## [◆ ](#a89f26e1bfd92cb7c9a2bad9acd80e553)RA\_ELC\_EVENT\_SCI4\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI4\_TXI   0x18D |
+| --- |
+
+## [◆ ](#abcd8c1f9dea5b100f1dcb2c146fbb9ae)RA\_ELC\_EVENT\_SCI5\_AM
+
+| #define RA\_ELC\_EVENT\_SCI5\_AM   0x196 |
+| --- |
+
+## [◆ ](#a24438f7b2a2a39e5e0c0b791d8600b49)RA\_ELC\_EVENT\_SCI5\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI5\_ERI   0x195 |
+| --- |
+
+## [◆ ](#a51740f23e6c28b09c16c0e2f581314fb)RA\_ELC\_EVENT\_SCI5\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI5\_RXI   0x192 |
+| --- |
+
+## [◆ ](#a4cec5a06fc28cef155af5b98c251bccc)RA\_ELC\_EVENT\_SCI5\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI5\_TEI   0x194 |
+| --- |
+
+## [◆ ](#af7bc39c6c12ba036d65b2bb0af51dbf8)RA\_ELC\_EVENT\_SCI5\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI5\_TXI   0x193 |
+| --- |
+
+## [◆ ](#a55e0390228ab1793329886478314b385)RA\_ELC\_EVENT\_SCI6\_AM
+
+| #define RA\_ELC\_EVENT\_SCI6\_AM   0x19C |
+| --- |
+
+## [◆ ](#ad3452bf919efa5d499d0789bda0c6813)RA\_ELC\_EVENT\_SCI6\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI6\_ERI   0x19B |
+| --- |
+
+## [◆ ](#aaaa4496b6388f9f1984d377b9218f273)RA\_ELC\_EVENT\_SCI6\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI6\_RXI   0x198 |
+| --- |
+
+## [◆ ](#af5cd0171f29206eefea5cc40e341e5af)RA\_ELC\_EVENT\_SCI6\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI6\_TEI   0x19A |
+| --- |
+
+## [◆ ](#a1f464f460630421ac7fac8d36f893541)RA\_ELC\_EVENT\_SCI6\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI6\_TXI   0x199 |
+| --- |
+
+## [◆ ](#afa1387a41202d99a37507bf05c0e3b79)RA\_ELC\_EVENT\_SCI7\_AM
+
+| #define RA\_ELC\_EVENT\_SCI7\_AM   0x1A2 |
+| --- |
+
+## [◆ ](#a838905f0a53f835294343cccb54bd320)RA\_ELC\_EVENT\_SCI7\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI7\_ERI   0x1A1 |
+| --- |
+
+## [◆ ](#a651065265cfc7bd513f2cba96a86b550)RA\_ELC\_EVENT\_SCI7\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI7\_RXI   0x19E |
+| --- |
+
+## [◆ ](#a7cfd544a71b7a0baf3399eca5c294fc5)RA\_ELC\_EVENT\_SCI7\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI7\_TEI   0x1A0 |
+| --- |
+
+## [◆ ](#a32d0ee0a89fc1eb303df1284152249fc)RA\_ELC\_EVENT\_SCI7\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI7\_TXI   0x19F |
+| --- |
+
+## [◆ ](#a53e9096dcd5e219f5bb989768cb0672b)RA\_ELC\_EVENT\_SCI8\_AM
+
+| #define RA\_ELC\_EVENT\_SCI8\_AM   0x1A8 |
+| --- |
+
+## [◆ ](#a00d75172222030ff4002afb25513fbb8)RA\_ELC\_EVENT\_SCI8\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI8\_ERI   0x1A7 |
+| --- |
+
+## [◆ ](#afd0fe00167d99961d779e4b042db872a)RA\_ELC\_EVENT\_SCI8\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI8\_RXI   0x1A4 |
+| --- |
+
+## [◆ ](#ae9b08fd3131d828f67dda3523a7703be)RA\_ELC\_EVENT\_SCI8\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI8\_TEI   0x1A6 |
+| --- |
+
+## [◆ ](#ab8cc1c2b5ba23fe5550852ac7aaa33c0)RA\_ELC\_EVENT\_SCI8\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI8\_TXI   0x1A5 |
+| --- |
+
+## [◆ ](#a2bfc7def09c933262aa530227a45af7d)RA\_ELC\_EVENT\_SCI9\_AM
+
+| #define RA\_ELC\_EVENT\_SCI9\_AM   0x1AE |
+| --- |
+
+## [◆ ](#af2e4d2d6b59c512e536d901789b3c1a2)RA\_ELC\_EVENT\_SCI9\_ERI
+
+| #define RA\_ELC\_EVENT\_SCI9\_ERI   0x1AD |
+| --- |
+
+## [◆ ](#ac01e51a9360f409e430642d86818bf98)RA\_ELC\_EVENT\_SCI9\_RXI
+
+| #define RA\_ELC\_EVENT\_SCI9\_RXI   0x1AA |
+| --- |
+
+## [◆ ](#ac3a064375ff90f3a6a35c5fdda680f95)RA\_ELC\_EVENT\_SCI9\_TEI
+
+| #define RA\_ELC\_EVENT\_SCI9\_TEI   0x1AC |
+| --- |
+
+## [◆ ](#a8c628c59b08ed53781fd406ea22da796)RA\_ELC\_EVENT\_SCI9\_TXI
+
+| #define RA\_ELC\_EVENT\_SCI9\_TXI   0x1AB |
+| --- |
+
+## [◆ ](#a5d9c7d15a5c040aa9dfe002cf9df0657)RA\_ELC\_EVENT\_SDHIMMC0\_ACCS
+
+| #define RA\_ELC\_EVENT\_SDHIMMC0\_ACCS   0x1C7 |
+| --- |
+
+## [◆ ](#a2bf8474e011e2ec0360e9e46deb7e960)RA\_ELC\_EVENT\_SDHIMMC0\_CARD
+
+| #define RA\_ELC\_EVENT\_SDHIMMC0\_CARD   0x1C9 |
+| --- |
+
+## [◆ ](#a937bfe3314fb8d78775078db983ea473)RA\_ELC\_EVENT\_SDHIMMC0\_DMA\_REQ
+
+| #define RA\_ELC\_EVENT\_SDHIMMC0\_DMA\_REQ   0x1CA |
+| --- |
+
+## [◆ ](#a93465058fd23dad3a735a53ad8689473)RA\_ELC\_EVENT\_SDHIMMC0\_SDIO
+
+| #define RA\_ELC\_EVENT\_SDHIMMC0\_SDIO   0x1C8 |
+| --- |
+
+## [◆ ](#a7195add88b927dd230e66a931713f4e0)RA\_ELC\_EVENT\_SDHIMMC1\_ACCS
+
+| #define RA\_ELC\_EVENT\_SDHIMMC1\_ACCS   0x1CB |
+| --- |
+
+## [◆ ](#ae8b2102091696bca7f60b008b9839444)RA\_ELC\_EVENT\_SDHIMMC1\_CARD
+
+| #define RA\_ELC\_EVENT\_SDHIMMC1\_CARD   0x1CD |
+| --- |
+
+## [◆ ](#a3b619f3e51ddcf2add17abd434bbf948)RA\_ELC\_EVENT\_SDHIMMC1\_DMA\_REQ
+
+| #define RA\_ELC\_EVENT\_SDHIMMC1\_DMA\_REQ   0x1CE |
+| --- |
+
+## [◆ ](#a2dff7e869fad7918164e954bcb0a46bf)RA\_ELC\_EVENT\_SDHIMMC1\_SDIO
+
+| #define RA\_ELC\_EVENT\_SDHIMMC1\_SDIO   0x1CC |
+| --- |
+
+## [◆ ](#ab588fafc974153bcf94087cdb1a71d73)RA\_ELC\_EVENT\_SPI0\_ERI
+
+| #define RA\_ELC\_EVENT\_SPI0\_ERI   0x1BF |
+| --- |
+
+## [◆ ](#a920575ee3a202b0d7202cd053f1e235b)RA\_ELC\_EVENT\_SPI0\_IDLE
+
+| #define RA\_ELC\_EVENT\_SPI0\_IDLE   0x1BE |
+| --- |
+
+## [◆ ](#af77608914a79bea7797b63674c71db31)RA\_ELC\_EVENT\_SPI0\_RXI
+
+| #define RA\_ELC\_EVENT\_SPI0\_RXI   0x1BC |
+| --- |
+
+## [◆ ](#a368a0ece3d89efe3ed8ab274471849b9)RA\_ELC\_EVENT\_SPI0\_TEI
+
+| #define RA\_ELC\_EVENT\_SPI0\_TEI   0x1C0 |
+| --- |
+
+## [◆ ](#a82d87016b5d694884bba33bf71e93e92)RA\_ELC\_EVENT\_SPI0\_TXI
+
+| #define RA\_ELC\_EVENT\_SPI0\_TXI   0x1BD |
+| --- |
+
+## [◆ ](#aedf36efaaba39c4001386536d21f81e2)RA\_ELC\_EVENT\_SPI1\_ERI
+
+| #define RA\_ELC\_EVENT\_SPI1\_ERI   0x1C4 |
+| --- |
+
+## [◆ ](#a73da76e435d9de6b6b7ad48190d2c0a2)RA\_ELC\_EVENT\_SPI1\_IDLE
+
+| #define RA\_ELC\_EVENT\_SPI1\_IDLE   0x1C3 |
+| --- |
+
+## [◆ ](#a2f5e3b5957e42c572fda94ec535b401b)RA\_ELC\_EVENT\_SPI1\_RXI
+
+| #define RA\_ELC\_EVENT\_SPI1\_RXI   0x1C1 |
+| --- |
+
+## [◆ ](#a60f40983e3c6344a257bd157b40069d5)RA\_ELC\_EVENT\_SPI1\_TEI
+
+| #define RA\_ELC\_EVENT\_SPI1\_TEI   0x1C5 |
+| --- |
+
+## [◆ ](#a0aab8e60c14b34bccb74400a818524ac)RA\_ELC\_EVENT\_SPI1\_TXI
+
+| #define RA\_ELC\_EVENT\_SPI1\_TXI   0x1C2 |
+| --- |
+
+## [◆ ](#a965b3da128eb05bb4bab3758b7f5ac1d)RA\_ELC\_EVENT\_SRC\_CONVERSION\_END
+
+| #define RA\_ELC\_EVENT\_SRC\_CONVERSION\_END   0x07E |
+| --- |
+
+## [◆ ](#a6bc6dfb405d829a193654f98153d3ea5)RA\_ELC\_EVENT\_SRC\_INPUT\_FIFO\_EMPTY
+
+| #define RA\_ELC\_EVENT\_SRC\_INPUT\_FIFO\_EMPTY   0x07A |
+| --- |
+
+## [◆ ](#ae8986633c93b8e424e0d9b634f602cc8)RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_FULL
+
+| #define RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_FULL   0x07B |
+| --- |
+
+## [◆ ](#aa9348e4eca59c627725caa4616de18ff)RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_OVERFLOW
+
+| #define RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_OVERFLOW   0x07C |
+| --- |
+
+## [◆ ](#abd6b3f0e54dd128191a1ec112a768f02)RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_SRC\_OUTPUT\_FIFO\_UNDERFLOW   0x07D |
+| --- |
+
+## [◆ ](#a1a89e9ab6abb3834992ee3ea3ebaf9c4)RA\_ELC\_EVENT\_SSI0\_INT
+
+| #define RA\_ELC\_EVENT\_SSI0\_INT   0x075 |
+| --- |
+
+## [◆ ](#ab736656ae0b06de8383189075cbb2f27)RA\_ELC\_EVENT\_SSI0\_RXI
+
+| #define RA\_ELC\_EVENT\_SSI0\_RXI   0x073 |
+| --- |
+
+## [◆ ](#ac65193048ce5734b46bc2bf77b84cb4e)RA\_ELC\_EVENT\_SSI0\_TXI
+
+| #define RA\_ELC\_EVENT\_SSI0\_TXI   0x072 |
+| --- |
+
+## [◆ ](#a79f16ecce139415dc0c4b975bccc7f11)RA\_ELC\_EVENT\_SSI1\_INT
+
+| #define RA\_ELC\_EVENT\_SSI1\_INT   0x079 |
+| --- |
+
+## [◆ ](#a6c41f242f807ea904423f537d87b4df2)RA\_ELC\_EVENT\_SSI1\_RXI
+
+| #define RA\_ELC\_EVENT\_SSI1\_RXI   0x078 |
+| --- |
+
+## [◆ ](#a209699f601f2f9f29a44b2d1ee33713d)RA\_ELC\_EVENT\_SSI1\_TXI
+
+| #define RA\_ELC\_EVENT\_SSI1\_TXI   0x078 |
+| --- |
+
+## [◆ ](#a202b4f22442dfef11d4402c41cdbb978)RA\_ELC\_EVENT\_SSI1\_TXI\_RXI
+
+| #define RA\_ELC\_EVENT\_SSI1\_TXI\_RXI   0x078 |
+| --- |
+
+## [◆ ](#ae4dbb89c58220f72818cc9c28d97905b)RA\_ELC\_EVENT\_USBFS\_FIFO\_0
+
+| #define RA\_ELC\_EVENT\_USBFS\_FIFO\_0   0x05F |
+| --- |
+
+## [◆ ](#a0ef2efa2ea339cad7598f11fe549cdd9)RA\_ELC\_EVENT\_USBFS\_FIFO\_1
+
+| #define RA\_ELC\_EVENT\_USBFS\_FIFO\_1   0x060 |
+| --- |
+
+## [◆ ](#aac8d97813e8a3276bdac764faf7b580d)RA\_ELC\_EVENT\_USBFS\_INT
+
+| #define RA\_ELC\_EVENT\_USBFS\_INT   0x061 |
+| --- |
+
+## [◆ ](#a9458dbf2b1da6fc51ca2c2933dcb6b37)RA\_ELC\_EVENT\_USBFS\_RESUME
+
+| #define RA\_ELC\_EVENT\_USBFS\_RESUME   0x062 |
+| --- |
+
+## [◆ ](#a1f824a01b81720cfd0fd63603f446567)RA\_ELC\_EVENT\_USBHS\_FIFO\_0
+
+| #define RA\_ELC\_EVENT\_USBHS\_FIFO\_0   0x171 |
+| --- |
+
+## [◆ ](#a39b1f6234c0f4e3a27663410e748b2c4)RA\_ELC\_EVENT\_USBHS\_FIFO\_1
+
+| #define RA\_ELC\_EVENT\_USBHS\_FIFO\_1   0x172 |
+| --- |
+
+## [◆ ](#a650605a9b87c871a6f29efb4d029f346)RA\_ELC\_EVENT\_USBHS\_USB\_INT\_RESUME
+
+| #define RA\_ELC\_EVENT\_USBHS\_USB\_INT\_RESUME   0x173 |
+| --- |
+
+## [◆ ](#a6cdb7a60a850f9ec23f19c548a6cc544)RA\_ELC\_EVENT\_WDT\_UNDERFLOW
+
+| #define RA\_ELC\_EVENT\_WDT\_UNDERFLOW   0x047 |
+| --- |
+
+## [◆ ](#a2b5a9232a4ad9d199dc9baa510d0ed54)RA\_ELC\_PERIPHERAL\_ADC0
+
+| #define RA\_ELC\_PERIPHERAL\_ADC0   8 |
+| --- |
+
+## [◆ ](#afaf4059726139d62e2c09010cfa1148a)RA\_ELC\_PERIPHERAL\_ADC0\_B
+
+| #define RA\_ELC\_PERIPHERAL\_ADC0\_B   9 |
+| --- |
+
+## [◆ ](#aea69e6e72e14f53afeb85aa4a9349bcb)RA\_ELC\_PERIPHERAL\_ADC1
+
+| #define RA\_ELC\_PERIPHERAL\_ADC1   10 |
+| --- |
+
+## [◆ ](#adbd2118aea6d1ba6ca67de192f0033fc)RA\_ELC\_PERIPHERAL\_ADC1\_B
+
+| #define RA\_ELC\_PERIPHERAL\_ADC1\_B   11 |
+| --- |
+
+## [◆ ](#a66a60a7a3469054498a247253cea97c0)RA\_ELC\_PERIPHERAL\_CTSU
+
+| #define RA\_ELC\_PERIPHERAL\_CTSU   18 |
+| --- |
+
+## [◆ ](#a9a32ba5817467743fbcf24b698124b02)RA\_ELC\_PERIPHERAL\_DAC0
+
+| #define RA\_ELC\_PERIPHERAL\_DAC0   12 |
+| --- |
+
+## [◆ ](#a84aa20e3793499f427f6c9ccb7a20566)RA\_ELC\_PERIPHERAL\_DAC1
+
+| #define RA\_ELC\_PERIPHERAL\_DAC1   13 |
+| --- |
+
+## [◆ ](#ad6bb2d32abfad10bd283894efb7fe968)RA\_ELC\_PERIPHERAL\_GPT\_A
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_A   0 |
+| --- |
+
+## [◆ ](#a8c4b99abfaa798b3b15f3435a73bad86)RA\_ELC\_PERIPHERAL\_GPT\_B
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_B   1 |
+| --- |
+
+## [◆ ](#af0000625eec82c9f4ebe20da1cec7c66)RA\_ELC\_PERIPHERAL\_GPT\_C
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_C   2 |
+| --- |
+
+## [◆ ](#ae9ae748233cce2fa65b334c2f8b2a6f7)RA\_ELC\_PERIPHERAL\_GPT\_D
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_D   3 |
+| --- |
+
+## [◆ ](#aefc3deade612ed7aa53abd397d20af3b)RA\_ELC\_PERIPHERAL\_GPT\_E
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_E   4 |
+| --- |
+
+## [◆ ](#a4bb2ffb785a17a225d5eb6e80f0040bf)RA\_ELC\_PERIPHERAL\_GPT\_F
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_F   5 |
+| --- |
+
+## [◆ ](#a2ccd7f6730384fb8550054ea2195a67a)RA\_ELC\_PERIPHERAL\_GPT\_G
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_G   6 |
+| --- |
+
+## [◆ ](#a6e737df13755e4e0039e98610aa31f3c)RA\_ELC\_PERIPHERAL\_GPT\_H
+
+| #define RA\_ELC\_PERIPHERAL\_GPT\_H   7 |
+| --- |
+
+## [◆ ](#a5830e830b7b10cd68441de2648edd6a0)RA\_ELC\_PERIPHERAL\_IOPORT1
+
+| #define RA\_ELC\_PERIPHERAL\_IOPORT1   14 |
+| --- |
+
+## [◆ ](#a42d4feb2c854cc1964455297e6d7eb72)RA\_ELC\_PERIPHERAL\_IOPORT2
+
+| #define RA\_ELC\_PERIPHERAL\_IOPORT2   15 |
+| --- |
+
+## [◆ ](#a349933f20d7b6f768e49239724d0c5f7)RA\_ELC\_PERIPHERAL\_IOPORT3
+
+| #define RA\_ELC\_PERIPHERAL\_IOPORT3   16 |
+| --- |
+
+## [◆ ](#a6d08d1db64f903fa2dacfc81568b004d)RA\_ELC\_PERIPHERAL\_IOPORT4
+
+| #define RA\_ELC\_PERIPHERAL\_IOPORT4   17 |
+| --- |
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [misc](dir_b5927901ba0eeb0fdf9ca7870f5af60a.md)
+- [renesas](dir_86b946318bd38151d049d676c19e4b11.md)
+- [ra-elc](dir_fc824a581c07e3e227952b4fed9afa76.md)
+- [ra6m3-elc.h](ra6m3-elc_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

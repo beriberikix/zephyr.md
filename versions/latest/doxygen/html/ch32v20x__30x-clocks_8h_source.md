@@ -1,0 +1,170 @@
+---
+version: v4.2.0
+source_url: https://docs.zephyrproject.org/4.2.0/doxygen/html/ch32v20x__30x-clocks_8h_source.html
+original_path: doxygen/html/ch32v20x__30x-clocks_8h_source.html
+---
+
+| Logo | Zephyr API Documentation 4.2.0  A Scalable Open Source RTOS |
+| --- | --- |
+
+Loading...
+
+Searching...
+
+No Matches
+
+ch32v20x\_30x-clocks.h
+
+[Go to the documentation of this file.](ch32v20x__30x-clocks_8h.md)
+
+1/\*
+
+2 \* Copyright (c) 2024 MASSDRIVER EI (massdriver.space)
+
+3 \*
+
+4 \* SPDX-License-Identifier: Apache-2.0
+
+5 \*/
+
+6
+
+7#ifndef \_\_CH32V20X\_V30X\_CLOCKS\_H\_\_
+
+8#define \_\_CH32V20X\_V30X\_CLOCKS\_H\_\_
+
+9
+
+[ 10](ch32v20x__30x-clocks_8h.md#a0a0aef02c54f4372f87c6efec0a1c7ac)#define CH32V20X\_V30X\_AHB\_PCENR\_OFFSET 0
+
+[ 11](ch32v20x__30x-clocks_8h.md#a1156a8e8950996f558b56ecb2fe9def9)#define CH32V20X\_V30X\_APB2\_PCENR\_OFFSET 1
+
+[ 12](ch32v20x__30x-clocks_8h.md#ae0c82183a5e8b3c2d6d9a254004efda0)#define CH32V20X\_V30X\_APB1\_PCENR\_OFFSET 2
+
+13
+
+[ 14](ch32v20x__30x-clocks_8h.md#a08106e608f790a2276a172dcd26d4ecf)#define CH32V20X\_V30X\_CLOCK\_CONFIG(bus, bit) (((CH32V20X\_V30X\_##bus##\_PCENR\_OFFSET) << 5) | (bit))
+
+15
+
+[ 16](ch32v20x__30x-clocks_8h.md#a007337f892e298d0e264cb9508837c84)#define CH32V20X\_V30X\_CLOCK\_DMA1 CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 0)
+
+[ 17](ch32v20x__30x-clocks_8h.md#abf136ef6b13c720f22d5ae6de06ebb06)#define CH32V20X\_V30X\_CLOCK\_DMA2 CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 1)
+
+[ 18](ch32v20x__30x-clocks_8h.md#a2a3f10e7033f9bfeaf2f39e1d72c8b37)#define CH32V20X\_V30X\_CLOCK\_SRAM CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 2)
+
+[ 19](ch32v20x__30x-clocks_8h.md#a483a401a85adbe8492b588c82be57c7f)#define CH32V20X\_V30X\_CLOCK\_FLITF CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 4)
+
+[ 20](ch32v20x__30x-clocks_8h.md#a91c95dee0b0b351f459a9ca8d5671af1)#define CH32V20X\_V30X\_CLOCK\_CRC CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 6)
+
+[ 21](ch32v20x__30x-clocks_8h.md#a269a2764a28045b3cf0c07bc9aec4e6c)#define CH32V20X\_V30X\_CLOCK\_FSMC CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 8)
+
+[ 22](ch32v20x__30x-clocks_8h.md#a8f02173b69e03bb28b9912cd9fcedb6f)#define CH32V20X\_V30X\_CLOCK\_RNG CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 9)
+
+[ 23](ch32v20x__30x-clocks_8h.md#ad0023ab7dd1d40805f1ac8806a8f18c9)#define CH32V20X\_V30X\_CLOCK\_SDIO CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 10)
+
+[ 24](ch32v20x__30x-clocks_8h.md#aae9361ed826476835a584adaf618b56b)#define CH32V20X\_V30X\_CLOCK\_USBHS CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 11)
+
+[ 25](ch32v20x__30x-clocks_8h.md#a80f90078b9e9f5b1d15f062bc736d54f)#define CH32V20X\_V30X\_CLOCK\_OTG\_FS CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 12)
+
+[ 26](ch32v20x__30x-clocks_8h.md#a8d838b07a4f179b975e6b788328bf59e)#define CH32V20X\_V30X\_CLOCK\_DVP CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 13)
+
+[ 27](ch32v20x__30x-clocks_8h.md#a36959e659c0a251421d32f59cdabbdc4)#define CH32V20X\_V30X\_CLOCK\_ETHMAC CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 14)
+
+[ 28](ch32v20x__30x-clocks_8h.md#ae2402dcc7ada75254dba8a74e6831a5f)#define CH32V20X\_V30X\_CLOCK\_ETHMACTX CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 15)
+
+[ 29](ch32v20x__30x-clocks_8h.md#a409f247e735a2af4d4ef3cd499c422ae)#define CH32V20X\_V30X\_CLOCK\_ETHMACRX CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 16)
+
+[ 30](ch32v20x__30x-clocks_8h.md#a683d4dffc09d7b5f5b24481a5b24ced3)#define CH32V20X\_V30X\_CLOCK\_BLEC CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 16)
+
+[ 31](ch32v20x__30x-clocks_8h.md#a116b088acb0ce4637790369e26a851f9)#define CH32V20X\_V30X\_CLOCK\_BLES CH32V20X\_V30X\_CLOCK\_CONFIG(AHB, 17)
+
+32
+
+[ 33](ch32v20x__30x-clocks_8h.md#a20a760c30247b8492523b2e663fbc929)#define CH32V20X\_V30X\_CLOCK\_AFIO CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 0)
+
+[ 34](ch32v20x__30x-clocks_8h.md#ad38c5c551a5d86817ce9447ce799279f)#define CH32V20X\_V30X\_CLOCK\_IOPA CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 2)
+
+[ 35](ch32v20x__30x-clocks_8h.md#aee99093a3958cbe49a6bda79c7081d1d)#define CH32V20X\_V30X\_CLOCK\_IOPB CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 3)
+
+[ 36](ch32v20x__30x-clocks_8h.md#ab3a6e020046b26db4d33f1f0d463f834)#define CH32V20X\_V30X\_CLOCK\_IOPC CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 4)
+
+[ 37](ch32v20x__30x-clocks_8h.md#a05bf9b4ddf3bffad5a544f92d6269d93)#define CH32V20X\_V30X\_CLOCK\_IOPD CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 5)
+
+[ 38](ch32v20x__30x-clocks_8h.md#ae5d4c3a382b99eff57a2a5a8ae044e84)#define CH32V20X\_V30X\_CLOCK\_IOPE CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 6)
+
+[ 39](ch32v20x__30x-clocks_8h.md#a56dc41f43b6e6a32d499a6082157cb13)#define CH32V20X\_V30X\_CLOCK\_ADC1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 9)
+
+[ 40](ch32v20x__30x-clocks_8h.md#aeb0306b28eb219e01005ac1410c78d17)#define CH32V20X\_V30X\_CLOCK\_ADC2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 10)
+
+[ 41](ch32v20x__30x-clocks_8h.md#ae5d73cf51a2598f692373df2a41e2952)#define CH32V20X\_V30X\_CLOCK\_TIM1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 11)
+
+[ 42](ch32v20x__30x-clocks_8h.md#a3ff096f7c1dd5f4d338ed06247014d20)#define CH32V20X\_V30X\_CLOCK\_SPI1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 12)
+
+[ 43](ch32v20x__30x-clocks_8h.md#aca99ea360c9ecae2dd1928c8444a365f)#define CH32V20X\_V30X\_CLOCK\_TIM8 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 13)
+
+[ 44](ch32v20x__30x-clocks_8h.md#a966f773fcffe0cef80903aa2b1ae2dfb)#define CH32V20X\_V30X\_CLOCK\_USART1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 14)
+
+[ 45](ch32v20x__30x-clocks_8h.md#a64f1deff516386ac47efd3306082c8c3)#define CH32V20X\_V30X\_CLOCK\_TIM9 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 19)
+
+[ 46](ch32v20x__30x-clocks_8h.md#a316437005ac4ca8b71ff7b5ac8286c9e)#define CH32V20X\_V30X\_CLOCK\_TIM10 CH32V20X\_V30X\_CLOCK\_CONFIG(APB2, 20)
+
+47
+
+[ 48](ch32v20x__30x-clocks_8h.md#a1fc1a61479942154cb0038c0128c489f)#define CH32V20X\_V30X\_CLOCK\_TIM2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 0)
+
+[ 49](ch32v20x__30x-clocks_8h.md#ac59676fd860888ebce84a3bf7fa6b6c1)#define CH32V20X\_V30X\_CLOCK\_TIM3 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 1)
+
+[ 50](ch32v20x__30x-clocks_8h.md#aec0525044b3ce21196d4acb095d7b272)#define CH32V20X\_V30X\_CLOCK\_TIM4 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 2)
+
+[ 51](ch32v20x__30x-clocks_8h.md#a50755d7437bdc3c2c2ea07689d7fae92)#define CH32V20X\_V30X\_CLOCK\_TIM5 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 3)
+
+[ 52](ch32v20x__30x-clocks_8h.md#ad6a510efd4743da9dcf925f5c69ae0ac)#define CH32V20X\_V30X\_CLOCK\_TIM6 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 4)
+
+[ 53](ch32v20x__30x-clocks_8h.md#a1610bb86d1e68d8612a2c81cccf3d6e3)#define CH32V20X\_V30X\_CLOCK\_TIM7 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 5)
+
+[ 54](ch32v20x__30x-clocks_8h.md#afe70b084d0ca0c8a8c932d984484fa2f)#define CH32V20X\_V30X\_CLOCK\_USART6 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 6)
+
+[ 55](ch32v20x__30x-clocks_8h.md#a1026adc66fcb8a9ca85f8aa9aa79332b)#define CH32V20X\_V30X\_CLOCK\_USART7 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 7)
+
+[ 56](ch32v20x__30x-clocks_8h.md#ae67db64aad5da6c513c931fae5296229)#define CH32V20X\_V30X\_CLOCK\_USART8 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 8)
+
+[ 57](ch32v20x__30x-clocks_8h.md#a0c82d98e307c325c7fc15f2dbaadb83a)#define CH32V20X\_V30X\_CLOCK\_WWDG CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 11)
+
+[ 58](ch32v20x__30x-clocks_8h.md#a364abd3fbb860e5e9ae05b32c7602a9d)#define CH32V20X\_V30X\_CLOCK\_SPI2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 14)
+
+[ 59](ch32v20x__30x-clocks_8h.md#a58fdd16ed745f2bf612a88fc6b86277b)#define CH32V20X\_V30X\_CLOCK\_SPI3 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 15)
+
+[ 60](ch32v20x__30x-clocks_8h.md#aa5867afc61d0cc51f3584cb0a1884fca)#define CH32V20X\_V30X\_CLOCK\_USART2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 17)
+
+[ 61](ch32v20x__30x-clocks_8h.md#a92879aa15230b1072bf797de38bb3f95)#define CH32V20X\_V30X\_CLOCK\_USART3 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 18)
+
+[ 62](ch32v20x__30x-clocks_8h.md#ae1b2c7e4636590d0c6c15dbaf5b766f1)#define CH32V20X\_V30X\_CLOCK\_USART4 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 19)
+
+[ 63](ch32v20x__30x-clocks_8h.md#ad4579fd5d9ff8c65b99d0370cbe16418)#define CH32V20X\_V30X\_CLOCK\_USART5 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 20)
+
+[ 64](ch32v20x__30x-clocks_8h.md#ac9f58ff0c0c7c26670fae932b710635f)#define CH32V20X\_V30X\_CLOCK\_I2C1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 21)
+
+[ 65](ch32v20x__30x-clocks_8h.md#af84205c69f5613fcc6a290cc4bc90ca4)#define CH32V20X\_V30X\_CLOCK\_I2C2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 22)
+
+[ 66](ch32v20x__30x-clocks_8h.md#a0b6583d3564d6fa28e3ff7520f152127)#define CH32V20X\_V30X\_CLOCK\_USBD CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 23)
+
+[ 67](ch32v20x__30x-clocks_8h.md#a0e6a0937602127cda0030f039953677b)#define CH32V20X\_V30X\_CLOCK\_CAN1 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 25)
+
+[ 68](ch32v20x__30x-clocks_8h.md#a74bc2dea04f50d319c3a77f9dbb1fb0c)#define CH32V20X\_V30X\_CLOCK\_CAN2 CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 26)
+
+[ 69](ch32v20x__30x-clocks_8h.md#a3b3cd5ce6b0d7db679b4981126984ad7)#define CH32V20X\_V30X\_CLOCK\_BKP CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 27)
+
+[ 70](ch32v20x__30x-clocks_8h.md#a910d65adacf5c19ec4135369f280e10e)#define CH32V20X\_V30X\_CLOCK\_PWR CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 28)
+
+[ 71](ch32v20x__30x-clocks_8h.md#a2b6740d4dd237e0722f9438042e49812)#define CH32V20X\_V30X\_CLOCK\_DAC CH32V20X\_V30X\_CLOCK\_CONFIG(APB1, 29)
+
+72
+
+73#endif
+
+- [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
+- [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
+- [clock](dir_6e9992ac75fd0b7a50e889108957c907.md)
+- [ch32v20x\_30x-clocks.h](ch32v20x__30x-clocks_8h.md)
+- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
