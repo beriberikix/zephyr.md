@@ -319,11 +319,25 @@ jobs:
           mkdir -p versions
           IFS=',' read -r -a TAG_ARRAY <<< "${{ needs.prepare.outputs.tags_csv }}"
 
+          # download-artifact's output layout is not stable across major versions:
+          # it nests each artifact under _downloaded/<name>/ when several are
+          # downloaded but flattens a single one straight into _downloaded/. Locate
+          # each tree by the _manifest.json convert.py writes, which names the
+          # version it contains, rather than assuming a path shape.
+          declare -A SRC_FOR
+          while IFS= read -r MANIFEST; do
+            V="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["version"])' "$MANIFEST")"
+            SRC_FOR["$V"]="$(dirname "$MANIFEST")"
+          done < <(find _downloaded -type f -name _manifest.json)
+
+          FOUND="${!SRC_FOR[*]}"
+          echo "Found converted trees for: ${FOUND:-<none>}"
+
           for TAG in "${TAG_ARRAY[@]}"; do
-            SRC_DIR="_downloaded/markdown-${TAG}"
-            if [[ ! -d "$SRC_DIR" ]]; then
-              echo "Missing artifact for $TAG; available:"
-              ls _downloaded/
+            SRC_DIR="${SRC_FOR[$TAG]:-}"
+            if [[ -z "$SRC_DIR" ]]; then
+              echo "Missing artifact for $TAG; found: ${FOUND:-<none>}"
+              find _downloaded -maxdepth 2 | head -40
               exit 1
             fi
 
