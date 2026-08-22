@@ -8,8 +8,8 @@ original_path: boards/adi/max32655evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32655evkit_img2.jpg](../../../../_images/max32655evkit_img2.jpg)
-](../../../../_images/max32655evkit_img2.jpg)
+[![../../../../_images/max32655evkit_img1.jpg](../../../../_images/max32655evkit_img1.jpg)
+](../../../../_images/max32655evkit_img1.jpg)
 
 MAX32655EVKIT
 
@@ -32,8 +32,8 @@ Bluetooth® 5.0 Low Energy (Bluetooth LE), long-range radio for wearable and hea
 
 The Zephyr port is running on the MAX32655 MCU.
 
-![MAX32655 EVKIT Front](../../../../_images/max32655evkit_img1.jpg)
-![MAX32655 Back](../../../../_images/max32655evkit_img21.jpg)
+![MAX32655 EVKIT Front](../../../../_images/max32655evkit_img11.jpg)
+![MAX32655 Back](../../../../_images/max32655evkit_img2.jpg)
 
 ## Hardware
 

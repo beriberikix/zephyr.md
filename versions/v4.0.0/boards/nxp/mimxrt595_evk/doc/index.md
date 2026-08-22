@@ -17,7 +17,7 @@ Vendor:
 :   NXP Semiconductors
 
 Architecture:
-:   xtensa, arm
+:   arm, xtensa
 
 SoC:
 :   mimxrt595s

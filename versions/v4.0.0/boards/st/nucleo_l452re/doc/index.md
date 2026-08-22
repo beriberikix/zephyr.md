@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l452re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l452re_p_pinout.jpg](../../../../_images/nucleo_l452re_p_pinout.jpg)
-](../../../../_images/nucleo_l452re_p_pinout.jpg)
+[![../../../../_images/nucleo_l452re_p.jpg](../../../../_images/nucleo_l452re_p.jpg)
+](../../../../_images/nucleo_l452re_p.jpg)
 
 Nucleo L452RE
 
@@ -143,7 +143,7 @@ input/output, pull-up, etc.
 #### Available pins:
 
 ![Nucleo L452RE Pinout](../../../../_images/nucleo_l452re_pinout.jpg)
-![Nucleo L452RE-P Pinout](../../../../_images/nucleo_l452re_p_pinout1.jpg)
+![Nucleo L452RE-P Pinout](../../../../_images/nucleo_l452re_p_pinout.jpg)
 
 For more details please refer to [ST Nucleo L452RE User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf) or
 [ST Nucleo L452RE-P User Manual](https://www.st.com/resource/en/user_manual/dm00387966.pdf).

@@ -12,7 +12,7 @@ Vendor:
 :   NXP Semiconductors
 
 Architecture:
-:   arm64, arm
+:   arm, arm64
 
 SoC:
 :   mimx8mm6

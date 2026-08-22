@@ -15,7 +15,7 @@ Architecture:
 :   arc
 
 SoC:
-:   qemu\_arc\_hs, qemu\_arc\_em, qemu\_arc\_hs6x, qemu\_arc\_hs5x
+:   qemu\_arc\_hs5x, qemu\_arc\_em, qemu\_arc\_hs, qemu\_arc\_hs6x
 
 ## Overview
 

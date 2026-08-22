@@ -8,8 +8,8 @@ original_path: boards/st/stm32u5a9j_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/bottom_view.jpg](../../../../_images/bottom_view.jpg)
-](../../../../_images/bottom_view.jpg)
+[![../../../../_images/top_view.jpg](../../../../_images/top_view.jpg)
+](../../../../_images/top_view.jpg)
 
 STM32U5A9J Discovery Kit
 
@@ -50,8 +50,8 @@ debugger and programmer for the STM32 microcontroller with a USB Virtual COM
 port bridge and comes with the STM32CubeU5 MCU Package, which provides an STM32
 comprehensive software HAL library as well as various software examples.
 
-![STM32U5A9J-DK Top View](../../../../_images/top_view.jpg)
-![STM32U5A9J-DK Bottom View](../../../../_images/bottom_view1.jpg)
+![STM32U5A9J-DK Top View](../../../../_images/top_view1.jpg)
+![STM32U5A9J-DK Bottom View](../../../../_images/bottom_view.jpg)
 
 More information about the board can be found at the [STM32U5A9J-DK website](https://www.st.com/en/evaluation-tools/stm32u5a9j-dk.html).
 More information about STM32U5A9NJH6Q can be found here:

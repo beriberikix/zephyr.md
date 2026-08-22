@@ -15,7 +15,7 @@ Architecture:
 :   arc
 
 SoC:
-:   nsim\_em, nsim\_sem, nsim\_vpx5, nsim\_hs6x, nsim\_em7d\_v22, nsim\_em11d, nsim\_hs5x, nsim\_hs
+:   nsim\_em, nsim\_vpx5, nsim\_hs6x, nsim\_em11d, nsim\_sem, nsim\_hs5x, nsim\_hs, nsim\_em7d\_v22
 
 ## Overview
 

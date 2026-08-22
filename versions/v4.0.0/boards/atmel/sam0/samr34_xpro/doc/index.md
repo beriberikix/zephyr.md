@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/samr34_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsamr34-xpro-pinout.jpg](../../../../../_images/atsamr34-xpro-pinout.jpg)
-](../../../../../_images/atsamr34-xpro-pinout.jpg)
+[![../../../../../_images/atsamr34-xpro.jpg](../../../../../_images/atsamr34-xpro.jpg)
+](../../../../../_images/atsamr34-xpro.jpg)
 
 SAM R34 Xplained Pro Evaluation Kit
 
@@ -83,7 +83,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM R34 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-R34-R35-Low-Power-LoRa-Sub-GHz-SiP-Data-Sheet-DS70005356C.pdf) [[1]](#id2) and the [SAM R34
 Xplained Pro Schematic](https://ww1.microchip.com/downloads/Secure/en/DeviceDoc/SAMR34_SiP_Reference_Design_Package_V3.0.exe) [[2]](#id4).
 
-![SAMR34-XPRO-pinout](../../../../../_images/atsamr34-xpro-pinout1.jpg)
+![SAMR34-XPRO-pinout](../../../../../_images/atsamr34-xpro-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

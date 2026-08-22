@@ -8,8 +8,8 @@ original_path: boards/ct/ctcc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ctcc_nrf52840_m2.webp](../../../../_images/ctcc_nrf52840_m2.webp)
-](../../../../_images/ctcc_nrf52840_m2.webp)
+[![../../../../_images/ctcc_nrf52840_mpcie.webp](../../../../_images/ctcc_nrf52840_mpcie.webp)
+](../../../../_images/ctcc_nrf52840_mpcie.webp)
 
 Connectivity Card nRF52840
 
@@ -39,11 +39,11 @@ This board has following features:
 - USB
 - WDT
 
-![CTCC nRF52840 mPCIe](../../../../_images/ctcc_nrf52840_mpcie.webp)
+![CTCC nRF52840 mPCIe](../../../../_images/ctcc_nrf52840_mpcie1.webp)
 
 ctcc/nrf52840 mPCie board
 
-![CTCC nRF52840 M.2](../../../../_images/ctcc_nrf52840_m21.webp)
+![CTCC nRF52840 M.2](../../../../_images/ctcc_nrf52840_m2.webp)
 
 ctcc/nrf52840 M.2 board
 

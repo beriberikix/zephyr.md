@@ -8,8 +8,8 @@ original_path: boards/weact/blackpill_f411ce/doc/index.html
 
 Board Overview
 
-[![../../../../_images/blackpill-v2.jpg](../../../../_images/blackpill-v2.jpg)
-](../../../../_images/blackpill-v2.jpg)
+[![../../../../_images/Blackpill_Pinout4.jpg](../../../../_images/Blackpill_Pinout4.jpg)
+](../../../../_images/Blackpill_Pinout4.jpg)
 
 Black Pill V2.0
 
@@ -79,7 +79,7 @@ The default configuration can be found in
 
 #### Available pins:
 
-![Black Pill V2.0+ Pinout](../../../../_images/Blackpill_Pinout2.jpg)
+![Black Pill V2.0+ Pinout](../../../../_images/Blackpill_Pinout5.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

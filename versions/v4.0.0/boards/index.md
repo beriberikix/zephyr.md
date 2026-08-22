@@ -47,124 +47,124 @@ Xtensa
 Vendor
 
 Select a vendor
-Diglent, Inc.
-Telink Semiconductor
-QEMU, a generic and open source machine emulator and virtualizer
-STMicroelectronics
-Croxel, Inc.
-MikroElektronika d.o.o.
-Blue Clover Devices
-Blues Wireless
-Gaisler
-WEMOS Electronics
-NXP Semiconductors
-TDK Corporation.
-Silicon Laboratories
-Franzininho
-Enclustra
-Efinix Inc
-FANKE Technology Co., Ltd.
-Andes Technology Corporation
-innblue UG
-UP Bridge the Gap
-Pine64
-Nordic Semiconductor
-Ambiq Micro, Inc.
-Alientek
-Raspberry Pi Foundation
-LuatOS Team
-01Space
-Contextual Electronics
-ASPEED Technology Inc.
 Hardkernel Co., Ltd
-Infineon Technologies
-PHYTEC
-BBC
-Waveshare Electronics
-Shenzhen Sipeed Technology Co., Ltd.
-96Boards
-Dragino Technology Co., Limited
-u-blox
-PJRC
-Würth Elektronik GmbH.
-Google, Inc.
-Analog Devices, Inc.
-SEGGER Microcontroller GmbH
+VCC-GND Studio
+Shenzhen Holyiot Technology Co., Ltd.
+open-isa.org
+Seeed Technology Co., Ltd
 WeAct Studio
-Ezurio
-Electronut Labs
-lowRISC Community Interest Company
-Ruuvi Innovations Ltd (Oy)
-Ronoth
 KinCony Electronics Co., Ltd.
-Seagate Technology PLC
-SiFive, Inc.
+UP Bridge the Gap
+BeagleBoard.org Foundation
+PHYTEC
+ASPEED Technology Inc.
+Contextual Electronics
+MediaTek Inc.
+Particle.io
 ITE Tech. Inc.
-ENE Technology, Inc.
-Panasonic Corporation
-SparkFun Electronics
+CTHINGS.CO
+96Boards
+LuatOS Team
+WIZnet Co., Ltd.
+Qorvo, Inc.
+Advanced Micro Devices (AMD), Inc.
+Project ACRN
+innblue UG
+Synopsys, Inc.
+PJRC
+Shenzhen Sipeed Technology Co., Ltd.
+lowRISC Community Interest Company
+sensry.io
+aconno GmbH
+TDK Corporation.
+OLIMEX Ltd.
+StarFive Technology Co. Ltd.
+M5Stack
+Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
+Khadas
+Ronoth
+Alientek
+Shenzhen Zaowubang Technology Co., Ltd.
+Microchip Technology Inc.
+Efinix Inc
+Intel Corporation
+Andes Technology Corporation
+GigaDevice Semiconductor
+Arduino
+Texas Instruments
+Broadcom Corporation
 Raytac Corporation
-QuickLogic Corp.
+Space Cubics, LLC
+MikroElektronika d.o.o.
+Actinius B.V.
+EnjoyDigital
+DPTechnics
+Diglent, Inc.
+Chengdu Heltec Automation Technology Co., Ltd.
+Other/Unknown
+Panasonic Corporation
+VNGIoTLab
+Cadence Design Systems Inc.
+Würth Elektronik GmbH.
+Analog Devices, Inc.
+Xen Hypervisor
+Espressif Systems
+Dragino Technology Co., Limited
+Antmicro's open source simulation and virtual development framework
+BBC
+Infineon Technologies
+Franzininho
+Circuit Dojo
+01Space
+Toradex AG
+Telink Semiconductor
+SECO S.p.A.
+FANKE Technology Co., Ltd.
+ENE Technology, Inc.
+Nordic Semiconductor
+Blues Wireless
+Altera Corp.
+Gaisler
+Ruuvi Innovations Ltd (Oy)
+Atmel Corporation
+NXP Semiconductors
+Atmark Techno, Inc.
 Adafruit Industries, LLC
 Chengdu Ebyte Electronic Technology
-Project ACRN
-Texas Instruments
-aconno GmbH
+ARM Ltd.
+Shenzhen FeiKaiTe Technology Co., Ltd.
+Witte Technology
+SiFive, Inc.
+Croxel, Inc.
+Element14 (A Premier Farnell Company)
+Ambiq Micro, Inc.
+GARDENA GmbH
+TechNexion
+u-blox
+Silicon Laboratories
+QEMU, a generic and open source machine emulator and virtualizer
+Seagate Technology PLC
+WEMOS Electronics
+SparkFun Electronics
+Blue Clover Devices
+Enclustra
+Ezurio
+Google, Inc.
+Nuvoton Technology Corporation
+STMicroelectronics
+Shanghai MXCHIP Information Technology Co., Ltd.
 RAKwireless Technology Limited
 Renesas Electronics Corporation
-Altera Corp.
-OLIMEX Ltd.
-Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
-Antmicro's open source simulation and virtual development framework
-Other/Unknown
-VNGIoTLab
-Synopsys, Inc.
-Element14 (A Premier Farnell Company)
-Shenzhen FeiKaiTe Technology Co., Ltd.
-SECO S.p.A.
-Circuit Dojo
-Qorvo, Inc.
-open-isa.org
-Atmark Techno, Inc.
-Shanghai MXCHIP Information Technology Co., Ltd.
-Khadas
-TechNexion
-BeagleBoard.org Foundation
-Shenzhen Zaowubang Technology Co., Ltd.
-Nuvoton Technology Corporation
-Cadence Design Systems Inc.
-M5Stack
-Actinius B.V.
-Particle.io
-VCC-GND Studio
-Chengdu Heltec Automation Technology Co., Ltd.
-Shenzhen Holyiot Technology Co., Ltd.
-Broadcom Corporation
-CTHINGS.CO
-Firefly
-Toradex AG
-ARM Ltd.
-WIZnet Co., Ltd.
-Seeed Technology Co., Ltd
-StarFive Technology Co. Ltd.
-Space Cubics, LLC
-Arduino
-Xen Hypervisor
-Witte Technology
+QuickLogic Corp.
 bytesatwork AG
-EnjoyDigital
-Atmel Corporation
-Advanced Micro Devices (AMD), Inc.
-Intel Corporation
-sensry.io
-GigaDevice Semiconductor
 Udoo
-DPTechnics
-MediaTek Inc.
-Microchip Technology Inc.
+SEGGER Microcontroller GmbH
+Waveshare Electronics
+Firefly
+Raspberry Pi Foundation
+Electronut Labs
 Cypress Semiconductor Corporation
-Espressif Systems
-GARDENA GmbH
+Pine64
 
 Family
 
@@ -222,7 +222,7 @@ arm
 
 Andes Technology Corporation
 
-![A picture of the ADP-XC7K AE350 board](../_images/adp_xc7k410.jpg)
+![A picture of the ADP-XC7K AE350 board](../_images/adp_xc7k160.jpg)
 
 ADP-XC7K AE350
 
@@ -710,9 +710,9 @@ Broadcom Corporation
 
 BCM958402M2 (Cortex-M7)
 
-arm64, arm
+arm, arm64
 
-](../boards/brcm/bcm958402m2/doc/a72.md)
+](../boards/brcm/bcm958402m2/doc/m7.md)
 [
 
 BeagleBoard.org Foundation
@@ -827,7 +827,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V1.2 board](../_images/blackpill-v3.jpg)
+![A picture of the Black Pill V1.2 board](../_images/Blackpill_Pinout.jpg)
 
 Black Pill V1.2
 
@@ -838,7 +838,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V2.0 board](../_images/blackpill-v2.jpg)
+![A picture of the Black Pill V2.0 board](../_images/Blackpill_Pinout.jpg)
 
 Black Pill V2.0
 
@@ -849,7 +849,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V3.0 board](../_images/blackpill-v3.jpg)
+![A picture of the Black Pill V3.0 board](../_images/Blackpill_Pinout.jpg)
 
 Black Pill V3.0
 
@@ -932,7 +932,7 @@ Carbon
 
 arm
 
-](../boards/96boards/carbon/doc/stm32f401xe.md)
+](../boards/96boards/carbon/doc/nrf51822.md)
 [
 
 Texas Instruments
@@ -1032,7 +1032,7 @@ arm
 
 CTHINGS.CO
 
-![A picture of the Connectivity Card nRF52840 board](../_images/ctcc_nrf52840_m2.webp)
+![A picture of the Connectivity Card nRF52840 board](../_images/ctcc_nrf52840_mpcie.webp)
 
 Connectivity Card nRF52840
 
@@ -1151,13 +1151,13 @@ arm
 
 ARM Ltd.
 
-![A picture of the Debug with Arm DS board](../_images/create-new-model-configuration.jpg)
+![A picture of the Debug with Arm DS board](../_images/create-new-configuration-database_shown-in-project-explorer.jpg)
 
 Debug with Arm DS
 
-arm64, arm
+arm, arm64
 
-](../boards/arm/fvp_baser_aemv8r/doc/debug-with-arm-ds.md)
+](../boards/arm/fvp_baser_aemv8r/doc/aarch64.md)
 [
 
 Qorvo, Inc.
@@ -1733,7 +1733,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL board](../_images/bmd-340-eval_pin_out.jpg)
+![A picture of the EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL board](../_images/BMD-34-38-EVAL.jpg)
 
 EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL
 
@@ -1744,7 +1744,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/38: BMD-345-EVAL board](../_images/bmd-345-eval_features.jpg)
+![A picture of the EVK-BMD-34/38: BMD-345-EVAL board](../_images/bmd-345-eval_pin_out.jpg)
 
 EVK-BMD-34/38: BMD-345-EVAL
 
@@ -1755,7 +1755,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/48: BMD-380-EVAL board](../_images/bmd-340-eval_pin_out.jpg)
+![A picture of the EVK-BMD-34/48: BMD-380-EVAL board](../_images/BMD-34-38-EVAL.jpg)
 
 EVK-BMD-34/48: BMD-380-EVAL
 
@@ -2028,7 +2028,7 @@ arm
 
 sensry.io
 
-![A picture of the Ganymed Break-Out-Board (BOB) board](../_images/ganymed_bob_sy120_gen1.webp)
+![A picture of the Ganymed Break-Out-Board (BOB) board](../_images/ganymed_bob_sy120_gbm.webp)
 
 Ganymed Break-Out-Board (BOB)
 
@@ -2308,7 +2308,7 @@ NXP Semiconductors
 
 i.MX8MM EVK
 
-arm64, arm
+arm, arm64
 
 ](../boards/nxp/imx8mm_evk/doc/index.md)
 [
@@ -2326,7 +2326,7 @@ NXP Semiconductors
 
 i.MX8MP EVK
 
-arm64, xtensa, arm
+arm, xtensa, arm64
 
 ](../boards/nxp/imx8mp_evk/doc/index.md)
 [
@@ -2335,7 +2335,7 @@ NXP Semiconductors
 
 i.MX93 EVK
 
-arm64, arm
+arm, arm64
 
 ](../boards/nxp/imx93_evk/doc/index.md)
 [
@@ -2344,14 +2344,14 @@ NXP Semiconductors
 
 i.MX95 EVK
 
-arm64, arm
+arm, arm64
 
 ](../boards/nxp/imx95_evk/doc/index.md)
 [
 
 Actinius B.V.
 
-![A picture of the Icarus board](../_images/Icarus_front.jpg)
+![A picture of the Icarus board](../_images/Icarus_pinouts.jpg)
 
 Icarus
 
@@ -2362,7 +2362,7 @@ arm
 
 Actinius B.V.
 
-![A picture of the Icarus Bee board](../_images/icarus-bee-external-pins.jpg)
+![A picture of the Icarus Bee board](../_images/icarus-bee.jpg)
 
 Icarus Bee
 
@@ -2384,7 +2384,7 @@ arm
 
 Actinius B.V.
 
-![A picture of the Icarus SoM DK board](../_images/icarus_som_dk_block_diagram.jpg)
+![A picture of the Icarus SoM DK board](../_images/icarus_som_dk.jpg)
 
 Icarus SoM DK
 
@@ -2469,7 +2469,7 @@ arm
 
 ITE Tech. Inc.
 
-![A picture of the IT82XX2 series board](../_images/it82xx2_evb_wiring.jpg)
+![A picture of the IT82XX2 series board](../_images/it82xx2_evb_and_debug_card.jpg)
 
 IT82XX2 series
 
@@ -2793,7 +2793,7 @@ nios2
 
 Analog Devices, Inc.
 
-![A picture of the MAX32655EVKIT board](../_images/max32655evkit_img2.jpg)
+![A picture of the MAX32655EVKIT board](../_images/max32655evkit_img1.jpg)
 
 MAX32655EVKIT
 
@@ -2804,7 +2804,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32655FTHR board](../_images/max32655fthr_img2.jpg)
+![A picture of the MAX32655FTHR board](../_images/max32655fthr_img3.jpg)
 
 MAX32655FTHR
 
@@ -3211,7 +3211,7 @@ NXP Semiconductors
 
 MIMXRT595-EVK
 
-xtensa, arm
+arm, xtensa
 
 ](../boards/nxp/mimxrt595_evk/doc/index.md)
 [
@@ -3603,7 +3603,7 @@ Nordic Semiconductor
 
 nRF54H20 DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54h20dk/doc/index.md)
 [
@@ -3614,7 +3614,7 @@ Nordic Semiconductor
 
 nRF54L15 DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54l15dk/doc/index.md)
 [
@@ -3736,7 +3736,7 @@ Nordic Semiconductor
 
 nRF9280 PDK
 
-riscv, arm
+arm, riscv
 
 ](#)
 [
@@ -4271,7 +4271,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L452RE board](../_images/nucleo_l452re_p_pinout.jpg)
+![A picture of the Nucleo L452RE board](../_images/nucleo_l452re_p.jpg)
 
 Nucleo L452RE
 
@@ -4696,7 +4696,7 @@ PHYTEC
 
 phyBOARD-Lyra AM62x A53 Core
 
-arm64, arm
+arm, arm64
 
 ](../boards/phytec/phyboard_lyra/doc/phyboard_lyra_am62xx_m4.md)
 [
@@ -4707,14 +4707,14 @@ PHYTEC
 
 phyBOARD-Nash i.MX93
 
-arm64, arm
+arm, arm64
 
 ](../boards/phytec/phyboard_nash/doc/index.md)
 [
 
 PHYTEC
 
-![A picture of the phyBOARD-Polis i.MX8M Mini board](../_images/phyBOARD-Polis.jpg)
+![A picture of the phyBOARD-Polis i.MX8M Mini board](../_images/PEB-EVAL-01.jpg)
 
 phyBOARD-Polis i.MX8M Mini
 
@@ -4725,7 +4725,7 @@ arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Pollux i.MX8M Plus board](../_images/Phyboard_Pollux.jpg)
+![A picture of the phyBOARD-Pollux i.MX8M Plus board](../_images/PEB-EVAL-01.jpg)
 
 phyBOARD-Pollux i.MX8M Plus
 
@@ -5039,11 +5039,11 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the R-CAR H3 ARM CA57 (ARMv8) board](../_images/rcar_h3ulcb_bottom.jpg)
+![A picture of the R-CAR H3 ARM CA57 (ARMv8) board](../_images/rcar_h3ulcb_features.jpg)
 
 R-CAR H3 ARM CA57 (ARMv8)
 
-arm64, arm
+arm, arm64
 
 ](../boards/renesas/rcar_h3ulcb/doc/rcar_h3ulcb_r7.md)
 [
@@ -5074,9 +5074,9 @@ Renesas Electronics Corporation
 
 R-CAR Spider S4 (ARM64)
 
-arm64, arm
+arm, arm64
 
-](../boards/renesas/rcar_spider_s4/doc/rcar_spider_r52.md)
+](../boards/renesas/rcar_spider_s4/doc/rcar_spider_a55.md)
 [
 
 Renesas Electronics Corporation
@@ -5516,7 +5516,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM L21 Xplained Pro Evaluation Kit board](../_images/atsaml21-xpro-pinout.jpg)
+![A picture of the SAM L21 Xplained Pro Evaluation Kit board](../_images/atsaml21-xpro.jpg)
 
 SAM L21 Xplained Pro Evaluation Kit
 
@@ -5538,7 +5538,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM R34 Xplained Pro Evaluation Kit board](../_images/atsamr34-xpro-pinout.jpg)
+![A picture of the SAM R34 Xplained Pro Evaluation Kit board](../_images/atsamr34-xpro.jpg)
 
 SAM R34 Xplained Pro Evaluation Kit
 
@@ -6247,7 +6247,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32U5A9J Discovery Kit board](../_images/bottom_view.jpg)
+![A picture of the STM32U5A9J Discovery Kit board](../_images/top_view.jpg)
 
 STM32U5A9J Discovery Kit
 
