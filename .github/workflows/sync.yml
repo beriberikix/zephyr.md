@@ -189,8 +189,20 @@ jobs:
               # A directory alone is not enough: the _minimal bundle unpacks to a valid
               # looking SDK that contains no toolchains at all, so require a target
               # toolchain to be present before accepting a candidate.
+              # SDK 0.16/0.17 keep toolchains at the top level; SDK 1.0 moved them
+              # under gnu/. Accept either, or a 1.0 SDK looks empty and gets rejected.
               sdk_has_toolchains() {
-                [[ -n "$1" && -d "$1" ]] && compgen -G "$1/*-zephyr-*" > /dev/null
+                [[ -n "$1" && -d "$1" ]] || return 1
+                compgen -G "$1/*-zephyr-*" > /dev/null \
+                  || compgen -G "$1/gnu/*-zephyr-*" > /dev/null
+              }
+
+              url_exists() {
+                if command -v curl >/dev/null 2>&1; then
+                  curl -fsIL -o /dev/null "$1"
+                else
+                  wget -q --spider "$1"
+                fi
               }
 
               SDK_DIR=""
@@ -209,7 +221,21 @@ jobs:
                 # build fails with "Unable to find <arch>-zephyr-elf", which silently
                 # empties the Devicetree-derived board catalog in the generated docs.
                 SDK_DIR="/opt/zephyr-sdk-${SDK_VERSION}"
-                SDK_URL="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${SDK_VERSION}/zephyr-sdk-${SDK_VERSION}_linux-x86_64.tar.xz"
+                SDK_BASE="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${SDK_VERSION}"
+                # 0.16/0.17 ship one full bundle; 1.0 split it and renamed the GNU
+                # half. Probe rather than guess from the version number.
+                SDK_URL=""
+                for NAME in "zephyr-sdk-${SDK_VERSION}_linux-x86_64.tar.xz" \
+                            "zephyr-sdk-${SDK_VERSION}_linux-x86_64_gnu.tar.xz"; do
+                  if url_exists "${SDK_BASE}/${NAME}"; then
+                    SDK_URL="${SDK_BASE}/${NAME}"
+                    break
+                  fi
+                done
+                if [[ -z "$SDK_URL" ]]; then
+                  echo "No full Zephyr SDK bundle published for $SDK_VERSION"
+                  exit 1
+                fi
                 echo "Installing Zephyr SDK $SDK_VERSION from $SDK_URL"
                 mkdir -p /opt
                 # Stream straight into tar so the ~2G archive never lands on disk
