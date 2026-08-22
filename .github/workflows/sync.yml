@@ -110,33 +110,41 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
 
-      - name: Cache Docker layers
-        uses: actions/cache@v6
-        with:
-          path: /tmp/.docker-cache
-          key: docker-${{ env.ZEPHYR_BUILD_IMAGE }}
-          restore-keys: docker-
-
       - name: Pull zephyr-build image
         run: |
           set -euo pipefail
-          # Try to load from cache first
-          if [[ -f /tmp/.docker-cache/zephyr-build.tar ]]; then
-            echo "Loading image from cache..."
-            docker load -i /tmp/.docker-cache/zephyr-build.tar
-          else
-            echo "Pulling fresh image..."
-            docker pull "$ZEPHYR_BUILD_IMAGE"
-          fi
-          # Save image to cache for next run
-          mkdir -p /tmp/.docker-cache
-          docker save -o "/tmp/.docker-cache/zephyr-build.tar" "$ZEPHYR_BUILD_IMAGE" || true
+          # This image is ~32G unpacked. Round-tripping it through the Actions
+          # cache as a `docker save` tar cost ~230s to restore plus a ~21min pull
+          # step, because the save ran on every run even on a cache hit -- 42% of
+          # the job. It also held 6.18G of the repo's 10G cache quota, which the
+          # SDK cache needs. Pull the layers from ghcr instead.
+          time docker pull "$ZEPHYR_BUILD_IMAGE"
 
       - name: Clone Zephyr source at tag
         shell: bash
         run: |
           set -euo pipefail
           git clone --depth 1 --branch "${{ matrix.tag }}" "${{ needs.prepare.outputs.zephyr_repo }}" zephyr-src
+
+      - name: Resolve required Zephyr SDK version
+        id: sdk
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Read it here rather than in the container so it can key the cache.
+          SDK_VERSION="$(tr -d '[:space:]' < zephyr-src/SDK_VERSION)"
+          if [[ -z "$SDK_VERSION" ]]; then
+            echo "Could not read SDK_VERSION from the Zephyr tree"
+            exit 1
+          fi
+          echo "Zephyr ${{ matrix.tag }} requires Zephyr SDK $SDK_VERSION"
+          echo "version=$SDK_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Zephyr SDK
+        uses: actions/cache@v6
+        with:
+          path: zephyr-sdk
+          key: zephyr-sdk-${{ steps.sdk.outputs.version }}-linux-x86_64
 
       - name: Build Zephyr docs and convert to Markdown
         shell: bash
@@ -148,14 +156,19 @@ jobs:
           SOURCE_URL="${SOURCE_TEMPLATE//\{version\}/$VERSION}"
 
           mkdir -p "$PWD/artifacts/$TAG"
+          # Exists already on a cache hit; create it so the bind mount below does
+          # not have Docker make it, and so the cache always has a path to save.
+          mkdir -p "$PWD/zephyr-sdk"
 
           docker run --rm \
             -v "$PWD/zephyr-src:/tmp/zephyrproject/zephyr" \
+            -v "$PWD/zephyr-sdk:/opt/zephyr-sdk" \
             -v "$PWD:/work/pipeline" \
             --user 0:0 \
             -w /work/pipeline \
             -e TAG="$TAG" \
             -e SOURCE_URL="$SOURCE_URL" \
+            -e SDK_VERSION="${{ steps.sdk.outputs.version }}" \
             "$ZEPHYR_BUILD_IMAGE" \
             bash -lc '
               set -euo pipefail
@@ -176,21 +189,19 @@ jobs:
               python3 -m pip install --upgrade -r /tmp/zephyrproject/zephyr/doc/requirements.txt
               python3 -m pip install --upgrade -r /work/pipeline/scripts/requirements-convert.txt
 
-              # Never pin the SDK: each Zephyr tag states the version it needs, and that
-              # ranges from 0.16.5 (v3.6.0) to 1.0.1 (main). Read it from the tree we
-              # actually checked out so every tag in the matrix gets its own SDK.
-              SDK_VERSION="$(tr -d "[:space:]" < /tmp/zephyrproject/zephyr/SDK_VERSION)"
-              if [[ -z "$SDK_VERSION" ]]; then
-                echo "Could not read SDK_VERSION from the Zephyr tree"
+              # SDK_VERSION comes from the runner, which read it from the tree for
+              # this tag: the required version is per-tag (0.16.5 for v3.6.0 through
+              # 1.0.1 on main), so it can never be pinned in the workflow.
+              if [[ -z "${SDK_VERSION:-}" ]]; then
+                echo "SDK_VERSION was not provided"
                 exit 1
               fi
-              echo "Zephyr $TAG requires Zephyr SDK $SDK_VERSION"
 
-              # A directory alone is not enough: the _minimal bundle unpacks to a valid
-              # looking SDK that contains no toolchains at all, so require a target
-              # toolchain to be present before accepting a candidate.
               # SDK 0.16/0.17 keep toolchains at the top level; SDK 1.0 moved them
               # under gnu/. Accept either, or a 1.0 SDK looks empty and gets rejected.
+              # A directory alone is never enough: the _minimal bundle unpacks to a
+              # valid looking SDK holding no toolchains at all, which is how a
+              # toolchain-less install silently emptied the board catalog.
               sdk_has_toolchains() {
                 [[ -n "$1" && -d "$1" ]] || return 1
                 compgen -G "$1/*-zephyr-*" > /dev/null \
@@ -205,25 +216,29 @@ jobs:
                 fi
               }
 
-              SDK_DIR=""
-              for CANDIDATE in "${ZEPHYR_SDK_INSTALL_DIR:-}" \
-                               "/opt/zephyr-sdk-${SDK_VERSION}" \
-                               "/opt/toolchains/zephyr-sdk-${SDK_VERSION}"; do
-                if sdk_has_toolchains "$CANDIDATE"; then
-                  SDK_DIR="$CANDIDATE"
-                  echo "Reusing Zephyr SDK already present at $SDK_DIR"
-                  break
-                fi
-              done
+              # /opt/zephyr-sdk is a mount of the runner-side cache.
+              SDK_DIR=/opt/zephyr-sdk
 
-              if [[ -z "$SDK_DIR" ]]; then
-                # Install the full bundle, not _minimal. Without toolchains every board
-                # build fails with "Unable to find <arch>-zephyr-elf", which silently
-                # empties the Devicetree-derived board catalog in the generated docs.
-                SDK_DIR="/opt/zephyr-sdk-${SDK_VERSION}"
-                SDK_BASE="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${SDK_VERSION}"
+              if sdk_has_toolchains "$SDK_DIR"; then
+                echo "Restored Zephyr SDK $SDK_VERSION from cache"
+              else
+                for CANDIDATE in "${ZEPHYR_SDK_INSTALL_DIR:-}" \
+                                 "/opt/toolchains/zephyr-sdk-${SDK_VERSION}"; do
+                  if sdk_has_toolchains "$CANDIDATE"; then
+                    SDK_DIR="$CANDIDATE"
+                    echo "Reusing Zephyr SDK already present in the image at $SDK_DIR"
+                    break
+                  fi
+                done
+              fi
+
+              if ! sdk_has_toolchains "$SDK_DIR"; then
+                # The docs build CMake-configures every board to harvest its
+                # Devicetree, so it needs every target toolchain -- upstream builds
+                # its own HTML docs with toolchains: all for the same reason.
                 # 0.16/0.17 ship one full bundle; 1.0 split it and renamed the GNU
                 # half. Probe rather than guess from the version number.
+                SDK_BASE="https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v${SDK_VERSION}"
                 SDK_URL=""
                 for NAME in "zephyr-sdk-${SDK_VERSION}_linux-x86_64.tar.xz" \
                             "zephyr-sdk-${SDK_VERSION}_linux-x86_64_gnu.tar.xz"; do
@@ -236,19 +251,20 @@ jobs:
                   echo "No full Zephyr SDK bundle published for $SDK_VERSION"
                   exit 1
                 fi
+
                 echo "Installing Zephyr SDK $SDK_VERSION from $SDK_URL"
-                mkdir -p /opt
-                # Stream straight into tar so the ~2G archive never lands on disk
-                # alongside its own ~7G expansion.
+                mkdir -p "$SDK_DIR"
+                # Stream into tar so the ~2G archive never sits on disk beside its
+                # own ~7G expansion; strip the versioned top level so the cached
+                # path stays stable.
                 if command -v curl >/dev/null 2>&1; then
-                  curl -fsSL "$SDK_URL" | tar -C /opt -xJ
+                  curl -fsSL "$SDK_URL" | tar -C "$SDK_DIR" -xJ --strip-components=1
                 elif command -v wget >/dev/null 2>&1; then
-                  wget -qO- "$SDK_URL" | tar -C /opt -xJ
+                  wget -qO- "$SDK_URL" | tar -C "$SDK_DIR" -xJ --strip-components=1
                 else
                   echo "Neither curl nor wget is available in the container"
                   exit 1
                 fi
-                "$SDK_DIR/setup.sh" -c
               fi
 
               export ZEPHYR_SDK_INSTALL_DIR="$SDK_DIR"
@@ -256,6 +272,9 @@ jobs:
                 echo "Zephyr SDK at $ZEPHYR_SDK_INSTALL_DIR has no toolchains"
                 exit 1
               fi
+              # Registers the CMake package under $HOME, which is never cached, so
+              # this has to run on every build and not just on a cache miss.
+              "$SDK_DIR/setup.sh" -c
               echo "Using Zephyr SDK at $ZEPHYR_SDK_INSTALL_DIR"
               df -h /opt
 
