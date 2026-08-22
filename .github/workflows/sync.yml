@@ -348,7 +348,17 @@ jobs:
             echo "Copied $(find "$DEST_DIR" -name '*.md' -type f | wc -l) .md files to $DEST_DIR"
           done
 
-          LATEST="${{ needs.prepare.outputs.latest_tag }}"
+          # `latest` tracks the newest version present in the repository, not the
+          # newest tag in this run. Re-syncing an older tag on its own would
+          # otherwise overwrite versions/latest with older docs while the index
+          # below still advertised the newer one. Same computation as that step.
+          mapfile -t ALL_VERSIONS < <(find versions -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | grep -v '^latest$' | sort -V)
+          if [[ ${#ALL_VERSIONS[@]} -eq 0 ]]; then
+            echo "No version directories present after merge"
+            exit 1
+          fi
+          LATEST="${ALL_VERSIONS[${#ALL_VERSIONS[@]} - 1]}"
+          echo "Pointing versions/latest at $LATEST"
           rm -rf versions/latest
           mkdir -p versions/latest
           cp -R "versions/$LATEST"/. versions/latest/
