@@ -57,6 +57,21 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `neorv32/neorv32@1.8.6` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | NEORV32 RISC-V CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L21) | [`neorv32-cpu`](../../../../build/dts/api/bindings/cpu/neorv32-cpu.md#std-dtcompatible-neorv32-cpu) |
+| GPIO & Headers | on-chip | NEORV32 GPIO[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L102) | [`neorv32-gpio`](../../../../build/dts/api/bindings/gpio/neorv32-gpio.md#std-dtcompatible-neorv32-gpio) |
+| Interrupt controller | on-chip | RISC-V CPU interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L27) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv%2Ccpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/others/neorv32/neorv32.dts?plain=1#L49) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-board | Flash node[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/others/neorv32/neorv32.dts?plain=1#L33) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| RNG | on-chip | NEORV32 True Random Number Generator (TRNG)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L82) | [`neorv32-trng`](../../../../build/dts/api/bindings/rng/neorv32-trng.md#std-dtcompatible-neorv32-trng) |
+| Serial controller | on-chip | NEORV32 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L73)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L125) | [`neorv32-uart`](../../../../build/dts/api/bindings/serial/neorv32-uart.md#std-dtcompatible-neorv32-uart) |
+| SRAM | on-board | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/others/neorv32/neorv32.dts?plain=1#L43) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| System controller | on-chip | System Controller Registers R/W[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L134) | [`syscon`](../../../../build/dts/api/bindings/syscon/syscon.md#std-dtcompatible-syscon) |
+| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/neorv32.dtsi?plain=1#L67) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer) |
+
 ### System Clock
 
 The default board configuration assumes a system clock of 100 MHz. The clock

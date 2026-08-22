@@ -8,8 +8,8 @@ original_path: boards/andestech/adp_xc7k_ae350/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adp_xc7k410.jpg](../../../../_images/adp_xc7k410.jpg)
-](../../../../_images/adp_xc7k410.jpg)
+[![../../../../_images/adp_xc7k160.jpg](../../../../_images/adp_xc7k160.jpg)
+](../../../../_images/adp_xc7k160.jpg)
 
 ADP-XC7K AE350
 
@@ -41,8 +41,8 @@ of fundamental peripheral IPs.
 
 1st figure shows the green PCB is ADP-XC7K160 and 2nd figure shows the red PCB is ADP-XC7K410.
 
-![ADP-XC7K160](../../../../_images/adp_xc7k160.jpg)
-![ADP-XC7K410](../../../../_images/adp_xc7k4101.jpg)
+![ADP-XC7K160](../../../../_images/adp_xc7k1601.jpg)
+![ADP-XC7K410](../../../../_images/adp_xc7k410.jpg)
 
 More information can be found on [ADP-XC7K160/410](http://www.andestech.com/en/products-solutions/andeshape-platforms/adp-xc7k160-410/) [[1]](#id2) and [AndeShape AE350](http://www.andestech.com/en/products-solutions/andeshape-platforms/ae350-axi-based-platform-pre-integrated-with-n25f-nx25f-a25-ax25/) [[2]](#id4) websites.
 
@@ -82,6 +82,31 @@ on-chip / on-board
 `vnd,foo`
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
+
+#### `adp_xc7k/ae350` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | Andes Technology RISC-V core from the AndesCore v5 series[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L18) | [`andestech,andescore-v5`](../../../../build/dts/api/bindings/cpu/andes%2Candescore-v5.md#std-dtcompatible-andestech-andescore-v5) |
+| Cache | on-chip | AndesTech L2 cache[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L232) | [`andestech,l2c`](../../../../build/dts/api/bindings/cache/andestech%2Cl2c.md#std-dtcompatible-andestech-l2c) |
+| Counter | on-chip | This is a representation of the Andes Technology atcpit100 PIT node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L256) | [`andestech,atcpit100`](../../../../build/dts/api/bindings/counter/andestech%2Catcpit100.md#std-dtcompatible-andestech-atcpit100) |
+| DMA | on-chip | Andes DMA controller channel: a phandle to the DMA controller plus the following four integer cells:[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L327) | [`andestech,atcdmac300`](../../../../build/dts/api/bindings/dma/andestech%2Catcdmac300.md#std-dtcompatible-andestech-atcdmac300) |
+| GPIO & Headers | on-chip | This is a representation of Andes Technology atcgpio100 GPIO node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L275) | [`andestech,atcgpio100`](../../../../build/dts/api/bindings/gpio/andestech%2Catcgpio100.md#std-dtcompatible-andestech-atcgpio100) |
+| I2C | on-chip | AndesTech ATCIIC100 I2C[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L286) | [`andestech,atciic100`](../../../../build/dts/api/bindings/i2c/andestech%2Catciic100.md#std-dtcompatible-andestech-atciic100) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/andestech/adp_xc7k_ae350/adp_xc7k_ae350.dts?plain=1#L104) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | RISC-V CPU interrupt controller[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L28) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv%2Ccpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
+| on-chip | SiFive RISCV-V platform-local interrupt controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L168) | [`sifive,plic-1.0.0`](../../../../build/dts/api/bindings/interrupt-controller/sifive%2Cplic-1.0.0.md#std-dtcompatible-sifive-plic-1.0.0) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/andestech/adp_xc7k_ae350/adp_xc7k_ae350.dts?plain=1#L34) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Mailbox | on-chip | AndesTech MBOX PLIC-SW[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L196) | [`andestech,mbox-plic-sw`](../../../../build/dts/api/bindings/mbox/andestech%2Cmbox-plic-sw.md#std-dtcompatible-andestech-mbox-plic-sw) |
+| MTD | on-board | I2C EEPROMs compatible with Atmel’s AT24 family[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/andestech/adp_xc7k_ae350/adp_xc7k_ae350.dts?plain=1#L195) | [`atmel,at24`](../../../../build/dts/api/bindings/mtd/atmel%2Cat24.md#std-dtcompatible-atmel-at24) |
+| on-board | Properties supporting Zephyr spi-nor flash driver (over the Zephyr SPI API) control of serial flash memories using the standard M25P80-based command set[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/andestech/adp_xc7k_ae350/adp_xc7k_ae350.dts?plain=1#L169) | [`jedec,spi-nor`](../../../../build/dts/api/bindings/mtd/jedec%2Cspi-nor.md#std-dtcompatible-jedec-spi-nor) |
+| on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/andestech/adp_xc7k_ae350/adp_xc7k_ae350.dts?plain=1#L181) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L247)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L238) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| SPI | on-chip | This binding gives a representation of Andes ATCSPI200 SPI controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L296) | [`andestech,atcspi200`](../../../../build/dts/api/bindings/spi/andestech.atcspi200.md#std-dtcompatible-andestech-atcspi200) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L156) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| System controller | on-chip | System Controller Registers R/W[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L226) | [`syscon`](../../../../build/dts/api/bindings/syscon/syscon.md#std-dtcompatible-syscon) |
+| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L217) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer) |
+| Watchdog | on-chip | Andes Watchdog driver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/andes/andes_v5_ae350.dtsi?plain=1#L357) | [`andestech,atcwdt200`](../../../../build/dts/api/bindings/watchdog/andestech%2Catcwdt200.md#std-dtcompatible-andestech-atcwdt200) |
 
 ### Connections and IOs
 

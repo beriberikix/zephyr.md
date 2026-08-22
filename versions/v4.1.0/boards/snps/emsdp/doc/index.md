@@ -23,7 +23,7 @@ Architecture:
 :   arc
 
 SoC:
-:   emsdp\_em7d, emsdp\_em9d, emsdp\_em11d, emsdp\_em5d, emsdp\_em7d\_esp, emsdp\_em6, emsdp\_em4
+:   emsdp\_em4, emsdp\_em5d, emsdp\_em9d, emsdp\_em11d, emsdp\_em6, emsdp\_em7d\_esp, emsdp\_em7d
 
 [
 Browse board sources

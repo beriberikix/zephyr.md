@@ -63,6 +63,21 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rpi_5/bcm2712` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A76 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L15) | [`arm,cortex-a76`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a76.md#std-dtcompatible-arm-cortex-a76) |
+| Clock control | on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L84) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| GPIO & Headers | on-chip | BRCMSTB GPIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L61) | [`brcm,brcmstb-gpio`](../../../../build/dts/api/bindings/gpio/brcm%2Cbrcmstb-gpio.md#std-dtcompatible-brcm-brcmstb-gpio) |
+| on-chip | GPIO Banks on RP1 peripheral controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L132)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L141) | [`raspberrypi,rp1-gpio`](../../../../build/dts/api/bindings/gpio/raspberrypi%2Crp1-gpio.md#std-dtcompatible-raspberrypi-rp1-gpio) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L46) | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/raspberrypi/rpi_5/rpi_5.dts?plain=1#L29) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| PCIe | on-chip | BRCMSTB PCIe controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L95) | [`brcm,brcmstb-pcie`](../../../../build/dts/api/bindings/pcie/controller/brcm%2Cbrcmstb-pcie.md#std-dtcompatible-brcm-brcmstb-pcie) |
+| Serial controller | on-chip | ARM PL011 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L71) | [`arm,pl011`](../../../../build/dts/api/bindings/serial/arm%2Cpl011.md#std-dtcompatible-arm-pl011) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L40) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2712.dtsi?plain=1#L24) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 See [Raspberry Pi hardware](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) for the complete list of hardware features.
 
 ## Programming and Debugging

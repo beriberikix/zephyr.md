@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/saml21_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsaml21-xpro-pinout.jpg](../../../../../_images/atsaml21-xpro-pinout.jpg)
-](../../../../../_images/atsaml21-xpro-pinout.jpg)
+[![../../../../../_images/atsaml21-xpro.jpg](../../../../../_images/atsaml21-xpro.jpg)
+](../../../../../_images/atsaml21-xpro.jpg)
 
 SAM L21 Xplained Pro Evaluation Kit
 
@@ -62,6 +62,39 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `saml21_xpro/saml21j18b` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M0+ CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L45) | [`arm,cortex-m0+`](../../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m0%2B.md#std-dtcompatible-arm-cortex-m0) |
+| ADC | on-chip | Atmel SAM0 family ADC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L213) | [`atmel,sam0-adc`](../../../../../build/dts/api/bindings/adc/atmel%2Csam0-adc.md#std-dtcompatible-atmel-sam0-adc) |
+| ARM architecture | on-chip | For locating the Device ID (serial number) on Atmel SAM0 devices[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L58) | [`atmel,sam0-id`](../../../../../build/dts/api/bindings/arm/atmel%2Csam0-id.md#std-dtcompatible-atmel-sam0-id) |
+| Clock control | on-chip | Atmel SAM0 Main Clock Controller (MCLK)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L85) | [`atmel,sam0-mclk`](../../../../../build/dts/api/bindings/clock/atmel%2Csam0-mclk.md#std-dtcompatible-atmel-sam0-mclk) |
+| on-chip | Atmel SAM0 32kHz Oscillator Controller (OSC32KCTRL)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L92) | [`atmel,sam0-osc32kctrl`](../../../../../build/dts/api/bindings/clock/atmel%2Csam0-osc32kctrl.md#std-dtcompatible-atmel-sam0-osc32kctrl) |
+| on-chip | Atmel SAMD0 Generic Clock Controller (GCLK)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L100) | [`atmel,sam0-gclk`](../../../../../build/dts/api/bindings/clock/atmel%2Csam0-gclk.md#std-dtcompatible-atmel-sam0-gclk) |
+| Counter | on-chip | Atmel SAM0 basic timer counter (TC) operating in 32-bit wide mode[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L165) | [`atmel,sam0-tc32`](../../../../../build/dts/api/bindings/counter/atmel%2Csam0-tc32.md#std-dtcompatible-atmel-sam0-tc32) |
+| DAC | on-chip | Atmel SAM0 family DAC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L223) | [`atmel,sam0-dac`](../../../../../build/dts/api/bindings/dac/atmel%2Csam0-dac.md#std-dtcompatible-atmel-sam0-dac) |
+| DMA | on-chip | Atmel SAM0 DMA controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L108) | [`atmel,sam0-dmac`](../../../../../build/dts/api/bindings/dma/atmel%2Csam0-dmac.md#std-dtcompatible-atmel-sam0-dmac) |
+| Flash controller | on-chip | Atmel SAM0 NVMC (Non-Volatile Memory Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L67) | [`atmel,sam0-nvmctrl`](../../../../../build/dts/api/bindings/flash_controller/atmel%2Csam0-nvmctrl.md#std-dtcompatible-atmel-sam0-nvmctrl) |
+| GPIO & Headers | on-chip | SAM0 GPIO PORT node[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L178) | [`atmel,sam0-gpio`](../../../../../build/dts/api/bindings/gpio/atmel%2Csam0-gpio.md#std-dtcompatible-atmel-sam0-gpio) |
+| I2C | on-chip | Atmel SAM0 series SERCOM I2C[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L141) | [`atmel,sam0-i2c`](../../../../../build/dts/api/bindings/i2c/atmel%2Csam0-i2c.md#std-dtcompatible-atmel-sam0-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/atmel/sam0/saml21_xpro/saml21_xpro.dts?plain=1#L46) | [`gpio-keys`](../../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv6-M NVIC (Nested Vectored Interrupt Controller) controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L13) | [`arm,v6m-nvic`](../../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv6m-nvic.md#std-dtcompatible-arm-v6m-nvic) |
+| on-chip | Atmel SAM0 series External Interrupt Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L117) | [`atmel,sam0-eic`](../../../../../build/dts/api/bindings/interrupt-controller/atmel%2Csam0-eic.md#std-dtcompatible-atmel-sam0-eic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/atmel/sam0/saml21_xpro/saml21_xpro.dts?plain=1#L31) | [`gpio-leds`](../../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| on-board | Group of PWM-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/atmel/sam0/saml21_xpro/saml21_xpro.dts?plain=1#L39) | [`pwm-leds`](../../../../../build/dts/api/bindings/led/pwm-leds.md#std-dtcompatible-pwm-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L77) | [`soc-nv-flash`](../../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | Atmel SAM0 Pinctrl container node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L171) | [`atmel,sam0-pinctrl`](../../../../../build/dts/api/bindings/pinctrl/atmel%2Csam0-pinctrl.md#std-dtcompatible-atmel-sam0-pinctrl) |
+| PWM | on-chip | Atmel SAM0 TCC in PWM mode[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml21.dtsi?plain=1#L18) | [`atmel,sam0-tcc-pwm`](../../../../../build/dts/api/bindings/pwm/atmel%2Csam0-tcc-pwm.md#std-dtcompatible-atmel-sam0-tcc-pwm) |
+| RNG | on-chip | Atmel SAM RNG[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L231) | [`atmel,sam-trng`](../../../../../build/dts/api/bindings/rng/atmel%2Csam-trng.md#std-dtcompatible-atmel-sam-trng) |
+| RTC | on-chip | Atmel SAM0 RTC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L199) | [`atmel,sam0-rtc`](../../../../../build/dts/api/bindings/rtc/atmel%2Csam0-rtc.md#std-dtcompatible-atmel-sam0-rtc) |
+| Serial controller | on-chip | Atmel SAM0 SERCOM UART driver[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L135) | [`atmel,sam0-uart`](../../../../../build/dts/api/bindings/serial/atmel%2Csam0-uart.md#std-dtcompatible-atmel-sam0-uart) |
+| SPI | on-chip | Atmel SAM0 SERCOM SPI controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L129) | [`atmel,sam0-spi`](../../../../../build/dts/api/bindings/spi/atmel%2Csam0-spi.md#std-dtcompatible-atmel-sam0-spi) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L53) | [`mmio-sram`](../../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv6-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L21) | [`arm,armv6m-systick`](../../../../../build/dts/api/bindings/timer/arm%2Carmv6m-systick.md#std-dtcompatible-arm-armv6m-systick) |
+| USB | on-chip | Atmel SAM0 USB in device mode[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L237) | [`atmel,sam0-usb`](../../../../../build/dts/api/bindings/usb/atmel%2Csam0-usb.md#std-dtcompatible-atmel-sam0-usb) |
+| Watchdog | on-chip | Atmel SAM0 watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/saml2x.dtsi?plain=1#L123) | [`atmel,sam0-watchdog`](../../../../../build/dts/api/bindings/watchdog/atmel%2Csam0-watchdog.md#std-dtcompatible-atmel-sam0-watchdog) |
+
 ### Pin Mapping
 
 The SAM L21 Xplained Pro evaluation kit has 2 GPIO controllers. These
@@ -70,7 +103,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM L21 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_L21_Family_DataSheet_DS60001477C.pdf) [[1]](#id2) and the [SAM L21
 Xplained Pro Schematic](https://ww1.microchip.com/downloads/en/DeviceDoc/SAML21-Xplained-Pro_Design-Documentation.zip) [[2]](#id4).
 
-![SAML21-XPRO-pinout](../../../../../_images/atsaml21-xpro-pinout1.jpg)
+![SAML21-XPRO-pinout](../../../../../_images/atsaml21-xpro-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

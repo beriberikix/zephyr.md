@@ -23,7 +23,7 @@ Architecture:
 :   arc
 
 SoC:
-:   emsk\_em11d, emsk\_em7d, emsk\_em9d
+:   emsk\_em9d, emsk\_em11d, emsk\_em7d
 
 [
 Browse board sources

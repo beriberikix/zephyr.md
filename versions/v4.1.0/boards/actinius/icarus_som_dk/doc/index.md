@@ -8,8 +8,8 @@ original_path: boards/actinius/icarus_som_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/icarus_som_dk_block_diagram.jpg](../../../../_images/icarus_som_dk_block_diagram.jpg)
-](../../../../_images/icarus_som_dk_block_diagram.jpg)
+[![../../../../_images/icarus_som_dk.jpg](../../../../_images/icarus_som_dk.jpg)
+](../../../../_images/icarus_som_dk.jpg)
 
 Icarus SoM DK
 
@@ -60,8 +60,8 @@ following devices (provided directly by Nordic):
 - WDT
 - IDAU
 
-[![Icarus SoM DK Block Diagram](../../../../_images/icarus_som_dk_block_diagram1.jpg)
-](../../../../_images/icarus_som_dk_block_diagram1.jpg)
+[![Icarus SoM DK Block Diagram](../../../../_images/icarus_som_dk_block_diagram.jpg)
+](../../../../_images/icarus_som_dk_block_diagram.jpg)
 
 Icarus SoM DK Block Diagram
 

@@ -68,6 +68,24 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rts5912_evb/rts5912` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M33F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L17) | [`arm,cortex-m33f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m33f.md#std-dtcompatible-arm-cortex-m33f) |
+| Clock control | on-chip | Realtek RTS5912 System Clock Controller (SCCON)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L68) | [`realtek,rts5912-sccon`](../../../../build/dts/api/bindings/clock/realtek%2Crts5912-sccon.md#std-dtcompatible-realtek-rts5912-sccon) |
+| on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L48) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| GPIO & Headers | on-chip | Realtek RTS5912 GPIO[9 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L120) | [`realtek,rts5912-gpio`](../../../../build/dts/api/bindings/gpio/realtek%2Crts5912-gpio.md#std-dtcompatible-realtek-rts5912-gpio) |
+| on-chip | Serial Wire - JTAG Connector[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L238) | [`swj-connector`](../../../../build/dts/api/bindings/gpio/swj-connector.md#std-dtcompatible-swj-connector) |
+| Interrupt controller | on-chip | ARMv8-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L13) | [`arm,v8m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8m-nvic.md#std-dtcompatible-arm-v8m-nvic) |
+| Pin control | on-chip | This binding gives a base representation of the pins configuration[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L113) | [`realtek,rts5912-pinctrl`](../../../../build/dts/api/bindings/pinctrl/realtek%2Crts5912-pinctrl.md#std-dtcompatible-realtek-rts5912-pinctrl) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L95) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| on-chip | Realtek RTS5912 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L104) | [`realtek,rts5912-uart`](../../../../build/dts/api/bindings/serial/realtek%2Crts5912-uart.md#std-dtcompatible-realtek-rts5912-uart) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L42) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv8-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L21) | [`arm,armv8m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick) |
+| on-chip | Realtek RTS5912 32-bit slow timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L76) | [`realtek,rts5912-slwtimer`](../../../../build/dts/api/bindings/timer/realtek%2Crts5912-slwtimer.md#std-dtcompatible-realtek-rts5912-slwtimer) |
+| on-chip | RTOS Timer on Realtek RTS5912 EC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L88) | [`realtek,rts5912-rtmr`](../../../../build/dts/api/bindings/timer/realtek%2Crts5912-rtmr.md#std-dtcompatible-realtek-rts5912-rtmr) |
+
 ## Programming and Debugging
 
 ### Building

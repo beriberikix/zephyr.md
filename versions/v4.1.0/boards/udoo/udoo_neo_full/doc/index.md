@@ -135,6 +135,27 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `udoo_neo_full/mcimx6x/m4` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L25) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| ADC | on-chip | Vf610 Adc[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L435) | [`nxp,vf610-adc`](../../../../build/dts/api/bindings/adc/nxp%2Cvf610-adc.md#std-dtcompatible-nxp-vf610-adc) |
+| ARM architecture | on-chip | i.MX Enhanced Periodic Interrupt Timer (EPIT)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L239) | [`nxp,imx-epit`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-epit.md#std-dtcompatible-nxp-imx-epit) |
+| on-chip | i.MX ITCM (Instruction Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L33) | [`nxp,imx-itcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-itcm.md#std-dtcompatible-nxp-imx-itcm) |
+| on-chip | i.MX DTCM (Data Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L38) | [`nxp,imx-dtcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-dtcm.md#std-dtcompatible-nxp-imx-dtcm) |
+| GPIO & Headers | on-chip | i.MX GPIO node[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L176)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L137) | [`nxp,imx-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-gpio.md#std-dtcompatible-nxp-imx-gpio) |
+| I2C | on-chip | i.MX I2C[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L274) | [`fsl,imx21-i2c`](../../../../build/dts/api/bindings/i2c/fsl%2Cimx21-i2c.md#std-dtcompatible-fsl-imx21-i2c) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| IPM | on-chip | i.MX Messaging Unit[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L228) | [`nxp,imx-mu`](../../../../build/dts/api/bindings/ipm/nxp%2Cimx-mu.md#std-dtcompatible-nxp-imx-mu) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/udoo/udoo_neo_full/udoo_neo_full_mcimx6x_m4.dts?plain=1#L45) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L61) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | This compatible binding should be applied to the device’s iomuxc DTS node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L251) | [`nxp,imx-iomuxc`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc) |
+| on-chip | The node has the ‘pinctrl’ node label set in MCUX RT SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L255) | [`nxp,mcux-rt-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cmcux-rt-pinctrl.md#std-dtcompatible-nxp-mcux-rt-pinctrl) |
+| PWM | on-chip | This driver supports both i.MX6SX and i.MX7D PWM[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L330) | [`fsl,imx27-pwm`](../../../../build/dts/api/bindings/pwm/fsl%2Cimx27-pwm.md#std-dtcompatible-fsl-imx27-pwm) |
+| Serial controller | on-chip | iMX UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L115)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx6sx_m4.dtsi?plain=1#L71) | [`nxp,imx-uart`](../../../../build/dts/api/bindings/serial/nxp%2Cimx-uart.md#std-dtcompatible-nxp-imx-uart) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 ### Connections and IOs
 
 The UDOO Neo Full board was tested with the following pinmux

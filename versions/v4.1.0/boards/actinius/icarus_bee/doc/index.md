@@ -8,8 +8,8 @@ original_path: boards/actinius/icarus_bee/doc/index.html
 
 Board Overview
 
-[![../../../../_images/icarus-bee-external-pins.jpg](../../../../_images/icarus-bee-external-pins.jpg)
-](../../../../_images/icarus-bee-external-pins.jpg)
+[![../../../../_images/icarus-bee.jpg](../../../../_images/icarus-bee.jpg)
+](../../../../_images/icarus-bee.jpg)
 
 Icarus Bee
 
@@ -55,7 +55,7 @@ following devices (provided directly by Nordic):
 - WDT
 - IDAU
 
-![Icarus Bee w/ Pinouts](../../../../_images/icarus-bee-external-pins1.jpg)
+![Icarus Bee w/ Pinouts](../../../../_images/icarus-bee-external-pins.jpg)
 
 Icarus Bee w/ Pinouts
 

@@ -75,6 +75,28 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `roc_rk3568_pc/rk3568` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A55 CPU[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L25) | [`arm,cortex-a55`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a55.md#std-dtcompatible-arm-cortex-a55) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L55) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| Power management CPU operations | on-chip | Power State Coordination Interface (PSCI) version 0.2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L66) | [`arm,psci-0.2`](../../../../build/dts/api/bindings/pm_cpu_ops/arm%2Cpsci-0.2.md#std-dtcompatible-arm-psci-0.2) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L80) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| SRAM | on-board | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/firefly/roc_rk3568_pc/roc_rk3568_pc.dts?plain=1#L22) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L71) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
+#### `roc_rk3568_pc/rk3568/smp` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A55 CPU[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L25) | [`arm,cortex-a55`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a55.md#std-dtcompatible-arm-cortex-a55) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L55) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| Power management CPU operations | on-chip | Power State Coordination Interface (PSCI) version 0.2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L66) | [`arm,psci-0.2`](../../../../build/dts/api/bindings/pm_cpu_ops/arm%2Cpsci-0.2.md#std-dtcompatible-arm-psci-0.2) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L80) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| SRAM | on-board | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/firefly/roc_rk3568_pc/roc_rk3568_pc.dts?plain=1#L22) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3568.dtsi?plain=1#L71) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 ### Devices
 
 #### System Clock

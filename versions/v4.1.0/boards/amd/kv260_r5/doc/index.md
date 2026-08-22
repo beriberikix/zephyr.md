@@ -60,6 +60,22 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `kv260_r5/zynqmp_rpu` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-R5F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp_rpu.dtsi?plain=1#L14) | [`arm,cortex-r5f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-r5f.md#std-dtcompatible-arm-cortex-r5f) |
+| Ethernet | on-chip | Xilinx GEM Ethernet controller[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L104) | [`xlnx,gem`](../../../../build/dts/api/bindings/ethernet/xlnx%2Cgem.md#std-dtcompatible-xlnx-gem) |
+| GPIO & Headers | on-chip | Xilinx Zynq-7000/ZynqMP MIO/EMIO GPIO controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L212) | [`xlnx,ps-gpio`](../../../../build/dts/api/bindings/gpio/xlnx%2Cps-gpio.md#std-dtcompatible-xlnx-ps-gpio) |
+| on-chip | Xilinx Zynq-7000/ZynqMP MIO/EMIO GPIO controller bank node[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L223) | [`xlnx,ps-gpio-bank`](../../../../build/dts/api/bindings/gpio/xlnx%2Cps-gpio-bank.md#std-dtcompatible-xlnx-ps-gpio-bank) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v1[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp_rpu.dtsi?plain=1#L101) | [`arm,gic-v1`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v1.md#std-dtcompatible-arm-gic-v1) |
+| IPM | on-chip | The Xilinx IPI(Inter Processor Interrupt) mailbox controller is to manage messaging between two Xilinx Zynq UltraScale+ MPSoC IPI agents[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp_rpu.dtsi?plain=1#L23) | [`xlnx,zynqmp-ipi-mailbox`](../../../../build/dts/api/bindings/ipm/xlnx%2Czynqmp-ipi-mailbox.md#std-dtcompatible-xlnx-zynqmp-ipi-mailbox) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L18) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | Xilinx ZynqMP SoC pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L14) | [`xlnx,pinctrl-zynqmp`](../../../../build/dts/api/bindings/pinctrl/xlnx%2Cpinctrl-zynqmp.md#std-dtcompatible-xlnx-pinctrl-zynqmp) |
+| Serial controller | on-chip | Xilinx PS UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L43)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L34) | [`xlnx,xuartps`](../../../../build/dts/api/bindings/serial/xlnx%2Cxuartps.md#std-dtcompatible-xlnx-xuartps) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L23) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Xilinx ZynqMP PS TTC timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L52)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/zynqmp.dtsi?plain=1#L65) | [`xlnx,ttcps`](../../../../build/dts/api/bindings/timer/xlnx%2Cttcps.md#std-dtcompatible-xlnx-ttcps) |
+
 ### Devices
 
 #### System Timer

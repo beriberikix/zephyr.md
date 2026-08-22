@@ -23,7 +23,7 @@ Architecture:
 :   arm
 
 SoC:
-:   an521, an500, an386, an385, an383
+:   an385, an500, an521, an386, an383
 
 [
 Browse board sources

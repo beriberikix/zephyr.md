@@ -47,6 +47,18 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rpi_4b/bcm2711` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A72 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L18) | [`arm,cortex-a72`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a72.md#std-dtcompatible-arm-cortex-a72) |
+| GPIO & Headers | on-chip | BCM2711 GPIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L74)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L62) | [`brcm,bcm2711-gpio`](../../../../build/dts/api/bindings/gpio/brcm%2Cbcm2711-gpio.md#std-dtcompatible-brcm-bcm2711-gpio) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L46) | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/raspberrypi/rpi_4b/rpi_4b.dts?plain=1#L28) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Serial controller | on-chip | BCM2711 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L86) | [`brcm,bcm2711-aux-uart`](../../../../build/dts/api/bindings/serial/brcm%2Cbcm2711-aux-uart.md#std-dtcompatible-brcm-bcm2711-aux-uart) |
+| SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L40) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/broadcom/bcm2711.dtsi?plain=1#L27) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 ## Programming and Debugging
 
 ### TF Card

@@ -23,7 +23,7 @@ Architecture:
 :   arm
 
 SoC:
-:   efm32pg12b500f1024gl125, efm32jg12b500f1024gl125
+:   efm32jg12b500f1024gl125, efm32pg12b500f1024gl125
 
 [
 Browse board sources

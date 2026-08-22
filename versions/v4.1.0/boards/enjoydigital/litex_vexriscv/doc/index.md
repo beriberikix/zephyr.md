@@ -84,6 +84,31 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+### `litex_vexriscv/litex_vexriscv` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | VexRiscv core with the standard configuration as used by LiteX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L23) | [`litex,vexriscv-standard`](../../../../build/dts/api/bindings/cpu/litex%2Cvexriscv-standard.md#std-dtcompatible-litex-vexriscv-standard) |
+| Clock control | on-chip | LiteX Mixed Mode Clock Manager clock output binding[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L330) | [`litex,clkout`](../../../../build/dts/api/bindings/clock/litex%2Cclkout.md#std-dtcompatible-litex-clkout) |
+| on-chip | LiteX Mixed Mode Clock Manager Common clock driver with MMCM unit for dynamic reconfiguration of up to 7 clock outputs with ability to change frequency, duty cycle and phase offset[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L357) | [`litex,clk`](../../../../build/dts/api/bindings/clock/litex%2Cclk.md#std-dtcompatible-litex-clk) |
+| Ethernet | on-chip | Generic MII PHY[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L176) | [`ethernet-phy`](../../../../build/dts/api/bindings/ethernet/ethernet-phy.md#std-dtcompatible-ethernet-phy) |
+| on-chip | LiteX Ethernet[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L181) | [`litex,liteeth`](../../../../build/dts/api/bindings/ethernet/litex%2Cliteeth.md#std-dtcompatible-litex-liteeth) |
+| GPIO & Headers | on-chip | Litex GPIO[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L239) | [`litex,gpio`](../../../../build/dts/api/bindings/gpio/litex%2Cgpio.md#std-dtcompatible-litex-gpio) |
+| Hardware information | on-chip | LiteX DNA ID reader[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L219) | [`litex,dna0`](../../../../build/dts/api/bindings/hwinfo/litex%2Cdna0.md#std-dtcompatible-litex-dna0) |
+| I2C | on-chip | LiteX I2C controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L230) | [`litex,i2c`](../../../../build/dts/api/bindings/i2c/litex%2Ci2c.md#std-dtcompatible-litex-i2c) |
+| I2S | on-chip | LiteX I2S controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L281) | [`litex,i2s`](../../../../build/dts/api/bindings/i2s/litex%2Ci2s.md#std-dtcompatible-litex-i2s) |
+| Interrupt controller | on-chip | LiteX VexRiscV interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L46) | [`litex,vexriscv-intc0`](../../../../build/dts/api/bindings/interrupt-controller/litex%2Cvexriscv-intc0.md#std-dtcompatible-litex-vexriscv-intc0) |
+| MDIO | on-chip | LiteX LiteEth MDIO bitbang driver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L164) | [`litex,liteeth-mdio`](../../../../build/dts/api/bindings/mdio/litex%2Cliteeth-mdio.md#std-dtcompatible-litex-liteeth-mdio) |
+| MTD | on-chip | Properties supporting Zephyr spi-nor flash driver (over the Zephyr SPI API) control of serial flash memories using the standard M25P80-based command set[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L114) | [`jedec,spi-nor`](../../../../build/dts/api/bindings/mtd/jedec%2Cspi-nor.md#std-dtcompatible-jedec-spi-nor) |
+| PWM | on-chip | LiteX PWM controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L274) | [`litex,pwm`](../../../../build/dts/api/bindings/pwm/litex%2Cpwm.md#std-dtcompatible-litex-pwm) |
+| RISC-V architecture | on-chip | LiteX SoC Controller driver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L37) | [`litex,soc-controller`](../../../../build/dts/api/bindings/riscv/litex%2Csoc-controller.md#std-dtcompatible-litex-soc-controller) |
+| RNG | on-chip | LiteX PRBS[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L268) | [`litex,prbs`](../../../../build/dts/api/bindings/rng/litex%2Cprbs.md#std-dtcompatible-litex-prbs) |
+| Serial controller | on-chip | LiteX UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L55) | [`litex,uart`](../../../../build/dts/api/bindings/serial/litex%2Cuart.md#std-dtcompatible-litex-uart) |
+| SPI | on-chip | LiteX SPI[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L78) | [`litex,spi`](../../../../build/dts/api/bindings/spi/litex%2Cspi.md#std-dtcompatible-litex-spi) |
+| on-chip | LiteX SPI LiteSPI Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L96) | [`litex,spi-litespi`](../../../../build/dts/api/bindings/spi/litex%2Cspi-litespi.md#std-dtcompatible-litex-spi-litespi) |
+| Timer | on-chip | LiteX timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L120) | [`litex,timer0`](../../../../build/dts/api/bindings/timer/litex%2Ctimer0.md#std-dtcompatible-litex-timer0) |
+| Watchdog | on-chip | LiteX watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/riscv32-litex-vexriscv.dtsi?plain=1#L147) | [`litex,watchdog`](../../../../build/dts/api/bindings/watchdog/litex%2Cwatchdog.md#std-dtcompatible-litex-watchdog) |
+
 ## Bitstream generation
 
 ### Zephyr on LiteX VexRiscv
