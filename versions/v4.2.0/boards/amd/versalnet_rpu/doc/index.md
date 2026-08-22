@@ -55,6 +55,18 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `versalnet_rpu/amd_versalnet_rpu` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-R52 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versalnet_r52.dtsi?plain=1#L20) | [`arm,cortex-r52`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-r52.md#std-dtcompatible-arm-cortex-r52) |
+| Clock control | on-board | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/amd/versalnet_rpu/versalnet_rpu.dts?plain=1#L18) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versalnet_r52.dtsi?plain=1#L41) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| SDHC | on-chip | Xilinx SD/EMMC host controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/vendor/amd/versalnet.dtsi?plain=1#L32) | [`xlnx,versal-8.9a`](../../../../build/dts/api/bindings/sdhc/xlnx%2Csdhc.md#std-dtcompatible-xlnx-versal-8.9a) |
+| Serial controller | on-chip | ARM SBSA UART[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/vendor/amd/versalnet.dtsi?plain=1#L16) | [`arm,sbsa-uart`](../../../../build/dts/api/bindings/serial/arm%2Csbsa-uart.md#std-dtcompatible-arm-sbsa-uart) |
+| SRAM | on-board | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/amd/versalnet_rpu/versalnet_rpu.dts?plain=1#L30) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versalnet_r52.dtsi?plain=1#L27) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 ### Devices
 
 #### System Timer
@@ -83,8 +95,9 @@ The following platform features are unsupported:
 
 The `versalnet_rpu` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **simulate** | **rtt** | **robot** | **debugserver** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **xsdb** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 Build and flash in the usual way. Here is an example for the [Hello World](../../../../samples/hello_world/README.md#hello_world "Print "Hello World" to the console.") application.
 

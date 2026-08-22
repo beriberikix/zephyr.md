@@ -81,8 +81,10 @@ It is recommended running the command above after `west update`.
 
 The `m5stickc_plus` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **esp32** | ✅ (default) |  |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Simple boot
 

@@ -63,6 +63,7 @@ The `heltec_wifi_lora32_v2` board supports the runners and associated west comma
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **esp32** | ✅ (default) |  |
 
 ### Simple boot
 

@@ -55,6 +55,16 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `versal2_rpu/amd_versal2_rpu` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-R52 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versal2_r52.dtsi?plain=1#L21) | [`arm,cortex-r52`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-r52.md#std-dtcompatible-arm-cortex-r52) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versal2_r52.dtsi?plain=1#L42) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| Serial controller | on-chip | ARM SBSA UART[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/vendor/amd/versal2.dtsi?plain=1#L16) | [`arm,sbsa-uart`](../../../../build/dts/api/bindings/serial/arm%2Csbsa-uart.md#std-dtcompatible-arm-sbsa-uart) |
+| SRAM | on-board | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/amd/versal2_rpu/versal2_rpu.dts?plain=1#L24) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/xilinx/versal2_r52.dtsi?plain=1#L28) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 ### Devices
 
 #### System Timer

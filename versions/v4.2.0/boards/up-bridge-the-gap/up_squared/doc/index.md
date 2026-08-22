@@ -123,6 +123,7 @@ The `up_squared` board supports the runners and associated west commands listed 
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **misc-flasher** | ✅ (default) |  |
 
 Use the following procedures for booting an image on a UP Squared board.
 

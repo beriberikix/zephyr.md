@@ -93,12 +93,39 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rsk_rx130@512kb/r5f51308axfp` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | Renesas RX CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L24) | [`renesas,rx`](../../../../build/dts/api/bindings/cpu/renesas%2Crx.md#std-dtcompatible-renesas-rx) |
+| Clock control | on-chip | Renesas RX Root Clock Generation Circuit[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L15)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L46) | [`renesas,rx-cgc-root-clock`](../../../../build/dts/api/bindings/clock/renesas%2Crx-cgc-root-clock.md#std-dtcompatible-renesas-rx-cgc-root-clock) |
+| on-chip | Renesas RX Clock Generation Circuit PLL Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L53) | [`renesas,rx-cgc-pll`](../../../../build/dts/api/bindings/clock/renesas%2Crx-cgc-pll.md#std-dtcompatible-renesas-rx-cgc-pll) |
+| on-chip | Renesas RX clock control node pclk block[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L62) | [`renesas,rx-cgc-pclk-block`](../../../../build/dts/api/bindings/clock/renesas%2Crx-cgc-pclk-block.md#std-dtcompatible-renesas-rx-cgc-pclk-block) |
+| on-chip | Renesas RX Clock Control Peripheral Clock[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L71)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L100) | [`renesas,rx-cgc-pclk`](../../../../build/dts/api/bindings/clock/renesas%2Crx-cgc-pclk.md#std-dtcompatible-renesas-rx-cgc-pclk) |
+| GPIO & Headers | on-chip | Renesas RX series GPIO[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L298)[10 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L230) | [`renesas,rx-gpio`](../../../../build/dts/api/bindings/gpio/renesas%2Crx-gpio.md#std-dtcompatible-renesas-rx-gpio) |
+| I2C | on-chip | Renesas RX I2C Master controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L757) | [`renesas,rx-i2c`](../../../../build/dts/api/bindings/i2c/renesas%2Crx-i2c.md#std-dtcompatible-renesas-rx-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rsk_rx130/rsk_rx130.dts?plain=1#L39) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | Renesas ICU Interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L32) | [`renesas,rx-icu`](../../../../build/dts/api/bindings/interrupt-controller/renesas%2Crx-icu.md#std-dtcompatible-renesas-rx-icu) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rsk_rx130/rsk_rx130.dts?plain=1#L25) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Miscellaneous | on-chip | Renesas RX External Interrupt[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L160)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L150) | [`renesas,rx-external-interrupt`](../../../../build/dts/api/bindings/misc/renesas%2Crx-external-interrupt.md#std-dtcompatible-renesas-rx-external-interrupt) |
+| on-chip | Renesas RX SCI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L543)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L528) | [`renesas,rx-sci`](../../../../build/dts/api/bindings/misc/renesas%2Crx-sci.md#std-dtcompatible-renesas-rx-sci) |
+| on-chip | Renesas RX MTU controller[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L611) | [`renesas,rx-mtu`](../../../../build/dts/api/bindings/misc/renesas%2Crx-mtu.md#std-dtcompatible-renesas-rx-mtu) |
+| Pin control | on-chip | Renesas RX Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L53) | [`renesas,rx-pinctrl`](../../../../build/dts/api/bindings/pinctrl/renesas%2Crx-pinctrl.md#std-dtcompatible-renesas-rx-pinctrl) |
+| on-chip | Rensas RX Pinmux (Multi Function Pin Controller, MPC)[13 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L59) | [`renesas,rx-pinmux`](../../../../build/dts/api/bindings/pinctrl/renesas%2Crx-pinmux.md#std-dtcompatible-renesas-rx-pinmux) |
+| PWM | on-chip | Renesas PWM RX Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L655)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L629) | [`renesas,rx-mtu-pwm`](../../../../build/dts/api/bindings/pwm/renesas%2Crx-mtu-pwm.md#std-dtcompatible-renesas-rx-mtu-pwm) |
+| Serial controller | on-chip | Renesas RX SCI UART controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L552)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L537) | [`renesas,rx-uart-sci`](../../../../build/dts/api/bindings/serial/renesas%2Crx-uart-sci.md#std-dtcompatible-renesas-rx-uart-sci) |
+| SPI | on-chip | Renesas RX RSPI[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L802) | [`renesas,rx-rspi`](../../../../build/dts/api/bindings/spi/renesas%2Crx-rspi.md#std-dtcompatible-renesas-rx-rspi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/r5f51308axfp.dtsi?plain=1#L152) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Renesas RX timer node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L768) | [`renesas,rx-timer-cmt-start-control`](../../../../build/dts/api/bindings/timer/renesas%2Crx-timer-cmt-start-control.md#std-dtcompatible-renesas-rx-timer-cmt-start-control) |
+| on-chip | Renesas RX timer node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L777)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/rx/renesas/rx130-common.dtsi?plain=1#L790) | [`renesas,rx-timer-cmt`](../../../../build/dts/api/bindings/timer/renesas%2Crx-timer-cmt.md#std-dtcompatible-renesas-rx-timer-cmt) |
+
 ## Programming and Debugging
 
 The `rsk_rx130` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `rsk_rx130@512kb` board target can be built, flashed, and
 debugged in the usual way. See [Building an Application](../../../../develop/application/index.md#build-an-application) and

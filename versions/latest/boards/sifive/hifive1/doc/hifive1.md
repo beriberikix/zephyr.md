@@ -41,8 +41,12 @@ SiFive HiFive1 board (image courtesy of SiFive)
 
 The `hifive1` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** | **simulate** | **robot** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **hifive1** | ✅ (default) |  |  |  |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |  |  |
+| **renode** |  |  |  |  |  | ✅ |  |
+| **renode-robot** |  |  |  |  |  |  | ✅ |
 
 ### Building
 

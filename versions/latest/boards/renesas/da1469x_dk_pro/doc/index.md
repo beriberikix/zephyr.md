@@ -58,6 +58,44 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+##### `da1469x_dk_pro/da14699` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M33F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L28) | [`arm,cortex-m33f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m33f.md#std-dtcompatible-arm-cortex-m33f) |
+| ADC | on-chip | Renesas SmartBond(tm) ADC node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L303) | [`renesas,smartbond-adc`](../../../../build/dts/api/bindings/adc/renesas%2Csmartbond-gpadc.md#std-dtcompatible-renesas-smartbond-adc) |
+| on-chip | Renesas SmartBond(tm) ADC node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L311) | [`renesas,smartbond-sdadc`](../../../../build/dts/api/bindings/adc/renesas%2Csmartbond-sdadc.md#std-dtcompatible-renesas-smartbond-sdadc) |
+| Bluetooth | on-chip | Bluetooth HCI for Renesas DA1469x[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L412) | [`renesas,bt-hci-da1469x`](../../../../build/dts/api/bindings/bluetooth/renesas%2Cbt-hci-da1469x.md#std-dtcompatible-renesas-bt-hci-da1469x) |
+| Clock control | on-chip | Smartbond low power oscillator[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L55)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L68) | [`renesas,smartbond-lp-osc`](../../../../build/dts/api/bindings/clock/renesas%2Csmartbond-lp-osc.md#std-dtcompatible-renesas-smartbond-lp-osc) |
+| on-chip | Generic fixed-rate clock provider[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L80)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L74) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | Smartbond system clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L99) | [`renesas,smartbond-sys-clk`](../../../../build/dts/api/bindings/clock/renesas%2Csmartbond-sys-clock.md#std-dtcompatible-renesas-smartbond-sys-clk) |
+| on-chip | Smartbond low power clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L105) | [`renesas,smartbond-lp-clk`](../../../../build/dts/api/bindings/clock/renesas%2Csmartbond-lp-clock.md#std-dtcompatible-renesas-smartbond-lp-clk) |
+| Counter | on-chip | Renesas SmartBond(tm) general purpose timers[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L241) | [`renesas,smartbond-timer`](../../../../build/dts/api/bindings/counter/renesas%2Csmartbond-timer.md#std-dtcompatible-renesas-smartbond-timer) |
+| Cryptographic accelerator | on-chip | Renesas SmartBond(tm) CRYPTO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L320) | [`renesas,smartbond-crypto`](../../../../build/dts/api/bindings/crypto/renesas%2Csmartbond-crypto.md#std-dtcompatible-renesas-smartbond-crypto) |
+| Display | on-chip | Renesas Smartbond(tm) display controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L354) | [`renesas,smartbond-display`](../../../../build/dts/api/bindings/display/renesas%2Csmartbond-display.md#std-dtcompatible-renesas-smartbond-display) |
+| DMA | on-chip | Renesas Smartbond(tm) DMA[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L395) | [`renesas,smartbond-dma`](../../../../build/dts/api/bindings/dma/renesas%2Csmartbond-dma.md#std-dtcompatible-renesas-smartbond-dma) |
+| Flash controller | on-chip | Renesas SmartBond(tm) family flash controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L177) | [`renesas,smartbond-flash-controller`](../../../../build/dts/api/bindings/flash_controller/renesas%2Csmartbond-flash-controller.md#std-dtcompatible-renesas-smartbond-flash-controller) |
+| GPIO & Headers | on-chip | Renesas SmartBond(tm) GPIO[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L200) | [`renesas,smartbond-gpio`](../../../../build/dts/api/bindings/gpio/renesas%2Csmartbond-gpio.md#std-dtcompatible-renesas-smartbond-gpio) |
+| on-board | GPIO pins exposed on Arduino Uno (R3) headers[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/da1469x_dk_pro/da1469x_dk_pro.dts?plain=1#L46) | [`arduino-header-r3`](../../../../build/dts/api/bindings/gpio/arduino-header-r3.md#std-dtcompatible-arduino-header-r3) |
+| I2C | on-chip | Renesas SmartBond(tm) I2C[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L334) | [`renesas,smartbond-i2c`](../../../../build/dts/api/bindings/i2c/renesas%2Csmartbond-i2c.md#std-dtcompatible-renesas-smartbond-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/da1469x_dk_pro/da1469x_dk_pro.dts?plain=1#L37) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv8-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L13) | [`arm,v8m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8m-nvic.md#std-dtcompatible-arm-v8m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/da1469x_dk_pro/da1469x_dk_pro.dts?plain=1#L30) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Memory controller | on-chip | Renesas Smartbond(tm) NOR/PSRAM controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L405) | [`renesas,smartbond-nor-psram`](../../../../build/dts/api/bindings/memory-controllers/renesas%2Csmartbond-nor-psram.md#std-dtcompatible-renesas-smartbond-nor-psram) |
+| MMU / MPU | on-chip | ARMv8-M MPU (Memory Protection Unit)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L37) | [`arm,armv8m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv8m-mpu.md#std-dtcompatible-arm-armv8m-mpu) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L187) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/da1469x_dk_pro/da1469x_dk_pro.dts?plain=1#L92) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | Renesas SmartBond Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L194) | [`renesas,smartbond-pinctrl`](../../../../build/dts/api/bindings/pinctrl/renesas%2Csmartbond-pinctrl.md#std-dtcompatible-renesas-smartbond-pinctrl) |
+| Regulator | on-chip | Renesas Smartbond(tm) LDO and DCDC regulators[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L111) | [`renesas,smartbond-regulator`](../../../../build/dts/api/bindings/regulator/renesas%2Cda1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator) |
+| RNG | on-chip | Renesas Smartbond TRNG[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L327) | [`renesas,smartbond-trng`](../../../../build/dts/api/bindings/rng/renesas%2Csmartbond-trng.md#std-dtcompatible-renesas-smartbond-trng) |
+| RTC | on-chip | Renesas SmartBond(tm) RTC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L227) | [`renesas,smartbond-rtc`](../../../../build/dts/api/bindings/rtc/renesas%2Csmartbond-rtc.md#std-dtcompatible-renesas-smartbond-rtc) |
+| Serial controller | on-chip | Renesas SmartBond(tm) UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L277)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L285) | [`renesas,smartbond-uart`](../../../../build/dts/api/bindings/serial/renesas%2Csmartbond-uart.md#std-dtcompatible-renesas-smartbond-uart) |
+| SPI | on-chip | Renesas SmartBond(tm) SPI[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L361) | [`renesas,smartbond-spi`](../../../../build/dts/api/bindings/spi/renesas%2Csmartbond-spi.md#std-dtcompatible-renesas-smartbond-spi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L159) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv8-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L21) | [`arm,armv8m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick) |
+| USB | on-chip | Renesas SmartBond USB device controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L380) | [`renesas,smartbond-usbd`](../../../../build/dts/api/bindings/usb/renesas%2Csmartbond-usbd.md#std-dtcompatible-renesas-smartbond-usbd) |
+| Watchdog | on-chip | Smartbond watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/smartbond/da1469x.dtsi?plain=1#L235) | [`renesas,smartbond-watchdog`](../../../../build/dts/api/bindings/watchdog/renesas%2Csmartbond-watchdog.md#std-dtcompatible-renesas-smartbond-watchdog) |
+
 For more information about the DA14695 Development Kit see:
 
 - [DA14695 DK website](https://www.renesas.com/eu/en/products/interface-connectivity/wireless-communications/bluetooth-low-energy/da14695-00hqdevkt-p-smartbond-da14695-bluetooth-low-energy-52-development-kit-pro) [[1]](#id2)
@@ -85,8 +123,10 @@ The pin connections are as follows:
 
 The `da1469x_dk_pro` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **ezflashcli** | ✅ (default) |  |  |  |  |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `da1469x_dk_pro` board configuration can be
 built, flashed, and debugged in the usual way. See

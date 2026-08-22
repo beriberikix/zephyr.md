@@ -59,6 +59,25 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `ch32v303vct6_evt/ch32v303` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | WCH QingKe V4F RISC-V MCU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v4f.dtsi?plain=1#L15) | [`wch,qingke-v4f`](../../../../build/dts/api/bindings/cpu/wch%2Cqingke-v4f.md#std-dtcompatible-wch-qingke-v4f) |
+| Clock control | on-chip | WCH CH32V00x Reset and Clock Control (RCC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L194) | [`wch,rcc`](../../../../build/dts/api/bindings/clock/wch%2Crcc.md#std-dtcompatible-wch-rcc) |
+| on-chip | WCH CH32V00x HSE Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L16) | [`wch,ch32v00x-hse-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v00x-hse-clock.md#std-dtcompatible-wch-ch32v00x-hse-clock) |
+| on-chip | WCH CH32V00x HSI Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L23) | [`wch,ch32v00x-hsi-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v00x-hsi-clock.md#std-dtcompatible-wch-ch32v00x-hsi-clock) |
+| on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L30) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | WCH CH32V20x/30x PLL[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L37) | [`wch,ch32v20x_30x-pll-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v20x_30x-pll-clock.md#std-dtcompatible-wch-ch32v20x_30x-pll-clock) |
+| DMA | on-chip | WCH DMA controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L201) | [`wch,wch-dma`](../../../../build/dts/api/bindings/dma/wch%2Cwch-dma.md#std-dtcompatible-wch-wch-dma) |
+| GPIO & Headers | on-chip | WCH CH32V00x General-Purpose Input/Output (GPIO)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L76) | [`wch,gpio`](../../../../build/dts/api/bindings/gpio/wch%2Cgpio.md#std-dtcompatible-wch-gpio) |
+| Interrupt controller | on-chip | WCH CH32V00x Programmable Fast Interrupt Controller (PFIC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v4f.dtsi?plain=1#L29) | [`wch,pfic`](../../../../build/dts/api/bindings/interrupt-controller/wch%2Cpfic.md#std-dtcompatible-wch-pfic) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L58) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | WCH CH32V20x/30x AFIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L69) | [`wch,20x_30x-afio`](../../../../build/dts/api/bindings/pinctrl/wch%2C20x_30x-afio.md#std-dtcompatible-wch-20x_30x-afio) |
+| Serial controller | on-chip | WCH CH32V00x UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L122)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L131) | [`wch,usart`](../../../../build/dts/api/bindings/serial/wch%2Cusart.md#std-dtcompatible-wch-usart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v303/ch32v303.dtsi?plain=1#L46) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | WCH CH32V00x Systick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v4f.dtsi?plain=1#L38) | [`wch,systick`](../../../../build/dts/api/bindings/timer/wch%2Csystick.md#std-dtcompatible-wch-systick) |
+
 ## Programming and Debugging
 
 Applications for the `ch32v303vct6_evt` board target can be built and flashed

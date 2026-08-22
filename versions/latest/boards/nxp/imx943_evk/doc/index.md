@@ -79,6 +79,74 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `imx943_evk/mimx94398/a55` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A55 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L40)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L22) | [`arm,cortex-a55`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a55.md#std-dtcompatible-arm-cortex-a55) |
+| Firmware | on-chip | System Control and Management Interface (SCMI) shared memory (SHMEM)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L72) | [`arm,scmi-shmem`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-shmem.md#std-dtcompatible-arm-scmi-shmem) |
+| on-chip | System Control and Management Interface (SCMI) with doorbell and shared memory (SHMEM) transport[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L79) | [`arm,scmi`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi.md#std-dtcompatible-arm-scmi) |
+| on-chip | System Control and Management Interface (SCMI) clock protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L88) | [`arm,scmi-clock`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-clock.md#std-dtcompatible-arm-scmi-clock) |
+| on-chip | System Control and Management Interface (SCMI) pinctrl protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L94) | [`arm,scmi-pinctrl`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-pinctrl.md#std-dtcompatible-arm-scmi-pinctrl) |
+| GPIO & Headers | on-chip | i.MX RGPIO[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L195) | [`nxp,imx-rgpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-rgpio.md#std-dtcompatible-nxp-imx-rgpio) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L59) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| Mailbox | on-chip | NXP i.MX Message Unit as Zephyr MBOX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L301)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L274) | [`nxp,mbox-imx-mu`](../../../../build/dts/api/bindings/mbox/nxp%2Cmbox-imx-mu.md#std-dtcompatible-nxp-mbox-imx-mu) |
+| Pin control | on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L98) | [`nxp,imx93-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx93-pinctrl.md#std-dtcompatible-nxp-imx93-pinctrl) |
+| Serial controller | on-chip | NXP LPUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L283)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L105) | [`nxp,lpuart`](../../../../build/dts/api/bindings/serial/nxp%2Clpuart.md#std-dtcompatible-nxp-lpuart) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx943_a55.dtsi?plain=1#L47) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
+#### `imx943_evk/mimx94398/m33` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M33 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L17) | [`arm,cortex-m33`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m33.md#std-dtcompatible-arm-cortex-m33) |
+| ARM architecture | on-chip | i.MX ITCM (Instruction Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L82) | [`nxp,imx-itcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-itcm.md#std-dtcompatible-nxp-imx-itcm) |
+| on-chip | i.MX DTCM (Data Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L87) | [`nxp,imx-dtcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-dtcm.md#std-dtcompatible-nxp-imx-dtcm) |
+| Ethernet | on-board | Generic MII PHY[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx943_evk/imx943_evk_mimx94398_m33.dts?plain=1#L31) | [`ethernet-phy`](../../../../build/dts/api/bindings/ethernet/phy/ethernet-phy.md#std-dtcompatible-ethernet-phy) |
+| on-board | Realtek RTL8211F Ethernet PHY device[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx943_evk/imx943_evk_mimx94398_m33.dts?plain=1#L43) | [`realtek,rtl8211f`](../../../../build/dts/api/bindings/ethernet/phy/realtek%2Crtl8211f.md#std-dtcompatible-realtek-rtl8211f) |
+| on-chip | NXP i.MX NETC Physical Station Interface (PSI)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L282) | [`nxp,imx-netc-psi`](../../../../build/dts/api/bindings/ethernet/nxp%2Cimx-netc-psi.md#std-dtcompatible-nxp-imx-netc-psi) |
+| on-chip | NXP NETC PTP (Precision Time Protocol) Clock[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L306) | [`nxp,netc-ptp-clock`](../../../../build/dts/api/bindings/ethernet/nxp%2Cnetc-ptp-clock.md#std-dtcompatible-nxp-netc-ptp-clock) |
+| Firmware | on-chip | System Control and Management Interface (SCMI) shared memory (SHMEM)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L37) | [`arm,scmi-shmem`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-shmem.md#std-dtcompatible-arm-scmi-shmem) |
+| on-chip | System Control and Management Interface (SCMI) with doorbell and shared memory (SHMEM) transport[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L44) | [`arm,scmi`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi.md#std-dtcompatible-arm-scmi) |
+| on-chip | System Control and Management Interface (SCMI) power domain protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L53) | [`arm,scmi-power`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-power.md#std-dtcompatible-arm-scmi-power) |
+| on-chip | System Control and Management Interface (SCMI) clock protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L59) | [`arm,scmi-clock`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-clock.md#std-dtcompatible-arm-scmi-clock) |
+| on-chip | System Control and Management Interface (SCMI) pinctrl protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L65) | [`arm,scmi-pinctrl`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-pinctrl.md#std-dtcompatible-arm-scmi-pinctrl) |
+| on-chip | System Control and Management Interface (SCMI) cpu domain protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L74) | [`nxp,scmi-cpu`](../../../../build/dts/api/bindings/firmware/nxp%2Cscmi-cpu.md#std-dtcompatible-nxp-scmi-cpu) |
+| GPIO & Headers | on-chip | i.MX RGPIO[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L172) | [`nxp,imx-rgpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-rgpio.md#std-dtcompatible-nxp-imx-rgpio) |
+| Interrupt controller | on-chip | ARMv8-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L13) | [`arm,v8m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8m-nvic.md#std-dtcompatible-arm-v8m-nvic) |
+| Mailbox | on-chip | NXP i.MX Message Unit as Zephyr MBOX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L249) | [`nxp,mbox-imx-mu`](../../../../build/dts/api/bindings/mbox/nxp%2Cmbox-imx-mu.md#std-dtcompatible-nxp-mbox-imx-mu) |
+| MDIO | on-chip | NXP i.MX NETC External MDIO controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L273) | [`nxp,imx-netc-emdio`](../../../../build/dts/api/bindings/mdio/nxp%2Cimx-netc-emdio.md#std-dtcompatible-nxp-imx-netc-emdio) |
+| MMU / MPU | on-chip | ARMv8-M MPU (Memory Protection Unit)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L26) | [`arm,armv8m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv8m-mpu.md#std-dtcompatible-arm-armv8m-mpu) |
+| Pin control | on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L69) | [`nxp,imx93-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx93-pinctrl.md#std-dtcompatible-nxp-imx93-pinctrl) |
+| Serial controller | on-chip | NXP LPUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L132)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L92) | [`nxp,lpuart`](../../../../build/dts/api/bindings/serial/nxp%2Clpuart.md#std-dtcompatible-nxp-lpuart) |
+| Timer | on-chip | ARMv8-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L21) | [`arm,armv8m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick) |
+
+#### `imx943_evk/mimx94398/m33/ddr` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M33 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L17) | [`arm,cortex-m33`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m33.md#std-dtcompatible-arm-cortex-m33) |
+| ARM architecture | on-chip | i.MX ITCM (Instruction Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L82) | [`nxp,imx-itcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-itcm.md#std-dtcompatible-nxp-imx-itcm) |
+| on-chip | i.MX DTCM (Data Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L87) | [`nxp,imx-dtcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-dtcm.md#std-dtcompatible-nxp-imx-dtcm) |
+| Ethernet | on-board | Generic MII PHY[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx943_evk/imx943_evk_mimx94398_m33.dts?plain=1#L31) | [`ethernet-phy`](../../../../build/dts/api/bindings/ethernet/phy/ethernet-phy.md#std-dtcompatible-ethernet-phy) |
+| on-board | Realtek RTL8211F Ethernet PHY device[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx943_evk/imx943_evk_mimx94398_m33.dts?plain=1#L43) | [`realtek,rtl8211f`](../../../../build/dts/api/bindings/ethernet/phy/realtek%2Crtl8211f.md#std-dtcompatible-realtek-rtl8211f) |
+| on-chip | NXP i.MX NETC Physical Station Interface (PSI)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L282) | [`nxp,imx-netc-psi`](../../../../build/dts/api/bindings/ethernet/nxp%2Cimx-netc-psi.md#std-dtcompatible-nxp-imx-netc-psi) |
+| on-chip | NXP NETC PTP (Precision Time Protocol) Clock[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L306) | [`nxp,netc-ptp-clock`](../../../../build/dts/api/bindings/ethernet/nxp%2Cnetc-ptp-clock.md#std-dtcompatible-nxp-netc-ptp-clock) |
+| Firmware | on-chip | System Control and Management Interface (SCMI) shared memory (SHMEM)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L37) | [`arm,scmi-shmem`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-shmem.md#std-dtcompatible-arm-scmi-shmem) |
+| on-chip | System Control and Management Interface (SCMI) with doorbell and shared memory (SHMEM) transport[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L44) | [`arm,scmi`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi.md#std-dtcompatible-arm-scmi) |
+| on-chip | System Control and Management Interface (SCMI) power domain protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L53) | [`arm,scmi-power`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-power.md#std-dtcompatible-arm-scmi-power) |
+| on-chip | System Control and Management Interface (SCMI) clock protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L59) | [`arm,scmi-clock`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-clock.md#std-dtcompatible-arm-scmi-clock) |
+| on-chip | System Control and Management Interface (SCMI) pinctrl protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L65) | [`arm,scmi-pinctrl`](../../../../build/dts/api/bindings/firmware/arm%2Cscmi-pinctrl.md#std-dtcompatible-arm-scmi-pinctrl) |
+| on-chip | System Control and Management Interface (SCMI) cpu domain protocol[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L74) | [`nxp,scmi-cpu`](../../../../build/dts/api/bindings/firmware/nxp%2Cscmi-cpu.md#std-dtcompatible-nxp-scmi-cpu) |
+| GPIO & Headers | on-chip | i.MX RGPIO[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L172) | [`nxp,imx-rgpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-rgpio.md#std-dtcompatible-nxp-imx-rgpio) |
+| Interrupt controller | on-chip | ARMv8-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L13) | [`arm,v8m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8m-nvic.md#std-dtcompatible-arm-v8m-nvic) |
+| Mailbox | on-chip | NXP i.MX Message Unit as Zephyr MBOX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L249) | [`nxp,mbox-imx-mu`](../../../../build/dts/api/bindings/mbox/nxp%2Cmbox-imx-mu.md#std-dtcompatible-nxp-mbox-imx-mu) |
+| MDIO | on-chip | NXP i.MX NETC External MDIO controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L273) | [`nxp,imx-netc-emdio`](../../../../build/dts/api/bindings/mdio/nxp%2Cimx-netc-emdio.md#std-dtcompatible-nxp-imx-netc-emdio) |
+| MMU / MPU | on-chip | ARMv8-M MPU (Memory Protection Unit)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L26) | [`arm,armv8m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv8m-mpu.md#std-dtcompatible-arm-armv8m-mpu) |
+| Pin control | on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L69) | [`nxp,imx93-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx93-pinctrl.md#std-dtcompatible-nxp-imx93-pinctrl) |
+| Serial controller | on-chip | NXP LPUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L132)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx943_m33.dtsi?plain=1#L92) | [`nxp,lpuart`](../../../../build/dts/api/bindings/serial/nxp%2Clpuart.md#std-dtcompatible-nxp-lpuart) |
+| Timer | on-chip | ARMv8-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L21) | [`arm,armv8m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick) |
+
 #### System Clock
 
 This board configuration uses a system clock frequency of 24 MHz for Cortex-A55.
@@ -100,8 +168,9 @@ The ENET0, ENETC1, ENETC2 ports could be enabled for M33 by west build option
 
 The `imx943_evk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 There are multiple methods to program and debug Zephyr on the A55 core:
 

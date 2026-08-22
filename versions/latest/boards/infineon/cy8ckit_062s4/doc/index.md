@@ -64,6 +64,26 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `cy8ckit_062s4/cy8c6244lqi_s4d92` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M0+ CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L15) | [`arm,cortex-m0+`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m0%2B.md#std-dtcompatible-arm-cortex-m0) |
+| on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L20) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| ADC | on-chip | Infineon Cat1 ADC Each ADC group Cat1 is assigned to a Zephyr device[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L189) | [`infineon,cat1-adc`](../../../../build/dts/api/bindings/adc/infineon%2Ccat1-adc.md#std-dtcompatible-infineon-cat1-adc) |
+| ARM architecture | on-chip | Infineon Serial Communication Blocks (SCB) node[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L210) | [`infineon,cat1-scb`](../../../../build/dts/api/bindings/arm/infineon%2Ccat1-scb.md#std-dtcompatible-infineon-cat1-scb) |
+| Flash controller | on-chip | Infineon CAT1 flash controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L27) | [`infineon,cat1-flash-controller`](../../../../build/dts/api/bindings/flash_controller/infineon%2Ccat1-flash-controller.md#std-dtcompatible-infineon-cat1-flash-controller) |
+| GPIO & Headers | on-chip | Infineon CAT1 GPIO Port[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L83)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L66) | [`infineon,cat1-gpio`](../../../../build/dts/api/bindings/gpio/infineon%2Ccat1-gpio.md#std-dtcompatible-infineon-cat1-gpio) |
+| on-board | GPIO pins exposed on Arduino Uno (R3) headers[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8ckit_062s4/cy8ckit_062s4.dts?plain=1#L32) | [`arduino-header-r3`](../../../../build/dts/api/bindings/gpio/arduino-header-r3.md#std-dtcompatible-arduino-header-r3) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8ckit_062s4/cy8ckit_062s4.dts?plain=1#L23) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L33) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | Infineon CAT1 Pinctrl Container[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L53) | [`infineon,cat1-pinctrl`](../../../../build/dts/api/bindings/pinctrl/infineon%2Ccat1-pinctrl.md#std-dtcompatible-infineon-cat1-pinctrl) |
+| SDHC | on-chip | Infineon CAT1 SDHC/SDIO controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L250) | [`infineon,cat1-sdhc-sdio`](../../../../build/dts/api/bindings/sdhc/infineon%2Ccat1-sdhc-sdio.md#std-dtcompatible-infineon-cat1-sdhc-sdio) |
+| Serial controller | on-chip | Infineon CAT1 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L218)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L202) | [`infineon,cat1-uart`](../../../../build/dts/api/bindings/serial/infineon%2Ccat1-uart.md#std-dtcompatible-infineon-cat1-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_04/psoc6_04.dtsi?plain=1#L47) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 ### Clock Configuration
 
 | Clock | Source | Output Frequency |
@@ -91,8 +111,9 @@ west build -b cy8ckit_062s4 samples/basic/blinky
 
 The `cy8ckit_062s4` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The CY8CKIT-062S4 includes an onboard programmer/debugger ([KitProg3](https://github.com/Infineon/KitProg3) [[9]](#id18)) to provide debugging, flash programming, and serial communication over USB. Flash and debug commands use OpenOCD and require a custom Infineon OpenOCD version, that supports KitProg3, to be installed.
 

@@ -18,7 +18,7 @@ Architecture:
 :   xtensa
 
 SoC:
-:   dc233c, sample\_controller32
+:   sample\_controller32, dc233c
 
 [
 Browse board sources

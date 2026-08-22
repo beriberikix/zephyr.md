@@ -35,8 +35,10 @@ More information can be found on
 
 The `m2gl025_miv` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **simulate** | **robot** |
+| --- | --- | --- | --- | --- |
+| **renode** |  |  | ✅ |  |
+| **renode-robot** |  |  |  | ✅ |
 
 ### Building
 

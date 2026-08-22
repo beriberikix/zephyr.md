@@ -73,6 +73,28 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `sim3u1xx_dk/sim3u167` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M3 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L20) | [`arm,cortex-m3`](../../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m3.md#std-dtcompatible-arm-cortex-m3) |
+| Clock control | on-chip | Silabs Si32 PLL clock controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L41) | [`silabs,si32-pll`](../../../../../build/dts/api/bindings/clock/silabs%2Csi32-pll.md#std-dtcompatible-silabs-si32-pll) |
+| on-chip | Silabs Si32 AHB clock controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L48) | [`silabs,si32-ahb`](../../../../../build/dts/api/bindings/clock/silabs%2Csi32-ahb.md#std-dtcompatible-silabs-si32-ahb) |
+| on-chip | Silabs Si32 APB clock controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L54) | [`silabs,si32-apb`](../../../../../build/dts/api/bindings/clock/silabs%2Csi32-apb.md#std-dtcompatible-silabs-si32-apb) |
+| Cryptographic accelerator | on-chip | Si32 AES node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L76) | [`silabs,si32-aes`](../../../../../build/dts/api/bindings/crypto/silabs%2Csi32-aes.md#std-dtcompatible-silabs-si32-aes) |
+| DMA | on-chip | Si32 DMA controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L64) | [`silabs,si32-dma`](../../../../../build/dts/api/bindings/dma/silabs%2Csi32-dma.md#std-dtcompatible-silabs-si32-dma) |
+| Flash controller | on-chip | Silabs Si32 flash controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L87) | [`silabs,si32-flash-controller`](../../../../../build/dts/api/bindings/flash_controller/silabs%2Csi32-flash-controller.md#std-dtcompatible-silabs-si32-flash-controller) |
+| GPIO & Headers | on-chip | Si32 GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L116) | [`silabs,si32-gpio`](../../../../../build/dts/api/bindings/gpio/silabs%2Csi32-gpio.md#std-dtcompatible-silabs-si32-gpio) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/silabs/dev_kits/sim3u1xx_dk/sim3u1xx_dk.dts?plain=1#L45) | [`gpio-keys`](../../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/silabs/dev_kits/sim3u1xx_dk/sim3u1xx_dk.dts?plain=1#L31) | [`gpio-leds`](../../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L94) | [`soc-nv-flash`](../../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/silabs/dev_kits/sim3u1xx_dk/sim3u1xx_dk.dts?plain=1#L99) | [`fixed-partitions`](../../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | Silabs Si32 Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L32) | [`silabs,si32-pinctrl`](../../../../../build/dts/api/bindings/pinctrl/silabs%2Csi32-pinctrl.md#std-dtcompatible-silabs-si32-pinctrl) |
+| Serial controller | on-chip | Si32 USART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L100)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L108) | [`silabs,si32-usart`](../../../../../build/dts/api/bindings/serial/silabs%2Csi32-usart.md#std-dtcompatible-silabs-si32-usart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/silabs/sim3u.dtsi?plain=1#L28) | [`mmio-sram`](../../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 ### Connections and IOs
 
 | Pin | Name | Note |
@@ -92,8 +114,10 @@ on-chip / on-board
 
 The `sim3u1xx_dk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **[openocd](../../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Flashing
 

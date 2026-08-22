@@ -104,6 +104,26 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `warp7/mcimx7d/m4` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L18) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| ARM architecture | on-chip | i.MX ITCM (Instruction Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L38) | [`nxp,imx-itcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-itcm.md#std-dtcompatible-nxp-imx-itcm) |
+| on-chip | i.MX DTCM (Data Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L43) | [`nxp,imx-dtcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-dtcm.md#std-dtcompatible-nxp-imx-dtcm) |
+| GPIO & Headers | on-chip | i.MX GPIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L149)[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L71) | [`nxp,imx-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-gpio.md#std-dtcompatible-nxp-imx-gpio) |
+| I2C | on-chip | i.MX I2C[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L303)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L261) | [`fsl,imx21-i2c`](../../../../build/dts/api/bindings/i2c/fsl%2Cimx21-i2c.md#std-dtcompatible-fsl-imx21-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/element14/warp7/warp7_mcimx7d_m4.dts?plain=1#L30) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| IPM | on-chip | i.MX Messaging Unit[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L242) | [`nxp,imx-mu`](../../../../build/dts/api/bindings/ipm/nxp%2Cimx-mu.md#std-dtcompatible-nxp-imx-mu) |
+| Pin control | on-chip | This compatible binding should be applied to the device’s iomuxc DTS node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L251) | [`nxp,imx-iomuxc`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc) |
+| on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L255) | [`nxp,imx7d-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx7d-pinctrl.md#std-dtcompatible-nxp-imx7d-pinctrl) |
+| PWM | on-chip | This driver supports both i.MX6SX and i.MX7D PWM[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L317) | [`fsl,imx27-pwm`](../../../../build/dts/api/bindings/pwm/fsl%2Cimx27-pwm.md#std-dtcompatible-fsl-imx27-pwm) |
+| Sensors | on-board | FXOS8700 6-axis accelerometer/magnetometer sensor[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/element14/warp7/warp7_mcimx7d_m4.dts?plain=1#L80) | [`nxp,fxos8700`](../../../../build/dts/api/compatibles/nxp%2Cfxos8700.md#std-dtcompatible-nxp-fxos8700) |
+| on-board | FXAS21002 3-axis gyroscope sensor[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/element14/warp7/warp7_mcimx7d_m4.dts?plain=1#L86) | [`nxp,fxas21002`](../../../../build/dts/api/compatibles/nxp%2Cfxas21002.md#std-dtcompatible-nxp-fxas21002) |
+| Serial controller | on-chip | iMX UART[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L176)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx7d_m4.dtsi?plain=1#L165) | [`nxp,imx-uart`](../../../../build/dts/api/bindings/serial/nxp%2Cimx-uart.md#std-dtcompatible-nxp-imx-uart) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 ### Connections and IOs
 
 The WaRP7 board Board was tested with the following pinmux controller

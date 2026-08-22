@@ -75,8 +75,11 @@ of the [Panasonic Wireless Connectivity Development Hub](https://pideu.panasonic
 
 The `pan1783_evb` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
+| **nrfjprog** | ✅ |  |  |  |  |
+| **nrfutil** | ✅ (default) |  |  |  |  |
 
 Please use the `pan1783_evb_cpuapp`, `pan1783a_evb_cpuapp` or
 `pan1783a_pa_evb_cpuapp` for application core and `pan1783_evb_cpunet`,

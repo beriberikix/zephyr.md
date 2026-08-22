@@ -18,7 +18,7 @@ Architecture:
 :   arc
 
 SoC:
-:   nsim\_em11d, nsim\_em7d\_v22, nsim\_hs, nsim\_hs5x, nsim\_em, nsim\_hs6x, nsim\_sem, nsim\_vpx5
+:   nsim\_em11d, nsim\_em, nsim\_em7d\_v22, nsim\_hs, nsim\_sem, nsim\_hs5x, nsim\_vpx5, nsim\_hs6x
 
 [
 Browse board sources
@@ -92,8 +92,11 @@ represent any real system and so might be renamed, removed or modified at any po
 
 The `nsim` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **debugserver** |
+| --- | --- | --- | --- | --- |
+| **arc-nsim** | ✅ (default) | ✅ (default) | ✅ | ✅ |
+| **mdb-hw** | ✅ | ✅ |  |  |
+| **mdb-nsim** | ✅ | ✅ |  |  |
 
 ### Required Hardware and Software
 

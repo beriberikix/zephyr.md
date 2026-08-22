@@ -18,7 +18,7 @@ Architecture:
 :   arm
 
 SoC:
-:   corstone320, corstone315
+:   corstone315, corstone320
 
 [
 Browse board sources
@@ -121,6 +121,46 @@ on-chip / on-board
 `vnd,foo`
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
+
+#### `mps4/corstone315/fvp` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-board | ARM Cortex-M85 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone315_fvp.dts?plain=1#L30) | [`arm,cortex-m85`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m85.md#std-dtcompatible-arm-cortex-m85) |
+| ARM architecture | on-board | The Arm Ethos-U is a micro NPU that enables neural networks to be hardware accelerated on embedded devices[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone315_fvp.dts?plain=1#L49) | [`arm,ethos-u`](../../../../build/dts/api/bindings/arm/arm%2Cethos-u.md#std-dtcompatible-arm-ethos-u) |
+| Clock control | on-board | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L7) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| Ethernet | on-board | SMSC (now Microchip) LAN9220 Ethernet controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L45) | [`smsc,lan9220`](../../../../build/dts/api/bindings/ethernet/smsc%2Clan9220.md#std-dtcompatible-smsc-lan9220) |
+| GPIO & Headers | on-board | ARM CMSDK GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L13) | [`arm,cmsdk-gpio`](../../../../build/dts/api/bindings/gpio/arm%2Ccmsdk-gpio.md#std-dtcompatible-arm-cmsdk-gpio) |
+| on-board | ARM MMIO32 GPIO[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L131) | [`arm,mmio32-gpio`](../../../../build/dts/api/bindings/gpio/arm%2Cmmio32-gpio.md#std-dtcompatible-arm-mmio32-gpio) |
+| I2C | on-board | ARM SBCon two-wire serial bus interface[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L53) | [`arm,versatile-i2c`](../../../../build/dts/api/bindings/i2c/arm%2Cversatile-i2c.md#std-dtcompatible-arm-versatile-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common.dtsi?plain=1#L77) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv8.1-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L17) | [`arm,v8.1m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8.1m-nvic.md#std-dtcompatible-arm-v8.1m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common.dtsi?plain=1#L23) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MMU / MPU | on-board | ARMv8.1-M MPU (Memory Protection Unit)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone315_fvp.dts?plain=1#L37) | [`arm,armv8.1m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv8.1m-mpu.md#std-dtcompatible-arm-armv8.1m-mpu) |
+| Pin control | on-board | The Arm Mps4 pin controller is a node responsible for controlling pin function selection and pin properties, such as routing a UART3 TX to pin 1[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L215) | [`arm,mps4-pinctrl`](../../../../build/dts/api/bindings/pinctrl/arm%2Cmps4-pinctrl.md#std-dtcompatible-arm-mps4-pinctrl) |
+| Serial controller | on-board | ARM CMSDK UART[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L156)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L205) | [`arm,cmsdk-uart`](../../../../build/dts/api/bindings/serial/arm%2Ccmsdk-uart.md#std-dtcompatible-arm-cmsdk-uart) |
+| SPI | on-board | ARM PL022 SPI[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L69) | [`arm,pl022`](../../../../build/dts/api/bindings/spi/arm%2Cpl022.md#std-dtcompatible-arm-pl022) |
+| Timer | on-chip | ARMv8.1-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L25) | [`arm,armv8.1m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8.1m-systick.md#std-dtcompatible-arm-armv8.1m-systick) |
+
+#### `mps4/corstone320/fvp` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-board | ARM Cortex-M85 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone320_fvp.dts?plain=1#L30) | [`arm,cortex-m85`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m85.md#std-dtcompatible-arm-cortex-m85) |
+| ARM architecture | on-board | The Arm Ethos-U is a micro NPU that enables neural networks to be hardware accelerated on embedded devices[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone320_fvp.dts?plain=1#L49) | [`arm,ethos-u`](../../../../build/dts/api/bindings/arm/arm%2Cethos-u.md#std-dtcompatible-arm-ethos-u) |
+| Clock control | on-board | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L7) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| Ethernet | on-board | SMSC (now Microchip) LAN9220 Ethernet controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L45) | [`smsc,lan9220`](../../../../build/dts/api/bindings/ethernet/smsc%2Clan9220.md#std-dtcompatible-smsc-lan9220) |
+| GPIO & Headers | on-board | ARM CMSDK GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L13) | [`arm,cmsdk-gpio`](../../../../build/dts/api/bindings/gpio/arm%2Ccmsdk-gpio.md#std-dtcompatible-arm-cmsdk-gpio) |
+| on-board | ARM MMIO32 GPIO[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L131) | [`arm,mmio32-gpio`](../../../../build/dts/api/bindings/gpio/arm%2Cmmio32-gpio.md#std-dtcompatible-arm-mmio32-gpio) |
+| I2C | on-board | ARM SBCon two-wire serial bus interface[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L53) | [`arm,versatile-i2c`](../../../../build/dts/api/bindings/i2c/arm%2Cversatile-i2c.md#std-dtcompatible-arm-versatile-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common.dtsi?plain=1#L77) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv8.1-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L17) | [`arm,v8.1m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8.1m-nvic.md#std-dtcompatible-arm-v8.1m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common.dtsi?plain=1#L23) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MMU / MPU | on-board | ARMv8.1-M MPU (Memory Protection Unit)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_corstone320_fvp.dts?plain=1#L37) | [`arm,armv8.1m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv8.1m-mpu.md#std-dtcompatible-arm-armv8.1m-mpu) |
+| Pin control | on-board | The Arm Mps4 pin controller is a node responsible for controlling pin function selection and pin properties, such as routing a UART3 TX to pin 1[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L215) | [`arm,mps4-pinctrl`](../../../../build/dts/api/bindings/pinctrl/arm%2Cmps4-pinctrl.md#std-dtcompatible-arm-mps4-pinctrl) |
+| Serial controller | on-board | ARM CMSDK UART[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L156)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L205) | [`arm,cmsdk-uart`](../../../../build/dts/api/bindings/serial/arm%2Ccmsdk-uart.md#std-dtcompatible-arm-cmsdk-uart) |
+| SPI | on-board | ARM PL022 SPI[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/arm/mps4/mps4_common_soc_peripheral.dtsi?plain=1#L69) | [`arm,pl022`](../../../../build/dts/api/bindings/spi/arm%2Cpl022.md#std-dtcompatible-arm-pl022) |
+| Timer | on-chip | ARMv8.1-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L25) | [`arm,armv8.1m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8.1m-systick.md#std-dtcompatible-arm-armv8.1m-systick) |
 
 ### Serial Port
 

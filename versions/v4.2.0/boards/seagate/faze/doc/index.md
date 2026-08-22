@@ -75,6 +75,28 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `faze/lpc11u67` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M0+ CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L16) | [`arm,cortex-m0+`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m0%2B.md#std-dtcompatible-arm-cortex-m0) |
+| Clock control | on-chip | LPC11U6X clock controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L131) | [`nxp,lpc11u6x-syscon`](../../../../build/dts/api/bindings/clock/nxp%2Clpc11u6x-syscon.md#std-dtcompatible-nxp-lpc11u6x-syscon) |
+| GPIO & Headers | on-chip | NXP LPC11U6X GPIO[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L81) | [`nxp,lpc11u6x-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Clpc11u6x-gpio.md#std-dtcompatible-nxp-lpc11u6x-gpio) |
+| I2C | on-chip | LPC11U6X I2C Controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L177) | [`nxp,lpc11u6x-i2c`](../../../../build/dts/api/bindings/i2c/nxp%2Clpc11u6x-i2c.md#std-dtcompatible-nxp-lpc11u6x-i2c) |
+| on-board | ASMedia ASM2364 USB-to-PCIe bridge controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/seagate/faze/faze.dts?plain=1#L68) | [`asmedia,asm2364`](../../../../build/dts/api/bindings/i2c/asmedia%2Casm2364.md#std-dtcompatible-asmedia-asm2364) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/seagate/faze/faze.dts?plain=1#L34) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv6-M NVIC (Nested Vectored Interrupt Controller) controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L13) | [`arm,v6m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv6m-nvic.md#std-dtcompatible-arm-v6m-nvic) |
+| LED | on-board | Texas Instruments LP5030 I2C LED controller node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/seagate/faze/faze.dts?plain=1#L82) | [`ti,lp5030`](../../../../build/dts/api/bindings/led/ti%2Clp5030.md#std-dtcompatible-ti-lp5030) |
+| on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/seagate/faze/faze.dts?plain=1#L45) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L39) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| on-chip | NXP LPC11U6X on-chip EEPROM node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L44) | [`nxp,lpc11u6x-eeprom`](../../../../build/dts/api/bindings/mtd/nxp%2Clpc11u6x-eeprom.md#std-dtcompatible-nxp-lpc11u6x-eeprom) |
+| Pin control | on-chip | LPC I/O Pin Configuration (IOCON)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L54) | [`nxp,lpc-iocon`](../../../../build/dts/api/bindings/pinctrl/nxp%2Clpc-iocon.md#std-dtcompatible-nxp-lpc-iocon) |
+| on-chip | LPC pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L60) | [`nxp,lpc11u6x-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Clpc11u6x-pinctrl.md#std-dtcompatible-nxp-lpc11u6x-pinctrl) |
+| on-chip | LPC I/O Pin Configuration (IOCON) Port I/O (PIO)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L64) | [`nxp,lpc-iocon-pio`](../../../../build/dts/api/bindings/pinctrl/nxp%2Clpc-iocon-pio.md#std-dtcompatible-nxp-lpc-iocon-pio) |
+| Serial controller | on-chip | LPC11U6X UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L137)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L145) | [`nxp,lpc11u6x-uart`](../../../../build/dts/api/bindings/serial/nxp%2Clpc11u6x-uart.md#std-dtcompatible-nxp-lpc11u6x-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_lpc11u6x.dtsi?plain=1#L22) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv6-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L21) | [`arm,armv6m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv6m-systick.md#std-dtcompatible-arm-armv6m-systick) |
+
 ### Connections and IOs
 
 The IOCON controller can be used to configure the LPC11U67 pins.
@@ -95,8 +117,9 @@ The IOCON controller can be used to configure the LPC11U67 pins.
 
 The `faze` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Flashing
 

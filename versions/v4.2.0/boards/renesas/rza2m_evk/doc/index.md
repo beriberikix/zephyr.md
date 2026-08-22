@@ -72,12 +72,29 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rza2m_evk/r7s921053vcbg` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| Clock control | on-chip | RZ/A2M Clock Pulse Generator[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L55) | [`renesas,rza2m-cpg`](../../../../build/dts/api/bindings/clock/renesas%2Crza2m-cpg.md#std-dtcompatible-renesas-rza2m-cpg) |
+| on-chip | Generic fixed-rate clock provider[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L61) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| GPIO & Headers | on-chip | Renesas RZ/A2M GPIO Interrupt[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L105) | [`renesas,rza2m-gpio-int`](../../../../build/dts/api/bindings/gpio/renesas%2Crza2m-gpio-int.md#std-dtcompatible-renesas-rza2m-gpio-int) |
+| on-chip | Renesas RZ/A2M GPIO Controller[22 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L144) | [`renesas,rza2m-gpio`](../../../../build/dts/api/bindings/gpio/renesas%2Crza2m-gpio.md#std-dtcompatible-renesas-rza2m-gpio) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L41) | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rza2m_evk/rza2m_evk.dts?plain=1#L28) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rza2m_evk/rza2m_evk.dts?plain=1#L44) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | Renesas RZ/A2M pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L101) | [`renesas,rza2m-pinctrl`](../../../../build/dts/api/bindings/pinctrl/renesas%2Crza2m-pinctrl.md#std-dtcompatible-renesas-rza2m-pinctrl) |
+| Serial controller | on-chip | Renesas RZ/A2M UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L378)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L322) | [`renesas,rza2m-scif-uart`](../../../../build/dts/api/bindings/serial/renesas%2Crza2m-scif-uart.md#std-dtcompatible-renesas-rza2m-scif-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L50) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Renesas RZ/A2M OS timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L77)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rza/r7s9210.dtsi?plain=1#L85) | [`renesas,rza2m-ostm`](../../../../build/dts/api/bindings/timer/renesas%2Crza2m-ostm.md#std-dtcompatible-renesas-rza2m-ostm) |
+
 ## Programming and Debugging
 
 The `rza2m_evk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `rza2m_evk` board configuration can be
 built and flashed in the usual way (see [Building an Application](../../../../develop/application/index.md#build-an-application)

@@ -122,8 +122,10 @@ copy the initialized data section to the data memory if CONFIG\_XIP is used.
 
 The `em_starterkit` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **mdb-hw** | ✅ | ✅ |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Required Hardware and Software
 

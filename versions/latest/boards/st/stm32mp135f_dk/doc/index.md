@@ -103,6 +103,32 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `stm32mp135f_dk/stm32mp135fxx` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| Clock control | on-chip | STM32 RCC (Reset and Clock controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L59) | [`st,stm32-rcc`](../../../../build/dts/api/bindings/clock/st%2Cstm32-rcc.md#std-dtcompatible-st-stm32-rcc) |
+| on-chip | STM32 Microcontroller Clock Output (MCO)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L31) | [`st,stm32-clock-mco`](../../../../build/dts/api/bindings/clock/st%2Cstm32-clock-mco.md#std-dtcompatible-st-stm32-clock-mco) |
+| on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L270) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | STM32MP13 CPU Clock Describes the STM32MP13 CPU armv7 timer multiplexer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L282) | [`st,stm32mp13-cpu-clock-mux`](../../../../build/dts/api/bindings/clock/st%2Cstm32mp13-cpu-clock-mux.md#std-dtcompatible-st-stm32mp13-cpu-clock-mux) |
+| on-chip | PLL node binding for STM32MP13 devices[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L288)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L300) | [`st,stm32mp13-pll-clock`](../../../../build/dts/api/bindings/clock/st%2Cstm32mp13-pll-clock.md#std-dtcompatible-st-stm32mp13-pll-clock) |
+| Display | on-chip | STM32 LCD-TFT display controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp135.dtsi?plain=1#L47) | [`st,stm32-ltdc`](../../../../build/dts/api/bindings/display/st%2Cstm32-ltdc.md#std-dtcompatible-st-stm32-ltdc) |
+| GPIO & Headers | on-chip | STM32 GPIO Controller[9 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L77) | [`st,stm32-gpio`](../../../../build/dts/api/bindings/gpio/st%2Cstm32-gpio.md#std-dtcompatible-st-stm32-gpio) |
+| on-board | Microchip MCP23017 I2C GPIO Expander[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/st/stm32mp135f_dk/stm32mp135f_dk.dts?plain=1#L134) | [`microchip,mcp23017`](../../../../build/dts/api/bindings/gpio/microchip%2Cmcp23017.md#std-dtcompatible-microchip-mcp23017) |
+| on-board | GPIO pins exposed on the Raspberry Pi CSI Camera connector[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/st/stm32mp135f_dk/stm32mp135f_dk.dts?plain=1#L68) | [`raspberrypi,csi-connector`](../../../../build/dts/api/bindings/gpio/raspberrypi%2Ccsi-connector.md#std-dtcompatible-raspberrypi-csi-connector) |
+| I2C | on-chip | STM32 I2C V2 controller[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L183)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L196) | [`st,stm32-i2c-v2`](../../../../build/dts/api/bindings/i2c/st%2Cstm32-i2c-v2.md#std-dtcompatible-st-stm32-i2c-v2) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/st/stm32mp135f_dk/stm32mp135f_dk.dts?plain=1#L28) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | STM32G0 External Interrupt Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L150) | [`st,stm32g0-exti`](../../../../build/dts/api/bindings/interrupt-controller/st%2Cstm32g0-exti.md#std-dtcompatible-st-stm32g0-exti) |
+| on-chip | ARM Generic Interrupt Controller v2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L249) | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/st/stm32mp135f_dk/stm32mp135f_dk.dts?plain=1#L38) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Pin control | on-chip | STM32 Pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L71) | [`st,stm32-pinctrl`](../../../../build/dts/api/bindings/pinctrl/st%2Cstm32-pinctrl.md#std-dtcompatible-st-stm32-pinctrl) |
+| Reset controller | on-chip | STM32 Reset and Clock Control (RCC) Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L64) | [`st,stm32-rcc-rctl`](../../../../build/dts/api/bindings/reset/st%2Cstm32-rcc-rctl.md#std-dtcompatible-st-stm32-rcc-rctl) |
+| Serial controller | on-chip | STM32 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L50) | [`st,stm32-uart`](../../../../build/dts/api/bindings/serial/st%2Cstm32-uart.md#std-dtcompatible-st-stm32-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L45) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp13.dtsi?plain=1#L313) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+| Video | on-board | MIPID02 CSI to DVP interface bridge[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/st/stm32mp135f_dk/stm32mp135f_dk.dts?plain=1#L154) | [`st,mipid02`](../../../../build/dts/api/bindings/video/st%2Cmipid02.md#std-dtcompatible-st-mipid02) |
+| on-chip | STM32 Digital Camera Memory Interface Pixel Processor (DCMIPP)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/st/mp13/stm32mp135.dtsi?plain=1#L14) | [`st,stm32-dcmipp`](../../../../build/dts/api/bindings/video/st%2Cstm32-dcmipp.md#std-dtcompatible-st-stm32-dcmipp) |
+
 ### Connections and IOs
 
 STM32MP135F-DK Discovery Board schematic is available here:
@@ -133,8 +159,9 @@ The Cortex®-A7 core is configured to run at a clock speed of up to 1GHz.
 
 The `stm32mp135f_dk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Prerequisite
 

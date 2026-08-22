@@ -23,7 +23,7 @@ Architecture:
 :   arc
 
 SoC:
-:   emsdp\_em7d, emsdp\_em9d, emsdp\_em11d, emsdp\_em7d\_esp, emsdp\_em5d, emsdp\_em6, emsdp\_em4
+:   emsdp\_em7d\_esp, emsdp\_em11d, emsdp\_em6, emsdp\_em4, emsdp\_em9d, emsdp\_em7d, emsdp\_em5d
 
 [
 Browse board sources
@@ -122,8 +122,10 @@ multiplexer ARDUINO\_MUX\_CTRL is in the default mode (GPIO).
 
 The `emsdp` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **mdb-hw** | ✅ | ✅ |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Required Hardware and Software
 

@@ -102,8 +102,9 @@ nrf51\_vbluno51 Fritzing part
 
 The `nrf51_vbluno51` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `nrf51_vbluno51` board configuration can be
 built and flashed in the usual way (see [Building an Application](../../../../develop/application/index.md#build-an-application)

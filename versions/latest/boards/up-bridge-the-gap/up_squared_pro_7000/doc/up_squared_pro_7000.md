@@ -49,6 +49,7 @@ The `up_squared_pro_7000` board supports the runners and associated west command
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **misc-flasher** | ✅ (default) |  |
 
 Use the following procedures for booting an image for an UP Squared Pro 7000 board.
 

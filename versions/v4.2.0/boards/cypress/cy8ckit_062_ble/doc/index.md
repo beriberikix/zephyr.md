@@ -154,8 +154,10 @@ To get the OpenOCD package, it is required that you
 
 The `cy8ckit_062_ble` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The CY8CKIT-062-BLE includes an onboard programmer/debugger (KitProg2) with
 mass storage programming to provide debugging, flash programming, and serial

@@ -8,8 +8,8 @@ original_path: boards/arm/mps2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mps21.jpg](../../../../_images/mps21.jpg)
-](../../../../_images/mps21.jpg)
+[![../../../../_images/mps2.jpg](../../../../_images/mps2.jpg)
+](../../../../_images/mps2.jpg)
 
 V2M MPS2
 
@@ -23,7 +23,7 @@ Architecture:
 :   arm
 
 SoC:
-:   an386, an500, an521, an385, an383
+:   an385, an521, an500, an386, an383
 
 [
 Browse board sources

@@ -77,6 +77,26 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `cc3220sf_launchxl/cc3220sf` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L38) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| ADC | on-chip | cc32xx ADC node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L119) | [`ti,cc32xx-adc`](../../../../build/dts/api/bindings/adc/ti%2Ccc32xx-adc.md#std-dtcompatible-ti-cc32xx-adc) |
+| Clock control | on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L53) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| GPIO & Headers | on-chip | TI CC32XX GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L87) | [`ti,cc32xx-gpio`](../../../../build/dts/api/bindings/gpio/ti%2Ccc32xx-gpio.md#std-dtcompatible-ti-cc32xx-gpio) |
+| on-board | TI BoosterPack GPIO header[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/cc3220sf_launchxl/boosterpack_connector.dtsi?plain=1#L8) | [`ti,boosterpack-header`](../../../../build/dts/api/bindings/gpio/ti%2Cboosterpack-header.md#std-dtcompatible-ti-boosterpack-header) |
+| I2C | on-chip | TI CC32XX I2C controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L76) | [`ti,cc32xx-i2c`](../../../../build/dts/api/bindings/i2c/ti%2Ccc32xx-i2c.md#std-dtcompatible-ti-cc32xx-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/cc3220sf_launchxl/cc3220sf_launchxl.dts?plain=1#L50) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/cc3220sf_launchxl/cc3220sf_launchxl.dts?plain=1#L34) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc3220sf.dtsi?plain=1#L19) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | TI CC32XX Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L134) | [`ti,cc32xx-pinctrl`](../../../../build/dts/api/bindings/pinctrl/ti%2Ccc32xx-pinctrl.md#std-dtcompatible-ti-cc32xx-pinctrl) |
+| Serial controller | on-chip | TI CC32XX UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L60)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L68) | [`ti,cc32xx-uart`](../../../../build/dts/api/bindings/serial/ti%2Ccc32xx-uart.md#std-dtcompatible-ti-cc32xx-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L45) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| Watchdog | on-chip | cc32xx watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/cc32xx.dtsi?plain=1#L127) | [`ti,cc32xx-watchdog`](../../../../build/dts/api/bindings/watchdog/ti%2Ccc32xx-watchdog.md#std-dtcompatible-ti-cc32xx-watchdog) |
+
 Note
 
 For consistency with TI SimpleLink SDK and BoosterPack examples,
@@ -90,8 +110,9 @@ accessible through the BoosterPack, are not currently supported.
 
 The `cc3220sf_launchxl` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 TI officially supports development on the CC3220SF using the TI
 [CC3220 SDK](http://www.ti.com/tool/download/SIMPLELINK-CC3220-SDK) on Windows and Linux using TI tools: Code Composer

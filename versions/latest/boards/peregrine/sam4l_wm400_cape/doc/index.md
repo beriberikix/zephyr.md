@@ -68,6 +68,35 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `sam4l_wm400_cape/sam4lc4b` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L26) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| Clock control | on-chip | Atmel Power Management Controller (PMC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L57) | [`atmel,sam-pmc`](../../../../build/dts/api/bindings/clock/atmel%2Csam-pmc.md#std-dtcompatible-atmel-sam-pmc) |
+| Counter | on-chip | Atmel SAM Timer Counter (TC) node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L211)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L221) | [`atmel,sam-tc`](../../../../build/dts/api/bindings/counter/atmel%2Csam-tc.md#std-dtcompatible-atmel-sam-tc) |
+| Flash controller | on-chip | Atmel SAM4L Flash Controller Double Word (FLASHCALW)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L65) | [`atmel,sam4l-flashcalw-controller`](../../../../build/dts/api/bindings/flash_controller/atmel%2Csam4l-flashcalw-controller.md#std-dtcompatible-atmel-sam4l-flashcalw-controller) |
+| GPIO & Headers | on-chip | SAM4L GPIO Port[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L182) | [`atmel,sam4l-gpio`](../../../../build/dts/api/bindings/gpio/atmel%2Csam4l-gpio.md#std-dtcompatible-atmel-sam4l-gpio) |
+| Hardware information | on-chip | ATMEL SAM4L Unique 120-bit Serial Number[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L239) | [`atmel,sam4l-uid`](../../../../build/dts/api/bindings/hwinfo/atmel%2Csam4l-uid.md#std-dtcompatible-atmel-sam4l-uid) |
+| I2C | on-chip | Atmel SAM4L Family I2C (TWIM)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L95)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L85) | [`atmel,sam-i2c-twim`](../../../../build/dts/api/bindings/i2c/atmel%2Csam-i2c-twim.md#std-dtcompatible-atmel-sam-i2c-twim) |
+| IEEE 802.15.4 | on-board | ATMEL AT86RF2xx 802.15.4 wireless transceiver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L97) | [`atmel,rf2xx`](../../../../build/dts/api/bindings/ieee802154/atmel%2Crf2xx.md#std-dtcompatible-atmel-rf2xx) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L55) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L31) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MMU / MPU | on-chip | ARMv7-M Memory Protection Unit (MPU)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L33) | [`arm,armv7m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv7m-mpu.md#std-dtcompatible-arm-armv7m-mpu) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L72) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| on-board | Fixed partitions of a flash (or other non-volatile storage) memory[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L71) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| on-board | I2C EEPROMs compatible with Atmel’s AT24 family[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L156) | [`atmel,at24`](../../../../build/dts/api/bindings/mtd/atmel%2Cat24.md#std-dtcompatible-atmel-at24) |
+| on-board | Atmel AT45 (or compatible) SPI flash[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/peregrine/sam4l_wm400_cape/sam4l_wm400_cape.dts?plain=1#L107) | [`atmel,at45`](../../../../build/dts/api/bindings/mtd/atmel%2Cat45.md#std-dtcompatible-atmel-at45) |
+| Pin control | on-chip | Atmel SAM Pinctrl Container[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L176) | [`atmel,sam-pinctrl`](../../../../build/dts/api/bindings/pinctrl/atmel%2Csam-pinctrl.md#std-dtcompatible-atmel-sam-pinctrl) |
+| RNG | on-chip | Atmel SAM RNG[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L231) | [`atmel,sam-trng`](../../../../build/dts/api/bindings/rng/atmel%2Csam-trng.md#std-dtcompatible-atmel-sam-trng) |
+| Serial controller | on-chip | Atmel SAM family USART[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L136)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L150) | [`atmel,sam-usart`](../../../../build/dts/api/bindings/serial/atmel%2Csam-usart.md#std-dtcompatible-atmel-sam-usart) |
+| SPI | on-chip | Atmel SAM SPI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L126) | [`atmel,sam-spi`](../../../../build/dts/api/bindings/spi/atmel%2Csam-spi.md#std-dtcompatible-atmel-sam-spi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L40) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| USB | on-chip | Atmel SAM Family USB (USBC) in device mode[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L165) | [`atmel,sam-usbc`](../../../../build/dts/api/bindings/usb/atmel%2Csam-usbc.md#std-dtcompatible-atmel-sam-usbc) |
+| Watchdog | on-chip | ATMEL SAM4L watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/atmel/sam4l.dtsi?plain=1#L245) | [`atmel,sam4l-watchdog`](../../../../build/dts/api/bindings/watchdog/atmel%2Csam4l-watchdog.md#std-dtcompatible-atmel-sam4l-watchdog) |
+
 ### Connections and IOs
 
 For detailed information see [SAM4L WM-400 Cape](https://gfbudke.wordpress.com/2014/04/30/modulo-wireless-ieee-802-15-4zigbee-wm-400-e-wm-400l-bbbs) [[1]](#id2) Information.
@@ -87,8 +116,10 @@ RS-232 onboard port or via USB device.
 
 The `sam4l_wm400_cape` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[bossac](../../../../develop/flash_debug/host-tools.md#runner-bossac)** | ✅ |  |  |  |  |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The SAM4L WM-400 Cape board has a 10-pin header to connect to a Segger JLink.
 Using the JLink is possible to program and debug the SAM4LC4B chip. The board

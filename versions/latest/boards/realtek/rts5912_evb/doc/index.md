@@ -68,12 +68,46 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rts5912_evb/rts5912` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M33F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L21) | [`arm,cortex-m33f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m33f.md#std-dtcompatible-arm-cortex-m33f) |
+| ADC | on-chip | Realtek rts5912 ADC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L270) | [`realtek,rts5912-adc`](../../../../build/dts/api/bindings/adc/realtek%2Crts5912-adc.md#std-dtcompatible-realtek-rts5912-adc) |
+| Clock control | on-chip | Realtek RTS5912 System Clock Controller (SCCON)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L78) | [`realtek,rts5912-sccon`](../../../../build/dts/api/bindings/clock/realtek%2Crts5912-sccon.md#std-dtcompatible-realtek-rts5912-sccon) |
+| on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L52) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| Counter | on-chip | Realtek RTS5912 32bit timer[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L94) | [`realtek,rts5912-timer`](../../../../build/dts/api/bindings/counter/realtek%2Crts5912-timer.md#std-dtcompatible-realtek-rts5912-timer) |
+| on-chip | Realtek RTS5912 32-bit slow timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L251) | [`realtek,rts5912-slwtimer`](../../../../build/dts/api/bindings/counter/realtek%2Crts5912-slwtimer.md#std-dtcompatible-realtek-rts5912-slwtimer) |
+| Cryptographic accelerator | on-chip | Realtek RTS5912 Crypto SHA accelerator[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L616) | [`realtek,rts5912-sha`](../../../../build/dts/api/bindings/crypto/realtek%2Crts5912-sha.md#std-dtcompatible-realtek-rts5912-sha) |
+| ESPI | on-chip | Realtek RTS5912 eSPI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L172) | [`realtek,rts5912-espi`](../../../../build/dts/api/bindings/espi/realtek%2Crts5912-espi.md#std-dtcompatible-realtek-rts5912-espi) |
+| Flash controller | on-chip | Realtek RTS5912 flash controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L514) | [`realtek,rts5912-flash-controller`](../../../../build/dts/api/bindings/flash_controller/realtek%2Crts5912-flash-controller.md#std-dtcompatible-realtek-rts5912-flash-controller) |
+| GPIO & Headers | on-chip | Realtek RTS5912 GPIO[9 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L304) | [`realtek,rts5912-gpio`](../../../../build/dts/api/bindings/gpio/realtek%2Crts5912-gpio.md#std-dtcompatible-realtek-rts5912-gpio) |
+| on-chip | Serial Wire - JTAG Connector[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L688) | [`swj-connector`](../../../../build/dts/api/bindings/gpio/swj-connector.md#std-dtcompatible-swj-connector) |
+| I2C | on-chip | Synopsys DesignWare I2C[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L528) | [`snps,designware-i2c`](../../../../build/dts/api/bindings/i2c/snps%2Cdesignware-i2c.md#std-dtcompatible-snps-designware-i2c) |
+| on-chip | Realtek RTS5912 I2C node[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L624) | [`realtek,rts5912-i2c`](../../../../build/dts/api/bindings/i2c/realtek%2Crts5912-i2c.md#std-dtcompatible-realtek-rts5912-i2c) |
+| Input | on-chip | Realtek RTS5912 keyboard matrix controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L432) | [`realtek,rts5912-kbd`](../../../../build/dts/api/bindings/input/realtek%2Crts5912-kbd.md#std-dtcompatible-realtek-rts5912-kbd) |
+| Interrupt controller | on-chip | ARMv8-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L13) | [`arm,v8m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8m-nvic.md#std-dtcompatible-arm-v8m-nvic) |
+| Memory controller | on-chip | Realtek, RTS5912 Battery Backed RAM node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L72) | [`realtek,rts5912-bbram`](../../../../build/dts/api/bindings/memory-controllers/realtek%2Crts5912-bbram.md#std-dtcompatible-realtek-rts5912-bbram) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L520) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | Realtek RTS5912 Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L297) | [`realtek,rts5912-pinctrl`](../../../../build/dts/api/bindings/pinctrl/realtek%2Crts5912-pinctrl.md#std-dtcompatible-realtek-rts5912-pinctrl) |
+| Power management | on-chip | RTS5912 ULPM power controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L695) | [`realtek,rts5912-ulpm`](../../../../build/dts/api/bindings/power/realtek%2Crts5912-ulpm.md#std-dtcompatible-realtek-rts5912-ulpm) |
+| PWM | on-chip | Realtek RTS5912 PWM[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L450) | [`realtek,rts5912-pwm`](../../../../build/dts/api/bindings/pwm/realtek%2Crts5912-pwm.md#std-dtcompatible-realtek-rts5912-pwm) |
+| RTC | on-chip | RTC on Realtek RTS5912 EC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L86) | [`realtek,rts5912-rtc`](../../../../build/dts/api/bindings/rtc/realtek%2Crts5912-rtc.md#std-dtcompatible-realtek-rts5912-rtc) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L279) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| on-chip | Realtek RTS5912 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L288) | [`realtek,rts5912-uart`](../../../../build/dts/api/bindings/serial/realtek%2Crts5912-uart.md#std-dtcompatible-realtek-rts5912-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L46) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Tachometer | on-chip | Realtek rts5912 tachometer controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L441) | [`realtek,rts5912-tach`](../../../../build/dts/api/bindings/tach/realtek%2Crts5912-tach.md#std-dtcompatible-realtek-rts5912-tach) |
+| Timer | on-chip | ARMv8-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8-m.dtsi?plain=1#L21) | [`arm,armv8m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick) |
+| on-chip | RTOS Timer on Realtek RTS5912 EC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L263) | [`realtek,rts5912-rtmr`](../../../../build/dts/api/bindings/timer/realtek%2Crts5912-rtmr.md#std-dtcompatible-realtek-rts5912-rtmr) |
+| Watchdog | on-chip | Realtek RTS5912 watchdog timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/realtek/ec/rts5912.dtsi?plain=1#L421) | [`realtek,rts5912-watchdog`](../../../../build/dts/api/bindings/watchdog/realtek%2Crts5912-watchdog.md#std-dtcompatible-realtek-rts5912-watchdog) |
+
 ## Programming and Debugging
 
 The `rts5912_evb` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Building
 

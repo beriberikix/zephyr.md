@@ -453,7 +453,7 @@ Raytac Corporation
 
 AN54L15Q-DB
 
-riscv, arm
+arm, riscv
 
 ](../boards/raytac/an54l15q_db/doc/index.md)
 [
@@ -1013,7 +1013,7 @@ Ezurio
 
 BL54L15 DVK
 
-riscv, arm
+arm, riscv
 
 ](../boards/ezurio/bl54l15_dvk/doc/bl54l15_dvk.md)
 [
@@ -1024,7 +1024,7 @@ Ezurio
 
 BL54L15u DVK
 
-riscv, arm
+arm, riscv
 
 ](../boards/ezurio/bl54l15u_dvk/doc/bl54l15u_dvk.md)
 [
@@ -4471,7 +4471,7 @@ Nordic Semiconductor
 
 nRF54H20 DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54h20dk/doc/index.md)
 [
@@ -4480,7 +4480,7 @@ Nordic Semiconductor
 
 nRF54L09 PDK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54l09pdk/doc/index.md)
 [
@@ -4491,7 +4491,7 @@ Nordic Semiconductor
 
 nRF54L15 DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54l15dk/doc/index.md)
 [
@@ -4509,7 +4509,7 @@ Nordic Semiconductor
 
 nRF54L20 PDK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54l20pdk/doc/index.md)
 [
@@ -4518,7 +4518,7 @@ Nordic Semiconductor
 
 nRF54LM20 DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/nordic/nrf54lm20dk/doc/index.md)
 [
@@ -4626,7 +4626,7 @@ Nordic Semiconductor
 
 nRF9280 PDK
 
-riscv, arm
+arm, riscv
 
 ](#)
 [
@@ -5604,7 +5604,7 @@ Würth Elektronik GmbH.
 
 Ophelia-IV DK
 
-riscv, arm
+arm, riscv
 
 ](../boards/we/ophelia4ev/doc/index.md)
 [
@@ -5637,7 +5637,7 @@ Panasonic Corporation
 
 PAN B511 Evaluation Board
 
-riscv, arm
+arm, riscv
 
 ](../boards/panasonic/panb511evb/doc/index.md)
 [

@@ -160,8 +160,11 @@ Bottom: Core51822 (B)
 
 The `nrf51_ble400` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
+| **nrfjprog** | ✅ |  |  |  |  |
+| **nrfutil** | ✅ (default) |  |  |  |  |
 
 ### Flashing
 

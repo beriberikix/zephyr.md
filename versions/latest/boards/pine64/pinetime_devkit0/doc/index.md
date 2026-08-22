@@ -103,8 +103,10 @@ west build -b pinetime_devkit0 samples/basic/button
 
 The `pinetime_devkit0` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[blackmagicprobe](../../../../develop/flash_debug/host-tools.md#runner-blackmagicprobe)** | ✅ | ✅ | ✅ |  |  |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The PineTime Dev Kit comes with the back not glued down to allow it to be
 easily reprogrammed.

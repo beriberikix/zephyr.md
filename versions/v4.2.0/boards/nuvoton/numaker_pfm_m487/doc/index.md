@@ -69,6 +69,21 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `numaker_pfm_m487/m487` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L16) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| Clock control | on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L33) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| GPIO & Headers | on-chip | Nuvoton NuMicro GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L58)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L48) | [`nuvoton,numicro-gpio`](../../../../build/dts/api/bindings/gpio/nuvoton%2Cnumicro-gpio.md#std-dtcompatible-nuvoton-numicro-gpio) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nuvoton/numaker_pfm_m487/numaker_pfm_m487.dts?plain=1#L47) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nuvoton/numaker_pfm_m487/numaker_pfm_m487.dts?plain=1#L31) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Pin control | on-chip | Nuvoton NuMicro pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L40) | [`nuvoton,numicro-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nuvoton%2Cnumicro-pinctrl.md#std-dtcompatible-nuvoton-numicro-pinctrl) |
+| Serial controller | on-chip | NUVOTON NUMICRO FAMILY UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L128)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L134) | [`nuvoton,numicro-uart`](../../../../build/dts/api/bindings/serial/nuvoton%2Cnumicro-uart.md#std-dtcompatible-nuvoton-numicro-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m48x.dtsi?plain=1#L23) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 The on-board 12-MHz crystal allows the device to run at its maximum operating speed of 192MHz.
 
 More details about the supported peripherals are available in [M480 TRM](https://www.nuvoton.com/export/resource-files/TRM_M480_Series_EN_Rev2.02.pdf) [[2]](#id4)

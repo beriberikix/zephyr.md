@@ -82,6 +82,34 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `mec1501modular_assy6885/mec1501_hsz` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L19) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| ADC | on-chip | Microchip XEC ADC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L438) | [`microchip,xec-adc`](../../../../build/dts/api/bindings/adc/microchip%2Cxec-adc.md#std-dtcompatible-microchip-xec-adc) |
+| Clock control | on-chip | Microchip XEC Power Clock Reset and VBAT register (PCR)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L64) | [`microchip,xec-pcr`](../../../../build/dts/api/bindings/clock/microchip%2Cxec-pcr.md#std-dtcompatible-microchip-xec-pcr) |
+| ESPI | on-chip | Microchip ESPI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L278) | [`microchip,xec-espi`](../../../../build/dts/api/bindings/espi/microchip%2Cxec-espi.md#std-dtcompatible-microchip-xec-espi) |
+| on-chip | Microchip ESPI SAF controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L286) | [`microchip,xec-espi-saf`](../../../../build/dts/api/bindings/espi/microchip%2Cxec-espi-saf.md#std-dtcompatible-microchip-xec-espi-saf) |
+| GPIO & Headers | on-chip | Microchip CEC/MEC GPIO[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L99) | [`microchip,xec-gpio`](../../../../build/dts/api/bindings/gpio/microchip%2Cxec-gpio.md#std-dtcompatible-microchip-xec-gpio) |
+| Hardware information | on-chip | Microchip EC Subsystem[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L60) | [`microchip,xec-ecs`](../../../../build/dts/api/bindings/hwinfo/microchip%2Cxec-ecs.md#std-dtcompatible-microchip-xec-ecs) |
+| I2C | on-chip | Microchip I2C/SMB controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L213)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L239) | [`microchip,xec-i2c`](../../../../build/dts/api/bindings/i2c/microchip%2Cxec-i2c.md#std-dtcompatible-microchip-xec-i2c) |
+| Input | on-chip | Microchip XEC keyboard matrix controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L449) | [`microchip,xec-kbd`](../../../../build/dts/api/bindings/input/microchip%2Cxec-kbd.md#std-dtcompatible-microchip-xec-kbd) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Memory controller | on-chip | Microchip, XEC family Battery Backed RAM node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L167) | [`microchip,xec-bbram`](../../../../build/dts/api/bindings/memory-controllers/microchip%2Cxec-bbram.md#std-dtcompatible-microchip-xec-bbram) |
+| PECI | on-chip | Microchip XEC PECI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L459) | [`microchip,xec-peci`](../../../../build/dts/api/bindings/peci/microchip%2Cxec-peci.md#std-dtcompatible-microchip-xec-peci) |
+| Pin control | on-chip | Microchip XEC Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L93) | [`microchip,xec-pinctrl`](../../../../build/dts/api/bindings/pinctrl/microchip%2Cxec-pinctrl.md#std-dtcompatible-microchip-xec-pinctrl) |
+| PS/2 | on-chip | Microchip XEC PS/2 controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L355) | [`microchip,xec-ps2`](../../../../build/dts/api/bindings/ps2/microchip%2Cxec-ps2.md#std-dtcompatible-microchip-xec-ps2) |
+| PWM | on-chip | Microchip XEC PWM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L375)[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L382) | [`microchip,xec-pwm`](../../../../build/dts/api/bindings/pwm/microchip%2Cxec-pwm.md#std-dtcompatible-microchip-xec-pwm) |
+| RTC | on-chip | Microchip XEC basic timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L335)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L296) | [`microchip,xec-timer`](../../../../build/dts/api/bindings/rtc/microchip%2Cxec-timer.md#std-dtcompatible-microchip-xec-timer) |
+| Serial controller | on-chip | Microchip XEC UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L190)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L179) | [`microchip,xec-uart`](../../../../build/dts/api/bindings/serial/microchip%2Cxec-uart.md#std-dtcompatible-microchip-xec-uart) |
+| SPI | on-chip | Microchip XEC QMSPI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L468) | [`microchip,xec-qmspi`](../../../../build/dts/api/bindings/spi/microchip%2Cxec-qmspi.md#std-dtcompatible-microchip-xec-qmspi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L46) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Tachometer | on-chip | Microchip XEC tachometer controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L485)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L495) | [`microchip,xec-tach`](../../../../build/dts/api/bindings/tach/microchip%2Cxec-tach.md#std-dtcompatible-microchip-xec-tach) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| on-chip | Microchip XEC RTOS timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L160) | [`microchip,xec-rtos-timer`](../../../../build/dts/api/bindings/timer/microchip%2Cxec-rtos-timer.md#std-dtcompatible-microchip-xec-rtos-timer) |
+| Watchdog | on-chip | Microchip XEC watchdog timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec1501hsz.dtsi?plain=1#L172) | [`microchip,xec-watchdog`](../../../../build/dts/api/bindings/watchdog/microchip%2Cxec-watchdog.md#std-dtcompatible-microchip-xec-watchdog) |
+
 ### Connections and IOs
 
 This evaluation board kit is comprised of the following HW blocks:
@@ -200,6 +228,7 @@ The `mec1501modular_assy6885` board supports the runners and associated west com
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **dediprog** | ✅ (default) |  |
 
 ### Setup
 

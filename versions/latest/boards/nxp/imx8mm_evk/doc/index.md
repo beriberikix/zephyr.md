@@ -77,6 +77,67 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `imx8mm_evk/mimx8mm6/a53` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A53 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L45)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L27) | [`arm,cortex-a53`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a53.md#std-dtcompatible-arm-cortex-a53) |
+| Clock control | on-chip | i.MX CCM (Clock Controller Module) IP node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L182) | [`nxp,imx-ccm`](../../../../build/dts/api/bindings/clock/nxp%2Cimx-ccm.md#std-dtcompatible-nxp-imx-ccm) |
+| Ethernet | on-chip | NXP ENET1G IP Module[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L265) | [`nxp,enet1g`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet1g.md#std-dtcompatible-nxp-enet1g) |
+| on-chip | NXP ENET MAC/L2 Device[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L272) | [`nxp,enet-mac`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet-mac.md#std-dtcompatible-nxp-enet-mac) |
+| on-board | Qualcomm Atheros AR8031 Ethernet PHY[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx8mm_evk/imx8mm_evk_mimx8mm6_a53.dts?plain=1#L59) | [`qca,ar8031`](../../../../build/dts/api/bindings/ethernet/phy/qca%2Car8031.md#std-dtcompatible-qca-ar8031) |
+| on-chip | NXP ENET PTP (Precision Time Protocol) Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L287) | [`nxp,enet-ptp-clock`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet-ptp-clock.md#std-dtcompatible-nxp-enet-ptp-clock) |
+| GPIO & Headers | on-chip | i.MX GPIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L75)[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L89) | [`nxp,imx-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-gpio.md#std-dtcompatible-nxp-imx-gpio) |
+| on-board | PCA6416 I2C-based GPIO expander[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx8mm_evk/imx8mm_evk_mimx8mm6_a53.dts?plain=1#L83) | [`nxp,pca6416`](../../../../build/dts/api/bindings/gpio/nxp%2Cpca6416.md#std-dtcompatible-nxp-pca6416) |
+| I2C | on-chip | NXP II2C[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L236)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L212) | [`nxp,ii2c`](../../../../build/dts/api/bindings/i2c/nxp%2Cii2c.md#std-dtcompatible-nxp-ii2c) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L66) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| MDIO | on-chip | NXP ENET MDIO Features[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L281) | [`nxp,enet-mdio`](../../../../build/dts/api/bindings/mdio/nxp%2Cenet-mdio.md#std-dtcompatible-nxp-enet-mdio) |
+| Miscellaneous | on-chip | NXP i.MX Resource Domain Controller (RDC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L260) | [`nxp,rdc`](../../../../build/dts/api/bindings/misc/nxp%2Crdc.md#std-dtcompatible-nxp-rdc) |
+| Pin control | on-chip | This compatible binding should be applied to the device’s iomuxc DTS node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L167) | [`nxp,imx-iomuxc`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc) |
+| on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L171) | [`nxp,imx8mp-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx8mp-pinctrl.md#std-dtcompatible-nxp-imx8mp-pinctrl) |
+| Serial controller | on-chip | This binding gives a base representation of the NXP iMX IUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L200)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L188) | [`nxp,imx-iuart`](../../../../build/dts/api/bindings/serial/nxp%2Cimx-iuart.md#std-dtcompatible-nxp-imx-iuart) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L53) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+| on-chip | NXP MCUX General-Purpose Timer (GPT)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L145) | [`nxp,imx-gpt`](../../../../build/dts/api/bindings/timer/nxp%2Cimx-gpt.md#std-dtcompatible-nxp-imx-gpt) |
+
+#### `imx8mm_evk/mimx8mm6/a53/smp` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-A53 CPU[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L39)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L27) | [`arm,cortex-a53`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a53.md#std-dtcompatible-arm-cortex-a53) |
+| Clock control | on-chip | i.MX CCM (Clock Controller Module) IP node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L182) | [`nxp,imx-ccm`](../../../../build/dts/api/bindings/clock/nxp%2Cimx-ccm.md#std-dtcompatible-nxp-imx-ccm) |
+| Ethernet | on-chip | NXP ENET1G IP Module[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L265) | [`nxp,enet1g`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet1g.md#std-dtcompatible-nxp-enet1g) |
+| on-chip | NXP ENET MAC/L2 Device[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L272) | [`nxp,enet-mac`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet-mac.md#std-dtcompatible-nxp-enet-mac) |
+| on-board | Qualcomm Atheros AR8031 Ethernet PHY[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx8mm_evk/imx8mm_evk_mimx8mm6_a53_smp.dts?plain=1#L59) | [`qca,ar8031`](../../../../build/dts/api/bindings/ethernet/phy/qca%2Car8031.md#std-dtcompatible-qca-ar8031) |
+| on-chip | NXP ENET PTP (Precision Time Protocol) Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L287) | [`nxp,enet-ptp-clock`](../../../../build/dts/api/bindings/ethernet/nxp%2Cenet-ptp-clock.md#std-dtcompatible-nxp-enet-ptp-clock) |
+| GPIO & Headers | on-chip | i.MX GPIO[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L75) | [`nxp,imx-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-gpio.md#std-dtcompatible-nxp-imx-gpio) |
+| I2C | on-chip | NXP II2C[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L212) | [`nxp,ii2c`](../../../../build/dts/api/bindings/i2c/nxp%2Cii2c.md#std-dtcompatible-nxp-ii2c) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L66) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| MDIO | on-chip | NXP ENET MDIO Features[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L281) | [`nxp,enet-mdio`](../../../../build/dts/api/bindings/mdio/nxp%2Cenet-mdio.md#std-dtcompatible-nxp-enet-mdio) |
+| Miscellaneous | on-chip | NXP i.MX Resource Domain Controller (RDC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L260) | [`nxp,rdc`](../../../../build/dts/api/bindings/misc/nxp%2Crdc.md#std-dtcompatible-nxp-rdc) |
+| Pin control | on-chip | This compatible binding should be applied to the device’s iomuxc DTS node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L167) | [`nxp,imx-iomuxc`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc) |
+| on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L171) | [`nxp,imx8mp-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx8mp-pinctrl.md#std-dtcompatible-nxp-imx8mp-pinctrl) |
+| Power management CPU operations | on-board | Power State Coordination Interface (PSCI) version 0.2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nxp/imx8mm_evk/imx8mm_evk_mimx8mm6_a53_smp.dts?plain=1#L32) | [`arm,psci-0.2`](../../../../build/dts/api/bindings/pm_cpu_ops/arm%2Cpsci-0.2.md#std-dtcompatible-arm-psci-0.2) |
+| Serial controller | on-chip | This binding gives a base representation of the NXP iMX IUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L200)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L188) | [`nxp,imx-iuart`](../../../../build/dts/api/bindings/serial/nxp%2Cimx-iuart.md#std-dtcompatible-nxp-imx-iuart) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L53) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+| on-chip | NXP MCUX General-Purpose Timer (GPT)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/nxp/nxp_mimx8mm_a53.dtsi?plain=1#L145) | [`nxp,imx-gpt`](../../../../build/dts/api/bindings/timer/nxp%2Cimx-gpt.md#std-dtcompatible-nxp-imx-gpt) |
+
+#### `imx8mm_evk/mimx8mm6/m4` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L18) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| ARM architecture | on-chip | i.MX ITCM (Instruction Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L26) | [`nxp,imx-itcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-itcm.md#std-dtcompatible-nxp-imx-itcm) |
+| on-chip | i.MX DTCM (Data Tightly Coupled Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L31) | [`nxp,imx-dtcm`](../../../../build/dts/api/bindings/arm/nxp%2Cimx-dtcm.md#std-dtcompatible-nxp-imx-dtcm) |
+| Clock control | on-chip | i.MX CCM (Clock Controller Module) IP node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L133) | [`nxp,imx-ccm`](../../../../build/dts/api/bindings/clock/nxp%2Cimx-ccm.md#std-dtcompatible-nxp-imx-ccm) |
+| GPIO & Headers | on-chip | i.MX GPIO[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L58) | [`nxp,imx-gpio`](../../../../build/dts/api/bindings/gpio/nxp%2Cimx-gpio.md#std-dtcompatible-nxp-imx-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| IPM | on-chip | i.MX Messaging Unit[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L201) | [`nxp,imx-mu`](../../../../build/dts/api/bindings/ipm/nxp%2Cimx-mu.md#std-dtcompatible-nxp-imx-mu) |
+| Pin control | on-chip | This compatible binding should be applied to the device’s iomuxc DTS node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L123) | [`nxp,imx-iomuxc`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc) |
+| on-chip | The node has the ‘pinctrl’ node label set in MCUX SoC’s devicetree[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L127) | [`nxp,imx8mp-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nxp%2Cimx8mp-pinctrl.md#std-dtcompatible-nxp-imx8mp-pinctrl) |
+| Serial controller | on-chip | This binding gives a base representation of the NXP iMX IUART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L193)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L169) | [`nxp,imx-iuart`](../../../../build/dts/api/bindings/serial/nxp%2Cimx-iuart.md#std-dtcompatible-nxp-imx-iuart) |
+| SPI | on-chip | NXP i.MX ECSPI controller[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nxp/nxp_imx8m_m4.dtsi?plain=1#L139) | [`nxp,imx-ecspi`](../../../../build/dts/api/bindings/spi/nxp%2Cimx-ecspi.md#std-dtcompatible-nxp-imx-ecspi) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 Note
 
 It is recommended to disable peripherals used by the M4 core on the Linux host.
@@ -98,8 +159,9 @@ CPU’s UART4. This is used for the M4 and A53 core targets.
 
 The `imx8mm_evk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 There are multiple methods to program and debug Zephyr on the A53 core:
 

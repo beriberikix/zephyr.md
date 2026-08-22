@@ -73,6 +73,25 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+##### `dt_bl10_devkit/bl602c20q2i` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | SiFive E24 Standard Core CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L61) | [`sifive,e24`](../../../../build/dts/api/bindings/cpu/sifive%2Ce24.md#std-dtcompatible-sifive-e24) |
+| Clock control | on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L19) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | The BL60x PLL[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L33) | [`bflb,bl60x-pll`](../../../../build/dts/api/bindings/clock/bflb%2Cbl60x-pll.md#std-dtcompatible-bflb-bl60x-pll) |
+| on-chip | The BL60x Root Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L40) | [`bflb,bl60x-root-clk`](../../../../build/dts/api/bindings/clock/bflb%2Cbl60x-root-clk.md#std-dtcompatible-bflb-bl60x-root-clk) |
+| on-chip | The BCLK clock, or peripheral clock Source Clock -> Root Clock -> / divider -> BCLK[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L48) | [`bflb,bclk`](../../../../build/dts/api/bindings/clock/bflb%2Cbclk.md#std-dtcompatible-bflb-bclk) |
+| on-chip | Bouffalolab BL60x Clock Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L127) | [`bflb,bl60x-clock-controller`](../../../../build/dts/api/bindings/clock/bflb%2Cbl60x-clock-controller.md#std-dtcompatible-bflb-bl60x-clock-controller) |
+| GPIO & Headers | on-chip | Bouffalo Lab GPIO node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L114) | [`bflb,gpio`](../../../../build/dts/api/bindings/gpio/bflb%2Cgpio.md#std-dtcompatible-bflb-gpio) |
+| Interrupt controller | on-chip | RISC-V CPU interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L69) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv%2Ccpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
+| on-chip | SiFive RISC-V Core-Local Interruptor[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L84) | [`sifive,clint0`](../../../../build/dts/api/bindings/interrupt-controller/sifive%2Cclint0.md#std-dtcompatible-sifive-clint0) |
+| Pin control | on-chip | Bouffalo Lab Pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L106) | [`bflb,pinctrl`](../../../../build/dts/api/bindings/pinctrl/bflb%2Cpinctrl.md#std-dtcompatible-bflb-pinctrl) |
+| Serial controller | on-chip | Bouffalo Lab UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L148)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L157) | [`bflb,uart`](../../../../build/dts/api/bindings/serial/bflb%2Cuart.md#std-dtcompatible-bflb-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L190) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| System controller | on-chip | BouffaloLab Efuse[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L141) | [`bflb,efuse`](../../../../build/dts/api/bindings/syscon/bflb%2Cefuse.md#std-dtcompatible-bflb-efuse) |
+| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/bflb/bl60x.dtsi?plain=1#L98) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer) |
+
 #### System Clock
 
 The DT-BL10 board is configured to run at max speed (192MHz).
@@ -88,6 +107,7 @@ The `dt_bl10_devkit` board supports the runners and associated west commands lis
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **bflb\_mcu\_tool** | ✅ (default) |  |
 
 #### Samples
 

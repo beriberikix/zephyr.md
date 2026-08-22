@@ -82,6 +82,23 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `rzt2m_rsk/r9a07g075m24gbg/cr520` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-R52 CPU[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L21) | [`arm,cortex-r52`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-r52.md#std-dtcompatible-arm-cortex-r52) |
+| GPIO & Headers | on-chip | Renesas RZ GPIO controller[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L346)[20 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L255) | [`renesas,rz-gpio`](../../../../build/dts/api/bindings/gpio/renesas%2Crz-gpio.md#std-dtcompatible-renesas-rz-gpio) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rzt2m_rsk/rzt2m_rsk_r9a07g075m24gbg_cr520.dts?plain=1#L54) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L46) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| on-chip | Renesas RZ external interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L122)[15 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L104) | [`renesas,rz-ext-irq`](../../../../build/dts/api/bindings/interrupt-controller/renesas%2Crz-ext-irq.md#std-dtcompatible-renesas-rz-ext-irq) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/renesas/rzt2m_rsk/rzt2m_rsk_r9a07g075m24gbg_cr520.dts?plain=1#L30) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| Miscellaneous | on-chip | Renesas RZ SCI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L482)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L500) | [`renesas,rz-sci`](../../../../build/dts/api/bindings/misc/renesas%2Crz-sci.md#std-dtcompatible-renesas-rz-sci) |
+| MTD | on-chip | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L74) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | Renesas RZ/T pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L249) | [`renesas,rzt-pinctrl`](../../../../build/dts/api/bindings/pinctrl/renesas%2Crzt-pinctrl.md#std-dtcompatible-renesas-rzt-pinctrl) |
+| Serial controller | on-chip | Renesas RZ SCI UART controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L493)[5 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L511) | [`renesas,rz-sci-uart`](../../../../build/dts/api/bindings/serial/renesas%2Crz-sci-uart.md#std-dtcompatible-renesas-rz-sci-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L55) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/renesas/rz/rzt/r9a07g075.dtsi?plain=1#L34) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+
 ### Connections and IOs
 
 By default, the board is configured for use with:
@@ -96,8 +113,9 @@ The Zephyr console uses UART0.
 
 The `rzt2m_rsk` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `rzt2m_rsk` board can be built in the usual way as
 documented in [Building an Application](../../../../develop/application/index.md#build-an-application).

@@ -101,6 +101,27 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `lp_mspm0g3507/mspm0g3507` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M0+ CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L17) | [`arm,cortex-m0+`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m0%2B.md#std-dtcompatible-arm-cortex-m0) |
+| Clock control | on-chip | TI MSPM0 Clock[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L26)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L32) | [`ti,mspm0-clk`](../../../../build/dts/api/bindings/clock/ti%2Cmspm0-clk.md#std-dtcompatible-ti-mspm0-clk) |
+| on-chip | TI MSPM0 Phase Locked Loop[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/g/mspm0g.dtsi?plain=1#L12) | [`ti,mspm0-pll`](../../../../build/dts/api/bindings/clock/ti%2Cmspm0-pll.md#std-dtcompatible-ti-mspm0-pll) |
+| on-chip | TI MSPM0 oscillator[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L88)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L74) | [`ti,mspm0-osc`](../../../../build/dts/api/bindings/clock/ti%2Cmspm0-osc.md#std-dtcompatible-ti-mspm0-osc) |
+| Counter | on-chip | TI MSPM0 counter node for MSPM0 SoCs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/g/mspm0g.dtsi?plain=1#L40) | [`ti,mspm0-timer-counter`](../../../../build/dts/api/bindings/counter/ti%2Cmspm0-counter.md#std-dtcompatible-ti-mspm0-timer-counter) |
+| GPIO & Headers | on-chip | TI MSPM0 GPIO[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L116) | [`ti,mspm0-gpio`](../../../../build/dts/api/bindings/gpio/ti%2Cmspm0-gpio.md#std-dtcompatible-ti-mspm0-gpio) |
+| Interrupt controller | on-chip | ARMv6-M NVIC (Nested Vectored Interrupt Controller) controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L13) | [`arm,v6m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv6m-nvic.md#std-dtcompatible-arm-v6m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/lp_mspm0g3507/lp_mspm0g3507.dts?plain=1#L33) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| on-board | Group of PWM-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/lp_mspm0g3507/lp_mspm0g3507.dts?plain=1#L42) | [`pwm-leds`](../../../../build/dts/api/bindings/led/pwm-leds.md#std-dtcompatible-pwm-leds) |
+| MTD | on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/ti/lp_mspm0g3507/lp_mspm0g3507.dts?plain=1#L77) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | TI MSPM0 pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L110) | [`ti,mspm0-pinctrl`](../../../../build/dts/api/bindings/pinctrl/ti%2Cmspm0-pinctrl.md#std-dtcompatible-ti-mspm0-pinctrl) |
+| PWM | on-chip | TI MSPM0 PWM node for MSPM0 SoCs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/g/mspm0g.dtsi?plain=1#L55) | [`ti,mspm0-timer-pwm`](../../../../build/dts/api/bindings/pwm/ti%2Cmspm0-pwm.md#std-dtcompatible-ti-mspm0-timer-pwm) |
+| Serial controller | on-chip | TI MSPM0 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L135) | [`ti,mspm0-uart`](../../../../build/dts/api/bindings/serial/ti%2Cmspm0-uart.md#std-dtcompatible-ti-mspm0-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/mspm0.dtsi?plain=1#L102) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv6-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv6-m.dtsi?plain=1#L21) | [`arm,armv6m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv6m-systick.md#std-dtcompatible-arm-armv6m-systick) |
+| on-chip | TI MSPM0 Timer[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/mspm0/g/mspm0g.dtsi?plain=1#L31) | [`ti,mspm0-timer`](../../../../build/dts/api/bindings/timer/ti%2Cmspm0-timer.md#std-dtcompatible-ti-mspm0-timer) |
+
 ## Building and Flashing
 
 ### Building

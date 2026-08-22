@@ -65,6 +65,36 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `numaker_m55m1/m55m1xxx` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M55 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L29) | [`arm,cortex-m55`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m55.md#std-dtcompatible-arm-cortex-m55) |
+| ADC | on-chip | Nuvoton, NuMaker ADC controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L428) | [`nuvoton,numaker-adc`](../../../../build/dts/api/bindings/adc/nuvoton%2Cnumaker-adc.md#std-dtcompatible-nuvoton-numaker-adc) |
+| CAN | on-chip | Nuvoton NuMaker CAN FD controller, using Bosch M\_CAN IP[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L342)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L356) | [`nuvoton,numaker-canfd`](../../../../build/dts/api/bindings/can/nuvoton%2Cnumaker-canfd.md#std-dtcompatible-nuvoton-numaker-canfd) |
+| Clock control | on-chip | Nuvoton NuMaker System Clock Controller (SCC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L43) | [`nuvoton,numaker-scc`](../../../../build/dts/api/bindings/clock/nuvoton%2Cnumaker-scc.md#std-dtcompatible-nuvoton-numaker-scc) |
+| on-chip | Nuvoton NuMaker Peripheral Clock Controller (PCC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L57) | [`nuvoton,numaker-pcc`](../../../../build/dts/api/bindings/clock/nuvoton%2Cnumaker-pcc.md#std-dtcompatible-nuvoton-numaker-pcc) |
+| on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L36) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| Ethernet | on-chip | Nuvoton, NuMaker Ethernet controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L370) | [`nuvoton,numaker-ethernet`](../../../../build/dts/api/bindings/ethernet/nuvoton%2Cnumaker-ethernet.md#std-dtcompatible-nuvoton-numaker-ethernet) |
+| Flash controller | on-chip | Nuvoton NuMaker Flash Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L69) | [`nuvoton,numaker-fmc`](../../../../build/dts/api/bindings/flash_controller/nuvoton%2Cnumaker-fmc.md#std-dtcompatible-nuvoton-numaker-fmc) |
+| GPIO & Headers | on-chip | Nuvoton Numaker GPIO[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L219)[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L189) | [`nuvoton,numaker-gpio`](../../../../build/dts/api/bindings/gpio/nuvoton%2Cnumaker-gpio.md#std-dtcompatible-nuvoton-numaker-gpio) |
+| I2C | on-chip | Nuvoton, NuMaker I2C controller[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L380) | [`nuvoton,numaker-i2c`](../../../../build/dts/api/bindings/i2c/nuvoton%2Cnumaker-i2c.md#std-dtcompatible-nuvoton-numaker-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nuvoton/numaker_m55m1/numaker_m55m1.dts?plain=1#L49) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv8.1-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L17) | [`arm,v8.1m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv8.1m-nvic.md#std-dtcompatible-arm-v8.1m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nuvoton/numaker_m55m1/numaker_m55m1.dts?plain=1#L35) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L75) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| on-board | Fixed partitions of a flash (or other non-volatile storage) memory[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/nuvoton/numaker_m55m1/numaker_m55m1.dts?plain=1#L81) | [`fixed-partitions`](../../../../build/dts/api/bindings/mtd/fixed-partitions.md#std-dtcompatible-fixed-partitions) |
+| Pin control | on-chip | Pin controller is responsible for controlling pin function selection and pin properties[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L182) | [`nuvoton,numaker-pinctrl`](../../../../build/dts/api/bindings/pinctrl/nuvoton%2Cnumaker-pinctrl.md#std-dtcompatible-nuvoton-numaker-pinctrl) |
+| PWM | on-chip | Nuvoton, NuMaker PWM controller[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L441) | [`nuvoton,numaker-pwm`](../../../../build/dts/api/bindings/pwm/nuvoton%2Cnumaker-pwm.md#std-dtcompatible-nuvoton-numaker-pwm) |
+| Reset controller | on-chip | Nuvoton, Numaker-RESET[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L63) | [`nuvoton,numaker-rst`](../../../../build/dts/api/bindings/reset/nuvoton%2Cnumaker-rst.md#std-dtcompatible-nuvoton-numaker-rst) |
+| RTC | on-chip | Nuvoton, NuMaker RTC controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L289) | [`nuvoton,numaker-rtc`](../../../../build/dts/api/bindings/rtc/nuvoton%2Cnumaker-rtc.md#std-dtcompatible-nuvoton-numaker-rtc) |
+| Serial controller | on-chip | Nuvoton, Numaker-UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L82)[9 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L92) | [`nuvoton,numaker-uart`](../../../../build/dts/api/bindings/serial/nuvoton%2Cnumaker-uart.md#std-dtcompatible-nuvoton-numaker-uart) |
+| SPI | on-chip | Nuvoton, NuMaker SPI controller[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L298) | [`nuvoton,numaker-spi`](../../../../build/dts/api/bindings/spi/nuvoton%2Cnumaker-spi.md#std-dtcompatible-nuvoton-numaker-spi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1h2l.dtsi?plain=1#L11) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv8.1-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv8.1-m.dtsi?plain=1#L25) | [`arm,armv8.1m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv8.1m-systick.md#std-dtcompatible-arm-armv8.1m-systick) |
+| USB | on-chip | Nuvoton NuMaker USB 1.1 device controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L465) | [`nuvoton,numaker-usbd`](../../../../build/dts/api/bindings/usb/nuvoton%2Cnumaker-usbd.md#std-dtcompatible-nuvoton-numaker-usbd) |
+| Watchdog | on-chip | Nuvoton, NuMaker window watchdog timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/nuvoton/m55m1x.dtsi?plain=1#L478) | [`nuvoton,numaker-wwdt`](../../../../build/dts/api/bindings/watchdog/nuvoton%2Cnumaker-wwdt.md#std-dtcompatible-nuvoton-numaker-wwdt) |
+
 The on-board 12-MHz crystal allows the device to run at its maximum operating speed of 220 MHz.
 
 More details about the supported peripherals are available in [M55M1 TRM](https://www.nuvoton.com/products/microcontrollers/arm-cortex-m55-mcus/m55m1-series/) [[1]](#id2)
@@ -73,8 +103,10 @@ More details about the supported peripherals are available in [M55M1 TRM](https:
 
 The `numaker_m55m1` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Flashing
 

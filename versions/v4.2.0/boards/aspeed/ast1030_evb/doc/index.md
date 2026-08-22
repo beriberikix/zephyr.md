@@ -65,6 +65,19 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `ast1030_evb/ast1030` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L16) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| Clock control | on-chip | Aspeed AST10X0 Clock Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L31) | [`aspeed,ast10x0-clock`](../../../../build/dts/api/bindings/clock/aspeed%2Cast10x0-clock.md#std-dtcompatible-aspeed-ast10x0-clock) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Reset controller | on-chip | Aspeed AST10X0 Reset Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L36) | [`aspeed,ast10x0-reset`](../../../../build/dts/api/bindings/reset/aspeed%2Cast10x0-reset.md#std-dtcompatible-aspeed-ast10x0-reset) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L42) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L23) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| System controller | on-chip | System Controller Registers R/W[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/aspeed/ast10x0.dtsi?plain=1#L28) | [`syscon`](../../../../build/dts/api/bindings/syscon/syscon.md#std-dtcompatible-syscon) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+
 ### Connections and IOs
 
 Aspeed to provide the schematic for this board.

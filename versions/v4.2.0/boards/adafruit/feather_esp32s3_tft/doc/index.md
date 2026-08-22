@@ -95,8 +95,10 @@ the board including [pinouts](https://learn.adafruit.com/adafruit-esp32-s3-tft-f
 
 The `adafruit_feather_esp32s3_tft` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **esp32** | ✅ (default) |  |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
 
 ### Prerequisites
 

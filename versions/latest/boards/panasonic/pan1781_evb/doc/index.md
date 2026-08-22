@@ -68,8 +68,12 @@ The schematics for the PAN1781 Evaluation Board are available in the
 
 The `pan1781_evb` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
+| **nrfjprog** | ✅ |  |  |  |  |
+| **nrfutil** | ✅ (default) |  |  |  |  |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 Please use the `pan1781_evb` board configuration when
 [Building an Application](../../../../develop/application/index.md#build-an-application) and [Run an Application](../../../../develop/application/index.md#application-run).

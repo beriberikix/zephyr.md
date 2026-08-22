@@ -50,8 +50,11 @@ represent any real system and so might be renamed, removed or modified at any po
 
 The `nsim_arc_v` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **debugserver** |
+| --- | --- | --- | --- | --- |
+| **arc-nsim** | ✅ (default) | ✅ (default) | ✅ | ✅ |
+| **mdb-hw** | ✅ | ✅ |  |  |
+| **mdb-nsim** | ✅ | ✅ |  |  |
 
 ### Required Hardware and Software
 

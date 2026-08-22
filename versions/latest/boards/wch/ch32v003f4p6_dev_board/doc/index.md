@@ -62,6 +62,33 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `ch32v003f4p6_dev_board/ch32v003` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | WCH QingKe V2 RISC-V MCU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v2a.dtsi?plain=1#L15) | [`wch,qingke-v2`](../../../../build/dts/api/bindings/cpu/wch%2Cqingke-v2.md#std-dtcompatible-wch-qingke-v2) |
+| ADC | on-chip | WCH CH32V00x ADC[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L190) | [`wch,adc`](../../../../build/dts/api/bindings/adc/wch%2Cadc.md#std-dtcompatible-wch-adc) |
+| Clock control | on-chip | WCH CH32V00x Reset and Clock Control (RCC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L143) | [`wch,rcc`](../../../../build/dts/api/bindings/clock/wch%2Crcc.md#std-dtcompatible-wch-rcc) |
+| on-chip | WCH CH32V00x HSE Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L18) | [`wch,ch32v00x-hse-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v00x-hse-clock.md#std-dtcompatible-wch-ch32v00x-hse-clock) |
+| on-chip | WCH CH32V00x HSI Clock[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L24) | [`wch,ch32v00x-hsi-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v00x-hsi-clock.md#std-dtcompatible-wch-ch32v00x-hsi-clock) |
+| on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L31) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | WCH CH32V00x PLL[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L38) | [`wch,ch32v00x-pll-clock`](../../../../build/dts/api/bindings/clock/wch%2Cch32v00x-pll-clock.md#std-dtcompatible-wch-ch32v00x-pll-clock) |
+| Counter | on-chip | WCH General-purpose Timer (GPTM) for PWM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L160) | [`wch,gptm`](../../../../build/dts/api/bindings/counter/wch%2Cgptm.md#std-dtcompatible-wch-gptm) |
+| DMA | on-chip | WCH DMA controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L150) | [`wch,wch-dma`](../../../../build/dts/api/bindings/dma/wch%2Cwch-dma.md#std-dtcompatible-wch-wch-dma) |
+| GPIO & Headers | on-chip | WCH CH32V00x General-Purpose Input/Output (GPIO)[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L96) | [`wch,gpio`](../../../../build/dts/api/bindings/gpio/wch%2Cgpio.md#std-dtcompatible-wch-gpio) |
+| I2C | on-chip | WCH I2C controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L125) | [`wch,i2c`](../../../../build/dts/api/bindings/i2c/wch%2Ci2c.md#std-dtcompatible-wch-i2c) |
+| Interrupt controller | on-chip | WCH CH32V00x Programmable Fast Interrupt Controller (PFIC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v2a.dtsi?plain=1#L29) | [`wch,pfic`](../../../../build/dts/api/bindings/interrupt-controller/wch%2Cpfic.md#std-dtcompatible-wch-pfic) |
+| on-chip | WCH CH32V003/20x/30x External Interrupt and Event Controller (EXTI)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L75) | [`wch,exti`](../../../../build/dts/api/bindings/interrupt-controller/wch%2Cexti.md#std-dtcompatible-wch-exti) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/wch/ch32v003f4p6_dev_board/ch32v003f4p6_dev_board.dts?plain=1#L25) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L58) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | WCH CH32V00x AFIO[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L88) | [`wch,afio`](../../../../build/dts/api/bindings/pinctrl/wch%2Cafio.md#std-dtcompatible-wch-afio) |
+| PWM | on-chip | WCH General-purpose Timer (GPTM) for PWM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L171) | [`wch,gptm-pwm`](../../../../build/dts/api/bindings/pwm/wch%2Cgptm-pwm.md#std-dtcompatible-wch-gptm-pwm) |
+| Serial controller | on-chip | WCH CH32V00x UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L135) | [`wch,usart`](../../../../build/dts/api/bindings/serial/wch%2Cusart.md#std-dtcompatible-wch-usart) |
+| SPI | on-chip | WCH SPI[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L179) | [`wch,spi`](../../../../build/dts/api/bindings/spi/wch%2Cspi.md#std-dtcompatible-wch-spi) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L46) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | WCH CH32V00x Systick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/qingke-v2a.dtsi?plain=1#L38) | [`wch,systick`](../../../../build/dts/api/bindings/timer/wch%2Csystick.md#std-dtcompatible-wch-systick) |
+| Watchdog | on-chip | WCH Independent Watchdog (IWDG)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/wch/ch32v0/ch32v003.dtsi?plain=1#L69) | [`wch,iwdg`](../../../../build/dts/api/bindings/watchdog/wch%2Ciwdg.md#std-dtcompatible-wch-iwdg) |
+
 ### Connections and IOs
 
 #### LED
@@ -72,8 +99,10 @@ on-chip / on-board
 
 The `ch32v003f4p6_dev_board` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **minichlink** | ✅ (default) |  |  |  |  |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
 
 Applications for the `ch32v003f4p6_dev_board` board target can be built and
 flashed in the usual way (see [Building an Application](../../../../develop/application/index.md#build-an-application) and [Run an Application](../../../../develop/application/index.md#application-run)

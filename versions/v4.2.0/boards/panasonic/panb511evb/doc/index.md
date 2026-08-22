@@ -20,7 +20,7 @@ Vendor:
 :   Panasonic Corporation
 
 Architecture:
-:   riscv, arm
+:   arm, riscv
 
 SoC:
 :   nrf54l15
@@ -60,8 +60,10 @@ The schematics for the PANB511 Evaluation Boards are available in the
 
 The `panb511evb` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ (default) | ✅ | ✅ | ✅ |
+| **nrfutil** | ✅ (default) |  |  |  |  |
 
 Applications for the `panb511evb/nrf54l15/cpuapp` board target can
 be built, flashed, and debugged in the usual way. See

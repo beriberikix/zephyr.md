@@ -23,7 +23,7 @@ Architecture:
 :   riscv
 
 SoC:
-:   sy120\_gbm, sy120\_gen1
+:   sy120\_gen1, sy120\_gbm
 
 [
 Browse board sources
@@ -91,6 +91,42 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `ganymed_sk/sy120_gbm` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | Sensry Ganymed SY1xx Core CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L20) | [`sensry,sy1xx`](../../../../build/dts/api/bindings/cpu/sensry%2Cganymed-sy1xx.md#std-dtcompatible-sensry-sy1xx) |
+| Ethernet | on-board | Single Port Gigabit Ethernet Copper PHY with GMII/RGMII/MII/RMII Interfaces[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sensry/ganymed_sk/ganymed_sk_sy120_gbm.dts?plain=1#L39) | [`microchip,vsc8541`](../../../../build/dts/api/bindings/ethernet/phy/microchip%2Cvsc8541-phy.md#std-dtcompatible-microchip-vsc8541) |
+| on-chip | This file needs to be included by devices that need to specify a set of pin controller states[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L173) | [`sensry,sy1xx-mac`](../../../../build/dts/api/bindings/ethernet/sensry%2Csy1xx-mac.md#std-dtcompatible-sensry-sy1xx-mac) |
+| GPIO & Headers | on-chip | Sensry SY1XX GPIO Port[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L146) | [`sensry,sy1xx-gpio`](../../../../build/dts/api/bindings/gpio/sensry%2Csy1xx-gpio.md#std-dtcompatible-sensry-sy1xx-gpio) |
+| I2C | on-chip | Sensry SY1XX I2C Driver node[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L96) | [`sensry,sy1xx-i2c`](../../../../build/dts/api/bindings/i2c/sensry%2Csy1xxx-i2c.md#std-dtcompatible-sensry-sy1xx-i2c) |
+| Interrupt controller | on-chip | Sensry sy1xx event unit[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L49) | [`sensry,sy1xx-event-unit`](../../../../build/dts/api/bindings/interrupt-controller/sy1xx%2Cevent-unit.md#std-dtcompatible-sensry-sy1xx-event-unit) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sensry/ganymed_sk/ganymed_sk_sy120_gbm.dts?plain=1#L23) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MDIO | on-chip | Sensry SY1XX MDIO Driver node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L162) | [`sensry,sy1xx-mdio`](../../../../build/dts/api/bindings/mdio/sensry%2Csy1xx-mdio.md#std-dtcompatible-sensry-sy1xx-mdio) |
+| Pin control | on-chip | Sensry SY1xx Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L156) | [`sensry,sy1xx-pinctrl`](../../../../build/dts/api/bindings/pinctrl/sensry%2Csy1xx-pinctrl.md#std-dtcompatible-sensry-sy1xx-pinctrl) |
+| RNG | on-chip | Sensry SY1XX TRNG[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L140) | [`sensry,sy1xx-trng`](../../../../build/dts/api/bindings/rng/sensry%2Csy1xx-trng.md#std-dtcompatible-sensry-sy1xx-trng) |
+| Serial controller | on-chip | Sensry SY1xx UART[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L72) | [`sensry,sy1xx-uart`](../../../../build/dts/api/bindings/serial/sensry%2Csy1xx-uart.md#std-dtcompatible-sensry-sy1xx-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L29) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Sensry ganymed timer peripheral[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L56) | [`sensry,sy1xx-sys-timer`](../../../../build/dts/api/bindings/timer/sy1xx%2Csys-timer.md#std-dtcompatible-sensry-sy1xx-sys-timer) |
+
+#### `ganymed_sk/sy120_gen1` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | Sensry Ganymed SY1xx Core CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L20) | [`sensry,sy1xx`](../../../../build/dts/api/bindings/cpu/sensry%2Cganymed-sy1xx.md#std-dtcompatible-sensry-sy1xx) |
+| Ethernet | on-board | Single Port Gigabit Ethernet Copper PHY with GMII/RGMII/MII/RMII Interfaces[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sensry/ganymed_sk/ganymed_sk_sy120_gen1.dts?plain=1#L39) | [`microchip,vsc8541`](../../../../build/dts/api/bindings/ethernet/phy/microchip%2Cvsc8541-phy.md#std-dtcompatible-microchip-vsc8541) |
+| on-chip | This file needs to be included by devices that need to specify a set of pin controller states[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L173) | [`sensry,sy1xx-mac`](../../../../build/dts/api/bindings/ethernet/sensry%2Csy1xx-mac.md#std-dtcompatible-sensry-sy1xx-mac) |
+| GPIO & Headers | on-chip | Sensry SY1XX GPIO Port[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L146) | [`sensry,sy1xx-gpio`](../../../../build/dts/api/bindings/gpio/sensry%2Csy1xx-gpio.md#std-dtcompatible-sensry-sy1xx-gpio) |
+| I2C | on-chip | Sensry SY1XX I2C Driver node[4 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L96) | [`sensry,sy1xx-i2c`](../../../../build/dts/api/bindings/i2c/sensry%2Csy1xxx-i2c.md#std-dtcompatible-sensry-sy1xx-i2c) |
+| Interrupt controller | on-chip | Sensry sy1xx event unit[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L49) | [`sensry,sy1xx-event-unit`](../../../../build/dts/api/bindings/interrupt-controller/sy1xx%2Cevent-unit.md#std-dtcompatible-sensry-sy1xx-event-unit) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sensry/ganymed_sk/ganymed_sk_sy120_gen1.dts?plain=1#L23) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MDIO | on-chip | Sensry SY1XX MDIO Driver node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L162) | [`sensry,sy1xx-mdio`](../../../../build/dts/api/bindings/mdio/sensry%2Csy1xx-mdio.md#std-dtcompatible-sensry-sy1xx-mdio) |
+| Pin control | on-chip | Sensry SY1xx Pin Controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L156) | [`sensry,sy1xx-pinctrl`](../../../../build/dts/api/bindings/pinctrl/sensry%2Csy1xx-pinctrl.md#std-dtcompatible-sensry-sy1xx-pinctrl) |
+| RNG | on-chip | Sensry SY1XX TRNG[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L140) | [`sensry,sy1xx-trng`](../../../../build/dts/api/bindings/rng/sensry%2Csy1xx-trng.md#std-dtcompatible-sensry-sy1xx-trng) |
+| Serial controller | on-chip | Sensry SY1xx UART[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L72) | [`sensry,sy1xx-uart`](../../../../build/dts/api/bindings/serial/sensry%2Csy1xx-uart.md#std-dtcompatible-sensry-sy1xx-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L29) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Sensry ganymed timer peripheral[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/sensry/ganymed-sy1xx.dtsi?plain=1#L56) | [`sensry,sy1xx-sys-timer`](../../../../build/dts/api/bindings/timer/sy1xx%2Csys-timer.md#std-dtcompatible-sensry-sy1xx-sys-timer) |
+
 For more detailed description please refer to [Ganymed StarterKit Board Documentation](https://docs.sensry.net/datasheets/sy120-bob/) [[1]](#id2)
 
 ## Programming and Testing
@@ -99,6 +135,7 @@ The `ganymed_sk` board supports the runners and associated west commands listed 
 
 |  | **flash** | **debug** |
 | --- | --- | --- |
+| **sy1xx** | ✅ (default) |  |
 
 ### Building
 

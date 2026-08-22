@@ -172,8 +172,9 @@ used/tested.
 
 The `verdin_imx8mp` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The Verdin iMX8M Plus board doesn’t have QSPI flash for the M7, and it needs to be started by the
 A53 core. The A53 core is responsible to load the M7 binary application into the RAM, put the M7 in

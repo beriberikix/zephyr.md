@@ -144,8 +144,9 @@ The M4 Core is configured to run at a 400 MHz clock speed.
 
 The `verdin_imx8mm` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
 
 The i.MX8MM doesn’t have QSPI flash for the M4 and it needs
 to be started by the A53 core. The A53 core is responsible to load the M4 binary

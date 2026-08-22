@@ -85,6 +85,34 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `cy8cproto_062_4343w/cy8c624abzi_s2d44` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M0+ CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L15) | [`arm,cortex-m0+`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m0%2B.md#std-dtcompatible-arm-cortex-m0) |
+| on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L20) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| ADC | on-chip | Infineon Cat1 ADC Each ADC group Cat1 is assigned to a Zephyr device[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L306) | [`infineon,cat1-adc`](../../../../build/dts/api/bindings/adc/infineon%2Ccat1-adc.md#std-dtcompatible-infineon-cat1-adc) |
+| ARM architecture | on-chip | Infineon Serial Communication Blocks (SCB) node[10 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L202) | [`infineon,cat1-scb`](../../../../build/dts/api/bindings/arm/infineon%2Ccat1-scb.md#std-dtcompatible-infineon-cat1-scb) |
+| Bluetooth | on-board | CYW43xxx Connectivity that uses Zephyr’s Bluetooth Host Controller Interface UART driver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8cproto_062_4343w/cy8cproto_062_4343w.dts?plain=1#L64) | [`infineon,cyw43xxx-bt-hci`](../../../../build/dts/api/bindings/bluetooth/infineon%2Ccyw43xxx-bt-hci.md#std-dtcompatible-infineon-cyw43xxx-bt-hci) |
+| Clock control | on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/system_clocks.dtsi?plain=1#L13)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/system_clocks.dtsi?plain=1#L69) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| on-chip | Generic fixed factor clock provider[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/system_clocks.dtsi?plain=1#L21)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/system_clocks.dtsi?plain=1#L37) | [`fixed-factor-clock`](../../../../build/dts/api/bindings/clock/fixed-factor-clock.md#std-dtcompatible-fixed-factor-clock) |
+| Counter | on-chip | Infineon counters[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L320)[31 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L327) | [`infineon,cat1-counter`](../../../../build/dts/api/bindings/counter/infineon%2Ccat1-counter.md#std-dtcompatible-infineon-cat1-counter) |
+| DMA | on-chip | Infineon CAT1 DMA[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L552) | [`infineon,cat1-dma`](../../../../build/dts/api/bindings/dma/infineon%2Ccat1-dma.md#std-dtcompatible-infineon-cat1-dma) |
+| Flash controller | on-chip | Infineon CAT1 flash controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L27) | [`infineon,cat1-flash-controller`](../../../../build/dts/api/bindings/flash_controller/infineon%2Ccat1-flash-controller.md#std-dtcompatible-infineon-cat1-flash-controller) |
+| GPIO & Headers | on-chip | Infineon CAT1 GPIO Port[8 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L66)[7 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L75) | [`infineon,cat1-gpio`](../../../../build/dts/api/bindings/gpio/infineon%2Ccat1-gpio.md#std-dtcompatible-infineon-cat1-gpio) |
+| I2C | on-chip | Infineon CAT1 I2C driver[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L226) | [`infineon,cat1-i2c`](../../../../build/dts/api/bindings/i2c/infineon%2Ccat1-i2c.md#std-dtcompatible-infineon-cat1-i2c) |
+| Input | on-board | Group of GPIO-bound input keys[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8cproto_062_4343w/cy8cproto_062_4343w-common.dtsi?plain=1#L22) | [`gpio-keys`](../../../../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| LED | on-board | Group of GPIO-controlled LEDs[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8cproto_062_4343w/cy8cproto_062_4343w-common.dtsi?plain=1#L14) | [`gpio-leds`](../../../../build/dts/api/bindings/led/gpio-leds.md#std-dtcompatible-gpio-leds) |
+| MTD | on-chip | Flash node[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L33) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
+| Pin control | on-chip | Infineon CAT1 Pinctrl Container[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L53) | [`infineon,cat1-pinctrl`](../../../../build/dts/api/bindings/pinctrl/infineon%2Ccat1-pinctrl.md#std-dtcompatible-infineon-cat1-pinctrl) |
+| SDHC | on-chip | Infineon CAT1 SDHC/SDIO controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L545) | [`infineon,cat1-sdhc-sdio`](../../../../build/dts/api/bindings/sdhc/infineon%2Ccat1-sdhc-sdio.md#std-dtcompatible-infineon-cat1-sdhc-sdio) |
+| Serial controller | on-chip | Infineon CAT1 UART[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L218) | [`infineon,cat1-uart`](../../../../build/dts/api/bindings/serial/infineon%2Ccat1-uart.md#std-dtcompatible-infineon-cat1-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L47) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| Watchdog | on-chip | Infineon CAT1 Watchdog[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/infineon/cat1a/psoc6_02/psoc6_02.dtsi?plain=1#L314) | [`infineon,cat1-watchdog`](../../../../build/dts/api/bindings/watchdog/infineon%2Ccat1-watchdog.md#std-dtcompatible-infineon-cat1-watchdog) |
+| Wi-Fi | on-board | AIROC Wi-Fi Connectivity[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/infineon/cy8cproto_062_4343w/cy8cproto_062_4343w.dts?plain=1#L89) | [`infineon,airoc-wifi`](../../../../build/dts/api/compatibles/infineon%2Cairoc-wifi.md#std-dtcompatible-infineon-airoc-wifi) |
+
 ### System Clock
 
 The PSOC 62 MCU SoC is configured to use the internal IMO+FLL as a source for
@@ -115,8 +143,11 @@ west build -b cy8cproto_062_4343w samples/basic/blinky
 
 The `cy8cproto_062_4343w` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** |
+| --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **[openocd](../../../../develop/flash_debug/host-tools.md#runner-openocd)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |
+| **[pyocd](../../../../develop/flash_debug/host-tools.md#runner-pyocd)** | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 The CY8CPROTO-062-4343W includes an onboard programmer/debugger ([KitProg3](https://github.com/Infineon/KitProg3)) to provide debugging, flash programming, and serial communication over USB. Flash and debug commands use OpenOCD and require a custom Infineon OpenOCD version, that supports KitProg3, to be installed.
 

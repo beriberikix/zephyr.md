@@ -83,6 +83,23 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `sama7g54_ek/sama7g54` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| Clock control | on-chip | Microchip SAM Slow Clock Controller (SCKC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L42) | [`microchip,sama7g5-sckc`](../../../../../build/dts/api/bindings/clock/microchip%2Csama7g5-sckc.md#std-dtcompatible-microchip-sama7g5-sckc) |
+| on-chip | Microchip Power Management Controller (PMC)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L443) | [`microchip,sam-pmc`](../../../../../build/dts/api/bindings/clock/microchip%2Csam-pmc.md#std-dtcompatible-microchip-sam-pmc) |
+| on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L30) | [`fixed-clock`](../../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| I2C | on-chip | Atmel SAM Family I2C (TWI)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L297)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L57) | [`atmel,sam-i2c-twi`](../../../../../build/dts/api/bindings/i2c/atmel%2Csam-i2c-twi.md#std-dtcompatible-atmel-sam-i2c-twi) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v2[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L409) | [`arm,gic-v2`](../../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
+| Multi-Function Device | on-chip | Microchip Flexcom (Flexible Serial Communication Unit)[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L139)[10 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L49) | [`microchip,sam-flexcom`](../../../../../build/dts/api/bindings/mfd/microchip%2Csam-flexcom.md#std-dtcompatible-microchip-sam-flexcom) |
+| MTD | on-board | I2C EEPROMs compatible with Atmel’s AT24 family[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/microchip/sam/sama7g54_ek/sama7g54_ek.dts?plain=1#L61) | [`atmel,at24`](../../../../../build/dts/api/bindings/mtd/atmel%2Cat24.md#std-dtcompatible-atmel-at24) |
+| Pin control | on-chip | Microchip SAMA7G5 Pinctrl container node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L429) | [`microchip,sama7g5-pinctrl`](../../../../../build/dts/api/bindings/pinctrl/microchip%2Csama7g5-pinctrl.md#std-dtcompatible-microchip-sama7g5-pinctrl) |
+| RTC | on-chip | Atmel SAM family RTC device[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L416) | [`atmel,sam-rtc`](../../../../../build/dts/api/bindings/rtc/atmel%2Csam-rtc.md#std-dtcompatible-atmel-sam-rtc) |
+| Serial controller | on-chip | Atmel SAM family USART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L159)[11 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L69) | [`atmel,sam-usart`](../../../../../build/dts/api/bindings/serial/atmel%2Csam-usart.md#std-dtcompatible-atmel-sam-usart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L424) | [`mmio-sram`](../../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | Microchip SAM 64-bit Periodic Interval Timer (PIT64B)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/sam/sama7g5.dtsi?plain=1#L434) | [`microchip,sam-pit64b`](../../../../../build/dts/api/bindings/timer/microchip%2Csam-pit64b.md#std-dtcompatible-microchip-sam-pit64b) |
+
 ### Connections and IOs
 
 The [SAMA7G54-EK User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MPU32/ProductDocuments/UserGuides/SAMA7G54-EK-User%27s-Guide-DS50003273.pdf) has detailed information about board connections.

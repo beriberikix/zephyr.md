@@ -23,7 +23,7 @@ Architecture:
 :   arm
 
 SoC:
-:   mec1743\_qsz, mec1753\_qlj, mec1743\_qlj, mec1753\_qsz
+:   mec1753\_qsz, mec1753\_qlj, mec1743\_qlj, mec1743\_qsz
 
 [
 Browse board sources
@@ -75,6 +75,58 @@ on-chip / on-board
 `vnd,foo`
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
+
+#### `mec_assy6941/mec1743_qlj` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L19) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| GPIO & Headers | on-chip | Microchip MEC5 GPIO[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L148) | [`microchip,mec5-gpio`](../../../../build/dts/api/bindings/gpio/microchip%2Cmec5-gpio.md#std-dtcompatible-microchip-mec5-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Pin control | on-chip | Microchip XEC Pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L142) | [`microchip,mec5-pinctrl`](../../../../build/dts/api/bindings/pinctrl/microchip%2Cmec5-pinctrl.md#std-dtcompatible-microchip-mec5-pinctrl) |
+| Serial controller | on-chip | Microchip MEC5 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L202) | [`microchip,mec5-uart`](../../../../build/dts/api/bindings/serial/microchip%2Cmec5-uart.md#std-dtcompatible-microchip-mec5-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5_mec1743qlj.dtsi?plain=1#L16) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| on-chip | Microchip MEC5 kernel timer implemented by combining the 32kHz 32-bit RTOS timer with 32-bit basic timer 5[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L212) | [`microchip,mec5-ktimer`](../../../../build/dts/api/bindings/timer/microchip%2Cmec5-ktimer.md#std-dtcompatible-microchip-mec5-ktimer) |
+
+#### `mec_assy6941/mec1743_qsz` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L19) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| GPIO & Headers | on-chip | Microchip MEC5 GPIO[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L148) | [`microchip,mec5-gpio`](../../../../build/dts/api/bindings/gpio/microchip%2Cmec5-gpio.md#std-dtcompatible-microchip-mec5-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Pin control | on-chip | Microchip XEC Pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L142) | [`microchip,mec5-pinctrl`](../../../../build/dts/api/bindings/pinctrl/microchip%2Cmec5-pinctrl.md#std-dtcompatible-microchip-mec5-pinctrl) |
+| Serial controller | on-chip | Microchip MEC5 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L202) | [`microchip,mec5-uart`](../../../../build/dts/api/bindings/serial/microchip%2Cmec5-uart.md#std-dtcompatible-microchip-mec5-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5_mec1743qlj.dtsi?plain=1#L16) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| on-chip | Microchip MEC5 kernel timer implemented by combining the 32kHz 32-bit RTOS timer with 32-bit basic timer 5[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L212) | [`microchip,mec5-ktimer`](../../../../build/dts/api/bindings/timer/microchip%2Cmec5-ktimer.md#std-dtcompatible-microchip-mec5-ktimer) |
+
+#### `mec_assy6941/mec1753_qlj` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L19) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| GPIO & Headers | on-chip | Microchip MEC5 GPIO[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L148) | [`microchip,mec5-gpio`](../../../../build/dts/api/bindings/gpio/microchip%2Cmec5-gpio.md#std-dtcompatible-microchip-mec5-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Pin control | on-chip | Microchip XEC Pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L142) | [`microchip,mec5-pinctrl`](../../../../build/dts/api/bindings/pinctrl/microchip%2Cmec5-pinctrl.md#std-dtcompatible-microchip-mec5-pinctrl) |
+| Serial controller | on-chip | Microchip MEC5 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L202) | [`microchip,mec5-uart`](../../../../build/dts/api/bindings/serial/microchip%2Cmec5-uart.md#std-dtcompatible-microchip-mec5-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5_mec1753qlj.dtsi?plain=1#L16) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| on-chip | Microchip MEC5 kernel timer implemented by combining the 32kHz 32-bit RTOS timer with 32-bit basic timer 5[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L212) | [`microchip,mec5-ktimer`](../../../../build/dts/api/bindings/timer/microchip%2Cmec5-ktimer.md#std-dtcompatible-microchip-mec5-ktimer) |
+
+#### `mec_assy6941/mec1753_qsz` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | ARM Cortex-M4 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L19) | [`arm,cortex-m4`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4.md#std-dtcompatible-arm-cortex-m4) |
+| GPIO & Headers | on-chip | Microchip MEC5 GPIO[6 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L148) | [`microchip,mec5-gpio`](../../../../build/dts/api/bindings/gpio/microchip%2Cmec5-gpio.md#std-dtcompatible-microchip-mec5-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Pin control | on-chip | Microchip XEC Pin controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L142) | [`microchip,mec5-pinctrl`](../../../../build/dts/api/bindings/pinctrl/microchip%2Cmec5-pinctrl.md#std-dtcompatible-microchip-mec5-pinctrl) |
+| Serial controller | on-chip | Microchip MEC5 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L202) | [`microchip,mec5-uart`](../../../../build/dts/api/bindings/serial/microchip%2Cmec5-uart.md#std-dtcompatible-microchip-mec5-uart) |
+| SRAM | on-chip | Generic on-chip SRAM[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5_mec1753qsz.dtsi?plain=1#L16) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| on-chip | Microchip MEC5 kernel timer implemented by combining the 32kHz 32-bit RTOS timer with 32-bit basic timer 5[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/microchip/mec/mec5.dtsi?plain=1#L212) | [`microchip,mec5-ktimer`](../../../../build/dts/api/bindings/timer/microchip%2Cmec5-ktimer.md#std-dtcompatible-microchip-mec5-ktimer) |
 
 ### Connections and IOs
 

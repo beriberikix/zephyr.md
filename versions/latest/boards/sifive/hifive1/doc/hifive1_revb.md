@@ -41,8 +41,11 @@ SiFive HiFive1 Rev B board (image courtesy of SiFive)
 
 The `hifive1_revb` board supports the runners and associated west commands listed below.
 
-|  | **flash** | **debug** |
-| --- | --- | --- |
+|  | **flash** | **debug** | **attach** | **rtt** | **debugserver** | **simulate** | **robot** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **[jlink](../../../../develop/flash_debug/host-tools.md#runner-jlink)** | ✅ (default) | ✅ (default) | ✅ | ✅ | ✅ |  |  |
+| **renode** |  |  |  |  |  | ✅ |  |
+| **renode-robot** |  |  |  |  |  |  | ✅ |
 
 ### Building
 

@@ -72,6 +72,21 @@ on-chip / on-board
 :   Compatible string for the Devicetree binding matching the feature.   
     Click on the link to view the binding documentation.
 
+#### `cv32a6_genesys_2/cv32a6` target
+
+| Type | Location | Description | Compatible |
+| --- | --- | --- | --- |
+| CPU | on-chip | OpenHW Group CVA6 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cv32a6.dtsi?plain=1#L20) | [`openhwgroup,cva6`](../../../../build/dts/api/bindings/cpu/openhwgroup%2Ccva6.md#std-dtcompatible-openhwgroup-cva6) |
+| Clock control | on-chip | Generic fixed-rate clock provider[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L17) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
+| DMA | on-chip | Xilinx AXI DMA LogiCORE IP controller with compatibility string generated in use with the AXI Ethernet subsystem[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L109) | [`xlnx,eth-dma`](../../../../build/dts/api/bindings/dma/xlnx%2Ceth-dma.md#std-dtcompatible-xlnx-eth-dma) |
+| GPIO & Headers | on-chip | Xilinx AXI GPIO IP[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L142) | [`xlnx,xps-gpio-1.00.a`](../../../../build/dts/api/bindings/gpio/xlnx%2Cxps-gpio-1.00.a.md#std-dtcompatible-xlnx-xps-gpio-1.00.a) |
+| Interrupt controller | on-chip | SiFive RISCV-V platform-local interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L43) | [`sifive,plic-1.0.0`](../../../../build/dts/api/bindings/interrupt-controller/sifive%2Cplic-1.0.0.md#std-dtcompatible-sifive-plic-1.0.0) |
+| on-chip | SiFive RISC-V Core-Local Interruptor[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L89) | [`sifive,clint0`](../../../../build/dts/api/bindings/interrupt-controller/sifive%2Cclint0.md#std-dtcompatible-sifive-clint0) |
+| on-chip | RISC-V CPU interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cv32a6.dtsi?plain=1#L32) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv%2Ccpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
+| Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L56) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
+| SPI | on-chip | Xilinx AXI Quad SPI controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L73) | [`xlnx,xps-spi-2.00.a`](../../../../build/dts/api/bindings/spi/xlnx%2Cxps-spi-2.00.a.md#std-dtcompatible-xlnx-xps-spi-2.00.a) |
+| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/openhwgroup/cva6.dtsi?plain=1#L96) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer) |
+
 ## Programming and Debugging
 
 ### Loading the FPGA configuration
