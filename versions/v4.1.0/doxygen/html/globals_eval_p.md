@@ -179,4 +179,4 @@ Here is a list of all enum values with links to the files they belong to:
 - PT\_IRQ\_TYPE\_PCI : [domctl.h](public_2domctl_8h.md#aa0ba08b170800d6d7723b694525ade07a243f287f1e887559dad46c487d30dfb7)
 - PT\_IRQ\_TYPE\_SPI : [domctl.h](public_2domctl_8h.md#aa0ba08b170800d6d7723b694525ade07a55314f6bde5f058264c442506b23a818)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

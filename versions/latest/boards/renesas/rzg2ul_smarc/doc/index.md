@@ -8,8 +8,8 @@ original_path: boards/renesas/rzg2ul_smarc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzg2ul_smarc.webp](../../../../_images/rzg2ul_smarc.webp)
-](../../../../_images/rzg2ul_smarc.webp)
+[![../../../../_images/rzg2ul_smarc.webp](https://docs.zephyrproject.org/4.2.0/_images/rzg2ul_smarc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzg2ul_smarc.webp)
 
 RZ/G2UL SMARC Evaluation Board Kit
 
@@ -60,8 +60,8 @@ The Renesas RZ/G2UL SMARC Evaluation Board Kit (RZ/G2UL-EVKIT) consists of a SMA
 
 The Renesas RZ/G2UL MPU documentation can be found at [RZ/G2UL Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2ul-general-purpose-microprocessors-single-core-arm-cortex-a55-10ghz-cpu-and-single-core-arm-cortex-m33) [[1]](#id3)
 
-[![RZ/G2UL group feature](../../../../_images/rzg2ul_block_diagram.webp)
-](../../../../_images/rzg2ul_block_diagram.webp)
+[![RZ/G2UL group feature](https://docs.zephyrproject.org/4.2.0/_images/rzg2ul_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzg2ul_block_diagram.webp)
 
 RZ/G2UL block diagram (Credit: Renesas Electronics Corporation)
 

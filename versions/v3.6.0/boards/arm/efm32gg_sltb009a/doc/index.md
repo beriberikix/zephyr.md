@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The EFM32GG12 Thunderboard Kit (SLTB009A) is an evaluation platform for the EFM32GG12 GiantGecko Microcontroller,
 featuring an ARM Cortex-M4 with FPU, 1024kB flash, and 192kB RAM.
 
-![SLTB009A](../../../../_images/efm32gg12-thunderboard-kit.jpg)
+![SLTB009A](https://docs.zephyrproject.org/3.6.0/_images/efm32gg12-thunderboard-kit.jpg)
 
 SLTB009A (Credit: Silicon Labs)
 

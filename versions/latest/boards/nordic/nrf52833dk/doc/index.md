@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf52833dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52833dk.webp](../../../../_images/nrf52833dk.webp)
-](../../../../_images/nrf52833dk.webp)
+[![../../../../_images/nrf52833dk.webp](https://docs.zephyrproject.org/4.2.0/_images/nrf52833dk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52833dk.webp)
 
 nRF52833 DK
 

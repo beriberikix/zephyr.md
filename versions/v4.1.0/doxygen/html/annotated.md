@@ -2144,4 +2144,4 @@ Here are the data structures with brief descriptions:
 | C[zvfs\_fd\_set](structzvfs__fd__set.md) |  |
 | C[zvfs\_pollfd](structzvfs__pollfd.md) |  |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

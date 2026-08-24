@@ -45,7 +45,7 @@ and high-speed connectivity features. Important board features include:
 - Comprehensive free software including a variety of examples, part of the STM32Cube package
 - Supported by a wide choice of integrated development environments
 
-![STM32F769I-DISCO](../../../../_images/stm32f769i_disco.jpg)
+![STM32F769I-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32f769i_disco.jpg)
 
 More information about the board can be found at the [32F769I-DISCO website](https://www.st.com/en/evaluation-tools/32f769idiscovery.html).
 

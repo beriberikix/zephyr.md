@@ -8,8 +8,8 @@ original_path: boards/olimex/stm32_p405/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimex_stm32_p405.jpg](../../../../_images/olimex_stm32_p405.jpg)
-](../../../../_images/olimex_stm32_p405.jpg)
+[![../../../../_images/olimex_stm32_p405.jpg](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_p405.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_p405.jpg)
 
 OLIMEX-STM32-P405
 
@@ -109,7 +109,7 @@ on-chip / on-board
 
 ### Pin Mapping
 
-![OLIMEX-STM32-P405 connectors](../../../../_images/olimex-stm32-p405-front.jpg)
+![OLIMEX-STM32-P405 connectors](https://docs.zephyrproject.org/4.2.0/_images/olimex-stm32-p405-front.jpg)
 
 OLIMEX-STM32-P405 connectors
 

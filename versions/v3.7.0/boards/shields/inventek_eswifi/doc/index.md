@@ -37,7 +37,7 @@ Note
 
 The Inventek’s EVBs signals are 3.3V only.
 
-![ISMART4343C-EVB](../../../../_images/ismart4343c-evb.jpg)
+![ISMART4343C-EVB](https://docs.zephyrproject.org/3.7.0/_images/ismart4343c-evb.jpg)
 
 ### Pins Assignment of the ISMART EVBs
 
@@ -54,7 +54,7 @@ available at header J26 pin 1 and shield configuration uses D7 to control that
 signal, user need do a wire connecting these two terminals. On the below
 image is possible see suggested wiring connections.
 
-![ISMART4343C-EVB Wiring](../../../../_images/ismart4343c-evb-wiring.jpg)
+![ISMART4343C-EVB Wiring](https://docs.zephyrproject.org/3.7.0/_images/ismart4343c-evb-wiring.jpg)
 
 | Arduino Connector Pin | Function | Serial Connection |
 | --- | --- | --- |

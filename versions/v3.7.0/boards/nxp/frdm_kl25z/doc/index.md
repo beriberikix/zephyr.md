@@ -20,7 +20,7 @@ The FRDM-KL25Z features include easy access to MCU I/O, battery-ready,
 low-power operation, a standard-based form factor with expansion board
 options and a built-in debug interface for flash programming and run-control.
 
-![FRDM-KL25Z](../../../../_images/frdm_kl25z.jpg)
+![FRDM-KL25Z](https://docs.zephyrproject.org/3.7.0/_images/frdm_kl25z.jpg)
 
 ## Hardware
 

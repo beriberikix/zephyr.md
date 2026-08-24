@@ -1377,4 +1377,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - RZT2M\_GPIO\_SLEW\_RATE\_SLOW : [renesas-rzt2m-gpio.h](renesas-rzt2m-gpio_8h.md#a2f754f8752b7c42ee89286725b2be4bb)
 - RZT2M\_PINMUX : [renesas-rzt2m-pinctrl.h](renesas-rzt2m-pinctrl_8h.md#a3f45a2e9a92ee5884dd6020bfb77f683)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

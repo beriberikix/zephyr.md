@@ -941,4 +941,4 @@ IA-32 specific kernel interface header This header contains the IA-32 specific k
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [x86](dir_0c2b2a40388d14bf987ab4c9c60eb89c.md)
 - [arch.h](x86_2arch_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

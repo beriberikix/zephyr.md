@@ -8,8 +8,8 @@ original_path: boards/raytac/mdbt50q_cx_40_dongle/doc/index.html
 
 Board Overview
 
-[![../../../../_images/raytac_mdbt50q_cx_40_dongle.webp](../../../../_images/raytac_mdbt50q_cx_40_dongle.webp)
-](../../../../_images/raytac_mdbt50q_cx_40_dongle.webp)
+[![../../../../_images/raytac_mdbt50q_cx_40_dongle.webp](https://docs.zephyrproject.org/4.2.0/_images/raytac_mdbt50q_cx_40_dongle.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/raytac_mdbt50q_cx_40_dongle.webp)
 
 MDBT50Q-CX-40 Dongle
 
@@ -172,7 +172,7 @@ device. Make sure `nrfutil` is installed before proceeding.
    that the button does not face up. You will have to push it from the outside
    in, towards the USB connector:
 
-   ![Location of the user button and LED.](../../../../_images/raytac_mdbt50q_cx_40_dongle_button_led.webp)
+   ![Location of the user button and LED.](https://docs.zephyrproject.org/4.2.0/_images/raytac_mdbt50q_cx_40_dongle_button_led.webp)
 
    The red LED should start a fade pattern, signalling the bootloader is
    running.

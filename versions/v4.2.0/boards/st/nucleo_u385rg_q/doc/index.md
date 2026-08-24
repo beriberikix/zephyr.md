@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_u385rg_q/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_u385rg_q.webp](../../../../_images/nucleo_u385rg_q.webp)
-](../../../../_images/nucleo_u385rg_q.webp)
+[![../../../../_images/nucleo_u385rg_q.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_u385rg_q.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_u385rg_q.webp)
 
 Nucleo U385RG Q
 

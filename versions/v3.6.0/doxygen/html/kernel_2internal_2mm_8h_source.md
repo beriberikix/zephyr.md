@@ -355,4 +355,4 @@ Misc utilities.
 - [kernel](dir_87084789f4f879979d9b1b0acd11eedc.md)
 - [internal](dir_5a28aaecc3642d39af859931377173ec.md)
 - [mm.h](kernel_2internal_2mm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

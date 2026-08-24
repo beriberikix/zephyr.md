@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/rtc/[mcp7940n.h](mcp7940n_8h_source.md)
 
 - [mcp7940n\_rtc\_control](structmcp7940n__rtc__control.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

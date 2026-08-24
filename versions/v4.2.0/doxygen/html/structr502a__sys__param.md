@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/sensor/[grow\_r502a.h](grow__r502a_8h_source.md)
 
 - [r502a\_sys\_param](structr502a__sys__param.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

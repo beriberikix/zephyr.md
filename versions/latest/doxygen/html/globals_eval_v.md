@@ -94,4 +94,4 @@ Here is a list of all enum values with links to the files they belong to:
 - VIRTUAL\_INTERFACE\_VPN : [virtual.h](group__virtual.md#gga8f188f5c2f19960d7113da52aefe8091a145ffaeae08793e4c93ea7be320efe2b)
 - VT100\_COLOR\_END : [shell\_types.h](shell__types_8h.md#a6dcf569be711db32286fb1ef2dcf36d2aab87d1e19b4d687eb1fee07c73a33bd4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -2252,4 +2252,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - IVSHMEM\_V2\_PROTO\_NET : [ivshmem.h](group__ivshmem.md#gae65765ef159aa70ebed6db295a01ce00)
 - IVSHMEM\_V2\_PROTO\_UNDEFINED : [ivshmem.h](group__ivshmem.md#gad1a29cd2df2107001a3461947032db6c)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

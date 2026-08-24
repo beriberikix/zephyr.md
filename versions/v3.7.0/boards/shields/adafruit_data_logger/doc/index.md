@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The [Adafruit Data Logger Shield](https://learn.adafruit.com/adafruit-data-logger-shield/) rev. B features an [NXP PCF8523 Real-Time Clock/Calendar with
 Battery Backup](https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), an SD card interface, two user LEDs, and a prototyping area.
 
-![Adafruit Data Logger Shield](../../../../_images/adafruit_data_logger.jpg)
+![Adafruit Data Logger Shield](https://docs.zephyrproject.org/3.7.0/_images/adafruit_data_logger.jpg)
 
 Adafruit Data Logger Shield (Credit: Adafruit)
 

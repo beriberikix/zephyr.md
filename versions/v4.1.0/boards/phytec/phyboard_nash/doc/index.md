@@ -40,8 +40,8 @@ well as the Cortex-M33 core.
   > - JTAG 10-pin connector
   > - USB-C for UART debug, 2x serial ports for A55 and M33
 
-[![phyBOARD-Nash](../../../../_images/phyboard_nash.webp)
-](../../../../_images/phyboard_nash.webp)
+[![phyBOARD-Nash](https://docs.zephyrproject.org/4.1.0/_images/phyboard_nash.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/phyboard_nash.webp)
 
 More information about the board can be found at the [PHYTEC website](https://www.phytec.eu/en/produkte/development-kits/phyboard-nash/).
 

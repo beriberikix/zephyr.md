@@ -32,7 +32,7 @@ The Firmware Update Server model uses a BLOB Transfer Server model on the same e
 the binary image. The interaction between the Firmware Update Server, BLOB Transfer Server and
 application is described below:
 
-![Bluetooth Mesh Firmware Update Server transfer](../../../../_images/dfu_srv.svg)
+![Bluetooth Mesh Firmware Update Server transfer](https://docs.zephyrproject.org/4.2.0/_images/dfu_srv.svg)
 
 Bluetooth Mesh Firmware Update Server transfer
 

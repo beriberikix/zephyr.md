@@ -75,4 +75,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/audio/[vcp.h](vcp_8h_source.md)
 
 - [bt\_vcp\_vol\_rend\_cb](structbt__vcp__vol__rend__cb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

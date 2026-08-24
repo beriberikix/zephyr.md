@@ -8,8 +8,8 @@ original_path: boards/khadas/edge2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/khadas_edge2.jpg](../../../../_images/khadas_edge2.jpg)
-](../../../../_images/khadas_edge2.jpg)
+[![../../../../_images/khadas_edge2.jpg](https://docs.zephyrproject.org/4.2.0/_images/khadas_edge2.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/khadas_edge2.jpg)
 
 Edge2
 

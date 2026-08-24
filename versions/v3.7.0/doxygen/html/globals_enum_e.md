@@ -34,4 +34,4 @@ Here is a list of all enums with links to the files they belong to:
 - ethernet\_if\_types : [ethernet.h](group__ethernet.md#ga139cc696837611a522b289f2ea7bf6fc)
 - execution\_context\_types : [kernel.h](kernel_8h.md#ab0b42f9804777dfa5fed2b7cd866779c)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

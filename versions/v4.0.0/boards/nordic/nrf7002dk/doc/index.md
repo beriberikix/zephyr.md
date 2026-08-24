@@ -30,7 +30,7 @@ The `nrf7002dk/nrf5340/cpuapp` board target provides support for the application
 nRF5340 SoC. The `nrf7002dk/nrf5340/cpunet` board target provides support for the network
 core on the nRF5340 SoC.
 
-![nRF7002 DK](../../../../_images/nrf7002dk.jpg)
+![nRF7002 DK](https://docs.zephyrproject.org/4.0.0/_images/nrf7002dk.jpg)
 
 nRF7002 DK (Credit: Nordic Semiconductor)
 

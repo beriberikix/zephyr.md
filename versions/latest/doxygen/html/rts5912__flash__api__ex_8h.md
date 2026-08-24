@@ -43,4 +43,4 @@ rts5912\_flash\_api\_ex.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [flash](dir_b5b0d43e6264d65db716db62f9858e50.md)
 - [rts5912\_flash\_api\_ex.h](rts5912__flash__api__ex_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

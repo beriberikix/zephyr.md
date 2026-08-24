@@ -8,8 +8,8 @@ original_path: boards/adafruit/qt_py_rp2040/doc/index.html
 
 Board Overview
 
-[![../../../../_images/qtpy_rp2040.jpg](../../../../_images/qtpy_rp2040.jpg)
-](../../../../_images/qtpy_rp2040.jpg)
+[![../../../../_images/qtpy_rp2040.jpg](https://docs.zephyrproject.org/4.1.0/_images/qtpy_rp2040.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/qtpy_rp2040.jpg)
 
 QT Py RP2040
 

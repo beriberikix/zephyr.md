@@ -52,4 +52,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - nxp\_mpu\_region\_attr\_t : [nxp\_mpu.h](nxp__mpu_8h.md#ab9cc02d4320ccbc4385061ce7b92ced0)
 - nxp\_pint\_cb\_t : [nxp\_pint.h](nxp__pint_8h.md#a5ceee20d9c423fe9f80e1d72540b4c73)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

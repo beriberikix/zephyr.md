@@ -8,8 +8,8 @@ original_path: boards/contextualelectronics/abc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/contextualelectronics_abc.jpg](../../../../_images/contextualelectronics_abc.jpg)
-](../../../../_images/contextualelectronics_abc.jpg)
+[![../../../../_images/contextualelectronics_abc.jpg](https://docs.zephyrproject.org/4.2.0/_images/contextualelectronics_abc.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/contextualelectronics_abc.jpg)
 
 Advanced BLE Cell
 

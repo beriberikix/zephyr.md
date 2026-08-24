@@ -17,7 +17,7 @@ at 400 MHz. The i.MX RT1170 MCU offers support over a wide temperature range
 and is qualified for consumer, industrial and automotive markets. Zephyr
 supports the initial revision of this EVK, as well as rev EVKB.
 
-![MIMXRT1170-EVK](../../../../_images/mimxrt1170_evk.jpg)
+![MIMXRT1170-EVK](https://docs.zephyrproject.org/3.7.0/_images/mimxrt1170_evk.jpg)
 
 ## Hardware
 

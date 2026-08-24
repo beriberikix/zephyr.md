@@ -16,7 +16,7 @@ The NuMaker M2L31KI is an Internet of Things (IoT) application focused platform
 specially developed by Nuvoton. The NuMaker-M2L31KI is based on the NuMicro® M2L31
 series MCU with ARM® -Cortex®-M23 core.
 
-![M2L31KI](../../../../_images/m2l31ki.webp)
+![M2L31KI](https://docs.zephyrproject.org/3.7.0/_images/m2l31ki.webp)
 
 ### Features:
 

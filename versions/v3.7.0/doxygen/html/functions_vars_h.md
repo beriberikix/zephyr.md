@@ -134,4 +134,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - hw\_version : [ccs811\_configver\_type](structccs811__configver__type.md#ad76906d24bd14e63dd7a4c1628fd81cc)
 - hwcfg : [espi\_saf\_cfg](structespi__saf__cfg.md#a20da4ce3549c53adb038dab7a5bed8a8)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

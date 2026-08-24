@@ -590,4 +590,4 @@ static ALWAYS\_INLINE void sys\_write32(uint32\_t data, mem\_addr\_t addr)
 - [include](dir_d5cd24c9babba9527629083c466f69cc.md)
 - [zephyr](dir_91e5ce9bd56815b1bd388aa667b3762f.md)
 - [interrupt\_util.h](interrupt__util_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

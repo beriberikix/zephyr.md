@@ -11,7 +11,7 @@ original_path: boards/shields/lmp90100_evb/doc/index.html
 The Texas Instruments LMP90100 Sensor AFE Evaluation Board (EVB) is a
 development kit for the TI LMP90xxx series of analog sensor frontends.
 
-![LMP90100 EVB](../../../../_images/lmp90100eb_lmp90100eb.jpg)
+![LMP90100 EVB](https://docs.zephyrproject.org/4.1.0/_images/lmp90100eb_lmp90100eb.jpg)
 
 LMP90100 EVB (Credit: Texas Instruments)
 

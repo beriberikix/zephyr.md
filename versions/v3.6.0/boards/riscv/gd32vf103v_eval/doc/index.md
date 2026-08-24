@@ -19,7 +19,7 @@ The GD32VF103VB features a single-core RISC-V 32-bit MCU which can run up
 to 108 MHz with flash accesses zero wait states, 128 KiB of Flash, 32 KiB of
 SRAM and 80 GPIOs.
 
-![gd32vf103v_eval](../../../../_images/gd32vf103v_eval.jpg)
+![gd32vf103v_eval](https://docs.zephyrproject.org/3.6.0/_images/gd32vf103v_eval.jpg)
 
 ## Hardware
 

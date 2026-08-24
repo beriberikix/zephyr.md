@@ -80,4 +80,4 @@ Common definitions of the secure storage subsystem's ITS APIs.
 - [its](dir_8ffdb9b26f60d93440ec7ee1d2751029.md)
 - [store](dir_ec89f69c8843f11be29f68cdb1d05909.md)
 - [settings\_get.h](settings__get_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

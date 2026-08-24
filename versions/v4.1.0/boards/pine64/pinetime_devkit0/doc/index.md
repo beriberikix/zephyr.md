@@ -8,8 +8,8 @@ original_path: boards/pine64/pinetime_devkit0/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pinetime_devkit0.jpg](../../../../_images/pinetime_devkit0.jpg)
-](../../../../_images/pinetime_devkit0.jpg)
+[![../../../../_images/pinetime_devkit0.jpg](https://docs.zephyrproject.org/4.1.0/_images/pinetime_devkit0.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/pinetime_devkit0.jpg)
 
 PineTime DevKit0
 
@@ -124,7 +124,7 @@ contact with the programming cable.
 
 The pinout is:
 
-![PineTime SWD location](../../../../_images/PineTime_SWD_location.jpg)
+![PineTime SWD location](https://docs.zephyrproject.org/4.1.0/_images/PineTime_SWD_location.jpg)
 
 ### Unlocking the Flash memory
 

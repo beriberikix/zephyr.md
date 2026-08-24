@@ -8,8 +8,8 @@ original_path: boards/st/stm32373c_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32373c_eval.jpg](../../../../_images/stm32373c_eval.jpg)
-](../../../../_images/stm32373c_eval.jpg)
+[![../../../../_images/stm32373c_eval.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32373c_eval.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32373c_eval.jpg)
 
 STM32373C Evaluation
 
@@ -99,7 +99,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![STM32373C_EVAL connectors](../../../../_images/stm32373c_eval_connectors.jpg)
+![STM32373C_EVAL connectors](https://docs.zephyrproject.org/4.0.0/_images/stm32373c_eval_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

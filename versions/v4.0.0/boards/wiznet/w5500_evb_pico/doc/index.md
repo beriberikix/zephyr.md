@@ -32,7 +32,7 @@ their SWD interface, using an external adapter.
 - 1 Watchdog timer peripheral
 - Wiznet W5500 Ethernet MAC/PHY
 
-![W5500 Evaluation Board](../../../../_images/w5500_evb_pico_side.png)
+![W5500 Evaluation Board](https://docs.zephyrproject.org/4.0.0/_images/w5500_evb_pico_side.png)
 
 Wiznet W5500\_EVB\_PICO evaluation board (Image courtesy of Wiznet)
 

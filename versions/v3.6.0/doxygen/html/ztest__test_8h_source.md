@@ -1077,4 +1077,4 @@ Expect a test to pass.
 - [include](dir_c3f97f6cb043cb2f48a1d98a4dc6b6bd.md)
 - [zephyr](dir_7f004fc53e18f085dec56f1200601760.md)
 - [ztest\_test.h](ztest__test_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

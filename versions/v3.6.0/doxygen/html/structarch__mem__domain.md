@@ -50,4 +50,4 @@ The documentation for this struct was generated from the following files:
 - zephyr/arch/xtensa/[arch.h](xtensa_2arch_8h_source.md)
 
 - [arch\_mem\_domain](structarch__mem__domain.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

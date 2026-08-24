@@ -89,4 +89,4 @@ nordic-owned-memory.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [reserved-memory](dir_94de8f1f6a225c49dc7403fa9fb5eacb.md)
 - [nordic-owned-memory.h](nordic-owned-memory_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

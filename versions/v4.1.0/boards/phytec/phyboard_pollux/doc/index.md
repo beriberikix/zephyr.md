@@ -41,8 +41,8 @@ Board features:
 
   > - 1x Multicolor Status LED via I2C
 
-[![phyBOARD-Pollux](../../../../_images/Phyboard_Pollux.jpg)
-](../../../../_images/Phyboard_Pollux.jpg)
+[![phyBOARD-Pollux](https://docs.zephyrproject.org/4.1.0/_images/Phyboard_Pollux.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/Phyboard_Pollux.jpg)
 
 More information about the board can be found at the [PHYTEC website](https://www.phytec.de/produkte/single-board-computer/phyboard-pollux/).
 
@@ -172,8 +172,8 @@ The phyBOARD-Pollux can be debugged using a JTAG or SWD debug adapter. A Segger
 JLink can be connected to the compatible JTAG connector on Phytec’s
 `PEB-EVAL-01` shield.
 
-[![PEB-EVAL-01](../../../../_images/PEB-EVAL-011.jpg)
-](../../../../_images/PEB-EVAL-011.jpg)
+[![PEB-EVAL-01](https://docs.zephyrproject.org/4.1.0/_images/PEB-EVAL-011.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/PEB-EVAL-011.jpg)
 
 PEB-EVAL-01
 

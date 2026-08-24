@@ -36,4 +36,4 @@ mipi\_dbi.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [mipi\_dbi](dir_e611cdaf3e454b28b4ecdd29a4f655ae.md)
 - [mipi\_dbi.h](dt-bindings_2mipi__dbi_2mipi__dbi_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

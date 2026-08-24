@@ -174,4 +174,4 @@ Stop the internal timer and feed the hardware watchdog a last time (if enabled).
 Note
 :   To pause the hardware watchdog (if this is supported), enable `CONFIG_TASK_WDT_HW_FALLBACK_PAUSE_IN_SLEEP` in your configuration.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

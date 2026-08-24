@@ -1645,4 +1645,4 @@ Return values
     | -EINVAL | means that some parameter of the [spi\_config](structspi__config.md "SPI controller configuration structure.") is invalid. |
     | -errno | Negative errno code on failure. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

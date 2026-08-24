@@ -143,4 +143,4 @@ Returns
 :   -ENOTSUP if no backend API or if channel not supported by emul
 :   -ERANGE if provided value is not in the sensor's supported range
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

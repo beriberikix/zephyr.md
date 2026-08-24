@@ -8,8 +8,8 @@ original_path: boards/st/stm32n6570_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32n6570_dk.webp](../../../../_images/stm32n6570_dk.webp)
-](../../../../_images/stm32n6570_dk.webp)
+[![../../../../_images/stm32n6570_dk.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32n6570_dk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32n6570_dk.webp)
 
 STM32N6570-DK
 

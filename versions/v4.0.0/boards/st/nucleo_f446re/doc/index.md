@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f446re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f446re.jpg](../../../../_images/nucleo_f446re.jpg)
-](../../../../_images/nucleo_f446re.jpg)
+[![../../../../_images/nucleo_f446re.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re.jpg)
 
 Nucleo F446RE
 
@@ -104,10 +104,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F446RE Arduino connectors (top left)](../../../../_images/nucleo_f446re_arduino_top_left.jpg)
-![Nucleo F446RE Arduino connectors (top right)](../../../../_images/nucleo_f446re_arduino_top_right.jpg)
-![Nucleo F446RE Morpho connectors (top left)](../../../../_images/nucleo_f446re_morpho_top_left.jpg)
-![Nucleo F446RE Morpho connectors (top right)](../../../../_images/nucleo_f446re_morpho_top_right.jpg)
+![Nucleo F446RE Arduino connectors (top left)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re_arduino_top_left.jpg)
+![Nucleo F446RE Arduino connectors (top right)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re_arduino_top_right.jpg)
+![Nucleo F446RE Morpho connectors (top left)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re_morpho_top_left.jpg)
+![Nucleo F446RE Morpho connectors (top right)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f446re_morpho_top_right.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

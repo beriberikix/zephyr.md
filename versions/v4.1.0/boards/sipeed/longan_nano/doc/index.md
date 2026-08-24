@@ -8,8 +8,8 @@ original_path: boards/sipeed/longan_nano/doc/index.html
 
 Board Overview
 
-[![../../../../_images/longan_nano.jpg](../../../../_images/longan_nano.jpg)
-](../../../../_images/longan_nano.jpg)
+[![../../../../_images/longan_nano.jpg](https://docs.zephyrproject.org/4.1.0/_images/longan_nano.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/longan_nano.jpg)
 
 Longan Nano
 

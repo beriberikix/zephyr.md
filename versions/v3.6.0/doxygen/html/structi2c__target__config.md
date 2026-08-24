@@ -78,4 +78,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[i2c.h](drivers_2i2c_8h_source.md)
 
 - [i2c\_target\_config](structi2c__target__config.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

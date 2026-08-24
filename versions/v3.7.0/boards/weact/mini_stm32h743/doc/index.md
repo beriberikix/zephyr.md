@@ -33,7 +33,7 @@ Key Features
       - SWD header for external debugger
       - 2x 40-pin GPIO connector
 
-![MiniSTM32H743 Core Board](../../../../_images/stm32h7xx.webp)
+![MiniSTM32H743 Core Board](https://docs.zephyrproject.org/3.7.0/_images/stm32h7xx.webp)
 
 MiniSTM32H743 Core Board (Credit: WeAct Studio)
 

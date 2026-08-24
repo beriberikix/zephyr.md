@@ -24,4 +24,4 @@ Here is a list of all enums with links to the files they belong to:
 - video\_signal\_result : [video.h](group__video__interface.md#ga0f50f287c4075e992fbab6d8a990d7a8)
 - virtual\_interface\_caps : [virtual.h](group__virtual.md#ga8f188f5c2f19960d7113da52aefe8091)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

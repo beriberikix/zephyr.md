@@ -8,8 +8,8 @@ original_path: boards/st/stm32g081b_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32g081b_eval.jpg](../../../../_images/stm32g081b_eval.jpg)
-](../../../../_images/stm32g081b_eval.jpg)
+[![../../../../_images/stm32g081b_eval.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32g081b_eval.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32g081b_eval.jpg)
 
 STM32G081B Evaluation
 

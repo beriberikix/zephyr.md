@@ -28,7 +28,7 @@ Zephyr OS is ported to run on the Cortex®-A53 core.
 
 See the [PHYTEC AM62x Product Page](https://www.phytec.com/product/phycore-am62x/) for details.
 
-![phyBOARD-Lyra AM62x](../../../../_images/phyCORE-AM62x_Lyra_frontside.webp)
+![phyBOARD-Lyra AM62x](https://docs.zephyrproject.org/3.7.0/_images/phyCORE-AM62x_Lyra_frontside.webp)
 
 PHYTEC phyBOARD-Lyra with the phyCORE-AM62x SoM
 

@@ -8,8 +8,8 @@ original_path: boards/amd/kv260_r5/doc/index.html
 
 Board Overview
 
-[![../../../../_images/kv260-starter-kit.jpg](../../../../_images/kv260-starter-kit.jpg)
-](../../../../_images/kv260-starter-kit.jpg)
+[![../../../../_images/kv260-starter-kit.jpg](https://docs.zephyrproject.org/4.1.0/_images/kv260-starter-kit.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/kv260-starter-kit.jpg)
 
 KV260 Development Board RPU Cortex-R5
 

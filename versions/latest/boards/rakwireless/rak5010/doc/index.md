@@ -8,8 +8,8 @@ original_path: boards/rakwireless/rak5010/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rak5010-front-parts.jpg](../../../../_images/rak5010-front-parts.jpg)
-](../../../../_images/rak5010-front-parts.jpg)
+[![../../../../_images/rak5010-front-parts.jpg](https://docs.zephyrproject.org/4.2.0/_images/rak5010-front-parts.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rak5010-front-parts.jpg)
 
 RAK5010
 

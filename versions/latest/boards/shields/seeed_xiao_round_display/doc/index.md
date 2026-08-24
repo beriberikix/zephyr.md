@@ -16,7 +16,7 @@ wearables and more.
 
 More information can be found on [the Getting Started page](https://wiki.seeedstudio.com/get_start_round_display/)
 
-![Seeed Studio XIAO Round Display](../../../../_images/seeed_xiao_round_display.webp)
+![Seeed Studio XIAO Round Display](https://docs.zephyrproject.org/4.2.0/_images/seeed_xiao_round_display.webp)
 
 Seeed Studio XIAO Round Display (Credit: Seeed Studio)
 

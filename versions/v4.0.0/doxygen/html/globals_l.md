@@ -3641,4 +3641,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - lwm2m\_update\_observer\_max\_period() : [lwm2m.h](group__lwm2m__api.md#ga6acccbcd879901574aceab53a21800fc)
 - lwm2m\_update\_observer\_min\_period() : [lwm2m.h](group__lwm2m__api.md#gadd163806d70713d8349a9db484ba88bf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

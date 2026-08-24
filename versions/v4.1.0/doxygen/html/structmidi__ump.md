@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/audio/[midi.h](midi_8h_source.md)
 
 - [midi\_ump](structmidi__ump.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

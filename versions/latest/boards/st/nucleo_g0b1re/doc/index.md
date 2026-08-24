@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_g0b1re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_g0b1re.jpg](../../../../_images/nucleo_g0b1re.jpg)
-](../../../../_images/nucleo_g0b1re.jpg)
+[![../../../../_images/nucleo_g0b1re.jpg](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g0b1re.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g0b1re.jpg)
 
 Nucleo G0B1RE
 

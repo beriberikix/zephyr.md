@@ -8,8 +8,8 @@ original_path: boards/infineon/cy8ckit_062s2_ai/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cy8ckit_062s2_ai.webp](../../../../_images/cy8ckit_062s2_ai.webp)
-](../../../../_images/cy8ckit_062s2_ai.webp)
+[![../../../../_images/cy8ckit_062s2_ai.webp](https://docs.zephyrproject.org/4.1.0/_images/cy8ckit_062s2_ai.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/cy8ckit_062s2_ai.webp)
 
 PSOC 6 AI Evaluation Kit
 

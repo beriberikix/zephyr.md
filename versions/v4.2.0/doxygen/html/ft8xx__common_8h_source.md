@@ -158,4 +158,4 @@ Runtime device structure (in ROM) per driver instance.
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [ft8xx](dir_2b36ac0e023aa45869ab11e4334d802b.md)
 - [ft8xx\_common.h](ft8xx__common_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

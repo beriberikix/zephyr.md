@@ -55,4 +55,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/rtio/[rtio.h](rtio_2rtio_8h_source.md)
 
 - [rtio\_cqe\_pool](structrtio__cqe__pool.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

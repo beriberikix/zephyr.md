@@ -17,7 +17,7 @@ Espressif ESP32-C3 WiFi/Bluetooth dual-mode chip.
 
 For more details see the [Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started) [[1]](#id4) wiki page.
 
-![XIAO ESP32C3](../../../../_images/xiao_esp32c.jpg)
+![XIAO ESP32C3](https://docs.zephyrproject.org/3.6.0/_images/xiao_esp32c.jpg)
 
 XIAO ESP32C3
 
@@ -48,7 +48,7 @@ The XIAO ESP32C3 board configuration supports the following hardware features:
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO ESP32C3 Pinout](../../../../_images/xiao_esp32c3_pinout.jpg)
+![XIAO ESP32C3 Pinout](https://docs.zephyrproject.org/3.6.0/_images/xiao_esp32c3_pinout.jpg)
 
 XIAO ESP32C3 Pinout
 

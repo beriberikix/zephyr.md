@@ -65,4 +65,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/modbus/[modbus.h](modbus_8h_source.md)
 
 - [modbus\_serial\_param](structmodbus__serial__param.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

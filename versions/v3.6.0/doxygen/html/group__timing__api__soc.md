@@ -203,4 +203,4 @@ Signal to the timing subsystem that timing information is no longer being gather
 See also
 :   [timing\_stop()](group__timing__api.md#gade1584bf683c9c61905513efa4d99cf2 "Signal the end of the timing information gathering.")
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

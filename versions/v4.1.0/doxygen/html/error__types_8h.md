@@ -78,4 +78,4 @@ These are error types defined by the I3C specification.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [i3c](dir_7fe10d7a610a8b04680264e2afe29300.md)
 - [error\_types.h](error__types_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

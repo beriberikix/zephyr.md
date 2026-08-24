@@ -140,4 +140,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - ltk : [bt\_hci\_cp\_le\_ltk\_req\_reply](structbt__hci__cp__le__ltk__req__reply.md#a2d16b44af344237a890341943c4a6582), [bt\_hci\_cp\_le\_start\_encryption](structbt__hci__cp__le__start__encryption.md#a99d2dd719ce38976e9da8a73f26839a1)
 - lvr : [i3c\_ccc\_deftgts\_target](structi3c__ccc__deftgts__target.md#ab4fbe6aac8d5860ef90613e51b15ef83), [i3c\_i2c\_device\_desc](structi3c__i2c__device__desc.md#a672aca260630deed5d8cdf90896d1115)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

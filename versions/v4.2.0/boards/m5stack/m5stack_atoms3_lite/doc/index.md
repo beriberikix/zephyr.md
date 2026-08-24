@@ -8,8 +8,8 @@ original_path: boards/m5stack/m5stack_atoms3_lite/doc/index.html
 
 Board Overview
 
-[![../../../../_images/m5stack_atoms3_lite.webp](../../../../_images/m5stack_atoms3_lite.webp)
-](../../../../_images/m5stack_atoms3_lite.webp)
+[![../../../../_images/m5stack_atoms3_lite.webp](https://docs.zephyrproject.org/4.2.0/_images/m5stack_atoms3_lite.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/m5stack_atoms3_lite.webp)
 
 AtomS3 Lite
 

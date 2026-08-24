@@ -405,4 +405,4 @@ uint16\_t a1
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [stepper](dir_975614d18b9dbb5293fe20c1ce7c38bb.md)
 - [stepper\_trinamic.h](stepper__trinamic_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -24,8 +24,8 @@ The first and last node use a 120-ohm resistor between CAN H and CAN L to
 terminate the bus. The dominant state always overrides the recessive state.
 This structure is called a wired-AND.
 
-[![CAN Transceiver](../../../_images/transceiver.svg)
-](../../../_images/transceiver.svg)
+[![CAN Transceiver](https://docs.zephyrproject.org/4.1.0/_images/transceiver.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/transceiver.svg)
 
 ## [CAN Transceiver API Reference](#id2)
 

@@ -8,8 +8,8 @@ original_path: boards/waveshare/nrf51_ble400/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf51_ble400.jpg](../../../../_images/nrf51_ble400.jpg)
-](../../../../_images/nrf51_ble400.jpg)
+[![../../../../_images/nrf51_ble400.jpg](https://docs.zephyrproject.org/4.1.0/_images/nrf51_ble400.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nrf51_ble400.jpg)
 
 BLE400
 
@@ -75,7 +75,7 @@ BLE400 is a motherboard designed for BLE Bluetooth 2.4G Wireless Module. Used to
 
 In June of 2015, Core51822 and its variant, Core51822 (B), upgraded the onboard chip to Rev3 (nRF51822\_QFAC) that features 32kB RAM.
 
-![Compare](../../../../_images/Core51822-Compare.jpg)
+![Compare](https://docs.zephyrproject.org/4.1.0/_images/Core51822-Compare.jpg)
 
 Top: Core51822
 Bottom: Core51822 (B)
@@ -84,7 +84,7 @@ Bottom: Core51822 (B)
 
 #### Motherboard
 
-![BLE400](../../../../_images/nrf51_ble4001.jpg)
+![BLE400](https://docs.zephyrproject.org/4.1.0/_images/nrf51_ble4001.jpg)
 
 1. Wireless module connector: for easily connecting modules like Core51822
 2. MCU pins expansion connector
@@ -104,11 +104,11 @@ Bottom: Core51822 (B)
 
 #### Core board
 
-![Core board pinout](../../../../_images/Core51822-pin.jpg)
+![Core board pinout](https://docs.zephyrproject.org/4.1.0/_images/Core51822-pin.jpg)
 
 ### BLE400 dimensions
 
-![BLE400 size](../../../../_images/BLE400-size.jpg)
+![BLE400 size](https://docs.zephyrproject.org/4.1.0/_images/BLE400-size.jpg)
 
 ### Connections and IOs
 

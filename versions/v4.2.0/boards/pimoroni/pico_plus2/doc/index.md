@@ -8,8 +8,8 @@ original_path: boards/pimoroni/pico_plus2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pico_plus2.webp](../../../../_images/pico_plus2.webp)
-](../../../../_images/pico_plus2.webp)
+[![../../../../_images/pico_plus2.webp](https://docs.zephyrproject.org/4.2.0/_images/pico_plus2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/pico_plus2.webp)
 
 Pimoroni Pico Plus2
 

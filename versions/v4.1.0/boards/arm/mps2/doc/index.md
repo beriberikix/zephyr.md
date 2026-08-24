@@ -8,8 +8,8 @@ original_path: boards/arm/mps2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mps2.jpg](../../../../_images/mps2.jpg)
-](../../../../_images/mps2.jpg)
+[![../../../../_images/mps2.jpg](https://docs.zephyrproject.org/4.1.0/_images/mps2.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mps2.jpg)
 
 V2M MPS2
 

@@ -8,8 +8,8 @@ original_path: boards/others/serpente/doc/index.html
 
 Board Overview
 
-[![../../../../_images/serpente.jpg](../../../../_images/serpente.jpg)
-](../../../../_images/serpente.jpg)
+[![../../../../_images/serpente.jpg](https://docs.zephyrproject.org/4.2.0/_images/serpente.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/serpente.jpg)
 
 Arturo182 Serpente
 

@@ -8,8 +8,8 @@ original_path: boards/arduino/nicla_vision/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_nicla_vision.webp](../../../../_images/arduino_nicla_vision.webp)
-](../../../../_images/arduino_nicla_vision.webp)
+[![../../../../_images/arduino_nicla_vision.webp](https://docs.zephyrproject.org/4.2.0/_images/arduino_nicla_vision.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_nicla_vision.webp)
 
 Arduino Nicla Vision
 
@@ -47,7 +47,7 @@ The board features:
 - VL53L1CBV0FY ToF Sensor
 - LSM6DSOXTR Gyro+Accelerometer Sensor
 
-![Arduino Nicla Vision](../../../../_images/arduino_nicla_vision1.webp)
+![Arduino Nicla Vision](https://docs.zephyrproject.org/4.2.0/_images/arduino_nicla_vision1.webp)
 
 More information about the board, including the datasheet, pinout and
 schematics, can be found at the [Arduino Nicla Vision website](https://docs.arduino.cc/hardware/nicla-vision/).

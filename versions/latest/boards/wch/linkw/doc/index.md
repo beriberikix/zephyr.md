@@ -8,8 +8,8 @@ original_path: boards/wch/linkw/doc/index.html
 
 Board Overview
 
-[![../../../../_images/linkw.webp](../../../../_images/linkw.webp)
-](../../../../_images/linkw.webp)
+[![../../../../_images/linkw.webp](https://docs.zephyrproject.org/4.2.0/_images/linkw.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/linkw.webp)
 
 WCH LinkW
 

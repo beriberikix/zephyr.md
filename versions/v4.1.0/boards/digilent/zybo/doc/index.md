@@ -13,7 +13,7 @@ circuit development board. It is built around the Xilinx Zynq-7000 family, which
 Xilinx All Programmable System-on-Chip (AP SoC) architecture. This architecture tightly integrates a
 dual-core ARM Cortex-A9 processor with Xilinx 7-series Field Programmable Gate Array (FPGA) logic.
 
-![Digilent Zybo](../../../../_images/zybo-0.jpg)
+![Digilent Zybo](https://docs.zephyrproject.org/4.1.0/_images/zybo-0.jpg)
 
 Digilent (Credit: Digilent)
 

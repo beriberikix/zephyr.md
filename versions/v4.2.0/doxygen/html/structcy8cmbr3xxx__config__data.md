@@ -35,4 +35,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/input/[cy8cmbr3xxx.h](cy8cmbr3xxx_8h_source.md)
 
 - [cy8cmbr3xxx\_config\_data](structcy8cmbr3xxx__config__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

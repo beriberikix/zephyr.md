@@ -16,7 +16,7 @@ the following devices:
 - System Tick System Clock (SYSTICK)
 - Cortex-M System Design Kit UART
 
-![ARM V2M MPS2](../../../../_images/mps2_an385.jpg)
+![ARM V2M MPS2](https://docs.zephyrproject.org/4.0.0/_images/mps2_an385.jpg)
 
 In addition to enabling actual hardware usage, this board configuration can
 also use QEMU to emulate the AN385 platform running on the MPS2+.

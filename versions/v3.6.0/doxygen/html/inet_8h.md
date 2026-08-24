@@ -26,4 +26,4 @@ inet.h File Reference
 - [posix](dir_cc2c191bc57cea4eaf0dbdf53c4fb6c6.md)
 - [arpa](dir_600f14fff2b86b8fd0090e7f273e0e80.md)
 - [inet.h](inet_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

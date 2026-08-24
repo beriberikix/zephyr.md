@@ -219,4 +219,4 @@ Global [spi\_transceive\_async](group__spi__interface.md#gacc26ab19d121150869169
 Global [spi\_write\_async](group__spi__interface.md#ga37d17fa9ae3909529762c43f9409d0f0) (const struct device \*dev, const struct [spi\_config](structspi__config.md "SPI controller configuration structure.") \*config, const struct [spi\_buf\_set](structspi__buf__set.md "SPI buffer array structure.") \*tx\_bufs, struct [k\_poll\_signal](structk__poll__signal.md) \*sig)
 :   Use [spi\_write\_signal](group__spi__interface.md#gadcb19d43461ef88e31f6b382cc87fd0b "spi_write_signal") instead.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

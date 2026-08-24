@@ -289,4 +289,4 @@ Indicate synchronization loss.
 
 If detected, then decoder starts to look for ASYNC marker and drops all data until ASYNC is found. Synchronization can be lost when there is data loss (e.g. due to overflow).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

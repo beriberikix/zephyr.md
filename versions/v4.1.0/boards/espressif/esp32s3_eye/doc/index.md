@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32s3_eye/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32s3_eye.webp](../../../../_images/esp32s3_eye.webp)
-](../../../../_images/esp32s3_eye.webp)
+[![../../../../_images/esp32s3_eye.webp](https://docs.zephyrproject.org/4.1.0/_images/esp32s3_eye.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32s3_eye.webp)
 
 ESP32-S3-EYE
 
@@ -150,11 +150,11 @@ The block diagram below presents main components of the ESP32-S3-EYE-MB main boa
 and the ESP32-S3-EYE-SUB sub board (on the right), as well as the interconnections between
 components.
 
-![ESP32-S3-EYE Block Diagram](../../../../_images/ESP32-S3-EYE_20210913_V03_SystemBlock.webp)
+![ESP32-S3-EYE Block Diagram](https://docs.zephyrproject.org/4.1.0/_images/ESP32-S3-EYE_20210913_V03_SystemBlock.webp)
 
 ### Components on the ESP32-S3-EYE-MB Main Board
 
-![ESP32-S3-EYE_MB](../../../../_images/ESP32-S3-EYE_MB-annotated-photo.webp)
+![ESP32-S3-EYE_MB](https://docs.zephyrproject.org/4.1.0/_images/ESP32-S3-EYE_MB-annotated-photo.webp)
 
 Key Components MB
 
@@ -179,7 +179,7 @@ Key Components MB
 
 ### Components on the ESP32-S3-EYE-SUB Sub Board
 
-![ESP32-S3-EYE_SUB](../../../../_images/ESP32-S3-EYE_SUB-annotated-photo.webp)
+![ESP32-S3-EYE_SUB](https://docs.zephyrproject.org/4.1.0/_images/ESP32-S3-EYE_SUB-annotated-photo.webp)
 
 Key Components SUB
 

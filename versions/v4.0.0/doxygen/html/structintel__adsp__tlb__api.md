@@ -41,4 +41,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/mm/[mm\_drv\_intel\_adsp\_mtl\_tlb.h](mm__drv__intel__adsp__mtl__tlb_8h_source.md)
 
 - [intel\_adsp\_tlb\_api](structintel__adsp__tlb__api.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

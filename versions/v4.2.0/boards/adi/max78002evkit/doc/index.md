@@ -8,8 +8,8 @@ original_path: boards/adi/max78002evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max78002evkit.webp](../../../../_images/max78002evkit.webp)
-](../../../../_images/max78002evkit.webp)
+[![../../../../_images/max78002evkit.webp](https://docs.zephyrproject.org/4.2.0/_images/max78002evkit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/max78002evkit.webp)
 
 MAX78002EVKIT
 
@@ -47,8 +47,8 @@ microSD connector provides the capability for inexpensive highdensity portable d
 
 The Zephyr port is running on the MAX78002 MCU.
 
-![MAX78002 EVKIT Front](../../../../_images/max78002evkit1.webp)
-![MAX78002 EVKIT Back](../../../../_images/max78002evkit_back.webp)
+![MAX78002 EVKIT Front](https://docs.zephyrproject.org/4.2.0/_images/max78002evkit1.webp)
+![MAX78002 EVKIT Back](https://docs.zephyrproject.org/4.2.0/_images/max78002evkit_back.webp)
 
 ## Hardware
 

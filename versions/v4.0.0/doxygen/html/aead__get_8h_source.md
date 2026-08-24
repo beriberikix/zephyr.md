@@ -104,4 +104,4 @@ int32\_t psa\_status\_t
 - [its](dir_8ffdb9b26f60d93440ec7ee1d2751029.md)
 - [transform](dir_1da836f1fbec1e542f554678ae49852f.md)
 - [aead\_get.h](aead__get_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -422,4 +422,4 @@ Macros to abstract toolchain specific capabilities.
 - [x86](dir_0c2b2a40388d14bf987ab4c9c60eb89c.md)
 - [ia32](dir_b429dacf948f53b894465a48d17dcb95.md)
 - [gdbstub.h](arch_2x86_2ia32_2gdbstub_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/raspberrypi/rpi_pico2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rpi_pico2.webp](../../../../_images/rpi_pico2.webp)
-](../../../../_images/rpi_pico2.webp)
+[![../../../../_images/rpi_pico2.webp](https://docs.zephyrproject.org/4.2.0/_images/rpi_pico2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rpi_pico2.webp)
 
 Raspberry Pi Pico 2
 

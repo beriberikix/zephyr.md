@@ -49,4 +49,4 @@ stm32\_pwm.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [pwm](dir_ff747911c88ea6a5644735057b122c0d.md)
 - [stm32\_pwm.h](stm32__pwm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

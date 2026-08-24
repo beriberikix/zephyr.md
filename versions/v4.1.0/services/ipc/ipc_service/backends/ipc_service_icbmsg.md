@@ -149,7 +149,7 @@ The result:
 - `block_size` - Single block size.
 - `region_end_aligned` - End of blocks area.
 
-![../../../../_images/icbmsg_memory.svg](../../../../_images/icbmsg_memory.svg)
+![../../../../_images/icbmsg_memory.svg](https://docs.zephyrproject.org/4.1.0/_images/icbmsg_memory.svg)
 
 ### Message Transfer
 
@@ -181,7 +181,7 @@ The following steps describe it:
 11. The sender releases the blocks starting from the block number provided in the control message.
     The number of blocks to release can be calculated using a size from the header.
 
-![../../../../_images/icbmsg_message.svg](../../../../_images/icbmsg_message.svg)
+![../../../../_images/icbmsg_message.svg](https://docs.zephyrproject.org/4.1.0/_images/icbmsg_message.svg)
 
 ### Control Messages
 
@@ -308,7 +308,7 @@ The endpoint binding procedure from the follower’s point of view is the follow
 The following diagram shows a few examples of how the messages flow between two ends.
 There is a binding of two endpoints and one fully processed data message exchange.
 
-![../../../../_images/icbmsg_flows.svg](../../../../_images/icbmsg_flows.svg)
+![../../../../_images/icbmsg_flows.svg](https://docs.zephyrproject.org/4.1.0/_images/icbmsg_flows.svg)
 
 ### Protocol Versioning
 

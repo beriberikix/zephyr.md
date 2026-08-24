@@ -66,4 +66,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/pinctrl/[pinctrl\_rcar\_common.h](pinctrl__rcar__common_8h_source.md)
 
 - [pinctrl\_soc\_pin](structpinctrl__soc__pin.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

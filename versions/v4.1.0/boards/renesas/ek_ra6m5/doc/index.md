@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra6m5/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra6m5.webp](../../../../_images/ek_ra6m5.webp)
-](../../../../_images/ek_ra6m5.webp)
+[![../../../../_images/ek_ra6m5.webp](https://docs.zephyrproject.org/4.1.0/_images/ek_ra6m5.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra6m5.webp)
 
 RA6M5 Evaluation Kit
 
@@ -87,8 +87,8 @@ The key features of the EK-RA6M5 board are categorized in three groups as follow
 
 Detailed hardware features for the RA6M5 MCU group can be found at [RA6M5 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/ra6m5-group-users-manual-hardware)
 
-[![RA6M5 MCU group feature](../../../../_images/ra6m5_block_diagram.webp)
-](../../../../_images/ra6m5_block_diagram.webp)
+[![RA6M5 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra6m5_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ra6m5_block_diagram.webp)
 
 RA6M5 Block diagram (Credit: Renesas Electronics Corporation)
 

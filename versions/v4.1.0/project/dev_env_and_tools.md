@@ -42,7 +42,7 @@ code-owner review. Additionally, some changes might require further discussions
 and a decision by the TSC or the Security working group. To summarize the above,
 the diagram below proposes minimal review times for each category:
 
-![Pull request classes](../_images/pull_request_classes.png)
+![Pull request classes](https://docs.zephyrproject.org/4.1.0/_images/pull_request_classes.png)
 
 Pull request classes
 

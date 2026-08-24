@@ -66,4 +66,4 @@ Parameters
 - [v2](dir_3e6dec649f819729d9137b059e4fc1a1.md)
 - [dsp](dir_962e9c2a9ba605ed4f0852828f7b1083.md)
 - [arc\_dsp.h](arc__dsp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

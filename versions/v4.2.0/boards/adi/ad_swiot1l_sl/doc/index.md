@@ -8,8 +8,8 @@ original_path: boards/adi/ad_swiot1l_sl/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ad_swiot1l_sl.webp](../../../../_images/ad_swiot1l_sl.webp)
-](../../../../_images/ad_swiot1l_sl.webp)
+[![../../../../_images/ad_swiot1l_sl.webp](https://docs.zephyrproject.org/4.2.0/_images/ad_swiot1l_sl.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ad_swiot1l_sl.webp)
 
 AD-SWIOT1L-SL
 

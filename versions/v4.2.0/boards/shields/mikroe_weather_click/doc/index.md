@@ -12,7 +12,7 @@ The MikroElektronika [Weather Click](https://www.mikroe.com/weather-click) featu
 environmental sensor in a [mikroBUS](https://www.mikroe.com/mikrobus)™ form factor. The sensor can
 measure relative humidity, barometric pressure, and ambient temperature.
 
-![MikroElektronika Weather Click](../../../../_images/weather-click.webp)
+![MikroElektronika Weather Click](https://docs.zephyrproject.org/4.2.0/_images/weather-click.webp)
 
 MikroElektronika Weather Click (Credit: MikroElektronika)
 

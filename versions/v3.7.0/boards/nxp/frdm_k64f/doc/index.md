@@ -25,7 +25,7 @@ K63, and K24 MCUs.
   running an open source bootloader, offers options for serial communication,
   flash programming, and run-control debugging
 
-![FRDM-K64F](../../../../_images/frdm_k64f.jpg)
+![FRDM-K64F](https://docs.zephyrproject.org/3.7.0/_images/frdm_k64f.jpg)
 
 ## Hardware
 

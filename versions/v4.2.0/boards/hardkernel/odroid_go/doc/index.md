@@ -8,8 +8,8 @@ original_path: boards/hardkernel/odroid_go/doc/index.html
 
 Board Overview
 
-[![../../../../_images/odroid_go.jpg](../../../../_images/odroid_go.jpg)
-](../../../../_images/odroid_go.jpg)
+[![../../../../_images/odroid_go.jpg](https://docs.zephyrproject.org/4.2.0/_images/odroid_go.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/odroid_go.jpg)
 
 ODROID-GO
 

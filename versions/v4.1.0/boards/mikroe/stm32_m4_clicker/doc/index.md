@@ -8,8 +8,8 @@ original_path: boards/mikroe/stm32_m4_clicker/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32_m4_clicker.webp](../../../../_images/stm32_m4_clicker.webp)
-](../../../../_images/stm32_m4_clicker.webp)
+[![../../../../_images/stm32_m4_clicker.webp](https://docs.zephyrproject.org/4.1.0/_images/stm32_m4_clicker.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32_m4_clicker.webp)
 
 STM32 M4 Clicker
 

@@ -19,7 +19,7 @@ Support for EFR32 Radio boards is provided by one of the starter kits
 - [SLWSTK6061B Proprietary Wireless Starter Kit](https://www.silabs.com/products/development-tools/wireless/proprietary/slwstk6061b-efr32-flex-gecko-868-mhz-2-4-ghz-and-sub-ghz-starter-kit)
 - [SLWSTK6006A Mighty Gecko Wireless Starter Kit](https://www.silabs.com/products/development-tools/wireless/efr32xg21-wireless-starter-kit)
 
-![SLWSTK6020B Bluetooth SoC Starter Kit](../../../../_images/efr32_slwstk6020b.jpg)
+![SLWSTK6020B Bluetooth SoC Starter Kit](https://docs.zephyrproject.org/3.6.0/_images/efr32_slwstk6020b.jpg)
 
 SLWSTK6020B (image courtesy of Silicon Labs)
 

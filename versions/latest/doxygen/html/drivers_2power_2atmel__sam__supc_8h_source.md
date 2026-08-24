@@ -57,4 +57,4 @@ atmel\_sam\_supc.h
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [power](dir_0407a529497ae7b6e6f3b04cc7899a88.md)
 - [atmel\_sam\_supc.h](drivers_2power_2atmel__sam__supc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

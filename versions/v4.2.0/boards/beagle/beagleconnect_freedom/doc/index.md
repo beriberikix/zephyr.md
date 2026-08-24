@@ -8,8 +8,8 @@ original_path: boards/beagle/beagleconnect_freedom/doc/index.html
 
 Board Overview
 
-[![../../../../_images/beagleconnect_freedom.webp](../../../../_images/beagleconnect_freedom.webp)
-](../../../../_images/beagleconnect_freedom.webp)
+[![../../../../_images/beagleconnect_freedom.webp](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom.webp)
 
 BeagleConnect Freedom
 
@@ -99,13 +99,13 @@ on-chip / on-board
 
 ### Connections and IOs
 
-[![Front connections](../../../../_images/beagleconnect_freedom_front_annotated.webp)
-](../../../../_images/beagleconnect_freedom_front_annotated.webp)
+[![Front connections](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom_front_annotated.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom_front_annotated.webp)
 
 BeagleConnect Freedom front connections
 
-[![Back connections](../../../../_images/beagleconnect_freedom_back_annotated.webp)
-](../../../../_images/beagleconnect_freedom_back_annotated.webp)
+[![Back connections](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom_back_annotated.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom_back_annotated.webp)
 
 BeagleConnect Freedom back connections
 

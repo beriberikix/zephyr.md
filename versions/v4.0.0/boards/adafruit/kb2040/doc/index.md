@@ -8,8 +8,8 @@ original_path: boards/adafruit/kb2040/doc/index.html
 
 Board Overview
 
-[![../../../../_images/kb2040.jpg](../../../../_images/kb2040.jpg)
-](../../../../_images/kb2040.jpg)
+[![../../../../_images/kb2040.jpg](https://docs.zephyrproject.org/4.0.0/_images/kb2040.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/kb2040.jpg)
 
 KB2040
 

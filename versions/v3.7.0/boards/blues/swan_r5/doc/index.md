@@ -56,7 +56,7 @@ some highlights of the board:
   - 12-bit ADC, 2 x 12-bit DAC
   - low-power RTC, and CRC calculation peripherals
 
-![Blues Wireless Swan](../../../../_images/swan.jpg)
+![Blues Wireless Swan](https://docs.zephyrproject.org/3.7.0/_images/swan.jpg)
 
 More information about the board can be found at the [Swan Product Page](https://blues.io/products/swan).
 

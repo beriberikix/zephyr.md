@@ -8,8 +8,8 @@ original_path: boards/others/stm32f103_mini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f103_mini_pin.jpg](../../../../_images/stm32f103_mini_pin.jpg)
-](../../../../_images/stm32f103_mini_pin.jpg)
+[![../../../../_images/stm32f103_mini_pin.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_pin.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_pin.jpg)
 
 STM32F103 Mini
 
@@ -35,8 +35,8 @@ The STM32F103\_MINI board features an ARM Cortex-M3 based STM32F103RC MCU
 with a wide range of connectivity support and configurations. There are
 multiple version of this board like `stm32f103_mini`.
 
-![STM32F103 Mini Yellow](../../../../_images/stm32f103_mini_yellow.jpg)
-![STM32F103 Mini Blue](../../../../_images/stm32f103_mini_blue.jpg)
+![STM32F103 Mini Yellow](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_yellow.jpg)
+![STM32F103 Mini Blue](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_blue.jpg)
 
 ## Hardware
 
@@ -124,7 +124,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F103RB connectors](../../../../_images/stm32f103_mini_pin1.jpg)
+![Nucleo F103RB connectors](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_pin1.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

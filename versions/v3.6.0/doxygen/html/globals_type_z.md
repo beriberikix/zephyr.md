@@ -27,4 +27,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - ztest\_suite\_teardown\_t : [ztest\_test.h](ztest__test_8h.md#a7769b894fdac5283ac949ce8fceea0dd)
 - ztress\_handler : [ztress.h](group__ztest__ztress.md#ga633439263754bf08baee06c37dddab40)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

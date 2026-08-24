@@ -22,7 +22,7 @@ from 8-bit or 16-bit microcontrollers.
 
 The Zephyr port is running on the MAX32670 MCU.
 
-![MAX32670 EVKIT](../../../../_images/max32670evkit.webp)
+![MAX32670 EVKIT](https://docs.zephyrproject.org/3.7.0/_images/max32670evkit.webp)
 
 ## Hardware
 

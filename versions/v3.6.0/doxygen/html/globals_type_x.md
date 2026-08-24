@@ -34,4 +34,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - XENCONS\_RING\_IDX : [console.h](xen_2public_2io_2console_8h.md#aa49f8668886bc6a29fee54402474f068)
 - xenctl\_bitmap\_t : [xen.h](xen_8h.md#a0b13d295ad2c74398b3430177ca6267a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

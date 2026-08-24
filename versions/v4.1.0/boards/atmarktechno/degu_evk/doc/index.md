@@ -8,8 +8,8 @@ original_path: boards/atmarktechno/degu_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/degu_evk.jpg](../../../../_images/degu_evk.jpg)
-](../../../../_images/degu_evk.jpg)
+[![../../../../_images/degu_evk.jpg](https://docs.zephyrproject.org/4.1.0/_images/degu_evk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/degu_evk.jpg)
 
 Degu Evaluation Kit
 

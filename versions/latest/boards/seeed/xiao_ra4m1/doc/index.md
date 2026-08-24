@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_ra4m1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_ra4m1.webp](../../../../_images/xiao_ra4m1.webp)
-](../../../../_images/xiao_ra4m1.webp)
+[![../../../../_images/xiao_ra4m1.webp](https://docs.zephyrproject.org/4.2.0/_images/xiao_ra4m1.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/xiao_ra4m1.webp)
 
 XIAO RA4M1
 

@@ -8,8 +8,8 @@ original_path: boards/renesas/rcar_salvator_xs/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rcar_salvator_xs.jpg](../../../../_images/rcar_salvator_xs.jpg)
-](../../../../_images/rcar_salvator_xs.jpg)
+[![../../../../_images/rcar_salvator_xs.jpg](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_xs.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_xs.jpg)
 
 R-Car Salvator-XS
 

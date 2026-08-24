@@ -23,7 +23,7 @@ the latest generation Bluetooth® 5.2 Low Energy
 
 The Zephyr port is running on the MAX32680 MCU.
 
-![MAX32680 EVKIT](../../../../_images/max32680evkit_img1.jpg)
+![MAX32680 EVKIT](https://docs.zephyrproject.org/3.7.0/_images/max32680evkit_img1.jpg)
 
 ## Hardware
 

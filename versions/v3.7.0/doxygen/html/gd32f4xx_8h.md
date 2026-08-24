@@ -486,4 +486,4 @@ gd32f4xx.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
 - [gd32f4xx.h](gd32f4xx_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

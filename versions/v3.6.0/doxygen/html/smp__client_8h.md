@@ -51,4 +51,4 @@ smp\_client.h File Reference
 - [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
 - [smp](dir_e62cfe388532d436a5daefec152a780b.md)
 - [smp\_client.h](smp__client_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

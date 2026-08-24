@@ -353,4 +353,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - typeerr : [net\_stats\_icmp](structnet__stats__icmp.md#ae1a29dd9b8e1ce9a737fa7f36c805cd4)
 - tzerowait : [tmc\_ramp\_generator\_data](structtmc__ramp__generator__data.md#ad3846d55690f835623fceca620ec3b23)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

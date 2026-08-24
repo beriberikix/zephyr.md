@@ -165,4 +165,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - owner : [k\_mutex](structk__mutex.md#af910bb07dc99e50078de26fccca468e4), [net\_socket\_service\_desc](structnet__socket__service__desc.md#a08da5714fafa3f678771ea3d5204971a), [udc\_buf\_info](structudc__buf__info.md#a33e927f23d227a4974915c65927284ec)
 - owner\_orig\_prio : [k\_mutex](structk__mutex.md#ab0d16fac9f8af960a501ffd93ec08c80)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

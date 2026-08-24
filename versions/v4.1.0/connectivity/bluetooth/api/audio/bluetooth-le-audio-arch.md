@@ -585,7 +585,7 @@ how they correspond to procedures from the other profiles. The circles with I, A
 the procedure has active involvement or requirements from the CAP Initiator, CAP Accept and CAP
 Commander roles respectively.
 
-![Common Audio Profile Procedures](../../../../_images/cap_proc.svg)
+![Common Audio Profile Procedures](https://docs.zephyrproject.org/4.1.0/_images/cap_proc.svg)
 
 Common Audio Profile Procedures
 

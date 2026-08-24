@@ -10,7 +10,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 # nRF9160 Feather
 
-![Circuit Dojo nRF9160 Feather](../../../../_images/circuitdojo_feather_nrf9160.jpg)
+![Circuit Dojo nRF9160 Feather](https://docs.zephyrproject.org/3.7.0/_images/circuitdojo_feather_nrf9160.jpg)
 
 nRF9160 Feather (Credit: Circuit Dojo)
 
@@ -41,7 +41,7 @@ More information about the board can be found at the
 
 ## Hardware
 
-![nRF9160 Feather Features](../../../../_images/nrf9160-feather-v31-features.jpg)
+![nRF9160 Feather Features](https://docs.zephyrproject.org/3.7.0/_images/nrf9160-feather-v31-features.jpg)
 
 ### Connections and IOs
 

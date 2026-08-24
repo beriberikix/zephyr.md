@@ -8,8 +8,8 @@ original_path: boards/renesas/rzt2m_rsk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzt2m_rsk.webp](../../../../_images/rzt2m_rsk.webp)
-](../../../../_images/rzt2m_rsk.webp)
+[![../../../../_images/rzt2m_rsk.webp](https://docs.zephyrproject.org/4.2.0/_images/rzt2m_rsk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzt2m_rsk.webp)
 
 Renesas Starter Kit+ for RZ/T2M
 
@@ -64,8 +64,8 @@ The board is powered through a 5V input via a DC Power Jack or USB Type-C Connec
 
 The Renesas RZ/T2M MPU documentation can be found at [RZT2M Product page](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rz-mpus/rzt2m-high-performance-multi-function-mpu-realizing-high-speed-processing-and-high-precision-control) [[1]](#id2)
 
-[![RZ/T2M group feature](../../../../_images/rzt2m_block_diagram.webp)
-](../../../../_images/rzt2m_block_diagram.webp)
+[![RZ/T2M group feature](https://docs.zephyrproject.org/4.2.0/_images/rzt2m_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzt2m_block_diagram.webp)
 
 ### Supported Features
 

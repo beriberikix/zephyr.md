@@ -207,4 +207,4 @@ Return values
     | -EBUSY | Returned without waiting. |
     | -EAGAIN | Waiting period timed out, or the semaphore was reset during the waiting period. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -371,4 +371,4 @@ GATT attribute permission bit field values.
 | BT\_GATT\_PERM\_READ\_LESC | Attribute read permission with LE Secure Connection encryption.  If set, requires that LE Secure Connections is used for read access. |
 | BT\_GATT\_PERM\_WRITE\_LESC | Attribute write permission with LE Secure Connection encryption.  If set, requires that LE Secure Connections is used for write access. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

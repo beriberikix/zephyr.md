@@ -8,8 +8,8 @@ original_path: boards/oct/osd32mp1_brk/doc/osd32mp1_brk.html
 
 Board Overview
 
-[![../../../../_images/osd32mp1_brk.webp](../../../../_images/osd32mp1_brk.webp)
-](../../../../_images/osd32mp1_brk.webp)
+[![../../../../_images/osd32mp1_brk.webp](https://docs.zephyrproject.org/4.2.0/_images/osd32mp1_brk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/osd32mp1_brk.webp)
 
 OSD32MP1-BRK
 

@@ -60,7 +60,7 @@ The key features of the EK-RA6M5 board are categorized in three groups as follow
 - 64 Mb (512 Mb) External Octo-SPI Flash
 - CAN (3-pin header)
 
-![RA6M5 Evaluation Kit](../../../../_images/ek_ra6m5.webp)
+![RA6M5 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra6m5.webp)
 
 EK-RA6M5 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -68,8 +68,8 @@ EK-RA6M5 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detailed hardware feature for the RA6M5 MCU group can be found at [RA6M5 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/ra6m5-group-users-manual-hardware)
 
-[![RA6M5 MCU group feature](../../../../_images/ra6m5_block_diagram.webp)
-](../../../../_images/ra6m5_block_diagram.webp)
+[![RA6M5 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra6m5_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra6m5_block_diagram.webp)
 
 RA6M5 Block diagram (Credit: Renesas Electronics Corporation)
 

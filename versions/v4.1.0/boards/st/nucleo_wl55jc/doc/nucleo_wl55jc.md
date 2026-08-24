@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wl55jc/doc/nucleo_wl55jc.html
 
 Board Overview
 
-[![../../../../_images/nucleo_wl55jc.jpg](../../../../_images/nucleo_wl55jc.jpg)
-](../../../../_images/nucleo_wl55jc.jpg)
+[![../../../../_images/nucleo_wl55jc.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_wl55jc.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_wl55jc.jpg)
 
 Nucleo WL55JC
 

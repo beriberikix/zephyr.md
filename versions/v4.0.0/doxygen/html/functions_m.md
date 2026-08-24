@@ -351,4 +351,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - mwl : [i3c\_device\_desc](structi3c__device__desc.md#a29804ab89f08928f14fa4095f57e79ed)
 - my\_options : [ppp\_context](structppp__context.md#a37f609192ee6b739d7018d5a07ce179f), [ppp\_fsm](structppp__fsm.md#a39a7d8b02a0c905ea27565445295c4f2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

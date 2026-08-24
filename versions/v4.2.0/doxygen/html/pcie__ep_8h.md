@@ -313,4 +313,4 @@ Returns
 - [pcie](dir_e35238db017d7f8b1976dc13f193be2d.md)
 - [endpoint](dir_5013992ccf7d366f81bc518f84f7b0b5.md)
 - [pcie\_ep.h](pcie__ep_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

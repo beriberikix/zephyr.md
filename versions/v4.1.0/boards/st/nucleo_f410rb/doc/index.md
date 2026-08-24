@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f410rb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f410rb.jpg](../../../../_images/nucleo_f410rb.jpg)
-](../../../../_images/nucleo_f410rb.jpg)
+[![../../../../_images/nucleo_f410rb.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb.jpg)
 
 Nucleo F410RB
 
@@ -147,10 +147,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F410RB Arduino connectors (top left)](../../../../_images/nucleo_f410rb_arduino_top_left.jpg)
-![Nucleo F410RB Arduino connectors (top right)](../../../../_images/nucleo_f410rb_arduino_top_right.jpg)
-![Nucleo F410RB Morpho connectors (top left)](../../../../_images/nucleo_f410rb_morpho_top_left.jpg)
-![Nucleo F410RB Morpho connectors (top right)](../../../../_images/nucleo_f410rb_morpho_top_right.jpg)
+![Nucleo F410RB Arduino connectors (top left)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb_arduino_top_left.jpg)
+![Nucleo F410RB Arduino connectors (top right)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb_arduino_top_right.jpg)
+![Nucleo F410RB Morpho connectors (top left)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb_morpho_top_left.jpg)
+![Nucleo F410RB Morpho connectors (top right)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f410rb_morpho_top_right.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

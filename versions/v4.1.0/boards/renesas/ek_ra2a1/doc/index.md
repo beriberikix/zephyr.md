@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra2a1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra2a1.webp](../../../../_images/ek_ra2a1.webp)
-](../../../../_images/ek_ra2a1.webp)
+[![../../../../_images/ek_ra2a1.webp](https://docs.zephyrproject.org/4.1.0/_images/ek_ra2a1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra2a1.webp)
 
 RA2A1 Evaluation Kit
 
@@ -60,8 +60,8 @@ Renesas RA2A1 Microcontroller Group has following features
 
 Detail Hardware feature for the RA2A1 MCU group can be found at [RA2A1 Group User’s Manual Hardware](https://www.renesas.com/en/document/mah/renesas-ra2a1-group-users-manual-hardware) [[1]](#id3)
 
-[![RA2A1 MCU group feature](../../../../_images/ra2a1_block_diagram.webp)
-](../../../../_images/ra2a1_block_diagram.webp)
+[![RA2A1 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra2a1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ra2a1_block_diagram.webp)
 
 RA2A1 Block diagram (Credit: Renesas Electronics Corporation)
 

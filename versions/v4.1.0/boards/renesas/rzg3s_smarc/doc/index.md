@@ -8,8 +8,8 @@ original_path: boards/renesas/rzg3s_smarc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzg3s_smarc.webp](../../../../_images/rzg3s_smarc.webp)
-](../../../../_images/rzg3s_smarc.webp)
+[![../../../../_images/rzg3s_smarc.webp](https://docs.zephyrproject.org/4.1.0/_images/rzg3s_smarc.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/rzg3s_smarc.webp)
 
 RZ/G3S SMARC Evaluation Board Kit
 
@@ -66,8 +66,8 @@ The Renesas RZ/G3S SMARC Evaluation Board Kit (RZ/G3S-EVKIT) consists of a SMARC
 
 The Renesas RZ/G3S MPU documentation can be found at [RZ/G3S Group Website](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rz-mpus/rzg3s-general-purpose-microprocessors-single-core-arm-cortex-a55-11-ghz-cpu-and-dual-core-cortex-m33-250) [[2]](#id5)
 
-[![RZ/G3S group feature](../../../../_images/rzg3s_block_diagram.webp)
-](../../../../_images/rzg3s_block_diagram.webp)
+[![RZ/G3S group feature](https://docs.zephyrproject.org/4.1.0/_images/rzg3s_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/rzg3s_block_diagram.webp)
 
 RZ/G3S block diagram (Credit: Renesas Electronics Corporation)
 

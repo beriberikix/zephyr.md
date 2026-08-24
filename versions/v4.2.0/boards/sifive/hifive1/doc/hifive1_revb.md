@@ -8,8 +8,8 @@ original_path: boards/sifive/hifive1/doc/hifive1_revb.html
 
 Board Overview
 
-[![../../../../_images/hifive1_revb.jpg](../../../../_images/hifive1_revb.jpg)
-](../../../../_images/hifive1_revb.jpg)
+[![../../../../_images/hifive1_revb.jpg](https://docs.zephyrproject.org/4.2.0/_images/hifive1_revb.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/hifive1_revb.jpg)
 
 HiFive1 Rev B
 
@@ -33,7 +33,7 @@ Browse board sources
 
 The HiFive1 Rev B is an Arduino-compatible development board with an FE310-G002 RISC-V SoC.
 
-![SiFive HiFive1 Rev B board](../../../../_images/hifive1_revb1.jpg)
+![SiFive HiFive1 Rev B board](https://docs.zephyrproject.org/4.2.0/_images/hifive1_revb1.jpg)
 
 SiFive HiFive1 Rev B board (image courtesy of SiFive)
 

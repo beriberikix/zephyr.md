@@ -32,7 +32,7 @@ Cortex-M33F CPU with ARMv8-M Security Extension and the following devices:
 - WDT
 - IDAU
 
-![nRF9131 EK](../../../../_images/nrf9131ek_nrf9131.webp)
+![nRF9131 EK](https://docs.zephyrproject.org/3.6.0/_images/nrf9131ek_nrf9131.webp)
 
 nRF9131 EK (Credit: Nordic Semiconductor)
 

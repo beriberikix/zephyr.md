@@ -76,11 +76,11 @@ Internally, a [`sys_slist_t`](#c.sys_slist_t) struct is nothing more than a pair
 “head” and “tail” pointer fields. And a [`sys_snode_t`](#c.sys_snode_t) stores only a
 single “next” pointer.
 
-![slist example](../../_images/slist.png)
+![slist example](https://docs.zephyrproject.org/3.6.0/_images/slist.png)
 
 An slist containing three elements.
 
-![empty slist example](../../_images/slist-empty.png)
+![empty slist example](https://docs.zephyrproject.org/3.6.0/_images/slist-empty.png)
 
 An empty slist
 

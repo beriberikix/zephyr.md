@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf54h20dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf54h20.webp](../../../../_images/nrf54h20.webp)
-](../../../../_images/nrf54h20.webp)
+[![../../../../_images/nrf54h20.webp](https://docs.zephyrproject.org/4.2.0/_images/nrf54h20.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf54h20.webp)
 
 nRF54H20 DK
 

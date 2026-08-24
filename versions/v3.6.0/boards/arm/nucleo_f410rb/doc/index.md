@@ -29,7 +29,7 @@ some highlights of the Nucleo F410RB board:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - Two push-buttons: USER and RESET
 
-![Nucleo F410RB](../../../../_images/nucleo_f410rb.jpg)
+![Nucleo F410RB](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f410rb.jpg)
 
 More information about the board can be found at the [Nucleo F410RB website](https://www.st.com/en/evaluation-tools/nucleo-F410RB.html).
 
@@ -91,10 +91,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F410RB Arduino connectors (top left)](../../../../_images/nucleo_f410rb_arduino_top_left.jpg)
-![Nucleo F410RB Arduino connectors (top right)](../../../../_images/nucleo_f410rb_arduino_top_right.jpg)
-![Nucleo F410RB Morpho connectors (top left)](../../../../_images/nucleo_f410rb_morpho_top_left.jpg)
-![Nucleo F410RB Morpho connectors (top right)](../../../../_images/nucleo_f410rb_morpho_top_right.jpg)
+![Nucleo F410RB Arduino connectors (top left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f410rb_arduino_top_left.jpg)
+![Nucleo F410RB Arduino connectors (top right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f410rb_arduino_top_right.jpg)
+![Nucleo F410RB Morpho connectors (top left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f410rb_morpho_top_left.jpg)
+![Nucleo F410RB Morpho connectors (top right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f410rb_morpho_top_right.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

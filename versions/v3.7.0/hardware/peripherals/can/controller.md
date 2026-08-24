@@ -27,7 +27,7 @@ loopback mode.
 
 The bit-timing as defined in ISO 11898-1:2003 looks as following:
 
-[![CAN Timing](../../../_images/timing.svg)](../../../_images/timing.svg)
+[![CAN Timing](https://docs.zephyrproject.org/3.7.0/_images/timing.svg)](https://docs.zephyrproject.org/3.7.0/_images/timing.svg)
 
 A single bit is split into four segments.
 

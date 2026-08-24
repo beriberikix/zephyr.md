@@ -8,8 +8,8 @@ original_path: boards/element14/warp7/doc/index.html
 
 Board Overview
 
-[![../../../../_images/warp7.jpg](../../../../_images/warp7.jpg)
-](../../../../_images/warp7.jpg)
+[![../../../../_images/warp7.jpg](https://docs.zephyrproject.org/4.2.0/_images/warp7.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/warp7.jpg)
 
 WaRP7 - Next Generation IoT and Wearable Development Platform
 

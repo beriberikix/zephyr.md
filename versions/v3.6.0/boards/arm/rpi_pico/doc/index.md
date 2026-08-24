@@ -37,9 +37,9 @@ using an external adapter.
 - 1 Watchdog timer peripheral
 - Infineon CYW43439 2.4 GHz Wi-Fi chip (Pico W only)
 
-![Raspberry Pi Pico](../../../../_images/rpi_pico.jpg)
+![Raspberry Pi Pico](https://docs.zephyrproject.org/3.6.0/_images/rpi_pico.jpg)
 
-![Raspberry Pi Pico W](../../../../_images/rpi_pico_w.jpg)
+![Raspberry Pi Pico W](https://docs.zephyrproject.org/3.6.0/_images/rpi_pico_w.jpg)
 
 Raspberry Pi Pico (above) and Pico W (below)
 (Images courtesy of Raspberry Pi)

@@ -277,4 +277,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - await : [rtio\_sqe](structrtio__sqe.md#a7ed5828c28fd59a34f5aa7262e4ddd20)
 - azimuth : [gnss\_satellite](structgnss__satellite.md#a27a864422f5207b5d38efbd8b50893a3), [ubx\_nav\_sat::ubx\_nav\_sat\_info](structubx__nav__sat_1_1ubx__nav__sat__info.md#a3a50255230b6ed80bfa4eb8ff83acf89)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

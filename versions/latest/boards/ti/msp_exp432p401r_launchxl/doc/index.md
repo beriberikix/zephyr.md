@@ -8,8 +8,8 @@ original_path: boards/ti/msp_exp432p401r_launchxl/doc/index.html
 
 Board Overview
 
-[![../../../../_images/msp_exp432p401r_launchxl.jpg](../../../../_images/msp_exp432p401r_launchxl.jpg)
-](../../../../_images/msp_exp432p401r_launchxl.jpg)
+[![../../../../_images/msp_exp432p401r_launchxl.jpg](https://docs.zephyrproject.org/4.2.0/_images/msp_exp432p401r_launchxl.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/msp_exp432p401r_launchxl.jpg)
 
 MSP-EXP432P401R LaunchXL
 

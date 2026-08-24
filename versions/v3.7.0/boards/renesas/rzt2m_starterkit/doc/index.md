@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The Renesas Starter Kit+ for RZ/T2M is an evaluation and development kit for the RZ/T2M MPU.
 The board is powered through a 5V input via a DC Power Jack or USB Type-C Connector.
 
-[![Starter Kit+ for RZ/T2M](../../../../_images/rzt2m_starterkit.png)](../../../../_images/rzt2m_starterkit.png)
+[![Starter Kit+ for RZ/T2M](https://docs.zephyrproject.org/3.7.0/_images/rzt2m_starterkit.png)](https://docs.zephyrproject.org/3.7.0/_images/rzt2m_starterkit.png)
 
 Starter Kit+ for RZ/T2M (Credit: Renesas)
 

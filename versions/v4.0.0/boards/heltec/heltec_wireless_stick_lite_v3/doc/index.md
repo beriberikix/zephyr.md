@@ -8,8 +8,8 @@ original_path: boards/heltec/heltec_wireless_stick_lite_v3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/heltec_wireless_stick_lite_v3.webp](../../../../_images/heltec_wireless_stick_lite_v3.webp)
-](../../../../_images/heltec_wireless_stick_lite_v3.webp)
+[![../../../../_images/heltec_wireless_stick_lite_v3.webp](https://docs.zephyrproject.org/4.0.0/_images/heltec_wireless_stick_lite_v3.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/heltec_wireless_stick_lite_v3.webp)
 
 Wireless Stick Lite (V3)
 
@@ -50,8 +50,8 @@ The main hardware features are:
 
 ### Connections and IOs
 
-[![HelTec Wireless Stick Lite (V3) Pinout](../../../../_images/heltec_wireless_stick_lite_v3_pinout.webp)
-](../../../../_images/heltec_wireless_stick_lite_v3_pinout.webp)
+[![HelTec Wireless Stick Lite (V3) Pinout](https://docs.zephyrproject.org/4.0.0/_images/heltec_wireless_stick_lite_v3_pinout.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/heltec_wireless_stick_lite_v3_pinout.webp)
 
 Pinout (Credit: Chengdu HelTec Automation Technology Co., Ltd.)
 

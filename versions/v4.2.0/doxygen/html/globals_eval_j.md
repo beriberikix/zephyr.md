@@ -43,4 +43,4 @@ Here is a list of all enum values with links to the files they belong to:
 - JSON\_TOK\_UINT : [json.h](group__json.md#gga18a137ac5e2998d375540298670797c4a15a20a35f875a495a7514ae1a7027e75)
 - JSON\_TOK\_UINT64 : [json.h](group__json.md#gga18a137ac5e2998d375540298670797c4a6218cd0d5d8a34cf4b32797f361b5a41)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

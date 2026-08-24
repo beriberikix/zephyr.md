@@ -142,4 +142,4 @@ Here is a list of all enums with links to the files they belong to:
 - stm32\_ex\_ops : [stm32\_flash\_api\_extensions.h](stm32__flash__api__extensions_8h.md#a95b012159eb95cd62859a6d5c4d862b8)
 - stm32\_gpio\_irq\_trigger : [gpio\_intc\_stm32.h](gpio__intc__stm32_8h.md#a8f9c3db22937ebe4382215227c410b61)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

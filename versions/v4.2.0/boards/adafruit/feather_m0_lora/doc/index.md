@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_m0_lora/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_m0_lora.jpg](../../../../_images/adafruit_feather_m0_lora.jpg)
-](../../../../_images/adafruit_feather_m0_lora.jpg)
+[![../../../../_images/adafruit_feather_m0_lora.jpg](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_lora.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_lora.jpg)
 
 Feather M0 LoRa
 

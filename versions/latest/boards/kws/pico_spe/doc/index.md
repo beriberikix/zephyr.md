@@ -8,8 +8,8 @@ original_path: boards/kws/pico_spe/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pico_spe.webp](../../../../_images/pico_spe.webp)
-](../../../../_images/pico_spe.webp)
+[![../../../../_images/pico_spe.webp](https://docs.zephyrproject.org/4.2.0/_images/pico_spe.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/pico_spe.webp)
 
 Pico-SPE
 

@@ -119,4 +119,4 @@ Public kernel APIs.
 - [debug](dir_44aa0acd5660d74ea205f18be43003ca.md)
 - [coresight](dir_9e253c82b70fbbc4699540bacc17d458.md)
 - [cs\_trace\_defmt.h](cs__trace__defmt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

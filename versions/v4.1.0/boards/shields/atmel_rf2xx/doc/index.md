@@ -36,7 +36,7 @@ connector. The modules from this kit are available without any transceiver
 advanced features. For Xplained headers the [atmel\_rf2xx\_xplained](https://github.com/zephyrproject-rtos/zephyr/blob/master/boards/shields/atmel_rf2xx/atmel_rf2xx_xplained.overlay) [[5]](#id10) must be
 selected. For Xplained-Pro header the [atmel\_rf2xx\_legacy](https://github.com/zephyrproject-rtos/zephyr/blob/master/boards/shields/atmel_rf2xx/atmel_rf2xx_legacy.overlay) [[7]](#id16) must be enabled.
 
-![AVR-RZ600](../../../../_images/ATAVRRZ600.jpg)
+![AVR-RZ600](https://docs.zephyrproject.org/4.1.0/_images/ATAVRRZ600.jpg)
 
 ### Pins Assignment of the RZ600 Module
 
@@ -58,7 +58,7 @@ selected. For Xplained-Pro header the [atmel\_rf2xx\_legacy](https://github.com/
 The REB233-XPRO development kit uses Atmel Xplained Pro header. It is enabled
 selecting [atmel\_rf2xx\_xpro](https://github.com/zephyrproject-rtos/zephyr/blob/master/boards/shields/atmel_rf2xx/atmel_rf2xx_xpro.overlay) [[6]](#id13) option.
 
-![REB233-XPRO Top](../../../../_images/atreb233-xpro-top.jpg)
+![REB233-XPRO Top](https://docs.zephyrproject.org/4.1.0/_images/atreb233-xpro-top.jpg)
 
 ### Pins Assignment of the REB233-XPRO Module
 

@@ -291,4 +291,4 @@ Definition of Silabs LDMA request signal.
 - [dma](dir_4af45c18fedc476f9a2ee26ec98f56f0.md)
 - [silabs](dir_457bcdd23b8c5c7a64b19c2fab5b10fc.md)
 - [xg27-dma.h](xg27-dma_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -62,4 +62,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - pwm\_capture\_callback\_handler\_t : [pwm.h](group__pwm__interface.md#ga2395ef29b77674d9f1b56d8091b8695a)
 - pwm\_flags\_t : [pwm.h](group__pwm__interface.md#gae1dcfb878163da76041efcedf0960fa0)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

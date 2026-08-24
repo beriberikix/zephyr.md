@@ -68,4 +68,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - evtchn\_status\_t : [event\_channel.h](event__channel_8h.md#a8ed9ed5019e8da76a67eaddc44c3f6a9)
 - evtchn\_unmask\_t : [event\_channel.h](event__channel_8h.md#adf108a8c569745708da92551dcad289c)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

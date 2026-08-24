@@ -8,8 +8,8 @@ original_path: boards/st/stm32h757i_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h757i_eval.webp](../../../../_images/stm32h757i_eval.webp)
-](../../../../_images/stm32h757i_eval.webp)
+[![../../../../_images/stm32h757i_eval.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32h757i_eval.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32h757i_eval.webp)
 
 STM32H757I Eval
 

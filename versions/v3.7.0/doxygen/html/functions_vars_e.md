@@ -178,4 +178,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - extent\_order : [xen\_memory\_reservation](structxen__memory__reservation.md#ad0acf08be6cf896b508744cc6398b6b6)
 - extra\_samplings : [adc\_sequence\_options](structadc__sequence__options.md#a29f8ac4cdf6740f56bcd70a0a027e56a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

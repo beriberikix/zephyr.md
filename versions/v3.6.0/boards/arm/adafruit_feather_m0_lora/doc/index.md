@@ -17,7 +17,7 @@ boards with an onboard battery connector and charger for 3.7 V lithium
 polymer batteries, charging status indicator and user LEDs, native USB
 connector, 20 I/O pins, and a LoRa radio module from Semtech.
 
-![Adafruit Feather M0 LoRa](../../../../_images/adafruit_feather_m0_lora.jpg)
+![Adafruit Feather M0 LoRa](https://docs.zephyrproject.org/3.6.0/_images/adafruit_feather_m0_lora.jpg)
 
 ## Hardware
 

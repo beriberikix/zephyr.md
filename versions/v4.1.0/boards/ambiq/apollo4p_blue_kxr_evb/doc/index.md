@@ -8,8 +8,8 @@ original_path: boards/ambiq/apollo4p_blue_kxr_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/apollo4-blue-plus-kxr-soc-eval-board.jpg](../../../../_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
-](../../../../_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
+[![../../../../_images/apollo4-blue-plus-kxr-soc-eval-board.jpg](https://docs.zephyrproject.org/4.1.0/_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
 
 Apollo4 Blue Plus KXR EVB
 

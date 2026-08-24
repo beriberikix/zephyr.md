@@ -59,4 +59,4 @@ Here is a list of all functions with links to the files they belong to:
 - xtensa\_user\_fault() : [arch.h](xtensa_2arch_8h.md#a0890b1717c7f7b93644c69a3293b7da8)
 - xtensa\_vecbase\_lock() : [arch.h](xtensa_2arch_8h.md#ac14ee42f2f373cf48fa30a60f3aafc39)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

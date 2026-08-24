@@ -8,8 +8,8 @@ original_path: boards/nxp/mimxrt1015_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mimxrt1015_evk.jpg](../../../../_images/mimxrt1015_evk.jpg)
-](../../../../_images/mimxrt1015_evk.jpg)
+[![../../../../_images/mimxrt1015_evk.jpg](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1015_evk.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1015_evk.jpg)
 
 MIMXRT1015-EVK
 

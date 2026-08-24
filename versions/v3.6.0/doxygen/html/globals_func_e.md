@@ -141,4 +141,4 @@ Here is a list of all functions with links to the files they belong to:
 - evtchn\_status() : [events.h](events_8h.md#ae5391f2b67ddbd598f33d796ba591568)
 - exit() : [stdlib.h](stdlib_8h.md#af929aa40c441bb81bd806d5b44481af1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

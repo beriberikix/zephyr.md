@@ -23,7 +23,7 @@ including both a SAML21 die, and a Semtech SX1276 LoRa radio die.
 
 This board is also referred to as DM320111.
 
-![SAMR34-XPRO](../../../../../_images/atsamr34-xpro.jpg)
+![SAMR34-XPRO](https://docs.zephyrproject.org/3.7.0/_images/atsamr34-xpro.jpg)
 
 ## Hardware
 
@@ -73,7 +73,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM R34 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-R34-R35-Low-Power-LoRa-Sub-GHz-SiP-Data-Sheet-DS70005356C.pdf) [[1]](#id1) and the [SAM R34
 Xplained Pro Schematic](https://ww1.microchip.com/downloads/Secure/en/DeviceDoc/SAMR34_SiP_Reference_Design_Package_V3.0.exe) [[2]](#id3).
 
-![SAMR34-XPRO-pinout](../../../../../_images/atsamr34-xpro-pinout.jpg)
+![SAMR34-XPRO-pinout](https://docs.zephyrproject.org/3.7.0/_images/atsamr34-xpro-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

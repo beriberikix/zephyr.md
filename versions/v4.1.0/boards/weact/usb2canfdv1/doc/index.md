@@ -8,8 +8,8 @@ original_path: boards/weact/usb2canfdv1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/usb2canfdv1.webp](../../../../_images/usb2canfdv1.webp)
-](../../../../_images/usb2canfdv1.webp)
+[![../../../../_images/usb2canfdv1.webp](https://docs.zephyrproject.org/4.1.0/_images/usb2canfdv1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/usb2canfdv1.webp)
 
 USB2CANFDV1
 

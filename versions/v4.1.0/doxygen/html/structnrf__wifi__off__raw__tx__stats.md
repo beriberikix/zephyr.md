@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/wifi/nrf\_wifi/off\_raw\_tx/[off\_raw\_tx\_api.h](off__raw__tx__api_8h_source.md)
 
 - [nrf\_wifi\_off\_raw\_tx\_stats](structnrf__wifi__off__raw__tx__stats.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

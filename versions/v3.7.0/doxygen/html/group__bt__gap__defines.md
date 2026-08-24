@@ -4610,4 +4610,4 @@ Advertising PDU properties.
 | BT\_GAP\_ADV\_PROP\_SCAN\_RESPONSE | Additional advertising data requested by an active scanner. |
 | BT\_GAP\_ADV\_PROP\_EXT\_ADV | Extended advertising. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

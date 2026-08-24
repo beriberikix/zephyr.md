@@ -18,7 +18,7 @@ bundled with Atmel’s AT86RF233, a 2.4GHz IEEE802.15.4 compatible radio.
 The kit includes Atmel’s Embedded Debugger (EDBG), which provides a full
 debug interface without the need for additional hardware.
 
-![SAMR21-XPRO](../../../../../_images/atsamr21_xpro.jpg)
+![SAMR21-XPRO](https://docs.zephyrproject.org/3.7.0/_images/atsamr21_xpro.jpg)
 
 ## Hardware
 
@@ -59,7 +59,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM R21 Family Datasheet](http://ww1.microchip.com/downloads/en/devicedoc/sam-r21_datasheet.pdf) [[1]](#id1) and the [SAM R21
 Xplained Pro Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/SAMR21-Xplained-Pro_Design-Documentation.zip) [[2]](#id3).
 
-![SAMR21-XPRO-pinout](../../../../../_images/ATSAMR21-XPRO-pinout.jpg)
+![SAMR21-XPRO-pinout](https://docs.zephyrproject.org/3.7.0/_images/ATSAMR21-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

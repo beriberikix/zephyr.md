@@ -41,4 +41,4 @@ console.h File Reference
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [console](dir_2f086bf88c9e3ffd4c7c065f4bf7757c.md)
 - [console.h](console_2console_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

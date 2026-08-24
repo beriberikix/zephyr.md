@@ -8,8 +8,8 @@ original_path: boards/st/disco_l475_iot1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/disco_l475_iot1.jpg](../../../../_images/disco_l475_iot1.jpg)
-](../../../../_images/disco_l475_iot1.jpg)
+[![../../../../_images/disco_l475_iot1.jpg](https://docs.zephyrproject.org/4.0.0/_images/disco_l475_iot1.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/disco_l475_iot1.jpg)
 
 Disco L475 IOT01 (B-L475E-IOT01A)
 

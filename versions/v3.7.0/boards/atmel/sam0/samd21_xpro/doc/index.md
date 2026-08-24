@@ -18,7 +18,7 @@ microcontrollers. The kit includes Atmel’s Embedded Debugger (EDBG),
 which provides a full debug interface without the need for additional
 hardware.
 
-[![SAMD21-XPRO](../../../../../_images/atsamd21_xpro.jpg)](../../../../../_images/atsamd21_xpro.jpg)
+[![SAMD21-XPRO](https://docs.zephyrproject.org/3.7.0/_images/atsamd21_xpro.jpg)](https://docs.zephyrproject.org/3.7.0/_images/atsamd21_xpro.jpg)
 
 SAMD21-XPRO (Credit: [Microchip Technology](http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=ATSAMD21-XPRO) [[1]](#id2))
 
@@ -64,7 +64,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM D21 Family Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-Family-Datasheet-DS40001882C.pdf) [[2]](#id4) and the [SAM D21
 Xplained Pro Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Xplained-Pro_Design-Documentation.zip) [[3]](#id6).
 
-![SAMD21-XPRO-pinout](../../../../../_images/ATSAMD21-XPRO-pinout.jpg)
+![SAMD21-XPRO-pinout](https://docs.zephyrproject.org/3.7.0/_images/ATSAMD21-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

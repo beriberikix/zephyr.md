@@ -8,8 +8,8 @@ original_path: boards/dragino/nbsn95/doc/index.html
 
 Board Overview
 
-[![../../../../_images/dragino_nbsn95.jpg](../../../../_images/dragino_nbsn95.jpg)
-](../../../../_images/dragino_nbsn95.jpg)
+[![../../../../_images/dragino_nbsn95.jpg](https://docs.zephyrproject.org/4.1.0/_images/dragino_nbsn95.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/dragino_nbsn95.jpg)
 
 NBSN95 NB-IoT Sensor Node
 

@@ -56,4 +56,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/sys/[mpsc\_lockfree.h](mpsc__lockfree_8h_source.md)
 
 - [mpsc](structmpsc.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

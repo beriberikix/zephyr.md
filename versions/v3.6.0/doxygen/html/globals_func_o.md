@@ -46,4 +46,4 @@ Here is a list of all functions with links to the files they belong to:
 - osdp\_pd\_notify\_event() : [osdp.h](osdp_8h.md#ac097208c2b197ec4ebe567d59831a29f)
 - osdp\_pd\_set\_command\_callback() : [osdp.h](osdp_8h.md#aa79d4fde3ae007e6c829d56daf8c3e49)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

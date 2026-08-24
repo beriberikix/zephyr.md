@@ -21,7 +21,7 @@ been updated requiring a new SPI image tool. MEC1501 and MEC152x SPI image
 formats are not compatible with each other. Evaluation and cpu boards are
 compatible.
 
-![MEC15XX EVB ASSY 6853](../../../../_images/mec15xxevb_assy6853.jpg)
+![MEC15XX EVB ASSY 6853](https://docs.zephyrproject.org/3.6.0/_images/mec15xxevb_assy6853.jpg)
 
 ## Hardware
 
@@ -159,7 +159,7 @@ For UART2 make sure JP39 have jumpers connected 1-2, 3-4.
 To receive UART2 serial output, please refer to the picture below
 to make sure that JP9 configured for UART2 output.
 
-![JP9 header Assy6853](../../../../_images/mec15xxevb_assy6853_jp9_1.jpg)
+![JP9 header Assy6853](https://docs.zephyrproject.org/3.6.0/_images/mec15xxevb_assy6853_jp9_1.jpg)
 
 ### Jumper settings for MEC1501 144WFBGA Socket DC Assy 6883 Rev B1p0
 
@@ -236,7 +236,7 @@ in reference section below.
 
 1. Connect the SPI Dongle ASSY 6791 to `J44` in the EVB.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/spidongle_assy6791_view1.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/3.6.0/_images/spidongle_assy6791_view1.jpg)
 2. Connect programmer to the header J6 on the Assy6791 board, it will flash the SPI NOR chip `U3`
    Make sure that your programmer’s offset is 0x0.
    For programming you can use Dediprog SF100 or a similar tool for flashing SPI chips.
@@ -265,10 +265,10 @@ in reference section below.
 4. Apply power to the board via a micro-USB cable.
    Configure this option by using a jumper between `JP88 7-8`.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/jp88_power_options.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/3.6.0/_images/jp88_power_options.jpg)
 5. Final wiring for the board should look like this:
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/mec_board_setup.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/3.6.0/_images/mec_board_setup.jpg)
 
 ### Building
 
@@ -307,7 +307,7 @@ in reference section below.
    When west process started press Reset button and do not release it
    till the whole west process will not be finished successfully.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/reset_button_1.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/3.6.0/_images/reset_button_1.jpg)
 
    Note
 

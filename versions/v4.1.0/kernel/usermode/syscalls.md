@@ -198,8 +198,8 @@ arguments.
 There is always a `uintptr_t` type return value, which may be neglected if
 not needed.
 
-[![System Call execution flow](../../_images/syscall_flow.png)
-](../../_images/syscall_flow.png)
+[![System Call execution flow](https://docs.zephyrproject.org/4.1.0/_images/syscall_flow.png)
+](https://docs.zephyrproject.org/4.1.0/_images/syscall_flow.png)
 
 System Call execution flow
 

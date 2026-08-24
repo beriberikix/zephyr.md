@@ -176,4 +176,4 @@ Here is a list of all enum values with links to the files they belong to:
 - REQUEST\_TC\_END : [usbc.h](group____usbc__device__api.md#gga38a301a97a5e1a85e9836bbf083859f3a0c5ff3bc4c0d6f636663fd3911ed85d5)
 - REQUEST\_TC\_ERROR\_RECOVERY : [usbc.h](group____usbc__device__api.md#gga38a301a97a5e1a85e9836bbf083859f3a8a7b77d81428f0c4784af3204f33b290)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

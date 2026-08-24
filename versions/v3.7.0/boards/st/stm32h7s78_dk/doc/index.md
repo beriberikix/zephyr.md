@@ -42,7 +42,7 @@ the STM32H7S78-DK Discovery board:
 - 4 user LEDs
 - User and reset push-buttons
 
-![STM32H7S78-DK Discovery](../../../../_images/stm32h7s78_dk.jpg)
+![STM32H7S78-DK Discovery](https://docs.zephyrproject.org/3.7.0/_images/stm32h7s78_dk.jpg)
 
 More information about the board can be found at the [STM32H7S78-DK Discovery website](https://www.st.com/en/evaluation-tools/stm32h7s78-dk.html).
 

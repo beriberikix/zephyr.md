@@ -146,4 +146,4 @@ Execute a display list command by co-processor engine.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [storage](dir_9ae83148a5180e4d77f53cf673d8ea1c.md)
 - [disk\_access.h](disk__access_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

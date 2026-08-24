@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l053r8/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l053r8.jpg](../../../../_images/nucleo_l053r8.jpg)
-](../../../../_images/nucleo_l053r8.jpg)
+[![../../../../_images/nucleo_l053r8.jpg](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l053r8.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l053r8.jpg)
 
 Nucleo L053R8
 
@@ -147,7 +147,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo L053R8 connectors](../../../../_images/nucleo_l053r8_connectors.jpg)
+![Nucleo L053R8 connectors](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l053r8_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

@@ -41,4 +41,4 @@ pwm\_fake.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [pwm](dir_be6d7cea606f8787ce461c788254eca9.md)
 - [pwm\_fake.h](pwm__fake_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

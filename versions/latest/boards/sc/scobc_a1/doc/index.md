@@ -8,8 +8,8 @@ original_path: boards/sc/scobc_a1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/scobc.jpg](../../../../_images/scobc.jpg)
-](../../../../_images/scobc.jpg)
+[![../../../../_images/scobc.jpg](https://docs.zephyrproject.org/4.2.0/_images/scobc.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/scobc.jpg)
 
 SC-OBC Module A1
 

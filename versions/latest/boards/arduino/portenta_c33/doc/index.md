@@ -8,8 +8,8 @@ original_path: boards/arduino/portenta_c33/doc/index.html
 
 Board Overview
 
-[![../../../../_images/portenta_c33.webp](../../../../_images/portenta_c33.webp)
-](../../../../_images/portenta_c33.webp)
+[![../../../../_images/portenta_c33.webp](https://docs.zephyrproject.org/4.2.0/_images/portenta_c33.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/portenta_c33.webp)
 
 Arduino Portenta C33
 

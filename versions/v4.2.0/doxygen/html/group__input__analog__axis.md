@@ -160,4 +160,4 @@ Parameters
     | --- | --- |
     | cb | An [analog\_axis\_raw\_data\_t](#ga384e901afe29ae91e01c44b458034d64) callback to use, NULL disable. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

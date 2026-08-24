@@ -8,8 +8,8 @@ original_path: boards/we/ophelia1ev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/we_ophelia1ev_nrf52805.jpg](../../../../_images/we_ophelia1ev_nrf52805.jpg)
-](../../../../_images/we_ophelia1ev_nrf52805.jpg)
+[![../../../../_images/we_ophelia1ev_nrf52805.jpg](https://docs.zephyrproject.org/4.2.0/_images/we_ophelia1ev_nrf52805.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/we_ophelia1ev_nrf52805.jpg)
 
 Ophelia-I EV NRF52805
 

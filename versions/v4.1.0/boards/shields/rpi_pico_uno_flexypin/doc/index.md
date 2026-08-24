@@ -16,7 +16,7 @@ The FlexyPin holds Pico and contacts to castellated through-hole.
 With simple soldering, it can also be used as a board to convert the Rapsberry Pi Pico
 to the Arduino UNO form factor.
 
-![RaspberryPi Pico to UNO FlexyPin Adapter](../../../../_images/rpi_pico_uno_flexypin.png)
+![RaspberryPi Pico to UNO FlexyPin Adapter](https://docs.zephyrproject.org/4.1.0/_images/rpi_pico_uno_flexypin.png)
 
 ### Pins Assignment of the RaspberryPi Pico to UNO FlexyPin Adapter
 

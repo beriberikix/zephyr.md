@@ -8,8 +8,8 @@ original_path: boards/adi/max32660evsys/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32660evsys.webp](../../../../_images/max32660evsys.webp)
-](../../../../_images/max32660evsys.webp)
+[![../../../../_images/max32660evsys.webp](https://docs.zephyrproject.org/4.1.0/_images/max32660evsys.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max32660evsys.webp)
 
 MAX32660EVSYS
 

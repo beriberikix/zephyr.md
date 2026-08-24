@@ -8,8 +8,8 @@ original_path: boards/quicklogic/qomu/doc/index.html
 
 Board Overview
 
-[![../../../../_images/qomu-board.png](../../../../_images/qomu-board.png)
-](../../../../_images/qomu-board.png)
+[![../../../../_images/qomu-board.png](https://docs.zephyrproject.org/4.0.0/_images/qomu-board.png)
+](https://docs.zephyrproject.org/4.0.0/_images/qomu-board.png)
 
 Qomu
 

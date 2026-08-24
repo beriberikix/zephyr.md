@@ -91,4 +91,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - QSPICKSELR\_REG : [stm32mp13\_clock.h](stm32mp13__clock_8h.md#a774ea01b7d6909ec3629cbe73a1e75de)
 - QUICKLOGIC\_EOS\_S3\_PINMUX : [quicklogic-eos-s3-pinctrl.h](quicklogic-eos-s3-pinctrl_8h.md#a32684ea1b082834fcadc1d17ab2f6ea7)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

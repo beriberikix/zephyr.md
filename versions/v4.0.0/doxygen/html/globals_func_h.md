@@ -94,4 +94,4 @@ Here is a list of all functions with links to the files they belong to:
 - HYPERVISOR\_memory\_op() : [hypercall.h](hypercall_8h.md#a49970e12da5e083aa26228880c23c1c2)
 - HYPERVISOR\_sched\_op() : [hypercall.h](hypercall_8h.md#a2493899aa03561ca6161f541093390a7)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

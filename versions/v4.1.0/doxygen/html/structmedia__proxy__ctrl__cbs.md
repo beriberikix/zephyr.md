@@ -567,4 +567,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/audio/[media\_proxy.h](media__proxy_8h_source.md)
 
 - [media\_proxy\_ctrl\_cbs](structmedia__proxy__ctrl__cbs.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

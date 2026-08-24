@@ -8,8 +8,8 @@ original_path: boards/waveshare/esp32s3_matrix/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32s3_matrix.webp](../../../../_images/esp32s3_matrix.webp)
-](../../../../_images/esp32s3_matrix.webp)
+[![../../../../_images/esp32s3_matrix.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_matrix.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_matrix.webp)
 
 ESP32-S3-Matrix
 

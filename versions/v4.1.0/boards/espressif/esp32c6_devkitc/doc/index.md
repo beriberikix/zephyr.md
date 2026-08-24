@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32c6_devkitc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32c6_devkitc.webp](../../../../_images/esp32c6_devkitc.webp)
-](../../../../_images/esp32c6_devkitc.webp)
+[![../../../../_images/esp32c6_devkitc.webp](https://docs.zephyrproject.org/4.1.0/_images/esp32c6_devkitc.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32c6_devkitc.webp)
 
 ESP32-C6-DevKitC
 

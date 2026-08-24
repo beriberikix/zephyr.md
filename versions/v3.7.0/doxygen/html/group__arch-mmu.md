@@ -350,4 +350,4 @@ Some page frames within system RAM may not be available for use. A good example 
 
 Implementations of this function should mark all relevant entries in k\_mem\_page\_frames with K\_PAGE\_FRAME\_RESERVED. This function is called at early system initialization with mm\_lock held.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/holyiot/yj16019/doc/index.html
 
 Board Overview
 
-[![../../../../_images/holyiot_yj16019_front.jpg](../../../../_images/holyiot_yj16019_front.jpg)
-](../../../../_images/holyiot_yj16019_front.jpg)
+[![../../../../_images/holyiot_yj16019_front.jpg](https://docs.zephyrproject.org/4.1.0/_images/holyiot_yj16019_front.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/holyiot_yj16019_front.jpg)
 
 YJ-16019
 
@@ -139,7 +139,7 @@ pads on the PCB (see image):
 - SWDIO = SDO
 - SWCLK = SCK
 
-![Holyiot YJ-16019 PCB](../../../../_images/holyiot_yj16019_pcb.jpg)
+![Holyiot YJ-16019 PCB](https://docs.zephyrproject.org/4.1.0/_images/holyiot_yj16019_pcb.jpg)
 
 Holyiot YJ-16019 PCB (Credit: Holyiot)
 

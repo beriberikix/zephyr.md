@@ -624,4 +624,4 @@ Here is a list of all macros with links to the files they belong to:
 - TYPE\_SECTION\_START\_EXTERN : [iterable\_sections.h](group__iterable__section__apis.md#ga40c6ba05d5bcb848a530bdc17bbff5be)
 - TZNAME\_MAX : [unistd.h](unistd_8h.md#afb3fe48998f8d32cfb7047b917a8039e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

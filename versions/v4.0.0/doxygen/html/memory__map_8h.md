@@ -33,4 +33,4 @@ This module contains definitions for the memory map of the CORTEX-M series of pr
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [cortex\_m](dir_d27032cbfb87610ee5132d2bc57d6588.md)
 - [memory\_map.h](memory__map_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -73,4 +73,4 @@ ospi.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [flash\_controller](dir_cd262f46d6d541746154471716dc2a72.md)
 - [ospi.h](ospi_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

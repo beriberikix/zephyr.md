@@ -27,8 +27,8 @@ For running with QEMU or [native\_sim](../../../boards/native/native_sim/doc/ind
 Download latest nrftools (version >= 10.12.1) from site
 [https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools/Download](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools/Download).
 
-[![../../../_images/download_nrftools_linux.png](../../../_images/download_nrftools_linux.png)
-](../../../_images/download_nrftools_linux.png)
+[![../../../_images/download_nrftools_linux.png](https://docs.zephyrproject.org/4.2.0/_images/download_nrftools_linux.png)
+](https://docs.zephyrproject.org/4.2.0/_images/download_nrftools_linux.png)
 
 After you extract archive, you will see 2 .deb files, e.g.:
 
@@ -65,15 +65,15 @@ configured, and will not get blocked by the Windows Firewall.
 Open virtual machine network settings. On adapter 1 you will have created by default NAT.
 Open the Port Forwarding menu an add the ports you want.
 
-[![../../../_images/virtualbox_nat_1.png](../../../_images/virtualbox_nat_1.png)
-](../../../_images/virtualbox_nat_1.png)
+[![../../../_images/virtualbox_nat_1.png](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_nat_1.png)
+](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_nat_1.png)
 
 For example setting up the following will allow you to use
 `localhost:65000` and `localhost:65002` (or `127.0.0.0:65000` and `127.0.0.0:65002`)
 to connect to an AutoPTS Server in Windows running on ports 65000 and 65002.
 
-[![../../../_images/virtualbox_nat_2.png](../../../_images/virtualbox_nat_2.png)
-](../../../_images/virtualbox_nat_2.png)
+[![../../../_images/virtualbox_nat_2.png](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_nat_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_nat_2.png)
 
 ### [Setup static IP](#id7)
 
@@ -83,18 +83,18 @@ If you cannot or do not want to use NAT it is possible to configure a static IP.
 
 On Linux, open Virtual Network Editor app and create network:
 
-[![../../../_images/vmware_static_ip_1.png](../../../_images/vmware_static_ip_1.png)
-](../../../_images/vmware_static_ip_1.png)
+[![../../../_images/vmware_static_ip_1.png](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_1.png)
+](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_1.png)
 
 Open virtual machine network settings. Add custom adapter:
 
-[![../../../_images/vmware_static_ip_2.png](../../../_images/vmware_static_ip_2.png)
-](../../../_images/vmware_static_ip_2.png)
+[![../../../_images/vmware_static_ip_2.png](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_2.png)
 
 If you type ‘ifconfig’ in terminal, you should be able to find your host IP:
 
-[![../../../_images/vmware_static_ip_3.png](../../../_images/vmware_static_ip_3.png)
-](../../../_images/vmware_static_ip_3.png)
+[![../../../_images/vmware_static_ip_3.png](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_3.png)
+](https://docs.zephyrproject.org/4.2.0/_images/vmware_static_ip_3.png)
 
 #### VirtualBox
 
@@ -108,14 +108,14 @@ File -> Tools -> Network Manager
 
 and create network:
 
-[![../../../_images/virtualbox_static_ip_1.png](../../../_images/virtualbox_static_ip_1.png)
-](../../../_images/virtualbox_static_ip_1.png)
+[![../../../_images/virtualbox_static_ip_1.png](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_static_ip_1.png)
+](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_static_ip_1.png)
 
 Open virtual machine network settings. On adapter 1 you will have created by default NAT.
 Add adapter 2:
 
-[![../../../_images/virtualbox_static_ip_2.png](../../../_images/virtualbox_static_ip_2.png)
-](../../../_images/virtualbox_static_ip_2.png)
+[![../../../_images/virtualbox_static_ip_2.png](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_static_ip_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/virtualbox_static_ip_2.png)
 
 #### Windows
 
@@ -125,8 +125,8 @@ Settings -> Network & Internet -> Ethernet -> Unidentified network -> Edit
 
 and set:
 
-[![../../../_images/windows_static_ip.png](../../../_images/windows_static_ip.png)
-](../../../_images/windows_static_ip.png)
+[![../../../_images/windows_static_ip.png](https://docs.zephyrproject.org/4.2.0/_images/windows_static_ip.png)
+](https://docs.zephyrproject.org/4.2.0/_images/windows_static_ip.png)
 
 ### [Install Python 3](#id8)
 
@@ -134,10 +134,10 @@ Download and install latest [Python 3](https://www.python.org/downloads/) on Win
 Let the installer add the Python installation directory to the PATH and
 disable the path length limitation.
 
-[![../../../_images/install_python1.png](../../../_images/install_python1.png)
-](../../../_images/install_python1.png)
-[![../../../_images/install_python2.png](../../../_images/install_python2.png)
-](../../../_images/install_python2.png)
+[![../../../_images/install_python1.png](https://docs.zephyrproject.org/4.2.0/_images/install_python1.png)
+](https://docs.zephyrproject.org/4.2.0/_images/install_python1.png)
+[![../../../_images/install_python2.png](https://docs.zephyrproject.org/4.2.0/_images/install_python2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/install_python2.png)
 
 ### [Install Git](#id9)
 
@@ -145,8 +145,8 @@ Download and install [Git](https://git-scm.com/downloads).
 During installation enable option: Enable experimental support for pseudo
 consoles. We will use Git Bash as Windows terminal.
 
-[![../../../_images/install_git.png](../../../_images/install_git.png)
-](../../../_images/install_git.png)
+[![../../../_images/install_git.png](https://docs.zephyrproject.org/4.2.0/_images/install_git.png)
+](https://docs.zephyrproject.org/4.2.0/_images/install_git.png)
 
 ### [Install PTS 8](#id10)
 
@@ -154,8 +154,8 @@ On Windows virtual machine, install latest PTS from [https://www.bluetooth.org](
 Remember to install drivers from installation directory
 “C:/Program Files (x86)/Bluetooth SIG/Bluetooth PTS/PTS Driver/win64/CSRBlueCoreUSB.inf”
 
-[![../../../_images/install_pts_drivers.png](../../../_images/install_pts_drivers.png)
-](../../../_images/install_pts_drivers.png)
+[![../../../_images/install_pts_drivers.png](https://docs.zephyrproject.org/4.2.0/_images/install_pts_drivers.png)
+](https://docs.zephyrproject.org/4.2.0/_images/install_pts_drivers.png)
 
 Note
 
@@ -175,8 +175,8 @@ usb-devices
 
 and find in output your PTS Bluetooth USB dongle
 
-[![../../../_images/usb-devices_output.png](../../../_images/usb-devices_output.png)
-](../../../_images/usb-devices_output.png)
+[![../../../_images/usb-devices_output.png](https://docs.zephyrproject.org/4.2.0/_images/usb-devices_output.png)
+](https://docs.zephyrproject.org/4.2.0/_images/usb-devices_output.png)
 
 Note Vendor and ProdID number. Close VMWare Workstation and open .vmx of your virtual machine
 (path similar to /home/codecoup/vmware/Windows 10/Windows 10.vmx) in text editor.
@@ -190,10 +190,10 @@ just replace 0x0a12 with Vendor number and 0x0001 with ProdID number you found e
 
 ## [Connect devices (only required in the actual hardware test mode)](#id12)
 
-[![../../../_images/devices_1.png](../../../_images/devices_1.png)
-](../../../_images/devices_1.png)
-[![../../../_images/devices_2.png](../../../_images/devices_2.png)
-](../../../_images/devices_2.png)
+[![../../../_images/devices_1.png](https://docs.zephyrproject.org/4.2.0/_images/devices_1.png)
+](https://docs.zephyrproject.org/4.2.0/_images/devices_1.png)
+[![../../../_images/devices_2.png](https://docs.zephyrproject.org/4.2.0/_images/devices_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/devices_2.png)
 
 ## [Flash board (only required in the actual hardware test mode)](#id13)
 
@@ -254,8 +254,8 @@ Server and client by default will run on localhost address. Run server:
 python ./autoptsserver.py
 ```
 
-[![../../../_images/autoptsserver_run_2.png](../../../_images/autoptsserver_run_2.png)
-](../../../_images/autoptsserver_run_2.png)
+[![../../../_images/autoptsserver_run_2.png](https://docs.zephyrproject.org/4.2.0/_images/autoptsserver_run_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/autoptsserver_run_2.png)
 
 Testing Zephyr Host Stack on QEMU:
 
@@ -297,13 +297,13 @@ python ./autoptsclient-zephyr.py zephyr-master ~/zephyrproject/build/zephyr/zeph
     -b nrf52 -l 192.168.2.1 -i 192.168.2.2
 ```
 
-[![../../../_images/autoptsclient_run_2.png](../../../_images/autoptsclient_run_2.png)
-](../../../_images/autoptsclient_run_2.png)
+[![../../../_images/autoptsclient_run_2.png](https://docs.zephyrproject.org/4.2.0/_images/autoptsclient_run_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/autoptsclient_run_2.png)
 
 At the first run, when Windows asks, enable connection through firewall:
 
-[![../../../_images/allow_firewall_2.png](../../../_images/allow_firewall_2.png)
-](../../../_images/allow_firewall_2.png)
+[![../../../_images/allow_firewall_2.png](https://docs.zephyrproject.org/4.2.0/_images/allow_firewall_2.png)
+](https://docs.zephyrproject.org/4.2.0/_images/allow_firewall_2.png)
 
 ## [Troubleshooting](#id18)
 
@@ -315,8 +315,8 @@ In this case, choose rather VMWare Workstation.
 
 ### [I cannot start autoptsserver-zephyr.py. I always get a Python error](#id20)
 
-[![../../../_images/autoptsserver_typical_error.png](../../../_images/autoptsserver_typical_error.png)
-](../../../_images/autoptsserver_typical_error.png)
+[![../../../_images/autoptsserver_typical_error.png](https://docs.zephyrproject.org/4.2.0/_images/autoptsserver_typical_error.png)
+](https://docs.zephyrproject.org/4.2.0/_images/autoptsserver_typical_error.png)
 
 One or more of the following steps should help:
 
@@ -332,8 +332,8 @@ If the AutoPTS server is able to find and use a PTS dongle,
 then the title of the window will show the Bluetooth address of the dongle.
 If this does not happen then ensure that the dongle is plugged in, updated and recognized by PTS.
 
-[![../../../_images/pts_automation_window.png](../../../_images/pts_automation_window.png)
-](../../../_images/pts_automation_window.png)
+[![../../../_images/pts_automation_window.png](https://docs.zephyrproject.org/4.2.0/_images/pts_automation_window.png)
+](https://docs.zephyrproject.org/4.2.0/_images/pts_automation_window.png)
 
 If it still fails to run tests after this,
 please ensure that the Bluetooth Protocol Viewer is installed.

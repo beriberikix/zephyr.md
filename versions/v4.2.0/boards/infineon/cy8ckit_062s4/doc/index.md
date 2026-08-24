@@ -8,8 +8,8 @@ original_path: boards/infineon/cy8ckit_062s4/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cy8ckit_062s4.png](../../../../_images/cy8ckit_062s4.png)
-](../../../../_images/cy8ckit_062s4.png)
+[![../../../../_images/cy8ckit_062s4.png](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit_062s4.png)
+](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit_062s4.png)
 
 PSOC 62S4 Pioneer Kit
 

@@ -8,8 +8,8 @@ original_path: boards/variscite/imx93_var_dart/doc/index.html
 
 Board Overview
 
-[![../../../../_images/imx93_var_dart.webp](../../../../_images/imx93_var_dart.webp)
-](../../../../_images/imx93_var_dart.webp)
+[![../../../../_images/imx93_var_dart.webp](https://docs.zephyrproject.org/4.2.0/_images/imx93_var_dart.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/imx93_var_dart.webp)
 
 DART-MX93
 

@@ -8,8 +8,8 @@ original_path: boards/waveshare/esp32s3_touch_lcd_1_28/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32s3_touch_lcd_1_28.webp](../../../../_images/esp32s3_touch_lcd_1_28.webp)
-](../../../../_images/esp32s3_touch_lcd_1_28.webp)
+[![../../../../_images/esp32s3_touch_lcd_1_28.webp](https://docs.zephyrproject.org/4.1.0/_images/esp32s3_touch_lcd_1_28.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32s3_touch_lcd_1_28.webp)
 
 ESP32-S3-Touch-LCD-1.28
 

@@ -28,7 +28,7 @@ debugger and programmer.
 The STM32 Nucleo board comes with the STM32 comprehensive software HAL library together
 with various packaged software examples.
 
-![Nucleo F334R8](../../../../_images/nucleo_f334r8.jpg)
+![Nucleo F334R8](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f334r8.jpg)
 
 More information about the board can be found at the [Nucleo F334R8 website](https://www.st.com/en/evaluation-tools/nucleo-f334r8.html) [[1]](#id1).
 
@@ -95,7 +95,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F334R8 connectors](../../../../_images/nucleo_f334r8_connectors.jpg)
+![Nucleo F334R8 connectors](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f334r8_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

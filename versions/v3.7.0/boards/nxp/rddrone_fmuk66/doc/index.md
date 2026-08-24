@@ -17,7 +17,7 @@ connectors and a Kinetis K66 on board.
 
 - Comes with a J-Link Edu Mini for programming and UART console.
 
-![RDDRONE-FMUK66](../../../../_images/rddrone_fmuk66.jpg)
+![RDDRONE-FMUK66](https://docs.zephyrproject.org/3.7.0/_images/rddrone_fmuk66.jpg)
 
 ## Hardware
 

@@ -59,7 +59,7 @@ all of which are controlled by the Main MCU firmware
 
 - USB Full Speed Debug and Device (micro-AB connector)
 
-![RA6M1 Evaluation Kit](../../../../_images/ek_ra6m1.webp)
+![RA6M1 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra6m1.webp)
 
 EK-RA6M1 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -67,8 +67,8 @@ EK-RA6M1 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detailed hardware feature for the RA6M1 MCU group can be found at [RA6M1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/renesas-ra6m1-group-users-manual-hardware?r=1054156)
 
-[![RA6M1 MCU group feature](../../../../_images/ra6m1_block_diagram.webp)
-](../../../../_images/ra6m1_block_diagram.webp)
+[![RA6M1 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra6m1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra6m1_block_diagram.webp)
 
 RA6M1 Block diagram (Credit: Renesas Electronics Corporation)
 

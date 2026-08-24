@@ -69,4 +69,4 @@ u\_blox\_m8.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [gnss](dir_0dee92f216af48987cbc3398c5bc7958.md)
 - [u\_blox\_m8.h](u__blox__m8_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

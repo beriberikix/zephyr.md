@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_ke17z512/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_ke17z512.webp](../../../../_images/frdm_ke17z512.webp)
-](../../../../_images/frdm_ke17z512.webp)
+[![../../../../_images/frdm_ke17z512.webp](https://docs.zephyrproject.org/4.1.0/_images/frdm_ke17z512.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/frdm_ke17z512.webp)
 
 FRDM-KE17Z512
 

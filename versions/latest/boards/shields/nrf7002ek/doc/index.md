@@ -16,7 +16,7 @@ The nRF7002 EK unlocks low-power Wi-Fi 6 capabilities for your host device. It s
 Seamlessly connect to Wi-Fi networks and leverage Wi-Fi-based locationing, enabling advanced
 features such as SSID sniffing of local Wi-Fi hubs
 
-![nRF7002 EK](../../../../_images/nrf7002ek.png)
+![nRF7002 EK](https://docs.zephyrproject.org/4.2.0/_images/nrf7002ek.png)
 
 nRF7002 EK
 

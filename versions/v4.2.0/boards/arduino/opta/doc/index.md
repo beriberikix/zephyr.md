@@ -8,8 +8,8 @@ original_path: boards/arduino/opta/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_opta.jpeg](../../../../_images/arduino_opta.jpeg)
-](../../../../_images/arduino_opta.jpeg)
+[![../../../../_images/arduino_opta.jpeg](https://docs.zephyrproject.org/4.2.0/_images/arduino_opta.jpeg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_opta.jpeg)
 
 Arduino OPTA
 

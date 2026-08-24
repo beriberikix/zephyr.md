@@ -21,7 +21,7 @@ Bluetooth5/Tread/802.15.4/ANT/2.4GHz multiprotocol node or development
 board. Alternatively the USB Dongle can be used as a Network Co-Processor(NCP)
 with a simple connection to a PC or other USB enabled device.
 
-![nRF52840 MDK USB Dongle](../../../../_images/nrf52840-mdk-usb-dongle-pinout.jpg)
+![nRF52840 MDK USB Dongle](https://docs.zephyrproject.org/3.6.0/_images/nrf52840-mdk-usb-dongle-pinout.jpg)
 
 nRF52840 MDK USB Dongle
 

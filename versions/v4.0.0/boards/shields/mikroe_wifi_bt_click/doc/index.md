@@ -14,7 +14,7 @@ the standard MikroBus interface with UART pins plus its Espressif AT
 command set. Alternatively, the Zephyr modem driver can be used,
 configuring the module as a native WIFI networking interface.
 
-![MikroE WIFI BLE Click](../../../../_images/wifi_click.jpg)
+![MikroE WIFI BLE Click](https://docs.zephyrproject.org/4.0.0/_images/wifi_click.jpg)
 
 ### Pins Assignment of the Shield
 

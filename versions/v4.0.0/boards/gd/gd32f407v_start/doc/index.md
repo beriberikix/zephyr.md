@@ -8,8 +8,8 @@ original_path: boards/gd/gd32f407v_start/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32f407v_start.webp](../../../../_images/gd32f407v_start.webp)
-](../../../../_images/gd32f407v_start.webp)
+[![../../../../_images/gd32f407v_start.webp](https://docs.zephyrproject.org/4.0.0/_images/gd32f407v_start.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/gd32f407v_start.webp)
 
 GD32F407V-START
 

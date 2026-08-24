@@ -28,8 +28,8 @@ ZBUS_CHAN_DEFINE(chan_a,
 );
 ```
 
-[![ZBus priority boost scenario example.](../../../../_images/zbus_publishing_process_example_scenario1.svg)
-](../../../../_images/zbus_publishing_process_example_scenario1.svg)
+[![ZBus priority boost scenario example.](https://docs.zephyrproject.org/4.1.0/_images/zbus_publishing_process_example_scenario1.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/zbus_publishing_process_example_scenario1.svg)
 
 Note
 
@@ -41,8 +41,8 @@ priority boost execution.
 The figure below illustrates the execution of the cited scenario but with the priority boost
 disabled.
 
-[![ZBus example scenario for priority boost disabled.](../../../../_images/without_hlp_priority_boost_feature.svg)
-](../../../../_images/without_hlp_priority_boost_feature.svg)
+[![ZBus example scenario for priority boost disabled.](https://docs.zephyrproject.org/4.1.0/_images/without_hlp_priority_boost_feature.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/without_hlp_priority_boost_feature.svg)
 
 It can be built and executed on QEMU as follows:
 
@@ -117,8 +117,8 @@ Exit QEMU by pressing `CTRL+A` `x`.
 The figure below illustrates the execution of the same scenario but with the priority boost enabled.
 The developer must enable the priority boost and properly attach all the observers to their threads.
 
-[![ZBus example scenario for priority boost enabled.](../../../../_images/with_hlp_priority_boost_feature.svg)
-](../../../../_images/with_hlp_priority_boost_feature.svg)
+[![ZBus example scenario for priority boost enabled.](https://docs.zephyrproject.org/4.1.0/_images/with_hlp_priority_boost_feature.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/with_hlp_priority_boost_feature.svg)
 
 To execute the sample with priority boost feature enabled, run the following command:
 

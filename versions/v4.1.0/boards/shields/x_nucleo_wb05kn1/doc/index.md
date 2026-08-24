@@ -15,7 +15,7 @@ The RF module is FCC (FCC ID: YCP-MB203202) and IC certified (IC: 8976A-MB203202
 The X-NUCLEO-WB05KN1 is compatible out of the box with the Arduino UNO R3 connector.
 The board interfaces with the host microcontroller via UART (default) or SPI peripheral.
 
-![X-NUCLEO-WB05KN1](../../../../_images/x-nucleo-wb05kn1.webp)
+![X-NUCLEO-WB05KN1](https://docs.zephyrproject.org/4.1.0/_images/x-nucleo-wb05kn1.webp)
 
 More information about the board can be found at the
 [X-NUCLEO-WB05KN1 website](https://www.st.com/en/evaluation-tools/x-nucleo-wb05kn1.html) [[1]](#id1).

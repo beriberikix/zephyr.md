@@ -8,8 +8,8 @@ original_path: boards/makerdiary/nrf52840_mdk_usb_dongle/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52840-mdk-usb-dongle-pinout.jpg](../../../../_images/nrf52840-mdk-usb-dongle-pinout.jpg)
-](../../../../_images/nrf52840-mdk-usb-dongle-pinout.jpg)
+[![../../../../_images/nrf52840-mdk-usb-dongle-pinout.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf52840-mdk-usb-dongle-pinout.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52840-mdk-usb-dongle-pinout.jpg)
 
 nRF52840 MDK USB Dongle
 

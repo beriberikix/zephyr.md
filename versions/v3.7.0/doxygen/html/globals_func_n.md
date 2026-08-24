@@ -664,4 +664,4 @@ Here is a list of all functions with links to the files they belong to:
 - nxp\_pint\_pin\_set\_callback() : [nxp\_pint.h](nxp__pint_8h.md#a086336be48bc780034f74dbd5aff0bd9)
 - nxp\_pint\_pin\_unset\_callback() : [nxp\_pint.h](nxp__pint_8h.md#ad7ec8dddcc5a404f38d8d5bb16775a9a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

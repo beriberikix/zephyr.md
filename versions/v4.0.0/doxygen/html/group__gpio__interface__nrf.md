@@ -118,4 +118,4 @@ Standard drive for '0' and '1' (default).
 
 Standard drive for '1' (default, used with GPIO\_OPEN\_SOURCE).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

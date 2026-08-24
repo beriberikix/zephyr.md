@@ -71,16 +71,16 @@ very clean symmetry of operations:
 Effectively, a dlist of N nodes can be thought of as a “ring” of “N+1”
 nodes, where one node represents the list tracking struct.
 
-![dlist example](../../_images/dlist.png)
+![dlist example](https://docs.zephyrproject.org/4.2.0/_images/dlist.png)
 
 A dlist containing three elements. Note that the list struct
 appears as a fourth “element” in the list.
 
-![single-element dlist example](../../_images/dlist-single.png)
+![single-element dlist example](https://docs.zephyrproject.org/4.2.0/_images/dlist-single.png)
 
 An dlist containing just one element.
 
-![dlist example](../../_images/dlist-empty.png)
+![dlist example](https://docs.zephyrproject.org/4.2.0/_images/dlist-empty.png)
 
 An empty dlist.
 

@@ -36,4 +36,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - queue\_id : [ethernet\_qav\_param](structethernet__qav__param.md#a4e2d2967669b758422c166140af0c1ba), [ethernet\_txtime\_param](structethernet__txtime__param.md#aa4a46b7153b2a69ca0134f4e10bc7165)
 - queued : [udc\_buf\_info](structudc__buf__info.md#a4cd2e83000a0551d126bebe89552eab9), [uhc\_transfer](structuhc__transfer.md#ad2b246c850c3b30f7d2b58fc9a47008b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -19,7 +19,7 @@ The GD32RCT6 features a single-core ARM Cortex-M4F MCU which can run up
 to 64-MHz with flash accesses zero wait states, 256kB of Flash, 32kB of
 SRAM and 59 GPIOs.
 
-![gd32l233r_eval](../../../../_images/gd32l233r_eval.jpg)
+![gd32l233r_eval](https://docs.zephyrproject.org/3.7.0/_images/gd32l233r_eval.jpg)
 
 ## Hardware
 

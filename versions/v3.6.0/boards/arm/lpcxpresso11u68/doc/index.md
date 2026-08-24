@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The LPCXpresso11u68 development board uses an NXP LPC11U68 MCU based
 on an ARM Cortex-M0+ core.
 
-![LPCXpresso11U68](../../../../_images/lpcxpresso11u68.jpg)
+![LPCXpresso11U68](https://docs.zephyrproject.org/3.6.0/_images/lpcxpresso11u68.jpg)
 
 ## Hardware
 

@@ -18,7 +18,7 @@ with up to 50 channels which makes this board highly flexible
 for touch keys. Offers options for serial
 communication, flash programming, and run-control debugging.
 
-![FRDM-KE17Z](../../../../_images/frdmke17z.webp)
+![FRDM-KE17Z](https://docs.zephyrproject.org/3.7.0/_images/frdmke17z.webp)
 
 FRDM-KE17Z (Credit: NXP)
 

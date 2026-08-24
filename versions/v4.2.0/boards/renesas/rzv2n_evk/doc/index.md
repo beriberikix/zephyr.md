@@ -8,8 +8,8 @@ original_path: boards/renesas/rzv2n_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzv2n_evk.webp](../../../../_images/rzv2n_evk.webp)
-](../../../../_images/rzv2n_evk.webp)
+[![../../../../_images/rzv2n_evk.webp](https://docs.zephyrproject.org/4.2.0/_images/rzv2n_evk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2n_evk.webp)
 
 RZ/V2N Evaluation Board Kit
 
@@ -68,8 +68,8 @@ such as DMS (Driver Monitoring System), monitoring cameras, mobile robots, and m
 
 The Renesas RZ/V2N documentation can be found at [RZ/V2N Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzv2n-15tops-quad-core-vision-ai-mpu-2-camera-connection-and-excellent-power-efficiency) [[5]](#id11)
 
-[![RZ/V2N group feature](../../../../_images/rzv2n_block_diagram.webp)
-](../../../../_images/rzv2n_block_diagram.webp)
+[![RZ/V2N group feature](https://docs.zephyrproject.org/4.2.0/_images/rzv2n_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2n_block_diagram.webp)
 
 RZ/V2N block diagram (Credit: Renesas Electronics Corporation)
 

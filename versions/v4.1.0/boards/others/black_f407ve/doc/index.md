@@ -8,8 +8,8 @@ original_path: boards/others/black_f407ve/doc/index.html
 
 Board Overview
 
-[![../../../../_images/black_f407ve.jpg](../../../../_images/black_f407ve.jpg)
-](../../../../_images/black_f407ve.jpg)
+[![../../../../_images/black_f407ve.jpg](https://docs.zephyrproject.org/4.1.0/_images/black_f407ve.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/black_f407ve.jpg)
 
 Black STM32 F407VE Development Board
 
@@ -182,9 +182,9 @@ simultaneous use of CAN\_1 and CAN\_2 is not yet supported.
 BLACK\_F407VE has 5 GPIO controllers. These controllers are responsible for pin
 muxing, input/output, pull-up, etc.
 
-![left pins](../../../../_images/stm32f407vet6_left02.jpg)
-![right pins](../../../../_images/stm32f407vet6_right01.jpg)
-![bottom and top pins](../../../../_images/stm32f407vet6_st-link02.jpg)
+![left pins](https://docs.zephyrproject.org/4.1.0/_images/stm32f407vet6_left02.jpg)
+![right pins](https://docs.zephyrproject.org/4.1.0/_images/stm32f407vet6_right01.jpg)
+![bottom and top pins](https://docs.zephyrproject.org/4.1.0/_images/stm32f407vet6_st-link02.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

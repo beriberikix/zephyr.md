@@ -17,7 +17,7 @@ wireless connectivity (2.4G/5G dual-band Wi-Fi and BLE 5.0), LCD display,
 USB C port, FPC connector, microSD card slot, Raspberry Pi compatible 40-pins
 header and 2 Grove connectors.
 
-[![Seeed Studio Wio Terminal](../../../../_images/wio_terminal.png)](../../../../_images/wio_terminal.png)
+[![Seeed Studio Wio Terminal](https://docs.zephyrproject.org/3.6.0/_images/wio_terminal.png)](https://docs.zephyrproject.org/3.6.0/_images/wio_terminal.png)
 
 ## Hardware
 

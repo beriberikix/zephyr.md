@@ -1570,4 +1570,4 @@ ra4m3-elc.h File Reference
 - [renesas](dir_86b946318bd38151d049d676c19e4b11.md)
 - [ra-elc](dir_fc824a581c07e3e227952b4fed9afa76.md)
 - [ra4m3-elc.h](ra4m3-elc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

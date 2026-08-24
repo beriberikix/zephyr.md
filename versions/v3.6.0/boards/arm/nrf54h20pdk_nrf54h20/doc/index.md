@@ -48,7 +48,7 @@ nRF54H20 SoC provides support for the following devices:
 - USB
 - WDT
 
-![nRF54H20 PDK](../../../../_images/nrf54h20pdk_nrf54h20.webp)
+![nRF54H20 PDK](https://docs.zephyrproject.org/3.6.0/_images/nrf54h20pdk_nrf54h20.webp)
 
 nRF54H20 PDK (Credit: Nordic Semiconductor)
 

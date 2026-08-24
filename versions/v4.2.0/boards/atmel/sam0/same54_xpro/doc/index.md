@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/same54_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsame54_xpro.jpg](../../../../../_images/atsame54_xpro.jpg)
-](../../../../../_images/atsame54_xpro.jpg)
+[![../../../../../_images/atsame54_xpro.jpg](https://docs.zephyrproject.org/4.2.0/_images/atsame54_xpro.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/atsame54_xpro.jpg)
 
 SAM E54 Xplained Pro Evaluation Kit
 
@@ -123,7 +123,7 @@ For more details please refer to [SAM D5x/E5x Family Datasheet (Web)](https://on
 Xplained Pro Schematic (Blue PCB)](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/SAM-E54-Xplained-Pro-Design-Documentation-Rev9.zip) [[3]](#id6), or [SAM E54
 Xplained Pro Schematic (Red PCB)](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/SAM-E54-Xplained-Pro-Design-Documentation-Rev11.zip) [[4]](#id8).
 
-![SAME54-XPRO-pinout](../../../../../_images/ATSAME54-XPRO-pinout.jpg)
+![SAME54-XPRO-pinout](https://docs.zephyrproject.org/4.2.0/_images/ATSAME54-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

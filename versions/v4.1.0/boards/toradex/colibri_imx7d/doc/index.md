@@ -8,8 +8,8 @@ original_path: boards/toradex/colibri_imx7d/doc/index.html
 
 Board Overview
 
-[![../../../../_images/colibri_imx7d.jpg](../../../../_images/colibri_imx7d.jpg)
-](../../../../_images/colibri_imx7d.jpg)
+[![../../../../_images/colibri_imx7d.jpg](https://docs.zephyrproject.org/4.1.0/_images/colibri_imx7d.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/colibri_imx7d.jpg)
 
 i.MX 7 Computer on Module - Colibri iMX7
 

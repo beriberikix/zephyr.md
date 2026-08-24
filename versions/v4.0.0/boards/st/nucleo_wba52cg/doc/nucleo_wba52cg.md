@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wba52cg/doc/nucleo_wba52cg.html
 
 Board Overview
 
-[![../../../../_images/nucleowba52cg.jpg](../../../../_images/nucleowba52cg.jpg)
-](../../../../_images/nucleowba52cg.jpg)
+[![../../../../_images/nucleowba52cg.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleowba52cg.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleowba52cg.jpg)
 
 Nucleo WBA52CG
 

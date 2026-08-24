@@ -17,7 +17,7 @@ into the common expansion connector, through which the ADTJA1101-RMII connects
 the RMII interfaces of the S32K148 directly to NXP’s 100BASE-T1 Ethernet PHY
 TJA1101.
 
-![NXP ADTJA1101-RMII Automotive Ethernet Adapter](../../../../_images/adtja1101-rmii.webp)
+![NXP ADTJA1101-RMII Automotive Ethernet Adapter](https://docs.zephyrproject.org/4.2.0/_images/adtja1101-rmii.webp)
 
 More information about this module can be found at [ADTJA1101-RMII](https://www.nxp.com/part/ADTJA1101-RMII) [[1]](#id1).
 

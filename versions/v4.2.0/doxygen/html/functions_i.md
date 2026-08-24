@@ -296,4 +296,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - itow : [ubx\_nav\_pvt](structubx__nav__pvt.md#a426086b12ff09fb8a00dd4623fea307e), [ubx\_nav\_sat](structubx__nav__sat.md#aac587fd77fa832021ebca87e7897eb2e)
 - iv\_index : [bt\_mesh\_cdb](structbt__mesh__cdb.md#a48b3cf852a42b580f911e193a9764517)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/same54_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsame54_xpro.jpg](../../../../../_images/atsame54_xpro.jpg)
-](../../../../../_images/atsame54_xpro.jpg)
+[![../../../../../_images/atsame54_xpro.jpg](https://docs.zephyrproject.org/4.1.0/_images/atsame54_xpro.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/atsame54_xpro.jpg)
 
 SAM E54 Xplained Pro Evaluation Kit
 
@@ -122,7 +122,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM D5x/E5x Family Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/60001507C.pdf) [[1]](#id2) and the [SAM E54
 Xplained Pro Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/SAME54-Xplained-Pro_Design-Documentation.zip) [[2]](#id4).
 
-![SAME54-XPRO-pinout](../../../../../_images/ATSAME54-XPRO-pinout.jpg)
+![SAME54-XPRO-pinout](https://docs.zephyrproject.org/4.1.0/_images/ATSAME54-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

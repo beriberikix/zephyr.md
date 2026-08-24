@@ -23,7 +23,7 @@ It features the following integrated components:
 - JST GH 2-pin battery connector
 - LED
 
-![TTGO T8-C3](../../../../_images/ttgo_t8c3.webp)
+![TTGO T8-C3](https://docs.zephyrproject.org/3.7.0/_images/ttgo_t8c3.webp)
 
 Lilygo TTGO T8-C3
 

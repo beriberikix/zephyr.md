@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_esp32s2/doc/adafruit_feather_esp32s2.html
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_esp32s2.webp](../../../../_images/adafruit_feather_esp32s2.webp)
-](../../../../_images/adafruit_feather_esp32s2.webp)
+[![../../../../_images/adafruit_feather_esp32s2.webp](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2.webp)
 
 Adafruit Feather ESP32S2
 

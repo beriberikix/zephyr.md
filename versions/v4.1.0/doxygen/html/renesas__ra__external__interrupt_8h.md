@@ -48,4 +48,4 @@ renesas\_ra\_external\_interrupt.h File Reference
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [renesas\_ra\_external\_interrupt](dir_dbfa80aaa1bc15a2c1d7fcdf12d925d3.md)
 - [renesas\_ra\_external\_interrupt.h](renesas__ra__external__interrupt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

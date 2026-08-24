@@ -384,7 +384,7 @@ The engine state machine shows when the events are spawned.
 Events depicted in the diagram are listed in the table.
 The events are prefixed with `LWM2M_RD_CLIENT_EVENT_`.
 
-![LwM2M engine state machine](../../../_images/lwm2m_engine_state_machine.svg)
+![LwM2M engine state machine](https://docs.zephyrproject.org/4.1.0/_images/lwm2m_engine_state_machine.svg)
 
 State machine for the LwM2M engine
 
@@ -447,7 +447,7 @@ Update period variables
 | [`CONFIG_LWM2M_UPDATE_PERIOD`](../../../kconfig.md#CONFIG_LWM2M_UPDATE_PERIOD "CONFIG_LWM2M_UPDATE_PERIOD") | How long the client can stay idle before sending a next update. |
 | [`CONFIG_LWM2M_SECONDS_TO_UPDATE_EARLY`](../../../kconfig.md#CONFIG_LWM2M_SECONDS_TO_UPDATE_EARLY "CONFIG_LWM2M_SECONDS_TO_UPDATE_EARLY") | Minimum time margin to send the update message before the registration lifetime expires. |
 
-![LwM2M seconds to update early](../../../_images/lwm2m_lifetime_seconds_early.png)
+![LwM2M seconds to update early](https://docs.zephyrproject.org/4.1.0/_images/lwm2m_lifetime_seconds_early.png)
 
 Default way of calculating when to update registration.
 
@@ -458,7 +458,7 @@ This is then affecting the period of updates the client is doing.
 If this is used with the QUEUE mode, which is typical in IPv4 networks, it is also affecting the
 period of when the device is reachable from the server.
 
-![LwM2M update time when both values are set](../../../_images/lwm2m_lifetime_both.png)
+![LwM2M update time when both values are set](https://docs.zephyrproject.org/4.1.0/_images/lwm2m_lifetime_both.png)
 
 Update time is controlled by UPDATE\_PERIOD.
 

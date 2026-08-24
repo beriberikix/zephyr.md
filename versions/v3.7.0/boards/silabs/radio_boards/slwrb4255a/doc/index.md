@@ -16,7 +16,7 @@ The EFR32FG13P Flex Gecko 2.4 GHz and 915 MHz Radio Board is delivered as a
 [standalone Proprietary Wireless radio board](https://www.silabs.com/development-tools/wireless/proprietary/slwrb4255a-efr32fg13-915-mhz-radio-board). It contains a EFR32FG13P Wireless
 SoC built on an ARM Cortex®-M4F processor with excellent low power capabilities.
 
-![SLWRB4255A Flex Gecko 2.4 GHz and 915 MHz Radio Board](../../../../../_images/efr32fg13-slwrb4255a.jpg)
+![SLWRB4255A Flex Gecko 2.4 GHz and 915 MHz Radio Board](https://docs.zephyrproject.org/3.7.0/_images/efr32fg13-slwrb4255a.jpg)
 
 SLWRB4255A (image courtesy of Silicon Labs)
 

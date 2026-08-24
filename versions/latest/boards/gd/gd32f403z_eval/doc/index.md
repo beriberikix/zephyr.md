@@ -8,8 +8,8 @@ original_path: boards/gd/gd32f403z_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32f403z_eval.jpg](../../../../_images/gd32f403z_eval.jpg)
-](../../../../_images/gd32f403z_eval.jpg)
+[![../../../../_images/gd32f403z_eval.jpg](https://docs.zephyrproject.org/4.2.0/_images/gd32f403z_eval.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/gd32f403z_eval.jpg)
 
 GD32F403Z-EVAL
 

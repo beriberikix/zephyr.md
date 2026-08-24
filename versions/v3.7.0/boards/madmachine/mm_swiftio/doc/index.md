@@ -21,7 +21,7 @@ at:
 - [MadMachine Homepage](https://madmachine.io)
 - [SwiftIO API Reference](https://madmachineio.github.io/SwiftIO/documentation/swiftio/)
 
-![SwiftIO Board](../../../../_images/mm_swiftio.jpg)
+![SwiftIO Board](https://docs.zephyrproject.org/3.7.0/_images/mm_swiftio.jpg)
 
 ## Hardware
 

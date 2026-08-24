@@ -117,4 +117,4 @@ A trigger condition on the corresponding input doesn't assert the wake-up signal
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [interrupt\_controller](dir_d4c0bd929525fabbb463a01ac157fd6b.md)
 - [wuc\_ite\_it8xxx2.h](wuc__ite__it8xxx2_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -26,7 +26,7 @@ Here are some highlights of the Nucleo F303K8 board:
 - One user LED
 - One push-buttons: RESET
 
-![Nucleo F303K8](../../../../_images/nucleo_f303k8.jpg)
+![Nucleo F303K8](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f303k8.jpg)
 
 More information about the board can be found at the [Nucleo F303K8 website](https://www.st.com/en/evaluation-tools/nucleo-F303K8.html),
 and in the [STM32 Nucleo-32 board User Manual](https://www.st.com/resource/en/user_manual/dm00231744-stm32-nucleo32-boards-mb1180-stmicroelectronics.pdf).
@@ -93,7 +93,7 @@ for input/output, pull-up, etc.
 
 #### Board connectors:
 
-![Nucleo F303K8 connectors](../../../../_images/nucleo_f303k8_pinout.jpg)
+![Nucleo F303K8 connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f303k8_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

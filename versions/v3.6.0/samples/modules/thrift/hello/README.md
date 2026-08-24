@@ -10,7 +10,7 @@ the drop-down menu on the left and select the desired version.
 
 # Thrift sample
 
-![Thrift Layers](../../../../_images/thrift-layers.png)
+![Thrift Layers](https://docs.zephyrproject.org/3.6.0/_images/thrift-layers.png)
 
 ## What is Thrift?
 

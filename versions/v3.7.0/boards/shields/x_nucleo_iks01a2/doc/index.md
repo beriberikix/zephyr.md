@@ -21,7 +21,7 @@ and the LPS22HB pressure sensor.
 The X-NUCLEO-IKS01A2 interfaces with the STM32 microcontroller via the I2C pin,
 and it is possible to change the default I2C port.
 
-![X-NUCLEO-IKS01A2](../../../../_images/x-nucleo-iks01a2.jpg)
+![X-NUCLEO-IKS01A2](https://docs.zephyrproject.org/3.7.0/_images/x-nucleo-iks01a2.jpg)
 
 More information about the board can be found at the
 [X-NUCLEO-IKS01A2 website](https://www.st.com/en/ecosystems/x-nucleo-iks01a2.html) [[1]](#id1).

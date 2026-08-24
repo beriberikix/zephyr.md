@@ -18,7 +18,7 @@ number of small ground robotics useful sensors including chirp sensors for time 
 
 It pairs a 300MHz Cortex-M7 ATSAME70Q21 with an array of TDK sensors and pin headers useful for robotics.
 
-![TDK RoboKit1](../../../../_images/tdk_robokit1.jpg)
+![TDK RoboKit1](https://docs.zephyrproject.org/3.6.0/_images/tdk_robokit1.jpg)
 
 ## Hardware
 

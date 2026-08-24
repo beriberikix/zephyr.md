@@ -26,4 +26,4 @@ Here is a list of all enums with links to the files they belong to:
 - osdp\_event\_type : [osdp.h](osdp_8h.md#a81548fab575d89f66b45a5d4ac85984d)
 - osdp\_led\_color\_e : [osdp.h](osdp_8h.md#a97ee0d8eb19e4e37ac89b2b6d338b84e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

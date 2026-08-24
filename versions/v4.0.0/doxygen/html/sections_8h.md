@@ -31,4 +31,4 @@ Linker Section declarations used by linker script, C files and Assembly files.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [linker](dir_5526e36ffa03ff8f2351c0fa0b79158f.md)
 - [sections.h](sections_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

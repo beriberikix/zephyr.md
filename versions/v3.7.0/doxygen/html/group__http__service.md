@@ -394,4 +394,4 @@ Parameters
     |  | \_sec\_tag\_list | TLS security tag list used to setup a HTTPS socket. |
     |  | \_sec\_tag\_list\_size | TLS security tag list size used to setup a HTTPS socket. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

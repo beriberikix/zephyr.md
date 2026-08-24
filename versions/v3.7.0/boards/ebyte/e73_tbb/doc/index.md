@@ -31,7 +31,7 @@ the following devices:
 - UART
 - WDT
 
-![EBYTE E73-TBB](../../../../_images/ebyte_e73_tbb_nrf52832.jpg)
+![EBYTE E73-TBB](https://docs.zephyrproject.org/3.7.0/_images/ebyte_e73_tbb_nrf52832.jpg)
 
 EBYTE E73-TBB (Credit: EBYTE)
 

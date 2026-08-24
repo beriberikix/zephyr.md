@@ -112,4 +112,4 @@ Runtime device structure (in ROM) per driver instance.
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [devmux](dir_f5d1e1250050ed799930adfc7b07539c.md)
 - [devmux.h](devmux_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

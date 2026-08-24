@@ -9,7 +9,7 @@ original_path: build/dts/intro-input-output.html
 This section describes the input and output files shown in the figure in
 [Scope and purpose](intro-scope-purpose.md#devicetree-scope-purpose) in more detail.
 
-![../../_images/zephyr_dt_inputs_outputs.svg](../../_images/zephyr_dt_inputs_outputs.svg)
+![../../_images/zephyr_dt_inputs_outputs.svg](https://docs.zephyrproject.org/4.1.0/_images/zephyr_dt_inputs_outputs.svg)
 
 Devicetree input (green) and output (yellow) files
 

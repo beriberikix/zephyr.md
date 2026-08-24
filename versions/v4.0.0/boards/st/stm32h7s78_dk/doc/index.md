@@ -8,8 +8,8 @@ original_path: boards/st/stm32h7s78_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h7s78_dk.jpg](../../../../_images/stm32h7s78_dk.jpg)
-](../../../../_images/stm32h7s78_dk.jpg)
+[![../../../../_images/stm32h7s78_dk.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32h7s78_dk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32h7s78_dk.jpg)
 
 STM32H7S78-DK Discovery
 

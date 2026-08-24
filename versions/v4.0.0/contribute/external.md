@@ -186,7 +186,7 @@ then these additional steps must be followed:
 
 The flowchart below shows an overview of the process:
 
-![../_images/ext-src-flowchart.svg](../_images/ext-src-flowchart.svg)
+![../_images/ext-src-flowchart.svg](https://docs.zephyrproject.org/4.0.0/_images/ext-src-flowchart.svg)
 
 Submission process
 

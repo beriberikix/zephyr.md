@@ -11,7 +11,7 @@ original_path: boards/shields/mikroe_ble_tiny_click/doc/index.html
 The MikroElektronika BLE TINY Click carries the Renesas [DA14531MOD](https://www.renesas.com/us/en/products/wireless-connectivity/bluetooth-low-energy/da14531mod-smartbond-tiny-bluetooth-low-energy-module) [[1]](#id3) Bluetooth
 LE module in a [mikroBUS](https://www.mikroe.com/mikrobus) [[2]](#id5)™ form factor.
 
-![MikroElektronika BLE TINY Click](../../../../_images/ble-tiny-click.webp)
+![MikroElektronika BLE TINY Click](https://docs.zephyrproject.org/4.1.0/_images/ble-tiny-click.webp)
 
 MikroElektronika BLE TINY Click (Credit: MikroElektronika)
 
@@ -40,7 +40,7 @@ present on the Click board. Once the tool has been installed, open it and
 press the “Search Online” button. The required binary file can be selected
 for download as follows:
 
-![DA14531 HCI Binary File Selection](../../../../_images/da14531-hci-binary.webp)
+![DA14531 HCI Binary File Selection](https://docs.zephyrproject.org/4.1.0/_images/da14531-hci-binary.webp)
 
 Selecting the DA14531 HCI Binary File for Download
 

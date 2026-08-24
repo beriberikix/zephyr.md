@@ -868,4 +868,4 @@ Mismatch in expected and actual length results in an invalid frame
 - [modem](dir_a816d481c0f951d2967bb275acf5f3dd.md)
 - [ubx](dir_0a499179f9adf90767e72c7eb481b4fc.md)
 - [protocol.h](modem_2ubx_2protocol_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_rw612/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_rw612.webp](../../../../_images/frdm_rw612.webp)
-](../../../../_images/frdm_rw612.webp)
+[![../../../../_images/frdm_rw612.webp](https://docs.zephyrproject.org/4.2.0/_images/frdm_rw612.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/frdm_rw612.webp)
 
 FRDM\_RW612
 

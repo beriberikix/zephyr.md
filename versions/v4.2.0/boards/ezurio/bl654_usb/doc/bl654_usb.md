@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl654_usb/doc/bl654_usb.html
 
 Board Overview
 
-[![../../../../_images/bl654_usb.jpg](../../../../_images/bl654_usb.jpg)
-](../../../../_images/bl654_usb.jpg)
+[![../../../../_images/bl654_usb.jpg](https://docs.zephyrproject.org/4.2.0/_images/bl654_usb.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/bl654_usb.jpg)
 
 BL654 USB (451-00004)
 
@@ -48,7 +48,7 @@ This USB adapter has the following features:
 - WDT
 - RTC
 
-![451-00004 Box Contents](../../../../_images/bl654_usb_pcb.jpg)
+![451-00004 Box Contents](https://docs.zephyrproject.org/4.2.0/_images/bl654_usb_pcb.jpg)
 
 BL654 USB Adapter PCB
 
@@ -180,7 +180,7 @@ bootloader and flash them to the device. Before proceeding, make sure:
 
    The push button is in a pin-hole on the logo side of the USB adapter.
 
-   ![Location of RESET button](../../../../_images/bl654_usb_reset.jpg)
+   ![Location of RESET button](https://docs.zephyrproject.org/4.2.0/_images/bl654_usb_reset.jpg)
 
    The blue LED should start a fade pattern, signalling the bootloader is
    running.

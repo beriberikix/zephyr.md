@@ -1106,4 +1106,4 @@ Parameters
     | fn | Macro to call for each enabled node. Must accept a node\_id as its only parameter. |
     | ... | Additional arguments to pass to `fn` |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

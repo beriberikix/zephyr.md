@@ -8,8 +8,8 @@ original_path: boards/seeed/lora_e5_mini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lora_e5_mini.jpg](../../../../_images/lora_e5_mini.jpg)
-](../../../../_images/lora_e5_mini.jpg)
+[![../../../../_images/lora_e5_mini.jpg](https://docs.zephyrproject.org/4.2.0/_images/lora_e5_mini.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/lora_e5_mini.jpg)
 
 LoRa-E5 mini
 
@@ -150,7 +150,7 @@ muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![LoRa-E5 mini Pinout](../../../../_images/lora_e5_mini_pinout.jpg)
+![LoRa-E5 mini Pinout](https://docs.zephyrproject.org/4.2.0/_images/lora_e5_mini_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

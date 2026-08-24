@@ -30,7 +30,7 @@ specific:
 
 You can visualize the hierarchy like this:
 
-[![Configuration Hierarchy](../../_images/hierarchy.png)](../../_images/hierarchy.png)
+[![Configuration Hierarchy](https://docs.zephyrproject.org/3.6.0/_images/hierarchy.png)](https://docs.zephyrproject.org/3.6.0/_images/hierarchy.png)
 
 Configuration Hierarchy
 

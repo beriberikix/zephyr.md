@@ -22,7 +22,7 @@ are two variants of the board:
 Zephyr applications can use the [stm32\_min\_dev@blue](mailto:stm32_min_dev%40blue) or [stm32\_min\_dev@black](mailto:stm32_min_dev%40black) board
 configuration to use these boards.
 
-![STM32 Minimum Development Board](../../../../_images/stm32_min_dev.jpg)
+![STM32 Minimum Development Board](https://docs.zephyrproject.org/3.7.0/_images/stm32_min_dev.jpg)
 
 STM32 Minimum Development Board
 
@@ -47,7 +47,7 @@ found at [EmbedJournal](https://embedjournal.com/tag/stm32-min-dev/).
 The pinout diagram of STM32 Minimum Development Blue Pill board can be seen
 below. The Black Pill’s one is similar:
 
-![Pinout for STM32 Minimum Development Blue Pill Board](../../../../_images/stm32_min_dev_pinout_blue.jpg)
+![Pinout for STM32 Minimum Development Blue Pill Board](https://docs.zephyrproject.org/3.7.0/_images/stm32_min_dev_pinout_blue.jpg)
 
 Pinout for STM32 Minimum Development Blue Pill Board
 

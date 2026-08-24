@@ -31,7 +31,7 @@ nRF52840 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-![Electronut Labs Blip](../../../../_images/nrf52840_blip.jpg)
+![Electronut Labs Blip](https://docs.zephyrproject.org/3.6.0/_images/nrf52840_blip.jpg)
 
 Electronut Labs Blip (Credit: Electronut Labs)
 

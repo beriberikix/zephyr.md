@@ -53,4 +53,4 @@ The documentation for this union was generated from the following file:
 - zephyr/sys/[cbprintf.h](cbprintf_8h_source.md)
 
 - [cbprintf\_package\_hdr](unioncbprintf__package__hdr.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

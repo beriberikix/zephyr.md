@@ -122,4 +122,4 @@ Returns
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [nxp\_rtxxx\_dsp\_ctrl](dir_6ae4f57dc0f23a67287970302be617ac.md)
 - [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

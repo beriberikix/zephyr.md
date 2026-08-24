@@ -19,7 +19,7 @@ The GD32E103VB features a single-core ARM Cortex-M4F MCU which can run up
 to 120-MHz with flash accesses zero wait states, 128kiB of Flash, 32kiB of
 SRAM and 80 GPIOs.
 
-![gd32e103v_eval](../../../../_images/gd32e103v_eval.jpg)
+![gd32e103v_eval](https://docs.zephyrproject.org/3.6.0/_images/gd32e103v_eval.jpg)
 
 ## Hardware
 

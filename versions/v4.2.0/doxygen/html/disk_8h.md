@@ -72,4 +72,4 @@ This file contains interface for disk access. Apart from disks, various other st
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [disk.h](disk_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

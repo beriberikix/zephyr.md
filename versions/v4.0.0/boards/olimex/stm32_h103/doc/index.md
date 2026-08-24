@@ -8,8 +8,8 @@ original_path: boards/olimex/stm32_h103/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimex_stm32_h103_top.jpg](../../../../_images/olimex_stm32_h103_top.jpg)
-](../../../../_images/olimex_stm32_h103_top.jpg)
+[![../../../../_images/olimex_stm32_h103_top.jpg](https://docs.zephyrproject.org/4.0.0/_images/olimex_stm32_h103_top.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/olimex_stm32_h103_top.jpg)
 
 OLIMEX-STM32-H103
 

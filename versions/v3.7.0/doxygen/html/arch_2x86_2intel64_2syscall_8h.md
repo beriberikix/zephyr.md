@@ -87,4 +87,4 @@ This header contains the x86 specific syscall interface. It is included by the s
 - [x86](dir_0c2b2a40388d14bf987ab4c9c60eb89c.md)
 - [intel64](dir_1abf87bed33eaf4508c3178cbd4d6168.md)
 - [syscall.h](arch_2x86_2intel64_2syscall_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

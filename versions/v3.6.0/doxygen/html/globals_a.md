@@ -962,4 +962,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - AXP192\_GPIO\_FUNC\_VALID : [axp192.h](drivers_2mfd_2axp192_8h.md#a61d7d88bead4733fedcbfb70f8ada464)
 - AXP192\_GPIO\_MAX\_NUM : [axp192.h](drivers_2mfd_2axp192_8h.md#a0df71981c80a3c46e168287c39df88ee)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/st/stm32wb5mmg/doc/stm32wb5mmg.html
 
 Board Overview
 
-[![../../../../_images/STM32WB5MMG.jpg](../../../../_images/STM32WB5MMG.jpg)
-](../../../../_images/STM32WB5MMG.jpg)
+[![../../../../_images/STM32WB5MMG.jpg](https://docs.zephyrproject.org/4.1.0/_images/STM32WB5MMG.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/STM32WB5MMG.jpg)
 
 STM32WB5MMG
 

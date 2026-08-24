@@ -19,4 +19,4 @@ Here is a list of all enums with links to the files they belong to:
 
 - json\_tokens : [json.h](group__json.md#ga18a137ac5e2998d375540298670797c4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

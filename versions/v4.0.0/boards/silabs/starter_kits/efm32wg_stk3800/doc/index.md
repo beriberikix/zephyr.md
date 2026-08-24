@@ -8,8 +8,8 @@ original_path: boards/silabs/starter_kits/efm32wg_stk3800/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efm32wg_stk3800.jpg](../../../../../_images/efm32wg_stk3800.jpg)
-](../../../../../_images/efm32wg_stk3800.jpg)
+[![../../../../../_images/efm32wg_stk3800.jpg](https://docs.zephyrproject.org/4.0.0/_images/efm32wg_stk3800.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/efm32wg_stk3800.jpg)
 
 EFM32 Wonder Gecko (EFM32WG-STK3800)
 

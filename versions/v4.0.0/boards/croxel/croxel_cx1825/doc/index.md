@@ -8,8 +8,8 @@ original_path: boards/croxel/croxel_cx1825/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cx1825_nrf52840.jpg](../../../../_images/cx1825_nrf52840.jpg)
-](../../../../_images/cx1825_nrf52840.jpg)
+[![../../../../_images/cx1825_nrf52840.jpg](https://docs.zephyrproject.org/4.0.0/_images/cx1825_nrf52840.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/cx1825_nrf52840.jpg)
 
 CX1825 nRF52840
 

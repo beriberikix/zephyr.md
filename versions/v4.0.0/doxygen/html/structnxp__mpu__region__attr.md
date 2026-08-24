@@ -35,4 +35,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/arch/arm/mpu/[nxp\_mpu.h](nxp__mpu_8h_source.md)
 
 - [nxp\_mpu\_region\_attr](structnxp__mpu__region__attr.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -214,4 +214,4 @@ Declares a stat group struct.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [stats](dir_5f661b5f7a66b36130669509de91835d.md)
 - [stats.h](stats_2stats_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -209,4 +209,4 @@ char mdm\_model[16]
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [modem](dir_921fc901d44f7fec5fdbf8b941e64fce.md)
 - [gsm\_ppp.h](gsm__ppp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

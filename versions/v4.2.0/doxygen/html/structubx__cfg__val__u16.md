@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/modem/ubx/[protocol.h](modem_2ubx_2protocol_8h_source.md)
 
 - [ubx\_cfg\_val\_u16](structubx__cfg__val__u16.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

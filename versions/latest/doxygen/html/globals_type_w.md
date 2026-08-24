@@ -24,4 +24,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - wifi\_credentials\_ssid\_cb : [wifi\_credentials.h](group__wifi__credentials.md#ga30c9333f10e8e8d03f268fb5c9a69562)
 - wkpu\_nxp\_s32\_callback\_t : [intc\_wkpu\_nxp\_s32.h](intc__wkpu__nxp__s32_8h.md#af465c77abcefe103e4d3de6c864513b9)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

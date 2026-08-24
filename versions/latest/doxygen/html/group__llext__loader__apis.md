@@ -234,4 +234,4 @@ Note
 | LLEXT\_STORAGE\_PERSISTENT | ELF data is stored in a *read-only* buffer that is guaranteed to be always accessible for as long as the extension is loaded.  LLEXT may directly reuse constant data from the buffer, but may still allocate copies if relocations need to be applied. |
 | LLEXT\_STORAGE\_WRITABLE | ELF data is stored in a *writable* memory buffer that is guaranteed to be always accessible for as long as the extension is loaded.  LLEXT may freely modify and reuse data in the buffer; so, after the extension is unloaded, the contents should be re-initialized before a subsequent [llext\_load()](group__llext__apis.md#ga0a4c3db30bc3ec7aa8a9b0e076af7157 "Load and link an extension.") call. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

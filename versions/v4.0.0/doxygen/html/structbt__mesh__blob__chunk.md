@@ -65,4 +65,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[blob.h](blob_8h_source.md)
 
 - [bt\_mesh\_blob\_chunk](structbt__mesh__blob__chunk.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

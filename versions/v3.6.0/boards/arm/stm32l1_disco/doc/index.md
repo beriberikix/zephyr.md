@@ -29,7 +29,7 @@ The STM32LDISCOVERY is no longer sold, but was widely available. The current
 configuration assumes only 128K flash and 16K RAM, so it builds and runs
 on both variants out of the box.
 
-![STM32LDISCOVERY](../../../../_images/stm32l1_disco.jpg)
+![STM32LDISCOVERY](https://docs.zephyrproject.org/3.6.0/_images/stm32l1_disco.jpg)
 
 More information about the board can be found at the [STM32LDISCOVERY website](https://www.st.com/en/evaluation-tools/32l152cdiscovery.html) [[1]](#id2).
 

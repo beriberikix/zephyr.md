@@ -138,4 +138,4 @@ Here is a list of all functions with links to the files they belong to:
 - TYPE\_SECTION\_END\_EXTERN() : [log\_core.h](log__core_8h.md#a9c76801a0e4d03e64c025f7cd5695d77)
 - TYPE\_SECTION\_START\_EXTERN() : [log\_core.h](log__core_8h.md#a8bddbf82fcd014a2b65b53d80312237d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

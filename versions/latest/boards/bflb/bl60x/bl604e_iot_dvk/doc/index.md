@@ -8,8 +8,8 @@ original_path: boards/bflb/bl60x/bl604e_iot_dvk/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/bl_604e.webp](../../../../../_images/bl_604e.webp)
-](../../../../../_images/bl_604e.webp)
+[![../../../../../_images/bl_604e.webp](https://docs.zephyrproject.org/4.2.0/_images/bl_604e.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/bl_604e.webp)
 
 BL604E IOT DVK development board
 

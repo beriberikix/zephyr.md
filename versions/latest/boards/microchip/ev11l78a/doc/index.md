@@ -8,8 +8,8 @@ original_path: boards/microchip/ev11l78a/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ev11l78a.jpg](../../../../_images/ev11l78a.jpg)
-](../../../../_images/ev11l78a.jpg)
+[![../../../../_images/ev11l78a.jpg](https://docs.zephyrproject.org/4.2.0/_images/ev11l78a.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/ev11l78a.jpg)
 
 UPD301C Basic Sink Application Example
 

@@ -143,4 +143,4 @@ Contains the value of the force parameter.
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [os\_mgmt](dir_1a5ff9dfdb0e06a8ce3ba8e3db8b26fb.md)
 - [os\_mgmt\_callbacks.h](os__mgmt__callbacks_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

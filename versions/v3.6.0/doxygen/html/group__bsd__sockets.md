@@ -2137,4 +2137,4 @@ Create an unnamed pair of connected sockets.
 @rst See POSIX.1-2017 article
 <[https://pubs.opengroup.org/onlinepubs/009695399/functions/socketpair.html](https://pubs.opengroup.org/onlinepubs/009695399/functions/socketpair.html)>\_\_ for normative description. This function is also exposed as [socketpair()](#gad8e31e081924ef65e482f355604009cb) if :kconfig:option:CONFIG\_NET\_SOCKETS\_POSIX\_NAMES is defined. @endrst
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

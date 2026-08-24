@@ -348,4 +348,4 @@ Parameters
 See also
 :   [pm\_policy\_state\_lock\_get()](#gabbb379f8572f164addafe93ad3468f3d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

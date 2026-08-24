@@ -29,7 +29,7 @@ The STM32LDISCOVERY is no longer sold, but was widely available.
 stm32l1\_disco configuration enables support for STM32LDISCOVERY board and
 stm32l152c\_disco configuration enables support for STM32L152CDISCOVERY board.
 
-![STM32LDISCOVERY](../../../../_images/stm32l1_disco.jpg)
+![STM32LDISCOVERY](https://docs.zephyrproject.org/3.7.0/_images/stm32l1_disco.jpg)
 
 More information about the board can be found at the [STM32LDISCOVERY website](https://www.st.com/en/evaluation-tools/32l152cdiscovery.html) [[1]](#id2).
 

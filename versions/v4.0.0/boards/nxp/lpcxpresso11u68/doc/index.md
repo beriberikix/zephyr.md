@@ -8,8 +8,8 @@ original_path: boards/nxp/lpcxpresso11u68/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lpcxpresso11u68.jpg](../../../../_images/lpcxpresso11u68.jpg)
-](../../../../_images/lpcxpresso11u68.jpg)
+[![../../../../_images/lpcxpresso11u68.jpg](https://docs.zephyrproject.org/4.0.0/_images/lpcxpresso11u68.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/lpcxpresso11u68.jpg)
 
 LPCXpresso11U68
 

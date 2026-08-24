@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h7a3zi_q/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h7a3zi_q.jpg](../../../../_images/nucleo_h7a3zi_q.jpg)
-](../../../../_images/nucleo_h7a3zi_q.jpg)
+[![../../../../_images/nucleo_h7a3zi_q.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h7a3zi_q.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h7a3zi_q.jpg)
 
 Nucleo H7A3ZI-Q
 

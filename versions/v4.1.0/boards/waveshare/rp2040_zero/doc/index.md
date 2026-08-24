@@ -8,8 +8,8 @@ original_path: boards/waveshare/rp2040_zero/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rp2040_zero.png](../../../../_images/rp2040_zero.png)
-](../../../../_images/rp2040_zero.png)
+[![../../../../_images/rp2040_zero.png](https://docs.zephyrproject.org/4.1.0/_images/rp2040_zero.png)
+](https://docs.zephyrproject.org/4.1.0/_images/rp2040_zero.png)
 
 RP2040-Zero
 

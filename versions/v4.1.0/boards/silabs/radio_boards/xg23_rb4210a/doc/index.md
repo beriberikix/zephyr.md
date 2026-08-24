@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/xg23_rb4210a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32zg23-xg23-rb4210a.jpg](../../../../../_images/efr32zg23-xg23-rb4210a.jpg)
-](../../../../../_images/efr32zg23-xg23-rb4210a.jpg)
+[![../../../../../_images/efr32zg23-xg23-rb4210a.jpg](https://docs.zephyrproject.org/4.1.0/_images/efr32zg23-xg23-rb4210a.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/efr32zg23-xg23-rb4210a.jpg)
 
 EFR32xG23 868-915 MHz 20 dBm (xG23-RB4210A)
 

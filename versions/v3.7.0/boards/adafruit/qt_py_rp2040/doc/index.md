@@ -33,7 +33,7 @@ it to be flashed without any adapter, in a drag-and-drop manner.
 - On-board RGB LED
 - 1 Watchdog timer peripheral
 
-![Adafruit QT Py RP2040](../../../../_images/qtpy_rp2040.jpg)
+![Adafruit QT Py RP2040](https://docs.zephyrproject.org/3.7.0/_images/qtpy_rp2040.jpg)
 
 Adafruit QT Py RP2040 (Image courtesy of Adafruit)
 

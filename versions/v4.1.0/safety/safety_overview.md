@@ -87,7 +87,7 @@ wide range of industry sectors.
 The following diagram illustrates the relationship between the IEC 61508 standard and other related
 standards:
 
-![IEC 61508 relation to other standards](../_images/IEC-61508-basis.svg)
+![IEC 61508 relation to other standards](https://docs.zephyrproject.org/4.1.0/_images/IEC-61508-basis.svg)
 
 IEC 61508 relation to other standards
 
@@ -237,7 +237,7 @@ possibility through the use of Kconfig and its flexible configurability.
 
 ## Processes and workflow
 
-![Safety process and workflow overview](../_images/zephyr-safety-process.svg)
+![Safety process and workflow overview](https://docs.zephyrproject.org/4.1.0/_images/zephyr-safety-process.svg)
 
 Safety process and workflow overview
 

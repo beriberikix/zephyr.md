@@ -36,7 +36,7 @@ The nRF5340 Audio DK comes with the following hardware features:
 - Stereo analog input using 3.5 mm jack
 - USB soundcard capability
 
-![nRF5340 DK](../../../../_images/nrf5340_audio_dk.jpg)
+![nRF5340 DK](https://docs.zephyrproject.org/3.6.0/_images/nrf5340_audio_dk.jpg)
 
 More information about the board can be found at the [nRF5340 Audio DK website](https://www.nordicsemi.com/Products/Development-hardware/nrf5340-audio-dk) [[1]](#id1). The [Nordic Semiconductor Infocenter](https://infocenter.nordicsemi.com) [[2]](#id3)
 contains the processor’s information and the datasheet.

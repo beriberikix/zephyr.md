@@ -48,4 +48,4 @@ The documentation for this struct was generated from the following file:
 
 - [bt\_mesh\_elem](structbt__mesh__elem.md)
 - [bt\_mesh\_elem\_rt\_ctx](structbt__mesh__elem_1_1bt__mesh__elem__rt__ctx.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

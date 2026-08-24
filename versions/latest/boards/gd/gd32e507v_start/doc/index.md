@@ -8,8 +8,8 @@ original_path: boards/gd/gd32e507v_start/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32e507v_start.jpg](../../../../_images/gd32e507v_start.jpg)
-](../../../../_images/gd32e507v_start.jpg)
+[![../../../../_images/gd32e507v_start.jpg](https://docs.zephyrproject.org/4.2.0/_images/gd32e507v_start.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/gd32e507v_start.jpg)
 
 GD32E507V-START
 

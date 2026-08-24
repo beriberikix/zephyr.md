@@ -226,4 +226,4 @@ Memory heap starting virtual address.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [multi\_heap](dir_bbf885d0562205ffed4d60b82c4fd442.md)
 - [shared\_multi\_heap.h](shared__multi__heap_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -18,7 +18,7 @@ extended temperature range up to 125° C. The i.MX RT1040 MCU has a compact
 2-layer PCB design. The i.MX RT1040 MCUs run on the Arm® Cortex®-M7 core at
 600 MHz.
 
-![MIMXRT1040-EVK](../../../../_images/mimxrt1040_evk.jpg)
+![MIMXRT1040-EVK](https://docs.zephyrproject.org/3.7.0/_images/mimxrt1040_evk.jpg)
 
 ## Hardware
 

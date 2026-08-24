@@ -212,4 +212,4 @@ See [i3c\_transfer()](group__i3c__transfer__api.md#ga067c0f1e3c9abb6ef34ce48cb7e
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [i3c](dir_7fe10d7a610a8b04680264e2afe29300.md)
 - [rtio.h](drivers_2i3c_2rtio_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

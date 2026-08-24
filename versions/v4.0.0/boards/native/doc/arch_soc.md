@@ -193,7 +193,7 @@ This port does not try to replace cycle accurate instruction set simulators
 is to meet the targets described in the previous [Rationale for this port](#rationale-for-this-port)
 section.
 
-![Comparison of different debugging targets](../../../_images/Port_vs_QEMU_vs.svg)
+![Comparison of different debugging targets](https://docs.zephyrproject.org/4.0.0/_images/Port_vs_QEMU_vs.svg)
 
 Comparison of different debugging options. Note that realism has many
 dimensions: Having the real memory map or emulating the exact time an
@@ -274,12 +274,12 @@ Note
 This description applies to the boards on the tree,
 but it is not a requirement for other POSIX arch based boards to follow what is described here.
 
-![Zephyr layering in a native simulator build](../../../_images/layering_natsim.svg)
+![Zephyr layering in a native simulator build](https://docs.zephyrproject.org/4.0.0/_images/layering_natsim.svg)
 
 Zephyr layering when built against an embedded target (left), and targeting a native\_simulator
 based board (right)
 
-![native_sim boards and the native simulator](../../../_images/components_natsim.svg)
+![native_sim boards and the native simulator](https://docs.zephyrproject.org/4.0.0/_images/components_natsim.svg)
 
 Relationship between Zephyr, the native\_sim target and the native simulator
 

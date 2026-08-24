@@ -16,7 +16,7 @@ The EFR32FG1 Flex Gecko 2.4 GHz and 868 MHz Radio Board is delivered as part of
 [SLWSTK6061B Proprietary Wireless Starter Kit](https://www.silabs.com/products/development-tools/wireless/proprietary/slwstk6061b-efr32-flex-gecko-868-mhz-2-4-ghz-and-sub-ghz-starter-kit). It contains a EFR32FG1 Wireless
 SoC built on an ARM Cortex®-M4F processor with excellent low power capabilities.
 
-![SLWRB4250B Flex Gecko 2.4 GHz and 868 MHz Radio Board](../../../../../_images/efr32fg1-slwrb4250b.jpg)
+![SLWRB4250B Flex Gecko 2.4 GHz and 868 MHz Radio Board](https://docs.zephyrproject.org/3.7.0/_images/efr32fg1-slwrb4250b.jpg)
 
 SLWRB4250B (image courtesy of Silicon Labs)
 

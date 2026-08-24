@@ -41,4 +41,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/mfd/[tle9104.h](mfd_2tle9104_8h_source.md)
 
 - [gpio\_tle9104\_channel\_diagnostics](structgpio__tle9104__channel__diagnostics.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -101,4 +101,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/kernel/[obj\_core.h](obj__core_8h_source.md)
 
 - [k\_obj\_core\_stats\_desc](structk__obj__core__stats__desc.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

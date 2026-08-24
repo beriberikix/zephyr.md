@@ -8,8 +8,8 @@ original_path: boards/infineon/cyw920829m2evk_02/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cyw920829m2evk_02.webp](../../../../_images/cyw920829m2evk_02.webp)
-](../../../../_images/cyw920829m2evk_02.webp)
+[![../../../../_images/cyw920829m2evk_02.webp](https://docs.zephyrproject.org/4.1.0/_images/cyw920829m2evk_02.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/cyw920829m2evk_02.webp)
 
 CYW920829M2EVK-02
 

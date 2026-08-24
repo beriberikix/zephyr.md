@@ -43,4 +43,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - kr\_phase : [bt\_mesh\_cdb\_subnet](structbt__mesh__cdb__subnet.md#a07fbd0e52571cd9a16e876243483e98a)
 - krp\_status : [bt\_mesh\_cfg\_cli\_cb](structbt__mesh__cfg__cli__cb.md#a4d89033676eb4570cdd80f1715fd9bfb)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

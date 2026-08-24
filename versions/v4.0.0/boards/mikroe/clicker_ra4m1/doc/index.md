@@ -8,8 +8,8 @@ original_path: boards/mikroe/clicker_ra4m1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mikroe_clicker_ra4m1.jpg](../../../../_images/mikroe_clicker_ra4m1.jpg)
-](../../../../_images/mikroe_clicker_ra4m1.jpg)
+[![../../../../_images/mikroe_clicker_ra4m1.jpg](https://docs.zephyrproject.org/4.0.0/_images/mikroe_clicker_ra4m1.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/mikroe_clicker_ra4m1.jpg)
 
 Clicker RA4M1
 

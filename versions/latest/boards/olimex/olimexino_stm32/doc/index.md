@@ -8,8 +8,8 @@ original_path: boards/olimex/olimexino_stm32/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimexino_stm32.jpg](../../../../_images/olimexino_stm32.jpg)
-](../../../../_images/olimexino_stm32.jpg)
+[![../../../../_images/olimexino_stm32.jpg](https://docs.zephyrproject.org/4.2.0/_images/olimexino_stm32.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/olimexino_stm32.jpg)
 
 OLIMEXINO-STM32
 
@@ -96,7 +96,7 @@ on-chip / on-board
 
 ### Pin Mapping
 
-![OLIMEXINO-STM32 connectors](../../../../_images/olimexino-stm32-front.jpg)
+![OLIMEXINO-STM32 connectors](https://docs.zephyrproject.org/4.2.0/_images/olimexino-stm32-front.jpg)
 
 OLIMEXINO-STM32 connectors
 

@@ -8,8 +8,8 @@ original_path: boards/ti/cc1352p7_launchpad/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lp-cc1352p7-top.jpg](../../../../_images/lp-cc1352p7-top.jpg)
-](../../../../_images/lp-cc1352p7-top.jpg)
+[![../../../../_images/lp-cc1352p7-top.jpg](https://docs.zephyrproject.org/4.2.0/_images/lp-cc1352p7-top.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/lp-cc1352p7-top.jpg)
 
 CC1352P7 LaunchPad
 

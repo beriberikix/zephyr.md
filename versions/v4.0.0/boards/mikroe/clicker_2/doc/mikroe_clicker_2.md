@@ -8,8 +8,8 @@ original_path: boards/mikroe/clicker_2/doc/mikroe_clicker_2.html
 
 Board Overview
 
-[![../../../../_images/clicker-2-stm32f4-thickbox_default-2.jpg](../../../../_images/clicker-2-stm32f4-thickbox_default-2.jpg)
-](../../../../_images/clicker-2-stm32f4-thickbox_default-2.jpg)
+[![../../../../_images/clicker-2-stm32f4-thickbox_default-2.jpg](https://docs.zephyrproject.org/4.0.0/_images/clicker-2-stm32f4-thickbox_default-2.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/clicker-2-stm32f4-thickbox_default-2.jpg)
 
 Clicker 2 for STM32
 

@@ -8,8 +8,8 @@ original_path: boards/weact/stm32f446_core/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f446_core.webp](../../../../_images/stm32f446_core.webp)
-](../../../../_images/stm32f446_core.webp)
+[![../../../../_images/stm32f446_core.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32f446_core.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32f446_core.webp)
 
 STM32F446 Core Board V1.1
 

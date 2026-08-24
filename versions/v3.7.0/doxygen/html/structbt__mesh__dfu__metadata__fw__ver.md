@@ -74,4 +74,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[dfu\_metadata.h](dfu__metadata_8h_source.md)
 
 - [bt\_mesh\_dfu\_metadata\_fw\_ver](structbt__mesh__dfu__metadata__fw__ver.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

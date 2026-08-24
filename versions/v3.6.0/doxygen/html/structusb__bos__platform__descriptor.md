@@ -68,4 +68,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/usb/[bos.h](bos_8h_source.md)
 
 - [usb\_bos\_platform\_descriptor](structusb__bos__platform__descriptor.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

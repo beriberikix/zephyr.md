@@ -8,8 +8,8 @@ original_path: boards/adafruit/grand_central_m4_express/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_grand_central_m4_express.webp](../../../../_images/adafruit_grand_central_m4_express.webp)
-](../../../../_images/adafruit_grand_central_m4_express.webp)
+[![../../../../_images/adafruit_grand_central_m4_express.webp](https://docs.zephyrproject.org/4.2.0/_images/adafruit_grand_central_m4_express.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_grand_central_m4_express.webp)
 
 Grand Central M4 Express
 

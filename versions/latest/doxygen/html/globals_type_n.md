@@ -56,4 +56,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - nxp\_rtxxx\_dsp\_ctrl\_api\_enable : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#a561283f2992839e0191d2fcfef12d989)
 - nxp\_rtxxx\_dsp\_ctrl\_api\_load\_section : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#ab6ed31cfcaa45744f960bc19d89f642f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

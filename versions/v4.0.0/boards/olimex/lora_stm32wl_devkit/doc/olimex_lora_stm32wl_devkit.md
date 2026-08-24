@@ -8,8 +8,8 @@ original_path: boards/olimex/lora_stm32wl_devkit/doc/olimex_lora_stm32wl_devkit.
 
 Board Overview
 
-[![../../../../_images/olimex-stm32wl-devkit.jpg](../../../../_images/olimex-stm32wl-devkit.jpg)
-](../../../../_images/olimex-stm32wl-devkit.jpg)
+[![../../../../_images/olimex-stm32wl-devkit.jpg](https://docs.zephyrproject.org/4.0.0/_images/olimex-stm32wl-devkit.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/olimex-stm32wl-devkit.jpg)
 
 LoRa STM32WL DevKit
 

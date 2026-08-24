@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_kl25z/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_kl25z.jpg](../../../../_images/frdm_kl25z.jpg)
-](../../../../_images/frdm_kl25z.jpg)
+[![../../../../_images/frdm_kl25z.jpg](https://docs.zephyrproject.org/4.0.0/_images/frdm_kl25z.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/frdm_kl25z.jpg)
 
 FRDM-KL25Z
 

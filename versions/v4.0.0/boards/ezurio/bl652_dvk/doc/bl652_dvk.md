@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl652_dvk/doc/bl652_dvk.html
 
 Board Overview
 
-[![../../../../_images/bl652_dvk.jpg](../../../../_images/bl652_dvk.jpg)
-](../../../../_images/bl652_dvk.jpg)
+[![../../../../_images/bl652_dvk.jpg](https://docs.zephyrproject.org/4.0.0/_images/bl652_dvk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/bl652_dvk.jpg)
 
 BL652 DVK
 
@@ -49,7 +49,7 @@ Available BL652 DVK part numbers:
 - DVK-BL652-SA
 - DVK-BL652-SC
 
-![BL652-SA DVK Box Contents](../../../../_images/BL652-SA_DVK_BoxContents.jpg)
+![BL652-SA DVK Box Contents](https://docs.zephyrproject.org/4.0.0/_images/BL652-SA_DVK_BoxContents.jpg)
 
 BL652-SA DVK Box Contents
 

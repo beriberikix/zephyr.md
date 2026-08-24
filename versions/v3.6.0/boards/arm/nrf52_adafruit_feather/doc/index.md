@@ -24,7 +24,7 @@ the following devices:
 - RADIO (Bluetooth Low Energy)
 - Segger RTT (RTT Console)
 
-![nRF52 Adafruit Feather Board](../../../../_images/nrf52_adafruit_feather.jpg)
+![nRF52 Adafruit Feather Board](https://docs.zephyrproject.org/3.6.0/_images/nrf52_adafruit_feather.jpg)
 
 nRF52 Adafruit Feather Board (Credit: Adafruit)
 

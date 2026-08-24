@@ -84,7 +84,7 @@ that number of “extra” red nodes may be present). This rule is
 enforced by a set of rotation rules used to “fix” trees following
 modification.
 
-![rbtree example](../../_images/rbtree.png)
+![rbtree example](https://docs.zephyrproject.org/4.0.0/_images/rbtree.png)
 
 A maximally unbalanced rbtree with a black height of two. No more
 nodes can be added underneath the rightmost node without

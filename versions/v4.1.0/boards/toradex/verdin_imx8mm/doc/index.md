@@ -8,8 +8,8 @@ original_path: boards/toradex/verdin_imx8mm/doc/index.html
 
 Board Overview
 
-[![../../../../_images/verdin_imx8mm_m4.webp](../../../../_images/verdin_imx8mm_m4.webp)
-](../../../../_images/verdin_imx8mm_m4.webp)
+[![../../../../_images/verdin_imx8mm_m4.webp](https://docs.zephyrproject.org/4.1.0/_images/verdin_imx8mm_m4.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/verdin_imx8mm_m4.webp)
 
 Verdin iMX8M Mini
 

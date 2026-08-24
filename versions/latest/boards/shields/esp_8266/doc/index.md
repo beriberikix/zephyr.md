@@ -17,7 +17,7 @@ to existing devices.
 The simplest module that uses ESP-8266 is ESP-01. This is a generic shield
 configuration that allows any ESP-8266 module variation including ESP-12E/F.
 
-![ESP-01](../../../../_images/esp-01.jpg)
+![ESP-01](https://docs.zephyrproject.org/4.2.0/_images/esp-01.jpg)
 
 ### Pins Assignment of the ESP-01 Module
 
@@ -58,7 +58,7 @@ with 1MB flash using Boot Mode and with Flash size 8Mbit: 512KB + 512KB. The
 ESP8266 AT Bin 1.7.x available requires the following partition configuration
 to works:
 
-![ESP8266 AT Bin V1.7.3](../../../../_images/esp_at_173.jpg)
+![ESP8266 AT Bin V1.7.3](https://docs.zephyrproject.org/4.2.0/_images/esp_at_173.jpg)
 
 - Tips
 

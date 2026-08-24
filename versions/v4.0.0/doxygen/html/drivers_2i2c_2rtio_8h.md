@@ -199,4 +199,4 @@ See [i2c\_transfer()](group__i2c__interface.md#ga2958e6fe92ffb17851052d5c9a5c058
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [i2c](dir_d0e9f61c1b95aed307ec1c726ffb3f96.md)
 - [rtio.h](drivers_2i2c_2rtio_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -24,7 +24,7 @@ This is the common configuration found on consumer keyboards with membrane
 switches and flexible circuit boards, no isolation diodes, requires ghosting
 detection (which is enabled by default).
 
-[![../../_images/no-diodes.svg](../../_images/no-diodes.svg)](../../_images/no-diodes.svg)
+[![../../_images/no-diodes.svg](https://docs.zephyrproject.org/3.6.0/_images/no-diodes.svg)](https://docs.zephyrproject.org/3.6.0/_images/no-diodes.svg)
 
 A 3x3 matrix, no diodes
 
@@ -65,7 +65,7 @@ If the matrix has isolation diodes for every key, then it’s possible to:
 Matrixes with diodes going from rows to columns must use pull-ups on rows and
 active low columns.
 
-[![../../_images/diodes-rc.svg](../../_images/diodes-rc.svg)](../../_images/diodes-rc.svg)
+[![../../_images/diodes-rc.svg](https://docs.zephyrproject.org/3.6.0/_images/diodes-rc.svg)](https://docs.zephyrproject.org/3.6.0/_images/diodes-rc.svg)
 
 A 3x3 matrix with row to column isolation diodes.
 
@@ -87,7 +87,7 @@ kbd-matrix {
 Matrixes with diodes going from columns to rows must use pull-downs on rows and
 active high columns.
 
-[![../../_images/diodes-cr.svg](../../_images/diodes-cr.svg)](../../_images/diodes-cr.svg)
+[![../../_images/diodes-cr.svg](https://docs.zephyrproject.org/3.6.0/_images/diodes-cr.svg)](https://docs.zephyrproject.org/3.6.0/_images/diodes-cr.svg)
 
 A 3x3 matrix with column to row isolation diodes.
 
@@ -172,7 +172,7 @@ be blocked by it.
 
 For example for a 3x3 matrix missing a key:
 
-[![../../_images/no-sw4.svg](../../_images/no-sw4.svg)](../../_images/no-sw4.svg)
+[![../../_images/no-sw4.svg](https://docs.zephyrproject.org/3.6.0/_images/no-sw4.svg)](https://docs.zephyrproject.org/3.6.0/_images/no-sw4.svg)
 
 A 3x3 matrix missing a key.
 

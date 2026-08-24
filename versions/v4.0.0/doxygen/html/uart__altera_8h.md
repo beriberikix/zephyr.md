@@ -41,4 +41,4 @@ Header file for the ALTERA UART.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [serial](dir_19e6ea47bd3dc215ff4232c3392e0b57.md)
 - [uart\_altera.h](uart__altera_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

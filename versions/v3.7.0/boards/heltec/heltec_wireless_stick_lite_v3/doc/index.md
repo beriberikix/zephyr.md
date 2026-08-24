@@ -14,7 +14,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 HelTec Wireless Stick Lite (V3) is a development board with Wi-Fi, Bluetooth and LoRa support. It is designed and produced by HelTec Automation(TM). [[1]](#id2)
 
-[![HelTec Wireless Stick Lite (V3)](../../../../_images/heltec_wireless_stick_lite_v3.webp)](../../../../_images/heltec_wireless_stick_lite_v3.webp)
+[![HelTec Wireless Stick Lite (V3)](https://docs.zephyrproject.org/3.7.0/_images/heltec_wireless_stick_lite_v3.webp)](https://docs.zephyrproject.org/3.7.0/_images/heltec_wireless_stick_lite_v3.webp)
 
 HelTec Wireless Stick Lite (V3) (Credit: Chengdu HelTec Automation Technology Co., Ltd.)
 
@@ -42,7 +42,7 @@ The main hardware features are:
 
 ### Connections and IOs
 
-[![HelTec Wireless Stick Lite (V3) Pinout](../../../../_images/heltec_wireless_stick_lite_v3_pinout.webp)](../../../../_images/heltec_wireless_stick_lite_v3_pinout.webp)
+[![HelTec Wireless Stick Lite (V3) Pinout](https://docs.zephyrproject.org/3.7.0/_images/heltec_wireless_stick_lite_v3_pinout.webp)](https://docs.zephyrproject.org/3.7.0/_images/heltec_wireless_stick_lite_v3_pinout.webp)
 
 Pinout (Credit: Chengdu HelTec Automation Technology Co., Ltd.)
 

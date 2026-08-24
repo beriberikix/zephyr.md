@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_rp2040/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_rp2040.webp](../../../../_images/xiao_rp2040.webp)
-](../../../../_images/xiao_rp2040.webp)
+[![../../../../_images/xiao_rp2040.webp](https://docs.zephyrproject.org/4.1.0/_images/xiao_rp2040.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/xiao_rp2040.webp)
 
 XIAO RP2040
 
@@ -121,7 +121,7 @@ the datasheet to see the possible routings for each peripheral.
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO RP2040 Pinout](../../../../_images/xiao_rp2040_pinout.webp)
+![XIAO RP2040 Pinout](https://docs.zephyrproject.org/4.1.0/_images/xiao_rp2040_pinout.webp)
 
 XIAO RP2040 Pinout
 

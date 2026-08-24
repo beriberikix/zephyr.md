@@ -30,7 +30,7 @@ The features include the following:
 - Expansion port (I2C, GPIO, SPI)
 - Cryptographic hardware acceleration (RNG, ECC, RSA, SHA-2, AES)
 
-![ODROID-GO](../../../../_images/odroid_go.jpg)
+![ODROID-GO](https://docs.zephyrproject.org/3.6.0/_images/odroid_go.jpg)
 
 ODROID-Go Game Kit
 

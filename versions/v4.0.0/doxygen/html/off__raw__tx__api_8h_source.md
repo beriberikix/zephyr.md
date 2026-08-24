@@ -707,4 +707,4 @@ Number of packets sent.
 - [nrfwifi](dir_c91d2a2631cf359b4e5400921c6df939.md)
 - [off\_raw\_tx](dir_5b827d67886bcec2df18bed4a6a0ce24.md)
 - [off\_raw\_tx\_api.h](off__raw__tx__api_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

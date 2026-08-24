@@ -74,4 +74,4 @@ lpc11u6x\_clock.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [clock](dir_6e9992ac75fd0b7a50e889108957c907.md)
 - [lpc11u6x\_clock.h](lpc11u6x__clock_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

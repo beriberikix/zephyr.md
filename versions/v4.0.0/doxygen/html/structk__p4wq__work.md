@@ -99,4 +99,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/sys/[p4wq.h](p4wq_8h_source.md)
 
 - [k\_p4wq\_work](structk__p4wq__work.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

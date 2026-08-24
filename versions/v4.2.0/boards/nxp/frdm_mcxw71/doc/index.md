@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_mcxw71/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_mcxw71.webp](../../../../_images/frdm_mcxw71.webp)
-](../../../../_images/frdm_mcxw71.webp)
+[![../../../../_images/frdm_mcxw71.webp](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxw71.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxw71.webp)
 
 FRDM-MCXW71
 

@@ -17,7 +17,7 @@ temperature sensor, the LPS22HH pressure sensor, and the STTS751 temperature sen
 The X-NUCLEO-IKS01A3 interfaces with the STM32 microcontroller via the I2C pin,
 and it is possible to change the default I2C port.
 
-![X-NUCLEO-IKS01A3](../../../../_images/x-nucleo-iks01a3.jpg)
+![X-NUCLEO-IKS01A3](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a3.jpg)
 
 More information about the board can be found at the
 [X-NUCLEO-IKS01A3 website](https://www.st.com/en/ecosystems/x-nucleo-iks01a3.html) [[1]](#id1).

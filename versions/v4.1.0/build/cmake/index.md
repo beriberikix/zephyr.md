@@ -58,8 +58,8 @@ phase (driven by CMake) and a build phase (driven by Make or Ninja).
 The configuration phase begins when the user invokes *CMake* to generate a
 build system, specifying a source application directory and a board target.
 
-[![Zephyr's build configuration phase](../../_images/build-config-phase.svg)
-](../../_images/build-config-phase.svg)
+[![Zephyr's build configuration phase](https://docs.zephyrproject.org/4.1.0/_images/build-config-phase.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-config-phase.svg)
 
 CMake begins by processing the `CMakeLists.txt` file in the application
 directory, which refers to the `CMakeLists.txt` file in the Zephyr
@@ -149,8 +149,8 @@ System call boilerplate
     together to bind potential system call functions with their
     implementations.
 
-[![Zephyr's build stage I](../../_images/build-build-phase-1.svg)
-](../../_images/build-build-phase-1.svg)
+[![Zephyr's build stage I](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-1.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-1.svg)
 
 #### Intermediate binaries
 
@@ -160,8 +160,8 @@ decided during the configuration phase), and compiled into archives
 (with reference to header files in the tree, as well as those
 generated during the configuration phase and the pre-build stage(s)).
 
-[![Zephyr's build stage II](../../_images/build-build-phase-2.svg)
-](../../_images/build-build-phase-2.svg)
+[![Zephyr's build stage II](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-2.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-2.svg)
 
 The exact number of intermediate binaries is decided during the configuration
 phase.
@@ -187,8 +187,8 @@ Unfixed size binary
     It produces a binary where sizes are not fixed and thus it may be used
     by post-process steps that will impact the size of the final binary.
 
-[![Zephyr's build stage III](../../_images/build-build-phase-3.svg)
-](../../_images/build-build-phase-3.svg)
+[![Zephyr's build stage III](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-3.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-3.svg)
 
 Fixed size binary
 :   The fixed size intermediate binary is produced when [User Mode](../../kernel/usermode/index.md#usermode-api)
@@ -197,8 +197,8 @@ Fixed size binary
     It produces a binary where sizes are fixed and thus the size must not change
     between the intermediate binary and the final binary.
 
-[![Zephyr's build stage IV](../../_images/build-build-phase-4.svg)
-](../../_images/build-build-phase-4.svg)
+[![Zephyr's build stage IV](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-4.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-4.svg)
 
 #### Intermediate binaries post-processing
 
@@ -216,8 +216,8 @@ Partition alignment
     generates an app shared memory aligned linker script snippet where the
     partitions are sorted in descending order.
 
-[![Zephyr's intermediate binary post-process I](../../_images/build-postprocess-1.svg)
-](../../_images/build-postprocess-1.svg)
+[![Zephyr's intermediate binary post-process I](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-1.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-1.svg)
 
 When [Devicetree](../dts/index.md#devicetree) is used:
 
@@ -227,16 +227,16 @@ Device dependencies
     and replaces the encoded relationships with values that are optimized to
     locate the devices actually present in the application.
 
-[![Zephyr's intermediate binary post-process II](../../_images/build-postprocess-2.svg)
-](../../_images/build-postprocess-2.svg)
+[![Zephyr's intermediate binary post-process II](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-2.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-2.svg)
 
 When [`CONFIG_GEN_ISR_TABLES`](../../kconfig.md#CONFIG_GEN_ISR_TABLES "CONFIG_GEN_ISR_TABLES") is enabled:
 :   The *gen\_isr\_tables.py* script scans the fixed size binary and creates
     an isr\_tables.c source file with a hardware vector table and/or software
     IRQ table.
 
-[![Zephyr's intermediate binary post-process III](../../_images/build-postprocess-3.svg)
-](../../_images/build-postprocess-3.svg)
+[![Zephyr's intermediate binary post-process III](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-3.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-3.svg)
 
 When [User Mode](../../kernel/usermode/index.md#usermode-api) is enabled:
 
@@ -247,8 +247,8 @@ Kernel object hashing
     table of those addresses, then that output is optimized by
     *process\_gperf.py*, using known properties of our special case.
 
-[![Zephyr's intermediate binary post-process IV](../../_images/build-postprocess-4.svg)
-](../../_images/build-postprocess-4.svg)
+[![Zephyr's intermediate binary post-process IV](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-4.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-postprocess-4.svg)
 
 When no intermediate binary post-processing is required then the first
 intermediate binary will be directly used as the final binary.
@@ -261,8 +261,8 @@ placeholder sections that must be filled in by, essentially, reflection.
 The link from the previous stage is repeated, this time with the missing
 pieces populated.
 
-[![Zephyr's build final stage](../../_images/build-build-phase-5.svg)
-](../../_images/build-build-phase-5.svg)
+[![Zephyr's build final stage](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-5.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-5.svg)
 
 #### Post processing
 
@@ -270,8 +270,8 @@ Finally, if necessary, the completed kernel is converted from *ELF* to
 the format expected by the loader and/or flash tool required by the
 target. This is accomplished in a straightforward manner with *objdump*.
 
-[![Zephyr's build final stage post-process](../../_images/build-build-phase-6.svg)
-](../../_images/build-build-phase-6.svg)
+[![Zephyr's build final stage post-process](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-6.svg)
+](https://docs.zephyrproject.org/4.1.0/_images/build-build-phase-6.svg)
 
 ## Supporting Scripts and Tools
 

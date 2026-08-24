@@ -157,4 +157,4 @@ Returns
 :   UPDATEHUB\_INSTALL\_ERROR fail while installing the update package.
 :   UPDATEHUB\_FLASH\_INIT\_ERROR fail to initialize the flash.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

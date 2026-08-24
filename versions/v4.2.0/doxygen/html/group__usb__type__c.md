@@ -711,4 +711,4 @@ VBUS level voltages.
 | TC\_VBUS\_PRESENT | VBUS is at least vSafe5V min. |
 | TC\_VBUS\_REMOVED | VBUS is less than vSinkDisconnect max. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

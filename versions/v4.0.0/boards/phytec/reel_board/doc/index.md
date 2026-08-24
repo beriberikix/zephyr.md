@@ -48,11 +48,11 @@ MMA8652FC is a 12-bit Digital Accelerometer.
 All sensors are connected to the I2C bus and one GPIO pin each,
 which can be used as an interrupt source.
 
-![reel board front](../../../../_images/reel_board.jpg)
+![reel board front](https://docs.zephyrproject.org/4.0.0/_images/reel_board.jpg)
 
 reel board front (Credit: PHYTEC)
 
-![reel board back](../../../../_images/reel_board_descr_back.jpg)
+![reel board back](https://docs.zephyrproject.org/4.0.0/_images/reel_board_descr_back.jpg)
 
 reel board back (Credit: PHYTEC)
 
@@ -185,7 +185,7 @@ There are several labeled solder jumpers on the board.
 These can be used to connect a logic analyzer to check the behavior of a
 driver or to measure the voltage of a signal.
 
-![reel board Jumper and Testpoints](../../../../_images/reel_board_tp.jpg)
+![reel board Jumper and Testpoints](https://docs.zephyrproject.org/4.0.0/_images/reel_board_tp.jpg)
 
 reel board testpoints (Credit: PHYTEC)
 
@@ -229,7 +229,7 @@ reel board can be flashed and debugged, powered either from battery or USB.
 If the Adapter is powered via USB, the Adapter circuit heats the board
 slightly and the temperature sensor can output values up to 1.5 degrees higher.
 
-![reel board Debug Adapter](../../../../_images/reel_board_debug.jpg)
+![reel board Debug Adapter](https://docs.zephyrproject.org/4.0.0/_images/reel_board_debug.jpg)
 
 reel board Debug Adapter overview (Credit: PHYTEC)
 
@@ -263,7 +263,7 @@ The expansion connector has the same dimensions and similar pinout
 as the BBC MicroBit edge connector. The expansion components that are
 designed especially for the reel board are called link boards.
 
-![reel board Expansion Connector](../../../../_images/reel_board_excon.jpg)
+![reel board Expansion Connector](https://docs.zephyrproject.org/4.0.0/_images/reel_board_excon.jpg)
 
 reel board Expansion Connector (Credit: PHYTEC)
 
@@ -274,7 +274,7 @@ third party shields in Arduino UNO R3 format to be connected to the reel board.
 In addition, it includes a NOTM.2 connector and more powerful DCDC converter
 then reel board.
 
-![reel board and link board BASE](../../../../_images/rb_lb_shield.jpg)
+![reel board and link board BASE](https://docs.zephyrproject.org/4.0.0/_images/rb_lb_shield.jpg)
 
 reel board and link board BASE (Credit: PHYTEC)
 
@@ -298,7 +298,7 @@ third party shields in two ways:
 >     power provided by the reel board is not enough,
 >     or for prototypes in the field.
 
-![link board BASE](../../../../_images/link_board_base.jpg)
+![link board BASE](https://docs.zephyrproject.org/4.0.0/_images/link_board_base.jpg)
 
 link board BASE (Credit: PHYTEC)
 

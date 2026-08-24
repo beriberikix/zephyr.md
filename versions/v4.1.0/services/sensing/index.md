@@ -45,7 +45,7 @@ cross host OSes support and as well as IoT sensor solutions.
 
 The diagram below illustrates how the Sensing Subsystem integrates with up-layer frameworks.
 
-![Unified Zephyr sensing architecture.](../../_images/sensing_solution.png)
+![Unified Zephyr sensing architecture.](https://docs.zephyrproject.org/4.1.0/_images/sensing_solution.png)
 
 ## [Configurability](#id2)
 
@@ -75,7 +75,7 @@ The diagram below illustrates how the Sensing Subsystem integrates with up-layer
 
 Below diagram shows the API position and scope:
 
-![Sensing subsystem API organization.](../../_images/sensing_api_org.png)
+![Sensing subsystem API organization.](https://docs.zephyrproject.org/4.1.0/_images/sensing_api_org.png)
 
 `Sensing Subsystem API` is for Applications.
 `Sensing Sensor API` is for development `sensors`.
@@ -84,11 +84,11 @@ Below diagram shows the API position and scope:
 
 - Sensor Configuration Flow
 
-![Sensor Configuration Flow (App set report interval to hinge angel sensor example).](../../_images/sensor_config_flow.png)
+![Sensor Configuration Flow (App set report interval to hinge angel sensor example).](https://docs.zephyrproject.org/4.1.0/_images/sensor_config_flow.png)
 
 - Sensor Data Flow
 
-![Sensor Data Flow (App receive hinge angel data through data event callback example).](../../_images/sensor_data_flow.png)
+![Sensor Data Flow (App receive hinge angel data through data event callback example).](https://docs.zephyrproject.org/4.1.0/_images/sensor_data_flow.png)
 
 ## [Sensor Types And Instance](#id5)
 
@@ -144,7 +144,7 @@ The `Sensing Subsystem` will auto open and create `handlers` for client sensor
 to it’s reporter sensors.
 `Sensor clients` can get it’s reporters’ handlers via [`sensing_sensor_get_reporters()`](../../doxygen/html/group__sensing__sensor.md#gab4c41d02b3731e5829a41e1f5f5154a5).
 
-![Sensor Reporting Topology.](../../_images/sensor_top.png)
+![Sensor Reporting Topology.](https://docs.zephyrproject.org/4.1.0/_images/sensor_top.png)
 
 Note
 

@@ -126,4 +126,4 @@ Bluetooth APIs.
 
 The Bluetooth Subsystem Core APIs provide essential functionalities to use and manage Bluetooth based communication. These APIs include APIs for Bluetooth stack initialization, device discovery, connection management, data transmission, profiles and services. These APIs support both classic Bluetooth and Bluetooth Low Energy (LE) operations.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

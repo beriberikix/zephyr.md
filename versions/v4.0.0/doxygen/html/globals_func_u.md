@@ -265,4 +265,4 @@ Here is a list of all functions with links to the files they belong to:
 - utf8\_lcpy() : [util.h](group__sys-util.md#ga376935d7e6eece7dbdd382de057ec2f9)
 - utf8\_trunc() : [util.h](group__sys-util.md#ga1bbcfa5d7bfe757afab489d2ce41e30a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -22,4 +22,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - q63\_t : [types.h](group__math__dsp.md#ga5aea1cb12fc02d9d44c8abf217eaa5c6)
 - q7\_t : [types.h](group__math__dsp.md#gae541b6f232c305361e9b416fc9eed263)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

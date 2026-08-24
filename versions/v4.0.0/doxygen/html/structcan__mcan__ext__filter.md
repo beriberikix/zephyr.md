@@ -68,4 +68,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/can/[can\_mcan.h](can__mcan_8h_source.md)
 
 - [can\_mcan\_ext\_filter](structcan__mcan__ext__filter.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

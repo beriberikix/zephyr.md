@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l011k4/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l011k4.jpg](../../../../_images/nucleo_l011k4.jpg)
-](../../../../_images/nucleo_l011k4.jpg)
+[![../../../../_images/nucleo_l011k4.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l011k4.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l011k4.jpg)
 
 Nucleo L011K4
 

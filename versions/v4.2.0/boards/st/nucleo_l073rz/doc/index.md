@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l073rz/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l073rz.jpg](../../../../_images/nucleo_l073rz.jpg)
-](../../../../_images/nucleo_l073rz.jpg)
+[![../../../../_images/nucleo_l073rz.jpg](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l073rz.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l073rz.jpg)
 
 Nucleo L073RZ
 
@@ -149,7 +149,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo L073RZ connectors](../../../../_images/nucleo_l073rz_connectors.jpg)
+![Nucleo L073RZ connectors](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l073rz_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

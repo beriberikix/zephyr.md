@@ -16,7 +16,7 @@ The SAM E70 Xplained evaluation kit is a development platform to evaluate the
 Atmel SAM E70 series microcontrollers. The current version allows to use both
 IC variations ATSAME70Q21A(B).
 
-![SAM E70 Xplained](../../../../../_images/sam_e70_xplained.jpg)
+![SAM E70 Xplained](https://docs.zephyrproject.org/3.7.0/_images/sam_e70_xplained.jpg)
 
 ## Hardware
 

@@ -16,7 +16,7 @@ The AIROC™ CYW20829 Bluetooth® LE MCU Evaluation Kit (CYW920829M2EVK-02) with
 
 The system features Dual Arm® Cortex® - M33s for powering the MCU and Bluetooth subsystem with programmable and reconfigurable analog and digital blocks. In addition, on the kit, there is a suite of on-board peripherals including six-axis inertial measurement unit (IMU), thermistor, analog mic, user programmable buttons (2), LEDs (2), and RGB LED. There is also extensive GPIO support with extended headers and Arduino Uno R3 compatibility for third-party shields.
 
-![CYW920829M2EVK_02](../../../../_images/cyw920829m2evk_02.webp)
+![CYW920829M2EVK_02](https://docs.zephyrproject.org/3.7.0/_images/cyw920829m2evk_02.webp)
 
 ## Hardware
 

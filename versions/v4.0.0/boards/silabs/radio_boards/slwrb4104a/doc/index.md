@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4104a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32bg13-slwrb4104a.jpg](../../../../../_images/efr32bg13-slwrb4104a.jpg)
-](../../../../../_images/efr32bg13-slwrb4104a.jpg)
+[![../../../../../_images/efr32bg13-slwrb4104a.jpg](https://docs.zephyrproject.org/4.0.0/_images/efr32bg13-slwrb4104a.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/efr32bg13-slwrb4104a.jpg)
 
 EFR32BG13 2.4 GHz 10 dBm (SLWRB4104A)
 

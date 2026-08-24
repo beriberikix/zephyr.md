@@ -21,4 +21,4 @@ Convert number Q7/Q15/Q31 to Float or Double representation with shift.
 
 There are separate functions for floating-point, Q7, Q15, and Q31 data types.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

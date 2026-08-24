@@ -8,8 +8,8 @@ original_path: boards/st/stm32h573i_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h573i_dk.jpg](../../../../_images/stm32h573i_dk.jpg)
-](../../../../_images/stm32h573i_dk.jpg)
+[![../../../../_images/stm32h573i_dk.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32h573i_dk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32h573i_dk.jpg)
 
 STM32H573I-DK Discovery
 

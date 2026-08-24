@@ -28,4 +28,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - ztress\_handler : [ztress.h](group__ztest__ztress.md#ga633439263754bf08baee06c37dddab40)
 - zvfs\_eventfd\_t : [eventfd.h](zvfs_2eventfd_8h.md#a2f8a313f0a8175844c91c78d5b9340ad)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

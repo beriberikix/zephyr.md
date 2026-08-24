@@ -65,4 +65,4 @@ stm32h5\_reset.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [reset](dir_10e63a26bda611813cb588c12a3608a6.md)
 - [stm32h5\_reset.h](stm32h5__reset_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

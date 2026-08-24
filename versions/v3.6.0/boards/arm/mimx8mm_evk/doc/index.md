@@ -45,7 +45,7 @@ Zephyr OS is ported to run on the Cortex®-M4 core.
     - JTAG 20-pin connector
     - MicroUSB for UART debug, two COM ports for A53 and M4
 
-![MIMX8MM EVK](../../../../_images/mimx8mm_evk.jpg)
+![MIMX8MM EVK](https://docs.zephyrproject.org/3.6.0/_images/mimx8mm_evk.jpg)
 
 More information about the board can be found at the
 [NXP website](https://www.nxp.com/design/development-boards/i.mx-evaluation-and-development-boards/evaluation-kit-for-thebr-i.mx-8m-mini-applications-processor:8MMINILPD4-EVK).

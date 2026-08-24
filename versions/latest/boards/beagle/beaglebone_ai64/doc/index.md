@@ -8,8 +8,8 @@ original_path: boards/beagle/beaglebone_ai64/doc/index.html
 
 Board Overview
 
-[![../../../../_images/beaglebone_ai_64.webp](../../../../_images/beaglebone_ai_64.webp)
-](../../../../_images/beaglebone_ai_64.webp)
+[![../../../../_images/beaglebone_ai_64.webp](https://docs.zephyrproject.org/4.2.0/_images/beaglebone_ai_64.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/beaglebone_ai_64.webp)
 
 BeagleBone AI-64
 

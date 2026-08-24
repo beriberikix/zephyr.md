@@ -43,7 +43,7 @@ core. Zephyr OS is ported to run on the Cortex®-M4 core.
     - 1x Yellow WiFi LED
     - 1x Red power supply LED
 
-![96Boards Avenger96](../../../../_images/96b_avenger96.jpg)
+![96Boards Avenger96](https://docs.zephyrproject.org/4.2.0/_images/96b_avenger96.jpg)
 
 More information about the board can be found at the
 [96Boards website](https://www.96boards.org/product/avenger96/).

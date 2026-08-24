@@ -8,8 +8,8 @@ original_path: boards/fanke/fk743m5_xih6/doc/index.html
 
 Board Overview
 
-[![../../../../_images/fk743m5_xih6.webp](../../../../_images/fk743m5_xih6.webp)
-](../../../../_images/fk743m5_xih6.webp)
+[![../../../../_images/fk743m5_xih6.webp](https://docs.zephyrproject.org/4.2.0/_images/fk743m5_xih6.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/fk743m5_xih6.webp)
 
 FK743M5-XIH6
 

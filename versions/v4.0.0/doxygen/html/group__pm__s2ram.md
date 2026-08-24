@@ -119,4 +119,4 @@ Default implementation is setting a magic word in RAM. CONFIG\_PM\_S2RAM\_CUSTOM
 - the content of the R1 and R4 registers must remain unchanged
 - returning from the function should be performed with the bx lr instruction
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/nxp/rddrone_fmuk66/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rddrone_fmuk66.jpg](../../../../_images/rddrone_fmuk66.jpg)
-](../../../../_images/rddrone_fmuk66.jpg)
+[![../../../../_images/rddrone_fmuk66.jpg](https://docs.zephyrproject.org/4.2.0/_images/rddrone_fmuk66.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rddrone_fmuk66.jpg)
 
 RDDRONE-FMUK66
 

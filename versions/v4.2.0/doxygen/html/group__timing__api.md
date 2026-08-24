@@ -181,4 +181,4 @@ Signal the end of the timing information gathering.
 
 Signal to the timing subsystem that timing information is no longer being gathered from this point forward.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

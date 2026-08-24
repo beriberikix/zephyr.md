@@ -110,4 +110,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[dfd\_srv.h](dfd__srv_8h_source.md)
 
 - [bt\_mesh\_dfd\_srv\_cb](structbt__mesh__dfd__srv__cb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

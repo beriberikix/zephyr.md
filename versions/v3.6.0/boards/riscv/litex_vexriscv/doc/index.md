@@ -25,7 +25,7 @@ LiteX VexRiscv SoC implementation generated for the
 [Digilent Arty A7-35T or A7-100T Development Boards](https://store.digilentinc.com/arty-a7-artix-7-fpga-development-board-for-makers-and-hobbyists)
 or [SDI-MIPI Video Converter](https://github.com/antmicro/sdi-mipi-video-converter).
 
-![LiteX VexRiscv on Digilent Arty 35T Board](../../../../_images/litex_vexriscv.jpg)
+![LiteX VexRiscv on Digilent Arty 35T Board](https://docs.zephyrproject.org/3.6.0/_images/litex_vexriscv.jpg)
 
 LiteX is based on
 [Migen](https://m-labs.hk/gateware/migen/)/[MiSoC SoC builder](https://github.com/m-labs/misoc)

@@ -83,4 +83,4 @@ it8xxx2-i2c.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [i2c](dir_fcc76e97acca71d0ab1d4f13f62b3078.md)
 - [it8xxx2-i2c.h](it8xxx2-i2c_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

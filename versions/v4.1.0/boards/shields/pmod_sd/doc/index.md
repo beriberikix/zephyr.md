@@ -29,7 +29,7 @@ west build -b ek_ra8m1 --shield pmod_sd tests/drivers/disk/disk_access
 
 ### Pinout
 
-![PMOD SD Pinout](../../../../_images/pmod_sd_pins.webp)
+![PMOD SD Pinout](https://docs.zephyrproject.org/4.1.0/_images/pmod_sd_pins.webp)
 
 PMOD SD Pinout (Credit: Digilent)
 

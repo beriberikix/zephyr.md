@@ -8,8 +8,8 @@ original_path: boards/arduino/due/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_due.jpg](../../../../_images/arduino_due.jpg)
-](../../../../_images/arduino_due.jpg)
+[![../../../../_images/arduino_due.jpg](https://docs.zephyrproject.org/4.2.0/_images/arduino_due.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_due.jpg)
 
 Arduino Due
 

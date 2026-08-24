@@ -8,8 +8,8 @@ original_path: boards/ezurio/mg100/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mg100.jpg](../../../../_images/mg100.jpg)
-](../../../../_images/mg100.jpg)
+[![../../../../_images/mg100.jpg](https://docs.zephyrproject.org/4.1.0/_images/mg100.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mg100.jpg)
 
 Sentrius™ MG100 Gateway
 

@@ -56,4 +56,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/usb/[bos.h](bos_8h_source.md)
 
 - [usb\_bos\_capability\_webusb](structusb__bos__capability__webusb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

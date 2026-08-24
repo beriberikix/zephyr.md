@@ -59,7 +59,7 @@ The key features of the EK-RA6E2 board are categorized in three groups as follow
 - 16 Mb (128 Mb) External Quad-SPI Flash
 - CAN (3-pin header)
 
-![RA6E2 Evaluation Kit](../../../../_images/ek_ra6e2.webp)
+![RA6E2 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra6e2.webp)
 
 EK-RA6E2 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -67,8 +67,8 @@ EK-RA6E2 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detailed hardware feature for the RA6E2 MCU group can be found at [RA6E2 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra6e2-group-users-manual-hardware)
 
-[![RA6E2 MCU group feature](../../../../_images/ra6e2_block_diagram.webp)
-](../../../../_images/ra6e2_block_diagram.webp)
+[![RA6E2 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra6e2_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra6e2_block_diagram.webp)
 
 RA6E2 Block diagram (Credit: Renesas Electronics Corporation)
 

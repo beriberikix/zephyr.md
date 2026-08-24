@@ -299,4 +299,4 @@ Return values
     | -EINVAL | if time value is too large |
     | -errno | In case of any bus error (see [i2c\_write\_dt()](group__i2c__interface.md#ga2d17b714ba6ebe47d7bdfcb1cf97e44f "Write a set amount of data to an I2C device.")) |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

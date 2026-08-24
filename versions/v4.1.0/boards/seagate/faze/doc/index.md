@@ -8,8 +8,8 @@ original_path: boards/seagate/faze/doc/index.html
 
 Board Overview
 
-[![../../../../_images/firecuda-gaming-ssd.jpg](../../../../_images/firecuda-gaming-ssd.jpg)
-](../../../../_images/firecuda-gaming-ssd.jpg)
+[![../../../../_images/firecuda-gaming-ssd.jpg](https://docs.zephyrproject.org/4.1.0/_images/firecuda-gaming-ssd.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/firecuda-gaming-ssd.jpg)
 
 FireCuda Gaming SSD (FaZe) board
 

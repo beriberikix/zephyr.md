@@ -28,7 +28,7 @@ on Linux.
 3. Open your already existing project by going to
    File ‣ New ‣ STM32 CMake Project:
 
-   ![Create new CMake project](../../_images/stm32cube_new_cmake.webp)
+   ![Create new CMake project](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_new_cmake.webp)
 4. Select Project with existing CMake sources, then click Next.
 5. Select Next and browse to the location of your sources. The
    folder that is opened should have the `CMakeLists.txt` and `prj.conf` files.
@@ -42,7 +42,7 @@ on Linux.
    CMake argument format. If an out-of-tree board is targeted, the `BOARD_ROOT`
    option must also be set. The resulting settings page should look similar to this:
 
-   ![Properties dialog for project](../../_images/stm32cube_project_properties.webp)
+   ![Properties dialog for project](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_project_properties.webp)
 
    These options may or may not be needed depending on if you have an
    out-of-tree project or not.
@@ -50,7 +50,7 @@ on Linux.
    Select the GNU C language, and click on the
    CDT User Settings Entries option.
 
-   ![Properties dialog for preprocessor options](../../_images/stm32cube_preprocessor_include.webp)
+   ![Properties dialog for preprocessor options](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_preprocessor_include.webp)
 
    Click Add to add an Include File
    that points to Zephyr’s `autoconf.h`, which is located in
@@ -58,12 +58,12 @@ on Linux.
    that STM32CubeIDE picks up Zephyr configuration options.
    The following dialog will be shown. Fill it in as follows:
 
-   ![Add include file dialog](../../_images/stm32cube_add_include.webp)
+   ![Add include file dialog](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_add_include.webp)
 
    Once the include file has been added, your properties page should look
    similar to the following:
 
-   ![Properties page after adding autoconf.h file](../../_images/stm32cube_autoconf_h.webp)
+   ![Properties page after adding autoconf.h file](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_autoconf_h.webp)
 10. Click Apply and Close
 11. You may now build the project using the Build button on the toolbar.
     The project can be run using the Run button, as well as debugged
@@ -76,10 +76,10 @@ If you only want to use STM32CubeIDE to debug your project you can proceed as fo
 1. First, make sure to compile your project and have the `zephyr.elf` available.
 2. Run STM32CubeIDE and import your project by going to File ‣ Import…:
 
-   ![Import project](../../_images/stm32cube_menu_import.webp)
+   ![Import project](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_menu_import.webp)
 3. Select C/C++ ‣ STM32 Cortex-M Executable, then click Next:
 
-   ![Import project selection](../../_images/stm32cube_import_project.webp)
+   ![Import project selection](https://docs.zephyrproject.org/4.1.0/_images/stm32cube_import_project.webp)
 4. Click on Browse to browse to your build folder and select your `zephyr.elf`.
 5. Click on Select to select your MCU. If relevant, choose also your CPU and/or core.
 6. Click on Finish.

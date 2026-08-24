@@ -43,4 +43,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[fuel\_gauge.h](fuel__gauge_8h_source.md)
 
 - [sbs\_gauge\_manufacturer\_name](structsbs__gauge__manufacturer__name.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

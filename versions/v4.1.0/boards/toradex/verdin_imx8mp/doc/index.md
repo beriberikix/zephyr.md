@@ -8,8 +8,8 @@ original_path: boards/toradex/verdin_imx8mp/doc/index.html
 
 Board Overview
 
-[![../../../../_images/verdin_imx8mp_front.jpg](../../../../_images/verdin_imx8mp_front.jpg)
-](../../../../_images/verdin_imx8mp_front.jpg)
+[![../../../../_images/verdin_imx8mp_front.jpg](https://docs.zephyrproject.org/4.1.0/_images/verdin_imx8mp_front.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/verdin_imx8mp_front.jpg)
 
 Verdin iMX8M Plus SoM
 

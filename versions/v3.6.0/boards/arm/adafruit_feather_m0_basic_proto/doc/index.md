@@ -17,7 +17,7 @@ board with an onboard battery connector and charger for 3.7 V lithium
 polymer batteries, charging status indicator and user LEDs, native USB
 connector, 20 I/O pins, and a small prototyping area.
 
-![Adafruit Feather M0 Basic Proto](../../../../_images/adafruit_feather_m0_basic_proto.jpg)
+![Adafruit Feather M0 Basic Proto](https://docs.zephyrproject.org/3.6.0/_images/adafruit_feather_m0_basic_proto.jpg)
 
 ## Hardware
 

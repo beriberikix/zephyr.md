@@ -29,4 +29,4 @@ nrf5x.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [regulator](dir_9ff35155c0210c7a7568a63cba064bf6.md)
 - [nrf5x.h](nrf5x_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

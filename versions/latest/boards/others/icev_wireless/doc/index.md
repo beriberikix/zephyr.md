@@ -8,8 +8,8 @@ original_path: boards/others/icev_wireless/doc/index.html
 
 Board Overview
 
-[![../../../../_images/icev_wireless.jpg](../../../../_images/icev_wireless.jpg)
-](../../../../_images/icev_wireless.jpg)
+[![../../../../_images/icev_wireless.jpg](https://docs.zephyrproject.org/4.2.0/_images/icev_wireless.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/icev_wireless.jpg)
 
 ICE-V Wireless
 
@@ -107,7 +107,7 @@ brought out to J3, as well as 3 PMOD connectors for interfacing directly to
 the iCE40 FPGA. Note that several of the iCE40 pins brought out to the PMOD
 connectors are capable of operating as differential pairs.
 
-![ICE-V Wireless (Back)](../../../../_images/icev_wireless_back.jpg)
+![ICE-V Wireless (Back)](https://docs.zephyrproject.org/4.2.0/_images/icev_wireless_back.jpg)
 
 ICE-V Wireless (Back)
 
@@ -118,7 +118,7 @@ ADC operation.
 For PMOD details, please refer to the [PMOD Specification](https://digilent.com/reference/_media/reference/pmod/pmod-interface-specification-1_2_0.pdf) [[6]](#id13) and the image
 below.
 
-![ICE-V Wireless Pinout](../../../../_images/icev_wireless_pinout.jpg)
+![ICE-V Wireless Pinout](https://docs.zephyrproject.org/4.2.0/_images/icev_wireless_pinout.jpg)
 
 ## Programming and Debugging
 

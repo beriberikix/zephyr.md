@@ -32,7 +32,7 @@ nRF54L15 Arm Cortex-M33 CPU and the following devices:
 - UARTE
 - WDT
 
-![nRF54L15 DK](../../../../_images/nrf54l15dk_nrf54l15.webp)
+![nRF54L15 DK](https://docs.zephyrproject.org/4.1.0/_images/nrf54l15dk_nrf54l15.webp)
 
 nRF54L15 DK (Credit: Nordic Semiconductor)
 

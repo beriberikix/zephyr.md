@@ -8,8 +8,8 @@ original_path: boards/others/esp32c3_supermini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32c3_supermini.webp](../../../../_images/esp32c3_supermini.webp)
-](../../../../_images/esp32c3_supermini.webp)
+[![../../../../_images/esp32c3_supermini.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_supermini.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_supermini.webp)
 
 ESP32-C3-SUPERMINI
 

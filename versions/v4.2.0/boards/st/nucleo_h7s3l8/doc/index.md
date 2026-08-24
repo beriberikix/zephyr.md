@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h7s3l8/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h7s3l8.webp](../../../../_images/nucleo_h7s3l8.webp)
-](../../../../_images/nucleo_h7s3l8.webp)
+[![../../../../_images/nucleo_h7s3l8.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h7s3l8.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h7s3l8.webp)
 
 Nucleo H7S3L8
 

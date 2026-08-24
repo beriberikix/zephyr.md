@@ -485,4 +485,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - rx\_unreceived\_packets : [bt\_hci\_rp\_le\_read\_iso\_link\_quality](structbt__hci__rp__le__read__iso__link__quality.md#a6a16d0aa7ed220bac1ade12eb0f7703e)
 - rxts : [can\_mcan\_rx\_fifo\_hdr](structcan__mcan__rx__fifo__hdr.md#ace6229b7580d1954638d1469700f5ebd)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

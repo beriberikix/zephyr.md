@@ -24,7 +24,7 @@ The statechart has been slightly modified to display different output on the
 screen in the `op_entered` state depending on if a previous result is
 available or not.
 
-![SMF Calculator Statechart](../../../../_images/smf_calculator.svg)
+![SMF Calculator Statechart](https://docs.zephyrproject.org/4.1.0/_images/smf_calculator.svg)
 
 Statechart for the SMF Calculator business logic.
 

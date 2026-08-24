@@ -20,7 +20,7 @@ designs an easy, cost-optimal upgrade path from 8-bit or 16-bit microcontrollers
 
 The Zephyr port is running on the MAX32672 MCU.
 
-![MAX32672EVKIT](../../../../_images/max32672evkit.webp)
+![MAX32672EVKIT](https://docs.zephyrproject.org/3.7.0/_images/max32672evkit.webp)
 
 ## Hardware
 

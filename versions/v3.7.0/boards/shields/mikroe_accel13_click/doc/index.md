@@ -18,7 +18,7 @@ power triaxial accelerometer sensor in a [mikroBUS](https://www.mikroe.com/mikro
 The [IIS2DLPC](https://www.st.com/en/mems-and-sensors/iis2dlpc.html) sensor supports both SPI and I2C bus protocols. Currently
 only I2C is supported for this shield.
 
-![MikroElektronika ACCEL 13 Click](../../../../_images/accel-13-click.jpg)
+![MikroElektronika ACCEL 13 Click](https://docs.zephyrproject.org/3.7.0/_images/accel-13-click.jpg)
 
 MikroElektronika ACCEL 13 Click (Credit: MikroElektronika)
 

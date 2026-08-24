@@ -8,8 +8,8 @@ original_path: boards/wch/ch32v003evt/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ch32v003evt.webp](../../../../_images/ch32v003evt.webp)
-](../../../../_images/ch32v003evt.webp)
+[![../../../../_images/ch32v003evt.webp](https://docs.zephyrproject.org/4.2.0/_images/ch32v003evt.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ch32v003evt.webp)
 
 WCH CH32V003EVT
 

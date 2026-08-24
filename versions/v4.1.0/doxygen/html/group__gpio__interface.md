@@ -2327,4 +2327,4 @@ Parameters
 Returns
 :   a value from [gpio\_remove\_callback()](#gac1e94ba8faac79f469447e9b5d2f8c06).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

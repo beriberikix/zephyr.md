@@ -127,12 +127,12 @@ TagoIO to visualize the data.
   be automatically selected for you.
 - Just Save and enjoy!
 
-[![TagoIO web dashboard](../../../../_images/TagoIO-pc.jpeg)](../../../../_images/TagoIO-pc.jpeg)
+[![TagoIO web dashboard](https://docs.zephyrproject.org/3.6.0/_images/TagoIO-pc.jpeg)](https://docs.zephyrproject.org/3.6.0/_images/TagoIO-pc.jpeg)
 
 You can experiment the TagoIO mobile application on your cellphone or tablet.
 Simple go to your app store and search by TagoIO, install, sign in, enjoy!
 
-[![TagoIO mobile dashboard](../../../../_images/TagoIO-mobile.jpeg)](../../../../_images/TagoIO-mobile.jpeg)
+[![TagoIO mobile dashboard](https://docs.zephyrproject.org/3.6.0/_images/TagoIO-mobile.jpeg)](https://docs.zephyrproject.org/3.6.0/_images/TagoIO-mobile.jpeg)
 
 More information at [TagoIO](https://tago.io/) [[1]](#id1) and [TagoIO Documentation](https://docs.tago.io) [[2]](#id8).
 

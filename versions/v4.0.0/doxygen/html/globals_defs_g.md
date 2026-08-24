@@ -749,4 +749,4 @@ Here is a list of all macros with links to the files they belong to:
 - GTF\_type\_mask : [grant\_table.h](grant__table_8h.md#ad8879d52107cc4b8f8a5624e1e0596b2)
 - GTF\_writing : [grant\_table.h](grant__table_8h.md#a9c49e42a4da40bca62a629e3fb84cfbf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

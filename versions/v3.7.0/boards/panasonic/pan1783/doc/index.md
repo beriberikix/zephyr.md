@@ -22,7 +22,7 @@ Evaluation Boards can be found on the [product website](https://industry.panason
 
 ## PAN1783 EVB
 
-![PAN1783 EVB](../../../../_images/pan1783_evb.webp)
+![PAN1783 EVB](https://docs.zephyrproject.org/3.7.0/_images/pan1783_evb.webp)
 
 PAN1783 EVB (Credit: Panasonic)
 

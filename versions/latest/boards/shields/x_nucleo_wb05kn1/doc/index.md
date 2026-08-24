@@ -24,7 +24,7 @@ The [X-CUBE-WB05N](https://www.st.com/en/embedded-software/x-cube-wb05n.html) [[
 in the `Utilities/BLE_Transparent_Mode_STM32WB05_controller_only` directory
 (`SPI` or `UART` subdirectories depending on which interface you want to use).
 
-![X-NUCLEO-WB05KN1](../../../../_images/x-nucleo-wb05kn1.webp)
+![X-NUCLEO-WB05KN1](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-wb05kn1.webp)
 
 More information about the board can be found at the
 [X-NUCLEO-WB05KN1 website](https://www.st.com/en/evaluation-tools/x-nucleo-wb05kn1.html) [[3]](#id5).

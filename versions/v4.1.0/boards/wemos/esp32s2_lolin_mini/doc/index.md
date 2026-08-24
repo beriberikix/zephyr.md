@@ -8,8 +8,8 @@ original_path: boards/wemos/esp32s2_lolin_mini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32_s2_lolin_mini.jpg](../../../../_images/esp32_s2_lolin_mini.jpg)
-](../../../../_images/esp32_s2_lolin_mini.jpg)
+[![../../../../_images/esp32_s2_lolin_mini.jpg](https://docs.zephyrproject.org/4.1.0/_images/esp32_s2_lolin_mini.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32_s2_lolin_mini.jpg)
 
 ESP32-S2 Lolin Mini
 

@@ -8,8 +8,8 @@ original_path: boards/renesas/rsk_rx130/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rsk_rx130.webp](../../../../_images/rsk_rx130.webp)
-](../../../../_images/rsk_rx130.webp)
+[![../../../../_images/rsk_rx130.webp](https://docs.zephyrproject.org/4.2.0/_images/rsk_rx130.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rsk_rx130.webp)
 
 Renesas Starter Kit for RX130
 

@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f767zi/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f767zi.jpg](../../../../_images/nucleo_f767zi.jpg)
-](../../../../_images/nucleo_f767zi.jpg)
+[![../../../../_images/nucleo_f767zi.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f767zi.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f767zi.jpg)
 
 Nucleo F767ZI
 

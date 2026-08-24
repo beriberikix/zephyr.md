@@ -8,8 +8,8 @@ original_path: boards/others/stm32f030_demo/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f030_demo.jpg](../../../../_images/stm32f030_demo.jpg)
-](../../../../_images/stm32f030_demo.jpg)
+[![../../../../_images/stm32f030_demo.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32f030_demo.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32f030_demo.jpg)
 
 STM32F030 DEMO BOARD
 

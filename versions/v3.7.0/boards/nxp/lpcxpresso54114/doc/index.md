@@ -19,7 +19,7 @@ microcontrollers. LPCXpresso is an end-to-end solution enabling embedded
 engineers to develop their applications from initial evaluation to final
 production.
 
-![LPCXPRESSO54114](../../../../_images/lpcxpresso54114_m4.jpg)
+![LPCXPRESSO54114](https://docs.zephyrproject.org/3.7.0/_images/lpcxpresso54114_m4.jpg)
 
 ## Hardware
 

@@ -16,7 +16,7 @@ maintaining and extending Zephyr’s APIs need to be able to introduce
 new APIs that aren’t yet fully proven, and to potentially retire old APIs when they’re
 no longer optimal or supported by the underlying platforms.
 
-![API Life Cycle](../../_images/api_lifecycle.png)
+![API Life Cycle](https://docs.zephyrproject.org/3.7.0/_images/api_lifecycle.png)
 
 API Life Cycle
 

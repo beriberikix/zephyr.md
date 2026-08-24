@@ -56,4 +56,4 @@ Return values
     | y\_axis[len | - 1] if x > x\_axis[len - 1] |
     | [int32\_t](stdint_8h.md#a0c18914b3041c2f583aba76f418399c2) | Linear interpolation between the two nearest *y\_axis* values. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

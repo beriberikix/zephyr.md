@@ -17,7 +17,7 @@ CPU and the following devices:
 - Cortex-M System Design Kit GPIO
 - Cortex-M System Design Kit UART
 
-![ARM MPS2+ AN521](../../../../_images/mps21.jpg)
+![ARM MPS2+ AN521](https://docs.zephyrproject.org/4.1.0/_images/mps21.jpg)
 
 In addition to enabling actual hardware usage, this board configuration can
 also use QEMU to emulate the AN521 platform running on the MPS2+.

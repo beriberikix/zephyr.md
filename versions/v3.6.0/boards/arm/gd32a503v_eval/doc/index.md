@@ -19,7 +19,7 @@ The GD32A503VD features a single-core ARM Cortex-M4F MCU which can run up
 to 120-MHz with flash accesses zero wait states, 384kiB of Flash, 48kiB of
 SRAM and 88 GPIOs.
 
-![gd32a503v_eval](../../../../_images/gd32a503v_eval.jpg)
+![gd32a503v_eval](https://docs.zephyrproject.org/3.6.0/_images/gd32a503v_eval.jpg)
 
 ## Hardware
 

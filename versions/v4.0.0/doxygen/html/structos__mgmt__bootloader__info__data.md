@@ -74,4 +74,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/mgmt/mcumgr/grp/os\_mgmt/[os\_mgmt\_callbacks.h](os__mgmt__callbacks_8h_source.md)
 
 - [os\_mgmt\_bootloader\_info\_data](structos__mgmt__bootloader__info__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

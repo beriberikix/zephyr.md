@@ -244,4 +244,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - dynamic\_addr : [i3c\_device\_desc](structi3c__device__desc.md#a4e4c9614871e5ea4aa08b1560ecc40d0)
 - dynamic\_get : [shell\_cmd\_entry](unionshell__cmd__entry.md#aa76e35866f5df37593705fd1b53e15df)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

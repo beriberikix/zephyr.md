@@ -40,7 +40,7 @@ Hint
 
 Recent PCB revisions (E and newer) are shipped with I3G4250D and LSM303AGR.
 
-![STM32F3DISCOVERY](../../../../_images/stm32f3_disco.jpg)
+![STM32F3DISCOVERY](https://docs.zephyrproject.org/3.6.0/_images/stm32f3_disco.jpg)
 
 More information about the board can be found at the
 [STM32F3DISCOVERY website](https://www.st.com/en/evaluation-tools/stm32f3discovery.html).

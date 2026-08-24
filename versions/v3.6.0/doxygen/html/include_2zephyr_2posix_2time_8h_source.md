@@ -390,4 +390,4 @@ time\_t tv\_sec
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [posix](dir_cc2c191bc57cea4eaf0dbdf53c4fb6c6.md)
 - [time.h](include_2zephyr_2posix_2time_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -28,7 +28,7 @@ approach 100% if all failure conditions are emulated.
 The diagram below shows application code / high-level tests at the top.
 This is the ultimate application we want to run.
 
-![Emulator architecture showing tests, emulators and drivers](../../_images/arch.svg)
+![Emulator architecture showing tests, emulators and drivers](https://docs.zephyrproject.org/4.2.0/_images/arch.svg)
 
 Below that are peripheral drivers, such as the AT24 EEPROM driver. We can test
 peripheral drivers using an emulation driver connected via a emulated I2C
@@ -90,7 +90,7 @@ The diagram below demonstrates the logical organization of the `bus_api` and
 `_backend_api` using the BC1.2 charging detector driver as the model
 device-class.
 
-![Device class example, demonstrating BC1.2 charging detectors.](../../_images/device_class_emulator.svg)
+![Device class example, demonstrating BC1.2 charging detectors.](https://docs.zephyrproject.org/4.2.0/_images/device_class_emulator.svg)
 
 The real code is shown in green, while the emulator code is shown in yellow.
 

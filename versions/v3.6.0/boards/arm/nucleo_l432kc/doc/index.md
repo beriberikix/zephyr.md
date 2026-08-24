@@ -26,7 +26,7 @@ some highlights of the Nucleo L432KC board:
 - Three LEDs: USB communication (LD1), power LED (LD2), user LED (LD3)
 - One push-button: RESET
 
-![Nucleo L432KC](../../../../_images/nucleo_l432kc.jpg)
+![Nucleo L432KC](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l432kc.jpg)
 
 More information about the board can be found at the [Nucleo L432KC website](https://www.st.com/en/evaluation-tools/nucleo-l432kc.html).
 
@@ -119,7 +119,7 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L432KC Arduino connectors](../../../../_images/nucleo_l432kc_arduino_nano.jpg)
+![Nucleo L432KC Arduino connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l432kc_arduino_nano.jpg)
 
 For more details please refer to [STM32 Nucleo-32 board User Manual](https://www.st.com/resource/en/user_manual/dm00231744.pdf).
 

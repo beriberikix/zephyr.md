@@ -8,8 +8,8 @@ original_path: boards/st/stm32f0_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f0_disco.jpg](../../../../_images/stm32f0_disco.jpg)
-](../../../../_images/stm32f0_disco.jpg)
+[![../../../../_images/stm32f0_disco.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32f0_disco.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32f0_disco.jpg)
 
 STM32F0 Discovery
 

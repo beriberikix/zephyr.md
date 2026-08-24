@@ -25,7 +25,7 @@ Connection Manager is split into the following two subsystems:
 - [Connectivity monitoring](#conn-mgr-monitoring) (header file `include/zephyr/net/conn_mgr_monitoring.h`) monitors all available [Zephyr network interfaces (ifaces)](../api/net_if.md#net-if-interface) and triggers [network management](../api/net_mgmt.md#net-mgmt-interface) events indicating when IP connectivity is gained or lost.
 - [Connectivity control](#conn-mgr-control) (header file `include/zephyr/net/conn_mgr_connectivity.h`) provides an abstract API for controlling iface network association.
 
-![A simplified view of how Connection Manager integrates with Zephyr and the application.](../../../_images/integration_diagram_simplified.svg)
+![A simplified view of how Connection Manager integrates with Zephyr and the application.](https://docs.zephyrproject.org/3.7.0/_images/integration_diagram_simplified.svg)
 
 A simplified view of how Connection Manager integrates with Zephyr and the application.
 

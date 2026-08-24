@@ -8,8 +8,8 @@ original_path: boards/microchip/mec172xevb_assy6906/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mec172xevb_assy6906.jpg](../../../../_images/mec172xevb_assy6906.jpg)
-](../../../../_images/mec172xevb_assy6906.jpg)
+[![../../../../_images/mec172xevb_assy6906.jpg](https://docs.zephyrproject.org/4.2.0/_images/mec172xevb_assy6906.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/mec172xevb_assy6906.jpg)
 
 MEC172xEVB ASSY6906
 
@@ -296,12 +296,12 @@ The `mec172xevb_assy6906` board supports the runners and associated west command
 
 1. Connect the SPI Dongle ASSY 6791 to `J34` in the EVB.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/spidongle_assy67911.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/4.2.0/_images/spidongle_assy67911.jpg)
 2. Connect programmer to the header J6 on the Assy6791 board, it will flash the SPI NOR chip
    `U3`. Make sure that your programmer’s offset is 0x0.
    For programming you can use Dediprog SF100 or a similar tool for flashing SPI chips.
 
-   ![SF100 Connected](../../../../_images/dediprog_connector.jpg)
+   ![SF100 Connected](https://docs.zephyrproject.org/4.2.0/_images/dediprog_connector.jpg)
 
    Note
 
@@ -322,7 +322,7 @@ The `mec172xevb_assy6906` board supports the runners and associated west command
 4. Apply power to the board via a micro-USB cable.
    Configure this option by using a jumper between `JP30 7-8`.
 
-   ![Power Connection](../../../../_images/jp30_power_options.jpg)
+   ![Power Connection](https://docs.zephyrproject.org/4.2.0/_images/jp30_power_options.jpg)
 
 ### Building
 
@@ -361,7 +361,7 @@ The `mec172xevb_assy6906` board supports the runners and associated west command
    When west process started press Reset button `S2` and do not release it
    till the whole west process will not be finished successfully.
 
-   ![Reset Button](../../../../_images/Reset_Button.jpg)
+   ![Reset Button](https://docs.zephyrproject.org/4.2.0/_images/Reset_Button.jpg)
 
    Note
 

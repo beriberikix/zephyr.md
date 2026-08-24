@@ -8,8 +8,8 @@ original_path: boards/kincony/kincony_kc868_a32/doc/index.html
 
 Board Overview
 
-[![../../../../_images/kincony_kc868_a32.jpg](../../../../_images/kincony_kc868_a32.jpg)
-](../../../../_images/kincony_kc868_a32.jpg)
+[![../../../../_images/kincony_kc868_a32.jpg](https://docs.zephyrproject.org/4.0.0/_images/kincony_kc868_a32.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/kincony_kc868_a32.jpg)
 
 KC868-A32
 

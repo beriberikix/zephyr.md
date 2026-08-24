@@ -8,8 +8,8 @@ original_path: boards/efinix/titanium_ti60_f225/doc/index.html
 
 Board Overview
 
-[![../../../../_images/titanium_ti60_f225.jpg](../../../../_images/titanium_ti60_f225.jpg)
-](../../../../_images/titanium_ti60_f225.jpg)
+[![../../../../_images/titanium_ti60_f225.jpg](https://docs.zephyrproject.org/4.1.0/_images/titanium_ti60_f225.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/titanium_ti60_f225.jpg)
 
 Titanium Ti60 F225
 
@@ -38,7 +38,7 @@ Using the Efinity IP Manager, you can configure the SoC to include only the peri
 
 ## Board block diagram
 
-![titanium_ti60_f225_board-block-diagram](../../../../_images/Ti60-BGA225-board-block-diagram.jpg)
+![titanium_ti60_f225_board-block-diagram](https://docs.zephyrproject.org/4.1.0/_images/Ti60-BGA225-board-block-diagram.jpg)
 
 More information can be found on [Ti60F225](https://www.efinixinc.com/products-devkits-titaniumti60f225.html) [[1]](#id2) website.
 

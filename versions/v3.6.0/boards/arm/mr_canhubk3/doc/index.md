@@ -17,7 +17,7 @@ as autonomous mobile robots (AMR) and automated guided vehicles (AGV). It
 features an [NXP S32K344](https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform/s32k-auto-general-purpose-mcus/s32k3-microcontrollers-for-automotive-general-purpose:S32K3) [[2]](#id6) general-purpose automotive microcontroller based on
 an Arm Cortex-M7 core (Lock-Step).
 
-![NXP MR-CANHUBK3 (TOP)](../../../../_images/mr_canhubk3_top.jpg)
+![NXP MR-CANHUBK3 (TOP)](https://docs.zephyrproject.org/3.6.0/_images/mr_canhubk3_top.jpg)
 
 ## Hardware
 

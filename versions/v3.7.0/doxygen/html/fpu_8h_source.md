@@ -96,4 +96,4 @@ uint32\_t caller\_saved[16]
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [cortex\_m](dir_d27032cbfb87610ee5132d2bc57d6588.md)
 - [fpu.h](fpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

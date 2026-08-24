@@ -48,4 +48,4 @@ The documentation for this struct was generated from the following file:
 - /tmp/zephyrproject/zephyr/subsys/secure\_storage/include/internal/zephyr/secure\_storage/its/[common.h](subsys_2secure__storage_2include_2internal_2zephyr_2secure__storage_2its_2common_8h_source.md)
 
 - [secure\_storage\_its\_uid\_t](structsecure__storage__its__uid__t.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

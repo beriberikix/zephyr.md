@@ -27,7 +27,7 @@ The STM32 Nucleo board integrates the ST-LINK/V2-1 debugger and programmer.
 The STM32 Nucleo board comes with the STM32 comprehensive software HAL library together
 with various packaged software examples.
 
-![Nucleo F103RB](../../../../_images/nucleo_f103rb.jpg)
+![Nucleo F103RB](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f103rb.jpg)
 
 More information about the board can be found at the [Nucleo F103RB website](https://www.st.com/en/evaluation-tools/nucleo-f103rb.html) [[1]](#id1).
 
@@ -100,7 +100,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F103RB connectors](../../../../_images/nucleo_f103rb_connectors.jpg)
+![Nucleo F103RB connectors](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f103rb_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

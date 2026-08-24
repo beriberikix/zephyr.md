@@ -8,8 +8,8 @@ original_path: boards/alientek/pandora_stm32l475/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pandora_stm32l475.jpg](../../../../_images/pandora_stm32l475.jpg)
-](../../../../_images/pandora_stm32l475.jpg)
+[![../../../../_images/pandora_stm32l475.jpg](https://docs.zephyrproject.org/4.0.0/_images/pandora_stm32l475.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/pandora_stm32l475.jpg)
 
 STM32L475 Pandora
 

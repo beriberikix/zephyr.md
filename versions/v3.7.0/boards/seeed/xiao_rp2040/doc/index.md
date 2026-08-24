@@ -19,7 +19,7 @@ to be flashed without any adapter, in a drag-and-drop manner.
 
 For more details see the [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/) [[1]](#id4) wiki page.
 
-![XIAO RP2040](../../../../_images/xiao_rp2040.webp)
+![XIAO RP2040](https://docs.zephyrproject.org/3.7.0/_images/xiao_rp2040.webp)
 
 XIAO RP2040
 
@@ -75,7 +75,7 @@ the datasheet to see the possible routings for each peripheral.
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO RP2040 Pinout](../../../../_images/xiao_rp2040_pinout.webp)
+![XIAO RP2040 Pinout](https://docs.zephyrproject.org/3.7.0/_images/xiao_rp2040_pinout.webp)
 
 XIAO RP2040 Pinout
 

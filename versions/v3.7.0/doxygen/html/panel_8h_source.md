@@ -59,4 +59,4 @@ panel.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [display](dir_91baf1483b4b8962ae5c4d52a6474304.md)
 - [panel.h](panel_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

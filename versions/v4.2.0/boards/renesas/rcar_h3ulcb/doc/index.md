@@ -8,8 +8,8 @@ original_path: boards/renesas/rcar_h3ulcb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rcar_h3ulcb.jpg](../../../../_images/rcar_h3ulcb.jpg)
-](../../../../_images/rcar_h3ulcb.jpg)
+[![../../../../_images/rcar_h3ulcb.jpg](https://docs.zephyrproject.org/4.2.0/_images/rcar_h3ulcb.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rcar_h3ulcb.jpg)
 
 R-Car H3ULCB
 

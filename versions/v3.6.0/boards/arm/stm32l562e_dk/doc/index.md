@@ -45,7 +45,7 @@ the STM32L562E-DK Discovery board:
 - 2 user LEDs
 - User and reset push-buttons
 
-![STM32L562E-DK Discovery](../../../../_images/stm32l562e_dk.jpg)
+![STM32L562E-DK Discovery](https://docs.zephyrproject.org/3.6.0/_images/stm32l562e_dk.jpg)
 
 More information about the board can be found at the [STM32L562E-DK Discovery website](https://www.st.com/en/evaluation-tools/stm32l562e-dk.html).
 

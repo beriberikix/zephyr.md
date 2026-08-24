@@ -25,7 +25,7 @@ and K82 MCUs.
   running an open source bootloader, offers options for serial communication,
   flash programming, and run-control debugging
 
-![FRDM-K82F](../../../../_images/frdm_k82f.jpg)
+![FRDM-K82F](https://docs.zephyrproject.org/3.6.0/_images/frdm_k82f.jpg)
 
 ## Hardware
 

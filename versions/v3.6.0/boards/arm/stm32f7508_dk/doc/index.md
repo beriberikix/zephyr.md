@@ -39,7 +39,7 @@ and high-speed connectivity features. Important board features include:
 - USB OTG FS with Micro-AB connectors
 - Ethernet connector compliant with IEEE-802.3-2002
 
-![STM32F7508-DK](../../../../_images/stm32f7508_dk.jpg)
+![STM32F7508-DK](https://docs.zephyrproject.org/3.6.0/_images/stm32f7508_dk.jpg)
 
 More information about the board can be found at the [32F7508-DK website](https://www.st.com/en/evaluation-tools/stm32f7508-dk.html).
 

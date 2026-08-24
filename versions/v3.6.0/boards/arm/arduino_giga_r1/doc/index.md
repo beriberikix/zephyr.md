@@ -28,7 +28,7 @@ The board features:
 - Audio jack
 - ATECC608A secure element
 
-![Arduino GIGA R1 WiFi](../../../../_images/arduino_giga_r1.jpg)
+![Arduino GIGA R1 WiFi](https://docs.zephyrproject.org/3.6.0/_images/arduino_giga_r1.jpg)
 
 More information about the board, including the datasheet, pinout and
 schematics, can be found at the [Arduino GIGA website](https://docs.arduino.cc/hardware/giga-r1-wifi).

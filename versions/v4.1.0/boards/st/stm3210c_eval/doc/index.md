@@ -8,8 +8,8 @@ original_path: boards/st/stm3210c_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm3210c_eval.jpg](../../../../_images/stm3210c_eval.jpg)
-](../../../../_images/stm3210c_eval.jpg)
+[![../../../../_images/stm3210c_eval.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm3210c_eval.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm3210c_eval.jpg)
 
 STM3210C Evaluation
 
@@ -140,7 +140,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![STM3210C_EVAL connectors](../../../../_images/stm3210c_eval_connectors.jpg)
+![STM3210C_EVAL connectors](https://docs.zephyrproject.org/4.1.0/_images/stm3210c_eval_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

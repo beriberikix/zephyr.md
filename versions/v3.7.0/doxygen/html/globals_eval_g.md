@@ -79,4 +79,4 @@ Here is a list of all enum values with links to the files they belong to:
 - GNSS\_SYSTEM\_QZSS : [gnss.h](group__gnss__interface.md#gga928a05b4e820a9fcc8bc2db81f5f8c79aac9ccafec388c071468ef16981679dff)
 - GNSS\_SYSTEM\_SBAS : [gnss.h](group__gnss__interface.md#gga928a05b4e820a9fcc8bc2db81f5f8c79a3e759b71b7e531d6c2c3068108e263dd)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

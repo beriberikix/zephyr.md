@@ -97,4 +97,4 @@ Firmware upload phases.
 | BT\_MESH\_DFD\_UPLOAD\_PHASE\_TRANSFER\_ERROR | The Store Firmware procedure or Store Firmware OOB procedure failed. |
 | BT\_MESH\_DFD\_UPLOAD\_PHASE\_TRANSFER\_SUCCESS | The Store Firmware procedure or the Store Firmware OOB procedure completed successfully. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/peregrine/sam4l_wm400_cape/doc/index.html
 
 Board Overview
 
-[![../../../../_images/wm-400-pin-out.webp](../../../../_images/wm-400-pin-out.webp)
-](../../../../_images/wm-400-pin-out.webp)
+[![../../../../_images/wm-400-pin-out.webp](https://docs.zephyrproject.org/4.2.0/_images/wm-400-pin-out.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/wm-400-pin-out.webp)
 
 SAM4L WM-400 Cape Board
 

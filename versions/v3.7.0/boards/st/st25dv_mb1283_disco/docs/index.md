@@ -22,7 +22,7 @@ of the ST25DV series.
 It is based on the NFC ST25DV04K device embedded on a daughter card using a Class 5 antenna
 and a STM32 processor driving a mother board.
 
-![ST25DV_MB1283_DISCO](../../../../_images/st25dv_mb1283_disco.jpg)
+![ST25DV_MB1283_DISCO](https://docs.zephyrproject.org/3.7.0/_images/st25dv_mb1283_disco.jpg)
 
 Note
 

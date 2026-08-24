@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4255a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32fg13-slwrb4255a.jpg](../../../../../_images/efr32fg13-slwrb4255a.jpg)
-](../../../../../_images/efr32fg13-slwrb4255a.jpg)
+[![../../../../../_images/efr32fg13-slwrb4255a.jpg](https://docs.zephyrproject.org/4.2.0/_images/efr32fg13-slwrb4255a.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/efr32fg13-slwrb4255a.jpg)
 
 EFR32FG13 2400/915 MHz 19 dBm Dual Band (SLWRB4255A)
 

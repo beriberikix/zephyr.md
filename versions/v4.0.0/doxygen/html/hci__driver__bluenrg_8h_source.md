@@ -81,4 +81,4 @@ Hardware reset the BlueNRG network coprocessor.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [bluetooth](dir_95992648d5602e5c89adafd44bf19e08.md)
 - [hci\_driver\_bluenrg.h](hci__driver__bluenrg_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

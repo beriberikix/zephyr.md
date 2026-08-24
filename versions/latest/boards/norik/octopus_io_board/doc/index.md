@@ -8,8 +8,8 @@ original_path: boards/norik/octopus_io_board/doc/index.html
 
 Board Overview
 
-[![../../../../_images/octopus_io_board.webp](../../../../_images/octopus_io_board.webp)
-](../../../../_images/octopus_io_board.webp)
+[![../../../../_images/octopus_io_board.webp](https://docs.zephyrproject.org/4.2.0/_images/octopus_io_board.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/octopus_io_board.webp)
 
 Octopus IO-Board
 

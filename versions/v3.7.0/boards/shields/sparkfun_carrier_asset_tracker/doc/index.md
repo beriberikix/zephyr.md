@@ -25,7 +25,7 @@ Besides, this shield has an integrated ICM-20948 Inertial Measurement Unit
 (IMU) for Nine Degree-Of-Freedom, a built-in micro-SD card socket for data
 logging as well as a nano SIM card port.
 
-![Sparkfun SparkFun MicroMod Asset Tracker Shield](../../../../_images/sparkfun_carrier_asset_tracker.webp)
+![Sparkfun SparkFun MicroMod Asset Tracker Shield](https://docs.zephyrproject.org/3.7.0/_images/sparkfun_carrier_asset_tracker.webp)
 
 Sparkfun SparkFun MicroMod Asset Tracker Shield (Credit: Sparkfun)
 

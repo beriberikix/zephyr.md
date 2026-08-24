@@ -305,4 +305,4 @@ Here is a list of all functions with links to the files they belong to:
 - auxdisplay\_write() : [auxdisplay.h](group__auxdisplay__interface.md#ga231dd862cda34ea4c0c8870675556f8d)
 - aw9523b\_get\_lock() : [aw9523b.h](aw9523b_8h.md#a3a9fc514a7f53f404543683787ca83ce)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -144,4 +144,4 @@ int32\_t psa\_status\_t
 - [zephyr](dir_29af7cd685f88a83c3e1809490f18587.md)
 - [secure\_storage](dir_b251feb5349caf21c27bf417dfd4e083.md)
 - [ps.h](ps_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

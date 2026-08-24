@@ -41,7 +41,7 @@ Zephyr OS is ported to run on the Cortex®-M4 core.
     - 1x Blue Bluetooth LED
     - 1x Yellow WiFi LED
 
-![96Boards Meerkat96](../../../../_images/96b_meerkat96.jpg)
+![96Boards Meerkat96](https://docs.zephyrproject.org/3.7.0/_images/96b_meerkat96.jpg)
 
 More information about the board can be found at the
 [96Boards website](https://www.96boards.org/product/imx7-96/).

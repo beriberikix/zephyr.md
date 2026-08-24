@@ -20,7 +20,7 @@ MCK-RA8T1 kit includes the items below:
 - Permanent magnet synchronous motors
 - Accessories (cables, standoffs, etc.)
 
-![RA8T1 Evaluation Kit](../../../../_images/mck_ra8t1_product_contents.jpg)
+![RA8T1 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/mck_ra8t1_product_contents.jpg)
 
 MCK-RA8T1 product contents (Credit: Renesas Electronics Corporation)
 
@@ -54,7 +54,7 @@ The specifications of the CPU board are shown below:
 - Ethrnet connector
 - microSD card connector
 
-![RA8T1 Evaluation Kit](../../../../_images/mck_ra8t1.jpg)
+![RA8T1 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/mck_ra8t1.jpg)
 
 CPU Board Layout (Credit: Renesas Electronics Corporation)
 
@@ -67,8 +67,8 @@ write a program (firmware) of RA8T1 with it.
 
 Detail Hardware feature for the RA8T1 MCU group can be found at [RA8T1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra8t1-group-users-manual-hardware?r=25463106)
 
-[![RA8T1 MCU group feature](../../../../_images/ra8t1_block_diagram.png)
-](../../../../_images/ra8t1_block_diagram.png)
+[![RA8T1 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra8t1_block_diagram.png)
+](https://docs.zephyrproject.org/4.0.0/_images/ra8t1_block_diagram.png)
 
 RA8T1 Block diagram (Credit: Renesas Electronics Corporation)
 

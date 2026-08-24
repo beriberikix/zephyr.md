@@ -204,4 +204,4 @@ Structure for stream flash context.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [dfu](dir_b8bb0fd55a94366ea1f20beca08b160d.md)
 - [flash\_img.h](flash__img_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

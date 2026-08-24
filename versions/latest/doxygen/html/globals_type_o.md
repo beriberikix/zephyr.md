@@ -24,4 +24,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - onoff\_transition\_fn : [onoff.h](group__resource__mgmt__onoff__apis.md#ga51fdf83642c5fa16112ce143382ec5d1)
 - openthread\_receive\_cb : [openthread.h](modules_2openthread_2include_2openthread_8h.md#a8f95392e11afa85e9bd80569c1793e76)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

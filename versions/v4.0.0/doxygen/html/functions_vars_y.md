@@ -23,4 +23,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - year\_one : [mcp7940n\_rtc\_year](structmcp7940n__rtc__year.md#aa092364e515280cb627318dcc46fd247)
 - year\_ten : [mcp7940n\_rtc\_year](structmcp7940n__rtc__year.md#a9770cbfb607d917f444369c2c0a433eb)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

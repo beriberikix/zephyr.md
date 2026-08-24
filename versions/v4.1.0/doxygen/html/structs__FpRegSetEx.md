@@ -24,4 +24,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/arch/x86/ia32/[thread.h](arch_2x86_2ia32_2thread_8h_source.md)
 
 - [s\_FpRegSetEx](structs__FpRegSetEx.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

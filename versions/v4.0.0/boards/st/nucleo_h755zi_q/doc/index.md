@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h755zi_q/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h755zi_q.webp](../../../../_images/nucleo_h755zi_q.webp)
-](../../../../_images/nucleo_h755zi_q.webp)
+[![../../../../_images/nucleo_h755zi_q.webp](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h755zi_q.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h755zi_q.webp)
 
 Nucleo H755ZI-Q
 

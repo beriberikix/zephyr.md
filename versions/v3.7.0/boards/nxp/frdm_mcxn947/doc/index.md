@@ -19,7 +19,7 @@ an on-board MCU-Link debugger. MCX N Series are high-performance, low-power
 microcontrollers with intelligent peripherals and accelerators providing multi-tasking
 capabilities and performance efficiency.
 
-![FRDM-MCXN947](../../../../_images/frdm_mcxn947.webp)
+![FRDM-MCXN947](https://docs.zephyrproject.org/3.7.0/_images/frdm_mcxn947.webp)
 
 ## Hardware
 

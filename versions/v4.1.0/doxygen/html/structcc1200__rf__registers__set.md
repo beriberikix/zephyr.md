@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/ieee802154/[cc1200.h](cc1200_8h_source.md)
 
 - [cc1200\_rf\_registers\_set](structcc1200__rf__registers__set.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

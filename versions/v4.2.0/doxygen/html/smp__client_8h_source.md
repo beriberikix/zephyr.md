@@ -262,4 +262,4 @@ SMP transport object for sending SMP responses.
 - [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
 - [smp](dir_e62cfe388532d436a5daefec152a780b.md)
 - [smp\_client.h](smp__client_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

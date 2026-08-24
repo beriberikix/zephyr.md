@@ -8,8 +8,8 @@ original_path: boards/olimex/stm32_e407/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimex_stm32_e407.jpg](../../../../_images/olimex_stm32_e407.jpg)
-](../../../../_images/olimex_stm32_e407.jpg)
+[![../../../../_images/olimex_stm32_e407.jpg](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_e407.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_e407.jpg)
 
 OLIMEX-STM32-E407
 
@@ -113,7 +113,7 @@ on-chip / on-board
 
 ### Pin Mapping
 
-![OLIMEX-STM32-E407 connectors](../../../../_images/olimex-stm32-e407-front.jpg)
+![OLIMEX-STM32-E407 connectors](https://docs.zephyrproject.org/4.2.0/_images/olimex-stm32-e407-front.jpg)
 
 OLIMEX-STM32-E407 connectors
 

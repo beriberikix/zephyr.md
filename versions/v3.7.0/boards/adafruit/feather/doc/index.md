@@ -31,7 +31,7 @@ nRF52840 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-![Adafruit Feather nRF52840 Express](../../../../_images/adafruit_feather_nrf52840.jpg)
+![Adafruit Feather nRF52840 Express](https://docs.zephyrproject.org/3.7.0/_images/adafruit_feather_nrf52840.jpg)
 
 ## Hardware
 

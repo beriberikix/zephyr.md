@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/clock\_control/[renesas\_cpg\_mssr.h](drivers_2clock__control_2renesas__cpg__mssr_8h_source.md)
 
 - [rcar\_cpg\_clk](structrcar__cpg__clk.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

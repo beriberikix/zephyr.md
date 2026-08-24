@@ -8,8 +8,8 @@ original_path: boards/ruiside/ra8d1_vision_board/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ra8d1_vision_board.webp](../../../../_images/ra8d1_vision_board.webp)
-](../../../../_images/ra8d1_vision_board.webp)
+[![../../../../_images/ra8d1_vision_board.webp](https://docs.zephyrproject.org/4.2.0/_images/ra8d1_vision_board.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ra8d1_vision_board.webp)
 
 RA8D1 Vision Board
 

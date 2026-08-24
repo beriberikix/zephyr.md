@@ -8,8 +8,8 @@ original_path: boards/infineon/xmc47_relax_kit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xmc47_relax_kit.jpg](../../../../_images/xmc47_relax_kit.jpg)
-](../../../../_images/xmc47_relax_kit.jpg)
+[![../../../../_images/xmc47_relax_kit.jpg](https://docs.zephyrproject.org/4.0.0/_images/xmc47_relax_kit.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/xmc47_relax_kit.jpg)
 
 XMC47-RELAX-KIT
 

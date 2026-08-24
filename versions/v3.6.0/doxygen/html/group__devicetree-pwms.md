@@ -1126,4 +1126,4 @@ Returns
 See also
 :   [DT\_PWMS\_CELL\_BY\_NAME()](#ga69233198a489283068bc1ded5072ca26)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

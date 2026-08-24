@@ -48,4 +48,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/usb/[usb\_ch9.h](usb__ch9_8h_source.md)
 
 - [usb\_desc\_header](structusb__desc__header.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

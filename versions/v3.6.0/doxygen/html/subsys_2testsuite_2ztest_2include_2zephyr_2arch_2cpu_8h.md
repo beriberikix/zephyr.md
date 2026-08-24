@@ -62,4 +62,4 @@ cpu.h File Reference
 - [zephyr](dir_7f004fc53e18f085dec56f1200601760.md)
 - [arch](dir_e42bd8a5ae419d47808ff796159491b8.md)
 - [cpu.h](subsys_2testsuite_2ztest_2include_2zephyr_2arch_2cpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

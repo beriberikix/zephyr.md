@@ -141,4 +141,4 @@ Macros to abstract toolchain specific capabilities.
 - [secure\_storage](dir_b251feb5349caf21c27bf417dfd4e083.md)
 - [its](dir_8ffdb9b26f60d93440ec7ee1d2751029.md)
 - [common.h](subsys_2secure__storage_2include_2internal_2zephyr_2secure__storage_2its_2common_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -14,14 +14,14 @@ the drop-down menu on the left and select the desired version.
 
 The Waveshare Open103Z-64 is a development board equipped with STM32F103ZE MCU.
 
-![../../../../_images/waveshare_open103z.jpg](../../../../_images/waveshare_open103z.jpg)
+![../../../../_images/waveshare_open103z.jpg](https://docs.zephyrproject.org/3.6.0/_images/waveshare_open103z.jpg)
 
 ## Hardware
 
 The Waveshare Open103Z provides the following hardware components:
 
-![../../../../_images/waveshare_connector.PNG](../../../../_images/waveshare_connector.PNG)
-![../../../../_images/waveshare_connector_list.PNG](../../../../_images/waveshare_connector_list.PNG)
+![../../../../_images/waveshare_connector.PNG](https://docs.zephyrproject.org/3.6.0/_images/waveshare_connector.PNG)
+![../../../../_images/waveshare_connector_list.PNG](https://docs.zephyrproject.org/3.6.0/_images/waveshare_connector_list.PNG)
 
 ### Supported Features
 

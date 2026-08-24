@@ -50,7 +50,7 @@ Zephyr OS is ported to run on the Cortex®-M4 core.
   - Wi-Fi® 802.11b/g/n
   - Bluetooth® Low Energy 4.1
 
-![STM32MP157C-DK2 Discovery](../../../../_images/en.stm32mp157c-dk2.jpg)
+![STM32MP157C-DK2 Discovery](https://docs.zephyrproject.org/3.6.0/_images/en.stm32mp157c-dk2.jpg)
 
 More information about the board can be found at the
 [STM32P157C Discovery website](https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/stm32mp157c-dk2.html).

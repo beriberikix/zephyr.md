@@ -8,8 +8,8 @@ original_path: boards/bcdevices/plt_demo_v2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/blueclover_plt_demo_v2.jpg](../../../../_images/blueclover_plt_demo_v2.jpg)
-](../../../../_images/blueclover_plt_demo_v2.jpg)
+[![../../../../_images/blueclover_plt_demo_v2.jpg](https://docs.zephyrproject.org/4.0.0/_images/blueclover_plt_demo_v2.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/blueclover_plt_demo_v2.jpg)
 
 Blue Clover PLT Demo V2 nRF52832
 

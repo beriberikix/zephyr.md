@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4161a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32mg12-slwrb4161a.jpeg](../../../../../_images/efr32mg12-slwrb4161a.jpeg)
-](../../../../../_images/efr32mg12-slwrb4161a.jpeg)
+[![../../../../../_images/efr32mg12-slwrb4161a.jpeg](https://docs.zephyrproject.org/4.1.0/_images/efr32mg12-slwrb4161a.jpeg)
+](https://docs.zephyrproject.org/4.1.0/_images/efr32mg12-slwrb4161a.jpeg)
 
 EFR32MG12 2.4 GHz 19 dBm (SLWRB4161A)
 

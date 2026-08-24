@@ -100,4 +100,4 @@ Here is a list of all enum values with links to the files they belong to:
 - TSL2540\_SENSOR\_GAIN\_4 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a4bda1e9f1384f0ef751ee8f9a0061d42)
 - TSL2540\_SENSOR\_GAIN\_64 : [tsl2540.h](tsl2540_8h.md#af3d41ccc17abc24a7d10d950f19f45e9a459c02cbca3e4109695fe646d128fc7f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

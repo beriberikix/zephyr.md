@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f722ze/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f722ze.jpg](../../../../_images/nucleo_f722ze.jpg)
-](../../../../_images/nucleo_f722ze.jpg)
+[![../../../../_images/nucleo_f722ze.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f722ze.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f722ze.jpg)
 
 Nucleo F722ZE
 

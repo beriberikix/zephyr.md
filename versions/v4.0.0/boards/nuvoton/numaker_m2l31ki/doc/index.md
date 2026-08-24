@@ -8,8 +8,8 @@ original_path: boards/nuvoton/numaker_m2l31ki/doc/index.html
 
 Board Overview
 
-[![../../../../_images/m2l31ki.webp](../../../../_images/m2l31ki.webp)
-](../../../../_images/m2l31ki.webp)
+[![../../../../_images/m2l31ki.webp](https://docs.zephyrproject.org/4.0.0/_images/m2l31ki.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/m2l31ki.webp)
 
 NUMAKER M2L31KI
 

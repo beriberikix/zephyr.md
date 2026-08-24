@@ -205,4 +205,4 @@ Here is a list of all enum values with links to the files they belong to:
 - NXP\_PINT\_NONE : [nxp\_pint.h](nxp__pint_8h.md#aea62e6522d0de4c0ce63ae04b2d36f7ca8594c4bbe2858dd19a176d851a6175c5)
 - NXP\_PINT\_RISING : [nxp\_pint.h](nxp__pint_8h.md#aea62e6522d0de4c0ce63ae04b2d36f7ca20ed11aa9c65c91d30b169ae8a754d40)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

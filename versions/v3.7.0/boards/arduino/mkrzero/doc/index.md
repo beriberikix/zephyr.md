@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The Arduino MKR Zero built with smaller MKR form factor and powered by Atmel’s SAMD21 MCU.
 This board come with microSD card holder that allows you to play with music files with no extra hardware.
 
-![Arduino MKR Zero](../../../../_images/arduino_mkrzero.jpg)
+![Arduino MKR Zero](https://docs.zephyrproject.org/3.7.0/_images/arduino_mkrzero.jpg)
 
 ## Hardware
 

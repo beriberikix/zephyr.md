@@ -33,11 +33,11 @@ This sensor board has the following features:
 - UART
 - WDT
 
-![BL654 Sensor Board front and back](../../../../_images/bl654_sensor_board.jpg)
+![BL654 Sensor Board front and back](https://docs.zephyrproject.org/3.7.0/_images/bl654_sensor_board.jpg)
 
 BL654 Sensor Board front and back
 
-![BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)](../../../../_images/bl654_sensor_board_usb_swd_programmer.jpg)
+![BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)](https://docs.zephyrproject.org/3.7.0/_images/bl654_sensor_board_usb_swd_programmer.jpg)
 
 BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)
 

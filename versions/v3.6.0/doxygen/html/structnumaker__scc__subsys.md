@@ -67,4 +67,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/clock\_control/[clock\_control\_numaker.h](clock__control__numaker_8h_source.md)
 
 - [numaker\_scc\_subsys](structnumaker__scc__subsys.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

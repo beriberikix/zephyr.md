@@ -278,4 +278,4 @@ cpu.h
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [cortex\_a\_r](dir_cde462911e3dbfe61dba09f2df37ee97.md)
 - [cpu.h](arm_2cortex__a__r_2cpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -44,4 +44,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[i2c\_emul.h](i2c__emul_8h_source.md)
 
 - [i2c\_emul\_api](structi2c__emul__api.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/adi/max78000fthr/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max78000fthr_img1.webp](../../../../_images/max78000fthr_img1.webp)
-](../../../../_images/max78000fthr_img1.webp)
+[![../../../../_images/max78000fthr_img1.webp](https://docs.zephyrproject.org/4.1.0/_images/max78000fthr_img1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max78000fthr_img1.webp)
 
 MAX78000FTHR
 
@@ -41,7 +41,7 @@ platform for quick proof-of-concepts and early software development to enhance t
 
 The Zephyr port is running on the MAX78000 MCU.
 
-![MAX78000 FTHR](../../../../_images/max78000fthr_img11.webp)
+![MAX78000 FTHR](https://docs.zephyrproject.org/4.1.0/_images/max78000fthr_img11.webp)
 
 ## Hardware
 

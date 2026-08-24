@@ -11,7 +11,7 @@ original_path: boards/shields/npm6001_ek/doc/index.html
 The nPM6001 EK lets you test different functions and features of the nPM6001
 Power Management Integrated Circuit (PMIC).
 
-![nPM6001 EK](../../../../_images/npm6001_ek.jpg)
+![nPM6001 EK](https://docs.zephyrproject.org/4.1.0/_images/npm6001_ek.jpg)
 
 nPM6001 EK
 

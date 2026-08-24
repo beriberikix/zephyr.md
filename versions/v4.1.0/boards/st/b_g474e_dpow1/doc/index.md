@@ -8,8 +8,8 @@ original_path: boards/st/b_g474e_dpow1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/b_g474e_dpow1.jpg](../../../../_images/b_g474e_dpow1.jpg)
-](../../../../_images/b_g474e_dpow1.jpg)
+[![../../../../_images/b_g474e_dpow1.jpg](https://docs.zephyrproject.org/4.1.0/_images/b_g474e_dpow1.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/b_g474e_dpow1.jpg)
 
 B-G474E-DPOW1 Discovery
 

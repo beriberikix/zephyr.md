@@ -8,8 +8,8 @@ original_path: boards/innblue/innblue21/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf9160_innblue21.jpg](../../../../_images/nrf9160_innblue21.jpg)
-](../../../../_images/nrf9160_innblue21.jpg)
+[![../../../../_images/nrf9160_innblue21.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf9160_innblue21.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf9160_innblue21.jpg)
 
 nRF9160 INNBLUE21
 

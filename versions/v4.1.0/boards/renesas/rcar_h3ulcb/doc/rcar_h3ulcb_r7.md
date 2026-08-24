@@ -13,7 +13,7 @@ original_path: boards/renesas/rcar_h3ulcb/doc/rcar_h3ulcb_r7.html
 
 It is possible to order 2 different types of H3 Starter Kit Boards, one with Ethernet connection onboard and one with Ethernet connection on ComExpress.
 
-![R-Car starter kit](../../../../_images/rcar_h3ulcb_starter_kit.jpg)
+![R-Car starter kit](https://docs.zephyrproject.org/4.1.0/_images/rcar_h3ulcb_starter_kit.jpg)
 
 Note
 
@@ -25,7 +25,7 @@ More information about the board can be found at [Renesas R-Car Starter Kit webs
 
 Hardware capabilities for the H3ULCB for can be found on the [eLinux H3SK page](https://elinux.org/R-Car/Boards/H3SK) of the board.
 
-![R-Car starter kit features](../../../../_images/rcar_h3ulcb_features.jpg)
+![R-Car starter kit features](https://docs.zephyrproject.org/4.1.0/_images/rcar_h3ulcb_features.jpg)
 
 Note
 

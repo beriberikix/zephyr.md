@@ -34,11 +34,11 @@ This development kit has the following features:
 - UART
 - WDT
 
-![RM1xx development kit (DVK)](../../../../_images/RM186-DVK.jpg)
+![RM1xx development kit (DVK)](https://docs.zephyrproject.org/3.7.0/_images/RM186-DVK.jpg)
 
 RM1xx development kit (DVK) (Credit: Ezurio)
 
-![RM1xx module](../../../../_images/RM186-SM.jpg)
+![RM1xx module](https://docs.zephyrproject.org/3.7.0/_images/RM186-SM.jpg)
 
 RM1xx module (Credit: Ezurio)
 

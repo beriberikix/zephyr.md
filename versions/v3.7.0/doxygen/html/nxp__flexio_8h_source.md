@@ -220,4 +220,4 @@ struct nxp\_flexio\_child\_res res
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [nxp\_flexio](dir_f4ffe9d878970d9b53b3a8be58885b76.md)
 - [nxp\_flexio.h](nxp__flexio_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

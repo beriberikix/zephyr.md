@@ -256,4 +256,4 @@ Return values
 Note
 :   This function blocks until the transfer is completed or network error happens. The integrity of the client structure must be ensured until the function returns.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

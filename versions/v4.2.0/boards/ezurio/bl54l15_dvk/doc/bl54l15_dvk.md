@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl54l15_dvk/doc/bl54l15_dvk.html
 
 Board Overview
 
-[![../../../../_images/bl54l15_dvk.webp](../../../../_images/bl54l15_dvk.webp)
-](../../../../_images/bl54l15_dvk.webp)
+[![../../../../_images/bl54l15_dvk.webp](https://docs.zephyrproject.org/4.2.0/_images/bl54l15_dvk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/bl54l15_dvk.webp)
 
 BL54L15 DVK
 

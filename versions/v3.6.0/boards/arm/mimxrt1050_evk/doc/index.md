@@ -26,7 +26,7 @@ interface, SPDIF, and I2S audio interface.
 The following document refers to the discontinued MIMXRT1050-EVK board. For the
 MIMXRT1050-EVKB board, refer to [Board Revisions](#board-revisions) section.
 
-![MIMXRT1050-EVK](../../../../_images/mimxrt1050_evk.jpg)
+![MIMXRT1050-EVK](https://docs.zephyrproject.org/3.6.0/_images/mimxrt1050_evk.jpg)
 
 ## Hardware
 

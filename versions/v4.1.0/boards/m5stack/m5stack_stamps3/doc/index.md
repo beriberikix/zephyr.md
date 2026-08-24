@@ -8,8 +8,8 @@ original_path: boards/m5stack/m5stack_stamps3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/m5stack_stamps3.webp](../../../../_images/m5stack_stamps3.webp)
-](../../../../_images/m5stack_stamps3.webp)
+[![../../../../_images/m5stack_stamps3.webp](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3.webp)
 
 StampS3
 
@@ -60,8 +60,8 @@ The Zephyr m5stack\_stamps3 board can be used on various applications. It
 therefore publishes a header definition to be used in different shields:
 [`m5stack,stamps3-header`](../../../../build/dts/api/bindings/gpio/m5stack%2Cstamps3-header.md#std-dtcompatible-m5stack-stamps3-header).
 
-[![M5Stack StampS3 Header](../../../../_images/m5stack_stamps3_header.webp)
-](../../../../_images/m5stack_stamps3_header.webp)
+[![M5Stack StampS3 Header](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3_header.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3_header.webp)
 
 M5Stack StampS3 connector header
 

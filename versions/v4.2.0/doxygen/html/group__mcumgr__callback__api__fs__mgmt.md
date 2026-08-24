@@ -52,4 +52,4 @@ The type of operation that is being requested for a given file access callback.
 | FS\_MGMT\_FILE\_ACCESS\_STATUS | Access to get status of file. |
 | FS\_MGMT\_FILE\_ACCESS\_HASH\_CHECKSUM | Access to calculate hash or checksum of file. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

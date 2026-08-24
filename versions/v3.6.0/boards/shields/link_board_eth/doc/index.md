@@ -18,7 +18,7 @@ It was developed as an expansion component for the reel board.
 See [reel board](../../../arm/reel_board/doc/index.md#reel-board) documentation for more information about
 link board family and how to connect it to the reel board.
 
-![link board ETH](../../../../_images/link_board_eth.jpg)
+![link board ETH](https://docs.zephyrproject.org/3.6.0/_images/link_board_eth.jpg)
 
 ## Hardware
 

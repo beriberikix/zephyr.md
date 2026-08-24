@@ -11,7 +11,7 @@ original_path: boards/shields/mikroe_adc_click/doc/index.html
 The MikroElektronika ADC Click carries the [MCP3204](https://www.microchip.com/wwwproducts/en/en010533) 12-bit
 Analog-to-Digital converter in a [mikroBUS](https://www.mikroe.com/mikrobus)™ form factor.
 
-![MikroElektronika ADC Click](../../../../_images/adc-click.jpg)
+![MikroElektronika ADC Click](https://docs.zephyrproject.org/4.2.0/_images/adc-click.jpg)
 
 MikroElektronika ADC Click (Credit: MikroElektronika)
 

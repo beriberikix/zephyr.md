@@ -8,8 +8,8 @@ original_path: boards/snps/hsdk4xd/doc/index.html
 
 Board Overview
 
-[![../../../../_images/hsdk4xd.jpg](../../../../_images/hsdk4xd.jpg)
-](../../../../_images/hsdk4xd.jpg)
+[![../../../../_images/hsdk4xd.jpg](https://docs.zephyrproject.org/4.2.0/_images/hsdk4xd.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/hsdk4xd.jpg)
 
 ARC HS4x/HS4xD Development Kit
 
@@ -91,7 +91,7 @@ The functionality of the Pmod connectors is programmable and includes GPIO, UART
 The location of the pins on the Pmod connectors is shown in Figure below. Detailed pin descriptions
 depending on the pin multiplexer settings are provided in the subsequent sections.
 
-![Pinout Diagram of the Pmod](../../../../_images/pinout_diagram_of_the_pmod1.jpg)
+![Pinout Diagram of the Pmod](https://docs.zephyrproject.org/4.2.0/_images/pinout_diagram_of_the_pmod1.jpg)
 
 #### Pmod\_A Connector
 
@@ -152,7 +152,7 @@ connector. The GPIO column is the default assignment after Reset.
 The ARC HSDK4xD features a set of MikroBUS headers. Figure below shows the relevant function assignments,
 fully compatible with the MikroBUS standard. Table below shows the pin assignment on the I/O Multiplexer.
 
-![mikrobus header](../../../../_images/mikrobus_header1.jpg)
+![mikrobus header](https://docs.zephyrproject.org/4.2.0/_images/mikrobus_header1.jpg)
 
 | Pin | I/O | Pin | I/O |
 | --- | --- | --- | --- |
@@ -177,7 +177,7 @@ the ARC HSDK4xD board is fixed to 3V3. Note that the ICSP header is also not ava
 shields do not require this ICSP header as the SPI master interface on this ICSP header
 is also available on the `IO10` to `IO13` pins.
 
-![arduino shield interface](../../../../_images/arduino_shield_interface1.jpg)
+![arduino shield interface](https://docs.zephyrproject.org/4.2.0/_images/arduino_shield_interface1.jpg)
 
 Table below shows the pin assignment on the I/O Multiplexer. Multiplexing is controlled by software
 using the `CREG_GPIO_MUX` register (see Pinmux ). After a reset, all ports are configured as GPIO inputs.

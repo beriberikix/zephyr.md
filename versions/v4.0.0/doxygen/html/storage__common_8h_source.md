@@ -136,4 +136,4 @@ Return values of the PSA Secure Storage API.
 - [include](dir_3887dba27d172300e5fca4cbd714c7ed.md)
 - [psa](dir_d06fbc62883e41d574c8881d2ac75d4f.md)
 - [storage\_common.h](storage__common_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

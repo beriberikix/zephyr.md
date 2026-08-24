@@ -131,4 +131,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - uuid\_16 : [bt\_ots\_obj\_type](structbt__ots__obj__type.md#ae39b7a368314d1a771cf3573d2077095)
 - uuids : [bt\_mesh\_model](structbt__mesh__model.md#a274c811c22b764908599127b128ce584)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -18,7 +18,7 @@ for several 2.4 GHz air interface standards including Bluetooth 5.2 (Basic data
 rate, Enhanced data rate, LE, Indoor positioning and BLE Mesh),
 Zigbee 3.0, Homekit, 6LoWPAN, Thread and 2.4 Ghz proprietary.
 
-![TLSR9518ADK80D](../../../../_images/tlsr9518adk80d.jpg)
+![TLSR9518ADK80D](https://docs.zephyrproject.org/3.7.0/_images/tlsr9518adk80d.jpg)
 
 More information about the board can be found at the [Telink B91 Generic Starter Kit Hardware Guide](https://wiki.telink-semi.cn/wiki/Hardware/B91_Generic_Starter_Kit_Hardware_Guide/) [[2]](#id3) website.
 
@@ -29,7 +29,7 @@ KB SRAM (128 KB of Data Local Memory and 128 KB of Instruction Local Memory), ex
 stereo audio codec, 14 bit AUX ADC, analog and digital Microphone input, PWM, flexible IO interfaces,
 and other peripheral blocks required for advanced IoT, hearable, and wearable devices.
 
-![TLSR9518ADK80D_SOC](../../../../_images/tlsr9518_block_diagram.jpg)
+![TLSR9518ADK80D_SOC](https://docs.zephyrproject.org/3.7.0/_images/tlsr9518_block_diagram.jpg)
 
 The TLSR9518ADK80D default board configuration provides the following hardware components:
 

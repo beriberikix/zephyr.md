@@ -329,4 +329,4 @@ Here is a list of all functions with links to the files they belong to:
 - mqtt\_subscribe() : [mqtt.h](group__mqtt__socket.md#ga40d226b891b8f62f2c486bbb11ce9678)
 - mqtt\_unsubscribe() : [mqtt.h](group__mqtt__socket.md#ga4ff43a198e93e332b5553a4d0b59261d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

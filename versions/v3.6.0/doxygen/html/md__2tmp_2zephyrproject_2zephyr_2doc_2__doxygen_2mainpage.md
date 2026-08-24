@@ -27,4 +27,4 @@ The Zephyr kernel supports multiple architectures, including ARM Cortex-M, Intel
 
 Zephyr is permissively licensed using the Apache 2.0 license (as found in the [project's GitHub LICENSE file](https://github.com/zephyrproject-rtos/zephyr/blob/main/LICENSE). There are some imported or reused components of the Zephyr project that use other licensing, as described in [Licensing of Zephyr Project components](https://docs.zephyrproject.org/latest/LICENSING.html#zephyr-licensing).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

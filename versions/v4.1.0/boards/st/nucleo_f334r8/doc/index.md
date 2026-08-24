@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f334r8/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f334r8.jpg](../../../../_images/nucleo_f334r8.jpg)
-](../../../../_images/nucleo_f334r8.jpg)
+[![../../../../_images/nucleo_f334r8.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f334r8.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f334r8.jpg)
 
 Nucleo F334R8
 
@@ -147,7 +147,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F334R8 connectors](../../../../_images/nucleo_f334r8_connectors.jpg)
+![Nucleo F334R8 connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f334r8_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

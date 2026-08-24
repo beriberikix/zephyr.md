@@ -8,8 +8,8 @@ original_path: boards/arduino/giga_r1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_giga_r1.jpg](../../../../_images/arduino_giga_r1.jpg)
-](../../../../_images/arduino_giga_r1.jpg)
+[![../../../../_images/arduino_giga_r1.jpg](https://docs.zephyrproject.org/4.2.0/_images/arduino_giga_r1.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_giga_r1.jpg)
 
 Arduino GIGA R1 WiFi
 

@@ -146,4 +146,4 @@ Parameters
     | lifetime | the duration of the timeout in seconds. |
     | now | the time at which the timeout started counting down, in milliseconds. This is generally a captured value of [k\_uptime\_get\_32()](group__clock__apis.md#ga9253cfb7b46af4d8994349323ce9872b "Get system uptime (32-bit version)."). |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

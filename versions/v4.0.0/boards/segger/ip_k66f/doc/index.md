@@ -8,8 +8,8 @@ original_path: boards/segger/ip_k66f/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ip_k66f.jpg](../../../../_images/ip_k66f.jpg)
-](../../../../_images/ip_k66f.jpg)
+[![../../../../_images/ip_k66f.jpg](https://docs.zephyrproject.org/4.0.0/_images/ip_k66f.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/ip_k66f.jpg)
 
 IP Switch Board
 

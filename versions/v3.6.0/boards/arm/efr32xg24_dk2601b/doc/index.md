@@ -16,7 +16,7 @@ The EFR32MG24 Mighty Gecko Board dev kit contains
 a Wireless System-On-Chip from the EFR32MG24 family built on an
 ARM Cortex®-M33F processor with excellent low power capabilities.
 
-[![SLWRB4180A Mighty Gecko Radio Board](../../../../_images/efr32xg24_dk2601b.jpg)](../../../../_images/efr32xg24_dk2601b.jpg)
+[![SLWRB4180A Mighty Gecko Radio Board](https://docs.zephyrproject.org/3.6.0/_images/efr32xg24_dk2601b.jpg)](https://docs.zephyrproject.org/3.6.0/_images/efr32xg24_dk2601b.jpg)
 
 xG24-DK2601B (image courtesy of Silicon Labs)
 

@@ -357,4 +357,4 @@ Type for R-Car pin.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [pinctrl](dir_c0bb3bf986f9412b3a6b9d85dc06c157.md)
 - [pinctrl\_rcar\_common.h](pinctrl__rcar__common_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

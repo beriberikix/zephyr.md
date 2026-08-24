@@ -21,4 +21,4 @@ Here is a list of all enums with links to the files they belong to:
 - x86\_memmap\_source : [memmap.h](memmap_8h.md#ae4f3b51d56ed1ddb36a78d0238a8bdc5)
 - xfer\_direction : [pcie\_ep.h](pcie__ep_8h.md#acd2605f2fb5676ded5f125712681d458)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -58,4 +58,4 @@ Here is a list of all enums with links to the files they belong to:
 - ipv6cp\_option\_type : [ppp.h](group__ppp.md#gaf30172a9fead40463d129a5afeaf1ac3)
 - it8xxx2\_vcmp\_sensor\_attribute : [it8xxx2\_vcmp.h](drivers_2sensor_2it8xxx2__vcmp_8h.md#acd4ae03345c06203e80ad4f535098165)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

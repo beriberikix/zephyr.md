@@ -81,4 +81,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/sensing/[sensing\_datatypes.h](sensing__datatypes_8h_source.md)
 
 - [sensing\_sensor\_value\_uint32](structsensing__sensor__value__uint32.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

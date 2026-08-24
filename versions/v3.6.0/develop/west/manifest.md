@@ -21,7 +21,7 @@ West’s view of the repositories in a [west workspace](../../glossary.md#term-w
 history, looks like the following figure (though some parts of this example are
 specific to upstream Zephyr’s use of west):
 
-![West multi-repo history](../../_images/west-mr-model.png)
+![West multi-repo history](https://docs.zephyrproject.org/3.6.0/_images/west-mr-model.png)
 
 West multi-repo history
 

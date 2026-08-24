@@ -66,4 +66,4 @@ Returns
 - [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
 - [transport](dir_9a3f12841ae237fd7345c80156d89ad0.md)
 - [smp\_udp.h](smp__udp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

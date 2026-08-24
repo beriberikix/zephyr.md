@@ -234,4 +234,4 @@ Here is a list of all functions with links to the files they belong to:
 - zvfs\_get\_obj\_lock\_and\_cond() : [fdtable.h](fdtable_8h.md#a54e1f1cbd983631903757a93997c3fab)
 - zvfs\_reserve\_fd() : [fdtable.h](fdtable_8h.md#a0805f751464ff9a51a463841ce35ff5f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

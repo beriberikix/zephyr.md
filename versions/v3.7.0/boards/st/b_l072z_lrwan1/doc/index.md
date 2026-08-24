@@ -57,7 +57,7 @@ This kit provides:
   > - 2 push-buttons (user and reset)
 - Arduino\* Uno V3 connectors
 
-![B-L072Z-LRWAN1](../../../../_images/b_l072z_lrwan1.jpg)
+![B-L072Z-LRWAN1](https://docs.zephyrproject.org/3.7.0/_images/b_l072z_lrwan1.jpg)
 
 More information about the board can be found at the [B-L072Z-LRWAN1 website](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html).
 

@@ -110,4 +110,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - syscon\_api\_read\_reg : [syscon.h](group__syscon__interface.md#gab23dbb591174dcb5944ce534c851eea8)
 - syscon\_api\_write\_reg : [syscon.h](group__syscon__interface.md#ga1939885e191dbf49ef1698425085ee56)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

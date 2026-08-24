@@ -8,8 +8,8 @@ original_path: boards/lilygo/tdongle_s3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/tdongle_s3.webp](../../../../_images/tdongle_s3.webp)
-](../../../../_images/tdongle_s3.webp)
+[![../../../../_images/tdongle_s3.webp](https://docs.zephyrproject.org/4.2.0/_images/tdongle_s3.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/tdongle_s3.webp)
 
 T-Dongle S3
 

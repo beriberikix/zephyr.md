@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra4m3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra4m3.webp](../../../../_images/ek_ra4m3.webp)
-](../../../../_images/ek_ra4m3.webp)
+[![../../../../_images/ek_ra4m3.webp](https://docs.zephyrproject.org/4.1.0/_images/ek_ra4m3.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra4m3.webp)
 
 RA4M3 Evaluation Kit
 
@@ -86,8 +86,8 @@ The MCU in this series incorporates a high-performance Arm Cortex®-M33 core run
 
 Detailed hardware features for the RA4M3 MCU group can be found at [RA4M3 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/ra4m3-group-users-manual-hardware)
 
-[![RA4M3 MCU group feature](../../../../_images/ra4m3_block_diagram.webp)
-](../../../../_images/ra4m3_block_diagram.webp)
+[![RA4M3 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra4m3_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ra4m3_block_diagram.webp)
 
 RA4M3 Block diagram (Credit: Renesas Electronics Corporation)
 

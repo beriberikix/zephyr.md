@@ -54,4 +54,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[shell.h](bluetooth_2mesh_2shell_8h_source.md)
 
 - [bt\_mesh\_shell\_target](structbt__mesh__shell__target.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

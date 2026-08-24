@@ -17,7 +17,7 @@ provides details about the support provided for these three Armv7-m mps2 board t
 - System Tick System Clock (SYSTICK)
 - Cortex-M System Design Kit UART
 
-![ARM V2M MPS2](../../../../_images/mps21.jpg)
+![ARM V2M MPS2](https://docs.zephyrproject.org/4.2.0/_images/mps21.jpg)
 
 In addition to enabling actual hardware usage, these board targets can
 also use [FVP](https://developer.arm.com/downloads/view/FMFVP) to emulate the platforms running on the MPS2+.

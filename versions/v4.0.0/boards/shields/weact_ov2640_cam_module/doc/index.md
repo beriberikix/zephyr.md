@@ -13,7 +13,7 @@ MiniSTM32H7xx boards, providing camera sensor capabilities. This shield
 integrates the OV2640 camera module, which is capable of capturing images
 and video with a resolution of up to 2 megapixels.
 
-![OV2640 Camera Sensor](../../../../_images/ov2640.webp)
+![OV2640 Camera Sensor](https://docs.zephyrproject.org/4.0.0/_images/ov2640.webp)
 
 More information about the OV2640 camera sensor can be found on the
 [MiniSTM32H7xx GitHub](https://github.com/WeActStudio/MiniSTM32H7xx) and in the [OV2640 datasheet](https://www.uctronics.com/download/cam_module/OV2640DS.pdf).

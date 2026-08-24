@@ -8,8 +8,8 @@ original_path: boards/ti/cc26x2r1_launchxl/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cc26x2r1_launchxl.jpg](../../../../_images/cc26x2r1_launchxl.jpg)
-](../../../../_images/cc26x2r1_launchxl.jpg)
+[![../../../../_images/cc26x2r1_launchxl.jpg](https://docs.zephyrproject.org/4.1.0/_images/cc26x2r1_launchxl.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/cc26x2r1_launchxl.jpg)
 
 CC26x2R1 LaunchXL
 

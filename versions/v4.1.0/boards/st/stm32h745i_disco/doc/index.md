@@ -8,8 +8,8 @@ original_path: boards/st/stm32h745i_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h745i-disco.jpg](../../../../_images/stm32h745i-disco.jpg)
-](../../../../_images/stm32h745i-disco.jpg)
+[![../../../../_images/stm32h745i-disco.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32h745i-disco.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32h745i-disco.jpg)
 
 STM32H745I Discovery
 

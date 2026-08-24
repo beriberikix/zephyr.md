@@ -658,4 +658,4 @@ Wait time for the MAC to send a new frame before interrupting the burst.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [phy.h](phy_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

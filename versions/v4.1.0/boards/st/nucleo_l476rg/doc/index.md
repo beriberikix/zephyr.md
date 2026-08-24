@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l476rg/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l476rg.jpg](../../../../_images/nucleo_l476rg.jpg)
-](../../../../_images/nucleo_l476rg.jpg)
+[![../../../../_images/nucleo_l476rg.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l476rg.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l476rg.jpg)
 
 Nucleo L476RG
 
@@ -185,8 +185,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L476RG Arduino connectors](../../../../_images/nucleo_l476rg_arduino.jpg)
-![Nucleo L476RG Morpho connectors](../../../../_images/nucleo_l476rg_morpho.jpg)
+![Nucleo L476RG Arduino connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l476rg_arduino.jpg)
+![Nucleo L476RG Morpho connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l476rg_morpho.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

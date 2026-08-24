@@ -89,7 +89,7 @@ through various use cases.
                   - USB2.0 Type-A receptacle
                   - 19 V power jack for USB PD
 
-![STM32G081B-EVAL](../../../../_images/stm32g081b_eval.jpg)
+![STM32G081B-EVAL](https://docs.zephyrproject.org/3.6.0/_images/stm32g081b_eval.jpg)
 
 More information about the board can be found at the [STM32G081B-EVAL website](https://www.st.com/en/evaluation-tools/stm32g081b-eval.html) [[1]](#id1).
 

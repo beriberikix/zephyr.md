@@ -13,7 +13,7 @@ And a highly integrated embedded controller with system functions.
 It is suitable for mobile system applications. The picture below is
 the IT81302 MECC board (also known as it8xxx2\_evb) and its debug card.
 
-![IT81302 EVB](../../../../_images/it8xxx2_evb_and_debug_card.jpg)
+![IT81302 EVB](https://docs.zephyrproject.org/4.0.0/_images/it8xxx2_evb_and_debug_card.jpg)
 
 To find out more about ITE, visit our World Wide Web at:[ITE’s website](https://www.ite.com.tw/en/product/cate2/IT81202) [[1]](#id2)
 
@@ -74,7 +74,7 @@ You can get them at: [ITE’s website](https://www.ite.com.tw/en/product/cate2/I
 3. Connect the Download Board J5 to J8 on the it8xxx2\_evb board.
 4. Connect the USB to UART wire to it8xxx2\_evb.
 
-   ![it8xxx2_evb wiring](../../../../_images/it8xxx2_evb_wiring.jpg)
+   ![it8xxx2_evb wiring](https://docs.zephyrproject.org/4.0.0/_images/it8xxx2_evb_wiring.jpg)
 
    Note
 
@@ -119,14 +119,14 @@ to the it8xxx2 board flash.
    Second, turn on the it8xxx2\_evb board switch.
    Then, configure your winflash tool like below.
 
-   > ![../../../../_images/WinFlashTool_P21.jpg](../../../../_images/WinFlashTool_P21.jpg)
+   > ![../../../../_images/WinFlashTool_P21.jpg](https://docs.zephyrproject.org/4.0.0/_images/WinFlashTool_P21.jpg)
    >
-   > ![../../../../_images/WinFlashTool_P41.jpg](../../../../_images/WinFlashTool_P41.jpg)
+   > ![../../../../_images/WinFlashTool_P41.jpg](https://docs.zephyrproject.org/4.0.0/_images/WinFlashTool_P41.jpg)
 2. Using winflash tool flash zephyr.bin into your ITE board.
    First, click `Load` button and select your zephyr.bin file.
    Second, click `run` to flash the iamge into board.
 
-   > ![../../../../_images/WinFlashTool_P31.jpg](../../../../_images/WinFlashTool_P31.jpg)
+   > ![../../../../_images/WinFlashTool_P31.jpg](https://docs.zephyrproject.org/4.0.0/_images/WinFlashTool_P31.jpg)
 3. At this point, you have flashed your image into ITE board and
    it will work if you turn on ITE board. You can use a terminal program
    to verify flashing worked correctly.
@@ -134,7 +134,7 @@ to the it8xxx2 board flash.
    For example, open device manager to find the USB Serial Port(COM4) and use your
    terminal program to connect it(Speed: 115200).
 
-   > ![../../../../_images/WinFlashTool_P11.jpg](../../../../_images/WinFlashTool_P11.jpg)
+   > ![../../../../_images/WinFlashTool_P11.jpg](https://docs.zephyrproject.org/4.0.0/_images/WinFlashTool_P11.jpg)
 4. Turn on the it8xxx2\_evb board switch, you should see `"Hello World! it8xxx2_evb"`
    sent by the board. If you don’t see this message, press the Reset button and the
    message should appear.

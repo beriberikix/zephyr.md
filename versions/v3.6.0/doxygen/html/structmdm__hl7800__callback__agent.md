@@ -41,4 +41,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/modem/[hl7800.h](hl7800_8h_source.md)
 
 - [mdm\_hl7800\_callback\_agent](structmdm__hl7800__callback__agent.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -17,7 +17,7 @@ an FE310 RISC-V SoC.
 More information can be found on
 [SiFive’s website](https://www.sifive.com/boards/hifive1).
 
-![SiFive HiFive1 board](../../../../_images/hifive1.jpg)
+![SiFive HiFive1 board](https://docs.zephyrproject.org/3.6.0/_images/hifive1.jpg)
 
 ## Programming and debugging
 

@@ -8,8 +8,8 @@ original_path: boards/adafruit/trinket_m0/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_trinket_m0.jpg](../../../../_images/adafruit_trinket_m0.jpg)
-](../../../../_images/adafruit_trinket_m0.jpg)
+[![../../../../_images/adafruit_trinket_m0.jpg](https://docs.zephyrproject.org/4.0.0/_images/adafruit_trinket_m0.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/adafruit_trinket_m0.jpg)
 
 Trinket M0
 

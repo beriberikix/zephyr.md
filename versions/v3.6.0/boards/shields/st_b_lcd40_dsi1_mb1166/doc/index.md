@@ -20,11 +20,11 @@ Note
 Currently only the older version MB1166-A03 is supported by Zephyr.
 The newer version MB1166-A09 does not get initialized correctly (see [GitHub #60888](https://github.com/zephyrproject-rtos/zephyr/issues/60888)).
 
-![B-LCD40-DSI1 MB1166 Image](../../../../_images/image.jpg)
+![B-LCD40-DSI1 MB1166 Image](https://docs.zephyrproject.org/3.6.0/_images/image.jpg)
 
 B-LCD40-DSI1 MB1166 Image
 
-![B-LCD40-DSI1 MB1166 Connector](../../../../_images/connectors.jpg)
+![B-LCD40-DSI1 MB1166 Connector](https://docs.zephyrproject.org/3.6.0/_images/connectors.jpg)
 
 B-LCD40-DSI1 MB1166 Connector
 

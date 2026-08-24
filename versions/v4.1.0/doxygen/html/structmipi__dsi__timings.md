@@ -110,4 +110,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[mipi\_dsi.h](drivers_2mipi__dsi_8h_source.md)
 
 - [mipi\_dsi\_timings](structmipi__dsi__timings.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

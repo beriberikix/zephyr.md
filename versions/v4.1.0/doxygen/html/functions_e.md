@@ -214,4 +214,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - extra\_samplings : [adc\_sequence\_options](structadc__sequence__options.md#a29f8ac4cdf6740f56bcd70a0a027e56a)
 - extrefsel : [comp\_nrf\_comp\_diff\_config](structcomp__nrf__comp__diff__config.md#a9ea88f6afb084054ad8579d32b2ed947), [comp\_nrf\_comp\_se\_config](structcomp__nrf__comp__se__config.md#a48c793942f10f04ec6fa8ea54ae9f8ac), [comp\_nrf\_lpcomp\_config](structcomp__nrf__lpcomp__config.md#a4b69733d3fc9a20f9958a027d3898ec3)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

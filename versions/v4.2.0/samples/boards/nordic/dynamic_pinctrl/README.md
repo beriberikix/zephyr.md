@@ -40,7 +40,7 @@ initialization priorities set in the `prj.conf` file.
 The diagram below shows the pins assigned to the default and alternative
 configurations.
 
-![../../../../_images/nrf52840dk-dynamic-pinctrl.webp](../../../../_images/nrf52840dk-dynamic-pinctrl.webp)
+![../../../../_images/nrf52840dk-dynamic-pinctrl.webp](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dk-dynamic-pinctrl.webp)
 
 Configuration for nRF52840 DK
 
@@ -73,19 +73,19 @@ Follow these steps to test the two configurations :
 2. Open two serial terminals, one connected to the default set of pins and the
    other connected to the alternative set of pins.
 
-   ![../../../../_images/terminals-empty.png](../../../../_images/terminals-empty.png)
+   ![../../../../_images/terminals-empty.png](https://docs.zephyrproject.org/4.2.0/_images/terminals-empty.png)
 
    Two serial terminals (left: default, right: alternative).
 3. Turn on the board. You should see a `Hello World!` message printed on
    the first terminal.
 
-   ![../../../../_images/terminals-default.png](../../../../_images/terminals-default.png)
+   ![../../../../_images/terminals-default.png](https://docs.zephyrproject.org/4.2.0/_images/terminals-default.png)
 
    `Hello World!` printed on the default set of pins.
 4. Press and hold the configuration-selection push-button (button 1 on the
    nRF52840 DK) and press the board reset button. You now should see a
    `Hello World!` message on the second terminal.
 
-   ![../../../../_images/terminals-alt.png](../../../../_images/terminals-alt.png)
+   ![../../../../_images/terminals-alt.png](https://docs.zephyrproject.org/4.2.0/_images/terminals-alt.png)
 
    `Hello World!` printed on the alternative set of pins.

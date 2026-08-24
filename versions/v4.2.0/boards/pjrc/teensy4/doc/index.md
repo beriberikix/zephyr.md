@@ -14,15 +14,15 @@ programming is done via the USB port.
 
 Teensy 4.0Teensy 4.1Sparkfun Teensy Micromod
 
-![TEENSY40](../../../../_images/teensy40.jpg)
+![TEENSY40](https://docs.zephyrproject.org/4.2.0/_images/teensy40.jpg)
 
 (Credit: [https://www.pjrc.com](https://www.pjrc.com))
 
-![TEENSY41](../../../../_images/teensy41.jpg)
+![TEENSY41](https://docs.zephyrproject.org/4.2.0/_images/teensy41.jpg)
 
 (Credit: [https://www.pjrc.com](https://www.pjrc.com))
 
-![TEENSYMM](../../../../_images/teensymm.webp)
+![TEENSYMM](https://docs.zephyrproject.org/4.2.0/_images/teensymm.webp)
 
 (Credit: [https://www.sparkfun.com](https://www.sparkfun.com))
 

@@ -22,7 +22,7 @@ programmer/debugger (KitProg3), a 512-Mbit Quad SPI NOR flash, a micro-B connect
 interface, a thermistor, an ambient light sensor, a 5-segment CapSense™ slider, two CapSense™ buttons, two
 user LEDs, and a push button. The board supports operating voltages from 1.8 V to 3.3 V for PSoC™ 6 MCU.
 
-[![Board Name](../../../../_images/cy8ckit_062s4.png)](../../../../_images/cy8ckit_062s4.png)
+[![Board Name](https://docs.zephyrproject.org/3.7.0/_images/cy8ckit_062s4.png)](https://docs.zephyrproject.org/3.7.0/_images/cy8ckit_062s4.png)
 
 Board Name (Credit: <owner>)
 

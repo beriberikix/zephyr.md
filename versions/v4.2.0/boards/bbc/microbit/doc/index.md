@@ -8,8 +8,8 @@ original_path: boards/bbc/microbit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/bbc_microbit.jpg](../../../../_images/bbc_microbit.jpg)
-](../../../../_images/bbc_microbit.jpg)
+[![../../../../_images/bbc_microbit.jpg](https://docs.zephyrproject.org/4.2.0/_images/bbc_microbit.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/bbc_microbit.jpg)
 
 micro:bit
 

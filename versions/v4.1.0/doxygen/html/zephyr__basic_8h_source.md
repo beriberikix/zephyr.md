@@ -133,4 +133,4 @@ Opening of the flash area has failed.
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [zephyr](dir_9b96e56ee9a524e0ef9971c4556f53ad.md)
 - [zephyr\_basic.h](zephyr__basic_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

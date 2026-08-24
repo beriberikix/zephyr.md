@@ -8,8 +8,8 @@ original_path: boards/01space/esp32c3_042_oled/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32c3_042_oled.webp](../../../../_images/esp32c3_042_oled.webp)
-](../../../../_images/esp32c3_042_oled.webp)
+[![../../../../_images/esp32c3_042_oled.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_042_oled.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_042_oled.webp)
 
 ESP32C3 0.42 OLED
 
@@ -109,7 +109,7 @@ on-chip / on-board
 
 See the following image:
 
-![01space ESP32C3 0.42 OLED Pinout](../../../../_images/esp32c3_042_oled_pinout.webp)
+![01space ESP32C3 0.42 OLED Pinout](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_042_oled_pinout.webp)
 
 01space ESP32C3 0.42 OLED Pinout
 

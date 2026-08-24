@@ -31,7 +31,7 @@ depending on the `AF` control bits. Other configuration parameters such as
 pull-up/down are controlled in the same block via `CONFIG` bits. This model is
 used by several SoC families, such as many from NXP and STM32.
 
-![../../_images/hw-cent-control.svg](../../_images/hw-cent-control.svg)
+![../../_images/hw-cent-control.svg](https://docs.zephyrproject.org/4.1.0/_images/hw-cent-control.svg)
 
 Example of pin control centralized into a single per-pin block
 
@@ -40,7 +40,7 @@ and configuration are controlled by multiple hardware blocks.
 The figure below illustrates a distributed approach where pin
 mapping is controlled by peripherals, such as in Nordic nRF SoCs.
 
-![../../_images/hw-dist-control.svg](../../_images/hw-dist-control.svg)
+![../../_images/hw-dist-control.svg](https://docs.zephyrproject.org/4.1.0/_images/hw-dist-control.svg)
 
 Example pin control distributed between peripheral registers and per-pin block
 

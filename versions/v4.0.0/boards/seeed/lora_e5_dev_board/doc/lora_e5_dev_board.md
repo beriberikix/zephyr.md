@@ -8,8 +8,8 @@ original_path: boards/seeed/lora_e5_dev_board/doc/lora_e5_dev_board.html
 
 Board Overview
 
-[![../../../../_images/lora_e5_dev_board.jpg](../../../../_images/lora_e5_dev_board.jpg)
-](../../../../_images/lora_e5_dev_board.jpg)
+[![../../../../_images/lora_e5_dev_board.jpg](https://docs.zephyrproject.org/4.0.0/_images/lora_e5_dev_board.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/lora_e5_dev_board.jpg)
 
 LoRa-E5 Dev Board
 
@@ -117,7 +117,7 @@ for pin muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![LoRa-E5 Dev Board Pinout](../../../../_images/lora_e5_dev_board_pinout.jpg)
+![LoRa-E5 Dev Board Pinout](https://docs.zephyrproject.org/4.0.0/_images/lora_e5_dev_board_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

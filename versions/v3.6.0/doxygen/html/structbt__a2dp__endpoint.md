@@ -72,4 +72,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[a2dp.h](a2dp_8h_source.md)
 
 - [bt\_a2dp\_endpoint](structbt__a2dp__endpoint.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -61,4 +61,4 @@ worldsemi\_ws2812c.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [led](dir_43259d1800ff16a5cdd32a96a4c7d34d.md)
 - [worldsemi\_ws2812c.h](worldsemi__ws2812c_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

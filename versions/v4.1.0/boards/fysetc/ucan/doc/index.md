@@ -8,8 +8,8 @@ original_path: boards/fysetc/ucan/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ucan.webp](../../../../_images/ucan.webp)
-](../../../../_images/ucan.webp)
+[![../../../../_images/ucan.webp](https://docs.zephyrproject.org/4.1.0/_images/ucan.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ucan.webp)
 
 UCAN
 

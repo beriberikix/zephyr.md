@@ -32,4 +32,4 @@ All references to the spec refer to IEEE 802.15.4-2020.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [ieee802154\_pkt.h](ieee802154__pkt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

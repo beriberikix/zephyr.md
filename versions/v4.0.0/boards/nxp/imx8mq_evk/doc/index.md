@@ -8,8 +8,8 @@ original_path: boards/nxp/imx8mq_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mimx8mq_evk.jpg](../../../../_images/mimx8mq_evk.jpg)
-](../../../../_images/mimx8mq_evk.jpg)
+[![../../../../_images/mimx8mq_evk.jpg](https://docs.zephyrproject.org/4.0.0/_images/mimx8mq_evk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/mimx8mq_evk.jpg)
 
 MIMX8MQ EVK
 

@@ -8,8 +8,8 @@ original_path: boards/renesas/rzt2l_rsk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzt2l_rsk.webp](../../../../_images/rzt2l_rsk.webp)
-](../../../../_images/rzt2l_rsk.webp)
+[![../../../../_images/rzt2l_rsk.webp](https://docs.zephyrproject.org/4.2.0/_images/rzt2l_rsk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzt2l_rsk.webp)
 
 Renesas Starter Kit+ for RZ/T2L
 
@@ -64,8 +64,8 @@ Octal Flash so you can evaluate various functions of the RZ/T2L without an exten
 
 The Renesas RZ/T2L MPU documentation can be found at [RZ/T2L Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzt2l-high-performance-mpu-realizing-high-speed-and-high-precision-real-time-control-ethercat) [[1]](#id3)
 
-[![RZ/T2L group feature](../../../../_images/rzt2l_block_diagram.webp)
-](../../../../_images/rzt2l_block_diagram.webp)
+[![RZ/T2L group feature](https://docs.zephyrproject.org/4.2.0/_images/rzt2l_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzt2l_block_diagram.webp)
 
 RZ/T2L block diagram (Credit: Renesas Electronics Corporation)
 

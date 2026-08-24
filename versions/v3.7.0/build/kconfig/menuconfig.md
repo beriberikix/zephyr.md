@@ -85,9 +85,9 @@ To run one of the configuration interfaces, do this:
 
    The two interfaces are shown below:
 
-   ![menuconfig interface](../../_images/menuconfig.png)
+   ![menuconfig interface](https://docs.zephyrproject.org/3.7.0/_images/menuconfig.png)
 
-   ![guiconfig interface](../../_images/guiconfig.png)
+   ![guiconfig interface](https://docs.zephyrproject.org/3.7.0/_images/guiconfig.png)
 
    `guiconfig` always shows the help text and other information related to
    the currently selected item in the bottom window pane. In the terminal
@@ -131,7 +131,7 @@ To run one of the configuration interfaces, do this:
 4. Pressing `Q` in the `menuconfig` interface will bring up the
    save-and-quit dialog (if there are changes to save):
 
-   ![Save and Quit Dialog](../../_images/menuconfig-quit.png)
+   ![Save and Quit Dialog](https://docs.zephyrproject.org/3.7.0/_images/menuconfig-quit.png)
 
    Press `Y` to save the kernel configuration options to the default
    filename (`zephyr/.config`). You will typically save to the default
@@ -156,9 +156,9 @@ directly to a symbol, press the `/` key (this also works in
 symbols by name and jump to them. In `guiconfig`, you can also change symbol
 values directly within the dialog.
 
-![menuconfig jump-to dialog](../../_images/menuconfig-jump-to.png)
+![menuconfig jump-to dialog](https://docs.zephyrproject.org/3.7.0/_images/menuconfig-jump-to.png)
 
-![guiconfig jump-to dialog](../../_images/guiconfig-jump-to.png)
+![guiconfig jump-to dialog](https://docs.zephyrproject.org/3.7.0/_images/guiconfig-jump-to.png)
 
 If you jump to a symbol that isn’t currently visible (e.g., due to having
 unsatisfied dependencies), then *show-all mode* will be enabled. In show-all

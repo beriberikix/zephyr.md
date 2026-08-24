@@ -8,8 +8,8 @@ original_path: boards/atmel/sam/sam4l_ek/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atmel-sam4l-ek-callouts.jpg](../../../../../_images/atmel-sam4l-ek-callouts.jpg)
-](../../../../../_images/atmel-sam4l-ek-callouts.jpg)
+[![../../../../../_images/atmel-sam4l-ek-callouts.jpg](https://docs.zephyrproject.org/4.1.0/_images/atmel-sam4l-ek-callouts.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/atmel-sam4l-ek-callouts.jpg)
 
 SAM4L-EK
 

@@ -8,8 +8,8 @@ original_path: boards/rakwireless/rak3172/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rak3172.webp](../../../../_images/rak3172.webp)
-](../../../../_images/rak3172.webp)
+[![../../../../_images/rak3172.webp](https://docs.zephyrproject.org/4.1.0/_images/rak3172.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/rak3172.webp)
 
 RAK3172
 
@@ -53,7 +53,7 @@ module.
   > - SPI
   > - SWD
 
-![RAK3172-pinout](../../../../_images/pinout.webp)
+![RAK3172-pinout](https://docs.zephyrproject.org/4.1.0/_images/pinout.webp)
 
 For more information about the RAK3172 stamp module:
 

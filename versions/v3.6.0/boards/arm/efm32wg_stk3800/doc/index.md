@@ -16,7 +16,7 @@ The EFM32 Wonder Gecko Starter Kit EFM32WG-STK3800 contains a MCU from the
 EFM32WG family built on ARM® Cortex®-M4F processor with excellent low
 power capabilities.
 
-![EFM32WG-STK3800](../../../../_images/efm32wg_stk3800.jpg)
+![EFM32WG-STK3800](https://docs.zephyrproject.org/3.6.0/_images/efm32wg_stk3800.jpg)
 
 EFM32WG-STK3800 (image courtesy of Silicon Labs)
 

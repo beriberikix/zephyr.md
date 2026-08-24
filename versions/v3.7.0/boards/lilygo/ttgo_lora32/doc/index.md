@@ -24,7 +24,7 @@ It’s available in two versions supporting two different frequency ranges and f
 
 Some of the ESP32 I/O pins are accessible on the board’s pin headers.
 
-[![Lilygo TTGO LoRa32 module](../../../../_images/ttgo_lora32.webp)](../../../../_images/ttgo_lora32.webp)
+[![Lilygo TTGO LoRa32 module](https://docs.zephyrproject.org/3.7.0/_images/ttgo_lora32.webp)](https://docs.zephyrproject.org/3.7.0/_images/ttgo_lora32.webp)
 
 Lilygo TTGO LoRa32 module
 

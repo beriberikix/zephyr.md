@@ -41,7 +41,7 @@ Here are some highlights of the STM32F072-EVAL board:
 - Smart Card slot
 - Motor control connector
 
-![STM32F072-EVAL](../../../../_images/stm32f072_eval.jpg)
+![STM32F072-EVAL](https://docs.zephyrproject.org/3.6.0/_images/stm32f072_eval.jpg)
 
 ## Hardware
 

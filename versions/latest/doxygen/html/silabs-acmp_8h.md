@@ -542,4 +542,4 @@ silabs-acmp.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [comparator](dir_4476dc01b2b080820bfbd896ecaf7aa9.md)
 - [silabs-acmp.h](silabs-acmp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -27,7 +27,7 @@ the following devices:
 - UART
 - WDT
 
-![nRF52 DK](../../../../_images/nrf52dk_nrf52832.jpg)
+![nRF52 DK](https://docs.zephyrproject.org/4.0.0/_images/nrf52dk_nrf52832.jpg)
 
 nRF52 DK (Credit: Nordic Semiconductor)
 

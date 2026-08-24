@@ -533,4 +533,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - WUC\_TYPE\_LEVEL\_LOW : [wuc\_ite\_it51xxx.h](wuc__ite__it51xxx_8h.md#a8f46aef09381a08af4bc4e88aff0fab3)
 - WUC\_TYPE\_LEVEL\_TRIG : [wuc\_ite\_it51xxx.h](wuc__ite__it51xxx_8h.md#ad8761c64e6c8463e679673269f719511)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

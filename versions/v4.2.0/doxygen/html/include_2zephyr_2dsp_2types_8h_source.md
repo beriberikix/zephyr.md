@@ -174,4 +174,4 @@ int8\_t q7\_t
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [dsp](dir_33029109ed37fedc3a135c3293a7868a.md)
 - [types.h](include_2zephyr_2dsp_2types_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

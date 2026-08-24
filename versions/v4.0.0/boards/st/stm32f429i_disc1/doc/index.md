@@ -8,8 +8,8 @@ original_path: boards/st/stm32f429i_disc1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f429i_disc1.jpg](../../../../_images/stm32f429i_disc1.jpg)
-](../../../../_images/stm32f429i_disc1.jpg)
+[![../../../../_images/stm32f429i_disc1.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32f429i_disc1.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32f429i_disc1.jpg)
 
 STM32F429I Discovery
 

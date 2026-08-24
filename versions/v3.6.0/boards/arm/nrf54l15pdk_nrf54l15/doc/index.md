@@ -35,7 +35,7 @@ the following devices:
 - UARTE
 - WDT
 
-![nRF54L15 PDK](../../../../_images/nrf54l15pdk_nrf54l15.webp)
+![nRF54L15 PDK](https://docs.zephyrproject.org/3.6.0/_images/nrf54l15pdk_nrf54l15.webp)
 
 nRF54L15 PDK (Credit: Nordic Semiconductor)
 

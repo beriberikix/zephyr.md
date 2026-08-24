@@ -121,4 +121,4 @@ Parameters
     | new\_addr | Array of bytes containing the link address. |
     | new\_len | Length of the link address array. This value should always be <= NET\_LINK\_ADDR\_MAX\_LENGTH. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

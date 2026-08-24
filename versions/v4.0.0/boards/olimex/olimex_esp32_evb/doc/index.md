@@ -8,8 +8,8 @@ original_path: boards/olimex/olimex_esp32_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ESP32-EVB.jpg](../../../../_images/ESP32-EVB.jpg)
-](../../../../_images/ESP32-EVB.jpg)
+[![../../../../_images/ESP32-EVB.jpg](https://docs.zephyrproject.org/4.0.0/_images/ESP32-EVB.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/ESP32-EVB.jpg)
 
 ESP32-EVB
 

@@ -192,4 +192,4 @@ Here is a list of all enum values with links to the files they belong to:
 - AXP192\_GPIO\_FUNC\_OUTPUT\_OD : [axp192.h](drivers_2mfd_2axp192_8h.md#ac92e5fa77591e02e49570d1a1c38e249af1c2244571c0a3b12c0ae94c583c1a4b)
 - AXP192\_GPIO\_FUNC\_PWM : [axp192.h](drivers_2mfd_2axp192_8h.md#ac92e5fa77591e02e49570d1a1c38e249a2634f857f19e03ab8337780025c25579)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

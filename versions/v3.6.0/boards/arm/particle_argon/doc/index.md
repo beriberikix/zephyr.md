@@ -33,7 +33,7 @@ For more information about the Particle Argon board:
 On the front of the board are RGB-LED, LED and LIPO circuitry.
 The RGB-LED is controlled by the nRF52840 via GPIO pins.
 
-![Particle Argon](../../../../_images/particle_argon.jpg)
+![Particle Argon](https://docs.zephyrproject.org/3.6.0/_images/particle_argon.jpg)
 
 Particle Argon (Credit: Particle Industries)
 

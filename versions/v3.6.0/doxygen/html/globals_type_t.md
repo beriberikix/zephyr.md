@@ -31,4 +31,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - tPreempFloatReg : [thread.h](arch_2x86_2ia32_2thread_8h.md#a559de7a9ab93bd874af8fd66a3851d01)
 - tracing\_data\_t : [tracing\_format.h](group__subsys__tracing__format__apis.md#ga1a947f2e998d283b58a5e056f7edbb24)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

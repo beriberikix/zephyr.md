@@ -73,7 +73,7 @@ hierarchy reflects the hardware’s physical layout. For example, let’s consid
 a board with three I2C peripherals connected to an I2C bus controller on an SoC,
 like this:
 
-![representation of a board with three I2C peripherals](../../_images/zephyr_dt_i2c_high_level.png)
+![representation of a board with three I2C peripherals](https://docs.zephyrproject.org/4.1.0/_images/zephyr_dt_i2c_high_level.png)
 
 Nodes corresponding to the I2C bus controller and each I2C peripheral would be
 present in the devicetree. Reflecting the hardware layout, the
@@ -108,7 +108,7 @@ the peripheral’s address on the bus.
 Here’s a tree representing the same example, but with real-world node
 names and properties you might see when working with I2C devices.
 
-![../../_images/zephyr_dt_i2c_example.png](../../_images/zephyr_dt_i2c_example.png)
+![../../_images/zephyr_dt_i2c_example.png](https://docs.zephyrproject.org/4.1.0/_images/zephyr_dt_i2c_example.png)
 
 I2C devicetree example with real-world names and properties.
 Node names are at the top of each node with a gray background.

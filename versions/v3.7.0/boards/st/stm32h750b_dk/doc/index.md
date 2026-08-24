@@ -33,7 +33,7 @@ programmer for the STM32 MCU and USB Virtual COM port bridge. STM32H750B-DK boar
 comes with the STM32CubeH7 MCU Package, which provides an STM32 comprehensive
 software HAL library as well as various software examples.
 
-![STM32H750B-DK](../../../../_images/stm32h750b_dk.png)
+![STM32H750B-DK](https://docs.zephyrproject.org/3.7.0/_images/stm32h750b_dk.png)
 
 More information about the board can be found at the [STM32H750B-DK website](https://www.st.com/en/evaluation-tools/stm32h750b-dk.html).
 More information about STM32H750 can be found here:

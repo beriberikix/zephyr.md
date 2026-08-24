@@ -208,4 +208,4 @@ Value of x rounded up to the next multiple of align.
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [sparc](dir_0b6b538994b3c7630127059eac21a61b.md)
 - [arch.h](sparc_2arch_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

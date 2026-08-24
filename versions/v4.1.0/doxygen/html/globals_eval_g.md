@@ -86,4 +86,4 @@ Here is a list of all enum values with links to the files they belong to:
 - GNSS\_SYSTEM\_SBAS : [gnss.h](group__gnss__interface.md#gga928a05b4e820a9fcc8bc2db81f5f8c79a3e759b71b7e531d6c2c3068108e263dd)
 - GRAM : [rpu\_hw\_if.h](rpu__hw__if_8h.md#a0af5845199daa5a85fbaf31347ca07b2a56b26140695810b82c8d01a40b68c0ef)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

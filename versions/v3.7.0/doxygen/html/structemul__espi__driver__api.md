@@ -56,4 +56,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[espi\_emul.h](espi__emul_8h_source.md)
 
 - [emul\_espi\_driver\_api](structemul__espi__driver__api.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

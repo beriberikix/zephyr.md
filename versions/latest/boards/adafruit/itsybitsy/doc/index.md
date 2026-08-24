@@ -8,8 +8,8 @@ original_path: boards/adafruit/itsybitsy/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_itsybitsy_nrf52840.jpeg](../../../../_images/adafruit_itsybitsy_nrf52840.jpeg)
-](../../../../_images/adafruit_itsybitsy_nrf52840.jpeg)
+[![../../../../_images/adafruit_itsybitsy_nrf52840.jpeg](https://docs.zephyrproject.org/4.2.0/_images/adafruit_itsybitsy_nrf52840.jpeg)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_itsybitsy_nrf52840.jpeg)
 
 ItsyBitsy nRF52840
 

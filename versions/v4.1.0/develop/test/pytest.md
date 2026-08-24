@@ -35,7 +35,7 @@ parallelization, building and reporting) remains the same as for other harnesses
 happens during the execution step. The below picture presents a simplified overview of the
 integration.
 
-![../../_images/twister_and_pytest.svg](../../_images/twister_and_pytest.svg)
+![../../_images/twister_and_pytest.svg](https://docs.zephyrproject.org/4.1.0/_images/twister_and_pytest.svg)
 
 If `harness: pytest` is used, twister delegates the test execution to pytest, by calling it as
 a subprocess. Required parameters (such as build directory, device to be used, etc.) are passed

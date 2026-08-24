@@ -23,4 +23,4 @@ include Directory Reference
 - [testsuite](dir_1abba8fd2d51532ae0fc663391fcb2bd.md)
 - [ztest](dir_baac9b2eb462986e22d73d5689d3a238.md)
 - [include](dir_c3f97f6cb043cb2f48a1d98a4dc6b6bd.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -151,8 +151,8 @@ for example, the audacity open source editor/player to load and play it.
 Use the ‘Import->Raw Data’ menu to load the sound.raw file as
 signed 16 bit PCM, Little Endian, mono format @16KHz:
 
-[![audio_import](../../../../_images/audio_import.png)](../../../../_images/audio_import.png)
+[![audio_import](https://docs.zephyrproject.org/3.7.0/_images/audio_import.png)](https://docs.zephyrproject.org/3.7.0/_images/audio_import.png)
 
 After the file is imported you can analyze and play the 1sec audio file:
 
-[![audio_file](../../../../_images/audio_file.png)](../../../../_images/audio_file.png)
+[![audio_file](https://docs.zephyrproject.org/3.7.0/_images/audio_file.png)](https://docs.zephyrproject.org/3.7.0/_images/audio_file.png)

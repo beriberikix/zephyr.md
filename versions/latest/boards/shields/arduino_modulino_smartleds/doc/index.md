@@ -11,7 +11,7 @@ original_path: boards/shields/arduino_modulino_smartleds/doc/index.html
 The Arduino Modulino smart LEDs is a QWIIC compatible module with 8 addressable
 LEDs.
 
-![Arduino Modulino Smart LEDs](../../../../_images/arduino_modulino_smartleds.webp)
+![Arduino Modulino Smart LEDs](https://docs.zephyrproject.org/4.2.0/_images/arduino_modulino_smartleds.webp)
 
 ## Programming
 

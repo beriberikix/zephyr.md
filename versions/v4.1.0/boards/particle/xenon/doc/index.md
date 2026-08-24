@@ -8,8 +8,8 @@ original_path: boards/particle/xenon/doc/index.html
 
 Board Overview
 
-[![../../../../_images/particle_xenon.jpg](../../../../_images/particle_xenon.jpg)
-](../../../../_images/particle_xenon.jpg)
+[![../../../../_images/particle_xenon.jpg](https://docs.zephyrproject.org/4.1.0/_images/particle_xenon.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/particle_xenon.jpg)
 
 Xenon
 

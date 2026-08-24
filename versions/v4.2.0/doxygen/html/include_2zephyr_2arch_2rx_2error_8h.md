@@ -57,4 +57,4 @@ arch\_irq\_unlock(0); \
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [rx](dir_eb52b7f9d95392aedf108916f743bdaf.md)
 - [error.h](include_2zephyr_2arch_2rx_2error_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

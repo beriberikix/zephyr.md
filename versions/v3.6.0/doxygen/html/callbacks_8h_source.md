@@ -816,4 +816,4 @@ mcumgr\_op\_t used in MGMT\_EVT\_OP\_CMD\_RECV
 - [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
 - [mgmt](dir_138c477f5f1e916a824d5e5e3c2b43b2.md)
 - [callbacks.h](callbacks_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/st/stm32h750b_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h750b_dk.png](../../../../_images/stm32h750b_dk.png)
-](../../../../_images/stm32h750b_dk.png)
+[![../../../../_images/stm32h750b_dk.png](https://docs.zephyrproject.org/4.2.0/_images/stm32h750b_dk.png)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32h750b_dk.png)
 
 STM32H750B Discovery Kit
 

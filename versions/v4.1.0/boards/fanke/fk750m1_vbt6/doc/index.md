@@ -8,8 +8,8 @@ original_path: boards/fanke/fk750m1_vbt6/doc/index.html
 
 Board Overview
 
-[![../../../../_images/fk750m1_vbt6.webp](../../../../_images/fk750m1_vbt6.webp)
-](../../../../_images/fk750m1_vbt6.webp)
+[![../../../../_images/fk750m1_vbt6.webp](https://docs.zephyrproject.org/4.1.0/_images/fk750m1_vbt6.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/fk750m1_vbt6.webp)
 
 FK750M1-VBT6
 

@@ -471,4 +471,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - zvfs\_reserve\_fd() : [fdtable.h](fdtable_8h.md#a0805f751464ff9a51a463841ce35ff5f)
 - zvfs\_select() : [fdtable.h](fdtable_8h.md#a8ced1fc0adbdf35b71ec486a8ec68665)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

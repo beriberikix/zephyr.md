@@ -8,8 +8,8 @@ original_path: boards/wch/ch32v003f4p6_dev_board/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ch32v003f4p6_dev_board.webp](../../../../_images/ch32v003f4p6_dev_board.webp)
-](../../../../_images/ch32v003f4p6_dev_board.webp)
+[![../../../../_images/ch32v003f4p6_dev_board.webp](https://docs.zephyrproject.org/4.2.0/_images/ch32v003f4p6_dev_board.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ch32v003f4p6_dev_board.webp)
 
 WCH CH32V003F4P6 Development Board
 

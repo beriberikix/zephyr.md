@@ -8,8 +8,8 @@ original_path: boards/infineon/kit_xmc72_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/kit_xmc72_evk.webp](../../../../_images/kit_xmc72_evk.webp)
-](../../../../_images/kit_xmc72_evk.webp)
+[![../../../../_images/kit_xmc72_evk.webp](https://docs.zephyrproject.org/4.2.0/_images/kit_xmc72_evk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/kit_xmc72_evk.webp)
 
 XMC7200 Evaluation Kit
 

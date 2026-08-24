@@ -12,7 +12,7 @@ the drop-down menu on the left and select the desired version.
 
 ## Overview
 
-![Pine64 PineTime](../../../../_images/PineTime_leaflet.jpg)
+![Pine64 PineTime](https://docs.zephyrproject.org/3.6.0/_images/PineTime_leaflet.jpg)
 
 PineTime leaflet (Credit: Pine64)
 
@@ -20,7 +20,7 @@ The Pine64 smartwatch, dubbed “PineTime”, is a product of a community effort
 for an open source smartwatch in collaboration with wearable RTOS and Linux
 app developers/communities.
 
-![Pine64 PineTime](../../../../_images/PineTime_DevKit0.jpg)
+![Pine64 PineTime](https://docs.zephyrproject.org/3.6.0/_images/PineTime_DevKit0.jpg)
 
 PineTime Dev Kit (Credit: Pine64)
 
@@ -113,7 +113,7 @@ contact with the programming cable.
 
 The pinout is:
 
-![PineTime SWD location](../../../../_images/PineTime_SWD_location.jpg)
+![PineTime SWD location](https://docs.zephyrproject.org/3.6.0/_images/PineTime_SWD_location.jpg)
 
 ### Unlocking the Flash memory
 

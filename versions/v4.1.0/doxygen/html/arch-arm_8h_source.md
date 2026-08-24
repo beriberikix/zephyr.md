@@ -1065,4 +1065,4 @@ uint8\_t dummy
 - [xen](dir_5d31353de41f154afd9f3c68bc3a8a3d.md)
 - [public](dir_a9d090e3588b677c614b5c45cd68e13b.md)
 - [arch-arm.h](arch-arm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

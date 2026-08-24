@@ -34,7 +34,7 @@ For more information about the Particle Boron board:
 On the front of the board are RGB-LED, LED and LIPO circuitry.
 The RGB-LED is controlled by the nRF52840 via GPIO pins.
 
-![Particle Boron](../../../../_images/particle_boron.jpg)
+![Particle Boron](https://docs.zephyrproject.org/3.7.0/_images/particle_boron.jpg)
 
 Particle Boron (Credit: Particle Industries)
 

@@ -65,4 +65,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - jwt\_payload\_len() : [jwt.h](group__jwt.md#gaab49bf586392b0687aff97a27238fe85)
 - jwt\_sign() : [jwt.h](group__jwt.md#gaa000189c83e9b9113f401cd7d523cefe)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

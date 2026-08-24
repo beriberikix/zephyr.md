@@ -33,4 +33,4 @@ Here is a list of all functions with links to the files they belong to:
 - jwt\_init\_builder() : [jwt.h](group__jwt.md#gab10ee40ee3c0b3eea98051c2acbb8a75)
 - jwt\_sign() : [jwt.h](group__jwt.md#gaa000189c83e9b9113f401cd7d523cefe)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

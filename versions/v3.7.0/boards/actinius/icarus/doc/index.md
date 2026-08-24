@@ -12,7 +12,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 ## Overview
 
-![Icarus IoT Dev Board](../../../../_images/Icarus_front.jpg)
+![Icarus IoT Dev Board](https://docs.zephyrproject.org/3.7.0/_images/Icarus_front.jpg)
 
 Icarus IoT Dev Board (nRF9160 Feather)
 
@@ -44,7 +44,7 @@ following devices (provided directly by Nordic):
 
 The detailed information about the on-board hardware can be found at the [Icarus Product Website](https://www.actinius.com/icarus) [[2]](#id6).
 
-![Icarus IoT Dev Board w/ Pinouts](../../../../_images/Icarus_pinouts.jpg)
+![Icarus IoT Dev Board w/ Pinouts](https://docs.zephyrproject.org/3.7.0/_images/Icarus_pinouts.jpg)
 
 Icarus IoT Dev Board w/ Pinouts
 

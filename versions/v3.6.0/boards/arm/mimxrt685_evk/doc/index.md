@@ -23,7 +23,7 @@ The i.MX RT600 family provides up to 4.5MB of on-chip SRAM and several
 high-bandwidth interfaces to access off-chip flash, including an Octal/Quad SPI
 interface with an on-the-fly decryption engine.
 
-![MIMXRT685-EVK](../../../../_images/mimxrt685_evk.jpg)
+![MIMXRT685-EVK](https://docs.zephyrproject.org/3.6.0/_images/mimxrt685_evk.jpg)
 
 ## Hardware
 

@@ -8,8 +8,8 @@ original_path: boards/particle/nrf52_blenano2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52_blenano2.jpg](../../../../_images/nrf52_blenano2.jpg)
-](../../../../_images/nrf52_blenano2.jpg)
+[![../../../../_images/nrf52_blenano2.jpg](https://docs.zephyrproject.org/4.1.0/_images/nrf52_blenano2.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nrf52_blenano2.jpg)
 
 Redbear Labs Nano v2
 
@@ -106,11 +106,11 @@ on-chip / on-board
 
 BLE nano v2 pinout
 
-![NANO2](../../../../_images/nrf52_blenano21.jpg)
+![NANO2](https://docs.zephyrproject.org/4.1.0/_images/nrf52_blenano21.jpg)
 
 DAPLink board
 
-![DAP](../../../../_images/dap.jpg)
+![DAP](https://docs.zephyrproject.org/4.1.0/_images/dap.jpg)
 
 The DAPLink USB board acts as a dongle. DAPLink debug probes appear on the host computer as a USB disk.
 It also regulates 5V from USB to 3.3V via the onboard LDO to power Nano v2.

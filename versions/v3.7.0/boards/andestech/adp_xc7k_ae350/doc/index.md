@@ -22,8 +22,8 @@ of fundamental peripheral IPs.
 
 1st figure shows the green PCB is ADP-XC7K160 and 2nd figure shows the red PCB is ADP-XC7K410.
 
-![ADP-XC7K160](../../../../_images/adp_xc7k160.jpg)
-![ADP-XC7K410](../../../../_images/adp_xc7k410.jpg)
+![ADP-XC7K160](https://docs.zephyrproject.org/3.7.0/_images/adp_xc7k160.jpg)
+![ADP-XC7K410](https://docs.zephyrproject.org/3.7.0/_images/adp_xc7k410.jpg)
 
 More information can be found on [ADP-XC7K160/410](http://www.andestech.com/en/products-solutions/andeshape-platforms/adp-xc7k160-410/) [[1]](#id1) and [AndeShape AE350](http://www.andestech.com/en/products-solutions/andeshape-platforms/ae350-axi-based-platform-pre-integrated-with-n25f-nx25f-a25-ax25/) [[2]](#id3) websites.
 
@@ -150,7 +150,7 @@ Andes ICE management software, ICEman, on this host computer.
 AICE is used for flashing and debugging the board. Please connect AICE to both
 ADP-XC7K board and the host computer as shown in the figure.
 
-![Connect AICE](../../../../_images/connect_aice.jpg)
+![Connect AICE](https://docs.zephyrproject.org/3.7.0/_images/connect_aice.jpg)
 
 More information can be found on [AICE-MINI+](http://www.andestech.com/en/products-solutions/andeshape-platforms/aice-mini-plus/) [[3]](#id5), [AICE-MICRO](http://www.andestech.com/en/products-solutions/andeshape-platforms/aice-micro/) [[4]](#id7) website
 

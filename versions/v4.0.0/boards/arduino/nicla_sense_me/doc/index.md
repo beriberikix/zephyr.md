@@ -13,7 +13,7 @@ nrf52832 ARM Cortex-M4F CPU. The board houses 4 low power industrial grade senso
 that can measure rotation, acceleration, pressure, humidity, temperature, air quality
 and CO2 levels.
 
-![Arduino Nicla Sense ME](../../../../_images/arduino_nicla_sense_me.jpg)
+![Arduino Nicla Sense ME](https://docs.zephyrproject.org/4.0.0/_images/arduino_nicla_sense_me.jpg)
 
 Arduino Nicla Sense ME (Credit: Arduino)
 
@@ -58,7 +58,7 @@ Arduino Nicla Sense ME (Credit: Arduino)
 
 #### Available pins:
 
-![Arduino Nicla Sense ME pinout](../../../../_images/arduino_nicla_sense_me_pinout.jpg)
+![Arduino Nicla Sense ME pinout](https://docs.zephyrproject.org/4.0.0/_images/arduino_nicla_sense_me_pinout.jpg)
 
 Arduino Nicla Sense ME pinout (Credit: Arduino)
 

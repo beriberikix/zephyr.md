@@ -225,4 +225,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - bytes\_xfered : [sdhc\_data](structsdhc__data.md#ae68f1e7f1fbff14c24bd42fa300f9e15)
 - bytesused : [video\_buffer](structvideo__buffer.md#a17505a283ab5ef65047b798cb49aa9e1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

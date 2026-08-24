@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf7002dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf7002dk.jpg](../../../../_images/nrf7002dk.jpg)
-](../../../../_images/nrf7002dk.jpg)
+[![../../../../_images/nrf7002dk.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf7002dk.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf7002dk.jpg)
 
 nRF7002 DK
 

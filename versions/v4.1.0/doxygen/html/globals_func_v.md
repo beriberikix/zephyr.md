@@ -61,4 +61,4 @@ Here is a list of all functions with links to the files they belong to:
 - vtd\_set\_irte\_msi() : [intel\_vtd.h](drivers_2interrupt__controller_2intel__vtd_8h.md#ae81918a2c81e03cc4e02603781e8ca21)
 - vtd\_set\_irte\_vector() : [intel\_vtd.h](drivers_2interrupt__controller_2intel__vtd_8h.md#a342e4745949ed1bd50b4d51de482be57)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

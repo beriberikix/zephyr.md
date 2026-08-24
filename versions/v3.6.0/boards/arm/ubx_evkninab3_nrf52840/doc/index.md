@@ -32,7 +32,7 @@ nRF52840 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-![EVK-NINA-B3](../../../../_images/EVK-NINA-B3.jpg)
+![EVK-NINA-B3](https://docs.zephyrproject.org/3.6.0/_images/EVK-NINA-B3.jpg)
 
 EVK-NINA-B3 (Credit: u-blox AG)
 

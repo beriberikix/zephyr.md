@@ -144,4 +144,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/gpio/[gpio\_cmsdk\_ahb.h](gpio__cmsdk__ahb_8h_source.md)
 
 - [gpio\_cmsdk\_ahb](structgpio__cmsdk__ahb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

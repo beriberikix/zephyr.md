@@ -265,4 +265,4 @@ uint8\_t corr\_err\_col
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [edac](dir_9a9baa0c528b094da145ee06d903a887.md)
 - [edac\_synopsys.h](edac__synopsys_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

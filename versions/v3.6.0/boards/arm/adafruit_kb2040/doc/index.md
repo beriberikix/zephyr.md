@@ -33,7 +33,7 @@ it to be flashed without any adapter, in a drag-and-drop manner.
 - On-board RGB LED
 - 1 Watchdog timer peripheral
 
-![Adafruit KB2040](../../../../_images/kb2040.jpg)
+![Adafruit KB2040](https://docs.zephyrproject.org/3.6.0/_images/kb2040.jpg)
 
 Adafruit KB2040 (Image courtesy of Adafruit)
 

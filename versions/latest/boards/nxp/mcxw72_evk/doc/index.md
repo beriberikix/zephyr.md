@@ -8,8 +8,8 @@ original_path: boards/nxp/mcxw72_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mcxw72_evk.webp](../../../../_images/mcxw72_evk.webp)
-](../../../../_images/mcxw72_evk.webp)
+[![../../../../_images/mcxw72_evk.webp](https://docs.zephyrproject.org/4.2.0/_images/mcxw72_evk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/mcxw72_evk.webp)
 
 MCXW72-EVK
 

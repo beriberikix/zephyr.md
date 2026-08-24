@@ -95,4 +95,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - vsync : [mipi\_dsi\_timings](structmipi__dsi__timings.md#a535e0177862b753ef9f4af011ed483a4)
 - vt100\_ctx : [shell\_ctx](structshell__ctx.md#a25b945fcaba216e039124aacec660600)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

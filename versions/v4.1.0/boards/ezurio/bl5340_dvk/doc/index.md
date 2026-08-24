@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl5340_dvk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/bl5340_dvk_top.jpg](../../../../_images/bl5340_dvk_top.jpg)
-](../../../../_images/bl5340_dvk_top.jpg)
+[![../../../../_images/bl5340_dvk_top.jpg](https://docs.zephyrproject.org/4.1.0/_images/bl5340_dvk_top.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/bl5340_dvk_top.jpg)
 
 BL5340 DVK
 

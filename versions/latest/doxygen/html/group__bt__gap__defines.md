@@ -5209,4 +5209,4 @@ Peripheral sleep clock accuracy (SCA) in ppm (parts per million).
 | BT\_GAP\_SCA\_21\_30 | 21 ppm to 30 ppm |
 | BT\_GAP\_SCA\_0\_20 | 0 ppm to 20 ppm |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

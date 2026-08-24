@@ -8,8 +8,8 @@ original_path: boards/rakwireless/rak11720/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rak11720.webp](../../../../_images/rak11720.webp)
-](../../../../_images/rak11720.webp)
+[![../../../../_images/rak11720.webp](https://docs.zephyrproject.org/4.2.0/_images/rak11720.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rak11720.webp)
 
 RAK11720
 

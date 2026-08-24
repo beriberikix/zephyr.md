@@ -18,7 +18,7 @@ microcontrollers. The kit includes Atmel’s Embedded Debugger (EDBG),
 which provides a full debug interface without the need for additional
 hardware.
 
-![ATSAME54-XPRO](../../../../_images/atsame54_xpro.jpg)
+![ATSAME54-XPRO](https://docs.zephyrproject.org/3.6.0/_images/atsame54_xpro.jpg)
 
 ## Hardware
 
@@ -85,7 +85,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM D5x/E5x Family Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/60001507C.pdf) [[1]](#id1) and the [SAM E54
 Xplained Pro Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/SAME54-Xplained-Pro_Design-Documentation.zip) [[2]](#id3).
 
-![ATSAME54-XPRO-pinout](../../../../_images/ATSAME54-XPRO-pinout.jpg)
+![ATSAME54-XPRO-pinout](https://docs.zephyrproject.org/3.6.0/_images/ATSAME54-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

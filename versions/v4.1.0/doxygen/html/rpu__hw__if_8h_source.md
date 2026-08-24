@@ -303,4 +303,4 @@ GPIO callback structure.
 - [nrf\_wifi](dir_827a5ceb820ded32f2709b259acb2436.md)
 - [bus](dir_a8af871e2af95a2ae463c0a62cb13e77.md)
 - [rpu\_hw\_if.h](rpu__hw__if_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

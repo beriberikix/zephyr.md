@@ -21,7 +21,7 @@ The board can operate from a single LiPo backup battery as it has an internal
 LiPo battery charger. There is no step-up converter, so relays, CAN, and USB
 power does not work when running off battery.
 
-![ESP32-EVB](../../../../_images/ESP32-EVB.jpg)
+![ESP32-EVB](https://docs.zephyrproject.org/3.7.0/_images/ESP32-EVB.jpg)
 
 ESP32-EVB (Credit: Olimex)
 

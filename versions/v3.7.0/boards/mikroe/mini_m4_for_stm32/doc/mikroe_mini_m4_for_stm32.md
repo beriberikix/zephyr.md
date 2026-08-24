@@ -21,7 +21,7 @@ It has a reset button and three signal LEDs.
 It operates on a 3.3V power supply. An on-board voltage regulator allows
 the board to be powered directly from a USB cable.
 
-![MINI-M4 for STM32](../../../../_images/mikroe_mini_m4_for_stm32.jpg)
+![MINI-M4 for STM32](https://docs.zephyrproject.org/3.7.0/_images/mikroe_mini_m4_for_stm32.jpg)
 
 ### Pin Mapping
 
@@ -44,7 +44,7 @@ The board can be flashed by using STLinkV2 with the following connections.
 | GND(31) | GND(8) |
 | MCLR(1) | NRST(15) |
 
-![ST-Link/V2](../../../../_images/st-linkv2.jpg)
+![ST-Link/V2](https://docs.zephyrproject.org/3.7.0/_images/st-linkv2.jpg)
 
 ### Supported Features
 

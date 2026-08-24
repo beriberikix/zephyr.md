@@ -20,7 +20,7 @@ The SensorTile.box PRO board fits into a small plastic box with a long-life rech
 battery, and communicates with a standard smartphone through its Bluetooth interface,
 providing data coming from the sensors.
 
-![SensorTile.box PRO](../../../../_images/sensortile_box_pro.jpg)
+![SensorTile.box PRO](https://docs.zephyrproject.org/3.7.0/_images/sensortile_box_pro.jpg)
 
 More information about the board can be found at the [SensorTile.box PRO website](https://www.st.com/en/evaluation-tools/steval-mkboxpro.html) [[1]](#id2).
 

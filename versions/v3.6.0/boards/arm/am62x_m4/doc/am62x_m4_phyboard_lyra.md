@@ -23,7 +23,7 @@ The board configuration also enables support for the semihosting debugging conso
 
 See the [PHYTEC AM62x Product Page](https://www.phytec.com/product/phycore-am62x/) for details.
 
-![AM62x phyBOARD-Lyra](../../../../_images/phyCORE-AM62x_Lyra_frontside.webp)
+![AM62x phyBOARD-Lyra](https://docs.zephyrproject.org/3.6.0/_images/phyCORE-AM62x_Lyra_frontside.webp)
 
 PHYTEC phyBOARD-Lyra with the phyCORE-AM62x SoM
 

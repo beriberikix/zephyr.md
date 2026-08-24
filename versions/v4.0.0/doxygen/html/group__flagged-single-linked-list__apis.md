@@ -698,4 +698,4 @@ Parameters
     | --- | --- |
     | [flags](parser_8h.md#ab6b306ef981f5e21bb41ea2c2dbe8cd9) | The flags value to set |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

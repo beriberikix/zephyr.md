@@ -25,4 +25,4 @@ fs\_sys.h File Reference
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [fs](dir_b18564c48f4afd8a1a06d777dde5c6ec.md)
 - [fs\_sys.h](fs__sys_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

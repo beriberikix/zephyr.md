@@ -26,7 +26,7 @@ some highlights of the Nucleo G474RE board:
 - Three LEDs: USB communication (LD1), power LED (LD3), user LED (LD2)
 - Two push-buttons: RESET and USER
 
-![Nucleo G474RE](../../../../_images/nucleo_g474re.jpg)
+![Nucleo G474RE](https://docs.zephyrproject.org/3.6.0/_images/nucleo_g474re.jpg)
 
 More information about the board can be found at the [Nucleo G474RE website](https://www.st.com/en/evaluation-tools/nucleo-g474re.html).
 

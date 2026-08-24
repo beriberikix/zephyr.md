@@ -1170,4 +1170,4 @@ Search control point item (SCI) minimum length.
 
 An SCI length can be as little as one byte, for an SCI that has only the type field. (The SCI len is the length of type + param.)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

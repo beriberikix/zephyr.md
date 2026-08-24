@@ -17,7 +17,7 @@ integrates the ST-LINK/V2-1 debugger and programmer. It also comes with a
 comprehensive STM32 software HAL library and various packaged software
 examples.
 
-![STM32F0DISCOVERY](../../../../_images/stm32f0_disco.jpg)
+![STM32F0DISCOVERY](https://docs.zephyrproject.org/3.7.0/_images/stm32f0_disco.jpg)
 
 More information about the board can be found at the [STM32F0DISCOVERY website](https://www.st.com/en/evaluation-tools/stm32f0discovery.html) [[1]](#id1).
 

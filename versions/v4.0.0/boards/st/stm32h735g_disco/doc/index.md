@@ -8,8 +8,8 @@ original_path: boards/st/stm32h735g_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h735g_disco.jpg](../../../../_images/stm32h735g_disco.jpg)
-](../../../../_images/stm32h735g_disco.jpg)
+[![../../../../_images/stm32h735g_disco.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32h735g_disco.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32h735g_disco.jpg)
 
 STM32H735G Discovery
 

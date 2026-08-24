@@ -8,8 +8,8 @@ original_path: boards/atmel/sam/sam_v71_xult/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sam_v71_xult.jpg](../../../../../_images/sam_v71_xult.jpg)
-](../../../../../_images/sam_v71_xult.jpg)
+[![../../../../../_images/sam_v71_xult.jpg](https://docs.zephyrproject.org/4.0.0/_images/sam_v71_xult.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/sam_v71_xult.jpg)
 
 SAM V71(B) Xplained Ultra
 

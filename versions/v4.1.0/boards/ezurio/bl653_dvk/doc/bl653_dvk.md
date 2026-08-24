@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl653_dvk/doc/bl653_dvk.html
 
 Board Overview
 
-[![../../../../_images/bl653_dvk.jpg](../../../../_images/bl653_dvk.jpg)
-](../../../../_images/bl653_dvk.jpg)
+[![../../../../_images/bl653_dvk.jpg](https://docs.zephyrproject.org/4.1.0/_images/bl653_dvk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/bl653_dvk.jpg)
 
 BL653 DVK
 

@@ -18,7 +18,7 @@ The full range of hardware features on the board can help the user evaluate all 
 
 Extension headers make it possible to easily connect a daughter board or wrapping board for a specific application.
 
-![STM32373C-EVAL](../../../../_images/stm32373c_eval.jpg)
+![STM32373C-EVAL](https://docs.zephyrproject.org/3.6.0/_images/stm32373c_eval.jpg)
 
 More information about the board can be found at the [STM32373C-EVAL website](https://www.st.com/en/evaluation-tools/stm32373c-eval.html) [[1]](#id1).
 
@@ -89,7 +89,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![STM32373C_EVAL connectors](../../../../_images/stm32373c_eval_connectors.jpg)
+![STM32373C_EVAL connectors](https://docs.zephyrproject.org/3.6.0/_images/stm32373c_eval_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

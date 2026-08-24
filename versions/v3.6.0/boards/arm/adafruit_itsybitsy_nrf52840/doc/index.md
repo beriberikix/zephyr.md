@@ -35,7 +35,7 @@ This development kit has the following features:
 - USB
 - WDT
 
-![Adafruit ItsyBitsy nRF52840 Express](../../../../_images/adafruit_itsybitsy_nrf52840.jpeg)
+![Adafruit ItsyBitsy nRF52840 Express](https://docs.zephyrproject.org/3.6.0/_images/adafruit_itsybitsy_nrf52840.jpeg)
 
 ## Hardware
 

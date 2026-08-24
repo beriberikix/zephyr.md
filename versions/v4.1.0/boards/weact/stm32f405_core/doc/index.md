@@ -8,8 +8,8 @@ original_path: boards/weact/stm32f405_core/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f405_core.jpg](../../../../_images/stm32f405_core.jpg)
-](../../../../_images/stm32f405_core.jpg)
+[![../../../../_images/stm32f405_core.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32f405_core.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32f405_core.jpg)
 
 STM32F405 Core Board V1.0
 

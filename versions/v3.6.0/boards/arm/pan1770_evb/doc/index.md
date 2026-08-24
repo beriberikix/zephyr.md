@@ -19,7 +19,7 @@ It is basically a clone of the official nRF52840 development kit (PCA10056)
 from Nordic Semiconductor. Please refer to [nRF52840 DK](../../nrf52840dk_nrf52840/doc/index.md#nrf52840dk-nrf52840) for
 further information.
 
-![PAN1770 Evaluation Board](../../../../_images/pan1770_evaluation_board.jpg)
+![PAN1770 Evaluation Board](https://docs.zephyrproject.org/3.6.0/_images/pan1770_evaluation_board.jpg)
 
 You can find more information about the PAN1770 module and the PAN1770
 evaluation board on the [product website](https://industry.panasonic.eu/products/devices/wireless-connectivity/bluetooth-low-energy-modules/pan1770-nrf52840) [[1]](#id1).

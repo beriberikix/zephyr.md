@@ -62,4 +62,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/pm/[state.h](state_8h_source.md)
 
 - [pm\_state\_constraint](structpm__state__constraint.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

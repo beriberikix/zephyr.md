@@ -919,4 +919,4 @@ Thread Structure.
 - [mgmt](dir_ebeee477af3ac5faaeebf82454c7c7cb.md)
 - [ec\_host\_cmd](dir_d53ada025add0f463456d44507c0d96c.md)
 - [ec\_host\_cmd.h](ec__host__cmd_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

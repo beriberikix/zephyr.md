@@ -8,8 +8,8 @@ original_path: boards/weact/mini_stm32h7b0/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mini_stm32h7b0.webp](../../../../_images/mini_stm32h7b0.webp)
-](../../../../_images/mini_stm32h7b0.webp)
+[![../../../../_images/mini_stm32h7b0.webp](https://docs.zephyrproject.org/4.1.0/_images/mini_stm32h7b0.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/mini_stm32h7b0.webp)
 
 MiniSTM32H7B0 Core Board
 

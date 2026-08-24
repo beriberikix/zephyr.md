@@ -28,4 +28,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - xpsr : [bt\_hci\_vs\_fata\_error\_cpu\_data\_cortex\_m](structbt__hci__vs__fata__error__cpu__data__cortex__m.md#a472c058324fa9349a23586c99d786d32)
 - xtd : [can\_mcan\_rx\_fifo\_hdr](structcan__mcan__rx__fifo__hdr.md#ab75c330ef4724997f665a84c99ab2c57), [can\_mcan\_tx\_buffer\_hdr](structcan__mcan__tx__buffer__hdr.md#a0ee2e857b6f63c2d70179d89398ffb9a), [can\_mcan\_tx\_event\_fifo](structcan__mcan__tx__event__fifo.md#aac19c259f3e966d771c0088a32cbe47d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

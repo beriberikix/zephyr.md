@@ -62,7 +62,7 @@ The key features of the EK-RA6M4 board are categorized in three groups as follow
 - 32 Mb (256 Mb) External Quad-SPI Flash
 - 64 Mb (512 Mb) External Octo-SPI Flash
 
-![RA6M4 Evaluation Kit](../../../../_images/ek_ra6m4.webp)
+![RA6M4 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra6m4.webp)
 
 EK-RA6M4 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -70,8 +70,8 @@ EK-RA6M4 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detailed hardware feature for the RA6M4 MCU group can be found at [RA6M4 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/ra6m4-group-user-s-manual-hardware?r=1333976)
 
-[![RA6M4 MCU group feature](../../../../_images/ra6m4_block_diagram.webp)
-](../../../../_images/ra6m4_block_diagram.webp)
+[![RA6M4 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra6m4_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra6m4_block_diagram.webp)
 
 RA6M4 Block diagram (Credit: Renesas Electronics Corporation)
 

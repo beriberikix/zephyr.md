@@ -76,4 +76,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - ivshmem\_int\_peer\_f : [ivshmem.h](group__ivshmem.md#ga1af6d005fac141c84716b18705219bfd)
 - ivshmem\_register\_handler\_f : [ivshmem.h](group__ivshmem.md#ga842bee3ff990f166665593c384c6bb21)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

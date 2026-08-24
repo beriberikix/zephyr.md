@@ -8,8 +8,8 @@ original_path: boards/st/steval_fcu001v1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/steval_fcu001v1.jpg](../../../../_images/steval_fcu001v1.jpg)
-](../../../../_images/steval_fcu001v1.jpg)
+[![../../../../_images/steval_fcu001v1.jpg](https://docs.zephyrproject.org/4.2.0/_images/steval_fcu001v1.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/steval_fcu001v1.jpg)
 
 STM32 Flight Controller Unit
 

@@ -8,8 +8,8 @@ original_path: boards/raspberrypi/rpi_pico/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rpi_pico.jpg](../../../../_images/rpi_pico.jpg)
-](../../../../_images/rpi_pico.jpg)
+[![../../../../_images/rpi_pico.jpg](https://docs.zephyrproject.org/4.1.0/_images/rpi_pico.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/rpi_pico.jpg)
 
 Raspberry Pi Pico
 
@@ -59,9 +59,9 @@ using an external adapter.
 - 1 Watchdog timer peripheral
 - Infineon CYW43439 2.4 GHz Wi-Fi chip (Pico W only)
 
-![Raspberry Pi Pico](../../../../_images/rpi_pico1.jpg)
+![Raspberry Pi Pico](https://docs.zephyrproject.org/4.1.0/_images/rpi_pico1.jpg)
 
-![Raspberry Pi Pico W](../../../../_images/rpi_pico_w.jpg)
+![Raspberry Pi Pico W](https://docs.zephyrproject.org/4.1.0/_images/rpi_pico_w.jpg)
 
 Raspberry Pi Pico (above) and Pico W (below)
 (Images courtesy of Raspberry Pi)

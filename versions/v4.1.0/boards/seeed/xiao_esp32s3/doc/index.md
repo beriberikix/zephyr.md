@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_esp32s3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_esp32s3.jpg](../../../../_images/xiao_esp32s3.jpg)
-](../../../../_images/xiao_esp32s3.jpg)
+[![../../../../_images/xiao_esp32s3.jpg](https://docs.zephyrproject.org/4.1.0/_images/xiao_esp32s3.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/xiao_esp32s3.jpg)
 
 XIAO ESP32S3
 
@@ -36,11 +36,11 @@ Espressif ESP32-S3 WiFi/Bluetooth dual-mode chip.
 
 For more details see the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) [[1]](#id5) wiki page.
 
-![XIAO ESP32S3](../../../../_images/xiao_esp32s31.jpg)
+![XIAO ESP32S3](https://docs.zephyrproject.org/4.1.0/_images/xiao_esp32s31.jpg)
 
 XIAO ESP32S3
 
-![XIAO ESP32S3 Sense](../../../../_images/xiao-esp32s3-sense.png)
+![XIAO ESP32S3 Sense](https://docs.zephyrproject.org/4.1.0/_images/xiao-esp32s3-sense.png)
 
 XIAO ESP32S3 Sense
 
@@ -202,7 +202,7 @@ on-chip / on-board
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO ESP32S3 Pinout](../../../../_images/xiao_esp32s3_pinout.jpg)
+![XIAO ESP32S3 Pinout](https://docs.zephyrproject.org/4.1.0/_images/xiao_esp32s3_pinout.jpg)
 
 XIAO ESP32S3 and XIAO ESP32S3 Sense Pinout
 

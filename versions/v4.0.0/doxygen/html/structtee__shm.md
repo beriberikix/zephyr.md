@@ -74,4 +74,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[tee.h](tee_8h_source.md)
 
 - [tee\_shm](structtee__shm.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

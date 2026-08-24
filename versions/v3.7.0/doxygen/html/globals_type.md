@@ -37,4 +37,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - audio\_codec\_error\_callback\_t : [codec.h](group__audio__codec__interface.md#ga13ecf277fdf4cfaaa424402587a1a7ad)
 - auxdisplay\_mode\_t : [auxdisplay.h](group__auxdisplay__interface.md#ga78861a5414ac95e9ca77436c0b82acc2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

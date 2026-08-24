@@ -65,4 +65,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - fuel\_gauge\_prop\_t : [fuel\_gauge.h](group__fuel__gauge__interface.md#ga633eb1cb8dd64123252634b833b2f806)
 - fuel\_gauge\_set\_property\_t : [fuel\_gauge.h](group__fuel__gauge__interface.md#gae87a20a20f4f1fbb74d72afb2bcee4c9)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

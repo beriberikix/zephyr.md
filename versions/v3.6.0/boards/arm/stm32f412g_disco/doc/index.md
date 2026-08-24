@@ -42,7 +42,7 @@ some highlights of the STM32F412G-DISCO board:
 - Extension connector for direct access to various features of STM32F412ZGT6 MCU
 - Comprehensive free software including a variety of examples, part of STM32Cube package
 
-![STM32F412G-DISCO](../../../../_images/stm32f412g_disco.jpg)
+![STM32F412G-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32f412g_disco.jpg)
 
 More information about the board can be found at the [32F412GDISCOVERY website](https://www.st.com/en/evaluation-tools/32f412gdiscovery.html).
 

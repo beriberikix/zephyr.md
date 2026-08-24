@@ -177,4 +177,4 @@ irp nz macro MOVR cc d
 - [arc](dir_f98dedd53b120205ea2191b01dc1bb98.md)
 - [asm-compat](dir_728f9cb61d4414cdda9196b7386075ee.md)
 - [asm-macro-32-bit-mwdt.h](asm-macro-32-bit-mwdt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

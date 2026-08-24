@@ -228,4 +228,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/classic/[hfp\_ag.h](hfp__ag_8h_source.md)
 
 - [bt\_hfp\_ag\_cb](structbt__hfp__ag__cb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -48,7 +48,7 @@ STM32WB5MM-DK supports the following features:
 - On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration
   :   - Virtual COM port and debug port
 
-![STM32WB5MM-DK](../../../../_images/STM32WB5MM_DK.jpg)
+![STM32WB5MM-DK](https://docs.zephyrproject.org/3.6.0/_images/STM32WB5MM_DK.jpg)
 
 More information about the board can be found in [STM32WB5MM-DK on www.st.com](https://www.st.com/en/evaluation-tools/stm32wb5mm-dk.html).
 

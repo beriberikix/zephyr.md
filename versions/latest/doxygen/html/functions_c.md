@@ -530,4 +530,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - cycle\_type : [espi\_request\_packet](structespi__request__packet.md#a9b474155dfa0c74d0bd55e4b831b383a)
 - cyclic : [dma\_config](structdma__config.md#afa70dbf1ee7bb5fb6a771f634783b7a2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

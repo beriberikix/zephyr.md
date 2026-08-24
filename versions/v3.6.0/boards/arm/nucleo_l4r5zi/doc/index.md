@@ -29,7 +29,7 @@ some highlights of the Nucleo L4R5ZI board:
 - Three User LEDs: LD1 (Green), LD2 (Blue), LD3 (Red)
 - Two push-buttons: USER and RESET
 
-![Nucleo L4R5ZI](../../../../_images/nucleo_l4r5zi.jpg)
+![Nucleo L4R5ZI](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l4r5zi.jpg)
 
 More information about the board can be found at the [Nucleo L4R5ZI website](https://www.st.com/en/evaluation-tools/nucleo-l4r5zi.html).
 
@@ -136,7 +136,7 @@ responsible for pin muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L4R5ZI Arduino connectors](../../../../_images/nucleo144_layout.jpg)
+![Nucleo L4R5ZI Arduino connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo144_layout.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00368330.pdf).
 

@@ -13,7 +13,7 @@ which Adafruit refers to as “neopixels”. The BFF series of shields are
 designed to be compatible with any Adafruit Qt Py or Seeed Studio Xiao
 board.
 
-![Adafruit 5x5 NeoPixel Grid BFF](../../../../_images/adafruit_neopixel_grid_bff.jpg)
+![Adafruit 5x5 NeoPixel Grid BFF](https://docs.zephyrproject.org/4.1.0/_images/adafruit_neopixel_grid_bff.jpg)
 
 Adafruit 5x5 NeoPixel Grid BFF (Credit: Adafruit)
 

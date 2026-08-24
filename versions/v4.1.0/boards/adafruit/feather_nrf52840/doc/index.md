@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_nrf52840/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_nrf52840_sense.jpg](../../../../_images/adafruit_feather_nrf52840_sense.jpg)
-](../../../../_images/adafruit_feather_nrf52840_sense.jpg)
+[![../../../../_images/adafruit_feather_nrf52840_sense.jpg](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_nrf52840_sense.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_nrf52840_sense.jpg)
 
 Feather nRF52840 (Express, Sense)
 
@@ -52,9 +52,9 @@ nRF52840 ARM Cortex-M4F CPU and the following devices:
 
 ExpressSense
 
-![Adafruit Feather nRF52840 Express](../../../../_images/adafruit_feather_nrf52840_express.jpg)
+![Adafruit Feather nRF52840 Express](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_nrf52840_express.jpg)
 
-![Adafruit Feather nRF52840 Sense](../../../../_images/adafruit_feather_nrf52840_sense1.jpg)
+![Adafruit Feather nRF52840 Sense](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_nrf52840_sense1.jpg)
 
 ## Hardware
 

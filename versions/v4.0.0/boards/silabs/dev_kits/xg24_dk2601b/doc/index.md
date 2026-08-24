@@ -8,8 +8,8 @@ original_path: boards/silabs/dev_kits/xg24_dk2601b/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/xg24_dk2601b.jpg](../../../../../_images/xg24_dk2601b.jpg)
-](../../../../../_images/xg24_dk2601b.jpg)
+[![../../../../../_images/xg24_dk2601b.jpg](https://docs.zephyrproject.org/4.0.0/_images/xg24_dk2601b.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/xg24_dk2601b.jpg)
 
 EFR32xG24 Dev Kit (xG24-DK2601B)
 

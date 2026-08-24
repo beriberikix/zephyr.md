@@ -8,8 +8,8 @@ original_path: boards/we/proteus3ev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/we_proteus3ev_nrf52840.jpg](../../../../_images/we_proteus3ev_nrf52840.jpg)
-](../../../../_images/we_proteus3ev_nrf52840.jpg)
+[![../../../../_images/we_proteus3ev_nrf52840.jpg](https://docs.zephyrproject.org/4.2.0/_images/we_proteus3ev_nrf52840.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/we_proteus3ev_nrf52840.jpg)
 
 Proteus-III-EV
 

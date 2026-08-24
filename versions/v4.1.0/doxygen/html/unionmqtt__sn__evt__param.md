@@ -75,4 +75,4 @@ The documentation for this union was generated from the following file:
 - zephyr/net/[mqtt\_sn.h](mqtt__sn_8h_source.md)
 
 - [mqtt\_sn\_evt\_param](unionmqtt__sn__evt__param.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

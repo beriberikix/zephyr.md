@@ -22,4 +22,4 @@ mipi\_dsi Directory Reference
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [mipi\_dsi](dir_2e7a53dcc3fd84feab422bc2ff8545ef.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

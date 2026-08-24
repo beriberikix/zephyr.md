@@ -253,4 +253,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - dynamic\_addr : [i3c\_config\_target](structi3c__config__target.md#aac5e8a92468df108ce964bb6a9a7ae9c), [i3c\_device\_desc](structi3c__device__desc.md#a4e4c9614871e5ea4aa08b1560ecc40d0)
 - dynamic\_get : [shell\_cmd\_entry](unionshell__cmd__entry.md#aa76e35866f5df37593705fd1b53e15df)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

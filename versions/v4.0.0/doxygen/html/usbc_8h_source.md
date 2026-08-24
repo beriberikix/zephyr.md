@@ -1046,4 +1046,4 @@ USB-C VBUS device APIs.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [usb\_c](dir_29299904d896cedab2c4945a0291e19f.md)
 - [usbc.h](usbc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

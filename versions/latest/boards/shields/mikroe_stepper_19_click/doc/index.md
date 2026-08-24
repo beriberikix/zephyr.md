@@ -12,7 +12,7 @@ The MikroElektronika [Stepper 19 Click](https://www.mikroe.com/stepper-19-click)
 GPIO and a [NXP PCA9538A](https://www.nxp.com/products/interfaces/ic-spi-i3c-interface-devices/general-purpose-i-o-gpio/low-voltage-8-bit-ic-bus-i-o-port-with-interrupt-and-reset:PCA9538A) [[3]](#id6) GPIO expander accessed via I2C. Some DRV8424 pins are accessed
 via the GPIO expander.
 
-![MikroElektronika Stepper 19 Click](../../../../_images/stepper_19_click.webp)
+![MikroElektronika Stepper 19 Click](https://docs.zephyrproject.org/4.2.0/_images/stepper_19_click.webp)
 
 MikroElektronika Stepper 19 Click (Credit: MikroElektronika)
 

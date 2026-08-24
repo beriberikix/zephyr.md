@@ -8,8 +8,8 @@ original_path: boards/ezurio/rm1xx_dvk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rm1xx_dvk.jpg](../../../../_images/rm1xx_dvk.jpg)
-](../../../../_images/rm1xx_dvk.jpg)
+[![../../../../_images/rm1xx_dvk.jpg](https://docs.zephyrproject.org/4.0.0/_images/rm1xx_dvk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/rm1xx_dvk.jpg)
 
 RM1xx DVK
 
@@ -46,7 +46,7 @@ This development kit has the following features:
 - UART
 - WDT
 
-![RM1xx module](../../../../_images/RM186-SM.jpg)
+![RM1xx module](https://docs.zephyrproject.org/4.0.0/_images/RM186-SM.jpg)
 
 RM1xx module (Credit: Ezurio)
 

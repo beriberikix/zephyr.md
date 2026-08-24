@@ -8,8 +8,8 @@ original_path: boards/atmel/sam/sam4s_xplained/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sam4s_xplained.jpg](../../../../../_images/sam4s_xplained.jpg)
-](../../../../../_images/sam4s_xplained.jpg)
+[![../../../../../_images/sam4s_xplained.jpg](https://docs.zephyrproject.org/4.2.0/_images/sam4s_xplained.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/sam4s_xplained.jpg)
 
 SAM4S Xplained
 

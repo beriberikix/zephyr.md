@@ -58,4 +58,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[gatt.h](gatt_8h_source.md)
 
 - [bt\_gatt\_service\_static](structbt__gatt__service__static.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

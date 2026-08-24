@@ -24,7 +24,7 @@ This processing unit is based on an ARM Cortex-R5 CPU, it also enables the follo
 - Xilinx Zynq TTC (Cadence TTC)
 - Xilinx Zynq UART
 
-![Xilinx KV260 Starter Kit](../../../../_images/kv260-starter-kit.jpg)
+![Xilinx KV260 Starter Kit](https://docs.zephyrproject.org/3.7.0/_images/kv260-starter-kit.jpg)
 
 ## Hardware
 

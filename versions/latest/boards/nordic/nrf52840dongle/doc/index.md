@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf52840dongle/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52840dongle.jpg](../../../../_images/nrf52840dongle.jpg)
-](../../../../_images/nrf52840dongle.jpg)
+[![../../../../_images/nrf52840dongle.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dongle.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dongle.jpg)
 
 nRF52840 Dongle
 
@@ -187,7 +187,7 @@ device. Before proceeding make sure:
    that the button does not face up. You will have to push it from the outside
    in, towards the USB connector:
 
-   ![Location of RESET button and direction of push](../../../../_images/nRF52840_dongle_press_reset.svg)
+   ![Location of RESET button and direction of push](https://docs.zephyrproject.org/4.2.0/_images/nRF52840_dongle_press_reset.svg)
 
    The red LED should start a fade pattern, signalling the bootloader is
    running.

@@ -17,7 +17,7 @@ MCU-based platforms. The onboard OpenSDAv2 serial and debug adapter,
 running an open source bootloader, offers options for serial
 communication, flash programming, and run-control debugging.
 
-![TWR-KV58F220M](../../../../_images/twr_kv58f220m.jpg)
+![TWR-KV58F220M](https://docs.zephyrproject.org/3.6.0/_images/twr_kv58f220m.jpg)
 
 TWR-KV58F220M (Credit: NXP)
 

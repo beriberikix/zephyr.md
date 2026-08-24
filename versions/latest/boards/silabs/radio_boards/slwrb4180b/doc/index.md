@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4180b/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32mg21-slwrb4180b.webp](../../../../../_images/efr32mg21-slwrb4180b.webp)
-](../../../../../_images/efr32mg21-slwrb4180b.webp)
+[![../../../../../_images/efr32mg21-slwrb4180b.webp](https://docs.zephyrproject.org/4.2.0/_images/efr32mg21-slwrb4180b.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/efr32mg21-slwrb4180b.webp)
 
 EFR32xG21 2.4 GHz 20 dBm (SLWRB4180B)
 

@@ -18,7 +18,7 @@ STM32F446VE Cortex M4 CPU.
 This board acts as a mezzanine platform for all 96Boards CE compliant
 boards. It can also be used as a standalone board.
 
-![96Boards STM32 Sensor Mezzanine](../../../../_images/96b_stm32_sensor_mez.jpg)
+![96Boards STM32 Sensor Mezzanine](https://docs.zephyrproject.org/3.7.0/_images/96b_stm32_sensor_mez.jpg)
 
 96Boards STM32 Sensor Mezzanine
 

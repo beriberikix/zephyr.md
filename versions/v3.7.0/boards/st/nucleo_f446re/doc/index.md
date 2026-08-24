@@ -29,7 +29,7 @@ some highlights of the Nucleo F446RE board:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - Two push-buttons: USER and RESET
 
-![Nucleo F446RE](../../../../_images/nucleo_f446re.jpg)
+![Nucleo F446RE](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446re.jpg)
 
 More information about the board can be found at the [Nucleo F446RE website](https://www.st.com/en/evaluation-tools/nucleo-f446re.html).
 
@@ -94,10 +94,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F446RE Arduino connectors (top left)](../../../../_images/nucleo_f446re_arduino_top_left.jpg)
-![Nucleo F446RE Arduino connectors (top right)](../../../../_images/nucleo_f446re_arduino_top_right.jpg)
-![Nucleo F446RE Morpho connectors (top left)](../../../../_images/nucleo_f446re_morpho_top_left.jpg)
-![Nucleo F446RE Morpho connectors (top right)](../../../../_images/nucleo_f446re_morpho_top_right.jpg)
+![Nucleo F446RE Arduino connectors (top left)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446re_arduino_top_left.jpg)
+![Nucleo F446RE Arduino connectors (top right)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446re_arduino_top_right.jpg)
+![Nucleo F446RE Morpho connectors (top left)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446re_morpho_top_left.jpg)
+![Nucleo F446RE Morpho connectors (top right)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446re_morpho_top_right.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

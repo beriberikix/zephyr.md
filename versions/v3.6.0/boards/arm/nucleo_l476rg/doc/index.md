@@ -29,7 +29,7 @@ some highlights of the Nucleo L476RG board:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - Two push-buttons: USER and RESET
 
-![Nucleo L476RG](../../../../_images/nucleo_l476rg.jpg)
+![Nucleo L476RG](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l476rg.jpg)
 
 More information about the board can be found at the [Nucleo L476RG website](https://www.st.com/en/evaluation-tools/nucleo-l476rg.html).
 
@@ -119,8 +119,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L476RG Arduino connectors](../../../../_images/nucleo_l476rg_arduino.jpg)
-![Nucleo L476RG Morpho connectors](../../../../_images/nucleo_l476rg_morpho.jpg)
+![Nucleo L476RG Arduino connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l476rg_arduino.jpg)
+![Nucleo L476RG Morpho connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l476rg_morpho.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

@@ -632,4 +632,4 @@ Parameters
     | prev\_node | A pointer on the previous node (can be NULL, which means the node is the list's head) |
     | node | A pointer on the node to remove |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -609,7 +609,7 @@ required dependencies are missing.
 
 If you’re using blinky, the LED will start to blink as shown in this figure:
 
-[![../../_images/ReelBoard-Blinky.png](../../_images/ReelBoard-Blinky.png)](../../_images/ReelBoard-Blinky.png)
+[![../../_images/ReelBoard-Blinky.png](https://docs.zephyrproject.org/3.6.0/_images/ReelBoard-Blinky.png)](https://docs.zephyrproject.org/3.6.0/_images/ReelBoard-Blinky.png)
 
 Phytec [reel\_board](../../boards/arm/reel_board/doc/index.md#reel-board) running blinky
 

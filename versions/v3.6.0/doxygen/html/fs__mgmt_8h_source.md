@@ -291,4 +291,4 @@ Unknown error occurred.
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [fs\_mgmt](dir_c1d9e91ec7be14b6f800d54e568d432d.md)
 - [fs\_mgmt.h](fs__mgmt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

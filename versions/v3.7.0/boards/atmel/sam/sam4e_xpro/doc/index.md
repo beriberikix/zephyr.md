@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The SAM4E Xplained Pro evaluation kit is a development platform to evaluate the
 Atmel SAM4E series microcontrollers.
 
-![SAM4E Xplained Pro](../../../../../_images/sam4e_xpro.jpg)
+![SAM4E Xplained Pro](https://docs.zephyrproject.org/3.7.0/_images/sam4e_xpro.jpg)
 
 ## Hardware
 

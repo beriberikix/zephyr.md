@@ -24,4 +24,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/arch/xtensa/[thread\_stack.h](arch_2xtensa_2thread__stack_8h_source.md)
 
 - [xtensa\_thread\_stack\_header](structxtensa__thread__stack__header.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

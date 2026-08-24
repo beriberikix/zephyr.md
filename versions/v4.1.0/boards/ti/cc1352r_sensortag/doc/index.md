@@ -8,8 +8,8 @@ original_path: boards/ti/cc1352r_sensortag/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cc1352r_sensortag.jpg](../../../../_images/cc1352r_sensortag.jpg)
-](../../../../_images/cc1352r_sensortag.jpg)
+[![../../../../_images/cc1352r_sensortag.jpg](https://docs.zephyrproject.org/4.1.0/_images/cc1352r_sensortag.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/cc1352r_sensortag.jpg)
 
 CC1352R SensorTag
 
@@ -145,7 +145,7 @@ to use it in tandem with a `CC1352R LaunchPad`, making use of the integrated
 5. Connect the other end of the 2-pin jumper to pins 12/RX and 13/TX on the LaunchPad SensorTag (Grey to 12/RX, white to 13/TX)
 6. Connect your XDS110 LaunchPad to your PC!
 
-![Debugging the TI CC1352R SensorTag](../../../../_images/launchpad-lpstk-debug.jpg)
+![Debugging the TI CC1352R SensorTag](https://docs.zephyrproject.org/4.1.0/_images/launchpad-lpstk-debug.jpg)
 
 See [Debugging the LaunchPad SensorTag](https://dev.ti.com/tirex/explore/content/simplelink_academy_cc13x2_26x2sdk_4_20_03_00/modules/lpstk/lpstk_oobe/lpstk_oobe.html#-debugging-the-launchpad-sensortag-) for additional details.
 

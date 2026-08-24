@@ -50,7 +50,7 @@ This development kit has the following features:
 - USB
 - WDT
 
-![BL5340 DVK](../../../../_images/bl5340_dvk_top.jpg)
+![BL5340 DVK](https://docs.zephyrproject.org/3.6.0/_images/bl5340_dvk_top.jpg)
 
 BL5340 DVK (Credit: Laird Connectivity)
 

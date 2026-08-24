@@ -150,4 +150,4 @@ Here is a list of all enums with links to the files they belong to:
 - bt\_security\_t : [conn.h](group__bt__conn.md#gaf0c56cd26c4147f6c9f0faa11fa01783)
 - bt\_tmap\_role : [tmap.h](group__bt__tmap.md#ga4ef8a550bb374a5f257860082e1411d4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

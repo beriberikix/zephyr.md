@@ -8,8 +8,8 @@ original_path: boards/gd/gd32e507z_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32e507z_eval.webp](../../../../_images/gd32e507z_eval.webp)
-](../../../../_images/gd32e507z_eval.webp)
+[![../../../../_images/gd32e507z_eval.webp](https://docs.zephyrproject.org/4.1.0/_images/gd32e507z_eval.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/gd32e507z_eval.webp)
 
 GD32E507Z-EVAL
 

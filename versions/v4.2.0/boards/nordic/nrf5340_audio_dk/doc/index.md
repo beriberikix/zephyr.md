@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf5340_audio_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf5340_audio_dk.jpg](../../../../_images/nrf5340_audio_dk.jpg)
-](../../../../_images/nrf5340_audio_dk.jpg)
+[![../../../../_images/nrf5340_audio_dk.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf5340_audio_dk.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf5340_audio_dk.jpg)
 
 nRF5340 Audio DK
 

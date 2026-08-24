@@ -154,4 +154,4 @@ Here is a list of all macros with links to the files they belong to:
 - ZVFS\_POLLOUT : [fdtable.h](fdtable_8h.md#ac1938ed509009a549d0eee1c8a9ffe80)
 - ZVFS\_POLLPRI : [fdtable.h](fdtable_8h.md#adf798c33fb9da067a17ffd68514791af)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

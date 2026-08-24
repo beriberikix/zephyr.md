@@ -158,4 +158,4 @@ DFU status.
 | BT\_MESH\_DFU\_ERR\_TEMPORARILY\_UNAVAILABLE | The Server cannot start a firmware update. |
 | BT\_MESH\_DFU\_ERR\_BLOB\_XFER\_BUSY | Another BLOB transfer is in progress. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

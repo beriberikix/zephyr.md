@@ -8,8 +8,8 @@ original_path: boards/adi/max78000evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max78000evkit_img1.webp](../../../../_images/max78000evkit_img1.webp)
-](../../../../_images/max78000evkit_img1.webp)
+[![../../../../_images/max78000evkit_img1.webp](https://docs.zephyrproject.org/4.1.0/_images/max78000evkit_img1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max78000evkit_img1.webp)
 
 MAX78000EVKIT
 
@@ -40,7 +40,7 @@ to SPI bridge provides rapid access to onboard memory, allowing large networks o
 
 The Zephyr port is running on the MAX78000 MCU.
 
-![MAX78000 EVKIT](../../../../_images/max78000evkit_img11.webp)
+![MAX78000 EVKIT](https://docs.zephyrproject.org/4.1.0/_images/max78000evkit_img11.webp)
 
 ## Hardware
 

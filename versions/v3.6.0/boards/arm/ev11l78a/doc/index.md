@@ -18,7 +18,7 @@ Programmable USB Power Delivery (PD) Controller. This RoHS-compliant
 evaluation platform comes in a small form factor and adheres to the
 USB Type-C™ Connector Specification and USB PD 3.0 specification.
 
-[![EV11L78A](../../../../_images/ev11l78a.jpg)](../../../../_images/ev11l78a.jpg)
+[![EV11L78A](https://docs.zephyrproject.org/3.6.0/_images/ev11l78a.jpg)](https://docs.zephyrproject.org/3.6.0/_images/ev11l78a.jpg)
 
 UPD301C Basic Sink Application Example (Credit: [Microchip Technology](https://www.microchip.com/en-us/development-tool/ev11l78a) [[1]](#id2))
 

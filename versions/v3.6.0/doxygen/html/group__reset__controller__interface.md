@@ -414,4 +414,4 @@ Parameters
 Returns
 :   a value from [reset\_status()](#gad58d0bfcf0b9cd4ba11b163e97ba8762)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

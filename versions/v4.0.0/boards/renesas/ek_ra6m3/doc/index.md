@@ -57,7 +57,7 @@ The key features of the EK-RA6M3 board are categorized in three groups as follow
 - USB High Speed Host and Device (micro-AB connector)
 - 32 Mb (256 Mb) External Quad-SPI Flash
 
-![RA6M3 Evaluation Kit](../../../../_images/ek_ra6m3.webp)
+![RA6M3 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra6m3.webp)
 
 EK-RA6M3 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -65,8 +65,8 @@ EK-RA6M3 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detailed hardware feature for the RA6M3 MCU group can be found at [RA6M3 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra6m3-group-users-manual-hardware)
 
-[![RA6M3 MCU group feature](../../../../_images/ra6m3_block_diagram.webp)
-](../../../../_images/ra6m3_block_diagram.webp)
+[![RA6M3 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra6m3_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra6m3_block_diagram.webp)
 
 RA6M3 Block diagram (Credit: Renesas Electronics Corporation)
 

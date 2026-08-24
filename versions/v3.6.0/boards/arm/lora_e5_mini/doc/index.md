@@ -16,7 +16,7 @@ LoRa-E5 mini is a compacted-sized development board suitable for the rapid
 testing and building of small-sized LoRa device, exposing all capabilities of
 Seeed Studio LoRa-E5 STM32WLE5JC module.
 
-![LoRa-E5 mini](../../../../_images/lora_e5_mini.jpg)
+![LoRa-E5 mini](https://docs.zephyrproject.org/3.6.0/_images/lora_e5_mini.jpg)
 
 ## Hardware
 
@@ -96,7 +96,7 @@ muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![LoRa-E5 mini Pinout](../../../../_images/lora_e5_mini_pinout.jpg)
+![LoRa-E5 mini Pinout](https://docs.zephyrproject.org/3.6.0/_images/lora_e5_mini_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

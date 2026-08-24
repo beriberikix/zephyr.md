@@ -40,4 +40,4 @@ Here is a list of all enums with links to the files they belong to:
 - prometheus\_metric\_type : [metric.h](group__prometheus.md#ga3499408dda4e539634c332c797651932)
 - pt\_irq\_type : [domctl.h](public_2domctl_8h.md#aa0ba08b170800d6d7723b694525ade07)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -17,7 +17,7 @@ FXOS8700 and FXAS21002. This 9-axis solution (FXAS21002C Gyroscope,
 + FXOS8700CQ E-compass sensor) is compatible with any board that
 provides an Arduino R3 header.
 
-![FRDM-STBC-AGM01](../../../../_images/AGM01.jpg)
+![FRDM-STBC-AGM01](https://docs.zephyrproject.org/3.6.0/_images/AGM01.jpg)
 
 ### Pin Assignment of the FRDM-STBC-AGM01 Shield
 

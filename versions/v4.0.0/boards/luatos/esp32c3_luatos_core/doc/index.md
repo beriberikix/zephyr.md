@@ -37,11 +37,11 @@ There are two version hardware of this board. The difference between them is the
 
 1. USB-C connect to UART over CH343 chip(esp32c3\_luatos\_core)
 
-![esp32c3_luatos_core](../../../../_images/esp32c3_luatos_core.jpg)
+![esp32c3_luatos_core](https://docs.zephyrproject.org/4.0.0/_images/esp32c3_luatos_core.jpg)
 
 2. USB-C connect to esp32 chip directly(esp32c3\_luatos\_core/esp32c3/usb)
 
-![esp32c3_luatos_core/esp32c3/usb](../../../../_images/esp32c3_luatos_core_usb.jpg)
+![esp32c3_luatos_core/esp32c3/usb](https://docs.zephyrproject.org/4.0.0/_images/esp32c3_luatos_core_usb.jpg)
 
 ### Supported Features
 
@@ -65,7 +65,7 @@ Current Zephyr’s ESP32C3\_LUATOS\_CORE board supports the following features:
 | Wi-Fi | on-chip |  |
 | Bluetooth | on-chip |  |
 
-![esp32c3_luatos_core_pinfunc](../../../../_images/esp32c3_luatos_core_pinfunc.jpg)
+![esp32c3_luatos_core_pinfunc](https://docs.zephyrproject.org/4.0.0/_images/esp32c3_luatos_core_pinfunc.jpg)
 
 ## System requirements
 

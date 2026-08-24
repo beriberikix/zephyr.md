@@ -81,4 +81,4 @@ FT8XX coprocessor functions.
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [ft8xx](dir_2b36ac0e023aa45869ab11e4334d802b.md)
 - [ft8xx\_copro.h](ft8xx__copro_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

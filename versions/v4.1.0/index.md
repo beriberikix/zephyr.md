@@ -10,7 +10,7 @@ Use the version selection menu on the left to view
 documentation for a specific version of Zephyr.
 
 - [
-  ![](_static/images/kite.png)
+  ![](https://docs.zephyrproject.org/4.1.0/_static/images/kite.png)
 
   ## Introduction
 

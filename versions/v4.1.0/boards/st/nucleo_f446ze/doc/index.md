@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f446ze/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f446ze.jpg](../../../../_images/nucleo_f446ze.jpg)
-](../../../../_images/nucleo_f446ze.jpg)
+[![../../../../_images/nucleo_f446ze.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze.jpg)
 
 Nucleo F446ZE
 
@@ -163,10 +163,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F446ZE Zio/Arduino connectors (left)](../../../../_images/nucleo_f446ze_zio_left_2019_8_29.jpg)
-![Nucleo F446ZE Zio/Arduino connectors (right)](../../../../_images/nucleo_f446ze_zio_right_2019_8_29.jpg)
-![Nucleo F446ZE Morpho connectors (left)](../../../../_images/nucleo_f446ze_morpho_left_2019_8_29.jpg)
-![Nucleo F446ZE Morpho connectors (right)](../../../../_images/nucleo_f446ze_morpho_right_2019_8_29.jpg)
+![Nucleo F446ZE Zio/Arduino connectors (left)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze_zio_left_2019_8_29.jpg)
+![Nucleo F446ZE Zio/Arduino connectors (right)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze_zio_right_2019_8_29.jpg)
+![Nucleo F446ZE Morpho connectors (left)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze_morpho_left_2019_8_29.jpg)
+![Nucleo F446ZE Morpho connectors (right)](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f446ze_morpho_right_2019_8_29.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/um1974-stm32-nucleo144-boards-mb1137-stmicroelectronics.pdf).
 

@@ -31,7 +31,7 @@ Here are some highlights of the Nucleo F303RE board:
 - One user LED
 - Two push-buttons: USER and RESET
 
-![Nucleo F303RE](../../../../_images/nucleo_f303re.jpg)
+![Nucleo F303RE](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f303re.jpg)
 
 More information about the board can be found at the [Nucleo F303RE website](https://www.st.com/en/evaluation-tools/nucleo-f303re.html),
 and in the [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
@@ -99,7 +99,7 @@ responsible for pin muxing, input/output, pull-up, etc.
 
 #### Board connectors:
 
-![Nucleo F303RE connectors](../../../../_images/nucleo_connectors.jpg)
+![Nucleo F303RE connectors](https://docs.zephyrproject.org/3.7.0/_images/nucleo_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

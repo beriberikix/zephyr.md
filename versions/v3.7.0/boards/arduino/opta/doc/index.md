@@ -34,7 +34,7 @@ Additionally, the device features:
 - 8 x analog inputs
 - 4 x isolated relay outputs
 
-![ARDUINO-OPTA](../../../../_images/arduino_opta.jpeg)
+![ARDUINO-OPTA](https://docs.zephyrproject.org/3.7.0/_images/arduino_opta.jpeg)
 
 More information about the board can be found at the [ARDUINO-OPTA website](https://docs.arduino.cc/hardware/opta).
 More information about STM32H747XIH6 can be found here:

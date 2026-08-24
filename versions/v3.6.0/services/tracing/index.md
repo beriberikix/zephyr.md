@@ -119,7 +119,7 @@ CONFIG_TRACING=y
 CONFIG_SEGGER_SYSVIEW_POST_MORTEM_MODE=n
 ```
 
-[![SEGGER SystemView](../../_images/segger_systemview.png)](../../_images/segger_systemview.png)
+[![SEGGER SystemView](https://docs.zephyrproject.org/3.6.0/_images/segger_systemview.png)](https://docs.zephyrproject.org/3.6.0/_images/segger_systemview.png)
 
 Recent versions of [SEGGER SystemView](https://www.segger.com/products/development-tools/systemview/) come with an API translation table for
 Zephyr which is incomplete and does not match the current level of support

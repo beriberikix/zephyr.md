@@ -17,7 +17,7 @@ CPU and the following devices:
 - Cortex-M System Design Kit GPIO
 - Cortex-M System Design Kit UART
 
-![ARM V2M Musca-S1](../../../../_images/v2m_musca_s1.jpg)
+![ARM V2M Musca-S1](https://docs.zephyrproject.org/4.1.0/_images/v2m_musca_s1.jpg)
 
 More information about the board can be found at the [V2M Musca-S1 Website](https://developer.arm.com/Tools%20and%20Software/Musca-S1%20Test%20Chip%20Board).
 
@@ -280,7 +280,7 @@ srec_cat $BIN_BOOTLOADER -Binary -offset $FLASH_OFFSET $BIN_APP -Binary -offset 
 srec_cat $BIN_BOOTLOADER -Binary -offset 0xA000000 $BIN_APP -Binary -offset 0xA020000 -o zephyr.hex -Intel
 ```
 
-![The Musca-S1 with the USB connected and powered-on](../../../../_images/v2m_musca_s1_powered.jpg)
+![The Musca-S1 with the USB connected and powered-on](https://docs.zephyrproject.org/4.1.0/_images/v2m_musca_s1_powered.jpg)
 
 To upload the application, connect the V2M Musca-S1 to your host computer using
 the USB port and power-on the board by pressing the PBON button as seen on the

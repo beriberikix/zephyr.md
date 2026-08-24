@@ -629,4 +629,4 @@ ivshmem\_get\_mem\_f get\_mem
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [virtualization](dir_9d22dc9b22b8050a5a1558ed6b8fdf63.md)
 - [ivshmem.h](ivshmem_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

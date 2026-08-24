@@ -8,8 +8,8 @@ original_path: boards/sifive/hifive1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/hifive1.jpg](../../../../_images/hifive1.jpg)
-](../../../../_images/hifive1.jpg)
+[![../../../../_images/hifive1.jpg](https://docs.zephyrproject.org/4.1.0/_images/hifive1.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/hifive1.jpg)
 
 HiFive1
 
@@ -36,11 +36,11 @@ an FE310 RISC-V SoC. Two revisions of this board are supported in Zephyr:
 [HiFive1](https://www.sifive.com/boards/hifive1) (also known as HiFive1 Rev A)
 and [HiFive1 Rev B](https://www.sifive.com/boards/hifive1-rev-b).
 
-![SiFive HiFive1 board](../../../../_images/hifive11.jpg)
+![SiFive HiFive1 board](https://docs.zephyrproject.org/4.1.0/_images/hifive11.jpg)
 
 SiFive HiFive1 board (image courtesy of SiFive)
 
-![SiFive HiFive1 Rev B board](../../../../_images/hifive1_revb.jpg)
+![SiFive HiFive1 Rev B board](https://docs.zephyrproject.org/4.1.0/_images/hifive1_revb.jpg)
 
 SiFive HiFive1 Rev B board (image courtesy of SiFive)
 

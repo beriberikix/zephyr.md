@@ -8,8 +8,8 @@ original_path: boards/adi/max32657evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32657evkit.webp](../../../../_images/max32657evkit.webp)
-](../../../../_images/max32657evkit.webp)
+[![../../../../_images/max32657evkit.webp](https://docs.zephyrproject.org/4.2.0/_images/max32657evkit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/max32657evkit.webp)
 
 max32657evkit
 

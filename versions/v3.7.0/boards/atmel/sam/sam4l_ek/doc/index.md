@@ -28,7 +28,7 @@ The kit is equipped with a rich set of peripherals that make the ATSAM4L-EK a
 perfect evaluation platform. Download the [SAM4L-EK Online User Guide](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42026-ATSAM4L-EK-User-Guide_ApplicationNote_AVR32850.pdf) [[1]](#id2) for
 more details.
 
-![SAM4L-EK](../../../../../_images/atmel-sam4l-ek-callouts.jpg)
+![SAM4L-EK](https://docs.zephyrproject.org/3.7.0/_images/atmel-sam4l-ek-callouts.jpg)
 
 ## Hardware
 

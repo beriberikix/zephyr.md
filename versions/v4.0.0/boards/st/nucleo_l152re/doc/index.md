@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l152re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l152re.jpg](../../../../_images/nucleo_l152re.jpg)
-](../../../../_images/nucleo_l152re.jpg)
+[![../../../../_images/nucleo_l152re.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_l152re.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_l152re.jpg)
 
 Nucleo L152RE
 
@@ -109,7 +109,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo L152RE connectors](../../../../_images/nucleo_l152re_connectors.jpg)
+![Nucleo L152RE connectors](https://docs.zephyrproject.org/4.0.0/_images/nucleo_l152re_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

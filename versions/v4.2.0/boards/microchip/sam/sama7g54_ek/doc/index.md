@@ -8,8 +8,8 @@ original_path: boards/microchip/sam/sama7g54_ek/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sama7g54_ek.webp](../../../../../_images/sama7g54_ek.webp)
-](../../../../../_images/sama7g54_ek.webp)
+[![../../../../../_images/sama7g54_ek.webp](https://docs.zephyrproject.org/4.2.0/_images/sama7g54_ek.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/sama7g54_ek.webp)
 
 SAMA7G54 Evaluation Kit
 

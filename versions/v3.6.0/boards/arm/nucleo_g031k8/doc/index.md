@@ -27,7 +27,7 @@ ST-LINK debugger/programmer.
 The STM32 Nucleo-32 board comes with the STM32 comprehensive free software
 libraries and examples available with the STM32Cube MCU Package.
 
-![Nucleo G031K8](../../../../_images/nucleo_g031k8.jpg)
+![Nucleo G031K8](https://docs.zephyrproject.org/3.6.0/_images/nucleo_g031k8.jpg)
 
 More information about the board can be found at the [Nucleo G031K8 website](https://www.st.com/en/evaluation-tools/nucleo-g031k8.html) [[1]](#id1).
 

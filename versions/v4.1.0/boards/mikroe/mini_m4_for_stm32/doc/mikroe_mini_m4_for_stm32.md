@@ -8,8 +8,8 @@ original_path: boards/mikroe/mini_m4_for_stm32/doc/mikroe_mini_m4_for_stm32.html
 
 Board Overview
 
-[![../../../../_images/mikroe_mini_m4_for_stm32.jpg](../../../../_images/mikroe_mini_m4_for_stm32.jpg)
-](../../../../_images/mikroe_mini_m4_for_stm32.jpg)
+[![../../../../_images/mikroe_mini_m4_for_stm32.jpg](https://docs.zephyrproject.org/4.1.0/_images/mikroe_mini_m4_for_stm32.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mikroe_mini_m4_for_stm32.jpg)
 
 MINI-M4 for STM32
 
@@ -61,7 +61,7 @@ The board can be flashed by using STLinkV2 with the following connections.
 | GND(31) | GND(8) |
 | MCLR(1) | NRST(15) |
 
-![ST-Link/V2](../../../../_images/st-linkv2.jpg)
+![ST-Link/V2](https://docs.zephyrproject.org/4.1.0/_images/st-linkv2.jpg)
 
 ### Supported Features
 

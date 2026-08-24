@@ -255,4 +255,4 @@ User data if required.
 - [openthread](dir_31612689e320779a8afe131e155c6b49.md)
 - [include](dir_8ac3cad2d91a5e145958cbd7c9ff59cb.md)
 - [openthread.h](modules_2openthread_2include_2openthread_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

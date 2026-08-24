@@ -17,7 +17,7 @@ Microchip MEC172X series microcontrollers. This board needs to be mated with
 part number MEC172x 144WFBGA SOLDER DC ASSY 6914 (cpu board) in order to operate.
 MEC172x and MEC152x SPI image formats are not compatible with each other.
 
-![MEC172X EVB ASSY 6906](../../../../_images/mec172xevb_assy6906.jpg)
+![MEC172X EVB ASSY 6906](https://docs.zephyrproject.org/3.6.0/_images/mec172xevb_assy6906.jpg)
 
 ## Hardware
 
@@ -244,12 +244,12 @@ NOTE: `JP121 3-4` on base board also needs to be loaded.
 
 1. Connect the SPI Dongle ASSY 6791 to `J34` in the EVB.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/spidongle_assy67911.jpg)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/3.6.0/_images/spidongle_assy67911.jpg)
 2. Connect programmer to the header J6 on the Assy6791 board, it will flash the SPI NOR chip
    `U3`. Make sure that your programmer’s offset is 0x0.
    For programming you can use Dediprog SF100 or a similar tool for flashing SPI chips.
 
-   ![SF100 Connected](../../../../_images/dediprog_connector.jpg)
+   ![SF100 Connected](https://docs.zephyrproject.org/3.6.0/_images/dediprog_connector.jpg)
 
    Note
 
@@ -270,7 +270,7 @@ NOTE: `JP121 3-4` on base board also needs to be loaded.
 4. Apply power to the board via a micro-USB cable.
    Configure this option by using a jumper between `JP30 7-8`.
 
-   ![Power Connection](../../../../_images/jp30_power_options.jpg)
+   ![Power Connection](https://docs.zephyrproject.org/3.6.0/_images/jp30_power_options.jpg)
 
 ### Building
 
@@ -309,7 +309,7 @@ NOTE: `JP121 3-4` on base board also needs to be loaded.
    When west process started press Reset button `S2` and do not release it
    till the whole west process will not be finished successfully.
 
-   ![Reset Button](../../../../_images/Reset_Button.jpg)
+   ![Reset Button](https://docs.zephyrproject.org/3.6.0/_images/Reset_Button.jpg)
 
    Note
 

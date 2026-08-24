@@ -155,4 +155,4 @@ Misc utilities.
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [hdlc\_rcp\_if](dir_1af8727946a5235b30f274ca84c43895.md)
 - [hdlc\_rcp\_if.h](hdlc__rcp__if_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -28,7 +28,7 @@ the following devices:
 - UART
 - WDT
 
-![BMD-300-EVAL](../../../../_images/BMD-30-33-35-36-EVAL1.jpg)
+![BMD-300-EVAL](https://docs.zephyrproject.org/4.2.0/_images/BMD-30-33-35-36-EVAL1.jpg)
 
 BMD-300-EVAL (Credit: u-blox AG)
 
@@ -102,7 +102,7 @@ BMD-330-EVAL hardware features.
 
 #### External Connectors
 
-![BMD-300-EVAL pin-out](../../../../_images/bmd-300-eval_pin_out1.jpg)
+![BMD-300-EVAL pin-out](https://docs.zephyrproject.org/4.2.0/_images/bmd-300-eval_pin_out1.jpg)
 
 BMD-300-EVAL pin-out (Credit: u-blox AG)
 

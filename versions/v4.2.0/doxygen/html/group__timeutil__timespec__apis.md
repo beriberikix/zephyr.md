@@ -220,4 +220,4 @@ Parameters
 Returns
 :   [true](stdbool_8h.md#a41f9c5fb8b08eb5dc3edce4dcb37fee7) if the operation is successful, otherwise [false](stdbool_8h.md#a65e9886d74aaee76545e83dd09011727).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

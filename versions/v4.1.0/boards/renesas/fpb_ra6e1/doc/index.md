@@ -8,8 +8,8 @@ original_path: boards/renesas/fpb_ra6e1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/fpb_ra6e1.webp](../../../../_images/fpb_ra6e1.webp)
-](../../../../_images/fpb_ra6e1.webp)
+[![../../../../_images/fpb_ra6e1.webp](https://docs.zephyrproject.org/4.1.0/_images/fpb_ra6e1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/fpb_ra6e1.webp)
 
 RA6E1 Fast Prototyping Board
 
@@ -71,8 +71,8 @@ The key features of the FPB-RA6E1 board are categorized in three groups as follo
 
 Detailed hardware features for the RA6E1 MCU group can be found at [RA6E1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra6e1-group-users-manual-hardware)
 
-[![RA6E1 MCU group feature](../../../../_images/ra6e1_block_diagram.webp)
-](../../../../_images/ra6e1_block_diagram.webp)
+[![RA6E1 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra6e1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ra6e1_block_diagram.webp)
 
 RA6E1 Block diagram (Credit: Renesas Electronics Corporation)
 

@@ -134,14 +134,14 @@ The picture below shows the SoC or single-chip configuration when using a Zephyr
 combined build (a build that includes both a Bluetooth Host and a Controller in the
 same firmware image that is programmed onto the chip):
 
-![Bluetooth Combined build on a single chip](../../_images/ble_cfg_single.png)
+![Bluetooth Combined build on a single chip](https://docs.zephyrproject.org/4.2.0/_images/ble_cfg_single.png)
 
 A Combined build on a Single-Chip configuration
 
 When using connectivity or dual-chip configurations, several Host and Controller
 combinations are possible, some of which are depicted below:
 
-![Bluetooth dual-chip configuration builds](../../_images/ble_cfg_dual.png)
+![Bluetooth dual-chip configuration builds](https://docs.zephyrproject.org/4.2.0/_images/ble_cfg_dual.png)
 
 Host-only and Controller-only builds on dual-chip configurations
 

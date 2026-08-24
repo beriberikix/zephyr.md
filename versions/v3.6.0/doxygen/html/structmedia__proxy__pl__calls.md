@@ -439,4 +439,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/audio/[media\_proxy.h](media__proxy_8h_source.md)
 
 - [media\_proxy\_pl\_calls](structmedia__proxy__pl__calls.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

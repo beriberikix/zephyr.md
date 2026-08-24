@@ -23,4 +23,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - join\_guard : [cmsis\_rtos\_thread\_cb](structcmsis__rtos__thread__cb.md#ac07201f80219ef4e8d6bb4244de7d82f)
 - join\_queue : [k\_thread](structk__thread.md#aa8c560f5fbaf6cd551be99d491e654f6)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

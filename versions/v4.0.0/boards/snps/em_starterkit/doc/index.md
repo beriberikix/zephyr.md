@@ -8,8 +8,8 @@ original_path: boards/snps/em_starterkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/em_starterkit.jpg](../../../../_images/em_starterkit.jpg)
-](../../../../_images/em_starterkit.jpg)
+[![../../../../_images/em_starterkit.jpg](https://docs.zephyrproject.org/4.0.0/_images/em_starterkit.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/em_starterkit.jpg)
 
 ARC EM Starter Kit
 

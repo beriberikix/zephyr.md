@@ -17,7 +17,7 @@ module for the SimpleLink MSP432P401R microcontroller. It contains everything ne
 developing on the SimpleLink MSP432 low-power + performance ARM® 32-bit Cortex®-M4F
 microcontroller (MCU).
 
-![MSP-EXP432P401R LaunchXL development board](../../../../_images/msp_exp432p401r_launchxl.jpg)
+![MSP-EXP432P401R LaunchXL development board](https://docs.zephyrproject.org/3.7.0/_images/msp_exp432p401r_launchxl.jpg)
 
 ### Features:
 

@@ -17,7 +17,7 @@ Line” STM32F100x SoC series is showcased. Like other Discovery board, an
 integrated ST-LINK debugger and programmer is included (V1), but the only
 included I/O devices are two user LEDs and one user button.
 
-![STM32VLDISCOVERY](../../../../_images/stm32vl_disco.jpg)
+![STM32VLDISCOVERY](https://docs.zephyrproject.org/3.6.0/_images/stm32vl_disco.jpg)
 
 More information about the board can be found at the [STM32VLDISCOVERY website](https://www.st.com/en/evaluation-tools/stm32vldiscovery.html) [[1]](#id2).
 

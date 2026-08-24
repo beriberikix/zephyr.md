@@ -17,7 +17,7 @@ board equipped with 4MiB flash storage, a PWM enabled RGB led and 6 I/O pins.
 The board comes with 3 different USB connector options: USB Type-C plug,
 USB Type-C socket and USB Type-A plug.
 
-![Serpente Boards](../../../../_images/serpente.jpg)
+![Serpente Boards](https://docs.zephyrproject.org/3.6.0/_images/serpente.jpg)
 
 ## Hardware
 

@@ -21,4 +21,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - zlp : [udc\_buf\_info](structudc__buf__info.md#afc2d0c391aca7f68a1ae5539a1fed8a0)
 - zs : [cbor\_nb\_reader](structcbor__nb__reader.md#a7cbec04a9c1fd8a1f8feed0de8d1be1d), [cbor\_nb\_writer](structcbor__nb__writer.md#a6aa71f361798e61f19e5f0c46cdf1ad5)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

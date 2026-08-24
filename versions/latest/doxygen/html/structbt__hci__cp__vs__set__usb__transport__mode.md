@@ -35,4 +35,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
 
 - [bt\_hci\_cp\_vs\_set\_usb\_transport\_mode](structbt__hci__cp__vs__set__usb__transport__mode.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

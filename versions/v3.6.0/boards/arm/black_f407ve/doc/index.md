@@ -31,7 +31,7 @@ Here are some highlights of the BLACK\_F407VE board:
 - Four push-buttons: RESET, K0, K1 and WK\_UP
 - Mini-AB connector
 
-![BLACK_F407VE](../../../../_images/black_f407ve.jpg)
+![BLACK_F407VE](https://docs.zephyrproject.org/3.6.0/_images/black_f407ve.jpg)
 
 See also board descriptions at [STM32-base website](https://stm32-base.org/boards/STM32F407VET6-STM32-F4VE-V2.0.html),
 [STM32F407VET6 black board](https://os.mbed.com/users/hudakz/code/STM32F407VET6_Hello/) and [MCUDev Black STM32F407VET6](https://github.com/mcauser/BLACK_F407VE)
@@ -120,9 +120,9 @@ The default configuration can be found in the defconfig file:
 BLACK\_F407VE has 5 GPIO controllers. These controllers are responsible for pin
 muxing, input/output, pull-up, etc.
 
-![left pins](../../../../_images/stm32f407vet6_left02.jpg)
-![right pins](../../../../_images/stm32f407vet6_right01.jpg)
-![bottom and top pins](../../../../_images/stm32f407vet6_st-link02.jpg)
+![left pins](https://docs.zephyrproject.org/3.6.0/_images/stm32f407vet6_left02.jpg)
+![right pins](https://docs.zephyrproject.org/3.6.0/_images/stm32f407vet6_right01.jpg)
+![bottom and top pins](https://docs.zephyrproject.org/3.6.0/_images/stm32f407vet6_st-link02.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

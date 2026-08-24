@@ -348,4 +348,4 @@ Here is a list of all functions with links to the files they belong to:
 - current\_sense\_shunt\_scale\_dt() : [current\_sense\_shunt.h](current__sense__shunt_8h.md#a2315a1aa2db9dafaff8c272b06d2c6b0)
 - cy8cmbr3xxx\_configure() : [cy8cmbr3xxx.h](cy8cmbr3xxx_8h.md#a26da2ccc3ff92bc2c29021f66f184448)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

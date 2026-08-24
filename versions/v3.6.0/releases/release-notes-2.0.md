@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/releases/release-notes-2.0.html
+source_url: https://docs.zephyrproject.org/3.6.0/releases/release-notes-2.0.html
 original_path: releases/release-notes-2.0.html
 ---
 

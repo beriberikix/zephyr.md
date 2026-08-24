@@ -27,7 +27,7 @@ API, which you can use to get information from your devicetree.
 
 Here is a simplified view of the process:
 
-![../../_images/zephyr_dt_build_flow.png](../../_images/zephyr_dt_build_flow.png)
+![../../_images/zephyr_dt_build_flow.png](https://docs.zephyrproject.org/4.0.0/_images/zephyr_dt_build_flow.png)
 
 Devicetree build flow
 

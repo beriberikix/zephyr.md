@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf52840dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52840dk_nrf52840.jpg](../../../../_images/nrf52840dk_nrf52840.jpg)
-](../../../../_images/nrf52840dk_nrf52840.jpg)
+[![../../../../_images/nrf52840dk_nrf52840.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dk_nrf52840.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dk_nrf52840.jpg)
 
 nRF52840 DK
 

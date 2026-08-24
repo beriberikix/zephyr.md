@@ -159,4 +159,4 @@ Here is a list of all enum values with links to the files they belong to:
 - WIFI\_TYPE\_SAP : [wifi\_nm.h](group__wifi__nm.md#ggadba91c7f3ef5027f7d2a01229372a1a1adf2032231c71212f10a5e2da2345e345)
 - WIFI\_TYPE\_STA : [wifi\_nm.h](group__wifi__nm.md#ggadba91c7f3ef5027f7d2a01229372a1a1aa2aa21793c3c19fd559e469d63ed1468)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

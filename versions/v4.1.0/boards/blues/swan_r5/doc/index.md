@@ -8,8 +8,8 @@ original_path: boards/blues/swan_r5/doc/index.html
 
 Board Overview
 
-[![../../../../_images/swan.jpg](../../../../_images/swan.jpg)
-](../../../../_images/swan.jpg)
+[![../../../../_images/swan.jpg](https://docs.zephyrproject.org/4.1.0/_images/swan.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/swan.jpg)
 
 Swan
 

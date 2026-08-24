@@ -27,11 +27,11 @@ This board has following features:
 - USB
 - WDT
 
-![CTCC nRF52840 mPCIe](../../../../_images/ctcc_nrf52840_mpcie.webp)
+![CTCC nRF52840 mPCIe](https://docs.zephyrproject.org/3.7.0/_images/ctcc_nrf52840_mpcie.webp)
 
 ctcc/nrf52840 mPCie board
 
-![CTCC nRF52840 M.2](../../../../_images/ctcc_nrf52840_m2.webp)
+![CTCC nRF52840 M.2](https://docs.zephyrproject.org/3.7.0/_images/ctcc_nrf52840_m2.webp)
 
 ctcc/nrf52840 M.2 board
 

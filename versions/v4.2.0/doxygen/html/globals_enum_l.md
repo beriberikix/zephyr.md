@@ -39,4 +39,4 @@ Here is a list of all enums with links to the files they belong to:
 - lwm2m\_send\_status : [lwm2m.h](group__lwm2m__api.md#ga20848e0942882e8c2cc40ee8a48b7bfd)
 - lwm2m\_socket\_states : [lwm2m.h](group__lwm2m__api.md#ga7611c1aebb0309ee8340e06dd8ee234d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -489,4 +489,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - WUC\_TYPE\_EDGE\_FALLING : [it8xxx2-wuc.h](it8xxx2-wuc_8h.md#a21b4240f97f62e69f23ea614de699955)
 - WUC\_TYPE\_EDGE\_RISING : [it8xxx2-wuc.h](it8xxx2-wuc_8h.md#a679ab1940f920cfe6c0fa1d5ed14a468)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

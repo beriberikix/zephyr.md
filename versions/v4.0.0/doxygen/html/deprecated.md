@@ -106,4 +106,4 @@ Global [net\_if\_ipv4\_set\_netmask\_by\_index](group__net__if.md#ga94f2d2e69548
 Global [PWM\_STM32\_COMPLEMENTARY](stm32__pwm_8h.md#ac73e020f7f8787beaa8ddf7871578c6f)
 :   Use the PWM complementary [STM32\_PWM\_COMPLEMENTARY](stm32__pwm_8h.md#a8e4959803792254f90bb31e0454a4249 "PWM complementary output pin is enabled.") flag instead.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

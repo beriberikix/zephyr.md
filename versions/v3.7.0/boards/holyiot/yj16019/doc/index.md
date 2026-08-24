@@ -26,7 +26,7 @@ Semiconductor nRF52832 ARM Cortex-M4 CPU and the following devices:
 - Segger RTT (RTT Console)
 - WDT
 
-![Holyiot YJ-16019](../../../../_images/holyiot_yj16019_front.jpg)
+![Holyiot YJ-16019](https://docs.zephyrproject.org/3.7.0/_images/holyiot_yj16019_front.jpg)
 
 Holyiot YJ-16019 (Credit: Holyiot)
 
@@ -82,7 +82,7 @@ pads on the PCB (see image):
 - SWDIO = SDO
 - SWCLK = SCK
 
-![Holyiot YJ-16019 PCB](../../../../_images/holyiot_yj16019_pcb.jpg)
+![Holyiot YJ-16019 PCB](https://docs.zephyrproject.org/3.7.0/_images/holyiot_yj16019_pcb.jpg)
 
 Holyiot YJ-16019 PCB (Credit: Holyiot)
 

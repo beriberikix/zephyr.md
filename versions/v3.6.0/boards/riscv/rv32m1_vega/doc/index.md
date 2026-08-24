@@ -17,7 +17,7 @@ on-die XIP flash, and a full complement of peripherals, including a
 2.4 GHz multi-protocol radio. It also has built-in sensors and
 Arduino-style expansion connectors.
 
-![RV32M1-VEGA](../../../../_images/rv32m1_vega.jpg)
+![RV32M1-VEGA](https://docs.zephyrproject.org/3.6.0/_images/rv32m1_vega.jpg)
 
 OpenISA VEGAboard (image copyright: www.open-isa.org)
 
@@ -403,7 +403,7 @@ debugger and adapter board. See the [above information](#rv32m1-programming-hw) 
 1. Connect the J-Link debugger through the adapter board to the
    VEGAboard as shown in the figure.
 
-   ![RV32M1-VEGA](../../../../_images/rv32m1_vega_jtag.jpg)
+   ![RV32M1-VEGA](https://docs.zephyrproject.org/3.6.0/_images/rv32m1_vega_jtag.jpg)
 
    VEGAboard connected properly to J-Link debugger.
    VEGAboard connector J55 should be used. Pin 1 is on the bottom left.
@@ -470,7 +470,7 @@ run `init`, so you have to do it yourself as explained below.
 >
 > The reset button is at top left, as shown in the following figure.
 >
-> ![Reset button is pressed](../../../../_images/ri5cy_boot.jpg)
+> ![Reset button is pressed](https://docs.zephyrproject.org/3.6.0/_images/ri5cy_boot.jpg)
 >
 > Now quit the telnet session in this terminal and exit OpenOCD in the
 > other terminal.

@@ -8,8 +8,8 @@ original_path: boards/lilygo/ttgo_t7v1_5/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ttgo_t7v1_5.webp](../../../../_images/ttgo_t7v1_5.webp)
-](../../../../_images/ttgo_t7v1_5.webp)
+[![../../../../_images/ttgo_t7v1_5.webp](https://docs.zephyrproject.org/4.2.0/_images/ttgo_t7v1_5.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ttgo_t7v1_5.webp)
 
 TTGO T7 Mini32 V1.5
 

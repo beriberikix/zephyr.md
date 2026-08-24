@@ -12,7 +12,7 @@ the drop-down menu on the left and select the desired version.
 
 ## Overview
 
-![Icarus SoM](../../../../_images/icarus-som.jpg)
+![Icarus SoM](https://docs.zephyrproject.org/3.6.0/_images/icarus-som.jpg)
 
 Icarus SoM (nRF9160)
 
@@ -40,11 +40,11 @@ following devices (provided directly by Nordic):
 - WDT
 - IDAU
 
-![Icarus SoM Pins](../../../../_images/icarus-som-external-pins.jpg)
+![Icarus SoM Pins](https://docs.zephyrproject.org/3.6.0/_images/icarus-som-external-pins.jpg)
 
 Icarus SoM Pins
 
-![Icarus SoM](../../../../_images/icarus-som-peripherals-pins.jpg)
+![Icarus SoM](https://docs.zephyrproject.org/3.6.0/_images/icarus-som-peripherals-pins.jpg)
 
 Internal Pinouts
 

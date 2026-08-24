@@ -114,4 +114,4 @@ See also
 | HTTP\_510\_NOT\_EXTENDED | Not Extended. |
 | HTTP\_511\_NETWORK\_AUTHENTICATION\_REQUIRED | Network Authentication Required. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

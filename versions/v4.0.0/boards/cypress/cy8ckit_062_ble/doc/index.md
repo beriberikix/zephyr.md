@@ -32,7 +32,7 @@ enabling you to emulate a BLE host on your computer.
 The Cortex-M0+ is a primary core on the board’s SoC. It starts first and
 enables the CM4 core.
 
-![CY8CKIT_062_BLE](../../../../_images/cy8ckit-062-ble.jpg)
+![CY8CKIT_062_BLE](https://docs.zephyrproject.org/4.0.0/_images/cy8ckit-062-ble.jpg)
 
 1. Battery charging indicator (LED6)
 2. USB PD output voltage availability indicator (LED7)

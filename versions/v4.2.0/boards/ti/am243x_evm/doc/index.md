@@ -8,8 +8,8 @@ original_path: boards/ti/am243x_evm/doc/index.html
 
 Board Overview
 
-[![../../../../_images/tmds243evm-angled.webp](../../../../_images/tmds243evm-angled.webp)
-](../../../../_images/tmds243evm-angled.webp)
+[![../../../../_images/tmds243evm-angled.webp](https://docs.zephyrproject.org/4.2.0/_images/tmds243evm-angled.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/tmds243evm-angled.webp)
 
 TI AM243x-EVM
 

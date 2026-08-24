@@ -18,7 +18,7 @@ to DIL20 module designed with the STM32C011F6 microcontroller and allows the use
 and share applications. It includes an on-board ST-LINK/V2-1 to debug and program the embedded
 STM32 microcontroller. Important board features include:
 
-![STM32C0116-DK](../../../../_images/stm32c0116_dk.jpg)
+![STM32C0116-DK](https://docs.zephyrproject.org/3.7.0/_images/stm32c0116_dk.jpg)
 
 More information about the board can be found at the [STM32C0116-DK website](https://www.st.com/en/evaluation-tools/stm32c0116-dk.html).
 

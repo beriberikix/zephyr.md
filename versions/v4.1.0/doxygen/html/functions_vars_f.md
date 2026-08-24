@@ -213,4 +213,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - fwrite : [shell\_fprintf](structshell__fprintf.md#a8add85184dda7c002e7265baebe2112b)
 - fxsave : [arch\_esf](structarch__esf.md#af27c45a02ae939f203f260e21c5efdb5), [x86\_ssf](structx86__ssf.md#a50e764f5066662238d2b3b117d199db2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

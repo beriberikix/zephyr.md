@@ -268,4 +268,4 @@ Here is a list of all functions with links to the files they belong to:
 - pwm\_set\_dt() : [pwm.h](group__pwm__interface.md#ga225ce58ceb3de3d76df3e03439d655b9)
 - pwm\_set\_pulse\_dt() : [pwm.h](group__pwm__interface.md#ga8ff263177143d33c6d0a284b837bc4da)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

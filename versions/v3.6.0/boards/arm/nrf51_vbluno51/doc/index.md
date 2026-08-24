@@ -15,11 +15,11 @@ the drop-down menu on the left and select the desired version.
 Zephyr uses the nrf51\_vbluno51 board configuration to run on the VBLUno51 board,
 a VNG Bluetooth Low Energy UNO using an nRF51822 ARM processor.
 
-![nRF51_VBLUno51](../../../../_images/nrf51_vbluno51.jpg)
+![nRF51_VBLUno51](https://docs.zephyrproject.org/3.6.0/_images/nrf51_vbluno51.jpg)
 
 nrf51\_vbluno51 Top
 
-![nRF51_VBLUno51 Bottom](../../../../_images/nrf51_vbluno51_bot.jpg)
+![nRF51_VBLUno51 Bottom](https://docs.zephyrproject.org/3.6.0/_images/nrf51_vbluno51_bot.jpg)
 
 nrf51\_vbluno51 Bottom
 
@@ -75,11 +75,11 @@ See [VBLUno51 wiki page](https://vngiotlab.github.io/vbluno/) [[1]](#id6) for fu
 
 #### More details
 
-![nRF51_VBLUno51 Pinout](../../../../_images/vbluno51_nordic_pinout.jpg)
+![nRF51_VBLUno51 Pinout](https://docs.zephyrproject.org/3.6.0/_images/vbluno51_nordic_pinout.jpg)
 
 nrf51\_vbluno51 Pinout
 
-![nRF51_VBLUno51 Fritzing part](../../../../_images/vbluno51_frizting.jpg)
+![nRF51_VBLUno51 Fritzing part](https://docs.zephyrproject.org/3.6.0/_images/vbluno51_frizting.jpg)
 
 nrf51\_vbluno51 Fritzing part
 

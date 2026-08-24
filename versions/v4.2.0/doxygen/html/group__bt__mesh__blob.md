@@ -127,4 +127,4 @@ Transfer phase.
 | BT\_MESH\_BLOB\_XFER\_PHASE\_COMPLETE | The BLOB was transferred successfully. |
 | BT\_MESH\_BLOB\_XFER\_PHASE\_SUSPENDED | The BLOB transfer is paused. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -258,4 +258,4 @@ static uint32\_t check\_result(uint32\_t testnum, const void \*expected, size\_t
 - [include](dir_d5cd24c9babba9527629083c466f69cc.md)
 - [zephyr](dir_91e5ce9bd56815b1bd388aa667b3762f.md)
 - [test\_utils.h](test__utils_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

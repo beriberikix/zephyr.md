@@ -8,8 +8,8 @@ original_path: boards/starfive/visionfive2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/visionfive2.webp](../../../../_images/visionfive2.webp)
-](../../../../_images/visionfive2.webp)
+[![../../../../_images/visionfive2.webp](https://docs.zephyrproject.org/4.1.0/_images/visionfive2.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/visionfive2.webp)
 
 VisionFive 2 JH7110
 

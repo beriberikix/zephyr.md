@@ -19,7 +19,7 @@ The GD32F350RBT6 features a single-core ARM Cortex-M4F MCU which can run up
 to 108-MHz with flash accesses zero wait states, 128kB of Flash, 16kB of
 SRAM and 55 GPIOs.
 
-![gd32f350r_eval](../../../../_images/gd32f350r_eval.webp)
+![gd32f350r_eval](https://docs.zephyrproject.org/3.7.0/_images/gd32f350r_eval.webp)
 
 ## Hardware
 

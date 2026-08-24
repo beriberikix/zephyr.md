@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The nPM6001 EK lets you test different functions and features of the nPM6001
 Power Management Integrated Circuit (PMIC).
 
-![nPM6001 EK](../../../../_images/npm6001_ek.jpg)
+![nPM6001 EK](https://docs.zephyrproject.org/3.6.0/_images/npm6001_ek.jpg)
 
 nPM6001 EK
 

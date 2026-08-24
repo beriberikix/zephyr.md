@@ -11,7 +11,7 @@ original_path: boards/shields/renesas_us159_da14531evz/doc/index.html
 The Renesas US159 DA14531EVZ carries a [DA14531MOD](https://www.renesas.com/us/en/products/wireless-connectivity/bluetooth-low-energy/da14531mod-smartbond-tiny-bluetooth-low-energy-module) [[1]](#id3) Bluetooth LE module
 in a [Digilent Pmod](https://digilent.com/reference/pmod/start) [[2]](#id5)™ form factor.
 
-![Renesas US159 DA14531EVZ Pmod](../../../../_images/us159-da14531evz-pmod.webp)
+![Renesas US159 DA14531EVZ Pmod](https://docs.zephyrproject.org/4.2.0/_images/us159-da14531evz-pmod.webp)
 
 Renesas US159 DA14531EVZ Pmod (Credit: Renesas Electronics)
 
@@ -31,7 +31,7 @@ present on the Pmod board. Once the tool has been installed, open it and
 press the “Search Online” button. The required binary file can be selected
 for download as follows:
 
-![DA14531 HCI Binary File Selection](../../../../_images/da14531-hci-hw-flow-binary.webp)
+![DA14531 HCI Binary File Selection](https://docs.zephyrproject.org/4.2.0/_images/da14531-hci-hw-flow-binary.webp)
 
 Selecting the DA14531 HCI Binary File for Download
 

@@ -934,4 +934,4 @@ MDIO transaction operation code.
 | MDIO\_OP\_C45\_READ\_INC | IEEE 802.3 45.3.4 post-read-increment-address operation. |
 | MDIO\_OP\_C45\_READ | IEEE 802.3 45.3.4 read operation. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

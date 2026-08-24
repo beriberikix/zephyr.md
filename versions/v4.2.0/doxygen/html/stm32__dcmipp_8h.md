@@ -52,4 +52,4 @@ stm32\_dcmipp.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [video](dir_70eea7c53f39b9e28dfa8fbbe17c6ab3.md)
 - [stm32\_dcmipp.h](stm32__dcmipp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

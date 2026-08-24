@@ -74,4 +74,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/console/[ipm\_console.h](ipm__console_8h_source.md)
 
 - [ipm\_console\_receiver\_runtime\_data](structipm__console__receiver__runtime__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

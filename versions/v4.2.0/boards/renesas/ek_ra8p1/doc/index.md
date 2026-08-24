@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra8p1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra8p1.webp](../../../../_images/ek_ra8p1.webp)
-](../../../../_images/ek_ra8p1.webp)
+[![../../../../_images/ek_ra8p1.webp](https://docs.zephyrproject.org/4.2.0/_images/ek_ra8p1.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ek_ra8p1.webp)
 
 RA8P1 Evaluation Kit
 

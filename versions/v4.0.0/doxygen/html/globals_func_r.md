@@ -246,4 +246,4 @@ Here is a list of all functions with links to the files they belong to:
 - rtio\_work\_req\_submit() : [work.h](work_8h.md#a62035ecd9def621b4e70b699d9027140)
 - rtio\_work\_req\_used\_count\_get() : [work.h](work_8h.md#a352516812e7bc88b61cceb2f69d9fd3f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/silabs/dev_kits/xg27_dk2602a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/xg27_dk2602a.png](../../../../../_images/xg27_dk2602a.png)
-](../../../../../_images/xg27_dk2602a.png)
+[![../../../../../_images/xg27_dk2602a.png](https://docs.zephyrproject.org/4.1.0/_images/xg27_dk2602a.png)
+](https://docs.zephyrproject.org/4.1.0/_images/xg27_dk2602a.png)
 
 EFR32xG27 Dev Kit (xG27-DK2602A)
 

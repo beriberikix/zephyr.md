@@ -69,4 +69,4 @@ The documentation for this struct was generated from the following files:
 - zephyr/arch/riscv/[arch.h](riscv_2arch_8h_source.md)
 
 - [k\_mem\_partition\_attr\_t](structk__mem__partition__attr__t.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

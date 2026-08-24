@@ -53,4 +53,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/clock\_control/[clock\_control\_rts5912.h](clock__control__rts5912_8h_source.md)
 
 - [rts5912\_sccon\_subsys](structrts5912__sccon__subsys.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

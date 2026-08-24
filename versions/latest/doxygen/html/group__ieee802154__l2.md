@@ -220,4 +220,4 @@ IEEE 802.15.4 device role.
 | IEEE802154\_DEVICE\_ROLE\_COORDINATOR | Coordinator. |
 | IEEE802154\_DEVICE\_ROLE\_PAN\_COORDINATOR | PAN coordinator. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

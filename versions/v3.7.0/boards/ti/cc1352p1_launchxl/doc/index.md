@@ -17,7 +17,7 @@ development kit for the SimpleLink™ multi-Standard CC1352P wireless MCU.
 
 See the [TI CC1352P LaunchPad Product Page](https://www.ti.com/tool/LAUNCHXL-CC1352P) for details.
 
-[![TI CC1352P1 LaunchPad](../../../../_images/cc1352p1_launchxl.jpg)](../../../../_images/cc1352p1_launchxl.jpg)
+[![TI CC1352P1 LaunchPad](https://docs.zephyrproject.org/3.7.0/_images/cc1352p1_launchxl.jpg)](https://docs.zephyrproject.org/3.7.0/_images/cc1352p1_launchxl.jpg)
 
 Texas Instruments CC1352P1 LaunchPad™
 

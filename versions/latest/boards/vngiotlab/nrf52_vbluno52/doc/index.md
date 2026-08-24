@@ -8,8 +8,8 @@ original_path: boards/vngiotlab/nrf52_vbluno52/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52_vbluno52.jpg](../../../../_images/nrf52_vbluno52.jpg)
-](../../../../_images/nrf52_vbluno52.jpg)
+[![../../../../_images/nrf52_vbluno52.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf52_vbluno52.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52_vbluno52.jpg)
 
 nRF52-VBLUno52
 

@@ -212,4 +212,4 @@ Misc utilities.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [shell](dir_a00401f9c4a77a4264f18025172f9ea7.md)
 - [shell\_history.h](shell__history_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

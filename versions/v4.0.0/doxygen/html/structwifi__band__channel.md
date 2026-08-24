@@ -56,4 +56,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[wifi\_mgmt.h](wifi__mgmt_8h_source.md)
 
 - [wifi\_band\_channel](structwifi__band__channel.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

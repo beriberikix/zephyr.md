@@ -77,4 +77,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[counter.h](counter_8h_source.md)
 
 - [counter\_config\_info](structcounter__config__info.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

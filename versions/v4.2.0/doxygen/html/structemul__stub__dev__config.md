@@ -24,4 +24,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[emul\_stub\_device.h](emul__stub__device_8h_source.md)
 
 - [emul\_stub\_dev\_config](structemul__stub__dev__config.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

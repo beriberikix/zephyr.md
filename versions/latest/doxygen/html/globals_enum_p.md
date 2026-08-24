@@ -42,4 +42,4 @@ Here is a list of all enums with links to the files they belong to:
 - psi5\_frame\_type : [psi5.h](group__psi5__interface.md#ga5cb0ef3be35e9ff2d05c39cc17f2659f)
 - pt\_irq\_type : [domctl.h](public_2domctl_8h.md#aa0ba08b170800d6d7723b694525ade07)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

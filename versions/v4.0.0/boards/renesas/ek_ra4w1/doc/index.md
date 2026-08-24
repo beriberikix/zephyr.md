@@ -55,7 +55,7 @@ embedded RAM and low power consumption.
 
 - Emulator reset switch
 
-![RA4W1 Evaluation Kit](../../../../_images/ek_ra4w1.webp)
+![RA4W1 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra4w1.webp)
 
 EK-RA4W1 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -63,8 +63,8 @@ EK-RA4W1 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detail Hardware feature for the RA4W1 MCU group can be found at [RA4W1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/renesas-ra4w1-group-users-manual-hardware)
 
-[![RA4W1 MCU group feature](../../../../_images/ra4w1_block_diagram.webp)
-](../../../../_images/ra4w1_block_diagram.webp)
+[![RA4W1 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra4w1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra4w1_block_diagram.webp)
 
 RA4W1 Block diagram (Credit: Renesas Electronics Corporation)
 

@@ -30,7 +30,7 @@ Semiconductor nRF52840 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-![CX1825](../../../../_images/cx1825_nrf52840.jpg)
+![CX1825](https://docs.zephyrproject.org/3.7.0/_images/cx1825_nrf52840.jpg)
 
 Croxel’s CX1825 Bluetooth Prototyping board (Credit: Croxel)
 

@@ -24,7 +24,7 @@ support for AMOLED DSI round LCD display.
 For even more user-friendliness, the on-board ST-LINK/V2-1 debugger provides out-of-the-box
 programming and debugging capabilities.
 
-![STM32L4R9I-DISCO](../../../../_images/stm32l4r9i_disco.jpg)
+![STM32L4R9I-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32l4r9i_disco.jpg)
 
 More information about the board can be found at the [STM32L4R9I-DISCOVERY website](https://www.st.com/en/evaluation-tools/32l4r9idiscovery.html).
 More information about STM32L4R9 can be found here:

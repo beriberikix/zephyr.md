@@ -136,4 +136,4 @@ Here is a list of all functions with links to the files they belong to:
 - gsm\_ppp\_modem\_info() : [gsm\_ppp.h](gsm__ppp_8h.md#a5b991701916b3094e06d962d95331969)
 - gsm\_ppp\_register\_modem\_power\_callback() : [gsm\_ppp.h](gsm__ppp_8h.md#af9dc2fb4a09aa887c2046ca3b029d2e6)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

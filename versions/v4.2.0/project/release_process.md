@@ -40,8 +40,8 @@ The Zephyr release model was loosely based on the Linux kernel model:
   - If it is a go for a release, the release owner lays a tag release vN at the
     same point
 
-[![Release Cycle](../_images/release_cycle.svg)
-](../_images/release_cycle.svg)
+[![Release Cycle](https://docs.zephyrproject.org/4.2.0/_images/release_cycle.svg)
+](https://docs.zephyrproject.org/4.2.0/_images/release_cycle.svg)
 
 Release Cycle
 
@@ -169,8 +169,8 @@ The following syntax should be used for releases and tags in Git:
     sensible output for “git describe” on main branch, as typically used for
     automated builds and CI tools.
 
-[![Releases](../_images/release_flow.png)
-](../_images/release_flow.png)
+[![Releases](https://docs.zephyrproject.org/4.2.0/_images/release_flow.png)
+](https://docs.zephyrproject.org/4.2.0/_images/release_flow.png)
 
 Zephyr Code and Releases
 
@@ -282,8 +282,8 @@ LTS *N+2*.
 The list of currently supported LTS releases and their EOL dates can be found
 [here](../releases/index.md#supported-releases).
 
-[![Long Term Support Release](../_images/lts.svg)
-](../_images/lts.svg)
+[![Long Term Support Release](https://docs.zephyrproject.org/4.2.0/_images/lts.svg)
+](https://docs.zephyrproject.org/4.2.0/_images/lts.svg)
 
 Long Term Support Release
 

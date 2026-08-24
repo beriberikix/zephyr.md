@@ -102,4 +102,4 @@ Only one function can be configured per GPIO.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [mfd](dir_1bf5b7f6eba6ffa1b2ffa53a350028d6.md)
 - [axp192.h](drivers_2mfd_2axp192_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

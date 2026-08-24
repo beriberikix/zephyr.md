@@ -56,4 +56,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - usbc\_ppc\_event\_cb\_t : [usbc\_ppc.h](usbc__ppc_8h.md#a8195a7a51eb5bd3cbcec985b97b84e73)
 - useconds\_t : [posix\_types.h](posix__types_8h.md#a1cf3c794977f92f3ccf2e041a68f3342)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

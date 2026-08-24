@@ -29,7 +29,7 @@ such as Linux BSP and hypervisors.
 The Renesas R-Car Spider board is the Renesas R-Car S4 reference board and is designed for
 evaluating features and performance of this SoC.
 
-![R-Car S4 Spider](../../../../_images/rcar_s4_spider_full.jpg)
+![R-Car S4 Spider](https://docs.zephyrproject.org/3.7.0/_images/rcar_s4_spider_full.jpg)
 
 More information about the board can be found at [Renesas R-Car S4 Spider](https://www.renesas.com/us/en/products/automotive-products/automotive-system-chips-socs/rtp8a779f0askb0sp2s-r-car-s4-reference-boardspider) website.
 
@@ -37,7 +37,7 @@ More information about the board can be found at [Renesas R-Car S4 Spider](https
 
 Hardware capabilities for the S4 Spider board can be found on the [eLinux S4 Spider](https://elinux.org/R-Car/Boards/Spider) page.
 
-![R-Car S4 Spider block diagram](../../../../_images/rcar_s4_block_diagram.jpg)
+![R-Car S4 Spider block diagram](https://docs.zephyrproject.org/3.7.0/_images/rcar_s4_block_diagram.jpg)
 
 Note
 

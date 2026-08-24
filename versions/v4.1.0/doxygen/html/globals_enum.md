@@ -46,4 +46,4 @@ Here is a list of all enums with links to the files they belong to:
 - auxdisplay\_position : [auxdisplay.h](group__auxdisplay__interface.md#ga98b0be37fc76df0ae4dec0bef6c94504)
 - axp192\_gpio\_func : [axp192.h](drivers_2mfd_2axp192_8h.md#ac92e5fa77591e02e49570d1a1c38e249)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

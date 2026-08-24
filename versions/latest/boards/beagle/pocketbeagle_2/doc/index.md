@@ -8,8 +8,8 @@ original_path: boards/beagle/pocketbeagle_2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pocketbeagle_2.webp](../../../../_images/pocketbeagle_2.webp)
-](../../../../_images/pocketbeagle_2.webp)
+[![../../../../_images/pocketbeagle_2.webp](https://docs.zephyrproject.org/4.2.0/_images/pocketbeagle_2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/pocketbeagle_2.webp)
 
 PocketBeagle 2
 

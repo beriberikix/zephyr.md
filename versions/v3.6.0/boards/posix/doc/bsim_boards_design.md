@@ -135,7 +135,7 @@ The basic architecture layering of these boards is as follows:
   controller and interrupt handling APIs, `posix_exit()`,
   and `posix_get_hw_cycle()` (see `posix_board_if.h` and `posix_soc_if.h`).
 
-![Zephyr layering in native & bsim builds](../../../_images/layering_natsim.svg)
+![Zephyr layering in native & bsim builds](https://docs.zephyrproject.org/3.6.0/_images/layering_natsim.svg)
 
 Overall architecture in a Zephyr application in an embedded target vs a bsim
 target
@@ -193,7 +193,7 @@ The communication between a Zephyr device and other simulated devices is
 handled over the bsim libPhyCom libraries. For the radio activity the figure
 below represents this communication:
 
-![Communication between a Zephyr device and other simulated devices](../../../_images/Zephyr_and_bsim.svg)
+![Communication between a Zephyr device and other simulated devices](https://docs.zephyrproject.org/3.6.0/_images/Zephyr_and_bsim.svg)
 
 Communication between a Zephyr device and other simulated devices
 

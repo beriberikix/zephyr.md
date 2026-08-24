@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l552ze_q/doc/nucleol552ze_q.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l552ze_q.jpg](../../../../_images/nucleo_l552ze_q.jpg)
-](../../../../_images/nucleo_l552ze_q.jpg)
+[![../../../../_images/nucleo_l552ze_q.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l552ze_q.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l552ze_q.jpg)
 
 Nucleo L552ZE Q
 
@@ -297,8 +297,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L552ZE Q Zio left connector](../../../../_images/nucleo_l552ze_q_zio_left_2020_2_11.jpg)
-![Nucleo L552ZE Q Zio right connector](../../../../_images/nucleo_l552ze_q_zio_right_2020_2_11.jpg)
+![Nucleo L552ZE Q Zio left connector](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l552ze_q_zio_left_2020_2_11.jpg)
+![Nucleo L552ZE Q Zio right connector](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l552ze_q_zio_right_2020_2_11.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00615305.pdf).
 

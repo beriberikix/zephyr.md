@@ -50,7 +50,7 @@ as a USB Type-C™ and Power Delivery analyzer.
 - On-board ST-LINK/V2-1 debugger/programmer with USB enumeration capability:
   mass storage, Virtual COM port and debug port
 
-![STM32G071B-DISCO](../../../../_images/stm32g071b_disco.jpg)
+![STM32G071B-DISCO](https://docs.zephyrproject.org/3.7.0/_images/stm32g071b_disco.jpg)
 
 More information about the board can be found at the [STM32G071B-DISCO website](https://www.st.com/en/evaluation-tools/stm32g071b-disco.html) [[1]](#id1).
 

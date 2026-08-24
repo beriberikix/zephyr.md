@@ -46,7 +46,7 @@ The features include the following:
 - Cryptographic hardware acceleration (RNG, ECC, RSA, SHA-2, AES)
 - 5uA deep sleep current
 
-![ESP32-DEVKITC-WROVER](../../../../_images/esp32_devkitc_wrover.jpg)
+![ESP32-DEVKITC-WROVER](https://docs.zephyrproject.org/3.6.0/_images/esp32_devkitc_wrover.jpg)
 
 ESP32-DevKitC-WROVER-IE
 

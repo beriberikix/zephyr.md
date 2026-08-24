@@ -8,8 +8,8 @@ original_path: boards/dragino/lsn50/doc/index.html
 
 Board Overview
 
-[![../../../../_images/dragino_lsn50.jpg](../../../../_images/dragino_lsn50.jpg)
-](../../../../_images/dragino_lsn50.jpg)
+[![../../../../_images/dragino_lsn50.jpg](https://docs.zephyrproject.org/4.1.0/_images/dragino_lsn50.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/dragino_lsn50.jpg)
 
 LSN50 LoRA Sensor Node
 

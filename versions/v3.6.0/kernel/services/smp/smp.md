@@ -153,7 +153,7 @@ application code runs, and finally calls `z_swap()` to transfer
 control to the appropriate runnable thread via the standard scheduler
 API.
 
-![SMP Initialization](../../../_images/smpinit.svg)
+![SMP Initialization](https://docs.zephyrproject.org/3.6.0/_images/smpinit.svg)
 
 Example SMP initialization process, showing a configuration with
 two CPUs and two app threads which begin operating simultaneously.

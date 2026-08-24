@@ -44,7 +44,7 @@ default board configuration is set to work as “Generic SPI, CRC enabled”,
 so the S1 DIP switches must be set as `SPI_CFG0 OFF and SPI_CFG1 OFF`.
 An inconsistent S1 DIP switches configuration will halt the boot.
 
-![ADI EVAL-ADIN2111EBZ](../../../../_images/adi_eval_adin2111ebz.webp)
+![ADI EVAL-ADIN2111EBZ](https://docs.zephyrproject.org/3.6.0/_images/adi_eval_adin2111ebz.webp)
 
 ADI EVAL-ADIN2111EBZ (Credit: Analog Devices, Inc.)
 

@@ -8,8 +8,8 @@ original_path: boards/adi/max32690fthr/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32690fthr.webp](../../../../_images/max32690fthr.webp)
-](../../../../_images/max32690fthr.webp)
+[![../../../../_images/max32690fthr.webp](https://docs.zephyrproject.org/4.2.0/_images/max32690fthr.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/max32690fthr.webp)
 
 MAX32690FTHR
 

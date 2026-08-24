@@ -8,8 +8,8 @@ original_path: boards/sparkfun/pro_micro_rp2040/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sparkfun_pro_micro_rp2040.jpg](../../../../_images/sparkfun_pro_micro_rp2040.jpg)
-](../../../../_images/sparkfun_pro_micro_rp2040.jpg)
+[![../../../../_images/sparkfun_pro_micro_rp2040.jpg](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_pro_micro_rp2040.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_pro_micro_rp2040.jpg)
 
 Pro Micro RP2040
 

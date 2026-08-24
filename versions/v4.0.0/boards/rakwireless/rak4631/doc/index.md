@@ -8,8 +8,8 @@ original_path: boards/rakwireless/rak4631/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rak4631-front-parts.jpg](../../../../_images/rak4631-front-parts.jpg)
-](../../../../_images/rak4631-front-parts.jpg)
+[![../../../../_images/rak4631-front-parts.jpg](https://docs.zephyrproject.org/4.0.0/_images/rak4631-front-parts.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/rak4631-front-parts.jpg)
 
 RAK4631
 

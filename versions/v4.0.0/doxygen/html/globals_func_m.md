@@ -392,4 +392,4 @@ Here is a list of all functions with links to the files they belong to:
 - munlockall() : [mman.h](mman_8h.md#a03b30383879c5b943ac4d4f9077aeb66)
 - munmap() : [mman.h](mman_8h.md#a01ff21bc70401bee9b80c350763087f7)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

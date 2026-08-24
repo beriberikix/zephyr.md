@@ -212,7 +212,7 @@ shell instances.
 Example code demonstrating how to create a root command with static
 subcommands.
 
-![Command tree with static commands.](../../_images/static_cmd.PNG)
+![Command tree with static commands.](https://docs.zephyrproject.org/4.0.0/_images/static_cmd.PNG)
 
 ```c
 /* Creating subcommands (level 1 command) array for command "demo". */
@@ -271,7 +271,7 @@ SHELL_CMD_REGISTER(gain, &sub_gain, "Set ADC gain", NULL);
 
 This is how it would look like in the shell:
 
-![Dictionary commands example.](../../_images/dict_cmd.png)
+![Dictionary commands example.](https://docs.zephyrproject.org/4.0.0/_images/dict_cmd.png)
 
 #### Dynamic commands
 
@@ -285,7 +285,7 @@ dynamic add <new_dynamic_command>
 
 Newly added commands can be prompted or autocompleted with the `Tab` key.
 
-![Command tree with static and dynamic commands.](../../_images/dynamic_cmd.PNG)
+![Command tree with static and dynamic commands.](https://docs.zephyrproject.org/4.0.0/_images/dynamic_cmd.PNG)
 
 ```c
 /* Buffer for 10 dynamic commands */
@@ -370,7 +370,7 @@ Let’s assume a command structure as in the following figure, where:
 - `cmd_xxx_h` - command has a handler
 - `cmd_xxx` - command does not have a handler
 
-![Command tree with static commands.](../../_images/execution.png)
+![Command tree with static commands.](https://docs.zephyrproject.org/4.0.0/_images/execution.png)
 
 ##### Example 1
 
@@ -509,7 +509,7 @@ the shell will do one of 3 possible things:
 - Prompts available commands and if possible partly completes the command.
 - Will not do anything if there are no available or matching commands.
 
-![Tab Feature usage example](../../_images/tab_prompt.png)
+![Tab Feature usage example](https://docs.zephyrproject.org/4.0.0/_images/tab_prompt.png)
 
 ## [History Feature](#id18)
 
@@ -531,7 +531,7 @@ modules you can execute the following command:
 log enable err a*
 ```
 
-![Wildcard usage example](../../_images/wildcard.png)
+![Wildcard usage example](https://docs.zephyrproject.org/4.0.0/_images/wildcard.png)
 
 This feature is activated by [`CONFIG_SHELL_WILDCARD`](../../kconfig.md#CONFIG_SHELL_WILDCARD "CONFIG_SHELL_WILDCARD") set to `y`.
 

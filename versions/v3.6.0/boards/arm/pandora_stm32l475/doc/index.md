@@ -37,7 +37,7 @@ some highlights of the STM32L475 Pandora board:
       - External 5 V
       - CR2032 battery (not provided)
 
-![STM32L475 Pandora](../../../../_images/pandora_stm32l475.jpg)
+![STM32L475 Pandora](https://docs.zephyrproject.org/3.6.0/_images/pandora_stm32l475.jpg)
 
 More information about the board can be found at the [STM32L475 Pandora website](http://www.openedv.com/docs/boards/iot/zdyz_panduola.html).
 

@@ -8,8 +8,8 @@ original_path: boards/up-bridge-the-gap/up_squared/doc/index.html
 
 Board Overview
 
-[![../../../../_images/up_squared.jpg](../../../../_images/up_squared.jpg)
-](../../../../_images/up_squared.jpg)
+[![../../../../_images/up_squared.jpg](https://docs.zephyrproject.org/4.1.0/_images/up_squared.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/up_squared.jpg)
 
 UP Squared
 

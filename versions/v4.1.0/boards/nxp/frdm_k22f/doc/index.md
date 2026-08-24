@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_k22f/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_k22f.jpg](../../../../_images/frdm_k22f.jpg)
-](../../../../_images/frdm_k22f.jpg)
+[![../../../../_images/frdm_k22f.jpg](https://docs.zephyrproject.org/4.1.0/_images/frdm_k22f.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/frdm_k22f.jpg)
 
 FRDM-K22F
 

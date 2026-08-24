@@ -28,7 +28,7 @@ and has support for the following features:
 - USB
 - WDT
 
-![../../../../_images/EVK-NINA-B406_Top_web.jpg](../../../../_images/EVK-NINA-B406_Top_web.jpg)
+![../../../../_images/EVK-NINA-B406_Top_web.jpg](https://docs.zephyrproject.org/4.1.0/_images/EVK-NINA-B406_Top_web.jpg)
 
 EVK NINA-B4
 

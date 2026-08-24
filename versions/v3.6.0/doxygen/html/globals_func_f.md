@@ -163,4 +163,4 @@ Here is a list of all functions with links to the files they belong to:
 - fuel\_gauge\_set\_props() : [fuel\_gauge.h](group__fuel__gauge__interface.md#ga55bb2be9c9eae7c3a8d01df051178d01)
 - fwrite() : [stdio.h](stdio_8h.md#a610723ed7ffdf7b802f6093d45ffa09d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

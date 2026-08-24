@@ -28,4 +28,4 @@ img\_mgmt\_callbacks.h File Reference
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [img\_mgmt](dir_731c1b2142dfc9d7fee3a06aa394438e.md)
 - [img\_mgmt\_callbacks.h](img__mgmt__callbacks_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

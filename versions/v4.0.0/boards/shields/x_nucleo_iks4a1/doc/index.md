@@ -14,7 +14,7 @@ allows application development with features like sensor HUB (LSM6DSO16IS and
 LSM6DSV16X), camera module integration and Qvar touch/swipe gestures (thanks to
 the equipped electrode).
 
-![X-NUCLEO-IKS4A1](../../../../_images/x-nucleo-iks4a1.jpg)
+![X-NUCLEO-IKS4A1](https://docs.zephyrproject.org/4.0.0/_images/x-nucleo-iks4a1.jpg)
 
 More general information about the board can be found at the
 [X-NUCLEO-IKS4A1 website](http://www.st.com/en/ecosystems/x-nucleo-iks4a1.html).

@@ -58,4 +58,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/mgmt/mcumgr/grp/fs\_mgmt/[fs\_mgmt\_callbacks.h](fs__mgmt__callbacks_8h_source.md)
 
 - [fs\_mgmt\_file\_access](structfs__mgmt__file__access.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

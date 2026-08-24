@@ -8,8 +8,8 @@ original_path: boards/st/stm32u5g9j_dk2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32u5g9j_dk2.webp](../../../../_images/stm32u5g9j_dk2.webp)
-](../../../../_images/stm32u5g9j_dk2.webp)
+[![../../../../_images/stm32u5g9j_dk2.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32u5g9j_dk2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32u5g9j_dk2.webp)
 
 STM32U5G9J Discovery Kit
 

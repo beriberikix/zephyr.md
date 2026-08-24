@@ -8,8 +8,8 @@ original_path: boards/segger/trb_stm32f407/doc/index.html
 
 Board Overview
 
-[![../../../../_images/segger_trb_stm32f407.jpg](../../../../_images/segger_trb_stm32f407.jpg)
-](../../../../_images/segger_trb_stm32f407.jpg)
+[![../../../../_images/segger_trb_stm32f407.jpg](https://docs.zephyrproject.org/4.2.0/_images/segger_trb_stm32f407.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/segger_trb_stm32f407.jpg)
 
 Cortex-M Trace Reference Board V1.2
 

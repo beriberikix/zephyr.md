@@ -27,7 +27,7 @@ ARM Cortex-M4F CPU and has support for the following features:
 - UART
 - WDT
 
-![../../../../_images/EVK-NINA-B1.jpg](../../../../_images/EVK-NINA-B1.jpg)
+![../../../../_images/EVK-NINA-B1.jpg](https://docs.zephyrproject.org/4.1.0/_images/EVK-NINA-B1.jpg)
 
 EVK NINA-B1
 

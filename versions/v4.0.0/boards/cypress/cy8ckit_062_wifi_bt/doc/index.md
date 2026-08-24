@@ -25,7 +25,7 @@ The PSOC 6 WiFi-BT Pioneer board offers compatibility with Arduino shields.
 The Cortex-M0+ is a primary core on the board’s SoC. It starts first and
 enables the CM4 core.
 
-![CY8CKIT_062_WIFI_BT](../../../../_images/cy8ckit_062_wifi_bt_m0.jpg)
+![CY8CKIT_062_WIFI_BT](https://docs.zephyrproject.org/4.0.0/_images/cy8ckit_062_wifi_bt_m0.jpg)
 
 1. USB PD output voltage availability indicator (LED7)
 2. Battery charging indicator (LED6)

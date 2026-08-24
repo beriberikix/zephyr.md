@@ -8,8 +8,8 @@ original_path: boards/st/stm32f072_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f072_eval.jpg](../../../../_images/stm32f072_eval.jpg)
-](../../../../_images/stm32f072_eval.jpg)
+[![../../../../_images/stm32f072_eval.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32f072_eval.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32f072_eval.jpg)
 
 STM32F072 Evaluation
 

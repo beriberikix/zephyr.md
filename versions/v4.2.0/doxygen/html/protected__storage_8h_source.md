@@ -406,4 +406,4 @@ int32\_t psa\_status\_t
 - [include](dir_3887dba27d172300e5fca4cbd714c7ed.md)
 - [psa](dir_d06fbc62883e41d574c8881d2ac75d4f.md)
 - [protected\_storage.h](protected__storage_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

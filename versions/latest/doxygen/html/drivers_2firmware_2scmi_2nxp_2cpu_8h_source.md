@@ -245,4 +245,4 @@ uint32\_t cpu\_id
 - [scmi](dir_b6bd1dece7d1578165357955ca5f0079.md)
 - [nxp](dir_bc3d371a8d44c42990f11f40d55980ed.md)
 - [cpu.h](drivers_2firmware_2scmi_2nxp_2cpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

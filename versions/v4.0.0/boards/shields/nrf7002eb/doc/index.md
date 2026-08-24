@@ -16,7 +16,7 @@ The nRF7002 EB unlocks low-power Wi-Fi 6 capabilities for your host device. It s
 Seamlessly connect to Wi-Fi networks and leverage Wi-Fi-based locationing, enabling advanced
 features such as SSID sniffing of local Wi-Fi hubs
 
-![nRF7002 EB](../../../../_images/nrf7002eb.jpg)
+![nRF7002 EB](https://docs.zephyrproject.org/4.0.0/_images/nrf7002eb.jpg)
 
 nRF7002 EB
 

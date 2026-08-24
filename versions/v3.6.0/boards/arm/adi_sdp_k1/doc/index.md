@@ -30,7 +30,7 @@ ADI components.
 - 16MB SDRAM
 - Arduino UNO and 120-pin SDP connectors
 
-![ADI SDP-K1](../../../../_images/adi_sdp_k1.webp)
+![ADI SDP-K1](https://docs.zephyrproject.org/3.6.0/_images/adi_sdp_k1.webp)
 
 ADI SDP-K1 (Credit: Analog Devices, Inc.)
 
@@ -96,13 +96,13 @@ For more details please refer to [EVAL-SDP-CK1Z User Guide](https://www.analog.c
 
 #### Arduino UNO headers
 
-![ADI SDP-K1 Arduino UNO headers pinout](../../../../_images/adi_sdp_k1_arduino.webp)
+![ADI SDP-K1 Arduino UNO headers pinout](https://docs.zephyrproject.org/3.6.0/_images/adi_sdp_k1_arduino.webp)
 
 ADI SDP-K1 (Credit: Analog Devices, Inc.)
 
 #### 120-pin SDP connector
 
-![ADI SDP-K1 120-pin SDP connector pinout](../../../../_images/adi_sdp_k1_120pin.webp)
+![ADI SDP-K1 120-pin SDP connector pinout](https://docs.zephyrproject.org/3.6.0/_images/adi_sdp_k1_120pin.webp)
 
 ADI SDP-K1 (Credit: Analog Devices, Inc.)
 

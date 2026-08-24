@@ -1881,4 +1881,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - UTIL\_REPEAT : [util\_internal.h](util__internal_8h.md#a3c54146013b856ef16ad45471b9fc7d1)
 - UTIL\_X2 : [util\_macro.h](group__sys-util.md#gab23deac75762adfb6bdde2c15d51f158)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

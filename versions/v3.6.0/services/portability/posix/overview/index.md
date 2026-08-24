@@ -15,7 +15,7 @@ The Portable Operating System Interface (POSIX) is a family of standards specifi
 implements a subset of the standard POSIX API specified by [IEEE 1003.1-2017](https://standards.ieee.org/ieee/1003.1/7101/) (also known as
 POSIX-1.2017).
 
-![POSIX Support in Zephyr](../../../../_images/posix.svg)
+![POSIX Support in Zephyr](https://docs.zephyrproject.org/3.6.0/_images/posix.svg)
 
 POSIX support in Zephyr
 

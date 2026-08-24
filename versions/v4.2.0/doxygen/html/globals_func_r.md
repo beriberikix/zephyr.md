@@ -254,4 +254,4 @@ Here is a list of all functions with links to the files they belong to:
 - rx\_icu\_set\_irq\_control() : [intc\_rx\_icu.h](intc__rx__icu_8h.md#a32aadebfbc450fa354d6d176289fec0d)
 - rx\_icu\_set\_irq\_dig\_filt() : [intc\_rx\_icu.h](intc__rx__icu_8h.md#ac9bdc620911c67f607cf9ec5a49fd1b1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

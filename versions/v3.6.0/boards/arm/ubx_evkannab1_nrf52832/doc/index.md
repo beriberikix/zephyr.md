@@ -31,7 +31,7 @@ and has support for the following features:
 - UART
 - WDT
 
-![../../../../_images/EVK-ANNA-B112.jpg](../../../../_images/EVK-ANNA-B112.jpg)
+![../../../../_images/EVK-ANNA-B112.jpg](https://docs.zephyrproject.org/3.6.0/_images/EVK-ANNA-B112.jpg)
 
 EVK ANNA-B1
 

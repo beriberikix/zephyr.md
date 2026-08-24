@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/http/[service.h](service_8h_source.md)
 
 - [http\_service\_desc](structhttp__service__desc.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

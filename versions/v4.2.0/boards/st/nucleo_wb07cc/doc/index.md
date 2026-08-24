@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wb07cc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_wb07cc.webp](../../../../_images/nucleo_wb07cc.webp)
-](../../../../_images/nucleo_wb07cc.webp)
+[![../../../../_images/nucleo_wb07cc.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb07cc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb07cc.webp)
 
 Nucleo WB07CC
 

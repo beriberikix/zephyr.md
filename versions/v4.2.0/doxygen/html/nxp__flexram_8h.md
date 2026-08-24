@@ -42,4 +42,4 @@ nxp\_flexram.h File Reference
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [flexram](dir_86d967f414985149d870e265b4178619.md)
 - [nxp\_flexram.h](nxp__flexram_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

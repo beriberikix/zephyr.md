@@ -356,4 +356,4 @@ uint32\_t value
 - [mic\_privacy](dir_2e06c65c52133b8e4ff4bf7424ae25af.md)
 - [intel](dir_493819a1cd457399897f0d97609f1fe6.md)
 - [mic\_privacy.h](mic__privacy_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

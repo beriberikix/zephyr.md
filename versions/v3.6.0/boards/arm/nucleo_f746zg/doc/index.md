@@ -50,7 +50,7 @@ Key Features
   STM32Cube MCU package.
 - Arm\* Mbed Enabled\* compliant (only for some Nucleo part numbers)
 
-![Nucleo F746ZG](../../../../_images/nucleo_f746zg.jpg)
+![Nucleo F746ZG](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f746zg.jpg)
 
 More information about the board can be found at the [Nucleo F746ZG website](https://www.st.com/en/evaluation-tools/nucleo-f746zg.html).
 

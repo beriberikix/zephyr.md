@@ -31,7 +31,7 @@ M5Stack Core2 features the following integrated components:
 - MIC SPM1423
 - Battery 390mAh 3,7V
 
-[![M5Stack-Core2](../../../../_images/m5stack_core2.webp)](../../../../_images/m5stack_core2.webp)
+[![M5Stack-Core2](https://docs.zephyrproject.org/3.6.0/_images/m5stack_core2.webp)](https://docs.zephyrproject.org/3.6.0/_images/m5stack_core2.webp)
 
 M5Stack-Core2 module
 

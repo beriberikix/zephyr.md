@@ -26,7 +26,7 @@ some highlights of the Nucleo L433RC board:
 - Three LEDs: USB communication (LD1), power LED (LD3), user LED (LD4)
 - One push-button: RESET
 
-![Nucleo L433RC](../../../../_images/nucleo_l433rc_p.jpg)
+![Nucleo L433RC](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l433rc_p.jpg)
 
 More information about the board can be found at the [Nucleo L433RC-P website](https://www.st.com/en/evaluation-tools/nucleo-l433rc-p.html).
 
@@ -121,7 +121,7 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L433RC-P](../../../../_images/nucleo_l433rc_p_pinout.jpg)
+![Nucleo L433RC-P](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l433rc_p_pinout.jpg)
 
 For more details please refer to [ST Nucleo L433RC-P User Manual](https://www.st.com/resource/en/user_manual/dm00387966.pdf).
 

@@ -8,8 +8,8 @@ original_path: boards/ambiq/apollo510_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/apollo510-soc-eval-board.jpg](../../../../_images/apollo510-soc-eval-board.jpg)
-](../../../../_images/apollo510-soc-eval-board.jpg)
+[![../../../../_images/apollo510-soc-eval-board.jpg](https://docs.zephyrproject.org/4.2.0/_images/apollo510-soc-eval-board.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/apollo510-soc-eval-board.jpg)
 
 Apollo510 SOC Evaluation Board
 
@@ -45,7 +45,7 @@ For more information about the Apollo510 SoC and Apollo510 EVB board:
 
 - [Apollo510 Website](https://ambiq.com/apollo510/)
 - [Apollo510 Datasheet](https://contentportal.ambiq.com/documents/20123/2877485/Apollo510-SoC-Datasheet.pdf)
-- [Apollo510 EVB Website](Formoreinformation,pleasereachouttoSalesandFAE.)
+- [Apollo510 EVB Website](https://docs.zephyrproject.org/4.2.0/boards/ambiq/apollo510_evb/doc/Formoreinformation,pleasereachouttoSalesandFAE.)
 
 ### Supported Features
 

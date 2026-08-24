@@ -2334,4 +2334,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - RZV\_FILTER\_SET : [pinctrl-rzv-common.h](pinctrl-rzv-common_8h.md#a038292c08044da9e82019e7aa73abf1c), [pinctrl-rzv2h.h](pinctrl-rzv2h_8h.md#a038292c08044da9e82019e7aa73abf1c), [pinctrl-rzv2n.h](pinctrl-rzv2n_8h.md#a038292c08044da9e82019e7aa73abf1c)
 - RZV\_PINMUX : [pinctrl-rzv-common.h](pinctrl-rzv-common_8h.md#ace27a9fee40fcee657b3aff941b3ac6b), [pinctrl-rzv2h.h](pinctrl-rzv2h_8h.md#ace27a9fee40fcee657b3aff941b3ac6b), [pinctrl-rzv2n.h](pinctrl-rzv2n_8h.md#ace27a9fee40fcee657b3aff941b3ac6b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/sensry/ganymed_bob/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ganymed_bob_sy120_gbm.webp](../../../../_images/ganymed_bob_sy120_gbm.webp)
-](../../../../_images/ganymed_bob_sy120_gbm.webp)
+[![../../../../_images/ganymed_bob_sy120_gbm.webp](https://docs.zephyrproject.org/4.2.0/_images/ganymed_bob_sy120_gbm.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ganymed_bob_sy120_gbm.webp)
 
 Ganymed Break-Out-Board (BOB)
 

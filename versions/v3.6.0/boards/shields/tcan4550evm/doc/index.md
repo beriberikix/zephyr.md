@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The Texas Instruments [TCAN4550EVM](https://www.ti.com/tool/TCAN4550EVM) features a [TI TCAN4550-Q1](https://www.ti.com/product/TCAN4550-Q1) automotive system basis chip (SBC)
 with integrated CAN FD controller & transceiver.
 
-![TCAN4550EVM](../../../../_images/tcan4550evm.jpg)
+![TCAN4550EVM](https://docs.zephyrproject.org/3.6.0/_images/tcan4550evm.jpg)
 
 TCAN4550EVM (Credit: Texas Instruments)
 

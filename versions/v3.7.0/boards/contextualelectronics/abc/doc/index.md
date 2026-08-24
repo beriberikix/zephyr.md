@@ -27,7 +27,7 @@ Nordic Semiconductor nRF52840 ARM Cortex-M4F CPU and the following devices:
 - UART
 - Quectel BG95 Modem
 
-![Contextual Electronics Advanced BLE Cell](../../../../_images/contextualelectronics_abc.jpg)
+![Contextual Electronics Advanced BLE Cell](https://docs.zephyrproject.org/3.7.0/_images/contextualelectronics_abc.jpg)
 
 Contextual Electronics Advanced BLE Cell (Credit: Chris Gamell)
 

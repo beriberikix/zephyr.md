@@ -8,8 +8,8 @@ original_path: boards/sparkfun/thing_plus_matter_mgm240p/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sparkfun_thing_plus_matter_mgm240p.jpg](../../../../_images/sparkfun_thing_plus_matter_mgm240p.jpg)
-](../../../../_images/sparkfun_thing_plus_matter_mgm240p.jpg)
+[![../../../../_images/sparkfun_thing_plus_matter_mgm240p.jpg](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_thing_plus_matter_mgm240p.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_thing_plus_matter_mgm240p.jpg)
 
 Thing Plus Matter
 

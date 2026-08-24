@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l496zg/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l496zg.jpg](../../../../_images/nucleo_l496zg.jpg)
-](../../../../_images/nucleo_l496zg.jpg)
+[![../../../../_images/nucleo_l496zg.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l496zg.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l496zg.jpg)
 
 Nucleo L496ZG
 

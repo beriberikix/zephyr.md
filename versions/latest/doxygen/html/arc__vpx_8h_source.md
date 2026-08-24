@@ -85,4 +85,4 @@ Kernel timeout type.
 - [v2](dir_3e6dec649f819729d9137b059e4fc1a1.md)
 - [vpx](dir_163ac165fb52f03f9d4ffcae544ed3b1.md)
 - [arc\_vpx.h](arc__vpx_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

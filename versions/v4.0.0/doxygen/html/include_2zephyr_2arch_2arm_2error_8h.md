@@ -34,4 +34,4 @@ ARM AArch32-specific kernel error handling interface. Included by [arm/arch.h](a
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [error.h](include_2zephyr_2arch_2arm_2error_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

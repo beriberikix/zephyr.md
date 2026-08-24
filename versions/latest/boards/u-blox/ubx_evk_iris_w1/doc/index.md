@@ -8,8 +8,8 @@ original_path: boards/u-blox/ubx_evk_iris_w1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ubx_evk_iris_w1.webp](../../../../_images/ubx_evk_iris_w1.webp)
-](../../../../_images/ubx_evk_iris_w1.webp)
+[![../../../../_images/ubx_evk_iris_w1.webp](https://docs.zephyrproject.org/4.2.0/_images/ubx_evk_iris_w1.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ubx_evk_iris_w1.webp)
 
 EVK-IRIS-W106-RW612
 

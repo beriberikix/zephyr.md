@@ -16,9 +16,9 @@ The OLIMEX-STM32-H103 is a simple development board based on the
 STMicroelectronics STM32F103RBT6 ARM Cortex-M3 CPU, with all the MCU pins
 populated and accessible through two male 26-pin connectors.
 
-![OLIMEX-STM32-H103 top](../../../../_images/olimex_stm32_h103_top.jpg)
+![OLIMEX-STM32-H103 top](https://docs.zephyrproject.org/3.7.0/_images/olimex_stm32_h103_top.jpg)
 
-![OLIMEX-STM32-H103 bottom](../../../../_images/olimex_stm32_h103_bottom.jpg)
+![OLIMEX-STM32-H103 bottom](https://docs.zephyrproject.org/3.7.0/_images/olimex_stm32_h103_bottom.jpg)
 
 OLIMEX-STM32-H103
 

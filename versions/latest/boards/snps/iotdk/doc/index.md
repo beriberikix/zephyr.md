@@ -8,8 +8,8 @@ original_path: boards/snps/iotdk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/iotdk.jpg](../../../../_images/iotdk.jpg)
-](../../../../_images/iotdk.jpg)
+[![../../../../_images/iotdk.jpg](https://docs.zephyrproject.org/4.2.0/_images/iotdk.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/iotdk.jpg)
 
 ARC IoT Development Kit
 

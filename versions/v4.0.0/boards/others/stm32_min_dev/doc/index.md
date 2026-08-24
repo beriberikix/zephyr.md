@@ -8,8 +8,8 @@ original_path: boards/others/stm32_min_dev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32_min_dev.jpg](../../../../_images/stm32_min_dev.jpg)
-](../../../../_images/stm32_min_dev.jpg)
+[![../../../../_images/stm32_min_dev.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32_min_dev.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32_min_dev.jpg)
 
 STM32 Minimum Development Board
 
@@ -54,7 +54,7 @@ found at [EmbedJournal](https://embedjournal.com/tag/stm32-min-dev/).
 The pinout diagram of STM32 Minimum Development Blue Pill board can be seen
 below. The Black Pill’s one is similar:
 
-![Pinout for STM32 Minimum Development Blue Pill Board](../../../../_images/stm32_min_dev_pinout_blue.jpg)
+![Pinout for STM32 Minimum Development Blue Pill Board](https://docs.zephyrproject.org/4.0.0/_images/stm32_min_dev_pinout_blue.jpg)
 
 Pinout for STM32 Minimum Development Blue Pill Board
 

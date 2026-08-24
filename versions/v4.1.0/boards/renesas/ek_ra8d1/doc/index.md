@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra8d1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra8d1.jpg](../../../../_images/ek_ra8d1.jpg)
-](../../../../_images/ek_ra8d1.jpg)
+[![../../../../_images/ek_ra8d1.jpg](https://docs.zephyrproject.org/4.1.0/_images/ek_ra8d1.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra8d1.jpg)
 
 RA8D1 Evaluation Kit
 
@@ -86,8 +86,8 @@ The key features of the EK-RA8D1 board are categorized in three groups as follow
 
 Detailed Hardware features for the RA8D1 MCU group can be found at [RA8D1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra8d1-group-users-manual-hardware)
 
-[![RA8D1 MCU group feature](../../../../_images/ra8d1_block_diagram.png)
-](../../../../_images/ra8d1_block_diagram.png)
+[![RA8D1 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra8d1_block_diagram.png)
+](https://docs.zephyrproject.org/4.1.0/_images/ra8d1_block_diagram.png)
 
 RA8D1 Block diagram (Credit: Renesas Electronics Corporation)
 

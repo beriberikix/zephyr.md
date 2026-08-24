@@ -8,8 +8,8 @@ original_path: boards/silabs/dev_kits/sim3u1xx_dk/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sim3u1xx_dk.webp](../../../../../_images/sim3u1xx_dk.webp)
-](../../../../../_images/sim3u1xx_dk.webp)
+[![../../../../../_images/sim3u1xx_dk.webp](https://docs.zephyrproject.org/4.2.0/_images/sim3u1xx_dk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/sim3u1xx_dk.webp)
 
 SiM3U1xx 32-bit MCU USB Development Kit
 

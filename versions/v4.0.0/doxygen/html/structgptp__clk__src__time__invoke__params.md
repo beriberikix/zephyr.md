@@ -76,4 +76,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[gptp.h](gptp_8h_source.md)
 
 - [gptp\_clk\_src\_time\_invoke\_params](structgptp__clk__src__time__invoke__params.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -20,8 +20,8 @@ Bluetooth® 5.0 Low Energy (Bluetooth LE), long-range radio for wearable and hea
 
 The Zephyr port is running on the MAX32655 MCU.
 
-![MAX32655 EVKIT Front](../../../../_images/max32655evkit_img1.jpg)
-![MAX32655 Back](../../../../_images/max32655evkit_img2.jpg)
+![MAX32655 EVKIT Front](https://docs.zephyrproject.org/3.7.0/_images/max32655evkit_img1.jpg)
+![MAX32655 Back](https://docs.zephyrproject.org/3.7.0/_images/max32655evkit_img2.jpg)
 
 ## Hardware
 

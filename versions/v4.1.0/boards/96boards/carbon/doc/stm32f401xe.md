@@ -36,7 +36,7 @@ After you have flashed your nRF51, you can perform basic validation
 of this Bluetooth setup using the instructions
 [below](#b-carbon-verify-bluetooth).
 
-![96Boards Carbon](../../../../_images/96b_carbon.jpg)
+![96Boards Carbon](https://docs.zephyrproject.org/4.1.0/_images/96b_carbon.jpg)
 
 96Boards Carbon
 

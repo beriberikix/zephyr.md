@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra4w1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra4w1.webp](../../../../_images/ek_ra4w1.webp)
-](../../../../_images/ek_ra4w1.webp)
+[![../../../../_images/ek_ra4w1.webp](https://docs.zephyrproject.org/4.1.0/_images/ek_ra4w1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra4w1.webp)
 
 RA4W1 Evaluation Kit
 
@@ -89,8 +89,8 @@ embedded RAM and low power consumption.
 
 Detailed Hardware features for the RA4W1 MCU group can be found at [RA4W1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/renesas-ra4w1-group-users-manual-hardware)
 
-[![RA4W1 MCU group feature](../../../../_images/ra4w1_block_diagram.webp)
-](../../../../_images/ra4w1_block_diagram.webp)
+[![RA4W1 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra4w1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ra4w1_block_diagram.webp)
 
 RA4W1 Block diagram (Credit: Renesas Electronics Corporation)
 

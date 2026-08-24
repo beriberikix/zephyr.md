@@ -35,4 +35,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - kbd\_row\_t : [input\_kbd\_matrix.h](group__input__kbd__matrix.md#gac7d5c811da0c9ab2660be3c3f2fcfe86)
 - kscan\_callback\_t : [kscan.h](group__kscan__interface.md#gab65d45708dba142da2c71aa3debd9480)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

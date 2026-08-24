@@ -35,7 +35,7 @@ some highlights of the STM32F4DISCOVERY board:
 - MP45DT02 ST-MEMS audio sensor omni-directional digital microphone
 - CS43L22 audio DAC with integrated class D speaker driver
 
-![STM32F4DISCOVERY](../../../../_images/stm32f4_disco.jpg)
+![STM32F4DISCOVERY](https://docs.zephyrproject.org/3.6.0/_images/stm32f4_disco.jpg)
 
 More information about the board can be found at the [STM32F4DISCOVERY website](https://www.st.com/en/evaluation-tools/stm32f4discovery.html).
 

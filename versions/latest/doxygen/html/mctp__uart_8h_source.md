@@ -191,4 +191,4 @@ An MCTP binding for Zephyr's asynchronous UART interface.
 - [pmci](dir_dc7813596f7ee02478d3486875b80ae3.md)
 - [mctp](dir_b9ddba50a558f73fa88aca7b5c7fba37.md)
 - [mctp\_uart.h](mctp__uart_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

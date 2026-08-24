@@ -61,4 +61,4 @@ The documentation for this union was generated from the following file:
 - zephyr/sys/internal/[kobject\_internal.h](kobject__internal_8h_source.md)
 
 - [k\_object\_data](unionk__object__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -20,7 +20,7 @@ is not considered at this time.
 The required POSIX [System Interfaces](../conformance/index.md#posix-system-interfaces-required) are supported for
 each Application Environment Profile.
 
-[![Required System Interfaces](../../../../_images/si.svg)](../../../../_images/si.svg)
+[![Required System Interfaces](https://docs.zephyrproject.org/3.7.0/_images/si.svg)](https://docs.zephyrproject.org/3.7.0/_images/si.svg)
 
 System Interfaces
 
@@ -29,7 +29,7 @@ System Interfaces
 The *Minimal Realtime System Profile* (PSE51) includes all of the
 [System Interfaces](../conformance/index.md#posix-system-interfaces-required) along with several additional features.
 
-[![Minimal Realtime System Profile (PSE51)](../../../../_images/aep-pse51.svg)](../../../../_images/aep-pse51.svg)
+[![Minimal Realtime System Profile (PSE51)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse51.svg)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse51.svg)
 
 Minimal Realtime System Profile (PSE51)
 
@@ -73,7 +73,7 @@ PSE51 Option Requirements
 The *Realtime Controller System Profile* (PSE52) includes all features from PSE51 and the
 [System Interfaces](../conformance/index.md#posix-system-interfaces-required).
 
-[![Realtime Controller System Profile (PSE52)](../../../../_images/aep-pse52.svg)](../../../../_images/aep-pse52.svg)
+[![Realtime Controller System Profile (PSE52)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse52.svg)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse52.svg)
 
 Realtime Controller System Profile (PSE52)
 
@@ -105,7 +105,7 @@ PSE52 Option Requirements
 The *Dedicated Realtime System Profile* (PSE53) includes all features from PSE52, PSE51, and the
 [System Interfaces](../conformance/index.md#posix-system-interfaces-required).
 
-[![Dedicated Realtime System Profile (PSE53)](../../../../_images/aep-pse53.svg)](../../../../_images/aep-pse53.svg)
+[![Dedicated Realtime System Profile (PSE53)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse53.svg)](https://docs.zephyrproject.org/3.7.0/_images/aep-pse53.svg)
 
 Dedicated Realtime System Profile (PSE53)
 

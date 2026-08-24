@@ -22,7 +22,7 @@ It features the following integrated components:
 - Infrared LED
 - 1x Grove extension port
 
-![M5Stack ATOM Lite](../../../../_images/m5stack_atom_lite.webp)
+![M5Stack ATOM Lite](https://docs.zephyrproject.org/3.7.0/_images/m5stack_atom_lite.webp)
 
 M5Stack ATOM Lite
 

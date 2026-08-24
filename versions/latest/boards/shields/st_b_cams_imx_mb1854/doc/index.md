@@ -15,8 +15,8 @@ and a Time‑of‑Flight sensor. It can be used with any STM32 boards featuring
 a MIPI CSI-2® interface with a 22‑pin FFC connector to enable full-featured
 computer vision on STM32 microcontrollers and microprocessors easily.
 
-[![B-CAMS-IMX-MB1854](../../../../_images/st_b_cams_imx.webp)
-](../../../../_images/st_b_cams_imx.webp)
+[![B-CAMS-IMX-MB1854](https://docs.zephyrproject.org/4.2.0/_images/st_b_cams_imx.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/st_b_cams_imx.webp)
 
 B-CAMS-IMX MB1854 Image (Credit: STMicroelectronics.)
 

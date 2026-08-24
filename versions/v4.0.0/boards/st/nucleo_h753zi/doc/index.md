@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h753zi/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h753zi.jpg](../../../../_images/nucleo_h753zi.jpg)
-](../../../../_images/nucleo_h753zi.jpg)
+[![../../../../_images/nucleo_h753zi.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h753zi.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h753zi.jpg)
 
 Nucleo H753ZI
 

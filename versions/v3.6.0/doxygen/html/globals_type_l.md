@@ -46,4 +46,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - lwm2m\_send\_cb\_t : [lwm2m.h](group__lwm2m__api.md#gaf5394884da53edb28fe4afc92bf40e6a)
 - lwm2m\_socket\_fault\_cb\_t : [lwm2m.h](group__lwm2m__api.md#gae7bf50f9abf1b82b76ac3e9175e685ac)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

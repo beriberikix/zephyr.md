@@ -23,8 +23,8 @@ and pressure sensors. It also includes a Micro SD card slot for expanding storag
 The device is powered by an internal 120mAh+1400mAh (in the base) lithium
 battery solution.
 
-[![M5Stack-Cardputer](../../../../_images/m5stack_cardputer.webp)
-](../../../../_images/m5stack_cardputer.webp)
+[![M5Stack-Cardputer](https://docs.zephyrproject.org/4.2.0/_images/m5stack_cardputer.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/m5stack_cardputer.webp)
 
 M5Stack-Cardputer
 

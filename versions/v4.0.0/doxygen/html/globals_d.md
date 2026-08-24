@@ -1285,4 +1285,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - dummy\_mcumgr\_add\_data() : [smp\_dummy.h](smp__dummy_8h.md#a8bf3d0c12669c2cf5370eb7e148f10c2)
 - DW\_GPIO\_DEBOUNCE : [snps-designware-gpio.h](snps-designware-gpio_8h.md#a696fec562551fe17259140fe16cdcc1d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

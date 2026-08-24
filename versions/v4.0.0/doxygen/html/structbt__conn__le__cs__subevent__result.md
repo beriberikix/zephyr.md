@@ -185,4 +185,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[conn.h](conn_8h_source.md)
 
 - [bt\_conn\_le\_cs\_subevent\_result](structbt__conn__le__cs__subevent__result.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -108,7 +108,7 @@ stacks you may have selected, including mostly the same drivers as for the real 
 The native simulator runner is built together with the HW models which match your desired target.
 And then both the embedded SW and runner are linked together to produce a Linux executable.
 
-![nrf_bsim boards and the native simulator](../../../_images/components_bsim.svg)
+![nrf_bsim boards and the native simulator](https://docs.zephyrproject.org/4.1.0/_images/components_bsim.svg)
 
 Relationship between Zephyr, the native simulator, the nRF HW models and BabbleSim.
 
@@ -151,7 +151,7 @@ The basic architecture layering of these boards is as follows:
   controller and interrupt handling APIs, `posix_exit()`,
   and `posix_get_hw_cycle()` (see `posix_board_if.h` and `posix_soc_if.h`).
 
-![Zephyr layering in native & bsim builds](../../../_images/layering_natsim.svg)
+![Zephyr layering in native & bsim builds](https://docs.zephyrproject.org/4.1.0/_images/layering_natsim.svg)
 
 Overall architecture in a Zephyr application in an embedded target vs a bsim
 target
@@ -209,7 +209,7 @@ The communication between a Zephyr device and other simulated devices is
 handled over the bsim libPhyCom libraries. For the radio activity the figure
 below represents this communication:
 
-![Communication between a Zephyr device and other simulated devices](../../../_images/Zephyr_and_bsim.svg)
+![Communication between a Zephyr device and other simulated devices](https://docs.zephyrproject.org/4.1.0/_images/Zephyr_and_bsim.svg)
 
 Communication between a Zephyr device and other simulated devices
 

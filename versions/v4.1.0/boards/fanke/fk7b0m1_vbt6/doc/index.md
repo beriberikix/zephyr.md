@@ -20,8 +20,8 @@ Its wide range of hardware features, including advanced display and touch capabi
 make it exceptionally suitable for HMI applications, allowing for comprehensive evaluation
 and testing of peripherals and functionalities.
 
-[![FK7B0M1-VBT6](../../../../_images/fk7b0m1_vbt6.webp)
-](../../../../_images/fk7b0m1_vbt6.webp)
+[![FK7B0M1-VBT6](https://docs.zephyrproject.org/4.1.0/_images/fk7b0m1_vbt6.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/fk7b0m1_vbt6.webp)
 
 FK7B0M1-VBT6 (Credit: FANKE Technology Co., Ltd)
 
@@ -80,8 +80,8 @@ The default configuration per core can be found in
 FK7B0M1-VBT6 board has 5 GPIO controllers. These controllers are responsible for pin muxing,
 input/output, pull-up, etc.
 
-[![FK7B0M1-VBT6](../../../../_images/fk7b0m1_vbt6_pins.webp)
-](../../../../_images/fk7b0m1_vbt6_pins.webp)
+[![FK7B0M1-VBT6](https://docs.zephyrproject.org/4.1.0/_images/fk7b0m1_vbt6_pins.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/fk7b0m1_vbt6_pins.webp)
 
 FK7B0M1-VBT6 (Credit: FANKE Technology Co., Ltd)
 

@@ -13,7 +13,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 Silicon Labs xG27-DK2602A is a Dev Kit using the EFR32BG27 SoC. The kit
 consists of the EFR32BG27 +8 dBm Dev Kit Board (BRD2602A).
 
-[![xG27-DK2602A](../../../../../_images/xg27_dk2602a.png)](../../../../../_images/xg27_dk2602a.png)
+[![xG27-DK2602A](https://docs.zephyrproject.org/3.7.0/_images/xg27_dk2602a.png)](https://docs.zephyrproject.org/3.7.0/_images/xg27_dk2602a.png)
 
 xG27-DK2602A (image courtesy of Silicon Labs)
 

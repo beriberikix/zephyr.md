@@ -227,4 +227,4 @@ Here is a list of all enum values with links to the files they belong to:
 - NXP\_RTXXX\_DSP\_CTRL\_SECTION\_RESET : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#a1230a21b6c11930f80fc5f12605de762a8c63b3117b7c525e96be2b054395cfff)
 - NXP\_RTXXX\_DSP\_CTRL\_SECTION\_TEXT : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#a1230a21b6c11930f80fc5f12605de762ab0c726ddfdf30c89075fcf9c7b4586e7)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

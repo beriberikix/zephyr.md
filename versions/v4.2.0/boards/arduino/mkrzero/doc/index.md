@@ -8,8 +8,8 @@ original_path: boards/arduino/mkrzero/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_mkrzero.jpg](../../../../_images/arduino_mkrzero.jpg)
-](../../../../_images/arduino_mkrzero.jpg)
+[![../../../../_images/arduino_mkrzero.jpg](https://docs.zephyrproject.org/4.2.0/_images/arduino_mkrzero.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_mkrzero.jpg)
 
 Arduino MKR Zero
 

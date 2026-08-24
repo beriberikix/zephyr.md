@@ -32,7 +32,7 @@ The CPU provides support for the following devices:
 - USB
 - WDT
 
-![nRF21540 DK](../../../../_images/nrf21540dk_nrf52840.jpg)
+![nRF21540 DK](https://docs.zephyrproject.org/3.7.0/_images/nrf21540dk_nrf52840.jpg)
 
 nRF21540 DK (Credit: Nordic Semiconductor)
 

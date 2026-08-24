@@ -78,4 +78,4 @@ Append read-write strings from source package to destination package.
 
 If package was created with [CBPRINTF\_PACKAGE\_ADD\_RW\_STR\_POS](group__CBPRINTF__PACKAGE__FLAGS.md#gac6ac59dda3a1a8a4572c1012b4adcbaa "CBPRINTF_PACKAGE_ADD_RW_STR_POS") it contains arrays of indexes where string address can be found in the package. When flag is set, list of read-write strings is examined and if they are not determined to be read-only, they are copied into the destination package. If [CBPRINTF\_PACKAGE\_CONVERT\_RO\_STR](#ga9802b700abd5d3cd7cef0e0cbcceb3e7) is not set, remaining string locations are considered as pointing to read-only location and they are copy to the package if [CBPRINTF\_PACKAGE\_CONVERT\_KEEP\_RO\_STR](#ga582ebea3e0d18285840bf277c5382da6) is set.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

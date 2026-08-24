@@ -88,4 +88,4 @@ Gyroscope scale options
 
 `#include <[zephyr/dt-bindings/sensor/icm42688.h](dt-bindings_2sensor_2icm42688_8h.md)>`
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

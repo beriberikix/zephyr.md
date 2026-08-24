@@ -8,8 +8,8 @@ original_path: boards/renesas/rcar_spider_s4/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rcar_spider_s4.jpg](../../../../_images/rcar_spider_s4.jpg)
-](../../../../_images/rcar_spider_s4.jpg)
+[![../../../../_images/rcar_spider_s4.jpg](https://docs.zephyrproject.org/4.2.0/_images/rcar_spider_s4.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rcar_spider_s4.jpg)
 
 R-Car Spider
 

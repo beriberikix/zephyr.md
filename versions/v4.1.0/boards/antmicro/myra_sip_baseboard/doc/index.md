@@ -8,8 +8,8 @@ original_path: boards/antmicro/myra_sip_baseboard/doc/index.html
 
 Board Overview
 
-[![../../../../_images/myra_sip_baseboard.webp](../../../../_images/myra_sip_baseboard.webp)
-](../../../../_images/myra_sip_baseboard.webp)
+[![../../../../_images/myra_sip_baseboard.webp](https://docs.zephyrproject.org/4.1.0/_images/myra_sip_baseboard.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/myra_sip_baseboard.webp)
 
 Myra SiP Baseboard
 

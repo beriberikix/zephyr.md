@@ -49,4 +49,4 @@ Internal function used by GNSS drivers to publish GNSS satellites.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [gnss](dir_bca400d79577e37e5eb68f0c6e3578e5.md)
 - [gnss\_publish.h](gnss__publish_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

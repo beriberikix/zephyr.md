@@ -8,8 +8,8 @@ original_path: boards/adafruit/macropad_rp2040/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_macropad_rp2040.webp](../../../../_images/adafruit_macropad_rp2040.webp)
-](../../../../_images/adafruit_macropad_rp2040.webp)
+[![../../../../_images/adafruit_macropad_rp2040.webp](https://docs.zephyrproject.org/4.2.0/_images/adafruit_macropad_rp2040.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_macropad_rp2040.webp)
 
 Adafruit MacroPad RP2040
 

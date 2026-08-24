@@ -8,8 +8,8 @@ original_path: boards/st/stm32f412g_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f412g_disco.jpg](../../../../_images/stm32f412g_disco.jpg)
-](../../../../_images/stm32f412g_disco.jpg)
+[![../../../../_images/stm32f412g_disco.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32f412g_disco.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32f412g_disco.jpg)
 
 STM32F412G Discovery
 

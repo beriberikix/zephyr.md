@@ -63,4 +63,4 @@ Here is a list of all enums with links to the files they belong to:
 - msosv2\_descriptor\_type : [msos\_desc.h](msos__desc_8h.md#ae46389cacf4c5cca962702fcf0f6feb5)
 - msosv2\_property\_data\_type : [msos\_desc.h](msos__desc_8h.md#a1afad4029116a837d4430a0ea976254f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

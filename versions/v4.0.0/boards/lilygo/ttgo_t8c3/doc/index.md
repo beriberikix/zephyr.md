@@ -8,8 +8,8 @@ original_path: boards/lilygo/ttgo_t8c3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ttgo_t8c3.webp](../../../../_images/ttgo_t8c3.webp)
-](../../../../_images/ttgo_t8c3.webp)
+[![../../../../_images/ttgo_t8c3.webp](https://docs.zephyrproject.org/4.0.0/_images/ttgo_t8c3.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ttgo_t8c3.webp)
 
 TTGO T8-C3
 

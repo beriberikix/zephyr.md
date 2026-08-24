@@ -8,8 +8,8 @@ original_path: boards/st/stm32l496g_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32l496g_disco.jpg](../../../../_images/stm32l496g_disco.jpg)
-](../../../../_images/stm32l496g_disco.jpg)
+[![../../../../_images/stm32l496g_disco.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32l496g_disco.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32l496g_disco.jpg)
 
 STM32L496G Discovery
 

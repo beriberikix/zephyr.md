@@ -49,4 +49,4 @@ nordic-owner-id-nrf9230.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [misc](dir_b5927901ba0eeb0fdf9ca7870f5af60a.md)
 - [nordic-owner-id-nrf9230.h](nordic-owner-id-nrf9230_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

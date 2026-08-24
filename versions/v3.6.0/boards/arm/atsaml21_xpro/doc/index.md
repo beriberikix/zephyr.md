@@ -18,7 +18,7 @@ microcontrollers. The kit includes Atmel’s Embedded Debugger (EDBG),
 which provides a full debug interface without the need for additional
 hardware.
 
-![ATSAML21-XPRO](../../../../_images/atsaml21-xpro.jpg)
+![ATSAML21-XPRO](https://docs.zephyrproject.org/3.6.0/_images/atsaml21-xpro.jpg)
 
 ## Hardware
 
@@ -61,7 +61,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM L21 Family Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_L21_Family_DataSheet_DS60001477C.pdf) [[1]](#id1) and the [SAM L21
 Xplained Pro Schematic](https://ww1.microchip.com/downloads/en/DeviceDoc/SAML21-Xplained-Pro_Design-Documentation.zip) [[2]](#id3).
 
-![ATSAML21-XPRO-pinout](../../../../_images/atsaml21-xpro-pinout.jpg)
+![ATSAML21-XPRO-pinout](https://docs.zephyrproject.org/3.6.0/_images/atsaml21-xpro-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

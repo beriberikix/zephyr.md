@@ -239,4 +239,4 @@ This header contains the X86 specific kernel interfaces for both IA-32 and Intel
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [x86](dir_0c2b2a40388d14bf987ab4c9c60eb89c.md)
 - [arch.h](x86_2arch_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

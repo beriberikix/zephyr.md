@@ -8,8 +8,8 @@ original_path: boards/others/black_f407zg_pro/doc/index.html
 
 Board Overview
 
-[![../../../../_images/black_f407zg_pro.jpg](../../../../_images/black_f407zg_pro.jpg)
-](../../../../_images/black_f407zg_pro.jpg)
+[![../../../../_images/black_f407zg_pro.jpg](https://docs.zephyrproject.org/4.0.0/_images/black_f407zg_pro.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/black_f407zg_pro.jpg)
 
 Black STM32 F407ZG Pro Development Board
 

@@ -76,4 +76,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/xen/public/[memory.h](public_2memory_8h_source.md)
 
 - [xen\_add\_to\_physmap\_batch](structxen__add__to__physmap__batch.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -19,7 +19,7 @@ Note that the MCP4726 is compatible with the MCP4725 driver.
 More information about the shield can be found at
 [Mikroe Stepper 18 click](https://www.mikroe.com/stepper-18-click) [[1]](#id2).
 
-![MikroElektronika Stepper 18 Click](../../../../_images/stepper_18_click.webp)
+![MikroElektronika Stepper 18 Click](https://docs.zephyrproject.org/4.2.0/_images/stepper_18_click.webp)
 
 MikroElektronika Stepper 18 Click (Credit: MikroElektronika)
 

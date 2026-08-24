@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f401re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f401re.jpg](../../../../_images/nucleo_f401re.jpg)
-](../../../../_images/nucleo_f401re.jpg)
+[![../../../../_images/nucleo_f401re.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f401re.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f401re.jpg)
 
 Nucleo F401RE
 
@@ -100,8 +100,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F401RE Arduino connectors](../../../../_images/nucleo_f401re_arduino.jpg)
-![Nucleo F401RE Morpho connectors](../../../../_images/nucleo_f401re_morpho.jpg)
+![Nucleo F401RE Arduino connectors](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f401re_arduino.jpg)
+![Nucleo F401RE Morpho connectors](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f401re_morpho.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

@@ -11680,4 +11680,4 @@ xg27-pinctrl.h File Reference
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [silabs](dir_fa47ec1716313d52a64832478c9daea4.md)
 - [xg27-pinctrl.h](xg27-pinctrl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -41,4 +41,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/interrupt\_controller/[intc\_rx\_icu.h](intc__rx__icu_8h_source.md)
 
 - [rx\_irq\_dig\_filt\_s](structrx__irq__dig__filt__s.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_mcxc444/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_mcxc444.webp](../../../../_images/frdm_mcxc444.webp)
-](../../../../_images/frdm_mcxc444.webp)
+[![../../../../_images/frdm_mcxc444.webp](https://docs.zephyrproject.org/4.0.0/_images/frdm_mcxc444.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/frdm_mcxc444.webp)
 
 FRDM-MCXC444
 

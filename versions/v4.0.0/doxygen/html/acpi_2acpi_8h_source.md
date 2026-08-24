@@ -654,4 +654,4 @@ uint16\_t function
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [acpi](dir_45b4545ed375318b7880b8f15b111e07.md)
 - [acpi.h](acpi_2acpi_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

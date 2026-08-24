@@ -8,8 +8,8 @@ original_path: boards/atmel/sam/sam_e70_xplained/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sam_e70_xplained.jpg](../../../../../_images/sam_e70_xplained.jpg)
-](../../../../../_images/sam_e70_xplained.jpg)
+[![../../../../../_images/sam_e70_xplained.jpg](https://docs.zephyrproject.org/4.0.0/_images/sam_e70_xplained.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/sam_e70_xplained.jpg)
 
 SAM E70(B) Xplained
 

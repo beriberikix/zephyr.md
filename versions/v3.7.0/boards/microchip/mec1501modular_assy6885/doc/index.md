@@ -16,7 +16,7 @@ The MEC1501 Modular card ASSY6885 is a development board to evaluate the Microch
 MEC152X series microcontrollers. This board can work standalone or be mated with
 any platform that complies with MECC specification.
 
-![MEC1501 Modular ASSY 6885](../../../../_images/mec1501modular_assy6885.jpg)
+![MEC1501 Modular ASSY 6885](https://docs.zephyrproject.org/3.7.0/_images/mec1501modular_assy6885.jpg)
 
 ## Hardware
 

@@ -65,4 +65,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[large\_comp\_data\_cli.h](large__comp__data__cli_8h_source.md)
 
 - [bt\_mesh\_large\_comp\_data\_cli](structbt__mesh__large__comp__data__cli.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

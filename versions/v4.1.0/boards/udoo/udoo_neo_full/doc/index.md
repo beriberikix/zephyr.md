@@ -8,8 +8,8 @@ original_path: boards/udoo/udoo_neo_full/doc/index.html
 
 Board Overview
 
-[![../../../../_images/udoo_neo_full_mcimx6x_m4.jpg](../../../../_images/udoo_neo_full_mcimx6x_m4.jpg)
-](../../../../_images/udoo_neo_full_mcimx6x_m4.jpg)
+[![../../../../_images/udoo_neo_full_mcimx6x_m4.jpg](https://docs.zephyrproject.org/4.1.0/_images/udoo_neo_full_mcimx6x_m4.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/udoo_neo_full_mcimx6x_m4.jpg)
 
 Neo Full
 

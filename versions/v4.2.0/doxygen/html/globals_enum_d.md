@@ -44,4 +44,4 @@ Here is a list of all enums with links to the files they belong to:
 - drv2605\_mode : [drv2605.h](drv2605_8h.md#a01ec80a028b1101fbdf3e624800ca02a)
 - dt\_usb\_maximum\_speed : [usb.h](usb_8h.md#ac343e285b07073790285bba59e3500bf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

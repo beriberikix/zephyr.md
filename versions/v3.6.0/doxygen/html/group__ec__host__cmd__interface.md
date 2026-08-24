@@ -493,4 +493,4 @@ The thread function for Host Command subsystem.
 
 This routine calls the Host Command thread entry function. If `CONFIG_EC_HOST_CMD_DEDICATED_THREAD` is not defined, a new thread is not created, and this function has to be called by application code. It doesn't return.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -15,7 +15,7 @@ It provides support for the ARM Cortex-M0+ (AN383) CPU and the following devices
 - System Tick System Clock (SYSTICK)
 - Cortex-M System Design Kit UART
 
-![ARM V2M MPS2](../../../../_images/mps21.jpg)
+![ARM V2M MPS2](https://docs.zephyrproject.org/4.2.0/_images/mps21.jpg)
 
 In addition to enabling actual hardware usage, this board target can
 also use [FVP](https://developer.arm.com/downloads/view/FMFVP). to emulate the AN383 platform running on the MPS2+.

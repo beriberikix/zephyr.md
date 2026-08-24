@@ -8,8 +8,8 @@ original_path: boards/nuvoton/numaker_m55m1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/m55m1.webp](../../../../_images/m55m1.webp)
-](../../../../_images/m55m1.webp)
+[![../../../../_images/m55m1.webp](https://docs.zephyrproject.org/4.2.0/_images/m55m1.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/m55m1.webp)
 
 NUMAKER M55M1
 

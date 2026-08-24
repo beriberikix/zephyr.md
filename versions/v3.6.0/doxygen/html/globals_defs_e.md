@@ -1133,4 +1133,4 @@ Here is a list of all macros with links to the files they belong to:
 - EXTERNAL\_TERMINAL\_TDIF : [audio.h](dt-bindings_2usb_2audio_8h.md#a852053dd784cd847ed857557f3f0ca0c)
 - EXTERNAL\_TERMINAL\_UNDEFINED : [audio.h](dt-bindings_2usb_2audio_8h.md#aca82b7803103175e741a2e4c66e1b2b9)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

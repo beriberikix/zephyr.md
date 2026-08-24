@@ -38,4 +38,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - rtio\_callback\_t : [rtio.h](group__rtio.md#gad1dbd690e6cf88d7c788436dd04d1a00)
 - rtio\_work\_submit\_t : [work.h](work_8h.md#add537a23ac061970d890f65d76f5f906)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

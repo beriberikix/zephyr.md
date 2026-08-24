@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf51dongle/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf51dongle.jpg](../../../../_images/nrf51dongle.jpg)
-](../../../../_images/nrf51dongle.jpg)
+[![../../../../_images/nrf51dongle.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf51dongle.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf51dongle.jpg)
 
 nRF51 Dongle
 

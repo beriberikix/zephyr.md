@@ -279,4 +279,4 @@ Here is a list of all enum values with links to the files they belong to:
 - FUEL\_GAUGE\_TEMPERATURE : [fuel\_gauge.h](group__fuel__gauge__interface.md#ggae49908857800bdd010d59895cfad9171abd2a87b1ddd0ac5506dbf84d56d4c009)
 - FUEL\_GAUGE\_VOLTAGE : [fuel\_gauge.h](group__fuel__gauge__interface.md#ggae49908857800bdd010d59895cfad9171a82f58acbd7fdaeaed139d53c08f8dd71)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

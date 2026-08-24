@@ -384,4 +384,4 @@ Here is a list of all enum values with links to the files they belong to:
 - MSPI\_XIP\_READ\_ONLY : [mspi.h](group__mspi__interface.md#gga006a1e32778a02299b3500886bb194faae9b2d08d8ae1722c3014a706fc801731)
 - MSPI\_XIP\_READ\_WRITE : [mspi.h](group__mspi__interface.md#gga006a1e32778a02299b3500886bb194faa431525f8be52537b0a831f522726c7b9)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

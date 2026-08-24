@@ -34,4 +34,4 @@ Here is a list of all enums with links to the files they belong to:
 - ft8xx\_register\_address\_t : [ft8xx\_reference\_api.h](group__ft8xx__reference__api.md#gaa3f6afa02b5f4bed90093f659201d008)
 - fuel\_gauge\_prop\_type : [fuel\_gauge.h](group__fuel__gauge__interface.md#gae49908857800bdd010d59895cfad9171)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

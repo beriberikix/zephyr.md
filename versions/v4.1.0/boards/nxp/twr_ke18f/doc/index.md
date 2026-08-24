@@ -8,8 +8,8 @@ original_path: boards/nxp/twr_ke18f/doc/index.html
 
 Board Overview
 
-[![../../../../_images/TWR-KE18F-DEVICE.jpg](../../../../_images/TWR-KE18F-DEVICE.jpg)
-](../../../../_images/TWR-KE18F-DEVICE.jpg)
+[![../../../../_images/TWR-KE18F-DEVICE.jpg](https://docs.zephyrproject.org/4.1.0/_images/TWR-KE18F-DEVICE.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/TWR-KE18F-DEVICE.jpg)
 
 TWR-KE18F
 

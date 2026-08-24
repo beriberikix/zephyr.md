@@ -29,7 +29,7 @@ The figure below shows an example of a typical application using zbus in which t
 (hardware independent) talks to other threads via software bus. Note that the threads are decoupled
 from each other because they only use zbus channels and do not need to know each other to talk.
 
-[![zbus usage overview](../../_images/zbus_overview.svg)](../../_images/zbus_overview.svg)
+[![zbus usage overview](https://docs.zephyrproject.org/3.7.0/_images/zbus_overview.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_overview.svg)
 
 A typical zbus application architecture.
 
@@ -43,7 +43,7 @@ The bus comprises:
 - Threads (subscribers and message subscribers) and callbacks (listeners) publishing, reading, and
   receiving notifications from the bus.
 
-[![ZBus anatomy](../../_images/zbus_anatomy.svg)](../../_images/zbus_anatomy.svg)
+[![ZBus anatomy](https://docs.zephyrproject.org/3.7.0/_images/zbus_anatomy.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_anatomy.svg)
 
 ZBus anatomy.
 
@@ -53,7 +53,7 @@ including ISRs. The publish and read operations are simple and fast; the procedu
 locking followed by a memory copy to and from a shared memory region and then a channel unlocking.
 Another essential aspect of zbus is the observers. There are three types of observers:
 
-[![ZBus observers type](../../_images/zbus_type_of_observers.svg)](../../_images/zbus_type_of_observers.svg)
+[![ZBus observers type](https://docs.zephyrproject.org/3.7.0/_images/zbus_type_of_observers.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_type_of_observers.svg)
 
 ZBus observers.
 
@@ -72,7 +72,7 @@ every observation, a pair channel/observer. Developers can statically allocate o
 enabling developers to create runtime observations. It is possible to disable an observer entirely
 or observations individually. The event dispatcher will ignore disabled observers and observations.
 
-[![ZBus observation mask.](../../_images/zbus_observation_mask.svg)](../../_images/zbus_observation_mask.svg)
+[![ZBus observation mask.](https://docs.zephyrproject.org/3.7.0/_images/zbus_observation_mask.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_observation_mask.svg)
 
 ZBus observation mask.
 
@@ -97,7 +97,7 @@ the cloud. When it completes the transmission, the Lora thread publishes to the 
 done` channel. The VDED executes the `Blink` again since it listens to the `Transmission done`
 channel.
 
-[![ZBus sensor-based application](../../_images/zbus_operations.svg)](../../_images/zbus_operations.svg)
+[![ZBus sensor-based application](https://docs.zephyrproject.org/3.7.0/_images/zbus_operations.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_operations.svg)
 
 ZBus sensor-based application.
 
@@ -142,7 +142,7 @@ ascending priority `S1`, `MS2`, `MS1`, and `T1` (the highest priority); two list
 `L1` and `L2`; and channel A. Supposing `L1`, `L2`, `MS1`, `MS2`, and `S1` observer
 channel A.
 
-[![ZBus example scenario](../../_images/zbus_publishing_process_example_scenario1.svg)](../../_images/zbus_publishing_process_example_scenario1.svg)
+[![ZBus example scenario](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example_scenario1.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example_scenario1.svg)
 
 ZBus VDED execution example scenario.
 
@@ -164,7 +164,7 @@ represents the time, and the Y-axis represents the priority of threads. Channel 
 represented by a voice balloon, is only one memory portion (shared memory). It appears several times
 only as an illustration of the message at that point in time.
 
-[![ZBus publish processing detail](../../_images/zbus_publishing_process_example.svg)](../../_images/zbus_publishing_process_example.svg)
+[![ZBus publish processing detail](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example.svg)
 
 ZBus VDED execution detail for priority T1 > MS1 > MS2 > S1.
 
@@ -192,7 +192,7 @@ VDED execution steps in detail for priority T1 > MS1 > MS2 > S1.
 The figure below illustrates the actions performed during the VDED execution when T1 publishes to
 channel A. The scenario considers the following priorities: T1 < MS1 < MS2 < S1.
 
-[![ZBus publish processing detail](../../_images/zbus_publishing_process_example2.svg)](../../_images/zbus_publishing_process_example2.svg)
+[![ZBus publish processing detail](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example2.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example2.svg)
 
 ZBus VDED execution detail for priority T1 < MS1 < MS2 < S1.
 
@@ -233,7 +233,7 @@ The figure below illustrates the actions performed during the VDED execution whe
 channel A. The scenario considers the priority boost feature and the following priorities: T1 < MS1
 < MS2 < S1.
 
-[![ZBus publishing process details using priority boost.](../../_images/zbus_publishing_process_example_HLP.svg)](../../_images/zbus_publishing_process_example_HLP.svg)
+[![ZBus publishing process details using priority boost.](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example_HLP.svg)](https://docs.zephyrproject.org/3.7.0/_images/zbus_publishing_process_example_HLP.svg)
 
 ZBus VDED execution detail with priority boost enabled and for priority T1 < MS1 < MS2 < S1.
 

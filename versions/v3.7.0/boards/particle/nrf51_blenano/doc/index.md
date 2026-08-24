@@ -38,11 +38,11 @@ hardware features:
 
 BLE nano pinout
 
-![BLE Nano](../../../../_images/nrf51_blenano.jpg)
+![BLE Nano](https://docs.zephyrproject.org/3.7.0/_images/nrf51_blenano.jpg)
 
 DAPLink board
 
-![DAPLink](../../../../_images/daplink.jpg)
+![DAPLink](https://docs.zephyrproject.org/3.7.0/_images/daplink.jpg)
 
 The DAPLink USB board acts as a dongle. DAPLink debug probes appear on the host computer as a USB disk.
 It also regulates 5V from USB to 3.3V via the onboard LDO to power Nano.

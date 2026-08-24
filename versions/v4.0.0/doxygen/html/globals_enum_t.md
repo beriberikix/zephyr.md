@@ -36,4 +36,4 @@ Here is a list of all enums with links to the files they belong to:
 - tmag5273\_attribute : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a6fadcd6cd3b5fbc9281d27f37bdfe0a2)
 - tmag5273\_sensor\_channel : [tmag5273.h](drivers_2sensor_2tmag5273_8h.md#a3d91dbb6bc6d7dc90ed889651bc34827)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

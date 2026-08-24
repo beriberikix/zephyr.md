@@ -8,8 +8,8 @@ original_path: boards/st/stm32mp135f_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32mp135f_dk.webp](../../../../_images/stm32mp135f_dk.webp)
-](../../../../_images/stm32mp135f_dk.webp)
+[![../../../../_images/stm32mp135f_dk.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32mp135f_dk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32mp135f_dk.webp)
 
 STM32MP135F-DK Discovery
 

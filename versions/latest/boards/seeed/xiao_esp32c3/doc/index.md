@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_esp32c3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_esp32c3_pinout.jpg](../../../../_images/xiao_esp32c3_pinout.jpg)
-](../../../../_images/xiao_esp32c3_pinout.jpg)
+[![../../../../_images/xiao_esp32c3_pinout.jpg](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c3_pinout.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c3_pinout.jpg)
 
 XIAO ESP32C3
 
@@ -94,7 +94,7 @@ on-chip / on-board
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO ESP32C3 Pinout](../../../../_images/xiao_esp32c3_pinout1.jpg)
+![XIAO ESP32C3 Pinout](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c3_pinout1.jpg)
 
 XIAO ESP32C3 Pinout
 

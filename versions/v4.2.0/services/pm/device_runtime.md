@@ -94,7 +94,7 @@ suspend the device if necessary. It is worth to note that in both cases, the
 operation is carried out synchronously. The sequence diagram shown below
 illustrates how a device can use this API and the expected sequence of events.
 
-![../../_images/devr-sync-ops.svg](../../_images/devr-sync-ops.svg)
+![../../_images/devr-sync-ops.svg](https://docs.zephyrproject.org/4.2.0/_images/devr-sync-ops.svg)
 
 Synchronous operation on a single device
 
@@ -124,7 +124,7 @@ operations, this functionality can be disabled altogether by
 de-selecting `CONFIOG_PM_DEVICE_RUNTIME_ASYNC`, reducing
 memory usage and system complexity.
 
-![../../_images/devr-async-ops.svg](../../_images/devr-async-ops.svg)
+![../../_images/devr-async-ops.svg](https://docs.zephyrproject.org/4.2.0/_images/devr-async-ops.svg)
 
 Asynchronous operation on a single device
 

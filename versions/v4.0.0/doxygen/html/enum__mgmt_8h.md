@@ -36,4 +36,4 @@ enum\_mgmt.h File Reference
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [enum\_mgmt](dir_7749fe9dc62ba7fc2a3ca61de6b2d4b0.md)
 - [enum\_mgmt.h](enum__mgmt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

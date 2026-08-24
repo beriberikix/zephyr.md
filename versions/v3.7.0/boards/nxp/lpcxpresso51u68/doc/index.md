@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The LPCXpresso51u68 development board uses an NXP LPC51U68 MCU based
 on an ARM CORTEX-M0+ core.
 
-![LPCXpresso51U68](../../../../_images/lpcxpresso51u68.jpg)
+![LPCXpresso51U68](https://docs.zephyrproject.org/3.7.0/_images/lpcxpresso51u68.jpg)
 
 ## Hardware
 

@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/misc/nxp\_rtxxx\_dsp\_ctrl/[nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h_source.md)
 
 - [nxp\_rtxxx\_dsp\_ctrl\_api](structnxp__rtxxx__dsp__ctrl__api.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

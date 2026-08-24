@@ -8,8 +8,8 @@ original_path: boards/technexion/pico_pi/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pico_pi.jpg](../../../../_images/pico_pi.jpg)
-](../../../../_images/pico_pi.jpg)
+[![../../../../_images/pico_pi.jpg](https://docs.zephyrproject.org/4.1.0/_images/pico_pi.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/pico_pi.jpg)
 
 Pico-Pi i.MX7D - Android Things IoT Development Platform
 

@@ -8,8 +8,8 @@ original_path: boards/nxp/ucans32k1sic/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ucans32k1sic_top.webp](../../../../_images/ucans32k1sic_top.webp)
-](../../../../_images/ucans32k1sic_top.webp)
+[![../../../../_images/ucans32k1sic_top.webp](https://docs.zephyrproject.org/4.2.0/_images/ucans32k1sic_top.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ucans32k1sic_top.webp)
 
 UCANS32K1SIC
 

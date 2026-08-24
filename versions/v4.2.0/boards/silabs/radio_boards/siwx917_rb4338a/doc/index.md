@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/siwx917_rb4338a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/siwx917_rb4338a.webp](../../../../../_images/siwx917_rb4338a.webp)
-](../../../../../_images/siwx917_rb4338a.webp)
+[![../../../../../_images/siwx917_rb4338a.webp](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4338a.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4338a.webp)
 
 SiWx917 Wi-Fi 6 and Bluetooth LE SoC 8 MB Flash Radio Board (SLWRB4338A)
 

@@ -76,4 +76,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - cp\_event\_callback\_t : [osdp.h](osdp_8h.md#aa02ec1fa8d7da5d694d5c2ae163e03cd)
 - ctr\_op\_t : [cipher.h](group__crypto__cipher.md#gad1ed48328ca31f8ce2dd7e0a166cacba)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

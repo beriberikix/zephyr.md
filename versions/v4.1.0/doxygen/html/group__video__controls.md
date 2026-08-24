@@ -291,4 +291,4 @@ Amount of optical zoom applied through to the camera optics.
 | VIDEO\_CID\_POWER\_LINE\_FREQUENCY\_60HZ |  |
 | VIDEO\_CID\_POWER\_LINE\_FREQUENCY\_AUTO |  |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

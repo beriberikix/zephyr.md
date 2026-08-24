@@ -251,4 +251,4 @@ Macros to abstract toolchain specific capabilities.
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [common](dir_7cbd25c8850fe30be392200e83a608be.md)
 - [sys\_io.h](arch_2common_2sys__io_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

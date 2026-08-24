@@ -8,8 +8,8 @@ original_path: boards/renesas/da1469x_dk_pro/doc/index.html
 
 Board Overview
 
-[![../../../../_images/da14695-00hqdevkt-board.jpg](../../../../_images/da14695-00hqdevkt-board.jpg)
-](../../../../_images/da14695-00hqdevkt-board.jpg)
+[![../../../../_images/da14695-00hqdevkt-board.jpg](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-board.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-board.jpg)
 
 DA1469x Development Kit Pro
 

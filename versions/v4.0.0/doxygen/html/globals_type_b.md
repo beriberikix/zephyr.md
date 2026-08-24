@@ -129,4 +129,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - bt\_vocs\_state\_cb : [vocs.h](group__bt__vocs.md#gaa329fd8931add8fd4f6c59b48c91ef75)
 - busy\_sim\_cb\_t : [busy\_sim.h](busy__sim_8h.md#a6b09e8372800e740a653f45f10a3501f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

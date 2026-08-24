@@ -8,8 +8,8 @@ original_path: boards/adafruit/itsybitsy_m4_express/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_itsybitsy_m4_express.jpg](../../../../_images/adafruit_itsybitsy_m4_express.jpg)
-](../../../../_images/adafruit_itsybitsy_m4_express.jpg)
+[![../../../../_images/adafruit_itsybitsy_m4_express.jpg](https://docs.zephyrproject.org/4.1.0/_images/adafruit_itsybitsy_m4_express.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/adafruit_itsybitsy_m4_express.jpg)
 
 ItsyBitsy M4 Express
 

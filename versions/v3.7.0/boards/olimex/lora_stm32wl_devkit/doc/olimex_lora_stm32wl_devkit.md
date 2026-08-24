@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 LoRaWAN development kit based on Olimex BB-STM32WL module using the
 STM32WLE5CCU6 MCU.
 
-![Olimex LoRa STM32WL DevKit](../../../../_images/olimex-stm32wl-devkit.jpg)
+![Olimex LoRa STM32WL DevKit](https://docs.zephyrproject.org/3.7.0/_images/olimex-stm32wl-devkit.jpg)
 
 Olimex LoRa STM32WL DevKit (credit: OLIMEX)
 

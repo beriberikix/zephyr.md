@@ -33,13 +33,13 @@ The general handler validates data from the backend e.g. check sizes, checksum, 
 is valid and the user has provided a handler for a received command id, the command handler is
 called.
 
-![../../_images/ec_host_cmd.png](../../_images/ec_host_cmd.png)
+![../../_images/ec_host_cmd.png](https://docs.zephyrproject.org/3.7.0/_images/ec_host_cmd.png)
 
 SHI (Serial Host Interface) is different to this because it is used only for communication with a
 host. SHI does not have API itself, thus the backend and peripheral driver layers are combined into
 one backend layer.
 
-![../../_images/ec_host_cmd_shi.png](../../_images/ec_host_cmd_shi.png)
+![../../_images/ec_host_cmd_shi.png](https://docs.zephyrproject.org/3.7.0/_images/ec_host_cmd_shi.png)
 
 Another case is SPI. Unfortunately, the current SPI API can’t be used to handle the host commands
 communication. The main issues are unknown command size sent by the host (the SPI transaction

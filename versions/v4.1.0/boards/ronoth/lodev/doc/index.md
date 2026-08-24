@@ -8,8 +8,8 @@ original_path: boards/ronoth/lodev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ronoth_lodev.jpg](../../../../_images/ronoth_lodev.jpg)
-](../../../../_images/ronoth_lodev.jpg)
+[![../../../../_images/ronoth_lodev.jpg](https://docs.zephyrproject.org/4.1.0/_images/ronoth_lodev.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/ronoth_lodev.jpg)
 
 LoDev
 
@@ -65,7 +65,7 @@ PA9 and PA10 are unavailable for I/Os.
 
 A helpful silkscreen legend is provided on the board.
 
-![Ronoth LoDev sketch with pinout](../../../../_images/pinout.jpg)
+![Ronoth LoDev sketch with pinout](https://docs.zephyrproject.org/4.1.0/_images/pinout.jpg)
 
 Ronth LoDev Pinout
 

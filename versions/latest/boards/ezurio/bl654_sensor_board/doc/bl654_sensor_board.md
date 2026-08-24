@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl654_sensor_board/doc/bl654_sensor_board.html
 
 Board Overview
 
-[![../../../../_images/bl654_sensor_board.jpg](../../../../_images/bl654_sensor_board.jpg)
-](../../../../_images/bl654_sensor_board.jpg)
+[![../../../../_images/bl654_sensor_board.jpg](https://docs.zephyrproject.org/4.2.0/_images/bl654_sensor_board.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/bl654_sensor_board.jpg)
 
 BL654 Sensor Board
 
@@ -52,7 +52,7 @@ This sensor board has the following features:
 - UART
 - WDT
 
-![BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)](../../../../_images/bl654_sensor_board_usb_swd_programmer.jpg)
+![BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)](https://docs.zephyrproject.org/4.2.0/_images/bl654_sensor_board_usb_swd_programmer.jpg)
 
 BL654 Sensor Board connected to USB-SWD Programmer (UART and SWD access)
 

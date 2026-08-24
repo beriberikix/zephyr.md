@@ -41,7 +41,7 @@ This kit provides:
 - On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability:
   :   - mass storage, virtual COM port and debug port
 
-![Disco L475 IoT1](../../../../_images/disco_l475_iot1.jpg)
+![Disco L475 IoT1](https://docs.zephyrproject.org/3.7.0/_images/disco_l475_iot1.jpg)
 
 More information about the board can be found at the [Disco L475 IoT1 website](https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/b-l475e-iot01a.html).
 

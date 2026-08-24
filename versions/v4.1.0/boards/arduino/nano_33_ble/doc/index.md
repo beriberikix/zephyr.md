@@ -13,7 +13,7 @@ nRF52840 ARM Cortex-M4F CPU. Arduino sells 2 variants of the board, the
 plain [BLE](https://store.arduino.cc/products/arduino-nano-33-ble) [[1]](#id1) type and the [BLE Sense](https://store.arduino.cc/products/arduino-nano-33-ble-sense) [[2]](#id3) type. The “Sense” variant is distinguished by
 the inclusion of more sensors, but otherwise both variants are the same.
 
-![Arduino Nano 33 BLE (Sense variant)](../../../../_images/arduino_nano_33_ble_sense.jpg)
+![Arduino Nano 33 BLE (Sense variant)](https://docs.zephyrproject.org/4.1.0/_images/arduino_nano_33_ble_sense.jpg)
 
 The Sense variant of the board
 
@@ -114,7 +114,7 @@ shown in the picture). GND, 3.3V, and RESET are also available in the DIP
 connector, therefore it may be easier to connect using the DIP connector
 instead of soldering to them.
 
-![Nano 33 BLE SWD connecting](../../../../_images/nano_33_ble_swd.jpg)
+![Nano 33 BLE SWD connecting](https://docs.zephyrproject.org/4.1.0/_images/nano_33_ble_swd.jpg)
 
 After connecting the debug adapter, you can debug it the usual way.
 Type the following command will start debugging.

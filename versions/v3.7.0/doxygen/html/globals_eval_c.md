@@ -284,4 +284,4 @@ Here is a list of all enum values with links to the files they belong to:
 - CRYPTO\_HASH\_ALGO\_SHA384 : [hash.h](group__crypto__hash.md#ggaaea88501aa8243eacc8c57ac0914ac7aabba9e518a333ce75825957fde1993dd5)
 - CRYPTO\_HASH\_ALGO\_SHA512 : [hash.h](group__crypto__hash.md#ggaaea88501aa8243eacc8c57ac0914ac7aa72a129765ae9e15f456c295c3917bf3f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

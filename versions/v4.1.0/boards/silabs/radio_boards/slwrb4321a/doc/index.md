@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4321a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/wgm160p-starter-kit.jpg](../../../../../_images/wgm160p-starter-kit.jpg)
-](../../../../../_images/wgm160p-starter-kit.jpg)
+[![../../../../../_images/wgm160p-starter-kit.jpg](https://docs.zephyrproject.org/4.1.0/_images/wgm160p-starter-kit.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/wgm160p-starter-kit.jpg)
 
 WGM160P Wi-Fi Module (SLWRB4321A)
 

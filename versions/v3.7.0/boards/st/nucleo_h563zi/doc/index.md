@@ -44,7 +44,7 @@ Here are some highlights of the Nucleo H563ZI board:
 
 More information about the board can be found at the [NUCLEO\_H563ZI website](https://www.st.com/en/evaluation-tools/nucleo-h563zi).
 
-![NUCLEO H563ZI](../../../../_images/nucleo_h563zi.jpg)
+![NUCLEO H563ZI](https://docs.zephyrproject.org/3.7.0/_images/nucleo_h563zi.jpg)
 
 ## Hardware
 

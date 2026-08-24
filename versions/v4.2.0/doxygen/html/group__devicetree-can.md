@@ -299,4 +299,4 @@ Returns
 See also
 :   [DT\_CAN\_TRANSCEIVER\_MIN\_BITRATE()](#ga60cb3dc5c2feb517dddcb5a57cce8a9b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

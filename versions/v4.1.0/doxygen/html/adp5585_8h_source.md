@@ -351,4 +351,4 @@ struct mfd\_adp5585\_data::@377271251103256101275222207120274253377320164372 chi
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [mfd](dir_1bf5b7f6eba6ffa1b2ffa53a350028d6.md)
 - [adp5585.h](adp5585_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

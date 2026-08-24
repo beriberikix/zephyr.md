@@ -52,4 +52,4 @@ grp.h File Reference
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [posix](dir_cc2c191bc57cea4eaf0dbdf53c4fb6c6.md)
 - [grp.h](grp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

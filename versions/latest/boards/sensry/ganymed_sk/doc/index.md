@@ -8,8 +8,8 @@ original_path: boards/sensry/ganymed_sk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ganymed_sk.webp](../../../../_images/ganymed_sk.webp)
-](../../../../_images/ganymed_sk.webp)
+[![../../../../_images/ganymed_sk.webp](https://docs.zephyrproject.org/4.2.0/_images/ganymed_sk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ganymed_sk.webp)
 
 Ganymed Starter Kit (SK)
 

@@ -13,7 +13,7 @@ STM32F427VIT6 Cortex-M4 CPU primarily designed for use in drones.
 This board acts as a mezzanine platform for all 96Boards CE compliant
 boards. It can also be used as a standalone board.
 
-![96Boards Aerocore2](../../../../_images/96b_aerocore2.jpg)
+![96Boards Aerocore2](https://docs.zephyrproject.org/4.0.0/_images/96b_aerocore2.jpg)
 
 96Boards Aerocore2
 

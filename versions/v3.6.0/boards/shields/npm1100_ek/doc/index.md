@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The nPM1100 EK lets you test different functions and features of the nPM1100
 Power Management Integrated Circuit (PMIC).
 
-![nPM1100 EK](../../../../_images/npm1100_ek.jpg)
+![nPM1100 EK](https://docs.zephyrproject.org/3.6.0/_images/npm1100_ek.jpg)
 
 nPM1100 EK
 

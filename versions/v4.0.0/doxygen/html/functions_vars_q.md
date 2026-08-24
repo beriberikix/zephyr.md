@@ -36,4 +36,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - queued : [udc\_buf\_info](structudc__buf__info.md#a4cd2e83000a0551d126bebe89552eab9), [uhc\_transfer](structuhc__transfer.md#ad2b246c850c3b30f7d2b58fc9a47008b)
 - quirks : [bt\_hci\_driver](structbt__hci__driver.md#a0dd8d706ee7ded476a90b19a946226b8)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

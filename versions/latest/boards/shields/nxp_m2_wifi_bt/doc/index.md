@@ -115,6 +115,6 @@ Note
 When J103 is connected, flash cannot be downloaded. So, remove the connection when downloading flash
 and reconnect it after downloading.
 
-![MIMXRT1060EVK Rev-C BT Rework for M.2](../../../../_images/mimxrt1060evkc_m2_bt_rework.webp)
+![MIMXRT1060EVK Rev-C BT Rework for M.2](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1060evkc_m2_bt_rework.webp)
 
 MIMXRT1060EVK Rev-C BT Rework for M.2 Modules

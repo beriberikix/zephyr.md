@@ -140,4 +140,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - gvec : [xen\_domctl\_bind\_pt\_irq](structxen__domctl__bind__pt__irq.md#a571d737fec6ba58131b433643edc8a70)
 - gw : [net\_if\_ipv4](structnet__if__ipv4.md#aa24772c7202bf465ee3da94a172b7bcb)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

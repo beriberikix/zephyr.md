@@ -17,7 +17,7 @@ high-performance feature set in low-cost LQFP packages, further simplifying
 board design and layout for customers. The i.MX RT1015 runs on the Arm®
 Cortex®-M7 core at 500 MHz.
 
-![MIMXRT1015-EVK](../../../../_images/mimxrt1015_evk.jpg)
+![MIMXRT1015-EVK](https://docs.zephyrproject.org/3.7.0/_images/mimxrt1015_evk.jpg)
 
 ## Hardware
 

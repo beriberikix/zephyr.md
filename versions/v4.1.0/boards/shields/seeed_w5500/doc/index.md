@@ -17,7 +17,7 @@ Seeed [W5500 Ethernet Shield](https://wiki.seeedstudio.com/W5500_Ethernet_Shield
 - Grove I2C connector,
 - SD card slot.
 
-![Seeed W5500 Ethernet Shield](../../../../_images/seeed_w5500.webp)
+![Seeed W5500 Ethernet Shield](https://docs.zephyrproject.org/4.1.0/_images/seeed_w5500.webp)
 
 Seeed W5500 Ethernet Shield
 

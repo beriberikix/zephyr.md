@@ -67,4 +67,4 @@ Parameters
     | name | Syscall name as a token (ex: k\_thread\_create) |
     | ... | Other parameters passed to the syscall, if the syscall has a return, the return value is the last parameter in the list |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

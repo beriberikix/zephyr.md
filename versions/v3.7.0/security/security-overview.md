@@ -43,7 +43,7 @@ in detail. As depicted in Figure 1, these main steps are:
    how these assets are protected. Certification claims shall be
    determined and backed with appropriate evidence.
 
-![../_images/security-process-steps.png](../_images/security-process-steps.png)
+![../_images/security-process-steps.png](https://docs.zephyrproject.org/3.7.0/_images/security-process-steps.png)
 
 Figure 1. Security Process Steps
 
@@ -229,7 +229,7 @@ created and kept up-to-date with future development.
 
 ### System Architecture
 
-![../_images/security-zephyr-system-architecture.png](../_images/security-zephyr-system-architecture.png)
+![../_images/security-zephyr-system-architecture.png](https://docs.zephyrproject.org/3.7.0/_images/security-zephyr-system-architecture.png)
 
 Figure 2: Zephyr System Architecture
 

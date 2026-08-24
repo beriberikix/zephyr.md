@@ -239,4 +239,4 @@ Here is a list of all functions with links to the files they belong to:
 - rtio\_submit() : [rtio.h](group__rtio.md#gafee27c64a4a4989c4eb774addde8eb2e)
 - rtio\_txn\_next() : [rtio.h](group__rtio.md#gaef904eb6a8810d8c3ea537c4d6edbee5)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

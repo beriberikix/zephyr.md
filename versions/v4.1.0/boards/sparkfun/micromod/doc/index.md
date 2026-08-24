@@ -25,7 +25,7 @@ All Micromod board targets support the following hardware features:
 - 2 PWM
 - Watchdog Timer (WDT)
 
-![Sparkfun Micromod board](../../../../_images/sparkfun_micromod.webp)
+![Sparkfun Micromod board](https://docs.zephyrproject.org/4.1.0/_images/sparkfun_micromod.webp)
 
 Sparkfun Micromod board (Credit: [https://www.sparkfun.com](https://www.sparkfun.com))
 

@@ -804,4 +804,4 @@ Misc utilities.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [settings](dir_d86a196c339fcb483c3ba090e397efd2.md)
 - [settings.h](settings_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

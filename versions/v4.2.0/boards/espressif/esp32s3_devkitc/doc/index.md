@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32s3_devkitc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32s3_devkitc.webp](../../../../_images/esp32s3_devkitc.webp)
-](../../../../_images/esp32s3_devkitc.webp)
+[![../../../../_images/esp32s3_devkitc.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_devkitc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_devkitc.webp)
 
 ESP32-S3-DevKitC
 

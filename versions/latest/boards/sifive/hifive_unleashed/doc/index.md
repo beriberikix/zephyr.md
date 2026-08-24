@@ -8,8 +8,8 @@ original_path: boards/sifive/hifive_unleashed/doc/index.html
 
 Board Overview
 
-[![../../../../_images/hifive_unleashed.jpg](../../../../_images/hifive_unleashed.jpg)
-](../../../../_images/hifive_unleashed.jpg)
+[![../../../../_images/hifive_unleashed.jpg](https://docs.zephyrproject.org/4.2.0/_images/hifive_unleashed.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/hifive_unleashed.jpg)
 
 HiFive Unleashed
 

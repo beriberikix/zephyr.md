@@ -172,4 +172,4 @@ Note: VC must be disabled prior to call this function and enabled afterward in o
 
 Note: Not being able to enable such feature is a non-fatal error and any code using it should behave accordingly (displaying some info, and ignoring it for instance).
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

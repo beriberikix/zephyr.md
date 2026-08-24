@@ -16,7 +16,7 @@ original_path: boards/renesas/rcar_salvator_x/doc/rcar_salvator_x.html
   like USB, Ethernet, HDMI and can work standalone or can be adapted to other boards,
   via 440pin connector on bottom side.
 
-![R-Car Salvator-X kit](../../../../_images/rcar_h3_salvatorx.jpg)
+![R-Car Salvator-X kit](https://docs.zephyrproject.org/4.0.0/_images/rcar_h3_salvatorx.jpg)
 
 More information about the board can be found at [Renesas R-Car Development Support website](https://www.renesas.com/us/en/support/partners/r-car-consortium/r-car-development-support).
 
@@ -25,7 +25,7 @@ More information about the board can be found at [Renesas R-Car Development Supp
 Hardware capabilities for the H3 Salvator-X for can be found on the [eLinux H3 Salvator-X page](https://elinux.org/R-Car/Boards/Salvator-X)
 of the board.
 
-![R-Car Salvator-X features](../../../../_images/rcar_h3_features.jpg)
+![R-Car Salvator-X features](https://docs.zephyrproject.org/4.0.0/_images/rcar_h3_features.jpg)
 
 Note
 
@@ -54,7 +54,7 @@ It’s also currently possible to write on the ram console.
 
 ### Connections and IOs
 
-![R-Car Salvator-X connections](../../../../_images/r-car-h3-salvator-x-connections.jpg)
+![R-Car Salvator-X connections](https://docs.zephyrproject.org/4.0.0/_images/r-car-h3-salvator-x-connections.jpg)
 
 #### GPIO
 

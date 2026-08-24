@@ -72,7 +72,7 @@ debugger, via the debug header labeled “BLE” on the board’s
 silkscreen. The header is not populated; 0.1” male header must be
 soldered on first.
 
-![96Boards Carbon nRF51 Debug](../../../../_images/96b_carbon_nrf51.jpg)
+![96Boards Carbon nRF51 Debug](https://docs.zephyrproject.org/3.6.0/_images/96b_carbon_nrf51.jpg)
 
 96Boards Carbon nRF51 Debug
 

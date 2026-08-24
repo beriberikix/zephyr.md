@@ -8,8 +8,8 @@ original_path: boards/particle/boron/doc/index.html
 
 Board Overview
 
-[![../../../../_images/particle_boron.jpg](../../../../_images/particle_boron.jpg)
-](../../../../_images/particle_boron.jpg)
+[![../../../../_images/particle_boron.jpg](https://docs.zephyrproject.org/4.1.0/_images/particle_boron.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/particle_boron.jpg)
 
 Boron
 

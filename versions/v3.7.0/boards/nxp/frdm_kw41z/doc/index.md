@@ -27,7 +27,7 @@ F-antenna which can be bypassed to test via SMA connection, multiple power
 supply options, push/capacitive touch buttons, switches, LEDs and integrated
 sensors.
 
-![FRDM-KW41Z](../../../../_images/frdm_kw41z.jpg)
+![FRDM-KW41Z](https://docs.zephyrproject.org/3.7.0/_images/frdm_kw41z.jpg)
 
 ## Hardware
 

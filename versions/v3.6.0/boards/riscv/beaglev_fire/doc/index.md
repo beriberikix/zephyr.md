@@ -21,7 +21,7 @@ Built around the powerful and energy-efficient RISC-V instruction set architectu
 its versatile FPGA fabric, BeagleV®-Fire SBC offers unparalleled opportunities for developers,
 hobbyists, and researchers to explore and experiment with RISC-V technology.
 
-![beaglev_fire](../../../../_images/BeagleV-Fire-Front-Annotated-768x432.webp)
+![beaglev_fire](https://docs.zephyrproject.org/3.6.0/_images/BeagleV-Fire-Front-Annotated-768x432.webp)
 
 ### Building
 
@@ -46,7 +46,7 @@ Connect to BeagleV-Fire UART debug port using a 3.3v USB to UART bridge.
 Now you can run `tio <port>` in a terminal window to access the UART debug port connection. Once you
 are connected properly you can press the Reset button which will show you a progress bar like:
 
-![beaglev_fire](../../../../_images/board-booting.png)
+![beaglev_fire](https://docs.zephyrproject.org/3.6.0/_images/board-booting.png)
 
 Once you see that progress bar on your screen you can start pressing any button (0-9/a-z) which
 will interrupt the Hart Software Services from booting its payload.

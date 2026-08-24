@@ -45,7 +45,7 @@ Board features:
 
   > - 1x Multicolor Status LED via I2C
 
-[![PhyBOARD Pollux](../../../../_images/Phyboard_Pollux.jpg)](../../../../_images/Phyboard_Pollux.jpg)
+[![PhyBOARD Pollux](https://docs.zephyrproject.org/3.6.0/_images/Phyboard_Pollux.jpg)](https://docs.zephyrproject.org/3.6.0/_images/Phyboard_Pollux.jpg)
 
 More information about the board can be found at the
 [PHYTEC website](https://www.phytec.de/produkte/single-board-computer/phyboard-pollux/).
@@ -198,7 +198,7 @@ The easiest way to do that is to use a SEGGER JLink Debugger and Phytec’s
 `PEB-EVAL-01` Shield, which can be directly connected to the JLink.
 You can find the JLink Software package here: [JLink Software](https://www.segger.com/downloads/jlink/)
 
-[![PEB-EVAL-01](../../../../_images/PEB-EVAL-011.jpg)](../../../../_images/PEB-EVAL-011.jpg)
+[![PEB-EVAL-01](https://docs.zephyrproject.org/3.6.0/_images/PEB-EVAL-011.jpg)](https://docs.zephyrproject.org/3.6.0/_images/PEB-EVAL-011.jpg)
 
 PEB-EVAL-01
 

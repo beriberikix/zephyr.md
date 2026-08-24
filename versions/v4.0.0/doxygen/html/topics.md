@@ -723,4 +723,4 @@ Here is a list of all topics with brief descriptions:
 | [battery APIs](group__battery__apis.md) | Battery API |
 | [nRF70 Offloaded raw TX API](group__nrf70__off__raw__tx__api.md) | File containing API's for the Offloaded raw TX feature |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

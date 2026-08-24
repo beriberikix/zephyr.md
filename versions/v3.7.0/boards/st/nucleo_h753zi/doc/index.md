@@ -50,7 +50,7 @@ Key Features
   STM32Cube MCU package.
 - Arm\* Mbed Enabled\* compliant (only for some Nucleo part numbers)
 
-![Nucleo H753ZI](../../../../_images/nucleo_h753zi.jpg)
+![Nucleo H753ZI](https://docs.zephyrproject.org/3.7.0/_images/nucleo_h753zi.jpg)
 
 More information about the board can be found at the [Nucleo H753ZI website](https://www.st.com/en/evaluation-tools/nucleo-h753zi.html).
 

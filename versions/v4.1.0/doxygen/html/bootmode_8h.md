@@ -46,4 +46,4 @@ Public API for boot mode interface.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [retention](dir_acb4c99582103da541bc87f13e94ee5a.md)
 - [bootmode.h](bootmode_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

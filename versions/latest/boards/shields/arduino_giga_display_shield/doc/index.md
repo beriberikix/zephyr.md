@@ -21,7 +21,7 @@ The shield can be connected to the Arduino GIGA R1 WiFi board via the high-densi
 
 More information about the shield can be found at [Arduino GIGA Display Shield website](https://docs.arduino.cc/hardware/giga-display-shield/) [[1]](#id3).
 
-![../../../../_images/ASX00039_00.default_1000x750.webp](../../../../_images/ASX00039_00.default_1000x750.webp)
+![../../../../_images/ASX00039_00.default_1000x750.webp](https://docs.zephyrproject.org/4.2.0/_images/ASX00039_00.default_1000x750.webp)
 
 Arduino GIGA Display Shield
 

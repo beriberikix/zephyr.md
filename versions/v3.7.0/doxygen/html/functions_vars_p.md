@@ -349,4 +349,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - pwr\_class\_HS400 : [mmc\_ext\_csd](structmmc__ext__csd.md#a3a38f805cac18f3429f57edc7cbf2134)
 - pwrfail : [mcp7940n\_rtc\_weekday](structmcp7940n__rtc__weekday.md#a5ce2be23d666085e0d3af23e4ccdd326)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

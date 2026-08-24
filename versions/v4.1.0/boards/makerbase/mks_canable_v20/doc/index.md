@@ -8,8 +8,8 @@ original_path: boards/makerbase/mks_canable_v20/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mks_canable_v20.webp](../../../../_images/mks_canable_v20.webp)
-](../../../../_images/mks_canable_v20.webp)
+[![../../../../_images/mks_canable_v20.webp](https://docs.zephyrproject.org/4.1.0/_images/mks_canable_v20.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/mks_canable_v20.webp)
 
 MKS CANable V2.0
 

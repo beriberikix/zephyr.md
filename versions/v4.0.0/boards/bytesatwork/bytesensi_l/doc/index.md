@@ -8,8 +8,8 @@ original_path: boards/bytesatwork/bytesensi_l/doc/index.html
 
 Board Overview
 
-[![../../../../_images/byteSENSI-L.jpg](../../../../_images/byteSENSI-L.jpg)
-](../../../../_images/byteSENSI-L.jpg)
+[![../../../../_images/byteSENSI-L.jpg](https://docs.zephyrproject.org/4.0.0/_images/byteSENSI-L.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/byteSENSI-L.jpg)
 
 byteSENSI-L
 

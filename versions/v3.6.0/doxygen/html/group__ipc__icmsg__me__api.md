@@ -288,4 +288,4 @@ Parameters
 :   | [in,out] | data | Structure containing run-time data used by the icmsg\_me instance. The structure is initialized with [icmsg\_me\_init](#ga12cc5855f2fbca5506f647ced473c71f) and its content must be preserved while the icmsg\_me instance is active. |
     | --- | --- | --- |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

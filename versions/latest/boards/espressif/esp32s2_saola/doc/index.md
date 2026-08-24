@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32s2_saola/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32s2_saola.webp](../../../../_images/esp32s2_saola.webp)
-](../../../../_images/esp32s2_saola.webp)
+[![../../../../_images/esp32s2_saola.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32s2_saola.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32s2_saola.webp)
 
 ESP32-S2-Saola
 

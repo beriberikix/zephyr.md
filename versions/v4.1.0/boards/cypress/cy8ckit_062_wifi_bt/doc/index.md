@@ -8,8 +8,8 @@ original_path: boards/cypress/cy8ckit_062_wifi_bt/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cy8ckit_062_wifi_bt_m0.jpg](../../../../_images/cy8ckit_062_wifi_bt_m0.jpg)
-](../../../../_images/cy8ckit_062_wifi_bt_m0.jpg)
+[![../../../../_images/cy8ckit_062_wifi_bt_m0.jpg](https://docs.zephyrproject.org/4.1.0/_images/cy8ckit_062_wifi_bt_m0.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/cy8ckit_062_wifi_bt_m0.jpg)
 
 PSOC 6 WiFi-BT Pioneer Kit
 

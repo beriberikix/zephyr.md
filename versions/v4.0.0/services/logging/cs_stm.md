@@ -83,7 +83,7 @@ STM logging has 2 modes of operations:
 
 Following figure presents multi-domain logging using ARM Coresight STM.
 
-![../../_images/coresight_architecture.png](../../_images/coresight_architecture.png)
+![../../_images/coresight_architecture.png](https://docs.zephyrproject.org/4.0.0/_images/coresight_architecture.png)
 
 Each core (local domain) is using logging frontend which writes logging data to STMESP registers.
 

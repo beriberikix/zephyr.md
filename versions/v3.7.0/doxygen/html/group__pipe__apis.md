@@ -281,4 +281,4 @@ Return values
 :   | a | number n such that 0 <= n <= [k\_pipe::size](structk__pipe.md#aca3472fb8d68f01af4e26b0b88736d64 "k_pipe::size"); the result is zero for unbuffered pipes. |
     | --- | --- |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

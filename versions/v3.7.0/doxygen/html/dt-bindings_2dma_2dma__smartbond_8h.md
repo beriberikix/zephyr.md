@@ -109,4 +109,4 @@ A valid triggering source should be provided when DMA is configured for peripher
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [dma](dir_4af45c18fedc476f9a2ee26ec98f56f0.md)
 - [dma\_smartbond.h](dt-bindings_2dma_2dma__smartbond_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

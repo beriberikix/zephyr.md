@@ -19,4 +19,4 @@ Here is a list of all enums with links to the structures/unions they belong to:
 - sh\_mqtt\_subscribe\_state : [shell\_mqtt](structshell__mqtt.md#adea25e747457658ebf35665951949466)
 - sh\_mqtt\_transport\_state : [shell\_mqtt](structshell__mqtt.md#ae8805bd53bffb3c001b0be13e9da68a2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/vcc-gnd/yd_esp32/doc/index.html
 
 Board Overview
 
-[![../../../../_images/yd_esp32.png](../../../../_images/yd_esp32.png)
-](../../../../_images/yd_esp32.png)
+[![../../../../_images/yd_esp32.png](https://docs.zephyrproject.org/4.1.0/_images/yd_esp32.png)
+](https://docs.zephyrproject.org/4.1.0/_images/yd_esp32.png)
 
 YD-ESP32
 

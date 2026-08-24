@@ -8,8 +8,8 @@ original_path: boards/infineon/cy8cproto_063_ble/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cy8cproto-063-ble.jpg](../../../../_images/cy8cproto-063-ble.jpg)
-](../../../../_images/cy8cproto-063-ble.jpg)
+[![../../../../_images/cy8cproto-063-ble.jpg](https://docs.zephyrproject.org/4.2.0/_images/cy8cproto-063-ble.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/cy8cproto-063-ble.jpg)
 
 CY8CPROTO-063-BLE
 

@@ -8,8 +8,8 @@ original_path: boards/sifive/hifive_unmatched/doc/index.html
 
 Board Overview
 
-[![../../../../_images/hifive_unmatched.jpg](../../../../_images/hifive_unmatched.jpg)
-](../../../../_images/hifive_unmatched.jpg)
+[![../../../../_images/hifive_unmatched.jpg](https://docs.zephyrproject.org/4.1.0/_images/hifive_unmatched.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/hifive_unmatched.jpg)
 
 HiFive Unmatched
 

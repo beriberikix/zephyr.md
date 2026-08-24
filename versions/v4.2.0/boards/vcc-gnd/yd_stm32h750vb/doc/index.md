@@ -8,8 +8,8 @@ original_path: boards/vcc-gnd/yd_stm32h750vb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/yd_stm32h750vb.png](../../../../_images/yd_stm32h750vb.png)
-](../../../../_images/yd_stm32h750vb.png)
+[![../../../../_images/yd_stm32h750vb.png](https://docs.zephyrproject.org/4.2.0/_images/yd_stm32h750vb.png)
+](https://docs.zephyrproject.org/4.2.0/_images/yd_stm32h750vb.png)
 
 YD-STM32H750VB
 

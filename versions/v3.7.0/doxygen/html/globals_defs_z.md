@@ -146,4 +146,4 @@ Here is a list of all macros with links to the files they belong to:
 - ZVFS\_MODE\_IMSGQ : [fdtable.h](fdtable_8h.md#a2bdc08321b707a710c4fc3f755638954)
 - ZVFS\_MODE\_UNSPEC : [fdtable.h](fdtable_8h.md#a4696b5a4cecb531946d2f5b2ecd8b8ff)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

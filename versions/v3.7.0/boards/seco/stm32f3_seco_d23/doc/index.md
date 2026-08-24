@@ -27,7 +27,7 @@ The audio functionalities are managed by the AudioCodec embedded in the RK-809
 PMIC. SBC-3.5-PX30 board is completed by a series of connectors with various
 interfaces (UART, SPI, I2C) managed by the microcontroller STM32F302VCT6.
 
-![SECO SBC-3.5-PX30](../../../../_images/stm32f3_seco_d23.jpg)
+![SECO SBC-3.5-PX30](https://docs.zephyrproject.org/3.7.0/_images/stm32f3_seco_d23.jpg)
 
 More information about the board can be found at the
 [SECO SBC-3.5-PX30 website](https://edge.seco.com/sbc-3-5-px30.html).

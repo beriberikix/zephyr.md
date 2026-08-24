@@ -8,8 +8,8 @@ original_path: boards/renesas/mck_ra8t1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mck_ra8t1.jpg](../../../../_images/mck_ra8t1.jpg)
-](../../../../_images/mck_ra8t1.jpg)
+[![../../../../_images/mck_ra8t1.jpg](https://docs.zephyrproject.org/4.1.0/_images/mck_ra8t1.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mck_ra8t1.jpg)
 
 RA8T1 Motor Control Kit
 
@@ -43,7 +43,7 @@ MCK-RA8T1 kit includes the items below:
 - Permanent magnet synchronous motors
 - Accessories (cables, standoffs, etc.)
 
-![RA8T1 Motor Control Kit](../../../../_images/mck_ra8t1_product_contents.jpg)
+![RA8T1 Motor Control Kit](https://docs.zephyrproject.org/4.1.0/_images/mck_ra8t1_product_contents.jpg)
 
 MCK-RA8T1 product contents (Credit: Renesas Electronics Corporation)
 
@@ -86,8 +86,8 @@ write a program (firmware) of RA8T1 with it.
 
 Detailed Hardware features for the RA8T1 MCU group can be found at [RA8T1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra8t1-group-users-manual-hardware?r=25463106)
 
-[![RA8T1 MCU group feature](../../../../_images/ra8t1_block_diagram.png)
-](../../../../_images/ra8t1_block_diagram.png)
+[![RA8T1 MCU group feature](https://docs.zephyrproject.org/4.1.0/_images/ra8t1_block_diagram.png)
+](https://docs.zephyrproject.org/4.1.0/_images/ra8t1_block_diagram.png)
 
 RA8T1 Block diagram (Credit: Renesas Electronics Corporation)
 

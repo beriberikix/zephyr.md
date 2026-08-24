@@ -213,4 +213,4 @@ nordic-nrf-ficr-nrf54h20-enga.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [misc](dir_b5927901ba0eeb0fdf9ca7870f5af60a.md)
 - [nordic-nrf-ficr-nrf54h20-enga.h](nordic-nrf-ficr-nrf54h20-enga_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

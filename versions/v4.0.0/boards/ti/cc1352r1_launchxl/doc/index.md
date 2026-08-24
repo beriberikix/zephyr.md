@@ -8,8 +8,8 @@ original_path: boards/ti/cc1352r1_launchxl/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cc1352r1_launchxl.jpg](../../../../_images/cc1352r1_launchxl.jpg)
-](../../../../_images/cc1352r1_launchxl.jpg)
+[![../../../../_images/cc1352r1_launchxl.jpg](https://docs.zephyrproject.org/4.0.0/_images/cc1352r1_launchxl.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/cc1352r1_launchxl.jpg)
 
 CC1352R1 LaunchXL
 

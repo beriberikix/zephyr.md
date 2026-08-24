@@ -8,8 +8,8 @@ original_path: boards/we/orthosie1ev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/we_orthosie1ev.webp](../../../../_images/we_orthosie1ev.webp)
-](../../../../_images/we_orthosie1ev.webp)
+[![../../../../_images/we_orthosie1ev.webp](https://docs.zephyrproject.org/4.1.0/_images/we_orthosie1ev.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/we_orthosie1ev.webp)
 
 Orthosie-I-EV
 

@@ -16,7 +16,7 @@ The NPCX4M8F\_EVB kit is a development platform to evaluate the
 Nuvoton NPCX4 series microcontrollers. This board needs to be mated with
 part number NPCX498F.
 
-![NPCX4M8F Evaluation Board](../../../../_images/npcx4m8f_evb.jpg)
+![NPCX4M8F Evaluation Board](https://docs.zephyrproject.org/3.7.0/_images/npcx4m8f_evb.jpg)
 
 ## Hardware
 

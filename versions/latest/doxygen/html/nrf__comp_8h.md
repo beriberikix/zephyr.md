@@ -171,4 +171,4 @@ Return values
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [comparator](dir_25be445c737a80f4854b3956f06e1693.md)
 - [nrf\_comp.h](nrf__comp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

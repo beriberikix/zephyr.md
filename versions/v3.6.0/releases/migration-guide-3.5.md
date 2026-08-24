@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/releases/migration-guide-3.5.html
+source_url: https://docs.zephyrproject.org/3.6.0/releases/migration-guide-3.5.html
 original_path: releases/migration-guide-3.5.html
 ---
 

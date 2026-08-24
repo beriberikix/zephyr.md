@@ -169,4 +169,4 @@ Parameters
 :   | [PPP L2/driver Support Functions](group__ppp.md "Point-to-point (PPP) L2/driver support functions.") | Modem PPP instance |
     | --- | --- |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

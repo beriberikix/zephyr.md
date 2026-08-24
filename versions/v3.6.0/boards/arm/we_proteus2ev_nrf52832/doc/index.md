@@ -31,7 +31,7 @@ the following devices:
 - UART
 - WDT
 
-![Proteus-II EV](../../../../_images/we_proteus2ev_nrf52832.jpg)
+![Proteus-II EV](https://docs.zephyrproject.org/3.6.0/_images/we_proteus2ev_nrf52832.jpg)
 
 Proteus-II-EV (Credit: Würth Elektronik)
 

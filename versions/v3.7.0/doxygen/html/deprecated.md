@@ -105,4 +105,4 @@ Global [PWM\_STM32\_COMPLEMENTARY](stm32__pwm_8h.md#ac73e020f7f8787beaa8ddf78715
 Global [smp\_add\_cmd\_ret](mgmt_2mcumgr_2smp_2smp_8h.md#abad955ba2e5e19b6f6443c8eed4f1760) (zcbor\_state\_t \*zse, [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) group, [uint16\_t](stdint_8h.md#a5debae8b2a1ec20a6694c0c443ee399e) ret)
 :   Deprecated after Zephyr 3.4, use [smp\_add\_cmd\_err()](mgmt_2mcumgr_2smp_2smp_8h.md#a191eb8c8a5a531b158374a1071925ca7 "Appends an "err" response.") instead
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

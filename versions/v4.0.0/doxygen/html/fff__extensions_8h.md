@@ -37,4 +37,4 @@ Zephyr testing framework FFF extension macros.
 - [include](dir_d5cd24c9babba9527629083c466f69cc.md)
 - [zephyr](dir_91e5ce9bd56815b1bd388aa667b3762f.md)
 - [fff\_extensions.h](fff__extensions_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

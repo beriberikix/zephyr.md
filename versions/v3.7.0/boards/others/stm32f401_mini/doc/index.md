@@ -16,7 +16,7 @@ The STM32 Mini F401 is an extremely low cost and bare-bones
 development board featuring the STM32F401CC, see [STM32F401CC website](https://www.st.com/en/microcontrollers-microprocessors/stm32f401cc.html) [[4]](#id7).
 More info about the board with schematics available [here](https://stm32-base.org/boards/STM32F401CCU6-STM32-Mini-F401) [[2]](#id3)
 
-![STM32 Mini F401](../../../../_images/STM32_Mini_F401-1.jpg)
+![STM32 Mini F401](https://docs.zephyrproject.org/3.7.0/_images/STM32_Mini_F401-1.jpg)
 
 ## Hardware
 

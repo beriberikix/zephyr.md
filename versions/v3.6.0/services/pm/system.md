@@ -24,7 +24,7 @@ source.
 
 The following diagram describes system power management:
 
-![System power management](../../_images/system-pm.svg)
+![System power management](https://docs.zephyrproject.org/3.6.0/_images/system-pm.svg)
 
 Some handful examples using different power management features:
 

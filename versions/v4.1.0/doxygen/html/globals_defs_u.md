@@ -2217,4 +2217,4 @@ Here is a list of all macros with links to the files they belong to:
 - UULP\_TESTMODE0\_ULP7 : [siwx91x-pinctrl.h](siwx91x-pinctrl_8h.md#a003329462614c9ff939c451c28a011bc)
 - UULP\_TESTMODE0\_ULP9 : [siwx91x-pinctrl.h](siwx91x-pinctrl_8h.md#aa927ee96be06692b7fecb88eec152357)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

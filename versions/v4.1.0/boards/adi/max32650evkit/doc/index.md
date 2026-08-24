@@ -8,8 +8,8 @@ original_path: boards/adi/max32650evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32650evkit.webp](../../../../_images/max32650evkit.webp)
-](../../../../_images/max32650evkit.webp)
+[![../../../../_images/max32650evkit.webp](https://docs.zephyrproject.org/4.1.0/_images/max32650evkit.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max32650evkit.webp)
 
 MAX32650EVKIT
 
@@ -37,7 +37,7 @@ designed specifically for high performance battery powered applications.
 
 The Zephyr port is running on the MAX32650 MCU.
 
-![MAX32650 EVKIT Front](../../../../_images/max32650evkit1.webp)
+![MAX32650 EVKIT Front](https://docs.zephyrproject.org/4.1.0/_images/max32650evkit1.webp)
 
 ## Hardware
 

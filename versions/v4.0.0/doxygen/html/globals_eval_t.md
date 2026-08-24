@@ -121,4 +121,4 @@ Here is a list of all enum values with links to the files they belong to:
 - TSL2591\_SENSOR\_GAIN\_MAX : [tsl2591.h](tsl2591_8h.md#a1ee7e6e68817a10b7667bec7b52e01d8aed9cac2266a0e7172b1ac5c48a2d9f98)
 - TSL2591\_SENSOR\_GAIN\_MED : [tsl2591.h](tsl2591_8h.md#a1ee7e6e68817a10b7667bec7b52e01d8a14ed033d086566893a305e67a3e63be1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -19,7 +19,7 @@ The LoRa-E5-HF STM32WLE5JC Module supports multiple LPWAN protocols on the
 All GPIOs of the LoRa-E5 Module are laid out supporting
 various data protocols and interfaces including RS-485 and Grove.
 
-![LoRa-E5 Dev board](../../../../_images/lora_e5_dev_board.jpg)
+![LoRa-E5 Dev board](https://docs.zephyrproject.org/3.7.0/_images/lora_e5_dev_board.jpg)
 
 ## Hardware
 
@@ -107,7 +107,7 @@ for pin muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![LoRa-E5 Dev Board Pinout](../../../../_images/lora_e5_dev_board_pinout.jpg)
+![LoRa-E5 Dev Board Pinout](https://docs.zephyrproject.org/3.7.0/_images/lora_e5_dev_board_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

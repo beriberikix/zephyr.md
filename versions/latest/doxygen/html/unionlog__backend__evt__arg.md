@@ -47,4 +47,4 @@ The documentation for this union was generated from the following file:
 - zephyr/logging/[log\_backend.h](log__backend_8h_source.md)
 
 - [log\_backend\_evt\_arg](unionlog__backend__evt__arg.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -133,14 +133,14 @@ The picture below shows the SoC or single-chip configuration when using a Zephyr
 combined build (a build that includes both a BLE Host and a Controller in the
 same firmware image that is programmed onto the chip):
 
-![BLE Combined build on a single chip](../../_images/ble_cfg_single.png)
+![BLE Combined build on a single chip](https://docs.zephyrproject.org/3.7.0/_images/ble_cfg_single.png)
 
 A Combined build on a Single-Chip configuration
 
 When using connectivity or dual-chip configurations, several Host and Controller
 combinations are possible, some of which are depicted below:
 
-![BLE dual-chip configuration builds](../../_images/ble_cfg_dual.png)
+![BLE dual-chip configuration builds](https://docs.zephyrproject.org/3.7.0/_images/ble_cfg_dual.png)
 
 Host-only and Controller-only builds on dual-chip configurations
 

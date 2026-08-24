@@ -8,8 +8,8 @@ original_path: boards/arduino/zero/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_zero.jpg](../../../../_images/arduino_zero.jpg)
-](../../../../_images/arduino_zero.jpg)
+[![../../../../_images/arduino_zero.jpg](https://docs.zephyrproject.org/4.2.0/_images/arduino_zero.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_zero.jpg)
 
 Arduino/Genuino Zero
 

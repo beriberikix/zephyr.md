@@ -11,7 +11,7 @@ original_path: boards/shields/arduino_modulino_buttons/doc/index.html
 The Arduino Modulino Buttons is a QWIIC compatible module with three buttons
 and three LEDs.
 
-![Arduino Modulino Buttons module](../../../../_images/arduino_modulino_buttons.webp)
+![Arduino Modulino Buttons module](https://docs.zephyrproject.org/4.2.0/_images/arduino_modulino_buttons.webp)
 
 ## Programming
 

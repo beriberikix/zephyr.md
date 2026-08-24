@@ -32,7 +32,7 @@ some highlights of the Nucleo F413ZH board:
 - Three user LEDs
 - Two push-buttons: USER and RESET
 
-![Nucleo F413ZH](../../../../_images/nucleo_f413zh.jpg)
+![Nucleo F413ZH](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f413zh.jpg)
 
 More information about the board can be found at the [Nucleo F413ZH website](https://www.st.com/en/evaluation-tools/nucleo-f413zh.html).
 
@@ -92,10 +92,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F413ZH ZIO connectors (left)](../../../../_images/nucleo_f413zh_zio_left.jpg)
-![Nucleo F413ZH ZIO connectors (right)](../../../../_images/nucleo_f413zh_zio_right.jpg)
-![Nucleo F413ZH Morpho connectors (left)](../../../../_images/nucleo_f413zh_morpho_left.jpg)
-![Nucleo F413ZH Morpho connectors (right)](../../../../_images/nucleo_f413zh_morpho_right.jpg)
+![Nucleo F413ZH ZIO connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f413zh_zio_left.jpg)
+![Nucleo F413ZH ZIO connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f413zh_zio_right.jpg)
+![Nucleo F413ZH Morpho connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f413zh_morpho_left.jpg)
+![Nucleo F413ZH Morpho connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f413zh_morpho_right.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00244518.pdf).
 

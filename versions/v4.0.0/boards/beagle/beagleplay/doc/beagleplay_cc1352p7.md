@@ -8,8 +8,8 @@ original_path: boards/beagle/beagleplay/doc/beagleplay_cc1352p7.html
 
 Board Overview
 
-[![../../../../_images/beagle_play.webp](../../../../_images/beagle_play.webp)
-](../../../../_images/beagle_play.webp)
+[![../../../../_images/beagle_play.webp](https://docs.zephyrproject.org/4.0.0/_images/beagle_play.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/beagle_play.webp)
 
 BeaglePlay (CC1352)
 

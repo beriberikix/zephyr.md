@@ -10,7 +10,7 @@ the drop-down menu on the left and select the desired version.
 
 # Sipeed Longan Nano
 
-![longan_nano](../../../../_images/longan_nano.jpg)
+![longan_nano](https://docs.zephyrproject.org/3.6.0/_images/longan_nano.jpg)
 
 ## Overview
 

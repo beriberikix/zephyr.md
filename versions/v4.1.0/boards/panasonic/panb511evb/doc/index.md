@@ -8,8 +8,8 @@ original_path: boards/panasonic/panb511evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/panb511evb.webp](../../../../_images/panb511evb.webp)
-](../../../../_images/panb511evb.webp)
+[![../../../../_images/panb511evb.webp](https://docs.zephyrproject.org/4.1.0/_images/panb511evb.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/panb511evb.webp)
 
 PAN B511 Evaluation Board
 

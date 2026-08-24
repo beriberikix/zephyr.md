@@ -20,4 +20,4 @@ xcc\_missing\_defs.h File Reference
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [toolchain](dir_be36829470ed0f3c1e0f3c9ff3246c22.md)
 - [xcc\_missing\_defs.h](xcc__missing__defs_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

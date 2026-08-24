@@ -28,7 +28,7 @@ This kit provides:
 - GPIOs exposed via screw terminals on the carrier board
 - Housing
 
-![Dragino NBSN95](../../../../_images/dragino_nbsn95.jpg)
+![Dragino NBSN95](https://docs.zephyrproject.org/3.6.0/_images/dragino_nbsn95.jpg)
 
 More information about the board can be found at the [Dragino NBSN95 website](https://www.dragino.com/products/nb-iot/item/163-nbsn95.html).
 

@@ -108,4 +108,4 @@ Function is called when system state is stored to RAM, just before going to syst
 
 Default implementation is setting a magic word in RAM. CONFIG\_PM\_S2RAM\_CUSTOM\_MARKING allows custom implementation.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

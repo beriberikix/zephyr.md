@@ -12,7 +12,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 ## Overview
 
-[![Icarus SoM DK](../../../../_images/icarus-som-dk.jpg)](../../../../_images/icarus-som-dk.jpg)
+[![Icarus SoM DK](https://docs.zephyrproject.org/3.7.0/_images/icarus-som-dk.jpg)](https://docs.zephyrproject.org/3.7.0/_images/icarus-som-dk.jpg)
 
 Icarus SoM Development Kit (nRF9160)
 
@@ -45,7 +45,7 @@ following devices (provided directly by Nordic):
 - WDT
 - IDAU
 
-[![Icarus SoM DK Block Diagram](../../../../_images/icarus-som-dk-block-diagram.jpg)](../../../../_images/icarus-som-dk-block-diagram.jpg)
+[![Icarus SoM DK Block Diagram](https://docs.zephyrproject.org/3.7.0/_images/icarus-som-dk-block-diagram.jpg)](https://docs.zephyrproject.org/3.7.0/_images/icarus-som-dk-block-diagram.jpg)
 
 Icarus SoM DK Block Diagram
 

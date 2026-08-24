@@ -1919,4 +1919,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - FUNCTION\_OFFSET : [pinctrl-zynqmp.h](pinctrl-zynqmp_8h.md#a53faf9f7be70b2c114ad20e212e8620f)
 - fwrite() : [stdio.h](stdio_8h.md#a610723ed7ffdf7b802f6093d45ffa09d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

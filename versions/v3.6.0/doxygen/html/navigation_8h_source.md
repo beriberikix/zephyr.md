@@ -160,4 +160,4 @@ Bearing angle in millidegrees (0 to 360E3).
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [data](dir_f6906818b29bc0a2a087f651f21ae7e0.md)
 - [navigation.h](navigation_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -158,4 +158,4 @@ Here is a list of all enum values with links to the files they belong to:
 - DT\_USB\_MAXIMUM\_SPEED\_LOW\_SPEED : [usb.h](usb_8h.md#ac343e285b07073790285bba59e3500bfaf5e69c61df9ae69910b5509564f91828)
 - DT\_USB\_MAXIMUM\_SPEED\_SUPER\_SPEED : [usb.h](usb_8h.md#ac343e285b07073790285bba59e3500bfa98ef9ffd2b88d0780f79d258945e4f0d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

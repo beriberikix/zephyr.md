@@ -55,4 +55,4 @@ The documentation for this struct was generated from the following files:
 - zephyr/arch/arm64/cortex\_r/[arm\_mpu.h](4_2cortex__r_2arm__mpu_8h_source.md)
 
 - [arm\_mpu\_region\_attr](structarm__mpu__region__attr.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

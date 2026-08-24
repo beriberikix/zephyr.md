@@ -8,8 +8,8 @@ original_path: boards/ezurio/bl654_dvk/doc/bl654_dvk.html
 
 Board Overview
 
-[![../../../../_images/bl654_dvk.jpg](../../../../_images/bl654_dvk.jpg)
-](../../../../_images/bl654_dvk.jpg)
+[![../../../../_images/bl654_dvk.jpg](https://docs.zephyrproject.org/4.0.0/_images/bl654_dvk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/bl654_dvk.jpg)
 
 BL654 DVK
 
@@ -50,7 +50,7 @@ This development kit has the following features:
 - USB
 - WDT
 
-![455-00001 Box Contents](../../../../_images/455-00001_BoxContents.jpg)
+![455-00001 Box Contents](https://docs.zephyrproject.org/4.0.0/_images/455-00001_BoxContents.jpg)
 
 455-00001 (BL654 DVK integrated antenna) Box Contents
 

@@ -94,4 +94,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[blob\_cli.h](blob__cli_8h_source.md)
 
 - [bt\_mesh\_blob\_cli\_inputs](structbt__mesh__blob__cli__inputs.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

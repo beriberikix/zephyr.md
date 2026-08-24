@@ -164,4 +164,4 @@ double sqrt(double square)
 - [minimal](dir_cb013e9b53665816a2b0a66572d8a7af.md)
 - [include](dir_33cd71cddfb4d86c87a49ac212c07c64.md)
 - [math.h](math_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

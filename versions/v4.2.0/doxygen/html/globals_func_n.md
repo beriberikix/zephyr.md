@@ -700,4 +700,4 @@ Here is a list of all functions with links to the files they belong to:
 - nxp\_rtxxx\_dsp\_ctrl\_enable() : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#a9cc6dd311f29f2e7c79fc74c39658041)
 - nxp\_rtxxx\_dsp\_ctrl\_load\_section() : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#af1bd0005fe3a6d46d559b249b3ff8ca8)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

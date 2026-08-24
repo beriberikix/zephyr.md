@@ -102,4 +102,4 @@ arc\_core\_mpu.h File Reference
 - [v2](dir_3e6dec649f819729d9137b059e4fc1a1.md)
 - [mpu](dir_c51b2f0fffc5b62554252c09f16a5032.md)
 - [arc\_core\_mpu.h](arc__core__mpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

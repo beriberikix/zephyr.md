@@ -122,4 +122,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - vt100\_ctx : [shell\_ctx](structshell__ctx.md#a25b945fcaba216e039124aacec660600)
 - vtcaps : [i3c\_ccc\_getcaps](unioni3c__ccc__getcaps.md#ae7ab28922904daa7ef7380f0ddb41cb3)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

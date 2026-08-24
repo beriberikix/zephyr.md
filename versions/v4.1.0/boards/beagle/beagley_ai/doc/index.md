@@ -8,8 +8,8 @@ original_path: boards/beagle/beagley_ai/doc/index.html
 
 Board Overview
 
-[![../../../../_images/beagley_ai.webp](../../../../_images/beagley_ai.webp)
-](../../../../_images/beagley_ai.webp)
+[![../../../../_images/beagley_ai.webp](https://docs.zephyrproject.org/4.1.0/_images/beagley_ai.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/beagley_ai.webp)
 
 BeagleY-AI
 

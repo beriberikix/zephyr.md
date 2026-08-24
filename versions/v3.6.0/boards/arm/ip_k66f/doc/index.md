@@ -19,7 +19,7 @@ Ethernet switch with Gigabit RGMII/MII/RMII interface.
 - KSZ8794CNX enables evaluation for switch functions
 - On-board debug probe J-Link-OB for programming
 
-![IP-K66F](../../../../_images/ip_k66f.jpg)
+![IP-K66F](https://docs.zephyrproject.org/3.6.0/_images/ip_k66f.jpg)
 
 ## Hardware
 

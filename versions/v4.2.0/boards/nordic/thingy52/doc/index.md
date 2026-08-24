@@ -8,8 +8,8 @@ original_path: boards/nordic/thingy52/doc/index.html
 
 Board Overview
 
-[![../../../../_images/thingy52.jpg](../../../../_images/thingy52.jpg)
-](../../../../_images/thingy52.jpg)
+[![../../../../_images/thingy52.jpg](https://docs.zephyrproject.org/4.2.0/_images/thingy52.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/thingy52.jpg)
 
 Thingy:52
 

@@ -8,8 +8,8 @@ original_path: boards/st/stm32l562e_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32l562e_dk.jpg](../../../../_images/stm32l562e_dk.jpg)
-](../../../../_images/stm32l562e_dk.jpg)
+[![../../../../_images/stm32l562e_dk.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32l562e_dk.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32l562e_dk.jpg)
 
 STM32L562E-DK Discovery
 

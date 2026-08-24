@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 BeagleBoard.org BeagleConnect Freedom is a wireless
 Internet of Things board based on the SimpleLink multi-Standard CC1352P7 wireless MCU.
 
-[![BeagleBoard.org BeagleConnect Freedom](../../../../_images/beagleconnect_freedom.webp)](../../../../_images/beagleconnect_freedom.webp)
+[![BeagleBoard.org BeagleConnect Freedom](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom.webp)](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom.webp)
 
 BeagleBoard.org BeagleConnect Freedom
 
@@ -53,11 +53,11 @@ The board configuration supports the following hardware features:
 
 ### Connections and IOs
 
-[![Front connections](../../../../_images/beagleconnect_freedom_front_annotated.webp)](../../../../_images/beagleconnect_freedom_front_annotated.webp)
+[![Front connections](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom_front_annotated.webp)](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom_front_annotated.webp)
 
 BeagleConnect Freedom front connections
 
-[![Back connections](../../../../_images/beagleconnect_freedom_back_annotated.webp)](../../../../_images/beagleconnect_freedom_back_annotated.webp)
+[![Back connections](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom_back_annotated.webp)](https://docs.zephyrproject.org/3.6.0/_images/beagleconnect_freedom_back_annotated.webp)
 
 BeagleConnect Freedom back connections
 

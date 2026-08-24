@@ -199,4 +199,4 @@ Here is a list of all macros with links to the files they belong to:
 - HVMOP\_get\_param : [hvm\_op.h](hvm__op_8h.md#a96465a9f2e2437aa398c72bfc357d928)
 - HVMOP\_set\_param : [hvm\_op.h](hvm__op_8h.md#a9714e13adc338e97a811ac1beba162bd)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

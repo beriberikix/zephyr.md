@@ -39,4 +39,4 @@ qdec\_mcux.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [sensor](dir_b6423b3a8fc1c9278ff19cba182cfe6d.md)
 - [qdec\_mcux.h](qdec__mcux_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

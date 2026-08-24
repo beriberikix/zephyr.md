@@ -186,4 +186,4 @@ Here is a list of all variables with links to the files they belong to:
 
 - ztest\_mem\_partition : [ztest\_test.h](group__ztest__test.md#ga3adced2fdda96833e6b1ecbf3d61d446)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

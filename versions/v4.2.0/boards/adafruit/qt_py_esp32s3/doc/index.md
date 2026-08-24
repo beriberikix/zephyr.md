@@ -8,8 +8,8 @@ original_path: boards/adafruit/qt_py_esp32s3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_qt_py_esp32s3.webp](../../../../_images/adafruit_qt_py_esp32s3.webp)
-](../../../../_images/adafruit_qt_py_esp32s3.webp)
+[![../../../../_images/adafruit_qt_py_esp32s3.webp](https://docs.zephyrproject.org/4.2.0/_images/adafruit_qt_py_esp32s3.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_qt_py_esp32s3.webp)
 
 QT Py ESP32-S3
 

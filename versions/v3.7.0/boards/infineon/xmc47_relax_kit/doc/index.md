@@ -16,7 +16,7 @@ The XMC4700 Relax Kit is designed to evaluate the capabilities of the XMC4700
 Microcontroller. It is based on High performance ARM Cortex-M4F which can run
 up to 144MHz.
 
-![XMC47-RELAX-KIT](../../../../_images/xmc47_relax_kit.jpg)
+![XMC47-RELAX-KIT](https://docs.zephyrproject.org/3.7.0/_images/xmc47_relax_kit.jpg)
 
 ### Features:
 

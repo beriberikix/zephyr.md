@@ -226,4 +226,4 @@ Here is a list of all enum values with links to the files they belong to:
 - WPA\_CAPA\_ENC\_GCMP : [wifi.h](group__wifi__mgmt.md#gga7f7b23ac019ca504a2006f0376735645a88fe5cd8b7777b931d869cb76ae65b1d)
 - WPA\_CAPA\_ENC\_GCMP\_256 : [wifi.h](group__wifi__mgmt.md#gga7f7b23ac019ca504a2006f0376735645a60599a3fdfad99c6ec1471d4973556c4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

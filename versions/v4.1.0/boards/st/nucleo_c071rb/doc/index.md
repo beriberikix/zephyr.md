@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_c071rb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_c071rb.webp](../../../../_images/nucleo_c071rb.webp)
-](../../../../_images/nucleo_c071rb.webp)
+[![../../../../_images/nucleo_c071rb.webp](https://docs.zephyrproject.org/4.1.0/_images/nucleo_c071rb.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_c071rb.webp)
 
 Nucleo C071RB
 
@@ -42,7 +42,7 @@ The STM32 Nucleo board integrates the ST-LINK/V2-1 debugger and programmer.
 The STM32 Nucleo board comes with the STM32 comprehensive software HAL library together
 with various packaged software examples.
 
-![Nucleo C071RB](../../../../_images/nucleo_c071rb1.webp)
+![Nucleo C071RB](https://docs.zephyrproject.org/4.1.0/_images/nucleo_c071rb1.webp)
 
 More information about the board can be found at the [Nucleo C071RB website](https://www.st.com/en/evaluation-tools/nucleo-c071rb.html) [[1]](#id2).
 

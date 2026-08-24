@@ -8,8 +8,8 @@ original_path: boards/renesas/rzv2l_smarc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzv2l_smarc.webp](../../../../_images/rzv2l_smarc.webp)
-](../../../../_images/rzv2l_smarc.webp)
+[![../../../../_images/rzv2l_smarc.webp](https://docs.zephyrproject.org/4.2.0/_images/rzv2l_smarc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2l_smarc.webp)
 
 RZ/V2L SMARC Evaluation Board Kit
 
@@ -64,8 +64,8 @@ The Renesas RZ/V2L SMARC Evaluation Board Kit (RZ/V2L-EVKIT) consists of a SMARC
 
 The Renesas RZ/V2L MPU documentation can be found at [RZ/V2L Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzv2l-general-purpose-microprocessor-equipped-renesas-original-ai-accelerator-drp-ai-12ghz-dual-core-arm) [[1]](#id3)
 
-[![RZ/V2L group feature](../../../../_images/rzv2l_block_diagram.webp)
-](../../../../_images/rzv2l_block_diagram.webp)
+[![RZ/V2L group feature](https://docs.zephyrproject.org/4.2.0/_images/rzv2l_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2l_block_diagram.webp)
 
 RZ/V2L block diagram (Credit: Renesas Electronics Corporation)
 

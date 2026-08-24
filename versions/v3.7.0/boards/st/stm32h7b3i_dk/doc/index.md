@@ -56,7 +56,7 @@ Important board features include:
   :   - ST-LINK USB VBUS, USB OTG HS connector, or external sources
 - On-board STLINK-V3E debugger/programmer with USB re-enumeration capability
 
-![STM32H7B3I-DK](../../../../_images/stm32h7b3i_dk.jpg)
+![STM32H7B3I-DK](https://docs.zephyrproject.org/3.7.0/_images/stm32h7b3i_dk.jpg)
 
 More information about the board can be found at the [STM32H7B3I-DK website](https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html).
 

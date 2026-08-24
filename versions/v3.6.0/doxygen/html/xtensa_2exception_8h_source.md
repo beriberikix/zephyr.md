@@ -81,4 +81,4 @@ exception.h
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [xtensa](dir_8dbd13009e024dd37cbafc925932abe3.md)
 - [exception.h](xtensa_2exception_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

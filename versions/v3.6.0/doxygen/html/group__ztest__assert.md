@@ -426,4 +426,4 @@ Parameters
 
 \_zexpect\_va(cond, default\_msg, [COND\_CODE\_1](group__sys-util.md#ga358bc3e7669c860a98839a51cd526b20)(\_\_VA\_OPT\_\_(1), (\_\_VA\_ARGS\_\_), (NULL)))
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

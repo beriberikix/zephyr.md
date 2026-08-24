@@ -142,4 +142,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - hwcfg : [espi\_saf\_cfg](structespi__saf__cfg.md#a20da4ce3549c53adb038dab7a5bed8a8)
 - hysteresis\_mode : [comp\_mcux\_acmp\_mode\_config](structcomp__mcux__acmp__mode__config.md#a29ea0aa9a9cb6917a439e14e8885bad2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

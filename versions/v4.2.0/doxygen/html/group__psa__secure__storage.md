@@ -32,4 +32,4 @@ PSA Secure Storage API
 
 For more information on the PSA Secure Storage API, see the [PSA Certified Secure Storage API](https://arm-software.github.io/psa-api/storage/1.0/) specification.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

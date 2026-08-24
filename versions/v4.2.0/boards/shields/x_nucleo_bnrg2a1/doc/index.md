@@ -23,7 +23,7 @@ Note : This shield is compatible out of the box with Arduino UNO R3 connectors,
 but CS signal is not the standard Arduino SPI\_CS signal.
 Please refer to “Hardware configuration” section.
 
-![X-NUCLEO-BNRG2A1](../../../../_images/x-nucleo-bnrg2a1.webp)
+![X-NUCLEO-BNRG2A1](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-bnrg2a1.webp)
 
 More information about the board can be found at the
 [X-NUCLEO-BNRG2A1 website](https://www.st.com/en/ecosystems/x-nucleo-bnrg2a1.html) [[1]](#id1).

@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h533re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h533re.jpg](../../../../_images/nucleo_h533re.jpg)
-](../../../../_images/nucleo_h533re.jpg)
+[![../../../../_images/nucleo_h533re.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_h533re.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_h533re.jpg)
 
 Nucleo H533RE
 

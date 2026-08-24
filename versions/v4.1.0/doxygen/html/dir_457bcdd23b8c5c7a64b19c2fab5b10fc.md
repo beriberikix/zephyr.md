@@ -29,4 +29,4 @@ silabs Directory Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [dma](dir_4af45c18fedc476f9a2ee26ec98f56f0.md)
 - [silabs](dir_457bcdd23b8c5c7a64b19c2fab5b10fc.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

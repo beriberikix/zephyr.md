@@ -8,8 +8,8 @@ original_path: boards/enjoydigital/litex_vexriscv/doc/index.html
 
 Board Overview
 
-[![../../../../_images/litex_vexriscv.jpg](../../../../_images/litex_vexriscv.jpg)
-](../../../../_images/litex_vexriscv.jpg)
+[![../../../../_images/litex_vexriscv.jpg](https://docs.zephyrproject.org/4.1.0/_images/litex_vexriscv.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/litex_vexriscv.jpg)
 
 LiteX VexRiscv
 

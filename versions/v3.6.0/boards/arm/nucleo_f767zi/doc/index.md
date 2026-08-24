@@ -50,7 +50,7 @@ Key Features
   STM32Cube MCU package.
 - Arm\* Mbed Enabled\* compliant (only for some Nucleo part numbers)
 
-![Nucleo F767ZI](../../../../_images/nucleo_f767zi.jpg)
+![Nucleo F767ZI](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f767zi.jpg)
 
 More information about the board can be found at the [Nucleo F767ZI website](https://www.st.com/en/evaluation-tools/nucleo-f767zi.html).
 

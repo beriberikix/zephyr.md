@@ -238,4 +238,4 @@ Parameters
     | --- | --- |
     | key | The value returned from [k\_spin\_lock()](#gaac60da4347f5b29ff8c4e5f24c99b3bf) when this lock was acquired |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

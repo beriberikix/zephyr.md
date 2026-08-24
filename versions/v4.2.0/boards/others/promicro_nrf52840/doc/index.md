@@ -8,8 +8,8 @@ original_path: boards/others/promicro_nrf52840/doc/index.html
 
 Board Overview
 
-[![../../../../_images/others_promicro_nrf52840.webp](../../../../_images/others_promicro_nrf52840.webp)
-](../../../../_images/others_promicro_nrf52840.webp)
+[![../../../../_images/others_promicro_nrf52840.webp](https://docs.zephyrproject.org/4.2.0/_images/others_promicro_nrf52840.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/others_promicro_nrf52840.webp)
 
 Pro Micro nRF52840
 

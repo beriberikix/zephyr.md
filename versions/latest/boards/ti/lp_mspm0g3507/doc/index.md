@@ -8,8 +8,8 @@ original_path: boards/ti/lp_mspm0g3507/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lp_mspm0g3507.webp](../../../../_images/lp_mspm0g3507.webp)
-](../../../../_images/lp_mspm0g3507.webp)
+[![../../../../_images/lp_mspm0g3507.webp](https://docs.zephyrproject.org/4.2.0/_images/lp_mspm0g3507.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/lp_mspm0g3507.webp)
 
 MSPM0G3507 Launchpad
 
@@ -69,7 +69,7 @@ memory protection unit, 7-channel DMA, math accelerator, and a variety of periph
   - Two SPI, one with max speed 32Mbits/s.
   - One CAN interface supporting CAN 2.0 A or B and CAN-FD.
 
-![MSPM0G3507 LaunchPad development board](../../../../_images/lp_mspm0g35071.webp)
+![MSPM0G3507 LaunchPad development board](https://docs.zephyrproject.org/4.2.0/_images/lp_mspm0g35071.webp)
 
 Zephyr uses the `lp_mspm0g3507` board for building LP\_MSPM0G3507
 

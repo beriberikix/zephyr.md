@@ -46,4 +46,4 @@ Here is a list of all enum values with links to the files they belong to:
 - ZTEST\_RESULT\_SUITE\_FAIL : [ztest\_test.h](group__ztest__test.md#ggac2842295307e7286d256bb179be60b02ac09ff18a766e298ede6f7746f4704c55)
 - ZTEST\_RESULT\_SUITE\_SKIP : [ztest\_test.h](group__ztest__test.md#ggac2842295307e7286d256bb179be60b02af5927209b63a89467df81ad9de245b5e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

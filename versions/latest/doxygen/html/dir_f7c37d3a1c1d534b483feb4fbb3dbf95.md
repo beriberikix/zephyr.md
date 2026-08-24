@@ -25,4 +25,4 @@ settings\_mgmt Directory Reference
 - [mcumgr](dir_9fcc4c99bd235bcb56fa133fdd1138d7.md)
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [settings\_mgmt](dir_f7c37d3a1c1d534b483feb4fbb3dbf95.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

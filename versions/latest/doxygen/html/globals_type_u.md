@@ -54,4 +54,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - usbd\_msg\_cb\_t : [usbd.h](group__usbd__api.md#ga2cd074cefff922b0816de37935d9646e)
 - useconds\_t : [posix\_types.h](posix__types_8h.md#a1cf3c794977f92f3ccf2e041a68f3342)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

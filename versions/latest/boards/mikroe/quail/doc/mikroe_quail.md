@@ -8,8 +8,8 @@ original_path: boards/mikroe/quail/doc/mikroe_quail.html
 
 Board Overview
 
-[![../../../../_images/mikroe_quail.webp](../../../../_images/mikroe_quail.webp)
-](../../../../_images/mikroe_quail.webp)
+[![../../../../_images/mikroe_quail.webp](https://docs.zephyrproject.org/4.2.0/_images/mikroe_quail.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/mikroe_quail.webp)
 
 MikroE Quail
 

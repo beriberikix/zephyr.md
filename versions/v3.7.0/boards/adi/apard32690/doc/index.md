@@ -26,7 +26,7 @@ the required power circuitry.
 
 The Zephyr port is running on the MAX32690 MCU.
 
-![AD-APARD32690-SL Front](../../../../_images/apard32690_img.webp)
+![AD-APARD32690-SL Front](https://docs.zephyrproject.org/3.7.0/_images/apard32690_img.webp)
 
 ## Hardware
 

@@ -30,7 +30,7 @@ Both support the following devices:
 - USB
 - WDT
 
-![BMD 345 EVAL](../../../../_images/bmd-345-eval_features.jpg)
+![BMD 345 EVAL](https://docs.zephyrproject.org/4.0.0/_images/bmd-345-eval_features.jpg)
 
 BMD-345-EVAL (Credit: ublox AG)
 
@@ -112,7 +112,7 @@ hardware features.
 
 #### External Connectors
 
-![BMD-345-EVAL pin-out](../../../../_images/bmd-345-eval_pin_out.jpg)
+![BMD-345-EVAL pin-out](https://docs.zephyrproject.org/4.0.0/_images/bmd-345-eval_pin_out.jpg)
 
 Note
 

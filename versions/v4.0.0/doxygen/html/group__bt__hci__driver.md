@@ -234,4 +234,4 @@ Returns
 **[Deprecated](deprecated.md#_deprecated000014)**
 :   Use the new HCI driver interface instead: [Bluetooth HCI APIs](group__bt__hci__api.md "Bluetooth HCI APIs")
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

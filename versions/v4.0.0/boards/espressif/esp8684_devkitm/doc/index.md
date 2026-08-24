@@ -8,8 +8,8 @@ original_path: boards/espressif/esp8684_devkitm/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp8684_devkitm.webp](../../../../_images/esp8684_devkitm.webp)
-](../../../../_images/esp8684_devkitm.webp)
+[![../../../../_images/esp8684_devkitm.webp](https://docs.zephyrproject.org/4.0.0/_images/esp8684_devkitm.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/esp8684_devkitm.webp)
 
 ESP8684-DevKitM
 

@@ -4756,4 +4756,4 @@ Here is a list of all macros with links to the files they belong to:
 - NXP\_VREF\_MODE\_STANDBY : [nxp\_vref.h](group__regulator__nxp__vref.md#gaafa0444f822634a90b0b1e035fb4a254)
 - NZERO : [posix\_features.h](posix__features_8h.md#a3b04cc1d4ce6930b578eede1f1c6ebfc)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

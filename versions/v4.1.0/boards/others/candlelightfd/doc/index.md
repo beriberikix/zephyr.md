@@ -8,8 +8,8 @@ original_path: boards/others/candlelightfd/doc/index.html
 
 Board Overview
 
-[![../../../../_images/candlelightfd.webp](../../../../_images/candlelightfd.webp)
-](../../../../_images/candlelightfd.webp)
+[![../../../../_images/candlelightfd.webp](https://docs.zephyrproject.org/4.1.0/_images/candlelightfd.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/candlelightfd.webp)
 
 candleLightFD
 

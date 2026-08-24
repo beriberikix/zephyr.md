@@ -19,7 +19,7 @@ The GD32F450ZK features a single-core ARM Cortex-M4F MCU which can run up
 to 200 MHz with flash accesses zero wait states, 3072kiB of Flash, 256kiB of
 SRAM and 114 GPIOs.
 
-![gd32f450z_eval](../../../../_images/gd32f450z_eval.webp)
+![gd32f450z_eval](https://docs.zephyrproject.org/3.6.0/_images/gd32f450z_eval.webp)
 
 ## Hardware
 

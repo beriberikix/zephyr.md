@@ -411,4 +411,4 @@ A structure to represent a ring buffer.
 - [modem](dir_a816d481c0f951d2967bb275acf5f3dd.md)
 - [backend](dir_ff046e227e385bf86f987d0152997f69.md)
 - [uart.h](modem_2backend_2uart_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

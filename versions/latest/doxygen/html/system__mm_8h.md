@@ -99,4 +99,4 @@ This contains APIs for a system-wide memory management driver. Only one instance
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [mm](dir_464cfbc388e9245b11da9b89dd2be842.md)
 - [system\_mm.h](system__mm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l412rb_p/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l412rb_p.jpg](../../../../_images/nucleo_l412rb_p.jpg)
-](../../../../_images/nucleo_l412rb_p.jpg)
+[![../../../../_images/nucleo_l412rb_p.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l412rb_p.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l412rb_p.jpg)
 
 Nucleo L412RB-P
 
@@ -211,7 +211,7 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L412RB-P](../../../../_images/nucleo_l412rb_p_pinout.jpg)
+![Nucleo L412RB-P](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l412rb_p_pinout.jpg)
 
 For more details please refer to [ST Nucleo L412RB-P User Manual](https://www.st.com/resource/en/user_manual/dm00387966-stm32-nucleo-64-p-boards-stmicroelectronics.pdf).
 

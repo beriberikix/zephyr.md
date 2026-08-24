@@ -18,7 +18,7 @@ the IMP34DT05 digital microphone.
 The X-NUCLEO-IKS02A1 interfaces with the STM32 microcontroller via the I2C pin,
 and it is possible to change the default I2C port.
 
-![X-NUCLEO-IKS02A1](../../../../_images/x-nucleo-iks02a1.jpg)
+![X-NUCLEO-IKS02A1](https://docs.zephyrproject.org/4.1.0/_images/x-nucleo-iks02a1.jpg)
 
 More information about the board can be found at the
 [X-NUCLEO-IKS02A1 website](https://www.st.com/en/ecosystems/x-nucleo-iks02a1.html) [[1]](#id1).

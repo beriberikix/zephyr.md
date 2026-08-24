@@ -140,4 +140,4 @@ Runtime device structure (in ROM) per driver instance.
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [pio\_rpi\_pico](dir_226c323191fcba4fde21e80cdf6d98df.md)
 - [pio\_rpi\_pico.h](pio__rpi__pico_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

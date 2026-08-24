@@ -8,8 +8,8 @@ original_path: boards/microchip/mec_assy6941/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mec_assy6941_evb.webp](../../../../_images/mec_assy6941_evb.webp)
-](../../../../_images/mec_assy6941_evb.webp)
+[![../../../../_images/mec_assy6941_evb.webp](https://docs.zephyrproject.org/4.2.0/_images/mec_assy6941_evb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/mec_assy6941_evb.webp)
 
 MEC17xxEVB ASSY6941
 
@@ -332,7 +332,7 @@ NOTE: EVB `JP117 3-4` Connects 32KHz OSC U15 output to DC.
 
 1. Connect the SPI Dongle ASSY 6791 to `J18` in the EVB.
 
-   ![SPI DONGLE ASSY 6791 Connected](../../../../_images/spi_dongle_assy6791.webp)
+   ![SPI DONGLE ASSY 6791 Connected](https://docs.zephyrproject.org/4.2.0/_images/spi_dongle_assy6791.webp)
 2. IMPORTANT: Temporarily remove the jumper from JP87 to isolate SPI dongle power from EVB power rails.
    This will prevent the SPI programmer from back driving voltage to the EVB.
 3. Connect programmer to the header J6 on the Assy6791 board, it will flash the SPI NOR chip

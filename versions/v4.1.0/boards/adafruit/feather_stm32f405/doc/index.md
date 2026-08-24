@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_stm32f405/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_stm32f405.jpg](../../../../_images/adafruit_feather_stm32f405.jpg)
-](../../../../_images/adafruit_feather_stm32f405.jpg)
+[![../../../../_images/adafruit_feather_stm32f405.jpg](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_stm32f405.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/adafruit_feather_stm32f405.jpg)
 
 Feather STM32F405 Express
 

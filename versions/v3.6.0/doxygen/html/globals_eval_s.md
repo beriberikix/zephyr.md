@@ -641,4 +641,4 @@ Here is a list of all enum values with links to the files they belong to:
 - STM32\_EXTI\_TRIG\_NONE : [exti\_stm32.h](exti__stm32_8h.md#a2caf7f256985537368b079f565adb9e7aa44b00e6dd732140f0c152ec6a5ad0e0)
 - STM32\_EXTI\_TRIG\_RISING : [exti\_stm32.h](exti__stm32_8h.md#a2caf7f256985537368b079f565adb9e7ac1ab9fda0db1fb1a852bfe358c7e6485)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

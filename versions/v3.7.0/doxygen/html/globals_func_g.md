@@ -148,4 +148,4 @@ Here is a list of all functions with links to the files they belong to:
 - gptp\_sprint\_clock\_id() : [gptp.h](group__gptp.md#ga40121c2957d58b0b5bb4468eac5de259)
 - gptp\_unregister\_phase\_dis\_cb() : [gptp.h](group__gptp.md#ga55d95859e5ec586cb2341929901220dd)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

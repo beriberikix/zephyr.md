@@ -72,4 +72,4 @@ Return values
     | --- | --- |
     | -errno | In case of any error (see [spi\_write\_dt()](group__spi__interface.md#ga292d6d1fe82f3f1ce0d9a2aa5437201b "Write data to a SPI bus specified in spi_dt_spec.")) |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

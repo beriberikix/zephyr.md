@@ -187,7 +187,7 @@ possibility through the use of Kconfig and its flexible configurability.
 
 ## Processes and workflow
 
-![Safety process and workflow overview](../_images/zephyr-safety-process.svg)
+![Safety process and workflow overview](https://docs.zephyrproject.org/3.7.0/_images/zephyr-safety-process.svg)
 
 Safety process and workflow overview
 

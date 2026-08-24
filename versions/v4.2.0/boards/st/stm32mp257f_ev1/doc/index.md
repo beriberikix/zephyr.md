@@ -8,8 +8,8 @@ original_path: boards/st/stm32mp257f_ev1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32mp257f_ev1.webp](../../../../_images/stm32mp257f_ev1.webp)
-](../../../../_images/stm32mp257f_ev1.webp)
+[![../../../../_images/stm32mp257f_ev1.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32mp257f_ev1.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32mp257f_ev1.webp)
 
 STM32MP257F-EV1 Evaluation Board
 

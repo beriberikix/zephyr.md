@@ -229,4 +229,4 @@ Here is a list of all enum values with links to the files they belong to:
 - ETHERNET\_TXTIME : [ethernet.h](group__ethernet.md#gga9162ff11d626813fc840df0b67820ac5ac72ff66c3172da29ec9fefad7593ffd2)
 - EXT\_SYS\_BUS : [rpu\_hw\_if.h](rpu__hw__if_8h.md#a0af5845199daa5a85fbaf31347ca07b2ae3adc4be123a7ab371aec7b8abcd0e6b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

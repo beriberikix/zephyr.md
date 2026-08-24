@@ -87,4 +87,4 @@ This header contains the ARM AArch32 specific syscall interface. It is included 
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [syscall.h](arch_2arm_2syscall_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

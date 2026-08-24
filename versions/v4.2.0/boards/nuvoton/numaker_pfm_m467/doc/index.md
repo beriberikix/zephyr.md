@@ -8,8 +8,8 @@ original_path: boards/nuvoton/numaker_pfm_m467/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pfm_m467.jpeg](../../../../_images/pfm_m467.jpeg)
-](../../../../_images/pfm_m467.jpeg)
+[![../../../../_images/pfm_m467.jpeg](https://docs.zephyrproject.org/4.2.0/_images/pfm_m467.jpeg)
+](https://docs.zephyrproject.org/4.2.0/_images/pfm_m467.jpeg)
 
 NUMAKER PFM M467
 

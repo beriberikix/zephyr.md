@@ -96,4 +96,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/audio/[csip.h](csip_8h_source.md)
 
 - [bt\_csip\_set\_member\_set\_info](structbt__csip__set__member__set__info.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

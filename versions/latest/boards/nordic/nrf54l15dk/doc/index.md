@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf54l15dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf54l15dk_nrf54l15.webp](../../../../_images/nrf54l15dk_nrf54l15.webp)
-](../../../../_images/nrf54l15dk_nrf54l15.webp)
+[![../../../../_images/nrf54l15dk_nrf54l15.webp](https://docs.zephyrproject.org/4.2.0/_images/nrf54l15dk_nrf54l15.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf54l15dk_nrf54l15.webp)
 
 nRF54L15 DK
 

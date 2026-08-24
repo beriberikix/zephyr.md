@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_esp32s2/doc/adafruit_feather_esp32s2_tft.
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_esp32s2_tft.webp](../../../../_images/adafruit_feather_esp32s2_tft.webp)
-](../../../../_images/adafruit_feather_esp32s2_tft.webp)
+[![../../../../_images/adafruit_feather_esp32s2_tft.webp](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2_tft.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2_tft.webp)
 
 Adafruit Feather ESP32S2 TFT
 

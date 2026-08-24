@@ -22,7 +22,7 @@ This kit is designed with a snap-away form-factor, allowing the user to separate
 the different components and features that come with this kit and use independently.
 In addition, support for Digilent’s Pmod interface is also provided with this kit.
 
-![CY8CPROTO-062-4343W](../../../../_images/board.jpg)
+![CY8CPROTO-062-4343W](https://docs.zephyrproject.org/3.7.0/_images/board.jpg)
 
 ## Hardware
 

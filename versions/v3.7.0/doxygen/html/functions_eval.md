@@ -26,4 +26,4 @@ Here is a list of all enum values with links to the structures/unions they belon
 - SHELL\_MQTT\_TRANSPORT\_DISCONNECTED : [shell\_mqtt](structshell__mqtt.md#ae8805bd53bffb3c001b0be13e9da68a2a4567083cf7063eff87d35b20590f9337)
 - SHORT : [bt\_mesh\_comp\_p1\_ext\_item](structbt__mesh__comp__p1__ext__item.md#a05a526a8448e7b8a4766eb038e4c1a39a23a15546d8722d7a4706ea34c5785658)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

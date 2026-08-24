@@ -8,8 +8,8 @@ original_path: boards/arduino/uno_r4/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_uno_r4_minima.webp](../../../../_images/arduino_uno_r4_minima.webp)
-](../../../../_images/arduino_uno_r4_minima.webp)
+[![../../../../_images/arduino_uno_r4_minima.webp](https://docs.zephyrproject.org/4.2.0/_images/arduino_uno_r4_minima.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_uno_r4_minima.webp)
 
 Arduino UNO R4 Minima/WiFi
 

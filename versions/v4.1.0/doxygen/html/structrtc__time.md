@@ -133,4 +133,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[rtc.h](rtc_8h_source.md)
 
 - [rtc\_time](structrtc__time.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

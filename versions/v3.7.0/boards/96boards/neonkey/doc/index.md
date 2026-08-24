@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 96Boards Neonkey board is based on the STMicroelectronics STM32F411CE
 Cortex M4 CPU.
 
-![96Boards Neonkey](../../../../_images/96b_neonkey.jpg)
+![96Boards Neonkey](https://docs.zephyrproject.org/3.7.0/_images/96b_neonkey.jpg)
 
 96Boards Neonkey
 

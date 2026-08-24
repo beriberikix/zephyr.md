@@ -190,4 +190,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - owner\_permission\_bits : [tisci\_msg\_fwl\_owner](structtisci__msg__fwl__owner.md#a31ec3f0e90fdb8cea887d67004b066a7)
 - owner\_privid : [tisci\_msg\_fwl\_owner](structtisci__msg__fwl__owner.md#a5e5e33a9a2f7c04022ce51fa1dcb8eef)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

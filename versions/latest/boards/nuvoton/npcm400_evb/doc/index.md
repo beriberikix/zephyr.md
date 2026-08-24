@@ -8,8 +8,8 @@ original_path: boards/nuvoton/npcm400_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/npcm400_evb.webp](../../../../_images/npcm400_evb.webp)
-](../../../../_images/npcm400_evb.webp)
+[![../../../../_images/npcm400_evb.webp](https://docs.zephyrproject.org/4.2.0/_images/npcm400_evb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/npcm400_evb.webp)
 
 NPCM400\_EVB
 

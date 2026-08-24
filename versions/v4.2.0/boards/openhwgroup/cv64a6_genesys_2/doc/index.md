@@ -8,8 +8,8 @@ original_path: boards/openhwgroup/cv64a6_genesys_2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cv64a6_genesys_2.webp](../../../../_images/cv64a6_genesys_2.webp)
-](../../../../_images/cv64a6_genesys_2.webp)
+[![../../../../_images/cv64a6_genesys_2.webp](https://docs.zephyrproject.org/4.2.0/_images/cv64a6_genesys_2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/cv64a6_genesys_2.webp)
 
 cv64a6\_genesys\_2
 

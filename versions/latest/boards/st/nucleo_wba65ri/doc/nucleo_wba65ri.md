@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wba65ri/doc/nucleo_wba65ri.html
 
 Board Overview
 
-[![../../../../_images/nucleo_wba65ri.webp](../../../../_images/nucleo_wba65ri.webp)
-](../../../../_images/nucleo_wba65ri.webp)
+[![../../../../_images/nucleo_wba65ri.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wba65ri.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wba65ri.webp)
 
 Nucleo WBA65RI
 

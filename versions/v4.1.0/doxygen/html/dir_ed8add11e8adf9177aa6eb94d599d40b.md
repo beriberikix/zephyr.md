@@ -24,4 +24,4 @@ riscv-privileged Directory Reference
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [riscv](dir_e840f8ec4c8f41e913ceb572466dc8a4.md)
 - [riscv-privileged](dir_ed8add11e8adf9177aa6eb94d599d40b.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

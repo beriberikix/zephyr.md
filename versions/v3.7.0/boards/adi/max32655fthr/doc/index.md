@@ -25,9 +25,9 @@ early software development to enhance time to market. Go to
 
 The Zephyr port is running on the MAX32655 MCU.
 
-![MAX32655FTHR Front](../../../../_images/max32655fthr_img1.jpg)
-![MAX32655FTHR Front Modules](../../../../_images/max32655fthr_img2.jpg)
-![MAX32655FTHR Back](../../../../_images/max32655fthr_img3.jpg)
+![MAX32655FTHR Front](https://docs.zephyrproject.org/3.7.0/_images/max32655fthr_img1.jpg)
+![MAX32655FTHR Front Modules](https://docs.zephyrproject.org/3.7.0/_images/max32655fthr_img2.jpg)
+![MAX32655FTHR Back](https://docs.zephyrproject.org/3.7.0/_images/max32655fthr_img3.jpg)
 
 ## Hardware
 

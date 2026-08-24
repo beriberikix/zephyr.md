@@ -8,8 +8,8 @@ original_path: boards/arduino/nano_matter/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nano_matter.webp](../../../../_images/nano_matter.webp)
-](../../../../_images/nano_matter.webp)
+[![../../../../_images/nano_matter.webp](https://docs.zephyrproject.org/4.2.0/_images/nano_matter.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nano_matter.webp)
 
 Arduino Nano Matter
 

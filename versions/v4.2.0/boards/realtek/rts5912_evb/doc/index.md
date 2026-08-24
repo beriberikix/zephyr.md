@@ -8,8 +8,8 @@ original_path: boards/realtek/rts5912_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rts5912evb.webp](../../../../_images/rts5912evb.webp)
-](../../../../_images/rts5912evb.webp)
+[![../../../../_images/rts5912evb.webp](https://docs.zephyrproject.org/4.2.0/_images/rts5912evb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rts5912evb.webp)
 
 RTS5912 Evaluation Board
 

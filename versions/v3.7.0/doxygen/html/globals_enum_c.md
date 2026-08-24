@@ -51,4 +51,4 @@ Here is a list of all enums with links to the files they belong to:
 - coredump\_query\_id : [coredump.h](group__coredump__apis.md#ga26360cadb6b43f5c86b59332e66008f5)
 - crc\_type : [crc.h](group__crc.md#gabc40e4ffd6da1175eb8ee8573a527edd)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

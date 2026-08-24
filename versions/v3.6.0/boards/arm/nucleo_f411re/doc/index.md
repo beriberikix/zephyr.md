@@ -29,7 +29,7 @@ some highlights of the Nucleo F411RE board:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - Two push-buttons: USER and RESET
 
-![Nucleo F411RE](../../../../_images/nucleo_f411re.jpg)
+![Nucleo F411RE](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f411re.jpg)
 
 More information about the board can be found at the [Nucleo F411RE website](https://www.st.com/en/evaluation-tools/nucleo-f411re.html).
 
@@ -89,8 +89,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F411RE Arduino connectors](../../../../_images/nucleo_f411re_arduino.jpg)
-![Nucleo F411RE Morpho connectors](../../../../_images/nucleo_f411re_morpho.jpg)
+![Nucleo F411RE Arduino connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f411re_arduino.jpg)
+![Nucleo F411RE Morpho connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f411re_morpho.jpg)
 
 For more details please refer to [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
 

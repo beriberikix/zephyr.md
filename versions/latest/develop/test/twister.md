@@ -751,7 +751,7 @@ files in the application’s project directory. This test application
 configuration file may contain one or more entries in the `tests:` section each
 identifying a Test Scenario.
 
-![Twister and a Test application project.](../../_images/twister_test_project.svg)
+![Twister and a Test application project.](https://docs.zephyrproject.org/4.2.0/_images/twister_test_project.svg)
 
 Twister and a Test application project.
 
@@ -1882,7 +1882,7 @@ When running `twister` with `--device-testing`, the configured fixture
 in the hardware map file will be matched to test scenarios requesting the same fixtures
 and these tests will be executed on the boards that provide this fixture.
 
-![../../_images/fixtures.svg](../../_images/fixtures.svg)
+![../../_images/fixtures.svg](https://docs.zephyrproject.org/4.2.0/_images/fixtures.svg)
 
 Fixtures can also be provided via twister command option `--fixture`, this option
 can be used multiple times and all given fixtures will be appended as a list. And the

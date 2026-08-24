@@ -37,11 +37,11 @@ Available BL652 DVK part numbers:
 - DVK-BL652-SA
 - DVK-BL652-SC
 
-![BL652 DVK](../../../../_images/bl652_dvk.jpg)
+![BL652 DVK](https://docs.zephyrproject.org/3.7.0/_images/bl652_dvk.jpg)
 
 BL652 DVK Board
 
-![BL652-SA DVK Box Contents](../../../../_images/BL652-SA_DVK_BoxContents.jpg)
+![BL652-SA DVK Box Contents](https://docs.zephyrproject.org/3.7.0/_images/BL652-SA_DVK_BoxContents.jpg)
 
 BL652-SA DVK Box Contents
 

@@ -8,8 +8,8 @@ original_path: boards/seagate/legend/doc/index.html
 
 Board Overview
 
-[![../../../../_images/firecuda_gaming_hard_drive.jpg](../../../../_images/firecuda_gaming_hard_drive.jpg)
-](../../../../_images/firecuda_gaming_hard_drive.jpg)
+[![../../../../_images/firecuda_gaming_hard_drive.jpg](https://docs.zephyrproject.org/4.1.0/_images/firecuda_gaming_hard_drive.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/firecuda_gaming_hard_drive.jpg)
 
 Legend
 
@@ -51,8 +51,8 @@ MCU. The two chips are connected together using I2C.
 
 On all boards, the Zephyr port is running on the STM32F070 MCU.
 
-![Seagate FireCuda Gaming Hard Drive](../../../../_images/firecuda_gaming_hard_drive1.jpg)
-![Seagate FireCuda Gaming Hub](../../../../_images/firecuda_gaming_hub.jpg)
+![Seagate FireCuda Gaming Hard Drive](https://docs.zephyrproject.org/4.1.0/_images/firecuda_gaming_hard_drive1.jpg)
+![Seagate FireCuda Gaming Hub](https://docs.zephyrproject.org/4.1.0/_images/firecuda_gaming_hub.jpg)
 
 ## Hardware
 

@@ -47,4 +47,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
 
 - [bt\_hci\_rp\_vs\_read\_host\_stack\_cmds](structbt__hci__rp__vs__read__host__stack__cmds.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

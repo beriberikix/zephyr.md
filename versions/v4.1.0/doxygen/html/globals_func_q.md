@@ -36,4 +36,4 @@ Here is a list of all functions with links to the files they belong to:
 - qspi\_write() : [qspi\_if.h](qspi__if_8h.md#aa277c292d448168861400c43d8f75b92)
 - qspi\_WRSR2() : [qspi\_if.h](qspi__if_8h.md#a88ab9dead7c0272b233dfb6d941b4a85)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

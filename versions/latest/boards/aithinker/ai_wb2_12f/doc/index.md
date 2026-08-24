@@ -8,8 +8,8 @@ original_path: boards/aithinker/ai_wb2_12f/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ai_wb2_12f.webp](../../../../_images/ai_wb2_12f.webp)
-](../../../../_images/ai_wb2_12f.webp)
+[![../../../../_images/ai_wb2_12f.webp](https://docs.zephyrproject.org/4.2.0/_images/ai_wb2_12f.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ai_wb2_12f.webp)
 
 Ai-Thinker WB2-12F development board
 

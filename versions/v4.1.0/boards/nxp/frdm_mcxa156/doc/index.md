@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_mcxa156/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_mcxa156.webp](../../../../_images/frdm_mcxa156.webp)
-](../../../../_images/frdm_mcxa156.webp)
+[![../../../../_images/frdm_mcxa156.webp](https://docs.zephyrproject.org/4.1.0/_images/frdm_mcxa156.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/frdm_mcxa156.webp)
 
 FRDM-MCXA156
 

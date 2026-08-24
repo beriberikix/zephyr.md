@@ -33,7 +33,7 @@ Low Energy (BLE) SIG specification v5.0 and with IEEE 802.15.4-2011.
 - On-board ST-LINK/V2-1 debugger/programmer with USB re- enumeration capability:
   mass storage, virtual COM port and debug port
 
-![Nucleo WB55RG](../../../../_images/nucleowb55rg.jpg)
+![Nucleo WB55RG](https://docs.zephyrproject.org/3.6.0/_images/nucleowb55rg.jpg)
 
 More information about the board can be found at the [Nucleo WB55RG website](https://www.st.com/en/evaluation-tools/p-nucleo-wb55.html).
 

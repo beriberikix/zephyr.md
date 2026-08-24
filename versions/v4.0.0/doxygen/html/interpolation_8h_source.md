@@ -156,4 +156,4 @@ Perform a linear interpolation across an arbitrary curve.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [math](dir_76cc2d861a01f89f8d0ad119e28af149.md)
 - [interpolation.h](interpolation_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

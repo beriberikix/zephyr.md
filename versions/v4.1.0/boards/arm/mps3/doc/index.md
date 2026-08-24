@@ -19,7 +19,7 @@ on the MPS3 board. It provides support for the following devices:
 - AN547 and AN552 support Arm Cortex-M55 CPU
 - AN555 support Arm Cortex-M85 CPU
 
-![ARM MPS3](../../../../_images/mps3.jpg)
+![ARM MPS3](https://docs.zephyrproject.org/4.1.0/_images/mps3.jpg)
 
 [Corstone-300 FVP](https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps)/[Corstone-310 FVP](https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps) (Fixed Virtual Platforms) is a complete
 simulations of the Arm system, including processor, memory and peripherals.

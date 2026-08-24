@@ -23,4 +23,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - onoff\_notify\_fn : [onoff.h](group__resource__mgmt__onoff__apis.md#gac05f7946a14fa23ef67212eba30c98ac)
 - onoff\_transition\_fn : [onoff.h](group__resource__mgmt__onoff__apis.md#ga51fdf83642c5fa16112ce143382ec5d1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

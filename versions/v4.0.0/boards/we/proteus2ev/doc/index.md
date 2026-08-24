@@ -8,8 +8,8 @@ original_path: boards/we/proteus2ev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/we_proteus2ev_nrf52832.jpg](../../../../_images/we_proteus2ev_nrf52832.jpg)
-](../../../../_images/we_proteus2ev_nrf52832.jpg)
+[![../../../../_images/we_proteus2ev_nrf52832.jpg](https://docs.zephyrproject.org/4.0.0/_images/we_proteus2ev_nrf52832.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/we_proteus2ev_nrf52832.jpg)
 
 Proteus-II-EV
 

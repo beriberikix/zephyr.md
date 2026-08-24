@@ -62,4 +62,4 @@ This file contains the USB device stack APIs and structures.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [usb](dir_d8285a9da4e2f530d10dd4c17d446a84.md)
 - [usbh.h](usbh_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

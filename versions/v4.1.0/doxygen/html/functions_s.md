@@ -707,4 +707,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - system\_time : [vcpu\_time\_info](structvcpu__time__info.md#a8963a462f7e7ab7f3833d43adc60e06f)
 - system\_voltage\_notification : [charger\_propval](unioncharger__propval.md#a541d1bf0b3e32d7aaeb6a2f4f443c5dc)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

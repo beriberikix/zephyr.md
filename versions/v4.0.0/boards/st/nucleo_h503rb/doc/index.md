@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_h503rb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_h503rb.png](../../../../_images/nucleo_h503rb.png)
-](../../../../_images/nucleo_h503rb.png)
+[![../../../../_images/nucleo_h503rb.png](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h503rb.png)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h503rb.png)
 
 Nucleo H503RB
 
@@ -54,7 +54,7 @@ Here are some highlights of the Nucleo-H503RB board:
 
 More information about the board can be found at the [NUCLEO\_H503RB website](https://www.st.com/en/evaluation-tools/nucleo-h503rb).
 
-![NUCLEO-H503RB](../../../../_images/nucleo_h503rb1.png)
+![NUCLEO-H503RB](https://docs.zephyrproject.org/4.0.0/_images/nucleo_h503rb1.png)
 
 ## Hardware
 

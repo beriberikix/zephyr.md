@@ -47,4 +47,4 @@ Macros to abstract compiler capabilities for ICCARM toolchain.
 - [toolchain](dir_be36829470ed0f3c1e0f3c9ff3246c22.md)
 - [iar](dir_cb961a4998504dcfcaac26ca40155226.md)
 - [iccarm.h](iccarm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

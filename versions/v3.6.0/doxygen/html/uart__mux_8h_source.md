@@ -247,4 +247,4 @@ The uart\_driver\_api must be placed in first position in this struct so that we
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [console](dir_5678202c8994e72aafde82bf91697a82.md)
 - [uart\_mux.h](uart__mux_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f429zi/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f429zi.jpg](../../../../_images/nucleo_f429zi.jpg)
-](../../../../_images/nucleo_f429zi.jpg)
+[![../../../../_images/nucleo_f429zi.jpg](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi.jpg)
 
 Nucleo F429ZI
 
@@ -174,10 +174,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F429ZI ZIO connectors (left)](../../../../_images/nucleo_f429zi_cn8.jpg)
-![Nucleo F429ZI ZIO connectors (right)](../../../../_images/nucleo_f429zi_cn7.jpg)
-![Nucleo F429ZI Morpho connectors (left)](../../../../_images/nucleo_f429zi_cn11.jpg)
-![Nucleo F429ZI Morpho connectors (right)](../../../../_images/nucleo_f429zi_cn12.jpg)
+![Nucleo F429ZI ZIO connectors (left)](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi_cn8.jpg)
+![Nucleo F429ZI ZIO connectors (right)](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi_cn7.jpg)
+![Nucleo F429ZI Morpho connectors (left)](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi_cn11.jpg)
+![Nucleo F429ZI Morpho connectors (right)](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi_cn12.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00244518.pdf).
 

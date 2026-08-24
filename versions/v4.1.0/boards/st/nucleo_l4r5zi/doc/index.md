@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_l4r5zi/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_l4r5zi.jpg](../../../../_images/nucleo_l4r5zi.jpg)
-](../../../../_images/nucleo_l4r5zi.jpg)
+[![../../../../_images/nucleo_l4r5zi.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l4r5zi.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_l4r5zi.jpg)
 
 Nucleo L4R5ZI
 
@@ -201,7 +201,7 @@ responsible for pin muxing, input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L4R5ZI Arduino connectors](../../../../_images/nucleo144_layout.jpg)
+![Nucleo L4R5ZI Arduino connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo144_layout.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00368330.pdf).
 

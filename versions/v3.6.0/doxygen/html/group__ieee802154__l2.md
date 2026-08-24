@@ -211,4 +211,4 @@ Represents a special value of the macShortAddress MAC PIB attribute, while the d
 | IEEE802154\_DEVICE\_ROLE\_COORDINATOR |  |
 | IEEE802154\_DEVICE\_ROLE\_PAN\_COORDINATOR |  |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

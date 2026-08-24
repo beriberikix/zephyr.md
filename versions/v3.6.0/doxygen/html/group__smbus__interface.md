@@ -1094,4 +1094,4 @@ Parameters
     | sent | Number of bytes sent |
     | [recv](group__bsd__sockets.md#gae11da452beee536eac85d5f26e5cdd40 "POSIX wrapper for zsock_recv.") | Number of bytes received |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

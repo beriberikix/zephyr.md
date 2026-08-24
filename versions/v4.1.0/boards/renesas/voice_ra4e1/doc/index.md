@@ -8,8 +8,8 @@ original_path: boards/renesas/voice_ra4e1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/voice_ra4e1.webp](../../../../_images/voice_ra4e1.webp)
-](../../../../_images/voice_ra4e1.webp)
+[![../../../../_images/voice_ra4e1.webp](https://docs.zephyrproject.org/4.1.0/_images/voice_ra4e1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/voice_ra4e1.webp)
 
 RA4E1 Voice User Reference Kit
 

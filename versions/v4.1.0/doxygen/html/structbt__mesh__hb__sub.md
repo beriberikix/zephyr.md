@@ -105,4 +105,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[heartbeat.h](heartbeat_8h_source.md)
 
 - [bt\_mesh\_hb\_sub](structbt__mesh__hb__sub.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

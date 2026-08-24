@@ -33,7 +33,7 @@ programmer for the STM32 MCU and USB Virtual COM port bridge. STM32H735G-DK boar
 comes with the STM32CubeH7 MCU Package, which provides an STM32 comprehensive
 software HAL library as well as various software examples.
 
-![STM32H735G-DISCO](../../../../_images/stm32h735g_disco.jpg)
+![STM32H735G-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32h735g_disco.jpg)
 
 More information about the board can be found at the [STM32H735G-DISCO website](https://www.st.com/en/evaluation-tools/stm32h735g-dk.html).
 More information about STM32H735 can be found here:

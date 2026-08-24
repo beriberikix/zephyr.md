@@ -35,7 +35,7 @@ some highlights of the Nucleo F429ZI board:
 - Three user LEDs
 - Two push-buttons: USER and RESET
 
-![Nucleo F429ZI](../../../../_images/nucleo_f429zi.jpg)
+![Nucleo F429ZI](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f429zi.jpg)
 
 More information about the board can be found at the [Nucleo F429ZI website](https://www.st.com/en/evaluation-tools/nucleo-f429zi.html).
 
@@ -108,10 +108,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F429ZI ZIO connectors (left)](../../../../_images/nucleo_f429zi_cn8.jpg)
-![Nucleo F429ZI ZIO connectors (right)](../../../../_images/nucleo_f429zi_cn7.jpg)
-![Nucleo F429ZI Morpho connectors (left)](../../../../_images/nucleo_f429zi_cn11.jpg)
-![Nucleo F429ZI Morpho connectors (right)](../../../../_images/nucleo_f429zi_cn12.jpg)
+![Nucleo F429ZI ZIO connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f429zi_cn8.jpg)
+![Nucleo F429ZI ZIO connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f429zi_cn7.jpg)
+![Nucleo F429ZI Morpho connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f429zi_cn11.jpg)
+![Nucleo F429ZI Morpho connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f429zi_cn12.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00244518.pdf).
 

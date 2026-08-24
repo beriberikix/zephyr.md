@@ -21,6 +21,6 @@ The setup is described in more details in the pages linked below.
 ## ICS Features
 
 The Zephyr ICS file for the Host features can be downloaded here:
-[`ICS_Zephyr_Bluetooth_Host.pts`](../../_downloads/6f0d89ee8c4a7803a28deb6f1e9659c8/ICS_Zephyr_Bluetooth_Host.pts).
+[`ICS_Zephyr_Bluetooth_Host.pts`](https://docs.zephyrproject.org/3.7.0/_downloads/6f0d89ee8c4a7803a28deb6f1e9659c8/ICS_Zephyr_Bluetooth_Host.pts).
 
 Use the [Bluetooth Qualification website](bluetooth_qualification_website) to view and edit the ICS.

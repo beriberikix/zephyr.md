@@ -8,8 +8,8 @@ original_path: boards/ruiside/art_pi2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/art_pi2.webp](../../../../_images/art_pi2.webp)
-](../../../../_images/art_pi2.webp)
+[![../../../../_images/art_pi2.webp](https://docs.zephyrproject.org/4.2.0/_images/art_pi2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/art_pi2.webp)
 
 ART-Pi2
 

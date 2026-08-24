@@ -8,8 +8,8 @@ original_path: boards/mxchip/az3166_iotdevkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/az3166-iotdevkit.webp](../../../../_images/az3166-iotdevkit.webp)
-](../../../../_images/az3166-iotdevkit.webp)
+[![../../../../_images/az3166-iotdevkit.webp](https://docs.zephyrproject.org/4.2.0/_images/az3166-iotdevkit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/az3166-iotdevkit.webp)
 
 AZ3166 MXChip IoT DevKit
 

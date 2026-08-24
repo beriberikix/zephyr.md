@@ -16,7 +16,7 @@ the drop-down menu on the left and select the desired version.
 especially for 3U CubeSats. The board is based on Xilinx Artix-7 FPGA and
 implements ARM Cortex M3 as the main CPU.
 
-![Space Cubics OBC module 1](../../../../_images/scobc.jpg)
+![Space Cubics OBC module 1](https://docs.zephyrproject.org/3.6.0/_images/scobc.jpg)
 
 Space Cubics OBC module 1
 

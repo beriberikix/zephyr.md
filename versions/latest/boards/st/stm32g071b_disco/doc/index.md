@@ -8,8 +8,8 @@ original_path: boards/st/stm32g071b_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32g071b_disco.jpg](../../../../_images/stm32g071b_disco.jpg)
-](../../../../_images/stm32g071b_disco.jpg)
+[![../../../../_images/stm32g071b_disco.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32g071b_disco.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32g071b_disco.jpg)
 
 STM32G071B Discovery
 

@@ -13,7 +13,7 @@ and demonstrate the functionality of the FT800 Embedded Video Engine, EVE. This
 module behaves as an SPI slave, and requires a SPI Master for proper
 microcontroller interfacing and system integration.
 
-![VM800C](../../../../_images/VM800C_top.jpg)
+![VM800C](https://docs.zephyrproject.org/4.1.0/_images/VM800C_top.jpg)
 
 ### Pins Assignment of the Arduino Shield Modules
 

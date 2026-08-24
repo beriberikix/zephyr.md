@@ -8,8 +8,8 @@ original_path: boards/silabs/starter_kits/slstk3401a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/slstk3401a.jpg](../../../../../_images/slstk3401a.jpg)
-](../../../../../_images/slstk3401a.jpg)
+[![../../../../../_images/slstk3401a.jpg](https://docs.zephyrproject.org/4.1.0/_images/slstk3401a.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/slstk3401a.jpg)
 
 EFM32 Pearl Gecko (SLSTK3401A)
 

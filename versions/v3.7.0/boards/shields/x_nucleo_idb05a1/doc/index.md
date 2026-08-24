@@ -27,7 +27,7 @@ Note : This shield is compatible out of the box with Arduino UNO R3 connectors,
 but CS and SCK signals are not the standard Arduino SPI\_CS and SPI\_SCK signals.
 Please refer to “Hardware configuration” section.
 
-![X-NUCLEO-IDB05A1](../../../../_images/x-nucleo-idb05a1.jpg)
+![X-NUCLEO-IDB05A1](https://docs.zephyrproject.org/3.7.0/_images/x-nucleo-idb05a1.jpg)
 
 More information about the board can be found at the
 [X-NUCLEO-IDB05A1 website](https://www.st.com/en/ecosystems/x-nucleo-idb05a1.html) [[1]](#id1).

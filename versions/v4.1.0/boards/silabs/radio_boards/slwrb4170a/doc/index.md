@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4170a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32mg12-slwrb4170a.jpg](../../../../../_images/efr32mg12-slwrb4170a.jpg)
-](../../../../../_images/efr32mg12-slwrb4170a.jpg)
+[![../../../../../_images/efr32mg12-slwrb4170a.jpg](https://docs.zephyrproject.org/4.1.0/_images/efr32mg12-slwrb4170a.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/efr32mg12-slwrb4170a.jpg)
 
 EFR32MG12 2400/868-915 MHz 19 dBm Dual Band (SLWRB4170A)
 

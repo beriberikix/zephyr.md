@@ -40,4 +40,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - http\_resource\_websocket\_cb\_t : [server.h](group__http__server.md#gaa51ec52c8960a37566d2ac77d624be93)
 - http\_response\_cb\_t : [client.h](group__http__client.md#ga9e079c737c325ee21a57e615b641f21a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

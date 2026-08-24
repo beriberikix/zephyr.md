@@ -18,7 +18,7 @@ ARM Cortex-M4 CPU, to test hardware tracing with the SEGGER Trace-Pro
 debuggers. It is not meant for general prototype development because
 it is extremely limited when it comes to IO, and only has 3 LEDs.
 
-![SEGGER-TRB-STM32F407](../../../../_images/segger_trb_stm32f407.jpg)
+![SEGGER-TRB-STM32F407](https://docs.zephyrproject.org/3.7.0/_images/segger_trb_stm32f407.jpg)
 
 SEGGER-TRB-STM32F407
 

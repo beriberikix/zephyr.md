@@ -8,8 +8,8 @@ original_path: boards/beagle/beaglev_fire/doc/index.html
 
 Board Overview
 
-[![../../../../_images/BeagleV-Fire-Front-Annotated-768x432.webp](../../../../_images/BeagleV-Fire-Front-Annotated-768x432.webp)
-](../../../../_images/BeagleV-Fire-Front-Annotated-768x432.webp)
+[![../../../../_images/BeagleV-Fire-Front-Annotated-768x432.webp](https://docs.zephyrproject.org/4.2.0/_images/BeagleV-Fire-Front-Annotated-768x432.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/BeagleV-Fire-Front-Annotated-768x432.webp)
 
 BeagleV®-Fire
 
@@ -69,7 +69,7 @@ Connect to BeagleV-Fire UART debug port using a 3.3v USB to UART bridge.
 Now you can run `tio <port>` in a terminal window to access the UART debug port connection. Once you
 are connected properly you can press the Reset button which will show you a progress bar like:
 
-![beaglev_fire](../../../../_images/board-booting.png)
+![beaglev_fire](https://docs.zephyrproject.org/4.2.0/_images/board-booting.png)
 
 Once you see that progress bar on your screen you can start pressing any button (0-9/a-z) which
 will interrupt the Hart Software Services from booting its payload.

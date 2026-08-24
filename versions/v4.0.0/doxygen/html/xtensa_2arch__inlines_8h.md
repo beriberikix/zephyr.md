@@ -161,4 +161,4 @@ Implementation of [arch\_proc\_id](arc_2arch__inlines_8h.md#a4bf4475c062f66961e1
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [xtensa](dir_8dbd13009e024dd37cbafc925932abe3.md)
 - [arch\_inlines.h](xtensa_2arch__inlines_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/others/canbardo/doc/index.html
 
 Board Overview
 
-[![../../../../_images/canbardo.webp](../../../../_images/canbardo.webp)
-](../../../../_images/canbardo.webp)
+[![../../../../_images/canbardo.webp](https://docs.zephyrproject.org/4.2.0/_images/canbardo.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/canbardo.webp)
 
 CANbardo
 

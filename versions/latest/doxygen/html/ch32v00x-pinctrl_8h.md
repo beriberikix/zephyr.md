@@ -1623,4 +1623,4 @@ ch32v00x-pinctrl.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [ch32v00x-pinctrl.h](ch32v00x-pinctrl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

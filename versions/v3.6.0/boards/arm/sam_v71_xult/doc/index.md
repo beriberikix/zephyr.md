@@ -16,7 +16,7 @@ The SAM V71 Xplained Ultra evaluation kit is a development platform to
 evaluate the Atmel SAM V71 series microcontrollers. The current version
 allows to use both IC variations ATSAMV71Q21A(B).
 
-![SAM V71 Xplained Ultra](../../../../_images/sam_v71_xult.jpg)
+![SAM V71 Xplained Ultra](https://docs.zephyrproject.org/3.6.0/_images/sam_v71_xult.jpg)
 
 ## Hardware
 

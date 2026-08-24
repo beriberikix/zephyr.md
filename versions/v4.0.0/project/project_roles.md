@@ -304,8 +304,8 @@ Generic guidelines for deciding and filling in the Maintainers’ list
 
 ## Release Activity
 
-> [![Release Activity](../_images/img_release_activity.png)
-> ](../_images/img_release_activity.png)
+> [![Release Activity](https://docs.zephyrproject.org/4.0.0/_images/img_release_activity.png)
+> ](https://docs.zephyrproject.org/4.0.0/_images/img_release_activity.png)
 
 ### Merge Criteria
 

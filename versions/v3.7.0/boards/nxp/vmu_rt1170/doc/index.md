@@ -19,7 +19,7 @@ and is qualified for consumer, industrial and automotive markets.
 The VMU RT1170 is the default VMU for CogniPilot’s Cerebri, a
 Zephyr RTOS based Autopilot.
 
-![VMU RT1170](../../../../_images/vmu_rt1170.jpg)
+![VMU RT1170](https://docs.zephyrproject.org/3.7.0/_images/vmu_rt1170.jpg)
 
 ## Hardware
 

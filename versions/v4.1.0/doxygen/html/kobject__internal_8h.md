@@ -35,4 +35,4 @@ kobject\_internal.h File Reference
 - [sys](dir_85ec07b7ac0b888617bae1400221d199.md)
 - [internal](dir_2d80249c9e76d37bdecdf823a284a9b8.md)
 - [kobject\_internal.h](kobject__internal_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

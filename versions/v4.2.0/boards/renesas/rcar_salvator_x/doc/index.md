@@ -8,8 +8,8 @@ original_path: boards/renesas/rcar_salvator_x/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rcar_salvator_x.jpg](../../../../_images/rcar_salvator_x.jpg)
-](../../../../_images/rcar_salvator_x.jpg)
+[![../../../../_images/rcar_salvator_x.jpg](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_x.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_x.jpg)
 
 R-Car Salvator-X
 
@@ -90,7 +90,7 @@ It is recommended to disable peripherals used by the R7 core on the Linux host.
 
 ### Connections and IOs
 
-![R-Car Salvator-X connections](../../../../_images/r-car-h3-salvator-x-connections.jpg)
+![R-Car Salvator-X connections](https://docs.zephyrproject.org/4.2.0/_images/r-car-h3-salvator-x-connections.jpg)
 
 #### GPIO
 

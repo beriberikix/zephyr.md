@@ -2579,4 +2579,4 @@ pinctrl-r7fa4m1xxxxxx.h File Reference
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [renesas](dir_17f48eb154be6cea623223db5de209e7.md)
 - [pinctrl-r7fa4m1xxxxxx.h](pinctrl-r7fa4m1xxxxxx_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

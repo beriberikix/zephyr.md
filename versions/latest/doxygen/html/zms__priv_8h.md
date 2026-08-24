@@ -179,4 +179,4 @@ zms\_priv.h File Reference
 - [fs](dir_e8230ac05e3aac2b3e0e734457f44f71.md)
 - [zms](dir_142391b9069c4c871a5c68dc8690aac3.md)
 - [zms\_priv.h](zms__priv_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

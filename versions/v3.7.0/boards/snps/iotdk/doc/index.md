@@ -20,7 +20,7 @@ implementation of the ARC Data Fusion IP Subsystem running at 144 MHz on
 SMIC’s 55-nm ultra-low power process, and a rich set of peripherals commonly
 used in IoT designs such as USB, UART, SPI, I2C, PWM, SDIO, and ADCs.
 
-![DesignWare(R) ARC(R)IoT Development Kit (synopsys.com)](../../../../_images/iotdk.jpg)
+![DesignWare(R) ARC(R)IoT Development Kit (synopsys.com)](https://docs.zephyrproject.org/3.7.0/_images/iotdk.jpg)
 
 For details about the board, see: [ARC IoT Development Kit
 (IoTDK)](https://www.synopsys.com/dw/ipdir.php?ds=arc_iot_development_kit)

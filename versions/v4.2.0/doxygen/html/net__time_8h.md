@@ -47,4 +47,4 @@ Inspired by [https://github.com/torvalds/linux/blob/master/include/linux/ktime.h
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [net\_time.h](net__time_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

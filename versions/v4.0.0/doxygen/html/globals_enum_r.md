@@ -23,4 +23,4 @@ Here is a list of all enums with links to the files they belong to:
 - r502a\_sys\_param\_set : [grow\_r502a.h](grow__r502a_8h.md#a16242f27a53b430ea3cf165fbc7ce70b)
 - ra\_ex\_ops : [ra\_flash\_api\_extensions.h](ra__flash__api__extensions_8h.md#a00ad044f5928882300e87ff9a13c1f74)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

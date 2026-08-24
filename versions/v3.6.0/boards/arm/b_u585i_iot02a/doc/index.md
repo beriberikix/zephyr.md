@@ -37,7 +37,7 @@ some highlights of the B\_U585I\_IOT02A Discovery kit:
       - USB Vbus
       - External sources
 
-![B_U585I_IOT02A Discovery kit](../../../../_images/b-u585i-iot02a.jpg)
+![B_U585I_IOT02A Discovery kit](https://docs.zephyrproject.org/3.6.0/_images/b-u585i-iot02a.jpg)
 
 More information about the board can be found at the [B U585I IOT02A Discovery kit website](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html).
 

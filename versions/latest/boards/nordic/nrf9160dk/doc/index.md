@@ -28,7 +28,7 @@ Cortex-M33F CPU with ARMv8-M Security Extension and the following devices:
 - WDT
 - IDAU
 
-![nRF9160 DK](../../../../_images/nrf9160dk_nrf9160.jpg)
+![nRF9160 DK](https://docs.zephyrproject.org/4.2.0/_images/nrf9160dk_nrf9160.jpg)
 
 nRF9160 DK (Credit: Nordic Semiconductor)
 

@@ -16,7 +16,7 @@ RuuviTag is an advanced battery-operated open-source Bluetooth
 enabled sensor beacon platform capable of sending temperature, humidity,
 pressure, and motion information over Bluetooth Low Energy.
 
-![RUUVI RuuviTag](../../../../_images/ruuvitag.jpg)
+![RUUVI RuuviTag](https://docs.zephyrproject.org/3.6.0/_images/ruuvitag.jpg)
 
 RUUVI RuuviTag (Credit: [https://ruuvi.com/](https://ruuvi.com/))
 
@@ -69,7 +69,7 @@ RuuviTag’s have the following physical features:
 
 #### Pin descriptions
 
-![RUUVI Pinout](../../../../_images/pinout1.jpg)
+![RUUVI Pinout](https://docs.zephyrproject.org/3.6.0/_images/pinout1.jpg)
 
 - 2 = P0.29 = SPI\_SCK
 - 3 = P0.28 = SPI\_MISO

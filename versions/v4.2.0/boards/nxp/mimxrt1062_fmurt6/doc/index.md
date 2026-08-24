@@ -8,8 +8,8 @@ original_path: boards/nxp/mimxrt1062_fmurt6/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mimxrt1062_fmurt6.webp](../../../../_images/mimxrt1062_fmurt6.webp)
-](../../../../_images/mimxrt1062_fmurt6.webp)
+[![../../../../_images/mimxrt1062_fmurt6.webp](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1062_fmurt6.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1062_fmurt6.webp)
 
 FMURT6
 

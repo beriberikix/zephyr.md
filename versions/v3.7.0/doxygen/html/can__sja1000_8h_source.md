@@ -641,4 +641,4 @@ Kernel timeout type.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [can](dir_d26220086854d96f67fb3f45a38ba4bc.md)
 - [can\_sja1000.h](can__sja1000_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

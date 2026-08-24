@@ -8,8 +8,8 @@ original_path: boards/m5stack/m5stack_cores3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/m5stack_cores3.webp](../../../../_images/m5stack_cores3.webp)
-](../../../../_images/m5stack_cores3.webp)
+[![../../../../_images/m5stack_cores3.webp](https://docs.zephyrproject.org/4.1.0/_images/m5stack_cores3.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/m5stack_cores3.webp)
 
 CoreS3
 

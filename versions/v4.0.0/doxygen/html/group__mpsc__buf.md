@@ -293,4 +293,4 @@ Parameters
     | word | First word of a packet consisting of MPSC\_PBUF\_HDR with valid bit set and data on remaining bits. |
     | data | User data. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

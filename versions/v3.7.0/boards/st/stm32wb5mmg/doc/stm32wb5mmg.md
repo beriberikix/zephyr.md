@@ -39,7 +39,7 @@ STM32WB5MMG supports the following features:
 - 68 GPIOs
 - SWD, JTAG
 
-![STM32WB5MMG](../../../../_images/STM32WB5MMG.jpg)
+![STM32WB5MMG](https://docs.zephyrproject.org/3.7.0/_images/STM32WB5MMG.jpg)
 
 More information about the board can be found at the `` [STM32WB5MMG on www.st.com](https://www.st.com/en/microcontrollers-microprocessors/stm32wb5mmg.html).
 

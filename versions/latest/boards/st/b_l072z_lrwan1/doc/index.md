@@ -8,8 +8,8 @@ original_path: boards/st/b_l072z_lrwan1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/b_l072z_lrwan1.jpg](../../../../_images/b_l072z_lrwan1.jpg)
-](../../../../_images/b_l072z_lrwan1.jpg)
+[![../../../../_images/b_l072z_lrwan1.jpg](https://docs.zephyrproject.org/4.2.0/_images/b_l072z_lrwan1.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/b_l072z_lrwan1.jpg)
 
 B-L072Z-LRWAN1 Discovery kit
 

@@ -8,8 +8,8 @@ original_path: boards/lilygo/twatch_s3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/twatch_s3.webp](../../../../_images/twatch_s3.webp)
-](../../../../_images/twatch_s3.webp)
+[![../../../../_images/twatch_s3.webp](https://docs.zephyrproject.org/4.2.0/_images/twatch_s3.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/twatch_s3.webp)
 
 T-Watch S3
 

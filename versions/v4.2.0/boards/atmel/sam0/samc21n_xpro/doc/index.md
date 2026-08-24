@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/samc21n_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsamc21n_xpro.jpg](../../../../../_images/atsamc21n_xpro.jpg)
-](../../../../../_images/atsamc21n_xpro.jpg)
+[![../../../../../_images/atsamc21n_xpro.jpg](https://docs.zephyrproject.org/4.2.0/_images/atsamc21n_xpro.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/atsamc21n_xpro.jpg)
 
 SAM C21N Xplained Pro Evaluation Kit
 

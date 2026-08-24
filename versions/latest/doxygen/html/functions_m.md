@@ -371,4 +371,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - my\_options : [ppp\_context](structppp__context.md#a37f609192ee6b739d7018d5a07ce179f), [ppp\_fsm](structppp__fsm.md#a39a7d8b02a0c905ea27565445295c4f2)
 - my\_options\_data : [ppp\_context](structppp__context.md#aec24ddc41138484c2e7608481d78f155)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

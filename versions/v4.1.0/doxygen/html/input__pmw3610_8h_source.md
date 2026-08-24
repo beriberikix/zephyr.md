@@ -72,4 +72,4 @@ Runtime device structure (in ROM) per driver instance.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [input](dir_ecfb5c4fcc1ee7a8808d709654432824.md)
 - [input\_pmw3610.h](input__pmw3610_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

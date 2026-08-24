@@ -63,4 +63,4 @@ llvm.h
 - [zephyr](dir_91e5ce9bd56815b1bd388aa667b3762f.md)
 - [test\_toolchain](dir_a3f514c982d37cd960af7c452678e28d.md)
 - [llvm.h](subsys_2testsuite_2include_2zephyr_2test__toolchain_2llvm_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

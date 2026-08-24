@@ -140,4 +140,4 @@ This function should be called from the ISR context of the event that caused the
 
 This is required for cpu power states that would require interrupts to be enabled while entering low power states. e.g. C1 in x86. In those cases, the ISR would be invoked immediately after the event wakes up the CPU, before code following the CPU wait, gets a chance to execute. This can be ignored if no operation needs to be done at the wake event notification.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

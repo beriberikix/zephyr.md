@@ -8,8 +8,8 @@ original_path: boards/seeed/seeeduino_xiao/doc/index.html
 
 Board Overview
 
-[![../../../../_images/seeeduino_xiao.jpg](../../../../_images/seeeduino_xiao.jpg)
-](../../../../_images/seeeduino_xiao.jpg)
+[![../../../../_images/seeeduino_xiao.jpg](https://docs.zephyrproject.org/4.0.0/_images/seeeduino_xiao.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/seeeduino_xiao.jpg)
 
 Seeeduino XIAO
 

@@ -76,4 +76,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/misc/ft8xx/[ft8xx.h](ft8xx_8h_source.md)
 
 - [ft8xx\_touch\_transform](structft8xx__touch__transform.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

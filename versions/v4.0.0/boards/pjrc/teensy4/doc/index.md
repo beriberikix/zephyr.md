@@ -12,11 +12,11 @@ The Teensy is a complete USB-based microcontroller development system, in a
 very small footprint, capable of implementing many types of projects. All
 programming is done via the USB port.
 
-![TEENSY40](../../../../_images/teensy40.jpg)
+![TEENSY40](https://docs.zephyrproject.org/4.0.0/_images/teensy40.jpg)
 
 TEENSY40 (Credit: [https://www.pjrc.com](https://www.pjrc.com))
 
-![TEENSY41](../../../../_images/teensy41.jpg)
+![TEENSY41](https://docs.zephyrproject.org/4.0.0/_images/teensy41.jpg)
 
 TEENSY41 (Credit: [https://www.pjrc.com](https://www.pjrc.com))
 

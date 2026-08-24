@@ -145,4 +145,4 @@ Here is a list of all enum values with links to the files they belong to:
 - LWM2M\_SOCKET\_STATE\_ONE\_RESPONSE : [lwm2m.h](group__lwm2m__api.md#gga7611c1aebb0309ee8340e06dd8ee234da76aa03f71f44096d9413b1f5718d9711)
 - LWM2M\_SOCKET\_STATE\_ONGOING : [lwm2m.h](group__lwm2m__api.md#gga7611c1aebb0309ee8340e06dd8ee234daa0f06bc70659598b0f51b3ce8094c6ab)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

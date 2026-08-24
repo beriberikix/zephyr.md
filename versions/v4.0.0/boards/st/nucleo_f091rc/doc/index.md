@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f091rc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f091rc.jpg](../../../../_images/nucleo_f091rc.jpg)
-](../../../../_images/nucleo_f091rc.jpg)
+[![../../../../_images/nucleo_f091rc.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f091rc.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f091rc.jpg)
 
 Nucleo F091RC
 
@@ -114,7 +114,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F091RC connectors](../../../../_images/nucleo_f091rc_connectors.jpg)
+![Nucleo F091RC connectors](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f091rc_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

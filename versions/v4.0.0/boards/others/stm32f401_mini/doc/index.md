@@ -8,8 +8,8 @@ original_path: boards/others/stm32f401_mini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/STM32_Mini_F401-1.jpg](../../../../_images/STM32_Mini_F401-1.jpg)
-](../../../../_images/STM32_Mini_F401-1.jpg)
+[![../../../../_images/STM32_Mini_F401-1.jpg](https://docs.zephyrproject.org/4.0.0/_images/STM32_Mini_F401-1.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/STM32_Mini_F401-1.jpg)
 
 STM32 Mini F401
 

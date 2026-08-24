@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f302r8/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f302r8.jpg](../../../../_images/nucleo_f302r8.jpg)
-](../../../../_images/nucleo_f302r8.jpg)
+[![../../../../_images/nucleo_f302r8.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f302r8.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f302r8.jpg)
 
 Nucleo F302R8
 
@@ -109,7 +109,7 @@ responsible for pin muxing, input/output, pull-up, etc.
 
 #### Board connectors:
 
-![Nucleo F302R8 connectors](../../../../_images/nucleo_f302r8_connectors.jpg)
+![Nucleo F302R8 connectors](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f302r8_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

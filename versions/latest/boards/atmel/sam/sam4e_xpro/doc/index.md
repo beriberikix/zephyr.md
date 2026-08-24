@@ -8,8 +8,8 @@ original_path: boards/atmel/sam/sam4e_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sam4e_xpro.jpg](../../../../../_images/sam4e_xpro.jpg)
-](../../../../../_images/sam4e_xpro.jpg)
+[![../../../../../_images/sam4e_xpro.jpg](https://docs.zephyrproject.org/4.2.0/_images/sam4e_xpro.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/sam4e_xpro.jpg)
 
 SAM4E Xplained Pro
 

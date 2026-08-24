@@ -28,7 +28,7 @@ the following devices:
 - UART
 - WDT
 
-![Ophelia-I EV](../../../../_images/we_ophelia1ev_nrf52805.jpg)
+![Ophelia-I EV](https://docs.zephyrproject.org/3.7.0/_images/we_ophelia1ev_nrf52805.jpg)
 
 Ophelia-I EV (Credit: Würth Elektronik)
 

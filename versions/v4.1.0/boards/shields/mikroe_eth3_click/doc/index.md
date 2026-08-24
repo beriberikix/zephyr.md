@@ -13,7 +13,7 @@ a 10/100Mbps BASE-T stand alone Ethernet Controller with an on-board MAC & PHY,
 16Kbyte FIFO Buffer and SPI serial interface.
 More information at [ETH 3 Click Shield website](https://www.mikroe.com/eth-3-click) [[1]](#id2).
 
-![MikroElektronika ETH 3 Click](../../../../_images/eth3_click.webp)
+![MikroElektronika ETH 3 Click](https://docs.zephyrproject.org/4.1.0/_images/eth3_click.webp)
 
 MikroElektronika ETH 3 Click (Credit: MikroElektronika)
 

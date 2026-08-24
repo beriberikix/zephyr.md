@@ -36,7 +36,7 @@ The features include the following:
   - DAC
   - LED PWM with up to 8 channels
 
-![ESP32-S2 FRANZININHO](../../../../_images/esp32_s2_franzininho.jpg)
+![ESP32-S2 FRANZININHO](https://docs.zephyrproject.org/3.7.0/_images/esp32_s2_franzininho.jpg)
 
 ### System requirements
 

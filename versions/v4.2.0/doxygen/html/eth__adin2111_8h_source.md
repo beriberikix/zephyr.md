@@ -195,4 +195,4 @@ Network Interface structure.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [ethernet](dir_e26e025f1b2d5c43527f6232564fe44e.md)
 - [eth\_adin2111.h](eth__adin2111_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

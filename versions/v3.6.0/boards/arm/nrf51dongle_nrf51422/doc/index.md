@@ -28,7 +28,7 @@ Semiconductor nRF51822 ARM Cortex-M0 CPU and the following devices:
 - UART
 - WDT
 
-![nRF51 Dongle](../../../../_images/nrf51dongle_nrf51422.jpg)
+![nRF51 Dongle](https://docs.zephyrproject.org/3.6.0/_images/nrf51dongle_nrf51422.jpg)
 
 nRF51 Dongle (Credit: Nordic Semiconductor)
 

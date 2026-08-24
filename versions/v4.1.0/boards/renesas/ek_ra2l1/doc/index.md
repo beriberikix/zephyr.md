@@ -8,8 +8,8 @@ original_path: boards/renesas/ek_ra2l1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ek_ra2l1.webp](../../../../_images/ek_ra2l1.webp)
-](../../../../_images/ek_ra2l1.webp)
+[![../../../../_images/ek_ra2l1.webp](https://docs.zephyrproject.org/4.1.0/_images/ek_ra2l1.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/ek_ra2l1.webp)
 
 ek\_ra2l1
 

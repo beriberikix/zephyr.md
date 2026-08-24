@@ -22,7 +22,7 @@ imports or reuses packages, scripts, and other files that use other
 licensing, as described in [Licensing of Zephyr Project components](LICENSING.md#zephyr-licensing).
 
 - [
-  ![](_static/images/kite.png)
+  ![](https://docs.zephyrproject.org/3.6.0/_static/images/kite.png)
 
   ## Introduction
 

@@ -621,4 +621,4 @@ Here is a list of all functions with links to the files they belong to:
 - syscon\_read\_reg() : [syscon.h](group__syscon__interface.md#ga2b912d694cce403011212b83e98a7426)
 - syscon\_write\_reg() : [syscon.h](group__syscon__interface.md#gad38b74cf372f8cdeb0439d6524af7da8)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

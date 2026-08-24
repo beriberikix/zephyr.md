@@ -24,4 +24,4 @@ sys\_clock.h File Reference
 - [zephyr](dir_7f004fc53e18f085dec56f1200601760.md)
 - [syscalls](dir_8cdb9e44c8ae094abadbae1126ad0c35.md)
 - [sys\_clock.h](subsys_2testsuite_2ztest_2include_2zephyr_2syscalls_2sys__clock_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

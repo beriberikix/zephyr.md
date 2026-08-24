@@ -89,4 +89,4 @@ ads114s0x.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [adc](dir_62d9a819ff274ddc8f9299d578f6ebce.md)
 - [ads114s0x.h](ads114s0x_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

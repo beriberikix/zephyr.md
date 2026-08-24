@@ -84,4 +84,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - cs\_trace\_defmt\_cb : [cs\_trace\_defmt.h](group__cs__trace__defmt.md#gaccc05f92bfbc04b787f6f959e954115d)
 - ctr\_op\_t : [cipher.h](group__crypto__cipher.md#gad1ed48328ca31f8ce2dd7e0a166cacba)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

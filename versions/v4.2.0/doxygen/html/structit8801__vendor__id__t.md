@@ -41,4 +41,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/mfd/[mfd\_ite\_it8801.h](mfd__ite__it8801_8h_source.md)
 
 - [it8801\_vendor\_id\_t](structit8801__vendor__id__t.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

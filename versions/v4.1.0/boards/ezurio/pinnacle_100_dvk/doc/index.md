@@ -8,8 +8,8 @@ original_path: boards/ezurio/pinnacle_100_dvk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pinnacle_100_dvk.jpg](../../../../_images/pinnacle_100_dvk.jpg)
-](../../../../_images/pinnacle_100_dvk.jpg)
+[![../../../../_images/pinnacle_100_dvk.jpg](https://docs.zephyrproject.org/4.1.0/_images/pinnacle_100_dvk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/pinnacle_100_dvk.jpg)
 
 Pinnacle 100 DVK
 

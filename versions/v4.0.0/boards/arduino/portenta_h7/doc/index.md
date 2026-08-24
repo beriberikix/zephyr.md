@@ -21,8 +21,8 @@ Additionally, the board features:
 - USB OTG FS
 - 3 color user LEDs
 
-[![ARDUINO_PORTENTA_H7](../../../../_images/arduino_portenta_h7.jpeg)
-](../../../../_images/arduino_portenta_h7.jpeg)
+[![ARDUINO_PORTENTA_H7](https://docs.zephyrproject.org/4.0.0/_images/arduino_portenta_h7.jpeg)
+](https://docs.zephyrproject.org/4.0.0/_images/arduino_portenta_h7.jpeg)
 
 More information about the board can be found at the [ARDUINO\_PORTENTA\_H7 website](https://docs.arduino.cc/hardware/portenta-h7).
 More information about STM32H747XIH6 can be found here:

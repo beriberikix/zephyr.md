@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/siwx917_rb4342a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/siwx917_rb4342a.webp](../../../../../_images/siwx917_rb4342a.webp)
-](../../../../../_images/siwx917_rb4342a.webp)
+[![../../../../../_images/siwx917_rb4342a.webp](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4342a.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4342a.webp)
 
 SiWx917 Wi-Fi 6 and Bluetooth LE 8 MB Flash + 8 MB ext PSRAM Radio Board (SLWRB4342A)
 

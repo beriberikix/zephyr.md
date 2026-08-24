@@ -67,4 +67,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - mspi\_emul\_trigger\_event : [mspi\_emul.h](group__mspi__emul__interface.md#gaaa0c99ea6582cacba89f8630d8d554be)
 - multiboot\_info\_t : [multiboot\_info.h](multiboot__info_8h.md#a8cb99862e8314c32c007eee9d2481ae1)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

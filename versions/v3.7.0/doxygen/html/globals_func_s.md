@@ -658,4 +658,4 @@ Here is a list of all functions with links to the files they belong to:
 - sysconf() : [unistd.h](unistd_8h.md#a599f55d9eaa01b6921367233437b9b13)
 - syslog() : [syslog.h](syslog_8h.md#a7b3a37aea8e8f9fe12fe0340eaccb838)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -94,7 +94,7 @@ suspend the device if necessary. It is worth to note that in both cases, the
 operation is carried out synchronously. The sequence diagram shown below
 illustrates how a device can use this API and the expected sequence of events.
 
-![../../_images/devr-sync-ops.svg](../../_images/devr-sync-ops.svg)
+![../../_images/devr-sync-ops.svg](https://docs.zephyrproject.org/4.1.0/_images/devr-sync-ops.svg)
 
 Synchronous operation on a single device
 
@@ -109,7 +109,7 @@ the suspend operation, again, if device is no longer used. The suspension will
 then be carried out when the system work queue gets the chance to run. The
 sequence diagram shown below illustrates this scenario.
 
-![../../_images/devr-async-ops.svg](../../_images/devr-async-ops.svg)
+![../../_images/devr-async-ops.svg](https://docs.zephyrproject.org/4.1.0/_images/devr-async-ops.svg)
 
 Asynchronous operation on a single device
 

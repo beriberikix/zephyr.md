@@ -36,7 +36,7 @@ some highlights of the STM32F429I-DISC1 board:
   > - Two user LEDs: LD3 (green), LD4 (red)
   > - Two USB OTG LEDs: LD5 (green) VBUS and LD6 (red) OC (over-current)
 
-![STM32F429I-DISC1](../../../../_images/stm32f429i_disc1.jpg)
+![STM32F429I-DISC1](https://docs.zephyrproject.org/3.7.0/_images/stm32f429i_disc1.jpg)
 
 More information about the board can be found at the [STM32F429I-DISC1 website](https://www.st.com/en/evaluation-tools/32f429idiscovery.html).
 

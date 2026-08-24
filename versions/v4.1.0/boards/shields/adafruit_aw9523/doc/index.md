@@ -11,7 +11,7 @@ original_path: boards/shields/adafruit_aw9523/doc/index.html
 The [Adafruit AW9523 GPIO Expander and LED Driver](https://learn.adafruit.com/adafruit-aw9523-gpio-expander-and-led-driver) provides
 16-channel GPIO/LED controller function.
 
-![Adafruit AW9523](../../../../_images/adafruit_aw9523.webp)
+![Adafruit AW9523](https://docs.zephyrproject.org/4.1.0/_images/adafruit_aw9523.webp)
 
 Adafruit AW9523 (Credit: Adafruit)
 

@@ -22,7 +22,7 @@ CPU and the following devices:
 - Cortex-M System Design Kit UART
 - Ethos-U55 NPU
 
-![ARM MPS3 AN547](../../../../_images/mps3_an547.jpg)
+![ARM MPS3 AN547](https://docs.zephyrproject.org/3.7.0/_images/mps3_an547.jpg)
 
 This board configuration also supports using the [Corstone-300 FVP](https://developer.arm.com/tools-and-software/open-source-software/arm-platforms-software/arm-ecosystem-fvps) to emulate
 a MPS3 AN547 hardware platform.

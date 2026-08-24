@@ -12,7 +12,7 @@ Browse source code on GitHub
 
 ## Overview
 
-![Thrift Layers](../../../../_images/thrift-layers.png)
+![Thrift Layers](https://docs.zephyrproject.org/4.2.0/_images/thrift-layers.png)
 
 ## What is Thrift?
 

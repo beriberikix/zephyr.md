@@ -8,8 +8,8 @@ original_path: boards/nxp/vmu_rt1170/doc/index.html
 
 Board Overview
 
-[![../../../../_images/vmu_rt1170.jpg](../../../../_images/vmu_rt1170.jpg)
-](../../../../_images/vmu_rt1170.jpg)
+[![../../../../_images/vmu_rt1170.jpg](https://docs.zephyrproject.org/4.2.0/_images/vmu_rt1170.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/vmu_rt1170.jpg)
 
 VMU RT1170
 

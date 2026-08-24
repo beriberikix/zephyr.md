@@ -63,4 +63,4 @@ The documentation for this struct was generated from the following file:
 - /tmp/zephyrproject/zephyr/subsys/secure\_storage/include/psa/[storage\_common.h](storage__common_8h_source.md)
 
 - [psa\_storage\_info\_t](structpsa__storage__info__t.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/wiznet/w5500_evb_pico/doc/index.html
 
 Board Overview
 
-[![../../../../_images/w5500_evb_pico_side.png](../../../../_images/w5500_evb_pico_side.png)
-](../../../../_images/w5500_evb_pico_side.png)
+[![../../../../_images/w5500_evb_pico_side.png](https://docs.zephyrproject.org/4.1.0/_images/w5500_evb_pico_side.png)
+](https://docs.zephyrproject.org/4.1.0/_images/w5500_evb_pico_side.png)
 
 W5500 Evaluation Pico
 

@@ -8,8 +8,8 @@ original_path: boards/altr/max10/doc/index.html
 
 Board Overview
 
-[![../../../../_images/altera_max10.jpg](../../../../_images/altera_max10.jpg)
-](../../../../_images/altera_max10.jpg)
+[![../../../../_images/altera_max10.jpg](https://docs.zephyrproject.org/4.1.0/_images/altera_max10.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/altera_max10.jpg)
 
 MAX10
 
@@ -47,7 +47,7 @@ importance is SW2:
   scripts won’t work
 - Switch 4 (HSMC\_BYPASSN) should be OFF (up)
 
-![Altera's MAX* 10 Switches](../../../../_images/Altera_MAX10_switches.jpg)
+![Altera's MAX* 10 Switches](https://docs.zephyrproject.org/4.1.0/_images/Altera_MAX10_switches.jpg)
 
 Other switches are user switches, their position is application-specific.
 

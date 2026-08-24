@@ -8,8 +8,8 @@ original_path: boards/adi/max32650fthr/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32650fthr.webp](../../../../_images/max32650fthr.webp)
-](../../../../_images/max32650fthr.webp)
+[![../../../../_images/max32650fthr.webp](https://docs.zephyrproject.org/4.1.0/_images/max32650fthr.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max32650fthr.webp)
 
 MAX32650FTHR
 
@@ -37,7 +37,7 @@ for high-performance, battery-powered applications.
 
 The Zephyr port is running on the MAX32650 MCU.
 
-![MAX32650 FTHR Front](../../../../_images/max32650fthr1.webp)
+![MAX32650 FTHR Front](https://docs.zephyrproject.org/4.1.0/_images/max32650fthr1.webp)
 
 ## Hardware
 

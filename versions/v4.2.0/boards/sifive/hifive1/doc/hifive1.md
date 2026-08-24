@@ -8,8 +8,8 @@ original_path: boards/sifive/hifive1/doc/hifive1.html
 
 Board Overview
 
-[![../../../../_images/hifive1.jpg](../../../../_images/hifive1.jpg)
-](../../../../_images/hifive1.jpg)
+[![../../../../_images/hifive1.jpg](https://docs.zephyrproject.org/4.2.0/_images/hifive1.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/hifive1.jpg)
 
 HiFive1
 
@@ -33,7 +33,7 @@ Browse board sources
 
 The HiFive1 is an Arduino-compatible development board with an FE310-G000 RISC-V SoC.
 
-![SiFive HiFive1 board](../../../../_images/hifive11.jpg)
+![SiFive HiFive1 board](https://docs.zephyrproject.org/4.2.0/_images/hifive11.jpg)
 
 SiFive HiFive1 board (image courtesy of SiFive)
 

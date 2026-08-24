@@ -103,4 +103,4 @@ The reason why we don't use [int64\_t](stdint_8h.md#ac714c0d2c1a4adb10e73cab2962
 
 Any API that exposes or consumes [net\_time\_t](#gaf1da332e3909fca30de991cc2f950e56) values SHALL ensure that it maintains the specified contract including all protocol specific tolerances and therefore clients can rely on common semantics of this type. This makes times coming from different hardware peripherals and even from different network nodes comparable within well-defined limits and therefore [net\_time\_t](#gaf1da332e3909fca30de991cc2f950e56) is the ideal intermediate building block for timed network protocols.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

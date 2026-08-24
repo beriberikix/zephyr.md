@@ -8,8 +8,8 @@ original_path: boards/raytac/mdbt50q_db_40/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mdbt50q_db_40.jpg](../../../../_images/mdbt50q_db_40.jpg)
-](../../../../_images/mdbt50q_db_40.jpg)
+[![../../../../_images/mdbt50q_db_40.jpg](https://docs.zephyrproject.org/4.0.0/_images/mdbt50q_db_40.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/mdbt50q_db_40.jpg)
 
 MDBT50Q-DB-40
 

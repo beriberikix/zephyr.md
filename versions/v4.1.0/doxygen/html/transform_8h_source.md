@@ -139,4 +139,4 @@ Transforms the data of an ITS entry for storage.
 - [secure\_storage](dir_b251feb5349caf21c27bf417dfd4e083.md)
 - [its](dir_8ffdb9b26f60d93440ec7ee1d2751029.md)
 - [transform.h](transform_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

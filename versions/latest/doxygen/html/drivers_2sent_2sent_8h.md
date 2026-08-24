@@ -61,4 +61,4 @@ Single Edge Nibble Transmission (SENT) driver API.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [sent](dir_c7c606dbfefe42cf24a6f31b226e5895.md)
 - [sent.h](drivers_2sent_2sent_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

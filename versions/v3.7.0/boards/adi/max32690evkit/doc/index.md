@@ -21,8 +21,8 @@ industrial sensors/networks, internet of things (IoT), and asset tracking.
 
 The Zephyr port is running on the MAX32690 MCU.
 
-![MAX32690 EVKIT Front](../../../../_images/max32690evkit_img1.jpg)
-![MAX32690 Back](../../../../_images/max32690evkit_img2.jpg)
+![MAX32690 EVKIT Front](https://docs.zephyrproject.org/3.7.0/_images/max32690evkit_img1.jpg)
+![MAX32690 Back](https://docs.zephyrproject.org/3.7.0/_images/max32690evkit_img2.jpg)
 
 ## Hardware
 

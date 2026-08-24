@@ -8,8 +8,8 @@ original_path: boards/franzininho/esp32s2_franzininho/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32_s2_franzininho.jpg](../../../../_images/esp32_s2_franzininho.jpg)
-](../../../../_images/esp32_s2_franzininho.jpg)
+[![../../../../_images/esp32_s2_franzininho.jpg](https://docs.zephyrproject.org/4.0.0/_images/esp32_s2_franzininho.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/esp32_s2_franzininho.jpg)
 
 ESP32-S2 Franzininho
 

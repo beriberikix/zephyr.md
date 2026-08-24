@@ -19,7 +19,7 @@ The SensorTile.box board fits into a small plastic box with a long-life recharge
 battery, and communicates with a standard smartphone through its Bluetooth interface,
 providing data coming from the sensors.
 
-![SensorTile.box](../../../../_images/sensortile_box.jpg)
+![SensorTile.box](https://docs.zephyrproject.org/3.7.0/_images/sensortile_box.jpg)
 
 More information about the board can be found at the [SensorTile.box website](https://www.st.com/en/evaluation-tools/steval-mksbox1v1.html) [[1]](#id1).
 

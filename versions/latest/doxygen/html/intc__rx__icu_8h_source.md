@@ -191,4 +191,4 @@ uint8\_t filt\_clk\_div
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [interrupt\_controller](dir_d4c0bd929525fabbb463a01ac157fd6b.md)
 - [intc\_rx\_icu.h](intc__rx__icu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

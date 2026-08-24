@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[hci\_vs.h](hci__vs_8h_source.md)
 
 - [bt\_hci\_vs\_fata\_error\_cpu\_data\_cortex\_m](structbt__hci__vs__fata__error__cpu__data__cortex__m.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -77,4 +77,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[sensor\_data\_types.h](sensor__data__types_8h_source.md)
 
 - [sensor\_three\_axis\_data](structsensor__three__axis__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

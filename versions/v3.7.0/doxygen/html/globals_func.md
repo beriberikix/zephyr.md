@@ -273,4 +273,4 @@ Here is a list of all functions with links to the files they belong to:
 - auxdisplay\_position\_blinking\_set\_enabled() : [auxdisplay.h](group__auxdisplay__interface.md#ga7102ec9941f8b3131a18e4ff7b640241)
 - auxdisplay\_write() : [auxdisplay.h](group__auxdisplay__interface.md#ga231dd862cda34ea4c0c8870675556f8d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

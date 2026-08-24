@@ -8,8 +8,8 @@ original_path: boards/st/stm32f7508_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f7508_dk.jpg](../../../../_images/stm32f7508_dk.jpg)
-](../../../../_images/stm32f7508_dk.jpg)
+[![../../../../_images/stm32f7508_dk.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32f7508_dk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32f7508_dk.jpg)
 
 STM32F7508-DK Discovery Kit
 

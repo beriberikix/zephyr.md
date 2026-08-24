@@ -91,4 +91,4 @@ The header declares API functions that can be used to get information on and sel
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [dfu](dir_b8bb0fd55a94366ea1f20beca08b160d.md)
 - [mcuboot.h](mcuboot_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

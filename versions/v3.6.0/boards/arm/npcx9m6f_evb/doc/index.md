@@ -16,7 +16,7 @@ The NPCX9M6F\_EVB kit is a development platform to evaluate the
 Nuvoton NPCX9 series microcontrollers. This board needs to be mated with
 part number NPCX996F.
 
-![NPCX9M6F Evaluation Board](../../../../_images/npcx9m6f_evb.jpg)
+![NPCX9M6F Evaluation Board](https://docs.zephyrproject.org/3.6.0/_images/npcx9m6f_evb.jpg)
 
 ## Hardware
 

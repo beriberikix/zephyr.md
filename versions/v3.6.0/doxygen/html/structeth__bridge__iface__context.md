@@ -49,4 +49,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[ethernet\_bridge.h](ethernet__bridge_8h_source.md)
 
 - [eth\_bridge\_iface\_context](structeth__bridge__iface__context.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

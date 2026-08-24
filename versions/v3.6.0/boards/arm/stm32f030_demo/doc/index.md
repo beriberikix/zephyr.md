@@ -18,7 +18,7 @@ that match the SoC’s pin names.
 For practical use, you’ll need to add additional components
 and circuits using a breadboard, for example.
 
-![STM32F030 DEMO BOARD](../../../../_images/stm32f030_demo.jpg)
+![STM32F030 DEMO BOARD](https://docs.zephyrproject.org/3.6.0/_images/stm32f030_demo.jpg)
 
 More information about the board can be found at the [stm32-base.org website](https://stm32-base.org/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1) [[1]](#id1).
 

@@ -8,8 +8,8 @@ original_path: boards/renesas/rzg2lc_smarc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzg2lc_smarc.webp](../../../../_images/rzg2lc_smarc.webp)
-](../../../../_images/rzg2lc_smarc.webp)
+[![../../../../_images/rzg2lc_smarc.webp](https://docs.zephyrproject.org/4.2.0/_images/rzg2lc_smarc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzg2lc_smarc.webp)
 
 RZ/G2LC SMARC Evaluation Board Kit
 
@@ -60,8 +60,8 @@ The Renesas RZ/G2LC SMARC Evaluation Board Kit (RZ/G2LC-EVKIT) consists of a SMA
 
 The Renesas RZ/G2LC MPU documentation can be found at [RZ/G2LC Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2lc-general-purpose-mcus-dual-core-arm-cortex-a55-12ghz-cpus-and-single-core-arm-cortex-m33-200mhz-cpu) [[1]](#id3)
 
-[![RZ/G2LC group feature](../../../../_images/rzg2lc_block_diagram.webp)
-](../../../../_images/rzg2lc_block_diagram.webp)
+[![RZ/G2LC group feature](https://docs.zephyrproject.org/4.2.0/_images/rzg2lc_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzg2lc_block_diagram.webp)
 
 RZ/G2LC block diagram (Credit: Renesas Electronics Corporation)
 

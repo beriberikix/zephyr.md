@@ -19,7 +19,7 @@ The GD32F407VE features a single-core ARM Cortex-M4 MCU which can run up
 to 168 MHz with flash accesses zero wait states, 3072kiB of Flash, 192kiB of
 SRAM and 82 GPIOs.
 
-![gd32f407v_start](../../../../_images/gd32f407v_start.webp)
+![gd32f407v_start](https://docs.zephyrproject.org/3.7.0/_images/gd32f407v_start.webp)
 
 ## Hardware
 

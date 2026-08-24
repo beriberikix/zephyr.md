@@ -94,4 +94,4 @@ Runtime device structure (in ROM) per driver instance.
 - [i2c](dir_d0e9f61c1b95aed307ec1c726ffb3f96.md)
 - [target](dir_25ea520bf1ef1038fac9c410667bd932.md)
 - [eeprom.h](i2c_2target_2eeprom_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

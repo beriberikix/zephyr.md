@@ -12,7 +12,7 @@ The STM32MP135F discovery board is delivered with a CSI camera module
 connected to the STM32MP135F-DK board via a 15pins FFC connector.
 The camera module board (MB1897) embeds a Galaxycore GC2145 CSI sensor.
 
-![ST-MB1897-CAM](../../../../_images/st_mb1897_cam.webp)
+![ST-MB1897-CAM](https://docs.zephyrproject.org/4.2.0/_images/st_mb1897_cam.webp)
 
 MB1897 Image (Credit: STMicroelectronics.)
 

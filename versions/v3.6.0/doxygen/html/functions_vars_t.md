@@ -252,4 +252,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - type\_length : [net\_lldp\_chassis\_tlv](structnet__lldp__chassis__tlv.md#af81d3102ad0ec1f7ef76bb1533dcc7cd), [net\_lldp\_port\_tlv](structnet__lldp__port__tlv.md#a710beaeda2ddd7933464e07cb87a2bfe), [net\_lldp\_time\_to\_live\_tlv](structnet__lldp__time__to__live__tlv.md#a78b88d66184a0d25c413baf2fec495ab)
 - typeerr : [net\_stats\_icmp](structnet__stats__icmp.md#ae1a29dd9b8e1ce9a737fa7f36c805cd4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

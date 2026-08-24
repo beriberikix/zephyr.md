@@ -18,7 +18,7 @@ devices labeled as Feathers or FeatherWings. The board is equipped
 with a lithium ion battery charger, native USB C connector, 2MB of
 external flash memory, and SD card socket.
 
-![Adafruit Feather STM32F405 Express](../../../../_images/adafruit_feather_stm32f405.jpg)
+![Adafruit Feather STM32F405 Express](https://docs.zephyrproject.org/3.7.0/_images/adafruit_feather_stm32f405.jpg)
 
 ## Hardware
 

@@ -39,4 +39,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - rtio\_work\_submit\_t : [work.h](work_8h.md#add537a23ac061970d890f65d76f5f906)
 - rx\_irq\_dig\_filt\_t : [intc\_rx\_icu.h](intc__rx__icu_8h.md#ae5e7618b4871363e4b9443cbe01ef86d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

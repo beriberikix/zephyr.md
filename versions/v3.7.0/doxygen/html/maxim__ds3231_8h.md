@@ -363,4 +363,4 @@ Flag indicating the oscillator has been off since last cleared.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [rtc](dir_fe6de79d2b035e3fa4834af86b312149.md)
 - [maxim\_ds3231.h](maxim__ds3231_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

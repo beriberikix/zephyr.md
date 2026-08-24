@@ -8,8 +8,8 @@ original_path: boards/arduino/portenta_h7/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_portenta_h7.jpeg](../../../../_images/arduino_portenta_h7.jpeg)
-](../../../../_images/arduino_portenta_h7.jpeg)
+[![../../../../_images/arduino_portenta_h7.jpeg](https://docs.zephyrproject.org/4.2.0/_images/arduino_portenta_h7.jpeg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_portenta_h7.jpeg)
 
 Arduino Portenta H7
 

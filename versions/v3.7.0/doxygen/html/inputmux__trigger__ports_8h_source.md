@@ -69,4 +69,4 @@ inputmux\_trigger\_ports.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [inputmux](dir_ce3567a8ae8a5f128911932b1be8f5bb.md)
 - [inputmux\_trigger\_ports.h](inputmux__trigger__ports_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

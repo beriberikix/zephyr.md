@@ -41,4 +41,4 @@ The documentation for this union was generated from the following file:
 - zephyr/drivers/haptics/[drv2605.h](drv2605_8h_source.md)
 
 - [drv2605\_config\_data](uniondrv2605__config__data.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

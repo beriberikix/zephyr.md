@@ -23,4 +23,4 @@ Here is a list of all enums with links to the files they belong to:
 - ztest\_phase : [ztest\_test.h](group__ztest__test.md#ga5dde8913cf45656bca8a48c825a95d59)
 - ztest\_result : [ztest\_test.h](group__ztest__test.md#gac2842295307e7286d256bb179be60b02)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

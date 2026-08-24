@@ -33,7 +33,7 @@ board:
 - External or internal SMPS to generate Vcore logic supply
 - USB OTG full speed or device only
 
-![Nucleo L552ZE Q](../../../../_images/nucleo_l552ze_q.jpg)
+![Nucleo L552ZE Q](https://docs.zephyrproject.org/3.7.0/_images/nucleo_l552ze_q.jpg)
 
 More information about the board can be found at the [Nucleo L552ZE Q website](https://www.st.com/en/evaluation-tools/nucleo-l552ze-q.html).
 
@@ -195,8 +195,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L552ZE Q Zio left connector](../../../../_images/nucleo_l552ze_q_zio_left_2020_2_11.jpg)
-![Nucleo L552ZE Q Zio right connector](../../../../_images/nucleo_l552ze_q_zio_right_2020_2_11.jpg)
+![Nucleo L552ZE Q Zio left connector](https://docs.zephyrproject.org/3.7.0/_images/nucleo_l552ze_q_zio_left_2020_2_11.jpg)
+![Nucleo L552ZE Q Zio right connector](https://docs.zephyrproject.org/3.7.0/_images/nucleo_l552ze_q_zio_right_2020_2_11.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00615305.pdf).
 

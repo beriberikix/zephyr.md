@@ -225,4 +225,4 @@ Runtime device structure (in ROM) per driver instance.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [adc](dir_62d9a819ff274ddc8f9299d578f6ebce.md)
 - [adc\_npcx\_threshold.h](adc__npcx__threshold_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

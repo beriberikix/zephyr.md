@@ -77,4 +77,4 @@ Runtime device structure (in ROM) per driver instance.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [flash](dir_b5b0d43e6264d65db716db62f9858e50.md)
 - [nrf\_qspi\_nor.h](nrf__qspi__nor_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

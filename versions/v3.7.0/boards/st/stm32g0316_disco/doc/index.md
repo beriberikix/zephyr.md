@@ -17,7 +17,7 @@ This discovery kit offers an SO8 to DIL8 module designed with the STM32G031J6 mi
 and allows the user to develop applications. It includes an on-board ST-LINK/V2-1 to debug
 and program the embedded STM32 microcontroller.
 
-![STM32G0316-DISCO](../../../../_images/stm32g0316_disco.jpg)
+![STM32G0316-DISCO](https://docs.zephyrproject.org/3.7.0/_images/stm32g0316_disco.jpg)
 
 ## Hardware
 

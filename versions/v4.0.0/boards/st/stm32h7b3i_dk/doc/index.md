@@ -8,8 +8,8 @@ original_path: boards/st/stm32h7b3i_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h7b3i_dk.jpg](../../../../_images/stm32h7b3i_dk.jpg)
-](../../../../_images/stm32h7b3i_dk.jpg)
+[![../../../../_images/stm32h7b3i_dk.jpg](https://docs.zephyrproject.org/4.0.0/_images/stm32h7b3i_dk.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/stm32h7b3i_dk.jpg)
 
 STM32H7B3I Discovery kit
 

@@ -62,4 +62,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[bluetooth.h](bluetooth_2bluetooth_8h_source.md)
 
 - [bt\_le\_per\_adv\_param](structbt__le__per__adv__param.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

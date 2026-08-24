@@ -8,8 +8,8 @@ original_path: boards/st/steval_stwinbx1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/steval_stwinbx1.jpg](../../../../_images/steval_stwinbx1.jpg)
-](../../../../_images/steval_stwinbx1.jpg)
+[![../../../../_images/steval_stwinbx1.jpg](https://docs.zephyrproject.org/4.1.0/_images/steval_stwinbx1.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/steval_stwinbx1.jpg)
 
 STEVAL STWINBX1 Development kit
 

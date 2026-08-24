@@ -31,7 +31,7 @@ Nordic Semiconductor nRF52840 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-![nRF52840 DK](../../../../_images/nrf52840dk_nrf52840.jpg)
+![nRF52840 DK](https://docs.zephyrproject.org/3.6.0/_images/nrf52840dk_nrf52840.jpg)
 
 nRF52840 DK (Credit: Nordic Semiconductor)
 

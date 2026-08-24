@@ -1444,4 +1444,4 @@ Here is a list of all macros with links to the files they belong to:
 - FUNC\_WE1\_N : [pinctrl-r8a77951.h](pinctrl-r8a77951_8h.md#afa6c55e88640bc528d7eea1cffc5b4f8), [pinctrl-r8a77961.h](pinctrl-r8a77961_8h.md#afa6c55e88640bc528d7eea1cffc5b4f8)
 - FUNCTION\_OFFSET : [pinctrl-zynqmp.h](pinctrl-zynqmp_8h.md#a53faf9f7be70b2c114ad20e212e8620f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

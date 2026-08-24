@@ -8,8 +8,8 @@ original_path: boards/madmachine/mm_feather/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mm_feather.jpg](../../../../_images/mm_feather.jpg)
-](../../../../_images/mm_feather.jpg)
+[![../../../../_images/mm_feather.jpg](https://docs.zephyrproject.org/4.1.0/_images/mm_feather.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mm_feather.jpg)
 
 SwiftIO Feather
 

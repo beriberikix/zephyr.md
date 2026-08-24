@@ -33,7 +33,7 @@ started quickly. Here are some highlights of the STM32F072B-DISCO board:
 - One linear touch sensor or four touch keys
 - RF EEprom daughter board connector
 
-![STM32F072B-DISCO](../../../../_images/stm32f072b_disco.jpg)
+![STM32F072B-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32f072b_disco.jpg)
 
 More information about the board can be found at the
 [STM32F072B-DISCO website](https://www.st.com/en/evaluation-tools/32f072bdiscovery.html) [[1]](#id1).

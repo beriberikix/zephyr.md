@@ -39,4 +39,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - dsa\_net\_recv\_cb\_t : [dsa.h](group__DSA.md#ga6c40af9c2caefa7f855d225a41b43faa)
 - dsa\_send\_t : [dsa.h](group__DSA.md#gad9a6e0ad0e100914f6b932843908d42b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

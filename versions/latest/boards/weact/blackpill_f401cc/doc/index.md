@@ -8,8 +8,8 @@ original_path: boards/weact/blackpill_f401cc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/Blackpill_Pinout.jpg](../../../../_images/Blackpill_Pinout.jpg)
-](../../../../_images/Blackpill_Pinout.jpg)
+[![../../../../_images/Blackpill_Pinout.jpg](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout.jpg)
 
 Black Pill V1.2
 
@@ -126,7 +126,7 @@ on-chip / on-board
 
 #### Available pins:
 
-![Black Pill V1.2 Pinout](../../../../_images/Blackpill_Pinout1.jpg)
+![Black Pill V1.2 Pinout](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout1.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

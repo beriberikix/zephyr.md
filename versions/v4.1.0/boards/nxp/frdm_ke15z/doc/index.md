@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_ke15z/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_ke15z.webp](../../../../_images/frdm_ke15z.webp)
-](../../../../_images/frdm_ke15z.webp)
+[![../../../../_images/frdm_ke15z.webp](https://docs.zephyrproject.org/4.1.0/_images/frdm_ke15z.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/frdm_ke15z.webp)
 
 FRDM-KE15Z
 

@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_n657x0_q/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_n657x0_q.webp](../../../../_images/nucleo_n657x0_q.webp)
-](../../../../_images/nucleo_n657x0_q.webp)
+[![../../../../_images/nucleo_n657x0_q.webp](https://docs.zephyrproject.org/4.1.0/_images/nucleo_n657x0_q.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_n657x0_q.webp)
 
 Nucleo N657X0-Q
 

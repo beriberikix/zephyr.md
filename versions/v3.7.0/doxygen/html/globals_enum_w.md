@@ -47,4 +47,4 @@ Here is a list of all enums with links to the files they belong to:
 - wifi\_twt\_sleep\_state : [wifi\_mgmt.h](group__wifi__mgmt.md#ga38c184ea35c02f304cccdf389ca6d552)
 - wifi\_twt\_teardown\_status : [wifi.h](group__wifi__mgmt.md#gad3709d07aaa3ed59b48f9dd7bd181989)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -36,18 +36,18 @@ GPIOs are not broken out to the board’s pin headers in order to ensure reliabl
 
 The block diagram below shows the main components of ESP-WROVER-KIT and their interconnections.
 
-![ESP-WROVER-KIT](../../../../_images/esp-wrover-kit-block-diagram.jpg)
+![ESP-WROVER-KIT](https://docs.zephyrproject.org/3.7.0/_images/esp-wrover-kit-block-diagram.jpg)
 
 ## Functional Description
 
 The following two figures and the table below describe the key components, interfaces, and controls
 of the ESP-WROVER-KIT board.
 
-![esp wrover front](../../../../_images/esp-wrover-kit-v4.1-layout-front.jpg)
+![esp wrover front](https://docs.zephyrproject.org/3.7.0/_images/esp-wrover-kit-v4.1-layout-front.jpg)
 
 ESP-WROVER-KIT board layout - front
 
-![esp wrover back](../../../../_images/esp-wrover-kit-v4.1-layout-back.jpg)
+![esp wrover back](https://docs.zephyrproject.org/3.7.0/_images/esp-wrover-kit-v4.1-layout-back.jpg)
 
 ESP-WROVER-KIT board layout - back
 

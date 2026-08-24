@@ -16,7 +16,7 @@ The Waveshare Pico UPS-B shield is an uninterruptible Power supply (UPS)
 module designed for the Raspberry Pi Pico which uses the Texas Instruments’ INA219
 current/power Monitor. It communicates with the Raspberry Pi Pico over I2C
 
-![Waveshare Pico UPS-B shield](../../../../_images/waveshare_pico_ups_b.jpg)
+![Waveshare Pico UPS-B shield](https://docs.zephyrproject.org/3.6.0/_images/waveshare_pico_ups_b.jpg)
 
 Waveshare Pico UPS-B shield
 

@@ -14,7 +14,7 @@ building prototypes and projects in an easy and quick way. With its rich
 peripherals, you could explore the infinite possibilities of Seeed Studio
 XIAO series.
 
-![Seeed Studio XIAO Expansion Board](../../../../_images/seeed_xiao_expansion_board.webp)
+![Seeed Studio XIAO Expansion Board](https://docs.zephyrproject.org/4.0.0/_images/seeed_xiao_expansion_board.webp)
 
 Seeed Studio XIAO Expansion Board (Credit: Seeed Studio)
 

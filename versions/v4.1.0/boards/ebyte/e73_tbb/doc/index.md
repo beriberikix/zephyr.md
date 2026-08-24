@@ -8,8 +8,8 @@ original_path: boards/ebyte/e73_tbb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ebyte_e73_tbb_nrf52832.jpg](../../../../_images/ebyte_e73_tbb_nrf52832.jpg)
-](../../../../_images/ebyte_e73_tbb_nrf52832.jpg)
+[![../../../../_images/ebyte_e73_tbb_nrf52832.jpg](https://docs.zephyrproject.org/4.1.0/_images/ebyte_e73_tbb_nrf52832.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/ebyte_e73_tbb_nrf52832.jpg)
 
 E73-TBB
 

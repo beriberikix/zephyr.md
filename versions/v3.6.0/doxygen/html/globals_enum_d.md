@@ -41,4 +41,4 @@ Here is a list of all enums with links to the files they belong to:
 - dns\_resolve\_status : [dns\_resolve.h](group__dns__resolve.md#ga5baf1fea0482fb3a940b4f5350a3c58e)
 - dt\_usb\_maximum\_speed : [usb.h](usb_8h.md#ac343e285b07073790285bba59e3500bf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

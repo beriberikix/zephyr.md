@@ -8,8 +8,8 @@ original_path: boards/adafruit/feather_m0_basic_proto/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adafruit_feather_m0_basic_proto.jpg](../../../../_images/adafruit_feather_m0_basic_proto.jpg)
-](../../../../_images/adafruit_feather_m0_basic_proto.jpg)
+[![../../../../_images/adafruit_feather_m0_basic_proto.jpg](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_basic_proto.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_basic_proto.jpg)
 
 Feather M0 Basic Proto
 

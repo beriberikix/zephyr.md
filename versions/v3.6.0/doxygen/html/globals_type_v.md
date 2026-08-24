@@ -42,4 +42,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - vtd\_set\_irte\_msi\_f : [intel\_vtd.h](drivers_2interrupt__controller_2intel__vtd_8h.md#a0118f224100f721a508ce00c3ae99698)
 - vtd\_set\_irte\_vector\_f : [intel\_vtd.h](drivers_2interrupt__controller_2intel__vtd_8h.md#a06190d6273d0adeb92e9e4e4fa79d9b4)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

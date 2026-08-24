@@ -19,8 +19,8 @@ The camera module bundle is compatible with all STM32 Discovery kits and
 Evaluation boards featuring a ZIF connector, such as the STM32H747I-DISCO,
 STM32H7B3I-DK, and 32L4R9IDISCOVERY Discovery kits.
 
-[![B-CAMS-OMV-MB1683](../../../../_images/st_b_cams_omv.webp)
-](../../../../_images/st_b_cams_omv.webp)
+[![B-CAMS-OMV-MB1683](https://docs.zephyrproject.org/4.1.0/_images/st_b_cams_omv.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/st_b_cams_omv.webp)
 
 B-CAMS-OMV MB1683 Image (Credit: STMicroelectronics.)
 

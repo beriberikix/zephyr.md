@@ -8,8 +8,8 @@ original_path: boards/olimex/stm32_h405/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimex_stm32_h405_top.jpg](../../../../_images/olimex_stm32_h405_top.jpg)
-](../../../../_images/olimex_stm32_h405_top.jpg)
+[![../../../../_images/olimex_stm32_h405_top.jpg](https://docs.zephyrproject.org/4.0.0/_images/olimex_stm32_h405_top.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/olimex_stm32_h405_top.jpg)
 
 OLIMEX-STM32-H405
 

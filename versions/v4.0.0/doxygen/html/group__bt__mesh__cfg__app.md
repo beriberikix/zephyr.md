@@ -172,4 +172,4 @@ Parameters
 Returns
 :   The number of indexes added to the `app_idxs` array, or `-ENOMEM` if the number of known Applications exceeds the `max` parameter.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

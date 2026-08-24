@@ -970,4 +970,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - TYPE\_SECTION\_START\_EXTERN : [iterable\_sections.h](group__iterable__section__apis.md#ga40c6ba05d5bcb848a530bdc17bbff5be), [log\_core.h](log__core_8h.md#a8bddbf82fcd014a2b65b53d80312237d)
 - TZNAME\_MAX : [posix\_features.h](posix__features_8h.md#afb3fe48998f8d32cfb7047b917a8039e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

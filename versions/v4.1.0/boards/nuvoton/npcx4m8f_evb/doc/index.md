@@ -8,8 +8,8 @@ original_path: boards/nuvoton/npcx4m8f_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/npcx4m8f_evb.jpg](../../../../_images/npcx4m8f_evb.jpg)
-](../../../../_images/npcx4m8f_evb.jpg)
+[![../../../../_images/npcx4m8f_evb.jpg](https://docs.zephyrproject.org/4.1.0/_images/npcx4m8f_evb.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/npcx4m8f_evb.jpg)
 
 NPCX4M8F\_EVB
 

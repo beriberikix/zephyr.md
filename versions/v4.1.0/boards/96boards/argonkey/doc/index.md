@@ -14,7 +14,7 @@ Cortex M4 CPU.
 This board acts as a sensor hub platform for all 96Boards compliant
 family products. It can also be used as a standalone board.
 
-![96Boards Argonkey](../../../../_images/96b_argonkey.jpg)
+![96Boards Argonkey](https://docs.zephyrproject.org/4.1.0/_images/96b_argonkey.jpg)
 
 96Boards Argonkey
 

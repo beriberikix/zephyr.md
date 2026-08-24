@@ -44,4 +44,4 @@ Here is a list of all enums with links to the files they belong to:
 - nxp\_pint\_trigger : [nxp\_pint.h](nxp__pint_8h.md#aea62e6522d0de4c0ce63ae04b2d36f7c)
 - nxp\_rtxxx\_dsp\_ctrl\_section\_type : [nxp\_rtxxx\_dsp\_ctrl.h](drivers_2misc_2nxp__rtxxx__dsp__ctrl_2nxp__rtxxx__dsp__ctrl_8h.md#a1230a21b6c11930f80fc5f12605de762)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -21,7 +21,7 @@ CPU and the following devices:
 - Cortex-M System Design Kit GPIO
 - Cortex-M System Design Kit UART
 
-![ARM V2M Musca B1](../../../../_images/v2m_musca_b1.jpg)
+![ARM V2M Musca B1](https://docs.zephyrproject.org/3.6.0/_images/v2m_musca_b1.jpg)
 
 More information about the board can be found at the [V2M Musca B1 Website](https://developer.arm.com/Tools%20and%20Software/Musca-B1%20Test%20Chip%20Board).
 

@@ -88,4 +88,4 @@ Command result codes for enumeration management group.
 | ENUM\_MGMT\_ERR\_INSUFFICIENT\_HEAP\_FOR\_ENTRIES | Insufficient heap memory to store entry data. |
 | ENUM\_MGMT\_ERR\_INDEX\_TOO\_LARGE | Provided index is larger than the number of supported grouped. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

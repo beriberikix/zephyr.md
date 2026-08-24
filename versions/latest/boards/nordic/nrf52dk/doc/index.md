@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf52dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52dk_nrf52832.jpg](../../../../_images/nrf52dk_nrf52832.jpg)
-](../../../../_images/nrf52dk_nrf52832.jpg)
+[![../../../../_images/nrf52dk_nrf52832.jpg](https://docs.zephyrproject.org/4.2.0/_images/nrf52dk_nrf52832.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf52dk_nrf52832.jpg)
 
 nRF52 DK
 

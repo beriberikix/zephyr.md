@@ -8,8 +8,8 @@ original_path: boards/nordic/nrf9131ek/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf9131ek_nrf9131.webp](../../../../_images/nrf9131ek_nrf9131.webp)
-](../../../../_images/nrf9131ek_nrf9131.webp)
+[![../../../../_images/nrf9131ek_nrf9131.webp](https://docs.zephyrproject.org/4.2.0/_images/nrf9131ek_nrf9131.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nrf9131ek_nrf9131.webp)
 
 nRF9131 EK
 

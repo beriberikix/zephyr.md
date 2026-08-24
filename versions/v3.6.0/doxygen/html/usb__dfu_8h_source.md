@@ -485,4 +485,4 @@ bStatus values for the DFU\_GETSTATUS response
 - [usb](dir_d8285a9da4e2f530d10dd4c17d446a84.md)
 - [class](dir_c68ea25cffcb2672410964c117624aed.md)
 - [usb\_dfu.h](usb__dfu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

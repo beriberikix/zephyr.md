@@ -40,4 +40,4 @@ pbp.h File Reference
 - [bluetooth](dir_1e7161d1e31b4a807184ef42c14f2a24.md)
 - [audio](dir_8efd337b27f0cf68bd11ab0b8a371a18.md)
 - [pbp.h](pbp_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

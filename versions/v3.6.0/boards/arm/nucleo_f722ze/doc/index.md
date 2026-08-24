@@ -29,7 +29,7 @@ Key Features:
 - On-board ST-LINK debugger/programmer
 - Flexible power supply options, including ST-LINK VBUS and external sources.
 
-[![Nucleo F722ZE](../../../../_images/nucleo_f722ze.jpg)](../../../../_images/nucleo_f722ze.jpg)
+[![Nucleo F722ZE](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f722ze.jpg)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f722ze.jpg)
 
 ## Hardware
 

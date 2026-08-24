@@ -508,7 +508,7 @@ There are three types of domains in a multi-domain system:
 
 See the following image for an example of a multi-domain setup:
 
-![../../_images/multidomain.png](../../_images/multidomain.png)
+![../../_images/multidomain.png](https://docs.zephyrproject.org/4.1.0/_images/multidomain.png)
 
 Multi-domain example
 
@@ -542,7 +542,7 @@ link.
 The following example is shown below, where
 the assigned `domain_ids` are shown for each domain:
 
-![../../_images/domain_ids.png](../../_images/domain_ids.png)
+![../../_images/domain_ids.png](https://docs.zephyrproject.org/4.1.0/_images/domain_ids.png)
 
 Domain IDs assigning example
 

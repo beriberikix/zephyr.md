@@ -65,4 +65,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/mesh/[priv\_beacon\_cli.h](priv__beacon__cli_8h_source.md)
 
 - [bt\_mesh\_priv\_node\_id](structbt__mesh__priv__node__id.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

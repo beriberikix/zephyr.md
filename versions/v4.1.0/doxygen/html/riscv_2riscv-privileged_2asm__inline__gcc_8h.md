@@ -24,4 +24,4 @@ asm\_inline\_gcc.h File Reference
 - [riscv](dir_e840f8ec4c8f41e913ceb572466dc8a4.md)
 - [riscv-privileged](dir_ed8add11e8adf9177aa6eb94d599d40b.md)
 - [asm\_inline\_gcc.h](riscv_2riscv-privileged_2asm__inline__gcc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

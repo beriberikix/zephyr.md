@@ -287,4 +287,4 @@ stm32\_ex\_ops
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [flash](dir_b5b0d43e6264d65db716db62f9858e50.md)
 - [stm32\_flash\_api\_extensions.h](stm32__flash__api__extensions_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

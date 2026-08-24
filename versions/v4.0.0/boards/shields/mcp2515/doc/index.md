@@ -17,7 +17,7 @@ The DFRobot CAN BUS shield supports the Microchip MCP2515 stand-alone CAN
 controller and JTA1050 high speed CAN transceiver. The shield has an Arduino
 Uno R3 compatible hardware interface.
 
-![DFRobot_CAN_BUS_V2_0_SHIELD](../../../../_images/dfrobot_can_bus_v2_0.jpg)
+![DFRobot_CAN_BUS_V2_0_SHIELD](https://docs.zephyrproject.org/4.0.0/_images/dfrobot_can_bus_v2_0.jpg)
 
 ### Hardware
 
@@ -94,7 +94,7 @@ The Keyestudio CAN BUS shield supports the Microchip MCP2515 stand-alone CAN
 controller and MCP2551 high speed CAN transceiver. The shield has an Arduino
 Uno R3 compatible hardware interface.
 
-![Keyestudio CAN-BUS Shield (KS0411)](../../../../_images/keyestudio_can_bus_ks0411.jpg)
+![Keyestudio CAN-BUS Shield (KS0411)](https://docs.zephyrproject.org/4.0.0/_images/keyestudio_can_bus_ks0411.jpg)
 
 Keyestudio CAN-BUS Shield (KS0411) (Credit: Keyestudio)
 
@@ -168,7 +168,7 @@ with an TJA1051/3 transceiver. This shield is built for the Raspberry Pi Pico
 and uses the SPI interface. It also contains a Qwiic connector to add support
 for a sensor.
 
-![Adafruit PiCowbell CAN Bus Shield](../../../../_images/adafruit_can_picowbell.jpg)
+![Adafruit PiCowbell CAN Bus Shield](https://docs.zephyrproject.org/4.0.0/_images/adafruit_can_picowbell.jpg)
 
 Adafruit PiCowbell CAN Bus Shield
 

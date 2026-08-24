@@ -8,8 +8,8 @@ original_path: boards/ti/sk_am64/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sk_am64.webp](../../../../_images/sk_am64.webp)
-](../../../../_images/sk_am64.webp)
+[![../../../../_images/sk_am64.webp](https://docs.zephyrproject.org/4.2.0/_images/sk_am64.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/sk_am64.webp)
 
 SK-AM64
 

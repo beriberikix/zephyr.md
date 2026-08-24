@@ -16,7 +16,7 @@ humidity and temperature sensor, and the LPS25HB pressure sensor.
 
 The X-NUCLEO-IKS01A1 interfaces with the main board via an I2C interface.
 
-![X-NUCLEO-IKS01A](../../../../_images/x-nucleo-iks01a1.jpg)
+![X-NUCLEO-IKS01A](https://docs.zephyrproject.org/4.1.0/_images/x-nucleo-iks01a1.jpg)
 
 More information about the board can be found at the
 [X-NUCLEO-IKS01A1 website](https://www.st.com/en/ecosystems/x-nucleo-iks01a1.html) [[1]](#id1).

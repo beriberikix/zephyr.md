@@ -19,4 +19,4 @@ Here is a list of all typedefs with links to the files they belong to:
 
 - json\_append\_bytes\_t : [json.h](group__json.md#gacb409ebe9c59789a5d9aca02c6c94674)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

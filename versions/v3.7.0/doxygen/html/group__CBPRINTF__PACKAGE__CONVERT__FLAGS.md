@@ -111,4 +111,4 @@ If package was created with [CBPRINTF\_PACKAGE\_ADD\_RW\_STR\_POS](group__CBPRIN
 **[Deprecated](deprecated.md#_deprecated000028)**
 :   Use [CBPRINTF\_PACKAGE\_CONVERT\_RW\_STR](#ga983c65ed8afb356a29fa2736f9de7b39) instead.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

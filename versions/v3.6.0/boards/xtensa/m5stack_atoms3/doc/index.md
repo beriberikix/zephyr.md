@@ -24,7 +24,7 @@ It features the following integrated components:
 - 6-axis IMU MPU6886
 - Infrared emitter
 
-![M5Stack AtomS3](../../../../_images/m5stack_atoms3.webp)
+![M5Stack AtomS3](https://docs.zephyrproject.org/3.6.0/_images/m5stack_atoms3.webp)
 
 M5Stack AtomS3
 

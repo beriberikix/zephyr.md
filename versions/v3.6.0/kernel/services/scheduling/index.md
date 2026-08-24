@@ -126,7 +126,7 @@ Consequently, if a cooperative thread performs lengthy computations,
 it may cause an unacceptable delay in the scheduling of other threads,
 including those of higher priority and equal priority.
 
-> ![../../../_images/cooperative.svg](../../../_images/cooperative.svg)
+> ![../../../_images/cooperative.svg](https://docs.zephyrproject.org/3.6.0/_images/cooperative.svg)
 
 To overcome such problems, a cooperative thread can voluntarily relinquish
 the CPU from time to time to permit other threads to execute.
@@ -153,13 +153,13 @@ Consequently, if a preemptive thread performs lengthy computations,
 it may cause an unacceptable delay in the scheduling of other threads,
 including those of equal priority.
 
-> ![../../../_images/preemptive.svg](../../../_images/preemptive.svg)
+> ![../../../_images/preemptive.svg](https://docs.zephyrproject.org/3.6.0/_images/preemptive.svg)
 
 To overcome such problems, a preemptive thread can perform cooperative
 time slicing (as described above), or the scheduler’s time slicing capability
 can be used to allow other threads of the same priority to execute.
 
-![../../../_images/timeslicing.svg](../../../_images/timeslicing.svg)
+![../../../_images/timeslicing.svg](https://docs.zephyrproject.org/3.6.0/_images/timeslicing.svg)
 
 The scheduler divides time into a series of **time slices**, where slices
 are measured in system clock ticks. The time slice size is configurable,

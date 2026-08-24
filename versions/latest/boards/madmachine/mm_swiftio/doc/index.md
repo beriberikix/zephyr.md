@@ -8,8 +8,8 @@ original_path: boards/madmachine/mm_swiftio/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mm_swiftio.jpg](../../../../_images/mm_swiftio.jpg)
-](../../../../_images/mm_swiftio.jpg)
+[![../../../../_images/mm_swiftio.jpg](https://docs.zephyrproject.org/4.2.0/_images/mm_swiftio.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/mm_swiftio.jpg)
 
 SwiftIO
 

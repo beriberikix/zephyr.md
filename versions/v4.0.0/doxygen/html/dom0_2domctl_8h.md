@@ -166,4 +166,4 @@ domctl.h File Reference
 - [xen](dir_5d31353de41f154afd9f3c68bc3a8a3d.md)
 - [dom0](dir_250ede4c158f258ed6e884af7ffad142.md)
 - [domctl.h](dom0_2domctl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -222,7 +222,7 @@ contiguous block of memory, zero any BSS variables at boot, and define
 a memory partition of appropriate base address and size which contains all
 the tagged data.
 
-![Automatic Memory Domain build flow](../../_images/auto_mem_domain.png)
+![Automatic Memory Domain build flow](https://docs.zephyrproject.org/4.2.0/_images/auto_mem_domain.png)
 
 Automatic Memory Domain build flow
 

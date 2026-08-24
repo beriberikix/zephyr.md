@@ -36,7 +36,7 @@ The features include the following:
   - DAC
   - LED PWM with up to 8 channels
 
-![ESP32-S2 LOLIN MINI](../../../../_images/esp32_s2_lolin_mini.jpg)
+![ESP32-S2 LOLIN MINI](https://docs.zephyrproject.org/3.6.0/_images/esp32_s2_lolin_mini.jpg)
 
 ## System requirements
 

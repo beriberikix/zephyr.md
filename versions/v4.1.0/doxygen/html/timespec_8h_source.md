@@ -79,4 +79,4 @@ struct timespec it\_value
 - [include](dir_33cd71cddfb4d86c87a49ac212c07c64.md)
 - [sys](dir_4d70b020f8f8c9ca462b8905bdfa3f4f.md)
 - [timespec.h](timespec_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

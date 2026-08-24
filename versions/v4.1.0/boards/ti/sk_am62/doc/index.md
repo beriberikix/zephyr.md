@@ -8,8 +8,8 @@ original_path: boards/ti/sk_am62/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sk_am62_angled.webp](../../../../_images/sk_am62_angled.webp)
-](../../../../_images/sk_am62_angled.webp)
+[![../../../../_images/sk_am62_angled.webp](https://docs.zephyrproject.org/4.1.0/_images/sk_am62_angled.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/sk_am62_angled.webp)
 
 SK-AM62 M4F Core
 

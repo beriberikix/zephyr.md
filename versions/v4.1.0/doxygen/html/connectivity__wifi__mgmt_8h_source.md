@@ -81,4 +81,4 @@ API for defining conn\_mgr connectivity implementations (allowing ifaces to be u
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [conn\_mgr](dir_ba7fd4b3ea28c88570c49772975cd824.md)
 - [connectivity\_wifi\_mgmt.h](connectivity__wifi__mgmt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

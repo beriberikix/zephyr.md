@@ -63,4 +63,4 @@ The Perf tool is currently implemented only for RISC-V and x86\_64 architectures
 
 ### Graph example
 
-![graph example](../../../../_images/graph_example.svg)
+![graph example](https://docs.zephyrproject.org/4.0.0/_images/graph_example.svg)

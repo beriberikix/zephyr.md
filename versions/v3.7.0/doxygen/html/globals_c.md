@@ -1704,4 +1704,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - current\_sense\_shunt\_scale\_dt() : [current\_sense\_shunt.h](current__sense__shunt_8h.md#a2315a1aa2db9dafaff8c272b06d2c6b0)
 - CUSTOM\_FFF\_FUNCTION\_TEMPLATE : [fff.h](fff_8h.md#a3afca787a52954d620bfc1cf15c00c09)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

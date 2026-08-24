@@ -546,4 +546,4 @@ Thread Structure.
 - [kernel](dir_dc43877d82dd332f9fb2071fcca799d6.md)
 - [include](dir_009f605b833ac4622acd6c3c0c26c0f0.md)
 - [kernel\_arch\_interface.h](kernel__arch__interface_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

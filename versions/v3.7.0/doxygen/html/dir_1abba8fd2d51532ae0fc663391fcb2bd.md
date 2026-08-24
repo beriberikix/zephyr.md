@@ -22,4 +22,4 @@ testsuite Directory Reference
 
 - [subsys](dir_c85cb826952b1679a37b077c3741c8c1.md)
 - [testsuite](dir_1abba8fd2d51532ae0fc663391fcb2bd.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

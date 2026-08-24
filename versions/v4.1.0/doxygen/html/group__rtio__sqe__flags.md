@@ -105,4 +105,4 @@ The next request in the queue is part of a transaction.
 
 Transactional SQEs are sequential parts of a unit of work. Only the first transactional SQE is submitted to an iodev, the remaining SQEs are never individually submitted but instead considered to be part of the transaction to the single iodev. The first sqe in the sequence holds the iodev that will be used and the last holds the userdata that will be returned in a single completion on failure/success.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

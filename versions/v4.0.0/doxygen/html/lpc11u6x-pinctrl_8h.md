@@ -1921,4 +1921,4 @@ Control registers for open-drain I/O pins (I2C):
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [lpc11u6x-pinctrl.h](lpc11u6x-pinctrl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

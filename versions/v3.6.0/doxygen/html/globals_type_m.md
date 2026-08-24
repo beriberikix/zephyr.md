@@ -54,4 +54,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - mqtt\_sn\_evt\_cb\_t : [mqtt\_sn.h](group__mqtt__sn__socket.md#gaecd8b966f3e2112261993f8a2cd5c94a)
 - msi\_vector\_t : [msi.h](group__pcie__host__msi__interface.md#ga9ede6a7a472ee62f0975256a1b5f1231)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

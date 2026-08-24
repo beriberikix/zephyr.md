@@ -28,7 +28,7 @@ Note
 
 This configuration is not supported by Arduino.
 
-![Arduino Due](../../../../_images/arduino_due.jpg)
+![Arduino Due](https://docs.zephyrproject.org/3.6.0/_images/arduino_due.jpg)
 
 ## Hardware
 

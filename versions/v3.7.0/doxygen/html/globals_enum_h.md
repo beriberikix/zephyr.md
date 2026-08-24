@@ -35,4 +35,4 @@ Here is a list of all enums with links to the files they belong to:
 - http\_resource\_type : [server.h](group__http__server.md#ga23d0077fb99827b25491111bd74d00af)
 - http\_status : [status.h](group__http__status__codes.md#gabc3b93f68c8bdd857ad32913628dfa8d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

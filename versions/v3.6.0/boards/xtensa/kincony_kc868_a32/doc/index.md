@@ -29,7 +29,7 @@ The features include the following:
 - RESET and DOWNLOAD buttons
 - Powered by 12V DC
 
-![KINCONCY-KC868-A32](../../../../_images/kincony_kc868_a32.jpg)
+![KINCONCY-KC868-A32](https://docs.zephyrproject.org/3.6.0/_images/kincony_kc868_a32.jpg)
 
 KINCONCY-KC868-A32
 

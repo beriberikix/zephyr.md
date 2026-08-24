@@ -53,7 +53,7 @@ and the following devices:
 - HL7800
 - SD Card
 
-![MG100](../../../../_images/mg100.jpg)
+![MG100](https://docs.zephyrproject.org/3.6.0/_images/mg100.jpg)
 
 MG100 (450-00054-K1)
 

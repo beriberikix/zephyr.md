@@ -37,4 +37,4 @@ acpi.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [acpi](dir_f2ded791a217b06e39e85585c04864fa.md)
 - [acpi.h](dt-bindings_2acpi_2acpi_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -237,7 +237,7 @@ ACP 6.0 Xtensa Audio DSP
 
 Project ACRN
 
-![A picture of the ACRN hypervisor board](../_images/ACRN-Hybrid.jpg)
+![A picture of the ACRN hypervisor board](https://docs.zephyrproject.org/4.2.0/_images/ACRN-Hybrid.jpg)
 
 ACRN hypervisor
 
@@ -248,7 +248,7 @@ x86
 
 Project ACRN
 
-![A picture of the ACRN Hypervisor on ADL board](../_images/ACRN-Hybrid.jpg)
+![A picture of the ACRN Hypervisor on ADL board](https://docs.zephyrproject.org/4.2.0/_images/ACRN-Hybrid.jpg)
 
 ACRN Hypervisor on ADL
 
@@ -259,7 +259,7 @@ x86
 
 Project ACRN
 
-![A picture of the ACRN on EHL hypervisor board](../_images/ACRN-Hybrid.jpg)
+![A picture of the ACRN on EHL hypervisor board](https://docs.zephyrproject.org/4.2.0/_images/ACRN-Hybrid.jpg)
 
 ACRN on EHL hypervisor
 
@@ -270,7 +270,7 @@ x86
 
 Analog Devices, Inc.
 
-![A picture of the AD-APARD32690-SL board](../_images/apard32690_img.webp)
+![A picture of the AD-APARD32690-SL board](https://docs.zephyrproject.org/4.2.0/_images/apard32690_img.webp)
 
 AD-APARD32690-SL
 
@@ -281,7 +281,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the AD-SWIOT1L-SL board](../_images/ad_swiot1l_sl.webp)
+![A picture of the AD-SWIOT1L-SL board](https://docs.zephyrproject.org/4.2.0/_images/ad_swiot1l_sl.webp)
 
 AD-SWIOT1L-SL
 
@@ -292,7 +292,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit ESP32-S3 Reverse TFT Feather board](../_images/adafruit_feather_esp32s3_tft_reverse.webp)
+![A picture of the Adafruit ESP32-S3 Reverse TFT Feather board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s3_tft_reverse.webp)
 
 Adafruit ESP32-S3 Reverse TFT Feather
 
@@ -303,7 +303,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Feather ESP32S2 board](../_images/adafruit_feather_esp32s2.webp)
+![A picture of the Adafruit Feather ESP32S2 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2.webp)
 
 Adafruit Feather ESP32S2
 
@@ -314,7 +314,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Feather ESP32S2 TFT board](../_images/adafruit_feather_esp32s2_tft.webp)
+![A picture of the Adafruit Feather ESP32S2 TFT board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2_tft.webp)
 
 Adafruit Feather ESP32S2 TFT
 
@@ -325,7 +325,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Feather ESP32S2 TFT Reverse board](../_images/adafruit_feather_esp32s2_tft_reverse.webp)
+![A picture of the Adafruit Feather ESP32S2 TFT Reverse board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s2_tft_reverse.webp)
 
 Adafruit Feather ESP32S2 TFT Reverse
 
@@ -336,7 +336,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Feather ESP32S3 board](../_images/adafruit_feather_esp32s3.webp)
+![A picture of the Adafruit Feather ESP32S3 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s3.webp)
 
 Adafruit Feather ESP32S3
 
@@ -347,7 +347,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Feather ESP32S3 TFT board](../_images/adafruit_feather_esp32s3_tft.webp)
+![A picture of the Adafruit Feather ESP32S3 TFT board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_esp32s3_tft.webp)
 
 Adafruit Feather ESP32S3 TFT
 
@@ -358,7 +358,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit MacroPad RP2040 board](../_images/adafruit_macropad_rp2040.webp)
+![A picture of the Adafruit MacroPad RP2040 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_macropad_rp2040.webp)
 
 Adafruit MacroPad RP2040
 
@@ -369,7 +369,7 @@ arm
 
 Andes Technology Corporation
 
-![A picture of the ADP-XC7K AE350 board](../_images/adp_xc7k160.jpg)
+![A picture of the ADP-XC7K AE350 board](https://docs.zephyrproject.org/4.2.0/_images/adp_xc7k160.jpg)
 
 ADP-XC7K AE350
 
@@ -380,7 +380,7 @@ riscv
 
 Contextual Electronics
 
-![A picture of the Advanced BLE Cell board](../_images/contextualelectronics_abc.jpg)
+![A picture of the Advanced BLE Cell board](https://docs.zephyrproject.org/4.2.0/_images/contextualelectronics_abc.jpg)
 
 Advanced BLE Cell
 
@@ -391,7 +391,7 @@ arm
 
 96Boards
 
-![A picture of the Aerocore2 board](../_images/96b_aerocore2.jpg)
+![A picture of the Aerocore2 board](https://docs.zephyrproject.org/4.2.0/_images/96b_aerocore2.jpg)
 
 Aerocore2
 
@@ -420,7 +420,7 @@ arm64
 
 Ai-Thinker Co., Ltd.
 
-![A picture of the Ai-Thinker WB2-12F development board board](../_images/ai_wb2_12f.webp)
+![A picture of the Ai-Thinker WB2-12F development board board](https://docs.zephyrproject.org/4.2.0/_images/ai_wb2_12f.webp)
 
 Ai-Thinker WB2-12F development board
 
@@ -449,7 +449,7 @@ x86
 
 Raytac Corporation
 
-![A picture of the AN54L15Q-DB board](../_images/raytac_an54l15q_db.webp)
+![A picture of the AN54L15Q-DB board](https://docs.zephyrproject.org/4.2.0/_images/raytac_an54l15q_db.webp)
 
 AN54L15Q-DB
 
@@ -460,7 +460,7 @@ arm, riscv
 
 Raytac Corporation
 
-![A picture of the AN7002Q-DB-5340 board](../_images/raytac_an7002q_db_5340.webp)
+![A picture of the AN7002Q-DB-5340 board](https://docs.zephyrproject.org/4.2.0/_images/raytac_an7002q_db_5340.webp)
 
 AN7002Q-DB-5340
 
@@ -471,7 +471,7 @@ arm
 
 Ambiq Micro, Inc.
 
-![A picture of the Apollo3 Blue EVB board](../_images/apollo3-blue-soc-eval-board.jpg)
+![A picture of the Apollo3 Blue EVB board](https://docs.zephyrproject.org/4.2.0/_images/apollo3-blue-soc-eval-board.jpg)
 
 Apollo3 Blue EVB
 
@@ -482,7 +482,7 @@ arm
 
 Ambiq Micro, Inc.
 
-![A picture of the Apollo3 Blue Plus EVB board](../_images/apollo3-blue-plus-soc-eval-board.jpg)
+![A picture of the Apollo3 Blue Plus EVB board](https://docs.zephyrproject.org/4.2.0/_images/apollo3-blue-plus-soc-eval-board.jpg)
 
 Apollo3 Blue Plus EVB
 
@@ -493,7 +493,7 @@ arm
 
 Ambiq Micro, Inc.
 
-![A picture of the Apollo4 Blue Plus KXR EVB board](../_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
+![A picture of the Apollo4 Blue Plus KXR EVB board](https://docs.zephyrproject.org/4.2.0/_images/apollo4-blue-plus-kxr-soc-eval-board.jpg)
 
 Apollo4 Blue Plus KXR EVB
 
@@ -504,7 +504,7 @@ arm
 
 Ambiq Micro, Inc.
 
-![A picture of the Apollo4P EVB board](../_images/apollo4-plus-soc-eval-board.jpg)
+![A picture of the Apollo4P EVB board](https://docs.zephyrproject.org/4.2.0/_images/apollo4-plus-soc-eval-board.jpg)
 
 Apollo4P EVB
 
@@ -515,7 +515,7 @@ arm
 
 Ambiq Micro, Inc.
 
-![A picture of the Apollo510 SOC Evaluation Board board](../_images/apollo510-soc-eval-board.jpg)
+![A picture of the Apollo510 SOC Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/apollo510-soc-eval-board.jpg)
 
 Apollo510 SOC Evaluation Board
 
@@ -526,7 +526,7 @@ arm
 
 Synopsys, Inc.
 
-![A picture of the ARC EM Software Development Platform board](../_images/emsdp.jpg)
+![A picture of the ARC EM Software Development Platform board](https://docs.zephyrproject.org/4.2.0/_images/emsdp.jpg)
 
 ARC EM Software Development Platform
 
@@ -537,7 +537,7 @@ arc
 
 Synopsys, Inc.
 
-![A picture of the ARC EM Starter Kit board](../_images/em_starterkit.jpg)
+![A picture of the ARC EM Starter Kit board](https://docs.zephyrproject.org/4.2.0/_images/em_starterkit.jpg)
 
 ARC EM Starter Kit
 
@@ -548,7 +548,7 @@ arc
 
 Synopsys, Inc.
 
-![A picture of the ARC HS Development Kit board](../_images/hsdk.jpg)
+![A picture of the ARC HS Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/hsdk.jpg)
 
 ARC HS Development Kit
 
@@ -559,7 +559,7 @@ arc
 
 Synopsys, Inc.
 
-![A picture of the ARC HS4x/HS4xD Development Kit board](../_images/hsdk4xd.jpg)
+![A picture of the ARC HS4x/HS4xD Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/hsdk4xd.jpg)
 
 ARC HS4x/HS4xD Development Kit
 
@@ -570,7 +570,7 @@ arc
 
 Synopsys, Inc.
 
-![A picture of the ARC IoT Development Kit board](../_images/iotdk.jpg)
+![A picture of the ARC IoT Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/iotdk.jpg)
 
 ARC IoT Development Kit
 
@@ -590,7 +590,7 @@ arc
 
 Arduino
 
-![A picture of the Arduino Due board](../_images/arduino_due.jpg)
+![A picture of the Arduino Due board](https://docs.zephyrproject.org/4.2.0/_images/arduino_due.jpg)
 
 Arduino Due
 
@@ -601,7 +601,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino GIGA R1 WiFi board](../_images/arduino_giga_r1.jpg)
+![A picture of the Arduino GIGA R1 WiFi board](https://docs.zephyrproject.org/4.2.0/_images/arduino_giga_r1.jpg)
 
 Arduino GIGA R1 WiFi
 
@@ -612,7 +612,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino MKR Zero board](../_images/arduino_mkrzero.jpg)
+![A picture of the Arduino MKR Zero board](https://docs.zephyrproject.org/4.2.0/_images/arduino_mkrzero.jpg)
 
 Arduino MKR Zero
 
@@ -623,7 +623,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Nano 33 BLE (Sense) board](../_images/arduino_nano_33_ble_sense.jpg)
+![A picture of the Arduino Nano 33 BLE (Sense) board](https://docs.zephyrproject.org/4.2.0/_images/arduino_nano_33_ble_sense.jpg)
 
 Arduino Nano 33 BLE (Sense)
 
@@ -634,7 +634,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Nano 33 IOT board](../_images/nano_33_iot.jpg)
+![A picture of the Arduino Nano 33 IOT board](https://docs.zephyrproject.org/4.2.0/_images/nano_33_iot.jpg)
 
 Arduino Nano 33 IOT
 
@@ -645,7 +645,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Nano Matter board](../_images/nano_matter.webp)
+![A picture of the Arduino Nano Matter board](https://docs.zephyrproject.org/4.2.0/_images/nano_matter.webp)
 
 Arduino Nano Matter
 
@@ -656,7 +656,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Nicla Sense ME board](../_images/arduino_nicla_sense_me.jpg)
+![A picture of the Arduino Nicla Sense ME board](https://docs.zephyrproject.org/4.2.0/_images/arduino_nicla_sense_me.jpg)
 
 Arduino Nicla Sense ME
 
@@ -667,7 +667,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Nicla Vision board](../_images/arduino_nicla_vision.webp)
+![A picture of the Arduino Nicla Vision board](https://docs.zephyrproject.org/4.2.0/_images/arduino_nicla_vision.webp)
 
 Arduino Nicla Vision
 
@@ -678,7 +678,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino OPTA board](../_images/arduino_opta.jpeg)
+![A picture of the Arduino OPTA board](https://docs.zephyrproject.org/4.2.0/_images/arduino_opta.jpeg)
 
 Arduino OPTA
 
@@ -689,7 +689,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Portenta C33 board](../_images/portenta_c33.webp)
+![A picture of the Arduino Portenta C33 board](https://docs.zephyrproject.org/4.2.0/_images/portenta_c33.webp)
 
 Arduino Portenta C33
 
@@ -700,7 +700,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino Portenta H7 board](../_images/arduino_portenta_h7.jpeg)
+![A picture of the Arduino Portenta H7 board](https://docs.zephyrproject.org/4.2.0/_images/arduino_portenta_h7.jpeg)
 
 Arduino Portenta H7
 
@@ -711,7 +711,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino UNO R4 Minima/WiFi board](../_images/arduino_uno_r4_minima.webp)
+![A picture of the Arduino UNO R4 Minima/WiFi board](https://docs.zephyrproject.org/4.2.0/_images/arduino_uno_r4_minima.webp)
 
 Arduino UNO R4 Minima/WiFi
 
@@ -722,7 +722,7 @@ arm
 
 Arduino
 
-![A picture of the Arduino/Genuino Zero board](../_images/arduino_zero.jpg)
+![A picture of the Arduino/Genuino Zero board](https://docs.zephyrproject.org/4.2.0/_images/arduino_zero.jpg)
 
 Arduino/Genuino Zero
 
@@ -733,7 +733,7 @@ arm
 
 Particle.io
 
-![A picture of the Argon board](../_images/particle_argon.jpg)
+![A picture of the Argon board](https://docs.zephyrproject.org/4.2.0/_images/particle_argon.jpg)
 
 Argon
 
@@ -744,7 +744,7 @@ arm
 
 96Boards
 
-![A picture of the Argonkey board](../_images/96b_argonkey.jpg)
+![A picture of the Argonkey board](https://docs.zephyrproject.org/4.2.0/_images/96b_argonkey.jpg)
 
 Argonkey
 
@@ -764,7 +764,7 @@ arm64
 
 Shanghai Ruiside Electronic Technology Co., Ltd.
 
-![A picture of the ART-Pi2 board](../_images/art_pi2.webp)
+![A picture of the ART-Pi2 board](https://docs.zephyrproject.org/4.2.0/_images/art_pi2.webp)
 
 ART-Pi2
 
@@ -775,7 +775,7 @@ arm
 
 Other/Unknown
 
-![A picture of the Arturo182 Serpente board](../_images/serpente.jpg)
+![A picture of the Arturo182 Serpente board](https://docs.zephyrproject.org/4.2.0/_images/serpente.jpg)
 
 Arturo182 Serpente
 
@@ -786,7 +786,7 @@ arm
 
 Digilent, Inc.
 
-![A picture of the Arty board](../_images/arty_a7-35.jpg)
+![A picture of the Arty board](https://docs.zephyrproject.org/4.2.0/_images/arty_a7-35.jpg)
 
 Arty
 
@@ -797,7 +797,7 @@ arm
 
 ASPEED Technology Inc.
 
-![A picture of the AST1030_EVB board](../_images/ast1030_evb.jpg)
+![A picture of the AST1030_EVB board](https://docs.zephyrproject.org/4.2.0/_images/ast1030_evb.jpg)
 
 AST1030\_EVB
 
@@ -808,7 +808,7 @@ arm
 
 M5Stack
 
-![A picture of the ATOM Lite board](../_images/m5stack_atom_lite.webp)
+![A picture of the ATOM Lite board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_atom_lite.webp)
 
 ATOM Lite
 
@@ -819,7 +819,7 @@ xtensa
 
 M5Stack
 
-![A picture of the AtomS3 board](../_images/m5stack_atoms3.webp)
+![A picture of the AtomS3 board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_atoms3.webp)
 
 AtomS3
 
@@ -830,7 +830,7 @@ xtensa
 
 M5Stack
 
-![A picture of the AtomS3 Lite board](../_images/m5stack_atoms3_lite.webp)
+![A picture of the AtomS3 Lite board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_atoms3_lite.webp)
 
 AtomS3 Lite
 
@@ -841,7 +841,7 @@ xtensa
 
 96Boards
 
-![A picture of the Avenger96 board](../_images/96b_avenger96.jpg)
+![A picture of the Avenger96 board](https://docs.zephyrproject.org/4.2.0/_images/96b_avenger96.jpg)
 
 Avenger96
 
@@ -852,7 +852,7 @@ arm
 
 Shanghai MXCHIP Information Technology Co., Ltd.
 
-![A picture of the AZ3166 MXChip IoT DevKit board](../_images/az3166-iotdevkit.webp)
+![A picture of the AZ3166 MXChip IoT DevKit board](https://docs.zephyrproject.org/4.2.0/_images/az3166-iotdevkit.webp)
 
 AZ3166 MXChip IoT DevKit
 
@@ -863,7 +863,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the B-G474E-DPOW1 Discovery board](../_images/b_g474e_dpow1.jpg)
+![A picture of the B-G474E-DPOW1 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/b_g474e_dpow1.jpg)
 
 B-G474E-DPOW1 Discovery
 
@@ -874,7 +874,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the B-L072Z-LRWAN1 Discovery kit board](../_images/b_l072z_lrwan1.jpg)
+![A picture of the B-L072Z-LRWAN1 Discovery kit board](https://docs.zephyrproject.org/4.2.0/_images/b_l072z_lrwan1.jpg)
 
 B-L072Z-LRWAN1 Discovery kit
 
@@ -885,7 +885,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the B-L4S5I-IOT01A Discovery kit board](../_images/b-l4s5i_iot01a.jpg)
+![A picture of the B-L4S5I-IOT01A Discovery kit board](https://docs.zephyrproject.org/4.2.0/_images/b-l4s5i_iot01a.jpg)
 
 B-L4S5I-IOT01A Discovery kit
 
@@ -896,7 +896,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the B-U585I-IOT02A Discovery kit board](../_images/b-u585i-iot02a.jpg)
+![A picture of the B-U585I-IOT02A Discovery kit board](https://docs.zephyrproject.org/4.2.0/_images/b-u585i-iot02a.jpg)
 
 B-U585I-IOT02A Discovery kit
 
@@ -943,7 +943,7 @@ arm64, arm
 
 BeagleBoard.org Foundation
 
-![A picture of the BeagleBone AI-64 board](../_images/beaglebone_ai_64.webp)
+![A picture of the BeagleBone AI-64 board](https://docs.zephyrproject.org/4.2.0/_images/beaglebone_ai_64.webp)
 
 BeagleBone AI-64
 
@@ -954,7 +954,7 @@ arm
 
 BeagleBoard.org Foundation
 
-![A picture of the BeagleConnect Freedom board](../_images/beagleconnect_freedom.webp)
+![A picture of the BeagleConnect Freedom board](https://docs.zephyrproject.org/4.2.0/_images/beagleconnect_freedom.webp)
 
 BeagleConnect Freedom
 
@@ -965,7 +965,7 @@ arm
 
 BeagleBoard.org Foundation
 
-![A picture of the BeaglePlay (CC1352) board](../_images/beagle_play.webp)
+![A picture of the BeaglePlay (CC1352) board](https://docs.zephyrproject.org/4.2.0/_images/beagle_play.webp)
 
 BeaglePlay (CC1352)
 
@@ -976,7 +976,7 @@ arm
 
 BeagleBoard.org Foundation
 
-![A picture of the BeagleV®-Fire board](../_images/BeagleV-Fire-Front-Annotated-768x432.webp)
+![A picture of the BeagleV®-Fire board](https://docs.zephyrproject.org/4.2.0/_images/BeagleV-Fire-Front-Annotated-768x432.webp)
 
 BeagleV®-Fire
 
@@ -987,7 +987,7 @@ riscv
 
 BeagleBoard.org Foundation
 
-![A picture of the BeagleY-AI board](../_images/beagley_ai.webp)
+![A picture of the BeagleY-AI board](https://docs.zephyrproject.org/4.2.0/_images/beagley_ai.webp)
 
 BeagleY-AI
 
@@ -998,7 +998,7 @@ arm
 
 Ezurio
 
-![A picture of the BL5340 DVK board](../_images/bl5340_dvk_top.jpg)
+![A picture of the BL5340 DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl5340_dvk_top.jpg)
 
 BL5340 DVK
 
@@ -1009,7 +1009,7 @@ arm
 
 Ezurio
 
-![A picture of the BL54L15 DVK board](../_images/bl54l15_dvk.webp)
+![A picture of the BL54L15 DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl54l15_dvk.webp)
 
 BL54L15 DVK
 
@@ -1020,7 +1020,7 @@ arm, riscv
 
 Ezurio
 
-![A picture of the BL54L15u DVK board](../_images/bl54l15u_dvk.webp)
+![A picture of the BL54L15u DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl54l15u_dvk.webp)
 
 BL54L15u DVK
 
@@ -1031,7 +1031,7 @@ arm, riscv
 
 Bouffalo Lab (Nanjing) Co., Ltd.
 
-![A picture of the BL604E IOT DVK development board board](../_images/bl_604e.webp)
+![A picture of the BL604E IOT DVK development board board](https://docs.zephyrproject.org/4.2.0/_images/bl_604e.webp)
 
 BL604E IOT DVK development board
 
@@ -1042,7 +1042,7 @@ riscv
 
 Ezurio
 
-![A picture of the BL652 DVK board](../_images/bl652_dvk.jpg)
+![A picture of the BL652 DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl652_dvk.jpg)
 
 BL652 DVK
 
@@ -1053,7 +1053,7 @@ arm
 
 Ezurio
 
-![A picture of the BL653 DVK board](../_images/bl653_dvk.jpg)
+![A picture of the BL653 DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl653_dvk.jpg)
 
 BL653 DVK
 
@@ -1064,7 +1064,7 @@ arm
 
 Ezurio
 
-![A picture of the BL654 DVK board](../_images/bl654_dvk.jpg)
+![A picture of the BL654 DVK board](https://docs.zephyrproject.org/4.2.0/_images/bl654_dvk.jpg)
 
 BL654 DVK
 
@@ -1075,7 +1075,7 @@ arm
 
 Ezurio
 
-![A picture of the BL654 Sensor Board board](../_images/bl654_sensor_board.jpg)
+![A picture of the BL654 Sensor Board board](https://docs.zephyrproject.org/4.2.0/_images/bl654_sensor_board.jpg)
 
 BL654 Sensor Board
 
@@ -1086,7 +1086,7 @@ arm
 
 Ezurio
 
-![A picture of the BL654 USB (451-00004) board](../_images/bl654_usb.jpg)
+![A picture of the BL654 USB (451-00004) board](https://docs.zephyrproject.org/4.2.0/_images/bl654_usb.jpg)
 
 BL654 USB (451-00004)
 
@@ -1097,7 +1097,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V1.2 board](../_images/Blackpill_Pinout.jpg)
+![A picture of the Black Pill V1.2 board](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout.jpg)
 
 Black Pill V1.2
 
@@ -1108,7 +1108,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V2.0 board](../_images/Blackpill_Pinout.jpg)
+![A picture of the Black Pill V2.0 board](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout.jpg)
 
 Black Pill V2.0
 
@@ -1119,7 +1119,7 @@ arm
 
 WeAct Studio
 
-![A picture of the Black Pill V3.0 board](../_images/Blackpill_Pinout.jpg)
+![A picture of the Black Pill V3.0 board](https://docs.zephyrproject.org/4.2.0/_images/Blackpill_Pinout.jpg)
 
 Black Pill V3.0
 
@@ -1130,7 +1130,7 @@ arm
 
 Other/Unknown
 
-![A picture of the Black STM32 F407VE Development Board board](../_images/black_f407ve.jpg)
+![A picture of the Black STM32 F407VE Development Board board](https://docs.zephyrproject.org/4.2.0/_images/black_f407ve.jpg)
 
 Black STM32 F407VE Development Board
 
@@ -1141,7 +1141,7 @@ arm
 
 Other/Unknown
 
-![A picture of the Black STM32 F407ZG Pro Development Board board](../_images/black_f407zg_pro.jpg)
+![A picture of the Black STM32 F407ZG Pro Development Board board](https://docs.zephyrproject.org/4.2.0/_images/black_f407zg_pro.jpg)
 
 Black STM32 F407ZG Pro Development Board
 
@@ -1152,7 +1152,7 @@ arm
 
 Waveshare Electronics
 
-![A picture of the BLE400 board](../_images/nrf51_ble400.jpg)
+![A picture of the BLE400 board](https://docs.zephyrproject.org/4.2.0/_images/nrf51_ble400.jpg)
 
 BLE400
 
@@ -1163,7 +1163,7 @@ arm
 
 Blue Clover Devices
 
-![A picture of the Blue Clover PLT Demo V2 nRF52832 board](../_images/blueclover_plt_demo_v2.jpg)
+![A picture of the Blue Clover PLT Demo V2 nRF52832 board](https://docs.zephyrproject.org/4.2.0/_images/blueclover_plt_demo_v2.jpg)
 
 Blue Clover PLT Demo V2 nRF52832
 
@@ -1174,7 +1174,7 @@ arm
 
 WeAct Studio
 
-![A picture of the BluePill Plus CH32V203 board](../_images/bluepillplus_ch32v203.webp)
+![A picture of the BluePill Plus CH32V203 board](https://docs.zephyrproject.org/4.2.0/_images/bluepillplus_ch32v203.webp)
 
 BluePill Plus CH32V203
 
@@ -1185,7 +1185,7 @@ riscv
 
 Particle.io
 
-![A picture of the Boron board](../_images/particle_boron.jpg)
+![A picture of the Boron board](https://docs.zephyrproject.org/4.2.0/_images/particle_boron.jpg)
 
 Boron
 
@@ -1196,7 +1196,7 @@ arm
 
 bytesatwork AG
 
-![A picture of the byteSENSI-L board](../_images/byteSENSI-L.jpg)
+![A picture of the byteSENSI-L board](https://docs.zephyrproject.org/4.2.0/_images/byteSENSI-L.jpg)
 
 byteSENSI-L
 
@@ -1207,7 +1207,7 @@ arm
 
 Other/Unknown
 
-![A picture of the CANbardo board](../_images/canbardo.webp)
+![A picture of the CANbardo board](https://docs.zephyrproject.org/4.2.0/_images/canbardo.webp)
 
 CANbardo
 
@@ -1218,7 +1218,7 @@ arm
 
 Other/Unknown
 
-![A picture of the candleLight board](../_images/candlelight.webp)
+![A picture of the candleLight board](https://docs.zephyrproject.org/4.2.0/_images/candlelight.webp)
 
 candleLight
 
@@ -1229,7 +1229,7 @@ arm
 
 Other/Unknown
 
-![A picture of the candleLightFD board](../_images/candlelightfd.webp)
+![A picture of the candleLightFD board](https://docs.zephyrproject.org/4.2.0/_images/candlelightfd.webp)
 
 candleLightFD
 
@@ -1240,7 +1240,7 @@ arm
 
 96Boards
 
-![A picture of the Carbon board](../_images/96b_carbon.jpg)
+![A picture of the Carbon board](https://docs.zephyrproject.org/4.2.0/_images/96b_carbon.jpg)
 
 Carbon
 
@@ -1251,7 +1251,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC1352P1 LaunchXL board](../_images/cc1352p1_launchxl.jpg)
+![A picture of the CC1352P1 LaunchXL board](https://docs.zephyrproject.org/4.2.0/_images/cc1352p1_launchxl.jpg)
 
 CC1352P1 LaunchXL
 
@@ -1262,7 +1262,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC1352P7 LaunchPad board](../_images/lp-cc1352p7-top.jpg)
+![A picture of the CC1352P7 LaunchPad board](https://docs.zephyrproject.org/4.2.0/_images/lp-cc1352p7-top.jpg)
 
 CC1352P7 LaunchPad
 
@@ -1273,7 +1273,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC1352R SensorTag board](../_images/cc1352r_sensortag.jpg)
+![A picture of the CC1352R SensorTag board](https://docs.zephyrproject.org/4.2.0/_images/cc1352r_sensortag.jpg)
 
 CC1352R SensorTag
 
@@ -1284,7 +1284,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC1352R1 LaunchXL board](../_images/cc1352r1_launchxl.jpg)
+![A picture of the CC1352R1 LaunchXL board](https://docs.zephyrproject.org/4.2.0/_images/cc1352r1_launchxl.jpg)
 
 CC1352R1 LaunchXL
 
@@ -1295,7 +1295,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC2340R5 LaunchPad board](../_images/lp_em_cc2340r5.webp)
+![A picture of the CC2340R5 LaunchPad board](https://docs.zephyrproject.org/4.2.0/_images/lp_em_cc2340r5.webp)
 
 CC2340R5 LaunchPad
 
@@ -1306,7 +1306,7 @@ arm
 
 Texas Instruments
 
-![A picture of the CC26x2R1 LaunchXL board](../_images/cc26x2r1_launchxl.jpg)
+![A picture of the CC26x2R1 LaunchXL board](https://docs.zephyrproject.org/4.2.0/_images/cc26x2r1_launchxl.jpg)
 
 CC26x2R1 LaunchXL
 
@@ -1335,7 +1335,7 @@ arm
 
 MikroElektronika d.o.o.
 
-![A picture of the Clicker 2 for STM32 board](../_images/clicker-2-stm32f4-thickbox_default-2.jpg)
+![A picture of the Clicker 2 for STM32 board](https://docs.zephyrproject.org/4.2.0/_images/clicker-2-stm32f4-thickbox_default-2.jpg)
 
 Clicker 2 for STM32
 
@@ -1346,7 +1346,7 @@ arm
 
 MikroElektronika d.o.o.
 
-![A picture of the Clicker RA4M1 board](../_images/mikroe_clicker_ra4m1.jpg)
+![A picture of the Clicker RA4M1 board](https://docs.zephyrproject.org/4.2.0/_images/mikroe_clicker_ra4m1.jpg)
 
 Clicker RA4M1
 
@@ -1357,7 +1357,7 @@ arm
 
 M5Stack
 
-![A picture of the Core2 board](../_images/m5stack_core2.webp)
+![A picture of the Core2 board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_core2.webp)
 
 Core2
 
@@ -1368,7 +1368,7 @@ xtensa
 
 M5Stack
 
-![A picture of the CoreS3 board](../_images/m5stack_cores3.webp)
+![A picture of the CoreS3 board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_cores3.webp)
 
 CoreS3
 
@@ -1379,7 +1379,7 @@ xtensa
 
 SEGGER Microcontroller GmbH
 
-![A picture of the Cortex-M Trace Reference Board V1.2 board](../_images/segger_trb_stm32f407.jpg)
+![A picture of the Cortex-M Trace Reference Board V1.2 board](https://docs.zephyrproject.org/4.2.0/_images/segger_trb_stm32f407.jpg)
 
 Cortex-M Trace Reference Board V1.2
 
@@ -1399,7 +1399,7 @@ arm
 
 CTHINGS.CO
 
-![A picture of the CTHINGS.CO Connectivity Card board](../_images/ctcc_nrf52840_mpcie.webp)
+![A picture of the CTHINGS.CO Connectivity Card board](https://docs.zephyrproject.org/4.2.0/_images/ctcc_nrf52840_mpcie.webp)
 
 CTHINGS.CO Connectivity Card
 
@@ -1410,7 +1410,7 @@ arm
 
 OpenHW Group
 
-![A picture of the cv32a6_genesys_2 board](../_images/cv32a6_genesys_2.webp)
+![A picture of the cv32a6_genesys_2 board](https://docs.zephyrproject.org/4.2.0/_images/cv32a6_genesys_2.webp)
 
 cv32a6\_genesys\_2
 
@@ -1421,7 +1421,7 @@ riscv
 
 OpenHW Group
 
-![A picture of the cv64a6_genesys_2 board](../_images/cv64a6_genesys_2.webp)
+![A picture of the cv64a6_genesys_2 board](https://docs.zephyrproject.org/4.2.0/_images/cv64a6_genesys_2.webp)
 
 cv64a6\_genesys\_2
 
@@ -1432,7 +1432,7 @@ riscv
 
 Croxel, Inc.
 
-![A picture of the CX1825 nRF52840 board](../_images/cx1825_nrf52840.jpg)
+![A picture of the CX1825 nRF52840 board](https://docs.zephyrproject.org/4.2.0/_images/cx1825_nrf52840.jpg)
 
 CX1825 nRF52840
 
@@ -1443,7 +1443,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the CY8CPROTO-062-4343W board](../_images/board.jpg)
+![A picture of the CY8CPROTO-062-4343W board](https://docs.zephyrproject.org/4.2.0/_images/board.jpg)
 
 CY8CPROTO-062-4343W
 
@@ -1454,7 +1454,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the CY8CPROTO-063-BLE board](../_images/cy8cproto-063-ble.jpg)
+![A picture of the CY8CPROTO-063-BLE board](https://docs.zephyrproject.org/4.2.0/_images/cy8cproto-063-ble.jpg)
 
 CY8CPROTO-063-BLE
 
@@ -1465,7 +1465,7 @@ arm
 
 Intel Corporation
 
-![A picture of the Cyclone® V SoC Development Kit board](../_images/cyclonev_socdk.jpg)
+![A picture of the Cyclone® V SoC Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/cyclonev_socdk.jpg)
 
 Cyclone® V SoC Development Kit
 
@@ -1476,7 +1476,7 @@ arm
 
 Blues Wireless
 
-![A picture of the Cygnet board](../_images/cygnet.webp)
+![A picture of the Cygnet board](https://docs.zephyrproject.org/4.2.0/_images/cygnet.webp)
 
 Cygnet
 
@@ -1487,7 +1487,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the CYW920829M2EVK-02 board](../_images/cyw920829m2evk_02.webp)
+![A picture of the CYW920829M2EVK-02 board](https://docs.zephyrproject.org/4.2.0/_images/cyw920829m2evk_02.webp)
 
 CYW920829M2EVK-02
 
@@ -1498,7 +1498,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the DA14695 Development Kit USB board](../_images/da14695-00hqdevkt-u-usb-board.jpg)
+![A picture of the DA14695 Development Kit USB board](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-u-usb-board.jpg)
 
 DA14695 Development Kit USB
 
@@ -1509,7 +1509,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the DA1469x Development Kit Pro board](../_images/da14695-00hqdevkt-board.jpg)
+![A picture of the DA1469x Development Kit Pro board](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-board.jpg)
 
 DA1469x Development Kit Pro
 
@@ -1520,7 +1520,7 @@ arm
 
 Variscite Ltd.
 
-![A picture of the DART-MX8M-PLUS board](../_images/imx8mp_var_dart.webp)
+![A picture of the DART-MX8M-PLUS board](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_dart.webp)
 
 DART-MX8M-PLUS
 
@@ -1531,7 +1531,7 @@ arm64, arm
 
 Variscite Ltd.
 
-![A picture of the DART-MX93 board](../_images/imx93_var_dart.webp)
+![A picture of the DART-MX93 board](https://docs.zephyrproject.org/4.2.0/_images/imx93_var_dart.webp)
 
 DART-MX93
 
@@ -1542,7 +1542,7 @@ arm64, arm
 
 ARM Ltd.
 
-![A picture of the Debug with Arm DS board](../_images/create-new-configuration-database_shown-in-project-explorer.jpg)
+![A picture of the Debug with Arm DS board](https://docs.zephyrproject.org/4.2.0/_images/create-new-configuration-database_shown-in-project-explorer.jpg)
 
 Debug with Arm DS
 
@@ -1571,7 +1571,7 @@ arm
 
 Atmark Techno, Inc.
 
-![A picture of the Degu Evaluation Kit board](../_images/degu_evk.jpg)
+![A picture of the Degu Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/degu_evk.jpg)
 
 Degu Evaluation Kit
 
@@ -1582,7 +1582,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Disco L475 IOT01 (B-L475E-IOT01A) board](../_images/disco_l475_iot1.jpg)
+![A picture of the Disco L475 IOT01 (B-L475E-IOT01A) board](https://docs.zephyrproject.org/4.2.0/_images/disco_l475_iot1.jpg)
 
 Disco L475 IOT01 (B-L475E-IOT01A)
 
@@ -1602,7 +1602,7 @@ arm
 
 Doctors of Intelligence & Technology
 
-![A picture of the DT-BL10 coexistence Module Development Kit board](../_images/dt_bl10_devkit.webp)
+![A picture of the DT-BL10 coexistence Module Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/dt_bl10_devkit.webp)
 
 DT-BL10 coexistence Module Development Kit
 
@@ -1613,7 +1613,7 @@ riscv
 
 Chengdu Ebyte Electronic Technology
 
-![A picture of the E73-TBB board](../_images/ebyte_e73_tbb_nrf52832.jpg)
+![A picture of the E73-TBB board](https://docs.zephyrproject.org/4.2.0/_images/ebyte_e73_tbb_nrf52832.jpg)
 
 E73-TBB
 
@@ -1633,7 +1633,7 @@ arm64
 
 Khadas
 
-![A picture of the Edge2 board](../_images/khadas_edge2.jpg)
+![A picture of the Edge2 board](https://docs.zephyrproject.org/4.2.0/_images/khadas_edge2.jpg)
 
 Edge2
 
@@ -1644,7 +1644,7 @@ arm64
 
 Silicon Laboratories
 
-![A picture of the EFM32 Giant Gecko 11 (SLSTK3701A) board](../_images/slstk3701a.jpg)
+![A picture of the EFM32 Giant Gecko 11 (SLSTK3701A) board](https://docs.zephyrproject.org/4.2.0/_images/slstk3701a.jpg)
 
 EFM32 Giant Gecko 11 (SLSTK3701A)
 
@@ -1655,7 +1655,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFM32 Happy Gecko (SLSTK3400A) board](../_images/slstk3400a.jpg)
+![A picture of the EFM32 Happy Gecko (SLSTK3400A) board](https://docs.zephyrproject.org/4.2.0/_images/slstk3400a.jpg)
 
 EFM32 Happy Gecko (SLSTK3400A)
 
@@ -1666,7 +1666,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFM32 Pearl Gecko (SLSTK3401A) board](../_images/slstk3401a.jpg)
+![A picture of the EFM32 Pearl Gecko (SLSTK3401A) board](https://docs.zephyrproject.org/4.2.0/_images/slstk3401a.jpg)
 
 EFM32 Pearl Gecko (SLSTK3401A)
 
@@ -1677,7 +1677,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFM32 Pearl Gecko 12 (SLSTK3402A) board](../_images/slstk3402a.jpg)
+![A picture of the EFM32 Pearl Gecko 12 (SLSTK3402A) board](https://docs.zephyrproject.org/4.2.0/_images/slstk3402a.jpg)
 
 EFM32 Pearl Gecko 12 (SLSTK3402A)
 
@@ -1688,7 +1688,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFM32 Wonder Gecko (EFM32WG-STK3800) board](../_images/efm32wg_stk3800.jpg)
+![A picture of the EFM32 Wonder Gecko (EFM32WG-STK3800) board](https://docs.zephyrproject.org/4.2.0/_images/efm32wg_stk3800.jpg)
 
 EFM32 Wonder Gecko (EFM32WG-STK3800)
 
@@ -1699,7 +1699,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFM32GG12 Thunderboard (SLTB009A) board](../_images/sltb009a.jpg)
+![A picture of the EFM32GG12 Thunderboard (SLTB009A) board](https://docs.zephyrproject.org/4.2.0/_images/sltb009a.jpg)
 
 EFM32GG12 Thunderboard (SLTB009A)
 
@@ -1710,7 +1710,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32BG13 2.4 GHz 10 dBm (SLWRB4104A) board](../_images/efr32bg13-slwrb4104a.jpg)
+![A picture of the EFR32BG13 2.4 GHz 10 dBm (SLWRB4104A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32bg13-slwrb4104a.jpg)
 
 EFR32BG13 2.4 GHz 10 dBm (SLWRB4104A)
 
@@ -1721,7 +1721,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32BG22 Thunderboard (SLTB010A) board](../_images/sltb010a.jpg)
+![A picture of the EFR32BG22 Thunderboard (SLTB010A) board](https://docs.zephyrproject.org/4.2.0/_images/sltb010a.jpg)
 
 EFR32BG22 Thunderboard (SLTB010A)
 
@@ -1732,7 +1732,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32FG1 2400/868 MHz 13 dBm Dual Band (SLWRB4250B) board](../_images/efr32fg1-slwrb4250b.jpg)
+![A picture of the EFR32FG1 2400/868 MHz 13 dBm Dual Band (SLWRB4250B) board](https://docs.zephyrproject.org/4.2.0/_images/efr32fg1-slwrb4250b.jpg)
 
 EFR32FG1 2400/868 MHz 13 dBm Dual Band (SLWRB4250B)
 
@@ -1743,7 +1743,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32FG13 2400/915 MHz 19 dBm Dual Band (SLWRB4255A) board](../_images/efr32fg13-slwrb4255a.jpg)
+![A picture of the EFR32FG13 2400/915 MHz 19 dBm Dual Band (SLWRB4255A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32fg13-slwrb4255a.jpg)
 
 EFR32FG13 2400/915 MHz 19 dBm Dual Band (SLWRB4255A)
 
@@ -1754,7 +1754,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32MG12 2.4 GHz 19 dBm (SLWRB4161A) board](../_images/efr32mg12-slwrb4161a.jpeg)
+![A picture of the EFR32MG12 2.4 GHz 19 dBm (SLWRB4161A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32mg12-slwrb4161a.jpeg)
 
 EFR32MG12 2.4 GHz 19 dBm (SLWRB4161A)
 
@@ -1765,7 +1765,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32MG12 2400/868-915 MHz 19 dBm Dual Band (SLWRB4170A) board](../_images/efr32mg12-slwrb4170a.jpg)
+![A picture of the EFR32MG12 2400/868-915 MHz 19 dBm Dual Band (SLWRB4170A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32mg12-slwrb4170a.jpg)
 
 EFR32MG12 2400/868-915 MHz 19 dBm Dual Band (SLWRB4170A)
 
@@ -1776,7 +1776,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32MG12 Thunderboard (SLTB004A) board](../_images/sltb004a.jpg)
+![A picture of the EFR32MG12 Thunderboard (SLTB004A) board](https://docs.zephyrproject.org/4.2.0/_images/sltb004a.jpg)
 
 EFR32MG12 Thunderboard (SLTB004A)
 
@@ -1787,7 +1787,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG21 2.4 GHz 20 dBm (SLWRB4180A) board](../_images/efr32mg21-slwrb4180a.jpg)
+![A picture of the EFR32xG21 2.4 GHz 20 dBm (SLWRB4180A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32mg21-slwrb4180a.jpg)
 
 EFR32xG21 2.4 GHz 20 dBm (SLWRB4180A)
 
@@ -1798,7 +1798,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG21 2.4 GHz 20 dBm (SLWRB4180B) board](../_images/efr32mg21-slwrb4180b.webp)
+![A picture of the EFR32xG21 2.4 GHz 20 dBm (SLWRB4180B) board](https://docs.zephyrproject.org/4.2.0/_images/efr32mg21-slwrb4180b.webp)
 
 EFR32xG21 2.4 GHz 20 dBm (SLWRB4180B)
 
@@ -1809,7 +1809,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG23 868-915 MHz 20 dBm (xG23-RB4210A) board](../_images/efr32zg23-xg23-rb4210a.jpg)
+![A picture of the EFR32xG23 868-915 MHz 20 dBm (xG23-RB4210A) board](https://docs.zephyrproject.org/4.2.0/_images/efr32zg23-xg23-rb4210a.jpg)
 
 EFR32xG23 868-915 MHz 20 dBm (xG23-RB4210A)
 
@@ -1820,7 +1820,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG24 2.4 GHz 20 dBm (xG24-RB4187C) board](../_images/efr32mg24-xg24-rb4187c.jpg)
+![A picture of the EFR32xG24 2.4 GHz 20 dBm (xG24-RB4187C) board](https://docs.zephyrproject.org/4.2.0/_images/efr32mg24-xg24-rb4187c.jpg)
 
 EFR32xG24 2.4 GHz 20 dBm (xG24-RB4187C)
 
@@ -1831,7 +1831,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG24 Dev Kit (xG24-DK2601B) board](../_images/xg24_dk2601b.jpg)
+![A picture of the EFR32xG24 Dev Kit (xG24-DK2601B) board](https://docs.zephyrproject.org/4.2.0/_images/xg24_dk2601b.jpg)
 
 EFR32xG24 Dev Kit (xG24-DK2601B)
 
@@ -1851,7 +1851,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the EFR32xG27 Dev Kit (xG27-DK2602A) board](../_images/xg27_dk2602a.png)
+![A picture of the EFR32xG27 Dev Kit (xG27-DK2602A) board](https://docs.zephyrproject.org/4.2.0/_images/xg27_dk2602a.png)
 
 EFR32xG27 Dev Kit (xG27-DK2602A)
 
@@ -1871,7 +1871,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the ek_ra2l1 board](../_images/ek_ra2l1.webp)
+![A picture of the ek_ra2l1 board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra2l1.webp)
 
 ek\_ra2l1
 
@@ -1918,7 +1918,7 @@ arm
 
 Espressif Systems
 
-![A picture of the ESP-WROVER-KIT board](../_images/esp_wrover_kit.jpg)
+![A picture of the ESP-WROVER-KIT board](https://docs.zephyrproject.org/4.2.0/_images/esp_wrover_kit.jpg)
 
 ESP-WROVER-KIT
 
@@ -1929,7 +1929,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-C3-DevKit-RUST board](../_images/esp32c3_rust.webp)
+![A picture of the ESP32-C3-DevKit-RUST board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_rust.webp)
 
 ESP32-C3-DevKit-RUST
 
@@ -1940,7 +1940,7 @@ riscv
 
 Espressif Systems
 
-![A picture of the ESP32-C3-DevKitC board](../_images/esp32c3_devkitc.webp)
+![A picture of the ESP32-C3-DevKitC board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_devkitc.webp)
 
 ESP32-C3-DevKitC
 
@@ -1951,7 +1951,7 @@ riscv
 
 Espressif Systems
 
-![A picture of the ESP32-C3-DevKitM board](../_images/esp32c3_devkitm.webp)
+![A picture of the ESP32-C3-DevKitM board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_devkitm.webp)
 
 ESP32-C3-DevKitM
 
@@ -1962,7 +1962,7 @@ riscv
 
 Other/Unknown
 
-![A picture of the ESP32-C3-SUPERMINI board](../_images/esp32c3_supermini.webp)
+![A picture of the ESP32-C3-SUPERMINI board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_supermini.webp)
 
 ESP32-C3-SUPERMINI
 
@@ -1973,7 +1973,7 @@ riscv
 
 Espressif Systems
 
-![A picture of the ESP32-C6-DevKitC board](../_images/esp32c6_devkitc.webp)
+![A picture of the ESP32-C6-DevKitC board](https://docs.zephyrproject.org/4.2.0/_images/esp32c6_devkitc.webp)
 
 ESP32-C6-DevKitC
 
@@ -1984,7 +1984,7 @@ riscv
 
 Espressif Systems
 
-![A picture of the ESP32-DevKitC board](../_images/esp32_devkitc_wrover.jpg)
+![A picture of the ESP32-DevKitC board](https://docs.zephyrproject.org/4.2.0/_images/esp32_devkitc_wrover.jpg)
 
 ESP32-DevKitC
 
@@ -1995,7 +1995,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-Ethernet-Kit board](../_images/esp32_ethernet_kit.jpg)
+![A picture of the ESP32-Ethernet-Kit board](https://docs.zephyrproject.org/4.2.0/_images/esp32_ethernet_kit.jpg)
 
 ESP32-Ethernet-Kit
 
@@ -2006,7 +2006,7 @@ xtensa
 
 OLIMEX Ltd.
 
-![A picture of the ESP32-EVB board](../_images/ESP32-EVB.jpg)
+![A picture of the ESP32-EVB board](https://docs.zephyrproject.org/4.2.0/_images/ESP32-EVB.jpg)
 
 ESP32-EVB
 
@@ -2017,7 +2017,7 @@ xtensa
 
 Franzininho
 
-![A picture of the ESP32-S2 Franzininho board](../_images/esp32_s2_franzininho.jpg)
+![A picture of the ESP32-S2 Franzininho board](https://docs.zephyrproject.org/4.2.0/_images/esp32_s2_franzininho.jpg)
 
 ESP32-S2 Franzininho
 
@@ -2028,7 +2028,7 @@ xtensa
 
 WEMOS Electronics
 
-![A picture of the ESP32-S2 Lolin Mini board](../_images/esp32_s2_lolin_mini.jpg)
+![A picture of the ESP32-S2 Lolin Mini board](https://docs.zephyrproject.org/4.2.0/_images/esp32_s2_lolin_mini.jpg)
 
 ESP32-S2 Lolin Mini
 
@@ -2039,7 +2039,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-S2-DevKitC board](../_images/esp32s2_devkitc.webp)
+![A picture of the ESP32-S2-DevKitC board](https://docs.zephyrproject.org/4.2.0/_images/esp32s2_devkitc.webp)
 
 ESP32-S2-DevKitC
 
@@ -2050,7 +2050,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-S2-Saola board](../_images/esp32s2_saola.webp)
+![A picture of the ESP32-S2-Saola board](https://docs.zephyrproject.org/4.2.0/_images/esp32s2_saola.webp)
 
 ESP32-S2-Saola
 
@@ -2061,7 +2061,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-S3-DevKitC board](../_images/esp32s3_devkitc.webp)
+![A picture of the ESP32-S3-DevKitC board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_devkitc.webp)
 
 ESP32-S3-DevKitC
 
@@ -2072,7 +2072,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-S3-DevKitM board](../_images/esp32s3_devkitm.webp)
+![A picture of the ESP32-S3-DevKitM board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_devkitm.webp)
 
 ESP32-S3-DevKitM
 
@@ -2083,7 +2083,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP32-S3-EYE board](../_images/esp32s3_eye.webp)
+![A picture of the ESP32-S3-EYE board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_eye.webp)
 
 ESP32-S3-EYE
 
@@ -2094,7 +2094,7 @@ xtensa
 
 Waveshare Electronics
 
-![A picture of the ESP32-S3-Matrix board](../_images/esp32s3_matrix.webp)
+![A picture of the ESP32-S3-Matrix board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_matrix.webp)
 
 ESP32-S3-Matrix
 
@@ -2105,7 +2105,7 @@ xtensa
 
 Waveshare Electronics
 
-![A picture of the ESP32-S3-Touch-LCD-1.28 board](../_images/esp32s3_touch_lcd_1_28.webp)
+![A picture of the ESP32-S3-Touch-LCD-1.28 board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_touch_lcd_1_28.webp)
 
 ESP32-S3-Touch-LCD-1.28
 
@@ -2116,7 +2116,7 @@ xtensa
 
 01Space
 
-![A picture of the ESP32C3 0.42 OLED board](../_images/esp32c3_042_oled.webp)
+![A picture of the ESP32C3 0.42 OLED board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_042_oled.webp)
 
 ESP32C3 0.42 OLED
 
@@ -2127,7 +2127,7 @@ riscv
 
 LuatOS Team
 
-![A picture of the ESP32C3_LUATOS_CORE board](../_images/esp32c3_luatos_core.jpg)
+![A picture of the ESP32C3_LUATOS_CORE board](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_luatos_core.jpg)
 
 ESP32C3\_LUATOS\_CORE
 
@@ -2138,7 +2138,7 @@ riscv
 
 LuatOS Team
 
-![A picture of the ESP32S3-Luatos-Core board](../_images/esp32s3_luatos_core.jpg)
+![A picture of the ESP32S3-Luatos-Core board](https://docs.zephyrproject.org/4.2.0/_images/esp32s3_luatos_core.jpg)
 
 ESP32S3-Luatos-Core
 
@@ -2149,7 +2149,7 @@ xtensa
 
 Espressif Systems
 
-![A picture of the ESP8684-DevKitM board](../_images/esp8684_devkitm.webp)
+![A picture of the ESP8684-DevKitM board](https://docs.zephyrproject.org/4.2.0/_images/esp8684_devkitm.webp)
 
 ESP8684-DevKitM
 
@@ -2160,7 +2160,7 @@ riscv
 
 Analog Devices, Inc.
 
-![A picture of the EVAL-ADIN1110EVB Evaluation board board](../_images/adi_eval_adin1110ebz.webp)
+![A picture of the EVAL-ADIN1110EVB Evaluation board board](https://docs.zephyrproject.org/4.2.0/_images/adi_eval_adin1110ebz.webp)
 
 EVAL-ADIN1110EVB Evaluation board
 
@@ -2171,7 +2171,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the EVAL-ADIN2111EVB Evaluation board board](../_images/adi_eval_adin2111ebz.webp)
+![A picture of the EVAL-ADIN2111EVB Evaluation board board](https://docs.zephyrproject.org/4.2.0/_images/adi_eval_adin2111ebz.webp)
 
 EVAL-ADIN2111EVB Evaluation board
 
@@ -2182,7 +2182,7 @@ arm
 
 u-blox
 
-![A picture of the EVK NINA-B11x board](../_images/EVK-NINA-B1.jpg)
+![A picture of the EVK NINA-B11x board](https://docs.zephyrproject.org/4.2.0/_images/EVK-NINA-B1.jpg)
 
 EVK NINA-B11x
 
@@ -2193,7 +2193,7 @@ arm
 
 u-blox
 
-![A picture of the EVK NINA-B40x board](../_images/EVK-NINA-B406_Top_web.jpg)
+![A picture of the EVK NINA-B40x board](https://docs.zephyrproject.org/4.2.0/_images/EVK-NINA-B406_Top_web.jpg)
 
 EVK NINA-B40x
 
@@ -2204,7 +2204,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-ANNA-B11x board](../_images/EVK-ANNA-B112.jpg)
+![A picture of the EVK-ANNA-B11x board](https://docs.zephyrproject.org/4.2.0/_images/EVK-ANNA-B112.jpg)
 
 EVK-ANNA-B11x
 
@@ -2215,7 +2215,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-30/35: BMD-300-EVAL, BMD-301-EVAL, and BMD-350-EVAL board](../_images/bmd-300-eval_pin_out.jpg)
+![A picture of the EVK-BMD-30/35: BMD-300-EVAL, BMD-301-EVAL, and BMD-350-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/bmd-300-eval_pin_out.jpg)
 
 EVK-BMD-30/35: BMD-300-EVAL, BMD-301-EVAL, and BMD-350-EVAL
 
@@ -2226,7 +2226,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-330: BMD-330-EVAL board](../_images/bmd-300-eval_pin_out.jpg)
+![A picture of the EVK-BMD-330: BMD-330-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/bmd-300-eval_pin_out.jpg)
 
 EVK-BMD-330: BMD-330-EVAL
 
@@ -2237,7 +2237,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL board](../_images/BMD-34-38-EVAL.jpg)
+![A picture of the EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/BMD-34-38-EVAL.jpg)
 
 EVK-BMD-34/38: BMD-340-EVAL and BMD-341-EVAL
 
@@ -2248,7 +2248,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/38: BMD-345-EVAL board](../_images/bmd-345-eval_pin_out.jpg)
+![A picture of the EVK-BMD-34/38: BMD-345-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/bmd-345-eval_pin_out.jpg)
 
 EVK-BMD-34/38: BMD-345-EVAL
 
@@ -2259,7 +2259,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-34/48: BMD-380-EVAL board](../_images/BMD-34-38-EVAL.jpg)
+![A picture of the EVK-BMD-34/48: BMD-380-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/BMD-34-38-EVAL.jpg)
 
 EVK-BMD-34/48: BMD-380-EVAL
 
@@ -2270,7 +2270,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-BMD-360: BMD-360-EVAL board](../_images/bmd-300-eval_pin_out.jpg)
+![A picture of the EVK-BMD-360: BMD-360-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/bmd-300-eval_pin_out.jpg)
 
 EVK-BMD-360: BMD-360-EVAL
 
@@ -2281,7 +2281,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-IRIS-W106-RW612 board](../_images/ubx_evk_iris_w1.webp)
+![A picture of the EVK-IRIS-W106-RW612 board](https://docs.zephyrproject.org/4.2.0/_images/ubx_evk_iris_w1.webp)
 
 EVK-IRIS-W106-RW612
 
@@ -2292,7 +2292,7 @@ arm
 
 u-blox
 
-![A picture of the EVK-NINA-B3 board](../_images/EVK-NINA-B3.jpg)
+![A picture of the EVK-NINA-B3 board](https://docs.zephyrproject.org/4.2.0/_images/EVK-NINA-B3.jpg)
 
 EVK-NINA-B3
 
@@ -2303,7 +2303,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Feather M0 Basic Proto board](../_images/adafruit_feather_m0_basic_proto.jpg)
+![A picture of the Feather M0 Basic Proto board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_basic_proto.jpg)
 
 Feather M0 Basic Proto
 
@@ -2314,7 +2314,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Feather M0 LoRa board](../_images/adafruit_feather_m0_lora.jpg)
+![A picture of the Feather M0 LoRa board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m0_lora.jpg)
 
 Feather M0 LoRa
 
@@ -2325,7 +2325,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Feather M4 Express board](../_images/adafruit_feather_m4_express.webp)
+![A picture of the Feather M4 Express board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_m4_express.webp)
 
 Feather M4 Express
 
@@ -2336,7 +2336,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Feather nRF52840 (Express, Sense) board](../_images/adafruit_feather_nrf52840_sense.jpg)
+![A picture of the Feather nRF52840 (Express, Sense) board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_nrf52840_sense.jpg)
 
 Feather nRF52840 (Express, Sense)
 
@@ -2347,7 +2347,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the Feather STM32F405 Express board](../_images/adafruit_feather_stm32f405.jpg)
+![A picture of the Feather STM32F405 Express board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_feather_stm32f405.jpg)
 
 Feather STM32F405 Express
 
@@ -2358,7 +2358,7 @@ arm
 
 M5Stack
 
-![A picture of the Fire board](../_images/m5stack_fire.webp)
+![A picture of the Fire board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_fire.webp)
 
 Fire
 
@@ -2369,7 +2369,7 @@ xtensa
 
 Seagate Technology PLC
 
-![A picture of the FireCuda Gaming SSD (FaZe) board board](../_images/firecuda-gaming-ssd.jpg)
+![A picture of the FireCuda Gaming SSD (FaZe) board board](https://docs.zephyrproject.org/4.2.0/_images/firecuda-gaming-ssd.jpg)
 
 FireCuda Gaming SSD (FaZe) board
 
@@ -2380,7 +2380,7 @@ arm
 
 FANKE Technology Co., Ltd.
 
-![A picture of the FK743M5-XIH6 board](../_images/fk743m5_xih6.webp)
+![A picture of the FK743M5-XIH6 board](https://docs.zephyrproject.org/4.2.0/_images/fk743m5_xih6.webp)
 
 FK743M5-XIH6
 
@@ -2391,7 +2391,7 @@ arm
 
 FANKE Technology Co., Ltd.
 
-![A picture of the FK750M1-VBT6 board](../_images/fk750m1_vbt6.webp)
+![A picture of the FK750M1-VBT6 board](https://docs.zephyrproject.org/4.2.0/_images/fk750m1_vbt6.webp)
 
 FK750M1-VBT6
 
@@ -2402,7 +2402,7 @@ arm
 
 FANKE Technology Co., Ltd.
 
-![A picture of the FK7B0M1-VBT6 board](../_images/fk7b0m1_vbt6.webp)
+![A picture of the FK7B0M1-VBT6 board](https://docs.zephyrproject.org/4.2.0/_images/fk7b0m1_vbt6.webp)
 
 FK7B0M1-VBT6
 
@@ -2413,7 +2413,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FMURT6 board](../_images/mimxrt1062_fmurt6.webp)
+![A picture of the FMURT6 board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1062_fmurt6.webp)
 
 FMURT6
 
@@ -2424,7 +2424,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-K22F board](../_images/frdm_k22f.jpg)
+![A picture of the FRDM-K22F board](https://docs.zephyrproject.org/4.2.0/_images/frdm_k22f.jpg)
 
 FRDM-K22F
 
@@ -2435,7 +2435,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-K64F board](../_images/frdm_k64f.jpg)
+![A picture of the FRDM-K64F board](https://docs.zephyrproject.org/4.2.0/_images/frdm_k64f.jpg)
 
 FRDM-K64F
 
@@ -2446,7 +2446,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-K82F board](../_images/frdm_k82f.jpg)
+![A picture of the FRDM-K82F board](https://docs.zephyrproject.org/4.2.0/_images/frdm_k82f.jpg)
 
 FRDM-K82F
 
@@ -2457,7 +2457,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-KE15Z board](../_images/frdm_ke15z.webp)
+![A picture of the FRDM-KE15Z board](https://docs.zephyrproject.org/4.2.0/_images/frdm_ke15z.webp)
 
 FRDM-KE15Z
 
@@ -2468,7 +2468,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-KE17Z board](../_images/frdmke17z.webp)
+![A picture of the FRDM-KE17Z board](https://docs.zephyrproject.org/4.2.0/_images/frdmke17z.webp)
 
 FRDM-KE17Z
 
@@ -2479,7 +2479,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-KE17Z512 board](../_images/frdm_ke17z512.webp)
+![A picture of the FRDM-KE17Z512 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_ke17z512.webp)
 
 FRDM-KE17Z512
 
@@ -2490,7 +2490,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-KL25Z board](../_images/frdm_kl25z.jpg)
+![A picture of the FRDM-KL25Z board](https://docs.zephyrproject.org/4.2.0/_images/frdm_kl25z.jpg)
 
 FRDM-KL25Z
 
@@ -2501,7 +2501,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-KW41Z board](../_images/frdm_kw41z.jpg)
+![A picture of the FRDM-KW41Z board](https://docs.zephyrproject.org/4.2.0/_images/frdm_kw41z.jpg)
 
 FRDM-KW41Z
 
@@ -2512,7 +2512,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXA153 board](../_images/frdm_mcxa153.webp)
+![A picture of the FRDM-MCXA153 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxa153.webp)
 
 FRDM-MCXA153
 
@@ -2523,7 +2523,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXA156 board](../_images/frdm_mcxa156.webp)
+![A picture of the FRDM-MCXA156 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxa156.webp)
 
 FRDM-MCXA156
 
@@ -2534,7 +2534,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXA166 board](../_images/frdm_mcxa166.webp)
+![A picture of the FRDM-MCXA166 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxa166.webp)
 
 FRDM-MCXA166
 
@@ -2545,7 +2545,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXA276 board](../_images/frdm_mcxa276.webp)
+![A picture of the FRDM-MCXA276 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxa276.webp)
 
 FRDM-MCXA276
 
@@ -2556,7 +2556,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXC242 board](../_images/frdm_mcxc242.webp)
+![A picture of the FRDM-MCXC242 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxc242.webp)
 
 FRDM-MCXC242
 
@@ -2567,7 +2567,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXC444 board](../_images/frdm_mcxc444.webp)
+![A picture of the FRDM-MCXC444 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxc444.webp)
 
 FRDM-MCXC444
 
@@ -2578,7 +2578,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXN236 board](../_images/frdm_mcxn236.webp)
+![A picture of the FRDM-MCXN236 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxn236.webp)
 
 FRDM-MCXN236
 
@@ -2589,7 +2589,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXN947 board](../_images/frdm_mcxn947.webp)
+![A picture of the FRDM-MCXN947 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxn947.webp)
 
 FRDM-MCXN947
 
@@ -2600,7 +2600,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXW71 board](../_images/frdm_mcxw71.webp)
+![A picture of the FRDM-MCXW71 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxw71.webp)
 
 FRDM-MCXW71
 
@@ -2611,7 +2611,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM-MCXW72 board](../_images/frdm_mcxw72.webp)
+![A picture of the FRDM-MCXW72 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_mcxw72.webp)
 
 FRDM-MCXW72
 
@@ -2622,7 +2622,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the FRDM_RW612 board](../_images/frdm_rw612.webp)
+![A picture of the FRDM_RW612 board](https://docs.zephyrproject.org/4.2.0/_images/frdm_rw612.webp)
 
 FRDM\_RW612
 
@@ -2633,7 +2633,7 @@ arm
 
 sensry.io
 
-![A picture of the Ganymed Break-Out-Board (BOB) board](../_images/ganymed_bob_sy120_gbm.webp)
+![A picture of the Ganymed Break-Out-Board (BOB) board](https://docs.zephyrproject.org/4.2.0/_images/ganymed_bob_sy120_gbm.webp)
 
 Ganymed Break-Out-Board (BOB)
 
@@ -2644,7 +2644,7 @@ riscv
 
 sensry.io
 
-![A picture of the Ganymed Starter Kit (SK) board](../_images/ganymed_sk.webp)
+![A picture of the Ganymed Starter Kit (SK) board](https://docs.zephyrproject.org/4.2.0/_images/ganymed_sk.webp)
 
 Ganymed Starter Kit (SK)
 
@@ -2655,7 +2655,7 @@ riscv
 
 GigaDevice Semiconductor
 
-![A picture of the GD32A503V-EVAL board](../_images/gd32a503v_eval.jpg)
+![A picture of the GD32A503V-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32a503v_eval.jpg)
 
 GD32A503V-EVAL
 
@@ -2666,7 +2666,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32E103V-EVAL board](../_images/gd32e103v_eval.jpg)
+![A picture of the GD32E103V-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32e103v_eval.jpg)
 
 GD32E103V-EVAL
 
@@ -2677,7 +2677,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32E507V-START board](../_images/gd32e507v_start.jpg)
+![A picture of the GD32E507V-START board](https://docs.zephyrproject.org/4.2.0/_images/gd32e507v_start.jpg)
 
 GD32E507V-START
 
@@ -2688,7 +2688,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32E507Z-EVAL board](../_images/gd32e507z_eval.webp)
+![A picture of the GD32E507Z-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32e507z_eval.webp)
 
 GD32E507Z-EVAL
 
@@ -2699,7 +2699,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F350R-EVAL board](../_images/gd32f350r_eval.webp)
+![A picture of the GD32F350R-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32f350r_eval.webp)
 
 GD32F350R-EVAL
 
@@ -2710,7 +2710,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F403Z-EVAL board](../_images/gd32f403z_eval.jpg)
+![A picture of the GD32F403Z-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32f403z_eval.jpg)
 
 GD32F403Z-EVAL
 
@@ -2721,7 +2721,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F407V-START board](../_images/gd32f407v_start.webp)
+![A picture of the GD32F407V-START board](https://docs.zephyrproject.org/4.2.0/_images/gd32f407v_start.webp)
 
 GD32F407V-START
 
@@ -2732,7 +2732,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F450I-EVAL board](../_images/gd32f450i_eval.webp)
+![A picture of the GD32F450I-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32f450i_eval.webp)
 
 GD32F450I-EVAL
 
@@ -2743,7 +2743,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F450V-START board](../_images/gd32f450v_start.webp)
+![A picture of the GD32F450V-START board](https://docs.zephyrproject.org/4.2.0/_images/gd32f450v_start.webp)
 
 GD32F450V-START
 
@@ -2754,7 +2754,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F450Z-EVAL board](../_images/gd32f450z_eval.webp)
+![A picture of the GD32F450Z-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32f450z_eval.webp)
 
 GD32F450Z-EVAL
 
@@ -2765,7 +2765,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32F470I-EVAL board](../_images/gd32f470i_eval.jpg)
+![A picture of the GD32F470I-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32f470i_eval.jpg)
 
 GD32F470I-EVAL
 
@@ -2776,7 +2776,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32L233R-EVA board](../_images/gd32l233r_eval.jpg)
+![A picture of the GD32L233R-EVA board](https://docs.zephyrproject.org/4.2.0/_images/gd32l233r_eval.jpg)
 
 GD32L233R-EVA
 
@@ -2787,7 +2787,7 @@ arm
 
 GigaDevice Semiconductor
 
-![A picture of the GD32VF103C-STARTER board](../_images/gd32vf103c_starter.jpg)
+![A picture of the GD32VF103C-STARTER board](https://docs.zephyrproject.org/4.2.0/_images/gd32vf103c_starter.jpg)
 
 GD32VF103C-STARTER
 
@@ -2798,7 +2798,7 @@ riscv
 
 GigaDevice Semiconductor
 
-![A picture of the GD32VF103V-EVAL board](../_images/gd32vf103v_eval.jpg)
+![A picture of the GD32VF103V-EVAL board](https://docs.zephyrproject.org/4.2.0/_images/gd32vf103v_eval.jpg)
 
 GD32VF103V-EVAL
 
@@ -2818,7 +2818,7 @@ sparc
 
 Gaisler
 
-![A picture of the GR716-MINI Development Board board](../_images/gr716a_mini.jpg)
+![A picture of the GR716-MINI Development Board board](https://docs.zephyrproject.org/4.2.0/_images/gr716a_mini.jpg)
 
 GR716-MINI Development Board
 
@@ -2829,7 +2829,7 @@ sparc
 
 Adafruit Industries, LLC
 
-![A picture of the Grand Central M4 Express board](../_images/adafruit_grand_central_m4_express.webp)
+![A picture of the Grand Central M4 Express board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_grand_central_m4_express.webp)
 
 Grand Central M4 Express
 
@@ -2840,7 +2840,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the Hexiwear board](../_images/hexiwear_k64.jpg)
+![A picture of the Hexiwear board](https://docs.zephyrproject.org/4.2.0/_images/hexiwear_k64.jpg)
 
 Hexiwear
 
@@ -2851,7 +2851,7 @@ arm
 
 SiFive, Inc.
 
-![A picture of the HiFive Unleashed board](../_images/hifive_unleashed.jpg)
+![A picture of the HiFive Unleashed board](https://docs.zephyrproject.org/4.2.0/_images/hifive_unleashed.jpg)
 
 HiFive Unleashed
 
@@ -2862,7 +2862,7 @@ riscv
 
 SiFive, Inc.
 
-![A picture of the HiFive Unmatched board](../_images/hifive_unmatched.jpg)
+![A picture of the HiFive Unmatched board](https://docs.zephyrproject.org/4.2.0/_images/hifive_unmatched.jpg)
 
 HiFive Unmatched
 
@@ -2873,7 +2873,7 @@ riscv
 
 SiFive, Inc.
 
-![A picture of the HiFive1 board](../_images/hifive1.jpg)
+![A picture of the HiFive1 board](https://docs.zephyrproject.org/4.2.0/_images/hifive1.jpg)
 
 HiFive1
 
@@ -2884,7 +2884,7 @@ riscv
 
 SiFive, Inc.
 
-![A picture of the HiFive1 Rev B board](../_images/hifive1_revb.jpg)
+![A picture of the HiFive1 Rev B board](https://docs.zephyrproject.org/4.2.0/_images/hifive1_revb.jpg)
 
 HiFive1 Rev B
 
@@ -2895,7 +2895,7 @@ riscv
 
 Toradex AG
 
-![A picture of the i.MX 7 Computer on Module - Colibri iMX7 board](../_images/colibri_imx7d.jpg)
+![A picture of the i.MX 7 Computer on Module - Colibri iMX7 board](https://docs.zephyrproject.org/4.2.0/_images/colibri_imx7d.jpg)
 
 i.MX 7 Computer on Module - Colibri iMX7
 
@@ -2996,7 +2996,7 @@ arm64, arm
 
 Actinius B.V.
 
-![A picture of the Icarus board](../_images/Icarus_pinouts.jpg)
+![A picture of the Icarus board](https://docs.zephyrproject.org/4.2.0/_images/Icarus_pinouts.jpg)
 
 Icarus
 
@@ -3007,7 +3007,7 @@ arm
 
 Actinius B.V.
 
-![A picture of the Icarus Bee board](../_images/icarus-bee.jpg)
+![A picture of the Icarus Bee board](https://docs.zephyrproject.org/4.2.0/_images/icarus-bee.jpg)
 
 Icarus Bee
 
@@ -3018,7 +3018,7 @@ arm
 
 Actinius B.V.
 
-![A picture of the Icarus SoM board](../_images/icarus-som.jpg)
+![A picture of the Icarus SoM board](https://docs.zephyrproject.org/4.2.0/_images/icarus-som.jpg)
 
 Icarus SoM
 
@@ -3029,7 +3029,7 @@ arm
 
 Actinius B.V.
 
-![A picture of the Icarus SoM DK board](../_images/icarus_som_dk.jpg)
+![A picture of the Icarus SoM DK board](https://docs.zephyrproject.org/4.2.0/_images/icarus_som_dk.jpg)
 
 Icarus SoM DK
 
@@ -3040,7 +3040,7 @@ arm
 
 Other/Unknown
 
-![A picture of the ICE-V Wireless board](../_images/icev_wireless.jpg)
+![A picture of the ICE-V Wireless board](https://docs.zephyrproject.org/4.2.0/_images/icev_wireless.jpg)
 
 ICE-V Wireless
 
@@ -3112,7 +3112,7 @@ riscv
 
 SEGGER Microcontroller GmbH
 
-![A picture of the IP Switch Board board](../_images/ip_k66f.jpg)
+![A picture of the IP Switch Board board](https://docs.zephyrproject.org/4.2.0/_images/ip_k66f.jpg)
 
 IP Switch Board
 
@@ -3123,7 +3123,7 @@ arm
 
 ITE Tech. Inc.
 
-![A picture of the IT51XXX series board](../_images/it515xx_evb_wiring.webp)
+![A picture of the IT51XXX series board](https://docs.zephyrproject.org/4.2.0/_images/it515xx_evb_wiring.webp)
 
 IT51XXX series
 
@@ -3134,7 +3134,7 @@ riscv
 
 ITE Tech. Inc.
 
-![A picture of the IT82XX2 series board](../_images/it82xx2_evb_and_debug_card.jpg)
+![A picture of the IT82XX2 series board](https://docs.zephyrproject.org/4.2.0/_images/it82xx2_evb_and_debug_card.jpg)
 
 IT82XX2 series
 
@@ -3145,7 +3145,7 @@ riscv
 
 ITE Tech. Inc.
 
-![A picture of the IT8XXX2 series board](../_images/it8xxx2_evb_and_debug_card.jpg)
+![A picture of the IT8XXX2 series board](https://docs.zephyrproject.org/4.2.0/_images/it8xxx2_evb_and_debug_card.jpg)
 
 IT8XXX2 series
 
@@ -3156,7 +3156,7 @@ riscv
 
 Adafruit Industries, LLC
 
-![A picture of the ItsyBitsy M4 Express board](../_images/adafruit_itsybitsy_m4_express.jpg)
+![A picture of the ItsyBitsy M4 Express board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_itsybitsy_m4_express.jpg)
 
 ItsyBitsy M4 Express
 
@@ -3167,7 +3167,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the ItsyBitsy nRF52840 board](../_images/adafruit_itsybitsy_nrf52840.jpeg)
+![A picture of the ItsyBitsy nRF52840 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_itsybitsy_nrf52840.jpeg)
 
 ItsyBitsy nRF52840
 
@@ -3178,7 +3178,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the KB2040 board](../_images/kb2040.jpg)
+![A picture of the KB2040 board](https://docs.zephyrproject.org/4.2.0/_images/kb2040.jpg)
 
 KB2040
 
@@ -3189,7 +3189,7 @@ arm
 
 KinCony Electronics Co., Ltd.
 
-![A picture of the KC868-A32 board](../_images/kincony_kc868_a32.jpg)
+![A picture of the KC868-A32 board](https://docs.zephyrproject.org/4.2.0/_images/kincony_kc868_a32.jpg)
 
 KC868-A32
 
@@ -3200,7 +3200,7 @@ xtensa
 
 Advanced Micro Devices (AMD), Inc.
 
-![A picture of the KV260 Development Board RPU Cortex-R5 board](../_images/kv260-starter-kit.jpg)
+![A picture of the KV260 Development Board RPU Cortex-R5 board](https://docs.zephyrproject.org/4.2.0/_images/kv260-starter-kit.jpg)
 
 KV260 Development Board RPU Cortex-R5
 
@@ -3211,7 +3211,7 @@ arm
 
 Electronut Labs
 
-![A picture of the Labs Blip board](../_images/nrf52840_blip.jpg)
+![A picture of the Labs Blip board](https://docs.zephyrproject.org/4.2.0/_images/nrf52840_blip.jpg)
 
 Labs Blip
 
@@ -3222,7 +3222,7 @@ arm
 
 Electronut Labs
 
-![A picture of the Labs Papyr board](../_images/nrf52840_papyr.jpg)
+![A picture of the Labs Papyr board](https://docs.zephyrproject.org/4.2.0/_images/nrf52840_papyr.jpg)
 
 Labs Papyr
 
@@ -3233,7 +3233,7 @@ arm
 
 Seagate Technology PLC
 
-![A picture of the Legend board](../_images/firecuda_gaming_hard_drive.jpg)
+![A picture of the Legend board](https://docs.zephyrproject.org/4.2.0/_images/firecuda_gaming_hard_drive.jpg)
 
 Legend
 
@@ -3244,7 +3244,7 @@ arm
 
 Witte Technology
 
-![A picture of the Linum Board board](../_images/linum-stm32h753bi-top.jpg)
+![A picture of the Linum Board board](https://docs.zephyrproject.org/4.2.0/_images/linum-stm32h753bi-top.jpg)
 
 Linum Board
 
@@ -3255,7 +3255,7 @@ arm
 
 EnjoyDigital
 
-![A picture of the LiteX VexRiscv board](../_images/litex_vexriscv.jpg)
+![A picture of the LiteX VexRiscv board](https://docs.zephyrproject.org/4.2.0/_images/litex_vexriscv.jpg)
 
 LiteX VexRiscv
 
@@ -3266,7 +3266,7 @@ riscv
 
 Ronoth
 
-![A picture of the LoDev board](../_images/ronoth_lodev.jpg)
+![A picture of the LoDev board](https://docs.zephyrproject.org/4.2.0/_images/ronoth_lodev.jpg)
 
 LoDev
 
@@ -3277,7 +3277,7 @@ arm
 
 Shenzhen Sipeed Technology Co., Ltd.
 
-![A picture of the Longan Nano board](../_images/longan_nano.jpg)
+![A picture of the Longan Nano board](https://docs.zephyrproject.org/4.2.0/_images/longan_nano.jpg)
 
 Longan Nano
 
@@ -3288,7 +3288,7 @@ riscv
 
 OLIMEX Ltd.
 
-![A picture of the LoRa STM32WL DevKit board](../_images/olimex-stm32wl-devkit.jpg)
+![A picture of the LoRa STM32WL DevKit board](https://docs.zephyrproject.org/4.2.0/_images/olimex-stm32wl-devkit.jpg)
 
 LoRa STM32WL DevKit
 
@@ -3299,7 +3299,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the LoRa-E5 Dev Board board](../_images/lora_e5_dev_board.jpg)
+![A picture of the LoRa-E5 Dev Board board](https://docs.zephyrproject.org/4.2.0/_images/lora_e5_dev_board.jpg)
 
 LoRa-E5 Dev Board
 
@@ -3310,7 +3310,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the LoRa-E5 mini board](../_images/lora_e5_mini.jpg)
+![A picture of the LoRa-E5 mini board](https://docs.zephyrproject.org/4.2.0/_images/lora_e5_mini.jpg)
 
 LoRa-E5 mini
 
@@ -3321,7 +3321,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXpresso11U68 board](../_images/lpcxpresso11u68.jpg)
+![A picture of the LPCXpresso11U68 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso11u68.jpg)
 
 LPCXpresso11U68
 
@@ -3332,7 +3332,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXPRESSO51U68 board](../_images/lpcxpresso51u68.jpg)
+![A picture of the LPCXPRESSO51U68 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso51u68.jpg)
 
 LPCXPRESSO51U68
 
@@ -3343,7 +3343,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXPRESSO54114 board](../_images/lpcxpresso54114_m4.jpg)
+![A picture of the LPCXPRESSO54114 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso54114_m4.jpg)
 
 LPCXPRESSO54114
 
@@ -3354,7 +3354,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXpresso55S06 board](../_images/lpcxpress55s06.jpg)
+![A picture of the LPCXpresso55S06 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpress55s06.jpg)
 
 LPCXpresso55S06
 
@@ -3365,7 +3365,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXpresso55S16 board](../_images/lpcxpresso55S16.jpg)
+![A picture of the LPCXpresso55S16 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso55S16.jpg)
 
 LPCXpresso55S16
 
@@ -3376,7 +3376,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXpresso55S28 board](../_images/LPC55S28-EVK.jpg)
+![A picture of the LPCXpresso55S28 board](https://docs.zephyrproject.org/4.2.0/_images/LPC55S28-EVK.jpg)
 
 LPCXpresso55S28
 
@@ -3387,7 +3387,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXpresso55S36 board](../_images/lpcxpresso55S36.jpg)
+![A picture of the LPCXpresso55S36 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso55S36.jpg)
 
 LPCXpresso55S36
 
@@ -3398,7 +3398,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the LPCXPRESSO55S69 board](../_images/lpcxpresso55s69.jpg)
+![A picture of the LPCXPRESSO55S69 board](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso55s69.jpg)
 
 LPCXPRESSO55S69
 
@@ -3418,7 +3418,7 @@ arm64
 
 Dragino Technology Co., Limited
 
-![A picture of the LSN50 LoRA Sensor Node board](../_images/dragino_lsn50.jpg)
+![A picture of the LSN50 LoRA Sensor Node board](https://docs.zephyrproject.org/4.2.0/_images/dragino_lsn50.jpg)
 
 LSN50 LoRA Sensor Node
 
@@ -3447,7 +3447,7 @@ xtensa
 
 Analog Devices, Inc.
 
-![A picture of the MAX32650EVKIT board](../_images/max32650evkit.webp)
+![A picture of the MAX32650EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32650evkit.webp)
 
 MAX32650EVKIT
 
@@ -3458,7 +3458,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32650FTHR board](../_images/max32650fthr.webp)
+![A picture of the MAX32650FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max32650fthr.webp)
 
 MAX32650FTHR
 
@@ -3469,7 +3469,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32655EVKIT board](../_images/max32655evkit_img1.jpg)
+![A picture of the MAX32655EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32655evkit_img1.jpg)
 
 MAX32655EVKIT
 
@@ -3480,7 +3480,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32655FTHR board](../_images/max32655fthr_img3.jpg)
+![A picture of the MAX32655FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max32655fthr_img3.jpg)
 
 MAX32655FTHR
 
@@ -3491,7 +3491,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the max32657evkit board](../_images/max32657evkit.webp)
+![A picture of the max32657evkit board](https://docs.zephyrproject.org/4.2.0/_images/max32657evkit.webp)
 
 max32657evkit
 
@@ -3502,7 +3502,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32660EVSYS board](../_images/max32660evsys.webp)
+![A picture of the MAX32660EVSYS board](https://docs.zephyrproject.org/4.2.0/_images/max32660evsys.webp)
 
 MAX32660EVSYS
 
@@ -3513,7 +3513,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32662EVKIT board](../_images/max32662evkit.webp)
+![A picture of the MAX32662EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32662evkit.webp)
 
 MAX32662EVKIT
 
@@ -3524,7 +3524,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32666EVKIT board](../_images/max32666evkit.webp)
+![A picture of the MAX32666EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32666evkit.webp)
 
 MAX32666EVKIT
 
@@ -3535,7 +3535,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32666FTHR board](../_images/max32666fthr_img2.jpg)
+![A picture of the MAX32666FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max32666fthr_img2.jpg)
 
 MAX32666FTHR
 
@@ -3546,7 +3546,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32670EVKIT board](../_images/max32670evkit.webp)
+![A picture of the MAX32670EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32670evkit.webp)
 
 MAX32670EVKIT
 
@@ -3557,7 +3557,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32672EVKIT board](../_images/max32672evkit.webp)
+![A picture of the MAX32672EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32672evkit.webp)
 
 MAX32672EVKIT
 
@@ -3568,7 +3568,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32672FTHR board](../_images/max32672fthr_img2.webp)
+![A picture of the MAX32672FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max32672fthr_img2.webp)
 
 MAX32672FTHR
 
@@ -3579,7 +3579,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32675EVKIT board](../_images/max32675evkit.webp)
+![A picture of the MAX32675EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32675evkit.webp)
 
 MAX32675EVKIT
 
@@ -3590,7 +3590,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32680EVKIT board](../_images/max32680evkit_img1.jpg)
+![A picture of the MAX32680EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32680evkit_img1.jpg)
 
 MAX32680EVKIT
 
@@ -3601,7 +3601,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32690EVKIT board](../_images/max32690evkit.jpg)
+![A picture of the MAX32690EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max32690evkit.jpg)
 
 MAX32690EVKIT
 
@@ -3612,7 +3612,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX32690FTHR board](../_images/max32690fthr.webp)
+![A picture of the MAX32690FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max32690fthr.webp)
 
 MAX32690FTHR
 
@@ -3623,7 +3623,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX78000EVKIT board](../_images/max78000evkit.webp)
+![A picture of the MAX78000EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max78000evkit.webp)
 
 MAX78000EVKIT
 
@@ -3634,7 +3634,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX78000FTHR board](../_images/max78000fthr.webp)
+![A picture of the MAX78000FTHR board](https://docs.zephyrproject.org/4.2.0/_images/max78000fthr.webp)
 
 MAX78000FTHR
 
@@ -3645,7 +3645,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the MAX78002EVKIT board](../_images/max78002evkit.webp)
+![A picture of the MAX78002EVKIT board](https://docs.zephyrproject.org/4.2.0/_images/max78002evkit.webp)
 
 MAX78002EVKIT
 
@@ -3656,7 +3656,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MCX-N9XX-EVK board](../_images/mcx_n9xx_evk.webp)
+![A picture of the MCX-N9XX-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mcx_n9xx_evk.webp)
 
 MCX-N9XX-EVK
 
@@ -3667,7 +3667,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MCXW72-EVK board](../_images/mcxw72_evk.webp)
+![A picture of the MCXW72-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mcxw72_evk.webp)
 
 MCXW72-EVK
 
@@ -3678,7 +3678,7 @@ arm
 
 Raytac Corporation
 
-![A picture of the MDBT50Q-CX-40 Dongle board](../_images/raytac_mdbt50q_cx_40_dongle.webp)
+![A picture of the MDBT50Q-CX-40 Dongle board](https://docs.zephyrproject.org/4.2.0/_images/raytac_mdbt50q_cx_40_dongle.webp)
 
 MDBT50Q-CX-40 Dongle
 
@@ -3689,7 +3689,7 @@ arm
 
 Raytac Corporation
 
-![A picture of the MDBT50Q-DB-33 board](../_images/mdbt50q_db_33.jpg)
+![A picture of the MDBT50Q-DB-33 board](https://docs.zephyrproject.org/4.2.0/_images/mdbt50q_db_33.jpg)
 
 MDBT50Q-DB-33
 
@@ -3700,7 +3700,7 @@ arm
 
 Raytac Corporation
 
-![A picture of the MDBT50Q-DB-40 board](../_images/mdbt50q_db_40.jpg)
+![A picture of the MDBT50Q-DB-40 board](https://docs.zephyrproject.org/4.2.0/_images/mdbt50q_db_40.jpg)
 
 MDBT50Q-DB-40
 
@@ -3711,7 +3711,7 @@ arm
 
 Raytac Corporation
 
-![A picture of the MDBT53-DB-40 board](../_images/MDBT53-DB-40.jpg)
+![A picture of the MDBT53-DB-40 board](https://docs.zephyrproject.org/4.2.0/_images/MDBT53-DB-40.jpg)
 
 MDBT53-DB-40
 
@@ -3722,7 +3722,7 @@ arm
 
 Raytac Corporation
 
-![A picture of the MDBT53V-DB-40 board](../_images/MDBT53V-DB-40.jpg)
+![A picture of the MDBT53V-DB-40 board](https://docs.zephyrproject.org/4.2.0/_images/MDBT53V-DB-40.jpg)
 
 MDBT53V-DB-40
 
@@ -3733,7 +3733,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the MEC1501 Modular card ASSY6885 board](../_images/mec1501modular_assy6885.jpg)
+![A picture of the MEC1501 Modular card ASSY6885 board](https://docs.zephyrproject.org/4.2.0/_images/mec1501modular_assy6885.jpg)
 
 MEC1501 Modular card ASSY6885
 
@@ -3744,7 +3744,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the MEC15xxEVB ASSY6853 board](../_images/mec15xxevb_assy6853.jpg)
+![A picture of the MEC15xxEVB ASSY6853 board](https://docs.zephyrproject.org/4.2.0/_images/mec15xxevb_assy6853.jpg)
 
 MEC15xxEVB ASSY6853
 
@@ -3755,7 +3755,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the MEC172x Modular Card ASSY6930 (Rev. B) board](../_images/mec172xmodular_assy6930.jpg)
+![A picture of the MEC172x Modular Card ASSY6930 (Rev. B) board](https://docs.zephyrproject.org/4.2.0/_images/mec172xmodular_assy6930.jpg)
 
 MEC172x Modular Card ASSY6930 (Rev. B)
 
@@ -3766,7 +3766,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the MEC172xEVB ASSY6906 board](../_images/mec172xevb_assy6906.jpg)
+![A picture of the MEC172xEVB ASSY6906 board](https://docs.zephyrproject.org/4.2.0/_images/mec172xevb_assy6906.jpg)
 
 MEC172xEVB ASSY6906
 
@@ -3777,7 +3777,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the MEC17xxEVB ASSY6941 board](../_images/mec_assy6941_evb.webp)
+![A picture of the MEC17xxEVB ASSY6941 board](https://docs.zephyrproject.org/4.2.0/_images/mec_assy6941_evb.webp)
 
 MEC17xxEVB ASSY6941
 
@@ -3788,7 +3788,7 @@ arm
 
 96Boards
 
-![A picture of the Meerkat96 board](../_images/96b_meerkat96.jpg)
+![A picture of the Meerkat96 board](https://docs.zephyrproject.org/4.2.0/_images/96b_meerkat96.jpg)
 
 Meerkat96
 
@@ -3808,7 +3808,7 @@ arm
 
 BBC
 
-![A picture of the micro:bit board](../_images/bbc_microbit.jpg)
+![A picture of the micro:bit board](https://docs.zephyrproject.org/4.2.0/_images/bbc_microbit.jpg)
 
 micro:bit
 
@@ -3819,7 +3819,7 @@ arm
 
 BBC
 
-![A picture of the micro:bit V2 board](../_images/bbc_microbit2.jpg)
+![A picture of the micro:bit V2 board](https://docs.zephyrproject.org/4.2.0/_images/bbc_microbit2.jpg)
 
 micro:bit V2
 
@@ -3830,7 +3830,7 @@ arm
 
 SparkFun Electronics
 
-![A picture of the MicroMod board Processor board](../_images/sparkfun_micromod.webp)
+![A picture of the MicroMod board Processor board](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_micromod.webp)
 
 MicroMod board Processor
 
@@ -3841,7 +3841,7 @@ arm
 
 MikroElektronika d.o.o.
 
-![A picture of the MikroE Quail board](../_images/mikroe_quail.webp)
+![A picture of the MikroE Quail board](https://docs.zephyrproject.org/4.2.0/_images/mikroe_quail.webp)
 
 MikroE Quail
 
@@ -3852,7 +3852,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMX8MQ EVK board](../_images/mimx8mq_evk.jpg)
+![A picture of the MIMX8MQ EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimx8mq_evk.jpg)
 
 MIMX8MQ EVK
 
@@ -3863,7 +3863,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1010-EVK board](../_images/mimxrt1010_evk.jpg)
+![A picture of the MIMXRT1010-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1010_evk.jpg)
 
 MIMXRT1010-EVK
 
@@ -3874,7 +3874,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1015-EVK board](../_images/mimxrt1015_evk.jpg)
+![A picture of the MIMXRT1015-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1015_evk.jpg)
 
 MIMXRT1015-EVK
 
@@ -3885,7 +3885,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1020-EVK board](../_images/mimxrt1020_evk.jpg)
+![A picture of the MIMXRT1020-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1020_evk.jpg)
 
 MIMXRT1020-EVK
 
@@ -3896,7 +3896,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1024-EVK board](../_images/mimxrt1024_evk.jpg)
+![A picture of the MIMXRT1024-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1024_evk.jpg)
 
 MIMXRT1024-EVK
 
@@ -3907,7 +3907,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1040-EVK board](../_images/mimxrt1040_evk.jpg)
+![A picture of the MIMXRT1040-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1040_evk.jpg)
 
 MIMXRT1040-EVK
 
@@ -3918,7 +3918,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1050-EVK board](../_images/mimxrt1050_evk.jpg)
+![A picture of the MIMXRT1050-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1050_evk.jpg)
 
 MIMXRT1050-EVK
 
@@ -3929,7 +3929,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1060-EVK board](../_images/mimxrt1060_evk.jpg)
+![A picture of the MIMXRT1060-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1060_evk.jpg)
 
 MIMXRT1060-EVK
 
@@ -3940,7 +3940,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1064-EVK board](../_images/mimxrt1064_evk.jpg)
+![A picture of the MIMXRT1064-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1064_evk.jpg)
 
 MIMXRT1064-EVK
 
@@ -3951,7 +3951,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1160-EVK board](../_images/mimxrt1160_evk.jpg)
+![A picture of the MIMXRT1160-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1160_evk.jpg)
 
 MIMXRT1160-EVK
 
@@ -3962,7 +3962,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1170-EVK/EVKB board](../_images/mimxrt1170_evk.jpg)
+![A picture of the MIMXRT1170-EVK/EVKB board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1170_evk.jpg)
 
 MIMXRT1170-EVK/EVKB
 
@@ -3973,7 +3973,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT1180-EVK board](../_images/mimxrt1180_evk.webp)
+![A picture of the MIMXRT1180-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1180_evk.webp)
 
 MIMXRT1180-EVK
 
@@ -3984,7 +3984,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT595-EVK board](../_images/mimxrt595_evk.jpg)
+![A picture of the MIMXRT595-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt595_evk.jpg)
 
 MIMXRT595-EVK
 
@@ -3995,7 +3995,7 @@ xtensa, arm
 
 NXP Semiconductors
 
-![A picture of the MIMXRT685-EVK board](../_images/mimxrt685_evk.jpg)
+![A picture of the MIMXRT685-EVK board](https://docs.zephyrproject.org/4.2.0/_images/mimxrt685_evk.jpg)
 
 MIMXRT685-EVK
 
@@ -4015,7 +4015,7 @@ xtensa, arm
 
 MikroElektronika d.o.o.
 
-![A picture of the MINI-M4 for STM32 board](../_images/mikroe_mini_m4_for_stm32.jpg)
+![A picture of the MINI-M4 for STM32 board](https://docs.zephyrproject.org/4.2.0/_images/mikroe_mini_m4_for_stm32.jpg)
 
 MINI-M4 for STM32
 
@@ -4026,7 +4026,7 @@ arm
 
 WeAct Studio
 
-![A picture of the MiniSTM32H743 Core Board board](../_images/mini_stm32h743.webp)
+![A picture of the MiniSTM32H743 Core Board board](https://docs.zephyrproject.org/4.2.0/_images/mini_stm32h743.webp)
 
 MiniSTM32H743 Core Board
 
@@ -4037,7 +4037,7 @@ arm
 
 WeAct Studio
 
-![A picture of the MiniSTM32H7B0 Core Board board](../_images/mini_stm32h7b0.webp)
+![A picture of the MiniSTM32H7B0 Core Board board](https://docs.zephyrproject.org/4.2.0/_images/mini_stm32h7b0.webp)
 
 MiniSTM32H7B0 Core Board
 
@@ -4048,7 +4048,7 @@ arm
 
 Makerbase Co., Ltd.
 
-![A picture of the MKS CANable V2.0 board](../_images/mks_canable_v20.webp)
+![A picture of the MKS CANable V2.0 board](https://docs.zephyrproject.org/4.2.0/_images/mks_canable_v20.webp)
 
 MKS CANable V2.0
 
@@ -4068,7 +4068,7 @@ riscv
 
 ARM Ltd.
 
-![A picture of the MPS3 AN547 board](../_images/mps3.jpg)
+![A picture of the MPS3 AN547 board](https://docs.zephyrproject.org/4.2.0/_images/mps3.jpg)
 
 MPS3 AN547
 
@@ -4088,7 +4088,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the MR-CANHUBK3 board](../_images/mr_canhubk3_top.jpg)
+![A picture of the MR-CANHUBK3 board](https://docs.zephyrproject.org/4.2.0/_images/mr_canhubk3_top.jpg)
 
 MR-CANHUBK3
 
@@ -4099,7 +4099,7 @@ arm
 
 Texas Instruments
 
-![A picture of the MSP-EXP432P401R LaunchXL board](../_images/msp_exp432p401r_launchxl.jpg)
+![A picture of the MSP-EXP432P401R LaunchXL board](https://docs.zephyrproject.org/4.2.0/_images/msp_exp432p401r_launchxl.jpg)
 
 MSP-EXP432P401R LaunchXL
 
@@ -4110,7 +4110,7 @@ arm
 
 Texas Instruments
 
-![A picture of the MSPM0G3507 Launchpad board](../_images/lp_mspm0g3507.webp)
+![A picture of the MSPM0G3507 Launchpad board](https://docs.zephyrproject.org/4.2.0/_images/lp_mspm0g3507.webp)
 
 MSPM0G3507 Launchpad
 
@@ -4149,7 +4149,7 @@ mt8196
 
 Antmicro
 
-![A picture of the Myra SiP Baseboard board](../_images/myra_sip_baseboard.webp)
+![A picture of the Myra SiP Baseboard board](https://docs.zephyrproject.org/4.2.0/_images/myra_sip_baseboard.webp)
 
 Myra SiP Baseboard
 
@@ -4169,7 +4169,7 @@ posix
 
 Dragino Technology Co., Limited
 
-![A picture of the NBSN95 NB-IoT Sensor Node board](../_images/dragino_nbsn95.jpg)
+![A picture of the NBSN95 NB-IoT Sensor Node board](https://docs.zephyrproject.org/4.2.0/_images/dragino_nbsn95.jpg)
 
 NBSN95 NB-IoT Sensor Node
 
@@ -4180,7 +4180,7 @@ arm
 
 Udoo
 
-![A picture of the Neo Full board](../_images/udoo_neo_full_mcimx6x_m4.jpg)
+![A picture of the Neo Full board](https://docs.zephyrproject.org/4.2.0/_images/udoo_neo_full_mcimx6x_m4.jpg)
 
 Neo Full
 
@@ -4191,7 +4191,7 @@ arm
 
 96Boards
 
-![A picture of the Neonkey board](../_images/96b_neonkey.jpg)
+![A picture of the Neonkey board](https://docs.zephyrproject.org/4.2.0/_images/96b_neonkey.jpg)
 
 Neonkey
 
@@ -4202,7 +4202,7 @@ arm
 
 Other/Unknown
 
-![A picture of the NEORV32 board](../_images/neorv32.png)
+![A picture of the NEORV32 board](https://docs.zephyrproject.org/4.2.0/_images/neorv32.png)
 
 NEORV32
 
@@ -4213,7 +4213,7 @@ riscv
 
 96Boards
 
-![A picture of the Nitrogen board](../_images/96b_nitrogen.jpg)
+![A picture of the Nitrogen board](https://docs.zephyrproject.org/4.2.0/_images/96b_nitrogen.jpg)
 
 Nitrogen
 
@@ -4224,7 +4224,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NPCK3M8K_EVB board](../_images/npck3m8k_evb.webp)
+![A picture of the NPCK3M8K_EVB board](https://docs.zephyrproject.org/4.2.0/_images/npck3m8k_evb.webp)
 
 NPCK3M8K\_EVB
 
@@ -4235,7 +4235,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NPCM400_EVB board](../_images/npcm400_evb.webp)
+![A picture of the NPCM400_EVB board](https://docs.zephyrproject.org/4.2.0/_images/npcm400_evb.webp)
 
 NPCM400\_EVB
 
@@ -4246,7 +4246,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NPCX4M8F_EVB board](../_images/npcx4m8f_evb.jpg)
+![A picture of the NPCX4M8F_EVB board](https://docs.zephyrproject.org/4.2.0/_images/npcx4m8f_evb.jpg)
 
 NPCX4M8F\_EVB
 
@@ -4257,7 +4257,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NPCX7M6FB_EVB board](../_images/npcx7m6fb_evb.jpg)
+![A picture of the NPCX7M6FB_EVB board](https://docs.zephyrproject.org/4.2.0/_images/npcx7m6fb_evb.jpg)
 
 NPCX7M6FB\_EVB
 
@@ -4268,7 +4268,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NPCX9M6F_EVB board](../_images/npcx9m6f_evb.jpg)
+![A picture of the NPCX9M6F_EVB board](https://docs.zephyrproject.org/4.2.0/_images/npcx9m6f_evb.jpg)
 
 NPCX9M6F\_EVB
 
@@ -4279,7 +4279,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF21540 DK board](../_images/nrf21540dk_nrf52840.jpg)
+![A picture of the nRF21540 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf21540dk_nrf52840.jpg)
 
 nRF21540 DK
 
@@ -4290,7 +4290,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF51 DK board](../_images/nrf51dk.jpg)
+![A picture of the nRF51 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf51dk.jpg)
 
 nRF51 DK
 
@@ -4301,7 +4301,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF51 Dongle board](../_images/nrf51dongle.jpg)
+![A picture of the nRF51 Dongle board](https://docs.zephyrproject.org/4.2.0/_images/nrf51dongle.jpg)
 
 nRF51 Dongle
 
@@ -4312,7 +4312,7 @@ arm
 
 VNGIoTLab
 
-![A picture of the nRF51-VBLUno51 board](../_images/nrf51_vbluno51.jpg)
+![A picture of the nRF51-VBLUno51 board](https://docs.zephyrproject.org/4.2.0/_images/nrf51_vbluno51.jpg)
 
 nRF51-VBLUno51
 
@@ -4323,7 +4323,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the nRF52 Adafruit Feather board](../_images/nrf52_adafruit_feather.jpg)
+![A picture of the nRF52 Adafruit Feather board](https://docs.zephyrproject.org/4.2.0/_images/nrf52_adafruit_feather.jpg)
 
 nRF52 Adafruit Feather
 
@@ -4334,7 +4334,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF52 DK board](../_images/nrf52dk_nrf52832.jpg)
+![A picture of the nRF52 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf52dk_nrf52832.jpg)
 
 nRF52 DK
 
@@ -4354,7 +4354,7 @@ posix
 
 VNGIoTLab
 
-![A picture of the nRF52-VBLUno52 board](../_images/nrf52_vbluno52.jpg)
+![A picture of the nRF52-VBLUno52 board](https://docs.zephyrproject.org/4.2.0/_images/nrf52_vbluno52.jpg)
 
 nRF52-VBLUno52
 
@@ -4383,7 +4383,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF52833 DK board](../_images/nrf52833dk.webp)
+![A picture of the nRF52833 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf52833dk.webp)
 
 nRF52833 DK
 
@@ -4394,7 +4394,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF52840 DK board](../_images/nrf52840dk_nrf52840.jpg)
+![A picture of the nRF52840 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dk_nrf52840.jpg)
 
 nRF52840 DK
 
@@ -4405,7 +4405,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF52840 Dongle board](../_images/nrf52840dongle.jpg)
+![A picture of the nRF52840 Dongle board](https://docs.zephyrproject.org/4.2.0/_images/nrf52840dongle.jpg)
 
 nRF52840 Dongle
 
@@ -4416,7 +4416,7 @@ arm
 
 Shenzhen Zaowubang Technology Co., Ltd.
 
-![A picture of the nRF52840 MDK USB Dongle board](../_images/nrf52840-mdk-usb-dongle-pinout.jpg)
+![A picture of the nRF52840 MDK USB Dongle board](https://docs.zephyrproject.org/4.2.0/_images/nrf52840-mdk-usb-dongle-pinout.jpg)
 
 nRF52840 MDK USB Dongle
 
@@ -4436,7 +4436,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF5340 Audio DK board](../_images/nrf5340_audio_dk.jpg)
+![A picture of the nRF5340 Audio DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf5340_audio_dk.jpg)
 
 nRF5340 Audio DK
 
@@ -4447,7 +4447,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF5340 DK board](../_images/nrf5340dk.jpg)
+![A picture of the nRF5340 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf5340dk.jpg)
 
 nRF5340 DK
 
@@ -4467,7 +4467,7 @@ posix
 
 Nordic Semiconductor
 
-![A picture of the nRF54H20 DK board](../_images/nrf54h20.webp)
+![A picture of the nRF54H20 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf54h20.webp)
 
 nRF54H20 DK
 
@@ -4487,7 +4487,7 @@ arm, riscv
 
 Nordic Semiconductor
 
-![A picture of the nRF54L15 DK board](../_images/nrf54l15dk_nrf54l15.webp)
+![A picture of the nRF54L15 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf54l15dk_nrf54l15.webp)
 
 nRF54L15 DK
 
@@ -4525,7 +4525,7 @@ arm, riscv
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 DK board](../_images/nrf7002dk.jpg)
+![A picture of the nRF7002 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf7002dk.jpg)
 
 nRF7002 DK
 
@@ -4536,7 +4536,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF9131 EK board](../_images/nrf9131ek_nrf9131.webp)
+![A picture of the nRF9131 EK board](https://docs.zephyrproject.org/4.2.0/_images/nrf9131ek_nrf9131.webp)
 
 nRF9131 EK
 
@@ -4547,7 +4547,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF9151 DK board](../_images/nrf9151dk.webp)
+![A picture of the nRF9151 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf9151dk.webp)
 
 nRF9151 DK
 
@@ -4558,7 +4558,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF9160 DK board](../_images/nrf9160dk_nrf9160.jpg)
+![A picture of the nRF9160 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf9160dk_nrf9160.jpg)
 
 nRF9160 DK
 
@@ -4569,7 +4569,7 @@ arm
 
 Circuit Dojo
 
-![A picture of the nRF9160 Feather board](../_images/circuitdojo_feather_nrf9160.jpg)
+![A picture of the nRF9160 Feather board](https://docs.zephyrproject.org/4.2.0/_images/circuitdojo_feather_nrf9160.jpg)
 
 nRF9160 Feather
 
@@ -4580,7 +4580,7 @@ arm
 
 innblue UG
 
-![A picture of the nRF9160 INNBLUE21 board](../_images/nrf9160_innblue21.jpg)
+![A picture of the nRF9160 INNBLUE21 board](https://docs.zephyrproject.org/4.2.0/_images/nrf9160_innblue21.jpg)
 
 nRF9160 INNBLUE21
 
@@ -4591,7 +4591,7 @@ arm
 
 innblue UG
 
-![A picture of the nRF9160 INNBLUE22 board](../_images/nrf9160_innblue22.jpg)
+![A picture of the nRF9160 INNBLUE22 board](https://docs.zephyrproject.org/4.2.0/_images/nrf9160_innblue22.jpg)
 
 nRF9160 INNBLUE22
 
@@ -4602,7 +4602,7 @@ arm
 
 SparkFun Electronics
 
-![A picture of the nRF9160 Thing Plus board](../_images/sparkfun_thing_plus_nrf9160.jpg)
+![A picture of the nRF9160 Thing Plus board](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_thing_plus_nrf9160.jpg)
 
 nRF9160 Thing Plus
 
@@ -4613,7 +4613,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the nRF9161 DK board](../_images/nrf9161dk.webp)
+![A picture of the nRF9161 DK board](https://docs.zephyrproject.org/4.2.0/_images/nrf9161dk.webp)
 
 nRF9161 DK
 
@@ -4633,7 +4633,7 @@ arm, riscv
 
 STMicroelectronics
 
-![A picture of the Nucleo C031C6 board](../_images/nucleo_c031c6.jpg)
+![A picture of the Nucleo C031C6 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_c031c6.jpg)
 
 Nucleo C031C6
 
@@ -4644,7 +4644,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo C071RB board](../_images/nucleo_c071rb.webp)
+![A picture of the Nucleo C071RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_c071rb.webp)
 
 Nucleo C071RB
 
@@ -4655,7 +4655,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F030R8 board](../_images/nucleo_f030r8.jpg)
+![A picture of the Nucleo F030R8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f030r8.jpg)
 
 Nucleo F030R8
 
@@ -4666,7 +4666,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F031K6 board](../_images/nucleo_f031k6.jpg)
+![A picture of the Nucleo F031K6 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f031k6.jpg)
 
 Nucleo F031K6
 
@@ -4677,7 +4677,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F042K6 board](../_images/nucleo_f042k6.jpg)
+![A picture of the Nucleo F042K6 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f042k6.jpg)
 
 Nucleo F042K6
 
@@ -4688,7 +4688,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F070RB board](../_images/nucleo_f070rb.jpg)
+![A picture of the Nucleo F070RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f070rb.jpg)
 
 Nucleo F070RB
 
@@ -4699,7 +4699,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F072RB board](../_images/nucleo_f072rb.webp)
+![A picture of the Nucleo F072RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f072rb.webp)
 
 Nucleo F072RB
 
@@ -4710,7 +4710,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F091RC board](../_images/nucleo_f091rc.jpg)
+![A picture of the Nucleo F091RC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f091rc.jpg)
 
 Nucleo F091RC
 
@@ -4721,7 +4721,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F103RB board](../_images/nucleo_f103rb.jpg)
+![A picture of the Nucleo F103RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f103rb.jpg)
 
 Nucleo F103RB
 
@@ -4732,7 +4732,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F207ZG board](../_images/nucleo_f207zg.jpg)
+![A picture of the Nucleo F207ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f207zg.jpg)
 
 Nucleo F207ZG
 
@@ -4743,7 +4743,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F302R8 board](../_images/nucleo_f302r8.jpg)
+![A picture of the Nucleo F302R8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f302r8.jpg)
 
 Nucleo F302R8
 
@@ -4754,7 +4754,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F303K8 board](../_images/nucleo_f303k8.jpg)
+![A picture of the Nucleo F303K8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f303k8.jpg)
 
 Nucleo F303K8
 
@@ -4765,7 +4765,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F303RE board](../_images/nucleo_f303re.jpg)
+![A picture of the Nucleo F303RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f303re.jpg)
 
 Nucleo F303RE
 
@@ -4776,7 +4776,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F334R8 board](../_images/nucleo_f334r8.jpg)
+![A picture of the Nucleo F334R8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f334r8.jpg)
 
 Nucleo F334R8
 
@@ -4787,7 +4787,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F401RE board](../_images/nucleo_f401re.jpg)
+![A picture of the Nucleo F401RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f401re.jpg)
 
 Nucleo F401RE
 
@@ -4798,7 +4798,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F410RB board](../_images/nucleo_f410rb.jpg)
+![A picture of the Nucleo F410RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f410rb.jpg)
 
 Nucleo F410RB
 
@@ -4809,7 +4809,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F411RE board](../_images/nucleo_f411re.jpg)
+![A picture of the Nucleo F411RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f411re.jpg)
 
 Nucleo F411RE
 
@@ -4820,7 +4820,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F412ZG board](../_images/nucleo_f412zg.jpg)
+![A picture of the Nucleo F412ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f412zg.jpg)
 
 Nucleo F412ZG
 
@@ -4831,7 +4831,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F413ZH board](../_images/nucleo_f413zh.jpg)
+![A picture of the Nucleo F413ZH board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f413zh.jpg)
 
 Nucleo F413ZH
 
@@ -4842,7 +4842,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F429ZI board](../_images/nucleo_f429zi.jpg)
+![A picture of the Nucleo F429ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f429zi.jpg)
 
 Nucleo F429ZI
 
@@ -4862,7 +4862,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F446RE board](../_images/nucleo_f446re.jpg)
+![A picture of the Nucleo F446RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f446re.jpg)
 
 Nucleo F446RE
 
@@ -4873,7 +4873,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F446ZE board](../_images/nucleo_f446ze.jpg)
+![A picture of the Nucleo F446ZE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f446ze.jpg)
 
 Nucleo F446ZE
 
@@ -4884,7 +4884,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F722ZE board](../_images/nucleo_f722ze.jpg)
+![A picture of the Nucleo F722ZE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f722ze.jpg)
 
 Nucleo F722ZE
 
@@ -4895,7 +4895,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F746ZG board](../_images/nucleo_f746zg.jpg)
+![A picture of the Nucleo F746ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f746zg.jpg)
 
 Nucleo F746ZG
 
@@ -4906,7 +4906,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F756ZG board](../_images/nucleo_f756zg.jpg)
+![A picture of the Nucleo F756ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f756zg.jpg)
 
 Nucleo F756ZG
 
@@ -4917,7 +4917,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo F767ZI board](../_images/nucleo_f767zi.jpg)
+![A picture of the Nucleo F767ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f767zi.jpg)
 
 Nucleo F767ZI
 
@@ -4928,7 +4928,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G031K8 board](../_images/nucleo_g031k8.jpg)
+![A picture of the Nucleo G031K8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g031k8.jpg)
 
 Nucleo G031K8
 
@@ -4939,7 +4939,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G070RB board](../_images/nucleo_g070rb.jpg)
+![A picture of the Nucleo G070RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g070rb.jpg)
 
 Nucleo G070RB
 
@@ -4950,7 +4950,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G071RB board](../_images/nucleo_g071rb.jpg)
+![A picture of the Nucleo G071RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g071rb.jpg)
 
 Nucleo G071RB
 
@@ -4961,7 +4961,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G0B1RE board](../_images/nucleo_g0b1re.jpg)
+![A picture of the Nucleo G0B1RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g0b1re.jpg)
 
 Nucleo G0B1RE
 
@@ -4972,7 +4972,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G431KB board](../_images/nucleo_g431kb.webp)
+![A picture of the Nucleo G431KB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g431kb.webp)
 
 Nucleo G431KB
 
@@ -4983,7 +4983,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G431RB board](../_images/nucleo_g431rb.jpg)
+![A picture of the Nucleo G431RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g431rb.jpg)
 
 Nucleo G431RB
 
@@ -4994,7 +4994,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo G474RE board](../_images/nucleo_g474re.jpg)
+![A picture of the Nucleo G474RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g474re.jpg)
 
 Nucleo G474RE
 
@@ -5005,7 +5005,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H503RB board](../_images/nucleo_h503rb.png)
+![A picture of the Nucleo H503RB board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h503rb.png)
 
 Nucleo H503RB
 
@@ -5016,7 +5016,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H533RE board](../_images/nucleo_h533re.jpg)
+![A picture of the Nucleo H533RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h533re.jpg)
 
 Nucleo H533RE
 
@@ -5027,7 +5027,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H563ZI board](../_images/nucleo_h563zi.jpg)
+![A picture of the Nucleo H563ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h563zi.jpg)
 
 Nucleo H563ZI
 
@@ -5038,7 +5038,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H723ZG board](../_images/nucleo_h723zg.jpg)
+![A picture of the Nucleo H723ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h723zg.jpg)
 
 Nucleo H723ZG
 
@@ -5049,7 +5049,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H743ZI board](../_images/nucleo_h743zi.jpg)
+![A picture of the Nucleo H743ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h743zi.jpg)
 
 Nucleo H743ZI
 
@@ -5060,7 +5060,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H745ZI-Q board](../_images/nucleo_h745zi_q.jpg)
+![A picture of the Nucleo H745ZI-Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h745zi_q.jpg)
 
 Nucleo H745ZI-Q
 
@@ -5071,7 +5071,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H753ZI board](../_images/nucleo_h753zi.jpg)
+![A picture of the Nucleo H753ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h753zi.jpg)
 
 Nucleo H753ZI
 
@@ -5082,7 +5082,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H755ZI-Q board](../_images/nucleo_h755zi_q.webp)
+![A picture of the Nucleo H755ZI-Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h755zi_q.webp)
 
 Nucleo H755ZI-Q
 
@@ -5093,7 +5093,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H7A3ZI-Q board](../_images/nucleo_h7a3zi_q.jpg)
+![A picture of the Nucleo H7A3ZI-Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h7a3zi_q.jpg)
 
 Nucleo H7A3ZI-Q
 
@@ -5104,7 +5104,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo H7S3L8 board](../_images/nucleo_h7s3l8.webp)
+![A picture of the Nucleo H7S3L8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_h7s3l8.webp)
 
 Nucleo H7S3L8
 
@@ -5115,7 +5115,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L011K4 board](../_images/nucleo_l011k4.jpg)
+![A picture of the Nucleo L011K4 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l011k4.jpg)
 
 Nucleo L011K4
 
@@ -5126,7 +5126,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L031K6 board](../_images/nucleo_l031k6.jpg)
+![A picture of the Nucleo L031K6 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l031k6.jpg)
 
 Nucleo L031K6
 
@@ -5137,7 +5137,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L053R8 board](../_images/nucleo_l053r8.jpg)
+![A picture of the Nucleo L053R8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l053r8.jpg)
 
 Nucleo L053R8
 
@@ -5148,7 +5148,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L073RZ board](../_images/nucleo_l073rz.jpg)
+![A picture of the Nucleo L073RZ board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l073rz.jpg)
 
 Nucleo L073RZ
 
@@ -5159,7 +5159,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L152RE board](../_images/nucleo_l152re.jpg)
+![A picture of the Nucleo L152RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l152re.jpg)
 
 Nucleo L152RE
 
@@ -5170,7 +5170,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L412RB-P board](../_images/nucleo_l412rb_p.jpg)
+![A picture of the Nucleo L412RB-P board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l412rb_p.jpg)
 
 Nucleo L412RB-P
 
@@ -5181,7 +5181,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L432KC board](../_images/nucleo_l432kc.jpg)
+![A picture of the Nucleo L432KC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l432kc.jpg)
 
 Nucleo L432KC
 
@@ -5192,7 +5192,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L433RC board](../_images/nucleo_l433rc_p.jpg)
+![A picture of the Nucleo L433RC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l433rc_p.jpg)
 
 Nucleo L433RC
 
@@ -5203,7 +5203,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L452RE board](../_images/nucleo_l452re_p.jpg)
+![A picture of the Nucleo L452RE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l452re_p.jpg)
 
 Nucleo L452RE
 
@@ -5214,7 +5214,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L476RG board](../_images/nucleo_l476rg.jpg)
+![A picture of the Nucleo L476RG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l476rg.jpg)
 
 Nucleo L476RG
 
@@ -5225,7 +5225,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L496ZG board](../_images/nucleo_l496zg.jpg)
+![A picture of the Nucleo L496ZG board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l496zg.jpg)
 
 Nucleo L496ZG
 
@@ -5245,7 +5245,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L4R5ZI board](../_images/nucleo_l4r5zi.jpg)
+![A picture of the Nucleo L4R5ZI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l4r5zi.jpg)
 
 Nucleo L4R5ZI
 
@@ -5256,7 +5256,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo L552ZE Q board](../_images/nucleo_l552ze_q.jpg)
+![A picture of the Nucleo L552ZE Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_l552ze_q.jpg)
 
 Nucleo L552ZE Q
 
@@ -5267,7 +5267,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo N657X0-Q board](../_images/nucleo_n657x0_q.webp)
+![A picture of the Nucleo N657X0-Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_n657x0_q.webp)
 
 Nucleo N657X0-Q
 
@@ -5276,7 +5276,7 @@ Nucleo N657X0-Q
 
 STMicroelectronics
 
-![A picture of the Nucleo U031R8 board](../_images/nucleo_u031r8.jpg)
+![A picture of the Nucleo U031R8 board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_u031r8.jpg)
 
 Nucleo U031R8
 
@@ -5287,7 +5287,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo U083RC board](../_images/nucleo_u083rc.jpg)
+![A picture of the Nucleo U083RC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_u083rc.jpg)
 
 Nucleo U083RC
 
@@ -5298,7 +5298,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo U385RG Q board](../_images/nucleo_u385rg_q.webp)
+![A picture of the Nucleo U385RG Q board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_u385rg_q.webp)
 
 Nucleo U385RG Q
 
@@ -5327,7 +5327,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WB05KZ board](../_images/nucleo_wb05kz.webp)
+![A picture of the Nucleo WB05KZ board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb05kz.webp)
 
 Nucleo WB05KZ
 
@@ -5338,7 +5338,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WB07CC board](../_images/nucleo_wb07cc.webp)
+![A picture of the Nucleo WB07CC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb07cc.webp)
 
 Nucleo WB07CC
 
@@ -5349,7 +5349,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WB09KE board](../_images/nucleo_wb09ke.webp)
+![A picture of the Nucleo WB09KE board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb09ke.webp)
 
 Nucleo WB09KE
 
@@ -5360,7 +5360,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WB55RG board](../_images/nucleowb55rg.jpg)
+![A picture of the Nucleo WB55RG board](https://docs.zephyrproject.org/4.2.0/_images/nucleowb55rg.jpg)
 
 Nucleo WB55RG
 
@@ -5371,7 +5371,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WBA55CG board](../_images/nucleowba55cg.jpg)
+![A picture of the Nucleo WBA55CG board](https://docs.zephyrproject.org/4.2.0/_images/nucleowba55cg.jpg)
 
 Nucleo WBA55CG
 
@@ -5382,7 +5382,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WBA65RI board](../_images/nucleo_wba65ri.webp)
+![A picture of the Nucleo WBA65RI board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wba65ri.webp)
 
 Nucleo WBA65RI
 
@@ -5393,7 +5393,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the Nucleo WL55JC board](../_images/nucleo_wl55jc.jpg)
+![A picture of the Nucleo WL55JC board](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wl55jc.jpg)
 
 Nucleo WL55JC
 
@@ -5404,7 +5404,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NUMAKER M2L31KI board](../_images/m2l31ki.webp)
+![A picture of the NUMAKER M2L31KI board](https://docs.zephyrproject.org/4.2.0/_images/m2l31ki.webp)
 
 NUMAKER M2L31KI
 
@@ -5415,7 +5415,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NUMAKER M55M1 board](../_images/m55m1.webp)
+![A picture of the NUMAKER M55M1 board](https://docs.zephyrproject.org/4.2.0/_images/m55m1.webp)
 
 NUMAKER M55M1
 
@@ -5426,7 +5426,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NUMAKER PFM M467 board](../_images/pfm_m467.jpeg)
+![A picture of the NUMAKER PFM M467 board](https://docs.zephyrproject.org/4.2.0/_images/pfm_m467.jpeg)
 
 NUMAKER PFM M467
 
@@ -5437,7 +5437,7 @@ arm
 
 Nuvoton Technology Corporation
 
-![A picture of the NUMAKER PFM M487 board](../_images/pfm_m487.jpg)
+![A picture of the NUMAKER PFM M487 board](https://docs.zephyrproject.org/4.2.0/_images/pfm_m487.jpg)
 
 NUMAKER PFM M487
 
@@ -5448,7 +5448,7 @@ arm
 
 Würth Elektronik GmbH.
 
-![A picture of the Oceanus-I EV board](../_images/we_oceanus1ev.webp)
+![A picture of the Oceanus-I EV board](https://docs.zephyrproject.org/4.2.0/_images/we_oceanus1ev.webp)
 
 Oceanus-I EV
 
@@ -5459,7 +5459,7 @@ arm
 
 Norik Systems
 
-![A picture of the Octopus IO-Board board](../_images/octopus_io_board.webp)
+![A picture of the Octopus IO-Board board](https://docs.zephyrproject.org/4.2.0/_images/octopus_io_board.webp)
 
 Octopus IO-Board
 
@@ -5470,7 +5470,7 @@ arm
 
 Norik Systems
 
-![A picture of the Octopus SoM board](../_images/octopus_som.webp)
+![A picture of the Octopus SoM board](https://docs.zephyrproject.org/4.2.0/_images/octopus_som.webp)
 
 Octopus SoM
 
@@ -5481,7 +5481,7 @@ arm
 
 Hardkernel Co., Ltd
 
-![A picture of the ODROID-GO board](../_images/odroid_go.jpg)
+![A picture of the ODROID-GO board](https://docs.zephyrproject.org/4.2.0/_images/odroid_go.jpg)
 
 ODROID-GO
 
@@ -5492,7 +5492,7 @@ xtensa
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEX-STM32-E407 board](../_images/olimex_stm32_e407.jpg)
+![A picture of the OLIMEX-STM32-E407 board](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_e407.jpg)
 
 OLIMEX-STM32-E407
 
@@ -5503,7 +5503,7 @@ arm
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEX-STM32-H103 board](../_images/olimex_stm32_h103_top.jpg)
+![A picture of the OLIMEX-STM32-H103 board](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_h103_top.jpg)
 
 OLIMEX-STM32-H103
 
@@ -5514,7 +5514,7 @@ arm
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEX-STM32-H405 board](../_images/olimex_stm32_h405_top.jpg)
+![A picture of the OLIMEX-STM32-H405 board](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_h405_top.jpg)
 
 OLIMEX-STM32-H405
 
@@ -5525,7 +5525,7 @@ arm
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEX-STM32-H407 board](../_images/olimex_stm32_h407.jpg)
+![A picture of the OLIMEX-STM32-H407 board](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_h407.jpg)
 
 OLIMEX-STM32-H407
 
@@ -5536,7 +5536,7 @@ arm
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEX-STM32-P405 board](../_images/olimex_stm32_p405.jpg)
+![A picture of the OLIMEX-STM32-P405 board](https://docs.zephyrproject.org/4.2.0/_images/olimex_stm32_p405.jpg)
 
 OLIMEX-STM32-P405
 
@@ -5547,7 +5547,7 @@ arm
 
 OLIMEX Ltd.
 
-![A picture of the OLIMEXINO-STM32 board](../_images/olimexino_stm32.jpg)
+![A picture of the OLIMEXINO-STM32 board](https://docs.zephyrproject.org/4.2.0/_images/olimexino_stm32.jpg)
 
 OLIMEXINO-STM32
 
@@ -5558,7 +5558,7 @@ arm
 
 Waveshare Electronics
 
-![A picture of the Open103Z board](../_images/waveshare_open103z.jpg)
+![A picture of the Open103Z board](https://docs.zephyrproject.org/4.2.0/_images/waveshare_open103z.jpg)
 
 Open103Z
 
@@ -5569,7 +5569,7 @@ arm
 
 open-isa.org
 
-![A picture of the OpenISA VEGAboard board](../_images/rv32m1_vega.jpg)
+![A picture of the OpenISA VEGAboard board](https://docs.zephyrproject.org/4.2.0/_images/rv32m1_vega.jpg)
 
 OpenISA VEGAboard
 
@@ -5589,7 +5589,7 @@ riscv
 
 Würth Elektronik GmbH.
 
-![A picture of the Ophelia-I EV NRF52805 board](../_images/we_ophelia1ev_nrf52805.jpg)
+![A picture of the Ophelia-I EV NRF52805 board](https://docs.zephyrproject.org/4.2.0/_images/we_ophelia1ev_nrf52805.jpg)
 
 Ophelia-I EV NRF52805
 
@@ -5600,7 +5600,7 @@ arm
 
 Würth Elektronik GmbH.
 
-![A picture of the Ophelia-IV DK board](../_images/ophelia4ev.webp)
+![A picture of the Ophelia-IV DK board](https://docs.zephyrproject.org/4.2.0/_images/ophelia4ev.webp)
 
 Ophelia-IV DK
 
@@ -5611,7 +5611,7 @@ arm, riscv
 
 Würth Elektronik GmbH.
 
-![A picture of the Orthosie-I-EV board](../_images/we_orthosie1ev.webp)
+![A picture of the Orthosie-I-EV board](https://docs.zephyrproject.org/4.2.0/_images/we_orthosie1ev.webp)
 
 Orthosie-I-EV
 
@@ -5622,7 +5622,7 @@ riscv
 
 Octavo Systems LLC
 
-![A picture of the OSD32MP1-BRK board](../_images/osd32mp1_brk.webp)
+![A picture of the OSD32MP1-BRK board](https://docs.zephyrproject.org/4.2.0/_images/osd32mp1_brk.webp)
 
 OSD32MP1-BRK
 
@@ -5633,7 +5633,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN B511 Evaluation Board board](../_images/panb511evb.webp)
+![A picture of the PAN B511 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/panb511evb.webp)
 
 PAN B511 Evaluation Board
 
@@ -5644,7 +5644,7 @@ arm, riscv
 
 Panasonic Corporation
 
-![A picture of the PAN1770 Evaluation Board board](../_images/pan1770_evaluation_board.jpg)
+![A picture of the PAN1770 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1770_evaluation_board.jpg)
 
 PAN1770 Evaluation Board
 
@@ -5655,7 +5655,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1780 Evaluation Board board](../_images/pan1780_evaluation_board.jpg)
+![A picture of the PAN1780 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1780_evaluation_board.jpg)
 
 PAN1780 Evaluation Board
 
@@ -5666,7 +5666,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1781 Evaluation Board board](../_images/pan1781_evaluation_board.jpg)
+![A picture of the PAN1781 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1781_evaluation_board.jpg)
 
 PAN1781 Evaluation Board
 
@@ -5677,7 +5677,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1782 Evaluation Board board](../_images/pan1782_evaluation_board.jpg)
+![A picture of the PAN1782 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1782_evaluation_board.jpg)
 
 PAN1782 Evaluation Board
 
@@ -5688,7 +5688,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1783 Evaluation Board board](../_images/pan1783_evb.webp)
+![A picture of the PAN1783 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1783_evb.webp)
 
 PAN1783 Evaluation Board
 
@@ -5699,7 +5699,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1783A Evaluation Board board](../_images/pan1783_evb.webp)
+![A picture of the PAN1783A Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1783_evb.webp)
 
 PAN1783A Evaluation Board
 
@@ -5710,7 +5710,7 @@ arm
 
 Panasonic Corporation
 
-![A picture of the PAN1783A-PA Evaluation Board board](../_images/pan1783_evb.webp)
+![A picture of the PAN1783A-PA Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/pan1783_evb.webp)
 
 PAN1783A-PA Evaluation Board
 
@@ -5721,7 +5721,7 @@ arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Electra AM64x M4F Core board](../_images/phyCORE-AM64x_Electra_frontside.webp)
+![A picture of the phyBOARD-Electra AM64x M4F Core board](https://docs.zephyrproject.org/4.2.0/_images/phyCORE-AM64x_Electra_frontside.webp)
 
 phyBOARD-Electra AM64x M4F Core
 
@@ -5732,7 +5732,7 @@ arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Lyra AM62x A53 Core board](../_images/phyCORE-AM62x_Lyra_frontside.webp)
+![A picture of the phyBOARD-Lyra AM62x A53 Core board](https://docs.zephyrproject.org/4.2.0/_images/phyCORE-AM62x_Lyra_frontside.webp)
 
 phyBOARD-Lyra AM62x A53 Core
 
@@ -5743,7 +5743,7 @@ arm64, arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Nash i.MX93 board](../_images/phyboard_nash.webp)
+![A picture of the phyBOARD-Nash i.MX93 board](https://docs.zephyrproject.org/4.2.0/_images/phyboard_nash.webp)
 
 phyBOARD-Nash i.MX93
 
@@ -5754,7 +5754,7 @@ arm64, arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Polis i.MX8M Mini board](../_images/PEB-EVAL-01.jpg)
+![A picture of the phyBOARD-Polis i.MX8M Mini board](https://docs.zephyrproject.org/4.2.0/_images/PEB-EVAL-01.jpg)
 
 phyBOARD-Polis i.MX8M Mini
 
@@ -5765,7 +5765,7 @@ arm
 
 PHYTEC
 
-![A picture of the phyBOARD-Pollux i.MX8M Plus board](../_images/PEB-EVAL-01.jpg)
+![A picture of the phyBOARD-Pollux i.MX8M Plus board](https://docs.zephyrproject.org/4.2.0/_images/PEB-EVAL-01.jpg)
 
 phyBOARD-Pollux i.MX8M Plus
 
@@ -5776,7 +5776,7 @@ arm
 
 TechNexion
 
-![A picture of the Pico-Pi i.MX7D - Android Things IoT Development Platform board](../_images/pico_pi.jpg)
+![A picture of the Pico-Pi i.MX7D - Android Things IoT Development Platform board](https://docs.zephyrproject.org/4.2.0/_images/pico_pi.jpg)
 
 Pico-Pi i.MX7D - Android Things IoT Development Platform
 
@@ -5787,7 +5787,7 @@ arm
 
 KWS Computersysteme Gmbh
 
-![A picture of the Pico-SPE board](../_images/pico_spe.webp)
+![A picture of the Pico-SPE board](https://docs.zephyrproject.org/4.2.0/_images/pico_spe.webp)
 
 Pico-SPE
 
@@ -5798,7 +5798,7 @@ arm
 
 KWS Computersysteme Gmbh
 
-![A picture of the Pico2-SPE board](../_images/pico2_spe.webp)
+![A picture of the Pico2-SPE board](https://docs.zephyrproject.org/4.2.0/_images/pico2_spe.webp)
 
 Pico2-SPE
 
@@ -5809,7 +5809,7 @@ arm
 
 Pimoroni Ltd.
 
-![A picture of the Pimoroni Pico Plus2 board](../_images/pico_plus2.webp)
+![A picture of the Pimoroni Pico Plus2 board](https://docs.zephyrproject.org/4.2.0/_images/pico_plus2.webp)
 
 Pimoroni Pico Plus2
 
@@ -5820,7 +5820,7 @@ arm
 
 Pine64
 
-![A picture of the PineTime DevKit0 board](../_images/pinetime_devkit0.jpg)
+![A picture of the PineTime DevKit0 board](https://docs.zephyrproject.org/4.2.0/_images/pinetime_devkit0.jpg)
 
 PineTime DevKit0
 
@@ -5831,7 +5831,7 @@ arm
 
 Ezurio
 
-![A picture of the Pinnacle 100 DVK board](../_images/pinnacle_100_dvk.jpg)
+![A picture of the Pinnacle 100 DVK board](https://docs.zephyrproject.org/4.2.0/_images/pinnacle_100_dvk.jpg)
 
 Pinnacle 100 DVK
 
@@ -5842,7 +5842,7 @@ arm
 
 BeagleBoard.org Foundation
 
-![A picture of the PocketBeagle 2 board](../_images/pocketbeagle_2.webp)
+![A picture of the PocketBeagle 2 board](https://docs.zephyrproject.org/4.2.0/_images/pocketbeagle_2.webp)
 
 PocketBeagle 2
 
@@ -5853,7 +5853,7 @@ arm64, arm
 
 Other/Unknown
 
-![A picture of the Pro Micro nRF52840 board](../_images/others_promicro_nrf52840.webp)
+![A picture of the Pro Micro nRF52840 board](https://docs.zephyrproject.org/4.2.0/_images/others_promicro_nrf52840.webp)
 
 Pro Micro nRF52840
 
@@ -5864,7 +5864,7 @@ arm
 
 SparkFun Electronics
 
-![A picture of the Pro Micro RP2040 board](../_images/sparkfun_pro_micro_rp2040.jpg)
+![A picture of the Pro Micro RP2040 board](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_pro_micro_rp2040.jpg)
 
 Pro Micro RP2040
 
@@ -5875,7 +5875,7 @@ arm
 
 Würth Elektronik GmbH.
 
-![A picture of the Proteus-II-EV board](../_images/we_proteus2ev_nrf52832.jpg)
+![A picture of the Proteus-II-EV board](https://docs.zephyrproject.org/4.2.0/_images/we_proteus2ev_nrf52832.jpg)
 
 Proteus-II-EV
 
@@ -5886,7 +5886,7 @@ arm
 
 Würth Elektronik GmbH.
 
-![A picture of the Proteus-III-EV board](../_images/we_proteus3ev_nrf52840.jpg)
+![A picture of the Proteus-III-EV board](https://docs.zephyrproject.org/4.2.0/_images/we_proteus3ev_nrf52840.jpg)
 
 Proteus-III-EV
 
@@ -5897,7 +5897,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the PSOC 6 AI Evaluation Kit board](../_images/cy8ckit_062s2_ai.webp)
+![A picture of the PSOC 6 AI Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit_062s2_ai.webp)
 
 PSOC 6 AI Evaluation Kit
 
@@ -5908,7 +5908,7 @@ arm
 
 Cypress Semiconductor Corporation
 
-![A picture of the PSOC 6 WiFi-BT Pioneer Kit board](../_images/cy8ckit_062_wifi_bt_m0.jpg)
+![A picture of the PSOC 6 WiFi-BT Pioneer Kit board](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit_062_wifi_bt_m0.jpg)
 
 PSOC 6 WiFi-BT Pioneer Kit
 
@@ -5919,7 +5919,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the PSOC 62S4 Pioneer Kit board](../_images/cy8ckit_062s4.png)
+![A picture of the PSOC 62S4 Pioneer Kit board](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit_062s4.png)
 
 PSOC 62S4 Pioneer Kit
 
@@ -5930,7 +5930,7 @@ arm
 
 Cypress Semiconductor Corporation
 
-![A picture of the PSOC 63 BLE Pioneer Kit board](../_images/cy8ckit-062-ble.jpg)
+![A picture of the PSOC 63 BLE Pioneer Kit board](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit-062-ble.jpg)
 
 PSOC 63 BLE Pioneer Kit
 
@@ -6112,7 +6112,7 @@ xtensa
 
 QuickLogic Corp.
 
-![A picture of the Qomu board](../_images/qomu-board.png)
+![A picture of the Qomu board](https://docs.zephyrproject.org/4.2.0/_images/qomu-board.png)
 
 Qomu
 
@@ -6123,7 +6123,7 @@ arm
 
 Adafruit Industries, LLC
 
-![A picture of the QT Py ESP32-S3 board](../_images/adafruit_qt_py_esp32s3.webp)
+![A picture of the QT Py ESP32-S3 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_qt_py_esp32s3.webp)
 
 QT Py ESP32-S3
 
@@ -6134,7 +6134,7 @@ xtensa
 
 Adafruit Industries, LLC
 
-![A picture of the QT Py RP2040 board](../_images/qtpy_rp2040.jpg)
+![A picture of the QT Py RP2040 board](https://docs.zephyrproject.org/4.2.0/_images/qtpy_rp2040.jpg)
 
 QT Py RP2040
 
@@ -6145,7 +6145,7 @@ arm
 
 QuickLogic Corp.
 
-![A picture of the QuickFeather board](../_images/feather-board.jpg)
+![A picture of the QuickFeather board](https://docs.zephyrproject.org/4.2.0/_images/feather-board.jpg)
 
 QuickFeather
 
@@ -6165,7 +6165,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the R-Car H3ULCB board](../_images/rcar_h3ulcb.jpg)
+![A picture of the R-Car H3ULCB board](https://docs.zephyrproject.org/4.2.0/_images/rcar_h3ulcb.jpg)
 
 R-Car H3ULCB
 
@@ -6176,7 +6176,7 @@ arm64, arm
 
 Renesas Electronics Corporation
 
-![A picture of the R-Car Salvator-X board](../_images/rcar_salvator_x.jpg)
+![A picture of the R-Car Salvator-X board](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_x.jpg)
 
 R-Car Salvator-X
 
@@ -6187,7 +6187,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the R-Car Salvator-XS board](../_images/rcar_salvator_xs.jpg)
+![A picture of the R-Car Salvator-XS board](https://docs.zephyrproject.org/4.2.0/_images/rcar_salvator_xs.jpg)
 
 R-Car Salvator-XS
 
@@ -6198,7 +6198,7 @@ arm64
 
 Renesas Electronics Corporation
 
-![A picture of the R-Car Spider board](../_images/rcar_spider_s4.jpg)
+![A picture of the R-Car Spider board](https://docs.zephyrproject.org/4.2.0/_images/rcar_spider_s4.jpg)
 
 R-Car Spider
 
@@ -6209,7 +6209,7 @@ arm64, arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA2A1 Evaluation Kit board](../_images/ek_ra2a1.webp)
+![A picture of the RA2A1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra2a1.webp)
 
 RA2A1 Evaluation Kit
 
@@ -6220,7 +6220,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4E1 Fast Prototyping Board board](../_images/fpb_ra4e1.webp)
+![A picture of the RA4E1 Fast Prototyping Board board](https://docs.zephyrproject.org/4.2.0/_images/fpb_ra4e1.webp)
 
 RA4E1 Fast Prototyping Board
 
@@ -6231,7 +6231,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4E1 Voice User Reference Kit board](../_images/voice_ra4e1.webp)
+![A picture of the RA4E1 Voice User Reference Kit board](https://docs.zephyrproject.org/4.2.0/_images/voice_ra4e1.webp)
 
 RA4E1 Voice User Reference Kit
 
@@ -6242,7 +6242,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4E2 Evaluation Kit board](../_images/ek_ra4e2.webp)
+![A picture of the RA4E2 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4e2.webp)
 
 RA4E2 Evaluation Kit
 
@@ -6253,7 +6253,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4L1 Evaluation Kit board](../_images/ek_ra4l1.webp)
+![A picture of the RA4L1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4l1.webp)
 
 RA4L1 Evaluation Kit
 
@@ -6264,7 +6264,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4M1 Evaluation Kit board](../_images/ek_ra4m1.webp)
+![A picture of the RA4M1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4m1.webp)
 
 RA4M1 Evaluation Kit
 
@@ -6275,7 +6275,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4M2 Evaluation Kit board](../_images/ek_ra4m2.webp)
+![A picture of the RA4M2 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4m2.webp)
 
 RA4M2 Evaluation Kit
 
@@ -6286,7 +6286,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4M3 Evaluation Kit board](../_images/ek_ra4m3.webp)
+![A picture of the RA4M3 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4m3.webp)
 
 RA4M3 Evaluation Kit
 
@@ -6297,7 +6297,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA4W1 Evaluation Kit board](../_images/ek_ra4w1.webp)
+![A picture of the RA4W1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra4w1.webp)
 
 RA4W1 Evaluation Kit
 
@@ -6308,7 +6308,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6E1 Fast Prototyping Board board](../_images/fpb_ra6e1.webp)
+![A picture of the RA6E1 Fast Prototyping Board board](https://docs.zephyrproject.org/4.2.0/_images/fpb_ra6e1.webp)
 
 RA6E1 Fast Prototyping Board
 
@@ -6319,7 +6319,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6E2 Evaluation Kit board](../_images/ek_ra6e2.webp)
+![A picture of the RA6E2 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6e2.webp)
 
 RA6E2 Evaluation Kit
 
@@ -6330,7 +6330,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6E2 Fast Prototyping Board board](../_images/fpb_ra6e2.webp)
+![A picture of the RA6E2 Fast Prototyping Board board](https://docs.zephyrproject.org/4.2.0/_images/fpb_ra6e2.webp)
 
 RA6E2 Fast Prototyping Board
 
@@ -6341,7 +6341,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6M1 Evaluation Kit board](../_images/ek_ra6m1.webp)
+![A picture of the RA6M1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6m1.webp)
 
 RA6M1 Evaluation Kit
 
@@ -6352,7 +6352,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6M2 Evaluation Kit board](../_images/ek_ra6m2.webp)
+![A picture of the RA6M2 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6m2.webp)
 
 RA6M2 Evaluation Kit
 
@@ -6363,7 +6363,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6M3 Evaluation Kit board](../_images/ek_ra6m3.webp)
+![A picture of the RA6M3 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6m3.webp)
 
 RA6M3 Evaluation Kit
 
@@ -6374,7 +6374,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6M4 Evaluation Kit board](../_images/ek_ra6m4.webp)
+![A picture of the RA6M4 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6m4.webp)
 
 RA6M4 Evaluation Kit
 
@@ -6385,7 +6385,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA6M5 Evaluation Kit board](../_images/ek_ra6m5.webp)
+![A picture of the RA6M5 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra6m5.webp)
 
 RA6M5 Evaluation Kit
 
@@ -6396,7 +6396,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA8D1 Evaluation Kit board](../_images/ek_ra8d1.jpg)
+![A picture of the RA8D1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra8d1.jpg)
 
 RA8D1 Evaluation Kit
 
@@ -6407,7 +6407,7 @@ arm
 
 Shanghai Ruiside Electronic Technology Co., Ltd.
 
-![A picture of the RA8D1 Vision Board board](../_images/ra8d1_vision_board.webp)
+![A picture of the RA8D1 Vision Board board](https://docs.zephyrproject.org/4.2.0/_images/ra8d1_vision_board.webp)
 
 RA8D1 Vision Board
 
@@ -6418,7 +6418,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA8M1 Evaluation Kit board](../_images/ek_ra8m1.jpg)
+![A picture of the RA8M1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra8m1.jpg)
 
 RA8M1 Evaluation Kit
 
@@ -6429,7 +6429,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA8P1 Evaluation Kit board](../_images/ek_ra8p1.webp)
+![A picture of the RA8P1 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/ek_ra8p1.webp)
 
 RA8P1 Evaluation Kit
 
@@ -6440,7 +6440,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RA8T1 Motor Control Kit board](../_images/mck_ra8t1.jpg)
+![A picture of the RA8T1 Motor Control Kit board](https://docs.zephyrproject.org/4.2.0/_images/mck_ra8t1.jpg)
 
 RA8T1 Motor Control Kit
 
@@ -6451,7 +6451,7 @@ arm
 
 RAKwireless Technology Limited
 
-![A picture of the RAK11720 board](../_images/rak11720.webp)
+![A picture of the RAK11720 board](https://docs.zephyrproject.org/4.2.0/_images/rak11720.webp)
 
 RAK11720
 
@@ -6462,7 +6462,7 @@ arm
 
 RAKwireless Technology Limited
 
-![A picture of the RAK3172 board](../_images/rak3172.webp)
+![A picture of the RAK3172 board](https://docs.zephyrproject.org/4.2.0/_images/rak3172.webp)
 
 RAK3172
 
@@ -6473,7 +6473,7 @@ arm
 
 RAKwireless Technology Limited
 
-![A picture of the RAK4631 board](../_images/rak4631-front-parts.jpg)
+![A picture of the RAK4631 board](https://docs.zephyrproject.org/4.2.0/_images/rak4631-front-parts.jpg)
 
 RAK4631
 
@@ -6484,7 +6484,7 @@ arm
 
 RAKwireless Technology Limited
 
-![A picture of the RAK5010 board](../_images/rak5010-front-parts.jpg)
+![A picture of the RAK5010 board](https://docs.zephyrproject.org/4.2.0/_images/rak5010-front-parts.jpg)
 
 RAK5010
 
@@ -6531,7 +6531,7 @@ arm64
 
 Raspberry Pi Foundation
 
-![A picture of the Raspberry Pi Pico board](../_images/rpi_pico.jpg)
+![A picture of the Raspberry Pi Pico board](https://docs.zephyrproject.org/4.2.0/_images/rpi_pico.jpg)
 
 Raspberry Pi Pico
 
@@ -6542,7 +6542,7 @@ arm
 
 Raspberry Pi Foundation
 
-![A picture of the Raspberry Pi Pico 2 board](../_images/rpi_pico2.webp)
+![A picture of the Raspberry Pi Pico 2 board](https://docs.zephyrproject.org/4.2.0/_images/rpi_pico2.webp)
 
 Raspberry Pi Pico 2
 
@@ -6562,7 +6562,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the RDDRONE-FMUK66 board](../_images/rddrone_fmuk66.jpg)
+![A picture of the RDDRONE-FMUK66 board](https://docs.zephyrproject.org/4.2.0/_images/rddrone_fmuk66.jpg)
 
 RDDRONE-FMUK66
 
@@ -6573,7 +6573,7 @@ arm
 
 SparkFun Electronics
 
-![A picture of the RED-V Things Plus board](../_images/sparkfun_red_v_things_plus.jpg)
+![A picture of the RED-V Things Plus board](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_red_v_things_plus.jpg)
 
 RED-V Things Plus
 
@@ -6584,7 +6584,7 @@ riscv
 
 Particle.io
 
-![A picture of the Redbear Labs Nano board](../_images/nrf51_blenano.jpg)
+![A picture of the Redbear Labs Nano board](https://docs.zephyrproject.org/4.2.0/_images/nrf51_blenano.jpg)
 
 Redbear Labs Nano
 
@@ -6595,7 +6595,7 @@ arm
 
 Particle.io
 
-![A picture of the Redbear Labs Nano v2 board](../_images/nrf52_blenano2.jpg)
+![A picture of the Redbear Labs Nano v2 board](https://docs.zephyrproject.org/4.2.0/_images/nrf52_blenano2.jpg)
 
 Redbear Labs Nano v2
 
@@ -6606,7 +6606,7 @@ arm
 
 PHYTEC
 
-![A picture of the reel board board](../_images/reel_board.jpg)
+![A picture of the reel board board](https://docs.zephyrproject.org/4.2.0/_images/reel_board.jpg)
 
 reel board
 
@@ -6617,7 +6617,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the Renesas Starter Kit for RX130 board](../_images/rsk_rx130.webp)
+![A picture of the Renesas Starter Kit for RX130 board](https://docs.zephyrproject.org/4.2.0/_images/rsk_rx130.webp)
 
 Renesas Starter Kit for RX130
 
@@ -6628,7 +6628,7 @@ rx
 
 Renesas Electronics Corporation
 
-![A picture of the Renesas Starter Kit+ for RZ/N2L board](../_images/rzn2l_rsk.webp)
+![A picture of the Renesas Starter Kit+ for RZ/N2L board](https://docs.zephyrproject.org/4.2.0/_images/rzn2l_rsk.webp)
 
 Renesas Starter Kit+ for RZ/N2L
 
@@ -6639,7 +6639,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the Renesas Starter Kit+ for RZ/T2L board](../_images/rzt2l_rsk.webp)
+![A picture of the Renesas Starter Kit+ for RZ/T2L board](https://docs.zephyrproject.org/4.2.0/_images/rzt2l_rsk.webp)
 
 Renesas Starter Kit+ for RZ/T2L
 
@@ -6650,7 +6650,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the Renesas Starter Kit+ for RZ/T2M board](../_images/rzt2m_rsk.webp)
+![A picture of the Renesas Starter Kit+ for RZ/T2M board](https://docs.zephyrproject.org/4.2.0/_images/rzt2m_rsk.webp)
 
 Renesas Starter Kit+ for RZ/T2M
 
@@ -6679,7 +6679,7 @@ riscv
 
 Ezurio
 
-![A picture of the RM1xx DVK board](../_images/rm1xx_dvk.jpg)
+![A picture of the RM1xx DVK board](https://docs.zephyrproject.org/4.2.0/_images/rm1xx_dvk.jpg)
 
 RM1xx DVK
 
@@ -6690,7 +6690,7 @@ arm
 
 TDK Corporation.
 
-![A picture of the RoboKit 1 board](../_images/tdk_robokit1.jpg)
+![A picture of the RoboKit 1 board](https://docs.zephyrproject.org/4.2.0/_images/tdk_robokit1.jpg)
 
 RoboKit 1
 
@@ -6710,7 +6710,7 @@ arm64
 
 Waveshare Electronics
 
-![A picture of the RP2040-Plus board](../_images/rp2040_plus.webp)
+![A picture of the RP2040-Plus board](https://docs.zephyrproject.org/4.2.0/_images/rp2040_plus.webp)
 
 RP2040-Plus
 
@@ -6721,7 +6721,7 @@ arm
 
 Waveshare Electronics
 
-![A picture of the RP2040-Zero board](../_images/rp2040_zero.png)
+![A picture of the RP2040-Zero board](https://docs.zephyrproject.org/4.2.0/_images/rp2040_zero.png)
 
 RP2040-Zero
 
@@ -6732,7 +6732,7 @@ arm
 
 Realtek Semiconductor Corp.
 
-![A picture of the RTS5912 Evaluation Board board](../_images/rts5912evb.webp)
+![A picture of the RTS5912 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/rts5912evb.webp)
 
 RTS5912 Evaluation Board
 
@@ -6743,7 +6743,7 @@ arm
 
 Ruuvi Innovations Ltd (Oy)
 
-![A picture of the RuuviTag board](../_images/ruuvitag.jpg)
+![A picture of the RuuviTag board](https://docs.zephyrproject.org/4.2.0/_images/ruuvitag.jpg)
 
 RuuviTag
 
@@ -6754,7 +6754,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/A2M Evaluation Kit board](../_images/rza2m_evkit.webp)
+![A picture of the RZ/A2M Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/rza2m_evkit.webp)
 
 RZ/A2M Evaluation Kit
 
@@ -6765,7 +6765,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/A3UL SMARC Evaluation Board Kit board](../_images/rza3ul_smarc.webp)
+![A picture of the RZ/A3UL SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rza3ul_smarc.webp)
 
 RZ/A3UL SMARC Evaluation Board Kit
 
@@ -6776,7 +6776,7 @@ arm64
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/G2L SMARC Evaluation Board Kit board](../_images/rzg2l_smarc.webp)
+![A picture of the RZ/G2L SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzg2l_smarc.webp)
 
 RZ/G2L SMARC Evaluation Board Kit
 
@@ -6787,7 +6787,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/G2LC SMARC Evaluation Board Kit board](../_images/rzg2lc_smarc.webp)
+![A picture of the RZ/G2LC SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzg2lc_smarc.webp)
 
 RZ/G2LC SMARC Evaluation Board Kit
 
@@ -6798,7 +6798,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/G2UL SMARC Evaluation Board Kit board](../_images/rzg2ul_smarc.webp)
+![A picture of the RZ/G2UL SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzg2ul_smarc.webp)
 
 RZ/G2UL SMARC Evaluation Board Kit
 
@@ -6809,7 +6809,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/G3S SMARC Evaluation Board Kit board](../_images/rzg3s_smarc.webp)
+![A picture of the RZ/G3S SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzg3s_smarc.webp)
 
 RZ/G3S SMARC Evaluation Board Kit
 
@@ -6820,7 +6820,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/V2H Evaluation Board Kit board](../_images/rzv2h_evk.webp)
+![A picture of the RZ/V2H Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzv2h_evk.webp)
 
 RZ/V2H Evaluation Board Kit
 
@@ -6831,7 +6831,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/V2L SMARC Evaluation Board Kit board](../_images/rzv2l_smarc.webp)
+![A picture of the RZ/V2L SMARC Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzv2l_smarc.webp)
 
 RZ/V2L SMARC Evaluation Board Kit
 
@@ -6842,7 +6842,7 @@ arm
 
 Renesas Electronics Corporation
 
-![A picture of the RZ/V2N Evaluation Board Kit board](../_images/rzv2n_evk.webp)
+![A picture of the RZ/V2N Evaluation Board Kit board](https://docs.zephyrproject.org/4.2.0/_images/rzv2n_evk.webp)
 
 RZ/V2N Evaluation Board Kit
 
@@ -6853,7 +6853,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the S32K148EVB-Q176 board](../_images/s32k148_evb.webp)
+![A picture of the S32K148EVB-Q176 board](https://docs.zephyrproject.org/4.2.0/_images/s32k148_evb.webp)
 
 S32K148EVB-Q176
 
@@ -6864,7 +6864,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM C21N Xplained Pro Evaluation Kit board](../_images/atsamc21n_xpro.jpg)
+![A picture of the SAM C21N Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsamc21n_xpro.jpg)
 
 SAM C21N Xplained Pro Evaluation Kit
 
@@ -6875,7 +6875,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM D20 Xplained Pro Evaluation Kit board](../_images/atsamd20_xpro.jpg)
+![A picture of the SAM D20 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsamd20_xpro.jpg)
 
 SAM D20 Xplained Pro Evaluation Kit
 
@@ -6886,7 +6886,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM D21 Xplained Pro Evaluation Kit board](../_images/atsamd21_xpro.jpg)
+![A picture of the SAM D21 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsamd21_xpro.jpg)
 
 SAM D21 Xplained Pro Evaluation Kit
 
@@ -6897,7 +6897,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM E54 Xplained Pro Evaluation Kit board](../_images/atsame54_xpro.jpg)
+![A picture of the SAM E54 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsame54_xpro.jpg)
 
 SAM E54 Xplained Pro Evaluation Kit
 
@@ -6908,7 +6908,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM E70(B) Xplained board](../_images/sam_e70_xplained.jpg)
+![A picture of the SAM E70(B) Xplained board](https://docs.zephyrproject.org/4.2.0/_images/sam_e70_xplained.jpg)
 
 SAM E70(B) Xplained
 
@@ -6919,7 +6919,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM L21 Xplained Pro Evaluation Kit board](../_images/atsaml21-xpro.jpg)
+![A picture of the SAM L21 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsaml21-xpro.jpg)
 
 SAM L21 Xplained Pro Evaluation Kit
 
@@ -6930,7 +6930,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM R21 Xplained Pro Evaluation Kit board](../_images/atsamr21_xpro.jpg)
+![A picture of the SAM R21 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsamr21_xpro.jpg)
 
 SAM R21 Xplained Pro Evaluation Kit
 
@@ -6941,7 +6941,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM R34 Xplained Pro Evaluation Kit board](../_images/atsamr34-xpro.jpg)
+![A picture of the SAM R34 Xplained Pro Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/atsamr34-xpro.jpg)
 
 SAM R34 Xplained Pro Evaluation Kit
 
@@ -6952,7 +6952,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM V71(B) Xplained Ultra board](../_images/sam_v71_xult.jpg)
+![A picture of the SAM V71(B) Xplained Ultra board](https://docs.zephyrproject.org/4.2.0/_images/sam_v71_xult.jpg)
 
 SAM V71(B) Xplained Ultra
 
@@ -6963,7 +6963,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM4E Xplained Pro board](../_images/sam4e_xpro.jpg)
+![A picture of the SAM4E Xplained Pro board](https://docs.zephyrproject.org/4.2.0/_images/sam4e_xpro.jpg)
 
 SAM4E Xplained Pro
 
@@ -6974,7 +6974,7 @@ arm
 
 Peregrine Consultoria e Servicos
 
-![A picture of the SAM4L WM-400 Cape Board board](../_images/wm-400-pin-out.webp)
+![A picture of the SAM4L WM-400 Cape Board board](https://docs.zephyrproject.org/4.2.0/_images/wm-400-pin-out.webp)
 
 SAM4L WM-400 Cape Board
 
@@ -6985,7 +6985,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM4L-EK board](../_images/atmel-sam4l-ek-callouts.jpg)
+![A picture of the SAM4L-EK board](https://docs.zephyrproject.org/4.2.0/_images/atmel-sam4l-ek-callouts.jpg)
 
 SAM4L-EK
 
@@ -6996,7 +6996,7 @@ arm
 
 Atmel Corporation
 
-![A picture of the SAM4S Xplained board](../_images/sam4s_xplained.jpg)
+![A picture of the SAM4S Xplained board](https://docs.zephyrproject.org/4.2.0/_images/sam4s_xplained.jpg)
 
 SAM4S Xplained
 
@@ -7007,7 +7007,7 @@ arm
 
 Microchip Technology Inc.
 
-![A picture of the SAMA7G54 Evaluation Kit board](../_images/sama7g54_ek.webp)
+![A picture of the SAMA7G54 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/sama7g54_ek.webp)
 
 SAMA7G54 Evaluation Kit
 
@@ -7018,7 +7018,7 @@ arm
 
 Space Cubics, LLC
 
-![A picture of the SC-OBC Module A1 board](../_images/scobc.jpg)
+![A picture of the SC-OBC Module A1 board](https://docs.zephyrproject.org/4.2.0/_images/scobc.jpg)
 
 SC-OBC Module A1
 
@@ -7029,7 +7029,7 @@ arm
 
 Analog Devices, Inc.
 
-![A picture of the SDP-K1 board](../_images/adi_sdp_k1.webp)
+![A picture of the SDP-K1 board](https://docs.zephyrproject.org/4.2.0/_images/adi_sdp_k1.webp)
 
 SDP-K1
 
@@ -7040,7 +7040,7 @@ arm
 
 SECO S.p.A.
 
-![A picture of the SECO SBC-3.5-PX30 (JUNO - D23) (STM32F302) board](../_images/stm32f3_seco_d23.jpg)
+![A picture of the SECO SBC-3.5-PX30 (JUNO - D23) (STM32F302) board](https://docs.zephyrproject.org/4.2.0/_images/stm32f3_seco_d23.jpg)
 
 SECO SBC-3.5-PX30 (JUNO - D23) (STM32F302)
 
@@ -7051,7 +7051,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the Seeeduino XIAO board](../_images/seeeduino_xiao.jpg)
+![A picture of the Seeeduino XIAO board](https://docs.zephyrproject.org/4.2.0/_images/seeeduino_xiao.jpg)
 
 Seeeduino XIAO
 
@@ -7062,7 +7062,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the SensorTile.box board](../_images/sensortile_box.jpg)
+![A picture of the SensorTile.box board](https://docs.zephyrproject.org/4.2.0/_images/sensortile_box.jpg)
 
 SensorTile.box
 
@@ -7073,7 +7073,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the SensorTile.box PRO board](../_images/sensortile_box_pro.jpg)
+![A picture of the SensorTile.box PRO board](https://docs.zephyrproject.org/4.2.0/_images/sensortile_box_pro.jpg)
 
 SensorTile.box PRO
 
@@ -7084,7 +7084,7 @@ arm
 
 Ezurio
 
-![A picture of the Sentrius BT510 Sensor board](../_images/bt510.jpg)
+![A picture of the Sentrius BT510 Sensor board](https://docs.zephyrproject.org/4.2.0/_images/bt510.jpg)
 
 Sentrius BT510 Sensor
 
@@ -7095,7 +7095,7 @@ arm
 
 Ezurio
 
-![A picture of the Sentrius BT610 Sensor board](../_images/bt610.jpg)
+![A picture of the Sentrius BT610 Sensor board](https://docs.zephyrproject.org/4.2.0/_images/bt610.jpg)
 
 Sentrius BT610 Sensor
 
@@ -7106,7 +7106,7 @@ arm
 
 Ezurio
 
-![A picture of the Sentrius™ MG100 Gateway board](../_images/mg100.jpg)
+![A picture of the Sentrius™ MG100 Gateway board](https://docs.zephyrproject.org/4.2.0/_images/mg100.jpg)
 
 Sentrius™ MG100 Gateway
 
@@ -7117,7 +7117,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the SiM3U1xx 32-bit MCU USB Development Kit board](../_images/sim3u1xx_dk.webp)
+![A picture of the SiM3U1xx 32-bit MCU USB Development Kit board](https://docs.zephyrproject.org/4.2.0/_images/sim3u1xx_dk.webp)
 
 SiM3U1xx 32-bit MCU USB Development Kit
 
@@ -7128,7 +7128,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the SiWx917 Wi-Fi 6 and Bluetooth LE 8 MB Flash + 8 MB ext PSRAM Radio Board (SLWRB4342A) board](../_images/siwx917_rb4342a.webp)
+![A picture of the SiWx917 Wi-Fi 6 and Bluetooth LE 8 MB Flash + 8 MB ext PSRAM Radio Board (SLWRB4342A) board](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4342a.webp)
 
 SiWx917 Wi-Fi 6 and Bluetooth LE 8 MB Flash + 8 MB ext PSRAM Radio Board (SLWRB4342A)
 
@@ -7139,7 +7139,7 @@ arm
 
 Silicon Laboratories
 
-![A picture of the SiWx917 Wi-Fi 6 and Bluetooth LE SoC 8 MB Flash Radio Board (SLWRB4338A) board](../_images/siwx917_rb4338a.webp)
+![A picture of the SiWx917 Wi-Fi 6 and Bluetooth LE SoC 8 MB Flash Radio Board (SLWRB4338A) board](https://docs.zephyrproject.org/4.2.0/_images/siwx917_rb4338a.webp)
 
 SiWx917 Wi-Fi 6 and Bluetooth LE SoC 8 MB Flash Radio Board (SLWRB4338A)
 
@@ -7150,7 +7150,7 @@ arm
 
 Texas Instruments
 
-![A picture of the SK-AM62 Evaluation board board](../_images/sk_am62_angled.webp)
+![A picture of the SK-AM62 Evaluation board board](https://docs.zephyrproject.org/4.2.0/_images/sk_am62_angled.webp)
 
 SK-AM62 Evaluation board
 
@@ -7161,7 +7161,7 @@ arm64, arm
 
 Texas Instruments
 
-![A picture of the SK-AM64 board](../_images/sk_am64.webp)
+![A picture of the SK-AM64 board](https://docs.zephyrproject.org/4.2.0/_images/sk_am64.webp)
 
 SK-AM64
 
@@ -7172,7 +7172,7 @@ arm
 
 GARDENA GmbH
 
-![A picture of the Smart Garden Radio Module board](../_images/sgrm.webp)
+![A picture of the Smart Garden Radio Module board](https://docs.zephyrproject.org/4.2.0/_images/sgrm.webp)
 
 Smart Garden Radio Module
 
@@ -7183,7 +7183,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the ST25DV Discovery, MB1283 version board](../_images/st25dv_mb1283_disco.jpg)
+![A picture of the ST25DV Discovery, MB1283 version board](https://docs.zephyrproject.org/4.2.0/_images/st25dv_mb1283_disco.jpg)
 
 ST25DV Discovery, MB1283 version
 
@@ -7203,7 +7203,7 @@ riscv
 
 M5Stack
 
-![A picture of the StampS3 board](../_images/m5stack_stamps3.webp)
+![A picture of the StampS3 board](https://docs.zephyrproject.org/4.2.0/_images/m5stack_stamps3.webp)
 
 StampS3
 
@@ -7214,7 +7214,7 @@ xtensa
 
 STMicroelectronics
 
-![A picture of the STEVAL STWINBX1 Development kit board](../_images/steval_stwinbx1.jpg)
+![A picture of the STEVAL STWINBX1 Development kit board](https://docs.zephyrproject.org/4.2.0/_images/steval_stwinbx1.jpg)
 
 STEVAL STWINBX1 Development kit
 
@@ -7225,7 +7225,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32 Flight Controller Unit board](../_images/steval_fcu001v1.jpg)
+![A picture of the STM32 Flight Controller Unit board](https://docs.zephyrproject.org/4.2.0/_images/steval_fcu001v1.jpg)
 
 STM32 Flight Controller Unit
 
@@ -7236,7 +7236,7 @@ arm
 
 MikroElektronika d.o.o.
 
-![A picture of the STM32 M4 Clicker board](../_images/stm32_m4_clicker.webp)
+![A picture of the STM32 M4 Clicker board](https://docs.zephyrproject.org/4.2.0/_images/stm32_m4_clicker.webp)
 
 STM32 M4 Clicker
 
@@ -7247,7 +7247,7 @@ arm
 
 Other/Unknown
 
-![A picture of the STM32 Mini F401 board](../_images/STM32_Mini_F401-1.jpg)
+![A picture of the STM32 Mini F401 board](https://docs.zephyrproject.org/4.2.0/_images/STM32_Mini_F401-1.jpg)
 
 STM32 Mini F401
 
@@ -7258,7 +7258,7 @@ arm
 
 Other/Unknown
 
-![A picture of the STM32 Minimum Development Board board](../_images/stm32_min_dev.jpg)
+![A picture of the STM32 Minimum Development Board board](https://docs.zephyrproject.org/4.2.0/_images/stm32_min_dev.jpg)
 
 STM32 Minimum Development Board
 
@@ -7267,7 +7267,7 @@ STM32 Minimum Development Board
 
 96Boards
 
-![A picture of the STM32 Sensor Mezzanine board](../_images/96b_stm32_sensor_mez.jpg)
+![A picture of the STM32 Sensor Mezzanine board](https://docs.zephyrproject.org/4.2.0/_images/96b_stm32_sensor_mez.jpg)
 
 STM32 Sensor Mezzanine
 
@@ -7278,7 +7278,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM3210C Evaluation board](../_images/stm3210c_eval.jpg)
+![A picture of the STM3210C Evaluation board](https://docs.zephyrproject.org/4.2.0/_images/stm3210c_eval.jpg)
 
 STM3210C Evaluation
 
@@ -7289,7 +7289,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32373C Evaluation board](../_images/stm32373c_eval.jpg)
+![A picture of the STM32373C Evaluation board](https://docs.zephyrproject.org/4.2.0/_images/stm32373c_eval.jpg)
 
 STM32373C Evaluation
 
@@ -7300,7 +7300,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32C0116-DK Discovery Kit board](../_images/stm32c0116_dk.jpg)
+![A picture of the STM32C0116-DK Discovery Kit board](https://docs.zephyrproject.org/4.2.0/_images/stm32c0116_dk.jpg)
 
 STM32C0116-DK Discovery Kit
 
@@ -7311,7 +7311,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F0 Discovery board](../_images/stm32f0_disco.jpg)
+![A picture of the STM32F0 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f0_disco.jpg)
 
 STM32F0 Discovery
 
@@ -7322,7 +7322,7 @@ arm
 
 Other/Unknown
 
-![A picture of the STM32F030 DEMO BOARD board](../_images/stm32f030_demo.jpg)
+![A picture of the STM32F030 DEMO BOARD board](https://docs.zephyrproject.org/4.2.0/_images/stm32f030_demo.jpg)
 
 STM32F030 DEMO BOARD
 
@@ -7333,7 +7333,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F072 Evaluation board](../_images/stm32f072_eval.jpg)
+![A picture of the STM32F072 Evaluation board](https://docs.zephyrproject.org/4.2.0/_images/stm32f072_eval.jpg)
 
 STM32F072 Evaluation
 
@@ -7344,7 +7344,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F072B Discovery board](../_images/stm32f072b_disco.jpg)
+![A picture of the STM32F072B Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f072b_disco.jpg)
 
 STM32F072B Discovery
 
@@ -7355,7 +7355,7 @@ arm
 
 Other/Unknown
 
-![A picture of the STM32F103 Mini board](../_images/stm32f103_mini_pin.jpg)
+![A picture of the STM32F103 Mini board](https://docs.zephyrproject.org/4.2.0/_images/stm32f103_mini_pin.jpg)
 
 STM32F103 Mini
 
@@ -7366,7 +7366,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F3 Discovery board](../_images/stm32f3_disco.jpg)
+![A picture of the STM32F3 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f3_disco.jpg)
 
 STM32F3 Discovery
 
@@ -7377,7 +7377,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F4 Discovery board](../_images/stm32f4_disco.jpg)
+![A picture of the STM32F4 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f4_disco.jpg)
 
 STM32F4 Discovery
 
@@ -7388,7 +7388,7 @@ arm
 
 WeAct Studio
 
-![A picture of the STM32F405 Core Board V1.0 board](../_images/stm32f405_core.jpg)
+![A picture of the STM32F405 Core Board V1.0 board](https://docs.zephyrproject.org/4.2.0/_images/stm32f405_core.jpg)
 
 STM32F405 Core Board V1.0
 
@@ -7399,7 +7399,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F411E Discovery board](../_images/stm32f411e_disco.jpg)
+![A picture of the STM32F411E Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f411e_disco.jpg)
 
 STM32F411E Discovery
 
@@ -7410,7 +7410,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F412G Discovery board](../_images/stm32f412g_disco.jpg)
+![A picture of the STM32F412G Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f412g_disco.jpg)
 
 STM32F412G Discovery
 
@@ -7421,7 +7421,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F413H Discovery board](../_images/stm32F413H_DiscoveryKit.webp)
+![A picture of the STM32F413H Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32F413H_DiscoveryKit.webp)
 
 STM32F413H Discovery
 
@@ -7432,7 +7432,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F429I Discovery board](../_images/stm32f429i_disc1.jpg)
+![A picture of the STM32F429I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f429i_disc1.jpg)
 
 STM32F429I Discovery
 
@@ -7443,7 +7443,7 @@ arm
 
 IAR Systems AB
 
-![A picture of the STM32F429II-ACA board](../_images/stm32f429ii_aca.webp)
+![A picture of the STM32F429II-ACA board](https://docs.zephyrproject.org/4.2.0/_images/stm32f429ii_aca.webp)
 
 STM32F429II-ACA
 
@@ -7454,7 +7454,7 @@ arm
 
 WeAct Studio
 
-![A picture of the STM32F446 Core Board V1.1 board](../_images/stm32f446_core.webp)
+![A picture of the STM32F446 Core Board V1.1 board](https://docs.zephyrproject.org/4.2.0/_images/stm32f446_core.webp)
 
 STM32F446 Core Board V1.1
 
@@ -7465,7 +7465,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F469I Discovery board](../_images/stm32f469i_disco.jpg)
+![A picture of the STM32F469I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f469i_disco.jpg)
 
 STM32F469I Discovery
 
@@ -7476,7 +7476,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F723E Discovery board](../_images/stm32f723e_disco.jpg)
+![A picture of the STM32F723E Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f723e_disco.jpg)
 
 STM32F723E Discovery
 
@@ -7487,7 +7487,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F746G Discovery board](../_images/stm32f746g_disco.jpg)
+![A picture of the STM32F746G Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f746g_disco.jpg)
 
 STM32F746G Discovery
 
@@ -7498,7 +7498,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F7508-DK Discovery Kit board](../_images/stm32f7508_dk.jpg)
+![A picture of the STM32F7508-DK Discovery Kit board](https://docs.zephyrproject.org/4.2.0/_images/stm32f7508_dk.jpg)
 
 STM32F7508-DK Discovery Kit
 
@@ -7509,7 +7509,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32F769I Discovery board](../_images/stm32f769i_disco.jpg)
+![A picture of the STM32F769I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32f769i_disco.jpg)
 
 STM32F769I Discovery
 
@@ -7520,7 +7520,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32G0316 Discovery board](../_images/stm32g0316_disco.jpg)
+![A picture of the STM32G0316 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32g0316_disco.jpg)
 
 STM32G0316 Discovery
 
@@ -7531,7 +7531,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32G071B Discovery board](../_images/stm32g071b_disco.jpg)
+![A picture of the STM32G071B Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32g071b_disco.jpg)
 
 STM32G071B Discovery
 
@@ -7542,7 +7542,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32G081B Evaluation board](../_images/stm32g081b_eval.jpg)
+![A picture of the STM32G081B Evaluation board](https://docs.zephyrproject.org/4.2.0/_images/stm32g081b_eval.jpg)
 
 STM32G081B Evaluation
 
@@ -7571,7 +7571,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H573I-DK Discovery board](../_images/stm32h573i_dk.jpg)
+![A picture of the STM32H573I-DK Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32h573i_dk.jpg)
 
 STM32H573I-DK Discovery
 
@@ -7582,7 +7582,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H735G Discovery board](../_images/stm32h735g_disco.jpg)
+![A picture of the STM32H735G Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32h735g_disco.jpg)
 
 STM32H735G Discovery
 
@@ -7593,7 +7593,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H745I Discovery board](../_images/stm32h745i-disco.jpg)
+![A picture of the STM32H745I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32h745i-disco.jpg)
 
 STM32H745I Discovery
 
@@ -7604,7 +7604,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H747I Discovery board](../_images/stm32h747i_disco.jpg)
+![A picture of the STM32H747I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32h747i_disco.jpg)
 
 STM32H747I Discovery
 
@@ -7615,7 +7615,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H750B Discovery Kit board](../_images/stm32h750b_dk.png)
+![A picture of the STM32H750B Discovery Kit board](https://docs.zephyrproject.org/4.2.0/_images/stm32h750b_dk.png)
 
 STM32H750B Discovery Kit
 
@@ -7626,7 +7626,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H757I Eval board](../_images/stm32h757i_eval.webp)
+![A picture of the STM32H757I Eval board](https://docs.zephyrproject.org/4.2.0/_images/stm32h757i_eval.webp)
 
 STM32H757I Eval
 
@@ -7637,7 +7637,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H7B3I Discovery kit board](../_images/stm32h7b3i_dk.jpg)
+![A picture of the STM32H7B3I Discovery kit board](https://docs.zephyrproject.org/4.2.0/_images/stm32h7b3i_dk.jpg)
 
 STM32H7B3I Discovery kit
 
@@ -7648,7 +7648,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32H7S78-DK Discovery board](../_images/stm32h7s78_dk.jpg)
+![A picture of the STM32H7S78-DK Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32h7s78_dk.jpg)
 
 STM32H7S78-DK Discovery
 
@@ -7659,7 +7659,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L1 Discovery board](../_images/stm32l1_disco.jpg)
+![A picture of the STM32L1 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l1_disco.jpg)
 
 STM32L1 Discovery
 
@@ -7670,7 +7670,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L152C Discovery board](../_images/stm32l1_disco.jpg)
+![A picture of the STM32L152C Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l1_disco.jpg)
 
 STM32L152C Discovery
 
@@ -7681,7 +7681,7 @@ arm
 
 Alientek
 
-![A picture of the STM32L475 Pandora board](../_images/pandora_stm32l475.jpg)
+![A picture of the STM32L475 Pandora board](https://docs.zephyrproject.org/4.2.0/_images/pandora_stm32l475.jpg)
 
 STM32L475 Pandora
 
@@ -7692,7 +7692,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L476G Discovery board](../_images/stm32l476g_disco.jpg)
+![A picture of the STM32L476G Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l476g_disco.jpg)
 
 STM32L476G Discovery
 
@@ -7703,7 +7703,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L496G Discovery board](../_images/stm32l496g_disco.jpg)
+![A picture of the STM32L496G Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l496g_disco.jpg)
 
 STM32L496G Discovery
 
@@ -7714,7 +7714,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L4R9I Discovery board](../_images/stm32l4r9i_disco.jpg)
+![A picture of the STM32L4R9I Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l4r9i_disco.jpg)
 
 STM32L4R9I Discovery
 
@@ -7725,7 +7725,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32L562E-DK Discovery board](../_images/stm32l562e_dk.jpg)
+![A picture of the STM32L562E-DK Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32l562e_dk.jpg)
 
 STM32L562E-DK Discovery
 
@@ -7736,7 +7736,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32MP135F-DK Discovery board](../_images/stm32mp135f_dk.webp)
+![A picture of the STM32MP135F-DK Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32mp135f_dk.webp)
 
 STM32MP135F-DK Discovery
 
@@ -7745,7 +7745,7 @@ STM32MP135F-DK Discovery
 
 STMicroelectronics
 
-![A picture of the STM32MP157C-DK2 Discovery board](../_images/en.stm32mp157c-dk2.jpg)
+![A picture of the STM32MP157C-DK2 Discovery board](https://docs.zephyrproject.org/4.2.0/_images/en.stm32mp157c-dk2.jpg)
 
 STM32MP157C-DK2 Discovery
 
@@ -7756,7 +7756,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32MP257F-EV1 Evaluation Board board](../_images/stm32mp257f_ev1.webp)
+![A picture of the STM32MP257F-EV1 Evaluation Board board](https://docs.zephyrproject.org/4.2.0/_images/stm32mp257f_ev1.webp)
 
 STM32MP257F-EV1 Evaluation Board
 
@@ -7767,7 +7767,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32N6570-DK board](../_images/stm32n6570_dk.webp)
+![A picture of the STM32N6570-DK board](https://docs.zephyrproject.org/4.2.0/_images/stm32n6570_dk.webp)
 
 STM32N6570-DK
 
@@ -7776,7 +7776,7 @@ STM32N6570-DK
 
 STMicroelectronics
 
-![A picture of the STM32U083C-DK board](../_images/stm32u083c_dk.jpg)
+![A picture of the STM32U083C-DK board](https://docs.zephyrproject.org/4.2.0/_images/stm32u083c_dk.jpg)
 
 STM32U083C-DK
 
@@ -7787,7 +7787,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32U5A9J Discovery Kit board](../_images/top_view.jpg)
+![A picture of the STM32U5A9J Discovery Kit board](https://docs.zephyrproject.org/4.2.0/_images/top_view.jpg)
 
 STM32U5A9J Discovery Kit
 
@@ -7798,7 +7798,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32U5G9J Discovery Kit board](../_images/stm32u5g9j_dk2.webp)
+![A picture of the STM32U5G9J Discovery Kit board](https://docs.zephyrproject.org/4.2.0/_images/stm32u5g9j_dk2.webp)
 
 STM32U5G9J Discovery Kit
 
@@ -7809,7 +7809,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32U5G9J Discovery Kit 1 board](../_images/stm32u5g9j_dk1.webp)
+![A picture of the STM32U5G9J Discovery Kit 1 board](https://docs.zephyrproject.org/4.2.0/_images/stm32u5g9j_dk1.webp)
 
 STM32U5G9J Discovery Kit 1
 
@@ -7820,7 +7820,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32VL Discovery board](../_images/stm32vl_disco.jpg)
+![A picture of the STM32VL Discovery board](https://docs.zephyrproject.org/4.2.0/_images/stm32vl_disco.jpg)
 
 STM32VL Discovery
 
@@ -7831,7 +7831,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32WB5MM-DK board](../_images/STM32WB5MM_DK.jpg)
+![A picture of the STM32WB5MM-DK board](https://docs.zephyrproject.org/4.2.0/_images/STM32WB5MM_DK.jpg)
 
 STM32WB5MM-DK
 
@@ -7842,7 +7842,7 @@ arm
 
 STMicroelectronics
 
-![A picture of the STM32WB5MMG board](../_images/STM32WB5MMG.jpg)
+![A picture of the STM32WB5MMG board](https://docs.zephyrproject.org/4.2.0/_images/STM32WB5MMG.jpg)
 
 STM32WB5MMG
 
@@ -7853,7 +7853,7 @@ arm
 
 Blues Wireless
 
-![A picture of the Swan board](../_images/swan.jpg)
+![A picture of the Swan board](https://docs.zephyrproject.org/4.2.0/_images/swan.jpg)
 
 Swan
 
@@ -7864,7 +7864,7 @@ arm
 
 Shenzhen FeiKaiTe Technology Co., Ltd.
 
-![A picture of the SwiftIO board](../_images/mm_swiftio.jpg)
+![A picture of the SwiftIO board](https://docs.zephyrproject.org/4.2.0/_images/mm_swiftio.jpg)
 
 SwiftIO
 
@@ -7875,7 +7875,7 @@ arm
 
 Shenzhen FeiKaiTe Technology Co., Ltd.
 
-![A picture of the SwiftIO Feather board](../_images/mm_feather.jpg)
+![A picture of the SwiftIO Feather board](https://docs.zephyrproject.org/4.2.0/_images/mm_feather.jpg)
 
 SwiftIO Feather
 
@@ -7886,7 +7886,7 @@ arm
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the T-Dongle S3 board](../_images/tdongle_s3.webp)
+![A picture of the T-Dongle S3 board](https://docs.zephyrproject.org/4.2.0/_images/tdongle_s3.webp)
 
 T-Dongle S3
 
@@ -7897,7 +7897,7 @@ xtensa
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the T-Watch S3 board](../_images/twatch_s3.webp)
+![A picture of the T-Watch S3 board](https://docs.zephyrproject.org/4.2.0/_images/twatch_s3.webp)
 
 T-Watch S3
 
@@ -7908,7 +7908,7 @@ xtensa
 
 PJRC
 
-![A picture of the Teensy 4.0 board](../_images/teensy40.jpg)
+![A picture of the Teensy 4.0 board](https://docs.zephyrproject.org/4.2.0/_images/teensy40.jpg)
 
 Teensy 4.0
 
@@ -7919,7 +7919,7 @@ arm
 
 PJRC
 
-![A picture of the Teensy 4.1 board](../_images/teensy41.jpg)
+![A picture of the Teensy 4.1 board](https://docs.zephyrproject.org/4.2.0/_images/teensy41.jpg)
 
 Teensy 4.1
 
@@ -7930,7 +7930,7 @@ arm
 
 PJRC
 
-![A picture of the Teensy MicroMod board](../_images/teensymm.webp)
+![A picture of the Teensy MicroMod board](https://docs.zephyrproject.org/4.2.0/_images/teensymm.webp)
 
 Teensy MicroMod
 
@@ -7941,7 +7941,7 @@ arm
 
 SparkFun Electronics
 
-![A picture of the Thing Plus Matter board](../_images/sparkfun_thing_plus_matter_mgm240p.jpg)
+![A picture of the Thing Plus Matter board](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_thing_plus_matter_mgm240p.jpg)
 
 Thing Plus Matter
 
@@ -7952,7 +7952,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the Thingy:52 board](../_images/thingy52.jpg)
+![A picture of the Thingy:52 board](https://docs.zephyrproject.org/4.2.0/_images/thingy52.jpg)
 
 Thingy:52
 
@@ -7963,7 +7963,7 @@ arm
 
 Nordic Semiconductor
 
-![A picture of the Thingy:53 board](../_images/thingy53.webp)
+![A picture of the Thingy:53 board](https://docs.zephyrproject.org/4.2.0/_images/thingy53.webp)
 
 Thingy:53
 
@@ -7974,7 +7974,7 @@ arm
 
 Texas Instruments
 
-![A picture of the TI AM243x-EVM board](../_images/tmds243evm-angled.webp)
+![A picture of the TI AM243x-EVM board](https://docs.zephyrproject.org/4.2.0/_images/tmds243evm-angled.webp)
 
 TI AM243x-EVM
 
@@ -7985,7 +7985,7 @@ arm
 
 Efinix Inc
 
-![A picture of the Titanium Ti60 F225 board](../_images/titanium_ti60_f225.jpg)
+![A picture of the Titanium Ti60 F225 board](https://docs.zephyrproject.org/4.2.0/_images/titanium_ti60_f225.jpg)
 
 Titanium Ti60 F225
 
@@ -7996,7 +7996,7 @@ riscv
 
 Telink Semiconductor
 
-![A picture of the TLSR9518ADK80D board](../_images/tlsr9518adk80d.jpg)
+![A picture of the TLSR9518ADK80D board](https://docs.zephyrproject.org/4.2.0/_images/tlsr9518adk80d.jpg)
 
 TLSR9518ADK80D
 
@@ -8007,7 +8007,7 @@ riscv
 
 Adafruit Industries, LLC
 
-![A picture of the Trinket M0 board](../_images/adafruit_trinket_m0.jpg)
+![A picture of the Trinket M0 board](https://docs.zephyrproject.org/4.2.0/_images/adafruit_trinket_m0.jpg)
 
 Trinket M0
 
@@ -8018,7 +8018,7 @@ arm
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO LoRa32 board](../_images/ttgo_lora32.webp)
+![A picture of the TTGO LoRa32 board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_lora32.webp)
 
 TTGO LoRa32
 
@@ -8029,7 +8029,7 @@ xtensa
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO T-OI-PLUS board](../_images/ttgo_toiplus.webp)
+![A picture of the TTGO T-OI-PLUS board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_toiplus.webp)
 
 TTGO T-OI-PLUS
 
@@ -8040,7 +8040,7 @@ riscv
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO T7 Mini32 V1.5 board](../_images/ttgo_t7v1_5.webp)
+![A picture of the TTGO T7 Mini32 V1.5 board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_t7v1_5.webp)
 
 TTGO T7 Mini32 V1.5
 
@@ -8051,7 +8051,7 @@ xtensa
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO T8-C3 board](../_images/ttgo_t8c3.webp)
+![A picture of the TTGO T8-C3 board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_t8c3.webp)
 
 TTGO T8-C3
 
@@ -8062,7 +8062,7 @@ riscv
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO T8-S3 board](../_images/ttgo_t8s3.webp)
+![A picture of the TTGO T8-S3 board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_t8s3.webp)
 
 TTGO T8-S3
 
@@ -8073,7 +8073,7 @@ xtensa
 
 Lilygo Shenzhen Xinyuan Electronic Technology Co., Ltd
 
-![A picture of the TTGO TBeam board](../_images/ttgo_tbeam.webp)
+![A picture of the TTGO TBeam board](https://docs.zephyrproject.org/4.2.0/_images/ttgo_tbeam.webp)
 
 TTGO TBeam
 
@@ -8093,7 +8093,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the TWR-KE18F board](../_images/TWR-KE18F-DEVICE.jpg)
+![A picture of the TWR-KE18F board](https://docs.zephyrproject.org/4.2.0/_images/TWR-KE18F-DEVICE.jpg)
 
 TWR-KE18F
 
@@ -8104,7 +8104,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the TWR-KV58F220M board](../_images/twr_kv58f220m.jpg)
+![A picture of the TWR-KV58F220M board](https://docs.zephyrproject.org/4.2.0/_images/twr_kv58f220m.jpg)
 
 TWR-KV58F220M
 
@@ -8115,7 +8115,7 @@ arm
 
 Shenzhen Fuyuansheng Electronic Technology Co., Ltd.
 
-![A picture of the UCAN board](../_images/ucan.webp)
+![A picture of the UCAN board](https://docs.zephyrproject.org/4.2.0/_images/ucan.webp)
 
 UCAN
 
@@ -8126,7 +8126,7 @@ arm
 
 NXP Semiconductors
 
-![A picture of the UCANS32K1SIC board](../_images/ucans32k1sic_top.webp)
+![A picture of the UCANS32K1SIC board](https://docs.zephyrproject.org/4.2.0/_images/ucans32k1sic_top.webp)
 
 UCANS32K1SIC
 
@@ -8137,7 +8137,7 @@ arm
 
 UP Bridge the Gap
 
-![A picture of the UP Squared board](../_images/up_squared.jpg)
+![A picture of the UP Squared board](https://docs.zephyrproject.org/4.2.0/_images/up_squared.jpg)
 
 UP Squared
 
@@ -8157,7 +8157,7 @@ x86
 
 Microchip Technology Inc.
 
-![A picture of the UPD301C Basic Sink Application Example board](../_images/ev11l78a.jpg)
+![A picture of the UPD301C Basic Sink Application Example board](https://docs.zephyrproject.org/4.2.0/_images/ev11l78a.jpg)
 
 UPD301C Basic Sink Application Example
 
@@ -8177,7 +8177,7 @@ arm
 
 WeAct Studio
 
-![A picture of the USB2CANFDV1 board](../_images/usb2canfdv1.webp)
+![A picture of the USB2CANFDV1 board](https://docs.zephyrproject.org/4.2.0/_images/usb2canfdv1.webp)
 
 USB2CANFDV1
 
@@ -8188,7 +8188,7 @@ arm
 
 ARM Ltd.
 
-![A picture of the V2M Beetle board](../_images/v2m_beetle.jpg)
+![A picture of the V2M Beetle board](https://docs.zephyrproject.org/4.2.0/_images/v2m_beetle.jpg)
 
 V2M Beetle
 
@@ -8199,7 +8199,7 @@ arm
 
 ARM Ltd.
 
-![A picture of the V2M MPS2 board](../_images/mps2.jpg)
+![A picture of the V2M MPS2 board](https://docs.zephyrproject.org/4.2.0/_images/mps2.jpg)
 
 V2M MPS2
 
@@ -8210,7 +8210,7 @@ arm
 
 ARM Ltd.
 
-![A picture of the V2M Musca B1 board](../_images/v2m_musca_b1.jpg)
+![A picture of the V2M Musca B1 board](https://docs.zephyrproject.org/4.2.0/_images/v2m_musca_b1.jpg)
 
 V2M Musca B1
 
@@ -8221,7 +8221,7 @@ arm
 
 ARM Ltd.
 
-![A picture of the V2M Musca-S1 board](../_images/v2m_musca_s1.jpg)
+![A picture of the V2M Musca-S1 board](https://docs.zephyrproject.org/4.2.0/_images/v2m_musca_s1.jpg)
 
 V2M Musca-S1
 
@@ -8232,7 +8232,7 @@ arm
 
 Variscite Ltd.
 
-![A picture of the VAR-SOM-MX8M-PLUS board](../_images/imx8mp_var_som.webp)
+![A picture of the VAR-SOM-MX8M-PLUS board](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_som.webp)
 
 VAR-SOM-MX8M-PLUS
 
@@ -8243,7 +8243,7 @@ arm64, arm
 
 Variscite Ltd.
 
-![A picture of the VAR-SOM-MX93 board](../_images/imx93_var_som.webp)
+![A picture of the VAR-SOM-MX93 board](https://docs.zephyrproject.org/4.2.0/_images/imx93_var_som.webp)
 
 VAR-SOM-MX93
 
@@ -8254,7 +8254,7 @@ arm64, arm
 
 Toradex AG
 
-![A picture of the Verdin iMX8M Mini board](../_images/verdin_imx8mm_m4.webp)
+![A picture of the Verdin iMX8M Mini board](https://docs.zephyrproject.org/4.2.0/_images/verdin_imx8mm_m4.webp)
 
 Verdin iMX8M Mini
 
@@ -8265,7 +8265,7 @@ arm
 
 Toradex AG
 
-![A picture of the Verdin iMX8M Plus SoM board](../_images/verdin_imx8mp_front.jpg)
+![A picture of the Verdin iMX8M Plus SoM board](https://docs.zephyrproject.org/4.2.0/_images/verdin_imx8mp_front.jpg)
 
 Verdin iMX8M Plus SoM
 
@@ -8294,7 +8294,7 @@ arm
 
 StarFive Technology Co. Ltd.
 
-![A picture of the VisionFive 2 JH7110 board](../_images/visionfive2.webp)
+![A picture of the VisionFive 2 JH7110 board](https://docs.zephyrproject.org/4.2.0/_images/visionfive2.webp)
 
 VisionFive 2 JH7110
 
@@ -8305,7 +8305,7 @@ riscv
 
 NXP Semiconductors
 
-![A picture of the VMU RT1170 board](../_images/vmu_rt1170.jpg)
+![A picture of the VMU RT1170 board](https://docs.zephyrproject.org/4.2.0/_images/vmu_rt1170.jpg)
 
 VMU RT1170
 
@@ -8316,7 +8316,7 @@ arm
 
 WIZnet Co., Ltd.
 
-![A picture of the W5500-EVB-Pico board](../_images/w5500_evb_pico_side.png)
+![A picture of the W5500-EVB-Pico board](https://docs.zephyrproject.org/4.2.0/_images/w5500_evb_pico_side.png)
 
 W5500-EVB-Pico
 
@@ -8327,7 +8327,7 @@ arm
 
 WIZnet Co., Ltd.
 
-![A picture of the W5500-EVB-Pico2 board](../_images/w5500_evb_pico2.webp)
+![A picture of the W5500-EVB-Pico2 board](https://docs.zephyrproject.org/4.2.0/_images/w5500_evb_pico2.webp)
 
 W5500-EVB-Pico2
 
@@ -8338,7 +8338,7 @@ arm
 
 DPTechnics
 
-![A picture of the Walter board](../_images/walter.webp)
+![A picture of the Walter board](https://docs.zephyrproject.org/4.2.0/_images/walter.webp)
 
 Walter
 
@@ -8349,7 +8349,7 @@ xtensa
 
 Element14 (A Premier Farnell Company)
 
-![A picture of the WaRP7 - Next Generation IoT and Wearable Development Platform board](../_images/warp7.jpg)
+![A picture of the WaRP7 - Next Generation IoT and Wearable Development Platform board](https://docs.zephyrproject.org/4.2.0/_images/warp7.jpg)
 
 WaRP7 - Next Generation IoT and Wearable Development Platform
 
@@ -8360,7 +8360,7 @@ arm
 
 WinChipHead
 
-![A picture of the WCH CH32V003EVT board](../_images/ch32v003evt.webp)
+![A picture of the WCH CH32V003EVT board](https://docs.zephyrproject.org/4.2.0/_images/ch32v003evt.webp)
 
 WCH CH32V003EVT
 
@@ -8371,7 +8371,7 @@ riscv
 
 WinChipHead
 
-![A picture of the WCH CH32V003F4P6 Development Board board](../_images/ch32v003f4p6_dev_board.webp)
+![A picture of the WCH CH32V003F4P6 Development Board board](https://docs.zephyrproject.org/4.2.0/_images/ch32v003f4p6_dev_board.webp)
 
 WCH CH32V003F4P6 Development Board
 
@@ -8382,7 +8382,7 @@ riscv
 
 WinChipHead
 
-![A picture of the WCH CH32V006EVT board](../_images/ch32v006evt.webp)
+![A picture of the WCH CH32V006EVT board](https://docs.zephyrproject.org/4.2.0/_images/ch32v006evt.webp)
 
 WCH CH32V006EVT
 
@@ -8393,7 +8393,7 @@ riscv
 
 WinChipHead
 
-![A picture of the WCH CH32V303VCT6_EVT board](../_images/ch32v303vct6_evt.webp)
+![A picture of the WCH CH32V303VCT6_EVT board](https://docs.zephyrproject.org/4.2.0/_images/ch32v303vct6_evt.webp)
 
 WCH CH32V303VCT6\_EVT
 
@@ -8404,7 +8404,7 @@ riscv
 
 WinChipHead
 
-![A picture of the WCH LinkW board](../_images/linkw.webp)
+![A picture of the WCH LinkW board](https://docs.zephyrproject.org/4.2.0/_images/linkw.webp)
 
 WCH LinkW
 
@@ -8415,7 +8415,7 @@ riscv
 
 Silicon Laboratories
 
-![A picture of the WGM160P Wi-Fi Module (SLWRB4321A) board](../_images/wgm160p-starter-kit.jpg)
+![A picture of the WGM160P Wi-Fi Module (SLWRB4321A) board](https://docs.zephyrproject.org/4.2.0/_images/wgm160p-starter-kit.jpg)
 
 WGM160P Wi-Fi Module (SLWRB4321A)
 
@@ -8435,7 +8435,7 @@ xtensa
 
 Seeed Technology Co., Ltd
 
-![A picture of the Wio Terminal board](../_images/wio_terminal.png)
+![A picture of the Wio Terminal board](https://docs.zephyrproject.org/4.2.0/_images/wio_terminal.png)
 
 Wio Terminal
 
@@ -8446,7 +8446,7 @@ arm
 
 Chengdu Heltec Automation Technology Co., Ltd.
 
-![A picture of the Wireless Stick Lite (V3) board](../_images/heltec_wireless_stick_lite_v3.webp)
+![A picture of the Wireless Stick Lite (V3) board](https://docs.zephyrproject.org/4.2.0/_images/heltec_wireless_stick_lite_v3.webp)
 
 Wireless Stick Lite (V3)
 
@@ -8457,7 +8457,7 @@ xtensa
 
 96Boards
 
-![A picture of the WisTrio board](../_images/96b-wistrio.jpg)
+![A picture of the WisTrio board](https://docs.zephyrproject.org/4.2.0/_images/96b-wistrio.jpg)
 
 WisTrio
 
@@ -8477,7 +8477,7 @@ arm
 
 Particle.io
 
-![A picture of the Xenon board](../_images/particle_xenon.jpg)
+![A picture of the Xenon board](https://docs.zephyrproject.org/4.2.0/_images/particle_xenon.jpg)
 
 Xenon
 
@@ -8488,7 +8488,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO BLE (Sense) board](../_images/xiao_ble.jpg)
+![A picture of the XIAO BLE (Sense) board](https://docs.zephyrproject.org/4.2.0/_images/xiao_ble.jpg)
 
 XIAO BLE (Sense)
 
@@ -8499,7 +8499,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO ESP32C3 board](../_images/xiao_esp32c3_pinout.jpg)
+![A picture of the XIAO ESP32C3 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c3_pinout.jpg)
 
 XIAO ESP32C3
 
@@ -8510,7 +8510,7 @@ riscv
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO ESP32C6 board](../_images/xiao_esp32c6.webp)
+![A picture of the XIAO ESP32C6 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c6.webp)
 
 XIAO ESP32C6
 
@@ -8521,7 +8521,7 @@ riscv
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO ESP32S3 board](../_images/xiao_esp32s3.jpg)
+![A picture of the XIAO ESP32S3 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32s3.jpg)
 
 XIAO ESP32S3
 
@@ -8532,7 +8532,7 @@ xtensa
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO MG24 board](../_images/xiao_mg24.webp)
+![A picture of the XIAO MG24 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_mg24.webp)
 
 XIAO MG24
 
@@ -8543,7 +8543,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO RA4M1 board](../_images/xiao_ra4m1.webp)
+![A picture of the XIAO RA4M1 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_ra4m1.webp)
 
 XIAO RA4M1
 
@@ -8554,7 +8554,7 @@ arm
 
 Seeed Technology Co., Ltd
 
-![A picture of the XIAO RP2040 board](../_images/xiao_rp2040.webp)
+![A picture of the XIAO RP2040 board](https://docs.zephyrproject.org/4.2.0/_images/xiao_rp2040.webp)
 
 XIAO RP2040
 
@@ -8565,7 +8565,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the XMC45-RELAX-KIT board](../_images/xmc45_relax_kit.jpg)
+![A picture of the XMC45-RELAX-KIT board](https://docs.zephyrproject.org/4.2.0/_images/xmc45_relax_kit.jpg)
 
 XMC45-RELAX-KIT
 
@@ -8576,7 +8576,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the XMC47-RELAX-KIT board](../_images/xmc47_relax_kit.jpg)
+![A picture of the XMC47-RELAX-KIT board](https://docs.zephyrproject.org/4.2.0/_images/xmc47_relax_kit.jpg)
 
 XMC47-RELAX-KIT
 
@@ -8587,7 +8587,7 @@ arm
 
 Infineon Technologies
 
-![A picture of the XMC7200 Evaluation Kit board](../_images/kit_xmc72_evk.webp)
+![A picture of the XMC7200 Evaluation Kit board](https://docs.zephyrproject.org/4.2.0/_images/kit_xmc72_evk.webp)
 
 XMC7200 Evaluation Kit
 
@@ -8598,7 +8598,7 @@ arm
 
 Cadence Design Systems Inc.
 
-![A picture of the Xtensa simulator board](../_images/xt-sim.jpg)
+![A picture of the Xtensa simulator board](https://docs.zephyrproject.org/4.2.0/_images/xt-sim.jpg)
 
 Xtensa simulator
 
@@ -8609,7 +8609,7 @@ xtensa
 
 VCC-GND Studio
 
-![A picture of the YD-ESP32 board](../_images/yd_esp32.png)
+![A picture of the YD-ESP32 board](https://docs.zephyrproject.org/4.2.0/_images/yd_esp32.png)
 
 YD-ESP32
 
@@ -8620,7 +8620,7 @@ xtensa
 
 VCC-GND Studio
 
-![A picture of the YD-STM32H750VB board](../_images/yd_stm32h750vb.png)
+![A picture of the YD-STM32H750VB board](https://docs.zephyrproject.org/4.2.0/_images/yd_stm32h750vb.png)
 
 YD-STM32H750VB
 
@@ -8631,7 +8631,7 @@ arm
 
 Shenzhen Holyiot Technology Co., Ltd.
 
-![A picture of the YJ-16019 board](../_images/holyiot_yj16019_front.jpg)
+![A picture of the YJ-16019 board](https://docs.zephyrproject.org/4.2.0/_images/holyiot_yj16019_front.jpg)
 
 YJ-16019
 
@@ -8642,7 +8642,7 @@ arm
 
 Digilent, Inc.
 
-![A picture of the Zybo board](../_images/zybo-0.jpg)
+![A picture of the Zybo board](https://docs.zephyrproject.org/4.2.0/_images/zybo-0.jpg)
 
 Zybo
 
@@ -8653,7 +8653,7 @@ arm
 
 Other/Unknown
 
-![A picture of the ABRobot ESP32C3 OLED Shield shield](../_images/abrobot_esp32c3_oled.webp)
+![A picture of the ABRobot ESP32C3 OLED Shield shield](https://docs.zephyrproject.org/4.2.0/_images/abrobot_esp32c3_oled.webp)
 
 ABRobot ESP32C3 OLED Shield
 
@@ -8662,7 +8662,7 @@ ABRobot ESP32C3 OLED Shield
 
 MikroElektronika d.o.o.
 
-![A picture of the ACCEL 13 Click shield](../_images/accel-13-click.jpg)
+![A picture of the ACCEL 13 Click shield](https://docs.zephyrproject.org/4.2.0/_images/accel-13-click.jpg)
 
 ACCEL 13 Click
 
@@ -8671,7 +8671,7 @@ ACCEL 13 Click
 
 Analog Devices, Inc.
 
-![A picture of the AD4052 Evaluation Shield shield](../_images/eval_ad4052_ardz.webp)
+![A picture of the AD4052 Evaluation Shield shield](https://docs.zephyrproject.org/4.2.0/_images/eval_ad4052_ardz.webp)
 
 AD4052 Evaluation Shield
 
@@ -8701,7 +8701,7 @@ Adafruit 2.8" TFT Touch Shield V2 (Uno)
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Adalogger FeatherWing shield](../_images/adafruit_adalogger_featherwing.webp)
+![A picture of the Adafruit Adalogger FeatherWing shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_adalogger_featherwing.webp)
 
 Adafruit Adalogger FeatherWing
 
@@ -8710,7 +8710,7 @@ Adafruit Adalogger FeatherWing
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit AW9523 GPIO Expander and LED Driver shield](../_images/adafruit_aw9523.webp)
+![A picture of the Adafruit AW9523 GPIO Expander and LED Driver shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_aw9523.webp)
 
 Adafruit AW9523 GPIO Expander and LED Driver
 
@@ -8719,7 +8719,7 @@ Adafruit AW9523 GPIO Expander and LED Driver
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit Data Logger Shield shield](../_images/adafruit_data_logger.jpg)
+![A picture of the Adafruit Data Logger Shield shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_data_logger.jpg)
 
 Adafruit Data Logger Shield
 
@@ -8728,7 +8728,7 @@ Adafruit Data Logger Shield
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit NeoPixel Grid BFF shield](../_images/adafruit_neopixel_grid_bff.jpg)
+![A picture of the Adafruit NeoPixel Grid BFF shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_neopixel_grid_bff.jpg)
 
 Adafruit NeoPixel Grid BFF
 
@@ -8737,7 +8737,7 @@ Adafruit NeoPixel Grid BFF
 
 Adafruit Industries, LLC
 
-![A picture of the Adafruit NeoPixel Grid BFF (with display matrix) shield](../_images/adafruit_neopixel_grid_bff.jpg)
+![A picture of the Adafruit NeoPixel Grid BFF (with display matrix) shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_neopixel_grid_bff.jpg)
 
 Adafruit NeoPixel Grid BFF (with display matrix)
 
@@ -8760,7 +8760,7 @@ Adafruit WINC1500 WiFi Shield
 
 MikroElektronika d.o.o.
 
-![A picture of the ADC Click shield](../_images/adc-click.jpg)
+![A picture of the ADC Click shield](https://docs.zephyrproject.org/4.2.0/_images/adc-click.jpg)
 
 ADC Click
 
@@ -8769,7 +8769,7 @@ ADC Click
 
 Analog Devices, Inc.
 
-![A picture of the ADXL362 Evaluation Shield shield](../_images/eval_adxl362_ardz.webp)
+![A picture of the ADXL362 Evaluation Shield shield](https://docs.zephyrproject.org/4.2.0/_images/eval_adxl362_ardz.webp)
 
 ADXL362 Evaluation Shield
 
@@ -8778,7 +8778,7 @@ ADXL362 Evaluation Shield
 
 Analog Devices, Inc.
 
-![A picture of the ADXL367 Evaluation Shield shield](../_images/eval_adxl367_ardz.webp)
+![A picture of the ADXL367 Evaluation Shield shield](https://docs.zephyrproject.org/4.2.0/_images/eval_adxl367_ardz.webp)
 
 ADXL367 Evaluation Shield
 
@@ -8787,7 +8787,7 @@ ADXL367 Evaluation Shield
 
 Analog Devices, Inc.
 
-![A picture of the ADXL372 Evaluation Shield shield](../_images/eval_adxl372_ardz.webp)
+![A picture of the ADXL372 Evaluation Shield shield](https://docs.zephyrproject.org/4.2.0/_images/eval_adxl372_ardz.webp)
 
 ADXL372 Evaluation Shield
 
@@ -8803,7 +8803,7 @@ Arceli ETH W5500 Shield
 
 Arduino
 
-![A picture of the Arduino GIGA Display Shield shield](../_images/ASX00039_00.default_1000x750.webp)
+![A picture of the Arduino GIGA Display Shield shield](https://docs.zephyrproject.org/4.2.0/_images/ASX00039_00.default_1000x750.webp)
 
 Arduino GIGA Display Shield
 
@@ -8812,7 +8812,7 @@ Arduino GIGA Display Shield
 
 Arduino
 
-![A picture of the Arduino Modulino Buttons shield](../_images/arduino_modulino_buttons.webp)
+![A picture of the Arduino Modulino Buttons shield](https://docs.zephyrproject.org/4.2.0/_images/arduino_modulino_buttons.webp)
 
 Arduino Modulino Buttons
 
@@ -8821,7 +8821,7 @@ Arduino Modulino Buttons
 
 Arduino
 
-![A picture of the Arduino Modulino SmartLEDs shield](../_images/arduino_modulino_smartleds.webp)
+![A picture of the Arduino Modulino SmartLEDs shield](https://docs.zephyrproject.org/4.2.0/_images/arduino_modulino_smartleds.webp)
 
 Arduino Modulino SmartLEDs
 
@@ -8837,7 +8837,7 @@ Arduino UNO Click
 
 ARM Ltd.
 
-![A picture of the ARM V2C-DAPLink for DesignStart FPGA shield](../_images/v2c_daplink.jpg)
+![A picture of the ARM V2C-DAPLink for DesignStart FPGA shield](https://docs.zephyrproject.org/4.2.0/_images/v2c_daplink.jpg)
 
 ARM V2C-DAPLink for DesignStart FPGA
 
@@ -8846,7 +8846,7 @@ ARM V2C-DAPLink for DesignStart FPGA
 
 ARM Ltd.
 
-![A picture of the ARM V2C-DAPLink for DesignStart FPGA (boot from QSPI) shield](../_images/v2c_daplink.jpg)
+![A picture of the ARM V2C-DAPLink for DesignStart FPGA (boot from QSPI) shield](https://docs.zephyrproject.org/4.2.0/_images/v2c_daplink.jpg)
 
 ARM V2C-DAPLink for DesignStart FPGA (boot from QSPI)
 
@@ -8855,7 +8855,7 @@ ARM V2C-DAPLink for DesignStart FPGA (boot from QSPI)
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver
 
@@ -8864,7 +8864,7 @@ Atmel AT86RF2XX Transceiver
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver for Arduino shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver for Arduino shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver for Arduino
 
@@ -8873,7 +8873,7 @@ Atmel AT86RF2XX Transceiver for Arduino
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver for Atmel Xplained
 
@@ -8882,7 +8882,7 @@ Atmel AT86RF2XX Transceiver for Atmel Xplained
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained (legacy) shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained (legacy) shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver for Atmel Xplained (legacy)
 
@@ -8891,7 +8891,7 @@ Atmel AT86RF2XX Transceiver for Atmel Xplained (legacy)
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained Pro shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver for Atmel Xplained Pro shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver for Atmel Xplained Pro
 
@@ -8900,7 +8900,7 @@ Atmel AT86RF2XX Transceiver for Atmel Xplained Pro
 
 Atmel Corporation
 
-![A picture of the Atmel AT86RF2XX Transceiver for MikroBUS shield](../_images/atreb233-xpro-top.jpg)
+![A picture of the Atmel AT86RF2XX Transceiver for MikroBUS shield](https://docs.zephyrproject.org/4.2.0/_images/atreb233-xpro-top.jpg)
 
 Atmel AT86RF2XX Transceiver for MikroBUS
 
@@ -8909,7 +8909,7 @@ Atmel AT86RF2XX Transceiver for MikroBUS
 
 MikroElektronika d.o.o.
 
-![A picture of the BLE TINY Click shield](../_images/ble-tiny-click.webp)
+![A picture of the BLE TINY Click shield](https://docs.zephyrproject.org/4.2.0/_images/ble-tiny-click.webp)
 
 BLE TINY Click
 
@@ -8946,7 +8946,7 @@ BuyDisplay 3.5" TFT Touch Shield
 
 DFRobot
 
-![A picture of the CAN-BUS Shield V2 shield](../_images/dfrobot_can_bus_v2_0.jpg)
+![A picture of the CAN-BUS Shield V2 shield](https://docs.zephyrproject.org/4.2.0/_images/dfrobot_can_bus_v2_0.jpg)
 
 CAN-BUS Shield V2
 
@@ -8955,7 +8955,7 @@ CAN-BUS Shield V2
 
 Texas Instruments
 
-![A picture of the DAC80508 Evaluation Module shield](../_images/dac80508evm-board-photo.jpg)
+![A picture of the DAC80508 Evaluation Module shield](https://docs.zephyrproject.org/4.2.0/_images/dac80508evm-board-photo.jpg)
 
 DAC80508 Evaluation Module
 
@@ -8985,7 +8985,7 @@ DVP FPC-24 MT9M114 Camera Module
 
 Espressif Systems
 
-![A picture of the ESP-8266 Module shield](../_images/esp-01.jpg)
+![A picture of the ESP-8266 Module shield](https://docs.zephyrproject.org/4.2.0/_images/esp-01.jpg)
 
 ESP-8266 Module
 
@@ -8994,7 +8994,7 @@ ESP-8266 Module
 
 Espressif Systems
 
-![A picture of the ESP-8266 Module (Arduino) shield](../_images/esp-01.jpg)
+![A picture of the ESP-8266 Module (Arduino) shield](https://docs.zephyrproject.org/4.2.0/_images/esp-01.jpg)
 
 ESP-8266 Module (Arduino)
 
@@ -9003,7 +9003,7 @@ ESP-8266 Module (Arduino)
 
 Espressif Systems
 
-![A picture of the ESP-8266 Module (MikroBus) shield](../_images/esp-01.jpg)
+![A picture of the ESP-8266 Module (MikroBus) shield](https://docs.zephyrproject.org/4.2.0/_images/esp-01.jpg)
 
 ESP-8266 Module (MikroBus)
 
@@ -9019,7 +9019,7 @@ ETH Click
 
 MikroElektronika d.o.o.
 
-![A picture of the ETH3 Click shield](../_images/eth3_click.webp)
+![A picture of the ETH3 Click shield](https://docs.zephyrproject.org/4.2.0/_images/eth3_click.webp)
 
 ETH3 Click
 
@@ -9028,7 +9028,7 @@ ETH3 Click
 
 Seeed Technology Co., Ltd
 
-![A picture of the Expansion Board Base for XIAO shield](../_images/seeed_xiao_expansion_board.webp)
+![A picture of the Expansion Board Base for XIAO shield](https://docs.zephyrproject.org/4.2.0/_images/seeed_xiao_expansion_board.webp)
 
 Expansion Board Base for XIAO
 
@@ -9037,7 +9037,7 @@ Expansion Board Base for XIAO
 
 NXP Semiconductors
 
-![A picture of the FRDM-CR20A shield](../_images/frdm_cr20a.jpg)
+![A picture of the FRDM-CR20A shield](https://docs.zephyrproject.org/4.2.0/_images/frdm_cr20a.jpg)
 
 FRDM-CR20A
 
@@ -9053,7 +9053,7 @@ FRDM-KW41Z
 
 NXP Semiconductors
 
-![A picture of the FRDM-ST BC-AGM01 shield](../_images/AGM01.jpg)
+![A picture of the FRDM-ST BC-AGM01 shield](https://docs.zephyrproject.org/4.2.0/_images/AGM01.jpg)
 
 FRDM-ST BC-AGM01
 
@@ -9062,7 +9062,7 @@ FRDM-ST BC-AGM01
 
 Future Technology Devices International Ltd.
 
-![A picture of the FTDI VM800C Display Shield shield](../_images/VM800C_top.jpg)
+![A picture of the FTDI VM800C Display Shield shield](https://docs.zephyrproject.org/4.2.0/_images/VM800C_top.jpg)
 
 FTDI VM800C Display Shield
 
@@ -9078,7 +9078,7 @@ G1120B0 MIPI Display Shield
 
 Inventek Systems
 
-![A picture of the Inventek es-WIFI Mini Shield (UART) shield](../_images/ismart4343c-evb-wiring.jpg)
+![A picture of the Inventek es-WIFI Mini Shield (UART) shield](https://docs.zephyrproject.org/4.2.0/_images/ismart4343c-evb-wiring.jpg)
 
 Inventek es-WIFI Mini Shield (UART)
 
@@ -9087,7 +9087,7 @@ Inventek es-WIFI Mini Shield (UART)
 
 Inventek Systems
 
-![A picture of the Inventek es-WIFI Shield (generic) shield](../_images/ismart4343c-evb-wiring.jpg)
+![A picture of the Inventek es-WIFI Shield (generic) shield](https://docs.zephyrproject.org/4.2.0/_images/ismart4343c-evb-wiring.jpg)
 
 Inventek es-WIFI Shield (generic)
 
@@ -9096,7 +9096,7 @@ Inventek es-WIFI Shield (generic)
 
 Inventek Systems
 
-![A picture of the Inventek es-WIFI Shield (SPI) shield](../_images/ismart4343c-evb-wiring.jpg)
+![A picture of the Inventek es-WIFI Shield (SPI) shield](https://docs.zephyrproject.org/4.2.0/_images/ismart4343c-evb-wiring.jpg)
 
 Inventek es-WIFI Shield (SPI)
 
@@ -9105,7 +9105,7 @@ Inventek es-WIFI Shield (SPI)
 
 Other/Unknown
 
-![A picture of the Keyestudio CAN-BUS Shield shield](../_images/keyestudio_can_bus_ks0411.jpg)
+![A picture of the Keyestudio CAN-BUS Shield shield](https://docs.zephyrproject.org/4.2.0/_images/keyestudio_can_bus_ks0411.jpg)
 
 Keyestudio CAN-BUS Shield
 
@@ -9114,7 +9114,7 @@ Keyestudio CAN-BUS Shield
 
 PHYTEC
 
-![A picture of the link board ETH shield](../_images/link_board_eth.jpg)
+![A picture of the link board ETH shield](https://docs.zephyrproject.org/4.2.0/_images/link_board_eth.jpg)
 
 link board ETH
 
@@ -9123,7 +9123,7 @@ link board ETH
 
 Texas Instruments
 
-![A picture of the LMP90100 Sensor AFE Evaluation Board shield](../_images/lmp90100eb_lmp90100eb.jpg)
+![A picture of the LMP90100 Sensor AFE Evaluation Board shield](https://docs.zephyrproject.org/4.2.0/_images/lmp90100eb_lmp90100eb.jpg)
 
 LMP90100 Sensor AFE Evaluation Board
 
@@ -9132,7 +9132,7 @@ LMP90100 Sensor AFE Evaluation Board
 
 MikroElektronika d.o.o.
 
-![A picture of the LTE IoT 10 Click shield](../_images/mikroe_lte_iot10_click.webp)
+![A picture of the LTE IoT 10 Click shield](https://docs.zephyrproject.org/4.2.0/_images/mikroe_lte_iot10_click.webp)
 
 LTE IoT 10 Click
 
@@ -9141,7 +9141,7 @@ LTE IoT 10 Click
 
 M5Stack
 
-![A picture of the M5Stack Cardputer shield](../_images/m5stack_cardputer.webp)
+![A picture of the M5Stack Cardputer shield](https://docs.zephyrproject.org/4.2.0/_images/m5stack_cardputer.webp)
 
 M5Stack Cardputer
 
@@ -9150,7 +9150,7 @@ M5Stack Cardputer
 
 M5Stack
 
-![A picture of the M5Stack-Core2 base shield shield](../_images/m5stack_core2_ext.webp)
+![A picture of the M5Stack-Core2 base shield shield](https://docs.zephyrproject.org/4.2.0/_images/m5stack_core2_ext.webp)
 
 M5Stack-Core2 base shield
 
@@ -9173,7 +9173,7 @@ MikroElektronika MCP2518FD Click shield
 
 Nordic Semiconductor
 
-![A picture of the nPM1100 EK shield](../_images/npm1100_ek.jpg)
+![A picture of the nPM1100 EK shield](https://docs.zephyrproject.org/4.2.0/_images/npm1100_ek.jpg)
 
 nPM1100 EK
 
@@ -9196,7 +9196,7 @@ nPM2100 EK
 
 Nordic Semiconductor
 
-![A picture of the nPM6001 EK shield](../_images/npm6001_ek.jpg)
+![A picture of the nPM6001 EK shield](https://docs.zephyrproject.org/4.2.0/_images/npm6001_ek.jpg)
 
 nPM6001 EK
 
@@ -9205,7 +9205,7 @@ nPM6001 EK
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Board Shield shield](../_images/nrf7002eb.jpg)
+![A picture of the nRF7002 Evaluation Board Shield shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002eb.jpg)
 
 nRF7002 Evaluation Board Shield
 
@@ -9214,7 +9214,7 @@ nRF7002 Evaluation Board Shield
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Board Shield (SR Co-Existence) shield](../_images/nrf7002eb.jpg)
+![A picture of the nRF7002 Evaluation Board Shield (SR Co-Existence) shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002eb.jpg)
 
 nRF7002 Evaluation Board Shield (SR Co-Existence)
 
@@ -9223,7 +9223,7 @@ nRF7002 Evaluation Board Shield (SR Co-Existence)
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Kit Shield shield](../_images/nrf7002ek.png)
+![A picture of the nRF7002 Evaluation Kit Shield shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002ek.png)
 
 nRF7002 Evaluation Kit Shield
 
@@ -9232,7 +9232,7 @@ nRF7002 Evaluation Kit Shield
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Kit Shield (nRF7000) shield](../_images/nrf7002ek.png)
+![A picture of the nRF7002 Evaluation Kit Shield (nRF7000) shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002ek.png)
 
 nRF7002 Evaluation Kit Shield (nRF7000)
 
@@ -9241,7 +9241,7 @@ nRF7002 Evaluation Kit Shield (nRF7000)
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Kit Shield (nRF7001) shield](../_images/nrf7002ek.png)
+![A picture of the nRF7002 Evaluation Kit Shield (nRF7001) shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002ek.png)
 
 nRF7002 Evaluation Kit Shield (nRF7001)
 
@@ -9250,7 +9250,7 @@ nRF7002 Evaluation Kit Shield (nRF7001)
 
 Nordic Semiconductor
 
-![A picture of the nRF7002 Evaluation Kit Shield (SR Co-Existence) shield](../_images/nrf7002ek.png)
+![A picture of the nRF7002 Evaluation Kit Shield (SR Co-Existence) shield](https://docs.zephyrproject.org/4.2.0/_images/nrf7002ek.png)
 
 nRF7002 Evaluation Kit Shield (SR Co-Existence)
 
@@ -9259,7 +9259,7 @@ nRF7002 Evaluation Kit Shield (SR Co-Existence)
 
 NXP Semiconductors
 
-![A picture of the NXP ADTJA1101-RMII Automotive Ethernet Adapter shield](../_images/adtja1101-rmii.webp)
+![A picture of the NXP ADTJA1101-RMII Automotive Ethernet Adapter shield](https://docs.zephyrproject.org/4.2.0/_images/adtja1101-rmii.webp)
 
 NXP ADTJA1101-RMII Automotive Ethernet Adapter
 
@@ -9289,7 +9289,7 @@ NXP LCD\_PAR\_S035 TFT LCD Module (SPI)
 
 NXP Semiconductors
 
-![A picture of the NXP M2 WiFi/BT Shield (Murata 1XK) shield](../_images/mimxrt1060evkc_m2_bt_rework.webp)
+![A picture of the NXP M2 WiFi/BT Shield (Murata 1XK) shield](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1060evkc_m2_bt_rework.webp)
 
 NXP M2 WiFi/BT Shield (Murata 1XK)
 
@@ -9298,7 +9298,7 @@ NXP M2 WiFi/BT Shield (Murata 1XK)
 
 NXP Semiconductors
 
-![A picture of the NXP M2 WiFi/BT Shield (Murata 2EL) shield](../_images/mimxrt1060evkc_m2_bt_rework.webp)
+![A picture of the NXP M2 WiFi/BT Shield (Murata 2EL) shield](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1060evkc_m2_bt_rework.webp)
 
 NXP M2 WiFi/BT Shield (Murata 2EL)
 
@@ -9307,7 +9307,7 @@ NXP M2 WiFi/BT Shield (Murata 2EL)
 
 NXP Semiconductors
 
-![A picture of the NXP M2 WiFi/BT Shield (Murata 2LL) shield](../_images/mimxrt1060evkc_m2_bt_rework.webp)
+![A picture of the NXP M2 WiFi/BT Shield (Murata 2LL) shield](https://docs.zephyrproject.org/4.2.0/_images/mimxrt1060evkc_m2_bt_rework.webp)
 
 NXP M2 WiFi/BT Shield (Murata 2LL)
 
@@ -9330,7 +9330,7 @@ OpenThread RCP over Arduino UART
 
 NXP Semiconductors
 
-![A picture of the P3T1755DP Arduino I2C Shield shield](../_images/p3t1755dp_ard.webp)
+![A picture of the P3T1755DP Arduino I2C Shield shield](https://docs.zephyrproject.org/4.2.0/_images/p3t1755dp_ard.webp)
 
 P3T1755DP Arduino I2C Shield
 
@@ -9339,7 +9339,7 @@ P3T1755DP Arduino I2C Shield
 
 NXP Semiconductors
 
-![A picture of the P3T1755DP Arduino I3C Shield shield](../_images/p3t1755dp_ard.webp)
+![A picture of the P3T1755DP Arduino I3C Shield shield](https://docs.zephyrproject.org/4.2.0/_images/p3t1755dp_ard.webp)
 
 P3T1755DP Arduino I3C Shield
 
@@ -9348,7 +9348,7 @@ P3T1755DP Arduino I3C Shield
 
 Panasonic Corporation
 
-![A picture of the Panasonic Grid-EYE Evaluation Kit shield](../_images/amg88xx_eval_kit.png)
+![A picture of the Panasonic Grid-EYE Evaluation Kit shield](https://docs.zephyrproject.org/4.2.0/_images/amg88xx_eval_kit.png)
 
 Panasonic Grid-EYE Evaluation Kit
 
@@ -9357,7 +9357,7 @@ Panasonic Grid-EYE Evaluation Kit
 
 Panasonic Corporation
 
-![A picture of the Panasonic Grid-EYE Evaluation Shield shield](../_images/amg88xx_grid_eye_eval_shield.png)
+![A picture of the Panasonic Grid-EYE Evaluation Shield shield](https://docs.zephyrproject.org/4.2.0/_images/amg88xx_grid_eye_eval_shield.png)
 
 Panasonic Grid-EYE Evaluation Shield
 
@@ -9366,7 +9366,7 @@ Panasonic Grid-EYE Evaluation Shield
 
 Adafruit Industries, LLC
 
-![A picture of the PiCowbell CAN Bus for Pico shield](../_images/adafruit_can_picowbell.jpg)
+![A picture of the PiCowbell CAN Bus for Pico shield](https://docs.zephyrproject.org/4.2.0/_images/adafruit_can_picowbell.jpg)
 
 PiCowbell CAN Bus for Pico
 
@@ -9375,7 +9375,7 @@ PiCowbell CAN Bus for Pico
 
 Digilent, Inc.
 
-![A picture of the Pmod SD Card Shield shield](../_images/pmod_sd_pins.webp)
+![A picture of the Pmod SD Card Shield shield](https://docs.zephyrproject.org/4.2.0/_images/pmod_sd_pins.webp)
 
 Pmod SD Card Shield
 
@@ -9384,7 +9384,7 @@ Pmod SD Card Shield
 
 Other/Unknown
 
-![A picture of the Raspberry Pi Pico to UNO FlexyPin Adapter shield](../_images/rpi_pico_uno_flexypin.png)
+![A picture of the Raspberry Pi Pico to UNO FlexyPin Adapter shield](https://docs.zephyrproject.org/4.2.0/_images/rpi_pico_uno_flexypin.png)
 
 Raspberry Pi Pico to UNO FlexyPin Adapter
 
@@ -9428,7 +9428,7 @@ RK055HDMIPI4MA0 5.5" LCD Panel
 
 Seeed Technology Co., Ltd
 
-![A picture of the Round Display for XIAO shield](../_images/seeed_xiao_round_display.webp)
+![A picture of the Round Display for XIAO shield](https://docs.zephyrproject.org/4.2.0/_images/seeed_xiao_round_display.webp)
 
 Round Display for XIAO
 
@@ -9479,7 +9479,7 @@ Sharp memory display generic shield
 
 SparkFun Electronics
 
-![A picture of the SparkFun MicroMod Asset Tracker Shield shield](../_images/sparkfun_carrier_asset_tracker.webp)
+![A picture of the SparkFun MicroMod Asset Tracker Shield shield](https://docs.zephyrproject.org/4.2.0/_images/sparkfun_carrier_asset_tracker.webp)
 
 SparkFun MicroMod Asset Tracker Shield
 
@@ -9523,7 +9523,7 @@ SSD1306 128x64 pixels generic shield (SPI)
 
 STMicroelectronics
 
-![A picture of the ST B-CAMS-IMX-MB1854 shield](../_images/st_b_cams_imx.webp)
+![A picture of the ST B-CAMS-IMX-MB1854 shield](https://docs.zephyrproject.org/4.2.0/_images/st_b_cams_imx.webp)
 
 ST B-CAMS-IMX-MB1854
 
@@ -9532,7 +9532,7 @@ ST B-CAMS-IMX-MB1854
 
 STMicroelectronics
 
-![A picture of the ST B-CAMS-OMV MB1683 Camera Shield shield](../_images/st_b_cams_omv.webp)
+![A picture of the ST B-CAMS-OMV MB1683 Camera Shield shield](https://docs.zephyrproject.org/4.2.0/_images/st_b_cams_omv.webp)
 
 ST B-CAMS-OMV MB1683 Camera Shield
 
@@ -9541,7 +9541,7 @@ ST B-CAMS-OMV MB1683 Camera Shield
 
 STMicroelectronics
 
-![A picture of the ST B-LCD40-DSI1 shield](../_images/image.jpg)
+![A picture of the ST B-LCD40-DSI1 shield](https://docs.zephyrproject.org/4.2.0/_images/image.jpg)
 
 ST B-LCD40-DSI1
 
@@ -9550,7 +9550,7 @@ ST B-LCD40-DSI1
 
 STMicroelectronics
 
-![A picture of the ST B-LCD40-DSI1 (MB1166-A09) shield](../_images/image.jpg)
+![A picture of the ST B-LCD40-DSI1 (MB1166-A09) shield](https://docs.zephyrproject.org/4.2.0/_images/image.jpg)
 
 ST B-LCD40-DSI1 (MB1166-A09)
 
@@ -9559,7 +9559,7 @@ ST B-LCD40-DSI1 (MB1166-A09)
 
 STMicroelectronics
 
-![A picture of the ST MB1897 camera module shield](../_images/st_mb1897_cam.webp)
+![A picture of the ST MB1897 camera module shield](https://docs.zephyrproject.org/4.2.0/_images/st_mb1897_cam.webp)
 
 ST MB1897 camera module
 
@@ -9582,7 +9582,7 @@ ST7789V TL019FQV01
 
 MikroElektronika d.o.o.
 
-![A picture of the Stepper 18 Click shield](../_images/stepper_18_click.webp)
+![A picture of the Stepper 18 Click shield](https://docs.zephyrproject.org/4.2.0/_images/stepper_18_click.webp)
 
 Stepper 18 Click
 
@@ -9591,7 +9591,7 @@ Stepper 18 Click
 
 MikroElektronika d.o.o.
 
-![A picture of the Stepper 19 Click shield](../_images/stepper_19_click.webp)
+![A picture of the Stepper 19 Click shield](https://docs.zephyrproject.org/4.2.0/_images/stepper_19_click.webp)
 
 Stepper 19 Click
 
@@ -9614,7 +9614,7 @@ SX1276MB1MAS LoRa Shield
 
 Texas Instruments
 
-![A picture of the Texas Instruments TCAN4550EVM shield](../_images/tcan4550evm.jpg)
+![A picture of the Texas Instruments TCAN4550EVM shield](https://docs.zephyrproject.org/4.2.0/_images/tcan4550evm.jpg)
 
 Texas Instruments TCAN4550EVM
 
@@ -9623,7 +9623,7 @@ Texas Instruments TCAN4550EVM
 
 Renesas Electronics Corporation
 
-![A picture of the US159-DA14531EVZ Pmod shield](../_images/da14531-hci-hw-flow-binary.webp)
+![A picture of the US159-DA14531EVZ Pmod shield](https://docs.zephyrproject.org/4.2.0/_images/da14531-hci-hw-flow-binary.webp)
 
 US159-DA14531EVZ Pmod
 
@@ -9632,7 +9632,7 @@ US159-DA14531EVZ Pmod
 
 Seeed Technology Co., Ltd
 
-![A picture of the W5500 Ethernet Shield shield](../_images/seeed_w5500.webp)
+![A picture of the W5500 Ethernet Shield shield](https://docs.zephyrproject.org/4.2.0/_images/seeed_w5500.webp)
 
 W5500 Ethernet Shield
 
@@ -9718,7 +9718,7 @@ Waveshare Pico OLED 1.3"
 
 Waveshare Electronics
 
-![A picture of the Waveshare Pico UPS-B shield shield](../_images/waveshare_pico_ups_b.jpg)
+![A picture of the Waveshare Pico UPS-B shield shield](https://docs.zephyrproject.org/4.2.0/_images/waveshare_pico_ups_b.jpg)
 
 Waveshare Pico UPS-B shield
 
@@ -9727,7 +9727,7 @@ Waveshare Pico UPS-B shield
 
 WeAct Studio
 
-![A picture of the WeAct OV2640 Camera Module Shield shield](../_images/ov2640.webp)
+![A picture of the WeAct OV2640 Camera Module Shield shield](https://docs.zephyrproject.org/4.2.0/_images/ov2640.webp)
 
 WeAct OV2640 Camera Module Shield
 
@@ -9736,7 +9736,7 @@ WeAct OV2640 Camera Module Shield
 
 MikroElektronika d.o.o.
 
-![A picture of the Weather Click (I2C) shield](../_images/weather-click.webp)
+![A picture of the Weather Click (I2C) shield](https://docs.zephyrproject.org/4.2.0/_images/weather-click.webp)
 
 Weather Click (I2C)
 
@@ -9745,7 +9745,7 @@ Weather Click (I2C)
 
 MikroElektronika d.o.o.
 
-![A picture of the Weather Click (SPI) shield](../_images/weather-click.webp)
+![A picture of the Weather Click (SPI) shield](https://docs.zephyrproject.org/4.2.0/_images/weather-click.webp)
 
 Weather Click (SPI)
 
@@ -9754,7 +9754,7 @@ Weather Click (SPI)
 
 MikroElektronika d.o.o.
 
-![A picture of the WIFI BLE Click (Arduino) shield](../_images/wifi_click.jpg)
+![A picture of the WIFI BLE Click (Arduino) shield](https://docs.zephyrproject.org/4.2.0/_images/wifi_click.jpg)
 
 WIFI BLE Click (Arduino)
 
@@ -9763,7 +9763,7 @@ WIFI BLE Click (Arduino)
 
 MikroElektronika d.o.o.
 
-![A picture of the WIFI BLE Click (MikroBus) shield](../_images/wifi_click.jpg)
+![A picture of the WIFI BLE Click (MikroBus) shield](https://docs.zephyrproject.org/4.2.0/_images/wifi_click.jpg)
 
 WIFI BLE Click (MikroBus)
 
@@ -9779,7 +9779,7 @@ Wnc M14A2A
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-53L0A1 shield](../_images/x_nucleo_53l0a1.jpg)
+![A picture of the X-NUCLEO-53L0A1 shield](https://docs.zephyrproject.org/4.2.0/_images/x_nucleo_53l0a1.jpg)
 
 X-NUCLEO-53L0A1
 
@@ -9788,7 +9788,7 @@ X-NUCLEO-53L0A1
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-BNRG2A1 shield](../_images/x-nucleo-bnrg2a1.webp)
+![A picture of the X-NUCLEO-BNRG2A1 shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-bnrg2a1.webp)
 
 X-NUCLEO-BNRG2A1
 
@@ -9797,7 +9797,7 @@ X-NUCLEO-BNRG2A1
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-EEPRMA2 shield](../_images/x_nucleo_eeprma2.jpg)
+![A picture of the X-NUCLEO-EEPRMA2 shield](https://docs.zephyrproject.org/4.2.0/_images/x_nucleo_eeprma2.jpg)
 
 X-NUCLEO-EEPRMA2
 
@@ -9806,7 +9806,7 @@ X-NUCLEO-EEPRMA2
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-GFX01M2 Display Shield shield](../_images/x_nucleo_gfx01m2.webp)
+![A picture of the X-NUCLEO-GFX01M2 Display Shield shield](https://docs.zephyrproject.org/4.2.0/_images/x_nucleo_gfx01m2.webp)
 
 X-NUCLEO-GFX01M2 Display Shield
 
@@ -9815,7 +9815,7 @@ X-NUCLEO-GFX01M2 Display Shield
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IDB05A1 shield](../_images/x-nucleo-idb05a1.jpg)
+![A picture of the X-NUCLEO-IDB05A1 shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-idb05a1.jpg)
 
 X-NUCLEO-IDB05A1
 
@@ -9824,7 +9824,7 @@ X-NUCLEO-IDB05A1
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS01A1 shield](../_images/x-nucleo-iks01a1.jpg)
+![A picture of the X-NUCLEO-IKS01A1 shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a1.jpg)
 
 X-NUCLEO-IKS01A1
 
@@ -9833,7 +9833,7 @@ X-NUCLEO-IKS01A1
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS01A2 (SensorHub / Mode 2) shield](../_images/x-nucleo-iks01a2.jpg)
+![A picture of the X-NUCLEO-IKS01A2 (SensorHub / Mode 2) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a2.jpg)
 
 X-NUCLEO-IKS01A2 (SensorHub / Mode 2)
 
@@ -9842,7 +9842,7 @@ X-NUCLEO-IKS01A2 (SensorHub / Mode 2)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS01A2 (Standard / Mode 1) shield](../_images/x-nucleo-iks01a2.jpg)
+![A picture of the X-NUCLEO-IKS01A2 (Standard / Mode 1) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a2.jpg)
 
 X-NUCLEO-IKS01A2 (Standard / Mode 1)
 
@@ -9851,7 +9851,7 @@ X-NUCLEO-IKS01A2 (Standard / Mode 1)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS01A3 (SensorHub / Mode 2) shield](../_images/x-nucleo-iks01a3.jpg)
+![A picture of the X-NUCLEO-IKS01A3 (SensorHub / Mode 2) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a3.jpg)
 
 X-NUCLEO-IKS01A3 (SensorHub / Mode 2)
 
@@ -9860,7 +9860,7 @@ X-NUCLEO-IKS01A3 (SensorHub / Mode 2)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS01A3 (Standard / Mode 1) shield](../_images/x-nucleo-iks01a3.jpg)
+![A picture of the X-NUCLEO-IKS01A3 (Standard / Mode 1) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks01a3.jpg)
 
 X-NUCLEO-IKS01A3 (Standard / Mode 1)
 
@@ -9869,7 +9869,7 @@ X-NUCLEO-IKS01A3 (Standard / Mode 1)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS02A1 (Microphone) shield](../_images/x-nucleo-iks02a1.jpg)
+![A picture of the X-NUCLEO-IKS02A1 (Microphone) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks02a1.jpg)
 
 X-NUCLEO-IKS02A1 (Microphone)
 
@@ -9878,7 +9878,7 @@ X-NUCLEO-IKS02A1 (Microphone)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS02A1 (SensorHub / Mode 2) shield](../_images/x-nucleo-iks02a1.jpg)
+![A picture of the X-NUCLEO-IKS02A1 (SensorHub / Mode 2) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks02a1.jpg)
 
 X-NUCLEO-IKS02A1 (SensorHub / Mode 2)
 
@@ -9887,7 +9887,7 @@ X-NUCLEO-IKS02A1 (SensorHub / Mode 2)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS02A1 (Standard / Mode 1) shield](../_images/x-nucleo-iks02a1.jpg)
+![A picture of the X-NUCLEO-IKS02A1 (Standard / Mode 1) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks02a1.jpg)
 
 X-NUCLEO-IKS02A1 (Standard / Mode 1)
 
@@ -9896,7 +9896,7 @@ X-NUCLEO-IKS02A1 (Standard / Mode 1)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS4A1 (Mode 1) shield](../_images/x-nucleo-iks4a1.jpg)
+![A picture of the X-NUCLEO-IKS4A1 (Mode 1) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks4a1.jpg)
 
 X-NUCLEO-IKS4A1 (Mode 1)
 
@@ -9905,7 +9905,7 @@ X-NUCLEO-IKS4A1 (Mode 1)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS4A1 (Mode 2) shield](../_images/x-nucleo-iks4a1.jpg)
+![A picture of the X-NUCLEO-IKS4A1 (Mode 2) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks4a1.jpg)
 
 X-NUCLEO-IKS4A1 (Mode 2)
 
@@ -9914,7 +9914,7 @@ X-NUCLEO-IKS4A1 (Mode 2)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-IKS4A1 (Mode 3) shield](../_images/x-nucleo-iks4a1.jpg)
+![A picture of the X-NUCLEO-IKS4A1 (Mode 3) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-iks4a1.jpg)
 
 X-NUCLEO-IKS4A1 (Mode 3)
 
@@ -9923,7 +9923,7 @@ X-NUCLEO-IKS4A1 (Mode 3)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-WB05KN1 (SPI) shield](../_images/x-nucleo-wb05kn1.webp)
+![A picture of the X-NUCLEO-WB05KN1 (SPI) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-wb05kn1.webp)
 
 X-NUCLEO-WB05KN1 (SPI)
 
@@ -9932,7 +9932,7 @@ X-NUCLEO-WB05KN1 (SPI)
 
 STMicroelectronics
 
-![A picture of the X-NUCLEO-WB05KN1 (UART) shield](../_images/x-nucleo-wb05kn1.webp)
+![A picture of the X-NUCLEO-WB05KN1 (UART) shield](https://docs.zephyrproject.org/4.2.0/_images/x-nucleo-wb05kn1.webp)
 
 X-NUCLEO-WB05KN1 (UART)
 

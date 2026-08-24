@@ -147,4 +147,4 @@ static ALWAYS\_INLINE void arch\_nop(void)
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [arm64](dir_6230441082867cc38c6cd25597cf0dd8.md)
 - [misc.h](arm64_2misc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

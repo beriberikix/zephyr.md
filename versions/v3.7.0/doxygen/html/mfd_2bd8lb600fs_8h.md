@@ -30,4 +30,4 @@ bd8lb600fs.h File Reference
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [mfd](dir_1bf5b7f6eba6ffa1b2ffa53a350028d6.md)
 - [bd8lb600fs.h](mfd_2bd8lb600fs_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

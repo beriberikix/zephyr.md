@@ -8,8 +8,8 @@ original_path: boards/st/stm32f413h_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32F413H_DiscoveryKit.webp](../../../../_images/stm32F413H_DiscoveryKit.webp)
-](../../../../_images/stm32F413H_DiscoveryKit.webp)
+[![../../../../_images/stm32F413H_DiscoveryKit.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32F413H_DiscoveryKit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32F413H_DiscoveryKit.webp)
 
 STM32F413H Discovery
 

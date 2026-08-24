@@ -875,4 +875,4 @@ Return values
 See also
 :   [sys\_timepoint\_calc()](#ga509cf4599c1f162c97540743e8c21d33)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

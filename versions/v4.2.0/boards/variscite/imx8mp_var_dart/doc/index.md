@@ -8,8 +8,8 @@ original_path: boards/variscite/imx8mp_var_dart/doc/index.html
 
 Board Overview
 
-[![../../../../_images/imx8mp_var_dart.webp](../../../../_images/imx8mp_var_dart.webp)
-](../../../../_images/imx8mp_var_dart.webp)
+[![../../../../_images/imx8mp_var_dart.webp](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_dart.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_dart.webp)
 
 DART-MX8M-PLUS
 

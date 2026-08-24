@@ -16,7 +16,7 @@ the drop-down menu on the left and select the desired version.
 extension connector. It features an MPU6886 6-axis motion tracker (6DOF IMU)
 and a SPM1423 microphone.
 
-[![M5Stack-Core2-EXT](../../../../_images/m5stack_core2_ext.webp)](../../../../_images/m5stack_core2_ext.webp)
+[![M5Stack-Core2-EXT](https://docs.zephyrproject.org/3.6.0/_images/m5stack_core2_ext.webp)](https://docs.zephyrproject.org/3.6.0/_images/m5stack_core2_ext.webp)
 
 M5Stack-Core2-Extension module
 

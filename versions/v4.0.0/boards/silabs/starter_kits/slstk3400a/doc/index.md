@@ -8,8 +8,8 @@ original_path: boards/silabs/starter_kits/slstk3400a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/slstk3400a.jpg](../../../../../_images/slstk3400a.jpg)
-](../../../../../_images/slstk3400a.jpg)
+[![../../../../../_images/slstk3400a.jpg](https://docs.zephyrproject.org/4.0.0/_images/slstk3400a.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/slstk3400a.jpg)
 
 EFM32 Happy Gecko (SLSTK3400A)
 

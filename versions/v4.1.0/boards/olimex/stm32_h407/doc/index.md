@@ -8,8 +8,8 @@ original_path: boards/olimex/stm32_h407/doc/index.html
 
 Board Overview
 
-[![../../../../_images/olimex_stm32_h407.jpg](../../../../_images/olimex_stm32_h407.jpg)
-](../../../../_images/olimex_stm32_h407.jpg)
+[![../../../../_images/olimex_stm32_h407.jpg](https://docs.zephyrproject.org/4.1.0/_images/olimex_stm32_h407.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/olimex_stm32_h407.jpg)
 
 OLIMEX-STM32-H407
 
@@ -34,7 +34,7 @@ Browse board sources
 The OLIMEX-STM32-H407 is open source hardware and is based on
 the STMicroelectronics STM32F407ZG ARM Cortex-M4 CPU.
 
-![OLIMEX-STM32-H407](../../../../_images/olimex_stm32_h4071.jpg)
+![OLIMEX-STM32-H407](https://docs.zephyrproject.org/4.1.0/_images/olimex_stm32_h4071.jpg)
 
 OLIMEX-STM32-H407
 
@@ -113,7 +113,7 @@ on-chip / on-board
 
 ### Pin Mapping
 
-![OLIMEX-STM32-H407 connectors](../../../../_images/olimex-stm32-h407-front.jpg)
+![OLIMEX-STM32-H407 connectors](https://docs.zephyrproject.org/4.1.0/_images/olimex-stm32-h407-front.jpg)
 
 OLIMEX-STM32-H407 connectors
 

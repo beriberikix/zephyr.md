@@ -3155,4 +3155,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - UULP\_TESTMODE0\_ULP9 : [siwx91x-pinctrl.h](siwx91x-pinctrl_8h.md#aa927ee96be06692b7fecb88eec152357)
 - uvc\_set\_video\_dev() : [usbd\_uvc.h](group__usbd__uvc.md#gac4caf401c52d9a3755ace3e8dfa884a3)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

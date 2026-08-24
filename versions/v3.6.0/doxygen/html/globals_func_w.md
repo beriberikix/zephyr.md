@@ -175,4 +175,4 @@ Here is a list of all functions with links to the files they belong to:
 - write\_vbar\_el3() : [lib\_helpers.h](4_2lib__helpers_8h.md#a90788687be53ee9437f396d121b1a8c3)
 - write\_vmpidr\_el2() : [lib\_helpers.h](4_2lib__helpers_8h.md#a4c3c4d5ad024916f9aa0fb1ad177b6ef)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

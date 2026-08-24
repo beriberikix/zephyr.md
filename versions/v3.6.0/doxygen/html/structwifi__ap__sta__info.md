@@ -74,4 +74,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[wifi\_mgmt.h](wifi__mgmt_8h_source.md)
 
 - [wifi\_ap\_sta\_info](structwifi__ap__sta__info.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

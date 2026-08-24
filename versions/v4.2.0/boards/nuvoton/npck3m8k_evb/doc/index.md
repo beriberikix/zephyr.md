@@ -8,8 +8,8 @@ original_path: boards/nuvoton/npck3m8k_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/npck3m8k_evb.webp](../../../../_images/npck3m8k_evb.webp)
-](../../../../_images/npck3m8k_evb.webp)
+[![../../../../_images/npck3m8k_evb.webp](https://docs.zephyrproject.org/4.2.0/_images/npck3m8k_evb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/npck3m8k_evb.webp)
 
 NPCK3M8K\_EVB
 

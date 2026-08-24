@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_mg24/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_mg24.webp](../../../../_images/xiao_mg24.webp)
-](../../../../_images/xiao_mg24.webp)
+[![../../../../_images/xiao_mg24.webp](https://docs.zephyrproject.org/4.2.0/_images/xiao_mg24.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/xiao_mg24.webp)
 
 XIAO MG24
 

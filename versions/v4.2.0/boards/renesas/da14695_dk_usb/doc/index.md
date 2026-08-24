@@ -8,8 +8,8 @@ original_path: boards/renesas/da14695_dk_usb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/da14695-00hqdevkt-u-usb-board.jpg](../../../../_images/da14695-00hqdevkt-u-usb-board.jpg)
-](../../../../_images/da14695-00hqdevkt-u-usb-board.jpg)
+[![../../../../_images/da14695-00hqdevkt-u-usb-board.jpg](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-u-usb-board.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/da14695-00hqdevkt-u-usb-board.jpg)
 
 DA14695 Development Kit USB
 

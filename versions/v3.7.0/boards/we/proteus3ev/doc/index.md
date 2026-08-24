@@ -31,7 +31,7 @@ nRF52840 ARM Cortex-M4F CPU and the following devices:
 - UART
 - WDT
 
-![Proteus-III EV](../../../../_images/we_proteus3ev_nrf52840.jpg)
+![Proteus-III EV](https://docs.zephyrproject.org/3.7.0/_images/we_proteus3ev_nrf52840.jpg)
 
 Proteus-III EV (Credit: Würth Elektronik)
 

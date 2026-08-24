@@ -14,7 +14,7 @@ NB-IoT connectivity for industrial and commercial IoT applications.
 This board features the Monarch 2 GM02S, a dual-mode LTE-M/NB-IoT module from Sequans (based on
 Sequans SQN3430 Chipset), offering global band support from 617MHz to 2.2GHz.
 
-![MikroElektronika LTE IoT 10 Click](../../../../_images/mikroe_lte_iot10_click.webp)
+![MikroElektronika LTE IoT 10 Click](https://docs.zephyrproject.org/4.2.0/_images/mikroe_lte_iot10_click.webp)
 
 MikroElektronika LTE IoT 10 Click (Credit: MikroElektronika)
 

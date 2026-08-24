@@ -26,4 +26,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - zs : [cbor\_nb\_reader](structcbor__nb__reader.md#a7cbec04a9c1fd8a1f8feed0de8d1be1d), [cbor\_nb\_writer](structcbor__nb__writer.md#a6aa71f361798e61f19e5f0c46cdf1ad5)
 - zse : [enum\_mgmt\_detail\_output](structenum__mgmt__detail__output.md#a140d1f5cd4e4f7a88c5a1da98a927161), [img\_mgmt\_slot\_info\_image](structimg__mgmt__slot__info__image.md#af19f99ee4e86a586177b014c364be94c), [img\_mgmt\_slot\_info\_slot](structimg__mgmt__slot__info__slot.md#a316d66379317f7a13be21cd242cdddda), [img\_mgmt\_state\_slot\_encode](structimg__mgmt__state__slot__encode.md#a62157cb9a3288806f4ec11e5c2ef20ac), [os\_mgmt\_bootloader\_info\_data](structos__mgmt__bootloader__info__data.md#a0509ede3b6d0b40c0b93700a738f54cf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

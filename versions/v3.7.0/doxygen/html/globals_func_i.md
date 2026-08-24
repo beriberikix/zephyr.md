@@ -278,4 +278,4 @@ Here is a list of all functions with links to the files they belong to:
 - ivshmem\_int\_peer() : [ivshmem.h](group__ivshmem.md#gab4e02271f8b854c783c359aca240d20c)
 - ivshmem\_register\_handler() : [ivshmem.h](group__ivshmem.md#ga88aacb71bff0375c10fdb48e34b359fe)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

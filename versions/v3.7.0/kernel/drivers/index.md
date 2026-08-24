@@ -25,7 +25,7 @@ In this model the driver fills in the pointer to the structure containing the
 function pointers to its API functions during driver initialization. These
 structures are placed into the RAM section in initialization level order.
 
-[![Device Driver Model](../../_images/device_driver_model.svg)](../../_images/device_driver_model.svg)
+[![Device Driver Model](https://docs.zephyrproject.org/3.7.0/_images/device_driver_model.svg)](https://docs.zephyrproject.org/3.7.0/_images/device_driver_model.svg)
 
 ## Standard Drivers
 

@@ -17,7 +17,7 @@ options.
 
 ## [High level overview of the network stack](#id5)
 
-![Overview of the network stack architecture](../../_images/zephyr_netstack_overview.svg)
+![Overview of the network stack architecture](https://docs.zephyrproject.org/3.6.0/_images/zephyr_netstack_overview.svg)
 
 Network stack overview
 
@@ -65,7 +65,7 @@ that execute the application logic. When using the
 [BSD socket API](api/sockets.md#bsd-sockets-interface), the following things will
 happen.
 
-![Network RX data flow](../../_images/zephyr_netstack_overview-rx_sequence.svg)
+![Network RX data flow](https://docs.zephyrproject.org/3.6.0/_images/zephyr_netstack_overview-rx_sequence.svg)
 
 Network RX data flow
 
@@ -97,7 +97,7 @@ Network RX data flow
    [BSD socket API](api/sockets.md#bsd-sockets-interface) to create a socket
    that will receive the data.
 
-![Network TX data flow](../../_images/zephyr_netstack_overview-tx_sequence.svg)
+![Network TX data flow](https://docs.zephyrproject.org/3.6.0/_images/zephyr_netstack_overview-tx_sequence.svg)
 
 Network TX data flow
 

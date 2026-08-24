@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_esp32c6/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_esp32c6.webp](../../../../_images/xiao_esp32c6.webp)
-](../../../../_images/xiao_esp32c6.webp)
+[![../../../../_images/xiao_esp32c6.webp](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c6.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c6.webp)
 
 XIAO ESP32C6
 
@@ -110,7 +110,7 @@ on-chip / on-board
 
 The board uses a standard XIAO pinout, the default pin mapping is the following:
 
-![XIAO ESP32C6 Pinout](../../../../_images/xiao_esp32c6_pinout.webp)
+![XIAO ESP32C6 Pinout](https://docs.zephyrproject.org/4.2.0/_images/xiao_esp32c6_pinout.webp)
 
 XIAO ESP32C6 Pinout
 

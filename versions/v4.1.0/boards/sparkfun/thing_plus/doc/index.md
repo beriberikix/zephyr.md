@@ -6,7 +6,7 @@ original_path: boards/sparkfun/thing_plus/doc/index.html
 
 # nRF9160 Thing Plus
 
-![Sparkfun nRF9160 Thing Plus](../../../../_images/sparkfun_thing_plus_nrf9160.jpg)
+![Sparkfun nRF9160 Thing Plus](https://docs.zephyrproject.org/4.1.0/_images/sparkfun_thing_plus_nrf9160.jpg)
 
 nRF9160 Thing Plus (Credit: Sparkfun)
 

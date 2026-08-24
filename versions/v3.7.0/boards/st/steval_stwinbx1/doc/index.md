@@ -19,7 +19,7 @@ IoT contexts such as condition monitoring and predictive maintenance.
 The STEVAL-STWINBX1 kit consists of an STWIN.box core system, a 480mAh LiPo battery, an adapter for the ST-LINK debugger,
 a plastic case, an adapter board for DIL 24 sensors and a flexible cable.
 
-![STEVAL-STWINBX1 Development kit](../../../../_images/steval_stwinbx1.jpg)
+![STEVAL-STWINBX1 Development kit](https://docs.zephyrproject.org/3.7.0/_images/steval_stwinbx1.jpg)
 
 More information about the board can be found at the [STEVAL-STWINBX1 Development kit website](https://www.st.com/en/evaluation-tools/steval-stwinbx1.html).
 

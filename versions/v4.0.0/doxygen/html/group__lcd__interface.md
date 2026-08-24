@@ -84,4 +84,4 @@ Display pixel format enumeration.
 
 These defines must match those present in the [display\_pixel\_format](group__display__interface.md#gac346bc56771052a8fe919c3ec23d7c9c "Display pixel formats.") enum. They are required because the enum cannot be reused within devicetree, since enum definitions are not supported by devicetree tooling.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/electronut/nrf52840_papyr/doc/nrf52840_papyr.html
 
 Board Overview
 
-[![../../../../_images/nrf52840_papyr.jpg](../../../../_images/nrf52840_papyr.jpg)
-](../../../../_images/nrf52840_papyr.jpg)
+[![../../../../_images/nrf52840_papyr.jpg](https://docs.zephyrproject.org/4.1.0/_images/nrf52840_papyr.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nrf52840_papyr.jpg)
 
 Labs Papyr
 

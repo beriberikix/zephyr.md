@@ -14,7 +14,7 @@ SLTB010A is a development kit based on the EFR32BG22 SoC. Early revisions of
 the kit (A00 and A01) use a slightly different PCB (BRD4184A) from later
 revisions (BRD4184B).
 
-![SLTB010A board](../../../../../_images/sltb010a.jpg)
+![SLTB010A board](https://docs.zephyrproject.org/3.7.0/_images/sltb010a.jpg)
 
 ## Hardware
 

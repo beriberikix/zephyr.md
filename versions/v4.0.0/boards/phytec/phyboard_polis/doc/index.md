@@ -60,8 +60,8 @@ the phyCORE-i.MX 8M Mini/Nano.
     - JTAG 20-pin connector
     - MicroUSB for UART debug, two COM ports for A53 and M4
 
-[![phyBOARD-Polis](../../../../_images/phyBOARD-Polis.jpg)
-](../../../../_images/phyBOARD-Polis.jpg)
+[![phyBOARD-Polis](https://docs.zephyrproject.org/4.0.0/_images/phyBOARD-Polis.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/phyBOARD-Polis.jpg)
 
 More information about the board can be found at the
 [PHYTEC website](https://www.phytec.de/produkte/single-board-computer/phyboard-polis-imx8m-mini/).
@@ -282,8 +282,8 @@ The easiest way to do that is to use a SEGGER JLink Debugger and Phytec’s
 `PEB-EVAL-01` Shield, which can be directly connected to the JLink.
 You can find the JLink Software package here: [JLink Software](https://www.segger.com/downloads/jlink/)
 
-[![PEB-EVAL-01](../../../../_images/PEB-EVAL-01.jpg)
-](../../../../_images/PEB-EVAL-01.jpg)
+[![PEB-EVAL-01](https://docs.zephyrproject.org/4.0.0/_images/PEB-EVAL-01.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/PEB-EVAL-01.jpg)
 
 PEB-EVAL-01
 

@@ -84,4 +84,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/[pwm.h](drivers_2pwm_8h_source.md)
 
 - [pwm\_dt\_spec](structpwm__dt__spec.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

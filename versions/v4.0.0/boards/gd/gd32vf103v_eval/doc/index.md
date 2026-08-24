@@ -8,8 +8,8 @@ original_path: boards/gd/gd32vf103v_eval/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32vf103v_eval.jpg](../../../../_images/gd32vf103v_eval.jpg)
-](../../../../_images/gd32vf103v_eval.jpg)
+[![../../../../_images/gd32vf103v_eval.jpg](https://docs.zephyrproject.org/4.0.0/_images/gd32vf103v_eval.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/gd32vf103v_eval.jpg)
 
 GD32VF103V-EVAL
 

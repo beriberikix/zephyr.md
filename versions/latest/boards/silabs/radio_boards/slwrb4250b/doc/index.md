@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/slwrb4250b/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32fg1-slwrb4250b.jpg](../../../../../_images/efr32fg1-slwrb4250b.jpg)
-](../../../../../_images/efr32fg1-slwrb4250b.jpg)
+[![../../../../../_images/efr32fg1-slwrb4250b.jpg](https://docs.zephyrproject.org/4.2.0/_images/efr32fg1-slwrb4250b.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/efr32fg1-slwrb4250b.jpg)
 
 EFR32FG1 2400/868 MHz 13 dBm Dual Band (SLWRB4250B)
 

@@ -3701,4 +3701,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - PWM\_USEC : [pwm.h](group__pwm__interface.md#ga368f28c8daaee25e546484bd908e675e)
 - PXCLK\_P2 : [ti-cc32xx-pinctrl.h](ti-cc32xx-pinctrl_8h.md#af0194d8218ffae6e4ca6afdc1b75184c)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

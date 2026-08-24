@@ -8,8 +8,8 @@ original_path: boards/iar/stm32f429ii_aca/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f429ii_aca.webp](../../../../_images/stm32f429ii_aca.webp)
-](../../../../_images/stm32f429ii_aca.webp)
+[![../../../../_images/stm32f429ii_aca.webp](https://docs.zephyrproject.org/4.2.0/_images/stm32f429ii_aca.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32f429ii_aca.webp)
 
 STM32F429II-ACA
 

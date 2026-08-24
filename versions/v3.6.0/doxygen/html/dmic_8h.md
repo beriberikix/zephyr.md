@@ -67,4 +67,4 @@ This file contains the Digital Microphone APIs
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [audio](dir_07210b4c80db401fef5ca2f0f02fdac3.md)
 - [dmic.h](dmic_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

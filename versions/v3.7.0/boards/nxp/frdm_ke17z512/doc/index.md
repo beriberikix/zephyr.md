@@ -17,7 +17,7 @@ MCU-based platforms. The onboard OpenSDAv2 serial and debug adapter,
 running an open source bootloader, offers options for serial
 communication, flash programming, and run-control debugging.
 
-![FRDM-KE17Z512](../../../../_images/frdm_ke17z512.webp)
+![FRDM-KE17Z512](https://docs.zephyrproject.org/3.7.0/_images/frdm_ke17z512.webp)
 
 FRDM-KE17Z512 (Credit: NXP)
 

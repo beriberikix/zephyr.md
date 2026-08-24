@@ -8,8 +8,8 @@ original_path: boards/doiting/dt_bl10_devkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/dt_bl10_devkit.webp](../../../../_images/dt_bl10_devkit.webp)
-](../../../../_images/dt_bl10_devkit.webp)
+[![../../../../_images/dt_bl10_devkit.webp](https://docs.zephyrproject.org/4.2.0/_images/dt_bl10_devkit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/dt_bl10_devkit.webp)
 
 DT-BL10 coexistence Module Development Kit
 

@@ -8,8 +8,8 @@ original_path: boards/seeed/xiao_ble/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xiao_ble.jpg](../../../../_images/xiao_ble.jpg)
-](../../../../_images/xiao_ble.jpg)
+[![../../../../_images/xiao_ble.jpg](https://docs.zephyrproject.org/4.0.0/_images/xiao_ble.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/xiao_ble.jpg)
 
 XIAO BLE (Sense)
 

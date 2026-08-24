@@ -54,4 +54,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/clock\_control/[adi\_max32\_clock\_control.h](adi__max32__clock__control_8h_source.md)
 
 - [max32\_perclk](structmax32__perclk.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

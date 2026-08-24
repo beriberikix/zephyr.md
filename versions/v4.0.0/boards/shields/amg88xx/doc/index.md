@@ -26,13 +26,13 @@ For sensor evaluation and rapid prototyping multiple shields are available:
 
 - [Panasonic Grid-EYE Evaluation Shield](https://industry.panasonic.eu/products/components/sensors/ir-thermophile-array-sensor-grid-eye/grid-eye-evaluation-kit) [[2]](#id6)
 
-> [![Panasonic Grid-EYE Evaluation Shield](../../../../_images/AMG88XX_panasonic_grid_eye_evaluation_shield.png)
-> ](../../../../_images/AMG88XX_panasonic_grid_eye_evaluation_shield.png)
+> [![Panasonic Grid-EYE Evaluation Shield](https://docs.zephyrproject.org/4.0.0/_images/AMG88XX_panasonic_grid_eye_evaluation_shield.png)
+> ](https://docs.zephyrproject.org/4.0.0/_images/AMG88XX_panasonic_grid_eye_evaluation_shield.png)
 
 - [Adafruit AMG8833 8x8 Thermal Camera Sensor](https://learn.adafruit.com/adafruit-amg8833-8x8-thermal-camera-sensor/overview) [[4]](#id11)
 
-> [![Adafruit AMG8833 8x8 Thermal Camera Sensor](../../../../_images/AMG8833_adafruit_ir_thermal_camera_sensor.png)
-> ](../../../../_images/AMG8833_adafruit_ir_thermal_camera_sensor.png)
+> [![Adafruit AMG8833 8x8 Thermal Camera Sensor](https://docs.zephyrproject.org/4.0.0/_images/AMG8833_adafruit_ir_thermal_camera_sensor.png)
+> ](https://docs.zephyrproject.org/4.0.0/_images/AMG8833_adafruit_ir_thermal_camera_sensor.png)
 
 Please note that the former follows the Arduino shield standard, while the
 latter is a breakout board only. Please use the `amg88xx_grid_eye_eval_shield`
@@ -43,8 +43,8 @@ also could be used as an Arduino shield.
 
 - Panasonic Grid-EYE Evaluation Kit
 
-> [![Panasonic Grid-EYE Evaluation Kit (deprecated)](../../../../_images/AMG88XX_panasonic_grid_eye_evaluation_kit.png)
-> ](../../../../_images/AMG88XX_panasonic_grid_eye_evaluation_kit.png)
+> [![Panasonic Grid-EYE Evaluation Kit (deprecated)](https://docs.zephyrproject.org/4.0.0/_images/AMG88XX_panasonic_grid_eye_evaluation_kit.png)
+> ](https://docs.zephyrproject.org/4.0.0/_images/AMG88XX_panasonic_grid_eye_evaluation_kit.png)
 
 Please note that this evaluation kit is no longer available and no online
 documentation is available anymore. Please use the `amg88xx_eval_kit`

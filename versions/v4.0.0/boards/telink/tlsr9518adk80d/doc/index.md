@@ -8,8 +8,8 @@ original_path: boards/telink/tlsr9518adk80d/doc/index.html
 
 Board Overview
 
-[![../../../../_images/tlsr9518adk80d.jpg](../../../../_images/tlsr9518adk80d.jpg)
-](../../../../_images/tlsr9518adk80d.jpg)
+[![../../../../_images/tlsr9518adk80d.jpg](https://docs.zephyrproject.org/4.0.0/_images/tlsr9518adk80d.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/tlsr9518adk80d.jpg)
 
 TLSR9518ADK80D
 
@@ -39,7 +39,7 @@ KB SRAM (128 KB of Data Local Memory and 128 KB of Instruction Local Memory), ex
 stereo audio codec, 14 bit AUX ADC, analog and digital Microphone input, PWM, flexible IO interfaces,
 and other peripheral blocks required for advanced IoT, hearable, and wearable devices.
 
-![TLSR9518ADK80D_SOC](../../../../_images/tlsr9518_block_diagram.jpg)
+![TLSR9518ADK80D_SOC](https://docs.zephyrproject.org/4.0.0/_images/tlsr9518_block_diagram.jpg)
 
 The TLSR9518ADK80D default board configuration provides the following hardware components:
 

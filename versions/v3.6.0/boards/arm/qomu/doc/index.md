@@ -14,7 +14,7 @@ the drop-down menu on the left and select the desired version.
 
 The Qomu board is a platform with an on-board QuickLogic EOS S3 Sensor Processing Platform.
 
-![Qomu](../../../../_images/qomu-board.png)
+![Qomu](https://docs.zephyrproject.org/3.6.0/_images/qomu-board.png)
 
 Qomu (Credit: QuickLogic)
 

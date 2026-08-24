@@ -8,8 +8,8 @@ original_path: boards/tdk/robokit1/doc/index.html
 
 Board Overview
 
-[![../../../../_images/tdk_robokit1.jpg](../../../../_images/tdk_robokit1.jpg)
-](../../../../_images/tdk_robokit1.jpg)
+[![../../../../_images/tdk_robokit1.jpg](https://docs.zephyrproject.org/4.2.0/_images/tdk_robokit1.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/tdk_robokit1.jpg)
 
 RoboKit 1
 

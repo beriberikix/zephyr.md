@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/gpio/[gpio\_intel.h](gpio__intel_8h_source.md)
 
 - [gpio\_acpi\_res](structgpio__acpi__res.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

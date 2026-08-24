@@ -23,4 +23,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - zone\_entered : [bt\_hci\_evt\_le\_path\_loss\_threshold](structbt__hci__evt__le__path__loss__threshold.md#add7984e06d523bb34e8380dae1710b7f)
 - zs : [cbor\_nb\_reader](structcbor__nb__reader.md#a7cbec04a9c1fd8a1f8feed0de8d1be1d), [cbor\_nb\_writer](structcbor__nb__writer.md#a6aa71f361798e61f19e5f0c46cdf1ad5)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

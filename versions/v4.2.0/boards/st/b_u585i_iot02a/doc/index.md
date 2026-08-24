@@ -8,8 +8,8 @@ original_path: boards/st/b_u585i_iot02a/doc/index.html
 
 Board Overview
 
-[![../../../../_images/b-u585i-iot02a.jpg](../../../../_images/b-u585i-iot02a.jpg)
-](../../../../_images/b-u585i-iot02a.jpg)
+[![../../../../_images/b-u585i-iot02a.jpg](https://docs.zephyrproject.org/4.2.0/_images/b-u585i-iot02a.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/b-u585i-iot02a.jpg)
 
 B-U585I-IOT02A Discovery kit
 

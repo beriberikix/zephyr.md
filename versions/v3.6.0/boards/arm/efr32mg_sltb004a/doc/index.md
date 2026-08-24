@@ -16,7 +16,7 @@ The EFR32™ Mighty Gecko Starter Kit EFR32MG-SLTB004A (a.k.a Thunderboard
 Sense 2) contains a MCU from the EFR32MG family built on ARM® Cortex®-M4F
 processor with low power capabilities.
 
-![EFR32MG-SLTB004A](../../../../_images/efr32mg_sltb004a.jpg)
+![EFR32MG-SLTB004A](https://docs.zephyrproject.org/3.6.0/_images/efr32mg_sltb004a.jpg)
 
 ## Hardware
 

@@ -55,4 +55,4 @@ Here is a list of all enum values with links to the files they belong to:
 - OSDP\_LED\_COLOR\_RED : [osdp.h](osdp_8h.md#a97ee0d8eb19e4e37ac89b2b6d338b84ea6832c2b25f228213022d0dbb5f5e1584)
 - OSDP\_LED\_COLOR\_SENTINEL : [osdp.h](osdp_8h.md#a97ee0d8eb19e4e37ac89b2b6d338b84ea0a80ccbb26b42ebc2cca602c7be3117a)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

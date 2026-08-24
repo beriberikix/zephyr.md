@@ -54,4 +54,4 @@ Here is a list of all enums with links to the files they belong to:
 - usbd\_speed : [usbd.h](group__usbd__api.md#ga2f2da3d634530f08cd59d408c811ad71)
 - usbpd\_cc\_pin : [usbc\_pd.h](group__usb__power__delivery.md#gaee2fe2128557939404c62e8104269bbf)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

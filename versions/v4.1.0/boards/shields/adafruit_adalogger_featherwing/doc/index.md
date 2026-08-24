@@ -11,7 +11,7 @@ original_path: boards/shields/adafruit_adalogger_featherwing/doc/index.html
 The [Adafruit Adalogger Featherwing Shield](https://learn.adafruit.com/adafruit-adalogger-featherwing) features an [NXP PCF8523 Real-Time
 Clock/Calendar with Battery Backup](https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), and an SD card interface.
 
-![Adafruit Adalogger Featherwing Shield](../../../../_images/adafruit_adalogger_featherwing.webp)
+![Adafruit Adalogger Featherwing Shield](https://docs.zephyrproject.org/4.1.0/_images/adafruit_adalogger_featherwing.webp)
 
 Adafruit Adalogger Featherwing Shield (Credit: Adafruit)
 

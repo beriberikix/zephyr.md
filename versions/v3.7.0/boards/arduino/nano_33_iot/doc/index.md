@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The Arduino Nano 33 IOT is a small form factor development board with USB,
 Wifi, Bluetooth, a 6 axis IMU, and secure element.
 
-![Arduino Nano 33 IOT](../../../../_images/nano_33_iot.jpg)
+![Arduino Nano 33 IOT](https://docs.zephyrproject.org/3.7.0/_images/nano_33_iot.jpg)
 
 ## Hardware
 

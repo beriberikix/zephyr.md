@@ -63,4 +63,4 @@ BSD Sockets compatible API definitions.
 - [posix](dir_cc2c191bc57cea4eaf0dbdf53c4fb6c6.md)
 - [net](dir_2c168081a5287170970afe4d92a99d1b.md)
 - [if.h](if_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

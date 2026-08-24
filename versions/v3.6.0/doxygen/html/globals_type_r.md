@@ -37,4 +37,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - rtc\_update\_callback : [rtc.h](group__rtc__interface.md#ga99e4869ee85507befc7e7cf129b45b07)
 - rtio\_callback\_t : [rtio.h](group__rtio.md#gad1dbd690e6cf88d7c788436dd04d1a00)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

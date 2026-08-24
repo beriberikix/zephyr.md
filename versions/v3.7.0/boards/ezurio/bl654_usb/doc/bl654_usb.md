@@ -29,11 +29,11 @@ This USB adapter has the following features:
 - WDT
 - RTC
 
-![BL654 USB adapter](../../../../_images/bl654_usb.jpg)
+![BL654 USB adapter](https://docs.zephyrproject.org/3.7.0/_images/bl654_usb.jpg)
 
 BL654 USB Adapter
 
-![451-00004 Box Contents](../../../../_images/bl654_usb_pcb.jpg)
+![451-00004 Box Contents](https://docs.zephyrproject.org/3.7.0/_images/bl654_usb_pcb.jpg)
 
 BL654 USB Adapter PCB
 
@@ -105,7 +105,7 @@ before proceeding. These instructions were tested with version 6.1.0.
 
    The push button is in a pin-hole on the logo side of the USB adapter.
 
-   ![Location of RESET button](../../../../_images/bl654_usb_reset.jpg)
+   ![Location of RESET button](https://docs.zephyrproject.org/3.7.0/_images/bl654_usb_reset.jpg)
 
    The blue LED should start a fade pattern, signalling the bootloader is
    running.

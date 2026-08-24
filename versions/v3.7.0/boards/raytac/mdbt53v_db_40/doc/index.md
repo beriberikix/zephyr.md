@@ -48,7 +48,7 @@ nRF5340 SoC provides support for the following devices:
 - UARTE
 - WDT
 
-[![MDBT53V-DB-40](../../../../_images/MDBT53V-DB-40.jpg)](../../../../_images/MDBT53V-DB-40.jpg)
+[![MDBT53V-DB-40](https://docs.zephyrproject.org/3.7.0/_images/MDBT53V-DB-40.jpg)](https://docs.zephyrproject.org/3.7.0/_images/MDBT53V-DB-40.jpg)
 
 MDBT53V-DB-40 (Credit: Raytac Corporation)
 

@@ -60,7 +60,7 @@ available internal to the RA MCU
 **Special Feature Access**
 - 32 MB (256 Mb) External Quad-SPI Flash
 
-![RA4M2 Evaluation Kit](../../../../_images/ek_ra4m2.webp)
+![RA4M2 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra4m2.webp)
 
 EK-RA4M2 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -68,8 +68,8 @@ EK-RA4M2 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detail Hardware feature for the RA4M2 MCU group can be found at [RA4M2 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/man/ra4m2-group-users-manual-hardware)
 
-[![RA4M2 MCU group feature](../../../../_images/ra4m2_block_diagram.webp)
-](../../../../_images/ra4m2_block_diagram.webp)
+[![RA4M2 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra4m2_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra4m2_block_diagram.webp)
 
 RA4M2 Block diagram (Credit: Renesas Electronics Corporation)
 

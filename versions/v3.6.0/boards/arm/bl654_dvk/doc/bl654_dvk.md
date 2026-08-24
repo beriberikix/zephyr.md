@@ -33,11 +33,11 @@ This development kit has the following features:
 - USB
 - WDT
 
-![BL654 Development Kit](../../../../_images/bl654_dvk.jpg)
+![BL654 Development Kit](https://docs.zephyrproject.org/3.6.0/_images/bl654_dvk.jpg)
 
 BL654 Development Kit Board
 
-![455-00001 Box Contents](../../../../_images/455-00001_BoxContents.jpg)
+![455-00001 Box Contents](https://docs.zephyrproject.org/3.6.0/_images/455-00001_BoxContents.jpg)
 
 455-00001 (BL654 DVK integrated antenna) Box Contents
 

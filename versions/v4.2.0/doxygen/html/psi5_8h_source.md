@@ -509,4 +509,4 @@ Slot Number.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [psi5](dir_30659d2cb58c9650599fdf2ac54f2854.md)
 - [psi5.h](psi5_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

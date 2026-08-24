@@ -76,4 +76,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[ieee802154\_mgmt.h](ieee802154__mgmt_8h_source.md)
 
 - [ieee802154\_security\_params](structieee802154__security__params.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

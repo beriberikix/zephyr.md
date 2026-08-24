@@ -8,8 +8,8 @@ original_path: boards/blues/cygnet/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cygnet.webp](../../../../_images/cygnet.webp)
-](../../../../_images/cygnet.webp)
+[![../../../../_images/cygnet.webp](https://docs.zephyrproject.org/4.2.0/_images/cygnet.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/cygnet.webp)
 
 Cygnet
 
@@ -178,7 +178,7 @@ input/output, pull-up, etc.
 
 #### Available pins
 
-![Cygnet Pinout](../../../../_images/cygnet-pinout.webp)
+![Cygnet Pinout](https://docs.zephyrproject.org/4.2.0/_images/cygnet-pinout.webp)
 
 For more details please refer to [Blues Cygnet User Manual](https://dev.blues.io/feather-mcus/cygnet/cygnet-introduction/) [[2]](#id4).
 

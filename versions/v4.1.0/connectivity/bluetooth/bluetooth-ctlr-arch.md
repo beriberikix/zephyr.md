@@ -8,7 +8,7 @@ original_path: connectivity/bluetooth/bluetooth-ctlr-arch.html
 
 ## Overview
 
-![../../_images/ctlr_overview.png](../../_images/ctlr_overview.png)
+![../../_images/ctlr_overview.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_overview.png)
 
 1. HCI
 
@@ -36,65 +36,65 @@ original_path: connectivity/bluetooth/bluetooth-ctlr-arch.html
 
 ### Execution Overview
 
-![../../_images/ctlr_exec_overview.png](../../_images/ctlr_exec_overview.png)
+![../../_images/ctlr_exec_overview.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_exec_overview.png)
 
 ### Architecture Overview
 
-![../../_images/ctlr_arch_overview.png](../../_images/ctlr_arch_overview.png)
+![../../_images/ctlr_arch_overview.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_arch_overview.png)
 
 ## Scheduling
 
-![../../_images/ctlr_sched.png](../../_images/ctlr_sched.png)
+![../../_images/ctlr_sched.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched.png)
 
 ### Ticker
 
-![../../_images/ctlr_sched_ticker.png](../../_images/ctlr_sched_ticker.png)
+![../../_images/ctlr_sched_ticker.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_ticker.png)
 
 ### Upper Link Layer and Lower Link Layer
 
-![../../_images/ctlr_sched_ull_lll.png](../../_images/ctlr_sched_ull_lll.png)
+![../../_images/ctlr_sched_ull_lll.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_ull_lll.png)
 
 ### Scheduling Variants
 
-![../../_images/ctlr_sched_variant.png](../../_images/ctlr_sched_variant.png)
+![../../_images/ctlr_sched_variant.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_variant.png)
 
 ### ULL and LLL Timing
 
-![../../_images/ctlr_sched_ull_lll_timing.png](../../_images/ctlr_sched_ull_lll_timing.png)
+![../../_images/ctlr_sched_ull_lll_timing.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_ull_lll_timing.png)
 
 ## Event Handling
 
-![../../_images/ctlr_sched_event_handling.png](../../_images/ctlr_sched_event_handling.png)
+![../../_images/ctlr_sched_event_handling.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_event_handling.png)
 
 ### Scheduling Closely Spaced Events
 
-![../../_images/ctlr_sched_msc_close_events.png](../../_images/ctlr_sched_msc_close_events.png)
+![../../_images/ctlr_sched_msc_close_events.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_msc_close_events.png)
 
 ### Aborting Active Event
 
-![../../_images/ctlr_sched_msc_event_abort.png](../../_images/ctlr_sched_msc_event_abort.png)
+![../../_images/ctlr_sched_msc_event_abort.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_msc_event_abort.png)
 
 ### Cancelling Pending Event
 
-![../../_images/ctlr_sched_msc_event_cancel.png](../../_images/ctlr_sched_msc_event_cancel.png)
+![../../_images/ctlr_sched_msc_event_cancel.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_msc_event_cancel.png)
 
 ### Pre-emption of Active Event
 
-![../../_images/ctlr_sched_msc_event_preempt.png](../../_images/ctlr_sched_msc_event_preempt.png)
+![../../_images/ctlr_sched_msc_event_preempt.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_sched_msc_event_preempt.png)
 
 ## Data Flow
 
 ### Transmit Data Flow
 
-![../../_images/ctlr_dataflow_tx.png](../../_images/ctlr_dataflow_tx.png)
+![../../_images/ctlr_dataflow_tx.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_dataflow_tx.png)
 
 ### Receive Data Flow
 
-![../../_images/ctlr_dataflow_rx.png](../../_images/ctlr_dataflow_rx.png)
+![../../_images/ctlr_dataflow_rx.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_dataflow_rx.png)
 
 ## Execution Priorities
 
-![../../_images/ctlr_exec_prio.png](../../_images/ctlr_exec_prio.png)
+![../../_images/ctlr_exec_prio.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_exec_prio.png)
 
 - Event handle (0, 1) < Event preparation (2, 3) < Event/Rx done (4) < Tx
   request (5) < Role management (6) < Host (7).
@@ -190,22 +190,22 @@ control procedures handling in ULL.
 
 ### LLL Execution
 
-![../../_images/ctlr_exec_lll.png](../../_images/ctlr_exec_lll.png)
+![../../_images/ctlr_exec_lll.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_exec_lll.png)
 
 #### LLL Resume
 
-![../../_images/ctlr_exec_lll_resume_top.png](../../_images/ctlr_exec_lll_resume_top.png)
-![../../_images/ctlr_exec_lll_resume_bottom.png](../../_images/ctlr_exec_lll_resume_bottom.png)
+![../../_images/ctlr_exec_lll_resume_top.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_exec_lll_resume_top.png)
+![../../_images/ctlr_exec_lll_resume_bottom.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_exec_lll_resume_bottom.png)
 
 ## Bare metal utilities
 
 ### Memory FIFO and Memory Queue
 
-![../../_images/ctlr_mfifo_memq.png](../../_images/ctlr_mfifo_memq.png)
+![../../_images/ctlr_mfifo_memq.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_mfifo_memq.png)
 
 ### Mayfly
 
-![../../_images/ctlr_mayfly.png](../../_images/ctlr_mayfly.png)
+![../../_images/ctlr_mayfly.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_mayfly.png)
 
 - Mayfly are multi-instance scalable ISR execution contexts
 - What a Work is to a Thread, Mayfly is to an ISR
@@ -217,7 +217,7 @@ control procedures handling in ULL.
 
 ## Legacy Controller
 
-![../../_images/ctlr_legacy.png](../../_images/ctlr_legacy.png)
+![../../_images/ctlr_legacy.png](https://docs.zephyrproject.org/4.1.0/_images/ctlr_legacy.png)
 
 ## Bluetooth Low Energy Controller - Vendor Specific Details
 

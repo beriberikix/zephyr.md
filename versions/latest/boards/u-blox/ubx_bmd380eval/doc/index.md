@@ -29,7 +29,7 @@ the following devices:
 - USB
 - WDT
 
-![BMD-340-EVAL](../../../../_images/BMD-34-38-EVAL1.jpg)
+![BMD-340-EVAL](https://docs.zephyrproject.org/4.2.0/_images/BMD-34-38-EVAL1.jpg)
 
 BMD-340-EVAL (Credit: u-blox AG)
 
@@ -105,7 +105,7 @@ hardware features.
 
 #### External Connectors
 
-![BMD-340-EVAL pin-out](../../../../_images/bmd-340-eval_pin_out1.jpg)
+![BMD-340-EVAL pin-out](https://docs.zephyrproject.org/4.2.0/_images/bmd-340-eval_pin_out1.jpg)
 
 Note
 

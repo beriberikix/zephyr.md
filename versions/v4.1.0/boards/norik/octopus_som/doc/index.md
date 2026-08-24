@@ -8,8 +8,8 @@ original_path: boards/norik/octopus_som/doc/index.html
 
 Board Overview
 
-[![../../../../_images/octopus_som.webp](../../../../_images/octopus_som.webp)
-](../../../../_images/octopus_som.webp)
+[![../../../../_images/octopus_som.webp](https://docs.zephyrproject.org/4.1.0/_images/octopus_som.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/octopus_som.webp)
 
 Octopus SoM
 

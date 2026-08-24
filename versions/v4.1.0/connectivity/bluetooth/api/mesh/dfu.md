@@ -46,7 +46,7 @@ Initiator
     Target nodes and their firmware, and will control (and initiate) all firmware updates. The
     Initiator role is not implemented in the Zephyr Bluetooth Mesh DFU subsystem.
 
-![Graphic overview of the DFU roles mesh nodes can have during the process of image distribution](../../../../_images/dfu_roles_mesh.svg)
+![Graphic overview of the DFU roles mesh nodes can have during the process of image distribution](https://docs.zephyrproject.org/4.1.0/_images/dfu_roles_mesh.svg)
 
 DFU roles and the associated Bluetooth Mesh models
 
@@ -202,7 +202,7 @@ The Distribution stage is controlled by the Distributor, as implemented by the
 [Firmware Update Client](dfu_cli.md#bluetooth-mesh-dfu-cli). The Target node implements all handling of these procedures in the
 [Firmware Update Server](dfu_srv.md#bluetooth-mesh-dfu-srv), and notifies the application through a set of callbacks.
 
-![Overview of DFU stages and procedures](../../../../_images/dfu_stages_procedures_mesh.svg)
+![Overview of DFU stages and procedures](https://docs.zephyrproject.org/4.1.0/_images/dfu_stages_procedures_mesh.svg)
 
 DFU stages and procedures as seen from the Distributor
 

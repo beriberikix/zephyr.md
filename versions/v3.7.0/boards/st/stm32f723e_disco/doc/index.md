@@ -29,7 +29,7 @@ and high-speed connectivity features. Important board features include:
 - USB OTG HS with Micro-AB connectors
 - USB OTG FS with Micro-AB connectors
 
-![STM32F723E-DISCO](../../../../_images/stm32f723e_disco.jpg)
+![STM32F723E-DISCO](https://docs.zephyrproject.org/3.7.0/_images/stm32f723e_disco.jpg)
 
 More information about the board can be found at the [32F723E-DISCO website](https://www.st.com/en/evaluation-tools/32f723ediscovery.html).
 

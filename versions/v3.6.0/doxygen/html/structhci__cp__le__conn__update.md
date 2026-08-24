@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[hci\_types.h](hci__types_8h_source.md)
 
 - [hci\_cp\_le\_conn\_update](structhci__cp__le__conn__update.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

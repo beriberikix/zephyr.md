@@ -72,11 +72,11 @@ Internally, a [`sys_slist_t`](../../doxygen/html/group__single-linked-list__apis
 “head” and “tail” pointer fields. And a [`sys_snode_t`](../../doxygen/html/group__single-linked-list__apis.md#ga69bf43aad81e3ee2d55250c59b857493) stores only a
 single “next” pointer.
 
-![slist example](../../_images/slist.png)
+![slist example](https://docs.zephyrproject.org/4.0.0/_images/slist.png)
 
 An slist containing three elements.
 
-![empty slist example](../../_images/slist-empty.png)
+![empty slist example](https://docs.zephyrproject.org/4.0.0/_images/slist-empty.png)
 
 An empty slist
 

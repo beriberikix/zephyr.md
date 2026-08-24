@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f072rb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f072rb.webp](../../../../_images/nucleo_f072rb.webp)
-](../../../../_images/nucleo_f072rb.webp)
+[![../../../../_images/nucleo_f072rb.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f072rb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f072rb.webp)
 
 Nucleo F072RB
 
@@ -145,7 +145,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F072RB connectors](../../../../_images/nucleo_f072rb_connectors.webp)
+![Nucleo F072RB connectors](https://docs.zephyrproject.org/4.2.0/_images/nucleo_f072rb_connectors.webp)
 
 #### Default Zephyr Peripheral Mapping:
 

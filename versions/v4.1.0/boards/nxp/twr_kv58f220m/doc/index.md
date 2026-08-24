@@ -8,8 +8,8 @@ original_path: boards/nxp/twr_kv58f220m/doc/index.html
 
 Board Overview
 
-[![../../../../_images/twr_kv58f220m.jpg](../../../../_images/twr_kv58f220m.jpg)
-](../../../../_images/twr_kv58f220m.jpg)
+[![../../../../_images/twr_kv58f220m.jpg](https://docs.zephyrproject.org/4.1.0/_images/twr_kv58f220m.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/twr_kv58f220m.jpg)
 
 TWR-KV58F220M
 

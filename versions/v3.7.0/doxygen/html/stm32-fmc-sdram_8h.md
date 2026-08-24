@@ -164,4 +164,4 @@ stm32-fmc-sdram.h File Reference
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [memory-controller](dir_35d961eb615f3ea19ec1fece6b4faa4b.md)
 - [stm32-fmc-sdram.h](stm32-fmc-sdram_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

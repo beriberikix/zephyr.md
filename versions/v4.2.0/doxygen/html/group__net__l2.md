@@ -58,4 +58,4 @@ L2 flags.
 | NET\_L2\_PROMISC\_MODE | Is promiscuous mode supported. |
 | NET\_L2\_POINT\_TO\_POINT | Is this L2 point-to-point with tunneling so no need to have IP address etc to network interface. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

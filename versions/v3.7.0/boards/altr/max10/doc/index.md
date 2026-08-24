@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The Zephyr kernel is supported on the Altera MAX10 Rev C development kit, using
 the Nios II Gen 2 soft CPU.
 
-![Altera's MAX* 10](../../../../_images/altera_max10.jpg)
+![Altera's MAX* 10](https://docs.zephyrproject.org/3.7.0/_images/altera_max10.jpg)
 
 Altera’s MAX\* 10 (Credit: Altera)
 
@@ -32,7 +32,7 @@ importance is SW2:
   scripts won’t work
 - Switch 4 (HSMC\_BYPASSN) should be OFF (up)
 
-![Altera's MAX* 10 Switches](../../../../_images/Altera_MAX10_switches.jpg)
+![Altera's MAX* 10 Switches](https://docs.zephyrproject.org/3.7.0/_images/Altera_MAX10_switches.jpg)
 
 Other switches are user switches, their position is application-specific.
 

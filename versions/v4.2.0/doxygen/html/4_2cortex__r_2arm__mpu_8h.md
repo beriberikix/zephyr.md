@@ -763,4 +763,4 @@ Check for macro definition in compiler-visible expressions.
 - [arm64](dir_6230441082867cc38c6cd25597cf0dd8.md)
 - [cortex\_r](dir_c43630f15275c571a36c3286c2e4d54b.md)
 - [arm\_mpu.h](4_2cortex__r_2arm__mpu_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

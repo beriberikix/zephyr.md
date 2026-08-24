@@ -34,8 +34,8 @@ The FC also defines the conditions of sending, namely the block-size (BS) and
 the minimum separation time between frames (STmin). The block size defines how
 many CF the sender is allowed to send, before he has to wait for another FC.
 
-[![ISO-TP Sequence](../../_images/isotp_sequence.svg)
-](../../_images/isotp_sequence.svg)
+[![ISO-TP Sequence](https://docs.zephyrproject.org/4.0.0/_images/isotp_sequence.svg)
+](https://docs.zephyrproject.org/4.0.0/_images/isotp_sequence.svg)
 
 ## [API Reference](#id2)
 

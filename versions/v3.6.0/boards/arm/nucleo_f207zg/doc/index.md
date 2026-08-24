@@ -33,7 +33,7 @@ some highlights of the Nucleo F207ZG board:
 - Three user LEDs
 - Two push-buttons: USER and RESET
 
-![Nucleo F207ZG](../../../../_images/nucleo_f207zg.jpg)
+![Nucleo F207ZG](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f207zg.jpg)
 
 More information about the board can be found at the [Nucleo F207ZG website](https://www.st.com/en/evaluation-tools/nucleo-f207zg.html).
 
@@ -103,10 +103,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F207ZG ZIO connectors (left)](../../../../_images/nucleo_f207zg_zio_left.jpg)
-![Nucleo F207ZG ZIO connectors (right)](../../../../_images/nucleo_f207zg_zio_right.jpg)
-![Nucleo F207ZG Morpho connectors (left)](../../../../_images/nucleo_f207zg_morpho_left.jpg)
-![Nucleo F207ZG Morpho connectors (right)](../../../../_images/nucleo_f207zg_morpho_right.jpg)
+![Nucleo F207ZG ZIO connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f207zg_zio_left.jpg)
+![Nucleo F207ZG ZIO connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f207zg_zio_right.jpg)
+![Nucleo F207ZG Morpho connectors (left)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f207zg_morpho_left.jpg)
+![Nucleo F207ZG Morpho connectors (right)](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f207zg_morpho_right.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00244518.pdf).
 

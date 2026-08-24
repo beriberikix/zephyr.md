@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f031k6/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f031k6.jpg](../../../../_images/nucleo_f031k6.jpg)
-](../../../../_images/nucleo_f031k6.jpg)
+[![../../../../_images/nucleo_f031k6.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f031k6.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f031k6.jpg)
 
 Nucleo F031K6
 
@@ -124,7 +124,7 @@ GPIO pins are shared with digital or analog alternate functions.
 
 #### Board connectors:
 
-![Nucleo F031K6 connectors](../../../../_images/nucleo_f031k6_connectors.jpg)
+![Nucleo F031K6 connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f031k6_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

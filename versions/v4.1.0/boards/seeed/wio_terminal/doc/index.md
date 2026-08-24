@@ -8,8 +8,8 @@ original_path: boards/seeed/wio_terminal/doc/index.html
 
 Board Overview
 
-[![../../../../_images/wio_terminal.png](../../../../_images/wio_terminal.png)
-](../../../../_images/wio_terminal.png)
+[![../../../../_images/wio_terminal.png](https://docs.zephyrproject.org/4.1.0/_images/wio_terminal.png)
+](https://docs.zephyrproject.org/4.1.0/_images/wio_terminal.png)
 
 Wio Terminal
 

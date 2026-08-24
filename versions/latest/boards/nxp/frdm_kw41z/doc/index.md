@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_kw41z/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_kw41z.jpg](../../../../_images/frdm_kw41z.jpg)
-](../../../../_images/frdm_kw41z.jpg)
+[![../../../../_images/frdm_kw41z.jpg](https://docs.zephyrproject.org/4.2.0/_images/frdm_kw41z.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/frdm_kw41z.jpg)
 
 FRDM-KW41Z
 

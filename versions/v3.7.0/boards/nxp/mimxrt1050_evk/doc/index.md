@@ -23,7 +23,7 @@ and camera sensors. As with other i.MX processors, i.MX RT1050 also has rich
 audio and video features, including LCD display, basic 2D graphics, camera
 interface, SPDIF, and I2S audio interface.
 
-![MIMXRT1050-EVK](../../../../_images/mimxrt1050_evk.jpg)
+![MIMXRT1050-EVK](https://docs.zephyrproject.org/3.7.0/_images/mimxrt1050_evk.jpg)
 
 ## Hardware
 

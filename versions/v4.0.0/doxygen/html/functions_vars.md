@@ -258,4 +258,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - avl : [segment\_descriptor](structsegment__descriptor.md#a59e97c4fc79505fd8095d02edc01480f)
 - azimuth : [gnss\_satellite](structgnss__satellite.md#a27a864422f5207b5d38efbd8b50893a3)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -16,7 +16,7 @@ The EFR32MG12 Thunderboard (a.k.a Thunderboard Sense 2) contains an MCU
 from the EFR32MG12 family built on ARM® Cortex®-M4F processor with low
 power capabilities.
 
-![EFR32MG12 SLTB004A](../../../../../_images/sltb004a.jpg)
+![EFR32MG12 SLTB004A](https://docs.zephyrproject.org/3.7.0/_images/sltb004a.jpg)
 
 ## Hardware
 

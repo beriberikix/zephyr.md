@@ -38,7 +38,7 @@ As such, these functions should be called sparingly, due to their relatively hig
 A single connectivity implementation may be bound to multiple ifaces.
 See [Do not instance implementations](#conn-mgr-impl-guidelines-no-instancing) for more details.
 
-![A detailed view of how Connection Manager integrates with Zephyr and the application.](../../../_images/integration_diagram_detailed.svg)
+![A detailed view of how Connection Manager integrates with Zephyr and the application.](https://docs.zephyrproject.org/4.0.0/_images/integration_diagram_detailed.svg)
 
 A detailed view of how Connection Manager integrates with Zephyr and the application.
 

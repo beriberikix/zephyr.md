@@ -81,4 +81,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/mgmt/mcumgr/grp/fs\_mgmt/[fs\_mgmt\_hash\_checksum.h](fs__mgmt__hash__checksum_8h_source.md)
 
 - [fs\_mgmt\_hash\_checksum\_group](structfs__mgmt__hash__checksum__group.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

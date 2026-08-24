@@ -8,7 +8,7 @@ original_path: boards/shields/abrobot_esp32c3_oled/doc/index.html
 
 ## Overview
 
-![Abrobot ESP32 C3 OLED Shield](../../../../_images/abrobot_esp32c3_oled.webp)
+![Abrobot ESP32 C3 OLED Shield](https://docs.zephyrproject.org/4.2.0/_images/abrobot_esp32c3_oled.webp)
 
 Abrobot esp32c3 oled only works with sh1106\_compatible display driver. It does not support 1306 display driver commands.
 Its screen resolution is 72x40.

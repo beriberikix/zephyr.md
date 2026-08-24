@@ -96,4 +96,4 @@ Global [stream\_flash\_erase\_page](group__stream__flash.md#ga75711b22789724c2d8
 Global [TLS\_CREDENTIAL\_SERVER\_CERTIFICATE](group__tls__credentials.md#gga3a754894d0162634b59d60e319f37cd5a541cc34b6fd5af911e633154e54f52f4)
 :   Use TLS\_CREDENTIAL\_PUBLIC\_CERTIFICATE instead.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

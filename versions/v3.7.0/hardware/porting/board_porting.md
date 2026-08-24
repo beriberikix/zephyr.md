@@ -74,7 +74,7 @@ Each SoC has one or more [CPU cluster](../../glossary.md#term-CPU-cluster), each
 
 You can visualize the hierarchy in the diagram below:
 
-[![Hardware support Hierarchy](../../_images/hierarchy.png)](../../_images/hierarchy.png)
+[![Hardware support Hierarchy](https://docs.zephyrproject.org/3.7.0/_images/hierarchy.png)](https://docs.zephyrproject.org/3.7.0/_images/hierarchy.png)
 
 Hardware support Hierarchy
 
@@ -105,7 +105,7 @@ particular when defining and working with boards and SoCs.
 The overall set of terms used around the concept of board in Zephyr is depicted
 in the image below, which uses the [Ezurio BL5340 DVK](../../boards/ezurio/bl5340_dvk/doc/index.md#bl5340-dvk) board as reference.
 
-[![Board terminology diagram](../../_images/board-terminology.svg)](../../_images/board-terminology.svg)
+[![Board terminology diagram](https://docs.zephyrproject.org/3.7.0/_images/board-terminology.svg)](https://docs.zephyrproject.org/3.7.0/_images/board-terminology.svg)
 
 Board terminology diagram
 

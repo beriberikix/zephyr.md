@@ -89,4 +89,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/interrupt\_controller/[intel\_vtd.h](drivers_2interrupt__controller_2intel__vtd_8h_source.md)
 
 - [vtd\_driver\_api](structvtd__driver__api.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

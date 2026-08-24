@@ -48,7 +48,7 @@ Key Features
 - capability: mass storage, virtual COM port and debug port
 - USB OTG full speed or device only
 
-![Nucleo H723ZG](../../../../_images/nucleo_h723zg.jpg)
+![Nucleo H723ZG](https://docs.zephyrproject.org/3.6.0/_images/nucleo_h723zg.jpg)
 
 More information about the board can be found at the [Nucleo H723ZG website](https://www.st.com/en/evaluation-tools/nucleo-h723zg.html).
 

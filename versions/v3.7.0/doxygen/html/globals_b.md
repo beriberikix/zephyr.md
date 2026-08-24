@@ -5891,4 +5891,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - bytecpy() : [util.h](group__sys-util.md#ga3379c356de17dbeebfa7588d8c964d5e)
 - byteswp() : [util.h](group__sys-util.md#ga8624d1e5411703deac1ab8517f132d7b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

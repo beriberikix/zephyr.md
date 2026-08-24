@@ -24,7 +24,7 @@ capacitive buttons with haptic feedback.
 - Flexibility to let you add the sensors of your choice nearly 200 additional
   sensors through click boards.
 
-![Hexiwear](../../../../_images/hexiwear_k64.jpg)
+![Hexiwear](https://docs.zephyrproject.org/4.2.0/_images/hexiwear_k64.jpg)
 
 ## Hardware
 

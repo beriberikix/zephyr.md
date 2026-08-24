@@ -1428,4 +1428,4 @@ Return values
     | -EILSEQ | Received an invalid channel reference. |
     | -EFAULT | A parameter is incorrect, or the function context is invalid (inside an ISR). The function only returns this value when the `CONFIG_ZBUS_ASSERT_MOCK` is enabled. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

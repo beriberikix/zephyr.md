@@ -8,8 +8,8 @@ original_path: boards/microchip/mec1501modular_assy6885/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mec1501modular_assy6885.jpg](../../../../_images/mec1501modular_assy6885.jpg)
-](../../../../_images/mec1501modular_assy6885.jpg)
+[![../../../../_images/mec1501modular_assy6885.jpg](https://docs.zephyrproject.org/4.2.0/_images/mec1501modular_assy6885.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/mec1501modular_assy6885.jpg)
 
 MEC1501 Modular card ASSY6885
 

@@ -56,4 +56,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[mqtt.h](mqtt_8h_source.md)
 
 - [mqtt\_publish\_message](structmqtt__publish__message.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

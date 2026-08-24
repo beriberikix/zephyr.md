@@ -48,4 +48,4 @@ Here is a list of all enums with links to the files they belong to:
 - nxp\_enet\_driver : [eth\_nxp\_enet.h](eth__nxp__enet_8h.md#ae3c6272946ff0e510271158ff1ab4416)
 - nxp\_pint\_trigger : [nxp\_pint.h](nxp__pint_8h.md#aea62e6522d0de4c0ce63ae04b2d36f7c)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

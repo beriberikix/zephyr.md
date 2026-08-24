@@ -140,7 +140,7 @@ The following factors make a thread unready:
 - The thread has been suspended.
 - The thread has terminated or aborted.
 
-  ![../../../_images/thread_states.svg](../../../_images/thread_states.svg)
+  ![../../../_images/thread_states.svg](https://docs.zephyrproject.org/4.0.0/_images/thread_states.svg)
 
 Note
 
@@ -239,7 +239,7 @@ ranges:
 - cooperative threads: (-[`CONFIG_NUM_COOP_PRIORITIES`](../../../kconfig.md#CONFIG_NUM_COOP_PRIORITIES "CONFIG_NUM_COOP_PRIORITIES")) to -1
 - preemptive threads: 0 to ([`CONFIG_NUM_PREEMPT_PRIORITIES`](../../../kconfig.md#CONFIG_NUM_PREEMPT_PRIORITIES "CONFIG_NUM_PREEMPT_PRIORITIES") - 1)
 
-![../../../_images/priorities.svg](../../../_images/priorities.svg)
+![../../../_images/priorities.svg](https://docs.zephyrproject.org/4.0.0/_images/priorities.svg)
 
 For example, configuring 5 cooperative priorities and 10 preemptive priorities
 results in the ranges -5 to -1 and 0 to 9, respectively.

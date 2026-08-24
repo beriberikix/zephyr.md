@@ -59,7 +59,7 @@ Key Features
 > - USB charger
 > - USB power
 
-![STM32H745I-DISCO](../../../../_images/stm32h745i-disco.jpg)
+![STM32H745I-DISCO](https://docs.zephyrproject.org/3.7.0/_images/stm32h745i-disco.jpg)
 
 More information about the board can be found at the [STM32H745I-DISCO website](https://www.st.com/en/evaluation-tools/stm32h745i-disco.html).
 More information about STM32H747XIH6 can be found here:

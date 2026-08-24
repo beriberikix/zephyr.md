@@ -18,7 +18,7 @@ architecture. The board includes a high performance onboard debug probe, audio
 subsystem, and accelerometer, with several options for adding off-the-shelf
 add-on boards for networking, sensors, displays, and other interfaces.
 
-![LPCXPRESSO55S69](../../../../_images/lpcxpresso55s69.jpg)
+![LPCXPRESSO55S69](https://docs.zephyrproject.org/3.6.0/_images/lpcxpresso55s69.jpg)
 
 ## Hardware
 

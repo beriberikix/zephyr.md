@@ -142,4 +142,4 @@ uint8\_t pin
 - [misc](dir_3d7f76f006150d60bf1fdbf1492e8004.md)
 - [renesas\_rx\_external\_interrupt](dir_a87f3c868dca62dbe5503bf385ba65f5.md)
 - [renesas\_rx\_external\_interrupt.h](renesas__rx__external__interrupt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

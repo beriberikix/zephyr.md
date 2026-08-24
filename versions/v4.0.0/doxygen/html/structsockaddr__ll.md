@@ -101,4 +101,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[net\_ip.h](net__ip_8h_source.md)
 
 - [sockaddr\_ll](structsockaddr__ll.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

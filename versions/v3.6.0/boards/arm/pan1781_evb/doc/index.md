@@ -15,7 +15,7 @@ the drop-down menu on the left and select the desired version.
 The PAN1781 Evaluation Board is a development tool for the PAN1781 module
 which is based on the nRF52820 chipset from Nordic Semiconductor.
 
-![PAN1781 Evaluation Board](../../../../_images/pan1781_evaluation_board.jpg)
+![PAN1781 Evaluation Board](https://docs.zephyrproject.org/3.6.0/_images/pan1781_evaluation_board.jpg)
 
 You can find more information about the PAN1781 module and the PAN1781
 evaluation board on the [product website](https://industry.panasonic.eu/products/devices/wireless-connectivity/bluetooth-low-energy-modules/pan1781-nrf52820) [[1]](#id1).

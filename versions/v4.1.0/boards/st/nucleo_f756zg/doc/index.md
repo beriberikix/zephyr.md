@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f756zg/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f756zg.jpg](../../../../_images/nucleo_f756zg.jpg)
-](../../../../_images/nucleo_f756zg.jpg)
+[![../../../../_images/nucleo_f756zg.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f756zg.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f756zg.jpg)
 
 Nucleo F756ZG
 

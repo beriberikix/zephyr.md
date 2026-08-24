@@ -1126,4 +1126,4 @@ pinctrl-r8a779f0.h
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [renesas](dir_17f48eb154be6cea623223db5de209e7.md)
 - [pinctrl-r8a779f0.h](pinctrl-r8a779f0_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

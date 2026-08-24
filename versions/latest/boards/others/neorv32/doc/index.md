@@ -8,8 +8,8 @@ original_path: boards/others/neorv32/doc/index.html
 
 Board Overview
 
-[![../../../../_images/neorv32.png](../../../../_images/neorv32.png)
-](../../../../_images/neorv32.png)
+[![../../../../_images/neorv32.png](https://docs.zephyrproject.org/4.2.0/_images/neorv32.png)
+](https://docs.zephyrproject.org/4.2.0/_images/neorv32.png)
 
 NEORV32
 

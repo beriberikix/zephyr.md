@@ -8,8 +8,8 @@ original_path: boards/renesas/rzv2h_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzv2h_evk.webp](../../../../_images/rzv2h_evk.webp)
-](../../../../_images/rzv2h_evk.webp)
+[![../../../../_images/rzv2h_evk.webp](https://docs.zephyrproject.org/4.2.0/_images/rzv2h_evk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2h_evk.webp)
 
 RZ/V2H Evaluation Board Kit
 
@@ -67,8 +67,8 @@ where advanced AI processing must be implemented with low power consumption.
 
 The Renesas RZ/V2H documentation can be found at [RZ/V2H Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzv2h-quad-core-vision-ai-mpu-drp-ai3-accelerator-and-high-performance-real-time-processor) [[5]](#id11)
 
-[![RZ/V2H group feature](../../../../_images/rzv2h_block_diagram.webp)
-](../../../../_images/rzv2h_block_diagram.webp)
+[![RZ/V2H group feature](https://docs.zephyrproject.org/4.2.0/_images/rzv2h_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzv2h_block_diagram.webp)
 
 RZ/V2H block diagram (Credit: Renesas Electronics Corporation)
 

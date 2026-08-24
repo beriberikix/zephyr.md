@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f303k8/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f303k8.jpg](../../../../_images/nucleo_f303k8.jpg)
-](../../../../_images/nucleo_f303k8.jpg)
+[![../../../../_images/nucleo_f303k8.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f303k8.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f303k8.jpg)
 
 Nucleo F303K8
 
@@ -147,7 +147,7 @@ for input/output, pull-up, etc.
 
 #### Board connectors:
 
-![Nucleo F303K8 connectors](../../../../_images/nucleo_f303k8_pinout.jpg)
+![Nucleo F303K8 connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f303k8_pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

@@ -49,4 +49,4 @@ Prometheus histogram APIs.
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [prometheus](dir_2ecc9bf89aaa04d2ac23a37aff1f7dde.md)
 - [histogram.h](histogram_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

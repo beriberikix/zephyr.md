@@ -8,8 +8,8 @@ original_path: boards/ruuvi/ruuvitag/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ruuvitag.jpg](../../../../_images/ruuvitag.jpg)
-](../../../../_images/ruuvitag.jpg)
+[![../../../../_images/ruuvitag.jpg](https://docs.zephyrproject.org/4.2.0/_images/ruuvitag.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/ruuvitag.jpg)
 
 RuuviTag
 
@@ -131,7 +131,7 @@ on-chip / on-board
 
 #### Pin descriptions
 
-![RUUVI Pinout](../../../../_images/pinout1.jpg)
+![RUUVI Pinout](https://docs.zephyrproject.org/4.2.0/_images/pinout1.jpg)
 
 - 2 = P0.29 = SPI\_SCK
 - 3 = P0.28 = SPI\_MISO

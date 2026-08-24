@@ -8,8 +8,8 @@ original_path: boards/cypress/cy8ckit_062_ble/doc/index.html
 
 Board Overview
 
-[![../../../../_images/cy8ckit-062-ble.jpg](../../../../_images/cy8ckit-062-ble.jpg)
-](../../../../_images/cy8ckit-062-ble.jpg)
+[![../../../../_images/cy8ckit-062-ble.jpg](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit-062-ble.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/cy8ckit-062-ble.jpg)
 
 PSOC 63 BLE Pioneer Kit
 

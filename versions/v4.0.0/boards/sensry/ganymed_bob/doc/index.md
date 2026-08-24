@@ -39,11 +39,11 @@ The SoC has the following core features:
 - 1x CAN-FD
 - 3x ADC
 
-![Ganymed Break-Out-Board (BOB) equipped with SY120 GBM](../../../../_images/ganymed_bob_sy120_gbm.webp)
+![Ganymed Break-Out-Board (BOB) equipped with SY120 GBM](https://docs.zephyrproject.org/4.0.0/_images/ganymed_bob_sy120_gbm.webp)
 
 Ganymed Break-Out-Board (BOB) equipped with SY120 GBM (Credit: Sensry)
 
-![Ganymed Break-Out-Board (BOB) equipped with SY120 GEN1](../../../../_images/ganymed_bob_sy120_gen1.webp)
+![Ganymed Break-Out-Board (BOB) equipped with SY120 GEN1](https://docs.zephyrproject.org/4.0.0/_images/ganymed_bob_sy120_gen1.webp)
 
 Ganymed Break-Out-Board (BOB) equipped with SY120 GEN1 (Credit: Sensry)
 

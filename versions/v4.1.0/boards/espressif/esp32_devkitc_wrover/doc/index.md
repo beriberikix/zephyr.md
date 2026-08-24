@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32_devkitc_wrover/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32_devkitc_wrover.jpg](../../../../_images/esp32_devkitc_wrover.jpg)
-](../../../../_images/esp32_devkitc_wrover.jpg)
+[![../../../../_images/esp32_devkitc_wrover.jpg](https://docs.zephyrproject.org/4.1.0/_images/esp32_devkitc_wrover.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32_devkitc_wrover.jpg)
 
 ESP32-DevKitC-WROVER
 

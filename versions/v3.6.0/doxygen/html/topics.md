@@ -639,4 +639,4 @@ Here is a list of all topics with brief descriptions:
 | [Xtensa Internal APIs](group__xtensa__internal__apis.md) |  |
 | [Xtensa Memory Management Unit (MMU) APIs](group__xtensa__mmu__apis.md) |  |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

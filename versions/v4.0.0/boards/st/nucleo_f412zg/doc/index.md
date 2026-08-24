@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f412zg/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f412zg.jpg](../../../../_images/nucleo_f412zg.jpg)
-](../../../../_images/nucleo_f412zg.jpg)
+[![../../../../_images/nucleo_f412zg.jpg](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg.jpg)
 
 Nucleo F412ZG
 
@@ -102,10 +102,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F412ZG ZIO connectors (left)](../../../../_images/nucleo_f412zg_zio_left.jpg)
-![Nucleo F412ZG ZIO connectors (right)](../../../../_images/nucleo_f412zg_zio_right.jpg)
-![Nucleo F412ZG Morpho connectors (left)](../../../../_images/nucleo_f412zg_morpho_left.jpg)
-![Nucleo F412ZG Morpho connectors (right)](../../../../_images/nucleo_f412zg_morpho_right.jpg)
+![Nucleo F412ZG ZIO connectors (left)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg_zio_left.jpg)
+![Nucleo F412ZG ZIO connectors (right)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg_zio_right.jpg)
+![Nucleo F412ZG Morpho connectors (left)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg_morpho_left.jpg)
+![Nucleo F412ZG Morpho connectors (right)](https://docs.zephyrproject.org/4.0.0/_images/nucleo_f412zg_morpho_right.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/dm00244518.pdf).
 

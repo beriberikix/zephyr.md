@@ -8,8 +8,8 @@ original_path: boards/adi/eval_adin2111ebz/doc/index.html
 
 Board Overview
 
-[![../../../../_images/adi_eval_adin2111ebz.webp](../../../../_images/adi_eval_adin2111ebz.webp)
-](../../../../_images/adi_eval_adin2111ebz.webp)
+[![../../../../_images/adi_eval_adin2111ebz.webp](https://docs.zephyrproject.org/4.0.0/_images/adi_eval_adin2111ebz.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/adi_eval_adin2111ebz.webp)
 
 EVAL-ADIN2111EVB Evaluation board
 

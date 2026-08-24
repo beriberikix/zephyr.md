@@ -12,7 +12,7 @@ The [ARM V2C-DAPLink for DesignStart FPGA](https://developer.arm.com/tools-and-s
 DAPLink debug access to the ARM DesignStart FPGA reference designs implemented
 on the [Digilent Arty](../../../digilent/arty_a7/doc/index.md#arty).
 
-![V2C-DAPLink](../../../../_images/v2c_daplink.jpg)
+![V2C-DAPLink](https://docs.zephyrproject.org/4.1.0/_images/v2c_daplink.jpg)
 
 V2C-DAPLink (Credit: ARM Ltd.)
 

@@ -85,4 +85,4 @@ Global [PWM\_STM32\_COMPLEMENTARY](stm32__pwm_8h.md#ac73e020f7f8787beaa8ddf78715
 Global [stream\_flash\_erase\_page](group__stream__flash.md#ga75711b22789724c2d8629e1202dcb48d) (struct [stream\_flash\_ctx](structstream__flash__ctx.md "Structure for stream flash context.") \*ctx, [off\_t](lib_2libc_2minimal_2include_2sys_2types_8h.md#a98a5cc5f4a350bf5652565021a2f239f) off)
 :   Use *[flash\_area\_erase()](group__flash__area__api.md#gacc5cbff19d23773115f3334f862814d2 "Erase flash area.")* or [flash\_erase()](group__flash__interface.md#ga05f9c8b0c1ff7273f71797e7ff799c95 "Erase part or all of a flash memory."). Note that there is no Stream Flash API equivalent for that.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

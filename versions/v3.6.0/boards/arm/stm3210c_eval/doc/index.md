@@ -22,7 +22,7 @@ audio DAC, MEMS, EEPROM and more) and develop your own applications.
 Extension headers make it easy to connect a daughterboard or wrapping board for your specific
 application.
 
-![STM3210C-EVAL](../../../../_images/stm3210c_eval.jpg)
+![STM3210C-EVAL](https://docs.zephyrproject.org/3.6.0/_images/stm3210c_eval.jpg)
 
 More information about the board can be found at the [STM3210C-EVAL website](https://www.st.com/en/evaluation-tools/stm3210c-eval.html) [[1]](#id1).
 
@@ -85,7 +85,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![STM3210C_EVAL connectors](../../../../_images/stm3210c_eval_connectors.jpg)
+![STM3210C_EVAL connectors](https://docs.zephyrproject.org/3.6.0/_images/stm3210c_eval_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

@@ -8,8 +8,8 @@ original_path: boards/silabs/radio_boards/xg24_rb4187c/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/efr32mg24-xg24-rb4187c.jpg](../../../../../_images/efr32mg24-xg24-rb4187c.jpg)
-](../../../../../_images/efr32mg24-xg24-rb4187c.jpg)
+[![../../../../../_images/efr32mg24-xg24-rb4187c.jpg](https://docs.zephyrproject.org/4.1.0/_images/efr32mg24-xg24-rb4187c.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/efr32mg24-xg24-rb4187c.jpg)
 
 EFR32xG24 2.4 GHz 20 dBm (xG24-RB4187C)
 

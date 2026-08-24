@@ -22,4 +22,4 @@ include Directory Reference
 - [modules](dir_e05d7e2b1ecd646af5bb94391405f3b5.md)
 - [openthread](dir_31612689e320779a8afe131e155c6b49.md)
 - [include](dir_8ac3cad2d91a5e145958cbd7c9ff59cb.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

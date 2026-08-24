@@ -8,8 +8,8 @@ original_path: boards/gd/gd32vf103c_starter/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gd32vf103c_starter.jpg](../../../../_images/gd32vf103c_starter.jpg)
-](../../../../_images/gd32vf103c_starter.jpg)
+[![../../../../_images/gd32vf103c_starter.jpg](https://docs.zephyrproject.org/4.1.0/_images/gd32vf103c_starter.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/gd32vf103c_starter.jpg)
 
 GD32VF103C-STARTER
 

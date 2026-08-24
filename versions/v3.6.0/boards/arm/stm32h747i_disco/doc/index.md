@@ -39,7 +39,7 @@ Additionally, the board features:
 - 4-direction joystick with selection button
 - Arduino Uno V3 connectors
 
-![STM32H747I-DISCO](../../../../_images/stm32h747i_disco.jpg)
+![STM32H747I-DISCO](https://docs.zephyrproject.org/3.6.0/_images/stm32h747i_disco.jpg)
 
 More information about the board can be found at the [STM32H747I-DISCO website](https://www.st.com/en/evaluation-tools/stm32h747i-disco.html).
 More information about STM32H747XIH6 can be found here:
@@ -131,8 +131,8 @@ To get Ethernet working following HW modifications are required:
 
 Following two images shows necessary changes on the board marked:
 
-![STM32H747I-DISCO - Ethernet modification 1 (**SB44**, **SB45**)](../../../../_images/disco_h747i_ethernet_modification_1.jpg)
-![STM32H747I-DISCO - Ethernet modification 2 (**SB21**, **R87**, **SB22**, **SB17** and **SB8**)](../../../../_images/disco_h747i_ethernet_modification_2.jpg)
+![STM32H747I-DISCO - Ethernet modification 1 (**SB44**, **SB45**)](https://docs.zephyrproject.org/3.6.0/_images/disco_h747i_ethernet_modification_1.jpg)
+![STM32H747I-DISCO - Ethernet modification 2 (**SB21**, **R87**, **SB22**, **SB17** and **SB8**)](https://docs.zephyrproject.org/3.6.0/_images/disco_h747i_ethernet_modification_2.jpg)
 
 ### Display
 

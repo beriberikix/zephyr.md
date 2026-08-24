@@ -8,8 +8,8 @@ original_path: boards/gaisler/gr716a_mini/doc/index.html
 
 Board Overview
 
-[![../../../../_images/gr716a_mini.jpg](../../../../_images/gr716a_mini.jpg)
-](../../../../_images/gr716a_mini.jpg)
+[![../../../../_images/gr716a_mini.jpg](https://docs.zephyrproject.org/4.2.0/_images/gr716a_mini.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/gr716a_mini.jpg)
 
 GR716-MINI Development Board
 

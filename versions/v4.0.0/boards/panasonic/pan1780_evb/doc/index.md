@@ -8,8 +8,8 @@ original_path: boards/panasonic/pan1780_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/pan1780_evaluation_board.jpg](../../../../_images/pan1780_evaluation_board.jpg)
-](../../../../_images/pan1780_evaluation_board.jpg)
+[![../../../../_images/pan1780_evaluation_board.jpg](https://docs.zephyrproject.org/4.0.0/_images/pan1780_evaluation_board.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/pan1780_evaluation_board.jpg)
 
 PAN1780 Evaluation Board
 

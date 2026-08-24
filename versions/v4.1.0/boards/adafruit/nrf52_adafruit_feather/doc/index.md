@@ -8,8 +8,8 @@ original_path: boards/adafruit/nrf52_adafruit_feather/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nrf52_adafruit_feather.jpg](../../../../_images/nrf52_adafruit_feather.jpg)
-](../../../../_images/nrf52_adafruit_feather.jpg)
+[![../../../../_images/nrf52_adafruit_feather.jpg](https://docs.zephyrproject.org/4.1.0/_images/nrf52_adafruit_feather.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nrf52_adafruit_feather.jpg)
 
 nRF52 Adafruit Feather
 

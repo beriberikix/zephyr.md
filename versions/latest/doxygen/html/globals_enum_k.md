@@ -22,4 +22,4 @@ Here is a list of all enums with links to the files they belong to:
 - k\_objects : [kobject.h](kobject_8h.md#af3a248c0e3b05c84b1dd38642f7cf2a1)
 - k\_poll\_modes : [kernel.h](group__poll__apis.md#ga36d7978872a83191dd3cc16d62165add)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

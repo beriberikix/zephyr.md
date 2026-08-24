@@ -53,7 +53,7 @@ BLOB data is sent to the BLOB stream.
 
 The interaction between the BLOB Transfer Server, BLOB stream and application is shown below:
 
-![BLOB Transfer Server model interaction](../../../../_images/blob_srv.svg)
+![BLOB Transfer Server model interaction](https://docs.zephyrproject.org/4.0.0/_images/blob_srv.svg)
 
 BLOB Transfer Server model interaction
 

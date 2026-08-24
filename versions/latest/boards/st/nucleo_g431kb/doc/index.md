@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_g431kb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_g431kb.webp](../../../../_images/nucleo_g431kb.webp)
-](../../../../_images/nucleo_g431kb.webp)
+[![../../../../_images/nucleo_g431kb.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g431kb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g431kb.webp)
 
 Nucleo G431KB
 

@@ -25,7 +25,7 @@ by the nPM6001 PMIC, including:
 The shield needs to be wired to a host board supporting the Arduino connector.
 Below you can find a wiring example for the nRF52840 DK:
 
-![nRF52840DK + nPM6001-EK wiring example](../../../../_images/nrf52840dk_wiring.jpg)
+![nRF52840DK + nPM6001-EK wiring example](https://docs.zephyrproject.org/4.0.0/_images/nrf52840dk_wiring.jpg)
 
 nRF52840DK + nPM6001-EK wiring example
 

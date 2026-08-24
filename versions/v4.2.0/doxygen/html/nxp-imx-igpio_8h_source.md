@@ -53,4 +53,4 @@ nxp-imx-igpio.h
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [gpio](dir_9486826309e816a7a1c2256ae23b5ea4.md)
 - [nxp-imx-igpio.h](nxp-imx-igpio_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -16,7 +16,7 @@ The EFR32MG12 Mighty Gecko Radio Board contains a Wireless System-On-Chip
 from the EFR32MG12 family built on an ARM Cortex®-M4F processor with excellent
 low power capabilities.
 
-![SLWRB4161A Mighty Gecko Radio Board](../../../../../_images/efr32mg12-slwrb4161a.jpeg)
+![SLWRB4161A Mighty Gecko Radio Board](https://docs.zephyrproject.org/3.7.0/_images/efr32mg12-slwrb4161a.jpeg)
 
 SLWRB4161A (image courtesy of Silicon Labs)
 

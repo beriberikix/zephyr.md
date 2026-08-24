@@ -65,4 +65,4 @@ mipi\_dsi\_mcux\_2l.h
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [mipi\_dsi](dir_39eeed2fee673188c90c99680225996b.md)
 - [mipi\_dsi\_mcux\_2l.h](mipi__dsi__mcux__2l_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

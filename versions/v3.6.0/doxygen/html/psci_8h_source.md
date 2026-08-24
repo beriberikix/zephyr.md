@@ -109,4 +109,4 @@ uint32\_t psci\_version(void)
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [pm\_cpu\_ops](dir_e793b4b61545b17399e4385df57fcbb6.md)
 - [psci.h](psci_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

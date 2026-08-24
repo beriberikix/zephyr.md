@@ -19,7 +19,7 @@ The board also has battery connection and a battery management unit on board.
 It can be powered either from a battery pack, such as a LiPo or from USB.
 The board is equipped with a 25MHz crystal as well as a 32.768kHz clock crystal.
 
-![Clicker 2 For STM32](../../../../_images/clicker-2-stm32f4-thickbox_default-2.jpg)
+![Clicker 2 For STM32](https://docs.zephyrproject.org/3.7.0/_images/clicker-2-stm32f4-thickbox_default-2.jpg)
 
 Clicker 2 For STM32 (Credit: MikroElektronika d.o.o.)
 

@@ -6,8 +6,8 @@ original_path: services/rtio/index.html
 
 # Real Time I/O (RTIO)
 
-[![Submissions and Completion Ring Queues](../../_images/rings.png)
-](../../_images/rings.png)
+[![Submissions and Completion Ring Queues](https://docs.zephyrproject.org/4.2.0/_images/rings.png)
+](https://docs.zephyrproject.org/4.2.0/_images/rings.png)
 
 RTIO provides a framework for doing asynchronous operation chains with event
 driven I/O. This section covers the RTIO API, queues, executor, iodev,

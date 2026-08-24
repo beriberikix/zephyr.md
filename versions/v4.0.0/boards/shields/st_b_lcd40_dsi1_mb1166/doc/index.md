@@ -19,11 +19,11 @@ use `st_b_lcd40_dsi1_mb1166_a09` as SHIELD when building
 Prior versions are utilizing an OTM8009a controller and shall
 use shield name without postfix, that is: `st_b_lcd40_dsi1_mb1166`
 
-![B-LCD40-DSI1 MB1166 Image](../../../../_images/image.jpg)
+![B-LCD40-DSI1 MB1166 Image](https://docs.zephyrproject.org/4.0.0/_images/image.jpg)
 
 B-LCD40-DSI1 MB1166 Image
 
-![B-LCD40-DSI1 MB1166 Connector](../../../../_images/connectors.jpg)
+![B-LCD40-DSI1 MB1166 Connector](https://docs.zephyrproject.org/4.0.0/_images/connectors.jpg)
 
 B-LCD40-DSI1 MB1166 Connector
 

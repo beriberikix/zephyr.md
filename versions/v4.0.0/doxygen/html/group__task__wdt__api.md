@@ -145,4 +145,4 @@ Return values
     | -ENOTSUP | If assigning a hardware watchdog is not supported. |
     | -Errno | Negative errno if the fallback hw\_wdt is used and the install timeout API fails. See [wdt\_install\_timeout()](group__watchdog__interface.md#ga5be7aa7f1987be0e69c74b62d1c126a5 "Install a new timeout.") API for possible return values. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

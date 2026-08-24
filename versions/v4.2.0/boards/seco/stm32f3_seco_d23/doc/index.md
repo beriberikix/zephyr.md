@@ -8,8 +8,8 @@ original_path: boards/seco/stm32f3_seco_d23/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32f3_seco_d23.jpg](../../../../_images/stm32f3_seco_d23.jpg)
-](../../../../_images/stm32f3_seco_d23.jpg)
+[![../../../../_images/stm32f3_seco_d23.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32f3_seco_d23.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32f3_seco_d23.jpg)
 
 SECO SBC-3.5-PX30 (JUNO - D23) (STM32F302)
 

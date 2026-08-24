@@ -19,4 +19,4 @@ Here is a list of all enums with links to the files they belong to:
 
 - ROLE\_TYPE : [a2dp.h](a2dp_8h.md#aa6f56dccc53ab8d3a1cf6c2bde5306ce)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

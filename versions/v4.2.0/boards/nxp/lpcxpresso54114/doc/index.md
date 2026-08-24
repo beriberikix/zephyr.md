@@ -8,8 +8,8 @@ original_path: boards/nxp/lpcxpresso54114/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lpcxpresso54114_m4.jpg](../../../../_images/lpcxpresso54114_m4.jpg)
-](../../../../_images/lpcxpresso54114_m4.jpg)
+[![../../../../_images/lpcxpresso54114_m4.jpg](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso54114_m4.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/lpcxpresso54114_m4.jpg)
 
 LPCXPRESSO54114
 

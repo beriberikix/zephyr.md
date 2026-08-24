@@ -11,7 +11,7 @@ original_path: boards/shields/npm1100_ek/doc/index.html
 The nPM1100 EK lets you test different functions and features of the nPM1100
 Power Management Integrated Circuit (PMIC).
 
-![nPM1100 EK](../../../../_images/npm1100_ek.jpg)
+![nPM1100 EK](https://docs.zephyrproject.org/4.0.0/_images/npm1100_ek.jpg)
 
 nPM1100 EK
 

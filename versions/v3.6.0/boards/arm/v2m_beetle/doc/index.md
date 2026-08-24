@@ -21,7 +21,7 @@ the following devices:
 - Cortex-M System Design Kit GPIO
 - Cortex-M System Design Kit UART
 
-![ARM V2M Beetle](../../../../_images/v2m_beetle.jpg)
+![ARM V2M Beetle](https://docs.zephyrproject.org/3.6.0/_images/v2m_beetle.jpg)
 
 More information about the board can be found at the [V2M Beetle Website](https://developer.arm.com/Tools%20and%20Software/Beetle%20IoT%20Evaluation%20Platform).
 

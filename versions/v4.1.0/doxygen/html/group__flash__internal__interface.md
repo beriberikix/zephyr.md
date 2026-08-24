@@ -148,4 +148,4 @@ Flash write implementation handler type.
 Note
 :   Any necessary write protection management must be performed by the driver, with the driver responsible for ensuring the "write-protect" after the operation completes (successfully or not) matches the write-protect state when the operation was started.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

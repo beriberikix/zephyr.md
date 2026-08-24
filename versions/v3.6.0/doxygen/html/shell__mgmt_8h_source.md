@@ -125,4 +125,4 @@ No error, this is implied if there is no ret value in the response.
 - [grp](dir_75a5d043a2b1048bf3665f6cb87645f5.md)
 - [shell\_mgmt](dir_5e8382db16a4734888c451bd3831b770.md)
 - [shell\_mgmt.h](shell__mgmt_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

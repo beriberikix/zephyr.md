@@ -108,8 +108,8 @@ simplified analysis, report generation and other analysis features. Tracealyzer 
 streaming over various interfaces and also snapshot tracing, where the events are kept in a RAM
 buffer.
 
-[![Percepio Tracealyzer](../../_images/percepio_tracealyzer.png)
-](../../_images/percepio_tracealyzer.png)
+[![Percepio Tracealyzer](https://docs.zephyrproject.org/4.1.0/_images/percepio_tracealyzer.png)
+](https://docs.zephyrproject.org/4.1.0/_images/percepio_tracealyzer.png)
 
 Zephyr kernel events are captured automatically when Tracealyzer tracing is enabled.
 Tracealyzer also provides extensive support for application logging, where you call the tracing
@@ -359,8 +359,8 @@ SystemView can also be used for post-mortem tracing, which can be enabled with
 be attached after the system has crashed using `west attach` after which the
 latest data from the internal RAM buffer can be loaded into SystemView.
 
-[![SEGGER SystemView](../../_images/segger_systemview.png)
-](../../_images/segger_systemview.png)
+[![SEGGER SystemView](https://docs.zephyrproject.org/4.1.0/_images/segger_systemview.png)
+](https://docs.zephyrproject.org/4.1.0/_images/segger_systemview.png)
 
 Recent versions of [SEGGER SystemView](https://www.segger.com/products/development-tools/systemview/) come with an API translation table for
 Zephyr which is incomplete and does not match the current level of support

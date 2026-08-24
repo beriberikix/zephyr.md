@@ -8,8 +8,8 @@ original_path: boards/adi/max32672fthr/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32672fthr_img2.webp](../../../../_images/max32672fthr_img2.webp)
-](../../../../_images/max32672fthr_img2.webp)
+[![../../../../_images/max32672fthr_img2.webp](https://docs.zephyrproject.org/4.1.0/_images/max32672fthr_img2.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/max32672fthr_img2.webp)
 
 MAX32672FTHR
 
@@ -41,8 +41,8 @@ to enhance time to market.
 
 The Zephyr port is running on the MAX32672 MCU.
 
-![MAX32672FTHR Front](../../../../_images/max32672fthr_img1.webp)
-![MAX32672FTHR Back](../../../../_images/max32672fthr_img21.webp)
+![MAX32672FTHR Front](https://docs.zephyrproject.org/4.1.0/_images/max32672fthr_img1.webp)
+![MAX32672FTHR Back](https://docs.zephyrproject.org/4.1.0/_images/max32672fthr_img21.webp)
 
 ## Hardware
 

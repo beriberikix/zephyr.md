@@ -16,7 +16,7 @@ The Mikroe Clicker RA4M1 development board contains a Renesas Cortex-M4 based
 R7FA4M1AB3CFM Microcontroller operating at up to 48 MHz with 256 KB of Flash
 memory and 32 KB of SRAM.
 
-![Clicker RA4M1](../../../../_images/mikroe_clicker_ra4m1.jpg)
+![Clicker RA4M1](https://docs.zephyrproject.org/3.7.0/_images/mikroe_clicker_ra4m1.jpg)
 
 Clicker RA4M1 (Credit: MikroElektronika d.o.o.)
 

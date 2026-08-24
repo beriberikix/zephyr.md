@@ -37,4 +37,4 @@ Tracing.
 
 The tracing subsystem provides hooks that permits you to collect data from your application and allows tools running on a host to visualize the inner-working of the kernel and various other subsystems.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

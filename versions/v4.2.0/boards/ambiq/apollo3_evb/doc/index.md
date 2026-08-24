@@ -8,8 +8,8 @@ original_path: boards/ambiq/apollo3_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/apollo3-blue-soc-eval-board.jpg](../../../../_images/apollo3-blue-soc-eval-board.jpg)
-](../../../../_images/apollo3-blue-soc-eval-board.jpg)
+[![../../../../_images/apollo3-blue-soc-eval-board.jpg](https://docs.zephyrproject.org/4.2.0/_images/apollo3-blue-soc-eval-board.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/apollo3-blue-soc-eval-board.jpg)
 
 Apollo3 Blue EVB
 

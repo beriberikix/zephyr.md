@@ -8,8 +8,8 @@ original_path: boards/we/ophelia4ev/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ophelia4ev.webp](../../../../_images/ophelia4ev.webp)
-](../../../../_images/ophelia4ev.webp)
+[![../../../../_images/ophelia4ev.webp](https://docs.zephyrproject.org/4.2.0/_images/ophelia4ev.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/ophelia4ev.webp)
 
 Ophelia-IV DK
 

@@ -364,4 +364,4 @@ protocol ID
 - [firmware](dir_e97f19a49725d52aae6eece65b856a75.md)
 - [scmi](dir_b6bd1dece7d1578165357955ca5f0079.md)
 - [protocol.h](drivers_2firmware_2scmi_2protocol_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

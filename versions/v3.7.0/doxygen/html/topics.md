@@ -678,4 +678,4 @@ Here is a list of all topics with brief descriptions:
 | [Xtensa Memory Management Unit (MMU) APIs](group__xtensa__mmu__apis.md) |  |
 | [Xtensa Memory Protection Unit (MPU) APIs](group__xtensa__mpu__apis.md) |  |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/samd21_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsamd21_xpro.jpg](../../../../../_images/atsamd21_xpro.jpg)
-](../../../../../_images/atsamd21_xpro.jpg)
+[![../../../../../_images/atsamd21_xpro.jpg](https://docs.zephyrproject.org/4.0.0/_images/atsamd21_xpro.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/atsamd21_xpro.jpg)
 
 SAM D21 Xplained Pro Evaluation Kit
 
@@ -72,7 +72,7 @@ controllers are responsible for pin muxing, input/output, pull-up, etc.
 For more details please refer to [SAM D21 Family Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-Family-Datasheet-DS40001882C.pdf) [[1]](#id2) and the [SAM D21
 Xplained Pro Schematic](http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Xplained-Pro_Design-Documentation.zip) [[2]](#id4).
 
-![SAMD21-XPRO-pinout](../../../../../_images/ATSAMD21-XPRO-pinout.jpg)
+![SAMD21-XPRO-pinout](https://docs.zephyrproject.org/4.0.0/_images/ATSAMD21-XPRO-pinout.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

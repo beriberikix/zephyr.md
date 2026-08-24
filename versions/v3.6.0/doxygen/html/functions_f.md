@@ -194,4 +194,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - fwrite : [shell\_fprintf](structshell__fprintf.md#a8add85184dda7c002e7265baebe2112b)
 - fxsave : [x86\_esf](structx86__esf.md#a95a1902a651546b9158ae53b15e8c729), [x86\_ssf](structx86__ssf.md#ac00879a99d2369b2832ab41febe08ced)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

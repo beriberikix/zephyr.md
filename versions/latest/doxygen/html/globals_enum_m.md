@@ -87,4 +87,4 @@ Here is a list of all enums with links to the files they belong to:
 - mspi\_xfer\_priority : [mspi.h](group__mspi__interface.md#ga632af162124ca2959a21ca3759e1cc9e)
 - mspi\_xip\_permit : [mspi.h](group__mspi__interface.md#ga006a1e32778a02299b3500886bb194fa)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

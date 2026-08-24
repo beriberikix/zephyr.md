@@ -16,7 +16,7 @@ The NuMaker PFM M467 is an Internet of Things (IoT) application focused platform
 specially developed by Nuvoton. The PFM-M467 is based on the NuMicro® M467
 Ethernet series MCU with ARM® -Cortex®-M4F core.
 
-[![PFM-M467](../../../../_images/pfm_m467.jpeg)](../../../../_images/pfm_m467.jpeg)
+[![PFM-M467](https://docs.zephyrproject.org/3.6.0/_images/pfm_m467.jpeg)](https://docs.zephyrproject.org/3.6.0/_images/pfm_m467.jpeg)
 
 ### Features:
 

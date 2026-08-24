@@ -42,7 +42,7 @@ some highlights of the B\_L4S5I\_IOT01A Discovery kit:
       - USB FS connector
       - External 5 V
 
-![B_L4S5I_IOT01A Discovery kit](../../../../_images/b-l4s5i_iot01a.jpg)
+![B_L4S5I_IOT01A Discovery kit](https://docs.zephyrproject.org/3.6.0/_images/b-l4s5i_iot01a.jpg)
 
 More information about the board can be found at the [B L4S5I IOT01A Discovery kit website](https://www.st.com/en/evaluation-tools/b-l4s5i-iot01a.html).
 

@@ -10,7 +10,7 @@ the drop-down menu on the left and select the desired version.
 
 # nRF9160 Thing Plus
 
-![Sparkfun nRF9160 Thing Plus](../../../../_images/sparkfun_thing_plus_nrf9160.jpg)
+![Sparkfun nRF9160 Thing Plus](https://docs.zephyrproject.org/3.6.0/_images/sparkfun_thing_plus_nrf9160.jpg)
 
 nRF9160 Thing Plus (Credit: Sparkfun)
 

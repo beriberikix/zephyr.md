@@ -8,8 +8,8 @@ original_path: boards/nxp/mcx_n9xx_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mcx_n9xx_evk.webp](../../../../_images/mcx_n9xx_evk.webp)
-](../../../../_images/mcx_n9xx_evk.webp)
+[![../../../../_images/mcx_n9xx_evk.webp](https://docs.zephyrproject.org/4.2.0/_images/mcx_n9xx_evk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/mcx_n9xx_evk.webp)
 
 MCX-N9XX-EVK
 

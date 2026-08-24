@@ -108,4 +108,4 @@ ARC specific syscall header.
 - [arc](dir_f98dedd53b120205ea2191b01dc1bb98.md)
 - [v2](dir_3e6dec649f819729d9137b059e4fc1a1.md)
 - [error.h](include_2zephyr_2arch_2arc_2v2_2error_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

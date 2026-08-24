@@ -8,8 +8,8 @@ original_path: boards/wiznet/w5500_evb_pico2/doc/index.html
 
 Board Overview
 
-[![../../../../_images/w5500_evb_pico2.webp](../../../../_images/w5500_evb_pico2.webp)
-](../../../../_images/w5500_evb_pico2.webp)
+[![../../../../_images/w5500_evb_pico2.webp](https://docs.zephyrproject.org/4.2.0/_images/w5500_evb_pico2.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/w5500_evb_pico2.webp)
 
 W5500-EVB-Pico2
 

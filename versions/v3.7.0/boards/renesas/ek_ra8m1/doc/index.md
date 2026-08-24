@@ -63,7 +63,7 @@ The key features of the EK-RA8M1 board are categorized in three groups as follow
 - 512 Mb (64 MB) External Octo-SPI Flash (present in the MCU Native Pin Access area of the EK-RA8M1 board)
 - CAN FD (3-pin header)
 
-![RA8M1 Evaluation Kit](../../../../_images/ek-ra8m1-board.jpg)
+![RA8M1 Evaluation Kit](https://docs.zephyrproject.org/3.7.0/_images/ek-ra8m1-board.jpg)
 
 EK-RA8M1 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -71,7 +71,7 @@ EK-RA8M1 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detail Hardware feature for the RA8M1 MCU group can be found at [RA8M1 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra8m1-group-users-manual-hardware)
 
-[![RA8M1 MCU group feature](../../../../_images/ra8m1-block-diagram.jpg)](../../../../_images/ra8m1-block-diagram.jpg)
+[![RA8M1 MCU group feature](https://docs.zephyrproject.org/3.7.0/_images/ra8m1-block-diagram.jpg)](https://docs.zephyrproject.org/3.7.0/_images/ra8m1-block-diagram.jpg)
 
 RA8M1 Block diagram (Credit: Renesas Electronics Corporation)
 

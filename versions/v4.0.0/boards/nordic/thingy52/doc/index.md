@@ -36,7 +36,7 @@ processor, a set of environmental sensors, a pushbutton, and two RGB LEDs.
 - UART
 - WDT
 
-![nRF52 Thingy:52](../../../../_images/thingy52_nrf52832.jpg)
+![nRF52 Thingy:52](https://docs.zephyrproject.org/4.0.0/_images/thingy52_nrf52832.jpg)
 
 nRF52 Thingy:52 (Credit: Nordic Semiconductor)
 

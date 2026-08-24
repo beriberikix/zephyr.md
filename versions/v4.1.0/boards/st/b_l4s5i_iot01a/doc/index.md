@@ -8,8 +8,8 @@ original_path: boards/st/b_l4s5i_iot01a/doc/index.html
 
 Board Overview
 
-[![../../../../_images/b-l4s5i_iot01a.jpg](../../../../_images/b-l4s5i_iot01a.jpg)
-](../../../../_images/b-l4s5i_iot01a.jpg)
+[![../../../../_images/b-l4s5i_iot01a.jpg](https://docs.zephyrproject.org/4.1.0/_images/b-l4s5i_iot01a.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/b-l4s5i_iot01a.jpg)
 
 B-L4S5I-IOT01A Discovery kit
 

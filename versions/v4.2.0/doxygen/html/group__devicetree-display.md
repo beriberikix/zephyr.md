@@ -151,4 +151,4 @@ Get number of zephyr displays.
 Returns
 :   number of displays designated by "displays" property of "zephyr,displays" compatible node, if it exists, otherwise 1 if "zephyr,display" chosen property exists, 0 otherwise
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

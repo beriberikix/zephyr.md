@@ -30,7 +30,7 @@ Here some highlights of these boards:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - One push-button: RESET
 
-![Nucleo L452RE-P](../../../../_images/nucleo_l452re_p.jpg)
+![Nucleo L452RE-P](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l452re_p.jpg)
 
 The main difference between the ST Nucleo L452RE and the L452RE-P (note the missing
 “-P” at the end) lays in the External Switched Mode Power Supply (SMPS) included in
@@ -129,8 +129,8 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo L452RE Pinout](../../../../_images/nucleo_l452re_pinout.jpg)
-![Nucleo L452RE-P Pinout](../../../../_images/nucleo_l452re_p_pinout.jpg)
+![Nucleo L452RE Pinout](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l452re_pinout.jpg)
+![Nucleo L452RE-P Pinout](https://docs.zephyrproject.org/3.6.0/_images/nucleo_l452re_p_pinout.jpg)
 
 For more details please refer to [ST Nucleo L452RE User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf) or
 [ST Nucleo L452RE-P User Manual](https://www.st.com/resource/en/user_manual/dm00387966.pdf).

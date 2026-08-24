@@ -33,7 +33,7 @@ some highlights of the Nucleo F446ZE board:
 - Three LEDs: USB communication (LD1), user LED (LD2), power LED (LD3)
 - Two push-buttons: USER and RESET
 
-![Nucleo F446ZE](../../../../_images/nucleo_f446ze.jpg)
+![Nucleo F446ZE](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446ze.jpg)
 
 More information about the board can be found at the [Nucleo F446ZE website](https://www.st.com/en/evaluation-tools/nucleo-f446ze.html).
 
@@ -101,10 +101,10 @@ input/output, pull-up, etc.
 
 #### Available pins:
 
-![Nucleo F446ZE Zio/Arduino connectors (left)](../../../../_images/nucleo_f446ze_zio_left_2019_8_29.jpg)
-![Nucleo F446ZE Zio/Arduino connectors (right)](../../../../_images/nucleo_f446ze_zio_right_2019_8_29.jpg)
-![Nucleo F446ZE Morpho connectors (left)](../../../../_images/nucleo_f446ze_morpho_left_2019_8_29.jpg)
-![Nucleo F446ZE Morpho connectors (right)](../../../../_images/nucleo_f446ze_morpho_right_2019_8_29.jpg)
+![Nucleo F446ZE Zio/Arduino connectors (left)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446ze_zio_left_2019_8_29.jpg)
+![Nucleo F446ZE Zio/Arduino connectors (right)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446ze_zio_right_2019_8_29.jpg)
+![Nucleo F446ZE Morpho connectors (left)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446ze_morpho_left_2019_8_29.jpg)
+![Nucleo F446ZE Morpho connectors (right)](https://docs.zephyrproject.org/3.7.0/_images/nucleo_f446ze_morpho_right_2019_8_29.jpg)
 
 For more details please refer to [STM32 Nucleo-144 board User Manual](https://www.st.com/resource/en/user_manual/um1974-stm32-nucleo144-boards-mb1137-stmicroelectronics.pdf).
 

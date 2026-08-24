@@ -45,4 +45,4 @@ Tachometer channel B.
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [sensor](dir_c9b2d7ff2bbb57ff9b1854f820609711.md)
 - [it8xxx2\_tach.h](it8xxx2__tach_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

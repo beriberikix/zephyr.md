@@ -47,4 +47,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - grant\_handle\_t : [grant\_table.h](grant__table_8h.md#a1eade3c86c0fd0e71217eefaa3b38cd1)
 - grant\_ref\_t : [grant\_table.h](grant__table_8h.md#aee25f6c8ecefd1d7c52e49e4886aca3e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

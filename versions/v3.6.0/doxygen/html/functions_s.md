@@ -558,4 +558,4 @@ Here is a list of all struct and union fields with links to the structures/union
 - system\_addr : [address\_trans\_region\_config](structaddress__trans__region__config.md#ab5ad2baec37c5949f099ff9e32016cc5)
 - system\_time : [vcpu\_time\_info](structvcpu__time__info.md#a8963a462f7e7ab7f3833d43adc60e06f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

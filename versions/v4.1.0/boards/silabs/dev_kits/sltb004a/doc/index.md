@@ -8,8 +8,8 @@ original_path: boards/silabs/dev_kits/sltb004a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sltb004a.jpg](../../../../../_images/sltb004a.jpg)
-](../../../../../_images/sltb004a.jpg)
+[![../../../../../_images/sltb004a.jpg](https://docs.zephyrproject.org/4.1.0/_images/sltb004a.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/sltb004a.jpg)
 
 EFR32MG12 Thunderboard (SLTB004A)
 

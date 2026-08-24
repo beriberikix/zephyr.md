@@ -33,7 +33,7 @@ The Nordic Semiconductor nRF52832 ARM Cortex-M4F MCU features the following:
 - UART
 - WDT
 
-![Blue Clover PLT Demo V2 nRF52832](../../../../_images/blueclover_plt_demo_v2.jpg)
+![Blue Clover PLT Demo V2 nRF52832](https://docs.zephyrproject.org/3.6.0/_images/blueclover_plt_demo_v2.jpg)
 
 ## Hardware
 

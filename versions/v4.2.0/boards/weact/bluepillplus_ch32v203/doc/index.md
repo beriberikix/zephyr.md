@@ -8,8 +8,8 @@ original_path: boards/weact/bluepillplus_ch32v203/doc/index.html
 
 Board Overview
 
-[![../../../../_images/bluepillplus_ch32v203.webp](../../../../_images/bluepillplus_ch32v203.webp)
-](../../../../_images/bluepillplus_ch32v203.webp)
+[![../../../../_images/bluepillplus_ch32v203.webp](https://docs.zephyrproject.org/4.2.0/_images/bluepillplus_ch32v203.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/bluepillplus_ch32v203.webp)
 
 BluePill Plus CH32V203
 

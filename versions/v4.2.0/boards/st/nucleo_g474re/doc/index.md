@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_g474re/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_g474re.jpg](../../../../_images/nucleo_g474re.jpg)
-](../../../../_images/nucleo_g474re.jpg)
+[![../../../../_images/nucleo_g474re.jpg](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g474re.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_g474re.jpg)
 
 Nucleo G474RE
 

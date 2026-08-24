@@ -329,4 +329,4 @@ Here is a list of all functions with links to the files they belong to:
 - current\_sense\_amplifier\_scale\_dt() : [current\_sense\_amplifier.h](current__sense__amplifier_8h.md#aeaa2149527103e5c0e6a636cb3e9aad4)
 - current\_sense\_shunt\_scale\_dt() : [current\_sense\_shunt.h](current__sense__shunt_8h.md#a2315a1aa2db9dafaff8c272b06d2c6b0)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

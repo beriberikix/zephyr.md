@@ -39,9 +39,9 @@ The R-Car H3 includes:
 
 Here are official IOs figures from eLinux for H3ULCB board:
 
-![../../../../_images/rcar_h3ulcb_top.jpg](../../../../_images/rcar_h3ulcb_top.jpg)
+![../../../../_images/rcar_h3ulcb_top.jpg](https://docs.zephyrproject.org/4.0.0/_images/rcar_h3ulcb_top.jpg)
 
-![../../../../_images/rcar_h3ulcb_bottom.jpg](../../../../_images/rcar_h3ulcb_bottom.jpg)
+![../../../../_images/rcar_h3ulcb_bottom.jpg](https://docs.zephyrproject.org/4.0.0/_images/rcar_h3ulcb_bottom.jpg)
 
 ### Supported Features
 

@@ -8,8 +8,8 @@ original_path: boards/lilygo/ttgo_lora32/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ttgo_lora32.webp](../../../../_images/ttgo_lora32.webp)
-](../../../../_images/ttgo_lora32.webp)
+[![../../../../_images/ttgo_lora32.webp](https://docs.zephyrproject.org/4.0.0/_images/ttgo_lora32.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ttgo_lora32.webp)
 
 TTGO LoRa32
 

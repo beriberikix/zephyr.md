@@ -33,7 +33,7 @@ Renesas RA2A1 Microcontroller Group has following features
 - Watchdog Timer
 - 49 Input/Output pins
 
-![RA2A1 Evaluation Kit](../../../../_images/ek_ra2a1.webp)
+![RA2A1 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra2a1.webp)
 
 EK-RA2A1 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -41,8 +41,8 @@ EK-RA2A1 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detail Hardware feature for the RA2A1 MCU group can be found at [RA2A1 Group User’s Manual Hardware](https://www.renesas.com/en/document/mah/renesas-ra2a1-group-users-manual-hardware) [[1]](#id3)
 
-[![RA2A1 MCU group feature](../../../../_images/ra2a1_block_diagram.webp)
-](../../../../_images/ra2a1_block_diagram.webp)
+[![RA2A1 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra2a1_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra2a1_block_diagram.webp)
 
 RA2A1 Block diagram (Credit: Renesas Electronics Corporation)
 

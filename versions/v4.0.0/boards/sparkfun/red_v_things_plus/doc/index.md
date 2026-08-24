@@ -11,7 +11,7 @@ original_path: boards/sparkfun/red_v_things_plus/doc/index.html
 The SparkFun RED-V Things Plus is a development board with
 a SiFive FE310-G002 RISC-V SoC.
 
-![SparkFun RED-V Things Plus board](../../../../_images/sparkfun_red_v_things_plus.jpg)
+![SparkFun RED-V Things Plus board](https://docs.zephyrproject.org/4.0.0/_images/sparkfun_red_v_things_plus.jpg)
 
 For more information about the SparkFun RED-V Things Plus and SiFive FE310-G002:
 

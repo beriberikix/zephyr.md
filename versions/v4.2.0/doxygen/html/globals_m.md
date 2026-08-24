@@ -4557,4 +4557,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - MUX\_MODE\_8 : [ti-k3-pinctrl.h](ti-k3-pinctrl_8h.md#a0c6c56a47585b1fe1233139689c519de)
 - MUX\_MODE\_9 : [ti-k3-pinctrl.h](ti-k3-pinctrl_8h.md#aa951dab323d11eb1059ed1f278f7730d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

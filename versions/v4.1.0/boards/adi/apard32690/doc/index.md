@@ -8,8 +8,8 @@ original_path: boards/adi/apard32690/doc/index.html
 
 Board Overview
 
-[![../../../../_images/apard32690_img.webp](../../../../_images/apard32690_img.webp)
-](../../../../_images/apard32690_img.webp)
+[![../../../../_images/apard32690_img.webp](https://docs.zephyrproject.org/4.1.0/_images/apard32690_img.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/apard32690_img.webp)
 
 AD-APARD32690-SL
 

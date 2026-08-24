@@ -31,7 +31,7 @@ Here are some highlights of the Nucleo F302R8 board:
 - One user LED
 - Two push-buttons: USER and RESET
 
-![Nucleo F302R8](../../../../_images/nucleo_f302r8.jpg)
+![Nucleo F302R8](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f302r8.jpg)
 
 More information about the board can be found at the [Nucleo F302R8 website](https://www.st.com/en/evaluation-tools/nucleo-f302r8.html),
 and in the [STM32 Nucleo-64 board User Manual](https://www.st.com/resource/en/user_manual/dm00105823.pdf).
@@ -99,7 +99,7 @@ responsible for pin muxing, input/output, pull-up, etc.
 
 #### Board connectors:
 
-![Nucleo F302R8 connectors](../../../../_images/nucleo_f302r8_connectors.jpg)
+![Nucleo F302R8 connectors](https://docs.zephyrproject.org/3.6.0/_images/nucleo_f302r8_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

@@ -29,7 +29,7 @@ This kit provides:
 - GPIOs exposed via screw terminals on the carrier board
 - Housing
 
-![Dragino LSN50](../../../../_images/dragino_lsn50.jpg)
+![Dragino LSN50](https://docs.zephyrproject.org/3.7.0/_images/dragino_lsn50.jpg)
 
 More information about the board can be found at the [Dragino LSN50 website](https://www.dragino.com/products/lora-lorawan-end-node/item/128-lsn50.html).
 

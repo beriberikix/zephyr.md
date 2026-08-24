@@ -101,4 +101,4 @@ Return values
     | -EIO | General input / output error during i2c\_taget\_register |
     | -ENOSYS | If target mode is not implemented |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

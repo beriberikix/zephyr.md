@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wb09ke/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_wb09ke.webp](../../../../_images/nucleo_wb09ke.webp)
-](../../../../_images/nucleo_wb09ke.webp)
+[![../../../../_images/nucleo_wb09ke.webp](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb09ke.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/nucleo_wb09ke.webp)
 
 Nucleo WB09KE
 

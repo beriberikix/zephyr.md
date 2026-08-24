@@ -380,4 +380,4 @@ Here is a list of all macros with links to the files they belong to:
 - KINETIS\_SIM\_PLLFLLSEL\_MCGPLLCLK : [kinetis\_sim.h](kinetis__sim_8h.md#a3b28905b525cde569f367e17274accf8)
 - KINETIS\_SIM\_SIM\_SOPT7 : [kinetis\_sim.h](kinetis__sim_8h.md#aef35b68542fef8df938f4a7238299ae7)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

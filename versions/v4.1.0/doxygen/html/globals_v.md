@@ -518,4 +518,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - VTD\_VCRSP : [intel\_vtd.h](arch_2x86_2intel__vtd_8h.md#a0394fb4097710d9b835d35c18f9cdd45)
 - VTD\_VER\_REG : [intel\_vtd.h](arch_2x86_2intel__vtd_8h.md#aaf55b3a29bcc8b11050c017cbb7fd428)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

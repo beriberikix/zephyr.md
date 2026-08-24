@@ -11,7 +11,7 @@ original_path: boards/intel/socfpga_std/cyclonev_socdk/doc/index.html
 The Zephyr kernel is supported on the Intel® Cyclone® V SoC Development Kit,
 using its Hard Processor System (HPS) CPU.
 
-![Intel's Cyclone® V SoC FPGA DevKit](../../../../../_images/cyclonev_socdk.jpg)
+![Intel's Cyclone® V SoC FPGA DevKit](https://docs.zephyrproject.org/4.0.0/_images/cyclonev_socdk.jpg)
 
 Intel®’s Cyclone® V SoC FPGA DevKit (Credit: Intel®)
 
@@ -184,7 +184,7 @@ This files should be located in [boards/intel/socfpga\_std/cyclonev\_socdk/suppo
 The following image shows the expected output (UART) after executing “west flash” using
 the “hello world” sample design:
 
-![UART output after "west flash" example](../../../../../_images/cyclonev_westflash.jpg)
+![UART output after "west flash" example](https://docs.zephyrproject.org/4.0.0/_images/cyclonev_westflash.jpg)
 
 UART output after “west flash” example (Credit: Intel®)
 
@@ -318,7 +318,7 @@ west build -b cyclonev_socdk samples/basic/blinky
 west flash
 ```
 
-![HPS LED0 blinking example](../../../../../_images/cyclonev_blinky.jpg)
+![HPS LED0 blinking example](https://docs.zephyrproject.org/4.0.0/_images/cyclonev_blinky.jpg)
 
 HPS LED0 blinking example (Credit: Intel®)
 

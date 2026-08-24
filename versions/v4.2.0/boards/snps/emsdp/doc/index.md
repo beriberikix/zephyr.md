@@ -8,8 +8,8 @@ original_path: boards/snps/emsdp/doc/index.html
 
 Board Overview
 
-[![../../../../_images/emsdp.jpg](../../../../_images/emsdp.jpg)
-](../../../../_images/emsdp.jpg)
+[![../../../../_images/emsdp.jpg](https://docs.zephyrproject.org/4.2.0/_images/emsdp.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/emsdp.jpg)
 
 ARC EM Software Development Platform
 

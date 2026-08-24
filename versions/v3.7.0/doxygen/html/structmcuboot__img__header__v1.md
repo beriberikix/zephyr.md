@@ -60,4 +60,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/dfu/[mcuboot.h](mcuboot_8h_source.md)
 
 - [mcuboot\_img\_header\_v1](structmcuboot__img__header__v1.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

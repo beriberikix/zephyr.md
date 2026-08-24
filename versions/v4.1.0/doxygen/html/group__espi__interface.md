@@ -1429,4 +1429,4 @@ Return values
     | -ENOTSUP | if eSPI controller doesn't support raw packets and instead low memory transactions are handled by controller hardware directly. |
     | -EINVAL | General input / output error, failed to send over the bus. |
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

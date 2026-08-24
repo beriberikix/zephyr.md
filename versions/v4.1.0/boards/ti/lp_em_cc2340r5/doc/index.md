@@ -8,8 +8,8 @@ original_path: boards/ti/lp_em_cc2340r5/doc/index.html
 
 Board Overview
 
-[![../../../../_images/lp_em_cc2340r5.webp](../../../../_images/lp_em_cc2340r5.webp)
-](../../../../_images/lp_em_cc2340r5.webp)
+[![../../../../_images/lp_em_cc2340r5.webp](https://docs.zephyrproject.org/4.1.0/_images/lp_em_cc2340r5.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/lp_em_cc2340r5.webp)
 
 CC2340R5 LaunchPad
 

@@ -8,8 +8,8 @@ original_path: boards/renesas/rzn2l_rsk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rzn2l_rsk.webp](../../../../_images/rzn2l_rsk.webp)
-](../../../../_images/rzn2l_rsk.webp)
+[![../../../../_images/rzn2l_rsk.webp](https://docs.zephyrproject.org/4.2.0/_images/rzn2l_rsk.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzn2l_rsk.webp)
 
 Renesas Starter Kit+ for RZ/N2L
 
@@ -66,8 +66,8 @@ you can fully evaluate functions without an extension board.
 
 The Renesas RZ/N2L MPU documentation can be found at [RZ/N2L Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzn2l-integrated-tsn-compliant-3-port-gigabit-ethernet-switch-enables-various-industrial-applications) [[1]](#id3)
 
-[![RZ/N2L group feature](../../../../_images/rzn2l_block_diagram.webp)
-](../../../../_images/rzn2l_block_diagram.webp)
+[![RZ/N2L group feature](https://docs.zephyrproject.org/4.2.0/_images/rzn2l_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rzn2l_block_diagram.webp)
 
 RZ/N2L block diagram (Credit: Renesas Electronics Corporation)
 

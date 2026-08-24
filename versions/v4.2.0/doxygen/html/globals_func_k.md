@@ -316,4 +316,4 @@ Here is a list of all functions with links to the files they belong to:
 - k\_yield() : [kernel.h](group__thread__apis.md#ga08a3484c33444ecedc2d71d78495a295)
 - kill() : [signal.h](include_2zephyr_2posix_2signal_8h.md#a4539db972bcf3dd8c8b429af0dc3789d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

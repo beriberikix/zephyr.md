@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_u083rc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_u083rc.jpg](../../../../_images/nucleo_u083rc.jpg)
-](../../../../_images/nucleo_u083rc.jpg)
+[![../../../../_images/nucleo_u083rc.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_u083rc.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_u083rc.jpg)
 
 Nucleo U083RC
 

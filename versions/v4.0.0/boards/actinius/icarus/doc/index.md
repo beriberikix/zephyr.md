@@ -8,8 +8,8 @@ original_path: boards/actinius/icarus/doc/index.html
 
 Board Overview
 
-[![../../../../_images/Icarus_pinouts.jpg](../../../../_images/Icarus_pinouts.jpg)
-](../../../../_images/Icarus_pinouts.jpg)
+[![../../../../_images/Icarus_pinouts.jpg](https://docs.zephyrproject.org/4.0.0/_images/Icarus_pinouts.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/Icarus_pinouts.jpg)
 
 Icarus
 
@@ -52,7 +52,7 @@ following devices (provided directly by Nordic):
 
 The detailed information about the on-board hardware can be found at the [Icarus Product Website](https://www.actinius.com/icarus) [[2]](#id5).
 
-![Icarus IoT Dev Board w/ Pinouts](../../../../_images/Icarus_pinouts1.jpg)
+![Icarus IoT Dev Board w/ Pinouts](https://docs.zephyrproject.org/4.0.0/_images/Icarus_pinouts1.jpg)
 
 Icarus IoT Dev Board w/ Pinouts
 

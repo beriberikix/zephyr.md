@@ -29,7 +29,7 @@ connectors that are part of the 23-pin edge connector.
 - FLASH
 - RADIO (Bluetooth Low Energy)
 
-![BBC Micro Bit](../../../../_images/bbc_microbit.jpg)
+![BBC Micro Bit](https://docs.zephyrproject.org/3.6.0/_images/bbc_microbit.jpg)
 
 BBC Micro Bit (Credit: [http://microbit.org/](http://microbit.org/))
 

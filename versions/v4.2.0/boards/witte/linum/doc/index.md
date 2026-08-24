@@ -8,8 +8,8 @@ original_path: boards/witte/linum/doc/index.html
 
 Board Overview
 
-[![../../../../_images/linum-stm32h753bi-top.jpg](../../../../_images/linum-stm32h753bi-top.jpg)
-](../../../../_images/linum-stm32h753bi-top.jpg)
+[![../../../../_images/linum-stm32h753bi-top.jpg](https://docs.zephyrproject.org/4.2.0/_images/linum-stm32h753bi-top.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/linum-stm32h753bi-top.jpg)
 
 Linum Board
 

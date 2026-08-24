@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_wba55cg/doc/nucleo_wba55cg.html
 
 Board Overview
 
-[![../../../../_images/nucleowba55cg.jpg](../../../../_images/nucleowba55cg.jpg)
-](../../../../_images/nucleowba55cg.jpg)
+[![../../../../_images/nucleowba55cg.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleowba55cg.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleowba55cg.jpg)
 
 Nucleo WBA55CG
 

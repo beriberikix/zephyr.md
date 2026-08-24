@@ -8,8 +8,8 @@ original_path: boards/ite/it515xx_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/it515xx_evb_wiring.webp](../../../../_images/it515xx_evb_wiring.webp)
-](../../../../_images/it515xx_evb_wiring.webp)
+[![../../../../_images/it515xx_evb_wiring.webp](https://docs.zephyrproject.org/4.2.0/_images/it515xx_evb_wiring.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/it515xx_evb_wiring.webp)
 
 IT51XXX series
 
@@ -36,7 +36,7 @@ And a highly integrated embedded controller with system functions.
 It is suitable for mobile system applications. The picture below is
 the IT51526 development board (also known as it515xx\_evb) and its debug card.
 
-![IT51526 EVB](../../../../_images/it515xx_evb_and_debug_card.webp)
+![IT51526 EVB](https://docs.zephyrproject.org/4.2.0/_images/it515xx_evb_and_debug_card.webp)
 
 To find out more about ITE, visit our World Wide Web at:[ITE’s website](https://www.ite.com.tw/en) [[1]](#id2)
 
@@ -124,7 +124,7 @@ You can get them at: [ITE’s website](https://www.ite.com.tw/en) [[1]](#id2).
 3. Connect the Download Board J5 to J38(GPC1 & GPC2) on the evolution motherboard.
 4. Connect the USB to UART wire to UART0 connector on the evolution motherboard.
 
-   ![it515xx_evb wiring](../../../../_images/it515xx_evb_wiring1.webp)
+   ![it515xx_evb wiring](https://docs.zephyrproject.org/4.2.0/_images/it515xx_evb_wiring1.webp)
 
    Note
 

@@ -23,7 +23,7 @@ The board configuration also enables support for the semihosting debugging conso
 
 See the [TI AM62X Product Page](https://www.ti.com/product/AM625) for details.
 
-![TI SK-AM62 EVM](../../../../_images/sk_am62_angled.webp)
+![TI SK-AM62 EVM](https://docs.zephyrproject.org/3.7.0/_images/sk_am62_angled.webp)
 
 Texas Instruments SK-AM62 EVM
 

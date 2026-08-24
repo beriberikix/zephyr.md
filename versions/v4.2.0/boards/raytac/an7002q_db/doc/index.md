@@ -8,8 +8,8 @@ original_path: boards/raytac/an7002q_db/doc/index.html
 
 Board Overview
 
-[![../../../../_images/raytac_an7002q_db_5340.webp](../../../../_images/raytac_an7002q_db_5340.webp)
-](../../../../_images/raytac_an7002q_db_5340.webp)
+[![../../../../_images/raytac_an7002q_db_5340.webp](https://docs.zephyrproject.org/4.2.0/_images/raytac_an7002q_db_5340.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/raytac_an7002q_db_5340.webp)
 
 AN7002Q-DB-5340
 

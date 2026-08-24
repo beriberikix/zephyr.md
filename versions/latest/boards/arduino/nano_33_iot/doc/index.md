@@ -8,8 +8,8 @@ original_path: boards/arduino/nano_33_iot/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nano_33_iot.jpg](../../../../_images/nano_33_iot.jpg)
-](../../../../_images/nano_33_iot.jpg)
+[![../../../../_images/nano_33_iot.jpg](https://docs.zephyrproject.org/4.2.0/_images/nano_33_iot.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/nano_33_iot.jpg)
 
 Arduino Nano 33 IOT
 

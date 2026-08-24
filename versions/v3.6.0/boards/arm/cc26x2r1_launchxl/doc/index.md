@@ -17,7 +17,7 @@ development kit for the SimpleLink™ multi-Standard CC2652R wireless MCU.
 
 See the [TI CC26x2R LaunchPad Product Page](http://www.ti.com/tool/launchxl-cc26x2r1) for details.
 
-![TI CC26x2R LaunchPad](../../../../_images/cc26x2r1_launchxl.jpg)
+![TI CC26x2R LaunchPad](https://docs.zephyrproject.org/3.6.0/_images/cc26x2r1_launchxl.jpg)
 
 Texas Instruments CC26x2R LaunchPad™
 

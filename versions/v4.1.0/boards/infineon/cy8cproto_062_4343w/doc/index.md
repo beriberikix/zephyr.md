@@ -8,8 +8,8 @@ original_path: boards/infineon/cy8cproto_062_4343w/doc/index.html
 
 Board Overview
 
-[![../../../../_images/board.jpg](../../../../_images/board.jpg)
-](../../../../_images/board.jpg)
+[![../../../../_images/board.jpg](https://docs.zephyrproject.org/4.1.0/_images/board.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/board.jpg)
 
 CY8CPROTO-062-4343W
 

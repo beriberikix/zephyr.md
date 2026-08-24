@@ -1434,4 +1434,4 @@ Here is a list of all macros with links to the files they belong to:
 - CY\_SYSCLK\_DIV\_16\_BIT : [pwm\_ifx\_cat1.h](pwm__ifx__cat1_8h.md#a91d2c016f25e0d6f234eb3e47d0f67d3)
 - CY\_SYSCLK\_DIV\_8\_BIT : [pwm\_ifx\_cat1.h](pwm__ifx__cat1_8h.md#acb7c9e4e183ced2a4d1c1816ba079ee9)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

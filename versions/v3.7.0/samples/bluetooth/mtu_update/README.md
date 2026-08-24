@@ -62,7 +62,7 @@ That maximum ACL RX buffer size is configured with
 The resulting L2CAP RX MTU will be the value of this Kconfig symbol minus the
 L2CAP header size.
 
-![Diagram of the MTUs and their corresponding Kconfig symbols](../../../_images/mtu.svg)
+![Diagram of the MTUs and their corresponding Kconfig symbols](https://docs.zephyrproject.org/3.7.0/_images/mtu.svg)
 
 Diagram of the MTUs and their corresponding Kconfig symbols
 

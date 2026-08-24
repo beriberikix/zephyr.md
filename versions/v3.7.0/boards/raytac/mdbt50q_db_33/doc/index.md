@@ -31,7 +31,7 @@ Nordic Semiconductor nRF52833 ARM Cortex-M4F CPU and the following devices:
 - USB
 - WDT
 
-[![MDBT50Q-DB-33](../../../../_images/mdbt50q_db_33.jpg)](../../../../_images/mdbt50q_db_33.jpg)
+[![MDBT50Q-DB-33](https://docs.zephyrproject.org/3.7.0/_images/mdbt50q_db_33.jpg)](https://docs.zephyrproject.org/3.7.0/_images/mdbt50q_db_33.jpg)
 
 More information about the board can be found at the [MDBT50Q-DB-33 website](https://www.raytac.com/product/ins.php?index_id=97) [[1]](#id1).
 The [MDBT50Q-DB-33 Specification](https://www.raytac.com/download/index.php?index_id=46) [[2]](#id4) contains the demo board’s datasheet.

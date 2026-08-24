@@ -31,7 +31,7 @@ Here are some highlights of the BLACK\_F407ZG\_PRO board:
 - Four push-buttons: RESET, K0, K1 and WK\_UP
 - Mini-AB connector
 
-![BLACK_F407ZG_PRO](../../../../_images/black_f407zg_pro.jpg)
+![BLACK_F407ZG_PRO](https://docs.zephyrproject.org/3.7.0/_images/black_f407zg_pro.jpg)
 
 Warning
 

@@ -28,4 +28,4 @@ Here is a list of all enum values with links to the files they belong to:
 - X86\_MEMMAP\_SOURCE\_MULTIBOOT\_MEM : [memmap.h](memmap_8h.md#ae4f3b51d56ed1ddb36a78d0238a8bdc5a7d9550deb6b27b6c720cbcb7dd48dc63)
 - X86\_MEMMAP\_SOURCE\_MULTIBOOT\_MMAP : [memmap.h](memmap_8h.md#ae4f3b51d56ed1ddb36a78d0238a8bdc5a65183e6b869d16a0b1daf4b5d0c9b3f5)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -3558,4 +3558,4 @@ Here is a list of all macros with links to the files they belong to:
 - LWM2M\_RES\_DATA\_FLAG\_RO : [lwm2m.h](group__lwm2m__api.md#ga1bfa5b7d83e3560828a1fb61a4d07355)
 - LWM2M\_RES\_DATA\_READ\_ONLY : [lwm2m.h](group__lwm2m__api.md#ga12c2e0af3d3fc6dd5785e08c0d831a67)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

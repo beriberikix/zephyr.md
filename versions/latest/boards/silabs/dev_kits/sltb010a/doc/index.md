@@ -8,8 +8,8 @@ original_path: boards/silabs/dev_kits/sltb010a/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/sltb010a.jpg](../../../../../_images/sltb010a.jpg)
-](../../../../../_images/sltb010a.jpg)
+[![../../../../../_images/sltb010a.jpg](https://docs.zephyrproject.org/4.2.0/_images/sltb010a.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/sltb010a.jpg)
 
 EFR32BG22 Thunderboard (SLTB010A)
 

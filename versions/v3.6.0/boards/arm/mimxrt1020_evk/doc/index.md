@@ -17,7 +17,7 @@ high-performance feature set in low-cost LQFP packages, further simplifying
 board design and layout for customers. The i.MX RT1020 runs on the Arm®
 Cortex®-M7 core at 500 MHz.
 
-![MIMXRT1020-EVK](../../../../_images/mimxrt1020_evk.jpg)
+![MIMXRT1020-EVK](https://docs.zephyrproject.org/3.6.0/_images/mimxrt1020_evk.jpg)
 
 ## Hardware
 

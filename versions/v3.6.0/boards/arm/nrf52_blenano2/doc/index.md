@@ -39,11 +39,11 @@ The BLE Nano v2 board configuration supports the following hardware features:
 
 BLE nano v2 pinout
 
-![NANO2](../../../../_images/nrf52_blenano2.jpg)
+![NANO2](https://docs.zephyrproject.org/3.6.0/_images/nrf52_blenano2.jpg)
 
 DAPLink board
 
-![DAP](../../../../_images/dap.jpg)
+![DAP](https://docs.zephyrproject.org/3.6.0/_images/dap.jpg)
 
 The DAPLink USB board acts as a dongle. DAPLink debug probes appear on the host computer as a USB disk.
 It also regulates 5V from USB to 3.3V via the onboard LDO to power Nano v2.

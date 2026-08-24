@@ -8,8 +8,8 @@ original_path: boards/renesas/rza3ul_smarc/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rza3ul_smarc.webp](../../../../_images/rza3ul_smarc.webp)
-](../../../../_images/rza3ul_smarc.webp)
+[![../../../../_images/rza3ul_smarc.webp](https://docs.zephyrproject.org/4.2.0/_images/rza3ul_smarc.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rza3ul_smarc.webp)
 
 RZ/A3UL SMARC Evaluation Board Kit
 
@@ -67,8 +67,8 @@ Two types of evaluation boards are available: QSPI version and Octal-SPI version
 
 The Renesas RZ/A3UL MPU documentation can be found at [RZ/A3UL Group Website](https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rza3ul-powerful-1ghz-64-bit-mpus-rtos-support-enables-high-definition-hmi-and-quick-startup?) [[1]](#id3)
 
-[![RZ/A3UL group feature](../../../../_images/rza3ul_block_diagram.webp)
-](../../../../_images/rza3ul_block_diagram.webp)
+[![RZ/A3UL group feature](https://docs.zephyrproject.org/4.2.0/_images/rza3ul_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rza3ul_block_diagram.webp)
 
 RZ/A3UL block diagram (Credit: Renesas Electronics Corporation)
 

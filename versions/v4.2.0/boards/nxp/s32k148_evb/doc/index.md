@@ -8,8 +8,8 @@ original_path: boards/nxp/s32k148_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/s32k148_evb.webp](../../../../_images/s32k148_evb.webp)
-](../../../../_images/s32k148_evb.webp)
+[![../../../../_images/s32k148_evb.webp](https://docs.zephyrproject.org/4.2.0/_images/s32k148_evb.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/s32k148_evb.webp)
 
 S32K148EVB-Q176
 

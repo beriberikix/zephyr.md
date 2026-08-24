@@ -3878,4 +3878,4 @@ Here is a list of all macros with links to the files they belong to:
 - BT\_VS\_CMD\_READ\_STATIC\_ADDRS : [hci\_vs.h](hci__vs_8h.md#af5ef90c96d5798cef8ad32f8d6094d53)
 - BT\_VS\_CMD\_SUP\_FEAT : [hci\_vs.h](hci__vs_8h.md#a6f43e26c34622d9b9b2cf0a6ba53a393)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

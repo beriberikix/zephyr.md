@@ -277,4 +277,4 @@ uint16\_t app\_idx
 - [bluetooth](dir_1e7161d1e31b4a807184ef42c14f2a24.md)
 - [mesh](dir_cb009b76fe94f798a2c866bd15366281.md)
 - [shell.h](bluetooth_2mesh_2shell_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

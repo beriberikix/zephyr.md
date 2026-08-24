@@ -20,7 +20,7 @@ comes in the same size and footprint as our RAK3172 module which gives
 you the opportunity to enhance your existing designs
 with BLE without designing a new PCB.
 
-![RAK11720](../../../../_images/rak11720.webp)
+![RAK11720](https://docs.zephyrproject.org/3.7.0/_images/rak11720.webp)
 
 ## Hardware
 

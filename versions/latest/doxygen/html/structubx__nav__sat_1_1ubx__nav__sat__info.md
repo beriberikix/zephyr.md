@@ -72,4 +72,4 @@ The documentation for this struct was generated from the following file:
 
 - [ubx\_nav\_sat](structubx__nav__sat.md)
 - [ubx\_nav\_sat\_info](structubx__nav__sat_1_1ubx__nav__sat__info.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

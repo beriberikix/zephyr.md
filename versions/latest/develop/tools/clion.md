@@ -62,8 +62,8 @@ not happen, go to Settings ‣ Build, Execution, Deployment ‣ CMake.
 3. Click Add environment ‣ From file and select
    `..\.venv\Scripts\activate.bat`.
 
-   [![MinGW toolchain with environment script](../../_images/clion_toolchain_mingw.webp)
-   ](../../_images/clion_toolchain_mingw.webp)
+   [![MinGW toolchain with environment script](https://docs.zephyrproject.org/4.2.0/_images/clion_toolchain_mingw.webp)
+   ](https://docs.zephyrproject.org/4.2.0/_images/clion_toolchain_mingw.webp)
 
    Click Apply to save the changes.
 4. Back in the CMake profile settings dialog, specify your board in the CMake options
@@ -73,8 +73,8 @@ not happen, go to Settings ‣ Build, Execution, Deployment ‣ CMake.
    -DBOARD=nrf52840dk/nrf52840
    ```
 
-   [![CMake profile](../../_images/clion_cmakeprofile.webp)
-   ](../../_images/clion_cmakeprofile.webp)
+   [![CMake profile](https://docs.zephyrproject.org/4.2.0/_images/clion_cmakeprofile.webp)
+   ](https://docs.zephyrproject.org/4.2.0/_images/clion_cmakeprofile.webp)
 5. Click Apply to save the changes.
 
    CMake load should finish successfully.
@@ -131,12 +131,12 @@ your setup is different, make sure to adjust the configuration settings accordin
    > | Download binary | Always |
    > | TCP/IP port | Auto |
    >
-   > [![Embedded GDB server configuration](../../_images/clion_gdbserverconfig.webp)
-   > ](../../_images/clion_gdbserverconfig.webp)
+   > [![Embedded GDB server configuration](https://docs.zephyrproject.org/4.2.0/_images/clion_gdbserverconfig.webp)
+   > ](https://docs.zephyrproject.org/4.2.0/_images/clion_gdbserverconfig.webp)
 3. Click Next to set the Segger J-Link parameters.
 
-   > [![Segger J-Link parameters](../../_images/clion_segger_settings.webp)
-   > ](../../_images/clion_segger_settings.webp)
+   > [![Segger J-Link parameters](https://docs.zephyrproject.org/4.2.0/_images/clion_segger_settings.webp)
+   > ](https://docs.zephyrproject.org/4.2.0/_images/clion_segger_settings.webp)
 4. Click Create when ready.
 
 ## Start debugging
@@ -149,7 +149,7 @@ your setup is different, make sure to adjust the configuration settings accordin
    Zephyr tasks are listed in the Threads & Variables pane. You can switch between them
    and inspect the variables for each task.
 
-   > [![Viewing Zephyr tasks during a debug session](../../_images/clion_debug_threads.webp)
-   > ](../../_images/clion_debug_threads.webp)
+   > [![Viewing Zephyr tasks during a debug session](https://docs.zephyrproject.org/4.2.0/_images/clion_debug_threads.webp)
+   > ](https://docs.zephyrproject.org/4.2.0/_images/clion_debug_threads.webp)
 
    Refer to [CLion web help](https://www.jetbrains.com/help/clion/debugging-code.html) for detailed description of the IDE debug capabilities.

@@ -8,8 +8,8 @@ original_path: boards/raytac/an54l15q_db/doc/index.html
 
 Board Overview
 
-[![../../../../_images/raytac_an54l15q_db.webp](../../../../_images/raytac_an54l15q_db.webp)
-](../../../../_images/raytac_an54l15q_db.webp)
+[![../../../../_images/raytac_an54l15q_db.webp](https://docs.zephyrproject.org/4.2.0/_images/raytac_an54l15q_db.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/raytac_an54l15q_db.webp)
 
 AN54L15Q-DB
 

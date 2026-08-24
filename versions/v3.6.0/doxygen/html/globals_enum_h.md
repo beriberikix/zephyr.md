@@ -31,4 +31,4 @@ Here is a list of all enums with links to the files they belong to:
 - http\_parser\_url\_fields : [parser\_url.h](parser__url_8h.md#a9ca1f91c2958091e2ac9e9b2f903d4eb)
 - http\_status : [status.h](group__http__status__codes.md#gabc3b93f68c8bdd857ad32913628dfa8d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

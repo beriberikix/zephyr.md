@@ -22,7 +22,7 @@ It features the following integrated components:
 - 8MB of Flash
 - RGB Status-LED
 
-![M5Stack AtomS3 Lite](../../../../_images/m5stack_atoms3_lite.webp)
+![M5Stack AtomS3 Lite](https://docs.zephyrproject.org/3.6.0/_images/m5stack_atoms3_lite.webp)
 
 M5Stack AtomS3 Lite
 

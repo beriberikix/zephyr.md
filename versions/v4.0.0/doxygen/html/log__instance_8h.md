@@ -189,4 +189,4 @@ Parameters
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [logging](dir_7da6482b46a75d2870a82324d67b5f7e.md)
 - [log\_instance.h](log__instance_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

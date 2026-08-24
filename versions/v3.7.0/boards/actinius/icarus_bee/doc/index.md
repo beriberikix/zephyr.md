@@ -12,7 +12,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 ## Overview
 
-![Icarus Bee](../../../../_images/icarus-bee.jpg)
+![Icarus Bee](https://docs.zephyrproject.org/3.7.0/_images/icarus-bee.jpg)
 
 Icarus Bee (nRF9160 Bee)
 
@@ -40,11 +40,11 @@ following devices (provided directly by Nordic):
 - WDT
 - IDAU
 
-![Icarus Bee w/ Pinouts](../../../../_images/icarus-bee-external-pins.jpg)
+![Icarus Bee w/ Pinouts](https://docs.zephyrproject.org/3.7.0/_images/icarus-bee-external-pins.jpg)
 
 Icarus Bee w/ Pinouts
 
-![Icarus Bee](../../../../_images/icarus-bee-peripherals-pins.jpg)
+![Icarus Bee](https://docs.zephyrproject.org/3.7.0/_images/icarus-bee-peripherals-pins.jpg)
 
 Internal Pinouts
 

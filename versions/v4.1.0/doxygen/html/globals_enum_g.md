@@ -26,4 +26,4 @@ Here is a list of all enums with links to the files they belong to:
 - gnss\_pps\_mode : [gnss.h](group__gnss__interface.md#ga2b43ac2fec33053a769b7070c4ed3263)
 - gnss\_system : [gnss.h](group__gnss__interface.md#ga928a05b4e820a9fcc8bc2db81f5f8c79)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/st/stm32c0116_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32c0116_dk.jpg](../../../../_images/stm32c0116_dk.jpg)
-](../../../../_images/stm32c0116_dk.jpg)
+[![../../../../_images/stm32c0116_dk.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32c0116_dk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32c0116_dk.jpg)
 
 STM32C0116-DK Discovery Kit
 

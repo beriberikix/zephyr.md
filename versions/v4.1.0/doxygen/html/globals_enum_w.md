@@ -59,4 +59,4 @@ Here is a list of all enums with links to the files they belong to:
 - wifi\_wps\_op : [wifi\_mgmt.h](group__wifi__mgmt.md#ga4c36ae1a5171d3fbaeebf95c16be496d)
 - wkpu\_nxp\_s32\_trigger : [intc\_wkpu\_nxp\_s32.h](intc__wkpu__nxp__s32_8h.md#a7440f457f38303fdc829933f897ebbd6)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

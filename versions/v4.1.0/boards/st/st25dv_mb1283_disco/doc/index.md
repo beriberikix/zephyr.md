@@ -8,8 +8,8 @@ original_path: boards/st/st25dv_mb1283_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/st25dv_mb1283_disco.jpg](../../../../_images/st25dv_mb1283_disco.jpg)
-](../../../../_images/st25dv_mb1283_disco.jpg)
+[![../../../../_images/st25dv_mb1283_disco.jpg](https://docs.zephyrproject.org/4.1.0/_images/st25dv_mb1283_disco.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/st25dv_mb1283_disco.jpg)
 
 ST25DV Discovery, MB1283 version
 

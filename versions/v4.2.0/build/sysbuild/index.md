@@ -45,8 +45,8 @@ Multi-domain
 
 This figure is an overview of sysbuild’s inputs, outputs, and user interfaces:
 
-[![Sysbuild architectural overview](../../_images/sysbuild.svg)
-](../../_images/sysbuild.svg)
+[![Sysbuild architectural overview](https://docs.zephyrproject.org/4.2.0/_images/sysbuild.svg)
+](https://docs.zephyrproject.org/4.2.0/_images/sysbuild.svg)
 
 The following are some key sysbuild features indicated in this figure:
 

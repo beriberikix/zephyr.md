@@ -15,7 +15,7 @@ terms and any knowledge related description, as user may find all of these in
 
 The DSA switch TX/RX process is as below.
 
-![../../_images/dsa_txrx_process.svg](../../_images/dsa_txrx_process.svg)
+![../../_images/dsa_txrx_process.svg](https://docs.zephyrproject.org/4.2.0/_images/dsa_txrx_process.svg)
 
 ## [Host interface](#id2)
 

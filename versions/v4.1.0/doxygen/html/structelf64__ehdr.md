@@ -164,4 +164,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/llext/[elf.h](llext_2elf_8h_source.md)
 
 - [elf64\_ehdr](structelf64__ehdr.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

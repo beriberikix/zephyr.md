@@ -1388,4 +1388,4 @@ Here is a list of all macros with links to the files they belong to:
 - DW\_GPIO\_DEBOUNCE : [snps-designware-gpio.h](snps-designware-gpio_8h.md#a696fec562551fe17259140fe16cdcc1d)
 - DW\_GPIO\_HW\_MODE : [snps-designware-gpio.h](snps-designware-gpio_8h.md#a3791bd298cf7a44819a59fc967ee6b3b)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

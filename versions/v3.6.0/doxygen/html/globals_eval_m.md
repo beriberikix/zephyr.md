@@ -237,4 +237,4 @@ Here is a list of all enum values with links to the files they belong to:
 - MSG\_NOT\_SUPPORTED\_RECEIVED : [usbc.h](group____usbc__device__api.md#gga66f934a5c5cd88b574c71d1f18fbda23ab2f97ffaa13c84e656f7ac0004ec86ae)
 - MSG\_REJECTED\_RECEIVED : [usbc.h](group____usbc__device__api.md#gga66f934a5c5cd88b574c71d1f18fbda23a4ad0620e76c694004d3a1b43458a14b2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

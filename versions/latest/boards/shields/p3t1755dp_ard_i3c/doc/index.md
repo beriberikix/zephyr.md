@@ -11,7 +11,7 @@ original_path: boards/shields/p3t1755dp_ard_i3c/doc/index.html
 P3T1755DP is a ±0.5 °C accurate temperature-to-digital converter
 with a -40 °C to 125 °C range.
 
-![P3T1755DP ARD](../../../../_images/p3t1755dp_ard1.webp)
+![P3T1755DP ARD](https://docs.zephyrproject.org/4.2.0/_images/p3t1755dp_ard1.webp)
 
 ## Requirements
 

@@ -8,8 +8,8 @@ original_path: boards/atmel/sam0/samd20_xpro/doc/index.html
 
 Board Overview
 
-[![../../../../../_images/atsamd20_xpro.jpg](../../../../../_images/atsamd20_xpro.jpg)
-](../../../../../_images/atsamd20_xpro.jpg)
+[![../../../../../_images/atsamd20_xpro.jpg](https://docs.zephyrproject.org/4.1.0/_images/atsamd20_xpro.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/atsamd20_xpro.jpg)
 
 SAM D20 Xplained Pro Evaluation Kit
 

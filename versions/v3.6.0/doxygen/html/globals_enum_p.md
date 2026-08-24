@@ -41,4 +41,4 @@ Here is a list of all enums with links to the files they belong to:
 - ppp\_state : [ppp.h](group__ppp.md#ga6d4283a0ae63a227933d12d42318cf7c)
 - pt\_irq\_type : [domctl.h](public_2domctl_8h.md#aa0ba08b170800d6d7723b694525ade07)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

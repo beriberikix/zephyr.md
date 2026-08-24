@@ -8,8 +8,8 @@ original_path: boards/st/stm32mp157c_dk2/doc/stm32mp157_dk2.html
 
 Board Overview
 
-[![../../../../_images/en.stm32mp157c-dk2.jpg](../../../../_images/en.stm32mp157c-dk2.jpg)
-](../../../../_images/en.stm32mp157c-dk2.jpg)
+[![../../../../_images/en.stm32mp157c-dk2.jpg](https://docs.zephyrproject.org/4.0.0/_images/en.stm32mp157c-dk2.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/en.stm32mp157c-dk2.jpg)
 
 STM32MP157C-DK2 Discovery
 

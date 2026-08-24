@@ -175,4 +175,4 @@ Here is a list of all enum values with links to the files they belong to:
 - ETHERNET\_TXTIME : [ethernet.h](group__ethernet.md#gga9162ff11d626813fc840df0b67820ac5ac72ff66c3172da29ec9fefad7593ffd2)
 - EVENT\_CONFIG\_READY : [sensing\_sensor.h](group__sensing__sensor.md#ggaafa611add600aa3b2fba2c3e08562a02a78480d5dce2873492e587176880531d8)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -15,7 +15,7 @@ profiles, and most importantly, provides a high-level API for
 applications. The following diagram depicts the main protocol & profile
 layers of the host.
 
-![Bluetooth Host protocol & profile layers](../../_images/ble_host_layers.png)
+![Bluetooth Host protocol & profile layers](https://docs.zephyrproject.org/3.7.0/_images/ble_host_layers.png)
 
 Bluetooth Host protocol & profile layers.
 
@@ -171,15 +171,15 @@ The definitions are from the Core Specification version 5.4, volume 3, part A
 PDU used in Basic L2CAP mode. It contains the payload received from the upper
 layer or delivered to the upper layer as its payload.
 
-[![Representation of a B-frame PDU. The PDU is split into two rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the information payload and its size is less or equal to MPS.](../../_images/l2cap_b_frame.drawio.svg)](../../_images/l2cap_b_frame.drawio.svg)
+[![Representation of a B-frame PDU. The PDU is split into two rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the information payload and its size is less or equal to MPS.](https://docs.zephyrproject.org/3.7.0/_images/l2cap_b_frame.drawio.svg)](https://docs.zephyrproject.org/3.7.0/_images/l2cap_b_frame.drawio.svg)
 
 #### K-frame: Credit-based frame
 
 PDU used in LE Credit Based Flow Control mode and Enhanced Credit Based Flow
 Control mode. It contains a SDU segment and additional protocol information.
 
-[![Representation of a starting K-frame PDU. The PDU is split into three rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the L2CAP SDU length, its size is 2 octets. The third rectangle represents the information payload and its size is less or equal to MPS minus 2 octets. The information payload contains the L2CAP SDU.](../../_images/l2cap_k_frame_1.drawio.svg)](../../_images/l2cap_k_frame_1.drawio.svg)
-[![Representation of K-frames PDUs after the starting one. The PDU is split into two rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the information payload and its size is less or equal to MPS. The information payload contains the L2CAP SDU.](../../_images/l2cap_k_frame.drawio.svg)](../../_images/l2cap_k_frame.drawio.svg)
+[![Representation of a starting K-frame PDU. The PDU is split into three rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the L2CAP SDU length, its size is 2 octets. The third rectangle represents the information payload and its size is less or equal to MPS minus 2 octets. The information payload contains the L2CAP SDU.](https://docs.zephyrproject.org/3.7.0/_images/l2cap_k_frame_1.drawio.svg)](https://docs.zephyrproject.org/3.7.0/_images/l2cap_k_frame_1.drawio.svg)
+[![Representation of K-frames PDUs after the starting one. The PDU is split into two rectangles, the first one being the L2CAP header, its size is 4 octets and its made of the PDU length and the channel ID. The second rectangle represents the information payload and its size is less or equal to MPS. The information payload contains the L2CAP SDU.](https://docs.zephyrproject.org/3.7.0/_images/l2cap_k_frame.drawio.svg)](https://docs.zephyrproject.org/3.7.0/_images/l2cap_k_frame.drawio.svg)
 
 ### Relevant Kconfig
 

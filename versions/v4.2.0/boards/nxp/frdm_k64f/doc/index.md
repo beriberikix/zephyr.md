@@ -8,8 +8,8 @@ original_path: boards/nxp/frdm_k64f/doc/index.html
 
 Board Overview
 
-[![../../../../_images/frdm_k64f.jpg](../../../../_images/frdm_k64f.jpg)
-](../../../../_images/frdm_k64f.jpg)
+[![../../../../_images/frdm_k64f.jpg](https://docs.zephyrproject.org/4.2.0/_images/frdm_k64f.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/frdm_k64f.jpg)
 
 FRDM-K64F
 

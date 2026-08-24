@@ -175,4 +175,4 @@ This and higher values are sensor specific.
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [sensor](dir_b6423b3a8fc1c9278ff19cba182cfe6d.md)
 - [adc\_cmp\_npcx.h](adc__cmp__npcx_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

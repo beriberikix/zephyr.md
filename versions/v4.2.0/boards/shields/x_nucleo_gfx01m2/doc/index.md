@@ -19,7 +19,7 @@ X-NUCLEO-GFX01M2 uses the ST morpho connector and supports up to two SPIs.
 The SPI Display is compatible with the `ilitek,ili9341` driver and
 the SPI FLASH is compatible with the `jedec,spi-nor` driver.
 
-![X-NUCLEO-GFX01M2](../../../../_images/x_nucleo_gfx01m2.webp)
+![X-NUCLEO-GFX01M2](https://docs.zephyrproject.org/4.2.0/_images/x_nucleo_gfx01m2.webp)
 
 More information about the board can be found at the
 [X-NUCLEO-GFX01M2 website](https://www.st.com/en/evaluation-tools/x-nucleo-gfx01m2.html#overview).

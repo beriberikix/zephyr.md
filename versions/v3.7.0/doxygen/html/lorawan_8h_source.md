@@ -1030,4 +1030,4 @@ Network Key.
 - [zephyr](dir_6cbb653dcd0745b39bd039f02ad5bff5.md)
 - [lorawan](dir_025fd8c7c9e823719407606758d0c447.md)
 - [lorawan.h](lorawan_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

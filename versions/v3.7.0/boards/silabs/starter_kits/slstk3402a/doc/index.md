@@ -16,7 +16,7 @@ The EFM32 Pearl Gecko 12 Starter Kit SLSTK3402A contains an MCU from the
 EFM32PG family built on an ARM® Cortex®-M4F processor with excellent low
 power capabilities.
 
-![SLSTK3402A](../../../../../_images/slstk3402a.jpg)
+![SLSTK3402A](https://docs.zephyrproject.org/3.7.0/_images/slstk3402a.jpg)
 
 EFM32PG12 SLSTK3402A (image courtesy of Silicon Labs)
 

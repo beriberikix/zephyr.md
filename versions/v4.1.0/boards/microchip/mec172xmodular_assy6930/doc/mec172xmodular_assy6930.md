@@ -8,8 +8,8 @@ original_path: boards/microchip/mec172xmodular_assy6930/doc/mec172xmodular_assy6
 
 Board Overview
 
-[![../../../../_images/mec172xmodular_assy6930.jpg](../../../../_images/mec172xmodular_assy6930.jpg)
-](../../../../_images/mec172xmodular_assy6930.jpg)
+[![../../../../_images/mec172xmodular_assy6930.jpg](https://docs.zephyrproject.org/4.1.0/_images/mec172xmodular_assy6930.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mec172xmodular_assy6930.jpg)
 
 MEC172x Modular Card ASSY6930 (Rev. B)
 

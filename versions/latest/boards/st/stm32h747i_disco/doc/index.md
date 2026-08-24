@@ -8,8 +8,8 @@ original_path: boards/st/stm32h747i_disco/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32h747i_disco.jpg](../../../../_images/stm32h747i_disco.jpg)
-](../../../../_images/stm32h747i_disco.jpg)
+[![../../../../_images/stm32h747i_disco.jpg](https://docs.zephyrproject.org/4.2.0/_images/stm32h747i_disco.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/stm32h747i_disco.jpg)
 
 STM32H747I Discovery
 
@@ -271,8 +271,8 @@ To get Ethernet working following HW modifications are required:
 
 Following two images shows necessary changes on the board marked:
 
-![STM32H747I-DISCO - Ethernet modification 1 (**SB44**, **SB45**)](../../../../_images/disco_h747i_ethernet_modification_1.jpg)
-![STM32H747I-DISCO - Ethernet modification 2 (**SB21**, **R87**, **SB22**, **SB17** and **SB8**)](../../../../_images/disco_h747i_ethernet_modification_2.jpg)
+![STM32H747I-DISCO - Ethernet modification 1 (**SB44**, **SB45**)](https://docs.zephyrproject.org/4.2.0/_images/disco_h747i_ethernet_modification_1.jpg)
+![STM32H747I-DISCO - Ethernet modification 2 (**SB21**, **R87**, **SB22**, **SB17** and **SB8**)](https://docs.zephyrproject.org/4.2.0/_images/disco_h747i_ethernet_modification_2.jpg)
 
 ### Display
 

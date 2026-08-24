@@ -35,4 +35,4 @@ Here is a list of all typedefs with links to the files they belong to:
 - k\_work\_user\_handler\_t : [kernel.h](group__workqueue__apis.md#gaafa4dfac323cab570da1ee31c07d11bc)
 - kbd\_row\_t : [input\_kbd\_matrix.h](group__input__kbd__matrix.md#gac7d5c811da0c9ab2660be3c3f2fcfe86)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

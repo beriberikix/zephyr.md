@@ -41,7 +41,7 @@ the STLINK-V3E debugger and programmer.
 - On-board STLINK-V3E debugger/programmer with USB re-enumeration capability: mass storage,
   Virtual COM port, and debug port
 
-![B-G474E-DPOW1](../../../../_images/b_g474e_dpow1.jpg)
+![B-G474E-DPOW1](https://docs.zephyrproject.org/3.6.0/_images/b_g474e_dpow1.jpg)
 
 More information about the board can be found at the [B-G474E-DPOW1 website](https://www.st.com/en/evaluation-tools/b-g474e-dpow1.html) [[1]](#id1).
 

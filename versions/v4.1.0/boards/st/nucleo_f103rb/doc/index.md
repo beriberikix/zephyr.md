@@ -8,8 +8,8 @@ original_path: boards/st/nucleo_f103rb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/nucleo_f103rb.jpg](../../../../_images/nucleo_f103rb.jpg)
-](../../../../_images/nucleo_f103rb.jpg)
+[![../../../../_images/nucleo_f103rb.jpg](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f103rb.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f103rb.jpg)
 
 Nucleo F103RB
 
@@ -144,7 +144,7 @@ capable except for analog inputs.
 
 #### Board connectors:
 
-![Nucleo F103RB connectors](../../../../_images/nucleo_f103rb_connectors.jpg)
+![Nucleo F103RB connectors](https://docs.zephyrproject.org/4.1.0/_images/nucleo_f103rb_connectors.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

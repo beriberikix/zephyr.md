@@ -19,7 +19,7 @@ core running up to 227 MHz for high CPU performance and real-time response.
 Zephyr was ported to run on the Cortex-M4 core only. In a future release, it
 will also communicate with the Cortex-A9 core (running Linux) via OpenAMP.
 
-![UDOO-Neo-Full](../../../../_images/udoo_neo_full_m4.jpg)
+![UDOO-Neo-Full](https://docs.zephyrproject.org/3.6.0/_images/udoo_neo_full_m4.jpg)
 
 UDOO Neo Full (Credit: udoo.org)
 

@@ -10,7 +10,7 @@ the drop-down menu on the left and select the desired version.
 
 # Bluetooth Audio Architecture
 
-![Bluetooth Audio Architecture](../../_images/ble_audio_arch.svg)
+![Bluetooth Audio Architecture](https://docs.zephyrproject.org/3.6.0/_images/ble_audio_arch.svg)
 
 Bluetooth Audio Architecture
 
@@ -30,7 +30,7 @@ audio streams or broadcast (unconnected) audio streams.
 
 GAF mandates the use of the LC3 codec, but also supports other codecs.
 
-![Generic Audio Framework](../../_images/gaf.svg)
+![Generic Audio Framework](https://docs.zephyrproject.org/3.6.0/_images/gaf.svg)
 
 Generic Audio Framework
 
@@ -39,7 +39,7 @@ top-level requirements for how to use the GAF.
 
 GAF has been implemented in Zephyr with the following structure.
 
-![Generic Audio Framework](../../_images/zephyr_gaf.svg)
+![Generic Audio Framework](https://docs.zephyrproject.org/3.6.0/_images/zephyr_gaf.svg)
 
 Zephyr Generic Audio Framework
 
@@ -114,7 +114,7 @@ how they correspond to procedures from the other profiles. The circles with I, A
 the procedure has active involvement or requirements from the CAP Initiator, CAP Accept and CAP
 Commander roles respectively.
 
-![Common Audio Profile Procedures](../../_images/cap_proc.svg)
+![Common Audio Profile Procedures](https://docs.zephyrproject.org/3.6.0/_images/cap_proc.svg)
 
 Common Audio Profile Procedures
 

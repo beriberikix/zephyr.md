@@ -17,7 +17,7 @@ And a highly integrated embedded controller with system functions.
 It is suitable for mobile system applications. The picture below is
 the IT82202 development board (also known as it82xx2\_evb) and its debug card.
 
-![IT82202 EVB](../../../../_images/it82xx2_evb_and_debug_card.jpg)
+![IT82202 EVB](https://docs.zephyrproject.org/3.7.0/_images/it82xx2_evb_and_debug_card.jpg)
 
 To find out more about ITE, visit our World Wide Web at:[ITE’s website](https://www.ite.com.tw/zh-tw/product/view?mid=169) [[1]](#id2)
 
@@ -82,7 +82,7 @@ You can get them at: [ITE’s website](https://www.ite.com.tw/zh-tw/product/view
 3. Connect the Download Board J5 to J41 on the evolution motherboard.
 4. Connect the USB to UART wire to J33 on the evolution motherboard.
 
-   ![it82xx2_evb wiring](../../../../_images/it82xx2_evb_wiring.jpg)
+   ![it82xx2_evb wiring](https://docs.zephyrproject.org/3.7.0/_images/it82xx2_evb_wiring.jpg)
 
    Note
 
@@ -127,14 +127,14 @@ to the it82xx2 board flash.
    Second, turn on the it82xx2\_evb board switch.
    Then, configure your winflash tool like below.
 
-   > ![../../../../_images/WinFlashTool_P2.jpg](../../../../_images/WinFlashTool_P2.jpg)
+   > ![../../../../_images/WinFlashTool_P2.jpg](https://docs.zephyrproject.org/3.7.0/_images/WinFlashTool_P2.jpg)
    >
-   > ![../../../../_images/WinFlashTool_P4.jpg](../../../../_images/WinFlashTool_P4.jpg)
+   > ![../../../../_images/WinFlashTool_P4.jpg](https://docs.zephyrproject.org/3.7.0/_images/WinFlashTool_P4.jpg)
 2. Using the winflash tool flash `zephyr.bin` into your ITE board.
    First, click the `Load` button and select your `zephyr.bin` file.
    Second, click `run` to flash the image into board.
 
-   > ![../../../../_images/WinFlashTool_P3.jpg](../../../../_images/WinFlashTool_P3.jpg)
+   > ![../../../../_images/WinFlashTool_P3.jpg](https://docs.zephyrproject.org/3.7.0/_images/WinFlashTool_P3.jpg)
 3. At this point, you have flashed your image into ITE board and
    it will work if you turn on the ITE board. You can use a terminal program
    to verify flashing worked correctly.
@@ -142,7 +142,7 @@ to the it82xx2 board flash.
    For example, open device manager to find the USB Serial Port(COM4) and use your
    terminal program to connect it(Speed: 115200).
 
-   > ![../../../../_images/WinFlashTool_P1.jpg](../../../../_images/WinFlashTool_P1.jpg)
+   > ![../../../../_images/WinFlashTool_P1.jpg](https://docs.zephyrproject.org/3.7.0/_images/WinFlashTool_P1.jpg)
 4. Turn on the it82xx2\_evb board switch, you should see `"Hello World! it82xx2_evb"`
    sent by the board. If you don’t see this message, press the Reset button and the
    message should appear.

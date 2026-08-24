@@ -22,7 +22,7 @@ the same TX power. This makes the RAK4631 an ultra-low
 power communication solution. RAK4631 can be comfortably
 programmed with ZephyrRTOS.
 
-![RAK4631-NRF52840](../../../../_images/rak4631-front-parts.jpg)
+![RAK4631-NRF52840](https://docs.zephyrproject.org/3.6.0/_images/rak4631-front-parts.jpg)
 
 ## Hardware
 

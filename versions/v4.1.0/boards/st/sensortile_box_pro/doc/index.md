@@ -8,8 +8,8 @@ original_path: boards/st/sensortile_box_pro/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sensortile_box_pro.jpg](../../../../_images/sensortile_box_pro.jpg)
-](../../../../_images/sensortile_box_pro.jpg)
+[![../../../../_images/sensortile_box_pro.jpg](https://docs.zephyrproject.org/4.1.0/_images/sensortile_box_pro.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/sensortile_box_pro.jpg)
 
 SensorTile.box PRO
 

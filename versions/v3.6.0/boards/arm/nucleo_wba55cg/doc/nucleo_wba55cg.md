@@ -39,7 +39,7 @@ platform with a wide choice of specialized shields.
 - On-board STLINK-V3MODS debugger/programmer with USB re-enumeration capability:
   mass storage, Virtual COM port, and debug port
 
-![Nucleo WBA55CG](../../../../_images/nucleowba55cg.jpg)
+![Nucleo WBA55CG](https://docs.zephyrproject.org/3.6.0/_images/nucleowba55cg.jpg)
 
 ## Hardware
 

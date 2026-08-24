@@ -126,4 +126,4 @@ Here is a list of all functions with links to the files they belong to:
 - DT\_FOREACH\_STATUS\_OKAY\_NODE() : [emul.h](drivers_2emul_8h.md#a6b4463d5ce37aa4a16f66e8981be6007)
 - dummy\_mcumgr\_add\_data() : [smp\_dummy.h](smp__dummy_8h.md#a8bf3d0c12669c2cf5370eb7e148f10c2)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

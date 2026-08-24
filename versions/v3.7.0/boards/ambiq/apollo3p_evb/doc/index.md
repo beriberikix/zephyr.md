@@ -12,7 +12,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 Apollo3 Blue Plus EVB is a board by Ambiq featuring their ultra-low power Apollo3 Blue Plus SoC.
 
-![Apollo3 Blue Plus EVB](../../../../_images/apollo3-blue-plus-soc-eval-board.jpg)
+![Apollo3 Blue Plus EVB](https://docs.zephyrproject.org/3.7.0/_images/apollo3-blue-plus-soc-eval-board.jpg)
 
 ## Hardware
 

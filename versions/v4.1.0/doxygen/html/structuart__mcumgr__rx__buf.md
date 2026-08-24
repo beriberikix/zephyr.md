@@ -54,4 +54,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/drivers/console/[uart\_mcumgr.h](uart__mcumgr_8h_source.md)
 
 - [uart\_mcumgr\_rx\_buf](structuart__mcumgr__rx__buf.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

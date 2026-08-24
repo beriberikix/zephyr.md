@@ -56,7 +56,7 @@ and the following devices:
 - BME680
 - HL7800
 
-![Pinnacle 100 DVK](../../../../_images/pinnacle_100_dvk.jpg)
+![Pinnacle 100 DVK](https://docs.zephyrproject.org/3.7.0/_images/pinnacle_100_dvk.jpg)
 
 Pinnacle 100 DVK (453-00010-K1)
 

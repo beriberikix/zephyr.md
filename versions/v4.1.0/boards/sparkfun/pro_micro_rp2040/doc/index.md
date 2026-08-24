@@ -29,7 +29,7 @@ to be flashed without any adapter, in a drag-and-drop manner.
 - On-board RGB LED
 - 1 Watchdog timer peripheral
 
-![SparkFun Pro Micro RP2040](../../../../_images/sparkfun_pro_micro_rp2040.jpg)
+![SparkFun Pro Micro RP2040](https://docs.zephyrproject.org/4.1.0/_images/sparkfun_pro_micro_rp2040.jpg)
 
 SparkFun Pro Micro RP2040 (Image courtesy of SparkFun)
 

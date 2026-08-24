@@ -19,7 +19,7 @@ with additional expansion ports around the Arduino footprint, along
 with a PMod/host interface port and MikroElektronika Click module
 site.
 
-![LPCXpresso55S06](../../../../_images/lpcxpress55s06.jpg)
+![LPCXpresso55S06](https://docs.zephyrproject.org/3.7.0/_images/lpcxpress55s06.jpg)
 
 ## Hardware
 

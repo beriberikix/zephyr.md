@@ -8,8 +8,8 @@ original_path: boards/ambiq/apollo4p_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/apollo4-plus-soc-eval-board.jpg](../../../../_images/apollo4-plus-soc-eval-board.jpg)
-](../../../../_images/apollo4-plus-soc-eval-board.jpg)
+[![../../../../_images/apollo4-plus-soc-eval-board.jpg](https://docs.zephyrproject.org/4.0.0/_images/apollo4-plus-soc-eval-board.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/apollo4-plus-soc-eval-board.jpg)
 
 Apollo4P EVB
 

@@ -479,4 +479,4 @@ ARCv2 auxiliary registers definitions.
 - [v2](dir_3e6dec649f819729d9137b059e4fc1a1.md)
 - [secureshield](dir_edc7d92000172b2927e4f8467a5c7046.md)
 - [arc\_secure.h](arc__secure_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

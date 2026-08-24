@@ -287,4 +287,4 @@ Here is a list of all functions with links to the files they belong to:
 - uuid\_to\_string() : [uuid.h](group__uuid.md#gaac4b9f9b243c9ecbeac94f0b4947ede1)
 - uvc\_set\_video\_dev() : [usbd\_uvc.h](group__usbd__uvc.md#gac4caf401c52d9a3755ace3e8dfa884a3)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

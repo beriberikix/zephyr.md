@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The PAN1782 Evaluation Board is a development tool for the PAN1782 module
 which is based on the nRF52833 chipset from Nordic Semiconductor.
 
-![PAN1782 Evaluation Board](../../../../_images/pan1782_evaluation_board.jpg)
+![PAN1782 Evaluation Board](https://docs.zephyrproject.org/3.7.0/_images/pan1782_evaluation_board.jpg)
 
 You can find more information about the PAN1782 module and the PAN1782
 evaluation board on the [product website](https://industry.panasonic.eu/products/devices/wireless-connectivity/bluetooth-low-energy-modules/pan1782-nrf52833) [[1]](#id1).

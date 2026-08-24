@@ -20,7 +20,7 @@ through I2C and GPIOs.
 
 This Zephyr port is running on the NXP LPC11U67 MCU.
 
-![Seagate FireCuda Gaming SSD](../../../../_images/firecuda-gaming-ssd.jpg)
+![Seagate FireCuda Gaming SSD](https://docs.zephyrproject.org/3.7.0/_images/firecuda-gaming-ssd.jpg)
 
 ## Hardware
 

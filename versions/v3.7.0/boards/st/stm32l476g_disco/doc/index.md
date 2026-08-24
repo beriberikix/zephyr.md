@@ -45,7 +45,7 @@ some highlights of the STM32L476G Discovery board:
       - External 5 V
       - CR2032 battery (not provided)
 
-![STM32L476G Discovery](../../../../_images/stm32l476g_disco.jpg)
+![STM32L476G Discovery](https://docs.zephyrproject.org/3.7.0/_images/stm32l476g_disco.jpg)
 
 More information about the board can be found at the [STM32L476G Discovery website](https://www.st.com/en/evaluation-tools/32l476gdiscovery.html).
 

@@ -97,4 +97,4 @@ parser\_state.h File Reference
 - [net](dir_d16b1c8acafe48878f854fbac26f332e.md)
 - [http](dir_12a17b6e7ad2c8cb36f68b2ff871e607.md)
 - [parser\_state.h](parser__state_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

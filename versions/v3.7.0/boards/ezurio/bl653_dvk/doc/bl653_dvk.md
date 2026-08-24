@@ -33,7 +33,7 @@ This development kit has the following features:
 - USB
 - WDT
 
-![BL653 Development Kit](../../../../_images/bl653_dvk.jpg)
+![BL653 Development Kit](https://docs.zephyrproject.org/3.7.0/_images/bl653_dvk.jpg)
 
 BL653 Development Kit Board
 

@@ -8,8 +8,8 @@ original_path: boards/waveshare/rp2040_plus/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rp2040_plus.webp](../../../../_images/rp2040_plus.webp)
-](../../../../_images/rp2040_plus.webp)
+[![../../../../_images/rp2040_plus.webp](https://docs.zephyrproject.org/4.2.0/_images/rp2040_plus.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rp2040_plus.webp)
 
 RP2040-Plus
 
@@ -110,7 +110,7 @@ The peripherals of the RP2040 SoC can be routed to various pins on the board.
 The configuration of these routes can be modified through DTS. Please refer to
 the datasheet to see the possible routings for each peripheral.
 
-![Waveshare RP2040-Plus pinout overview](../../../../_images/rp2040_plus-details.webp)
+![Waveshare RP2040-Plus pinout overview](https://docs.zephyrproject.org/4.2.0/_images/rp2040_plus-details.webp)
 
 #### Default Zephyr Peripheral Mapping:
 

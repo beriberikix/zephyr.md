@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The StarFive VisionFive 2 is a development board with a StarFive JH7110
 multi-core 64bit RISC-V SoC.
 
-![StarFive VisionFive 2 Board](../../../../_images/visionfive2.webp)
+![StarFive VisionFive 2 Board](https://docs.zephyrproject.org/3.7.0/_images/visionfive2.webp)
 
 ## Programming and debugging
 

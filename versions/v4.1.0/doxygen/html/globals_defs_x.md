@@ -359,4 +359,4 @@ Here is a list of all macros with links to the files they belong to:
 - XTREG\_GRP\_SPECIAL : [gdbstub.h](arch_2xtensa_2gdbstub_8h.md#a9cebc8c3e734ccb3997757018014b3e3)
 - XTREG\_GRP\_USER : [gdbstub.h](arch_2xtensa_2gdbstub_8h.md#a1b75ea49d7031c3d9b334dcf636727ca)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

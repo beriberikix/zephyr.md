@@ -63,4 +63,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/bluetooth/[a2dp-codec.h](a2dp-codec_8h_source.md)
 
 - [bt\_a2dp\_codec\_sbc\_params](structbt__a2dp__codec__sbc__params.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

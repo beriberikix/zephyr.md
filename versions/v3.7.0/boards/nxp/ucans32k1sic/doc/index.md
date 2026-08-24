@@ -17,7 +17,7 @@ board designed for both automotive and industrial applications. The UCANS32K1SIC
 provides two CAN SIC interfaces and is based on the 32-bit Arm Cortex-M4F
 [NXP S32K146](https://www.nxp.com/products/processors-and-microcontrollers/s32-automotive-platform/s32k-auto-general-purpose-mcus/s32k1-microcontrollers-for-automotive-general-purpose:S32K1) [[2]](#id7) microcontroller.
 
-![NXP UCANS32K1SIC (TOP)](../../../../_images/ucans32k1sic_top.webp)
+![NXP UCANS32K1SIC (TOP)](https://docs.zephyrproject.org/3.7.0/_images/ucans32k1sic_top.webp)
 
 ## Hardware
 

@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32_devkitc_wroom/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32_devkitc_wroom.jpg](../../../../_images/esp32_devkitc_wroom.jpg)
-](../../../../_images/esp32_devkitc_wroom.jpg)
+[![../../../../_images/esp32_devkitc_wroom.jpg](https://docs.zephyrproject.org/4.1.0/_images/esp32_devkitc_wroom.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/esp32_devkitc_wroom.jpg)
 
 ESP32-DevKitC-WROOM
 

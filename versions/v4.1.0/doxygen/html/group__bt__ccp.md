@@ -39,4 +39,4 @@ Call Control Profile (CCP) provides procedures to initiate and control calls. It
 
 The profile is not limited to carrier phone calls and can be used with common applications like Discord and Teams.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

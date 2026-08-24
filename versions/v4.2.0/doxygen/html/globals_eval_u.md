@@ -375,4 +375,4 @@ Here is a list of all enum values with links to the files they belong to:
 - USBPD\_CC\_PIN\_1 : [usbc\_pd.h](group__usb__power__delivery.md#ggaee2fe2128557939404c62e8104269bbfa59a0ed05c4e99acebaa11080dbbe7694)
 - USBPD\_CC\_PIN\_2 : [usbc\_pd.h](group__usb__power__delivery.md#ggaee2fe2128557939404c62e8104269bbfa53a0a6ba0212b9cbb407522e7f35648e)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

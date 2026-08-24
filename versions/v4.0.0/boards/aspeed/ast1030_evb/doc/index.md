@@ -8,8 +8,8 @@ original_path: boards/aspeed/ast1030_evb/doc/index.html
 
 Board Overview
 
-[![../../../../_images/ast1030_evb.jpg](../../../../_images/ast1030_evb.jpg)
-](../../../../_images/ast1030_evb.jpg)
+[![../../../../_images/ast1030_evb.jpg](https://docs.zephyrproject.org/4.0.0/_images/ast1030_evb.jpg)
+](https://docs.zephyrproject.org/4.0.0/_images/ast1030_evb.jpg)
 
 AST1030\_EVB
 

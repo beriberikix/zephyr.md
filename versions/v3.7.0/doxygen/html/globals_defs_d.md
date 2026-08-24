@@ -991,4 +991,4 @@ Here is a list of all macros with links to the files they belong to:
 - DTE\_OFFSET : [segmentation.h](segmentation_8h.md#a1539f29629508325e28796d3226630cc)
 - DW\_GPIO\_DEBOUNCE : [snps-designware-gpio.h](snps-designware-gpio_8h.md#a696fec562551fe17259140fe16cdcc1d)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

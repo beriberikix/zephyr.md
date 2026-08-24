@@ -8,8 +8,8 @@ original_path: boards/st/stm32u083c_dk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/stm32u083c_dk.jpg](../../../../_images/stm32u083c_dk.jpg)
-](../../../../_images/stm32u083c_dk.jpg)
+[![../../../../_images/stm32u083c_dk.jpg](https://docs.zephyrproject.org/4.1.0/_images/stm32u083c_dk.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/stm32u083c_dk.jpg)
 
 STM32U083C-DK
 

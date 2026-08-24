@@ -75,4 +75,4 @@ Returns
 :   -ENOTSUP if no backend API or if the set\_data function isn't implemented
 :   -ERANGE if the destination address is out of range.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

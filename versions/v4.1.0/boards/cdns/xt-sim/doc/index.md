@@ -8,8 +8,8 @@ original_path: boards/cdns/xt-sim/doc/index.html
 
 Board Overview
 
-[![../../../../_images/xt-sim.jpg](../../../../_images/xt-sim.jpg)
-](../../../../_images/xt-sim.jpg)
+[![../../../../_images/xt-sim.jpg](https://docs.zephyrproject.org/4.1.0/_images/xt-sim.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/xt-sim.jpg)
 
 Xtensa simulator
 

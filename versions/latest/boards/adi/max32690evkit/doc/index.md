@@ -8,8 +8,8 @@ original_path: boards/adi/max32690evkit/doc/index.html
 
 Board Overview
 
-[![../../../../_images/max32690evkit.jpg](../../../../_images/max32690evkit.jpg)
-](../../../../_images/max32690evkit.jpg)
+[![../../../../_images/max32690evkit.jpg](https://docs.zephyrproject.org/4.2.0/_images/max32690evkit.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/max32690evkit.jpg)
 
 MAX32690EVKIT
 
@@ -40,8 +40,8 @@ industrial sensors/networks, internet of things (IoT), and asset tracking.
 
 The Zephyr port is running on the MAX32690 MCU.
 
-![MAX32690 EVKIT Front](../../../../_images/max32690evkit1.jpg)
-![MAX32690 Back](../../../../_images/max32690evkit_img2.jpg)
+![MAX32690 EVKIT Front](https://docs.zephyrproject.org/4.2.0/_images/max32690evkit1.jpg)
+![MAX32690 Back](https://docs.zephyrproject.org/4.2.0/_images/max32690evkit_img2.jpg)
 
 ## Hardware
 

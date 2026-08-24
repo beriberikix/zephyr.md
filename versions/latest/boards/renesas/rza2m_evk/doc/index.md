@@ -8,8 +8,8 @@ original_path: boards/renesas/rza2m_evk/doc/index.html
 
 Board Overview
 
-[![../../../../_images/rza2m_evkit.webp](../../../../_images/rza2m_evkit.webp)
-](../../../../_images/rza2m_evkit.webp)
+[![../../../../_images/rza2m_evkit.webp](https://docs.zephyrproject.org/4.2.0/_images/rza2m_evkit.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rza2m_evkit.webp)
 
 RZ/A2M Evaluation Kit
 
@@ -50,8 +50,8 @@ The RZ/A2M Evaluation Board Kit is a best evaluation board kit to evaluate RZ/A2
 
 The Renesas RZ/A2M MPU documentation can be found at [RZ/A2M Group Website](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rz-mpus/rza2m-image-processing-rtos-mpu-drp-and-4mb-chip-ram) [[1]](#id3)
 
-[![RZ/A2M group feature](../../../../_images/rza2m_block_diagram.webp)
-](../../../../_images/rza2m_block_diagram.webp)
+[![RZ/A2M group feature](https://docs.zephyrproject.org/4.2.0/_images/rza2m_block_diagram.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/rza2m_block_diagram.webp)
 
 RZ/A2M block diagram (Credit: Renesas Electronics Corporation)
 

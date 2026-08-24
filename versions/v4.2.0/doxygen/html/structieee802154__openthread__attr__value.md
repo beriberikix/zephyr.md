@@ -72,4 +72,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[ieee802154\_radio\_openthread.h](ieee802154__radio__openthread_8h_source.md)
 
 - [ieee802154\_openthread\_attr\_value](structieee802154__openthread__attr__value.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

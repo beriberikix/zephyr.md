@@ -8,8 +8,8 @@ original_path: boards/quicklogic/quick_feather/doc/index.html
 
 Board Overview
 
-[![../../../../_images/feather-board.jpg](../../../../_images/feather-board.jpg)
-](../../../../_images/feather-board.jpg)
+[![../../../../_images/feather-board.jpg](https://docs.zephyrproject.org/4.1.0/_images/feather-board.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/feather-board.jpg)
 
 QuickFeather
 

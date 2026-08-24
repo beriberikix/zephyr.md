@@ -60,7 +60,7 @@ RA MCU
 
 - CAN FD (3-pin header)
 
-![RA4E2 Evaluation Kit](../../../../_images/ek_ra4e2.webp)
+![RA4E2 Evaluation Kit](https://docs.zephyrproject.org/4.0.0/_images/ek_ra4e2.webp)
 
 EK-RA4E2 Board Functional Area Definitions (Credit: Renesas Electronics Corporation)
 
@@ -68,8 +68,8 @@ EK-RA4E2 Board Functional Area Definitions (Credit: Renesas Electronics Corporat
 
 Detail Hardware feature for the RA4E2 MCU group can be found at [RA4E2 Group User’s Manual Hardware](https://www.renesas.com/us/en/document/mah/ra4e2-group-users-manual-hardware)
 
-[![RA4E2 MCU group feature](../../../../_images/ra4e2_block_diagram.webp)
-](../../../../_images/ra4e2_block_diagram.webp)
+[![RA4E2 MCU group feature](https://docs.zephyrproject.org/4.0.0/_images/ra4e2_block_diagram.webp)
+](https://docs.zephyrproject.org/4.0.0/_images/ra4e2_block_diagram.webp)
 
 RA4E2 Block diagram (Credit: Renesas Electronics Corporation)
 

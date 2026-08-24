@@ -8,8 +8,8 @@ original_path: boards/variscite/imx8mp_var_som/doc/index.html
 
 Board Overview
 
-[![../../../../_images/imx8mp_var_som.webp](../../../../_images/imx8mp_var_som.webp)
-](../../../../_images/imx8mp_var_som.webp)
+[![../../../../_images/imx8mp_var_som.webp](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_som.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/imx8mp_var_som.webp)
 
 VAR-SOM-MX8M-PLUS
 

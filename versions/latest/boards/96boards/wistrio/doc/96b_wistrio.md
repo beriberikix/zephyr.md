@@ -13,7 +13,7 @@ chipset integrating SX1276 LoRaWAN Modem, STM32L151CB-A MCU and GPS module.
 Zephyr applications use the 96b\_wistrio configuration to run on these
 boards.
 
-![96Boards WisTrio](../../../../_images/96b-wistrio.jpg)
+![96Boards WisTrio](https://docs.zephyrproject.org/4.2.0/_images/96b-wistrio.jpg)
 
 96Boards WisTrio
 

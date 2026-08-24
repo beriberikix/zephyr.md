@@ -18,7 +18,7 @@ This is the 48-pin variant of the STM32F401x series,
 see [STM32F401x reference manual](https://www.st.com/resource/en/reference_manual/dm00096844.pdf) [[7]](#id13). More info about the board available
 [here](https://stm32-base.org/boards/STM32F401CEU6-WeAct-Black-Pill-V3.0.html) [[4]](#id7) and on [WeAct Github](https://github.com/WeActStudio/WeActStudio.MiniSTM32F4x1) [[3]](#id5).
 
-![Black Pill V3.0+](../../../../_images/blackpill-v31.jpg)
+![Black Pill V3.0+](https://docs.zephyrproject.org/3.7.0/_images/blackpill-v31.jpg)
 
 ## Hardware
 
@@ -69,7 +69,7 @@ The default configuration can be found in
 
 #### Available pins:
 
-![Black Pill V3.0+ Pinout](../../../../_images/Blackpill_Pinout1.jpg)
+![Black Pill V3.0+ Pinout](https://docs.zephyrproject.org/3.7.0/_images/Blackpill_Pinout1.jpg)
 
 #### Default Zephyr Peripheral Mapping:
 

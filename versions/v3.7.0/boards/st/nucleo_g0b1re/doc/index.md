@@ -33,7 +33,7 @@ some highlights of the Nucleo G0B1RE board:
 - Two push-buttons: USER and RESET
 - 32.768 kHz crystal oscillator
 
-![Nucleo G0B1RE](../../../../_images/nucleo_g0b1re.jpg)
+![Nucleo G0B1RE](https://docs.zephyrproject.org/3.7.0/_images/nucleo_g0b1re.jpg)
 
 More information about the board can be found at the [Nucleo G0B1RE website](https://www.st.com/en/evaluation-tools/nucleo-g0b1re.html) [[1]](#id1).
 

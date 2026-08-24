@@ -221,4 +221,4 @@ Here is a list of all functions with links to the files they belong to:
 - ztress\_report() : [ztress.h](group__ztest__ztress.md#gaf4db2092eee17d863c9810333ba4c870)
 - ztress\_set\_timeout() : [ztress.h](group__ztest__ztress.md#ga5b3069bb2aa35ddc64c46c18d2e30091)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

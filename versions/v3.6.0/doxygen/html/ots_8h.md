@@ -224,4 +224,4 @@ ots.h File Reference
 - [bluetooth](dir_1e7161d1e31b4a807184ef42c14f2a24.md)
 - [services](dir_e4028deab123aca136adb6f86dc413ad.md)
 - [ots.h](ots_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

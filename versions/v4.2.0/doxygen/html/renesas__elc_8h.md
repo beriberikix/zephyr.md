@@ -106,4 +106,4 @@ Public APIs for the Renesas ELC driver.
 - [interconn](dir_433d0485cb495c15eb8c324a866644da.md)
 - [renesas\_elc](dir_41f42e06f91d3fe7cdafa18f2f825332.md)
 - [renesas\_elc.h](renesas__elc_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

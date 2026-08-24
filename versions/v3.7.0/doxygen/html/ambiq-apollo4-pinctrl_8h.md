@@ -6675,4 +6675,4 @@ alt\_func << [APOLLO4\_ALT\_FUNC\_POS](#aad69bd7372283ab49bae2478e2695832))
 - [dt-bindings](dir_2e4d86f9d28357ce2f99093c0845149c.md)
 - [pinctrl](dir_2c6c4fbd167577104b7f1b7148586168.md)
 - [ambiq-apollo4-pinctrl.h](ambiq-apollo4-pinctrl_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

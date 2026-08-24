@@ -25,10 +25,10 @@ Download and install [Python 3](https://www.python.org/downloads/).
 Setup was tested with versions >=3.8. Let the installer add the Python
 installation directory to the PATH and disable the path length limitation.
 
-[![../../../_images/install_python1.png](../../../_images/install_python1.png)
-](../../../_images/install_python1.png)
-[![../../../_images/install_python2.png](../../../_images/install_python2.png)
-](../../../_images/install_python2.png)
+[![../../../_images/install_python1.png](https://docs.zephyrproject.org/4.0.0/_images/install_python1.png)
+](https://docs.zephyrproject.org/4.0.0/_images/install_python1.png)
+[![../../../_images/install_python2.png](https://docs.zephyrproject.org/4.0.0/_images/install_python2.png)
+](https://docs.zephyrproject.org/4.0.0/_images/install_python2.png)
 
 ## [Install Git](#id3)
 
@@ -36,8 +36,8 @@ Download and install [Git](https://git-scm.com/downloads).
 During installation enable option: Enable experimental support for pseudo
 consoles. We will use Git Bash as Windows terminal.
 
-[![../../../_images/install_git.png](../../../_images/install_git.png)
-](../../../_images/install_git.png)
+[![../../../_images/install_git.png](https://docs.zephyrproject.org/4.0.0/_images/install_git.png)
+](https://docs.zephyrproject.org/4.0.0/_images/install_git.png)
 
 ## [Install PTS 8](#id4)
 
@@ -45,8 +45,8 @@ Install latest PTS from [https://www.bluetooth.org](https://www.bluetooth.org). 
 drivers from installation directory
 “C:/Program Files (x86)/Bluetooth SIG/Bluetooth PTS/PTS Driver/win64/CSRBlueCoreUSB.inf”
 
-[![../../../_images/install_pts_drivers.png](../../../_images/install_pts_drivers.png)
-](../../../_images/install_pts_drivers.png)
+[![../../../_images/install_pts_drivers.png](https://docs.zephyrproject.org/4.0.0/_images/install_pts_drivers.png)
+](https://docs.zephyrproject.org/4.0.0/_images/install_pts_drivers.png)
 
 Note
 
@@ -63,22 +63,22 @@ On Windows download latest nrftools (version >= 10.12.1) from site
 [https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools/Download](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Command-Line-Tools/Download)
 and run default install.
 
-[![../../../_images/download_nrftools_windows.png](../../../_images/download_nrftools_windows.png)
-](../../../_images/download_nrftools_windows.png)
+[![../../../_images/download_nrftools_windows.png](https://docs.zephyrproject.org/4.0.0/_images/download_nrftools_windows.png)
+](https://docs.zephyrproject.org/4.0.0/_images/download_nrftools_windows.png)
 
 ## [Connect devices](#id7)
 
-[![../../../_images/devices_1.png](../../../_images/devices_1.png)
-](../../../_images/devices_1.png)
-[![../../../_images/devices_2.png](../../../_images/devices_2.png)
-](../../../_images/devices_2.png)
+[![../../../_images/devices_1.png](https://docs.zephyrproject.org/4.0.0/_images/devices_1.png)
+](https://docs.zephyrproject.org/4.0.0/_images/devices_1.png)
+[![../../../_images/devices_2.png](https://docs.zephyrproject.org/4.0.0/_images/devices_2.png)
+](https://docs.zephyrproject.org/4.0.0/_images/devices_2.png)
 
 ## [Flash board](#id8)
 
 In Device Manager find COM port of your nrf board. In my case it is COM3.
 
-[![../../../_images/device_manager.png](../../../_images/device_manager.png)
-](../../../_images/device_manager.png)
+[![../../../_images/device_manager.png](https://docs.zephyrproject.org/4.0.0/_images/device_manager.png)
+](https://docs.zephyrproject.org/4.0.0/_images/device_manager.png)
 
 In Git Bash, go to zephyrproject
 
@@ -134,13 +134,13 @@ pip3 install --user -r autoptsclient_requirements.txt
 Download and extract socat.exe from [https://sourceforge.net/projects/unix-utils/files/socat/1.7.3.2/](https://sourceforge.net/projects/unix-utils/files/socat/1.7.3.2/)
 into folder ~/socat-1.7.3.2-1-x86\_64/.
 
-[![../../../_images/download_socat.png](../../../_images/download_socat.png)
-](../../../_images/download_socat.png)
+[![../../../_images/download_socat.png](https://docs.zephyrproject.org/4.0.0/_images/download_socat.png)
+](https://docs.zephyrproject.org/4.0.0/_images/download_socat.png)
 
 Add path to directory of socat.exe to PATH:
 
-[![../../../_images/add_socat_to_path.png](../../../_images/add_socat_to_path.png)
-](../../../_images/add_socat_to_path.png)
+[![../../../_images/add_socat_to_path.png](https://docs.zephyrproject.org/4.0.0/_images/add_socat_to_path.png)
+](https://docs.zephyrproject.org/4.0.0/_images/add_socat_to_path.png)
 
 ## [Running AutoPTS](#id11)
 
@@ -150,8 +150,8 @@ Server and client by default will run on localhost address. Run server:
 python ./autoptsserver.py -S 65000
 ```
 
-[![../../../_images/autoptsserver_run.png](../../../_images/autoptsserver_run.png)
-](../../../_images/autoptsserver_run.png)
+[![../../../_images/autoptsserver_run.png](https://docs.zephyrproject.org/4.0.0/_images/autoptsserver_run.png)
+](https://docs.zephyrproject.org/4.0.0/_images/autoptsserver_run.png)
 
 Note
 
@@ -168,13 +168,13 @@ Run client:
 python ./autoptsclient-zephyr.py zephyr-master ~/zephyrproject/build/zephyr/zephyr.elf -t COM3 -b nrf52 -S 65000 -C 65001
 ```
 
-[![../../../_images/autoptsclient_run.png](../../../_images/autoptsclient_run.png)
-](../../../_images/autoptsclient_run.png)
+[![../../../_images/autoptsclient_run.png](https://docs.zephyrproject.org/4.0.0/_images/autoptsclient_run.png)
+](https://docs.zephyrproject.org/4.0.0/_images/autoptsclient_run.png)
 
 At the first run, when Windows asks, enable connection through firewall:
 
-[![../../../_images/allow_firewall.png](../../../_images/allow_firewall.png)
-](../../../_images/allow_firewall.png)
+[![../../../_images/allow_firewall.png](https://docs.zephyrproject.org/4.0.0/_images/allow_firewall.png)
+](https://docs.zephyrproject.org/4.0.0/_images/allow_firewall.png)
 
 ## [Troubleshooting](#id12)
 

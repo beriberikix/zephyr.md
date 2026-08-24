@@ -743,4 +743,4 @@ nios2.h File Reference
 - [arch](dir_1a8d0ab52d1a59023360721fe35b1360.md)
 - [nios2](dir_bcfa142ae77c1ee311b7ef8e30037d11.md)
 - [nios2.h](nios2_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

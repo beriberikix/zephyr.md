@@ -8,8 +8,8 @@ original_path: boards/espressif/esp32c3_rust/doc/index.html
 
 Board Overview
 
-[![../../../../_images/esp32c3_rust.webp](../../../../_images/esp32c3_rust.webp)
-](../../../../_images/esp32c3_rust.webp)
+[![../../../../_images/esp32c3_rust.webp](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_rust.webp)
+](https://docs.zephyrproject.org/4.2.0/_images/esp32c3_rust.webp)
 
 ESP32-C3-DevKit-RUST
 

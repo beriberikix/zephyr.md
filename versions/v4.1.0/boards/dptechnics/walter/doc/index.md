@@ -8,8 +8,8 @@ original_path: boards/dptechnics/walter/doc/index.html
 
 Board Overview
 
-[![../../../../_images/walter.webp](../../../../_images/walter.webp)
-](../../../../_images/walter.webp)
+[![../../../../_images/walter.webp](https://docs.zephyrproject.org/4.1.0/_images/walter.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/walter.webp)
 
 Walter
 

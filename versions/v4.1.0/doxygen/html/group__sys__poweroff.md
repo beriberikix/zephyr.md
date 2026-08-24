@@ -39,4 +39,4 @@ This function will perform an immediate power off of the system. It is the respo
 
 `CONFIG_POWEROFF` needs to be enabled to use this API.
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.1.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

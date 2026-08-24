@@ -42,7 +42,7 @@ nRF5340 SoC provides support for the following devices:
 - USB
 - WDT
 
-![nRF5340 DK](../../../../_images/nrf5340dk.jpg)
+![nRF5340 DK](https://docs.zephyrproject.org/4.0.0/_images/nrf5340dk.jpg)
 
 nRF5340 DK (Credit: Nordic Semiconductor)
 

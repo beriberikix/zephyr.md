@@ -372,4 +372,4 @@ Parameters
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [sip\_svc](dir_be59f4c2e7724c8d2ef47362c82e9052.md)
 - [sip\_svc\_driver.h](sip__svc__driver_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

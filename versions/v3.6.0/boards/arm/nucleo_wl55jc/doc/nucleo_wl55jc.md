@@ -46,7 +46,7 @@ power consumption, and features.
   and many other proprietary protocols
 - Fully open hardware platform
 
-![Nucleo WL55JC](../../../../_images/nucleo_wl55jc.jpg)
+![Nucleo WL55JC](https://docs.zephyrproject.org/3.6.0/_images/nucleo_wl55jc.jpg)
 
 More information about the board can be found at the [Nucleo WL55JC website](https://www.st.com/en/evaluation-tools/nucleo-wl55jc.html).
 

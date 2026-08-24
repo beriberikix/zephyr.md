@@ -699,4 +699,4 @@ Here is a list of all enum values with links to the files they belong to:
 - STP\_DECODER\_NULL : [mipi\_stp\_decoder.h](group__mipi__stp__decoder__apis.md#gga6e1f4b66b14ab44e549292f97046a50da062e36cbfa898f544fea1e5ddfed205e)
 - STP\_DECODER\_VERSION : [mipi\_stp\_decoder.h](group__mipi__stp__decoder__apis.md#gga6e1f4b66b14ab44e549292f97046a50daf8b791424b5f0e281c64e2258b19129f)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

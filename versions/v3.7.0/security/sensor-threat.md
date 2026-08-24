@@ -21,7 +21,7 @@ relays this sensor data to this service. The cloud service is also able
 to send configuration data to the device, as well as software update
 images. A general diagram can be seen in Figure 1:
 
-![../_images/sensor-model.svg](../_images/sensor-model.svg)
+![../_images/sensor-model.svg](https://docs.zephyrproject.org/3.7.0/_images/sensor-model.svg)
 
 Figure 1. Sensor General Diagram
 

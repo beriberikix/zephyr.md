@@ -744,4 +744,4 @@ IF\_ENABLED(CONFIG\_ARM\_MPU\_PXN, (.pxn = [PRIV\_EXEC\_NEVER](#a9c5f045bd671e11
 - [arm](dir_e988120edb98a906db9f63ecbd85c0b4.md)
 - [mpu](dir_56106ba8e9de679e2771f91f794159ff.md)
 - [arm\_mpu\_v8.h](arm__mpu__v8_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

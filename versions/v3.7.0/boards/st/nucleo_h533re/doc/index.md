@@ -43,7 +43,7 @@ Here are some highlights of the Nucleo H533RE board:
 
 More information about the board can be found at the [NUCLEO\_H533RE website](https://www.st.com/en/evaluation-tools/nucleo-h533re).
 
-![NUCLEO H533RE](../../../../_images/nucleo_h533re.jpg)
+![NUCLEO H533RE](https://docs.zephyrproject.org/3.7.0/_images/nucleo_h533re.jpg)
 
 ## Hardware
 

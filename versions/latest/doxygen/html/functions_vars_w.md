@@ -118,4 +118,4 @@ Here is a list of all variables with links to the structures/unions they belong 
 - wTransferSize : [dfu\_runtime\_descriptor](structdfu__runtime__descriptor.md#a86312a99ed7c89eb027ca3e35b7b32e5), [usb\_dfu\_descriptor](structusb__dfu__descriptor.md#a6f28ae6870039d8ba994a2aed1d6b8b9)
 - wValue : [cdc\_acm\_notification](structcdc__acm__notification.md#a3bf290bc6e851331e93bedf49ae5dbe0), [usb\_setup\_packet](structusb__setup__packet.md#a619fbc1b9b6452f4394da713bdbc6a89)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -16,7 +16,7 @@ The ESP32S3-LUATOS-CORE development board is a compact board based on Espressif 
 The board comes equipped with a 2.4GHz antenna and supports both Wi-Fi and Bluetooth functionalities.
 For more information, check [ESP32S3-LUATOS-CORE](https://wiki.luatos.com/chips/esp32s3/board.html) (chinese)
 
-![esp32s3_luatos_core](../../../../_images/esp32s3_luatos_core.jpg)
+![esp32s3_luatos_core](https://docs.zephyrproject.org/3.6.0/_images/esp32s3_luatos_core.jpg)
 
 ## Hardware
 
@@ -80,7 +80,7 @@ Security:
 
 For more information, check the datasheet at [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf).
 
-![esp32s3_luatos_core_pinout](../../../../_images/esp32s3_luatos_core_pinout.jpg)
+![esp32s3_luatos_core_pinout](https://docs.zephyrproject.org/3.6.0/_images/esp32s3_luatos_core_pinout.jpg)
 
 ### Supported Features
 

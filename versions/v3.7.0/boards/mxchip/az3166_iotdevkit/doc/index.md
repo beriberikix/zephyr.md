@@ -17,7 +17,7 @@ projects. It’s an all-in-one board powered by an Arm Cortex-M4 processor. On-b
 include an OLED screen, headphone output, stereo microphone and abundant sensors like humidity &
 temperature, pressure, motion (accelerometer & gyroscope) and magnetometer.
 
-![AZ3166 MXChip IoT DevKit](../../../../_images/az3166-iotdevkit.webp)
+![AZ3166 MXChip IoT DevKit](https://docs.zephyrproject.org/3.7.0/_images/az3166-iotdevkit.webp)
 
 AZ3166 MXChip IoT DevKit (Credit: MXChip)
 

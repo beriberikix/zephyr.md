@@ -17,7 +17,7 @@ radio boards delivered with [SLWSTK6020B Bluetooth SoC Starter Kit](https://www.
 contains a Wireless System-On-Chip from the EFR32BG13 family built on an
 ARM Cortex®-M4F processor with excellent low power capabilities.
 
-![SLWRB4104A Blue Gecko Bluetooth® Low Energy Radio Board](../../../../../_images/efr32bg13-slwrb4104a.jpg)
+![SLWRB4104A Blue Gecko Bluetooth® Low Energy Radio Board](https://docs.zephyrproject.org/3.7.0/_images/efr32bg13-slwrb4104a.jpg)
 
 SLWRB4104A (image courtesy of Silicon Labs)
 

@@ -1516,4 +1516,4 @@ Change firewall region owner.
 - [firmware](dir_e97f19a49725d52aae6eece65b856a75.md)
 - [tisci](dir_32233e7c9e492e9cba0b091ed92f7703.md)
 - [tisci.h](tisci_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -40,7 +40,7 @@ and high-speed connectivity features. Important board features include:
 - USB OTG FS with Micro-AB connectors
 - Ethernet connector compliant with IEEE-802.3-2002
 
-![STM32F746G-DISCO](../../../../_images/stm32f746g_disco.jpg)
+![STM32F746G-DISCO](https://docs.zephyrproject.org/3.7.0/_images/stm32f746g_disco.jpg)
 
 More information about the board can be found at the [32F746G-DISCO website](https://www.st.com/en/evaluation-tools/32f746gdiscovery.html).
 

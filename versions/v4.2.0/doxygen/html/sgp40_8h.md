@@ -46,4 +46,4 @@ This exposes two attributes for the SGP40 which can be used for setting the on-c
 - [drivers](dir_49c63ef737d38af1498bd111c90a6556.md)
 - [sensor](dir_b6423b3a8fc1c9278ff19cba182cfe6d.md)
 - [sgp40.h](sgp40_8h.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -8,8 +8,8 @@ original_path: boards/arduino/nano_33_ble/doc/index.html
 
 Board Overview
 
-[![../../../../_images/arduino_nano_33_ble_sense.jpg](../../../../_images/arduino_nano_33_ble_sense.jpg)
-](../../../../_images/arduino_nano_33_ble_sense.jpg)
+[![../../../../_images/arduino_nano_33_ble_sense.jpg](https://docs.zephyrproject.org/4.2.0/_images/arduino_nano_33_ble_sense.jpg)
+](https://docs.zephyrproject.org/4.2.0/_images/arduino_nano_33_ble_sense.jpg)
 
 Arduino Nano 33 BLE (Sense)
 
@@ -250,7 +250,7 @@ shown in the picture). GND, 3.3V, and RESET are also available in the DIP
 connector, therefore it may be easier to connect using the DIP connector
 instead of soldering to them.
 
-![Nano 33 BLE SWD connecting](../../../../_images/nano_33_ble_swd.jpg)
+![Nano 33 BLE SWD connecting](https://docs.zephyrproject.org/4.2.0/_images/nano_33_ble_swd.jpg)
 
 After connecting the debug adapter, you can debug it the usual way.
 Type the following command will start debugging.

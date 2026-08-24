@@ -221,4 +221,4 @@ Here is a list of all macros with links to the files they belong to:
 - OUTPUT\_TERMINAL\_SPEAKER : [audio.h](dt-bindings_2usb_2audio_8h.md#a5b36095777c3220b1cc81759b8144381)
 - OUTPUT\_TERMINAL\_UNDEFINED : [audio.h](dt-bindings_2usb_2audio_8h.md#a394f4baecd7d0d7a1165746f81028369)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.7.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

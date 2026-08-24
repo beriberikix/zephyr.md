@@ -375,4 +375,4 @@ Here is a list of all functions, variables, defines, enums, and typedefs with li
 - ZTRESS\_THREAD : [ztress.h](group__ztest__ztress.md#gaed561641541e8ced6866f2f1227f21c0)
 - ZTRESS\_TIMER : [ztress.h](group__ztest__ztress.md#gabab05b8db44a7024ce23cb34bf999e42)
 
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/3.6.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

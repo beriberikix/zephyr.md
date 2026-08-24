@@ -282,7 +282,7 @@ files.
 
 External projects that build upon Zephyr functionality and wish to refer to
 Zephyr documentation in Doxygen (through the use of @ref), can utilize the
-tag file exported at [zephyr.tag](../../doxygen/html/zephyr.tag)
+tag file exported at [zephyr.tag](https://docs.zephyrproject.org/4.1.0/doxygen/html/zephyr.tag)
 
 Once downloaded, the tag file can be used in a custom `doxyfile.in` as follows:
 

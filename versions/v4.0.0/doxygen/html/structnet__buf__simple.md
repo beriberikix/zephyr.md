@@ -71,4 +71,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/[net\_buf.h](net__buf_8h_source.md)
 
 - [net\_buf\_simple](structnet__buf__simple.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.0.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

@@ -63,4 +63,4 @@ The documentation for this struct was generated from the following file:
 - zephyr/net/[ieee802154\_ie.h](ieee802154__ie_8h_source.md)
 
 - [ieee802154\_header\_ie\_rendezvous\_time](structieee802154__header__ie__rendezvous__time.md)
-- Generated on  for Zephyr API Documentation by [![doxygen](doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1
+- Generated on  for Zephyr API Documentation by [![doxygen](https://docs.zephyrproject.org/4.2.0/doxygen/html/doxygen.svg)](https://www.doxygen.org/index.html) 1.16.1

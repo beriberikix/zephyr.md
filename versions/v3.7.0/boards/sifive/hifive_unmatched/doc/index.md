@@ -15,7 +15,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The HiFive Unmatched is a development board with a SiFive FU740-C000
 multi-core 64bit RISC-V SoC.
 
-![SiFive HiFive Unmatched board](../../../../_images/hifive_unmatched.jpg)
+![SiFive HiFive Unmatched board](https://docs.zephyrproject.org/3.7.0/_images/hifive_unmatched.jpg)
 
 ## Programming and debugging
 

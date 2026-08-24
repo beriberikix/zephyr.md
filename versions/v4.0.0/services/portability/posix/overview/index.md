@@ -11,7 +11,7 @@ The Portable Operating System Interface (POSIX) is a family of standards specifi
 implements a subset of the standard POSIX API specified by [IEEE 1003.1-2017](https://standards.ieee.org/ieee/1003.1/7101/) (also known as
 POSIX-1.2017).
 
-![POSIX Support in Zephyr](../../../../_images/posix.svg)
+![POSIX Support in Zephyr](https://docs.zephyrproject.org/4.0.0/_images/posix.svg)
 
 POSIX support in Zephyr
 
@@ -54,8 +54,8 @@ For that reason, POSIX defined the following [Application Environment Profiles (
 as part of [IEEE 1003.13-2003](https://standards.ieee.org/ieee/1003.13/3322/) (also known as POSIX.13-2003). Each AEP adds incrementally more
 features over the required [POSIX System Interfaces](../conformance/index.md#posix-system-interfaces).
 
-[![POSIX Application Environment Profiles (AEP)](../../../../_images/aep.svg)
-](../../../../_images/aep.svg)
+[![POSIX Application Environment Profiles (AEP)](https://docs.zephyrproject.org/4.0.0/_images/aep.svg)
+](https://docs.zephyrproject.org/4.0.0/_images/aep.svg)
 
 POSIX Application Environment Profiles (AEP)
 

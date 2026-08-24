@@ -8,8 +8,8 @@ original_path: boards/gardena/sgrm/doc/index.html
 
 Board Overview
 
-[![../../../../_images/sgrm.webp](../../../../_images/sgrm.webp)
-](../../../../_images/sgrm.webp)
+[![../../../../_images/sgrm.webp](https://docs.zephyrproject.org/4.1.0/_images/sgrm.webp)
+](https://docs.zephyrproject.org/4.1.0/_images/sgrm.webp)
 
 Smart Garden Radio Module
 

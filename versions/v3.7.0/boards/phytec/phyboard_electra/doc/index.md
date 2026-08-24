@@ -23,7 +23,7 @@ The board configuration also enables support for the semihosting debugging conso
 
 See the [PHYTEC AM64x Product Page](https://www.phytec.com/product/phycore-am64x/) for details.
 
-![phyBOARD-Electra AM64x](../../../../_images/phyCORE-AM64x_Electra_frontside.webp)
+![phyBOARD-Electra AM64x](https://docs.zephyrproject.org/3.7.0/_images/phyCORE-AM64x_Electra_frontside.webp)
 
 PHYTEC phyBOARD-Electra with the phyCORE-AM64x SoM
 

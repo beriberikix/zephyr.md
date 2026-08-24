@@ -8,8 +8,8 @@ original_path: boards/nxp/mr_canhubk3/doc/index.html
 
 Board Overview
 
-[![../../../../_images/mr_canhubk3_top.jpg](../../../../_images/mr_canhubk3_top.jpg)
-](../../../../_images/mr_canhubk3_top.jpg)
+[![../../../../_images/mr_canhubk3_top.jpg](https://docs.zephyrproject.org/4.1.0/_images/mr_canhubk3_top.jpg)
+](https://docs.zephyrproject.org/4.1.0/_images/mr_canhubk3_top.jpg)
 
 MR-CANHUBK3
 

@@ -33,7 +33,7 @@ the following devices:
 - WDT
 - COUNTER
 
-![Electronut Labs Papyr](../../../../_images/nrf52840_papyr.jpg)
+![Electronut Labs Papyr](https://docs.zephyrproject.org/3.7.0/_images/nrf52840_papyr.jpg)
 
 Electronut Labs Papyr (Credit: Electronut Labs)
 
