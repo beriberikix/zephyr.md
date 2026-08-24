@@ -11,7 +11,7 @@ import argparse
 import re
 import sys
 from bisect import bisect_right
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Iterator, NamedTuple
 
 REQUIRED_FRONT_MATTER_KEYS = ("version", "source_url", "original_path")
@@ -107,7 +107,10 @@ def scan_links(text: str) -> Iterator[Link]:
             label=text[i + 1:label_end],
             target_raw=text[label_end + 2:target_end],
         )
-        i = text.find("[", target_end + 1)
+        # Resume just inside this link rather than past it: a label can hold a
+        # link of its own, as Sphinx's clickable figures do with
+        # "[![alt](image)](image)", and the inner target needs checking too.
+        i = text.find("[", i + 1)
 
 
 def build_line_index(text: str) -> list[int]:
@@ -202,6 +205,17 @@ def check_links(path: Path, text: str) -> list[Issue]:
             issues.append(Issue(
                 path, link.line, "unresolved-html",
                 f"internal link still points at HTML: {truncate(target)}",
+            ))
+            continue
+
+        # Only Markdown is generated into this repository. A relative link to
+        # anything else -- an image, an archive -- resolves to a file that was
+        # never written, so it must have been rewritten to the published docs.
+        suffix = PurePosixPath(path_part).suffix.lower()
+        if suffix and suffix != ".md":
+            issues.append(Issue(
+                path, link.line, "unresolved-asset",
+                f"relative link to a non-Markdown file: {truncate(target)}",
             ))
 
     return issues

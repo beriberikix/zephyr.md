@@ -69,8 +69,40 @@ class LinkScanningTests(unittest.TestCase):
         self.assert_kinds("[M](mailto:a@b.com)", [])
         self.assert_kinds("[P](//ex.com/a.html)", [])
 
+    def test_links_nested_in_a_label_are_scanned(self):
+        # Sphinx renders a clickable figure as an image inside a link. Both
+        # targets are real links and both must be checked.
+        self.assert_kinds(
+            "[![alt](../_images/a.jpg)](../_images/a.jpg)",
+            ["unresolved-asset", "unresolved-asset"],
+        )
+        self.assert_kinds(
+            "[![alt](../_images/a.jpg)](https://ex.com/a.jpg)", ["unresolved-asset"]
+        )
+        self.assert_kinds("[![alt](../a.html)](../b.html)", ["unresolved-html", "unresolved-html"])
+
+    def test_relative_asset_links_are_errors(self):
+        # Only Markdown is generated here, so these resolve to nothing.
+        self.assert_kinds("![pinout](../../_images/board.jpg)", ["unresolved-asset"])
+        self.assert_kinds("[diagram](../_images/arch.svg)", ["unresolved-asset"])
+        self.assert_kinds("[archive](../_downloads/demo.zip)", ["unresolved-asset"])
+
+    def test_absolute_asset_links_are_fine(self):
+        self.assert_kinds(
+            "![pinout](https://docs.zephyrproject.org/4.2.0/_images/board.jpg)", []
+        )
+
+    def test_extensionless_relative_links_are_left_alone(self):
+        self.assert_kinds("[dir](../some/target)", [])
+
+    def test_html_extension_reported_once(self):
+        # Must be unresolved-html, not also unresolved-asset.
+        self.assert_kinds("[Env](../develop/env_vars.html)", ["unresolved-html"])
+
     def test_html_must_be_the_extension(self):
-        self.assert_kinds("[X](../a.htmlx)", [])
+        # ".htmlx" is not HTML, so it is not an unresolved-html finding. It is
+        # still not Markdown, so it is reported as an asset instead.
+        self.assert_kinds("[X](../a.htmlx)", ["unresolved-asset"])
         self.assert_kinds("[X](../a.md?src=b.html)", [])
 
     def test_escaped_brackets_are_not_links(self):

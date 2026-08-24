@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import posixpath
 import re
 import shutil
 from pathlib import Path
@@ -57,7 +58,52 @@ CODE_LANGUAGE_MAP = {
 
 
 class ZephyrMarkdownConverter(MarkdownConverter):
-    """Custom markdown converter that rewrites internal HTML links to Markdown."""
+    """Custom markdown converter that rewrites internal HTML links to Markdown.
+
+    Accepts two extra options: ``page_dir``, the directory of the page being
+    converted relative to the HTML root, and ``base_source_url``, the published
+    docs URL for this version. Together they turn a page-relative asset
+    reference into an absolute one.
+    """
+
+    def asset_url(self, src: str) -> str:
+        """Resolve a page-relative asset reference against the published docs.
+
+        Assets such as ``_images/`` are not converted into this repository, so a
+        relative path to one resolves to nothing. Point at the published copy
+        instead, which keeps the reference working at no cost in repository size.
+        """
+        src = src.strip()
+        if not src:
+            return src
+
+        if urlparse(src).scheme or src.startswith(("//", "#")):
+            return src
+
+        base = (self.options.get("base_source_url") or "").rstrip("/")
+        if not base:
+            return src
+
+        resolved = posixpath.normpath(
+            posixpath.join(self.options.get("page_dir") or "", src)
+        )
+        if resolved.startswith(".."):
+            # Escapes the documentation root; nothing sensible to point at.
+            return src
+
+        return f"{base}/{resolved.lstrip('/')}"
+
+    def convert_img(self, el: Tag, text: str, parent_tags: Iterable[str]) -> str:  # type: ignore[override]
+        alt = el.get("alt") or ""
+        src = (el.get("src") or "").strip()
+        title = (el.get("title") or "").strip()
+        title_part = ' "{}"'.format(title.replace('"', chr(92) + '"')) if title else ""
+
+        # Preserve markdownify's own handling of inline images.
+        if "_inline" in parent_tags and el.parent.name not in self.options["keep_inline_images_in"]:
+            return alt
+
+        return f"![{alt}]({self.asset_url(src)}{title_part})"
 
     def convert_a(self, el: Tag, text: str, parent_tags: Iterable[str]) -> str:  # type: ignore[override]
         href = (el.get("href") or "").strip()
@@ -85,6 +131,8 @@ class ZephyrMarkdownConverter(MarkdownConverter):
             path_part = f"{path_part[:-5]}.md"
         elif path_part.endswith("/"):
             path_part = f"{path_part}index.md"
+        elif _is_asset_path(path_part):
+            path_part = self.asset_url(path_part)
 
         new_href = path_part
         if anchor:
@@ -111,6 +159,12 @@ def _is_bare_url_in_literal_link(el: Tag, text: str, href: str) -> bool:
 
     following = el.next_sibling
     return isinstance(following, NavigableString) and str(following).startswith(")")
+
+
+def _is_asset_path(path: str) -> bool:
+    """True for a link to a file this pipeline does not convert (images, archives)."""
+    suffix = posixpath.splitext(path)[1].lower()
+    return bool(suffix) and suffix not in {".md", ".html"}
 
 
 def _split_anchor(link: str) -> tuple[str, str]:
@@ -204,16 +258,19 @@ def convert_html_file(
     content_root = extract_main_content(soup, main_selectors)
     strip_noise(content_root, strip_selectors)
 
+    source_url = compute_source_url(base_source_url, relative_html)
+
     converter = ZephyrMarkdownConverter(
         heading_style="ATX",
         bullets="-",
         code_language_callback=detect_code_language,
         table_infer_header=True,
+        page_dir=posixpath.dirname(relative_html),
+        base_source_url=base_source_url,
     )
     markdown_body = converter.convert_soup(content_root)
     markdown_body = normalize_markdown(markdown_body)
 
-    source_url = compute_source_url(base_source_url, relative_html)
     front_matter = build_front_matter(version, source_url, relative_html)
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
