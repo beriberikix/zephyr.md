@@ -10,7 +10,7 @@ import re
 import shutil
 from pathlib import Path
 from typing import Iterable
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 import yaml
 from bs4 import BeautifulSoup
@@ -127,10 +127,14 @@ class ZephyrMarkdownConverter(MarkdownConverter):
 
         path_part, anchor = _split_anchor(href)
 
+        # Sphinx percent-encodes hrefs, but pages are written to disk under their
+        # literal names, so "espressif%2Criscv.html" has to resolve to
+        # "espressif,riscv.md". Only local targets are decoded; asset links become
+        # absolute URLs below, where the encoding is correct as-is.
         if path_part.endswith(".html"):
-            path_part = f"{path_part[:-5]}.md"
+            path_part = f"{unquote(path_part[:-5])}.md"
         elif path_part.endswith("/"):
-            path_part = f"{path_part}index.md"
+            path_part = f"{unquote(path_part)}index.md"
         elif _is_asset_path(path_part):
             path_part = self.asset_url(path_part)
 

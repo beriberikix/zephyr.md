@@ -8,6 +8,7 @@ stopped at the first problem. Uses stdlib only so CI needs no extra dependencies
 from __future__ import annotations
 
 import argparse
+import posixpath
 import re
 import sys
 from bisect import bisect_right
@@ -182,7 +183,7 @@ def check_front_matter(path: Path, text: str) -> list[Issue]:
     return issues
 
 
-def check_links(path: Path, text: str) -> list[Issue]:
+def check_links(path: Path, text: str, known: set[str] | None = None) -> list[Issue]:
     issues = []
 
     for link in scan_links(mask_code(text)):
@@ -217,6 +218,18 @@ def check_links(path: Path, text: str) -> list[Issue]:
                 path, link.line, "unresolved-asset",
                 f"relative link to a non-Markdown file: {truncate(target)}",
             ))
+            continue
+
+        # A well-formed link to a file that was never written is still broken.
+        if known is not None and suffix == ".md":
+            resolved = posixpath.normpath(
+                posixpath.join(path.parent.as_posix(), path_part)
+            )
+            if resolved not in known:
+                issues.append(Issue(
+                    path, link.line, "dangling-link",
+                    f"link target does not exist: {truncate(path_part)}",
+                ))
 
     return issues
 
@@ -229,6 +242,11 @@ def truncate(value: str, limit: int = 120) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("root", type=Path, nargs="?", default=Path("versions"))
+    parser.add_argument(
+        "--strict-links",
+        action="store_true",
+        help="treat dangling internal links as errors instead of warnings",
+    )
     parser.add_argument(
         "--warn-nested-links",
         action="store_true",
@@ -246,13 +264,21 @@ def main() -> int:
         print(f"error: no markdown files found in {args.root}/", file=sys.stderr)
         return 1
 
+    known = {p.as_posix() for p in files}
+
     issues: list[Issue] = []
     for path in files:
         text = path.read_text(encoding="utf-8", errors="ignore")
         issues.extend(check_front_matter(path, text))
-        issues.extend(check_links(path, text))
+        issues.extend(check_links(path, text, known))
 
-    warnings = [i for i in issues if i.kind == "nested-link" and args.warn_nested_links]
+    # Upstream Doxygen links a handful of pages it never generates; those targets
+    # are missing from the published docs too, so a dangling link is reported but
+    # does not fail the build unless asked.
+    soft = {"dangling-link"} if not args.strict_links else set()
+    if args.warn_nested_links:
+        soft.add("nested-link")
+    warnings = [i for i in issues if i.kind in soft]
     errors = [i for i in issues if i not in warnings]
 
     report("warning", warnings)

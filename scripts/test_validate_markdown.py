@@ -119,6 +119,42 @@ class LinkScanningTests(unittest.TestCase):
         self.assertEqual([i.line for i in issues], [9])
 
 
+class DanglingLinkTests(unittest.TestCase):
+    """A well-formed link to a file that was never written is still broken."""
+
+    def check(self, body: str, known: list[str]) -> list[str]:
+        return [
+            i.kind
+            for i in V.check_links(Path("versions/v1/a/b.md"), FRONT_MATTER + body, set(known))
+        ]
+
+    def test_existing_target_passes(self):
+        self.assertEqual(self.check("[x](../c/d.md)", ["versions/v1/c/d.md"]), [])
+
+    def test_missing_target_is_reported(self):
+        self.assertEqual(self.check("[x](../c/d.md)", []), ["dangling-link"])
+
+    def test_percent_encoded_name_does_not_match_literal_file(self):
+        # The regression that shipped 87k broken links: pages are written under
+        # their literal names, links arrived percent-encoded.
+        self.assertEqual(
+            self.check("[x](../cpu/espressif%2Criscv.md)",
+                       ["versions/v1/cpu/espressif,riscv.md"]),
+            ["dangling-link"],
+        )
+        self.assertEqual(
+            self.check("[x](../cpu/espressif,riscv.md)",
+                       ["versions/v1/cpu/espressif,riscv.md"]),
+            [],
+        )
+
+    def test_anchor_is_ignored_when_resolving(self):
+        self.assertEqual(self.check("[x](../c/d.md#frag)", ["versions/v1/c/d.md"]), [])
+
+    def test_disabled_when_no_index_supplied(self):
+        self.assertEqual([i.kind for i in V.check_links(PATH, FRONT_MATTER + "[x](../c/d.md)")], [])
+
+
 class FrontMatterTests(unittest.TestCase):
     def assert_kinds(self, text: str, expected: list[str]) -> None:
         self.assertEqual([i.kind for i in V.check_front_matter(PATH, text)], expected)
