@@ -18,7 +18,7 @@ This sample cycles several colors on an RGB LED forever using the LED API.
 
 This sample can be built and executed on an Arduino Nicla Sense ME, or on
 any board where the devicetree has an I2C device node with compatible
-[`issi,is31fl3194`](../../../build/dts/api/bindings/led/issi%2Cis31fl3194.md#std-dtcompatible-issi-is31fl3194) enabled, along with the relevant bus
+[`issi,is31fl3194`](../../../build/dts/api/bindings/led/issi,is31fl3194.md#std-dtcompatible-issi-is31fl3194) enabled, along with the relevant bus
 controller node also being enabled.
 
 ```shell

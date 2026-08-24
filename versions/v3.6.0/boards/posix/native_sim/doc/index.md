@@ -421,7 +421,7 @@ The following peripherals are currently provided with this board:
     **Input SDL touch**
     :   This driver emulates a touch panel input using the SDL library. It can be enabled with
         [`CONFIG_INPUT_SDL_TOUCH`](../../../../kconfig.md#CONFIG_INPUT_SDL_TOUCH "CONFIG_INPUT_SDL_TOUCH") and configured with the device tree binding
-        [`zephyr,input-sdl-touch`](../../../../build/dts/api/bindings/input/zephyr%2Cinput-sdl-touch.md#std-dtcompatible-zephyr-input-sdl-touch).
+        [`zephyr,input-sdl-touch`](../../../../build/dts/api/bindings/input/zephyr,input-sdl-touch.md#std-dtcompatible-zephyr-input-sdl-touch).
 
         More information on using SDL and the Display driver can be found in
         [its section](#nsim-per-disp-sdl).
@@ -429,7 +429,7 @@ The following peripherals are currently provided with this board:
 **CAN controller**
 :   It is possible to use a host CAN controller with the native SockerCAN Linux driver. It can be
     enabled with [`CONFIG_CAN_NATIVE_LINUX`](../../../../kconfig.md#CONFIG_CAN_NATIVE_LINUX "CONFIG_CAN_NATIVE_LINUX") and configured with the device tree binding
-    [`zephyr,native-linux-can`](../../../../build/dts/api/bindings/can/zephyr%2Cnative-linux-can.md#std-dtcompatible-zephyr-native-linux-can).
+    [`zephyr,native-linux-can`](../../../../build/dts/api/bindings/can/zephyr,native-linux-can.md#std-dtcompatible-zephyr-native-linux-can).
 
 ### PTTY UART
 

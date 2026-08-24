@@ -9,6 +9,6 @@ original_path: build/dts/api/compatibles/invensense,icp201xx.html
 The devicetree compatible `invensense,icp201xx` may be handled by any
 of the following bindings:
 
-- [invensense,icp201xx](../bindings/sensor/invensense%2Cicp201xx.md#dtbinding-invensense-icp201xx)
-- [invensense,icp201xx (on i2c bus)](../bindings/sensor/invensense%2Cicp201xx-i2c.md#dtbinding-invensense-icp201xx-i2c)
-- [invensense,icp201xx (on spi bus)](../bindings/sensor/invensense%2Cicp201xx-spi.md#dtbinding-invensense-icp201xx-spi)
+- [invensense,icp201xx](../bindings/sensor/invensense,icp201xx.md#dtbinding-invensense-icp201xx)
+- [invensense,icp201xx (on i2c bus)](../bindings/sensor/invensense,icp201xx-i2c.md#dtbinding-invensense-icp201xx-i2c)
+- [invensense,icp201xx (on spi bus)](../bindings/sensor/invensense,icp201xx-spi.md#dtbinding-invensense-icp201xx-spi)

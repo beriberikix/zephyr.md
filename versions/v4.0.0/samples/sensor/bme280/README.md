@@ -24,7 +24,7 @@ sensor in polling mode (without interrupt trigger).
 The sample can be configured to support BME280 sensors connected via either I2C
 or SPI. Configuration is done via [devicetree](../../../build/dts/index.md#dt-guide). The devicetree
 must have an enabled node with `compatible = "bosch,bme280";`. See
-[`bosch,bme280`](../../../build/dts/api/compatibles/bosch%2Cbme280.md#std-dtcompatible-bosch-bme280) for the devicetree binding and see below for
+[`bosch,bme280`](../../../build/dts/api/compatibles/bosch,bme280.md#std-dtcompatible-bosch-bme280) for the devicetree binding and see below for
 examples and common configurations.
 
 If the sensor is not built into your board, start by wiring the sensor pins

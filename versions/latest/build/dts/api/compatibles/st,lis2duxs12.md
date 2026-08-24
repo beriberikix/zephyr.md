@@ -9,5 +9,5 @@ original_path: build/dts/api/compatibles/st,lis2duxs12.html
 The devicetree compatible `st,lis2duxs12` may be handled by any
 of the following bindings:
 
-- [st,lis2duxs12 (on i2c bus)](../bindings/sensor/st%2Clis2duxs12-i2c.md#dtbinding-st-lis2duxs12-i2c)
-- [st,lis2duxs12 (on spi bus)](../bindings/sensor/st%2Clis2duxs12-spi.md#dtbinding-st-lis2duxs12-spi)
+- [st,lis2duxs12 (on i2c bus)](../bindings/sensor/st,lis2duxs12-i2c.md#dtbinding-st-lis2duxs12-i2c)
+- [st,lis2duxs12 (on spi bus)](../bindings/sensor/st,lis2duxs12-spi.md#dtbinding-st-lis2duxs12-spi)

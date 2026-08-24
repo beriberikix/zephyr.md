@@ -21,8 +21,8 @@ Major enhancements with this release include:
 - **Analog Comparators**:
   A new [comparator](../hardware/peripherals/comparator.md#comparator-api) device driver subsystem for analog comparators has been
   added, complete with shell support. It supports initial configuration through Devicetree and
-  runtime configuration through vendor specific APIs. Initially the [`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-comp.md#std-dtcompatible-nordic-nrf-comp),
-  [`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp) and [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp%2Ckinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp) are supported.
+  runtime configuration through vendor specific APIs. Initially the [`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic,nrf-comp.md#std-dtcompatible-nordic-nrf-comp),
+  [`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic,nrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp) and [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp,kinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp) are supported.
 - **Stepper Motors**:
   It is now possible to interact with stepper motors using a standard API thanks to the new
   [stepper](../hardware/peripherals/stepper.md#stepper-api) device driver subsystem, which also comes with shell support.
@@ -372,47 +372,47 @@ More detailed information can be found in:
   - Added proper ADC2 calibration entries in ESP32.
   - Fixed calibration scheme in ESP32-S3.
   - STM32H7: Added support for higher sampling frequencies thanks to boost mode implementation.
-  - Added initial support for Renesas RA8 ADC driver ([`renesas,ra-adc`](../build/dts/api/bindings/adc/renesas%2Cra-adc.md#std-dtcompatible-renesas-ra-adc))
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-adc`](../build/dts/api/bindings/adc/adi%2Cmax32-adc.md#std-dtcompatible-adi-max32-adc)).
-  - Added support for NXP S32 SAR\_ADC ([`nxp,s32-adc-sar`](../build/dts/api/bindings/adc/nxp%2Cs32-adc-sar.md#std-dtcompatible-nxp-s32-adc-sar))
-  - Added support for Ambiq Apollo3 series ([`ambiq,adc`](../build/dts/api/bindings/adc/ambiq%2Cadc.md#std-dtcompatible-ambiq-adc)).
+  - Added initial support for Renesas RA8 ADC driver ([`renesas,ra-adc`](../build/dts/api/bindings/adc/renesas,ra-adc.md#std-dtcompatible-renesas-ra-adc))
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-adc`](../build/dts/api/bindings/adc/adi,max32-adc.md#std-dtcompatible-adi-max32-adc)).
+  - Added support for NXP S32 SAR\_ADC ([`nxp,s32-adc-sar`](../build/dts/api/bindings/adc/nxp,s32-adc-sar.md#std-dtcompatible-nxp-s32-adc-sar))
+  - Added support for Ambiq Apollo3 series ([`ambiq,adc`](../build/dts/api/bindings/adc/ambiq,adc.md#std-dtcompatible-ambiq-adc)).
 - CAN
 
-  - Added initial support for Renesas RA CANFD ([`renesas,ra-canfd-global`](../build/dts/api/bindings/can/renesas%2Cra-canfd-global.md#std-dtcompatible-renesas-ra-canfd-global),
-    [`renesas,ra-canfd`](../build/dts/api/bindings/can/renesas%2Cra-canfd.md#std-dtcompatible-renesas-ra-canfd))
-  - Added Flexcan support for S32Z27x ([`nxp,flexcan`](../build/dts/api/bindings/can/nxp%2Cflexcan.md#std-dtcompatible-nxp-flexcan), [`nxp,flexcan-fd`](../build/dts/api/bindings/can/nxp%2Cflexcan-fd.md#std-dtcompatible-nxp-flexcan-fd))
-  - Improved NXP S32 CANXL error reporting ([`nxp,s32-canxl`](../build/dts/api/bindings/can/nxp%2Cs32-canxl.md#std-dtcompatible-nxp-s32-canxl))
+  - Added initial support for Renesas RA CANFD ([`renesas,ra-canfd-global`](../build/dts/api/bindings/can/renesas,ra-canfd-global.md#std-dtcompatible-renesas-ra-canfd-global),
+    [`renesas,ra-canfd`](../build/dts/api/bindings/can/renesas,ra-canfd.md#std-dtcompatible-renesas-ra-canfd))
+  - Added Flexcan support for S32Z27x ([`nxp,flexcan`](../build/dts/api/bindings/can/nxp,flexcan.md#std-dtcompatible-nxp-flexcan), [`nxp,flexcan-fd`](../build/dts/api/bindings/can/nxp,flexcan-fd.md#std-dtcompatible-nxp-flexcan-fd))
+  - Improved NXP S32 CANXL error reporting ([`nxp,s32-canxl`](../build/dts/api/bindings/can/nxp,s32-canxl.md#std-dtcompatible-nxp-s32-canxl))
 - Clock control
 
   - STM32 MCO (Microcontroller Clock Output) is now available on STM32U5 series.
   - STM32 MCO can and should now be configured with device tree.
   - STM32: [`CONFIG_CLOCK_CONTROL`](../kconfig.md#CONFIG_CLOCK_CONTROL "CONFIG_CLOCK_CONTROL") is now enabled by default at family level and doesn’t need
     to be enabled at board level anymore.
-  - STM32H7: PLL FRACN can now be configured (see [`st,stm32h7-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32h7-pll-clock.md#std-dtcompatible-st-stm32h7-pll-clock))
-  - Added initial support for Renesas RA clock control driver ([`renesas,ra-cgc-pclk`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-pclk.md#std-dtcompatible-renesas-ra-cgc-pclk),
-    [`renesas,ra-cgc-pclk-block`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-pclk-block.md#std-dtcompatible-renesas-ra-cgc-pclk-block), [`renesas,ra-cgc-pll`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-pll.md#std-dtcompatible-renesas-ra-cgc-pll),
-    [`renesas,ra-cgc-external-clock`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-external-clock.md#std-dtcompatible-renesas-ra-cgc-external-clock), [`renesas,ra-cgc-subclk`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-subclk.md#std-dtcompatible-renesas-ra-cgc-subclk),
-    [`renesas,ra-cgc-pll-out`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-pll-out.md#std-dtcompatible-renesas-ra-cgc-pll-out))
-  - Silabs: Added support for Series 2+ Clock Management Unit (see [`silabs,series-clock`](../build/dts/api/bindings/clock/silabs%2Cseries-clock.md#std-dtcompatible-silabs-series-clock))
+  - STM32H7: PLL FRACN can now be configured (see [`st,stm32h7-pll-clock`](../build/dts/api/bindings/clock/st,stm32h7-pll-clock.md#std-dtcompatible-st-stm32h7-pll-clock))
+  - Added initial support for Renesas RA clock control driver ([`renesas,ra-cgc-pclk`](../build/dts/api/bindings/clock/renesas,ra-cgc-pclk.md#std-dtcompatible-renesas-ra-cgc-pclk),
+    [`renesas,ra-cgc-pclk-block`](../build/dts/api/bindings/clock/renesas,ra-cgc-pclk-block.md#std-dtcompatible-renesas-ra-cgc-pclk-block), [`renesas,ra-cgc-pll`](../build/dts/api/bindings/clock/renesas,ra-cgc-pll.md#std-dtcompatible-renesas-ra-cgc-pll),
+    [`renesas,ra-cgc-external-clock`](../build/dts/api/bindings/clock/renesas,ra-cgc-external-clock.md#std-dtcompatible-renesas-ra-cgc-external-clock), [`renesas,ra-cgc-subclk`](../build/dts/api/bindings/clock/renesas,ra-cgc-subclk.md#std-dtcompatible-renesas-ra-cgc-subclk),
+    [`renesas,ra-cgc-pll-out`](../build/dts/api/bindings/clock/renesas,ra-cgc-pll-out.md#std-dtcompatible-renesas-ra-cgc-pll-out))
+  - Silabs: Added support for Series 2+ Clock Management Unit (see [`silabs,series-clock`](../build/dts/api/bindings/clock/silabs,series-clock.md#std-dtcompatible-silabs-series-clock))
   - Added initial support for Nordic nRF54H Series clock controllers.
 - Codec (Audio)
 
-  - Added a driver for the Wolfson WM8904 audio codec ([`wolfson,wm8904`](../build/dts/api/bindings/audio/wolfson%2Cwm8904.md#std-dtcompatible-wolfson-wm8904))
+  - Added a driver for the Wolfson WM8904 audio codec ([`wolfson,wm8904`](../build/dts/api/bindings/audio/wolfson,wm8904.md#std-dtcompatible-wolfson-wm8904))
 - Comparator
 
   - Introduced comparator device driver subsystem selected with [`CONFIG_COMPARATOR`](../kconfig.md#CONFIG_COMPARATOR "CONFIG_COMPARATOR")
   - Introduced comparator shell commands selected with [`CONFIG_COMPARATOR_SHELL`](../kconfig.md#CONFIG_COMPARATOR_SHELL "CONFIG_COMPARATOR_SHELL")
-  - Added support for Nordic nRF COMP ([`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-comp.md#std-dtcompatible-nordic-nrf-comp))
-  - Added support for Nordic nRF LPCOMP ([`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp))
-  - Added support for NXP Kinetis ACMP ([`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp%2Ckinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp))
+  - Added support for Nordic nRF COMP ([`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic,nrf-comp.md#std-dtcompatible-nordic-nrf-comp))
+  - Added support for Nordic nRF LPCOMP ([`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic,nrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp))
+  - Added support for NXP Kinetis ACMP ([`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp,kinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp))
 - Counter
 
-  - Added initial support for Renesas RA8 AGT counter driver ([`renesas,ra-agt`](../build/dts/api/bindings/misc/renesas%2Cra-agt.md#std-dtcompatible-renesas-ra-agt))
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-counter`](../build/dts/api/bindings/counter/adi%2Cmax32-counter.md#std-dtcompatible-adi-max32-counter)).
+  - Added initial support for Renesas RA8 AGT counter driver ([`renesas,ra-agt`](../build/dts/api/bindings/misc/renesas,ra-agt.md#std-dtcompatible-renesas-ra-agt))
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-counter`](../build/dts/api/bindings/counter/adi,max32-counter.md#std-dtcompatible-adi-max32-counter)).
   - Updated the NXP counter\_mcux\_lptmr driver to support multiple instances of the lptmr
     peripheral.
   - Converted the NXP S32 System Timer Module driver to native Zephyr code
-  - Added support for late and short relative alarms area to NXP nxp\_sys\_timer ([`nxp,s32-sys-timer`](../build/dts/api/bindings/counter/nxp%2Cs32-sys-timer.md#std-dtcompatible-nxp-s32-sys-timer))
+  - Added support for late and short relative alarms area to NXP nxp\_sys\_timer ([`nxp,s32-sys-timer`](../build/dts/api/bindings/counter/nxp,s32-sys-timer.md#std-dtcompatible-nxp-s32-sys-timer))
 - Crypto
 
   - Added support for STM32L4 AES.
@@ -433,22 +433,22 @@ More detailed information can be found in:
     flip.
   - ST7789V driver now supports BGR565, enabled with
     [`CONFIG_ST7789V_BGR565`](../kconfig.md#CONFIG_ST7789V_BGR565 "CONFIG_ST7789V_BGR565").
-  - Added driver for SSD1327 OLED display controller ([`solomon,ssd1327fb`](../build/dts/api/compatibles/solomon%2Cssd1327fb.md#std-dtcompatible-solomon-ssd1327fb)).
-  - Added driver for SSD1322 OLED display controller ([`solomon,ssd1322`](../build/dts/api/bindings/display/solomon%2Cssd1322.md#std-dtcompatible-solomon-ssd1322)).
-  - Added driver for IST3931 monochrome display controller ([`istech,ist3931`](../build/dts/api/bindings/display/istech%2Cist3931.md#std-dtcompatible-istech-ist3931)).
+  - Added driver for SSD1327 OLED display controller ([`solomon,ssd1327fb`](../build/dts/api/compatibles/solomon,ssd1327fb.md#std-dtcompatible-solomon-ssd1327fb)).
+  - Added driver for SSD1322 OLED display controller ([`solomon,ssd1322`](../build/dts/api/bindings/display/solomon,ssd1322.md#std-dtcompatible-solomon-ssd1322)).
+  - Added driver for IST3931 monochrome display controller ([`istech,ist3931`](../build/dts/api/bindings/display/istech,ist3931.md#std-dtcompatible-istech-ist3931)).
 - DMA
 
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-dma`](../build/dts/api/bindings/dma/adi%2Cmax32-dma.md#std-dtcompatible-adi-max32-dma)).
-  - Added flip feature to the NXP dma\_mcux\_pxp driver ([`nxp,pxp`](../build/dts/api/bindings/dma/nxp%2Cpxp.md#std-dtcompatible-nxp-pxp))
-  - Added support for eDMAv5 and cyclic mode ([GitHub #80584](https://github.com/zephyrproject-rtos/zephyr/issues/80584)) to the NXP EMDA driver ([`nxp,edma`](../build/dts/api/bindings/dma/nxp%2Cedma.md#std-dtcompatible-nxp-edma))
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-dma`](../build/dts/api/bindings/dma/adi,max32-dma.md#std-dtcompatible-adi-max32-dma)).
+  - Added flip feature to the NXP dma\_mcux\_pxp driver ([`nxp,pxp`](../build/dts/api/bindings/dma/nxp,pxp.md#std-dtcompatible-nxp-pxp))
+  - Added support for eDMAv5 and cyclic mode ([GitHub #80584](https://github.com/zephyrproject-rtos/zephyr/issues/80584)) to the NXP EMDA driver ([`nxp,edma`](../build/dts/api/bindings/dma/nxp,edma.md#std-dtcompatible-nxp-edma))
 - EEPROM
 
   - Added support for using the EEPROM simulator with embedded C standard libraries
-    ([`zephyr,sim-eeprom`](../build/dts/api/bindings/mtd/zephyr%2Csim-eeprom.md#std-dtcompatible-zephyr-sim-eeprom)).
+    ([`zephyr,sim-eeprom`](../build/dts/api/bindings/mtd/zephyr,sim-eeprom.md#std-dtcompatible-zephyr-sim-eeprom)).
 - Entropy
 
-  - Added initial support for Renesas RA8 Entropy driver ([`renesas,ra-rsip-e51a-trng`](../build/dts/api/bindings/rng/renesas%2Cra-rsip-e51a-trng.md#std-dtcompatible-renesas-ra-rsip-e51a-trng))
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-trng`](../build/dts/api/bindings/rng/adi%2Cmax32-trng.md#std-dtcompatible-adi-max32-trng)).
+  - Added initial support for Renesas RA8 Entropy driver ([`renesas,ra-rsip-e51a-trng`](../build/dts/api/bindings/rng/renesas,ra-rsip-e51a-trng.md#std-dtcompatible-renesas-ra-rsip-e51a-trng))
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-trng`](../build/dts/api/bindings/rng/adi,max32-trng.md#std-dtcompatible-adi-max32-trng)).
 - Ethernet
 
   - Added a `get_phy()` function to the ethernet driver api, which returns the phy device
@@ -475,7 +475,7 @@ More detailed information can be found in:
     - Fixed transmission stopping when setting mac address or promiscuous mode.
   - LiteX
 
-    - Renamed the `compatible` from `litex,eth0` to [`litex,liteeth`](../build/dts/api/bindings/ethernet/litex%2Cliteeth.md#std-dtcompatible-litex-liteeth).
+    - Renamed the `compatible` from `litex,eth0` to [`litex,liteeth`](../build/dts/api/bindings/ethernet/litex,liteeth.md#std-dtcompatible-litex-liteeth).
     - Added support for multiple instances of the liteX ethernet driver.
     - Added support for VLAN to the liteX ethernet driver.
     - Added phy support.
@@ -530,10 +530,10 @@ More detailed information can be found in:
     for custom write and SFDP:BFP opcodes.
   - Added possibility to run STM32H7 flash driver from Cortex-M4 core.
   - Implemented readout protection handling (RDP levels) for STM32F7 SoCs.
-  - Added initial support for Renesas RA8 Flash controller driver ([`renesas,ra-flash-hp-controller`](../build/dts/api/bindings/flash_controller/renesas%2Cra-flash-hp-controller.md#std-dtcompatible-renesas-ra-flash-hp-controller))
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-flash-controller`](../build/dts/api/bindings/flash_controller/adi%2Cmax32-flash-controller.md#std-dtcompatible-adi-max32-flash-controller)).
+  - Added initial support for Renesas RA8 Flash controller driver ([`renesas,ra-flash-hp-controller`](../build/dts/api/bindings/flash_controller/renesas,ra-flash-hp-controller.md#std-dtcompatible-renesas-ra-flash-hp-controller))
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-flash-controller`](../build/dts/api/bindings/flash_controller/adi,max32-flash-controller.md#std-dtcompatible-adi-max32-flash-controller)).
   - Added support for W25Q512JV and W25Q512NW-IQ/IN to NXP’s MCUX Flexspi driver
-  - Renamed the binding `nxp,iap-msf1` to [`nxp,msf1`](../build/dts/api/bindings/flash_controller/nxp%2Cmsf1.md#std-dtcompatible-nxp-msf1) for accuracy
+  - Renamed the binding `nxp,iap-msf1` to [`nxp,msf1`](../build/dts/api/bindings/flash_controller/nxp,msf1.md#std-dtcompatible-nxp-msf1) for accuracy
 - GPIO
 
   - tle9104: Add support for the parallel output mode via setting the properties `parallel-out12` and
@@ -543,11 +543,11 @@ More detailed information can be found in:
 - Haptics
 
   - Introduced a haptics device driver subsystem selected with [`CONFIG_HAPTICS`](../kconfig.md#CONFIG_HAPTICS "CONFIG_HAPTICS")
-  - Added support for TI DRV2605 haptic driver IC ([`ti,drv2605`](../build/dts/api/bindings/haptics/ti%2Cdrv2605.md#std-dtcompatible-ti-drv2605))
+  - Added support for TI DRV2605 haptic driver IC ([`ti,drv2605`](../build/dts/api/bindings/haptics/ti,drv2605.md#std-dtcompatible-ti-drv2605))
   - Added a sample for the DRV2605 haptic driver to trigger ROM events ([DRV2605 Haptic Driver](../samples/drivers/haptics/drv2605/README.md#drv2605 "Drive an LRA using the DRV2605 haptic driver chip."))
 - I2C
 
-  - Added initial support for Renesas RA8 I2C driver ([`renesas,ra-iic`](../build/dts/api/bindings/i2c/renesas%2Cra-iic.md#std-dtcompatible-renesas-ra-iic))
+  - Added initial support for Renesas RA8 I2C driver ([`renesas,ra-iic`](../build/dts/api/bindings/i2c/renesas,ra-iic.md#std-dtcompatible-renesas-ra-iic))
 - I2S
 
   - Added ESP32-S3 and ESP32-C3 driver support.
@@ -572,8 +572,8 @@ More detailed information can be found in:
     up to the driver to determine the attached address from the `i3c_device_desc`.
 - Input
 
-  - New feature: [`zephyr,input-double-tap`](../build/dts/api/bindings/input/zephyr%2Cinput-double-tap.md#std-dtcompatible-zephyr-input-double-tap).
-  - New driver: [`ilitek,ili2132a`](../build/dts/api/bindings/input/ilitek%2Cili2132a.md#std-dtcompatible-ilitek-ili2132a).
+  - New feature: [`zephyr,input-double-tap`](../build/dts/api/bindings/input/zephyr,input-double-tap.md#std-dtcompatible-zephyr-input-double-tap).
+  - New driver: [`ilitek,ili2132a`](../build/dts/api/bindings/input/ilitek,ili2132a.md#std-dtcompatible-ilitek-ili2132a).
   - Added power management support to all keyboard matrix drivers, added a
     `no-disconnect` property to [`gpio-keys`](../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) so it can be used
     with power management on GPIO drivers that do not support pin
@@ -621,10 +621,10 @@ More detailed information can be found in:
 - MIPI-DBI
 
   - Added bitbang MIPI-DBI driver, supporting 8080 and 6800 mode
-    ([`zephyr,mipi-dbi-bitbang`](../build/dts/api/bindings/mipi-dbi/zephyr%2Cmipi-dbi-bitbang.md#std-dtcompatible-zephyr-mipi-dbi-bitbang)).
-  - Added support for STM32 FMC memory controller ([`st,stm32-fmc-mipi-dbi`](../build/dts/api/bindings/mipi-dbi/st%2Cmipi-dbi-fmc.md#std-dtcompatible-st-stm32-fmc-mipi-dbi)).
-  - Added support for 8080 mode to NXP LCDIC controller ([`nxp,lcdic`](../build/dts/api/bindings/mipi-dbi/nxp%2Clcdic.md#std-dtcompatible-nxp-lcdic)).
-  - Fixed the calculation of the reset delay for NXP’s LCD controller ([`nxp,lcdic`](../build/dts/api/bindings/mipi-dbi/nxp%2Clcdic.md#std-dtcompatible-nxp-lcdic))
+    ([`zephyr,mipi-dbi-bitbang`](../build/dts/api/bindings/mipi-dbi/zephyr,mipi-dbi-bitbang.md#std-dtcompatible-zephyr-mipi-dbi-bitbang)).
+  - Added support for STM32 FMC memory controller ([`st,stm32-fmc-mipi-dbi`](../build/dts/api/bindings/mipi-dbi/st,mipi-dbi-fmc.md#std-dtcompatible-st-stm32-fmc-mipi-dbi)).
+  - Added support for 8080 mode to NXP LCDIC controller ([`nxp,lcdic`](../build/dts/api/bindings/mipi-dbi/nxp,lcdic.md#std-dtcompatible-nxp-lcdic)).
+  - Fixed the calculation of the reset delay for NXP’s LCD controller ([`nxp,lcdic`](../build/dts/api/bindings/mipi-dbi/nxp,lcdic.md#std-dtcompatible-nxp-lcdic))
 - MIPI-CSI
 
   - Improve NXP CSI and MIPI\_CSI2Rx drivers to support varibale frame rates
@@ -640,7 +640,7 @@ More detailed information can be found in:
 
   - rpi\_pico: The driver now configures the divide ratio adaptively.
   - Added initial support for Renesas RA8 PWM driver (`renesas,ra8-pwm`)
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-pwm`](../build/dts/api/bindings/pwm/adi%2Cmax32-pwm.md#std-dtcompatible-adi-max32-pwm)).
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-pwm`](../build/dts/api/bindings/pwm/adi,max32-pwm.md#std-dtcompatible-adi-max32-pwm)).
   - Fixed a build issue of the NXP TPM driver for variants without the capability to combine channels
 - Regulators
 
@@ -668,11 +668,11 @@ More detailed information can be found in:
 
     - The existing driver for the Microchip MCP9808 temperature sensor transformed and renamed to
       support all JEDEC JC 42.4 compatible temperature sensors. It now uses the
-      [`jedec,jc-42.4-temp`](../build/dts/api/bindings/sensor/jedec%2Cjc-42.4-temp.md#std-dtcompatible-jedec-jc-42.4-temp) compatible string instead to the `microchip,mcp9808`
+      [`jedec,jc-42.4-temp`](../build/dts/api/bindings/sensor/jedec,jc-42.4-temp.md#std-dtcompatible-jedec-jc-42.4-temp) compatible string instead to the `microchip,mcp9808`
       string.
     - Added support for VDD based ADC reference to the NTC thermistor driver.
-    - Added Avago APDS9253 ([`avago,apds9253`](../build/dts/api/bindings/sensor/avago%2Capds9253.md#std-dtcompatible-avago-apds9253)) and APDS9306
-      ([`avago,apds9306`](../build/dts/api/bindings/sensor/avago%2Capds9306.md#std-dtcompatible-avago-apds9306)) ambient light sensor drivers.
+    - Added Avago APDS9253 ([`avago,apds9253`](../build/dts/api/bindings/sensor/avago,apds9253.md#std-dtcompatible-avago-apds9253)) and APDS9306
+      ([`avago,apds9306`](../build/dts/api/bindings/sensor/avago,apds9306.md#std-dtcompatible-avago-apds9306)) ambient light sensor drivers.
     - Added gain and resolution attributes (`SENSOR_ATTR_GAIN` and
       `SENSOR_ATTR_RESOLUTION`).
   - ADI
@@ -682,18 +682,18 @@ More detailed information can be found in:
 
     - Merged BMP390 into BMP388.
     - Added support for power domains to BMM150 and BME680 drivers.
-    - Added BMP180 pressure sensor driver ([`bosch,bmp180`](../build/dts/api/bindings/sensor/bosch%2Cbmp180.md#std-dtcompatible-bosch-bmp180)).
+    - Added BMP180 pressure sensor driver ([`bosch,bmp180`](../build/dts/api/bindings/sensor/bosch,bmp180.md#std-dtcompatible-bosch-bmp180)).
   - Memsic
 
-    - Added MMC56X3 magnetometer and temperature sensor driver ([`memsic,mmc56x3`](../build/dts/api/bindings/sensor/memsic%2Cmmc56x3.md#std-dtcompatible-memsic-mmc56x3)).
+    - Added MMC56X3 magnetometer and temperature sensor driver ([`memsic,mmc56x3`](../build/dts/api/bindings/sensor/memsic,mmc56x3.md#std-dtcompatible-memsic-mmc56x3)).
   - NXP
 
-    - Added P3T1755 digital temperature sensor driver ([`nxp,p3t1755`](../build/dts/api/compatibles/nxp%2Cp3t1755.md#std-dtcompatible-nxp-p3t1755)).
-    - Added FXLS8974 accelerometer driver ([`nxp,fxls8974`](../build/dts/api/compatibles/nxp%2Cfxls8974.md#std-dtcompatible-nxp-fxls8974)).
+    - Added P3T1755 digital temperature sensor driver ([`nxp,p3t1755`](../build/dts/api/compatibles/nxp,p3t1755.md#std-dtcompatible-nxp-p3t1755)).
+    - Added FXLS8974 accelerometer driver ([`nxp,fxls8974`](../build/dts/api/compatibles/nxp,fxls8974.md#std-dtcompatible-nxp-fxls8974)).
   - ST
 
     - Aligned drivers to stmemsc HAL i/f v2.6.
-    - Added LSM9DS1 accelerometer/gyroscope/magnetometer sensor driver ([`st,lsm9ds1`](../build/dts/api/bindings/sensor/st%2Clsm9ds1.md#std-dtcompatible-st-lsm9ds1)).
+    - Added LSM9DS1 accelerometer/gyroscope/magnetometer sensor driver ([`st,lsm9ds1`](../build/dts/api/bindings/sensor/st,lsm9ds1.md#std-dtcompatible-st-lsm9ds1)).
   - TDK
 
     - Added I2C bus support to ICM42670.
@@ -701,18 +701,18 @@ More detailed information can be found in:
 
     - Added support for INA236 to the existing INA230 driver.
     - Added support for TMAG3001 to the existing TMAG5273 driver.
-    - Added TMP1075 temperature sensor driver ([`ti,tmp1075`](../build/dts/api/bindings/sensor/ti%2Ctmp1075.md#std-dtcompatible-ti-tmp1075)).
+    - Added TMP1075 temperature sensor driver ([`ti,tmp1075`](../build/dts/api/bindings/sensor/ti,tmp1075.md#std-dtcompatible-ti-tmp1075)).
   - Vishay
 
     - Added trigger capability to VCNL36825T driver.
   - WE
 
     - Added Würth Elektronik HIDS-2525020210002
-      [`we,wsen-hids-2525020210002`](../build/dts/api/bindings/sensor/we%2Cwsen-hids-2525020210002.md#std-dtcompatible-we-wsen-hids-2525020210002) humidity sensor driver.
+      [`we,wsen-hids-2525020210002`](../build/dts/api/bindings/sensor/we,wsen-hids-2525020210002.md#std-dtcompatible-we-wsen-hids-2525020210002) humidity sensor driver.
     - Added general samples for triggers
 - Serial
 
-  - LiteX: Renamed the `compatible` from `litex,uart0` to [`litex,uart`](../build/dts/api/bindings/serial/litex%2Cuart.md#std-dtcompatible-litex-uart).
+  - LiteX: Renamed the `compatible` from `litex,uart0` to [`litex,uart`](../build/dts/api/bindings/serial/litex,uart.md#std-dtcompatible-litex-uart).
   - Nordic: Removed `CONFIG_UART_n_GPIO_MANAGEMENT` Kconfig options (where n is an instance
     index) which had no use after pinctrl driver was introduced.
   - NS16550: Added support for Synopsys Designware 8250 UART.
@@ -720,7 +720,7 @@ More detailed information can be found in:
   - Sensry: Added UART support for Ganymed SY1XX.
 - SPI
 
-  - Added initial support for Renesas RA8 SPI driver ([`renesas,ra8-spi-b`](../build/dts/api/bindings/spi/renesas%2Cra8-spi-b.md#std-dtcompatible-renesas-ra8-spi-b))
+  - Added initial support for Renesas RA8 SPI driver ([`renesas,ra8-spi-b`](../build/dts/api/bindings/spi/renesas,ra8-spi-b.md#std-dtcompatible-renesas-ra8-spi-b))
   - Added RTIO support to the Analog Devices MAX32 driver.
   - Silabs: Added support for EUSART (`silabs,gecko-spi-eusart`)
 - Steppers
@@ -735,7 +735,7 @@ More detailed information can be found in:
   - Added stepper shell test-suite
 - Timer
 
-  - Silabs: Added support for Sleeptimer ([`silabs,gecko-stimer`](../build/dts/api/bindings/rtc/silabs%2Cgecko-stimer.md#std-dtcompatible-silabs-gecko-stimer))
+  - Silabs: Added support for Sleeptimer ([`silabs,gecko-stimer`](../build/dts/api/bindings/rtc/silabs,gecko-stimer.md#std-dtcompatible-silabs-gecko-stimer))
 - USB
 
   - Added support for USB HS on STM32U59x/STM32U5Ax SoC variants.
@@ -755,23 +755,23 @@ More detailed information can be found in:
   - Added a sample for capturing video and displaying it with LVGL
     ([Video capture to LVGL](../samples/drivers/video/capture_to_lvgl/README.md#video-capture-to-lvgl "Capture video frames and display them on an LCD using LVGL."))
   - Added an automatic test to check colorbar pattern correctness
-  - Added support for GalaxyCore GC2145 image sensor ([`galaxycore,gc2145`](../build/dts/api/bindings/video/galaxycore%2Cgc2145.md#std-dtcompatible-galaxycore-gc2145))
-  - Added support for ESP32-S3 LCD-CAM interface ([`espressif,esp32-lcd-cam`](../build/dts/api/bindings/video/espressif%2Cesp32-cam.md#std-dtcompatible-espressif-esp32-lcd-cam))
-  - Added support for NXP MCUX SMARTDMA interface ([`nxp,smartdma`](../build/dts/api/bindings/dma/nxp%2Csmartdma.md#std-dtcompatible-nxp-smartdma))
-  - Added support for more OmniVision OV2640 controls ([`ovti,ov2640`](../build/dts/api/bindings/video/ovti%2Cov2640.md#std-dtcompatible-ovti-ov2640))
-  - Added support for more OmniVision OV5640 controls ([`ovti,ov5640`](../build/dts/api/bindings/video/ovti%2Cov5640.md#std-dtcompatible-ovti-ov5640))
+  - Added support for GalaxyCore GC2145 image sensor ([`galaxycore,gc2145`](../build/dts/api/bindings/video/galaxycore,gc2145.md#std-dtcompatible-galaxycore-gc2145))
+  - Added support for ESP32-S3 LCD-CAM interface ([`espressif,esp32-lcd-cam`](../build/dts/api/bindings/video/espressif,esp32-cam.md#std-dtcompatible-espressif-esp32-lcd-cam))
+  - Added support for NXP MCUX SMARTDMA interface ([`nxp,smartdma`](../build/dts/api/bindings/dma/nxp,smartdma.md#std-dtcompatible-nxp-smartdma))
+  - Added support for more OmniVision OV2640 controls ([`ovti,ov2640`](../build/dts/api/bindings/video/ovti,ov2640.md#std-dtcompatible-ovti-ov2640))
+  - Added support for more OmniVision OV5640 controls ([`ovti,ov5640`](../build/dts/api/bindings/video/ovti,ov5640.md#std-dtcompatible-ovti-ov5640))
   - STM32: Implemented [`video_get_ctrl()`](../doxygen/html/group__video__interface.md#ga71853c720e6df1def4c945e23d103298) and [`video_set_ctrl()`](../doxygen/html/group__video__interface.md#ga1cce17a3dfc881a1080708c7bc417aac) APIs.
   - Removed an init order circular dependency for the camera pipeline on NXP RT10xx platforms
     ([GitHub #80304](https://github.com/zephyrproject-rtos/zephyr/issues/80304))
-  - Added an NXP’s smartdma based video driver ([`nxp,video-smartdma`](../build/dts/api/bindings/video/nxp%2Cvideo-smartdma.md#std-dtcompatible-nxp-video-smartdma))
+  - Added an NXP’s smartdma based video driver ([`nxp,video-smartdma`](../build/dts/api/bindings/video/nxp,video-smartdma.md#std-dtcompatible-nxp-video-smartdma))
   - Added frame interval APIs to support variable frame rates (video\_sw\_generator.c)
   - Added image controls to the OV5640 driver
 - W1
 
-  - Added 1-Wire master driver for Analog Devices MAX32 SoC series ([`adi,max32-w1`](../build/dts/api/bindings/w1/adi%2Cmax32-w1.md#std-dtcompatible-adi-max32-w1))
+  - Added 1-Wire master driver for Analog Devices MAX32 SoC series ([`adi,max32-w1`](../build/dts/api/bindings/w1/adi,max32-w1.md#std-dtcompatible-adi-max32-w1))
 - Watchdog
 
-  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-watchdog`](../build/dts/api/bindings/watchdog/adi%2Cmax32-watchdog.md#std-dtcompatible-adi-max32-watchdog)).
+  - Added driver for Analog Devices MAX32 SoC series ([`adi,max32-watchdog`](../build/dts/api/bindings/watchdog/adi,max32-watchdog.md#std-dtcompatible-adi-max32-watchdog)).
   - Converted NXP S32 Software Watchdog Timer driver to native Zephyr code
 - Wi-Fi
 

@@ -445,7 +445,7 @@ configure its own fixed MPU regions in the SoC definition.
 
 When the property `zephyr,memory-attr` is present in a memory node, a new MPU
 region will be allocated and programmed during system boot. When used with the
-[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region) devicetree compatible, it will result in a
+[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr,memory-region.md#std-dtcompatible-zephyr-memory-region) devicetree compatible, it will result in a
 linker section being generated associated to that MPU region.
 
 For example, to define a new non-cacheable memory region in devicetree:

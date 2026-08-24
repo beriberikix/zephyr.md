@@ -121,12 +121,12 @@ More detailed information can be found in:
   - `kscan_sdl`: moved from [Keyboard Scan](../hardware/peripherals/kscan.md#kscan-api) to [Input](../services/input/index.md#input), renamed the Kconfig
     option from `KSCAN_SDL` to [`CONFIG_INPUT_SDL_TOUCH`](../kconfig.md#CONFIG_INPUT_SDL_TOUCH "CONFIG_INPUT_SDL_TOUCH") and the
     compatible from `zephyr,sdl-kscan` to
-    [`zephyr,input-sdl-touch`](../build/dts/api/bindings/input/zephyr%2Cinput-sdl-touch.md#std-dtcompatible-zephyr-input-sdl-touch).
+    [`zephyr,input-sdl-touch`](../build/dts/api/bindings/input/zephyr,input-sdl-touch.md#std-dtcompatible-zephyr-input-sdl-touch).
   - `nuvoton,npcx-kscan` moved to [Input](../services/input/index.md#input), renamed the Kconfig option
     names from `KSCAN_NPCX_...` to `INPUT_NPCX_KBD...` and the compatible
-    from `nuvoton,npcx-kscan` to [`nuvoton,npcx-kbd`](../build/dts/api/bindings/input/nuvoton%2Cnpcx-kbd.md#std-dtcompatible-nuvoton-npcx-kbd).
+    from `nuvoton,npcx-kscan` to [`nuvoton,npcx-kbd`](../build/dts/api/bindings/input/nuvoton,npcx-kbd.md#std-dtcompatible-nuvoton-npcx-kbd).
   - Touchscreen drivers converted to use the input APIs can use the
-    [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) driver to maintain Kscan compatibility.
+    [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) driver to maintain Kscan compatibility.
 - The declaration of `main()` has been changed from `void
   main(void)` to `int main(void)`. The main function is required to
   return the value zero. All other return values are reserved. This aligns
@@ -656,13 +656,13 @@ More detailed information can be found in:
 
   - The CAN statistics are now reset when calling [`can_start()`](../hardware/peripherals/can/controller.md#c.can_start "can_start").
   - Renamed the NXP FlexCAN devicetree binding compatible from `nxp,kinetis-flexcan` to
-    [`nxp,flexcan`](../build/dts/api/bindings/can/nxp%2Cflexcan.md#std-dtcompatible-nxp-flexcan).
+    [`nxp,flexcan`](../build/dts/api/bindings/can/nxp,flexcan.md#std-dtcompatible-nxp-flexcan).
   - Added support for the CAN-FD variant of the NXP FlexCAN controller using devicetree binding
-    [`nxp,flexcan-fd`](../build/dts/api/bindings/can/nxp%2Cflexcan-fd.md#std-dtcompatible-nxp-flexcan-fd).
+    [`nxp,flexcan-fd`](../build/dts/api/bindings/can/nxp,flexcan-fd.md#std-dtcompatible-nxp-flexcan-fd).
   - Added support for the NXP NXP S32 CANEXCEL controller using devicetree binding
-    [`nxp,s32-canxl`](../build/dts/api/bindings/can/nxp%2Cs32-canxl.md#std-dtcompatible-nxp-s32-canxl).
+    [`nxp,s32-canxl`](../build/dts/api/bindings/can/nxp,s32-canxl.md#std-dtcompatible-nxp-s32-canxl).
   - Added support for the Atmel SAM0 CAN controller using devicetree binding
-    [`atmel,sam0-can`](../build/dts/api/bindings/can/atmel%2Csam0-can.md#std-dtcompatible-atmel-sam0-can).
+    [`atmel,sam0-can`](../build/dts/api/bindings/can/atmel,sam0-can.md#std-dtcompatible-atmel-sam0-can).
   - Refactored the Bosch M\_CAN controller driver backend to allow for per-instance configuration via
     devicetree.
   - Now supports STM32H5 series.
@@ -702,7 +702,7 @@ More detailed information can be found in:
   - Added DMA support for the RP2040 SoC
 - EEPROM
 
-  - Switched from [`atmel,at24`](../build/dts/api/bindings/mtd/atmel%2Cat24.md#std-dtcompatible-atmel-at24) to dedicated [`zephyr,i2c-target-eeprom`](../build/dts/api/bindings/mtd/zephyr%2Ci2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom) for I2C EEPROM target driver.
+  - Switched from [`atmel,at24`](../build/dts/api/bindings/mtd/atmel,at24.md#std-dtcompatible-atmel-at24) to dedicated [`zephyr,i2c-target-eeprom`](../build/dts/api/bindings/mtd/zephyr,i2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom) for I2C EEPROM target driver.
 - Entropy
 
   - Added support for STM32H5 series.
@@ -749,7 +749,7 @@ More detailed information can be found in:
   - Introduced the [Input](../services/input/index.md#input) subsystem.
 - KSCAN
 
-  - Added a [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) input to kscan compatibility driver.
+  - Added a [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) input to kscan compatibility driver.
   - Converted the `ft5336` and `kscan_sdl` drivers to the input subsystem.
 - MIPI-DSI
 
@@ -840,7 +840,7 @@ More detailed information can be found in:
   > - Reworked DWC2 driver and added support for STM32F4 SoC family
 - W1
 
-  - Added DS2482-800 1-Wire master driver. See the [`maxim,ds2482-800`](../build/dts/api/bindings/w1/maxim%2Cds2482-800.md#std-dtcompatible-maxim-ds2482-800)
+  - Added DS2482-800 1-Wire master driver. See the [`maxim,ds2482-800`](../build/dts/api/bindings/w1/maxim,ds2482-800.md#std-dtcompatible-maxim-ds2482-800)
     devicetree binding for more information.
   - Added [`CONFIG_W1_NET_FORCE_MULTIDROP_ADDRESSING`](../kconfig.md#CONFIG_W1_NET_FORCE_MULTIDROP_ADDRESSING "CONFIG_W1_NET_FORCE_MULTIDROP_ADDRESSING") which can be
     enabled force the 1-Wire network layer to use multidrop addressing.

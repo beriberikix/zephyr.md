@@ -141,19 +141,19 @@ enable all optional modules, and then run `west update` again.
       };
   };
   ```
-- The [`goodix,gt911`](../build/dts/api/bindings/input/goodix%2Cgt911.md#std-dtcompatible-goodix-gt911), [`xptek,xpt2046`](../build/dts/api/bindings/input/xptek%2Cxpt2046.md#std-dtcompatible-xptek-xpt2046) and
-  [`hynitron,cst816s`](../build/dts/api/bindings/input/hynitron%2Ccst816s.md#std-dtcompatible-hynitron-cst816s) drivers have been converted from Kscan to
+- The [`goodix,gt911`](../build/dts/api/bindings/input/goodix,gt911.md#std-dtcompatible-goodix-gt911), [`xptek,xpt2046`](../build/dts/api/bindings/input/xptek,xpt2046.md#std-dtcompatible-xptek-xpt2046) and
+  [`hynitron,cst816s`](../build/dts/api/bindings/input/hynitron,cst816s.md#std-dtcompatible-hynitron-cst816s) drivers have been converted from Kscan to
   Input, they can still be used with Kscan applications by adding a
-  [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) node.
+  [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) node.
 - The `zephyr,gpio-keys` binding has been merged into
   [`gpio-keys`](../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys) and the callback definition has been renamed from
   `INPUT_LISTENER_CB_DEFINE` to [`INPUT_CALLBACK_DEFINE`](../services/input/index.md#c.INPUT_CALLBACK_DEFINE "INPUT_CALLBACK_DEFINE").
-- The [`ti,bq274xx`](../build/dts/api/bindings/sensor/ti%2Cbq274xx.md#std-dtcompatible-ti-bq274xx) driver was using incorrect units for capacity
+- The [`ti,bq274xx`](../build/dts/api/bindings/sensor/ti,bq274xx.md#std-dtcompatible-ti-bq274xx) driver was using incorrect units for capacity
   and power channels, these have been fixed and scaled by x1000 factor from the
   previous implementation, any application using them has to be changed
   accordingly.
 - The configuration options for the SSD1306 display driver can now be provided
-  via the Devicetree binding [`solomon,ssd1306fb`](../build/dts/api/compatibles/solomon%2Cssd1306fb.md#std-dtcompatible-solomon-ssd1306fb). The following
+  via the Devicetree binding [`solomon,ssd1306fb`](../build/dts/api/compatibles/solomon,ssd1306fb.md#std-dtcompatible-solomon-ssd1306fb). The following
   Kconfig options: `CONFIG_SSD1306_DEFAULT`,
   `CONFIG_SSD1306_SH1106_COMPATIBLE`, and `CONFIG_SSD1306_REVERSE_MODE` have
   been removed.
@@ -162,8 +162,8 @@ enable all optional modules, and then run `west update` again.
   - `CONFIG_SSD1306_SH1106_COMPATIBLE` was used to assert that the device is
     (compatible with) SH1106. This has been replaced by a dedicated dts
     compatible declaration. You may update an existing sh1106 node to change the
-    `compatible` designation from [`solomon,ssd1306fb`](../build/dts/api/compatibles/solomon%2Cssd1306fb.md#std-dtcompatible-solomon-ssd1306fb) to
-    [`sinowealth,sh1106`](../build/dts/api/compatibles/sinowealth%2Csh1106.md#std-dtcompatible-sinowealth-sh1106).
+    `compatible` designation from [`solomon,ssd1306fb`](../build/dts/api/compatibles/solomon,ssd1306fb.md#std-dtcompatible-solomon-ssd1306fb) to
+    [`sinowealth,sh1106`](../build/dts/api/compatibles/sinowealth,sh1106.md#std-dtcompatible-sinowealth-sh1106).
   - `CONFIG_SSD1306_REVERSE_MODE` is now set using the `inversion-on`
     property of the devicetree node.
 - GPIO drivers not implementing IRQ related operations must now provide
@@ -332,7 +332,7 @@ enable all optional modules, and then run `west update` again.
   [`CONFIG_GIC_V1`](../kconfig.md#CONFIG_GIC_V1 "CONFIG_GIC_V1"), [`CONFIG_GIC_V2`](../kconfig.md#CONFIG_GIC_V2 "CONFIG_GIC_V2") and
   [`CONFIG_GIC_V3`](../kconfig.md#CONFIG_GIC_V3 "CONFIG_GIC_V3") directly in Kconfig has been deprecated.
   The GIC version should now be specified by adding the appropriate compatible, for
-  example [`arm,gic-v2`](../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2), to the GIC node in the device tree.
+  example [`arm,gic-v2`](../build/dts/api/bindings/interrupt-controller/arm,gic-v2.md#std-dtcompatible-arm-gic-v2), to the GIC node in the device tree.
 - Nordic nRF based boards using [`CONFIG_NFCT_PINS_AS_GPIOS`](../kconfig.md#CONFIG_NFCT_PINS_AS_GPIOS "CONFIG_NFCT_PINS_AS_GPIOS")
   to configure NFCT pins as GPIOs, should instead set the new UICR
   `nfct-pins-as-gpios` property in devicetree. It can be set like this in the

@@ -76,15 +76,15 @@ on-chip / on-board
 
 | Type | Location | Description | Compatible |
 | --- | --- | --- | --- |
-| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L19) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L19) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm,cortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
 | Clock control | on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L36) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
-| GPIO & Headers | on-chip | GPIO controller for Davinci and Keystone devices[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L68) | [`ti,davinci-gpio`](../../../../build/dts/api/bindings/gpio/ti%2Cdavinci-gpio.md#std-dtcompatible-ti-davinci-gpio) |
-| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
-| Mailbox | on-chip | TI OMAP MAILBOX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L42) | [`ti,omap-mailbox`](../../../../build/dts/api/bindings/mbox/ti%2Comap-mailbox.md#std-dtcompatible-ti-omap-mailbox) |
-| Pin control | on-chip | TI K3 pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L51) | [`ti,k3-pinctrl`](../../../../build/dts/api/bindings/pinctrl/ti%2Ck3-pinctrl.md#std-dtcompatible-ti-k3-pinctrl) |
+| GPIO & Headers | on-chip | GPIO controller for Davinci and Keystone devices[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L68) | [`ti,davinci-gpio`](../../../../build/dts/api/bindings/gpio/ti,davinci-gpio.md#std-dtcompatible-ti-davinci-gpio) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm,v7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Mailbox | on-chip | TI OMAP MAILBOX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L42) | [`ti,omap-mailbox`](../../../../build/dts/api/bindings/mbox/ti,omap-mailbox.md#std-dtcompatible-ti-omap-mailbox) |
+| Pin control | on-chip | TI K3 pinctrl node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L51) | [`ti,k3-pinctrl`](../../../../build/dts/api/bindings/pinctrl/ti,k3-pinctrl.md#std-dtcompatible-ti-k3-pinctrl) |
 | Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L57) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
 | SRAM | on-chip | Generic on-chip SRAM description[3 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/am62x_m4.dtsi?plain=1#L26) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
-| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm,armv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
 
 ### Devices
 

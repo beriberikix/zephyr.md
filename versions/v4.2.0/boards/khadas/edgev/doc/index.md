@@ -51,10 +51,10 @@ on-chip / on-board
 
 | Type | Location | Description | Compatible |
 | --- | --- | --- | --- |
-| CPU | on-chip | ARM Cortex-A53 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L19) | [`arm,cortex-a53`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-a53.md#std-dtcompatible-arm-cortex-a53) |
-| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L51) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3.md#std-dtcompatible-arm-gic-v3) |
+| CPU | on-chip | ARM Cortex-A53 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L19) | [`arm,cortex-a53`](../../../../build/dts/api/bindings/cpu/arm,cortex-a53.md#std-dtcompatible-arm-cortex-a53) |
+| Interrupt controller | on-chip | ARM Generic Interrupt Controller v3[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L51) | [`arm,gic-v3`](../../../../build/dts/api/bindings/interrupt-controller/arm,gic-v3.md#std-dtcompatible-arm-gic-v3) |
 | Serial controller | on-chip | ns16550 UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L86) | [`ns16550`](../../../../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550) |
-| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L73) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm%2Carmv8-timer.md#std-dtcompatible-arm-armv8-timer) |
+| Timer | on-chip | per-core ARM architected timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm64/rockchip/rk3399.dtsi?plain=1#L73) | [`arm,armv8-timer`](../../../../build/dts/api/bindings/timer/arm,armv8-timer.md#std-dtcompatible-arm-armv8-timer) |
 
 There are multiple serial ports on the board: Zephyr is using
 uart2 as serial console.

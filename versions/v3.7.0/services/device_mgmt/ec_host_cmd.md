@@ -69,8 +69,8 @@ should be configured as usual. Example of the SPI node for STM32:
 };
 ```
 
-The STM32 SPI host command backend driver supports the [`st,stm32h7-spi`](../../build/dts/api/bindings/spi/st%2Cstm32h7-spi.md#std-dtcompatible-st-stm32h7-spi) and
-[`st,stm32-spi-fifo`](../../build/dts/api/bindings/spi/st%2Cstm32-spi-fifo.md#std-dtcompatible-st-stm32-spi-fifo) variant implementations. To enable these variants, append the
+The STM32 SPI host command backend driver supports the [`st,stm32h7-spi`](../../build/dts/api/bindings/spi/st,stm32h7-spi.md#std-dtcompatible-st-stm32h7-spi) and
+[`st,stm32-spi-fifo`](../../build/dts/api/bindings/spi/st,stm32-spi-fifo.md#std-dtcompatible-st-stm32-spi-fifo) variant implementations. To enable these variants, append the
 corresponding compatible string. For example, to enable FIFO support and support for the STM32H7
 SoCs, modify the compatible string as shown.
 

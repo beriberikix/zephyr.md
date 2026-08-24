@@ -21,7 +21,7 @@ a dedicated section for the RAM console buffer with prefined address.
 
 Add board dts overlay to this snippet to add property `zephyr,ram-console`
 in the chosen node and memory-region node with compatible string
-[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region) as the following:
+[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr,memory-region.md#std-dtcompatible-zephyr-memory-region) as the following:
 
 ```dts
 / {

@@ -32,7 +32,7 @@ For each LED:
 ## Building and Running
 
 This sample can be built and executed when the devicetree has an I2C device node
-with compatible [`issi,is31fl3216a`](../../../build/dts/api/bindings/led/issi%2Cis31fl3216a.md#std-dtcompatible-issi-is31fl3216a) enabled, along with the relevant
+with compatible [`issi,is31fl3216a`](../../../build/dts/api/bindings/led/issi,is31fl3216a.md#std-dtcompatible-issi-is31fl3216a) enabled, along with the relevant
 bus controller node also being enabled.
 
 As an example this sample provides a DTS overlay for the [NXP LPCXpresso55S28](../../../boards/arm/lpcxpresso55s28/doc/index.md#lpcxpresso55s28)

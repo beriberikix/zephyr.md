@@ -22,7 +22,7 @@ savings is correctly implemented.
 The application will build only for a target that has a [devicetree](../../../../build/dts/index.md#dt-guide)
 `flash0` alias that refers to an entry with the following bindings as a compatible:
 
-- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq%2Cmspi-device.md#std-dtcompatible-ambiq-mspi-device), [`mspi-atxp032`](../../../../build/dts/api/bindings/mtd/mspi-atxp032.md#std-dtcompatible-mspi-atxp032)
+- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq,mspi-device.md#std-dtcompatible-ambiq-mspi-device), [`mspi-atxp032`](../../../../build/dts/api/bindings/mtd/mspi-atxp032.md#std-dtcompatible-mspi-atxp032)
 
 ```shell
 west build -b apollo3p_evb samples/drivers/mspi/mspi_flash

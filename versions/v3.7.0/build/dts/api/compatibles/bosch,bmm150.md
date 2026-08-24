@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `bosch,bmm150` may be handled by any
 of the following bindings:
 
-- [bosch,bmm150 (on i2c bus)](../bindings/sensor/bosch%2Cbmm150-i2c.md#dtbinding-bosch-bmm150-i2c)
-- [bosch,bmm150 (on spi bus)](../bindings/sensor/bosch%2Cbmm150-spi.md#dtbinding-bosch-bmm150-spi)
+- [bosch,bmm150 (on i2c bus)](../bindings/sensor/bosch,bmm150-i2c.md#dtbinding-bosch-bmm150-i2c)
+- [bosch,bmm150 (on spi bus)](../bindings/sensor/bosch,bmm150-spi.md#dtbinding-bosch-bmm150-spi)

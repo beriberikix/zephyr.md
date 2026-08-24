@@ -56,13 +56,13 @@ power state the system should transition to based on states defined by the
 platform and other constraints such as a list of allowed states.
 
 More details on the states definition can be found in the
-[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr%2Cpower-state.md#std-dtcompatible-zephyr-power-state) binding documentation.
+[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr,power-state.md#std-dtcompatible-zephyr-power-state) binding documentation.
 
 ### Residency
 
 The power management system enters the power state which offers the highest
 power savings, and with a minimum residency value (see
-[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr%2Cpower-state.md#std-dtcompatible-zephyr-power-state)) less than or equal to the scheduled system
+[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr,power-state.md#std-dtcompatible-zephyr-power-state)) less than or equal to the scheduled system
 idle time duration.
 
 This policy also accounts for the time necessary to become active

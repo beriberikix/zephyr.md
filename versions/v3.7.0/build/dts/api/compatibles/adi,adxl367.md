@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `adi,adxl367` may be handled by any
 of the following bindings:
 
-- [adi,adxl367 (on spi bus)](../bindings/sensor/adi%2Cadxl367-spi.md#dtbinding-adi-adxl367-spi)
-- [adi,adxl367 (on i2c bus)](../bindings/sensor/adi%2Cadxl367-i2c.md#dtbinding-adi-adxl367-i2c)
+- [adi,adxl367 (on spi bus)](../bindings/sensor/adi,adxl367-spi.md#dtbinding-adi-adxl367-spi)
+- [adi,adxl367 (on i2c bus)](../bindings/sensor/adi,adxl367-i2c.md#dtbinding-adi-adxl367-i2c)

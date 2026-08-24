@@ -9,5 +9,5 @@ original_path: build/dts/api/compatibles/invensense,icm42670p.html
 The devicetree compatible `invensense,icm42670p` may be handled by any
 of the following bindings:
 
-- [invensense,icm42670p (on spi bus)](../bindings/sensor/invensense%2Cicm42670p-spi.md#dtbinding-invensense-icm42670p-spi)
-- [invensense,icm42670p (on i2c bus)](../bindings/sensor/invensense%2Cicm42670p-i2c.md#dtbinding-invensense-icm42670p-i2c)
+- [invensense,icm42670p (on spi bus)](../bindings/sensor/invensense,icm42670p-spi.md#dtbinding-invensense-icm42670p-spi)
+- [invensense,icm42670p (on i2c bus)](../bindings/sensor/invensense,icm42670p-i2c.md#dtbinding-invensense-icm42670p-i2c)

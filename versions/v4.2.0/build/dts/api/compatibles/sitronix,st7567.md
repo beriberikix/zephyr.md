@@ -9,5 +9,5 @@ original_path: build/dts/api/compatibles/sitronix,st7567.html
 The devicetree compatible `sitronix,st7567` may be handled by any
 of the following bindings:
 
-- [sitronix,st7567 (on i2c bus)](../bindings/display/sitronix%2Cst7567-i2c.md#dtbinding-sitronix-st7567-i2c)
-- [sitronix,st7567 (on spi bus)](../bindings/display/sitronix%2Cst7567-spi.md#dtbinding-sitronix-st7567-spi)
+- [sitronix,st7567 (on i2c bus)](../bindings/display/sitronix,st7567-i2c.md#dtbinding-sitronix-st7567-i2c)
+- [sitronix,st7567 (on spi bus)](../bindings/display/sitronix,st7567-spi.md#dtbinding-sitronix-st7567-spi)

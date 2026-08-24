@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `st,lsm303agr-accel` may be handled by any
 of the following bindings:
 
-- [st,lsm303agr-accel (on i2c bus)](../bindings/sensor/st%2Clsm303agr-accel-i2c.md#dtbinding-st-lsm303agr-accel-i2c)
-- [st,lsm303agr-accel (on spi bus)](../bindings/sensor/st%2Clsm303agr-accel-spi.md#dtbinding-st-lsm303agr-accel-spi)
+- [st,lsm303agr-accel (on i2c bus)](../bindings/sensor/st,lsm303agr-accel-i2c.md#dtbinding-st-lsm303agr-accel-i2c)
+- [st,lsm303agr-accel (on spi bus)](../bindings/sensor/st,lsm303agr-accel-spi.md#dtbinding-st-lsm303agr-accel-spi)

@@ -669,16 +669,16 @@ Removed APIs in this release
 
     | Old compatible | New compatible |
     | --- | --- |
-    | `nios,i2c` | [`altr,nios2-i2c`](../build/dts/api/bindings/i2c/altr%2Cnios2-i2c.md#std-dtcompatible-altr-nios2-i2c) |
-    | `cadence,tensilica-xtensa-lx4` | [`cdns,tensilica-xtensa-lx4`](../build/dts/api/bindings/cpu/cdns%2Ctensilica-xtensa-lx4.md#std-dtcompatible-cdns-tensilica-xtensa-lx4) |
-    | `cadence,tensilica-xtensa-lx6` | [`cdns,tensilica-xtensa-lx6`](../build/dts/api/bindings/cpu/cdns%2Ctensilica-xtensa-lx6.md#std-dtcompatible-cdns-tensilica-xtensa-lx6) |
-    | `colorway,lpd8803` | [`greeled,lpd8803`](../build/dts/api/bindings/led_strip/greeled%2Clpd8803.md#std-dtcompatible-greeled-lpd8803) |
-    | `colorway,lpd8806` | [`greeled,lpd8806`](../build/dts/api/bindings/led_strip/greeled%2Clpd8806.md#std-dtcompatible-greeled-lpd8806) |
-    | `grove,light` | [`seeed,grove-light`](../build/dts/api/bindings/sensor/seeed%2Cgrove-light.md#std-dtcompatible-seeed-grove-light) |
-    | `grove,temperature` | [`seeed,grove-temperature`](../build/dts/api/bindings/sensor/seeed%2Cgrove-temperature.md#std-dtcompatible-seeed-grove-temperature) |
-    | `max,max30101` | [`maxim,max30101`](../build/dts/api/bindings/sensor/maxim%2Cmax30101.md#std-dtcompatible-maxim-max30101) |
-    | `ublox,sara-r4` | [`u-blox,sara-r4`](../build/dts/api/bindings/modem/u-blox%2Csara-r4.md#std-dtcompatible-u-blox-sara-r4) |
-    | `xtensa,core-intc` | [`cdns,xtensa-core-intc`](../build/dts/api/bindings/interrupt-controller/cdns%2Cxtensa-core-intc.md#std-dtcompatible-cdns-xtensa-core-intc) |
+    | `nios,i2c` | [`altr,nios2-i2c`](../build/dts/api/bindings/i2c/altr,nios2-i2c.md#std-dtcompatible-altr-nios2-i2c) |
+    | `cadence,tensilica-xtensa-lx4` | [`cdns,tensilica-xtensa-lx4`](../build/dts/api/bindings/cpu/cdns,tensilica-xtensa-lx4.md#std-dtcompatible-cdns-tensilica-xtensa-lx4) |
+    | `cadence,tensilica-xtensa-lx6` | [`cdns,tensilica-xtensa-lx6`](../build/dts/api/bindings/cpu/cdns,tensilica-xtensa-lx6.md#std-dtcompatible-cdns-tensilica-xtensa-lx6) |
+    | `colorway,lpd8803` | [`greeled,lpd8803`](../build/dts/api/bindings/led_strip/greeled,lpd8803.md#std-dtcompatible-greeled-lpd8803) |
+    | `colorway,lpd8806` | [`greeled,lpd8806`](../build/dts/api/bindings/led_strip/greeled,lpd8806.md#std-dtcompatible-greeled-lpd8806) |
+    | `grove,light` | [`seeed,grove-light`](../build/dts/api/bindings/sensor/seeed,grove-light.md#std-dtcompatible-seeed-grove-light) |
+    | `grove,temperature` | [`seeed,grove-temperature`](../build/dts/api/bindings/sensor/seeed,grove-temperature.md#std-dtcompatible-seeed-grove-temperature) |
+    | `max,max30101` | [`maxim,max30101`](../build/dts/api/bindings/sensor/maxim,max30101.md#std-dtcompatible-maxim-max30101) |
+    | `ublox,sara-r4` | [`u-blox,sara-r4`](../build/dts/api/bindings/modem/u-blox,sara-r4.md#std-dtcompatible-u-blox-sara-r4) |
+    | `xtensa,core-intc` | [`cdns,xtensa-core-intc`](../build/dts/api/bindings/interrupt-controller/cdns,xtensa-core-intc.md#std-dtcompatible-cdns-xtensa-core-intc) |
     | `vexriscv,intc0` | `vexriscv-intc0` |
 
     Out of tree users of these bindings will need to update their
@@ -694,59 +694,59 @@ Removed APIs in this release
             ...
     };
     ```
-  - Other new bindings in alphabetical order: [`andestech,atcgpio100`](../build/dts/api/bindings/gpio/andestech%2Catcgpio100.md#std-dtcompatible-andestech-atcgpio100),
-    [`arm,gic-v3-its`](../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v3-its.md#std-dtcompatible-arm-gic-v3-its), [`atmel,sam0-gmac`](../build/dts/api/bindings/ethernet/atmel%2Csam0-gmac.md#std-dtcompatible-atmel-sam0-gmac),
-    [`atmel,sam0-pinctrl`](../build/dts/api/bindings/pinctrl/atmel%2Csam0-pinctrl.md#std-dtcompatible-atmel-sam0-pinctrl), [`atmel,sam-dac`](../build/dts/api/bindings/dac/atmel%2Csam-dac.md#std-dtcompatible-atmel-sam-dac),
-    [`atmel,sam-mdio`](../build/dts/api/bindings/mdio/atmel%2Csam-mdio.md#std-dtcompatible-atmel-sam-mdio), [`atmel,sam-usbc`](../build/dts/api/bindings/usb/atmel%2Csam-usbc.md#std-dtcompatible-atmel-sam-usbc),
-    [`cdns,tensilica-xtensa-lx7`](../build/dts/api/bindings/cpu/cdns%2Ctensilica-xtensa-lx7.md#std-dtcompatible-cdns-tensilica-xtensa-lx7),
+  - Other new bindings in alphabetical order: [`andestech,atcgpio100`](../build/dts/api/bindings/gpio/andestech,atcgpio100.md#std-dtcompatible-andestech-atcgpio100),
+    [`arm,gic-v3-its`](../build/dts/api/bindings/interrupt-controller/arm,gic-v3-its.md#std-dtcompatible-arm-gic-v3-its), [`atmel,sam0-gmac`](../build/dts/api/bindings/ethernet/atmel,sam0-gmac.md#std-dtcompatible-atmel-sam0-gmac),
+    [`atmel,sam0-pinctrl`](../build/dts/api/bindings/pinctrl/atmel,sam0-pinctrl.md#std-dtcompatible-atmel-sam0-pinctrl), [`atmel,sam-dac`](../build/dts/api/bindings/dac/atmel,sam-dac.md#std-dtcompatible-atmel-sam-dac),
+    [`atmel,sam-mdio`](../build/dts/api/bindings/mdio/atmel,sam-mdio.md#std-dtcompatible-atmel-sam-mdio), [`atmel,sam-usbc`](../build/dts/api/bindings/usb/atmel,sam-usbc.md#std-dtcompatible-atmel-sam-usbc),
+    [`cdns,tensilica-xtensa-lx7`](../build/dts/api/bindings/cpu/cdns,tensilica-xtensa-lx7.md#std-dtcompatible-cdns-tensilica-xtensa-lx7),
     `espressif,esp32c3-uart`,
-    [`espressif,esp32-intc`](../build/dts/api/bindings/interrupt-controller/espressif%2Cesp32-intc.md#std-dtcompatible-espressif-esp32-intc),
+    [`espressif,esp32-intc`](../build/dts/api/bindings/interrupt-controller/espressif,esp32-intc.md#std-dtcompatible-espressif-esp32-intc),
     `espressif,esp32s2-uart`, [`ethernet-phy`](../build/dts/api/bindings/ethernet/ethernet-phy.md#std-dtcompatible-ethernet-phy),
-    [`fcs,fxl6408`](../build/dts/api/bindings/gpio/fcs%2Cfxl6408.md#std-dtcompatible-fcs-fxl6408), [`ilitek,ili9341`](../build/dts/api/bindings/display/ilitek%2Cili9341.md#std-dtcompatible-ilitek-ili9341),
-    [`ite,it8xxx2-bbram`](../build/dts/api/bindings/memory-controllers/ite%2Cit8xxx2-bbram.md#std-dtcompatible-ite-it8xxx2-bbram), `ite,it8xxx2-kscan`,
-    `ite,it8xxx2-pinctrl-conf`, [`ite,it8xxx2-pwm`](../build/dts/api/bindings/pwm/ite%2Cit8xxx2-pwm.md#std-dtcompatible-ite-it8xxx2-pwm),
-    [`ite,it8xxx2-pwmprs`](../build/dts/api/bindings/pwm/ite%2Cit8xxx2-pwmprs.md#std-dtcompatible-ite-it8xxx2-pwmprs), [`ite,it8xxx2-watchdog`](../build/dts/api/bindings/watchdog/ite%2Cit8xxx2-watchdog.md#std-dtcompatible-ite-it8xxx2-watchdog),
-    [`lm75`](../build/dts/api/bindings/sensor/lm75.md#std-dtcompatible-lm75), [`lm77`](../build/dts/api/bindings/sensor/lm77.md#std-dtcompatible-lm77), [`meas,ms5607`](../build/dts/api/compatibles/meas%2Cms5607.md#std-dtcompatible-meas-ms5607),
-    [`microchip,ksz8863`](../build/dts/api/bindings/dsa/microchip%2Cksz8863.md#std-dtcompatible-microchip-ksz8863), [`microchip,mcp7940n`](../build/dts/api/bindings/rtc/microchip%2Cmcp7940n.md#std-dtcompatible-microchip-mcp7940n),
-    `microchip,xec-adc-v2`, [`microchip,xec-ecia`](../build/dts/api/bindings/interrupt-controller/microchip%2Cxec-ecia.md#std-dtcompatible-microchip-xec-ecia),
-    [`microchip,xec-ecia-girq`](../build/dts/api/bindings/interrupt-controller/microchip%2Cxec-ecia-girq.md#std-dtcompatible-microchip-xec-ecia-girq),
-    [`microchip,xec-gpio-v2`](../build/dts/api/bindings/gpio/microchip%2Cxec-gpio-v2.md#std-dtcompatible-microchip-xec-gpio-v2),
-    [`microchip,xec-i2c-v2`](../build/dts/api/bindings/i2c/microchip%2Cxec-i2c-v2.md#std-dtcompatible-microchip-xec-i2c-v2), [`microchip,xec-pcr`](../build/dts/api/bindings/clock/microchip%2Cxec-pcr.md#std-dtcompatible-microchip-xec-pcr),
-    [`microchip,xec-uart`](../build/dts/api/bindings/serial/microchip%2Cxec-uart.md#std-dtcompatible-microchip-xec-uart), [`nuvoton,npcx-bbram`](../build/dts/api/bindings/memory-controllers/nuvoton%2Cnpcx-bbram.md#std-dtcompatible-nuvoton-npcx-bbram),
-    [`nuvoton,npcx-booter-variant`](../build/dts/api/bindings/misc/nuvoton%2Cnpcx-booter-variant.md#std-dtcompatible-nuvoton-npcx-booter-variant),
-    [`nuvoton,npcx-ps2-channel`](../build/dts/api/bindings/ps2/nuvoton%2Cnpcx-ps2-channel.md#std-dtcompatible-nuvoton-npcx-ps2-channel),
-    [`nuvoton,npcx-ps2-ctrl`](../build/dts/api/bindings/ps2/nuvoton%2Cnpcx-ps2-ctrl.md#std-dtcompatible-nuvoton-npcx-ps2-ctrl), [`nuvoton,npcx-soc-id`](../build/dts/api/bindings/misc/nuvoton%2Cnpcx-soc-id.md#std-dtcompatible-nuvoton-npcx-soc-id),
-    [`nxp,imx-ccm-rev2`](../build/dts/api/bindings/clock/nxp%2Cimx-ccm-rev2.md#std-dtcompatible-nxp-imx-ccm-rev2), [`nxp,lpc-ctimer`](../build/dts/api/bindings/timer/nxp%2Clpc-ctimer.md#std-dtcompatible-nxp-lpc-ctimer),
-    [`nxp,lpc-uid`](../build/dts/api/bindings/hwinfo/nxp%2Clpc-uid.md#std-dtcompatible-nxp-lpc-uid), `nxp,mcux-usbd`,
-    [`nxp,sctimer-pwm`](../build/dts/api/bindings/pwm/nxp%2Csctimer-pwm.md#std-dtcompatible-nxp-sctimer-pwm), [`ovti,ov2640`](../build/dts/api/bindings/video/ovti%2Cov2640.md#std-dtcompatible-ovti-ov2640),
-    [`renesas,rcar-can`](../build/dts/api/bindings/can/renesas%2Crcar-can.md#std-dtcompatible-renesas-rcar-can), [`renesas,rcar-i2c`](../build/dts/api/bindings/i2c/renesas%2Crcar-i2c.md#std-dtcompatible-renesas-rcar-i2c),
+    [`fcs,fxl6408`](../build/dts/api/bindings/gpio/fcs,fxl6408.md#std-dtcompatible-fcs-fxl6408), [`ilitek,ili9341`](../build/dts/api/bindings/display/ilitek,ili9341.md#std-dtcompatible-ilitek-ili9341),
+    [`ite,it8xxx2-bbram`](../build/dts/api/bindings/memory-controllers/ite,it8xxx2-bbram.md#std-dtcompatible-ite-it8xxx2-bbram), `ite,it8xxx2-kscan`,
+    `ite,it8xxx2-pinctrl-conf`, [`ite,it8xxx2-pwm`](../build/dts/api/bindings/pwm/ite,it8xxx2-pwm.md#std-dtcompatible-ite-it8xxx2-pwm),
+    [`ite,it8xxx2-pwmprs`](../build/dts/api/bindings/pwm/ite,it8xxx2-pwmprs.md#std-dtcompatible-ite-it8xxx2-pwmprs), [`ite,it8xxx2-watchdog`](../build/dts/api/bindings/watchdog/ite,it8xxx2-watchdog.md#std-dtcompatible-ite-it8xxx2-watchdog),
+    [`lm75`](../build/dts/api/bindings/sensor/lm75.md#std-dtcompatible-lm75), [`lm77`](../build/dts/api/bindings/sensor/lm77.md#std-dtcompatible-lm77), [`meas,ms5607`](../build/dts/api/compatibles/meas,ms5607.md#std-dtcompatible-meas-ms5607),
+    [`microchip,ksz8863`](../build/dts/api/bindings/dsa/microchip,ksz8863.md#std-dtcompatible-microchip-ksz8863), [`microchip,mcp7940n`](../build/dts/api/bindings/rtc/microchip,mcp7940n.md#std-dtcompatible-microchip-mcp7940n),
+    `microchip,xec-adc-v2`, [`microchip,xec-ecia`](../build/dts/api/bindings/interrupt-controller/microchip,xec-ecia.md#std-dtcompatible-microchip-xec-ecia),
+    [`microchip,xec-ecia-girq`](../build/dts/api/bindings/interrupt-controller/microchip,xec-ecia-girq.md#std-dtcompatible-microchip-xec-ecia-girq),
+    [`microchip,xec-gpio-v2`](../build/dts/api/bindings/gpio/microchip,xec-gpio-v2.md#std-dtcompatible-microchip-xec-gpio-v2),
+    [`microchip,xec-i2c-v2`](../build/dts/api/bindings/i2c/microchip,xec-i2c-v2.md#std-dtcompatible-microchip-xec-i2c-v2), [`microchip,xec-pcr`](../build/dts/api/bindings/clock/microchip,xec-pcr.md#std-dtcompatible-microchip-xec-pcr),
+    [`microchip,xec-uart`](../build/dts/api/bindings/serial/microchip,xec-uart.md#std-dtcompatible-microchip-xec-uart), [`nuvoton,npcx-bbram`](../build/dts/api/bindings/memory-controllers/nuvoton,npcx-bbram.md#std-dtcompatible-nuvoton-npcx-bbram),
+    [`nuvoton,npcx-booter-variant`](../build/dts/api/bindings/misc/nuvoton,npcx-booter-variant.md#std-dtcompatible-nuvoton-npcx-booter-variant),
+    [`nuvoton,npcx-ps2-channel`](../build/dts/api/bindings/ps2/nuvoton,npcx-ps2-channel.md#std-dtcompatible-nuvoton-npcx-ps2-channel),
+    [`nuvoton,npcx-ps2-ctrl`](../build/dts/api/bindings/ps2/nuvoton,npcx-ps2-ctrl.md#std-dtcompatible-nuvoton-npcx-ps2-ctrl), [`nuvoton,npcx-soc-id`](../build/dts/api/bindings/misc/nuvoton,npcx-soc-id.md#std-dtcompatible-nuvoton-npcx-soc-id),
+    [`nxp,imx-ccm-rev2`](../build/dts/api/bindings/clock/nxp,imx-ccm-rev2.md#std-dtcompatible-nxp-imx-ccm-rev2), [`nxp,lpc-ctimer`](../build/dts/api/bindings/timer/nxp,lpc-ctimer.md#std-dtcompatible-nxp-lpc-ctimer),
+    [`nxp,lpc-uid`](../build/dts/api/bindings/hwinfo/nxp,lpc-uid.md#std-dtcompatible-nxp-lpc-uid), `nxp,mcux-usbd`,
+    [`nxp,sctimer-pwm`](../build/dts/api/bindings/pwm/nxp,sctimer-pwm.md#std-dtcompatible-nxp-sctimer-pwm), [`ovti,ov2640`](../build/dts/api/bindings/video/ovti,ov2640.md#std-dtcompatible-ovti-ov2640),
+    [`renesas,rcar-can`](../build/dts/api/bindings/can/renesas,rcar-can.md#std-dtcompatible-renesas-rcar-can), [`renesas,rcar-i2c`](../build/dts/api/bindings/i2c/renesas,rcar-i2c.md#std-dtcompatible-renesas-rcar-i2c),
     `reserved-memory`, `riscv,sifive-e24`,
-    [`sensirion,sgp40`](../build/dts/api/bindings/sensor/sensirion%2Csgp40.md#std-dtcompatible-sensirion-sgp40), [`sensirion,sht4x`](../build/dts/api/bindings/sensor/sensirion%2Csht4x.md#std-dtcompatible-sensirion-sht4x),
-    [`sensirion,shtcx`](../build/dts/api/bindings/sensor/sensirion%2Cshtcx.md#std-dtcompatible-sensirion-shtcx), [`silabs,si7055`](../build/dts/api/bindings/sensor/silabs%2Csi7055.md#std-dtcompatible-silabs-si7055),
-    [`silabs,si7210`](../build/dts/api/bindings/sensor/silabs%2Csi7210.md#std-dtcompatible-silabs-si7210), [`snps,creg-gpio`](../build/dts/api/bindings/gpio/snps%2Ccreg-gpio.md#std-dtcompatible-snps-creg-gpio),
-    [`st,i3g4250d`](../build/dts/api/bindings/sensor/st%2Ci3g4250d.md#std-dtcompatible-st-i3g4250d), [`st,stm32-aes`](../build/dts/api/bindings/crypto/st%2Cstm32-aes.md#std-dtcompatible-st-stm32-aes),
-    [`st,stm32-dma`](../build/dts/api/bindings/dma/st%2Cstm32-dma.md#std-dtcompatible-st-stm32-dma), [`st,stm32-dma-v2bis`](../build/dts/api/bindings/dma/st%2Cstm32-dma-v2bis.md#std-dtcompatible-st-stm32-dma-v2bis),
-    [`st,stm32-hsem-mailbox`](../build/dts/api/bindings/ipm/st%2Cstm32-hsem-mailbox.md#std-dtcompatible-st-stm32-hsem-mailbox), [`st,stm32-nv-flash`](../build/dts/api/bindings/mtd/st%2Cstm32-nv-flash.md#std-dtcompatible-st-stm32-nv-flash),
-    [`st,stm32-spi-subghz`](../build/dts/api/bindings/spi/st%2Cstm32-spi-subghz.md#std-dtcompatible-st-stm32-spi-subghz),
+    [`sensirion,sgp40`](../build/dts/api/bindings/sensor/sensirion,sgp40.md#std-dtcompatible-sensirion-sgp40), [`sensirion,sht4x`](../build/dts/api/bindings/sensor/sensirion,sht4x.md#std-dtcompatible-sensirion-sht4x),
+    [`sensirion,shtcx`](../build/dts/api/bindings/sensor/sensirion,shtcx.md#std-dtcompatible-sensirion-shtcx), [`silabs,si7055`](../build/dts/api/bindings/sensor/silabs,si7055.md#std-dtcompatible-silabs-si7055),
+    [`silabs,si7210`](../build/dts/api/bindings/sensor/silabs,si7210.md#std-dtcompatible-silabs-si7210), [`snps,creg-gpio`](../build/dts/api/bindings/gpio/snps,creg-gpio.md#std-dtcompatible-snps-creg-gpio),
+    [`st,i3g4250d`](../build/dts/api/bindings/sensor/st,i3g4250d.md#std-dtcompatible-st-i3g4250d), [`st,stm32-aes`](../build/dts/api/bindings/crypto/st,stm32-aes.md#std-dtcompatible-st-stm32-aes),
+    [`st,stm32-dma`](../build/dts/api/bindings/dma/st,stm32-dma.md#std-dtcompatible-st-stm32-dma), [`st,stm32-dma-v2bis`](../build/dts/api/bindings/dma/st,stm32-dma-v2bis.md#std-dtcompatible-st-stm32-dma-v2bis),
+    [`st,stm32-hsem-mailbox`](../build/dts/api/bindings/ipm/st,stm32-hsem-mailbox.md#std-dtcompatible-st-stm32-hsem-mailbox), [`st,stm32-nv-flash`](../build/dts/api/bindings/mtd/st,stm32-nv-flash.md#std-dtcompatible-st-stm32-nv-flash),
+    [`st,stm32-spi-subghz`](../build/dts/api/bindings/spi/st,stm32-spi-subghz.md#std-dtcompatible-st-stm32-spi-subghz),
     `st,stm32u5-flash-controller`,
-    [`st,stm32u5-msi-clock`](../build/dts/api/bindings/clock/st%2Cstm32u5-msi-clock.md#std-dtcompatible-st-stm32u5-msi-clock), [`st,stm32u5-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32u5-pll-clock.md#std-dtcompatible-st-stm32u5-pll-clock),
-    [`st,stm32u5-rcc`](../build/dts/api/bindings/clock/st%2Cstm32u5-rcc.md#std-dtcompatible-st-stm32u5-rcc), [`st,stm32wl-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32wl-hse-clock.md#std-dtcompatible-st-stm32wl-hse-clock),
-    [`st,stm32wl-subghz-radio`](../build/dts/api/bindings/lora/st%2Cstm32wl-subghz-radio.md#std-dtcompatible-st-stm32wl-subghz-radio), [`st,stmpe1600`](../build/dts/api/bindings/gpio/st%2Cstmpe1600.md#std-dtcompatible-st-stmpe1600),
-    [`syscon`](../build/dts/api/bindings/syscon/syscon.md#std-dtcompatible-syscon), [`telink,b91`](../build/dts/api/bindings/cpu/telink%2Cb91.md#std-dtcompatible-telink-b91),
-    [`telink,b91-flash-controller`](../build/dts/api/bindings/flash_controller/telink%2Cb91-flash-controller.md#std-dtcompatible-telink-b91-flash-controller),
-    [`telink,b91-gpio`](../build/dts/api/bindings/gpio/telink%2Cb91-gpio.md#std-dtcompatible-telink-b91-gpio), [`telink,b91-i2c`](../build/dts/api/bindings/i2c/telink%2Cb91-i2c.md#std-dtcompatible-telink-b91-i2c),
-    `telink,b91-pinmux`, [`telink,b91-power`](../build/dts/api/bindings/power/telink%2Cb91-power.md#std-dtcompatible-telink-b91-power),
-    [`telink,b91-pwm`](../build/dts/api/bindings/pwm/telink%2Cb91-pwm.md#std-dtcompatible-telink-b91-pwm), [`telink,b91-spi`](../build/dts/api/bindings/spi/telink%2Cb91-spi.md#std-dtcompatible-telink-b91-spi),
-    [`telink,b91-trng`](../build/dts/api/bindings/rng/telink%2Cb91-trng.md#std-dtcompatible-telink-b91-trng), [`telink,b91-uart`](../build/dts/api/bindings/serial/telink%2Cb91-uart.md#std-dtcompatible-telink-b91-uart),
-    [`telink,b91-zb`](../build/dts/api/bindings/ieee802154/telink%2Cb91-zb.md#std-dtcompatible-telink-b91-zb), [`ti,hdc2010`](../build/dts/api/bindings/sensor/ti%2Chdc2010.md#std-dtcompatible-ti-hdc2010),
-    [`ti,hdc2021`](../build/dts/api/bindings/sensor/ti%2Chdc2021.md#std-dtcompatible-ti-hdc2021), [`ti,hdc2022`](../build/dts/api/bindings/sensor/ti%2Chdc2022.md#std-dtcompatible-ti-hdc2022),
-    [`ti,hdc2080`](../build/dts/api/bindings/sensor/ti%2Chdc2080.md#std-dtcompatible-ti-hdc2080), [`ti,hdc20xx`](../build/dts/api/bindings/sensor/ti%2Chdc20xx.md#std-dtcompatible-ti-hdc20xx),
-    [`ti,ina219`](../build/dts/api/bindings/sensor/ti%2Cina219.md#std-dtcompatible-ti-ina219), `ti,ina23x`,
-    [`ti,tca9538`](../build/dts/api/bindings/gpio/ti%2Ctca9538.md#std-dtcompatible-ti-tca9538), [`ti,tca9546a`](../build/dts/api/bindings/i2c/ti%2Ctca9546a.md#std-dtcompatible-ti-tca9546a),
-    [`ti,tlc59108`](../build/dts/api/bindings/led/ti%2Ctlc59108.md#std-dtcompatible-ti-tlc59108),
-    [`xlnx,gem`](../build/dts/api/bindings/ethernet/xlnx%2Cgem.md#std-dtcompatible-xlnx-gem), [`zephyr,bbram-emul`](../build/dts/api/bindings/memory-controllers/zephyr%2Cbbram-emul.md#std-dtcompatible-zephyr-bbram-emul),
-    [`zephyr,cdc-acm-uart`](../build/dts/api/bindings/serial/zephyr%2Ccdc-acm-uart.md#std-dtcompatible-zephyr-cdc-acm-uart), `zephyr,gsm-ppp`,
-    [`zephyr,native-posix-udc`](../build/dts/api/bindings/usb/zephyr%2Cnative-posix-udc.md#std-dtcompatible-zephyr-native-posix-udc)
+    [`st,stm32u5-msi-clock`](../build/dts/api/bindings/clock/st,stm32u5-msi-clock.md#std-dtcompatible-st-stm32u5-msi-clock), [`st,stm32u5-pll-clock`](../build/dts/api/bindings/clock/st,stm32u5-pll-clock.md#std-dtcompatible-st-stm32u5-pll-clock),
+    [`st,stm32u5-rcc`](../build/dts/api/bindings/clock/st,stm32u5-rcc.md#std-dtcompatible-st-stm32u5-rcc), [`st,stm32wl-hse-clock`](../build/dts/api/bindings/clock/st,stm32wl-hse-clock.md#std-dtcompatible-st-stm32wl-hse-clock),
+    [`st,stm32wl-subghz-radio`](../build/dts/api/bindings/lora/st,stm32wl-subghz-radio.md#std-dtcompatible-st-stm32wl-subghz-radio), [`st,stmpe1600`](../build/dts/api/bindings/gpio/st,stmpe1600.md#std-dtcompatible-st-stmpe1600),
+    [`syscon`](../build/dts/api/bindings/syscon/syscon.md#std-dtcompatible-syscon), [`telink,b91`](../build/dts/api/bindings/cpu/telink,b91.md#std-dtcompatible-telink-b91),
+    [`telink,b91-flash-controller`](../build/dts/api/bindings/flash_controller/telink,b91-flash-controller.md#std-dtcompatible-telink-b91-flash-controller),
+    [`telink,b91-gpio`](../build/dts/api/bindings/gpio/telink,b91-gpio.md#std-dtcompatible-telink-b91-gpio), [`telink,b91-i2c`](../build/dts/api/bindings/i2c/telink,b91-i2c.md#std-dtcompatible-telink-b91-i2c),
+    `telink,b91-pinmux`, [`telink,b91-power`](../build/dts/api/bindings/power/telink,b91-power.md#std-dtcompatible-telink-b91-power),
+    [`telink,b91-pwm`](../build/dts/api/bindings/pwm/telink,b91-pwm.md#std-dtcompatible-telink-b91-pwm), [`telink,b91-spi`](../build/dts/api/bindings/spi/telink,b91-spi.md#std-dtcompatible-telink-b91-spi),
+    [`telink,b91-trng`](../build/dts/api/bindings/rng/telink,b91-trng.md#std-dtcompatible-telink-b91-trng), [`telink,b91-uart`](../build/dts/api/bindings/serial/telink,b91-uart.md#std-dtcompatible-telink-b91-uart),
+    [`telink,b91-zb`](../build/dts/api/bindings/ieee802154/telink,b91-zb.md#std-dtcompatible-telink-b91-zb), [`ti,hdc2010`](../build/dts/api/bindings/sensor/ti,hdc2010.md#std-dtcompatible-ti-hdc2010),
+    [`ti,hdc2021`](../build/dts/api/bindings/sensor/ti,hdc2021.md#std-dtcompatible-ti-hdc2021), [`ti,hdc2022`](../build/dts/api/bindings/sensor/ti,hdc2022.md#std-dtcompatible-ti-hdc2022),
+    [`ti,hdc2080`](../build/dts/api/bindings/sensor/ti,hdc2080.md#std-dtcompatible-ti-hdc2080), [`ti,hdc20xx`](../build/dts/api/bindings/sensor/ti,hdc20xx.md#std-dtcompatible-ti-hdc20xx),
+    [`ti,ina219`](../build/dts/api/bindings/sensor/ti,ina219.md#std-dtcompatible-ti-ina219), `ti,ina23x`,
+    [`ti,tca9538`](../build/dts/api/bindings/gpio/ti,tca9538.md#std-dtcompatible-ti-tca9538), [`ti,tca9546a`](../build/dts/api/bindings/i2c/ti,tca9546a.md#std-dtcompatible-ti-tca9546a),
+    [`ti,tlc59108`](../build/dts/api/bindings/led/ti,tlc59108.md#std-dtcompatible-ti-tlc59108),
+    [`xlnx,gem`](../build/dts/api/bindings/ethernet/xlnx,gem.md#std-dtcompatible-xlnx-gem), [`zephyr,bbram-emul`](../build/dts/api/bindings/memory-controllers/zephyr,bbram-emul.md#std-dtcompatible-zephyr-bbram-emul),
+    [`zephyr,cdc-acm-uart`](../build/dts/api/bindings/serial/zephyr,cdc-acm-uart.md#std-dtcompatible-zephyr-cdc-acm-uart), `zephyr,gsm-ppp`,
+    [`zephyr,native-posix-udc`](../build/dts/api/bindings/usb/zephyr,native-posix-udc.md#std-dtcompatible-zephyr-native-posix-udc)
 - West (extensions)
 
   > - openocd runner: Zephyr thread awareness is now available in GDB by default

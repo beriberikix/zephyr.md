@@ -21,7 +21,7 @@ The sample first runs in polling mode for 15 seconds, then in trigger mode, disp
 
 The sample can be configured to support BMG160 sensors connected via I2C. Configuration is done via [devicetree](../../../build/dts/index.md#dt-guide). The devicetree
 must have an enabled node with `compatible = "bosch,bmg160";`. See
-[`bosch,bmg160`](../../../build/dts/api/bindings/sensor/bosch%2Cbmg160.md#std-dtcompatible-bosch-bmg160) for the devicetree binding and see below for
+[`bosch,bmg160`](../../../build/dts/api/bindings/sensor/bosch,bmg160.md#std-dtcompatible-bosch-bmg160) for the devicetree binding and see below for
 examples and common configurations.
 
 If the sensor is not built into your board, start by wiring the sensor pins

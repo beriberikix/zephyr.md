@@ -68,7 +68,7 @@ of the M5Stack Core2 board.
 ### Power supply
 
 M5Stack Core2 module is equipped with the feature-rich power management IC
-([`x-powers,axp192-regulator`](../../../../build/dts/api/bindings/regulator/x-powers%2Caxp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator)).
+([`x-powers,axp192-regulator`](../../../../build/dts/api/bindings/regulator/x-powers,axp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator)).
 Following regulators are utilized on this module:
 
 - **vdd\_mcu**:

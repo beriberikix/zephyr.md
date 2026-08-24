@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `adi,adxl372` may be handled by any
 of the following bindings:
 
-- [adi,adxl372 (on i2c bus)](../bindings/sensor/adi%2Cadxl372-i2c.md#dtbinding-adi-adxl372-i2c)
-- [adi,adxl372 (on spi bus)](../bindings/sensor/adi%2Cadxl372-spi.md#dtbinding-adi-adxl372-spi)
+- [adi,adxl372 (on i2c bus)](../bindings/sensor/adi,adxl372-i2c.md#dtbinding-adi-adxl372-i2c)
+- [adi,adxl372 (on spi bus)](../bindings/sensor/adi,adxl372-spi.md#dtbinding-adi-adxl372-spi)

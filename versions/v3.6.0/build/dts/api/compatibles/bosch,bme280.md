@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `bosch,bme280` may be handled by any
 of the following bindings:
 
-- [bosch,bme280 (on i2c bus)](../bindings/sensor/bosch%2Cbme280-i2c.md#dtbinding-bosch-bme280-i2c)
-- [bosch,bme280 (on spi bus)](../bindings/sensor/bosch%2Cbme280-spi.md#dtbinding-bosch-bme280-spi)
+- [bosch,bme280 (on i2c bus)](../bindings/sensor/bosch,bme280-i2c.md#dtbinding-bosch-bme280-i2c)
+- [bosch,bme280 (on spi bus)](../bindings/sensor/bosch,bme280-spi.md#dtbinding-bosch-bme280-spi)

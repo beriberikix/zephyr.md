@@ -559,8 +559,8 @@ More detailed information can be found in:
   - Made the `sample-point` and `sample-point-data` devicetree properties optional.
   - Renamed the `bus_speed` and `bus_speed_data` fields of `can_driver_config` to
     `bitrate` and `bitrate_data`.
-  - Added driver for [`nordic,nrf-can`](../build/dts/api/bindings/can/nordic%2Cnrf-can.md#std-dtcompatible-nordic-nrf-can).
-  - Added driver support for Numaker M2L31X to the [`nuvoton,numaker-canfd`](../build/dts/api/bindings/can/nuvoton%2Cnumaker-canfd.md#std-dtcompatible-nuvoton-numaker-canfd) driver.
+  - Added driver for [`nordic,nrf-can`](../build/dts/api/bindings/can/nordic,nrf-can.md#std-dtcompatible-nordic-nrf-can).
+  - Added driver support for Numaker M2L31X to the [`nuvoton,numaker-canfd`](../build/dts/api/bindings/can/nuvoton,numaker-canfd.md#std-dtcompatible-nuvoton-numaker-canfd) driver.
   - Added host communication test suite.
 - Charger
 
@@ -586,10 +586,10 @@ More detailed information can be found in:
     in bits the LPTMR peripheral uses for its counter.
 - DAC
 
-  - Added support for NXP RW SOC series DAC ([`nxp,gau-dac`](../build/dts/api/bindings/dac/nxp%2Cgau-dac.md#std-dtcompatible-nxp-gau-dac)).
+  - Added support for NXP RW SOC series DAC ([`nxp,gau-dac`](../build/dts/api/bindings/dac/nxp,gau-dac.md#std-dtcompatible-nxp-gau-dac)).
   - Added support for Analog Devices AD5691 / AD5692 / AD5693 DACs
-    ([`adi,ad5691`](../build/dts/api/bindings/dac/adi%2Cad5691.md#std-dtcompatible-adi-ad5691), [`adi,ad5692`](../build/dts/api/bindings/dac/adi%2Cad5692.md#std-dtcompatible-adi-ad5692) and [`adi,ad5693`](../build/dts/api/bindings/dac/adi%2Cad5693.md#std-dtcompatible-adi-ad5693)).
-  - Added support for Texas Instruments DACx0501 series DACs ([`ti,dacx0501`](../build/dts/api/bindings/dac/ti%2Cdacx0501.md#std-dtcompatible-ti-dacx0501)).
+    ([`adi,ad5691`](../build/dts/api/bindings/dac/adi,ad5691.md#std-dtcompatible-adi-ad5691), [`adi,ad5692`](../build/dts/api/bindings/dac/adi,ad5692.md#std-dtcompatible-adi-ad5692) and [`adi,ad5693`](../build/dts/api/bindings/dac/adi,ad5693.md#std-dtcompatible-adi-ad5693)).
+  - Added support for Texas Instruments DACx0501 series DACs ([`ti,dacx0501`](../build/dts/api/bindings/dac/ti,dacx0501.md#std-dtcompatible-ti-dacx0501)).
 - Disk
 
   - Support for eMMC devices was added to the STM32 SD driver. This can
@@ -609,13 +609,13 @@ More detailed information can be found in:
     displays have been converted to this API. Boards using these displays will
     need their devicetree updated, see the display section of
     [Migration guide to Zephyr v3.7.0](migration-guide-3.7.md#migration-3-7) for examples of this process.
-  - Added driver for ST7796S display controller ([`sitronix,st7796s`](../build/dts/api/bindings/display/sitronix%2Cst7796s.md#std-dtcompatible-sitronix-st7796s))
+  - Added driver for ST7796S display controller ([`sitronix,st7796s`](../build/dts/api/bindings/display/sitronix,st7796s.md#std-dtcompatible-sitronix-st7796s))
   - Added support for [`display_read()`](../doxygen/html/group__display__interface.md#ga3f497776520b0eac16b8aea80ccbbcfc) API to ILI9XXX display driver,
     which can be enabled with [`CONFIG_ILI9XXX_READ`](../kconfig.md#CONFIG_ILI9XXX_READ "CONFIG_ILI9XXX_READ")
   - Added support for [`display_set_orientation()`](../doxygen/html/group__display__interface.md#ga4e0a4dc2e434144874af014b8e7c4394) API to SSD16XXX
     display driver
   - Added driver for NT35510 MIPI-DSI display controller
-    ([`frida,nt35510`](../build/dts/api/bindings/display/frida%2Cnt35510.md#std-dtcompatible-frida-nt35510))
+    ([`frida,nt35510`](../build/dts/api/bindings/display/frida,nt35510.md#std-dtcompatible-frida-nt35510))
   - Added driver to abstract LED strip devices as displays
     ([`led-strip-matrix`](../build/dts/api/bindings/display/led-strip-matrix.md#std-dtcompatible-led-strip-matrix))
   - Added support for [`display_set_pixel_format()`](../doxygen/html/group__display__interface.md#ga7ede828663090760c2558a231d9f2150) API to NXP eLCDIF
@@ -623,7 +623,7 @@ More detailed information can be found in:
   - Added support for inverting color at runtime to the SSD1306 driver, via
     the [`display_set_pixel_format()`](../doxygen/html/group__display__interface.md#ga7ede828663090760c2558a231d9f2150) API.
   - Inversion mode can now be disabled in the ST7789V driver
-    ([`sitronix,st7789v`](../build/dts/api/bindings/display/sitronix%2Cst7789v.md#std-dtcompatible-sitronix-st7789v)) using the `inversion-off` property.
+    ([`sitronix,st7789v`](../build/dts/api/bindings/display/sitronix,st7789v.md#std-dtcompatible-sitronix-st7789v)) using the `inversion-off` property.
   - Added support for NXP MCXNx4x
 - DMA
 
@@ -637,7 +637,7 @@ More detailed information can be found in:
   - Added support for STM32H7R/S series.
 - EEPROM
 
-  - Added property for specifying `address-width` to [`zephyr,i2c-target-eeprom`](../build/dts/api/bindings/mtd/zephyr%2Ci2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom).
+  - Added property for specifying `address-width` to [`zephyr,i2c-target-eeprom`](../build/dts/api/bindings/mtd/zephyr,i2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom).
 - eSPI
 
   - Renamed eSPI virtual wire direction macros, enum values and Kconfig to match the new
@@ -660,14 +660,14 @@ More detailed information can be found in:
 
     - eth\_nxp\_enet driver is no longer experimental.
     - Deprecated eth\_mcux driver.
-    - All boards and SOCs with [`nxp,kinetis-ethernet`](../build/dts/api/bindings/ethernet/nxp%2Ckinetis-ethernet.md#std-dtcompatible-nxp-kinetis-ethernet) compatible nodes
-      reworked to use the new [`nxp,enet`](../build/dts/api/bindings/ethernet/nxp%2Cenet.md#std-dtcompatible-nxp-enet) binding.
+    - All boards and SOCs with [`nxp,kinetis-ethernet`](../build/dts/api/bindings/ethernet/nxp,kinetis-ethernet.md#std-dtcompatible-nxp-kinetis-ethernet) compatible nodes
+      reworked to use the new [`nxp,enet`](../build/dts/api/bindings/ethernet/nxp,enet.md#std-dtcompatible-nxp-enet) binding.
     - Added support for network device power management with nxp\_enet driver on Kinetis platforms.
     - Converted eth\_nxp\_enet driver to use a dedicated workqueue for RX
       managed by the kernel rather than a manual infinite loop.
     - Disabled hardware checksum acceleration when IPV6 is enabled with eth\_nxp\_enet, since
       the hardware does not support accelerating ICMPv6 checksums.
-    - Added support for [`nxp,enet1g`](../build/dts/api/bindings/ethernet/nxp%2Cenet1g.md#std-dtcompatible-nxp-enet1g).
+    - Added support for [`nxp,enet1g`](../build/dts/api/bindings/ethernet/nxp,enet1g.md#std-dtcompatible-nxp-enet1g).
     - Added support to use a fused MAC address for nxp\_enet MAC on some platforms.
     - Fixed issue with LAA bit not being set and a confusing description of the nxp,unique-mac
       property used with the nxp\_enet driver.
@@ -739,10 +739,10 @@ More detailed information can be found in:
     a single value across a provided range in a selected device.
   - Added support for RRAM on nrf54l15 devices.
   - Added support of non busy wait polling in STM32 OSPI driver.
-  - Added support for STM32 XSPI external NOR flash driver ([`st,stm32-xspi-nor`](../build/dts/api/bindings/flash_controller/st%2Cstm32-xspi-nor.md#std-dtcompatible-st-stm32-xspi-nor)).
+  - Added support for STM32 XSPI external NOR flash driver ([`st,stm32-xspi-nor`](../build/dts/api/bindings/flash_controller/st,stm32-xspi-nor.md#std-dtcompatible-st-stm32-xspi-nor)).
   - Added support for XIP on external NOR flash in STM32 OSPI, QSPI and XSPI driver.
   - STM32 OSPI driver: clk, dqs, ncs ports can now be configured by device tree
-    configurable (see [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st%2Cstm32-ospi.md#std-dtcompatible-st-stm32-ospi)).
+    configurable (see [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st,stm32-ospi.md#std-dtcompatible-st-stm32-ospi)).
   - Added FlexSPI support to NXP MCXN947
   - Added support for Nuvoton Numaker M2L31X series.
 - Fuel Gauge
@@ -752,8 +752,8 @@ More detailed information can be found in:
 
   - Added GNSS device driver API test suite.
   - Added support for the u-blox UBX protocol.
-  - Added device driver for the u-blox M8 GNSS modem ([`u-blox,m8`](../build/dts/api/bindings/gnss/u-blox%2Cm8.md#std-dtcompatible-u-blox-m8)).
-  - Added device driver for the Luatos Air530z GNSS modem ([`luatos,air530z`](../build/dts/api/bindings/gnss/luatos%2Cair530z.md#std-dtcompatible-luatos-air530z)).
+  - Added device driver for the u-blox M8 GNSS modem ([`u-blox,m8`](../build/dts/api/bindings/gnss/u-blox,m8.md#std-dtcompatible-u-blox-m8)).
+  - Added device driver for the Luatos Air530z GNSS modem ([`luatos,air530z`](../build/dts/api/bindings/gnss/luatos,air530z.md#std-dtcompatible-luatos-air530z)).
 - GPIO
 
   - Added support for Ambiq Apollo3 series.
@@ -762,7 +762,7 @@ More detailed information can be found in:
     from Power Off state on STM32 L4, U5, WB, & WL SoC series.
   - Added driver for Analog Devices MAX32 SoC series.
   - Added support for Nuvoton Numaker M2L31X series.
-  - Added interrupt support to the Renesas RZ/T2M GPIO driver ([`renesas,rzt2m-gpio`](../build/dts/api/bindings/gpio/renesas%2Crzt2m-gpio.md#std-dtcompatible-renesas-rzt2m-gpio)).
+  - Added interrupt support to the Renesas RZ/T2M GPIO driver ([`renesas,rzt2m-gpio`](../build/dts/api/bindings/gpio/renesas,rzt2m-gpio.md#std-dtcompatible-renesas-rzt2m-gpio)).
 - Hardware info
 
   - Added device EUI64 ID support and implementation for STM32WB, STM32WBA and STM32WL series.
@@ -795,22 +795,22 @@ More detailed information can be found in:
 
   - Added shell support for querying bus and CCC commands.
   - Added driver to support the I3C controller on NPCX.
-  - Improvements and bug fixes on [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp%2Cmcux-i3c.md#std-dtcompatible-nxp-mcux-i3c), including handling the bus
+  - Improvements and bug fixes on [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp,mcux-i3c.md#std-dtcompatible-nxp-mcux-i3c), including handling the bus
     being busy more gracefully instead of simply returning errors.
 - Input
 
-  - New drivers: [`adc-keys`](../build/dts/api/bindings/input/adc-keys.md#std-dtcompatible-adc-keys), [`chipsemi,chsc6x`](../build/dts/api/bindings/input/chipsemi%2Cchsc6x.md#std-dtcompatible-chipsemi-chsc6x),
-    [`cirque,pinnacle`](../build/dts/api/compatibles/cirque%2Cpinnacle.md#std-dtcompatible-cirque-pinnacle), [`futaba,sbus`](../build/dts/api/bindings/input/futaba%2Csbus.md#std-dtcompatible-futaba-sbus),
-    [`pixart,pat912x`](../build/dts/api/bindings/input/pixart%2Cpat912x.md#std-dtcompatible-pixart-pat912x), [`pixart,paw32xx`](../build/dts/api/bindings/input/pixart%2Cpaw32xx.md#std-dtcompatible-pixart-paw32xx),
-    [`pixart,pmw3610`](../build/dts/api/bindings/input/pixart%2Cpmw3610.md#std-dtcompatible-pixart-pmw3610) and [`sitronix,cf1133`](../build/dts/api/bindings/input/sitronix%2Ccf1133.md#std-dtcompatible-sitronix-cf1133).
-  - Migrated [`holtek,ht16k33`](../build/dts/api/bindings/led/holtek%2Cht16k33.md#std-dtcompatible-holtek-ht16k33) and
-    [`microchip,xec-kbd`](../build/dts/api/bindings/input/microchip%2Cxec-kbd.md#std-dtcompatible-microchip-xec-kbd) from kscan to input subsystem.
+  - New drivers: [`adc-keys`](../build/dts/api/bindings/input/adc-keys.md#std-dtcompatible-adc-keys), [`chipsemi,chsc6x`](../build/dts/api/bindings/input/chipsemi,chsc6x.md#std-dtcompatible-chipsemi-chsc6x),
+    [`cirque,pinnacle`](../build/dts/api/compatibles/cirque,pinnacle.md#std-dtcompatible-cirque-pinnacle), [`futaba,sbus`](../build/dts/api/bindings/input/futaba,sbus.md#std-dtcompatible-futaba-sbus),
+    [`pixart,pat912x`](../build/dts/api/bindings/input/pixart,pat912x.md#std-dtcompatible-pixart-pat912x), [`pixart,paw32xx`](../build/dts/api/bindings/input/pixart,paw32xx.md#std-dtcompatible-pixart-paw32xx),
+    [`pixart,pmw3610`](../build/dts/api/bindings/input/pixart,pmw3610.md#std-dtcompatible-pixart-pmw3610) and [`sitronix,cf1133`](../build/dts/api/bindings/input/sitronix,cf1133.md#std-dtcompatible-sitronix-cf1133).
+  - Migrated [`holtek,ht16k33`](../build/dts/api/bindings/led/holtek,ht16k33.md#std-dtcompatible-holtek-ht16k33) and
+    [`microchip,xec-kbd`](../build/dts/api/bindings/input/microchip,xec-kbd.md#std-dtcompatible-microchip-xec-kbd) from kscan to input subsystem.
 - LED
 
   - Added device completion to LED shell commands and made the `get_info` command display
     colors as strings.
   - Added driver for Lumissil Microsystems (a division of ISSI) IS31FL3194 controller
-    ([`issi,is31fl3194`](../build/dts/api/bindings/led/issi%2Cis31fl3194.md#std-dtcompatible-issi-is31fl3194)).
+    ([`issi,is31fl3194`](../build/dts/api/bindings/led/issi,is31fl3194.md#std-dtcompatible-issi-is31fl3194)).
 - LED Strip
 
   - The `chain-length` and `color-mapping` properties have been added to all LED strip
@@ -821,7 +821,7 @@ More detailed information can be found in:
     ([`led_strip_length()`](../doxygen/html/group__led__strip__interface.md#ga7f94eab0b357a81cccb5f0ea1575714a)).
   - The update channels function is now optional and can be left unimplemented.
   - The `in-gpios` and `output-pin` properties of the respective
-    [`worldsemi,ws2812-gpio`](../build/dts/api/bindings/led_strip/worldsemi%2Cws2812-gpio.md#std-dtcompatible-worldsemi-ws2812-gpio) and [`worldsemi,ws2812-rpi_pico-pio`](../build/dts/api/bindings/led_strip/worldsemi%2Cws2812-rpi_pico-pio.md#std-dtcompatible-worldsemi-ws2812-rpi_pico-pio)
+    [`worldsemi,ws2812-gpio`](../build/dts/api/bindings/led_strip/worldsemi,ws2812-gpio.md#std-dtcompatible-worldsemi-ws2812-gpio) and [`worldsemi,ws2812-rpi_pico-pio`](../build/dts/api/bindings/led_strip/worldsemi,ws2812-rpi_pico-pio.md#std-dtcompatible-worldsemi-ws2812-rpi_pico-pio)
     devicetree bindings have been renamed to `gpios`.
   - Removed `CONFIG_WS2812_STRIP` and `CONFIG_WS2812_STRIP_DRIVER` Kconfig options. They became
     useless after refactoring.
@@ -842,15 +842,15 @@ More detailed information can be found in:
   - Added support for STM32 MDIO controller driver.
 - MFD
 
-  - New driver [`nxp,lp-flexcomm`](../build/dts/api/bindings/mfd/nxp%2Clp-flexcomm.md#std-dtcompatible-nxp-lp-flexcomm).
-  - New driver [`rohm,bd8lb600fs`](../build/dts/api/bindings/mfd/rohm%2Cbd8lb600fs.md#std-dtcompatible-rohm-bd8lb600fs).
-  - New driver [`maxim,max31790`](../build/dts/api/bindings/mfd/maxim%2Cmax31790.md#std-dtcompatible-maxim-max31790).
-  - New driver [`infineon,tle9104`](../build/dts/api/bindings/mfd/infineon%2Ctle9104.md#std-dtcompatible-infineon-tle9104)
-  - New driver [`adi,ad559x`](../build/dts/api/compatibles/adi%2Cad559x.md#std-dtcompatible-adi-ad559x)
-  - Added option to disable N\_VBUSEN for [`x-powers,axp192`](../build/dts/api/bindings/mfd/x-powers%2Caxp192.md#std-dtcompatible-x-powers-axp192).
-  - Added GPIO input edge events for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic%2Cnpm1300.md#std-dtcompatible-nordic-npm1300).
-  - Added long press reset configuration for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic%2Cnpm1300.md#std-dtcompatible-nordic-npm1300).
-  - Fixed initialisation of hysteretic mode for [`nordic,npm6001`](../build/dts/api/bindings/mfd/nordic%2Cnpm6001.md#std-dtcompatible-nordic-npm6001).
+  - New driver [`nxp,lp-flexcomm`](../build/dts/api/bindings/mfd/nxp,lp-flexcomm.md#std-dtcompatible-nxp-lp-flexcomm).
+  - New driver [`rohm,bd8lb600fs`](../build/dts/api/bindings/mfd/rohm,bd8lb600fs.md#std-dtcompatible-rohm-bd8lb600fs).
+  - New driver [`maxim,max31790`](../build/dts/api/bindings/mfd/maxim,max31790.md#std-dtcompatible-maxim-max31790).
+  - New driver [`infineon,tle9104`](../build/dts/api/bindings/mfd/infineon,tle9104.md#std-dtcompatible-infineon-tle9104)
+  - New driver [`adi,ad559x`](../build/dts/api/compatibles/adi,ad559x.md#std-dtcompatible-adi-ad559x)
+  - Added option to disable N\_VBUSEN for [`x-powers,axp192`](../build/dts/api/bindings/mfd/x-powers,axp192.md#std-dtcompatible-x-powers-axp192).
+  - Added GPIO input edge events for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic,npm1300.md#std-dtcompatible-nordic-npm1300).
+  - Added long press reset configuration for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic,npm1300.md#std-dtcompatible-nordic-npm1300).
+  - Fixed initialisation of hysteretic mode for [`nordic,npm6001`](../build/dts/api/bindings/mfd/nordic,npm6001.md#std-dtcompatible-nordic-npm6001).
 - Modem
 
   - Removed deprecated `GSM_PPP` driver along with its dts compatible `zephyr,gsm-ppp`.
@@ -912,16 +912,16 @@ More detailed information can be found in:
   - Added support for Nuvoton Numaker M2L31X series.
 - Regulators
 
-  - New driver [`cirrus,cp9314`](../build/dts/api/bindings/regulator/cirrus%2Ccp9314.md#std-dtcompatible-cirrus-cp9314).
+  - New driver [`cirrus,cp9314`](../build/dts/api/bindings/regulator/cirrus,cp9314.md#std-dtcompatible-cirrus-cp9314).
   - Added `regulator-boot-off` property to common regulator driver.
-    Updated [`adi,adp5360-regulator`](../build/dts/api/bindings/regulator/adi%2Cadp5360-regulator.md#std-dtcompatible-adi-adp5360-regulator), [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator),
-    [`nordic,npm6001-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm6001-regulator.md#std-dtcompatible-nordic-npm6001-regulator) and [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers%2Caxp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator)
+    Updated [`adi,adp5360-regulator`](../build/dts/api/bindings/regulator/adi,adp5360-regulator.md#std-dtcompatible-adi-adp5360-regulator), [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic,npm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator),
+    [`nordic,npm6001-regulator`](../build/dts/api/bindings/regulator/nordic,npm6001-regulator.md#std-dtcompatible-nordic-npm6001-regulator) and [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers,axp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator)
     to use this new property.
-  - Added power management for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas%2Cda1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
+  - Added power management for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas,da1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
   - Added `is_enabled` shell command.
   - Removed use of busy wait for single threaded systems.
-  - Fixed control of DCDC2 output for [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers%2Caxp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator).
-  - Fixed current and voltage get functions for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas%2Cda1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
+  - Fixed control of DCDC2 output for [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers,axp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator).
+  - Fixed current and voltage get functions for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas,da1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
   - Fixed NXP VREF Kconfig leakage.
   - Fixed display of micro values in shell.
   - Fixed strcmp usage bug in `adset` shell command.
@@ -944,8 +944,8 @@ More detailed information can be found in:
     where native asynchronous RTIO functionality is unavailable.
 - SDHC
 
-  - Added ESP32 SDHC driver ([`espressif,esp32-sdhc`](../build/dts/api/bindings/sdhc/espressif%2Cesp32-sdhc.md#std-dtcompatible-espressif-esp32-sdhc)).
-  - Added SDHC driver for Renesas MMC controller ([`renesas,rcar-mmc`](../build/dts/api/bindings/mmc/renesas%2Crcar-emmc.md#std-dtcompatible-renesas-rcar-mmc)).
+  - Added ESP32 SDHC driver ([`espressif,esp32-sdhc`](../build/dts/api/bindings/sdhc/espressif,esp32-sdhc.md#std-dtcompatible-espressif-esp32-sdhc)).
+  - Added SDHC driver for Renesas MMC controller ([`renesas,rcar-mmc`](../build/dts/api/bindings/mmc/renesas,rcar-emmc.md#std-dtcompatible-renesas-rcar-mmc)).
 - Sensors
 
   - General
@@ -957,11 +957,11 @@ More detailed information can be found in:
     - Moved most drivers to vendor subdirectories.
   - AMS
 
-    - Added TSL2591 light sensor driver ([`ams,tsl2591`](../build/dts/api/bindings/sensor/ams%2Ctsl2591.md#std-dtcompatible-ams-tsl2591)).
+    - Added TSL2591 light sensor driver ([`ams,tsl2591`](../build/dts/api/bindings/sensor/ams,tsl2591.md#std-dtcompatible-ams-tsl2591)).
   - Aosong
 
     - Added DHT20 digital-output humidity and temperature sensor driver
-      ([`aosong,dht20`](../build/dts/api/bindings/sensor/aosong%2Cdht20.md#std-dtcompatible-aosong-dht20)).
+      ([`aosong,dht20`](../build/dts/api/bindings/sensor/aosong,dht20.md#std-dtcompatible-aosong-dht20)).
     - Added [`CONFIG_DHT_LOCK_IRQS`](../kconfig.md#CONFIG_DHT_LOCK_IRQS "CONFIG_DHT_LOCK_IRQS") for the dht11 driver which allows for locking
       interrupts during sensor reading to prevent issues with reading the sensor.
   - Bosch
@@ -970,47 +970,47 @@ More detailed information can be found in:
   - Infineon
 
     - Added TLE9104 power train switch diagnostics sensor driver
-      ([`infineon,tle9104-diagnostics`](../build/dts/api/bindings/sensor/infineon%2Ctle9104-diagnostics.md#std-dtcompatible-infineon-tle9104-diagnostics)).
+      ([`infineon,tle9104-diagnostics`](../build/dts/api/bindings/sensor/infineon,tle9104-diagnostics.md#std-dtcompatible-infineon-tle9104-diagnostics)).
   - Maxim
 
-    - Added DS18S20 1-Wire temperature sensor driver ([`maxim,ds18s20`](../build/dts/api/bindings/sensor/maxim%2Cds18s20.md#std-dtcompatible-maxim-ds18s20)).
+    - Added DS18S20 1-Wire temperature sensor driver ([`maxim,ds18s20`](../build/dts/api/bindings/sensor/maxim,ds18s20.md#std-dtcompatible-maxim-ds18s20)).
     - Added MAX31790 fan speed and fan fault sensor
-      ([`maxim,max31790-fan-fault`](../build/dts/api/bindings/sensor/maxim%2Cmax31790-fan-fault.md#std-dtcompatible-maxim-max31790-fan-fault) and [`maxim,max31790-fan-speed`](../build/dts/api/bindings/sensor/maxim%2Cmax31790-fan-speed.md#std-dtcompatible-maxim-max31790-fan-speed)).
+      ([`maxim,max31790-fan-fault`](../build/dts/api/bindings/sensor/maxim,max31790-fan-fault.md#std-dtcompatible-maxim-max31790-fan-fault) and [`maxim,max31790-fan-speed`](../build/dts/api/bindings/sensor/maxim,max31790-fan-speed.md#std-dtcompatible-maxim-max31790-fan-speed)).
   - NXP
 
-    - Added low power comparator driver ([`nxp,lpcmp`](../build/dts/api/bindings/sensor/nxp%2Clpcmp.md#std-dtcompatible-nxp-lpcmp)).
+    - Added low power comparator driver ([`nxp,lpcmp`](../build/dts/api/bindings/sensor/nxp,lpcmp.md#std-dtcompatible-nxp-lpcmp)).
   - Rohm
 
-    - Added BD8LB600FS diagnostics sensor driver ([`rohm,bd8lb600fs-diagnostics`](../build/dts/api/bindings/sensor/rohm%2Cbd8lb600fs-diagnostics.md#std-dtcompatible-rohm-bd8lb600fs-diagnostics)).
+    - Added BD8LB600FS diagnostics sensor driver ([`rohm,bd8lb600fs-diagnostics`](../build/dts/api/bindings/sensor/rohm,bd8lb600fs-diagnostics.md#std-dtcompatible-rohm-bd8lb600fs-diagnostics)).
   - Silabs
 
     - Made various fixes and enhancements to the SI7006 humidity/temperature sensor driver.
   - ST
 
-    - QDEC driver now supports encoder mode configuration (see [`st,stm32-qdec`](../build/dts/api/bindings/sensor/st%2Cstm32-qdec.md#std-dtcompatible-st-stm32-qdec)).
-    - Added support for STM32 Digital Temperature Sensor ([`st,stm32-digi-temp`](../build/dts/api/bindings/sensor/st%2Cstm32-digi-temp.md#std-dtcompatible-st-stm32-digi-temp)).
-    - Added IIS328DQ I2C/SPI accelerometer sensor driver ([`st,iis328dq`](../build/dts/api/compatibles/st%2Ciis328dq.md#std-dtcompatible-st-iis328dq)).
+    - QDEC driver now supports encoder mode configuration (see [`st,stm32-qdec`](../build/dts/api/bindings/sensor/st,stm32-qdec.md#std-dtcompatible-st-stm32-qdec)).
+    - Added support for STM32 Digital Temperature Sensor ([`st,stm32-digi-temp`](../build/dts/api/bindings/sensor/st,stm32-digi-temp.md#std-dtcompatible-st-stm32-digi-temp)).
+    - Added IIS328DQ I2C/SPI accelerometer sensor driver ([`st,iis328dq`](../build/dts/api/compatibles/st,iis328dq.md#std-dtcompatible-st-iis328dq)).
   - TDK
 
     - Added support for the MPU6500 3-axis accelerometer and 3-axis gyroscope sensor to the
       MPU6050 driver.
   - TI
 
-    - Added TMP114 driver ([`ti,tmp114`](../build/dts/api/bindings/sensor/ti%2Ctmp114.md#std-dtcompatible-ti-tmp114)).
-    - Added INA226 bidirectional current and power monitor driver ([`ti,ina226`](../build/dts/api/bindings/sensor/ti%2Cina226.md#std-dtcompatible-ti-ina226)).
+    - Added TMP114 driver ([`ti,tmp114`](../build/dts/api/bindings/sensor/ti,tmp114.md#std-dtcompatible-ti-tmp114)).
+    - Added INA226 bidirectional current and power monitor driver ([`ti,ina226`](../build/dts/api/bindings/sensor/ti,ina226.md#std-dtcompatible-ti-ina226)).
     - Added LM95234 quad remote diode and local temperature sensor driver
-      ([`national,lm95234`](../build/dts/api/bindings/sensor/national%2Clm95234.md#std-dtcompatible-national-lm95234)).
+      ([`national,lm95234`](../build/dts/api/bindings/sensor/national,lm95234.md#std-dtcompatible-national-lm95234)).
   - Other vendors
 
-    - Added Angst+Pfister FCX-MLDX5 O2 sensor driver ([`ap,fcx-mldx5`](../build/dts/api/bindings/sensor/ap%2Cfcx-mldx5.md#std-dtcompatible-ap-fcx-mldx5)).
-    - Added ENE KB1200 tachometer sensor driver ([`ene,kb1200-tach`](../build/dts/api/bindings/tach/ene%2Ckb1200-tach.md#std-dtcompatible-ene-kb1200-tach)).
+    - Added Angst+Pfister FCX-MLDX5 O2 sensor driver ([`ap,fcx-mldx5`](../build/dts/api/bindings/sensor/ap,fcx-mldx5.md#std-dtcompatible-ap-fcx-mldx5)).
+    - Added ENE KB1200 tachometer sensor driver ([`ene,kb1200-tach`](../build/dts/api/bindings/tach/ene,kb1200-tach.md#std-dtcompatible-ene-kb1200-tach)).
     - Added Festo VEAA-X-3 series proportional pressure regulator driver
-      ([`festo,veaa-x-3`](../build/dts/api/bindings/sensor/festo%2Cveaa-x-3.md#std-dtcompatible-festo-veaa-x-3)).
+      ([`festo,veaa-x-3`](../build/dts/api/bindings/sensor/festo,veaa-x-3.md#std-dtcompatible-festo-veaa-x-3)).
     - Added Innovative Sensor Technology TSic xx6 temperature sensor driver
-      ([`ist,tsic-xx6`](../build/dts/api/bindings/sensor/ist%2Ctsic-xx6.md#std-dtcompatible-ist-tsic-xx6)).
-    - Added ON Semiconductor NCT75 temperature sensor driver ([`onnn,nct75`](../build/dts/api/bindings/sensor/onnn%2Cnct75.md#std-dtcompatible-onnn-nct75)).
+      ([`ist,tsic-xx6`](../build/dts/api/bindings/sensor/ist,tsic-xx6.md#std-dtcompatible-ist-tsic-xx6)).
+    - Added ON Semiconductor NCT75 temperature sensor driver ([`onnn,nct75`](../build/dts/api/bindings/sensor/onnn,nct75.md#std-dtcompatible-onnn-nct75)).
     - Added ScioSense ENS160 digital metal oxide multi-gas sensor driver
-      ([`sciosense,ens160`](../build/dts/api/compatibles/sciosense%2Cens160.md#std-dtcompatible-sciosense-ens160)).
+      ([`sciosense,ens160`](../build/dts/api/compatibles/sciosense,ens160.md#std-dtcompatible-sciosense-ens160)).
     - Made various fixes and enhancements to the GROW\_R502A fingerprint sensor driver.
 - Serial
 
@@ -1026,43 +1026,43 @@ More detailed information can be found in:
   - Added driver for ENE KB1200 UART.
   - Added driver for UART on Analog Devices MAX32 series microcontrollers.
   - Added driver for UART on Renesas RA8 devices.
-  - `uart_emul` ([`zephyr,uart-emul`](../build/dts/api/bindings/serial/zephyr%2Cuart-emul.md#std-dtcompatible-zephyr-uart-emul)):
+  - `uart_emul` ([`zephyr,uart-emul`](../build/dts/api/bindings/serial/zephyr,uart-emul.md#std-dtcompatible-zephyr-uart-emul)):
 
     - Added support for asynchronous API for the emulated UART driver.
-  - `uart_esp32` ([`espressif,esp32-uart`](../build/dts/api/bindings/serial/espressif%2Cesp32-uart.md#std-dtcompatible-espressif-esp32-uart)):
+  - `uart_esp32` ([`espressif,esp32-uart`](../build/dts/api/bindings/serial/espressif,esp32-uart.md#std-dtcompatible-espressif-esp32-uart)):
 
     - Added support to invert TX and RX pin signals.
     - Added support for ESP32C6 SoC.
-  - `uart_native_tty` ([`zephyr,native-tty-uart`](../build/dts/api/bindings/serial/zephyr%2Cnative-tty-uart.md#std-dtcompatible-zephyr-native-tty-uart)):
+  - `uart_native_tty` ([`zephyr,native-tty-uart`](../build/dts/api/bindings/serial/zephyr,native-tty-uart.md#std-dtcompatible-zephyr-native-tty-uart)):
 
     - Added support to emulate interrupt driven UART.
-  - `uart_mcux_lpuart` ([`nxp,kinetis-lpuart`](../build/dts/api/bindings/serial/nxp%2Ckinetis-lpuart.md#std-dtcompatible-nxp-kinetis-lpuart)):
+  - `uart_mcux_lpuart` ([`nxp,kinetis-lpuart`](../build/dts/api/bindings/serial/nxp,kinetis-lpuart.md#std-dtcompatible-nxp-kinetis-lpuart)):
 
     - Added support for single wire half-duplex communication.
     - Added support to invert TX and RX pin signals.
-  - `uart_npcx` ([`nuvoton,npcx-uart`](../build/dts/api/bindings/serial/nuvoton%2Cnpcx-uart.md#std-dtcompatible-nuvoton-npcx-uart)):
+  - `uart_npcx` ([`nuvoton,npcx-uart`](../build/dts/api/bindings/serial/nuvoton,npcx-uart.md#std-dtcompatible-nuvoton-npcx-uart)):
 
     - Added support for asynchronous API.
     - Added support for baud rate of 3MHz.
-  - `uart_nrfx_uarte` ([`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic%2Cnrf-uarte.md#std-dtcompatible-nordic-nrf-uarte)):
+  - `uart_nrfx_uarte` ([`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic,nrf-uarte.md#std-dtcompatible-nordic-nrf-uarte)):
 
     - Added support to put TX and RX pins into low power mode when UART is not active.
-  - `uart_nrfx_uarte2` ([`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic%2Cnrf-uarte.md#std-dtcompatible-nordic-nrf-uarte)):
+  - `uart_nrfx_uarte2` ([`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic,nrf-uarte.md#std-dtcompatible-nordic-nrf-uarte)):
 
     - Prevents UART from transmitting when device is suspended.
     - Fixed some events not being triggered.
-  - `uart_pl011` ([`arm,pl011`](../build/dts/api/bindings/serial/arm%2Cpl011.md#std-dtcompatible-arm-pl011)):
+  - `uart_pl011` ([`arm,pl011`](../build/dts/api/bindings/serial/arm,pl011.md#std-dtcompatible-arm-pl011)):
 
     - Added support for runtime configuration.
     - Added support for reset device.
     - Added support to use clock control to determine frequency.
     - Added support for hardware flow control.
     - Added support for UART on Ambiq Apollo3 SoC.
-  - `uart_smartbond` ([`renesas,smartbond-uart`](../build/dts/api/bindings/serial/renesas%2Csmartbond-uart.md#std-dtcompatible-renesas-smartbond-uart)):
+  - `uart_smartbond` ([`renesas,smartbond-uart`](../build/dts/api/bindings/serial/renesas,smartbond-uart.md#std-dtcompatible-renesas-smartbond-uart)):
 
     - Added support for power management.
     - Added support to wake up via DTR and RX lines.
-  - `uart_stm32` ([`st,stm32-uart`](../build/dts/api/bindings/serial/st%2Cstm32-uart.md#std-dtcompatible-st-stm32-uart)):
+  - `uart_stm32` ([`st,stm32-uart`](../build/dts/api/bindings/serial/st,stm32-uart.md#std-dtcompatible-st-stm32-uart)):
 
     - Added support to identify if DMA buffers are in data cache or non-cacheable memory.
   - Added support for Nuvoton Numaker M2L31X series.
@@ -1083,7 +1083,7 @@ More detailed information can be found in:
     USB controller drivers.
 - Video
 
-  - Added support for STM32 Digital camera interface (DCMI) driver ([`st,stm32-dcmi`](../build/dts/api/bindings/video/st%2Cstm32-dcmi.md#std-dtcompatible-st-stm32-dcmi)).
+  - Added support for STM32 Digital camera interface (DCMI) driver ([`st,stm32-dcmi`](../build/dts/api/bindings/video/st,stm32-dcmi.md#std-dtcompatible-st-stm32-dcmi)).
   - Enabled NXP USB Device controllers
   - Added support for the ov7670 camera
   - Added support for the ov5640 camera

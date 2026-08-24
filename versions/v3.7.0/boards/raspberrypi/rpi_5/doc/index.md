@@ -40,9 +40,9 @@ The Raspberry Pi 5 board configuration supports the following hardware features:
 
 | Peripheral | Kconfig option | Devicetree compatible |
 | --- | --- | --- |
-| GIC-400 | N/A | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
-| GPIO | [`CONFIG_GPIO`](../../../../kconfig.md#CONFIG_GPIO "CONFIG_GPIO") | [`brcm,brcmstb-gpio`](../../../../build/dts/api/bindings/gpio/brcm%2Cbrcmstb-gpio.md#std-dtcompatible-brcm-brcmstb-gpio) |
-| UART | [`CONFIG_SERIAL`](../../../../kconfig.md#CONFIG_SERIAL "CONFIG_SERIAL") | [`arm,pl011`](../../../../build/dts/api/bindings/serial/arm%2Cpl011.md#std-dtcompatible-arm-pl011) |
+| GIC-400 | N/A | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm,gic-v2.md#std-dtcompatible-arm-gic-v2) |
+| GPIO | [`CONFIG_GPIO`](../../../../kconfig.md#CONFIG_GPIO "CONFIG_GPIO") | [`brcm,brcmstb-gpio`](../../../../build/dts/api/bindings/gpio/brcm,brcmstb-gpio.md#std-dtcompatible-brcm-brcmstb-gpio) |
+| UART | [`CONFIG_SERIAL`](../../../../kconfig.md#CONFIG_SERIAL "CONFIG_SERIAL") | [`arm,pl011`](../../../../build/dts/api/bindings/serial/arm,pl011.md#std-dtcompatible-arm-pl011) |
 
 Not all hardware features are supported yet. See [Raspberry Pi hardware](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) for the complete list of hardware features.
 

@@ -20,7 +20,7 @@ This sample loops through some different spi transfer configurations.
 
 ## Building and Running
 
-The application will build only for a target that has a [devicetree](../../../build/dts/index.md#dt-guide) entry with [`zephyr,spi-bitbang`](../../../build/dts/api/bindings/spi/zephyr%2Cspi-bitbang.md#std-dtcompatible-zephyr-spi-bitbang) as a compatible.
+The application will build only for a target that has a [devicetree](../../../build/dts/index.md#dt-guide) entry with [`zephyr,spi-bitbang`](../../../build/dts/api/bindings/spi/zephyr,spi-bitbang.md#std-dtcompatible-zephyr-spi-bitbang) as a compatible.
 
 You can connect the MISO and MOSI pins with a wire to provide a basic loopback
 test for receive data.

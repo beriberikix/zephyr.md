@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `bosch,bmi08x-gyro` may be handled by any
 of the following bindings:
 
-- [bosch,bmi08x-gyro (on i2c bus)](../bindings/sensor/bosch%2Cbmi08x-gyro-i2c.md#dtbinding-bosch-bmi08x-gyro-i2c)
-- [bosch,bmi08x-gyro (on spi bus)](../bindings/sensor/bosch%2Cbmi08x-gyro-spi.md#dtbinding-bosch-bmi08x-gyro-spi)
+- [bosch,bmi08x-gyro (on i2c bus)](../bindings/sensor/bosch,bmi08x-gyro-i2c.md#dtbinding-bosch-bmi08x-gyro-i2c)
+- [bosch,bmi08x-gyro (on spi bus)](../bindings/sensor/bosch,bmi08x-gyro-spi.md#dtbinding-bosch-bmi08x-gyro-spi)

@@ -32,7 +32,7 @@ The number of LEDs can be limited using the following sample specific Kconfigs:
 ## Building and Running
 
 This sample can be run on any board with an IS31FL3733 LED driver connected via
-I2C, and a node with the [`issi,is31fl3733`](../../../../build/dts/api/bindings/led/issi%2Cis31fl3733.md#std-dtcompatible-issi-is31fl3733) compatible present in its devicetree.
+I2C, and a node with the [`issi,is31fl3733`](../../../../build/dts/api/bindings/led/issi,is31fl3733.md#std-dtcompatible-issi-is31fl3733) compatible present in its devicetree.
 
 This sample provides a DTS overlay for the [FRDM-K22F](../../../../boards/nxp/frdm_k22f/doc/index.md#frdm_k22f) board
 (`boards/frdm_k22f.overlay`). It assumes that the IS31FL3733 LED

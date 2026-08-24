@@ -75,7 +75,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
   [`CONFIG_I2C`](../kconfig.md#CONFIG_I2C "CONFIG_I2C") is set. Users who need this setting enabled should set it in
   their project config file. ([GitHub #73067](https://github.com/zephyrproject-rtos/zephyr/issues/73067))
 - LiteX: Renamed the `compatible` of the LiteX VexRiscV interrupt controller node from
-  `vexriscv-intc0` to [`litex,vexriscv-intc0`](../build/dts/api/bindings/interrupt-controller/litex%2Cvexriscv-intc0.md#std-dtcompatible-litex-vexriscv-intc0). ([GitHub #73211](https://github.com/zephyrproject-rtos/zephyr/issues/73211))
+  `vexriscv-intc0` to [`litex,vexriscv-intc0`](../build/dts/api/bindings/interrupt-controller/litex,vexriscv-intc0.md#std-dtcompatible-litex-vexriscv-intc0). ([GitHub #73211](https://github.com/zephyrproject-rtos/zephyr/issues/73211))
 - `lairdconnect` boards are now `ezurio` boards. Laird Connectivity has rebranded to [Ezurio](https://www.ezurio.com/laird-connectivity).
 
 ## [Modules](#id4)
@@ -116,15 +116,15 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
 ### [LVGL](#id7)
 
 - `CONFIG_LV_Z_POINTER_KSCAN` was removed, you need to convert your kscan based
-  driver to the input subsystem and use a [`zephyr,lvgl-pointer-input`](../build/dts/api/bindings/input/zephyr%2Clvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input) in your
+  driver to the input subsystem and use a [`zephyr,lvgl-pointer-input`](../build/dts/api/bindings/input/zephyr,lvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input) in your
   devicetree instead. ([GitHub #73800](https://github.com/zephyrproject-rtos/zephyr/issues/73800))
 
 ## [Device Drivers and Devicetree](#id8)
 
 - The `nxp,kinetis-pit` pit driver has changed its compatible
-  to [`nxp,pit`](../build/dts/api/bindings/counter/nxp%2Cpit.md#std-dtcompatible-nxp-pit) and has been updated to support multiple channels.
+  to [`nxp,pit`](../build/dts/api/bindings/counter/nxp,pit.md#std-dtcompatible-nxp-pit) and has been updated to support multiple channels.
   To configure the individual channels, you must add a child node with the
-  compatible [`nxp,pit-channel`](../build/dts/api/bindings/counter/nxp%2Cpit-channel.md#std-dtcompatible-nxp-pit-channel) and configure as below.
+  compatible [`nxp,pit-channel`](../build/dts/api/bindings/counter/nxp,pit-channel.md#std-dtcompatible-nxp-pit-channel) and configure as below.
   The `CONFIG_COUNTER_MCUX_PIT` has also been renamed to
   [`CONFIG_COUNTER_NXP_PIT`](../kconfig.md#CONFIG_COUNTER_NXP_PIT "CONFIG_COUNTER_NXP_PIT") with regards to the renaming
   of the binding for the pit. ([GitHub #66336](https://github.com/zephyrproject-rtos/zephyr/issues/66336))
@@ -147,8 +147,8 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
           };
   };
   ```
-- The [`nxp,kinetis-ethernet`](../build/dts/api/bindings/ethernet/nxp%2Ckinetis-ethernet.md#std-dtcompatible-nxp-kinetis-ethernet) has been deprecated in favor of
-  [`nxp,enet`](../build/dts/api/bindings/ethernet/nxp%2Cenet.md#std-dtcompatible-nxp-enet). All in tree SOCs were converted to use this new schema.
+- The [`nxp,kinetis-ethernet`](../build/dts/api/bindings/ethernet/nxp,kinetis-ethernet.md#std-dtcompatible-nxp-kinetis-ethernet) has been deprecated in favor of
+  [`nxp,enet`](../build/dts/api/bindings/ethernet/nxp,enet.md#std-dtcompatible-nxp-enet). All in tree SOCs were converted to use this new schema.
   Thus, all boards using NXP’s ENET peripheral will need to align to this binding
   in DT, which also comes with a different version driver. Alternatively,
   the Ethernet node can be deleted and redefined as the old binding to use
@@ -177,8 +177,8 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
       };
   };
   ```
-- The [`nxp,kinetis-lptmr`](../build/dts/api/bindings/counter/nxp%2Ckinetis-lptmr.md#std-dtcompatible-nxp-kinetis-lptmr) compatible string has been changed to
-  [`nxp,lptmr`](../build/dts/api/bindings/counter/nxp%2Clptmr.md#std-dtcompatible-nxp-lptmr). The old string will be usable for a short time, but
+- The [`nxp,kinetis-lptmr`](../build/dts/api/bindings/counter/nxp,kinetis-lptmr.md#std-dtcompatible-nxp-kinetis-lptmr) compatible string has been changed to
+  [`nxp,lptmr`](../build/dts/api/bindings/counter/nxp,lptmr.md#std-dtcompatible-nxp-lptmr). The old string will be usable for a short time, but
   should be replaced for it will be removed in the future.
 - Some of the driver API structs have been rename to have the required `_driver_api` suffix. ([GitHub #72182](https://github.com/zephyrproject-rtos/zephyr/issues/72182))
   The following types have been renamed:
@@ -186,7 +186,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
   - `emul_sensor_backend_api` to `emul_sensor_driver_api`
   - `emul_bbram_backend_api` to `emul_bbram_driver_api`
   - `usbc_ppc_drv` to `usbc_ppc_driver_api`
-- The driver for [`maxim,max31790`](../build/dts/api/bindings/mfd/maxim%2Cmax31790.md#std-dtcompatible-maxim-max31790) got split up into a MFD and an
+- The driver for [`maxim,max31790`](../build/dts/api/bindings/mfd/maxim,max31790.md#std-dtcompatible-maxim-max31790) got split up into a MFD and an
   actual PWM driver. ([GitHub #68433](https://github.com/zephyrproject-rtos/zephyr/issues/68433))
   Previously, an instance of this device could have been defined like this:
 
@@ -216,7 +216,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
       };
   };
   ```
-- The driver for [`invensense,icm42688`](../build/dts/api/bindings/sensor/invensense%2Cicm42688.md#std-dtcompatible-invensense-icm42688) now correctly supports device
+- The driver for [`invensense,icm42688`](../build/dts/api/bindings/sensor/invensense,icm42688.md#std-dtcompatible-invensense-icm42688) now correctly supports device
   tree configuration([GitHub #74267](https://github.com/zephyrproject-rtos/zephyr/issues/74267)). Prior devicetrees may have tried to use
   the bindings to set sample rate and scale for the accel/gyro without any
   effect. The devicetree usage should now use the provided defines and include
@@ -236,16 +236,16 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
       gyro-odr = <ICM42688_GYRO_ODR_2000>;
   };
   ```
-- [`st,lis2mdl`](../build/dts/api/compatibles/st%2Clis2mdl.md#std-dtcompatible-st-lis2mdl) property `spi-full-duplex` changed to `duplex =
+- [`st,lis2mdl`](../build/dts/api/compatibles/st,lis2mdl.md#std-dtcompatible-st-lis2mdl) property `spi-full-duplex` changed to `duplex =
   SPI_FULL_DUPLEX`. Full duplex is now the default.
-- The DT property `nxp,reference-supply` of [`nxp,lpc-lpadc`](../build/dts/api/bindings/adc/nxp%2Clpc-lpadc.md#std-dtcompatible-nxp-lpc-lpadc) driver has
+- The DT property `nxp,reference-supply` of [`nxp,lpc-lpadc`](../build/dts/api/bindings/adc/nxp,lpc-lpadc.md#std-dtcompatible-nxp-lpc-lpadc) driver has
   been removed, users should remove this property from their devicetree if it is present.
   Added new phandle-array type DT property `nxp,references`, the user can use this
   property to specify the reference voltage and reference voltage value to be used by
   the lpadc. ([GitHub #75005](https://github.com/zephyrproject-rtos/zephyr/issues/75005))
 
 > - The DT properties `mc,interface-type`, `mc,reset-gpio`, and `mc,interrupt-gpio` of
->   the [`microchip,ksz8081`](../build/dts/api/bindings/ethernet/microchip%2Cksz8081.md#std-dtcompatible-microchip-ksz8081) phy binding have changed to
+>   the [`microchip,ksz8081`](../build/dts/api/bindings/ethernet/microchip,ksz8081.md#std-dtcompatible-microchip-ksz8081) phy binding have changed to
 >   `microchip,interface-type`, `reset-gpios`, and `int-gpios`, respectively ([GitHub #73725](https://github.com/zephyrproject-rtos/zephyr/issues/73725))
 
 ### [Charger](#id9)
@@ -539,7 +539,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
   scaled accordingly. ([GitHub #70377](https://github.com/zephyrproject-rtos/zephyr/issues/70377))
 - The `holtek,ht16k33-keyscan` driver has been converted to use the
   [Input](../services/input/index.md#input) subsystem, callbacks have to be migrated to use the input APIs,
-  [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) can be used for backward compatibility. ([GitHub #69875](https://github.com/zephyrproject-rtos/zephyr/issues/69875))
+  [`zephyr,kscan-input`](../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) can be used for backward compatibility. ([GitHub #69875](https://github.com/zephyrproject-rtos/zephyr/issues/69875))
 
 ### [Interrupt Controller](#id16)
 
@@ -559,7 +559,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
 
 ### [LED Strip](#id17)
 
-- The property `in-gpios` defined in [`worldsemi,ws2812-gpio`](../build/dts/api/bindings/led_strip/worldsemi%2Cws2812-gpio.md#std-dtcompatible-worldsemi-ws2812-gpio) has been
+- The property `in-gpios` defined in [`worldsemi,ws2812-gpio`](../build/dts/api/bindings/led_strip/worldsemi,ws2812-gpio.md#std-dtcompatible-worldsemi-ws2812-gpio) has been
   renamed to `gpios`. ([GitHub #68514](https://github.com/zephyrproject-rtos/zephyr/issues/68514))
 - The `chain-length` and `color-mapping` properties have been added to all LED strip bindings
   and are now mandatory.
@@ -579,7 +579,7 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
 
 ### [Sensors](#id19)
 
-- The `chip` devicetree property from the [`sensirion,shtcx`](../build/dts/api/bindings/sensor/sensirion%2Cshtcx.md#std-dtcompatible-sensirion-shtcx) sensor driver has been
+- The `chip` devicetree property from the [`sensirion,shtcx`](../build/dts/api/bindings/sensor/sensirion,shtcx.md#std-dtcompatible-sensirion-shtcx) sensor driver has been
   removed. Chip variants are now selected using the matching compatible property ([GitHub #74033](https://github.com/zephyrproject-rtos/zephyr/issues/74033)).
   For an example of the new shtc3 configuration, see below:
 
@@ -599,18 +599,18 @@ the [release notes](release-notes-3.7.md#zephyr-3-7).
 ### [Serial](#id20)
 
 - The Raspberry Pi UART driver `uart_rpi_pico` has been removed.
-  Use `uart_pl011` ([`arm,pl011`](../build/dts/api/bindings/serial/arm%2Cpl011.md#std-dtcompatible-arm-pl011)) instead. ([GitHub #71074](https://github.com/zephyrproject-rtos/zephyr/issues/71074))
+  Use `uart_pl011` ([`arm,pl011`](../build/dts/api/bindings/serial/arm,pl011.md#std-dtcompatible-arm-pl011)) instead. ([GitHub #71074](https://github.com/zephyrproject-rtos/zephyr/issues/71074))
 
 ### [Regulator](#id21)
 
-- The [`nxp,vref`](../build/dts/api/bindings/regulator/nxp%2Cvref.md#std-dtcompatible-nxp-vref) driver no longer supports the ground selection function,
+- The [`nxp,vref`](../build/dts/api/bindings/regulator/nxp,vref.md#std-dtcompatible-nxp-vref) driver no longer supports the ground selection function,
   as this setting should not be modified by the user. The DT property `nxp,ground-select`
   has been removed, users should remove this property from their devicetree if it is present.
   ([GitHub #70642](https://github.com/zephyrproject-rtos/zephyr/issues/70642))
 
 ### [W1](#id22)
 
-- The [`zephyr,w1-gpio`](../build/dts/api/bindings/w1/zephyr%2Cw1-gpio.md#std-dtcompatible-zephyr-w1-gpio) 1-Wire master driver no longer defaults to enabling the
+- The [`zephyr,w1-gpio`](../build/dts/api/bindings/w1/zephyr,w1-gpio.md#std-dtcompatible-zephyr-w1-gpio) 1-Wire master driver no longer defaults to enabling the
   internal pull-up resistor of the GPIO pin. The configuration is now taken from the pin’s
   configuration flags specified in devicetree. ([GitHub #71789](https://github.com/zephyrproject-rtos/zephyr/issues/71789))
 

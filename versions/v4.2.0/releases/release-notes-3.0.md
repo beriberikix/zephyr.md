@@ -68,7 +68,7 @@ interface and listing all issues with the [bug label](https://github.com/zephyrp
   - `CONFIG_BT_CTLR_GPIO_PDN_CSN_OFFSET`
 
   This FEM configuration is hardware description, and was therefore moved to
-  [devicetree](../build/dts/index.md#dt-guide). See the [`nordic,nrf-radio`](../build/dts/api/bindings/net/wireless/nordic%2Cnrf-radio.md#std-dtcompatible-nordic-nrf-radio)
+  [devicetree](../build/dts/index.md#dt-guide). See the [`nordic,nrf-radio`](../build/dts/api/bindings/net/wireless/nordic,nrf-radio.md#std-dtcompatible-nordic-nrf-radio)
   devicetree binding’s `fem` property for information on what to do instead
   on the Nordic open source controller.
 - Removed Kconfig option `CONFIG_USB_UART_CONSOLE`.
@@ -86,7 +86,7 @@ interface and listing all issues with the [bug label](https://github.com/zephyrp
   [`DEVICE_DT_GET`](../doxygen/html/group__device__model.md#ga9a65996ce21f43acb7db061e23b48ec7).
 - Removed `CONFIG_LOG_MINIMAL`. Use `CONFIG_LOG_MODE_MINIMAL` instead.
 - STM32 clock\_control driver configuration was moved from Kconfig to [devicetree](../build/dts/index.md#dt-guide).
-  See the [`st,stm32-rcc`](../build/dts/api/bindings/clock/st%2Cstm32-rcc.md#std-dtcompatible-st-stm32-rcc) devicetree binding for more information.
+  See the [`st,stm32-rcc`](../build/dts/api/bindings/clock/st,stm32-rcc.md#std-dtcompatible-st-stm32-rcc) devicetree binding for more information.
   As a consequence, following Kconfig symbols were removed:
 
   - `CONFIG_CLOCK_STM32_SYSCLK_SRC_HSE`
@@ -632,7 +632,7 @@ interface and listing all issues with the [bug label](https://github.com/zephyrp
 - Devicetree
 
   - Support for the devicetree compatible `ti,ina23x` has been removed.
-    Instead, use [`ti,ina230`](../build/dts/api/bindings/sensor/ti%2Cina230.md#std-dtcompatible-ti-ina230) or [`ti,ina237`](../build/dts/api/bindings/sensor/ti%2Cina237.md#std-dtcompatible-ti-ina237).
+    Instead, use [`ti,ina230`](../build/dts/api/bindings/sensor/ti,ina230.md#std-dtcompatible-ti-ina230) or [`ti,ina237`](../build/dts/api/bindings/sensor/ti,ina237.md#std-dtcompatible-ti-ina237).
 - West (extensions)
 
   - Added support for gd32isp runner

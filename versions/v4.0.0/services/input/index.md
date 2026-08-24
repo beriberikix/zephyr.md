@@ -67,7 +67,7 @@ codes and modifiers.
 Input devices generating X/Y/Touch events can be used in existing applications
 based on the [Keyboard Scan](../../hardware/peripherals/kscan.md#kscan-api) API by enabling both
 [`CONFIG_INPUT`](../../kconfig.md#CONFIG_INPUT "CONFIG_INPUT") and [`CONFIG_KSCAN`](../../kconfig.md#CONFIG_KSCAN "CONFIG_KSCAN"), defining a
-[`zephyr,kscan-input`](../../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) node as a child node of the corresponding
+[`zephyr,kscan-input`](../../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) node as a child node of the corresponding
 input device and pointing the `zephyr,keyboard-scan` chosen node to the
 compatibility device node, for example:
 
@@ -95,14 +95,14 @@ ft5336@38 {
 - [`gpio-qdec`](../../build/dts/api/bindings/input/gpio-qdec.md#std-dtcompatible-gpio-qdec): for GPIO-connected quadrature encoders.
 - [`input-keymap`](../../build/dts/api/bindings/input/input-keymap.md#std-dtcompatible-input-keymap): maps row/col/touch events from a keyboard
   matrix to key events.
-- [`zephyr,input-longpress`](../../build/dts/api/bindings/input/zephyr%2Cinput-longpress.md#std-dtcompatible-zephyr-input-longpress): listens for key events, emits events
+- [`zephyr,input-longpress`](../../build/dts/api/bindings/input/zephyr,input-longpress.md#std-dtcompatible-zephyr-input-longpress): listens for key events, emits events
   for short and long press.
-- [`zephyr,input-double-tap`](../../build/dts/api/bindings/input/zephyr%2Cinput-double-tap.md#std-dtcompatible-zephyr-input-double-tap): listens for key events, emits events
+- [`zephyr,input-double-tap`](../../build/dts/api/bindings/input/zephyr,input-double-tap.md#std-dtcompatible-zephyr-input-double-tap): listens for key events, emits events
   for input double taps
-- [`zephyr,lvgl-button-input`](../../build/dts/api/bindings/input/zephyr%2Clvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)
-  [`zephyr,lvgl-encoder-input`](../../build/dts/api/bindings/input/zephyr%2Clvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input)
-  [`zephyr,lvgl-keypad-input`](../../build/dts/api/bindings/input/zephyr%2Clvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)
-  [`zephyr,lvgl-pointer-input`](../../build/dts/api/bindings/input/zephyr%2Clvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input): listens for input events and
+- [`zephyr,lvgl-button-input`](../../build/dts/api/bindings/input/zephyr,lvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)
+  [`zephyr,lvgl-encoder-input`](../../build/dts/api/bindings/input/zephyr,lvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input)
+  [`zephyr,lvgl-keypad-input`](../../build/dts/api/bindings/input/zephyr,lvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)
+  [`zephyr,lvgl-pointer-input`](../../build/dts/api/bindings/input/zephyr,lvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input): listens for input events and
   translates those to various types of LVGL input devices.
 
 ## Detailed Driver Documentation

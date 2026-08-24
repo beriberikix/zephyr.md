@@ -12,7 +12,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 
 ## Overview
 
-A sample showing how to use the [`ti,tmp112`](../../../build/dts/api/bindings/sensor/ti%2Ctmp112.md#std-dtcompatible-ti-tmp112) sensor.
+A sample showing how to use the [`ti,tmp112`](../../../build/dts/api/bindings/sensor/ti,tmp112.md#std-dtcompatible-ti-tmp112) sensor.
 
 ## Requirements
 

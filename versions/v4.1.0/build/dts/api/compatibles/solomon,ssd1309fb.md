@@ -9,5 +9,5 @@ original_path: build/dts/api/compatibles/solomon,ssd1309fb.html
 The devicetree compatible `solomon,ssd1309fb` may be handled by any
 of the following bindings:
 
-- [solomon,ssd1309fb (on i2c bus)](../bindings/display/solomon%2Cssd1309fb-i2c.md#dtbinding-solomon-ssd1309fb-i2c)
-- [solomon,ssd1309fb (on spi bus)](../bindings/display/solomon%2Cssd1309fb-spi.md#dtbinding-solomon-ssd1309fb-spi)
+- [solomon,ssd1309fb (on i2c bus)](../bindings/display/solomon,ssd1309fb-i2c.md#dtbinding-solomon-ssd1309fb-i2c)
+- [solomon,ssd1309fb (on spi bus)](../bindings/display/solomon,ssd1309fb-spi.md#dtbinding-solomon-ssd1309fb-spi)

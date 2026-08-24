@@ -9,5 +9,5 @@ original_path: build/dts/api/compatibles/solomon,ssd1363.html
 The devicetree compatible `solomon,ssd1363` may be handled by any
 of the following bindings:
 
-- [solomon,ssd1363 (on mipi-dbi bus)](../bindings/display/solomon%2Cssd1363-mipi.md#dtbinding-solomon-ssd1363-mipi)
-- [solomon,ssd1363 (on i2c bus)](../bindings/display/solomon%2Cssd1363-i2c.md#dtbinding-solomon-ssd1363-i2c)
+- [solomon,ssd1363 (on mipi-dbi bus)](../bindings/display/solomon,ssd1363-mipi.md#dtbinding-solomon-ssd1363-mipi)
+- [solomon,ssd1363 (on i2c bus)](../bindings/display/solomon,ssd1363-i2c.md#dtbinding-solomon-ssd1363-i2c)

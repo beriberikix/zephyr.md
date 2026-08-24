@@ -22,7 +22,7 @@ of device names).
 
 The Zephyr driver for the `` ti,tmag5170` `` requires an SPI driver
 that supports 32-bit SPI\_WORD\_SIZE. On the [Raspberry Pi Pico](../../../boards/raspberrypi/rpi_pico/doc/index.md#rpi_pico), the
-[`raspberrypi,pico-spi-pio`](../../../build/dts/api/bindings/spi/raspberrypi%2Cpico-spi-pio.md#std-dtcompatible-raspberrypi-pico-spi-pio) SPI driver provides this support,
+[`raspberrypi,pico-spi-pio`](../../../build/dts/api/bindings/spi/raspberrypi,pico-spi-pio.md#std-dtcompatible-raspberrypi-pico-spi-pio) SPI driver provides this support,
 demonstrated with the
 [samples/sensor/magn\_polling/boards/rpi\_pico.overlay](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/sensor/magn_polling/boards/rpi_pico.overlay).
 

@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `solomon,ssd1306fb` may be handled by any
 of the following bindings:
 
-- [solomon,ssd1306fb (on spi bus)](../bindings/display/solomon%2Cssd1306fb-spi.md#dtbinding-solomon-ssd1306fb-spi)
-- [solomon,ssd1306fb (on i2c bus)](../bindings/display/solomon%2Cssd1306fb-i2c.md#dtbinding-solomon-ssd1306fb-i2c)
+- [solomon,ssd1306fb (on spi bus)](../bindings/display/solomon,ssd1306fb-spi.md#dtbinding-solomon-ssd1306fb-spi)
+- [solomon,ssd1306fb (on i2c bus)](../bindings/display/solomon,ssd1306fb-i2c.md#dtbinding-solomon-ssd1306fb-i2c)

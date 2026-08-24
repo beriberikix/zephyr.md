@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `we,wsen-pads` may be handled by any
 of the following bindings:
 
-- [we,wsen-pads (on spi bus)](../bindings/sensor/we%2Cwsen-pads-spi.md#dtbinding-we-wsen-pads-spi)
-- [we,wsen-pads (on i2c bus)](../bindings/sensor/we%2Cwsen-pads-i2c.md#dtbinding-we-wsen-pads-i2c)
+- [we,wsen-pads (on spi bus)](../bindings/sensor/we,wsen-pads-spi.md#dtbinding-we-wsen-pads-spi)
+- [we,wsen-pads (on i2c bus)](../bindings/sensor/we,wsen-pads-i2c.md#dtbinding-we-wsen-pads-i2c)

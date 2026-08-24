@@ -24,7 +24,7 @@ release the user button to exit from shutdown mode or from shutdown mode.
 
 The board should support enabling PM. For a STM32 based target, it means that
 it should support a clock source alternative to Cortex Systick that can be used
-in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st%2Cstm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
+in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st,stm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
 For another board than nucleo\_L476RG please adjust wakeup pin into config\_wakeup\_features().
 
 ## Building and Running

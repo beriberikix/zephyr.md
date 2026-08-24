@@ -80,7 +80,7 @@ But there are two important differences in behavior to a real UART controller:
   called from a non-ISR context.
 
 The devicetree compatible property for CDC ACM UART is
-[`zephyr,cdc-acm-uart`](../../../build/dts/api/bindings/serial/zephyr%2Ccdc-acm-uart.md#std-dtcompatible-zephyr-cdc-acm-uart).
+[`zephyr,cdc-acm-uart`](../../../build/dts/api/bindings/serial/zephyr,cdc-acm-uart.md#std-dtcompatible-zephyr-cdc-acm-uart).
 CDC ACM support is automatically selected when USB device support is enabled
 and a compatible node in the devicetree sources is present. If necessary,
 CDC ACM support can be explicitly disabled by [`CONFIG_USB_CDC_ACM`](../../../kconfig.md#CONFIG_USB_CDC_ACM "CONFIG_USB_CDC_ACM").

@@ -22,10 +22,10 @@ savings is correctly implemented.
 The application will build only for a target that has a devicetree node with one of the
 following bindings as a compatible:
 
-- [`jedec,spi-nor`](../../../build/dts/api/bindings/mtd/jedec%2Cspi-nor.md#std-dtcompatible-jedec-spi-nor),
-- [`st,stm32-qspi-nor`](../../../build/dts/api/bindings/flash_controller/st%2Cstm32-qspi-nor.md#std-dtcompatible-st-stm32-qspi-nor),
-- [`st,stm32-ospi-nor`](../../../build/dts/api/bindings/flash_controller/st%2Cstm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor),
-- [`nordic,qspi-nor`](../../../build/dts/api/bindings/mtd/nordic%2Cqspi-nor.md#std-dtcompatible-nordic-qspi-nor).
+- [`jedec,spi-nor`](../../../build/dts/api/bindings/mtd/jedec,spi-nor.md#std-dtcompatible-jedec-spi-nor),
+- [`st,stm32-qspi-nor`](../../../build/dts/api/bindings/flash_controller/st,stm32-qspi-nor.md#std-dtcompatible-st-stm32-qspi-nor),
+- [`st,stm32-ospi-nor`](../../../build/dts/api/bindings/flash_controller/st,stm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor),
+- [`nordic,qspi-nor`](../../../build/dts/api/bindings/mtd/nordic,qspi-nor.md#std-dtcompatible-nordic-qspi-nor).
 
 ```shell
 west build -b nrf52840dk/nrf52840 samples/drivers/spi_flash

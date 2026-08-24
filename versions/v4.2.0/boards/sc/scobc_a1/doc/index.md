@@ -64,14 +64,14 @@ on-chip / on-board
 
 | Type | Location | Description | Compatible |
 | --- | --- | --- | --- |
-| CPU | on-board | ARM Cortex-M3 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L24) | [`arm,cortex-m3`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m3.md#std-dtcompatible-arm-cortex-m3) |
-| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| CPU | on-board | ARM Cortex-M3 CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L24) | [`arm,cortex-m3`](../../../../build/dts/api/bindings/cpu/arm,cortex-m3.md#std-dtcompatible-arm-cortex-m3) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm,v7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
 | Miscellaneous | on-board | Space Cubics HRMEM (High-reliability Memory)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L39) | `sc,hrmem` |
 | on-board | SC-OBC Module A1 System Register[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L50) | `sc,sysreg` |
 | on-board | SC-OBC Module A1 System Monitor[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L55) | `sc,sysmon` |
-| MMU / MPU | on-board | ARMv7-M Memory Protection Unit (MPU)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L31) | [`arm,armv7m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm%2Carmv7m-mpu.md#std-dtcompatible-arm-armv7m-mpu) |
-| Serial controller | on-board | Xilinx UART Lite IP[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L44) | [`xlnx,xps-uartlite-1.00.a`](../../../../build/dts/api/bindings/serial/xlnx%2Cxps-uartlite-1.00.a.md#std-dtcompatible-xlnx-xps-uartlite-1.00.a) |
-| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| MMU / MPU | on-board | ARMv7-M Memory Protection Unit (MPU)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L31) | [`arm,armv7m-mpu`](../../../../build/dts/api/bindings/mmu_mpu/arm,armv7m-mpu.md#std-dtcompatible-arm-armv7m-mpu) |
+| Serial controller | on-board | Xilinx UART Lite IP[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/sc/scobc_a1/scobc_a1.dts?plain=1#L44) | [`xlnx,xps-uartlite-1.00.a`](../../../../build/dts/api/bindings/serial/xlnx,xps-uartlite-1.00.a.md#std-dtcompatible-xlnx-xps-uartlite-1.00.a) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm,armv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
 
 Other hardware features are not currently supported by the port.
 

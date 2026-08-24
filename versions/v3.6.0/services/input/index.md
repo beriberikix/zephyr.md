@@ -71,7 +71,7 @@ codes and modifiers.
 Input devices generating X/Y/Touch events can be used in existing applications
 based on the [Keyboard Scan](../../hardware/peripherals/kscan.md#kscan-api) API by enabling both
 [`CONFIG_INPUT`](../../kconfig.md#CONFIG_INPUT "CONFIG_INPUT") and [`CONFIG_KSCAN`](../../kconfig.md#CONFIG_KSCAN "CONFIG_KSCAN"), defining a
-[`zephyr,kscan-input`](../../build/dts/api/bindings/kscan/zephyr%2Ckscan-input.md#std-dtcompatible-zephyr-kscan-input) node as a child node of the corresponding
+[`zephyr,kscan-input`](../../build/dts/api/bindings/kscan/zephyr,kscan-input.md#std-dtcompatible-zephyr-kscan-input) node as a child node of the corresponding
 input device and pointing the `zephyr,keyboard-scan` chosen node to the
 compatibility device node, for example:
 

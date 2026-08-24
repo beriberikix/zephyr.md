@@ -569,8 +569,8 @@ Zephyr provides several FFF-based fake drivers which can be used as either stubs
 driver instances are configured via [Devicetree](../../build/dts/index.md#devicetree) and [Configuration System (Kconfig)](../../build/kconfig/index.md#kconfig). See the following
 devicetree bindings for more information:
 
-> - [`zephyr,fake-can`](../../build/dts/api/bindings/can/zephyr%2Cfake-can.md#std-dtcompatible-zephyr-fake-can)
-> - [`zephyr,fake-eeprom`](../../build/dts/api/bindings/mtd/zephyr%2Cfake-eeprom.md#std-dtcompatible-zephyr-fake-eeprom)
+> - [`zephyr,fake-can`](../../build/dts/api/bindings/can/zephyr,fake-can.md#std-dtcompatible-zephyr-fake-can)
+> - [`zephyr,fake-eeprom`](../../build/dts/api/bindings/mtd/zephyr,fake-eeprom.md#std-dtcompatible-zephyr-fake-eeprom)
 
 Zephyr also has defined extensions to FFF for simplified declarations of fake functions.
 See [FFF Extensions](#fff-extensions).

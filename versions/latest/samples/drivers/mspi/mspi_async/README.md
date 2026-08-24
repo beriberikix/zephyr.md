@@ -22,7 +22,7 @@ To this sample, however, the implementation should make no difference.
 The application will build only for a target that has a [devicetree](../../../../build/dts/index.md#dt-guide)
 `dev0` alias that refers to an entry with the following bindings as a compatible:
 
-- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq%2Cmspi-device.md#std-dtcompatible-ambiq-mspi-device), [`mspi-aps6404l`](../../../../build/dts/api/bindings/mtd/mspi-aps6404l.md#std-dtcompatible-mspi-aps6404l)
+- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq,mspi-device.md#std-dtcompatible-ambiq-mspi-device), [`mspi-aps6404l`](../../../../build/dts/api/bindings/mtd/mspi-aps6404l.md#std-dtcompatible-mspi-aps6404l)
 
 ```shell
 west build -b apollo3p_evb samples/drivers/mspi/mspi_async

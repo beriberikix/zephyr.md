@@ -19,19 +19,19 @@ additional widgets may be displayed and additional interactions enabled:
 
 - Pointer
   :   If your board has a touch panel controller
-      ([`zephyr,lvgl-pointer-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input)), a button widget is displayed
+      ([`zephyr,lvgl-pointer-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input)), a button widget is displayed
       in the center of the screen. Otherwise a label widget is displayed.
 - Button
-  :   The button pseudo device ([`zephyr,lvgl-button-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)) maps
+  :   The button pseudo device ([`zephyr,lvgl-button-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)) maps
       a press/release action to a specific coordinate on screen. In the case
       of this sample, the coordinates are mapped to the center of the screen.
 - Encoder
-  :   The encoder pseudo device ([`zephyr,lvgl-encoder-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input))
+  :   The encoder pseudo device ([`zephyr,lvgl-encoder-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input))
       can be used to navigate between widgets and edit their values. If the
       board contains an encoder, an arc widget is displayed, which can be
       edited.
 - Keypad
-  :   The keypad pseudo device ([`zephyr,lvgl-keypad-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)) can
+  :   The keypad pseudo device ([`zephyr,lvgl-keypad-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)) can
       be used for focus shifting and also entering characters inside editable
       widgets such as text areas. If the board used with this sample has a
       keypad device, a button matrix is displayed at the bottom of the screen

@@ -445,8 +445,8 @@ More detailed information can be found in:
 
   - A driver for bridging from [Native POSIX execution (native\_posix)](../boards/posix/native_posix/doc/index.md#native-posix) to Linux SocketCAN has been added.
   - A driver for the Espressif ESP32 TWAI has been added. See the
-    [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif%2Cesp32-twai.md#std-dtcompatible-espressif-esp32-twai) devicetree binding for more information.
-  - The STM32 CAN-FD CAN driver clock configuration has been moved from Kconfig to [devicetree](../build/dts/index.md#dt-guide). See the [`st,stm32-fdcan`](../build/dts/api/bindings/can/st%2Cstm32-fdcan.md#std-dtcompatible-st-stm32-fdcan) devicetree binding for more information.
+    [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif,esp32-twai.md#std-dtcompatible-espressif-esp32-twai) devicetree binding for more information.
+  - The STM32 CAN-FD CAN driver clock configuration has been moved from Kconfig to [devicetree](../build/dts/index.md#dt-guide). See the [`st,stm32-fdcan`](../build/dts/api/bindings/can/st,stm32-fdcan.md#std-dtcompatible-st-stm32-fdcan) devicetree binding for more information.
   - The filter handling of STM32 bxCAN driver has been simplified and made more reliable.
   - The STM32 bxCAN driver now supports dual instances.
   - The CAN loopback driver now supports CAN-FD.
@@ -501,7 +501,7 @@ More detailed information can be found in:
 - EEPROM
 
   - Added Microchip XEC (MEC172x) on-chip EEPROM driver. See the
-    [`microchip,xec-eeprom`](../build/dts/api/bindings/mtd/microchip%2Cxec-eeprom.md#std-dtcompatible-microchip-xec-eeprom) devicetree binding for more information.
+    [`microchip,xec-eeprom`](../build/dts/api/bindings/mtd/microchip,xec-eeprom.md#std-dtcompatible-microchip-xec-eeprom) devicetree binding for more information.
 - Entropy
 
   - Update drivers to use devicetree Kconfig symbol.
@@ -603,7 +603,7 @@ More detailed information can be found in:
 
   - Added PECI driver for Nuvoton NPCX family.
   - Devicetree binding for ITE it8xxx2 PECI driver has changed from
-    `ite,peci-it8xxx2` to [`ite,it8xxx2-peci`](../build/dts/api/bindings/peci/ite%2Cit8xxx2-peci.md#std-dtcompatible-ite-it8xxx2-peci) so that this aligns
+    `ite,peci-it8xxx2` to [`ite,it8xxx2-peci`](../build/dts/api/bindings/peci/ite,it8xxx2-peci.md#std-dtcompatible-ite-it8xxx2-peci) so that this aligns
     with other ITE devices.
 - Pin control
 
@@ -683,9 +683,9 @@ More detailed information can be found in:
 - W1
 
   - Added Zephyr-Serial 1-Wire master driver.
-  - Added DS2484 1-Wire master driver. See the [`maxim,ds2484`](../build/dts/api/bindings/w1/maxim%2Cds2484.md#std-dtcompatible-maxim-ds2484)
+  - Added DS2484 1-Wire master driver. See the [`maxim,ds2484`](../build/dts/api/bindings/w1/maxim,ds2484.md#std-dtcompatible-maxim-ds2484)
     devicetree binding for more information.
-  - Added DS2485 1-Wire master driver. See the [`maxim,ds2485`](../build/dts/api/bindings/w1/maxim%2Cds2485.md#std-dtcompatible-maxim-ds2485)
+  - Added DS2485 1-Wire master driver. See the [`maxim,ds2485`](../build/dts/api/bindings/w1/maxim,ds2485.md#std-dtcompatible-maxim-ds2485)
     devicetree binding for more information.
   - Introduced a shell module for 1-Wire.
 - Watchdog
@@ -924,249 +924,249 @@ More detailed information can be found in:
     [dts/bindings/i3c/i3c-controller.yaml](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/bindings/i3c/i3c-controller.yaml).
   - New:
 
-    - [`adi,adxl345`](../build/dts/api/compatibles/adi%2Cadxl345.md#std-dtcompatible-adi-adxl345)
-    - [`altr,nios2-qspi-nor`](../build/dts/api/bindings/flash_controller/altr%2Cnios2-qspi-nor.md#std-dtcompatible-altr-nios2-qspi-nor)
-    - [`altr,nios2-qspi`](../build/dts/api/bindings/qspi/altr%2Cnios2-qspi.md#std-dtcompatible-altr-nios2-qspi)
-    - [`andestech,atciic100`](../build/dts/api/bindings/i2c/andestech%2Catciic100.md#std-dtcompatible-andestech-atciic100)
-    - [`andestech,atcpit100`](../build/dts/api/bindings/timer/andestech%2Catcpit100.md#std-dtcompatible-andestech-atcpit100)
-    - [`andestech,machine-timer`](../build/dts/api/bindings/timer/andestech%2Cmachine-timer.md#std-dtcompatible-andestech-machine-timer)
+    - [`adi,adxl345`](../build/dts/api/compatibles/adi,adxl345.md#std-dtcompatible-adi-adxl345)
+    - [`altr,nios2-qspi-nor`](../build/dts/api/bindings/flash_controller/altr,nios2-qspi-nor.md#std-dtcompatible-altr-nios2-qspi-nor)
+    - [`altr,nios2-qspi`](../build/dts/api/bindings/qspi/altr,nios2-qspi.md#std-dtcompatible-altr-nios2-qspi)
+    - [`andestech,atciic100`](../build/dts/api/bindings/i2c/andestech,atciic100.md#std-dtcompatible-andestech-atciic100)
+    - [`andestech,atcpit100`](../build/dts/api/bindings/timer/andestech,atcpit100.md#std-dtcompatible-andestech-atcpit100)
+    - [`andestech,machine-timer`](../build/dts/api/bindings/timer/andestech,machine-timer.md#std-dtcompatible-andestech-machine-timer)
     - [`andestech,atcspi200`](../build/dts/api/bindings/spi/andestech.atcspi200.md#std-dtcompatible-andestech-atcspi200)
     - [`arduino-mkr-header`](../build/dts/api/bindings/gpio/arduino-mkr-header.md#std-dtcompatible-arduino-mkr-header)
-    - [`arm,armv6m-systick`](../build/dts/api/bindings/timer/arm%2Carmv6m-systick.md#std-dtcompatible-arm-armv6m-systick)
-    - [`arm,armv7m-itm`](../build/dts/api/bindings/debug/arm%2Carmv7m-itm.md#std-dtcompatible-arm-armv7m-itm)
-    - [`arm,armv7m-systick`](../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick)
-    - [`arm,armv8.1m-systick`](../build/dts/api/bindings/timer/arm%2Carmv8.1m-systick.md#std-dtcompatible-arm-armv8.1m-systick)
-    - [`arm,armv8m-itm`](../build/dts/api/bindings/debug/arm%2Carmv8m-itm.md#std-dtcompatible-arm-armv8m-itm)
-    - [`arm,armv8m-systick`](../build/dts/api/bindings/timer/arm%2Carmv8m-systick.md#std-dtcompatible-arm-armv8m-systick)
-    - [`arm,beetle-syscon`](../build/dts/api/bindings/arm/arm%2Cbeetle-syscon.md#std-dtcompatible-arm-beetle-syscon)
-    - [`arm,pl022`](../build/dts/api/bindings/spi/arm%2Cpl022.md#std-dtcompatible-arm-pl022)
-    - [`aspeed,ast10x0-clock`](../build/dts/api/bindings/clock/aspeed%2Cast10x0-clock.md#std-dtcompatible-aspeed-ast10x0-clock)
-    - [`atmel,at24mac402`](../build/dts/api/bindings/mtd/atmel%2C24mac402.md#std-dtcompatible-atmel-at24mac402)
-    - [`atmel,ataes132a`](../build/dts/api/bindings/crypto/atmel%2Cataes132a.md#std-dtcompatible-atmel-ataes132a)
-    - [`atmel,sam-smc`](../build/dts/api/bindings/memory-controllers/atmel%2Csam-smc.md#std-dtcompatible-atmel-sam-smc)
-    - [`atmel,sam4l-flashcalw-controller`](../build/dts/api/bindings/flash_controller/atmel%2Csam4l-flashcalw-controller.md#std-dtcompatible-atmel-sam4l-flashcalw-controller)
-    - [`atmel,saml2x-gclk`](../build/dts/api/bindings/clock/atmel%2Csaml2x-gclk.md#std-dtcompatible-atmel-saml2x-gclk)
-    - [`atmel,saml2x-mclk`](../build/dts/api/bindings/clock/atmel%2Csaml2x-mclk.md#std-dtcompatible-atmel-saml2x-mclk)
-    - [`cdns,qspi-nor`](../build/dts/api/bindings/flash_controller/cdns%2Cqspi-nor.md#std-dtcompatible-cdns-qspi-nor)
-    - [`espressif,esp32-ipm`](../build/dts/api/bindings/ipm/espressif%2Cesp32-ipm.md#std-dtcompatible-espressif-esp32-ipm)
-    - [`espressif,esp32-mcpwm`](../build/dts/api/bindings/pwm/espressif%2Cesp32-mcpwm.md#std-dtcompatible-espressif-esp32-mcpwm)
-    - [`espressif,esp32-pcnt`](../build/dts/api/bindings/sensor/espressif%2Cesp32-pcnt.md#std-dtcompatible-espressif-esp32-pcnt)
-    - [`espressif,esp32-rtc-timer`](../build/dts/api/bindings/counter/espressif%2Cesp32-rtc-timer.md#std-dtcompatible-espressif-esp32-rtc-timer)
-    - [`espressif,esp32-timer`](../build/dts/api/bindings/counter/espressif%2Cesp32-timer.md#std-dtcompatible-espressif-esp32-timer)
-    - [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif%2Cesp32-twai.md#std-dtcompatible-espressif-esp32-twai)
-    - [`espressif,esp32-usb-serial`](../build/dts/api/bindings/serial/espressif%2Cesp32-usb-serial.md#std-dtcompatible-espressif-esp32-usb-serial)
-    - [`espressif,esp32-wifi`](../build/dts/api/bindings/wifi/espressif%2Cesp32-wifi.md#std-dtcompatible-espressif-esp32-wifi)
-    - [`gd,gd32-adc`](../build/dts/api/bindings/adc/gd%2Cgd32-adc.md#std-dtcompatible-gd-gd32-adc)
-    - [`gd,gd32-cctl`](../build/dts/api/bindings/clock/gd%2Cgd32-cctl.md#std-dtcompatible-gd-gd32-cctl)
-    - [`gd,gd32-dma`](../build/dts/api/bindings/dma/gd%2Cgd32-dma.md#std-dtcompatible-gd-gd32-dma)
-    - [`gd,gd32-flash-controller`](../build/dts/api/bindings/flash_controller/gd%2Cgd32-flash-controller.md#std-dtcompatible-gd-gd32-flash-controller)
-    - [`gd,gd32-rcu`](../build/dts/api/bindings/mfd/gd%2Cgd32-rcu.md#std-dtcompatible-gd-gd32-rcu)
-    - [`goodix,gt911`](../build/dts/api/bindings/input/goodix%2Cgt911.md#std-dtcompatible-goodix-gt911)
-    - [`infineon,xmc4xxx-gpio`](../build/dts/api/bindings/gpio/infineon%2Cxmc4xxx-gpio.md#std-dtcompatible-infineon-xmc4xxx-gpio)
-    - [`infineon,xmc4xxx-pinctrl`](../build/dts/api/bindings/pinctrl/infineon%2Cxmc4xxx-pinctrl.md#std-dtcompatible-infineon-xmc4xxx-pinctrl)
-    - [`intel,ace-art-counter`](../build/dts/api/bindings/counter/intel%2Cace-art-counter.md#std-dtcompatible-intel-ace-art-counter)
-    - [`intel,ace-intc`](../build/dts/api/bindings/interrupt-controller/intel%2Cace-intc.md#std-dtcompatible-intel-ace-intc)
-    - [`intel,ace-rtc-counter`](../build/dts/api/bindings/counter/intel%2Cace-rtc-counter.md#std-dtcompatible-intel-ace-rtc-counter)
-    - [`intel,ace-timestamp`](../build/dts/api/bindings/timestamp/intel%2Cace-timestamp.md#std-dtcompatible-intel-ace-timestamp)
-    - [`intel,adsp-gpdma`](../build/dts/api/bindings/dma/intel%2Cadsp-gpdma.md#std-dtcompatible-intel-adsp-gpdma) (formerly `intel,cavs-gpdma`)
-    - [`intel,adsp-hda-host-in`](../build/dts/api/bindings/dma/intel%2Cadsp-hda-host-in.md#std-dtcompatible-intel-adsp-hda-host-in) (formerly `intel,cavs-hda-host-in`)
-    - [`intel,adsp-hda-host-out`](../build/dts/api/bindings/dma/intel%2Cadsp-hda-host-out.md#std-dtcompatible-intel-adsp-hda-host-out) (formerly `intel,cavs-hda-host-out`)
-    - [`intel,adsp-hda-link-in`](../build/dts/api/bindings/dma/intel%2Cadsp-hda-link-in.md#std-dtcompatible-intel-adsp-hda-link-in) (formerly `intel,cavs-hda-link-in`)
-    - [`intel,adsp-hda-link-out`](../build/dts/api/bindings/dma/intel%2Cadsp-hda-link-out.md#std-dtcompatible-intel-adsp-hda-link-out) (formerly `intel,cavs-hda-link-out`)
-    - [`intel,adsp-host-ipc`](../build/dts/api/bindings/ipc/intel%2Cadsp-host-ipc.md#std-dtcompatible-intel-adsp-host-ipc)
-    - [`intel,adsp-idc`](../build/dts/api/bindings/ipc/intel%2Cadsp-idc.md#std-dtcompatible-intel-adsp-idc) (formerly `intel,cavs-idc`)
-    - [`intel,adsp-imr`](../build/dts/api/bindings/mm/intel%2Cadsp-imr.md#std-dtcompatible-intel-adsp-imr)
+    - [`arm,armv6m-systick`](../build/dts/api/bindings/timer/arm,armv6m-systick.md#std-dtcompatible-arm-armv6m-systick)
+    - [`arm,armv7m-itm`](../build/dts/api/bindings/debug/arm,armv7m-itm.md#std-dtcompatible-arm-armv7m-itm)
+    - [`arm,armv7m-systick`](../build/dts/api/bindings/timer/arm,armv7m-systick.md#std-dtcompatible-arm-armv7m-systick)
+    - [`arm,armv8.1m-systick`](../build/dts/api/bindings/timer/arm,armv8.1m-systick.md#std-dtcompatible-arm-armv8.1m-systick)
+    - [`arm,armv8m-itm`](../build/dts/api/bindings/debug/arm,armv8m-itm.md#std-dtcompatible-arm-armv8m-itm)
+    - [`arm,armv8m-systick`](../build/dts/api/bindings/timer/arm,armv8m-systick.md#std-dtcompatible-arm-armv8m-systick)
+    - [`arm,beetle-syscon`](../build/dts/api/bindings/arm/arm,beetle-syscon.md#std-dtcompatible-arm-beetle-syscon)
+    - [`arm,pl022`](../build/dts/api/bindings/spi/arm,pl022.md#std-dtcompatible-arm-pl022)
+    - [`aspeed,ast10x0-clock`](../build/dts/api/bindings/clock/aspeed,ast10x0-clock.md#std-dtcompatible-aspeed-ast10x0-clock)
+    - [`atmel,at24mac402`](../build/dts/api/bindings/mtd/atmel,24mac402.md#std-dtcompatible-atmel-at24mac402)
+    - [`atmel,ataes132a`](../build/dts/api/bindings/crypto/atmel,ataes132a.md#std-dtcompatible-atmel-ataes132a)
+    - [`atmel,sam-smc`](../build/dts/api/bindings/memory-controllers/atmel,sam-smc.md#std-dtcompatible-atmel-sam-smc)
+    - [`atmel,sam4l-flashcalw-controller`](../build/dts/api/bindings/flash_controller/atmel,sam4l-flashcalw-controller.md#std-dtcompatible-atmel-sam4l-flashcalw-controller)
+    - [`atmel,saml2x-gclk`](../build/dts/api/bindings/clock/atmel,saml2x-gclk.md#std-dtcompatible-atmel-saml2x-gclk)
+    - [`atmel,saml2x-mclk`](../build/dts/api/bindings/clock/atmel,saml2x-mclk.md#std-dtcompatible-atmel-saml2x-mclk)
+    - [`cdns,qspi-nor`](../build/dts/api/bindings/flash_controller/cdns,qspi-nor.md#std-dtcompatible-cdns-qspi-nor)
+    - [`espressif,esp32-ipm`](../build/dts/api/bindings/ipm/espressif,esp32-ipm.md#std-dtcompatible-espressif-esp32-ipm)
+    - [`espressif,esp32-mcpwm`](../build/dts/api/bindings/pwm/espressif,esp32-mcpwm.md#std-dtcompatible-espressif-esp32-mcpwm)
+    - [`espressif,esp32-pcnt`](../build/dts/api/bindings/sensor/espressif,esp32-pcnt.md#std-dtcompatible-espressif-esp32-pcnt)
+    - [`espressif,esp32-rtc-timer`](../build/dts/api/bindings/counter/espressif,esp32-rtc-timer.md#std-dtcompatible-espressif-esp32-rtc-timer)
+    - [`espressif,esp32-timer`](../build/dts/api/bindings/counter/espressif,esp32-timer.md#std-dtcompatible-espressif-esp32-timer)
+    - [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif,esp32-twai.md#std-dtcompatible-espressif-esp32-twai)
+    - [`espressif,esp32-usb-serial`](../build/dts/api/bindings/serial/espressif,esp32-usb-serial.md#std-dtcompatible-espressif-esp32-usb-serial)
+    - [`espressif,esp32-wifi`](../build/dts/api/bindings/wifi/espressif,esp32-wifi.md#std-dtcompatible-espressif-esp32-wifi)
+    - [`gd,gd32-adc`](../build/dts/api/bindings/adc/gd,gd32-adc.md#std-dtcompatible-gd-gd32-adc)
+    - [`gd,gd32-cctl`](../build/dts/api/bindings/clock/gd,gd32-cctl.md#std-dtcompatible-gd-gd32-cctl)
+    - [`gd,gd32-dma`](../build/dts/api/bindings/dma/gd,gd32-dma.md#std-dtcompatible-gd-gd32-dma)
+    - [`gd,gd32-flash-controller`](../build/dts/api/bindings/flash_controller/gd,gd32-flash-controller.md#std-dtcompatible-gd-gd32-flash-controller)
+    - [`gd,gd32-rcu`](../build/dts/api/bindings/mfd/gd,gd32-rcu.md#std-dtcompatible-gd-gd32-rcu)
+    - [`goodix,gt911`](../build/dts/api/bindings/input/goodix,gt911.md#std-dtcompatible-goodix-gt911)
+    - [`infineon,xmc4xxx-gpio`](../build/dts/api/bindings/gpio/infineon,xmc4xxx-gpio.md#std-dtcompatible-infineon-xmc4xxx-gpio)
+    - [`infineon,xmc4xxx-pinctrl`](../build/dts/api/bindings/pinctrl/infineon,xmc4xxx-pinctrl.md#std-dtcompatible-infineon-xmc4xxx-pinctrl)
+    - [`intel,ace-art-counter`](../build/dts/api/bindings/counter/intel,ace-art-counter.md#std-dtcompatible-intel-ace-art-counter)
+    - [`intel,ace-intc`](../build/dts/api/bindings/interrupt-controller/intel,ace-intc.md#std-dtcompatible-intel-ace-intc)
+    - [`intel,ace-rtc-counter`](../build/dts/api/bindings/counter/intel,ace-rtc-counter.md#std-dtcompatible-intel-ace-rtc-counter)
+    - [`intel,ace-timestamp`](../build/dts/api/bindings/timestamp/intel,ace-timestamp.md#std-dtcompatible-intel-ace-timestamp)
+    - [`intel,adsp-gpdma`](../build/dts/api/bindings/dma/intel,adsp-gpdma.md#std-dtcompatible-intel-adsp-gpdma) (formerly `intel,cavs-gpdma`)
+    - [`intel,adsp-hda-host-in`](../build/dts/api/bindings/dma/intel,adsp-hda-host-in.md#std-dtcompatible-intel-adsp-hda-host-in) (formerly `intel,cavs-hda-host-in`)
+    - [`intel,adsp-hda-host-out`](../build/dts/api/bindings/dma/intel,adsp-hda-host-out.md#std-dtcompatible-intel-adsp-hda-host-out) (formerly `intel,cavs-hda-host-out`)
+    - [`intel,adsp-hda-link-in`](../build/dts/api/bindings/dma/intel,adsp-hda-link-in.md#std-dtcompatible-intel-adsp-hda-link-in) (formerly `intel,cavs-hda-link-in`)
+    - [`intel,adsp-hda-link-out`](../build/dts/api/bindings/dma/intel,adsp-hda-link-out.md#std-dtcompatible-intel-adsp-hda-link-out) (formerly `intel,cavs-hda-link-out`)
+    - [`intel,adsp-host-ipc`](../build/dts/api/bindings/ipc/intel,adsp-host-ipc.md#std-dtcompatible-intel-adsp-host-ipc)
+    - [`intel,adsp-idc`](../build/dts/api/bindings/ipc/intel,adsp-idc.md#std-dtcompatible-intel-adsp-idc) (formerly `intel,cavs-idc`)
+    - [`intel,adsp-imr`](../build/dts/api/bindings/mm/intel,adsp-imr.md#std-dtcompatible-intel-adsp-imr)
     - `intel,adsp-lps`
-    - [`intel,adsp-mtl-tlb`](../build/dts/api/bindings/mm/intel%2Cadsp-mtl-tlb.md#std-dtcompatible-intel-adsp-mtl-tlb)
-    - [`intel,adsp-power-domain`](../build/dts/api/bindings/power-domain/intel%2Cadsp-power-domain.md#std-dtcompatible-intel-adsp-power-domain)
-    - [`intel,adsp-shim-clkctl`](../build/dts/api/bindings/clock/intel%2Cadsp-shim-clkctl.md#std-dtcompatible-intel-adsp-shim-clkctl)
-    - [`intel,agilex-clock`](../build/dts/api/bindings/clock/intel%2Cagilex-clock.md#std-dtcompatible-intel-agilex-clock)
-    - [`intel,alh-dai`](../build/dts/api/bindings/alh/intel%2Calh-dai.md#std-dtcompatible-intel-alh-dai)
-    - [`intel,multiboot-framebuffer`](../build/dts/api/bindings/display/intel%2Cmultiboot-framebuffer.md#std-dtcompatible-intel-multiboot-framebuffer)
-    - [`ite,it8xxx2-peci`](../build/dts/api/bindings/peci/ite%2Cit8xxx2-peci.md#std-dtcompatible-ite-it8xxx2-peci) (formerly `ite,peci-it8xxx2`)
-    - [`maxim,ds18b20`](../build/dts/api/bindings/sensor/maxim%2Cds18b20.md#std-dtcompatible-maxim-ds18b20)
-    - [`maxim,ds2484`](../build/dts/api/bindings/w1/maxim%2Cds2484.md#std-dtcompatible-maxim-ds2484)
-    - [`maxim,ds2485`](../build/dts/api/bindings/w1/maxim%2Cds2485.md#std-dtcompatible-maxim-ds2485)
-    - [`maxim,max7219`](../build/dts/api/bindings/display/maxim%2Cmax7219.md#std-dtcompatible-maxim-max7219)
-    - [`microchip,mpfs-gpio`](../build/dts/api/bindings/gpio/microchip%2Cmpfs-gpio.md#std-dtcompatible-microchip-mpfs-gpio)
-    - [`microchip,xec-eeprom`](../build/dts/api/bindings/mtd/microchip%2Cxec-eeprom.md#std-dtcompatible-microchip-xec-eeprom)
-    - [`microchip,xec-espi`](../build/dts/api/bindings/espi/microchip%2Cxec-espi.md#std-dtcompatible-microchip-xec-espi)
-    - [`microchip,xec-i2c`](../build/dts/api/bindings/i2c/microchip%2Cxec-i2c.md#std-dtcompatible-microchip-xec-i2c)
-    - [`microchip,xec-qmspi`](../build/dts/api/bindings/spi/microchip%2Cxec-qmspi.md#std-dtcompatible-microchip-xec-qmspi)
+    - [`intel,adsp-mtl-tlb`](../build/dts/api/bindings/mm/intel,adsp-mtl-tlb.md#std-dtcompatible-intel-adsp-mtl-tlb)
+    - [`intel,adsp-power-domain`](../build/dts/api/bindings/power-domain/intel,adsp-power-domain.md#std-dtcompatible-intel-adsp-power-domain)
+    - [`intel,adsp-shim-clkctl`](../build/dts/api/bindings/clock/intel,adsp-shim-clkctl.md#std-dtcompatible-intel-adsp-shim-clkctl)
+    - [`intel,agilex-clock`](../build/dts/api/bindings/clock/intel,agilex-clock.md#std-dtcompatible-intel-agilex-clock)
+    - [`intel,alh-dai`](../build/dts/api/bindings/alh/intel,alh-dai.md#std-dtcompatible-intel-alh-dai)
+    - [`intel,multiboot-framebuffer`](../build/dts/api/bindings/display/intel,multiboot-framebuffer.md#std-dtcompatible-intel-multiboot-framebuffer)
+    - [`ite,it8xxx2-peci`](../build/dts/api/bindings/peci/ite,it8xxx2-peci.md#std-dtcompatible-ite-it8xxx2-peci) (formerly `ite,peci-it8xxx2`)
+    - [`maxim,ds18b20`](../build/dts/api/bindings/sensor/maxim,ds18b20.md#std-dtcompatible-maxim-ds18b20)
+    - [`maxim,ds2484`](../build/dts/api/bindings/w1/maxim,ds2484.md#std-dtcompatible-maxim-ds2484)
+    - [`maxim,ds2485`](../build/dts/api/bindings/w1/maxim,ds2485.md#std-dtcompatible-maxim-ds2485)
+    - [`maxim,max7219`](../build/dts/api/bindings/display/maxim,max7219.md#std-dtcompatible-maxim-max7219)
+    - [`microchip,mpfs-gpio`](../build/dts/api/bindings/gpio/microchip,mpfs-gpio.md#std-dtcompatible-microchip-mpfs-gpio)
+    - [`microchip,xec-eeprom`](../build/dts/api/bindings/mtd/microchip,xec-eeprom.md#std-dtcompatible-microchip-xec-eeprom)
+    - [`microchip,xec-espi`](../build/dts/api/bindings/espi/microchip,xec-espi.md#std-dtcompatible-microchip-xec-espi)
+    - [`microchip,xec-i2c`](../build/dts/api/bindings/i2c/microchip,xec-i2c.md#std-dtcompatible-microchip-xec-i2c)
+    - [`microchip,xec-qmspi`](../build/dts/api/bindings/spi/microchip,xec-qmspi.md#std-dtcompatible-microchip-xec-qmspi)
     - [`neorv32-machine-timer`](../build/dts/api/bindings/timer/neorv32-machine-timer.md#std-dtcompatible-neorv32-machine-timer)
-    - [`nordic,nrf-ieee802154`](../build/dts/api/bindings/ieee802154/nordic%2Cnrf-ieee802154.md#std-dtcompatible-nordic-nrf-ieee802154)
-    - [`nuclei,systimer`](../build/dts/api/bindings/timer/nuclei%2Csystimer.md#std-dtcompatible-nuclei-systimer)
-    - [`nuvoton,npcx-leakage-io`](../build/dts/api/bindings/pinctrl/nuvoton%2Cnpcx-leakage-io.md#std-dtcompatible-nuvoton-npcx-leakage-io)
-    - [`nuvoton,npcx-peci`](../build/dts/api/bindings/peci/nuvoton%2Cnpcx-peci.md#std-dtcompatible-nuvoton-npcx-peci)
-    - [`nuvoton,npcx-power-psl`](../build/dts/api/bindings/power/nuvoton%2Cnpcx-power-psl.md#std-dtcompatible-nuvoton-npcx-power-psl)
-    - [`nxp,gpt-hw-timer`](../build/dts/api/bindings/timer/nxp%2Cgpt-hw-timer.md#std-dtcompatible-nxp-gpt-hw-timer)
-    - [`nxp,iap-fmc11`](../build/dts/api/bindings/flash_controller/nxp%2Ciap-fmc11.md#std-dtcompatible-nxp-iap-fmc11)
-    - [`nxp,imx-caam`](../build/dts/api/bindings/rng/nxp%2Cimx-caam.md#std-dtcompatible-nxp-imx-caam)
-    - [`nxp,kw41z-ieee802154`](../build/dts/api/bindings/ieee802154/nxp%2Ckw41z-ieee802154.md#std-dtcompatible-nxp-kw41z-ieee802154)
-    - [`nxp,lpc-rtc`](../build/dts/api/bindings/rtc/nxp%2Clpc-rtc.md#std-dtcompatible-nxp-lpc-rtc)
-    - [`nxp,lpc-sdif`](../build/dts/api/bindings/sdhc/nxp%2Clpc-sdif.md#std-dtcompatible-nxp-lpc-sdif)
-    - [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp%2Cmcux-i3c.md#std-dtcompatible-nxp-mcux-i3c)
-    - [`nxp,os-timer`](../build/dts/api/bindings/timer/nxp%2Cos-timer.md#std-dtcompatible-nxp-os-timer)
-    - [`panasonic,reduced-arduino-header`](../build/dts/api/bindings/gpio/panasonic%2Creduced-arduino-header.md#std-dtcompatible-panasonic-reduced-arduino-header)
-    - [`raspberrypi,pico-adc`](../build/dts/api/bindings/adc/raspberrypi%2Cpico-adc.md#std-dtcompatible-raspberrypi-pico-adc)
-    - [`raspberrypi,pico-pwm`](../build/dts/api/bindings/pwm/raspberrypi%2Cpico-pwm.md#std-dtcompatible-raspberrypi-pico-pwm)
-    - [`raspberrypi,pico-spi`](../build/dts/api/bindings/spi/raspberrypi%2Cpico-spi.md#std-dtcompatible-raspberrypi-pico-spi)
-    - [`raspberrypi,pico-watchdog`](../build/dts/api/bindings/watchdog/raspberrypi%2Cpico-watchdog.md#std-dtcompatible-raspberrypi-pico-watchdog)
-    - [`renesas,pwm-rcar`](../build/dts/api/bindings/pwm/renesas%2Cpwm-rcar.md#std-dtcompatible-renesas-pwm-rcar)
-    - [`renesas,r8a7795-cpg-mssr`](../build/dts/api/bindings/clock/renesas%2Cr8a7795-cpg-mssr.md#std-dtcompatible-renesas-r8a7795-cpg-mssr) (formerly `renesas,rcar-cpg-mssr`)
-    - [`renesas,smartbond-flash-controller`](../build/dts/api/bindings/flash_controller/renesas%2Csmartbond-flash-controller.md#std-dtcompatible-renesas-smartbond-flash-controller)
-    - [`renesas,smartbond-gpio`](../build/dts/api/bindings/gpio/renesas%2Csmartbond-gpio.md#std-dtcompatible-renesas-smartbond-gpio)
-    - [`renesas,smartbond-pinctrl`](../build/dts/api/bindings/pinctrl/renesas%2Csmartbond-pinctrl.md#std-dtcompatible-renesas-smartbond-pinctrl)
-    - [`renesas,smartbond-uart`](../build/dts/api/bindings/serial/renesas%2Csmartbond-uart.md#std-dtcompatible-renesas-smartbond-uart)
-    - [`sifive,clint0`](../build/dts/api/bindings/timer/sifive%2Cclint0.md#std-dtcompatible-sifive-clint0)
-    - [`sifive,e24`](../build/dts/api/bindings/cpu/sifive%2Ce24.md#std-dtcompatible-sifive-e24) (formerly `riscv,sifive-e24`)
-    - [`sifive,e31`](../build/dts/api/bindings/cpu/sifive%2Ce31.md#std-dtcompatible-sifive-e31) (formerly `riscv,sifive-e31`)
-    - [`sifive,e51`](../build/dts/api/bindings/cpu/sifive%2Ce51.md#std-dtcompatible-sifive-e51) (formerly `riscv,sifive-e51`)
-    - [`sifive,s7`](../build/dts/api/bindings/cpu/sifive%2Cs7.md#std-dtcompatible-sifive-s7) (formerly `riscv,sifive-s7`)
-    - [`silabs,gecko-semailbox`](../build/dts/api/bindings/crypto/silabs%2Cgecko-semailbox.md#std-dtcompatible-silabs-gecko-semailbox)
-    - [`snps,arc-iot-sysconf`](../build/dts/api/bindings/misc/snps%2Carc-iot-sysconf.md#std-dtcompatible-snps-arc-iot-sysconf)
-    - [`snps,arc-timer`](../build/dts/api/bindings/timer/snps%2Carc-timer.md#std-dtcompatible-snps-arc-timer)
-    - [`snps,archs-ici`](../build/dts/api/bindings/misc/snps%2Carchs-ici.md#std-dtcompatible-snps-archs-ici)
-    - [`st,stm32-vbat`](../build/dts/api/bindings/sensor/st%2Cstm32-vbat.md#std-dtcompatible-st-stm32-vbat)
-    - [`st,stm32g0-hsi-clock`](../build/dts/api/bindings/clock/st%2Cstm32g0-hsi-clock.md#std-dtcompatible-st-stm32g0-hsi-clock)
-    - [`st,stm32h7-spi`](../build/dts/api/bindings/spi/st%2Cstm32h7-spi.md#std-dtcompatible-st-stm32h7-spi)
-    - [`st,stm32u5-dma`](../build/dts/api/bindings/dma/st%2Cstm32u5-dma.md#std-dtcompatible-st-stm32u5-dma)
-    - [`starfive,jh7100-clint`](../build/dts/api/bindings/timer/starfive%2Cjh7100-clint.md#std-dtcompatible-starfive-jh7100-clint)
-    - [`telink,b91-adc`](../build/dts/api/bindings/adc/telink%2Cb91-adc.md#std-dtcompatible-telink-b91-adc)
-    - [`telink,machine-timer`](../build/dts/api/bindings/timer/telink%2Cmachine-timer.md#std-dtcompatible-telink-machine-timer)
-    - [`ti,ads1119`](../build/dts/api/bindings/adc/ti%2Cads1119.md#std-dtcompatible-ti-ads1119)
-    - [`ti,cc13xx-cc26xx-flash-controller`](../build/dts/api/bindings/flash_controller/ti%2Ccc13xx-cc26xx-flash-controller.md#std-dtcompatible-ti-cc13xx-cc26xx-flash-controller)
-    - [`ti,cc13xx-cc26xx-ieee802154-subghz`](../build/dts/api/bindings/ieee802154/ti%2Ccc13xx-cc26xx-ieee802154-subghz.md#std-dtcompatible-ti-cc13xx-cc26xx-ieee802154-subghz)
-    - [`ti,cc13xx-cc26xx-ieee802154`](../build/dts/api/bindings/ieee802154/ti%2Ccc13xx-cc26xx-ieee802154.md#std-dtcompatible-ti-cc13xx-cc26xx-ieee802154)
-    - [`ti,sn74hc595`](../build/dts/api/bindings/gpio/ti%2Csn74hc595.md#std-dtcompatible-ti-sn74hc595)
-    - [`ultrachip,uc8176`](../build/dts/api/bindings/display/ultrachip%2Cuc8176.md#std-dtcompatible-ultrachip-uc8176)
-    - [`ultrachip,uc8179`](../build/dts/api/bindings/display/ultrachip%2Cuc8179.md#std-dtcompatible-ultrachip-uc8179)
-    - [`xen,hvc-uart`](../build/dts/api/bindings/serial/xen%2Chvc-uart.md#std-dtcompatible-xen-hvc-uart)
+    - [`nordic,nrf-ieee802154`](../build/dts/api/bindings/ieee802154/nordic,nrf-ieee802154.md#std-dtcompatible-nordic-nrf-ieee802154)
+    - [`nuclei,systimer`](../build/dts/api/bindings/timer/nuclei,systimer.md#std-dtcompatible-nuclei-systimer)
+    - [`nuvoton,npcx-leakage-io`](../build/dts/api/bindings/pinctrl/nuvoton,npcx-leakage-io.md#std-dtcompatible-nuvoton-npcx-leakage-io)
+    - [`nuvoton,npcx-peci`](../build/dts/api/bindings/peci/nuvoton,npcx-peci.md#std-dtcompatible-nuvoton-npcx-peci)
+    - [`nuvoton,npcx-power-psl`](../build/dts/api/bindings/power/nuvoton,npcx-power-psl.md#std-dtcompatible-nuvoton-npcx-power-psl)
+    - [`nxp,gpt-hw-timer`](../build/dts/api/bindings/timer/nxp,gpt-hw-timer.md#std-dtcompatible-nxp-gpt-hw-timer)
+    - [`nxp,iap-fmc11`](../build/dts/api/bindings/flash_controller/nxp,iap-fmc11.md#std-dtcompatible-nxp-iap-fmc11)
+    - [`nxp,imx-caam`](../build/dts/api/bindings/rng/nxp,imx-caam.md#std-dtcompatible-nxp-imx-caam)
+    - [`nxp,kw41z-ieee802154`](../build/dts/api/bindings/ieee802154/nxp,kw41z-ieee802154.md#std-dtcompatible-nxp-kw41z-ieee802154)
+    - [`nxp,lpc-rtc`](../build/dts/api/bindings/rtc/nxp,lpc-rtc.md#std-dtcompatible-nxp-lpc-rtc)
+    - [`nxp,lpc-sdif`](../build/dts/api/bindings/sdhc/nxp,lpc-sdif.md#std-dtcompatible-nxp-lpc-sdif)
+    - [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp,mcux-i3c.md#std-dtcompatible-nxp-mcux-i3c)
+    - [`nxp,os-timer`](../build/dts/api/bindings/timer/nxp,os-timer.md#std-dtcompatible-nxp-os-timer)
+    - [`panasonic,reduced-arduino-header`](../build/dts/api/bindings/gpio/panasonic,reduced-arduino-header.md#std-dtcompatible-panasonic-reduced-arduino-header)
+    - [`raspberrypi,pico-adc`](../build/dts/api/bindings/adc/raspberrypi,pico-adc.md#std-dtcompatible-raspberrypi-pico-adc)
+    - [`raspberrypi,pico-pwm`](../build/dts/api/bindings/pwm/raspberrypi,pico-pwm.md#std-dtcompatible-raspberrypi-pico-pwm)
+    - [`raspberrypi,pico-spi`](../build/dts/api/bindings/spi/raspberrypi,pico-spi.md#std-dtcompatible-raspberrypi-pico-spi)
+    - [`raspberrypi,pico-watchdog`](../build/dts/api/bindings/watchdog/raspberrypi,pico-watchdog.md#std-dtcompatible-raspberrypi-pico-watchdog)
+    - [`renesas,pwm-rcar`](../build/dts/api/bindings/pwm/renesas,pwm-rcar.md#std-dtcompatible-renesas-pwm-rcar)
+    - [`renesas,r8a7795-cpg-mssr`](../build/dts/api/bindings/clock/renesas,r8a7795-cpg-mssr.md#std-dtcompatible-renesas-r8a7795-cpg-mssr) (formerly `renesas,rcar-cpg-mssr`)
+    - [`renesas,smartbond-flash-controller`](../build/dts/api/bindings/flash_controller/renesas,smartbond-flash-controller.md#std-dtcompatible-renesas-smartbond-flash-controller)
+    - [`renesas,smartbond-gpio`](../build/dts/api/bindings/gpio/renesas,smartbond-gpio.md#std-dtcompatible-renesas-smartbond-gpio)
+    - [`renesas,smartbond-pinctrl`](../build/dts/api/bindings/pinctrl/renesas,smartbond-pinctrl.md#std-dtcompatible-renesas-smartbond-pinctrl)
+    - [`renesas,smartbond-uart`](../build/dts/api/bindings/serial/renesas,smartbond-uart.md#std-dtcompatible-renesas-smartbond-uart)
+    - [`sifive,clint0`](../build/dts/api/bindings/timer/sifive,clint0.md#std-dtcompatible-sifive-clint0)
+    - [`sifive,e24`](../build/dts/api/bindings/cpu/sifive,e24.md#std-dtcompatible-sifive-e24) (formerly `riscv,sifive-e24`)
+    - [`sifive,e31`](../build/dts/api/bindings/cpu/sifive,e31.md#std-dtcompatible-sifive-e31) (formerly `riscv,sifive-e31`)
+    - [`sifive,e51`](../build/dts/api/bindings/cpu/sifive,e51.md#std-dtcompatible-sifive-e51) (formerly `riscv,sifive-e51`)
+    - [`sifive,s7`](../build/dts/api/bindings/cpu/sifive,s7.md#std-dtcompatible-sifive-s7) (formerly `riscv,sifive-s7`)
+    - [`silabs,gecko-semailbox`](../build/dts/api/bindings/crypto/silabs,gecko-semailbox.md#std-dtcompatible-silabs-gecko-semailbox)
+    - [`snps,arc-iot-sysconf`](../build/dts/api/bindings/misc/snps,arc-iot-sysconf.md#std-dtcompatible-snps-arc-iot-sysconf)
+    - [`snps,arc-timer`](../build/dts/api/bindings/timer/snps,arc-timer.md#std-dtcompatible-snps-arc-timer)
+    - [`snps,archs-ici`](../build/dts/api/bindings/misc/snps,archs-ici.md#std-dtcompatible-snps-archs-ici)
+    - [`st,stm32-vbat`](../build/dts/api/bindings/sensor/st,stm32-vbat.md#std-dtcompatible-st-stm32-vbat)
+    - [`st,stm32g0-hsi-clock`](../build/dts/api/bindings/clock/st,stm32g0-hsi-clock.md#std-dtcompatible-st-stm32g0-hsi-clock)
+    - [`st,stm32h7-spi`](../build/dts/api/bindings/spi/st,stm32h7-spi.md#std-dtcompatible-st-stm32h7-spi)
+    - [`st,stm32u5-dma`](../build/dts/api/bindings/dma/st,stm32u5-dma.md#std-dtcompatible-st-stm32u5-dma)
+    - [`starfive,jh7100-clint`](../build/dts/api/bindings/timer/starfive,jh7100-clint.md#std-dtcompatible-starfive-jh7100-clint)
+    - [`telink,b91-adc`](../build/dts/api/bindings/adc/telink,b91-adc.md#std-dtcompatible-telink-b91-adc)
+    - [`telink,machine-timer`](../build/dts/api/bindings/timer/telink,machine-timer.md#std-dtcompatible-telink-machine-timer)
+    - [`ti,ads1119`](../build/dts/api/bindings/adc/ti,ads1119.md#std-dtcompatible-ti-ads1119)
+    - [`ti,cc13xx-cc26xx-flash-controller`](../build/dts/api/bindings/flash_controller/ti,cc13xx-cc26xx-flash-controller.md#std-dtcompatible-ti-cc13xx-cc26xx-flash-controller)
+    - [`ti,cc13xx-cc26xx-ieee802154-subghz`](../build/dts/api/bindings/ieee802154/ti,cc13xx-cc26xx-ieee802154-subghz.md#std-dtcompatible-ti-cc13xx-cc26xx-ieee802154-subghz)
+    - [`ti,cc13xx-cc26xx-ieee802154`](../build/dts/api/bindings/ieee802154/ti,cc13xx-cc26xx-ieee802154.md#std-dtcompatible-ti-cc13xx-cc26xx-ieee802154)
+    - [`ti,sn74hc595`](../build/dts/api/bindings/gpio/ti,sn74hc595.md#std-dtcompatible-ti-sn74hc595)
+    - [`ultrachip,uc8176`](../build/dts/api/bindings/display/ultrachip,uc8176.md#std-dtcompatible-ultrachip-uc8176)
+    - [`ultrachip,uc8179`](../build/dts/api/bindings/display/ultrachip,uc8179.md#std-dtcompatible-ultrachip-uc8179)
+    - [`xen,hvc-uart`](../build/dts/api/bindings/serial/xen,hvc-uart.md#std-dtcompatible-xen-hvc-uart)
     - `xen,xen-4.15`
-    - [`xlnx,pinctrl-zynq`](../build/dts/api/bindings/pinctrl/xlnx%2Cpinctrl-zynq.md#std-dtcompatible-xlnx-pinctrl-zynq)
-    - [`zephyr,coredump`](../build/dts/api/bindings/coredump/zephyr%2Ccoredump.md#std-dtcompatible-zephyr-coredump)
-    - [`zephyr,ieee802154-uart-pipe`](../build/dts/api/bindings/ieee802154/zephyr%2Cieee802154-uart-pipe.md#std-dtcompatible-zephyr-ieee802154-uart-pipe)
-    - [`zephyr,native-posix-counter`](../build/dts/api/bindings/counter/zephyr%2Cnative-posix-counter.md#std-dtcompatible-zephyr-native-posix-counter)
+    - [`xlnx,pinctrl-zynq`](../build/dts/api/bindings/pinctrl/xlnx,pinctrl-zynq.md#std-dtcompatible-xlnx-pinctrl-zynq)
+    - [`zephyr,coredump`](../build/dts/api/bindings/coredump/zephyr,coredump.md#std-dtcompatible-zephyr-coredump)
+    - [`zephyr,ieee802154-uart-pipe`](../build/dts/api/bindings/ieee802154/zephyr,ieee802154-uart-pipe.md#std-dtcompatible-zephyr-ieee802154-uart-pipe)
+    - [`zephyr,native-posix-counter`](../build/dts/api/bindings/counter/zephyr,native-posix-counter.md#std-dtcompatible-zephyr-native-posix-counter)
     - `zephyr,native-posix-linux-can`
     - `zephyr,sdl-kscan`
-    - [`zephyr,sdmmc-disk`](../build/dts/api/bindings/sd/zephyr%2Csdmmc-disk.md#std-dtcompatible-zephyr-sdmmc-disk)
-    - [`zephyr,w1-serial`](../build/dts/api/bindings/w1/zephyr%2Cw1-serial.md#std-dtcompatible-zephyr-w1-serial)
+    - [`zephyr,sdmmc-disk`](../build/dts/api/bindings/sd/zephyr,sdmmc-disk.md#std-dtcompatible-zephyr-sdmmc-disk)
+    - [`zephyr,w1-serial`](../build/dts/api/bindings/w1/zephyr,w1-serial.md#std-dtcompatible-zephyr-w1-serial)
   - [Pin Control](../hardware/pinctrl/index.md#pinctrl-guide) support added via new `pinctrl-0`, etc. properties:
 
-    - [`microchip,xec-qmspi`](../build/dts/api/bindings/spi/microchip%2Cxec-qmspi.md#std-dtcompatible-microchip-xec-qmspi)
-    - [`infineon,xmc4xxx-uart`](../build/dts/api/bindings/serial/infineon%2Cxmc4xxx-uart.md#std-dtcompatible-infineon-xmc4xxx-uart)
-    - [`nxp,lpc-mcan`](../build/dts/api/bindings/can/nxp%2Clpc-mcan.md#std-dtcompatible-nxp-lpc-mcan)
-    - [`xlnx,xuartps`](../build/dts/api/bindings/serial/xlnx%2Cxuartps.md#std-dtcompatible-xlnx-xuartps)
+    - [`microchip,xec-qmspi`](../build/dts/api/bindings/spi/microchip,xec-qmspi.md#std-dtcompatible-microchip-xec-qmspi)
+    - [`infineon,xmc4xxx-uart`](../build/dts/api/bindings/serial/infineon,xmc4xxx-uart.md#std-dtcompatible-infineon-xmc4xxx-uart)
+    - [`nxp,lpc-mcan`](../build/dts/api/bindings/can/nxp,lpc-mcan.md#std-dtcompatible-nxp-lpc-mcan)
+    - [`xlnx,xuartps`](../build/dts/api/bindings/serial/xlnx,xuartps.md#std-dtcompatible-xlnx-xuartps)
   - Other changes:
 
     - Analog Devices parts:
 
-      - [`adi,adxl372`](../build/dts/api/compatibles/adi%2Cadxl372.md#std-dtcompatible-adi-adxl372): new properties as part of a general conversion
+      - [`adi,adxl372`](../build/dts/api/compatibles/adi,adxl372.md#std-dtcompatible-adi-adxl372): new properties as part of a general conversion
         of the associated upstream driver to support multiple instances.
-      - [`adi,adxl362`](../build/dts/api/bindings/sensor/adi%2Cadxl362.md#std-dtcompatible-adi-adxl362): new `wakeup-mode`, `autosleep` properties.
+      - [`adi,adxl362`](../build/dts/api/bindings/sensor/adi,adxl362.md#std-dtcompatible-adi-adxl362): new `wakeup-mode`, `autosleep` properties.
     - Atmel SoCs:
 
-      - [`atmel,rf2xx`](../build/dts/api/bindings/ieee802154/atmel%2Crf2xx.md#std-dtcompatible-atmel-rf2xx): new `channel-page`, `tx-pwr-table`,
+      - [`atmel,rf2xx`](../build/dts/api/bindings/ieee802154/atmel,rf2xx.md#std-dtcompatible-atmel-rf2xx): new `channel-page`, `tx-pwr-table`,
         `tx-pwr-min`, `tx-pwr-max` properties.
       - GMAC: new `mac-eeprom` property.
     - Espressif SoCs:
 
-      - [`espressif,esp32-i2c`](../build/dts/api/bindings/i2c/espressif%2Cesp32-i2c.md#std-dtcompatible-espressif-esp32-i2c): the `sda-pin` and `scl-pin`
+      - [`espressif,esp32-i2c`](../build/dts/api/bindings/i2c/espressif,esp32-i2c.md#std-dtcompatible-espressif-esp32-i2c): the `sda-pin` and `scl-pin`
         properties are now `scl-gpios` and `sda-gpios`.
-      - [`espressif,esp32-ledc`](../build/dts/api/bindings/pwm/espressif%2Cesp32-ledc.md#std-dtcompatible-espressif-esp32-ledc): device configuration moved to
+      - [`espressif,esp32-ledc`](../build/dts/api/bindings/pwm/espressif,esp32-ledc.md#std-dtcompatible-espressif-esp32-ledc): device configuration moved to
         devicetree via a new child binding.
-      - [`espressif,esp32-pinctrl`](../build/dts/api/bindings/pinctrl/espressif%2Cesp32-pinctrl.md#std-dtcompatible-espressif-esp32-pinctrl): this now uses pin groups.
-      - [`espressif,esp32-spi`](../build/dts/api/bindings/spi/espressif%2Cesp32-spi.md#std-dtcompatible-espressif-esp32-spi): new `use-iomux` property.
-      - [`espressif,esp32-usb-serial`](../build/dts/api/bindings/serial/espressif%2Cesp32-usb-serial.md#std-dtcompatible-espressif-esp32-usb-serial): removed `peripheral`
+      - [`espressif,esp32-pinctrl`](../build/dts/api/bindings/pinctrl/espressif,esp32-pinctrl.md#std-dtcompatible-espressif-esp32-pinctrl): this now uses pin groups.
+      - [`espressif,esp32-spi`](../build/dts/api/bindings/spi/espressif,esp32-spi.md#std-dtcompatible-espressif-esp32-spi): new `use-iomux` property.
+      - [`espressif,esp32-usb-serial`](../build/dts/api/bindings/serial/espressif,esp32-usb-serial.md#std-dtcompatible-espressif-esp32-usb-serial): removed `peripheral`
         property.
     - GigaDevice SoCs:
 
       - Various peripheral bindings have had their SoC-specific
         `rcu-periph-clock` properties replaced with the standard `clocks`
         property as part of driver changes associated with the new
-        [`gd,gd32-cctl`](../build/dts/api/bindings/clock/gd%2Cgd32-cctl.md#std-dtcompatible-gd-gd32-cctl) clock controller binding:
+        [`gd,gd32-cctl`](../build/dts/api/bindings/clock/gd,gd32-cctl.md#std-dtcompatible-gd-gd32-cctl) clock controller binding:
 
-        - [`gd,gd32-afio`](../build/dts/api/bindings/pinctrl/gd%2Cgd32-afio.md#std-dtcompatible-gd-gd32-afio)
-        - [`gd,gd32-dac`](../build/dts/api/bindings/dac/gd%2Cgd32-dac.md#std-dtcompatible-gd-gd32-dac)
-        - [`gd,gd32-gpio`](../build/dts/api/bindings/gpio/gd%2Cgd32-gpio.md#std-dtcompatible-gd-gd32-gpio)
-        - [`gd,gd32-i2c`](../build/dts/api/bindings/i2c/gd%2Cgd32-i2c.md#std-dtcompatible-gd-gd32-i2c)
-        - [`gd,gd32-pwm`](../build/dts/api/bindings/pwm/gd%2Cgd32-pwm.md#std-dtcompatible-gd-gd32-pwm)
-        - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd%2Cgd32-spi.md#std-dtcompatible-gd-gd32-spi)
-        - [`gd,gd32-syscfg`](../build/dts/api/bindings/misc/gd%2Cgd32-syscfg.md#std-dtcompatible-gd-gd32-syscfg)
-        - [`gd,gd32-timer`](../build/dts/api/bindings/timer/gd%2Cgd32-timer.md#std-dtcompatible-gd-gd32-timer)
-        - [`gd,gd32-usart`](../build/dts/api/bindings/serial/gd%2Cgd32-usart.md#std-dtcompatible-gd-gd32-usart)
+        - [`gd,gd32-afio`](../build/dts/api/bindings/pinctrl/gd,gd32-afio.md#std-dtcompatible-gd-gd32-afio)
+        - [`gd,gd32-dac`](../build/dts/api/bindings/dac/gd,gd32-dac.md#std-dtcompatible-gd-gd32-dac)
+        - [`gd,gd32-gpio`](../build/dts/api/bindings/gpio/gd,gd32-gpio.md#std-dtcompatible-gd-gd32-gpio)
+        - [`gd,gd32-i2c`](../build/dts/api/bindings/i2c/gd,gd32-i2c.md#std-dtcompatible-gd-gd32-i2c)
+        - [`gd,gd32-pwm`](../build/dts/api/bindings/pwm/gd,gd32-pwm.md#std-dtcompatible-gd-gd32-pwm)
+        - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd,gd32-spi.md#std-dtcompatible-gd-gd32-spi)
+        - [`gd,gd32-syscfg`](../build/dts/api/bindings/misc/gd,gd32-syscfg.md#std-dtcompatible-gd-gd32-syscfg)
+        - [`gd,gd32-timer`](../build/dts/api/bindings/timer/gd,gd32-timer.md#std-dtcompatible-gd-gd32-timer)
+        - [`gd,gd32-usart`](../build/dts/api/bindings/serial/gd,gd32-usart.md#std-dtcompatible-gd-gd32-usart)
       - Similarly, various GigaDevice peripherals now support the standard
         `resets` property as part of related driver changes to support
         resetting the peripheral state before initialization via the
-        [`gd,gd32-rcu`](../build/dts/api/bindings/mfd/gd%2Cgd32-rcu.md#std-dtcompatible-gd-gd32-rcu) binding:
+        [`gd,gd32-rcu`](../build/dts/api/bindings/mfd/gd,gd32-rcu.md#std-dtcompatible-gd-gd32-rcu) binding:
 
-        - [`gd,gd32-dac`](../build/dts/api/bindings/dac/gd%2Cgd32-dac.md#std-dtcompatible-gd-gd32-dac)
-        - [`gd,gd32-gpio`](../build/dts/api/bindings/gpio/gd%2Cgd32-gpio.md#std-dtcompatible-gd-gd32-gpio)
-        - [`gd,gd32-i2c`](../build/dts/api/bindings/i2c/gd%2Cgd32-i2c.md#std-dtcompatible-gd-gd32-i2c)
-        - [`gd,gd32-pwm`](../build/dts/api/bindings/pwm/gd%2Cgd32-pwm.md#std-dtcompatible-gd-gd32-pwm)
-        - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd%2Cgd32-spi.md#std-dtcompatible-gd-gd32-spi)
-        - [`gd,gd32-usart`](../build/dts/api/bindings/serial/gd%2Cgd32-usart.md#std-dtcompatible-gd-gd32-usart)
+        - [`gd,gd32-dac`](../build/dts/api/bindings/dac/gd,gd32-dac.md#std-dtcompatible-gd-gd32-dac)
+        - [`gd,gd32-gpio`](../build/dts/api/bindings/gpio/gd,gd32-gpio.md#std-dtcompatible-gd-gd32-gpio)
+        - [`gd,gd32-i2c`](../build/dts/api/bindings/i2c/gd,gd32-i2c.md#std-dtcompatible-gd-gd32-i2c)
+        - [`gd,gd32-pwm`](../build/dts/api/bindings/pwm/gd,gd32-pwm.md#std-dtcompatible-gd-gd32-pwm)
+        - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd,gd32-spi.md#std-dtcompatible-gd-gd32-spi)
+        - [`gd,gd32-usart`](../build/dts/api/bindings/serial/gd,gd32-usart.md#std-dtcompatible-gd-gd32-usart)
     - Intel SoCs:
 
-      - [`intel,adsp-tlb`](../build/dts/api/bindings/mm/intel%2Cadsp-tlb.md#std-dtcompatible-intel-adsp-tlb):
+      - [`intel,adsp-tlb`](../build/dts/api/bindings/mm/intel,adsp-tlb.md#std-dtcompatible-intel-adsp-tlb):
         new `paddr-size`, `exec-bit-idx`, `write-bit-idx` properties.
-      - [`intel,adsp-shim-clkctl`](../build/dts/api/bindings/clock/intel%2Cadsp-shim-clkctl.md#std-dtcompatible-intel-adsp-shim-clkctl): new `wovcro-supported` property.
+      - [`intel,adsp-shim-clkctl`](../build/dts/api/bindings/clock/intel,adsp-shim-clkctl.md#std-dtcompatible-intel-adsp-shim-clkctl): new `wovcro-supported` property.
       - Removed `intel,dmic` binding.
       - Removed `intel,s1000-pinmux` binding.
     - Nordic SoCs:
 
-      - [`nordic,nrf-pinctrl`](../build/dts/api/bindings/pinctrl/nordic%2Cnrf-pinctrl.md#std-dtcompatible-nordic-nrf-pinctrl): `NRF_PSEL_DISCONNECTED` can be used
+      - [`nordic,nrf-pinctrl`](../build/dts/api/bindings/pinctrl/nordic,nrf-pinctrl.md#std-dtcompatible-nordic-nrf-pinctrl): `NRF_PSEL_DISCONNECTED` can be used
         to disconnect a pin.
-      - [`nordic,nrf-spim`](../build/dts/api/bindings/spi/nordic%2Cnrf-spim.md#std-dtcompatible-nordic-nrf-spim): new `rx-delay-supported`,
+      - [`nordic,nrf-spim`](../build/dts/api/bindings/spi/nordic,nrf-spim.md#std-dtcompatible-nordic-nrf-spim): new `rx-delay-supported`,
         `rx-delay` properties.
-      - [`nordic,nrf-spim`](../build/dts/api/bindings/spi/nordic%2Cnrf-spim.md#std-dtcompatible-nordic-nrf-spim), [`nordic,nrf-spi`](../build/dts/api/bindings/spi/nordic%2Cnrf-spi.md#std-dtcompatible-nordic-nrf-spi): new
+      - [`nordic,nrf-spim`](../build/dts/api/bindings/spi/nordic,nrf-spim.md#std-dtcompatible-nordic-nrf-spim), [`nordic,nrf-spi`](../build/dts/api/bindings/spi/nordic,nrf-spi.md#std-dtcompatible-nordic-nrf-spi): new
         :   `overrun-character`, `max-frequency`, `memory-region`,
             `memory-region-names` properties.
-      - [`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic%2Cnrf-uarte.md#std-dtcompatible-nordic-nrf-uarte): new `memory-region`,
+      - [`nordic,nrf-uarte`](../build/dts/api/bindings/serial/nordic,nrf-uarte.md#std-dtcompatible-nordic-nrf-uarte): new `memory-region`,
         `memory-region-names` properties.
       - Various bindings have had `foo-pin` properties deprecated. For
-        example, [`nordic,nrf-qspi`](../build/dts/api/bindings/flash_controller/nordic%2Cnrf-qspi.md#std-dtcompatible-nordic-nrf-qspi) has a deprecated `sck-pin`
+        example, [`nordic,nrf-qspi`](../build/dts/api/bindings/flash_controller/nordic,nrf-qspi.md#std-dtcompatible-nordic-nrf-qspi) has a deprecated `sck-pin`
         property. Uses of such properties should be replaced with pinctrl
         equivalents; see `nordic,nrfpinctrl`.
     - Nuvoton SoCs:
 
-      - [`nuvoton,npcx-leakage-io`](../build/dts/api/bindings/pinctrl/nuvoton%2Cnpcx-leakage-io.md#std-dtcompatible-nuvoton-npcx-leakage-io): new `lvol-maps` property.
-      - [`nuvoton,npcx-scfg`](../build/dts/api/bindings/pinctrl/nuvoton%2Cnpcx-scfg.md#std-dtcompatible-nuvoton-npcx-scfg): removed `io_port`, `io_bit`
+      - [`nuvoton,npcx-leakage-io`](../build/dts/api/bindings/pinctrl/nuvoton,npcx-leakage-io.md#std-dtcompatible-nuvoton-npcx-leakage-io): new `lvol-maps` property.
+      - [`nuvoton,npcx-scfg`](../build/dts/api/bindings/pinctrl/nuvoton,npcx-scfg.md#std-dtcompatible-nuvoton-npcx-scfg): removed `io_port`, `io_bit`
         cells in `lvol_cells` specifiers.
       - Removed: `nuvoton,npcx-lvolctrl-def`, `nuvoton,npcx-psl-out`,
         `nuvoton,npcx-pslctrl-conf`, `nuvoton,npcx-pslctrl-def`.
       - Added pinctrl support for PSL (Power Switch Logic) pads.
     - NXP SoCs:
 
-      - [`nxp,imx-pwm`](../build/dts/api/bindings/pwm/nxp%2Cimx-pwm.md#std-dtcompatible-nxp-imx-pwm): new `run-in-wait`, `run-in-debug` properties.
-      - [`nxp,lpc-spi`](../build/dts/api/bindings/spi/nxp%2Clpc-spi.md#std-dtcompatible-nxp-lpc-spi): new `def-char` property.
-      - [`nxp,lpc-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Clpc-iocon-pinctrl.md#std-dtcompatible-nxp-lpc-iocon-pinctrl): new `nxp,analog-alt-mode` property.
+      - [`nxp,imx-pwm`](../build/dts/api/bindings/pwm/nxp,imx-pwm.md#std-dtcompatible-nxp-imx-pwm): new `run-in-wait`, `run-in-debug` properties.
+      - [`nxp,lpc-spi`](../build/dts/api/bindings/spi/nxp,lpc-spi.md#std-dtcompatible-nxp-lpc-spi): new `def-char` property.
+      - [`nxp,lpc-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,lpc-iocon-pinctrl.md#std-dtcompatible-nxp-lpc-iocon-pinctrl): new `nxp,analog-alt-mode` property.
       - removed deprecated `nxp,lpc-iap` binding.
-      - [`nxp,imx-csi`](../build/dts/api/bindings/video/nxp%2Cimx-csi.md#std-dtcompatible-nxp-imx-csi): new `sensor` property replacing the
+      - [`nxp,imx-csi`](../build/dts/api/bindings/video/nxp,imx-csi.md#std-dtcompatible-nxp-imx-csi): new `sensor` property replacing the
         `sensor-label` property.
-      - [`nxp,imx-lpi2c`](../build/dts/api/bindings/i2c/nxp%2Cimx-lpi2c.md#std-dtcompatible-nxp-imx-lpi2c): new `scl-gpios`, `sda-gpios` properties.
+      - [`nxp,imx-lpi2c`](../build/dts/api/bindings/i2c/nxp,imx-lpi2c.md#std-dtcompatible-nxp-imx-lpi2c): new `scl-gpios`, `sda-gpios` properties.
     - STM32 SoCs:
 
-      - [`st,stm32-adc`](../build/dts/api/bindings/adc/st%2Cstm32-adc.md#std-dtcompatible-st-stm32-adc): new `has-vbat-channel` property.
+      - [`st,stm32-adc`](../build/dts/api/bindings/adc/st,stm32-adc.md#std-dtcompatible-st-stm32-adc): new `has-vbat-channel` property.
       - `st,stm32-can`: removed `one-shot` property.
-      - [`st,stm32-fdcan`](../build/dts/api/bindings/can/st%2Cstm32-fdcan.md#std-dtcompatible-st-stm32-fdcan): new `clocks`, `clk-divider` properties.
-      - [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st%2Cstm32-ospi.md#std-dtcompatible-st-stm32-ospi): new `dmas`, `dma-names` properties.
-      - [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st%2Cstm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor): new `four-byte-opcodes`,
+      - [`st,stm32-fdcan`](../build/dts/api/bindings/can/st,stm32-fdcan.md#std-dtcompatible-st-stm32-fdcan): new `clocks`, `clk-divider` properties.
+      - [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st,stm32-ospi.md#std-dtcompatible-st-stm32-ospi): new `dmas`, `dma-names` properties.
+      - [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st,stm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor): new `four-byte-opcodes`,
         `writeoc` properties; new enum values `2` and `4` in
         `spi-bus-width` property.
-      - [`st,stm32-pwm`](../build/dts/api/bindings/pwm/st%2Cstm32-pwm.md#std-dtcompatible-st-stm32-pwm): removed deprecated `st,prescaler` property.
-      - [`st,stm32-rng`](../build/dts/api/bindings/rng/st%2Cstm32-rng.md#std-dtcompatible-st-stm32-rng): new `nist-config` property.
-      - [`st,stm32-sdmmc`](../build/dts/api/bindings/mmc/st%2Cstm32-sdmmc.md#std-dtcompatible-st-stm32-sdmmc): new `dmas`, `dma-names`,
+      - [`st,stm32-pwm`](../build/dts/api/bindings/pwm/st,stm32-pwm.md#std-dtcompatible-st-stm32-pwm): removed deprecated `st,prescaler` property.
+      - [`st,stm32-rng`](../build/dts/api/bindings/rng/st,stm32-rng.md#std-dtcompatible-st-stm32-rng): new `nist-config` property.
+      - [`st,stm32-sdmmc`](../build/dts/api/bindings/mmc/st,stm32-sdmmc.md#std-dtcompatible-st-stm32-sdmmc): new `dmas`, `dma-names`,
         `bus-width` properties.
-      - [`st,stm32-temp-cal`](../build/dts/api/bindings/sensor/st%2Cstm32-temp-cal.md#std-dtcompatible-st-stm32-temp-cal): new `ts-cal-resolution` property;
+      - [`st,stm32-temp-cal`](../build/dts/api/bindings/sensor/st,stm32-temp-cal.md#std-dtcompatible-st-stm32-temp-cal): new `ts-cal-resolution` property;
         removed `ts-cal-offset` property.
-      - [`st,stm32u5-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32u5-pll-clock.md#std-dtcompatible-st-stm32u5-pll-clock): new `div-p` property.
+      - [`st,stm32u5-pll-clock`](../build/dts/api/bindings/clock/st,stm32u5-pll-clock.md#std-dtcompatible-st-stm32u5-pll-clock): new `div-p` property.
       - temperature sensor bindings no longer have a `ts-voltage-mv` property.
       - UART bindings: new `wakeup-line` properties.
     - Texas Instruments parts:
 
-      - [`ti,ina237`](../build/dts/api/bindings/sensor/ti%2Cina237.md#std-dtcompatible-ti-ina237): new `alert-config`, `irq-gpios` properties.
-      - [`ti,bq274xx`](../build/dts/api/bindings/sensor/ti%2Cbq274xx.md#std-dtcompatible-ti-bq274xx): new `zephyr,lazy-load` property.
+      - [`ti,ina237`](../build/dts/api/bindings/sensor/ti,ina237.md#std-dtcompatible-ti-ina237): new `alert-config`, `irq-gpios` properties.
+      - [`ti,bq274xx`](../build/dts/api/bindings/sensor/ti,bq274xx.md#std-dtcompatible-ti-bq274xx): new `zephyr,lazy-load` property.
     - Ultrachip UC81xx displays:
 
       - The `gooddisplay,gd7965` binding was removed in favor of new
@@ -1179,20 +1179,20 @@ More detailed information can be found in:
         binding.
     - Zephyr-specific bindings:
 
-      - [`zephyr,bt-hci-spi`](../build/dts/api/bindings/bluetooth/zephyr%2Cbt-hci-spi.md#std-dtcompatible-zephyr-bt-hci-spi): new `reset-assert-duration-ms` property.
+      - [`zephyr,bt-hci-spi`](../build/dts/api/bindings/bluetooth/zephyr,bt-hci-spi.md#std-dtcompatible-zephyr-bt-hci-spi): new `reset-assert-duration-ms` property.
       - removed `zephyr,ipm-console` binding.
-      - [`zephyr,ipc-openamp-static-vrings`](../build/dts/api/bindings/ipc/zephyr%2Cipc-openamp-static-vrings.md#std-dtcompatible-zephyr-ipc-openamp-static-vrings): new
+      - [`zephyr,ipc-openamp-static-vrings`](../build/dts/api/bindings/ipc/zephyr,ipc-openamp-static-vrings.md#std-dtcompatible-zephyr-ipc-openamp-static-vrings): new
         `zephyr,buffer-size` property.
-      - [`zephyr,memory-region`](../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region): new `PPB` and `IO` region support.
-    - [`infineon,xmc4xxx-uart`](../build/dts/api/bindings/serial/infineon%2Cxmc4xxx-uart.md#std-dtcompatible-infineon-xmc4xxx-uart): new `input-src` property.
+      - [`zephyr,memory-region`](../build/dts/api/bindings/base/zephyr,memory-region.md#std-dtcompatible-zephyr-memory-region): new `PPB` and `IO` region support.
+    - [`infineon,xmc4xxx-uart`](../build/dts/api/bindings/serial/infineon,xmc4xxx-uart.md#std-dtcompatible-infineon-xmc4xxx-uart): new `input-src` property.
     - WSEN-HIDS sensors: new `drdy-gpios`, `odr` properties.
-    - [`sitronix,st7789v`](../build/dts/api/bindings/display/sitronix%2Cst7789v.md#std-dtcompatible-sitronix-st7789v): `cmd-data-gpios` is now optional.
+    - [`sitronix,st7789v`](../build/dts/api/bindings/display/sitronix,st7789v.md#std-dtcompatible-sitronix-st7789v): `cmd-data-gpios` is now optional.
     - `solomon,ssd16xxfb`: new `dummy-line`,
       `gate-line-width` properties. The `gdv`, `sdv`, `vcom`, and
       `border-waveform` properties are now optional.
     - `riscv,clint0` removed; all in-tree users were converted to
       `sifive,clint0` or derived bindings.
-    - [`worldsemi,ws2812-spi`](../build/dts/api/bindings/led_strip/worldsemi%2Cws2812-spi.md#std-dtcompatible-worldsemi-ws2812-spi): SPI bindings have new `spi-cpol`,
+    - [`worldsemi,ws2812-spi`](../build/dts/api/bindings/led_strip/worldsemi,ws2812-spi.md#std-dtcompatible-worldsemi-ws2812-spi): SPI bindings have new `spi-cpol`,
       `spi-cpha` properties.
     - [`ns16550`](../build/dts/api/bindings/serial/ns16550.md#std-dtcompatible-ns16550): `reg-shift` is now required.
     - Removed `reserved-memory` binding.

@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `st,lsm6dso16is` may be handled by any
 of the following bindings:
 
-- [st,lsm6dso16is (on spi bus)](../bindings/sensor/st%2Clsm6dso16is-spi.md#dtbinding-st-lsm6dso16is-spi)
-- [st,lsm6dso16is (on i2c bus)](../bindings/sensor/st%2Clsm6dso16is-i2c.md#dtbinding-st-lsm6dso16is-i2c)
+- [st,lsm6dso16is (on spi bus)](../bindings/sensor/st,lsm6dso16is-spi.md#dtbinding-st-lsm6dso16is-spi)
+- [st,lsm6dso16is (on i2c bus)](../bindings/sensor/st,lsm6dso16is-i2c.md#dtbinding-st-lsm6dso16is-i2c)

@@ -23,7 +23,7 @@ A board with SPI slave, GPIO and Bluetooth Low Energy support.
 
 You then need to ensure that your [devicetree](../../../build/dts/index.md#dt-guide) defines a node
 for the HCI SPI slave device with compatible
-[`zephyr,bt-hci-spi-slave`](../../../build/dts/api/bindings/bluetooth/zephyr%2Cbt-hci-spi-slave.md#std-dtcompatible-zephyr-bt-hci-spi-slave). This node sets an interrupt line to
+[`zephyr,bt-hci-spi-slave`](../../../build/dts/api/bindings/bluetooth/zephyr,bt-hci-spi-slave.md#std-dtcompatible-zephyr-bt-hci-spi-slave). This node sets an interrupt line to
 the host and associates the application with a SPI bus to use.
 
 See [boards/nrf51dk\_nrf51422.overlay](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/bluetooth/hci_spi/boards/nrf51dk_nrf51422.overlay) in this sample

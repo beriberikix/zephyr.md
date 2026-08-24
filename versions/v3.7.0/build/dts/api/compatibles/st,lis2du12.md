@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `st,lis2du12` may be handled by any
 of the following bindings:
 
-- [st,lis2du12 (on spi bus)](../bindings/sensor/st%2Clis2du12-spi.md#dtbinding-st-lis2du12-spi)
-- [st,lis2du12 (on i2c bus)](../bindings/sensor/st%2Clis2du12-i2c.md#dtbinding-st-lis2du12-i2c)
+- [st,lis2du12 (on spi bus)](../bindings/sensor/st,lis2du12-spi.md#dtbinding-st-lis2du12-spi)
+- [st,lis2du12 (on i2c bus)](../bindings/sensor/st,lis2du12-i2c.md#dtbinding-st-lis2du12-i2c)

@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `st,iis2dlpc` may be handled by any
 of the following bindings:
 
-- [st,iis2dlpc (on i2c bus)](../bindings/sensor/st%2Ciis2dlpc-i2c.md#dtbinding-st-iis2dlpc-i2c)
-- [st,iis2dlpc (on spi bus)](../bindings/sensor/st%2Ciis2dlpc-spi.md#dtbinding-st-iis2dlpc-spi)
+- [st,iis2dlpc (on i2c bus)](../bindings/sensor/st,iis2dlpc-i2c.md#dtbinding-st-iis2dlpc-i2c)
+- [st,iis2dlpc (on spi bus)](../bindings/sensor/st,iis2dlpc-spi.md#dtbinding-st-iis2dlpc-spi)

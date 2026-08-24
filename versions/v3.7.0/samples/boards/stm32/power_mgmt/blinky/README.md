@@ -26,7 +26,7 @@ CONFIG\_SYS\_CLOCK\_TICKS\_PER\_SEC is set to 1024.
 
 The board should support enabling PM. For a STM32 based target, it means that
 it should support a clock source alternative to Cortex Systick that can be used
-in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st%2Cstm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
+in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st,stm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
 
 ## Building and Running
 

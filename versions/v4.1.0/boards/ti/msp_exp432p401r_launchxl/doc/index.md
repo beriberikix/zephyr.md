@@ -67,12 +67,12 @@ on-chip / on-board
 
 | Type | Location | Description | Compatible |
 | --- | --- | --- | --- |
-| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L10) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm%2Ccortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
+| CPU | on-chip | ARM Cortex-M4F CPU[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L10) | [`arm,cortex-m4f`](../../../../build/dts/api/bindings/cpu/arm,cortex-m4f.md#std-dtcompatible-arm-cortex-m4f) |
 | Clock control | on-chip | Generic fixed-rate clock provider[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L24) | [`fixed-clock`](../../../../build/dts/api/bindings/clock/fixed-clock.md#std-dtcompatible-fixed-clock) |
-| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
-| Serial controller | on-chip | TI MSP432P4XX UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L31) | [`ti,msp432p4xx-uart`](../../../../build/dts/api/bindings/serial/ti%2Cmsp432p4xx-uart.md#std-dtcompatible-ti-msp432p4xx-uart) |
+| Interrupt controller | on-chip | ARMv7-M NVIC (Nested Vectored Interrupt Controller)[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L13) | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm,v7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| Serial controller | on-chip | TI MSP432P4XX UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L31) | [`ti,msp432p4xx-uart`](../../../../build/dts/api/bindings/serial/ti,msp432p4xx-uart.md#std-dtcompatible-ti-msp432p4xx-uart) |
 | SRAM | on-chip | Generic on-chip SRAM description[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/ti/msp432p4xx.dtsi?plain=1#L16) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
-| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm%2Carmv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
+| Timer | on-chip | ARMv7-M System Tick[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/arm/armv7-m.dtsi?plain=1#L21) | [`arm,armv7m-systick`](../../../../build/dts/api/bindings/timer/arm,armv7m-systick.md#std-dtcompatible-arm-armv7m-systick) |
 
 - The on-board 32-kHz crystal allows for lower LPM3 sleep currents and a higher-precision clock source than the
   default internal 32-kHz REFOCLK. Therefore, the presence of the crystal allows the full range of low-power

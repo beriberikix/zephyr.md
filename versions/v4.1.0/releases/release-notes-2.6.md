@@ -712,8 +712,8 @@ Removed APIs in this release
 
   - [`DT_COMPAT_GET_ANY_STATUS_OKAY`](../doxygen/html/group__devicetree-generic-id.md#ga4858c378b098dcb7c35de1db25442acc): new macro
   - the `96b-lscon-3v3` and `96b-lscon-1v8` [compatible properties](../build/dts/intro-syntax-structure.md#dt-important-props) now have `linaro,` vendor prefixes, i.e. they are
-    now respectively [`linaro,96b-lscon-3v3`](../build/dts/api/bindings/gpio/linaro%2C96b-lscon-3v3.md#std-dtcompatible-linaro-96b-lscon-3v3) and
-    [`linaro,96b-lscon-1v8`](../build/dts/api/bindings/gpio/linaro%2C96b-lscon-1v8.md#std-dtcompatible-linaro-96b-lscon-1v8).
+    now respectively [`linaro,96b-lscon-3v3`](../build/dts/api/bindings/gpio/linaro,96b-lscon-3v3.md#std-dtcompatible-linaro-96b-lscon-3v3) and
+    [`linaro,96b-lscon-1v8`](../build/dts/api/bindings/gpio/linaro,96b-lscon-1v8.md#std-dtcompatible-linaro-96b-lscon-1v8).
 
     This change was made to bring Zephyr’s devicetrees into compliance with an
     upstream Linux regular expression used to validate compatible properties.

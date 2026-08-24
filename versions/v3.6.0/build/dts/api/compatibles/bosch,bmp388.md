@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `bosch,bmp388` may be handled by any
 of the following bindings:
 
-- [bosch,bmp388 (on i2c bus)](../bindings/sensor/bosch%2Cbmp388-i2c.md#dtbinding-bosch-bmp388-i2c)
-- [bosch,bmp388 (on spi bus)](../bindings/sensor/bosch%2Cbmp388-spi.md#dtbinding-bosch-bmp388-spi)
+- [bosch,bmp388 (on i2c bus)](../bindings/sensor/bosch,bmp388-i2c.md#dtbinding-bosch-bmp388-i2c)
+- [bosch,bmp388 (on spi bus)](../bindings/sensor/bosch,bmp388-spi.md#dtbinding-bosch-bmp388-spi)

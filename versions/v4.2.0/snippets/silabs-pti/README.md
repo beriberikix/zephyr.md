@@ -17,6 +17,6 @@ west build -S silabs-pti [...]
 
 ## Requirements
 
-Hardware support for [`silabs,pti`](../../build/dts/api/bindings/debug/silabs%2Cpti.md#std-dtcompatible-silabs-pti).
+Hardware support for [`silabs,pti`](../../build/dts/api/bindings/debug/silabs,pti.md#std-dtcompatible-silabs-pti).
 
 A pinctrl configuration with nodelabel `pti_default` containing PTI pinout.

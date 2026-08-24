@@ -30,7 +30,7 @@ Note
 The `zephyr,memory-attr` usage does not result in any memory region
 actually created. When it is needed to create an actual section out of the
 devicetree defined memory region, it is possible to use the compatible
-[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region) that will result (only when supported
+[`zephyr,memory-region`](../../build/dts/api/bindings/base/zephyr,memory-region.md#std-dtcompatible-zephyr-memory-region) that will result (only when supported
 by the architecture) in a new linker section and region.
 
 The `zephyr,memory-attr` property can also be used to set

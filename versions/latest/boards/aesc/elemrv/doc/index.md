@@ -55,12 +55,12 @@ on-chip / on-board
 
 | Type | Location | Description | Compatible |
 | --- | --- | --- | --- |
-| CPU | on-chip | VexRiscv core with the standard configuration as used by LiteX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L19) | [`litex,vexriscv-standard`](../../../../build/dts/api/bindings/cpu/litex%2Cvexriscv-standard.md#std-dtcompatible-litex-vexriscv-standard) |
-| Interrupt controller | on-chip | RISC-V CPU interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L26) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv%2Ccpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
+| CPU | on-chip | VexRiscv core with the standard configuration as used by LiteX[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L19) | [`litex,vexriscv-standard`](../../../../build/dts/api/bindings/cpu/litex,vexriscv-standard.md#std-dtcompatible-litex-vexriscv-standard) |
+| Interrupt controller | on-chip | RISC-V CPU interrupt controller[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L26) | [`riscv,cpu-intc`](../../../../build/dts/api/bindings/interrupt-controller/riscv,cpu-intc.md#std-dtcompatible-riscv-cpu-intc) |
 | MTD | on-board | Flash node[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/aesc/elemrv/elemrv_elemrv_n.dts?plain=1#L35) | [`soc-nv-flash`](../../../../build/dts/api/bindings/mtd/soc-nv-flash.md#std-dtcompatible-soc-nv-flash) |
-| Serial controller | on-chip | Aesc Silicon UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/elemrv-n.dtsi?plain=1#L19) | [`aesc,uart`](../../../../build/dts/api/bindings/serial/aesc%2Cuart.md#std-dtcompatible-aesc-uart) |
+| Serial controller | on-chip | Aesc Silicon UART[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/elemrv-n.dtsi?plain=1#L19) | [`aesc,uart`](../../../../build/dts/api/bindings/serial/aesc,uart.md#std-dtcompatible-aesc-uart) |
 | SRAM | on-board | Generic on-chip SRAM[2 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/boards/aesc/elemrv/elemrv_elemrv_n.dts?plain=1#L23) | [`mmio-sram`](../../../../build/dts/api/bindings/sram/mmio-sram.md#std-dtcompatible-mmio-sram) |
-| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L41) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer) |
+| Timer | on-chip | RISC-V Machine Timer[1 ](https://github.com/zephyrproject-rtos/zephyr/blob/main/dts/riscv/aesc/nitrogen.dtsi?plain=1#L41) | [`riscv,machine-timer`](../../../../build/dts/api/bindings/timer/riscv,machine-timer.md#std-dtcompatible-riscv-machine-timer) |
 
 ### System Clock
 

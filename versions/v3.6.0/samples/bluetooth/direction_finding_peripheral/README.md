@@ -63,7 +63,7 @@ An example devicetree overlay is in
 [samples/bluetooth/direction\_finding\_peripheral/boards/nrf52833dk\_nrf52833.overlay](https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/bluetooth/direction_finding_peripheral/boards/nrf52833dk_nrf52833.overlay).
 You can customize this overlay when building for the same board, or create your
 own board-specific overlay in the same directory for a different board. See
-[`nordic,nrf-radio`](../../../build/dts/api/bindings/net/wireless/nordic%2Cnrf-radio.md#std-dtcompatible-nordic-nrf-radio) for documentation on the properties used in
+[`nordic,nrf-radio`](../../../build/dts/api/bindings/net/wireless/nordic,nrf-radio.md#std-dtcompatible-nordic-nrf-radio) for documentation on the properties used in
 this overlay. See [Set devicetree overlays](../../../build/dts/howtos.md#set-devicetree-overlays) for information on setting up
 and using overlays.
 

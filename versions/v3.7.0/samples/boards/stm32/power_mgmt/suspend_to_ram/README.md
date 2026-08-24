@@ -22,7 +22,7 @@ mode.
 
 The board should support enabling PM. For a STM32 based target, it means that
 it should support a clock source alternative to Cortex Systick that can be used
-in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st%2Cstm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
+in core sleep states, as LPTIM ([`st,stm32-lptim`](../../../../../build/dts/api/bindings/timer/st,stm32-lptim.md#std-dtcompatible-st-stm32-lptim)).
 The board shall have an RTC to use it during the standby mode as a replacement
 for LPTIM (which is disabled). The board shall also have RAM retention to be
 able to restore context after standby.

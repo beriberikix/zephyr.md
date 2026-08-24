@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `nxp,fxas21002` may be handled by any
 of the following bindings:
 
-- [nxp,fxas21002 (on spi bus)](../bindings/sensor/nxp%2Cfxas21002-spi.md#dtbinding-nxp-fxas21002-spi)
-- [nxp,fxas21002 (on i2c bus)](../bindings/sensor/nxp%2Cfxas21002-i2c.md#dtbinding-nxp-fxas21002-i2c)
+- [nxp,fxas21002 (on spi bus)](../bindings/sensor/nxp,fxas21002-spi.md#dtbinding-nxp-fxas21002-spi)
+- [nxp,fxas21002 (on i2c bus)](../bindings/sensor/nxp,fxas21002-i2c.md#dtbinding-nxp-fxas21002-i2c)

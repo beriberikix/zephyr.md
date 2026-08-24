@@ -50,7 +50,7 @@ of the M5Stack StampS3 module.
 | Key Component | Description | Status |
 | --- | --- | --- |
 | ESP32-S3FN8 module | This MPU-ESP32S3 module provides complete Wi-Fi and Bluetooth functionalities and integrates a 8MB flash. | supported |
-| Status LED | One user LED connected via [`worldsemi,ws2812-spi`](../../../../build/dts/api/bindings/led_strip/worldsemi%2Cws2812-spi.md#std-dtcompatible-worldsemi-ws2812-spi) interface (`led-strip`). | supported |
+| Status LED | One user LED connected via [`worldsemi,ws2812-spi`](../../../../build/dts/api/bindings/led_strip/worldsemi,ws2812-spi.md#std-dtcompatible-worldsemi-ws2812-spi) interface (`led-strip`). | supported |
 | USB Port | USB interface. Power supply for the board as well as the communication interface between a computer and the board. | supported |
 | User button | User button (`sw0`) | supported |
 
@@ -58,7 +58,7 @@ of the M5Stack StampS3 module.
 
 The Zephyr m5stack\_stamps3 board can be used on various applications. It
 therefore publishes a header definition to be used in different shields:
-[`m5stack,stamps3-header`](../../../../build/dts/api/bindings/gpio/m5stack%2Cstamps3-header.md#std-dtcompatible-m5stack-stamps3-header).
+[`m5stack,stamps3-header`](../../../../build/dts/api/bindings/gpio/m5stack,stamps3-header.md#std-dtcompatible-m5stack-stamps3-header).
 
 [![M5Stack StampS3 Header](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3_header.webp)
 ](https://docs.zephyrproject.org/4.1.0/_images/m5stack_stamps3_header.webp)

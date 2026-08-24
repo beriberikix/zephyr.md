@@ -36,7 +36,7 @@ be used in a boards devicetree to configure a stepper driver to its initial stat
 
 See examples in:
 
-- [`adi,tmc5041`](../../build/dts/api/bindings/stepper/adi/adi%2Ctmc5041.md#std-dtcompatible-adi-tmc5041)
+- [`adi,tmc5041`](../../build/dts/api/bindings/stepper/adi/adi,tmc5041.md#std-dtcompatible-adi-tmc5041)
 
 ## Discord
 

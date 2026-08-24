@@ -74,4 +74,4 @@ ARM’s TrustZone is not modeled in this board. This means that:
 
 Note that the CRACEN peripheral is not modeled.
 As crypto library, Mbed TLS can be used with its SW crypto backend.
-As entropy driver, the [`zephyr,native-posix-rng`](../../../../build/dts/api/bindings/rng/zephyr%2Cnative-posix-rng.md#std-dtcompatible-zephyr-native-posix-rng) is enabled by default.
+As entropy driver, the [`zephyr,native-posix-rng`](../../../../build/dts/api/bindings/rng/zephyr,native-posix-rng.md#std-dtcompatible-zephyr-native-posix-rng) is enabled by default.

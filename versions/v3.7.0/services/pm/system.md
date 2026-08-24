@@ -90,13 +90,13 @@ Other constraints placed upon the decision may include locks disallowing certain
 or various kinds of minimum and maximum latency values, depending on the policy.
 
 More details on the states definition can be found in the
-[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr%2Cpower-state.md#std-dtcompatible-zephyr-power-state) binding documentation.
+[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr,power-state.md#std-dtcompatible-zephyr-power-state) binding documentation.
 
 #### Residency
 
 Under the residency policy, the system will enter the power state which offers the highest
 power savings, with the constraint that the sum of the minimum residency value (see
-[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr%2Cpower-state.md#std-dtcompatible-zephyr-power-state)) and the latency to exit the mode must be
+[`zephyr,power-state`](../../build/dts/api/bindings/power/zephyr,power-state.md#std-dtcompatible-zephyr-power-state)) and the latency to exit the mode must be
 less than or equal to the system idle time duration scheduled by the kernel.
 
 Thus the core logic can be summarized with the following expression:

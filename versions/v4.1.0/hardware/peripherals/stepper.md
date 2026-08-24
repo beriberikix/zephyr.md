@@ -36,8 +36,8 @@ be used in a boards devicetree to configure a stepper driver to its initial stat
 
 See examples in:
 
-- [`zephyr,gpio-stepper`](../../build/dts/api/bindings/stepper/zephyr%2Cgpio-stepper.md#std-dtcompatible-zephyr-gpio-stepper)
-- [`adi,tmc50xx`](../../build/dts/api/bindings/stepper/adi/adi%2Ctmc50xx.md#std-dtcompatible-adi-tmc50xx)
+- [`zephyr,gpio-stepper`](../../build/dts/api/bindings/stepper/zephyr,gpio-stepper.md#std-dtcompatible-zephyr-gpio-stepper)
+- [`adi,tmc50xx`](../../build/dts/api/bindings/stepper/adi/adi,tmc50xx.md#std-dtcompatible-adi-tmc50xx)
 
 ## Discord
 

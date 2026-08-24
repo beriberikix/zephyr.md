@@ -200,7 +200,7 @@ You must add this prefix to property names in the following cases:
   This channel binding is partially shared with an analogous Linux binding, and
   Zephyr-specific extensions are marked as such with the prefix.
 - Configuration values that are specific to a Zephyr device driver. One example
-  is the `zephyr,lazy-load` property in the [`ti,bq274xx`](api/bindings/sensor/ti%2Cbq274xx.md#std-dtcompatible-ti-bq274xx)
+  is the `zephyr,lazy-load` property in the [`ti,bq274xx`](api/bindings/sensor/ti,bq274xx.md#std-dtcompatible-ti-bq274xx)
   binding. Though devicetree in general is a hardware description and
   configuration language, it is Zephyr’s only mechanism for configuring driver
   behavior for an individual `struct device`. Therefore, as a compromise,
@@ -209,6 +209,6 @@ You must add this prefix to property names in the following cases:
 
 You may use the `zephyr,` prefix when naming a devicetree compatible that is
 specific to Zephyr. One example is
-[`zephyr,ipc-openamp-static-vrings`](api/bindings/ipc/zephyr%2Cipc-openamp-static-vrings.md#std-dtcompatible-zephyr-ipc-openamp-static-vrings). In this case, it’s permitted
+[`zephyr,ipc-openamp-static-vrings`](api/bindings/ipc/zephyr,ipc-openamp-static-vrings.md#std-dtcompatible-zephyr-ipc-openamp-static-vrings). In this case, it’s permitted
 but not required to add the `zephyr,` prefix to properties defined in the
 binding.

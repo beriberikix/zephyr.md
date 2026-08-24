@@ -1029,7 +1029,7 @@ building HTML output.
 
     Will render as:
 
-    > Check out [`zephyr,input-longpress`](../../build/dts/api/bindings/input/zephyr%2Cinput-longpress.md#std-dtcompatible-zephyr-input-longpress) for more information.
+    > Check out [`zephyr,input-longpress`](../../build/dts/api/bindings/input/zephyr,input-longpress.md#std-dtcompatible-zephyr-input-longpress) for more information.
 
 ### Code samples
 

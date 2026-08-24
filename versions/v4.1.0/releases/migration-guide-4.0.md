@@ -97,12 +97,12 @@ the Zephyr codebase is. Formal deprecation will happen in the next release.
 ## [Device Drivers and Devicetree](#id12)
 
 - The `compatible` of the LiteX ethernet controller has been renamed from
-  `litex,eth0` to [`litex,liteeth`](../build/dts/api/bindings/ethernet/litex%2Cliteeth.md#std-dtcompatible-litex-liteeth). ([GitHub #75433](https://github.com/zephyrproject-rtos/zephyr/issues/75433))
+  `litex,eth0` to [`litex,liteeth`](../build/dts/api/bindings/ethernet/litex,liteeth.md#std-dtcompatible-litex-liteeth). ([GitHub #75433](https://github.com/zephyrproject-rtos/zephyr/issues/75433))
 - The `compatible` of the LiteX uart controller has been renamed from
-  `litex,uart0` to [`litex,uart`](../build/dts/api/bindings/serial/litex%2Cuart.md#std-dtcompatible-litex-uart). ([GitHub #74522](https://github.com/zephyrproject-rtos/zephyr/issues/74522))
+  `litex,uart0` to [`litex,uart`](../build/dts/api/bindings/serial/litex,uart.md#std-dtcompatible-litex-uart). ([GitHub #74522](https://github.com/zephyrproject-rtos/zephyr/issues/74522))
 - The devicetree bindings for the Microchip `mcp23xxx` series have been split up. Users of
   `microchip,mcp230xx` and `microchip,mcp23sxx` should change their devicetree `compatible`
-  values to the specific chip variant, e.g. [`microchip,mcp23017`](../build/dts/api/bindings/gpio/microchip%2Cmcp23017.md#std-dtcompatible-microchip-mcp23017).
+  values to the specific chip variant, e.g. [`microchip,mcp23017`](../build/dts/api/bindings/gpio/microchip,mcp23017.md#std-dtcompatible-microchip-mcp23017).
   The `ngpios` devicetree property has been removed, since it is implied by the model name.
   Chip variants with open-drain outputs (`mcp23x09`, `mcp23x18`) now correctly reflect this in
   their driver API, users of these devices should ensure they pass appropriate values to
@@ -187,7 +187,7 @@ the Zephyr codebase is. Formal deprecation will happen in the next release.
 ### [GNSS](#id18)
 
 - The u-blox M10 driver has been renamed to M8 as it only supports M8 based devices.
-  Existing devicetree compatibles should be updated to [`u-blox,m8`](../build/dts/api/bindings/gnss/u-blox%2Cm8.md#std-dtcompatible-u-blox-m8), and Kconfig
+  Existing devicetree compatibles should be updated to [`u-blox,m8`](../build/dts/api/bindings/gnss/u-blox,m8.md#std-dtcompatible-u-blox-m8), and Kconfig
   symbols swapped to [`CONFIG_GNSS_U_BLOX_M8`](../kconfig.md#CONFIG_GNSS_U_BLOX_M8 "CONFIG_GNSS_U_BLOX_M8").
 - The APIs `gnss_set_periodic_config()` and `gnss_get_periodic_config()` have
   been removed. ([GitHub #76392](https://github.com/zephyrproject-rtos/zephyr/issues/76392))
@@ -224,15 +224,15 @@ the Zephyr codebase is. Formal deprecation will happen in the next release.
 
 - The existing driver for the Microchip MCP9808 temperature sensor transformed and renamed
   to support all JEDEC JC 42.4 compatible temperature sensors. It now uses the
-  [`jedec,jc-42.4-temp`](../build/dts/api/bindings/sensor/jedec%2Cjc-42.4-temp.md#std-dtcompatible-jedec-jc-42.4-temp) compatible string instead to the `microchip,mcp9808` string.
+  [`jedec,jc-42.4-temp`](../build/dts/api/bindings/sensor/jedec,jc-42.4-temp.md#std-dtcompatible-jedec-jc-42.4-temp) compatible string instead to the `microchip,mcp9808` string.
 - The [`current-sense-amplifier`](../build/dts/api/bindings/iio/afe/current-sense-amplifier.md#std-dtcompatible-current-sense-amplifier) sense resistor is now specified in milli-ohms
   (`sense-resistor-milli-ohms`) instead of micro-ohms in order to increase the maximum representable
   resistor from 4.2k to 4.2M.
 - The [`current-sense-amplifier`](../build/dts/api/bindings/iio/afe/current-sense-amplifier.md#std-dtcompatible-current-sense-amplifier) properties `sense-gain-mult` and `sense-gain-div`
   are now limited to a maximum value of `UINT16_MAX` to enable smaller rounding errors in internal
   calculations.
-- The `nxp,` prefixed properties in [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp%2Ckinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp) have been deprecated in favor
-  of properties without the prefix. The sensor based driver for the [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp%2Ckinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp)
+- The `nxp,` prefixed properties in [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp,kinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp) have been deprecated in favor
+  of properties without the prefix. The sensor based driver for the [`nxp,kinetis-acmp`](../build/dts/api/bindings/comparator/nxp,kinetis-acmp.md#std-dtcompatible-nxp-kinetis-acmp)
   has been updated to support both the new and deprecated property names. Uses of the deprecated
   property names should be updated to the new property names.
 

@@ -425,321 +425,321 @@ More detailed information can be found in:
 
 - ADC
 
-  > - [`adi,ad4114-adc`](../build/dts/api/bindings/adc/adi%2Cad4114-adc.md#std-dtcompatible-adi-ad4114-adc)
-  > - [`adi,ad7124-adc`](../build/dts/api/bindings/adc/adi%2Cad7124-adc.md#std-dtcompatible-adi-ad7124-adc)
-  > - [`st,stm32n6-adc`](../build/dts/api/bindings/adc/st%2Cstm32n6-adc.md#std-dtcompatible-st-stm32n6-adc)
-  > - [`ti,ads114s06`](../build/dts/api/bindings/adc/ti%2Cads114s06.md#std-dtcompatible-ti-ads114s06)
-  > - [`ti,ads124s06`](../build/dts/api/bindings/adc/ti%2Cads124s06.md#std-dtcompatible-ti-ads124s06)
-  > - [`ti,ads124s08`](../build/dts/api/bindings/adc/ti%2Cads124s08.md#std-dtcompatible-ti-ads124s08)
-  > - [`ti,ads131m02`](../build/dts/api/bindings/adc/ti%2Cads131m02.md#std-dtcompatible-ti-ads131m02)
-  > - [`ti,tla2022`](../build/dts/api/bindings/adc/ti%2Ctla2022.md#std-dtcompatible-ti-tla2022)
-  > - [`ti,tla2024`](../build/dts/api/bindings/adc/ti%2Ctla2024.md#std-dtcompatible-ti-tla2024)
+  > - [`adi,ad4114-adc`](../build/dts/api/bindings/adc/adi,ad4114-adc.md#std-dtcompatible-adi-ad4114-adc)
+  > - [`adi,ad7124-adc`](../build/dts/api/bindings/adc/adi,ad7124-adc.md#std-dtcompatible-adi-ad7124-adc)
+  > - [`st,stm32n6-adc`](../build/dts/api/bindings/adc/st,stm32n6-adc.md#std-dtcompatible-st-stm32n6-adc)
+  > - [`ti,ads114s06`](../build/dts/api/bindings/adc/ti,ads114s06.md#std-dtcompatible-ti-ads114s06)
+  > - [`ti,ads124s06`](../build/dts/api/bindings/adc/ti,ads124s06.md#std-dtcompatible-ti-ads124s06)
+  > - [`ti,ads124s08`](../build/dts/api/bindings/adc/ti,ads124s08.md#std-dtcompatible-ti-ads124s08)
+  > - [`ti,ads131m02`](../build/dts/api/bindings/adc/ti,ads131m02.md#std-dtcompatible-ti-ads131m02)
+  > - [`ti,tla2022`](../build/dts/api/bindings/adc/ti,tla2022.md#std-dtcompatible-ti-tla2022)
+  > - [`ti,tla2024`](../build/dts/api/bindings/adc/ti,tla2024.md#std-dtcompatible-ti-tla2024)
 - ARM architecture
 
-  > - [`nxp,nbu`](../build/dts/api/bindings/arm/nxp%2Cnbu.md#std-dtcompatible-nxp-nbu)
+  > - [`nxp,nbu`](../build/dts/api/bindings/arm/nxp,nbu.md#std-dtcompatible-nxp-nbu)
 - Audio
 
-  > - [`cirrus,cs43l22`](../build/dts/api/bindings/audio/cirrus%2Ccs43l22.md#std-dtcompatible-cirrus-cs43l22)
-  > - [`intel,adsp-mic-privacy`](../build/dts/api/bindings/audio/intel%2Cmic-privacy.md#std-dtcompatible-intel-adsp-mic-privacy)
+  > - [`cirrus,cs43l22`](../build/dts/api/bindings/audio/cirrus,cs43l22.md#std-dtcompatible-cirrus-cs43l22)
+  > - [`intel,adsp-mic-privacy`](../build/dts/api/bindings/audio/intel,mic-privacy.md#std-dtcompatible-intel-adsp-mic-privacy)
 - Bluetooth
 
-  > - [`renesas,bt-hci-da1453x`](../build/dts/api/bindings/bluetooth/renesas%2Cbt-hci-da1453x.md#std-dtcompatible-renesas-bt-hci-da1453x)
-  > - [`silabs,siwx91x-bt-hci`](../build/dts/api/bindings/bluetooth/silabs%2Csiwx91x-bt-hci.md#std-dtcompatible-silabs-siwx91x-bt-hci)
-  > - [`st,hci-stm32wb0`](../build/dts/api/bindings/bluetooth/st%2Chci-stm32wb0.md#std-dtcompatible-st-hci-stm32wb0)
+  > - [`renesas,bt-hci-da1453x`](../build/dts/api/bindings/bluetooth/renesas,bt-hci-da1453x.md#std-dtcompatible-renesas-bt-hci-da1453x)
+  > - [`silabs,siwx91x-bt-hci`](../build/dts/api/bindings/bluetooth/silabs,siwx91x-bt-hci.md#std-dtcompatible-silabs-siwx91x-bt-hci)
+  > - [`st,hci-stm32wb0`](../build/dts/api/bindings/bluetooth/st,hci-stm32wb0.md#std-dtcompatible-st-hci-stm32wb0)
 - Charger
 
-  > - [`nxp,pf1550-charger`](../build/dts/api/bindings/charger/nxp%2Cpf1550-charger.md#std-dtcompatible-nxp-pf1550-charger)
+  > - [`nxp,pf1550-charger`](../build/dts/api/bindings/charger/nxp,pf1550-charger.md#std-dtcompatible-nxp-pf1550-charger)
 - Clock control
 
-  > - [`atmel,sam0-gclk`](../build/dts/api/bindings/clock/atmel%2Csam0-gclk.md#std-dtcompatible-atmel-sam0-gclk)
-  > - [`atmel,sam0-mclk`](../build/dts/api/bindings/clock/atmel%2Csam0-mclk.md#std-dtcompatible-atmel-sam0-mclk)
-  > - [`atmel,sam0-osc32kctrl`](../build/dts/api/bindings/clock/atmel%2Csam0-osc32kctrl.md#std-dtcompatible-atmel-sam0-osc32kctrl)
-  > - [`nordic,nrf-hsfll-global`](../build/dts/api/bindings/clock/nordic%2Cnrf-hsfll-global.md#std-dtcompatible-nordic-nrf-hsfll-global)
-  > - [`nuvoton,npcm-pcc`](../build/dts/api/bindings/clock/nuvoton%2Cnpcm-pcc.md#std-dtcompatible-nuvoton-npcm-pcc)
-  > - [`realtek,rts5912-sccon`](../build/dts/api/bindings/clock/realtek%2Crts5912-sccon.md#std-dtcompatible-realtek-rts5912-sccon)
-  > - [`renesas,rz-cpg`](../build/dts/api/bindings/clock/renesas%2Crz-cpg.md#std-dtcompatible-renesas-rz-cpg)
-  > - [`st,stm32n6-cpu-clock-mux`](../build/dts/api/bindings/clock/st%2Cstm32n6-cpu-clock-mux.md#std-dtcompatible-st-stm32n6-cpu-clock-mux)
-  > - [`st,stm32n6-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32n6-hse-clock.md#std-dtcompatible-st-stm32n6-hse-clock)
-  > - [`st,stm32n6-ic-clock-mux`](../build/dts/api/bindings/clock/st%2Cstm32n6-ic-clock-mux.md#std-dtcompatible-st-stm32n6-ic-clock-mux)
-  > - [`st,stm32n6-pll-clock`](../build/dts/api/bindings/clock/st%2Cstm32n6-pll-clock.md#std-dtcompatible-st-stm32n6-pll-clock)
-  > - [`st,stm32n6-rcc`](../build/dts/api/bindings/clock/st%2Cstm32n6-rcc.md#std-dtcompatible-st-stm32n6-rcc)
-  > - [`wch,ch32v00x-hse-clock`](../build/dts/api/bindings/clock/wch%2Cch32v00x-hse-clock.md#std-dtcompatible-wch-ch32v00x-hse-clock)
-  > - [`wch,ch32v00x-hsi-clock`](../build/dts/api/bindings/clock/wch%2Cch32v00x-hsi-clock.md#std-dtcompatible-wch-ch32v00x-hsi-clock)
-  > - [`wch,ch32v00x-pll-clock`](../build/dts/api/bindings/clock/wch%2Cch32v00x-pll-clock.md#std-dtcompatible-wch-ch32v00x-pll-clock)
-  > - [`wch,rcc`](../build/dts/api/bindings/clock/wch%2Crcc.md#std-dtcompatible-wch-rcc)
+  > - [`atmel,sam0-gclk`](../build/dts/api/bindings/clock/atmel,sam0-gclk.md#std-dtcompatible-atmel-sam0-gclk)
+  > - [`atmel,sam0-mclk`](../build/dts/api/bindings/clock/atmel,sam0-mclk.md#std-dtcompatible-atmel-sam0-mclk)
+  > - [`atmel,sam0-osc32kctrl`](../build/dts/api/bindings/clock/atmel,sam0-osc32kctrl.md#std-dtcompatible-atmel-sam0-osc32kctrl)
+  > - [`nordic,nrf-hsfll-global`](../build/dts/api/bindings/clock/nordic,nrf-hsfll-global.md#std-dtcompatible-nordic-nrf-hsfll-global)
+  > - [`nuvoton,npcm-pcc`](../build/dts/api/bindings/clock/nuvoton,npcm-pcc.md#std-dtcompatible-nuvoton-npcm-pcc)
+  > - [`realtek,rts5912-sccon`](../build/dts/api/bindings/clock/realtek,rts5912-sccon.md#std-dtcompatible-realtek-rts5912-sccon)
+  > - [`renesas,rz-cpg`](../build/dts/api/bindings/clock/renesas,rz-cpg.md#std-dtcompatible-renesas-rz-cpg)
+  > - [`st,stm32n6-cpu-clock-mux`](../build/dts/api/bindings/clock/st,stm32n6-cpu-clock-mux.md#std-dtcompatible-st-stm32n6-cpu-clock-mux)
+  > - [`st,stm32n6-hse-clock`](../build/dts/api/bindings/clock/st,stm32n6-hse-clock.md#std-dtcompatible-st-stm32n6-hse-clock)
+  > - [`st,stm32n6-ic-clock-mux`](../build/dts/api/bindings/clock/st,stm32n6-ic-clock-mux.md#std-dtcompatible-st-stm32n6-ic-clock-mux)
+  > - [`st,stm32n6-pll-clock`](../build/dts/api/bindings/clock/st,stm32n6-pll-clock.md#std-dtcompatible-st-stm32n6-pll-clock)
+  > - [`st,stm32n6-rcc`](../build/dts/api/bindings/clock/st,stm32n6-rcc.md#std-dtcompatible-st-stm32n6-rcc)
+  > - [`wch,ch32v00x-hse-clock`](../build/dts/api/bindings/clock/wch,ch32v00x-hse-clock.md#std-dtcompatible-wch-ch32v00x-hse-clock)
+  > - [`wch,ch32v00x-hsi-clock`](../build/dts/api/bindings/clock/wch,ch32v00x-hsi-clock.md#std-dtcompatible-wch-ch32v00x-hsi-clock)
+  > - [`wch,ch32v00x-pll-clock`](../build/dts/api/bindings/clock/wch,ch32v00x-pll-clock.md#std-dtcompatible-wch-ch32v00x-pll-clock)
+  > - [`wch,rcc`](../build/dts/api/bindings/clock/wch,rcc.md#std-dtcompatible-wch-rcc)
 - Comparator
 
-  > - [`silabs,acmp`](../build/dts/api/bindings/comparator/silabs%2Cacmp.md#std-dtcompatible-silabs-acmp)
+  > - [`silabs,acmp`](../build/dts/api/bindings/comparator/silabs,acmp.md#std-dtcompatible-silabs-acmp)
 - Counter
 
-  > - [`adi,max32-rtc-counter`](../build/dts/api/bindings/counter/adi%2Cmax32-rtc-counter.md#std-dtcompatible-adi-max32-rtc-counter)
-  > - [`renesas,rz-gtm-counter`](../build/dts/api/bindings/counter/renesas%2Crz-gtm-counter.md#std-dtcompatible-renesas-rz-gtm-counter)
+  > - [`adi,max32-rtc-counter`](../build/dts/api/bindings/counter/adi,max32-rtc-counter.md#std-dtcompatible-adi-max32-rtc-counter)
+  > - [`renesas,rz-gtm-counter`](../build/dts/api/bindings/counter/renesas,rz-gtm-counter.md#std-dtcompatible-renesas-rz-gtm-counter)
 - CPU
 
-  > - [`wch,qingke-v2`](../build/dts/api/bindings/cpu/wch%2Cqingke-v2.md#std-dtcompatible-wch-qingke-v2)
+  > - [`wch,qingke-v2`](../build/dts/api/bindings/cpu/wch,qingke-v2.md#std-dtcompatible-wch-qingke-v2)
 - DAC
 
-  > - [`adi,max22017-dac`](../build/dts/api/bindings/dac/adi%2Cmax22017-dac.md#std-dtcompatible-adi-max22017-dac)
-  > - [`renesas,ra-dac`](../build/dts/api/bindings/dac/renesas%2Cra-dac.md#std-dtcompatible-renesas-ra-dac)
-  > - [`renesas,ra-dac-global`](../build/dts/api/bindings/dac/renesas%2Cra-dac-global.md#std-dtcompatible-renesas-ra-dac-global)
+  > - [`adi,max22017-dac`](../build/dts/api/bindings/dac/adi,max22017-dac.md#std-dtcompatible-adi-max22017-dac)
+  > - [`renesas,ra-dac`](../build/dts/api/bindings/dac/renesas,ra-dac.md#std-dtcompatible-renesas-ra-dac)
+  > - [`renesas,ra-dac-global`](../build/dts/api/bindings/dac/renesas,ra-dac-global.md#std-dtcompatible-renesas-ra-dac-global)
 - DAI
 
-  > - [`mediatek,afe`](../build/dts/api/bindings/dai/mediatek%2Cafe.md#std-dtcompatible-mediatek-afe)
-  > - [`nxp,dai-micfil`](../build/dts/api/bindings/dai/nxp%2Cdai-micfil.md#std-dtcompatible-nxp-dai-micfil)
+  > - [`mediatek,afe`](../build/dts/api/bindings/dai/mediatek,afe.md#std-dtcompatible-mediatek-afe)
+  > - [`nxp,dai-micfil`](../build/dts/api/bindings/dai/nxp,dai-micfil.md#std-dtcompatible-nxp-dai-micfil)
 - Display
 
-  > - [`ilitek,ili9806e-dsi`](../build/dts/api/bindings/display/ilitek%2Cili9806e.md#std-dtcompatible-ilitek-ili9806e-dsi)
-  > - [`renesas,ra-glcdc`](../build/dts/api/bindings/display/renesas%2Cra-glcdc.md#std-dtcompatible-renesas-ra-glcdc)
-  > - [`solomon,ssd1309fb`](../build/dts/api/compatibles/solomon%2Cssd1309fb.md#std-dtcompatible-solomon-ssd1309fb)
+  > - [`ilitek,ili9806e-dsi`](../build/dts/api/bindings/display/ilitek,ili9806e.md#std-dtcompatible-ilitek-ili9806e-dsi)
+  > - [`renesas,ra-glcdc`](../build/dts/api/bindings/display/renesas,ra-glcdc.md#std-dtcompatible-renesas-ra-glcdc)
+  > - [`solomon,ssd1309fb`](../build/dts/api/compatibles/solomon,ssd1309fb.md#std-dtcompatible-solomon-ssd1309fb)
 - DMA
 
-  > - [`infineon,cat1-dma`](../build/dts/api/bindings/dma/infineon%2Ccat1-dma.md#std-dtcompatible-infineon-cat1-dma)
-  > - [`nxp,sdma`](../build/dts/api/bindings/dma/nxp%2Csdma.md#std-dtcompatible-nxp-sdma)
-  > - [`silabs,ldma`](../build/dts/api/bindings/dma/silabs%2Cldma.md#std-dtcompatible-silabs-ldma)
-  > - [`silabs,siwx91x-dma`](../build/dts/api/bindings/dma/silabs%2Csiwx91x-dma.md#std-dtcompatible-silabs-siwx91x-dma)
-  > - [`xlnx,axi-dma-1.00.a`](../build/dts/api/bindings/dma/xlnx%2Caxi-dma.md#std-dtcompatible-xlnx-axi-dma-1.00.a)
-  > - [`xlnx,eth-dma`](../build/dts/api/bindings/dma/xlnx%2Ceth-dma.md#std-dtcompatible-xlnx-eth-dma)
+  > - [`infineon,cat1-dma`](../build/dts/api/bindings/dma/infineon,cat1-dma.md#std-dtcompatible-infineon-cat1-dma)
+  > - [`nxp,sdma`](../build/dts/api/bindings/dma/nxp,sdma.md#std-dtcompatible-nxp-sdma)
+  > - [`silabs,ldma`](../build/dts/api/bindings/dma/silabs,ldma.md#std-dtcompatible-silabs-ldma)
+  > - [`silabs,siwx91x-dma`](../build/dts/api/bindings/dma/silabs,siwx91x-dma.md#std-dtcompatible-silabs-siwx91x-dma)
+  > - [`xlnx,axi-dma-1.00.a`](../build/dts/api/bindings/dma/xlnx,axi-dma.md#std-dtcompatible-xlnx-axi-dma-1.00.a)
+  > - [`xlnx,eth-dma`](../build/dts/api/bindings/dma/xlnx,eth-dma.md#std-dtcompatible-xlnx-eth-dma)
 - DSA
 
-  > - [`nxp,netc-switch`](../build/dts/api/bindings/dsa/nxp%2Cnetc-switch.md#std-dtcompatible-nxp-netc-switch)
+  > - [`nxp,netc-switch`](../build/dts/api/bindings/dsa/nxp,netc-switch.md#std-dtcompatible-nxp-netc-switch)
 - EEPROM
 
-  - [`fujitsu,mb85rsxx`](../build/dts/api/bindings/mtd/fujitsu%2Cmb85rsxx.md#std-dtcompatible-fujitsu-mb85rsxx)
+  - [`fujitsu,mb85rsxx`](../build/dts/api/bindings/mtd/fujitsu,mb85rsxx.md#std-dtcompatible-fujitsu-mb85rsxx)
 - Ethernet
 
-  > - [`davicom,dm8806-phy`](../build/dts/api/bindings/ethernet/phy/davicom%2Cdm8806-phy.md#std-dtcompatible-davicom-dm8806-phy)
-  > - [`microchip,lan9250`](../build/dts/api/bindings/ethernet/microchip%2Clan9250.md#std-dtcompatible-microchip-lan9250)
-  > - [`microchip,t1s-phy`](../build/dts/api/bindings/ethernet/phy/microchip%2Ct1s-phy.md#std-dtcompatible-microchip-t1s-phy)
-  > - [`microchip,vsc8541`](../build/dts/api/bindings/ethernet/phy/microchip%2Cvsc8541-phy.md#std-dtcompatible-microchip-vsc8541)
-  > - [`renesas,ra-ethernet`](../build/dts/api/bindings/ethernet/renesas%2Cra-ethernet.md#std-dtcompatible-renesas-ra-ethernet)
-  > - [`sensry,sy1xx-mac`](../build/dts/api/bindings/ethernet/sensry%2Csy1xx-mac.md#std-dtcompatible-sensry-sy1xx-mac)
+  > - [`davicom,dm8806-phy`](../build/dts/api/bindings/ethernet/phy/davicom,dm8806-phy.md#std-dtcompatible-davicom-dm8806-phy)
+  > - [`microchip,lan9250`](../build/dts/api/bindings/ethernet/microchip,lan9250.md#std-dtcompatible-microchip-lan9250)
+  > - [`microchip,t1s-phy`](../build/dts/api/bindings/ethernet/phy/microchip,t1s-phy.md#std-dtcompatible-microchip-t1s-phy)
+  > - [`microchip,vsc8541`](../build/dts/api/bindings/ethernet/phy/microchip,vsc8541-phy.md#std-dtcompatible-microchip-vsc8541)
+  > - [`renesas,ra-ethernet`](../build/dts/api/bindings/ethernet/renesas,ra-ethernet.md#std-dtcompatible-renesas-ra-ethernet)
+  > - [`sensry,sy1xx-mac`](../build/dts/api/bindings/ethernet/sensry,sy1xx-mac.md#std-dtcompatible-sensry-sy1xx-mac)
 - Firmware
 
-  > - [`arm,scmi-power`](../build/dts/api/bindings/firmware/arm%2Cscmi-power.md#std-dtcompatible-arm-scmi-power)
+  > - [`arm,scmi-power`](../build/dts/api/bindings/firmware/arm,scmi-power.md#std-dtcompatible-arm-scmi-power)
 - Flash controller
 
-  > - [`silabs,siwx91x-flash-controller`](../build/dts/api/bindings/flash_controller/silabs%2Csiwx91x-flash-controller.md#std-dtcompatible-silabs-siwx91x-flash-controller)
-  > - [`ti,cc23x0-flash-controller`](../build/dts/api/bindings/flash_controller/ti%2Ccc23x0-flash-controller.md#std-dtcompatible-ti-cc23x0-flash-controller)
+  > - [`silabs,siwx91x-flash-controller`](../build/dts/api/bindings/flash_controller/silabs,siwx91x-flash-controller.md#std-dtcompatible-silabs-siwx91x-flash-controller)
+  > - [`ti,cc23x0-flash-controller`](../build/dts/api/bindings/flash_controller/ti,cc23x0-flash-controller.md#std-dtcompatible-ti-cc23x0-flash-controller)
 - FPGA
 
-  > - [`lattice,ice40-fpga-base`](../build/dts/api/bindings/fpga/lattice%2Cice40-fpga-base.md#std-dtcompatible-lattice-ice40-fpga-base)
-  > - [`lattice,ice40-fpga-bitbang`](../build/dts/api/bindings/fpga/lattice%2Cice40-fpga-bitbang.md#std-dtcompatible-lattice-ice40-fpga-bitbang)
+  > - [`lattice,ice40-fpga-base`](../build/dts/api/bindings/fpga/lattice,ice40-fpga-base.md#std-dtcompatible-lattice-ice40-fpga-base)
+  > - [`lattice,ice40-fpga-bitbang`](../build/dts/api/bindings/fpga/lattice,ice40-fpga-bitbang.md#std-dtcompatible-lattice-ice40-fpga-bitbang)
 - GPIO
 
-  > - [`adi,max22017-gpio`](../build/dts/api/bindings/gpio/adi%2Cmax22017-gpio.md#std-dtcompatible-adi-max22017-gpio)
-  > - [`adi,max22190-gpio`](../build/dts/api/bindings/gpio/adi%2Cmax22190-gpio.md#std-dtcompatible-adi-max22190-gpio)
-  > - [`awinic,aw9523b-gpio`](../build/dts/api/bindings/gpio/awinic%2Caw9523b-gpio.md#std-dtcompatible-awinic-aw9523b-gpio)
-  > - [`ite,it8801-gpio`](../build/dts/api/bindings/gpio/ite%2Cit8801-gpio.md#std-dtcompatible-ite-it8801-gpio)
-  > - [`microchip,mec5-gpio`](../build/dts/api/bindings/gpio/microchip%2Cmec5-gpio.md#std-dtcompatible-microchip-mec5-gpio)
-  > - [`nordic,npm2100-gpio`](../build/dts/api/bindings/gpio/nordic%2Cnpm2100-gpio.md#std-dtcompatible-nordic-npm2100-gpio)
-  > - [`nxp,pca6416`](../build/dts/api/bindings/gpio/nxp%2Cpca6416.md#std-dtcompatible-nxp-pca6416)
-  > - [`raspberrypi,rp1-gpio`](../build/dts/api/bindings/gpio/raspberrypi%2Crp1-gpio.md#std-dtcompatible-raspberrypi-rp1-gpio)
-  > - [`realtek,rts5912-gpio`](../build/dts/api/bindings/gpio/realtek%2Crts5912-gpio.md#std-dtcompatible-realtek-rts5912-gpio)
-  > - [`renesas,ra-gpio-mipi-header`](../build/dts/api/bindings/gpio/renesas%2Cmipi-header.md#std-dtcompatible-renesas-ra-gpio-mipi-header)
-  > - [`renesas,rz-gpio`](../build/dts/api/bindings/gpio/renesas%2Crz-gpio.md#std-dtcompatible-renesas-rz-gpio)
-  > - [`renesas,rz-gpio-int`](../build/dts/api/bindings/gpio/renesas%2Crz-gpio-int.md#std-dtcompatible-renesas-rz-gpio-int)
-  > - [`sensry,sy1xx-gpio`](../build/dts/api/bindings/gpio/sensry%2Csy1xx-gpio.md#std-dtcompatible-sensry-sy1xx-gpio)
-  > - [`silabs,siwx91x-gpio`](../build/dts/api/bindings/gpio/silabs%2Csiwx91x-gpio.md#std-dtcompatible-silabs-siwx91x-gpio)
-  > - [`silabs,siwx91x-gpio-port`](../build/dts/api/bindings/gpio/silabs%2Csiwx91x-gpio-port.md#std-dtcompatible-silabs-siwx91x-gpio-port)
-  > - [`silabs,siwx91x-gpio-uulp`](../build/dts/api/bindings/gpio/silabs%2Csiwx91x-gpio-uulp.md#std-dtcompatible-silabs-siwx91x-gpio-uulp)
-  > - [`st,dcmi-camera-fpu-330zh`](../build/dts/api/bindings/gpio/st%2Cdcmi-camera-fpu-330zh.md#std-dtcompatible-st-dcmi-camera-fpu-330zh)
-  > - [`st,mfxstm32l152`](../build/dts/api/bindings/gpio/st%2Cmfxstm32l152.md#std-dtcompatible-st-mfxstm32l152)
+  > - [`adi,max22017-gpio`](../build/dts/api/bindings/gpio/adi,max22017-gpio.md#std-dtcompatible-adi-max22017-gpio)
+  > - [`adi,max22190-gpio`](../build/dts/api/bindings/gpio/adi,max22190-gpio.md#std-dtcompatible-adi-max22190-gpio)
+  > - [`awinic,aw9523b-gpio`](../build/dts/api/bindings/gpio/awinic,aw9523b-gpio.md#std-dtcompatible-awinic-aw9523b-gpio)
+  > - [`ite,it8801-gpio`](../build/dts/api/bindings/gpio/ite,it8801-gpio.md#std-dtcompatible-ite-it8801-gpio)
+  > - [`microchip,mec5-gpio`](../build/dts/api/bindings/gpio/microchip,mec5-gpio.md#std-dtcompatible-microchip-mec5-gpio)
+  > - [`nordic,npm2100-gpio`](../build/dts/api/bindings/gpio/nordic,npm2100-gpio.md#std-dtcompatible-nordic-npm2100-gpio)
+  > - [`nxp,pca6416`](../build/dts/api/bindings/gpio/nxp,pca6416.md#std-dtcompatible-nxp-pca6416)
+  > - [`raspberrypi,rp1-gpio`](../build/dts/api/bindings/gpio/raspberrypi,rp1-gpio.md#std-dtcompatible-raspberrypi-rp1-gpio)
+  > - [`realtek,rts5912-gpio`](../build/dts/api/bindings/gpio/realtek,rts5912-gpio.md#std-dtcompatible-realtek-rts5912-gpio)
+  > - [`renesas,ra-gpio-mipi-header`](../build/dts/api/bindings/gpio/renesas,mipi-header.md#std-dtcompatible-renesas-ra-gpio-mipi-header)
+  > - [`renesas,rz-gpio`](../build/dts/api/bindings/gpio/renesas,rz-gpio.md#std-dtcompatible-renesas-rz-gpio)
+  > - [`renesas,rz-gpio-int`](../build/dts/api/bindings/gpio/renesas,rz-gpio-int.md#std-dtcompatible-renesas-rz-gpio-int)
+  > - [`sensry,sy1xx-gpio`](../build/dts/api/bindings/gpio/sensry,sy1xx-gpio.md#std-dtcompatible-sensry-sy1xx-gpio)
+  > - [`silabs,siwx91x-gpio`](../build/dts/api/bindings/gpio/silabs,siwx91x-gpio.md#std-dtcompatible-silabs-siwx91x-gpio)
+  > - [`silabs,siwx91x-gpio-port`](../build/dts/api/bindings/gpio/silabs,siwx91x-gpio-port.md#std-dtcompatible-silabs-siwx91x-gpio-port)
+  > - [`silabs,siwx91x-gpio-uulp`](../build/dts/api/bindings/gpio/silabs,siwx91x-gpio-uulp.md#std-dtcompatible-silabs-siwx91x-gpio-uulp)
+  > - [`st,dcmi-camera-fpu-330zh`](../build/dts/api/bindings/gpio/st,dcmi-camera-fpu-330zh.md#std-dtcompatible-st-dcmi-camera-fpu-330zh)
+  > - [`st,mfxstm32l152`](../build/dts/api/bindings/gpio/st,mfxstm32l152.md#std-dtcompatible-st-mfxstm32l152)
   > - [`stemma-qt-connector`](../build/dts/api/bindings/gpio/stemma-qt-connector.md#std-dtcompatible-stemma-qt-connector)
-  > - [`ti,cc23x0-gpio`](../build/dts/api/bindings/gpio/ti%2Ccc23x0-gpio.md#std-dtcompatible-ti-cc23x0-gpio)
-  > - [`wch,gpio`](../build/dts/api/bindings/gpio/wch%2Cgpio.md#std-dtcompatible-wch-gpio)
+  > - [`ti,cc23x0-gpio`](../build/dts/api/bindings/gpio/ti,cc23x0-gpio.md#std-dtcompatible-ti-cc23x0-gpio)
+  > - [`wch,gpio`](../build/dts/api/bindings/gpio/wch,gpio.md#std-dtcompatible-wch-gpio)
 - IEEE 802.15.4 HDLC RCP interface
 
-  > - [`nxp,hdlc-rcp-if`](../build/dts/api/bindings/hdlc_rcp_if/nxp%2Chdlc-rcp-if.md#std-dtcompatible-nxp-hdlc-rcp-if)
-  > - [`uart,hdlc-rcp-if`](../build/dts/api/bindings/hdlc_rcp_if/uart%2Chdlc-rcp-if.md#std-dtcompatible-uart-hdlc-rcp-if)
+  > - [`nxp,hdlc-rcp-if`](../build/dts/api/bindings/hdlc_rcp_if/nxp,hdlc-rcp-if.md#std-dtcompatible-nxp-hdlc-rcp-if)
+  > - [`uart,hdlc-rcp-if`](../build/dts/api/bindings/hdlc_rcp_if/uart,hdlc-rcp-if.md#std-dtcompatible-uart-hdlc-rcp-if)
 - I2C
 
-  > - [`nordic,nrf-twis`](../build/dts/api/bindings/i2c/nordic%2Cnrf-twis.md#std-dtcompatible-nordic-nrf-twis)
-  > - [`nxp,ii2c`](../build/dts/api/bindings/i2c/nxp%2Cii2c.md#std-dtcompatible-nxp-ii2c)
-  > - [`ti,omap-i2c`](../build/dts/api/bindings/i2c/ti%2Comap-i2c.md#std-dtcompatible-ti-omap-i2c)
-  > - [`ti,tca9544a`](../build/dts/api/bindings/i2c/ti%2Ctca9544a.md#std-dtcompatible-ti-tca9544a)
+  > - [`nordic,nrf-twis`](../build/dts/api/bindings/i2c/nordic,nrf-twis.md#std-dtcompatible-nordic-nrf-twis)
+  > - [`nxp,ii2c`](../build/dts/api/bindings/i2c/nxp,ii2c.md#std-dtcompatible-nxp-ii2c)
+  > - [`ti,omap-i2c`](../build/dts/api/bindings/i2c/ti,omap-i2c.md#std-dtcompatible-ti-omap-i2c)
+  > - [`ti,tca9544a`](../build/dts/api/bindings/i2c/ti,tca9544a.md#std-dtcompatible-ti-tca9544a)
 - I3C
 
-  > - [`snps,designware-i3c`](../build/dts/api/bindings/i3c/snps%2Cdesignware-i3c.md#std-dtcompatible-snps-designware-i3c)
-  > - [`st,stm32-i3c`](../build/dts/api/bindings/i3c/st%2Cstm32-i3c.md#std-dtcompatible-st-stm32-i3c)
+  > - [`snps,designware-i3c`](../build/dts/api/bindings/i3c/snps,designware-i3c.md#std-dtcompatible-snps-designware-i3c)
+  > - [`st,stm32-i3c`](../build/dts/api/bindings/i3c/st,stm32-i3c.md#std-dtcompatible-st-stm32-i3c)
 - IEEE 802.15.4
 
-  > - [`nxp,mcxw-ieee802154`](../build/dts/api/bindings/ieee802154/nxp%2Cmcxw-ieee802154.md#std-dtcompatible-nxp-mcxw-ieee802154)
+  > - [`nxp,mcxw-ieee802154`](../build/dts/api/bindings/ieee802154/nxp,mcxw-ieee802154.md#std-dtcompatible-nxp-mcxw-ieee802154)
 - Input
 
-  > - [`cypress,cy8cmbr3xxx`](../build/dts/api/bindings/input/cypress%2Ccy8cmbr3xxx.md#std-dtcompatible-cypress-cy8cmbr3xxx)
-  > - [`ite,it8801-kbd`](../build/dts/api/bindings/input/ite%2Cit8801-kbd.md#std-dtcompatible-ite-it8801-kbd)
-  > - [`microchip,cap12xx`](../build/dts/api/bindings/input/microchip%2Ccap12xx.md#std-dtcompatible-microchip-cap12xx)
-  > - [`nintendo,nunchuk`](../build/dts/api/bindings/input/nintendo%2Cnunchuk.md#std-dtcompatible-nintendo-nunchuk)
+  > - [`cypress,cy8cmbr3xxx`](../build/dts/api/bindings/input/cypress,cy8cmbr3xxx.md#std-dtcompatible-cypress-cy8cmbr3xxx)
+  > - [`ite,it8801-kbd`](../build/dts/api/bindings/input/ite,it8801-kbd.md#std-dtcompatible-ite-it8801-kbd)
+  > - [`microchip,cap12xx`](../build/dts/api/bindings/input/microchip,cap12xx.md#std-dtcompatible-microchip-cap12xx)
+  > - [`nintendo,nunchuk`](../build/dts/api/bindings/input/nintendo,nunchuk.md#std-dtcompatible-nintendo-nunchuk)
 - Interrupt controller
 
-  > - [`renesas,rz-ext-irq`](../build/dts/api/bindings/interrupt-controller/renesas%2Crz-ext-irq.md#std-dtcompatible-renesas-rz-ext-irq)
-  > - [`wch,pfic`](../build/dts/api/bindings/interrupt-controller/wch%2Cpfic.md#std-dtcompatible-wch-pfic)
+  > - [`renesas,rz-ext-irq`](../build/dts/api/bindings/interrupt-controller/renesas,rz-ext-irq.md#std-dtcompatible-renesas-rz-ext-irq)
+  > - [`wch,pfic`](../build/dts/api/bindings/interrupt-controller/wch,pfic.md#std-dtcompatible-wch-pfic)
 - Mailbox
 
-  > - [`linaro,ivshmem-mbox`](../build/dts/api/bindings/mbox/linaro%2Civshmem-mbox.md#std-dtcompatible-linaro-ivshmem-mbox)
-  > - [`ti,omap-mailbox`](../build/dts/api/bindings/mbox/ti%2Comap-mailbox.md#std-dtcompatible-ti-omap-mailbox)
+  > - [`linaro,ivshmem-mbox`](../build/dts/api/bindings/mbox/linaro,ivshmem-mbox.md#std-dtcompatible-linaro-ivshmem-mbox)
+  > - [`ti,omap-mailbox`](../build/dts/api/bindings/mbox/ti,omap-mailbox.md#std-dtcompatible-ti-omap-mailbox)
 - MDIO
 
-  > - [`microchip,lan865x-mdio`](../build/dts/api/bindings/mdio/microchip%2Clan865x-mdio.md#std-dtcompatible-microchip-lan865x-mdio)
-  > - [`renesas,ra-mdio`](../build/dts/api/bindings/mdio/renesas%2Cra-mdio.md#std-dtcompatible-renesas-ra-mdio)
-  > - [`sensry,sy1xx-mdio`](../build/dts/api/bindings/mdio/sensry%2Csy1xx-mdio.md#std-dtcompatible-sensry-sy1xx-mdio)
+  > - [`microchip,lan865x-mdio`](../build/dts/api/bindings/mdio/microchip,lan865x-mdio.md#std-dtcompatible-microchip-lan865x-mdio)
+  > - [`renesas,ra-mdio`](../build/dts/api/bindings/mdio/renesas,ra-mdio.md#std-dtcompatible-renesas-ra-mdio)
+  > - [`sensry,sy1xx-mdio`](../build/dts/api/bindings/mdio/sensry,sy1xx-mdio.md#std-dtcompatible-sensry-sy1xx-mdio)
 - Memory controller
 
-  > - [`renesas,ra-sdram`](../build/dts/api/bindings/memory-controllers/renesas%2Cra-sdram.md#std-dtcompatible-renesas-ra-sdram)
+  > - [`renesas,ra-sdram`](../build/dts/api/bindings/memory-controllers/renesas,ra-sdram.md#std-dtcompatible-renesas-ra-sdram)
 - MFD
 
-  > - [`adi,max22017`](../build/dts/api/bindings/mfd/adi%2Cmax22017.md#std-dtcompatible-adi-max22017)
-  > - [`awinic,aw9523b`](../build/dts/api/bindings/mfd/awinic%2Caw9523b.md#std-dtcompatible-awinic-aw9523b)
-  > - [`ite,it8801-altctrl`](../build/dts/api/bindings/mfd/ite%2Cit8801-altctrl.md#std-dtcompatible-ite-it8801-altctrl)
-  > - [`ite,it8801-mfd`](../build/dts/api/bindings/mfd/ite%2Cit8801-mfd.md#std-dtcompatible-ite-it8801-mfd)
-  > - [`ite,it8801-mfd-map`](../build/dts/api/bindings/mfd/ite%2Cit8801-mfd-map.md#std-dtcompatible-ite-it8801-mfd-map)
-  > - [`maxim,ds3231-mfd`](../build/dts/api/bindings/mfd/maxim%2Cds3231-mfd.md#std-dtcompatible-maxim-ds3231-mfd)
-  > - [`nordic,npm2100`](../build/dts/api/bindings/mfd/nordic%2Cnpm2100.md#std-dtcompatible-nordic-npm2100)
-  > - [`nxp,pf1550`](../build/dts/api/bindings/mfd/nxp%2Cpf1550.md#std-dtcompatible-nxp-pf1550)
+  > - [`adi,max22017`](../build/dts/api/bindings/mfd/adi,max22017.md#std-dtcompatible-adi-max22017)
+  > - [`awinic,aw9523b`](../build/dts/api/bindings/mfd/awinic,aw9523b.md#std-dtcompatible-awinic-aw9523b)
+  > - [`ite,it8801-altctrl`](../build/dts/api/bindings/mfd/ite,it8801-altctrl.md#std-dtcompatible-ite-it8801-altctrl)
+  > - [`ite,it8801-mfd`](../build/dts/api/bindings/mfd/ite,it8801-mfd.md#std-dtcompatible-ite-it8801-mfd)
+  > - [`ite,it8801-mfd-map`](../build/dts/api/bindings/mfd/ite,it8801-mfd-map.md#std-dtcompatible-ite-it8801-mfd-map)
+  > - [`maxim,ds3231-mfd`](../build/dts/api/bindings/mfd/maxim,ds3231-mfd.md#std-dtcompatible-maxim-ds3231-mfd)
+  > - [`nordic,npm2100`](../build/dts/api/bindings/mfd/nordic,npm2100.md#std-dtcompatible-nordic-npm2100)
+  > - [`nxp,pf1550`](../build/dts/api/bindings/mfd/nxp,pf1550.md#std-dtcompatible-nxp-pf1550)
 - MIPI DSI
 
-  > - [`renesas,ra-mipi-dsi`](../build/dts/api/bindings/mipi-dsi/renesas%2Cra-mipi-dsi.md#std-dtcompatible-renesas-ra-mipi-dsi)
+  > - [`renesas,ra-mipi-dsi`](../build/dts/api/bindings/mipi-dsi/renesas,ra-mipi-dsi.md#std-dtcompatible-renesas-ra-mipi-dsi)
 - Miscellaneous
 
-  > - [`nordic,nrf-bicr`](../build/dts/api/bindings/misc/nordic%2Cnrf-bicr.md#std-dtcompatible-nordic-nrf-bicr)
-  > - [`nordic,nrf-ppib`](../build/dts/api/bindings/misc/nordic%2Cnrf-ppib.md#std-dtcompatible-nordic-nrf-ppib)
-  > - [`renesas,ra-external-interrupt`](../build/dts/api/bindings/misc/renesas%2Cra-external-interrupt.md#std-dtcompatible-renesas-ra-external-interrupt)
+  > - [`nordic,nrf-bicr`](../build/dts/api/bindings/misc/nordic,nrf-bicr.md#std-dtcompatible-nordic-nrf-bicr)
+  > - [`nordic,nrf-ppib`](../build/dts/api/bindings/misc/nordic,nrf-ppib.md#std-dtcompatible-nordic-nrf-ppib)
+  > - [`renesas,ra-external-interrupt`](../build/dts/api/bindings/misc/renesas,ra-external-interrupt.md#std-dtcompatible-renesas-ra-external-interrupt)
 - MMU / MPU
 
-  > - [`nxp,sysmpu`](../build/dts/api/bindings/mmu_mpu/nxp%2Csysmpu.md#std-dtcompatible-nxp-sysmpu)
+  > - [`nxp,sysmpu`](../build/dts/api/bindings/mmu_mpu/nxp,sysmpu.md#std-dtcompatible-nxp-sysmpu)
 - MTD
 
-  > - [`nxp,s32-qspi-hyperflash`](../build/dts/api/bindings/mtd/nxp%2Cs32-qspi-hyperflash.md#std-dtcompatible-nxp-s32-qspi-hyperflash)
-  > - [`nxp,xspi-mx25um51345g`](../build/dts/api/bindings/mtd/nxp%2Cxspi-mx25um51345g.md#std-dtcompatible-nxp-xspi-mx25um51345g)
-  > - [`ti,cc23x0-ccfg-flash`](../build/dts/api/bindings/mtd/ti%2Ccc23x0-ccfg-flash.md#std-dtcompatible-ti-cc23x0-ccfg-flash)
+  > - [`nxp,s32-qspi-hyperflash`](../build/dts/api/bindings/mtd/nxp,s32-qspi-hyperflash.md#std-dtcompatible-nxp-s32-qspi-hyperflash)
+  > - [`nxp,xspi-mx25um51345g`](../build/dts/api/bindings/mtd/nxp,xspi-mx25um51345g.md#std-dtcompatible-nxp-xspi-mx25um51345g)
+  > - [`ti,cc23x0-ccfg-flash`](../build/dts/api/bindings/mtd/ti,cc23x0-ccfg-flash.md#std-dtcompatible-ti-cc23x0-ccfg-flash)
 - Networking
 
-  > - [`silabs,series2-radio`](../build/dts/api/bindings/net/wireless/silabs%2Cseries2-radio.md#std-dtcompatible-silabs-series2-radio)
+  > - [`silabs,series2-radio`](../build/dts/api/bindings/net/wireless/silabs,series2-radio.md#std-dtcompatible-silabs-series2-radio)
 - PCIe
 
-  > - [`brcm,brcmstb-pcie`](../build/dts/api/bindings/pcie/controller/brcm%2Cbrcmstb-pcie.md#std-dtcompatible-brcm-brcmstb-pcie)
+  > - [`brcm,brcmstb-pcie`](../build/dts/api/bindings/pcie/controller/brcm,brcmstb-pcie.md#std-dtcompatible-brcm-brcmstb-pcie)
 - PHY
 
-  > - [`renesas,ra-usbphyc`](../build/dts/api/bindings/phy/renesas%2Cra-usbphyc.md#std-dtcompatible-renesas-ra-usbphyc)
-  > - [`st,stm32u5-otghs-phy`](../build/dts/api/bindings/phy/st%2Cstm32u5-otghs-phy.md#std-dtcompatible-st-stm32u5-otghs-phy)
+  > - [`renesas,ra-usbphyc`](../build/dts/api/bindings/phy/renesas,ra-usbphyc.md#std-dtcompatible-renesas-ra-usbphyc)
+  > - [`st,stm32u5-otghs-phy`](../build/dts/api/bindings/phy/st,stm32u5-otghs-phy.md#std-dtcompatible-st-stm32u5-otghs-phy)
 - Pin control
 
-  > - [`realtek,rts5912-pinctrl`](../build/dts/api/bindings/pinctrl/realtek%2Crts5912-pinctrl.md#std-dtcompatible-realtek-rts5912-pinctrl)
-  > - [`renesas,rzg-pinctrl`](../build/dts/api/bindings/pinctrl/renesas%2Crzg-pinctrl.md#std-dtcompatible-renesas-rzg-pinctrl)
-  > - [`sensry,sy1xx-pinctrl`](../build/dts/api/bindings/pinctrl/sensry%2Csy1xx-pinctrl.md#std-dtcompatible-sensry-sy1xx-pinctrl)
-  > - [`silabs,dbus-pinctrl`](../build/dts/api/bindings/pinctrl/silabs%2Cdbus-pinctrl.md#std-dtcompatible-silabs-dbus-pinctrl)
-  > - [`silabs,siwx91x-pinctrl`](../build/dts/api/bindings/pinctrl/silabs%2Csiwx91x-pinctrl.md#std-dtcompatible-silabs-siwx91x-pinctrl)
-  > - [`ti,cc23x0-pinctrl`](../build/dts/api/bindings/pinctrl/ti%2Ccc23x0-pinctrl.md#std-dtcompatible-ti-cc23x0-pinctrl)
-  > - [`wch,afio`](../build/dts/api/bindings/pinctrl/wch%2Cafio.md#std-dtcompatible-wch-afio)
+  > - [`realtek,rts5912-pinctrl`](../build/dts/api/bindings/pinctrl/realtek,rts5912-pinctrl.md#std-dtcompatible-realtek-rts5912-pinctrl)
+  > - [`renesas,rzg-pinctrl`](../build/dts/api/bindings/pinctrl/renesas,rzg-pinctrl.md#std-dtcompatible-renesas-rzg-pinctrl)
+  > - [`sensry,sy1xx-pinctrl`](../build/dts/api/bindings/pinctrl/sensry,sy1xx-pinctrl.md#std-dtcompatible-sensry-sy1xx-pinctrl)
+  > - [`silabs,dbus-pinctrl`](../build/dts/api/bindings/pinctrl/silabs,dbus-pinctrl.md#std-dtcompatible-silabs-dbus-pinctrl)
+  > - [`silabs,siwx91x-pinctrl`](../build/dts/api/bindings/pinctrl/silabs,siwx91x-pinctrl.md#std-dtcompatible-silabs-siwx91x-pinctrl)
+  > - [`ti,cc23x0-pinctrl`](../build/dts/api/bindings/pinctrl/ti,cc23x0-pinctrl.md#std-dtcompatible-ti-cc23x0-pinctrl)
+  > - [`wch,afio`](../build/dts/api/bindings/pinctrl/wch,afio.md#std-dtcompatible-wch-afio)
 - PWM
 
-  > - [`atmel,sam0-tc-pwm`](../build/dts/api/bindings/pwm/atmel%2Csam0-tc-pwm.md#std-dtcompatible-atmel-sam0-tc-pwm)
-  > - [`ite,it8801-pwm`](../build/dts/api/bindings/pwm/ite%2Cit8801-pwm.md#std-dtcompatible-ite-it8801-pwm)
-  > - [`renesas,rz-gpt-pwm`](../build/dts/api/bindings/pwm/renesas%2Crz-gpt-pwm.md#std-dtcompatible-renesas-rz-gpt-pwm)
-  > - [`zephyr,fake-pwm`](../build/dts/api/bindings/pwm/zephyr%2Cfake-pwm.md#std-dtcompatible-zephyr-fake-pwm)
+  > - [`atmel,sam0-tc-pwm`](../build/dts/api/bindings/pwm/atmel,sam0-tc-pwm.md#std-dtcompatible-atmel-sam0-tc-pwm)
+  > - [`ite,it8801-pwm`](../build/dts/api/bindings/pwm/ite,it8801-pwm.md#std-dtcompatible-ite-it8801-pwm)
+  > - [`renesas,rz-gpt-pwm`](../build/dts/api/bindings/pwm/renesas,rz-gpt-pwm.md#std-dtcompatible-renesas-rz-gpt-pwm)
+  > - [`zephyr,fake-pwm`](../build/dts/api/bindings/pwm/zephyr,fake-pwm.md#std-dtcompatible-zephyr-fake-pwm)
 - Quad SPI
 
-  > - [`nxp,s32-qspi-sfp-frad`](../build/dts/api/bindings/qspi/nxp%2Cs32-qspi-sfp-frad.md#std-dtcompatible-nxp-s32-qspi-sfp-frad)
-  > - [`nxp,s32-qspi-sfp-mdad`](../build/dts/api/bindings/qspi/nxp%2Cs32-qspi-sfp-mdad.md#std-dtcompatible-nxp-s32-qspi-sfp-mdad)
+  > - [`nxp,s32-qspi-sfp-frad`](../build/dts/api/bindings/qspi/nxp,s32-qspi-sfp-frad.md#std-dtcompatible-nxp-s32-qspi-sfp-frad)
+  > - [`nxp,s32-qspi-sfp-mdad`](../build/dts/api/bindings/qspi/nxp,s32-qspi-sfp-mdad.md#std-dtcompatible-nxp-s32-qspi-sfp-mdad)
 - Regulator
 
-  > - [`nordic,npm2100-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm2100-regulator.md#std-dtcompatible-nordic-npm2100-regulator)
-  > - [`nxp,pf1550-regulator`](../build/dts/api/bindings/regulator/nxp%2Cpf1550-regulator.md#std-dtcompatible-nxp-pf1550-regulator)
+  > - [`nordic,npm2100-regulator`](../build/dts/api/bindings/regulator/nordic,npm2100-regulator.md#std-dtcompatible-nordic-npm2100-regulator)
+  > - [`nxp,pf1550-regulator`](../build/dts/api/bindings/regulator/nxp,pf1550-regulator.md#std-dtcompatible-nxp-pf1550-regulator)
 - RNG
 
-  > - [`nordic,nrf-cracen-ctrdrbg`](../build/dts/api/bindings/rng/nordic%2Cnrf-cracen-ctrdrbg.md#std-dtcompatible-nordic-nrf-cracen-ctrdrbg)
-  > - [`nxp,ele-trng`](../build/dts/api/bindings/rng/nxp%2Cele-trng.md#std-dtcompatible-nxp-ele-trng)
-  > - [`renesas,ra-sce5-rng`](../build/dts/api/bindings/rng/renesas%2Cra-sce5-rng.md#std-dtcompatible-renesas-ra-sce5-rng)
-  > - [`renesas,ra-sce7-rng`](../build/dts/api/bindings/rng/renesas%2Cra-sce7-rng.md#std-dtcompatible-renesas-ra-sce7-rng)
-  > - [`renesas,ra-sce9-rng`](../build/dts/api/bindings/rng/renesas%2Cra-sce9-rng.md#std-dtcompatible-renesas-ra-sce9-rng)
-  > - [`renesas,ra-trng`](../build/dts/api/bindings/rng/renesas%2Cra-trng.md#std-dtcompatible-renesas-ra-trng)
-  > - [`sensry,sy1xx-trng`](../build/dts/api/bindings/rng/sensry%2Csy1xx-trng.md#std-dtcompatible-sensry-sy1xx-trng)
-  > - [`silabs,siwx91x-rng`](../build/dts/api/bindings/rng/silabs%2Csiwx91x-rng.md#std-dtcompatible-silabs-siwx91x-rng)
-  > - [`st,stm32-rng-noirq`](../build/dts/api/bindings/rng/st%2Cstm32-rng-noirq.md#std-dtcompatible-st-stm32-rng-noirq)
+  > - [`nordic,nrf-cracen-ctrdrbg`](../build/dts/api/bindings/rng/nordic,nrf-cracen-ctrdrbg.md#std-dtcompatible-nordic-nrf-cracen-ctrdrbg)
+  > - [`nxp,ele-trng`](../build/dts/api/bindings/rng/nxp,ele-trng.md#std-dtcompatible-nxp-ele-trng)
+  > - [`renesas,ra-sce5-rng`](../build/dts/api/bindings/rng/renesas,ra-sce5-rng.md#std-dtcompatible-renesas-ra-sce5-rng)
+  > - [`renesas,ra-sce7-rng`](../build/dts/api/bindings/rng/renesas,ra-sce7-rng.md#std-dtcompatible-renesas-ra-sce7-rng)
+  > - [`renesas,ra-sce9-rng`](../build/dts/api/bindings/rng/renesas,ra-sce9-rng.md#std-dtcompatible-renesas-ra-sce9-rng)
+  > - [`renesas,ra-trng`](../build/dts/api/bindings/rng/renesas,ra-trng.md#std-dtcompatible-renesas-ra-trng)
+  > - [`sensry,sy1xx-trng`](../build/dts/api/bindings/rng/sensry,sy1xx-trng.md#std-dtcompatible-sensry-sy1xx-trng)
+  > - [`silabs,siwx91x-rng`](../build/dts/api/bindings/rng/silabs,siwx91x-rng.md#std-dtcompatible-silabs-siwx91x-rng)
+  > - [`st,stm32-rng-noirq`](../build/dts/api/bindings/rng/st,stm32-rng-noirq.md#std-dtcompatible-st-stm32-rng-noirq)
 - RTC
 
-  > - [`epson,rx8130ce-rtc`](../build/dts/api/bindings/rtc/epson%2Crx8130ce.md#std-dtcompatible-epson-rx8130ce-rtc)
-  > - [`maxim,ds1337`](../build/dts/api/bindings/rtc/maxim%2Cds1337.md#std-dtcompatible-maxim-ds1337)
-  > - [`maxim,ds3231-rtc`](../build/dts/api/bindings/rtc/maxim%2Cds3231-rtc.md#std-dtcompatible-maxim-ds3231-rtc)
-  > - [`microcrystal,rv8803`](../build/dts/api/bindings/rtc/microcrystal%2Crv8803.md#std-dtcompatible-microcrystal-rv8803)
-  > - [`ti,bq32002`](../build/dts/api/bindings/rtc/ti%2Cbq32002.md#std-dtcompatible-ti-bq32002)
+  > - [`epson,rx8130ce-rtc`](../build/dts/api/bindings/rtc/epson,rx8130ce.md#std-dtcompatible-epson-rx8130ce-rtc)
+  > - [`maxim,ds1337`](../build/dts/api/bindings/rtc/maxim,ds1337.md#std-dtcompatible-maxim-ds1337)
+  > - [`maxim,ds3231-rtc`](../build/dts/api/bindings/rtc/maxim,ds3231-rtc.md#std-dtcompatible-maxim-ds3231-rtc)
+  > - [`microcrystal,rv8803`](../build/dts/api/bindings/rtc/microcrystal,rv8803.md#std-dtcompatible-microcrystal-rv8803)
+  > - [`ti,bq32002`](../build/dts/api/bindings/rtc/ti,bq32002.md#std-dtcompatible-ti-bq32002)
 - SDHC
 
-  > - [`renesas,ra-sdhc`](../build/dts/api/bindings/sdhc/renesas%2Cra-sdhc.md#std-dtcompatible-renesas-ra-sdhc)
+  > - [`renesas,ra-sdhc`](../build/dts/api/bindings/sdhc/renesas,ra-sdhc.md#std-dtcompatible-renesas-ra-sdhc)
 - Sensors
 
-  > - [`adi,adxl366`](../build/dts/api/compatibles/adi%2Cadxl366.md#std-dtcompatible-adi-adxl366)
+  > - [`adi,adxl366`](../build/dts/api/compatibles/adi,adxl366.md#std-dtcompatible-adi-adxl366)
   > - [`hc-sr04`](../build/dts/api/bindings/sensor/hc-sr04.md#std-dtcompatible-hc-sr04)
-  > - [`invensense,icm42370p`](../build/dts/api/compatibles/invensense%2Cicm42370p.md#std-dtcompatible-invensense-icm42370p)
-  > - [`invensense,icm42670s`](../build/dts/api/compatibles/invensense%2Cicm42670s.md#std-dtcompatible-invensense-icm42670s)
-  > - [`invensense,icp101xx`](../build/dts/api/bindings/sensor/invensense%2Cicp101xx.md#std-dtcompatible-invensense-icp101xx)
-  > - [`maxim,ds3231-sensor`](../build/dts/api/bindings/sensor/maxim%2Cds3231-sensor.md#std-dtcompatible-maxim-ds3231-sensor)
-  > - [`melexis,mlx90394`](../build/dts/api/bindings/sensor/melexis%2Cmlx90394.md#std-dtcompatible-melexis-mlx90394)
-  > - [`nordic,npm2100-vbat`](../build/dts/api/bindings/sensor/nordic%2Cnpm2100-vbat.md#std-dtcompatible-nordic-npm2100-vbat)
-  > - [`phosense,xbr818`](../build/dts/api/bindings/sensor/phosense%2Cxbr818.md#std-dtcompatible-phosense-xbr818)
-  > - [`renesas,hs400x`](../build/dts/api/bindings/sensor/renesas%2Chs400x.md#std-dtcompatible-renesas-hs400x)
-  > - [`sensirion,scd40`](../build/dts/api/bindings/sensor/sensirion%2Cscd40.md#std-dtcompatible-sensirion-scd40)
-  > - [`sensirion,scd41`](../build/dts/api/bindings/sensor/sensirion%2Cscd41.md#std-dtcompatible-sensirion-scd41)
-  > - [`sensirion,sts4x`](../build/dts/api/bindings/sensor/sensirion%2Csts4x.md#std-dtcompatible-sensirion-sts4x)
-  > - [`st,lis2duxs12`](../build/dts/api/compatibles/st%2Clis2duxs12.md#std-dtcompatible-st-lis2duxs12)
-  > - [`st,lsm6dsv16x`](../build/dts/api/compatibles/st%2Clsm6dsv16x.md#std-dtcompatible-st-lsm6dsv16x)
-  > - [`ti,tmag3001`](../build/dts/api/bindings/sensor/ti%2Ctmag3001.md#std-dtcompatible-ti-tmag3001)
-  > - [`ti,tmp435`](../build/dts/api/bindings/sensor/ti%2Ctmp435.md#std-dtcompatible-ti-tmp435)
-  > - [`we,wsen-pads-2511020213301`](../build/dts/api/compatibles/we%2Cwsen-pads-2511020213301.md#std-dtcompatible-we-wsen-pads-2511020213301)
-  > - [`we,wsen-pdus-25131308XXXXX`](../build/dts/api/bindings/sensor/we%2Cwsen-pdus-25131308XXXXX.md#std-dtcompatible-we-wsen-pdus-25131308XXXXX)
-  > - [`we,wsen-tids-2521020222501`](../build/dts/api/bindings/sensor/we%2Cwsen-tids-2521020222501.md#std-dtcompatible-we-wsen-tids-2521020222501)
+  > - [`invensense,icm42370p`](../build/dts/api/compatibles/invensense,icm42370p.md#std-dtcompatible-invensense-icm42370p)
+  > - [`invensense,icm42670s`](../build/dts/api/compatibles/invensense,icm42670s.md#std-dtcompatible-invensense-icm42670s)
+  > - [`invensense,icp101xx`](../build/dts/api/bindings/sensor/invensense,icp101xx.md#std-dtcompatible-invensense-icp101xx)
+  > - [`maxim,ds3231-sensor`](../build/dts/api/bindings/sensor/maxim,ds3231-sensor.md#std-dtcompatible-maxim-ds3231-sensor)
+  > - [`melexis,mlx90394`](../build/dts/api/bindings/sensor/melexis,mlx90394.md#std-dtcompatible-melexis-mlx90394)
+  > - [`nordic,npm2100-vbat`](../build/dts/api/bindings/sensor/nordic,npm2100-vbat.md#std-dtcompatible-nordic-npm2100-vbat)
+  > - [`phosense,xbr818`](../build/dts/api/bindings/sensor/phosense,xbr818.md#std-dtcompatible-phosense-xbr818)
+  > - [`renesas,hs400x`](../build/dts/api/bindings/sensor/renesas,hs400x.md#std-dtcompatible-renesas-hs400x)
+  > - [`sensirion,scd40`](../build/dts/api/bindings/sensor/sensirion,scd40.md#std-dtcompatible-sensirion-scd40)
+  > - [`sensirion,scd41`](../build/dts/api/bindings/sensor/sensirion,scd41.md#std-dtcompatible-sensirion-scd41)
+  > - [`sensirion,sts4x`](../build/dts/api/bindings/sensor/sensirion,sts4x.md#std-dtcompatible-sensirion-sts4x)
+  > - [`st,lis2duxs12`](../build/dts/api/compatibles/st,lis2duxs12.md#std-dtcompatible-st-lis2duxs12)
+  > - [`st,lsm6dsv16x`](../build/dts/api/compatibles/st,lsm6dsv16x.md#std-dtcompatible-st-lsm6dsv16x)
+  > - [`ti,tmag3001`](../build/dts/api/bindings/sensor/ti,tmag3001.md#std-dtcompatible-ti-tmag3001)
+  > - [`ti,tmp435`](../build/dts/api/bindings/sensor/ti,tmp435.md#std-dtcompatible-ti-tmp435)
+  > - [`we,wsen-pads-2511020213301`](../build/dts/api/compatibles/we,wsen-pads-2511020213301.md#std-dtcompatible-we-wsen-pads-2511020213301)
+  > - [`we,wsen-pdus-25131308XXXXX`](../build/dts/api/bindings/sensor/we,wsen-pdus-25131308XXXXX.md#std-dtcompatible-we-wsen-pdus-25131308XXXXX)
+  > - [`we,wsen-tids-2521020222501`](../build/dts/api/bindings/sensor/we,wsen-tids-2521020222501.md#std-dtcompatible-we-wsen-tids-2521020222501)
 - Serial controller
 
-  > - [`microchip,mec5-uart`](../build/dts/api/bindings/serial/microchip%2Cmec5-uart.md#std-dtcompatible-microchip-mec5-uart)
-  > - [`realtek,rts5912-uart`](../build/dts/api/bindings/serial/realtek%2Crts5912-uart.md#std-dtcompatible-realtek-rts5912-uart)
-  > - [`renesas,rz-scif-uart`](../build/dts/api/bindings/serial/renesas%2Crz-scif-uart.md#std-dtcompatible-renesas-rz-scif-uart)
-  > - [`silabs,eusart-uart`](../build/dts/api/bindings/serial/silabs%2Ceusart-uart.md#std-dtcompatible-silabs-eusart-uart)
-  > - [`silabs,usart-uart`](../build/dts/api/bindings/serial/silabs%2Cusart-uart.md#std-dtcompatible-silabs-usart-uart)
-  > - [`ti,cc23x0-uart`](../build/dts/api/bindings/serial/ti%2Ccc23x0-uart.md#std-dtcompatible-ti-cc23x0-uart)
-  > - [`wch,usart`](../build/dts/api/bindings/serial/wch%2Cusart.md#std-dtcompatible-wch-usart)
+  > - [`microchip,mec5-uart`](../build/dts/api/bindings/serial/microchip,mec5-uart.md#std-dtcompatible-microchip-mec5-uart)
+  > - [`realtek,rts5912-uart`](../build/dts/api/bindings/serial/realtek,rts5912-uart.md#std-dtcompatible-realtek-rts5912-uart)
+  > - [`renesas,rz-scif-uart`](../build/dts/api/bindings/serial/renesas,rz-scif-uart.md#std-dtcompatible-renesas-rz-scif-uart)
+  > - [`silabs,eusart-uart`](../build/dts/api/bindings/serial/silabs,eusart-uart.md#std-dtcompatible-silabs-eusart-uart)
+  > - [`silabs,usart-uart`](../build/dts/api/bindings/serial/silabs,usart-uart.md#std-dtcompatible-silabs-usart-uart)
+  > - [`ti,cc23x0-uart`](../build/dts/api/bindings/serial/ti,cc23x0-uart.md#std-dtcompatible-ti-cc23x0-uart)
+  > - [`wch,usart`](../build/dts/api/bindings/serial/wch,usart.md#std-dtcompatible-wch-usart)
 - SPI
 
-  > - [`ite,it8xxx2-spi`](../build/dts/api/bindings/spi/ite%2Cit8xxx2-spi.md#std-dtcompatible-ite-it8xxx2-spi)
-  > - [`nxp,lpspi`](../build/dts/api/bindings/spi/nxp%2Clpspi.md#std-dtcompatible-nxp-lpspi)
-  > - [`nxp,xspi`](../build/dts/api/bindings/spi/nxp%2Cxspi.md#std-dtcompatible-nxp-xspi)
-  > - [`renesas,ra-spi`](../build/dts/api/bindings/spi/renesas%2Cra-spi.md#std-dtcompatible-renesas-ra-spi)
+  > - [`ite,it8xxx2-spi`](../build/dts/api/bindings/spi/ite,it8xxx2-spi.md#std-dtcompatible-ite-it8xxx2-spi)
+  > - [`nxp,lpspi`](../build/dts/api/bindings/spi/nxp,lpspi.md#std-dtcompatible-nxp-lpspi)
+  > - [`nxp,xspi`](../build/dts/api/bindings/spi/nxp,xspi.md#std-dtcompatible-nxp-xspi)
+  > - [`renesas,ra-spi`](../build/dts/api/bindings/spi/renesas,ra-spi.md#std-dtcompatible-renesas-ra-spi)
 - Stepper
 
-  > - [`adi,tmc2209`](../build/dts/api/bindings/stepper/adi/adi%2Ctmc2209.md#std-dtcompatible-adi-tmc2209)
+  > - [`adi,tmc2209`](../build/dts/api/bindings/stepper/adi/adi,tmc2209.md#std-dtcompatible-adi-tmc2209)
   > - `ti,drv8424`
 - TCPC
 
-  > - [`richtek,rt1715`](../build/dts/api/bindings/tcpc/richtek%2Crt1715.md#std-dtcompatible-richtek-rt1715)
+  > - [`richtek,rt1715`](../build/dts/api/bindings/tcpc/richtek,rt1715.md#std-dtcompatible-richtek-rt1715)
 - Timer
 
-  > - [`mediatek,ostimer64`](../build/dts/api/bindings/timer/mediatek%2Costimer64.md#std-dtcompatible-mediatek-ostimer64)
-  > - [`realtek,rts5912-rtmr`](../build/dts/api/bindings/timer/realtek%2Crts5912-rtmr.md#std-dtcompatible-realtek-rts5912-rtmr)
-  > - [`realtek,rts5912-slwtimer`](../build/dts/api/bindings/counter/realtek%2Crts5912-slwtimer.md#std-dtcompatible-realtek-rts5912-slwtimer)
-  > - [`renesas,rz-gpt`](../build/dts/api/bindings/timer/renesas%2Crz-gpt.md#std-dtcompatible-renesas-rz-gpt)
-  > - [`renesas,rz-gtm`](../build/dts/api/bindings/timer/renesas%2Crz-gtm.md#std-dtcompatible-renesas-rz-gtm)
-  > - [`riscv,machine-timer`](../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer)
-  > - [`ti,cc23x0-systim-timer`](../build/dts/api/bindings/timer/ti%2Ccc23x0-timer.md#std-dtcompatible-ti-cc23x0-systim-timer)
-  > - [`wch,systick`](../build/dts/api/bindings/timer/wch%2Csystick.md#std-dtcompatible-wch-systick)
+  > - [`mediatek,ostimer64`](../build/dts/api/bindings/timer/mediatek,ostimer64.md#std-dtcompatible-mediatek-ostimer64)
+  > - [`realtek,rts5912-rtmr`](../build/dts/api/bindings/timer/realtek,rts5912-rtmr.md#std-dtcompatible-realtek-rts5912-rtmr)
+  > - [`realtek,rts5912-slwtimer`](../build/dts/api/bindings/counter/realtek,rts5912-slwtimer.md#std-dtcompatible-realtek-rts5912-slwtimer)
+  > - [`renesas,rz-gpt`](../build/dts/api/bindings/timer/renesas,rz-gpt.md#std-dtcompatible-renesas-rz-gpt)
+  > - [`renesas,rz-gtm`](../build/dts/api/bindings/timer/renesas,rz-gtm.md#std-dtcompatible-renesas-rz-gtm)
+  > - [`riscv,machine-timer`](../build/dts/api/bindings/timer/riscv,machine-timer.md#std-dtcompatible-riscv-machine-timer)
+  > - [`ti,cc23x0-systim-timer`](../build/dts/api/bindings/timer/ti,cc23x0-timer.md#std-dtcompatible-ti-cc23x0-systim-timer)
+  > - [`wch,systick`](../build/dts/api/bindings/timer/wch,systick.md#std-dtcompatible-wch-systick)
 - USB
 
-  > - [`ambiq,usb`](../build/dts/api/bindings/usb/ambiq%2Cusb.md#std-dtcompatible-ambiq-usb)
-  > - [`renesas,ra-udc`](../build/dts/api/bindings/usb/renesas/renesas%2Cra-udc.md#std-dtcompatible-renesas-ra-udc)
-  > - [`renesas,ra-usbfs`](../build/dts/api/bindings/usb/renesas/renesas%2Cra-usbfs.md#std-dtcompatible-renesas-ra-usbfs)
-  > - [`renesas,ra-usbhs`](../build/dts/api/bindings/usb/renesas/renesas%2Cra-usbhs.md#std-dtcompatible-renesas-ra-usbhs)
-  > - [`zephyr,midi2-device`](../build/dts/api/bindings/usb/zephyr%2Cmidi2-device.md#std-dtcompatible-zephyr-midi2-device)
+  > - [`ambiq,usb`](../build/dts/api/bindings/usb/ambiq,usb.md#std-dtcompatible-ambiq-usb)
+  > - [`renesas,ra-udc`](../build/dts/api/bindings/usb/renesas/renesas,ra-udc.md#std-dtcompatible-renesas-ra-udc)
+  > - [`renesas,ra-usbfs`](../build/dts/api/bindings/usb/renesas/renesas,ra-usbfs.md#std-dtcompatible-renesas-ra-usbfs)
+  > - [`renesas,ra-usbhs`](../build/dts/api/bindings/usb/renesas/renesas,ra-usbhs.md#std-dtcompatible-renesas-ra-usbhs)
+  > - [`zephyr,midi2-device`](../build/dts/api/bindings/usb/zephyr,midi2-device.md#std-dtcompatible-zephyr-midi2-device)
 - Video
 
-  > - [`zephyr,video-emul-imager`](../build/dts/api/bindings/video/zephyr%2Cvideo-emul-imager.md#std-dtcompatible-zephyr-video-emul-imager)
-  > - [`zephyr,video-emul-rx`](../build/dts/api/bindings/video/zephyr%2Cvideo-emul-rx.md#std-dtcompatible-zephyr-video-emul-rx)
+  > - [`zephyr,video-emul-imager`](../build/dts/api/bindings/video/zephyr,video-emul-imager.md#std-dtcompatible-zephyr-video-emul-imager)
+  > - [`zephyr,video-emul-rx`](../build/dts/api/bindings/video/zephyr,video-emul-rx.md#std-dtcompatible-zephyr-video-emul-rx)
 - Watchdog
 
-  > - [`atmel,sam4l-watchdog`](../build/dts/api/bindings/watchdog/atmel%2Csam4l-watchdog.md#std-dtcompatible-atmel-sam4l-watchdog)
-  > - [`nordic,npm2100-wdt`](../build/dts/api/bindings/watchdog/nordic%2Cnpm2100-wdt.md#std-dtcompatible-nordic-npm2100-wdt)
-  > - [`nxp,rtwdog`](../build/dts/api/bindings/watchdog/nxp%2Crtwdog.md#std-dtcompatible-nxp-rtwdog)
+  > - [`atmel,sam4l-watchdog`](../build/dts/api/bindings/watchdog/atmel,sam4l-watchdog.md#std-dtcompatible-atmel-sam4l-watchdog)
+  > - [`nordic,npm2100-wdt`](../build/dts/api/bindings/watchdog/nordic,npm2100-wdt.md#std-dtcompatible-nordic-npm2100-wdt)
+  > - [`nxp,rtwdog`](../build/dts/api/bindings/watchdog/nxp,rtwdog.md#std-dtcompatible-nxp-rtwdog)
 - Wi-Fi
 
-  > - [`infineon,airoc-wifi`](../build/dts/api/compatibles/infineon%2Cairoc-wifi.md#std-dtcompatible-infineon-airoc-wifi)
-  > - [`silabs,siwx91x-wifi`](../build/dts/api/bindings/wifi/silabs%2Csiwx91x-wifi.md#std-dtcompatible-silabs-siwx91x-wifi)
+  > - [`infineon,airoc-wifi`](../build/dts/api/compatibles/infineon,airoc-wifi.md#std-dtcompatible-infineon-airoc-wifi)
+  > - [`silabs,siwx91x-wifi`](../build/dts/api/bindings/wifi/silabs,siwx91x-wifi.md#std-dtcompatible-silabs-siwx91x-wifi)
 
 ## New Samples
 

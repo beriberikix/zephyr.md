@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `st,lsm6dso` may be handled by any
 of the following bindings:
 
-- [st,lsm6dso (on spi bus)](../bindings/sensor/st%2Clsm6dso-spi.md#dtbinding-st-lsm6dso-spi)
-- [st,lsm6dso (on i2c bus)](../bindings/sensor/st%2Clsm6dso-i2c.md#dtbinding-st-lsm6dso-i2c)
+- [st,lsm6dso (on spi bus)](../bindings/sensor/st,lsm6dso-spi.md#dtbinding-st-lsm6dso-spi)
+- [st,lsm6dso (on i2c bus)](../bindings/sensor/st,lsm6dso-i2c.md#dtbinding-st-lsm6dso-i2c)

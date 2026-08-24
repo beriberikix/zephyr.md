@@ -113,7 +113,7 @@ a block device. The flashdisk instances are defined in devicetree:
 };
 ```
 
-The cache size specified in [`zephyr,flash-disk`](../../../build/dts/api/bindings/misc/zephyr%2Cflash-disk.md#std-dtcompatible-zephyr-flash-disk) node should be
+The cache size specified in [`zephyr,flash-disk`](../../../build/dts/api/bindings/misc/zephyr,flash-disk.md#std-dtcompatible-zephyr-flash-disk) node should be
 equal to backing partition minimum erasable block size.
 
 ### NVMe disk support

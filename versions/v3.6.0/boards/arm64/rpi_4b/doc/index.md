@@ -25,9 +25,9 @@ hardware features:
 
 | Peripheral | Kconfig option | Devicetree compatible |
 | --- | --- | --- |
-| GIC-400 | N/A | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cgic-v2.md#std-dtcompatible-arm-gic-v2) |
-| GPIO | [`CONFIG_GPIO`](../../../../kconfig.md#CONFIG_GPIO "CONFIG_GPIO") | [`brcm,bcm2711-gpio`](../../../../build/dts/api/bindings/gpio/brcm%2Cbcm2711-gpio.md#std-dtcompatible-brcm-bcm2711-gpio) |
-| UART (Mini UART) | [`CONFIG_SERIAL`](../../../../kconfig.md#CONFIG_SERIAL "CONFIG_SERIAL") | [`brcm,bcm2711-aux-uart`](../../../../build/dts/api/bindings/serial/brcm%2Cbcm2711-aux-uart.md#std-dtcompatible-brcm-bcm2711-aux-uart) |
+| GIC-400 | N/A | [`arm,gic-v2`](../../../../build/dts/api/bindings/interrupt-controller/arm,gic-v2.md#std-dtcompatible-arm-gic-v2) |
+| GPIO | [`CONFIG_GPIO`](../../../../kconfig.md#CONFIG_GPIO "CONFIG_GPIO") | [`brcm,bcm2711-gpio`](../../../../build/dts/api/bindings/gpio/brcm,bcm2711-gpio.md#std-dtcompatible-brcm-bcm2711-gpio) |
+| UART (Mini UART) | [`CONFIG_SERIAL`](../../../../kconfig.md#CONFIG_SERIAL "CONFIG_SERIAL") | [`brcm,bcm2711-aux-uart`](../../../../build/dts/api/bindings/serial/brcm,bcm2711-aux-uart.md#std-dtcompatible-brcm-bcm2711-aux-uart) |
 
 Other hardware features have not been enabled yet for this board.
 

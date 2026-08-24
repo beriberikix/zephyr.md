@@ -48,24 +48,24 @@ features:
 
 | Peripheral | Kconfig option | Devicetree compatible |
 | --- | --- | --- |
-| GPIO | [`CONFIG_GPIO_SAM`](../../../../kconfig.md#CONFIG_GPIO_SAM "CONFIG_GPIO_SAM") | [`atmel,sam-gpio`](../../../../build/dts/api/bindings/gpio/atmel%2Csam-gpio.md#std-dtcompatible-atmel-sam-gpio) |
-| USART | [`CONFIG_USART_SAM`](../../../../kconfig.md#CONFIG_USART_SAM "CONFIG_USART_SAM") | [`atmel,sam-usart`](../../../../build/dts/api/bindings/serial/atmel%2Csam-usart.md#std-dtcompatible-atmel-sam-usart) |
-| UART | [`CONFIG_UART_SAM`](../../../../kconfig.md#CONFIG_UART_SAM "CONFIG_UART_SAM") | [`atmel,sam-uart`](../../../../build/dts/api/bindings/serial/atmel%2Csam-uart.md#std-dtcompatible-atmel-sam-uart) |
-| SPI | [`CONFIG_SPI_SAM`](../../../../kconfig.md#CONFIG_SPI_SAM "CONFIG_SPI_SAM") | [`atmel,sam-spi`](../../../../build/dts/api/bindings/spi/atmel%2Csam-spi.md#std-dtcompatible-atmel-sam-spi) |
-| I2C | [`CONFIG_I2C_SAM_TWIHS`](../../../../kconfig.md#CONFIG_I2C_SAM_TWIHS "CONFIG_I2C_SAM_TWIHS") | [`atmel,sam-i2c-twihs`](../../../../build/dts/api/bindings/i2c/atmel%2Csam-i2c-twihs.md#std-dtcompatible-atmel-sam-i2c-twihs) |
-| I2S | [`CONFIG_I2S_SAM_SSC`](../../../../kconfig.md#CONFIG_I2S_SAM_SSC "CONFIG_I2S_SAM_SSC") | [`atmel,sam-ssc`](../../../../build/dts/api/bindings/arm/atmel%2Csam-ssc.md#std-dtcompatible-atmel-sam-ssc) |
-| ADC | [`CONFIG_ADC_SAM_AFEC`](../../../../kconfig.md#CONFIG_ADC_SAM_AFEC "CONFIG_ADC_SAM_AFEC") | [`atmel,sam-afec`](../../../../build/dts/api/bindings/adc/atmel%2Csam-afec.md#std-dtcompatible-atmel-sam-afec) |
-| DAC | [`CONFIG_DAC_SAM`](../../../../kconfig.md#CONFIG_DAC_SAM "CONFIG_DAC_SAM") | [`atmel,sam-dac`](../../../../build/dts/api/bindings/dac/atmel%2Csam-dac.md#std-dtcompatible-atmel-sam-dac) |
-| PWM | [`CONFIG_PWM_SAM`](../../../../kconfig.md#CONFIG_PWM_SAM "CONFIG_PWM_SAM") | [`atmel,sam-pwm`](../../../../build/dts/api/bindings/pwm/atmel%2Csam-pwm.md#std-dtcompatible-atmel-sam-pwm) |
-| CAN | [`CONFIG_CAN_SAM`](../../../../kconfig.md#CONFIG_CAN_SAM "CONFIG_CAN_SAM") | [`atmel,sam-can`](../../../../build/dts/api/bindings/can/atmel%2Csam-can.md#std-dtcompatible-atmel-sam-can) |
-| USB | [`CONFIG_USB_DC_SAM_USBHS`](../../../../kconfig.md#CONFIG_USB_DC_SAM_USBHS "CONFIG_USB_DC_SAM_USBHS") | [`atmel,sam-usbhs`](../../../../build/dts/api/bindings/usb/atmel%2Csam-usbhs.md#std-dtcompatible-atmel-sam-usbhs) |
-| WATCHDOG | [`CONFIG_WDT_SAM`](../../../../kconfig.md#CONFIG_WDT_SAM "CONFIG_WDT_SAM") | [`atmel,sam-watchdog`](../../../../build/dts/api/bindings/watchdog/atmel%2Csam-watchdog.md#std-dtcompatible-atmel-sam-watchdog) |
-| NVIC | N/A | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm%2Cv7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
+| GPIO | [`CONFIG_GPIO_SAM`](../../../../kconfig.md#CONFIG_GPIO_SAM "CONFIG_GPIO_SAM") | [`atmel,sam-gpio`](../../../../build/dts/api/bindings/gpio/atmel,sam-gpio.md#std-dtcompatible-atmel-sam-gpio) |
+| USART | [`CONFIG_USART_SAM`](../../../../kconfig.md#CONFIG_USART_SAM "CONFIG_USART_SAM") | [`atmel,sam-usart`](../../../../build/dts/api/bindings/serial/atmel,sam-usart.md#std-dtcompatible-atmel-sam-usart) |
+| UART | [`CONFIG_UART_SAM`](../../../../kconfig.md#CONFIG_UART_SAM "CONFIG_UART_SAM") | [`atmel,sam-uart`](../../../../build/dts/api/bindings/serial/atmel,sam-uart.md#std-dtcompatible-atmel-sam-uart) |
+| SPI | [`CONFIG_SPI_SAM`](../../../../kconfig.md#CONFIG_SPI_SAM "CONFIG_SPI_SAM") | [`atmel,sam-spi`](../../../../build/dts/api/bindings/spi/atmel,sam-spi.md#std-dtcompatible-atmel-sam-spi) |
+| I2C | [`CONFIG_I2C_SAM_TWIHS`](../../../../kconfig.md#CONFIG_I2C_SAM_TWIHS "CONFIG_I2C_SAM_TWIHS") | [`atmel,sam-i2c-twihs`](../../../../build/dts/api/bindings/i2c/atmel,sam-i2c-twihs.md#std-dtcompatible-atmel-sam-i2c-twihs) |
+| I2S | [`CONFIG_I2S_SAM_SSC`](../../../../kconfig.md#CONFIG_I2S_SAM_SSC "CONFIG_I2S_SAM_SSC") | [`atmel,sam-ssc`](../../../../build/dts/api/bindings/arm/atmel,sam-ssc.md#std-dtcompatible-atmel-sam-ssc) |
+| ADC | [`CONFIG_ADC_SAM_AFEC`](../../../../kconfig.md#CONFIG_ADC_SAM_AFEC "CONFIG_ADC_SAM_AFEC") | [`atmel,sam-afec`](../../../../build/dts/api/bindings/adc/atmel,sam-afec.md#std-dtcompatible-atmel-sam-afec) |
+| DAC | [`CONFIG_DAC_SAM`](../../../../kconfig.md#CONFIG_DAC_SAM "CONFIG_DAC_SAM") | [`atmel,sam-dac`](../../../../build/dts/api/bindings/dac/atmel,sam-dac.md#std-dtcompatible-atmel-sam-dac) |
+| PWM | [`CONFIG_PWM_SAM`](../../../../kconfig.md#CONFIG_PWM_SAM "CONFIG_PWM_SAM") | [`atmel,sam-pwm`](../../../../build/dts/api/bindings/pwm/atmel,sam-pwm.md#std-dtcompatible-atmel-sam-pwm) |
+| CAN | [`CONFIG_CAN_SAM`](../../../../kconfig.md#CONFIG_CAN_SAM "CONFIG_CAN_SAM") | [`atmel,sam-can`](../../../../build/dts/api/bindings/can/atmel,sam-can.md#std-dtcompatible-atmel-sam-can) |
+| USB | [`CONFIG_USB_DC_SAM_USBHS`](../../../../kconfig.md#CONFIG_USB_DC_SAM_USBHS "CONFIG_USB_DC_SAM_USBHS") | [`atmel,sam-usbhs`](../../../../build/dts/api/bindings/usb/atmel,sam-usbhs.md#std-dtcompatible-atmel-sam-usbhs) |
+| WATCHDOG | [`CONFIG_WDT_SAM`](../../../../kconfig.md#CONFIG_WDT_SAM "CONFIG_WDT_SAM") | [`atmel,sam-watchdog`](../../../../build/dts/api/bindings/watchdog/atmel,sam-watchdog.md#std-dtcompatible-atmel-sam-watchdog) |
+| NVIC | N/A | [`arm,v7m-nvic`](../../../../build/dts/api/bindings/interrupt-controller/arm,v7m-nvic.md#std-dtcompatible-arm-v7m-nvic) |
 | SYSTICK | N/A | N/A |
-| COUNTER | [`CONFIG_COUNTER_SAM_TC`](../../../../kconfig.md#CONFIG_COUNTER_SAM_TC "CONFIG_COUNTER_SAM_TC") | [`atmel,sam-tc`](../../../../build/dts/api/bindings/timer/atmel%2Csam-tc.md#std-dtcompatible-atmel-sam-tc) |
-| DMA | [`CONFIG_DMA_SAM_XDMAC`](../../../../kconfig.md#CONFIG_DMA_SAM_XDMAC "CONFIG_DMA_SAM_XDMAC") | [`atmel,sam-xdmac`](../../../../build/dts/api/bindings/dma/atmel%2Csam-xdmac.md#std-dtcompatible-atmel-sam-xdmac) |
-| ENTROPY | [`CONFIG_ENTROPY_SAM_RNG`](../../../../kconfig.md#CONFIG_ENTROPY_SAM_RNG "CONFIG_ENTROPY_SAM_RNG") | [`atmel,sam-trng`](../../../../build/dts/api/bindings/rng/atmel%2Csam-trng.md#std-dtcompatible-atmel-sam-trng) |
-| HWINFO (reset cause) | [`CONFIG_HWINFO_SAM_RSTC`](../../../../kconfig.md#CONFIG_HWINFO_SAM_RSTC "CONFIG_HWINFO_SAM_RSTC") | [`atmel,sam-rstc`](../../../../build/dts/api/bindings/hwinfo/atmel%2Csam-rstc.md#std-dtcompatible-atmel-sam-rstc) |
+| COUNTER | [`CONFIG_COUNTER_SAM_TC`](../../../../kconfig.md#CONFIG_COUNTER_SAM_TC "CONFIG_COUNTER_SAM_TC") | [`atmel,sam-tc`](../../../../build/dts/api/bindings/timer/atmel,sam-tc.md#std-dtcompatible-atmel-sam-tc) |
+| DMA | [`CONFIG_DMA_SAM_XDMAC`](../../../../kconfig.md#CONFIG_DMA_SAM_XDMAC "CONFIG_DMA_SAM_XDMAC") | [`atmel,sam-xdmac`](../../../../build/dts/api/bindings/dma/atmel,sam-xdmac.md#std-dtcompatible-atmel-sam-xdmac) |
+| ENTROPY | [`CONFIG_ENTROPY_SAM_RNG`](../../../../kconfig.md#CONFIG_ENTROPY_SAM_RNG "CONFIG_ENTROPY_SAM_RNG") | [`atmel,sam-trng`](../../../../build/dts/api/bindings/rng/atmel,sam-trng.md#std-dtcompatible-atmel-sam-trng) |
+| HWINFO (reset cause) | [`CONFIG_HWINFO_SAM_RSTC`](../../../../kconfig.md#CONFIG_HWINFO_SAM_RSTC "CONFIG_HWINFO_SAM_RSTC") | [`atmel,sam-rstc`](../../../../build/dts/api/bindings/hwinfo/atmel,sam-rstc.md#std-dtcompatible-atmel-sam-rstc) |
 | HWINFO (device id) | [`CONFIG_HWINFO_SAM`](../../../../kconfig.md#CONFIG_HWINFO_SAM "CONFIG_HWINFO_SAM") | N/A |
 
 The default configuration can be found in the Kconfig

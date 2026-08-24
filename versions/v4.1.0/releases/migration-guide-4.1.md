@@ -72,7 +72,7 @@ Function renames and modifications:
 ## [Devicetree](#id8)
 
 - The `microchip,cap1203` driver has changed its compatible to
-  [`microchip,cap12xx`](../build/dts/api/bindings/input/microchip%2Ccap12xx.md#std-dtcompatible-microchip-cap12xx) and has been updated to support multiple
+  [`microchip,cap12xx`](../build/dts/api/bindings/input/microchip,cap12xx.md#std-dtcompatible-microchip-cap12xx) and has been updated to support multiple
   channels.
   The number of available channels is derived from the length of the devicetree
   array property `input-codes`.
@@ -131,7 +131,7 @@ Function renames and modifications:
 
 ### [ADC](#id16)
 
-- Renamed the `compatible` from `nxp,kinetis-adc12` to [`nxp,adc12`](../build/dts/api/bindings/adc/nxp%2Cadc12.md#std-dtcompatible-nxp-adc12).
+- Renamed the `compatible` from `nxp,kinetis-adc12` to [`nxp,adc12`](../build/dts/api/bindings/adc/nxp,adc12.md#std-dtcompatible-nxp-adc12).
 
 ### [Clock](#id17)
 
@@ -148,7 +148,7 @@ Function renames and modifications:
 
 ### [Controller Area Network (CAN)](#id19)
 
-- Renamed the [`infineon,xmc4xxx-can-node`](../build/dts/api/bindings/can/infineon%2Cxmc4xxx-can-node.md#std-dtcompatible-infineon-xmc4xxx-can-node) devicetree property `clock_div8` to
+- Renamed the [`infineon,xmc4xxx-can-node`](../build/dts/api/bindings/can/infineon,xmc4xxx-can-node.md#std-dtcompatible-infineon-xmc4xxx-can-node) devicetree property `clock_div8` to
   `clock-div8` ([GitHub #83782](https://github.com/zephyrproject-rtos/zephyr/issues/83782)).
 
 ### [Display](#id20)
@@ -221,7 +221,7 @@ Function renames and modifications:
 - Renamed the device tree property `bit_per_gpio` to `bit-per-gpio`.
 - Renamed the device tree property `off_val` to `off-val`.
 - Renamed the device tree property `on_val` to `on-val`.
-- Renamed the `compatible` from `ti,ads114s0x-gpio` to [`ti,ads1x4s0x-gpio`](../build/dts/api/bindings/gpio/ti%2Cads1x4s0x-gpio.md#std-dtcompatible-ti-ads1x4s0x-gpio).
+- Renamed the `compatible` from `ti,ads114s0x-gpio` to [`ti,ads1x4s0x-gpio`](../build/dts/api/bindings/gpio/ti,ads1x4s0x-gpio.md#std-dtcompatible-ti-ads1x4s0x-gpio).
 
 ### [HWSPINLOCK](#id27)
 
@@ -229,7 +229,7 @@ Function renames and modifications:
 
 ### [I2C](#id28)
 
-- Renamed the `compatible` from `nxp,imx-lpi2c` to [`nxp,lpi2c`](../build/dts/api/bindings/i2c/nxp%2Clpi2c.md#std-dtcompatible-nxp-lpi2c).
+- Renamed the `compatible` from `nxp,imx-lpi2c` to [`nxp,lpi2c`](../build/dts/api/bindings/i2c/nxp,lpi2c.md#std-dtcompatible-nxp-lpi2c).
 - Renamed the device tree property `port_sel` to `` port-sel` ``.
 
 ### [I2S](#id29)
@@ -244,7 +244,7 @@ Function renames and modifications:
 
 ### [PWM](#id32)
 
-- Renamed the `compatible` from `renesas,ra8-pwm` to [`renesas,ra-pwm`](../build/dts/api/bindings/pwm/renesas%2Cra-pwm.md#std-dtcompatible-renesas-ra-pwm).
+- Renamed the `compatible` from `renesas,ra8-pwm` to [`renesas,ra-pwm`](../build/dts/api/bindings/pwm/renesas,ra-pwm.md#std-dtcompatible-renesas-ra-pwm).
 
 ### [Interrupt Controller](#id33)
 
@@ -266,16 +266,16 @@ Function renames and modifications:
 
 ### [MMU/MPU](#id36)
 
-- Renamed the `compatible` from `nxp,kinetis-mpu` to [`nxp,sysmpu`](../build/dts/api/bindings/mmu_mpu/nxp%2Csysmpu.md#std-dtcompatible-nxp-sysmpu) and added
+- Renamed the `compatible` from `nxp,kinetis-mpu` to [`nxp,sysmpu`](../build/dts/api/bindings/mmu_mpu/nxp,sysmpu.md#std-dtcompatible-nxp-sysmpu) and added
   its corresponding binding.
 - Renamed the Kconfig option `CPU_HAS_NXP_MPU` to `CPU_HAS_NXP_SYSMPU`.
 
 ### [Pin Control](#id37)
 
-> - Renamed the `compatible` from `nxp,kinetis-pinctrl` to [`nxp,port-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cport-pinctrl.md#std-dtcompatible-nxp-port-pinctrl).
-> - Renamed the `compatible` from `nxp,kinetis-pinmux` to [`nxp,port-pinmux`](../build/dts/api/bindings/pinctrl/nxp%2Cport-pinmux.md#std-dtcompatible-nxp-port-pinmux).
+> - Renamed the `compatible` from `nxp,kinetis-pinctrl` to [`nxp,port-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,port-pinctrl.md#std-dtcompatible-nxp-port-pinctrl).
+> - Renamed the `compatible` from `nxp,kinetis-pinmux` to [`nxp,port-pinmux`](../build/dts/api/bindings/pinctrl/nxp,port-pinmux.md#std-dtcompatible-nxp-port-pinmux).
 > - Silabs Series 2 devices now use a new pinctrl driver selected by
->   [`silabs,dbus-pinctrl`](../build/dts/api/bindings/pinctrl/silabs%2Cdbus-pinctrl.md#std-dtcompatible-silabs-dbus-pinctrl). This driver allows the configuration of GPIO properties
+>   [`silabs,dbus-pinctrl`](../build/dts/api/bindings/pinctrl/silabs,dbus-pinctrl.md#std-dtcompatible-silabs-dbus-pinctrl). This driver allows the configuration of GPIO properties
 >   through device tree, rather than having them hard-coded for each supported signal. It also
 >   supports all possible digital bus signals by including a binding header such as
 >   [include/zephyr/dt-bindings/pinctrl/silabs/xg24-pinctrl.h](https://github.com/zephyrproject-rtos/zephyr/blob/main/include/zephyr/dt-bindings/pinctrl/silabs/xg24-pinctrl.h).
@@ -300,7 +300,7 @@ Function renames and modifications:
 
 ### [PWM](#id38)
 
-- Renamed the `compatible` from `nxp,kinetis-ftm-pwm` to [`nxp,ftm-pwm`](../build/dts/api/bindings/pwm/nxp%2Cftm-pwm.md#std-dtcompatible-nxp-ftm-pwm).
+- Renamed the `compatible` from `nxp,kinetis-ftm-pwm` to [`nxp,ftm-pwm`](../build/dts/api/bindings/pwm/nxp,ftm-pwm.md#std-dtcompatible-nxp-ftm-pwm).
 
 ### [SDHC](#id39)
 
@@ -310,7 +310,7 @@ Function renames and modifications:
 ### [Sensors](#id40)
 
 > - The `we,wsen-pads` driver has been renamed to
->   [`we,wsen-pads-2511020213301`](../build/dts/api/compatibles/we%2Cwsen-pads-2511020213301.md#std-dtcompatible-we-wsen-pads-2511020213301).
+>   [`we,wsen-pads-2511020213301`](../build/dts/api/compatibles/we,wsen-pads-2511020213301.md#std-dtcompatible-we-wsen-pads-2511020213301).
 >   The Device Tree can be configured as follows:
 >
 >   ```devicetree
@@ -324,7 +324,7 @@ Function renames and modifications:
 >   };
 >   ```
 > - The `we,wsen-pdus` driver has been renamed to
->   [`we,wsen-pdus-25131308XXXXX`](../build/dts/api/bindings/sensor/we%2Cwsen-pdus-25131308XXXXX.md#std-dtcompatible-we-wsen-pdus-25131308XXXXX).
+>   [`we,wsen-pdus-25131308XXXXX`](../build/dts/api/bindings/sensor/we,wsen-pdus-25131308XXXXX.md#std-dtcompatible-we-wsen-pdus-25131308XXXXX).
 >   The Device Tree can be configured as follows:
 >
 >   ```devicetree
@@ -337,7 +337,7 @@ Function renames and modifications:
 >   };
 >   ```
 > - The `we,wsen-tids` driver has been renamed to
->   [`we,wsen-tids-2521020222501`](../build/dts/api/bindings/sensor/we%2Cwsen-tids-2521020222501.md#std-dtcompatible-we-wsen-tids-2521020222501).
+>   [`we,wsen-tids-2521020222501`](../build/dts/api/bindings/sensor/we,wsen-tids-2521020222501.md#std-dtcompatible-we-wsen-tids-2521020222501).
 >   The Device Tree can be configured as follows:
 >
 >   ```devicetree
@@ -351,7 +351,7 @@ Function renames and modifications:
 >   };
 >   ```
 > - The `invensense,icp10125` driver has been renamed to
->   [`invensense,icp101xx`](../build/dts/api/bindings/sensor/invensense%2Cicp101xx.md#std-dtcompatible-invensense-icp101xx).
+>   [`invensense,icp101xx`](../build/dts/api/bindings/sensor/invensense,icp101xx.md#std-dtcompatible-invensense-icp101xx).
 >   The Device Tree can be configured as follows:
 >
 >   ```devicetree
@@ -365,13 +365,13 @@ Function renames and modifications:
 
 ### [Serial](#id41)
 
-- Renamed the `compatible` from `nxp,kinetis-lpuart` to [`nxp,lpuart`](../build/dts/api/bindings/serial/nxp%2Clpuart.md#std-dtcompatible-nxp-lpuart).
-- Silabs Usart driver has been split for Series 2 [`silabs,usart-uart`](../build/dts/api/bindings/serial/silabs%2Cusart-uart.md#std-dtcompatible-silabs-usart-uart)
+- Renamed the `compatible` from `nxp,kinetis-lpuart` to [`nxp,lpuart`](../build/dts/api/bindings/serial/nxp,lpuart.md#std-dtcompatible-nxp-lpuart).
+- Silabs Usart driver has been split for Series 2 [`silabs,usart-uart`](../build/dts/api/bindings/serial/silabs,usart-uart.md#std-dtcompatible-silabs-usart-uart)
   and Series 0/1 `silabs,gecko-usart`
 
 ### [Stepper](#id42)
 
-> - Renamed the `compatible` from `zephyr,gpio-steppers` to [`zephyr,gpio-stepper`](../build/dts/api/bindings/stepper/zephyr%2Cgpio-stepper.md#std-dtcompatible-zephyr-gpio-stepper).
+> - Renamed the `compatible` from `zephyr,gpio-steppers` to [`zephyr,gpio-stepper`](../build/dts/api/bindings/stepper/zephyr,gpio-stepper.md#std-dtcompatible-zephyr-gpio-stepper).
 > - Renamed the `stepper_set_actual_position` function to [`stepper_set_reference_position()`](../doxygen/html/group__stepper__interface.md#ga472ba1e64876fcaf79ba95edd8261a36).
 > - Renamed the `stepper_enable_constant_velocity_mode` function to [`stepper_run()`](../doxygen/html/group__stepper__interface.md#ga911eda0a495ab7b9c34b05c09b06ac87).
 >   The function does not take a velocity parameter anymore. Set the desired speed using the
@@ -384,7 +384,7 @@ Function renames and modifications:
 > - The `STEPPER_ADI_TMC_RAMP_GEN` is now deprecated and is replaced with the new
 >   `STEPPER_ADI_TMC50XX_RAMP_GEN` option.
 > - Renamed tmc5041 stepper driver to tmc50xx.
-> - To control the velocity for [`adi,tmc50xx`](../build/dts/api/bindings/stepper/adi/adi%2Ctmc50xx.md#std-dtcompatible-adi-tmc50xx) stepper driver, use
+> - To control the velocity for [`adi,tmc50xx`](../build/dts/api/bindings/stepper/adi/adi,tmc50xx.md#std-dtcompatible-adi-tmc50xx) stepper driver, use
 >   [`tmc50xx_stepper_set_max_velocity()`](../doxygen/html/group__trinamic__stepper__interface.md#gac2c7168e3618951b65df3257553260f6) or [`tmc50xx_stepper_set_ramp()`](../doxygen/html/group__trinamic__stepper__interface.md#ga9c186c3a7e094dce76ace821abcc9e86).
 > - Renamed the DeviceTree property `en_spreadcycle` to `en-spreadcycle`.
 > - Renamed the DeviceTree property `i_scale_analog` to `i-scale-analog`.
@@ -399,20 +399,20 @@ Function renames and modifications:
 
 ### [SPI](#id43)
 
-- Renamed the `compatible` from `nxp,imx-lpspi` to [`nxp,lpspi`](../build/dts/api/bindings/spi/nxp%2Clpspi.md#std-dtcompatible-nxp-lpspi).
-- Renamed the `compatible` from `nxp,kinetis-dspi` to [`nxp,dspi`](../build/dts/api/bindings/spi/nxp%2Cdspi.md#std-dtcompatible-nxp-dspi).
-- Renamed the `compatible` from `silabs,gecko-spi-usart` to [`silabs,usart-spi`](../build/dts/api/bindings/spi/silabs%2Cusart-spi.md#std-dtcompatible-silabs-usart-spi).
-- Renamed the `compatible` from `silabs,gecko-spi-eusart` to [`silabs,eusart-spi`](../build/dts/api/bindings/spi/silabs%2Ceusart-spi.md#std-dtcompatible-silabs-eusart-spi).
+- Renamed the `compatible` from `nxp,imx-lpspi` to [`nxp,lpspi`](../build/dts/api/bindings/spi/nxp,lpspi.md#std-dtcompatible-nxp-lpspi).
+- Renamed the `compatible` from `nxp,kinetis-dspi` to [`nxp,dspi`](../build/dts/api/bindings/spi/nxp,dspi.md#std-dtcompatible-nxp-dspi).
+- Renamed the `compatible` from `silabs,gecko-spi-usart` to [`silabs,usart-spi`](../build/dts/api/bindings/spi/silabs,usart-spi.md#std-dtcompatible-silabs-usart-spi).
+- Renamed the `compatible` from `silabs,gecko-spi-eusart` to [`silabs,eusart-spi`](../build/dts/api/bindings/spi/silabs,eusart-spi.md#std-dtcompatible-silabs-eusart-spi).
 
 ### [Regulator](#id44)
 
 ### [RTC](#id45)
 
-- Renamed the `compatible` from `nxp,kinetis-rtc` to [`nxp,rtc`](../build/dts/api/bindings/rtc/nxp%2Crtc.md#std-dtcompatible-nxp-rtc).
+- Renamed the `compatible` from `nxp,kinetis-rtc` to [`nxp,rtc`](../build/dts/api/bindings/rtc/nxp,rtc.md#std-dtcompatible-nxp-rtc).
 
 ### [Timer](#id46)
 
-- Renamed the `compatible` from `nxp,kinetis-ftm` to [`nxp,ftm`](../build/dts/api/bindings/timer/nxp%2Cftm.md#std-dtcompatible-nxp-ftm) and relocate it
+- Renamed the `compatible` from `nxp,kinetis-ftm` to [`nxp,ftm`](../build/dts/api/bindings/timer/nxp,ftm.md#std-dtcompatible-nxp-ftm) and relocate it
   under `dts/bindings/timer`.
 - Renamed the device tree property from `ticks_us` to `ticks-us`.
 
@@ -440,7 +440,7 @@ Function renames and modifications:
 
 ### [Watchdog](#id49)
 
-- Renamed the `compatible` from `nxp,kinetis-wdog32` to [`nxp,wdog32`](../build/dts/api/bindings/watchdog/nxp%2Cwdog32.md#std-dtcompatible-nxp-wdog32).
+- Renamed the `compatible` from `nxp,kinetis-wdog32` to [`nxp,wdog32`](../build/dts/api/bindings/watchdog/nxp,wdog32.md#std-dtcompatible-nxp-wdog32).
 
 ### [Wi-Fi](#id50)
 

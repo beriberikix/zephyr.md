@@ -120,8 +120,8 @@ More detailed information can be found in:
 - HCI Driver
 
   - Split ST HCI SPI Bluetooth driver from the Zephyr one to provide more features
-    based on ST SPI protocols V1 and V2. As a result, [`st,hci-spi-v1`](../build/dts/api/bindings/bluetooth/st%2Chci-spi-v1.md#std-dtcompatible-st-hci-spi-v1) and
-    [`st,hci-spi-v2`](../build/dts/api/bindings/bluetooth/st%2Chci-spi-v2.md#std-dtcompatible-st-hci-spi-v2) were introduced.
+    based on ST SPI protocols V1 and V2. As a result, [`st,hci-spi-v1`](../build/dts/api/bindings/bluetooth/st,hci-spi-v1.md#std-dtcompatible-st-hci-spi-v1) and
+    [`st,hci-spi-v2`](../build/dts/api/bindings/bluetooth/st,hci-spi-v2.md#std-dtcompatible-st-hci-spi-v2) were introduced.
 
 ## Boards & SoC Support
 
@@ -271,23 +271,23 @@ More detailed information can be found in:
   - Added common bit error counter to the CAN statistics.
   - Added CAN statistics support to the following drivers:
 
-    - [`microchip,mcp2515`](../build/dts/api/bindings/can/microchip%2Cmcp2515.md#std-dtcompatible-microchip-mcp2515)
-    - [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif%2Cesp32-twai.md#std-dtcompatible-espressif-esp32-twai)
-    - [`kvaser,pcican`](../build/dts/api/bindings/can/kvaser%2Cpcican.md#std-dtcompatible-kvaser-pcican)
+    - [`microchip,mcp2515`](../build/dts/api/bindings/can/microchip,mcp2515.md#std-dtcompatible-microchip-mcp2515)
+    - [`espressif,esp32-twai`](../build/dts/api/bindings/can/espressif,esp32-twai.md#std-dtcompatible-espressif-esp32-twai)
+    - [`kvaser,pcican`](../build/dts/api/bindings/can/kvaser,pcican.md#std-dtcompatible-kvaser-pcican)
   - Added CAN controller driver for the Nuvoton NuMaker series
-    ([`nuvoton,numaker-canfd`](../build/dts/api/bindings/can/nuvoton%2Cnumaker-canfd.md#std-dtcompatible-nuvoton-numaker-canfd)).
+    ([`nuvoton,numaker-canfd`](../build/dts/api/bindings/can/nuvoton,numaker-canfd.md#std-dtcompatible-nuvoton-numaker-canfd)).
   - Added CAN controller driver for the Infineon XMC4xxx family
-    ([`infineon,xmc4xxx-can`](../build/dts/api/bindings/can/infineon%2Cxmc4xxx-can.md#std-dtcompatible-infineon-xmc4xxx-can) and [`infineon,xmc4xxx-can-node`](../build/dts/api/bindings/can/infineon%2Cxmc4xxx-can-node.md#std-dtcompatible-infineon-xmc4xxx-can-node)).
-  - Added support for the NXP S32K1xx family to the [`nxp,flexcan`](../build/dts/api/bindings/can/nxp%2Cflexcan.md#std-dtcompatible-nxp-flexcan) driver.
+    ([`infineon,xmc4xxx-can`](../build/dts/api/bindings/can/infineon,xmc4xxx-can.md#std-dtcompatible-infineon-xmc4xxx-can) and [`infineon,xmc4xxx-can-node`](../build/dts/api/bindings/can/infineon,xmc4xxx-can-node.md#std-dtcompatible-infineon-xmc4xxx-can-node)).
+  - Added support for the NXP S32K1xx family to the [`nxp,flexcan`](../build/dts/api/bindings/can/nxp,flexcan.md#std-dtcompatible-nxp-flexcan) driver.
   - All Bosch M\_CAN-based front-end drivers now use named IRQs, “int0” and “int1”.
-  - The [`zephyr,native-linux-can`](../build/dts/api/bindings/can/zephyr%2Cnative-linux-can.md#std-dtcompatible-zephyr-native-linux-can) driver now supports being built with embedded C
+  - The [`zephyr,native-linux-can`](../build/dts/api/bindings/can/zephyr,native-linux-can.md#std-dtcompatible-zephyr-native-linux-can) driver now supports being built with embedded C
     libraries.
   - Added support for setting “raw” timing values from the [CAN shell](../hardware/peripherals/can/shell.md#can-shell).
 - Clock control
 
   - Renesas R-Car clock control driver now supports Gen4 SoCs.
   - Renamed `CONFIG_CLOCK_CONTROL_RA` to [`CONFIG_CLOCK_CONTROL_RENESAS_RA`](../kconfig.md#CONFIG_CLOCK_CONTROL_RENESAS_RA "CONFIG_CLOCK_CONTROL_RENESAS_RA").
-  - On STM32 devices, [`st,stm32-hse-clock`](../build/dts/api/bindings/clock/st%2Cstm32-hse-clock.md#std-dtcompatible-st-stm32-hse-clock) now allows setting a `css-enabled`
+  - On STM32 devices, [`st,stm32-hse-clock`](../build/dts/api/bindings/clock/st,stm32-hse-clock.md#std-dtcompatible-st-stm32-hse-clock) now allows setting a `css-enabled`
     property which enables HSE clock security system (CSS).
 - Counter
 
@@ -360,8 +360,8 @@ More detailed information can be found in:
   - Added generic NMEA0183 over UART based modem device driver, matching the
     devicetree compatible [`gnss-nmea-generic`](../build/dts/api/bindings/gnss/gnss-nmea-generic.md#std-dtcompatible-gnss-nmea-generic).
   - Added fully featured device driver for the Quectel LCX6G series GNSS modems,
-    matching the devicetree compatibles [`quectel,lc26g`](../build/dts/api/bindings/gnss/quectel%2Clc26g.md#std-dtcompatible-quectel-lc26g),
-    [`quectel,lc76g`](../build/dts/api/bindings/gnss/quectel%2Clc76g.md#std-dtcompatible-quectel-lc76g) and [`quectel,lc86g`](../build/dts/api/bindings/gnss/quectel%2Clc86g.md#std-dtcompatible-quectel-lc86g).
+    matching the devicetree compatibles [`quectel,lc26g`](../build/dts/api/bindings/gnss/quectel,lc26g.md#std-dtcompatible-quectel-lc26g),
+    [`quectel,lc76g`](../build/dts/api/bindings/gnss/quectel,lc76g.md#std-dtcompatible-quectel-lc76g) and [`quectel,lc86g`](../build/dts/api/bindings/gnss/quectel,lc86g.md#std-dtcompatible-quectel-lc86g).
 - GPIO
 
   - Renesas R-Car GPIO driver now supports Gen4 SoCs.
@@ -396,14 +396,14 @@ More detailed information can be found in:
     - Improved the FIFO read routine to support higher transfer rates.
     - Removed the infinite wait for MCTRLDONE in auto IBI.
     - Added `disable-open-drain-high-pp` property to
-      [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp%2Cmcux-i3c.md#std-dtcompatible-nxp-mcux-i3c), which allows alternative high time for
+      [`nxp,mcux-i3c`](../build/dts/api/bindings/i3c/nxp,mcux-i3c.md#std-dtcompatible-nxp-mcux-i3c), which allows alternative high time for
       open-drain clock.
 - IEEE 802.15.4
 
   - Removed `CONFIG_IEEE802154_SELECTIVE_TXPOWER` Kconfig option.
 - Input
 
-  - The `short-codes` property of [`zephyr,input-longpress`](../build/dts/api/bindings/input/zephyr%2Cinput-longpress.md#std-dtcompatible-zephyr-input-longpress) is
+  - The `short-codes` property of [`zephyr,input-longpress`](../build/dts/api/bindings/input/zephyr,input-longpress.md#std-dtcompatible-zephyr-input-longpress) is
     now optional. The node can be used by specifying only input and long codes.
   - Added support for keyboard matrix drivers, including a new
     [`gpio-kbd-matrix`](../build/dts/api/bindings/input/gpio-kbd-matrix.md#std-dtcompatible-gpio-kbd-matrix) and [`input-keymap`](../build/dts/api/bindings/input/input-keymap.md#std-dtcompatible-input-keymap) drivers.
@@ -411,12 +411,12 @@ More detailed information can be found in:
   - Added a pair of input codes to HID codes translation functions. See
     [`input_to_hid_code()`](../services/input/index.md#c.input_to_hid_code "input_to_hid_code") and [`input_to_hid_modifier()`](../services/input/index.md#c.input_to_hid_modifier "input_to_hid_modifier").
   - Added power management support to [`gpio-keys`](../build/dts/api/bindings/input/gpio-keys.md#std-dtcompatible-gpio-keys)
-    [`focaltech,ft5336`](../build/dts/api/bindings/input/focaltech%2Cft5336.md#std-dtcompatible-focaltech-ft5336).
-  - Added a [`zephyr,native-linux-evdev`](../build/dts/api/bindings/input/zephyr%2Cnative-linux-evdev.md#std-dtcompatible-zephyr-native-linux-evdev) device node for getting
+    [`focaltech,ft5336`](../build/dts/api/bindings/input/focaltech,ft5336.md#std-dtcompatible-focaltech-ft5336).
+  - Added a [`zephyr,native-linux-evdev`](../build/dts/api/bindings/input/zephyr,native-linux-evdev.md#std-dtcompatible-zephyr-native-linux-evdev) device node for getting
     input events from a Linux evdev device node.
   - Added support for optical encoders and power management to [`gpio-qdec`](../build/dts/api/bindings/input/gpio-qdec.md#std-dtcompatible-gpio-qdec).
   - New driver [`analog-axis`](../build/dts/api/bindings/input/analog-axis.md#std-dtcompatible-analog-axis).
-  - Added ESP32 touch sensor driver including a [`espressif,esp32-touch`](../build/dts/api/bindings/input/espressif%2Cesp32-touch-sensor.md#std-dtcompatible-espressif-esp32-touch).
+  - Added ESP32 touch sensor driver including a [`espressif,esp32-touch`](../build/dts/api/bindings/input/espressif,esp32-touch-sensor.md#std-dtcompatible-espressif-esp32-touch).
 - MDIO
 
   - Fixed initialization priorities of NXP s32 NETC drivers.
@@ -428,10 +428,10 @@ More detailed information can be found in:
   - Fixed build errors caused by mdio.h driver header not including errno.h
 - MFD
 
-  - Added support for [`maxim,max20335`](../build/dts/api/bindings/mfd/maxim%2Cmax20335.md#std-dtcompatible-maxim-max20335).
-  - Added support for [`adi,ad5592`](../build/dts/api/bindings/mfd/adi%2Cad5592.md#std-dtcompatible-adi-ad5592).
-  - Added separate initialization priorities for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic%2Cnpm1300.md#std-dtcompatible-nordic-npm1300) and
-    [`nordic,npm6001`](../build/dts/api/bindings/mfd/nordic%2Cnpm6001.md#std-dtcompatible-nordic-npm6001).
+  - Added support for [`maxim,max20335`](../build/dts/api/bindings/mfd/maxim,max20335.md#std-dtcompatible-maxim-max20335).
+  - Added support for [`adi,ad5592`](../build/dts/api/bindings/mfd/adi,ad5592.md#std-dtcompatible-adi-ad5592).
+  - Added separate initialization priorities for [`nordic,npm1300`](../build/dts/api/bindings/mfd/nordic,npm1300.md#std-dtcompatible-nordic-npm1300) and
+    [`nordic,npm6001`](../build/dts/api/bindings/mfd/nordic,npm6001.md#std-dtcompatible-nordic-npm6001).
 - PCIE
 
   - Fixed MMIO size calculation by disabling IO/memory decoding beforehand.
@@ -465,12 +465,12 @@ More detailed information can be found in:
     - [`regulator_list_current_limit()`](../hardware/peripherals/regulators.md#c.regulator_list_current_limit "regulator_list_current_limit")
   - `startup-delay-us` and `off-on-delay-us` are now supported for all regulators.
   - Added non-multithreading support.
-  - Added support for [`maxim,max20335-regulator`](../build/dts/api/bindings/regulator/maxim%2Cmax20335-regulator.md#std-dtcompatible-maxim-max20335-regulator).
-  - Added ASYS UVLO configuration for [`nxp,pca9420`](../build/dts/api/bindings/regulator/nxp%2Cpca9420.md#std-dtcompatible-nxp-pca9420).
-  - Added LDO/DCDC support for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas%2Cda1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
-  - Added LDO soft start configuration for [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator).
-  - Fixed init priority for [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers%2Caxp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator).
-  - Fixed LDO GPIO control for [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator).
+  - Added support for [`maxim,max20335-regulator`](../build/dts/api/bindings/regulator/maxim,max20335-regulator.md#std-dtcompatible-maxim-max20335-regulator).
+  - Added ASYS UVLO configuration for [`nxp,pca9420`](../build/dts/api/bindings/regulator/nxp,pca9420.md#std-dtcompatible-nxp-pca9420).
+  - Added LDO/DCDC support for [`renesas,smartbond-regulator`](../build/dts/api/bindings/regulator/renesas,da1469x-regulator.md#std-dtcompatible-renesas-smartbond-regulator).
+  - Added LDO soft start configuration for [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic,npm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator).
+  - Fixed init priority for [`x-powers,axp192-regulator`](../build/dts/api/bindings/regulator/x-powers,axp192-regulator.md#std-dtcompatible-x-powers-axp192-regulator).
+  - Fixed LDO GPIO control for [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic,npm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator).
 - Retained memory
 
   - Retained memory driver backend for registers was added.
@@ -575,7 +575,7 @@ More detailed information can be found in:
   - Added support for Nuvoton NuMaker series USBD controllers.
 - W1
 
-  - Added 1-Wire GPIO master driver. See the [`zephyr,w1-gpio`](../build/dts/api/bindings/w1/zephyr%2Cw1-gpio.md#std-dtcompatible-zephyr-w1-gpio)
+  - Added 1-Wire GPIO master driver. See the [`zephyr,w1-gpio`](../build/dts/api/bindings/w1/zephyr,w1-gpio.md#std-dtcompatible-zephyr-w1-gpio)
     devicetree binding for more information.
 - Wi-Fi
 
@@ -1073,7 +1073,7 @@ Detailed release notes can be found at:
 
 Additionally, the following changes in Zephyr were done:
 
-> - Added the [`zephyr,lvgl-keypad-input`](../build/dts/api/bindings/input/zephyr%2Clvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input) compatible for keypad input.
+> - Added the [`zephyr,lvgl-keypad-input`](../build/dts/api/bindings/input/zephyr,lvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input) compatible for keypad input.
 > - Fixed issue with the Zephyr log levels not mapping properly to LVGL log levels.
 > - Fixed issue where setting [`CONFIG_LV_Z_FULL_REFRESH`](../kconfig.md#CONFIG_LV_Z_FULL_REFRESH "CONFIG_LV_Z_FULL_REFRESH") did not
 >   set [`CONFIG_LV_Z_VDB_SIZE`](../kconfig.md#CONFIG_LV_Z_VDB_SIZE "CONFIG_LV_Z_VDB_SIZE") to 100 percent.

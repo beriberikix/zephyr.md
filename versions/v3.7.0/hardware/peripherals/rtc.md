@@ -477,5 +477,5 @@ set using [`rtc_set_time()`](#c.rtc_set_time). The RTC will then behave as a rea
 application is reset.
 
 The emulated RTC device driver is built for the compatible
-[`zephyr,rtc-emul`](../../build/dts/api/bindings/rtc/zephyr%2Crtc-emul.md#std-dtcompatible-zephyr-rtc-emul) and will be included if [`CONFIG_RTC`](../../kconfig.md#CONFIG_RTC "CONFIG_RTC")
+[`zephyr,rtc-emul`](../../build/dts/api/bindings/rtc/zephyr,rtc-emul.md#std-dtcompatible-zephyr-rtc-emul) and will be included if [`CONFIG_RTC`](../../kconfig.md#CONFIG_RTC "CONFIG_RTC")
 is selected.

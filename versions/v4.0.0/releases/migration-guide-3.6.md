@@ -167,16 +167,16 @@ enable all optional modules, and then run `west update` again.
   `negative`) to the common `input`, making it possible to use the various ADC DT macros with TI
   LMP90xxx ADC devices:
 
-  - [`ti,lmp90077`](../build/dts/api/bindings/adc/ti%2Clmp90077.md#std-dtcompatible-ti-lmp90077)
-  - [`ti,lmp90078`](../build/dts/api/bindings/adc/ti%2Clmp90078.md#std-dtcompatible-ti-lmp90078)
-  - [`ti,lmp90079`](../build/dts/api/bindings/adc/ti%2Clmp90079.md#std-dtcompatible-ti-lmp90079)
-  - [`ti,lmp90080`](../build/dts/api/bindings/adc/ti%2Clmp90080.md#std-dtcompatible-ti-lmp90080)
-  - [`ti,lmp90097`](../build/dts/api/bindings/adc/ti%2Clmp90097.md#std-dtcompatible-ti-lmp90097)
-  - [`ti,lmp90098`](../build/dts/api/bindings/adc/ti%2Clmp90098.md#std-dtcompatible-ti-lmp90098)
-  - [`ti,lmp90099`](../build/dts/api/bindings/adc/ti%2Clmp90099.md#std-dtcompatible-ti-lmp90099)
-  - [`ti,lmp90100`](../build/dts/api/bindings/adc/ti%2Clmp90100.md#std-dtcompatible-ti-lmp90100)
-- The io-channel cells of the [`microchip,mcp3204`](../build/dts/api/bindings/adc/microchip%2Cmcp3204.md#std-dtcompatible-microchip-mcp3204) and
-  [`microchip,mcp3208`](../build/dts/api/bindings/adc/microchip%2Cmcp3208.md#std-dtcompatible-microchip-mcp3208) devicetree bindings were renamed from `channel` to the common
+  - [`ti,lmp90077`](../build/dts/api/bindings/adc/ti,lmp90077.md#std-dtcompatible-ti-lmp90077)
+  - [`ti,lmp90078`](../build/dts/api/bindings/adc/ti,lmp90078.md#std-dtcompatible-ti-lmp90078)
+  - [`ti,lmp90079`](../build/dts/api/bindings/adc/ti,lmp90079.md#std-dtcompatible-ti-lmp90079)
+  - [`ti,lmp90080`](../build/dts/api/bindings/adc/ti,lmp90080.md#std-dtcompatible-ti-lmp90080)
+  - [`ti,lmp90097`](../build/dts/api/bindings/adc/ti,lmp90097.md#std-dtcompatible-ti-lmp90097)
+  - [`ti,lmp90098`](../build/dts/api/bindings/adc/ti,lmp90098.md#std-dtcompatible-ti-lmp90098)
+  - [`ti,lmp90099`](../build/dts/api/bindings/adc/ti,lmp90099.md#std-dtcompatible-ti-lmp90099)
+  - [`ti,lmp90100`](../build/dts/api/bindings/adc/ti,lmp90100.md#std-dtcompatible-ti-lmp90100)
+- The io-channel cells of the [`microchip,mcp3204`](../build/dts/api/bindings/adc/microchip,mcp3204.md#std-dtcompatible-microchip-mcp3204) and
+  [`microchip,mcp3208`](../build/dts/api/bindings/adc/microchip,mcp3208.md#std-dtcompatible-microchip-mcp3208) devicetree bindings were renamed from `channel` to the common
   `input`, making it possible to use the various ADC DT macros with Microchip MCP320x ADC devices.
 
 ### [Bluetooth HCI](#id12)
@@ -188,7 +188,7 @@ enable all optional modules, and then run `west update` again.
   identity address, which will then be passed in the `public_addr` field.
 
   ([GitHub #62994](https://github.com/zephyrproject-rtos/zephyr/issues/62994))
-- The [`st,hci-spi-v1`](../build/dts/api/bindings/bluetooth/st%2Chci-spi-v1.md#std-dtcompatible-st-hci-spi-v1) should be used instead of [`zephyr,bt-hci-spi`](../build/dts/api/bindings/bluetooth/zephyr%2Cbt-hci-spi.md#std-dtcompatible-zephyr-bt-hci-spi)
+- The [`st,hci-spi-v1`](../build/dts/api/bindings/bluetooth/st,hci-spi-v1.md#std-dtcompatible-st-hci-spi-v1) should be used instead of [`zephyr,bt-hci-spi`](../build/dts/api/bindings/bluetooth/zephyr,bt-hci-spi.md#std-dtcompatible-zephyr-bt-hci-spi)
   for the boards which are based on ST BlueNRG-MS.
 
 ### [Controller Area Network (CAN)](#id13)
@@ -198,7 +198,7 @@ enable all optional modules, and then run `west update` again.
   reflect this:
 
   - The devicetree compatible was renamed from `zephyr,native-posix-linux-can` to
-    [`zephyr,native-linux-can`](../build/dts/api/bindings/can/zephyr%2Cnative-linux-can.md#std-dtcompatible-zephyr-native-linux-can).
+    [`zephyr,native-linux-can`](../build/dts/api/bindings/can/zephyr,native-linux-can.md#std-dtcompatible-zephyr-native-linux-can).
   - The main Kconfig option was renamed from `CONFIG_CAN_NATIVE_POSIX_LINUX` to
     [`CONFIG_CAN_NATIVE_LINUX`](../kconfig.md#CONFIG_CAN_NATIVE_LINUX "CONFIG_CAN_NATIVE_LINUX").
 - Two new structures for holding common CAN controller driver configuration (`struct
@@ -222,7 +222,7 @@ enable all optional modules, and then run `west update` again.
   or reject all incoming CAN RTR frames (the default). When [`CONFIG_CAN_ACCEPT_RTR`](../kconfig.md#CONFIG_CAN_ACCEPT_RTR "CONFIG_CAN_ACCEPT_RTR")
   is enabled, applications can still filter between Data and RTR frames in their receive callback
   functions as needed.
-- The [`st,stm32h7-fdcan`](../build/dts/api/bindings/can/st%2Cstm32h7-fdcan.md#std-dtcompatible-st-stm32h7-fdcan) CAN controller driver now supports configuring the
+- The [`st,stm32h7-fdcan`](../build/dts/api/bindings/can/st,stm32h7-fdcan.md#std-dtcompatible-st-stm32h7-fdcan) CAN controller driver now supports configuring the
   domain/kernel clock via devicetree. Previously, the driver only supported using the PLL1\_Q clock
   for kernel clock, but now it defaults to the HSE clock, which is the chip default. Boards that
   use the PLL1\_Q clock for FDCAN will need to override the `clocks` property as follows:
@@ -280,7 +280,7 @@ enable all optional modules, and then run `west update` again.
 
 ### [Flash](#id15)
 
-- The [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st%2Cstm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor) and [`st,stm32-qspi-nor`](../build/dts/api/bindings/flash_controller/st%2Cstm32-qspi-nor.md#std-dtcompatible-st-stm32-qspi-nor) give the nor flash
+- The [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st,stm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor) and [`st,stm32-qspi-nor`](../build/dts/api/bindings/flash_controller/st,stm32-qspi-nor.md#std-dtcompatible-st-stm32-qspi-nor) give the nor flash
   base address and size (in Bytes) with the **reg** property as follows.
   The <size> property is not used anymore.
 
@@ -294,7 +294,7 @@ enable all optional modules, and then run `west update` again.
 ### [General Purpose I/O (GPIO)](#id16)
 
 - The `nxp,pcf8574` driver has been renamed to
-  [`nxp,pcf857x`](../build/dts/api/bindings/gpio/nxp%2Cpcf857x.md#std-dtcompatible-nxp-pcf857x). ([GitHub #67054](https://github.com/zephyrproject-rtos/zephyr/issues/67054)) to support pcf8574 and pcf8575.
+  [`nxp,pcf857x`](../build/dts/api/bindings/gpio/nxp,pcf857x.md#std-dtcompatible-nxp-pcf857x). ([GitHub #67054](https://github.com/zephyrproject-rtos/zephyr/issues/67054)) to support pcf8574 and pcf8575.
   The Kconfig option has been renamed from `CONFIG_GPIO_PCF8574` to
   [`CONFIG_GPIO_PCF857X`](../kconfig.md#CONFIG_GPIO_PCF857X "CONFIG_GPIO_PCF857X").
   The Device Tree can be configured as follows:
@@ -324,8 +324,8 @@ enable all optional modules, and then run `west update` again.
 
 ### [Input](#id17)
 
-- Touchscreen drivers [`focaltech,ft5336`](../build/dts/api/bindings/input/focaltech%2Cft5336.md#std-dtcompatible-focaltech-ft5336) and
-  [`goodix,gt911`](../build/dts/api/bindings/input/goodix%2Cgt911.md#std-dtcompatible-goodix-gt911) were using the incorrect polarity for the
+- Touchscreen drivers [`focaltech,ft5336`](../build/dts/api/bindings/input/focaltech,ft5336.md#std-dtcompatible-focaltech-ft5336) and
+  [`goodix,gt911`](../build/dts/api/bindings/input/goodix,gt911.md#std-dtcompatible-goodix-gt911) were using the incorrect polarity for the
   respective `reset-gpios`. This has been fixed so those signals now have to
   be flagged as [`GPIO_ACTIVE_LOW`](../doxygen/html/group__gpio__interface.md#ga62cea8989df2425e5e5e712217d65f46) in the devicetree. ([GitHub #64800](https://github.com/zephyrproject-rtos/zephyr/issues/64800))
 
@@ -349,7 +349,7 @@ enable all optional modules, and then run `west update` again.
 
 ### [Sensors](#id20)
 
-- The [`st,lsm6dsv16x`](../build/dts/api/compatibles/st%2Clsm6dsv16x.md#std-dtcompatible-st-lsm6dsv16x) sensor driver has been changed to support
+- The [`st,lsm6dsv16x`](../build/dts/api/compatibles/st,lsm6dsv16x.md#std-dtcompatible-st-lsm6dsv16x) sensor driver has been changed to support
   configuration of both int1 and int2 pins. The DT attribute `irq-gpios` has been
   removed and substituted by two new attributes, `int1-gpios` and `int2-gpios`.
   These attributes must be configured in the Device Tree similarly to the following
@@ -375,7 +375,7 @@ enable all optional modules, and then run `west update` again.
 
 ### [Timer](#id22)
 
-- The [`st,stm32-lptim`](../build/dts/api/bindings/timer/st%2Cstm32-lptim.md#std-dtcompatible-st-stm32-lptim) lptim which is selected for counting ticks during
+- The [`st,stm32-lptim`](../build/dts/api/bindings/timer/st,stm32-lptim.md#std-dtcompatible-st-stm32-lptim) lptim which is selected for counting ticks during
   low power modes is identified by **stm32\_lp\_tick\_source** in the device tree as follows.
   The stm32\_lptim\_timer driver has been changed to support this.
 

@@ -13,5 +13,5 @@ the drop-down list at the bottom of the left panel and select the desired versio
 The devicetree compatible `bosch,bme680` may be handled by any
 of the following bindings:
 
-- [bosch,bme680 (on spi bus)](../bindings/sensor/bosch%2Cbme680-spi.md#dtbinding-bosch-bme680-spi)
-- [bosch,bme680 (on i2c bus)](../bindings/sensor/bosch%2Cbme680-i2c.md#dtbinding-bosch-bme680-i2c)
+- [bosch,bme680 (on spi bus)](../bindings/sensor/bosch,bme680-spi.md#dtbinding-bosch-bme680-spi)
+- [bosch,bme680 (on i2c bus)](../bindings/sensor/bosch,bme680-i2c.md#dtbinding-bosch-bme680-i2c)

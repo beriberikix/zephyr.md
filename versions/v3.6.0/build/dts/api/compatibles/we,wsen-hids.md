@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `we,wsen-hids` may be handled by any
 of the following bindings:
 
-- [we,wsen-hids (on i2c bus)](../bindings/sensor/we%2Cwsen-hids-i2c.md#dtbinding-we-wsen-hids-i2c)
-- [we,wsen-hids (on spi bus)](../bindings/sensor/we%2Cwsen-hids-spi.md#dtbinding-we-wsen-hids-spi)
+- [we,wsen-hids (on i2c bus)](../bindings/sensor/we,wsen-hids-i2c.md#dtbinding-we-wsen-hids-i2c)
+- [we,wsen-hids (on spi bus)](../bindings/sensor/we,wsen-hids-spi.md#dtbinding-we-wsen-hids-spi)

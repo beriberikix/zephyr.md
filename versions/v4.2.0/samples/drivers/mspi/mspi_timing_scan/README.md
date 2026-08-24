@@ -20,7 +20,7 @@ The application will build only for a target that has a [devicetree](../../../..
 `flash0` or `psram0` alias depending on the interface used.
 They refers to an entry with the following bindings as a compatible:
 
-- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq%2Cmspi-device.md#std-dtcompatible-ambiq-mspi-device)
+- [`ambiq,mspi-device`](../../../../build/dts/api/bindings/mspi/ambiq,mspi-device.md#std-dtcompatible-ambiq-mspi-device)
 
 ```shell
 west build -b apollo5_eb samples/drivers/mspi/mspi_timing_scan

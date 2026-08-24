@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `nxp,fxos8700` may be handled by any
 of the following bindings:
 
-- [nxp,fxos8700 (on i2c bus)](../bindings/sensor/nxp%2Cfxos8700-i2c.md#dtbinding-nxp-fxos8700-i2c)
-- [nxp,fxos8700 (on spi bus)](../bindings/sensor/nxp%2Cfxos8700-spi.md#dtbinding-nxp-fxos8700-spi)
+- [nxp,fxos8700 (on i2c bus)](../bindings/sensor/nxp,fxos8700-i2c.md#dtbinding-nxp-fxos8700-i2c)
+- [nxp,fxos8700 (on spi bus)](../bindings/sensor/nxp,fxos8700-spi.md#dtbinding-nxp-fxos8700-spi)

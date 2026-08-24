@@ -13,5 +13,5 @@ the drop-down menu on the left and select the desired version.
 The devicetree compatible `st,lis2mdl` may be handled by any
 of the following bindings:
 
-- [st,lis2mdl (on i2c bus)](../bindings/sensor/st%2Clis2mdl-i2c.md#dtbinding-st-lis2mdl-i2c)
-- [st,lis2mdl (on spi bus)](../bindings/sensor/st%2Clis2mdl-spi.md#dtbinding-st-lis2mdl-spi)
+- [st,lis2mdl (on i2c bus)](../bindings/sensor/st,lis2mdl-i2c.md#dtbinding-st-lis2mdl-i2c)
+- [st,lis2mdl (on spi bus)](../bindings/sensor/st,lis2mdl-spi.md#dtbinding-st-lis2mdl-spi)

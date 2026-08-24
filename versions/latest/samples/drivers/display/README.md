@@ -21,7 +21,7 @@ at any point or the order of the corners is not as described above then the LCD
 may be endian swapped.
 
 On displays with the [`SCREEN_INFO_X_ALIGNMENT_WIDTH`](../../../doxygen/html/group__display__interface.md#gga23030b6c27446c4579103fe38e821341a1c51db66639919571af38bbc91eb28c1) capability,
-such as those using the [`sharp,ls0xx`](../../../build/dts/api/bindings/display/sharp%2Cls0xx.md#std-dtcompatible-sharp-ls0xx) driver, it is only possible
+such as those using the [`sharp,ls0xx`](../../../build/dts/api/bindings/display/sharp,ls0xx.md#std-dtcompatible-sharp-ls0xx) driver, it is only possible
 to draw full lines at a time. On these displays, the rectangles described above
 will be replaced with bars that take up the entire width of the display. Only
 the green and grey bar will be visible.

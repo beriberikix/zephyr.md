@@ -38,8 +38,8 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
   transition of nRF52 software to nRF54L devices.
 - The config option `CONFIG_NATIVE_POSIX_SLOWDOWN_TO_REAL_TIME` has been deprecated
   in favor of `CONFIG_NATIVE_SIM_SLOWDOWN_TO_REAL_TIME`.
-- The DT binding [`zephyr,native-posix-cpu`](../build/dts/api/bindings/cpu/zephyr%2Cnative-posix-cpu.md#std-dtcompatible-zephyr-native-posix-cpu) has been deprecated in favor of
-  [`zephyr,native-sim-cpu`](../build/dts/api/bindings/cpu/zephyr%2Cnative-sim-cpu.md#std-dtcompatible-zephyr-native-sim-cpu).
+- The DT binding [`zephyr,native-posix-cpu`](../build/dts/api/bindings/cpu/zephyr,native-posix-cpu.md#std-dtcompatible-zephyr-native-posix-cpu) has been deprecated in favor of
+  [`zephyr,native-sim-cpu`](../build/dts/api/bindings/cpu/zephyr,native-sim-cpu.md#std-dtcompatible-zephyr-native-sim-cpu).
 - Zephyr now supports version 1.11.6 of the [NEORV32](../boards/others/neorv32/doc/index.md#neorv32). NEORV32 processor (SoC)
   implementations need to be updated to this version to be compatible with Zephyr v4.2.0.
 - The [NEORV32](../boards/others/neorv32/doc/index.md#neorv32) now targets NEORV32 processor (SoC) templates via board variants. The
@@ -51,10 +51,10 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
   `renesas,ra-gpio`, `renesas,ra-uart-sci`, `renesas,ra-pinctrl`,
   `renesas,ra-clock-generation-circuit`, and `renesas,ra-interrupt-controller-unit`.
   Instead, use the following replacements:
-  - [`renesas,ra-gpio-ioport`](../build/dts/api/bindings/gpio/renesas%2Cra-gpio-ioport.md#std-dtcompatible-renesas-ra-gpio-ioport)
-  - [`renesas,ra-sci-uart`](../build/dts/api/bindings/serial/renesas%2Cra-sci-uart.md#std-dtcompatible-renesas-ra-sci-uart)
-  - [`renesas,ra-pinctrl-pfs`](../build/dts/api/bindings/pinctrl/renesas%2Cra-pincrl-pfs.md#std-dtcompatible-renesas-ra-pinctrl-pfs)
-  - [`renesas,ra-cgc-pclk-block`](../build/dts/api/bindings/clock/renesas%2Cra-cgc-pclk-block.md#std-dtcompatible-renesas-ra-cgc-pclk-block)
+  - [`renesas,ra-gpio-ioport`](../build/dts/api/bindings/gpio/renesas,ra-gpio-ioport.md#std-dtcompatible-renesas-ra-gpio-ioport)
+  - [`renesas,ra-sci-uart`](../build/dts/api/bindings/serial/renesas,ra-sci-uart.md#std-dtcompatible-renesas-ra-sci-uart)
+  - [`renesas,ra-pinctrl-pfs`](../build/dts/api/bindings/pinctrl/renesas,ra-pincrl-pfs.md#std-dtcompatible-renesas-ra-pinctrl-pfs)
+  - [`renesas,ra-cgc-pclk-block`](../build/dts/api/bindings/clock/renesas,ra-cgc-pclk-block.md#std-dtcompatible-renesas-ra-cgc-pclk-block)
 - Nucleo WBA52CG board (`nucleo_wba52cg`) is not supported anymore since it is NRND
   (Not Recommended for New Design) and it is not supported anymore in the STM32CubeWBA from
   version 1.1.0 (July 2023). The migration to [Nucleo WBA55CG](../boards/st/nucleo_wba55cg/doc/nucleo_wba55cg.md#nucleo_wba55cg) (`nucleo_wba55cg`)
@@ -78,14 +78,14 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 
 ### [Audio](#id5)
 
-- The binding file for [`cirrus,cs43l22`](../build/dts/api/bindings/audio/cirrus%2Ccs43l22.md#std-dtcompatible-cirrus-cs43l22) has been renamed to have a name
+- The binding file for [`cirrus,cs43l22`](../build/dts/api/bindings/audio/cirrus,cs43l22.md#std-dtcompatible-cirrus-cs43l22) has been renamed to have a name
   matching the compatible string.
 
 ### [Counter](#id6)
 
 - `counter_native_posix` has been renamed `counter_native_sim`, and with it its
-  kconfig options and DT binding. [`zephyr,native-posix-counter`](../build/dts/api/bindings/counter/zephyr%2Cnative-posix-counter.md#std-dtcompatible-zephyr-native-posix-counter) has been deprecated
-  in favor of [`zephyr,native-sim-counter`](../build/dts/api/bindings/counter/zephyr%2Cnative-sim-counter.md#std-dtcompatible-zephyr-native-sim-counter).
+  kconfig options and DT binding. [`zephyr,native-posix-counter`](../build/dts/api/bindings/counter/zephyr,native-posix-counter.md#std-dtcompatible-zephyr-native-posix-counter) has been deprecated
+  in favor of [`zephyr,native-sim-counter`](../build/dts/api/bindings/counter/zephyr,native-sim-counter.md#std-dtcompatible-zephyr-native-sim-counter).
   And [`CONFIG_COUNTER_NATIVE_POSIX`](../kconfig.md#CONFIG_COUNTER_NATIVE_POSIX "CONFIG_COUNTER_NATIVE_POSIX") and its related options with
   [`CONFIG_COUNTER_NATIVE_SIM`](../kconfig.md#CONFIG_COUNTER_NATIVE_SIM "CONFIG_COUNTER_NATIVE_SIM") ([GitHub #86616](https://github.com/zephyrproject-rtos/zephyr/issues/86616)).
 
@@ -122,14 +122,14 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 
 ### [Display](#id10)
 
-- On STM32 devices, the LTDC driver ([`st,stm32-ltdc`](../build/dts/api/bindings/display/st%2Cstm32-ltdc.md#std-dtcompatible-st-stm32-ltdc)) RGB565 format
+- On STM32 devices, the LTDC driver ([`st,stm32-ltdc`](../build/dts/api/bindings/display/st,stm32-ltdc.md#std-dtcompatible-st-stm32-ltdc)) RGB565 format
   `PIXEL_FORMAT_RGB565` has been replaced by `PIXEL_FORMAT_BGR565` to match
   the format expected by Zephyr. This change ensures proper behavior of both
   display and video capture samples.
 
 ### [EEPROM](#id11)
 
-- `ti,tmp116-eeprom` has been renamed to [`ti,tmp11x-eeprom`](../build/dts/api/bindings/mtd/ti%2Ctmp11x-eeprom.md#std-dtcompatible-ti-tmp11x-eeprom) because it
+- `ti,tmp116-eeprom` has been renamed to [`ti,tmp11x-eeprom`](../build/dts/api/bindings/mtd/ti,tmp11x-eeprom.md#std-dtcompatible-ti-tmp11x-eeprom) because it
   supports both tmp117 and tmp119.
 
 ### [Enhanced Serial Peripheral Interface (eSPI)](#id12)
@@ -146,8 +146,8 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 ### [Entropy](#id13)
 
 - `fake_entropy_native_posix` has been renamed `fake_entropy_native_sim`, and with it its
-  kconfig options and DT binding. [`zephyr,native-posix-rng`](../build/dts/api/bindings/rng/zephyr%2Cnative-posix-rng.md#std-dtcompatible-zephyr-native-posix-rng) has been deprecated
-  in favor of [`zephyr,native-sim-rng`](../build/dts/api/bindings/rng/zephyr%2Cnative-sim-rng.md#std-dtcompatible-zephyr-native-sim-rng).
+  kconfig options and DT binding. [`zephyr,native-posix-rng`](../build/dts/api/bindings/rng/zephyr,native-posix-rng.md#std-dtcompatible-zephyr-native-posix-rng) has been deprecated
+  in favor of [`zephyr,native-sim-rng`](../build/dts/api/bindings/rng/zephyr,native-sim-rng.md#std-dtcompatible-zephyr-native-sim-rng).
   And [`CONFIG_FAKE_ENTROPY_NATIVE_POSIX`](../kconfig.md#CONFIG_FAKE_ENTROPY_NATIVE_POSIX "CONFIG_FAKE_ENTROPY_NATIVE_POSIX") and its related options with
   [`CONFIG_FAKE_ENTROPY_NATIVE_SIM`](../kconfig.md#CONFIG_FAKE_ENTROPY_NATIVE_SIM "CONFIG_FAKE_ENTROPY_NATIVE_SIM") ([GitHub #86615](https://github.com/zephyrproject-rtos/zephyr/issues/86615)).
 
@@ -155,7 +155,7 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 
 - Removed Kconfig option `ETH_STM32_HAL_MII` ([GitHub #86074](https://github.com/zephyrproject-rtos/zephyr/issues/86074)).
   PHY interface type is now selected via the `phy-connection-type` property in the device tree.
-- The [`st,stm32-ethernet`](../build/dts/api/bindings/ethernet/st%2Cstm32-ethernet.md#std-dtcompatible-st-stm32-ethernet) driver now requires the `phy-handle` phandle to be
+- The [`st,stm32-ethernet`](../build/dts/api/bindings/ethernet/st,stm32-ethernet.md#std-dtcompatible-st-stm32-ethernet) driver now requires the `phy-handle` phandle to be
   set to the according PHY node in the device tree ([GitHub #87593](https://github.com/zephyrproject-rtos/zephyr/issues/87593)).
 - The Kconfig options `ETH_STM32_HAL_PHY_ADDRESS`, `ETH_STM32_CARRIER_CHECK`,
   `ETH_STM32_CARRIER_CHECK_RX_IDLE_TIMEOUT_MS`, `ETH_STM32_AUTO_NEGOTIATION_ENABLE`,
@@ -225,7 +225,7 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 
 ### [I2S](#id17)
 
-- The [`nxp,mcux-i2s`](../build/dts/api/bindings/i2s/nxp%2Cmcux-i2s.md#std-dtcompatible-nxp-mcux-i2s) driver added property `mclk-output`. Set this property to
+- The [`nxp,mcux-i2s`](../build/dts/api/bindings/i2s/nxp,mcux-i2s.md#std-dtcompatible-nxp-mcux-i2s) driver added property `mclk-output`. Set this property to
 - configure the MCLK signal as an output. Older driver versions used the macro
 - `I2S_OPT_BIT_CLK_SLAVE` to configure the MCLK signal direction. ([GitHub #88554](https://github.com/zephyrproject-rtos/zephyr/issues/88554))
 
@@ -266,9 +266,9 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 - Renamed `CONFIG_REGULATOR_NPM1300` to [`CONFIG_REGULATOR_NPM13XX`](../kconfig.md#CONFIG_REGULATOR_NPM13XX "CONFIG_REGULATOR_NPM13XX"),
   `CONFIG_REGULATOR_NPM1300_COMMON_INIT_PRIORITY` to `REGULATOR_NPM13XX_COMMON_INIT_PRIORITY`,
   `CONFIG_REGULATOR_NPM1300_INIT_PRIORITY` to [`CONFIG_REGULATOR_NPM13XX_INIT_PRIORITY`](../kconfig.md#CONFIG_REGULATOR_NPM13XX_INIT_PRIORITY "CONFIG_REGULATOR_NPM13XX_INIT_PRIORITY")
-- [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic%2Cnpm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator) BUCK and LDO node GPIO properties are now specified as an
+- [`nordic,npm1300-regulator`](../build/dts/api/bindings/regulator/nordic,npm1300-regulator.md#std-dtcompatible-nordic-npm1300-regulator) BUCK and LDO node GPIO properties are now specified as an
   integer array without a GPIO controller, removing the requirement for a
-  [`nordic,npm1300-gpio`](../build/dts/api/bindings/gpio/nordic%2Cnpm1300-gpio.md#std-dtcompatible-nordic-npm1300-gpio) node to be present and enabled for GPIO control of the output
+  [`nordic,npm1300-gpio`](../build/dts/api/bindings/gpio/nordic,npm1300-gpio.md#std-dtcompatible-nordic-npm1300-gpio) node to be present and enabled for GPIO control of the output
   rails. For example, `enable-gpios = <&pmic_gpios 3 GPIO_ACTIVE_LOW>;` is now specified as
   `enable-gpio-config = <3 GPIO_ACTIVE_LOW>;`.
 
@@ -279,22 +279,22 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
   [`CONFIG_SPI_NXP_LPSPI_DMA`](../kconfig.md#CONFIG_SPI_NXP_LPSPI_DMA "CONFIG_SPI_NXP_LPSPI_DMA") and [`CONFIG_SPI_NXP_LPSPI_CPU`](../kconfig.md#CONFIG_SPI_NXP_LPSPI_CPU "CONFIG_SPI_NXP_LPSPI_CPU").
 - Renamed the device tree property `port_sel` to `port-sel`.
 - Renamed the device tree property `chip_select` to `chip-select`.
-- The binding file for [`andestech,atcspi200`](../build/dts/api/bindings/spi/andestech%2Catcspi200.md#std-dtcompatible-andestech-atcspi200) has been renamed to have a name
+- The binding file for [`andestech,atcspi200`](../build/dts/api/bindings/spi/andestech,atcspi200.md#std-dtcompatible-andestech-atcspi200) has been renamed to have a name
   matching the compatible string.
 
 ### [Sensors](#id24)
 
 - `ltr` vendor prefix has been renamed to `liteon`, and with it the
-  `ltr,f216a` name has been replaced by [`liteon,ltrf216a`](../build/dts/api/bindings/sensor/liteon%2Cltrf216a.md#std-dtcompatible-liteon-ltrf216a).
+  `ltr,f216a` name has been replaced by [`liteon,ltrf216a`](../build/dts/api/bindings/sensor/liteon,ltrf216a.md#std-dtcompatible-liteon-ltrf216a).
   The choice `DT_HAS_LTR_F216A_ENABLED` has been replaced with
   `DT_HAS_LITEON_LTRF216A_ENABLED` ([GitHub #85453](https://github.com/zephyrproject-rtos/zephyr/issues/85453))
-- `ti,tmp116` has been renamed to [`ti,tmp11x`](../build/dts/api/bindings/sensor/ti%2Ctmp11x.md#std-dtcompatible-ti-tmp11x) because it supports
+- `ti,tmp116` has been renamed to [`ti,tmp11x`](../build/dts/api/bindings/sensor/ti,tmp11x.md#std-dtcompatible-ti-tmp11x) because it supports
   tmp116, tmp117 and tmp119.
-- `meas,ms5837` has been replaced by [`meas,ms5837-30ba`](../build/dts/api/bindings/sensor/meas%2Cms5837-30ba.md#std-dtcompatible-meas-ms5837-30ba)
-  and [`meas,ms5837-02ba`](../build/dts/api/bindings/sensor/meas%2Cms5837-02ba.md#std-dtcompatible-meas-ms5837-02ba). In order to use one of the two variants, the
+- `meas,ms5837` has been replaced by [`meas,ms5837-30ba`](../build/dts/api/bindings/sensor/meas,ms5837-30ba.md#std-dtcompatible-meas-ms5837-30ba)
+  and [`meas,ms5837-02ba`](../build/dts/api/bindings/sensor/meas,ms5837-02ba.md#std-dtcompatible-meas-ms5837-02ba). In order to use one of the two variants, the
   status property needs to be used as well.
 - The `we,wsen-itds` driver has been renamed to
-  [`we,wsen-itds-2533020201601`](../build/dts/api/compatibles/we%2Cwsen-itds-2533020201601.md#std-dtcompatible-we-wsen-itds-2533020201601).
+  [`we,wsen-itds-2533020201601`](../build/dts/api/compatibles/we,wsen-itds-2533020201601.md#std-dtcompatible-we-wsen-itds-2533020201601).
   The Device Tree can be configured as follows:
 
   ```devicetree
@@ -320,8 +320,8 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 ### [Serial](#id25)
 
 - `uart_native_posix` has been renamed `uart_native_pty`, and with it its
-  kconfig options and DT binding. [`zephyr,native-posix-uart`](../build/dts/api/bindings/serial/zephyr%2Cnative-posix-uart.md#std-dtcompatible-zephyr-native-posix-uart) has been deprecated
-  in favor of [`zephyr,native-pty-uart`](../build/dts/api/bindings/serial/zephyr%2Cnative-pty-uart.md#std-dtcompatible-zephyr-native-pty-uart).
+  kconfig options and DT binding. [`zephyr,native-posix-uart`](../build/dts/api/bindings/serial/zephyr,native-posix-uart.md#std-dtcompatible-zephyr-native-posix-uart) has been deprecated
+  in favor of [`zephyr,native-pty-uart`](../build/dts/api/bindings/serial/zephyr,native-pty-uart.md#std-dtcompatible-zephyr-native-pty-uart).
   [`CONFIG_UART_NATIVE_POSIX`](../kconfig.md#CONFIG_UART_NATIVE_POSIX "CONFIG_UART_NATIVE_POSIX") and its related options with
   [`CONFIG_UART_NATIVE_PTY`](../kconfig.md#CONFIG_UART_NATIVE_PTY "CONFIG_UART_NATIVE_PTY").
   The choice [`CONFIG_NATIVE_UART_0`](../kconfig.md#CONFIG_NATIVE_UART_0 "CONFIG_NATIVE_UART_0") has been replaced with
@@ -333,7 +333,7 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
   [`CONFIG_UART_NATIVE_WAIT_PTS_READY_ENABLE`](../kconfig.md#CONFIG_UART_NATIVE_WAIT_PTS_READY_ENABLE "CONFIG_UART_NATIVE_WAIT_PTS_READY_ENABLE") has been deprecated. The functionality
   it enabled is now always enabled as there is no drawbacks from it.
   [`CONFIG_UART_NATIVE_POSIX_PORT_1_ENABLE`](../kconfig.md#CONFIG_UART_NATIVE_POSIX_PORT_1_ENABLE "CONFIG_UART_NATIVE_POSIX_PORT_1_ENABLE") has been deprecated. This option does
-  nothing now. Instead users should instantiate as many [`zephyr,native-pty-uart`](../build/dts/api/bindings/serial/zephyr%2Cnative-pty-uart.md#std-dtcompatible-zephyr-native-pty-uart) nodes
+  nothing now. Instead users should instantiate as many [`zephyr,native-pty-uart`](../build/dts/api/bindings/serial/zephyr,native-pty-uart.md#std-dtcompatible-zephyr-native-pty-uart) nodes
   as native PTY UART instances they want. ([GitHub #86739](https://github.com/zephyrproject-rtos/zephyr/issues/86739))
 
 ### [Stepper](#id26)
@@ -349,7 +349,7 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
 - `andestech,machine-timer`, `neorv32-machine-timer`,
   `telink,machine-timer`, `lowrisc,machine-timer`,
   `niosv-machine-timer`, and `scr,machine-timer` have
-  been unified under [`riscv,machine-timer`](../build/dts/api/bindings/timer/riscv%2Cmachine-timer.md#std-dtcompatible-riscv-machine-timer).
+  been unified under [`riscv,machine-timer`](../build/dts/api/bindings/timer/riscv,machine-timer.md#std-dtcompatible-riscv-machine-timer).
 
   The addresses of both `MTIME` and `MTIMECMP` registers must now be explicitly
   specified using the `reg` and `reg-names` properties. The `reg-names` property
@@ -380,7 +380,7 @@ the [release notes](release-notes-4.2.md#zephyr-4-2).
   `VIDEO_PIX_FMT_GBRG8` becomes [`VIDEO_PIX_FMT_SGBRG8`](../doxygen/html/group__video__pixel__formats.md#gaa9edb9c562fc3c86b61e071970fae60d)
   `VIDEO_PIX_FMT_GRBG8` becomes [`VIDEO_PIX_FMT_SGRBG8`](../doxygen/html/group__video__pixel__formats.md#ga19d8dc905695229097dffe659f2a806e)
   `VIDEO_PIX_FMT_RGGB8` becomes [`VIDEO_PIX_FMT_SRGGB8`](../doxygen/html/group__video__pixel__formats.md#gabf0dde810e75d37823891ed03811482c)
-- On STM32 devices, the DCMI driver ([`st,stm32-dcmi`](../build/dts/api/bindings/video/st%2Cstm32-dcmi.md#std-dtcompatible-st-stm32-dcmi)) now relies on endpoint based
+- On STM32 devices, the DCMI driver ([`st,stm32-dcmi`](../build/dts/api/bindings/video/st,stm32-dcmi.md#std-dtcompatible-st-stm32-dcmi)) now relies on endpoint based
   video-interfaces.yaml bindings for sensor interface properties (such as bus width and
   synchronization signals).
   Also the `capture-rate` property has been replaced by the usage of the frame interval API

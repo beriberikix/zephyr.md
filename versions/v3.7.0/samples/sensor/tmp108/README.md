@@ -18,7 +18,7 @@ also using low power one shot mode.
 
 ## Requirements
 
-A board with the [`ti,tmp108`](../../../build/dts/api/bindings/sensor/ti%2Ctmp108.md#std-dtcompatible-ti-tmp108) built in to its [devicetree](../../../build/dts/index.md#dt-guide),
+A board with the [`ti,tmp108`](../../../build/dts/api/bindings/sensor/ti,tmp108.md#std-dtcompatible-ti-tmp108) built in to its [devicetree](../../../build/dts/index.md#dt-guide),
 or a devicetree overlay with such a node added.
 
 ### Sample Output

@@ -76,7 +76,7 @@ The following sections provide detailed lists of changes by component.
 
 - STM32F1 Serial wire JTAG configuration (SWJ CFG) configuration choice
   was moved from Kconfig to [devicetree](../build/dts/index.md#dt-guide).
-  See the [`st,stm32f1-pinctrl`](../build/dts/api/bindings/pinctrl/st%2Cstm32f1-pinctrl.md#std-dtcompatible-st-stm32f1-pinctrl) devicetree binding for more information.
+  See the [`st,stm32f1-pinctrl`](../build/dts/api/bindings/pinctrl/st,stm32f1-pinctrl.md#std-dtcompatible-st-stm32f1-pinctrl) devicetree binding for more information.
   As a consequence, the following Kconfig symbols were removed:
 
   - `CONFIG_GPIO_STM32_SWJ_ENABLE`
@@ -367,7 +367,7 @@ The following sections provide detailed lists of changes by component.
   - STM32: Additionally to above change it is now possible for clock consumers to select an alternate
     source clock (Eg: LSE) by adding it to its ‘clocks’ property and then configure it using new
     clock\_control\_configure() API.
-    See [`st,stm32-rcc`](../build/dts/api/bindings/clock/st%2Cstm32-rcc.md#std-dtcompatible-st-stm32-rcc), [`st,stm32h7-rcc`](../build/dts/api/bindings/clock/st%2Cstm32h7-rcc.md#std-dtcompatible-st-stm32h7-rcc) and [`st,stm32u5-rcc`](../build/dts/api/bindings/clock/st%2Cstm32u5-rcc.md#std-dtcompatible-st-stm32u5-rcc)
+    See [`st,stm32-rcc`](../build/dts/api/bindings/clock/st,stm32-rcc.md#std-dtcompatible-st-stm32-rcc), [`st,stm32h7-rcc`](../build/dts/api/bindings/clock/st,stm32h7-rcc.md#std-dtcompatible-st-stm32h7-rcc) and [`st,stm32u5-rcc`](../build/dts/api/bindings/clock/st,stm32u5-rcc.md#std-dtcompatible-st-stm32u5-rcc)
     for more information.
 - Counter
 
@@ -456,7 +456,7 @@ The following sections provide detailed lists of changes by component.
     - Telink B91
     - TI CC13XX/CC26XX
   - STM32: It is now possible to configure plain GPIO pins using the pinctrl API.
-    See [`st,stm32-pinctrl`](../build/dts/api/bindings/pinctrl/st%2Cstm32-pinctrl.md#std-dtcompatible-st-stm32-pinctrl) and [`st,stm32f1-pinctrl`](../build/dts/api/bindings/pinctrl/st%2Cstm32f1-pinctrl.md#std-dtcompatible-st-stm32f1-pinctrl) for
+    See [`st,stm32-pinctrl`](../build/dts/api/bindings/pinctrl/st,stm32-pinctrl.md#std-dtcompatible-st-stm32-pinctrl) and [`st,stm32f1-pinctrl`](../build/dts/api/bindings/pinctrl/st,stm32f1-pinctrl.md#std-dtcompatible-st-stm32f1-pinctrl) for
     more information.
 - PWM
 
@@ -467,7 +467,7 @@ The following sections provide detailed lists of changes by component.
   - STM32: Enabled complementary output for timer channel. A PWM consumer can now use
     [`PWM_STM32_COMPLEMENTARY`](../doxygen/html/stm32__pwm_8h.md#ac73e020f7f8787beaa8ddf7871578c6f) to specify that PWM output should happen on a
     complementary channel pincfg (eg:`tim1_ch2n_pb14`).
-  - STM32: Added counter mode support. See [`st,stm32-timers`](../build/dts/api/bindings/timer/st%2Cstm32-timers.md#std-dtcompatible-st-stm32-timers).
+  - STM32: Added counter mode support. See [`st,stm32-timers`](../build/dts/api/bindings/timer/st,stm32-timers.md#std-dtcompatible-st-stm32-timers).
   - Aligned nRF PWM drivers (pwm\_nrfx and pwm\_nrf5\_sw) with the updated PWM API.
     In particular, this means that the [`pwm_set()`](../doxygen/html/group__pwm__interface.md#gadd9049c9a56cd9419736b3514e42dc01) and
     [`pwm_set_cycles()`](../doxygen/html/group__pwm__interface.md#gaff280789f7b45fdefc354b3f841fe3ef) functions need to be called with a PWM channel
@@ -670,25 +670,25 @@ The following sections provide detailed lists of changes by component.
     backwards incompatible changes affecting users of the old bindings. These
     changes include:
 
-    - [`atmel,sam-pinctrl`](../build/dts/api/bindings/pinctrl/atmel%2Csam-pinctrl.md#std-dtcompatible-atmel-sam-pinctrl) and [`atmel,sam0-pinctrl`](../build/dts/api/bindings/pinctrl/atmel%2Csam0-pinctrl.md#std-dtcompatible-atmel-sam0-pinctrl)
+    - [`atmel,sam-pinctrl`](../build/dts/api/bindings/pinctrl/atmel,sam-pinctrl.md#std-dtcompatible-atmel-sam-pinctrl) and [`atmel,sam0-pinctrl`](../build/dts/api/bindings/pinctrl/atmel,sam0-pinctrl.md#std-dtcompatible-atmel-sam0-pinctrl)
       have been adapted to the new pinctrl bindings interface
-    - [`espressif,esp32-pinctrl`](../build/dts/api/bindings/pinctrl/espressif%2Cesp32-pinctrl.md#std-dtcompatible-espressif-esp32-pinctrl) has replaced `espressif,esp32-pinmux`
-    - [`ite,it8xxx2-pinctrl`](../build/dts/api/bindings/pinctrl/ite%2Cit8xxx2-pinctrl.md#std-dtcompatible-ite-it8xxx2-pinctrl) and
-      [`ite,it8xxx2-pinctrl-func`](../build/dts/api/bindings/pinctrl/ite%2Cit8xxx2-pinctrl-func.md#std-dtcompatible-ite-it8xxx2-pinctrl-func) have replaced
+    - [`espressif,esp32-pinctrl`](../build/dts/api/bindings/pinctrl/espressif,esp32-pinctrl.md#std-dtcompatible-espressif-esp32-pinctrl) has replaced `espressif,esp32-pinmux`
+    - [`ite,it8xxx2-pinctrl`](../build/dts/api/bindings/pinctrl/ite,it8xxx2-pinctrl.md#std-dtcompatible-ite-it8xxx2-pinctrl) and
+      [`ite,it8xxx2-pinctrl-func`](../build/dts/api/bindings/pinctrl/ite,it8xxx2-pinctrl-func.md#std-dtcompatible-ite-it8xxx2-pinctrl-func) have replaced
       `ite,it8xxx2-pinmux` and `ite,it8xxx2-pinctrl-conf`
-    - [`microchip,xec-pinctrl`](../build/dts/api/bindings/pinctrl/microchip%2Cxec-pinctrl.md#std-dtcompatible-microchip-xec-pinctrl): new
-    - [`nuvoton,npcx-pinctrl`](../build/dts/api/bindings/pinctrl/nuvoton%2Cnpcx-pinctrl.md#std-dtcompatible-nuvoton-npcx-pinctrl): new
-    - [`nxp,kinetis-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Ckinetis-pinctrl.md#std-dtcompatible-nxp-kinetis-pinctrl) has replaced the `nxp,kinetis-port-pins` property found in the `nxp,kinetis-pinmux` binding.
-    - [`nxp,mcux-rt-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cmcux-rt-pinctrl.md#std-dtcompatible-nxp-mcux-rt-pinctrl),
-      [`nxp,mcux-rt11xx-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cmcux-rt11xx-pinctrl.md#std-dtcompatible-nxp-mcux-rt11xx-pinctrl),
-      [`nxp,lpc-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Clpc-iocon-pinctrl.md#std-dtcompatible-nxp-lpc-iocon-pinctrl), [`nxp,rt-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Crt-iocon-pinctrl.md#std-dtcompatible-nxp-rt-iocon-pinctrl),
-      [`nxp,lpc11u6x-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Clpc11u6x-pinctrl.md#std-dtcompatible-nxp-lpc11u6x-pinctrl), [`nxp,imx7d-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cimx7d-pinctrl.md#std-dtcompatible-nxp-imx7d-pinctrl),
-      [`nxp,imx8m-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cimx8m-pinctrl.md#std-dtcompatible-nxp-imx8m-pinctrl), [`nxp,imx8mp-pinctrl`](../build/dts/api/bindings/pinctrl/nxp%2Cimx8mp-pinctrl.md#std-dtcompatible-nxp-imx8mp-pinctrl) and
-      [`nxp,imx-iomuxc`](../build/dts/api/bindings/pinctrl/nxp%2Cimx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc): new
-    - [`openisa,rv32m1-pinctrl`](../build/dts/api/bindings/pinctrl/openisa%2Crv32m1-pinctrl.md#std-dtcompatible-openisa-rv32m1-pinctrl): new
-    - [`sifive,pinctrl`](../build/dts/api/bindings/pinctrl/sifive%2Cpinctrl.md#std-dtcompatible-sifive-pinctrl) has replaced `sifive,iof`
-    - [`telink,b91-pinctrl`](../build/dts/api/bindings/pinctrl/telink%2Cb91-pinctrl.md#std-dtcompatible-telink-b91-pinctrl) has replaced `telink,b91-pinmux`
-    - [`ti,cc13xx-cc26xx-pinctrl`](../build/dts/api/bindings/pinctrl/ti%2Ccc13xx-cc26xx-pinctrl.md#std-dtcompatible-ti-cc13xx-cc26xx-pinctrl) has replaced `ti,cc13xx-cc26xx-pinmux`
+    - [`microchip,xec-pinctrl`](../build/dts/api/bindings/pinctrl/microchip,xec-pinctrl.md#std-dtcompatible-microchip-xec-pinctrl): new
+    - [`nuvoton,npcx-pinctrl`](../build/dts/api/bindings/pinctrl/nuvoton,npcx-pinctrl.md#std-dtcompatible-nuvoton-npcx-pinctrl): new
+    - [`nxp,kinetis-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,kinetis-pinctrl.md#std-dtcompatible-nxp-kinetis-pinctrl) has replaced the `nxp,kinetis-port-pins` property found in the `nxp,kinetis-pinmux` binding.
+    - [`nxp,mcux-rt-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,mcux-rt-pinctrl.md#std-dtcompatible-nxp-mcux-rt-pinctrl),
+      [`nxp,mcux-rt11xx-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,mcux-rt11xx-pinctrl.md#std-dtcompatible-nxp-mcux-rt11xx-pinctrl),
+      [`nxp,lpc-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,lpc-iocon-pinctrl.md#std-dtcompatible-nxp-lpc-iocon-pinctrl), [`nxp,rt-iocon-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,rt-iocon-pinctrl.md#std-dtcompatible-nxp-rt-iocon-pinctrl),
+      [`nxp,lpc11u6x-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,lpc11u6x-pinctrl.md#std-dtcompatible-nxp-lpc11u6x-pinctrl), [`nxp,imx7d-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,imx7d-pinctrl.md#std-dtcompatible-nxp-imx7d-pinctrl),
+      [`nxp,imx8m-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,imx8m-pinctrl.md#std-dtcompatible-nxp-imx8m-pinctrl), [`nxp,imx8mp-pinctrl`](../build/dts/api/bindings/pinctrl/nxp,imx8mp-pinctrl.md#std-dtcompatible-nxp-imx8mp-pinctrl) and
+      [`nxp,imx-iomuxc`](../build/dts/api/bindings/pinctrl/nxp,imx-iomuxc.md#std-dtcompatible-nxp-imx-iomuxc): new
+    - [`openisa,rv32m1-pinctrl`](../build/dts/api/bindings/pinctrl/openisa,rv32m1-pinctrl.md#std-dtcompatible-openisa-rv32m1-pinctrl): new
+    - [`sifive,pinctrl`](../build/dts/api/bindings/pinctrl/sifive,pinctrl.md#std-dtcompatible-sifive-pinctrl) has replaced `sifive,iof`
+    - [`telink,b91-pinctrl`](../build/dts/api/bindings/pinctrl/telink,b91-pinctrl.md#std-dtcompatible-telink-b91-pinctrl) has replaced `telink,b91-pinmux`
+    - [`ti,cc13xx-cc26xx-pinctrl`](../build/dts/api/bindings/pinctrl/ti,cc13xx-cc26xx-pinctrl.md#std-dtcompatible-ti-cc13xx-cc26xx-pinctrl) has replaced `ti,cc13xx-cc26xx-pinmux`
   - PWM bindings now generally have `#pwm-cells` set to 3, not 2 as it was in
     previous releases. This was done to follow the Linux convention that each
     PWM specifier should contain a channel, period, and flags cell, in that
@@ -697,11 +697,11 @@ The following sections provide detailed lists of changes by component.
   - Some bindings had their [compatible properties](../build/dts/intro-syntax-structure.md#dt-important-props)
     renamed:
 
-    - [`nxp,imx-elcdif`](../build/dts/api/bindings/display/nxp%2Cimx-elcdif.md#std-dtcompatible-nxp-imx-elcdif) has replaced `fsl,imx6sx-lcdif`
-    - [`nxp,imx-gpr`](../build/dts/api/bindings/pinctrl/nxp%2Cimx-gpr.md#std-dtcompatible-nxp-imx-gpr) has replaced `nxp,imx-pinmux`
-    - [`nordic,nrf-wdt`](../build/dts/api/bindings/watchdog/nordic%2Cnrf-wdt.md#std-dtcompatible-nordic-nrf-wdt) has replaced `nordic,nrf-watchdog`
+    - [`nxp,imx-elcdif`](../build/dts/api/bindings/display/nxp,imx-elcdif.md#std-dtcompatible-nxp-imx-elcdif) has replaced `fsl,imx6sx-lcdif`
+    - [`nxp,imx-gpr`](../build/dts/api/bindings/pinctrl/nxp,imx-gpr.md#std-dtcompatible-nxp-imx-gpr) has replaced `nxp,imx-pinmux`
+    - [`nordic,nrf-wdt`](../build/dts/api/bindings/watchdog/nordic,nrf-wdt.md#std-dtcompatible-nordic-nrf-wdt) has replaced `nordic,nrf-watchdog`
     - `bosch,m_can-base` has replaced `bosch,m-can-base`
-    - [`nxp,imx-usdhc`](../build/dts/api/bindings/sdhc/nxp%2Cimx-usdhc.md#std-dtcompatible-nxp-imx-usdhc) has replaced `nxp,imx-sdhc`
+    - [`nxp,imx-usdhc`](../build/dts/api/bindings/sdhc/nxp,imx-usdhc.md#std-dtcompatible-nxp-imx-usdhc) has replaced `nxp,imx-sdhc`
   - Bindings with `resets` (and optionally `reset-names`) properties were
     added to support the [Reset Controller](../hardware/peripherals/reset.md#reset-api) API. See the list of new bindings
     below for some examples.
@@ -718,71 +718,71 @@ The following sections provide detailed lists of changes by component.
   - New bindings for the following compatible properties were added:
 
     - [`arduino-nano-header-r3`](../build/dts/api/bindings/gpio/arduino-nano-header-r3.md#std-dtcompatible-arduino-nano-header-r3)
-    - [`arm,cortex-r52`](../build/dts/api/bindings/cpu/arm%2Ccortex-r52.md#std-dtcompatible-arm-cortex-r52)
-    - [`atmel,sam-rstc`](../build/dts/api/bindings/hwinfo/atmel%2Csam-rstc.md#std-dtcompatible-atmel-sam-rstc)
+    - [`arm,cortex-r52`](../build/dts/api/bindings/cpu/arm,cortex-r52.md#std-dtcompatible-arm-cortex-r52)
+    - [`atmel,sam-rstc`](../build/dts/api/bindings/hwinfo/atmel,sam-rstc.md#std-dtcompatible-atmel-sam-rstc)
     - [`can-transceiver-gpio`](../build/dts/api/bindings/phy/can-transceiver-gpio.md#std-dtcompatible-can-transceiver-gpio) (see also [CAN](../build/dts/api/api.md#devicetree-can-api))
-    - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd%2Cgd32-spi.md#std-dtcompatible-gd-gd32-spi)
-    - [`hynitron,cst816s`](../build/dts/api/bindings/input/hynitron%2Ccst816s.md#std-dtcompatible-hynitron-cst816s)
+    - [`gd,gd32-spi`](../build/dts/api/bindings/spi/gd,gd32-spi.md#std-dtcompatible-gd-gd32-spi)
+    - [`hynitron,cst816s`](../build/dts/api/bindings/input/hynitron,cst816s.md#std-dtcompatible-hynitron-cst816s)
     - `intel,cavs-gpdma`
     - `intel,cavs-hda-host-in` and `intel,cavs-hda-host-out`
     - `intel,cavs-hda-link-in` and `intel,cavs-hda-link-out`
-    - [`intel,ssp-dai`](../build/dts/api/bindings/i2s/intel%2Cssp-dai.md#std-dtcompatible-intel-ssp-dai)
-    - [`intel,ssp-sspbase`](../build/dts/api/bindings/i2s/intel%2Cssp-sspbase.md#std-dtcompatible-intel-ssp-sspbase)
-    - [`invensense,icm42670`](../build/dts/api/compatibles/invensense%2Cicm42670.md#std-dtcompatible-invensense-icm42670)
-    - [`ite,enhance-i2c`](../build/dts/api/bindings/i2c/ite%2Cenhance-i2c.md#std-dtcompatible-ite-enhance-i2c)
-    - [`ite,it8xxx2-vcmp`](../build/dts/api/bindings/sensor/ite%2Cit8xxx2-vcmp.md#std-dtcompatible-ite-it8xxx2-vcmp)
-    - [`ite,it8xxx2-wuc`](../build/dts/api/bindings/interrupt-controller/ite%2Cit8xxx2-wuc.md#std-dtcompatible-ite-it8xxx2-wuc) and [`ite,it8xxx2-wuc-map`](../build/dts/api/bindings/interrupt-controller/ite%2Cit8xxx2-wuc-map.md#std-dtcompatible-ite-it8xxx2-wuc-map)
+    - [`intel,ssp-dai`](../build/dts/api/bindings/i2s/intel,ssp-dai.md#std-dtcompatible-intel-ssp-dai)
+    - [`intel,ssp-sspbase`](../build/dts/api/bindings/i2s/intel,ssp-sspbase.md#std-dtcompatible-intel-ssp-sspbase)
+    - [`invensense,icm42670`](../build/dts/api/compatibles/invensense,icm42670.md#std-dtcompatible-invensense-icm42670)
+    - [`ite,enhance-i2c`](../build/dts/api/bindings/i2c/ite,enhance-i2c.md#std-dtcompatible-ite-enhance-i2c)
+    - [`ite,it8xxx2-vcmp`](../build/dts/api/bindings/sensor/ite,it8xxx2-vcmp.md#std-dtcompatible-ite-it8xxx2-vcmp)
+    - [`ite,it8xxx2-wuc`](../build/dts/api/bindings/interrupt-controller/ite,it8xxx2-wuc.md#std-dtcompatible-ite-it8xxx2-wuc) and [`ite,it8xxx2-wuc-map`](../build/dts/api/bindings/interrupt-controller/ite,it8xxx2-wuc-map.md#std-dtcompatible-ite-it8xxx2-wuc-map)
     - `ite,peci-it8xxx2`
-    - [`maxim,max31875`](../build/dts/api/bindings/sensor/maxim%2Cmax31875.md#std-dtcompatible-maxim-max31875)
-    - [`microchip,cap1203`](../build/dts/api/bindings/input/microchip%2Ccap1203.md#std-dtcompatible-microchip-cap1203)
-    - [`microchip,mcp4728`](../build/dts/api/bindings/dac/microchip%2Cmcp4728.md#std-dtcompatible-microchip-mcp4728)
-    - [`microchip,mpfs-qspi`](../build/dts/api/bindings/spi/microchip%2Cmpfs-qspi.md#std-dtcompatible-microchip-mpfs-qspi)
-    - [`microchip,xec-bbram`](../build/dts/api/bindings/memory-controllers/microchip%2Cxec-bbram.md#std-dtcompatible-microchip-xec-bbram)
-    - [`motorola,mc146818`](../build/dts/api/bindings/rtc/motorola%2Cmc146818.md#std-dtcompatible-motorola-mc146818)
-    - [`nordic,nrf-acl`](../build/dts/api/bindings/arm/nordic%2Cnrf-acl.md#std-dtcompatible-nordic-nrf-acl)
-    - [`nordic,nrf-bprot`](../build/dts/api/bindings/arm/nordic%2Cnrf-bprot.md#std-dtcompatible-nordic-nrf-bprot)
-    - [`nordic,nrf-ccm`](../build/dts/api/bindings/crypto/nordic%2Cnrf-ccm.md#std-dtcompatible-nordic-nrf-ccm)
-    - [`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-comp.md#std-dtcompatible-nordic-nrf-comp)
-    - [`nordic,nrf-ctrlapperi`](../build/dts/api/bindings/arm/nordic%2Cnrf-ctrlapperi.md#std-dtcompatible-nordic-nrf-ctrlapperi)
-    - [`nordic,nrf-dcnf`](../build/dts/api/bindings/arm/nordic%2Cnrf-dcnf.md#std-dtcompatible-nordic-nrf-dcnf)
-    - [`nordic,nrf-gpio-forwarder`](../build/dts/api/bindings/gpio/nordic%2Cnrf-gpio-forwarder.md#std-dtcompatible-nordic-nrf-gpio-forwarder)
-    - [`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic%2Cnrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp)
-    - [`nordic,nrf-mpu`](../build/dts/api/bindings/arm/nordic%2Cnrf-mpu.md#std-dtcompatible-nordic-nrf-mpu)
-    - [`nordic,nrf-mutex`](../build/dts/api/bindings/arm/nordic%2Cnrf-mutex.md#std-dtcompatible-nordic-nrf-mutex)
-    - [`nordic,nrf-mwu`](../build/dts/api/bindings/arm/nordic%2Cnrf-mwu.md#std-dtcompatible-nordic-nrf-mwu)
-    - [`nordic,nrf-nfct`](../build/dts/api/bindings/net/wireless/nordic%2Cnrf-nfct.md#std-dtcompatible-nordic-nrf-nfct)
+    - [`maxim,max31875`](../build/dts/api/bindings/sensor/maxim,max31875.md#std-dtcompatible-maxim-max31875)
+    - [`microchip,cap1203`](../build/dts/api/bindings/input/microchip,cap1203.md#std-dtcompatible-microchip-cap1203)
+    - [`microchip,mcp4728`](../build/dts/api/bindings/dac/microchip,mcp4728.md#std-dtcompatible-microchip-mcp4728)
+    - [`microchip,mpfs-qspi`](../build/dts/api/bindings/spi/microchip,mpfs-qspi.md#std-dtcompatible-microchip-mpfs-qspi)
+    - [`microchip,xec-bbram`](../build/dts/api/bindings/memory-controllers/microchip,xec-bbram.md#std-dtcompatible-microchip-xec-bbram)
+    - [`motorola,mc146818`](../build/dts/api/bindings/rtc/motorola,mc146818.md#std-dtcompatible-motorola-mc146818)
+    - [`nordic,nrf-acl`](../build/dts/api/bindings/arm/nordic,nrf-acl.md#std-dtcompatible-nordic-nrf-acl)
+    - [`nordic,nrf-bprot`](../build/dts/api/bindings/arm/nordic,nrf-bprot.md#std-dtcompatible-nordic-nrf-bprot)
+    - [`nordic,nrf-ccm`](../build/dts/api/bindings/crypto/nordic,nrf-ccm.md#std-dtcompatible-nordic-nrf-ccm)
+    - [`nordic,nrf-comp`](../build/dts/api/bindings/comparator/nordic,nrf-comp.md#std-dtcompatible-nordic-nrf-comp)
+    - [`nordic,nrf-ctrlapperi`](../build/dts/api/bindings/arm/nordic,nrf-ctrlapperi.md#std-dtcompatible-nordic-nrf-ctrlapperi)
+    - [`nordic,nrf-dcnf`](../build/dts/api/bindings/arm/nordic,nrf-dcnf.md#std-dtcompatible-nordic-nrf-dcnf)
+    - [`nordic,nrf-gpio-forwarder`](../build/dts/api/bindings/gpio/nordic,nrf-gpio-forwarder.md#std-dtcompatible-nordic-nrf-gpio-forwarder)
+    - [`nordic,nrf-lpcomp`](../build/dts/api/bindings/comparator/nordic,nrf-lpcomp.md#std-dtcompatible-nordic-nrf-lpcomp)
+    - [`nordic,nrf-mpu`](../build/dts/api/bindings/arm/nordic,nrf-mpu.md#std-dtcompatible-nordic-nrf-mpu)
+    - [`nordic,nrf-mutex`](../build/dts/api/bindings/arm/nordic,nrf-mutex.md#std-dtcompatible-nordic-nrf-mutex)
+    - [`nordic,nrf-mwu`](../build/dts/api/bindings/arm/nordic,nrf-mwu.md#std-dtcompatible-nordic-nrf-mwu)
+    - [`nordic,nrf-nfct`](../build/dts/api/bindings/net/wireless/nordic,nrf-nfct.md#std-dtcompatible-nordic-nrf-nfct)
     - `nordic,nrf-oscillators`
-    - [`nordic,nrf-ppi`](../build/dts/api/bindings/misc/nordic%2Cnrf-ppi.md#std-dtcompatible-nordic-nrf-ppi)
-    - [`nordic,nrf-reset`](../build/dts/api/bindings/arm/nordic%2Cnrf-reset.md#std-dtcompatible-nordic-nrf-reset)
-    - [`nordic,nrf-swi`](../build/dts/api/bindings/arm/nordic%2Cnrf-swi.md#std-dtcompatible-nordic-nrf-swi)
-    - [`nordic,nrf-usbreg`](../build/dts/api/bindings/power/nordic%2Cnrf-usbreg.md#std-dtcompatible-nordic-nrf-usbreg)
-    - [`nuvoton,adc-cmp`](../build/dts/api/bindings/sensor/nuvoton%2Cadc-cmp.md#std-dtcompatible-nuvoton-adc-cmp)
-    - [`nxp,imx-mipi-dsi`](../build/dts/api/bindings/mipi-dsi/nxp%2Cimx-mipi-dsi.md#std-dtcompatible-nxp-imx-mipi-dsi)
-    - [`nxp,imx-qtmr`](../build/dts/api/bindings/counter/nxp%2Cimx-qtmr.md#std-dtcompatible-nxp-imx-qtmr)
-    - [`nxp,imx-tmr`](../build/dts/api/bindings/counter/nxp%2Cimx-tmr.md#std-dtcompatible-nxp-imx-tmr)
-    - [`raspberrypi,pico-reset`](../build/dts/api/bindings/reset/raspberrypi%2Cpico-reset.md#std-dtcompatible-raspberrypi-pico-reset)
-    - [`raspberrypi,pico-usbd`](../build/dts/api/bindings/usb/raspberrypi%2Cpico-usbd.md#std-dtcompatible-raspberrypi-pico-usbd)
-    - [`raydium,rm68200`](../build/dts/api/bindings/display/raydium%2Crm68200.md#std-dtcompatible-raydium-rm68200)
+    - [`nordic,nrf-ppi`](../build/dts/api/bindings/misc/nordic,nrf-ppi.md#std-dtcompatible-nordic-nrf-ppi)
+    - [`nordic,nrf-reset`](../build/dts/api/bindings/arm/nordic,nrf-reset.md#std-dtcompatible-nordic-nrf-reset)
+    - [`nordic,nrf-swi`](../build/dts/api/bindings/arm/nordic,nrf-swi.md#std-dtcompatible-nordic-nrf-swi)
+    - [`nordic,nrf-usbreg`](../build/dts/api/bindings/power/nordic,nrf-usbreg.md#std-dtcompatible-nordic-nrf-usbreg)
+    - [`nuvoton,adc-cmp`](../build/dts/api/bindings/sensor/nuvoton,adc-cmp.md#std-dtcompatible-nuvoton-adc-cmp)
+    - [`nxp,imx-mipi-dsi`](../build/dts/api/bindings/mipi-dsi/nxp,imx-mipi-dsi.md#std-dtcompatible-nxp-imx-mipi-dsi)
+    - [`nxp,imx-qtmr`](../build/dts/api/bindings/counter/nxp,imx-qtmr.md#std-dtcompatible-nxp-imx-qtmr)
+    - [`nxp,imx-tmr`](../build/dts/api/bindings/counter/nxp,imx-tmr.md#std-dtcompatible-nxp-imx-tmr)
+    - [`raspberrypi,pico-reset`](../build/dts/api/bindings/reset/raspberrypi,pico-reset.md#std-dtcompatible-raspberrypi-pico-reset)
+    - [`raspberrypi,pico-usbd`](../build/dts/api/bindings/usb/raspberrypi,pico-usbd.md#std-dtcompatible-raspberrypi-pico-usbd)
+    - [`raydium,rm68200`](../build/dts/api/bindings/display/raydium,rm68200.md#std-dtcompatible-raydium-rm68200)
     - `riscv,sifive-e31`, `riscv,sifive-e51`,
       and `riscv,sifive-s7` CPU bindings
-    - [`seeed,grove-lcd-rgb`](../build/dts/api/bindings/misc/seeed%2Cgrove-lcd-rgb.md#std-dtcompatible-seeed-grove-lcd-rgb)
-    - [`st,lsm6dso32`](../build/dts/api/compatibles/st%2Clsm6dso32.md#std-dtcompatible-st-lsm6dso32)
-    - [`st,stm32-clock-mux`](../build/dts/api/bindings/clock/st%2Cstm32-clock-mux.md#std-dtcompatible-st-stm32-clock-mux)
-    - [`st,stm32-fmc-nor-psram`](../build/dts/api/bindings/memory-controllers/st%2Cstm32-fmc-nor-psram.md#std-dtcompatible-st-stm32-fmc-nor-psram)
-    - [`st,stm32-lse-clock`](../build/dts/api/bindings/clock/st%2Cstm32-lse-clock.md#std-dtcompatible-st-stm32-lse-clock)
-    - [`st,stm32-ltdc`](../build/dts/api/bindings/display/st%2Cstm32-ltdc.md#std-dtcompatible-st-stm32-ltdc)
-    - [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st%2Cstm32-ospi.md#std-dtcompatible-st-stm32-ospi) and [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st%2Cstm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor)
-    - [`st,stm32h7-fmc`](../build/dts/api/bindings/memory-controllers/st%2Cstm32h7-fmc.md#std-dtcompatible-st-stm32h7-fmc)
-    - TI ADS ADCs: [`ti,ads1013`](../build/dts/api/bindings/adc/ti%2Cads1013.md#std-dtcompatible-ti-ads1013), [`ti,ads1015`](../build/dts/api/bindings/adc/ti%2Cads1015.md#std-dtcompatible-ti-ads1015),
-      [`ti,ads1113`](../build/dts/api/bindings/adc/ti%2Cads1113.md#std-dtcompatible-ti-ads1113), [`ti,ads1114`](../build/dts/api/bindings/adc/ti%2Cads1114.md#std-dtcompatible-ti-ads1114),
-      [`ti,ads1115`](../build/dts/api/bindings/adc/ti%2Cads1115.md#std-dtcompatible-ti-ads1115), [`ti,ads1014`](../build/dts/api/bindings/adc/ti%2Cads1014.md#std-dtcompatible-ti-ads1014)
-    - [`ti,tlc5971`](../build/dts/api/bindings/led_strip/ti%2Ctlc5971.md#std-dtcompatible-ti-tlc5971)
-    - [`xlnx,fpga`](../build/dts/api/bindings/fpga/xlnx%2Cfpga.md#std-dtcompatible-xlnx-fpga)
-    - [`xlnx,ps-gpio`](../build/dts/api/bindings/gpio/xlnx%2Cps-gpio.md#std-dtcompatible-xlnx-ps-gpio) and [`xlnx,ps-gpio-bank`](../build/dts/api/bindings/gpio/xlnx%2Cps-gpio-bank.md#std-dtcompatible-xlnx-ps-gpio-bank)
-    - [`zephyr,bt-hci-entropy`](../build/dts/api/bindings/bluetooth/zephyr%2Cbt-hci-entropy.md#std-dtcompatible-zephyr-bt-hci-entropy)
-    - [`zephyr,ipc-icmsg`](../build/dts/api/bindings/ipc/zephyr%2Cipc-icmsg.md#std-dtcompatible-zephyr-ipc-icmsg)
-    - [`zephyr,memory-region`](../build/dts/api/bindings/base/zephyr%2Cmemory-region.md#std-dtcompatible-zephyr-memory-region)
-    - [`zephyr,sdhc-spi-slot`](../build/dts/api/bindings/sdhc/zephyr%2Csdhc-spi-slot.md#std-dtcompatible-zephyr-sdhc-spi-slot)
+    - [`seeed,grove-lcd-rgb`](../build/dts/api/bindings/misc/seeed,grove-lcd-rgb.md#std-dtcompatible-seeed-grove-lcd-rgb)
+    - [`st,lsm6dso32`](../build/dts/api/compatibles/st,lsm6dso32.md#std-dtcompatible-st-lsm6dso32)
+    - [`st,stm32-clock-mux`](../build/dts/api/bindings/clock/st,stm32-clock-mux.md#std-dtcompatible-st-stm32-clock-mux)
+    - [`st,stm32-fmc-nor-psram`](../build/dts/api/bindings/memory-controllers/st,stm32-fmc-nor-psram.md#std-dtcompatible-st-stm32-fmc-nor-psram)
+    - [`st,stm32-lse-clock`](../build/dts/api/bindings/clock/st,stm32-lse-clock.md#std-dtcompatible-st-stm32-lse-clock)
+    - [`st,stm32-ltdc`](../build/dts/api/bindings/display/st,stm32-ltdc.md#std-dtcompatible-st-stm32-ltdc)
+    - [`st,stm32-ospi`](../build/dts/api/bindings/ospi/st,stm32-ospi.md#std-dtcompatible-st-stm32-ospi) and [`st,stm32-ospi-nor`](../build/dts/api/bindings/flash_controller/st,stm32-ospi-nor.md#std-dtcompatible-st-stm32-ospi-nor)
+    - [`st,stm32h7-fmc`](../build/dts/api/bindings/memory-controllers/st,stm32h7-fmc.md#std-dtcompatible-st-stm32h7-fmc)
+    - TI ADS ADCs: [`ti,ads1013`](../build/dts/api/bindings/adc/ti,ads1013.md#std-dtcompatible-ti-ads1013), [`ti,ads1015`](../build/dts/api/bindings/adc/ti,ads1015.md#std-dtcompatible-ti-ads1015),
+      [`ti,ads1113`](../build/dts/api/bindings/adc/ti,ads1113.md#std-dtcompatible-ti-ads1113), [`ti,ads1114`](../build/dts/api/bindings/adc/ti,ads1114.md#std-dtcompatible-ti-ads1114),
+      [`ti,ads1115`](../build/dts/api/bindings/adc/ti,ads1115.md#std-dtcompatible-ti-ads1115), [`ti,ads1014`](../build/dts/api/bindings/adc/ti,ads1014.md#std-dtcompatible-ti-ads1014)
+    - [`ti,tlc5971`](../build/dts/api/bindings/led_strip/ti,tlc5971.md#std-dtcompatible-ti-tlc5971)
+    - [`xlnx,fpga`](../build/dts/api/bindings/fpga/xlnx,fpga.md#std-dtcompatible-xlnx-fpga)
+    - [`xlnx,ps-gpio`](../build/dts/api/bindings/gpio/xlnx,ps-gpio.md#std-dtcompatible-xlnx-ps-gpio) and [`xlnx,ps-gpio-bank`](../build/dts/api/bindings/gpio/xlnx,ps-gpio-bank.md#std-dtcompatible-xlnx-ps-gpio-bank)
+    - [`zephyr,bt-hci-entropy`](../build/dts/api/bindings/bluetooth/zephyr,bt-hci-entropy.md#std-dtcompatible-zephyr-bt-hci-entropy)
+    - [`zephyr,ipc-icmsg`](../build/dts/api/bindings/ipc/zephyr,ipc-icmsg.md#std-dtcompatible-zephyr-ipc-icmsg)
+    - [`zephyr,memory-region`](../build/dts/api/bindings/base/zephyr,memory-region.md#std-dtcompatible-zephyr-memory-region)
+    - [`zephyr,sdhc-spi-slot`](../build/dts/api/bindings/sdhc/zephyr,sdhc-spi-slot.md#std-dtcompatible-zephyr-sdhc-spi-slot)
   - Bindings for the following compatible properties were removed:
 
     - `bosch,m-can`

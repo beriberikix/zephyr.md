@@ -13,7 +13,7 @@ the drop-down list at the bottom of the left panel and select the desired versio
 ## Overview
 
 This sample demonstrates how to setup and use the [I2C Target API](../../../../hardware/peripherals/i2c.md#i2c-target-api) using the
-[`zephyr,i2c-target-eeprom`](../../../../build/dts/api/bindings/mtd/zephyr%2Ci2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom) device.
+[`zephyr,i2c-target-eeprom`](../../../../build/dts/api/bindings/mtd/zephyr,i2c-target-eeprom.md#std-dtcompatible-zephyr-i2c-target-eeprom) device.
 
 ## Requirements
 

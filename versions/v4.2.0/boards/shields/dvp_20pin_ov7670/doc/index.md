@@ -9,7 +9,7 @@ original_path: boards/shields/dvp_20pin_ov7670/doc/index.html
 ## Overview
 
 This series of shields supports the camera modules which use a 18-pin connector compatible with
-the [`arducam,dvp-20pin-connector`](../../../../build/dts/api/bindings/gpio/arducam%2Cdvp-20pin-connector.md#std-dtcompatible-arducam-dvp-20pin-connector) to connect a devkit to an OV7670 image sensor via
+the [`arducam,dvp-20pin-connector`](../../../../build/dts/api/bindings/gpio/arducam,dvp-20pin-connector.md#std-dtcompatible-arducam-dvp-20pin-connector) to connect a devkit to an OV7670 image sensor via
 DVP (Digital Video Port), also known as “parallel interface”.
 
 Only 18 pins out of the 20-pin connector are present.

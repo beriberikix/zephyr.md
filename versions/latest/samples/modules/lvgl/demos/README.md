@@ -32,9 +32,9 @@ More details can be found in [LVGL demos Readme](https://github.com/zephyrprojec
 ## Requirements
 
 - A board with display, ideally with 480x272 resolution or higher.
-- A pointer input device: touchpad, mouse, or touch screen capable display, compatible with [`zephyr,lvgl-pointer-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input).
+- A pointer input device: touchpad, mouse, or touch screen capable display, compatible with [`zephyr,lvgl-pointer-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-pointer-input.md#std-dtcompatible-zephyr-lvgl-pointer-input).
 
-Note that other input devices types are not demonstrated in these demos, namely keyboards, keypads ([`zephyr,lvgl-keypad-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)), rotary encoders ([`zephyr,lvgl-encoder-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input)) and hardware buttons ([`zephyr,lvgl-button-input`](../../../../build/dts/api/bindings/input/zephyr%2Clvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)).
+Note that other input devices types are not demonstrated in these demos, namely keyboards, keypads ([`zephyr,lvgl-keypad-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-keypad-input.md#std-dtcompatible-zephyr-lvgl-keypad-input)), rotary encoders ([`zephyr,lvgl-encoder-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-encoder-input.md#std-dtcompatible-zephyr-lvgl-encoder-input)) and hardware buttons ([`zephyr,lvgl-button-input`](../../../../build/dts/api/bindings/input/zephyr,lvgl-button-input.md#std-dtcompatible-zephyr-lvgl-button-input)).
 
 ## Building and Running
 
