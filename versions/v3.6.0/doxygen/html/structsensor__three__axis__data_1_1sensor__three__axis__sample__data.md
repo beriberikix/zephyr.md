@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structsensor__three__axis__data_1_1sensor__three__axis__sample__data.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structsensor__three__axis__data_1_1sensor__three__axis__sample__data.html
 original_path: doxygen/html/structsensor__three__axis__data_1_1sensor__three__axis__sample__data.html
 ---
 

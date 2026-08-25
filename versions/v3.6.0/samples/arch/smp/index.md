@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/arch/smp/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/arch/smp/index.html
 original_path: samples/arch/smp/index.html
 ---
 

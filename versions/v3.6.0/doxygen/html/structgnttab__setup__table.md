@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structgnttab__setup__table.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structgnttab__setup__table.html
 original_path: doxygen/html/structgnttab__setup__table.html
 ---
 

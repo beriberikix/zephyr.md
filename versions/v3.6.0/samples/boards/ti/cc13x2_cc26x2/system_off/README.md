@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/boards/ti/cc13x2_cc26x2/system_off/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/boards/ti/cc13x2_cc26x2/system_off/README.html
 original_path: samples/boards/ti/cc13x2_cc26x2/system_off/README.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/develop/toolchains/custom_cmake.html
+source_url: https://docs.zephyrproject.org/3.6.0/develop/toolchains/custom_cmake.html
 original_path: develop/toolchains/custom_cmake.html
 ---
 

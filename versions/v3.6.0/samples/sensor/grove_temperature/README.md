@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/sensor/grove_temperature/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/sensor/grove_temperature/README.html
 original_path: samples/sensor/grove_temperature/README.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/xtensa/olimex_esp32_evb/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/xtensa/olimex_esp32_evb/doc/index.html
 original_path: boards/xtensa/olimex_esp32_evb/doc/index.html
 ---
 

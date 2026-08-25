@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/drivers/audio/dmic/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/drivers/audio/dmic/README.html
 original_path: samples/drivers/audio/dmic/README.html
 ---
 

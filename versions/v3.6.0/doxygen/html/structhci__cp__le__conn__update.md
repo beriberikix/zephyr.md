@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structhci__cp__le__conn__update.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structhci__cp__le__conn__update.html
 original_path: doxygen/html/structhci__cp__le__conn__update.html
 ---
 

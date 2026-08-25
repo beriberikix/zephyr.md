@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/am62x_m4/doc/am62x_m4_phyboard_lyra.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/am62x_m4/doc/am62x_m4_phyboard_lyra.html
 original_path: boards/arm/am62x_m4/doc/am62x_m4_phyboard_lyra.html
 ---
 

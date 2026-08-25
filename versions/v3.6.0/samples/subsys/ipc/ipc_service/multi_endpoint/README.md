@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/subsys/ipc/ipc_service/multi_endpoint/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/subsys/ipc/ipc_service/multi_endpoint/README.html
 original_path: samples/subsys/ipc/ipc_service/multi_endpoint/README.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/releases/eol_releases.html
+source_url: https://docs.zephyrproject.org/3.6.0/releases/eol_releases.html
 original_path: releases/eol_releases.html
 ---
 

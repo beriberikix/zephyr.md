@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/drivers/led_lp5569/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/drivers/led_lp5569/README.html
 original_path: samples/drivers/led_lp5569/README.html
 ---
 

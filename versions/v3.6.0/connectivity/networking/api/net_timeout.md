@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/connectivity/networking/api/net_timeout.html
+source_url: https://docs.zephyrproject.org/3.6.0/connectivity/networking/api/net_timeout.html
 original_path: connectivity/networking/api/net_timeout.html
 ---
 

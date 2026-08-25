@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structvirtual__interface__context.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structvirtual__interface__context.html
 original_path: doxygen/html/structvirtual__interface__context.html
 ---
 

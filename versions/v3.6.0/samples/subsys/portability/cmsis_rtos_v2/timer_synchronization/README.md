@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/subsys/portability/cmsis_rtos_v2/timer_synchronization/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/subsys/portability/cmsis_rtos_v2/timer_synchronization/README.html
 original_path: samples/subsys/portability/cmsis_rtos_v2/timer_synchronization/README.html
 ---
 

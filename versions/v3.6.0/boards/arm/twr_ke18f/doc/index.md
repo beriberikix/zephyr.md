@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/twr_ke18f/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/twr_ke18f/doc/index.html
 original_path: boards/arm/twr_ke18f/doc/index.html
 ---
 

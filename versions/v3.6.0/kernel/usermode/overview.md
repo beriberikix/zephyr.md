@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/kernel/usermode/overview.html
+source_url: https://docs.zephyrproject.org/3.6.0/kernel/usermode/overview.html
 original_path: kernel/usermode/overview.html
 ---
 

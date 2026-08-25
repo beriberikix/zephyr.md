@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/sensor/die_temp_polling/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/sensor/die_temp_polling/README.html
 original_path: samples/sensor/die_temp_polling/README.html
 ---
 

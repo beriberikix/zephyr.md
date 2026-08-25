@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/subsys/usb/cdc_acm/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/subsys/usb/cdc_acm/README.html
 original_path: samples/subsys/usb/cdc_acm/README.html
 ---
 

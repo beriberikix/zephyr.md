@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/cortex__a__r_2lib__helpers_8h.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/cortex__a__r_2lib__helpers_8h.html
 original_path: doxygen/html/cortex__a__r_2lib__helpers_8h.html
 ---
 

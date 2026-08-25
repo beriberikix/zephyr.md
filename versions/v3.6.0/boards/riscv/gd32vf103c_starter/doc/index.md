@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/riscv/gd32vf103c_starter/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/riscv/gd32vf103c_starter/doc/index.html
 original_path: boards/riscv/gd32vf103c_starter/doc/index.html
 ---
 

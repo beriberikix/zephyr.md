@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/x86/intel_adl/doc/up_squared_pro_7000.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/x86/intel_adl/doc/up_squared_pro_7000.html
 original_path: boards/x86/intel_adl/doc/up_squared_pro_7000.html
 ---
 

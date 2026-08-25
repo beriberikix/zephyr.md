@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structcan__mcan__rx__callback.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structcan__mcan__rx__callback.html
 original_path: doxygen/html/structcan__mcan__rx__callback.html
 ---
 

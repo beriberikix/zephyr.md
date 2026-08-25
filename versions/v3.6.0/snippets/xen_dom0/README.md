@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/snippets/xen_dom0/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/snippets/xen_dom0/README.html
 original_path: snippets/xen_dom0/README.html
 ---
 

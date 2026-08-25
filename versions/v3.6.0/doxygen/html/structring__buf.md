@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structring__buf.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structring__buf.html
 original_path: doxygen/html/structring__buf.html
 ---
 

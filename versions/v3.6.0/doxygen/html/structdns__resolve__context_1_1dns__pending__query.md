@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structdns__resolve__context_1_1dns__pending__query.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structdns__resolve__context_1_1dns__pending__query.html
 original_path: doxygen/html/structdns__resolve__context_1_1dns__pending__query.html
 ---
 

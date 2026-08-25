@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/debugging/debugmon.html
+source_url: https://docs.zephyrproject.org/3.6.0/services/debugging/debugmon.html
 original_path: services/debugging/debugmon.html
 ---
 

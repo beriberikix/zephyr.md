@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/hardware/peripherals/video.html
+source_url: https://docs.zephyrproject.org/3.6.0/hardware/peripherals/video.html
 original_path: hardware/peripherals/video.html
 ---
 

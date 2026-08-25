@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/stm32mp157c_dk2/doc/stm32mp157_dk2.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/stm32mp157c_dk2/doc/stm32mp157_dk2.html
 original_path: boards/arm/stm32mp157c_dk2/doc/stm32mp157_dk2.html
 ---
 

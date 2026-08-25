@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/develop/toolchains/gnu_arm_embedded.html
+source_url: https://docs.zephyrproject.org/3.6.0/develop/toolchains/gnu_arm_embedded.html
 original_path: develop/toolchains/gnu_arm_embedded.html
 ---
 
