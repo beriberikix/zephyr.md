@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structxen__add__to__physmap__batch.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structxen__add__to__physmap__batch.html
 original_path: doxygen/html/structxen__add__to__physmap__batch.html
 ---
 

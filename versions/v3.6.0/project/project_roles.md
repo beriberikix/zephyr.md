@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/project/project_roles.html
+source_url: https://docs.zephyrproject.org/3.6.0/project/project_roles.html
 original_path: project/project_roles.html
 ---
 

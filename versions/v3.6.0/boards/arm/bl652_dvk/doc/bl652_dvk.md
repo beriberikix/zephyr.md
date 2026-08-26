@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/bl652_dvk/doc/bl652_dvk.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/bl652_dvk/doc/bl652_dvk.html
 original_path: boards/arm/bl652_dvk/doc/bl652_dvk.html
 ---
 

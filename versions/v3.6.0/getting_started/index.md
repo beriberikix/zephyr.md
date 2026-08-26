@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/getting_started/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/getting_started/index.html
 original_path: getting_started/index.html
 ---
 

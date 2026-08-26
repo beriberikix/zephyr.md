@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/nrf5340dk_nrf5340/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/nrf5340dk_nrf5340/doc/index.html
 original_path: boards/arm/nrf5340dk_nrf5340/doc/index.html
 ---
 

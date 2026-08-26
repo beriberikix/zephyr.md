@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/lib_2libc_2minimal_2include_2sys_2stat_8h_source.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/lib_2libc_2minimal_2include_2sys_2stat_8h_source.html
 original_path: doxygen/html/lib_2libc_2minimal_2include_2sys_2stat_8h_source.html
 ---
 

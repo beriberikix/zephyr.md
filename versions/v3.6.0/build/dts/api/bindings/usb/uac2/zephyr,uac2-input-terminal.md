@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/usb/uac2/zephyr,uac2-input-terminal.html
+source_url: https://docs.zephyrproject.org/3.6.0/build/dts/api/bindings/usb/uac2/zephyr,uac2-input-terminal.html
 original_path: build/dts/api/bindings/usb/uac2/zephyr,uac2-input-terminal.html
 ---
 

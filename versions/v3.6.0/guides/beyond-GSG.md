@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/guides/beyond-GSG.html
+source_url: https://docs.zephyrproject.org/3.6.0/guides/beyond-GSG.html
 original_path: guides/beyond-GSG.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structaddress__trans__region__config.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structaddress__trans__region__config.html
 original_path: doxygen/html/structaddress__trans__region__config.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structnpcx__ex__ops__uma__in.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structnpcx__ex__ops__uma__in.html
 original_path: doxygen/html/structnpcx__ex__ops__uma__in.html
 ---
 

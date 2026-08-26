@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/ev11l78a/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/ev11l78a/doc/index.html
 original_path: boards/arm/ev11l78a/doc/index.html
 ---
 

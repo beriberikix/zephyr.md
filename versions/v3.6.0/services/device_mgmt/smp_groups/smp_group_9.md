@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/services/device_mgmt/smp_groups/smp_group_9.html
+source_url: https://docs.zephyrproject.org/3.6.0/services/device_mgmt/smp_groups/smp_group_9.html
 original_path: services/device_mgmt/smp_groups/smp_group_9.html
 ---
 

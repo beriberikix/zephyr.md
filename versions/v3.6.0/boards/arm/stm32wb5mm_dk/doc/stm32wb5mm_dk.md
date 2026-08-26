@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/stm32wb5mm_dk/doc/stm32wb5mm_dk.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/stm32wb5mm_dk/doc/stm32wb5mm_dk.html
 original_path: boards/arm/stm32wb5mm_dk/doc/stm32wb5mm_dk.html
 ---
 

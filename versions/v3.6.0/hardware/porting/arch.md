@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/hardware/porting/arch.html
+source_url: https://docs.zephyrproject.org/3.6.0/hardware/porting/arch.html
 original_path: hardware/porting/arch.html
 ---
 

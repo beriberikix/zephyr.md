@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/i2s/nxp,mcux-i2s.html
+source_url: https://docs.zephyrproject.org/3.6.0/build/dts/api/bindings/i2s/nxp,mcux-i2s.html
 original_path: build/dts/api/bindings/i2s/nxp,mcux-i2s.html
 ---
 

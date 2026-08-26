@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/samples/net/sockets/dumb_http_server_mt/README.html
+source_url: https://docs.zephyrproject.org/3.6.0/samples/net/sockets/dumb_http_server_mt/README.html
 original_path: samples/net/sockets/dumb_http_server_mt/README.html
 ---
 

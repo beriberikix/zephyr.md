@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/dir_0dbbf0f7c33b88bff3996b0543cef0a8.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/dir_0dbbf0f7c33b88bff3996b0543cef0a8.html
 original_path: doxygen/html/dir_0dbbf0f7c33b88bff3996b0543cef0a8.html
 ---
 

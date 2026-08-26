@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/shields/buydisplay_3_5_tft_touch_arduino/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/shields/buydisplay_3_5_tft_touch_arduino/doc/index.html
 original_path: boards/shields/buydisplay_3_5_tft_touch_arduino/doc/index.html
 ---
 

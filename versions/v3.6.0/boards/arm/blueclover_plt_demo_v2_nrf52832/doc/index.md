@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/boards/arm/blueclover_plt_demo_v2_nrf52832/doc/index.html
+source_url: https://docs.zephyrproject.org/3.6.0/boards/arm/blueclover_plt_demo_v2_nrf52832/doc/index.html
 original_path: boards/arm/blueclover_plt_demo_v2_nrf52832/doc/index.html
 ---
 

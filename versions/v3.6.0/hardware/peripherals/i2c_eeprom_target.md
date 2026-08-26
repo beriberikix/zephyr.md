@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/hardware/peripherals/i2c_eeprom_target.html
+source_url: https://docs.zephyrproject.org/3.6.0/hardware/peripherals/i2c_eeprom_target.html
 original_path: hardware/peripherals/i2c_eeprom_target.html
 ---
 

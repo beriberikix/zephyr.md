@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/kernel/data_structures/ring_buffers.html
+source_url: https://docs.zephyrproject.org/3.6.0/kernel/data_structures/ring_buffers.html
 original_path: kernel/data_structures/ring_buffers.html
 ---
 

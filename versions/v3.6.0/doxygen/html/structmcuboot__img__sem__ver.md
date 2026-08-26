@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/structmcuboot__img__sem__ver.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/structmcuboot__img__sem__ver.html
 original_path: doxygen/html/structmcuboot__img__sem__ver.html
 ---
 

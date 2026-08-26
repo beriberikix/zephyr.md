@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/build/dts/api/bindings/mtd/nxp,imx-flexspi-w956a8mbya.html
+source_url: https://docs.zephyrproject.org/3.6.0/build/dts/api/bindings/mtd/nxp,imx-flexspi-w956a8mbya.html
 original_path: build/dts/api/bindings/mtd/nxp,imx-flexspi-w956a8mbya.html
 ---
 

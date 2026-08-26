@@ -1,6 +1,6 @@
 ---
 version: v3.6.0
-source_url: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/3.6.0/doc/doxygen/html/mm__drv__intel__adsp__mtl__tlb_8h.html
+source_url: https://docs.zephyrproject.org/3.6.0/doxygen/html/mm__drv__intel__adsp__mtl__tlb_8h.html
 original_path: doxygen/html/mm__drv__intel__adsp__mtl__tlb_8h.html
 ---
 
