@@ -11,7 +11,10 @@ import argparse
 import posixpath
 import re
 import sys
+import urllib.error
+import urllib.request
 from bisect import bisect_right
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path, PurePosixPath
 from typing import Iterator, NamedTuple
 
@@ -22,6 +25,11 @@ EXTERNAL_SCHEMES = ("http://", "https://", "mailto:", "tel:", "ftp://", "data:")
 
 FENCE_RE = re.compile(r"^\s{0,3}(`{3,}|~{3,})")
 MAX_REPORTED = 50
+
+# Absolute targets are checked only when explicitly asked for, since it needs
+# the network and upstream sites rate-limit.
+CHECKABLE_SCHEMES = ("http://", "https://")
+USER_AGENT = "zephyr-md-link-check"
 
 
 class Issue(NamedTuple):
@@ -234,6 +242,75 @@ def check_links(path: Path, text: str, known: set[str] | None = None) -> list[Is
     return issues
 
 
+def collect_urls(path: Path, text: str) -> Iterator[tuple[str, int]]:
+    """Yield (url, line) for each absolute http(s) target on the page."""
+    for link in scan_links(mask_code(text)):
+        if "](" in link.target_raw:
+            continue
+        target = split_target(link.target_raw)
+        if target.startswith(CHECKABLE_SCHEMES):
+            yield target.split("#", 1)[0], link.line
+
+
+def classify_status(status: int) -> str | None:
+    """Return a complaint for a status worth reporting, else None.
+
+    401/403 mean the target exists but will not serve a robot, which says
+    nothing about whether the link is right, so they are not failures.
+    """
+    if status in (401, 403):
+        return None
+    if status == 404 or status == 410:
+        return f"HTTP {status}"
+    if status >= 400:
+        return f"HTTP {status}"
+    return None
+
+
+def probe_url(url: str, timeout: float) -> str | None:
+    """Return a complaint if the URL does not resolve, else None."""
+    request = urllib.request.Request(
+        url, method="HEAD", headers={"User-Agent": USER_AGENT}
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return classify_status(response.status)
+    except urllib.error.HTTPError as exc:
+        # Some hosts reject HEAD outright; retry once with GET before believing it.
+        if exc.code in (405, 501):
+            try:
+                get = urllib.request.Request(
+                    url, headers={"User-Agent": USER_AGENT}
+                )
+                with urllib.request.urlopen(get, timeout=timeout) as response:
+                    return classify_status(response.status)
+            except Exception as retry_exc:  # noqa: BLE001 - reported, not raised
+                return f"{type(retry_exc).__name__}"
+        return classify_status(exc.code)
+    except Exception as exc:  # noqa: BLE001 - network errors are the point here
+        return f"{type(exc).__name__}"
+
+
+def check_urls(
+    first_seen: dict[str, tuple[Path, int]], workers: int, timeout: float
+) -> list[Issue]:
+    """Probe each unique URL once and attribute failures to where it first appears."""
+    urls = sorted(first_seen)
+    if not urls:
+        return []
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        complaints = list(pool.map(lambda u: probe_url(u, timeout), urls))
+
+    issues = []
+    for url, complaint in zip(urls, complaints):
+        if complaint is None:
+            continue
+        path, line = first_seen[url]
+        issues.append(Issue(path, line, "broken-url", f"{complaint}: {truncate(url)}"))
+    return sorted(issues, key=lambda i: (i.path.as_posix(), i.line))
+
+
 def truncate(value: str, limit: int = 120) -> str:
     value = " ".join(value.split())
     return value if len(value) <= limit else value[:limit - 1] + "…"
@@ -246,6 +323,24 @@ def main() -> int:
         "--strict-links",
         action="store_true",
         help="treat dangling internal links as errors instead of warnings",
+    )
+    parser.add_argument(
+        "--check-urls",
+        action="store_true",
+        help="also verify that absolute http(s) links resolve (needs network; "
+             "each unique URL is probed once)",
+    )
+    parser.add_argument(
+        "--url-workers",
+        type=int,
+        default=16,
+        help="parallel requests when --check-urls is set (default: 16)",
+    )
+    parser.add_argument(
+        "--url-timeout",
+        type=float,
+        default=10.0,
+        help="per-request timeout in seconds when --check-urls is set (default: 10)",
     )
     parser.add_argument(
         "--warn-nested-links",
@@ -267,10 +362,18 @@ def main() -> int:
     known = {p.as_posix() for p in files}
 
     issues: list[Issue] = []
+    first_seen: dict[str, tuple[Path, int]] = {}
     for path in files:
         text = path.read_text(encoding="utf-8", errors="ignore")
         issues.extend(check_front_matter(path, text))
         issues.extend(check_links(path, text, known))
+        if args.check_urls:
+            for url, line in collect_urls(path, text):
+                first_seen.setdefault(url, (path, line))
+
+    if args.check_urls:
+        print(f"Probing {len(first_seen)} unique absolute links...", flush=True)
+        issues.extend(check_urls(first_seen, args.url_workers, args.url_timeout))
 
     # Upstream Doxygen links a handful of pages it never generates; those targets
     # are missing from the published docs too, so a dangling link is reported but

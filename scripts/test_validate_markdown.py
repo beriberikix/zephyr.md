@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 from pathlib import Path
 
 import validate_markdown as V
@@ -176,6 +177,90 @@ class FrontMatterTests(unittest.TestCase):
         self.assert_kinds(
             "---\nmyversion: v1\nsource_url: x\noriginal_path: y\n---\n\nx", ["front-matter"]
         )
+
+
+class CollectUrls(unittest.TestCase):
+    def urls(self, body):
+        return [u for u, _ in V.collect_urls(Path("versions/v1/a.md"), body)]
+
+    def test_picks_up_absolute_links(self):
+        self.assertEqual(
+            self.urls("see [x](https://example.com/a) and [y](http://example.org)"),
+            ["https://example.com/a", "http://example.org"],
+        )
+
+    def test_skips_relative_and_anchors(self):
+        self.assertEqual(self.urls("[a](b.md) [c](#frag) [d](mailto:x@y.z)"), [])
+
+    def test_drops_the_fragment(self):
+        # The fragment never reaches the server, so probing it would be noise.
+        self.assertEqual(self.urls("[a](https://example.com/p#sec)"), ["https://example.com/p"])
+
+    def test_ignores_code_blocks(self):
+        self.assertEqual(self.urls("```\n[a](https://example.com)\n```\n"), [])
+
+    def test_descends_into_labels(self):
+        # A clickable figure is "[![alt](image)](page)": both targets are real
+        # and both deserve probing, so the label is not a dead end.
+        self.assertEqual(
+            sorted(self.urls("[![alt](https://x.com/i.png)](https://y.com/p)")),
+            ["https://x.com/i.png", "https://y.com/p"],
+        )
+
+    def test_skips_malformed_targets(self):
+        # Nesting inside the *target* is the broken shape check_links reports as
+        # nested-link; probing the mangled result would be noise.
+        self.assertEqual(self.urls("[a](https://x.com](https://y.com)"), [])
+
+    def test_reports_line_numbers(self):
+        found = list(V.collect_urls(Path("a.md"), "one\ntwo\n[x](https://example.com)\n"))
+        self.assertEqual(found, [("https://example.com", 3)])
+
+
+class ClassifyStatus(unittest.TestCase):
+    def test_success_is_silent(self):
+        for status in (200, 204, 301, 302):
+            self.assertIsNone(V.classify_status(status))
+
+    def test_missing_is_reported(self):
+        self.assertEqual(V.classify_status(404), "HTTP 404")
+        self.assertEqual(V.classify_status(410), "HTTP 410")
+
+    def test_auth_walls_are_not_failures(self):
+        # The page exists; it just will not serve a robot. Reporting these
+        # would bury real breakage under noise from sites that block crawlers.
+        self.assertIsNone(V.classify_status(401))
+        self.assertIsNone(V.classify_status(403))
+
+    def test_server_errors_are_reported(self):
+        self.assertEqual(V.classify_status(500), "HTTP 500")
+
+
+class CheckUrlsAttribution(unittest.TestCase):
+    def test_failure_is_attributed_to_first_occurrence(self):
+        first_seen = {"https://gone.example": (Path("versions/v1/a.md"), 7)}
+        with mock.patch.object(V, "probe_url", return_value="HTTP 404"):
+            issues = V.check_urls(first_seen, workers=2, timeout=1.0)
+        self.assertEqual(len(issues), 1)
+        self.assertEqual(issues[0].kind, "broken-url")
+        self.assertEqual(issues[0].line, 7)
+        self.assertIn("gone.example", issues[0].detail)
+
+    def test_healthy_urls_produce_nothing(self):
+        first_seen = {"https://ok.example": (Path("a.md"), 1)}
+        with mock.patch.object(V, "probe_url", return_value=None):
+            self.assertEqual(V.check_urls(first_seen, workers=2, timeout=1.0), [])
+
+    def test_each_unique_url_is_probed_once(self):
+        first_seen = {f"https://e{i}.example": (Path("a.md"), i) for i in range(5)}
+        with mock.patch.object(V, "probe_url", return_value=None) as probe:
+            V.check_urls(first_seen, workers=4, timeout=1.0)
+        self.assertEqual(probe.call_count, 5)
+
+    def test_no_urls_makes_no_requests(self):
+        with mock.patch.object(V, "probe_url") as probe:
+            self.assertEqual(V.check_urls({}, workers=4, timeout=1.0), [])
+        probe.assert_not_called()
 
 
 if __name__ == "__main__":

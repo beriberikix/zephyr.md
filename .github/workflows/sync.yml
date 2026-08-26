@@ -17,9 +17,6 @@ on:
         required: false
         default: "https://github.com/zephyrproject-rtos/zephyr.git"
         type: string
-  push:
-    tags:
-      - "v*"
 
 permissions:
   contents: write
@@ -47,11 +44,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          if [[ "${{ github.event_name }}" == "push" ]]; then
-            RAW_TAGS="${GITHUB_REF_NAME}"
-          else
-            RAW_TAGS="${{ inputs.tags }}"
-          fi
+          RAW_TAGS="${{ inputs.tags }}"
 
           CLEANED=$(printf '%s' "$RAW_TAGS" | tr ',;' '\n' | sed 's/^ *//;s/ *$//' | sed '/^$/d' | sort -u)
           if [[ -z "$CLEANED" ]]; then
@@ -63,13 +56,8 @@ jobs:
           TAGS_JSON=$(printf '%s\n' "$CLEANED" | jq -Rsc 'split("\n") | map(select(length>0))')
           LATEST=$(printf '%s\n' "$CLEANED" | sort -V | tail -n1)
 
-          if [[ "${{ github.event_name }}" == "push" ]]; then
-            SOURCE_TEMPLATE="https://docs.zephyrproject.org/{version}"
-            ZEPHYR_REPO="https://github.com/zephyrproject-rtos/zephyr.git"
-          else
-            SOURCE_TEMPLATE="${{ inputs.source_url_template }}"
-            ZEPHYR_REPO="${{ inputs.zephyr_repo }}"
-          fi
+          SOURCE_TEMPLATE="${{ inputs.source_url_template }}"
+          ZEPHYR_REPO="${{ inputs.zephyr_repo }}"
 
           echo "tags_json=$TAGS_JSON" >> "$GITHUB_OUTPUT"
           echo "tags_csv=$TAGS_CSV" >> "$GITHUB_OUTPUT"
